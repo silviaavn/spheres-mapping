@@ -5,6 +5,7 @@ Terakhir diperbarui: 2026-11-13
 ## Payload (instance)
 - 1 payload = 1 resource FHIR yang dibuat dari submission form.
 - Identitas payload = resource + determining code (mis. `Observation | SP000389`, `EpisodeOfCare | ANC`). Resource tanpa determining code (Patient, Practitioner, Encounter) identitasnya cukup nama resource.
+- Di tabel output, payload selalu ditulis dengan code pembeda **dan display-nya**.
 - Encounter yang muncul di 2 blok kamus (data utama + statusHistory) = **1 payload**.
 - **Patient dihitung.**
 - **Organization dan Location TIDAK dihitung**: keduanya diambil dari master data (lookup/reference), bukan dibuat dari form.
@@ -29,5 +30,6 @@ Terakhir diperbarui: 2026-11-13
 - `jumlah code` = isi 1 di setiap baris determining code / opsi coded.
 
 ## Log perubahan aturan
+- 2026-11-13: Payload di output wajib ditulis lengkap dengan display.
 - 2026-11-13: Frekuensi didefinisikan ulang jadi "dipakai di berapa form".
 - 2026-11-13: Dibuat. Patient masuk hitungan; Organization & Location tidak (master data).
