@@ -54,7 +54,7 @@ Kolom **Nama Column BQ** sudah ditambahkan di `mapping/` (sebelum "Nama Column R
 | # | Temuan | Status |
 |---|---|---|
 | 9 | Nama data entry juga masuk ke `Encounter.participant` (type ADM admitter). Kolom Variables di baris `Encounter.participant.individual.display` diisi "Nama yang melakukan entry data" | done (mapping/) |
-| 8 | `data_entry_clerk_staff_id` kelihatannya ID, bukan nama, tapi di dictionary dipasang ke "Nama yang melakukan entry data" → `Practitioner.name.text`. Kalau memang ID, seharusnya jadi `Practitioner.identifier` kedua (kemungkinan system `nakes-his-number` yang sebelumnya dihapus), dan `Practitioner.name.text` tidak punya sumber data dari form | open (perlu konfirmasi) |
+| 8 | `data_entry_clerk_staff_id` kelihatannya ID, bukan nama, tapi di dictionary dipasang ke "Nama yang melakukan entry data" → `Practitioner.name.text`. Kalau memang ID, seharusnya jadi `Practitioner.identifier` kedua (kemungkinan system `nakes-his-number` yang sebelumnya dihapus), dan `Practitioner.name.text` tidak punya sumber data dari form | diasumsikan **nama** (sesuai mapping dictionary ke Practitioner.name.text). Belum terverifikasi: cek beberapa baris sampel di BQ untuk memastikan isinya nama, bukan ID |
 
 ## Form: Raffle
 
@@ -91,14 +91,15 @@ Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hard
 | R4 | Variabel "Puskesmas Pengampu" ditaruh di baris Organization.type (26). Seharusnya di baris Organization.name (27), karena yang diisi adalah nama puskesmas | done (mapping/) |
 | R5 | Baris 59: path `Organization.address.extension.url` di blok Location. Seharusnya `Location.address.extension.url` (sama dengan temuan Maternal Outcome #4) | done (mapping/) |
 | R6 | Baris 18–20 Patient.telecom: "phone" ditaruh di kolom CodeSystem baris `Patient.telecom`. Seharusnya ada baris `Patient.telecom.system` = phone. Baris 19–20 kolom Resource kosong | done (mapping/): baris 18 jadi `Patient.telecom.system` = phone; Resource baris 19–20 diisi Patient |
-| R7 | Baris 85: Encounter.class `FLD` tapi display "ambulatory". FLD = field, ambulatory = AMB. Pilih salah satu sesuai jenis kunjungan | done (mapping/): FLD dipertahankan (kunjungan posyandu = lapangan), display jadi "field". Ganti ke AMB kalau ternyata di faskes |
+| R7 | Baris 85: Encounter.class `FLD` tapi display "ambulatory". FLD = field, ambulatory = AMB. Pilih salah satu sesuai jenis kunjungan | done (mapping/): FLD dipertahankan (kunjungan posyandu = lapangan), display jadi "field". Disetujui user |
 | R8 | Baris 72: typo `EpisodeOfCare.Identifer` → `EpisodeOfCare.identifier` | done (mapping/) |
-| R9 | Baris 90: Encounter.participant mereferensi PractitionerRole, tapi tidak ada blok PractitionerRole di dictionary (yang ada hanya Practitioner) | done (mapping/): reference diganti ke Practitioner (bidan desa) |
+| R9 | Baris 90: Encounter.participant mereferensi PractitionerRole, tapi tidak ada blok PractitionerRole di dictionary (yang ada hanya Practitioner) | done (mapping/): reference diganti ke Practitioner (bidan desa). Disetujui user |
 | R10 | Baris 43, 45: placeholder "Gedung {Tempat yang melayani ANC}" ditaruh di kolom Display. Seharusnya di kolom Definisi Operasional | done (mapping/) |
 | R11 | Dictionary Raffle belum punya kolom `jumlah code` dan `jumlah instance` | done (mapping/) |
-| R12 | "Input Data" (Observation 385438008: Sigizi / E-pus PKD / E-pus) tidak punya kolom BQ. Apakah nilainya di-hardcode per deployment, atau ada kolom BQ yang belum masuk daftar? | open (perlu konfirmasi) |
+| R12 | "Input Data" (Observation 385438008: Sigizi / E-pus PKD / E-pus) tidak punya kolom BQ. **Catatan: lupa ditambahkan** ke daftar variabel/form | open: tambahkan kolom BQ untuk Input Data, lalu isi kolom Nama Column BQ di baris 122 |
 
 ## Log perubahan revisi
+- 2026-11-13: R7 & R9 disetujui. R12 dicatat sebagai lupa ditambahkan. MO #8 diasumsikan nama, tunggu verifikasi sampel BQ.
 - 2026-11-13: Raffle R1–R11 done di `mapping/kobo-data-dictionary-raffle.csv`. Tambah R12. Maternal Outcome: nama data entry diisi di Encounter.participant ADM (#9).
 - 2026-11-13: Tambah review form Raffle: tally BQ dan temuan R1–R11.
 - 2026-11-13: Tambah kolom Nama Column BQ dan tally variabel BQ (12 = 12). Tambah temuan #8.
