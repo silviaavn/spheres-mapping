@@ -59,7 +59,7 @@ Data Faskes Pengampu,Identitas Faskes,,,,,,,,,,,,Organization,Organization.activ
 ,,,,,,,,,,,,,Encounter,Encounter.subject.display,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Encounter,Encounter.participant.type.coding,ADM,admitter,http://terminology.hl7.org/CodeSystem/v3-ParticipationType,,,,,FALSE,,,,,,
 ,,,,,,,,,,,Practitioner= data entry,,Encounter,Encounter.participant.individual.reference,Reference ke resources Practitioner,,,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
+,,,,,,,Nama yang melakukan entry data,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,tanggal_pencatatan,,Tanggal Pencatatan,Tanggal Pencatatan,,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,,,FALSE,,,,,,

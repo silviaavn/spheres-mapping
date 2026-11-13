@@ -8,7 +8,9 @@ Terakhir diperbarui: 2026-11-13
 - Di tabel output, payload selalu ditulis dengan code pembeda **dan display-nya**.
 - Encounter yang muncul di 2 blok kamus (data utama + statusHistory) = **1 payload**.
 - **Patient dihitung.**
-- **Organization dan Location TIDAK dihitung**: keduanya diambil dari master data (lookup/reference), bukan dibuat dari form.
+- **Organization TIDAK dihitung**: diambil dari master data (lookup/reference), bukan dibuat dari form.
+- **Location**: tidak dihitung kalau hanya lookup ke master data (mis. Maternal Outcome). **Dihitung** kalau dibuat dari isian form (mis. Raffle: lokasi faskes + kecamatan + kelurahan).
+- Nama orang yang meng-input data (data entry) dimasukkan ke `Encounter.participant` dengan type `ADM` (admitter, http://terminology.hl7.org/CodeSystem/v3-ParticipationType). Tidak menambah payload karena masih di dalam Encounter.
 
 ## Determining code
 - Code yang menentukan identitas payload: `PractitionerRole.code`, `Condition.code`, `EpisodeOfCare.type`, `Observation.code`.
@@ -36,6 +38,7 @@ Terakhir diperbarui: 2026-11-13
 - `jumlah code` = isi 1 di setiap baris determining code / opsi coded.
 
 ## Log perubahan aturan
+- 2026-11-13: Location dihitung kalau dibuat dari form. Nama data entry → Encounter.participant ADM.
 - 2026-11-13: Konsep "code per submission" dihapus; yang dihitung hanya code di kamus.
 - 2026-11-13: Tambah checklist form baru (minta daftar variabel BQ, cek tally, isi kolom Nama Column BQ).
 - 2026-11-13: Payload di output wajib ditulis lengkap dengan display.
