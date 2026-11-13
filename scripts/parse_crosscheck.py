@@ -164,6 +164,53 @@ def load_rows(csv_path):
         return list(csv.DictReader(f))
 
 
+# Original data-dictionary columns to surface verbatim in the "raw CSV" view
+# (header text -> (json-safe field slug, display label)). The sheet's own
+# unnamed first column is dropped; everything else is kept so a row in the
+# dashboard matches the source CSV cell-for-cell.
+RAW_CSV_COLUMNS = [
+    ("Subcategories", "subcategories", "Subcategories"),
+    ("Masuk Kobo", "masuk_kobo", "Masuk Kobo"),
+    ("Sudah di buat Form Kobo", "sudah_dibuat_form_kobo", "Sudah di buat Form Kobo"),
+    ("Nama Column Raw", "nama_column_raw", "Nama Column Raw"),
+    ("Nama Variabel di Kobo", "nama_variabel_di_kobo", "Nama Variabel di Kobo"),
+    ("Variables", "variables", "Variables"),
+    ("Data Type (string, int, dsb)", "data_type", "Data Type"),
+    ("Format/Value (yyyy-mm-dd, dsb)", "format_value", "Format/Value"),
+    ("Value Name", "value_name", "Value Name"),
+    ("Definisi Operasional (logic)", "definisi_operasional", "Definisi Operasional"),
+    ("Agregat/Individu", "agregat_individu", "Agregat/Individu"),
+    ("Resource", "resource", "Resource"),
+    ("Path", "path", "Path"),
+    ("Code", "code", "Code"),
+    ("Display", "display", "Display"),
+    ("CodeSystem", "code_system", "CodeSystem"),
+    ("Mapping FHIR Status", "mapping_fhir_status", "Mapping FHIR Status"),
+    ("Sumber", "sumber_kobo", "Sumber (sheet)"),
+    ("Internal Review FHIR", "internal_review_fhir", "Internal Review FHIR"),
+    ("Validation", "validation", "Validation"),
+    ("Use in the dashboard", "use_in_dashboard", "Use in the dashboard"),
+]
+
+
+def build_raw_csv_rows(rows, form, source, form_slug):
+    """1 row per original CSV line, every mapped column kept verbatim, for
+    an unprocessed 'what the sheet actually says' table in the dashboard."""
+    out = []
+    for i, r in enumerate(rows):
+        row_out = {
+            "row_id": f"{form_slug}:{i + 2}",  # +2: 1-based + header row, matches the sheet's own row numbers
+            "row_number": i + 2,
+            "form": form,
+            "source": source,
+        }
+        for header, slug, _label in RAW_CSV_COLUMNS:
+            val = (r.get(header) or "").strip()
+            row_out[slug] = val
+        out.append(row_out)
+    return out
+
+
 def detect_variable_blocks(rows):
     """Return list of (start_idx, end_idx_exclusive, nv_label) for each
     'Nama Variabel di Kobo' block."""
@@ -533,6 +580,7 @@ def main():
     write_json("code_detail.json", code_detail_rows, edit_meta)
     write_json("concept_consolidation.json", concept_rows, edit_meta)
     write_json("code_systems.json", code_systems_rows, edit_meta)
+    write_json("raw_csv.json", build_raw_csv_rows(rows, args.form, args.source, args.form_slug), edit_meta)
 
     if needs_review_report:
         print("\nNEEDS REVIEW (not auto-counted as confirmed, re-run with --confirm id1,id2 once a human checks):")
