@@ -39,7 +39,7 @@ Kolom **Nama Column BQ** sudah ditambahkan di `mapping/` (sebelum "Nama Column R
 | Variabel BQ | Variabel Kobo | Path FHIR | Cocok? |
 |---|---|---|---|
 | data_entry_clerk_type | Siapa yang melakukan entry data? | PractitionerRole.code | ✅ |
-| data_entry_clerk_staff_id | Nama yang melakukan entry data | Practitioner.name.text | ⚠️ lihat #8 |
+| data_entry_clerk_staff_id | Nama yang melakukan entry data | Practitioner.name.text + Encounter.participant ADM display | ✅ (isinya nama, lihat #8) |
 | nik_yang_melakukan_entry_data | NIK yang melakukan entry data | Practitioner.identifier (nik) | ✅ |
 | nama_ibu | Nama Ibu | Patient.name.text | ✅ |
 | nik_ibu | NIK Ibu | Patient.identifier (nik) | ✅ |
@@ -54,7 +54,7 @@ Kolom **Nama Column BQ** sudah ditambahkan di `mapping/` (sebelum "Nama Column R
 | # | Temuan | Status |
 |---|---|---|
 | 9 | Nama data entry juga masuk ke `Encounter.participant` (type ADM admitter). Kolom Variables di baris `Encounter.participant.individual.display` diisi "Nama yang melakukan entry data" | done (mapping/) |
-| 8 | `data_entry_clerk_staff_id` kelihatannya ID, bukan nama, tapi di dictionary dipasang ke "Nama yang melakukan entry data" → `Practitioner.name.text`. Kalau memang ID, seharusnya jadi `Practitioner.identifier` kedua (kemungkinan system `nakes-his-number` yang sebelumnya dihapus), dan `Practitioner.name.text` tidak punya sumber data dari form | diasumsikan **nama** (sesuai mapping dictionary ke Practitioner.name.text). Belum terverifikasi: cek beberapa baris sampel di BQ untuk memastikan isinya nama, bukan ID |
+| 8 | `data_entry_clerk_staff_id` kelihatannya ID, bukan nama | done: dikonfirmasi isinya **nama**. Mapping ke `Practitioner.name.text` sudah benar, dan kolom yang sama juga dipakai untuk `Encounter.participant.individual.display` (ADM) |
 
 ## Form: Raffle
 
@@ -62,7 +62,7 @@ Sumber: Kobo - Data Dictionary - Kobo Raffle (nomor baris = baris CSV asli, head
 
 ### Tally variabel BQ vs dictionary
 
-**11 variabel BQ = 11 variabel Kobo** ✅ (setelah revisi R1, R2). Input Data belum punya kolom BQ (R12).
+**12 variabel BQ = 12 variabel Kobo** ✅ (setelah revisi R1, R2, R12).
 
 | Variabel BQ | Variabel Kobo (baris) | Path FHIR | Cocok? |
 |---|---|---|---|
@@ -77,7 +77,7 @@ Sumber: Kobo - Data Dictionary - Kobo Raffle (nomor baris = baris CSV asli, head
 | nomor_telepon | Nomor Telepon (18) | Patient.telecom | ✅ |
 | tanggal_kunjungan | Tanggal Kunjungan Pelayanan (92) | Encounter.period.start | ✅ |
 | keterangan | Keterangan (106) | Condition.note | ✅ |
-| – | Input Data (122) | Observation 385438008 | ⚠️ R12 |
+| input_data 🆕 | Input Data (122) | Observation 385438008 | ✅ (kolom BQ baru, lihat Catatan pipeline) |
 
 Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hardcode sesuai deployment.
 
@@ -91,14 +91,29 @@ Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hard
 | R4 | Variabel "Puskesmas Pengampu" ditaruh di baris Organization.type (26). Seharusnya di baris Organization.name (27), karena yang diisi adalah nama puskesmas | done (mapping/) |
 | R5 | Baris 59: path `Organization.address.extension.url` di blok Location. Seharusnya `Location.address.extension.url` (sama dengan temuan Maternal Outcome #4) | done (mapping/) |
 | R6 | Baris 18–20 Patient.telecom: "phone" ditaruh di kolom CodeSystem baris `Patient.telecom`. Seharusnya ada baris `Patient.telecom.system` = phone. Baris 19–20 kolom Resource kosong | done (mapping/): baris 18 jadi `Patient.telecom.system` = phone; Resource baris 19–20 diisi Patient |
-| R7 | Baris 85: Encounter.class `FLD` tapi display "ambulatory". FLD = field, ambulatory = AMB. Pilih salah satu sesuai jenis kunjungan | done (mapping/): FLD dipertahankan (kunjungan posyandu = lapangan), display jadi "field". Disetujui user |
+| R7 | Baris 85: Encounter.class `FLD` tapi display "ambulatory". FLD = field, ambulatory = AMB. Pilih salah satu sesuai jenis kunjungan | done (mapping/): FLD dipertahankan (kunjungan posyandu = lapangan), display jadi "field". Disetujui user — **disetujui** |
 | R8 | Baris 72: typo `EpisodeOfCare.Identifer` → `EpisodeOfCare.identifier` | done (mapping/) |
-| R9 | Baris 90: Encounter.participant mereferensi PractitionerRole, tapi tidak ada blok PractitionerRole di dictionary (yang ada hanya Practitioner) | done (mapping/): reference diganti ke Practitioner (bidan desa). Disetujui user |
+| R9 | Baris 90: Encounter.participant mereferensi PractitionerRole, tapi tidak ada blok PractitionerRole di dictionary (yang ada hanya Practitioner) | done (mapping/): reference diganti ke Practitioner (bidan desa). Disetujui user — **disetujui** |
 | R10 | Baris 43, 45: placeholder "Gedung {Tempat yang melayani ANC}" ditaruh di kolom Display. Seharusnya di kolom Definisi Operasional | done (mapping/) |
 | R11 | Dictionary Raffle belum punya kolom `jumlah code` dan `jumlah instance` | done (mapping/) |
-| R12 | "Input Data" (Observation 385438008: Sigizi / E-pus PKD / E-pus) tidak punya kolom BQ. **Catatan: lupa ditambahkan** ke daftar variabel/form | open: tambahkan kolom BQ untuk Input Data, lalu isi kolom Nama Column BQ di baris 122 |
+| R12 | "Input Data" (Observation 385438008: Sigizi / E-pus PKD / E-pus) tidak punya kolom BQ | done: lupa ditambahkan. Kolom BQ `input_data` dibuat (nama sementara, ganti kalau nama di pipeline beda). Lihat Catatan pipeline |
+
+## Catatan pipeline (perlu update)
+
+Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR converter).
+
+| # | Form | Perubahan | Yang perlu di-update | Status |
+|---|---|---|---|---|
+| P1 | Raffle | Kolom BQ baru `input_data` → Observation 385438008 Source of information, value SP000776 Sigizi / SP000777 E-pus PKD / SP000778 E-pus | Ingestion: tambah kolom `input_data`. Converter: buat Observation dari kolom ini | open |
+| P2 | Raffle | `nama_data_entry` → `Encounter.participant` type ADM admitter, `individual.display` | Converter | open |
+| P3 | Raffle | Location dibuat dari form (`lokasi_faskes`, `kecamatan`, `kelurahan`), bukan lookup | Converter | open |
+| P4 | Raffle | Condition.code SP000776 → **SP001135** Presensi Posyandu | Converter | open |
+| P5 | Raffle | Encounter.class display "field"; participant ATND reference ke Practitioner (bidan desa) | Converter | open |
+| P6 | Maternal Outcome | `data_entry_clerk_staff_id` (isinya nama) juga dipakai untuk `Encounter.participant` ADM `individual.display` | Converter | open |
+| P7 | Maternal Outcome | Practitioner.identifier pakai system nik (use / system / value), `nakes-his-number` dihapus | Converter | open |
 
 ## Log perubahan revisi
+- 2026-11-13: R12 done (kolom BQ `input_data`). MO #8 done (staff_id = nama). R7, R9 disetujui. Tambah bagian Catatan pipeline (P1–P7).
 - 2026-11-13: R7 & R9 disetujui. R12 dicatat sebagai lupa ditambahkan. MO #8 diasumsikan nama, tunggu verifikasi sampel BQ.
 - 2026-11-13: Raffle R1–R11 done di `mapping/kobo-data-dictionary-raffle.csv`. Tambah R12. Maternal Outcome: nama data entry diisi di Encounter.participant ADM (#9).
 - 2026-11-13: Tambah review form Raffle: tally BQ dan temuan R1–R11.

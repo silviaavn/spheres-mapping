@@ -121,7 +121,7 @@ Data Nakes,Identitas Nakes,nama_bidan_desa,,Nama Bidan Desa,string,,,,Practition
 ,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,,,,,,,1
 ,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,,,,,,,
-,,,,Input Data,,,,,Observation,Observation.code.coding,385438008,Source of information,http://snomed.info/sct,,,,,,,,1,
+,,input_data,,Input Data,,,,,Observation,Observation.code.coding,385438008,Source of information,http://snomed.info/sct,,,,,,,,1,
 ,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000776,Sigizi,http://terminology.kemkes.go.id/sp,,,,,,,,1,
 ,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000777,E-pus PKD,http://terminology.kemkes.go.id/sp,,,,,,,,1,
 ,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000778,E-pus,http://terminology.kemkes.go.id/sp,,,,,,,,1,
