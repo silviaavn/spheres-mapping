@@ -54,15 +54,15 @@ down here so the next form is processed the same way.
   data (e.g. by Puskesmas name), not created fresh per submission. They still
   appear in the breakdown/instance tables (tagged `master_data`) for
   transparency, but are excluded from every instance/resource-type count.
-- **Structural/boilerplate codes are excluded from the "meaningful codes"
-  count.** `active`, `identifier`, `country`, `status`, `Observation.category`,
-  and `Encounter.participant` are structural scaffolding, not information the
-  variable is actually collecting — *unless* the row's own **Value Name**
-  column is populated, which signals it's one of several genuine selectable
-  answer options rather than a fixed constant (e.g. `Observation.status`
-  rows that are literally the answer being recorded, not a hardcoded
-  `"final"`). Excluded rows are kept in `code_detail` with `include: false`
-  and an `exclude_reason`, never silently dropped.
+- **Only identity/answer codes count as "meaningful".** A coded row is
+  counted only if its Path is `<...>.code.coding` (what the Observation /
+  Condition / PractitionerRole is), `<...>.valueCodeableConcept.coding` (the
+  coded answer), or a resource-level `<Resource>.type.coding` (e.g.
+  EpisodeOfCare ANC/PNC). Everything else -- status, active, identifier,
+  country, class, category, gender, diagnosis.use, participant, ... -- is
+  structural and kept in `code_detail` with `include: false` and an
+  `exclude_reason`, never silently dropped. For Maternal Outcome this gives
+  14 unique codes across 5 systems.
 
 ## Dashboard
 

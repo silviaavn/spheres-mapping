@@ -21,26 +21,6 @@
       "n_uses": 2
     },
     {
-      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-      "category": "HL7 Terminology",
-      "n_uses": 1
-    },
-    {
-      "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-      "category": "HL7 Terminology",
-      "n_uses": 1
-    },
-    {
-      "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-      "category": "HL7 Terminology",
-      "n_uses": 1
-    },
-    {
-      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "category": "HL7 Terminology",
-      "n_uses": 1
-    },
-    {
       "system": "http://terminology.kemkes.go.id/CodeSystem/location-type",
       "category": "SatuSehat/Kemenkes",
       "n_uses": 1
@@ -54,7 +34,7 @@
     },
     {
       "label": "Diproses (UTC)",
-      "value": "2026-11-13T07:55:21Z"
+      "value": "2026-11-13T08:13:48Z"
     }
   ]
 }

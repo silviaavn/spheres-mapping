@@ -85,6 +85,21 @@ STRUCTURAL_PATH_RULES = [
 ]
 
 
+def is_identity_or_answer_path(path):
+    """True if a coded row says WHAT the instance is or WHAT the answer is --
+    the only codes counted as "meaningful":
+      - <...>.code.coding                  (Observation/Condition/PractitionerRole code)
+      - <...>.valueCodeableConcept.coding  (coded answer)
+      - <Resource>.type.coding             (resource-level type, e.g. EpisodeOfCare ANC/PNC;
+                                            nested ones like Encounter.participant.type are NOT)
+    Everything else (status, class, category, gender, diagnosis.use, ...) is
+    structural/boilerplate for this purpose."""
+    if path.endswith(".code.coding") or path.endswith(".valueCodeableConcept.coding"):
+        return True
+    parts = path.split(".")
+    return len(parts) == 3 and parts[1] == "type" and parts[2] == "coding"
+
+
 def classify_structural(path):
     """Return an exclude_reason if `path` matches a known structural/
     boilerplate FHIR field (not the actual content of a survey answer), or
@@ -357,15 +372,13 @@ def extract_code_rows(rows, row_indices, concept_id, concept_label, resource, fo
         if not code or is_placeholder_code(code) or is_reference_row(code):
             continue
         path = (r.get("Path") or "").strip()
-        has_value_name = bool((r.get("Value Name") or "").strip())
 
         include, exclude_reason = True, ""
         if master_data:
             include, exclude_reason = False, "Resource ini master data (dicocokkan ke record existing), bukan instance baru per submission."
-        elif not has_value_name:
-            reason = classify_structural(path)
-            if reason:
-                include, exclude_reason = False, reason
+        elif not is_identity_or_answer_path(path):
+            reason = classify_structural(path) or "Kode struktural/boilerplate (bukan kode identitas instance atau jawaban)."
+            include, exclude_reason = False, reason
 
         out.append({
             "form": form,

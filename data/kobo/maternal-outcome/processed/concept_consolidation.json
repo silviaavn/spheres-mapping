@@ -139,14 +139,12 @@
         }
       ],
       "n_path_rows": 5,
-      "unique_codes": [
-        "female"
-      ],
+      "unique_codes": [],
       "needs_review": false,
       "review_reason": "",
       "resources_used": "Patient",
-      "unique_codes_display": "female",
-      "n_unique_codes": 1,
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
       "forms_display": "Maternal Outcome (Kobo)",
       "sources_display": "Kobo",
       "review_flag": "OK"
@@ -257,14 +255,12 @@
         }
       ],
       "n_path_rows": 17,
-      "unique_codes": [
-        "AD"
-      ],
+      "unique_codes": [],
       "needs_review": false,
       "review_reason": "",
       "resources_used": "Encounter",
-      "unique_codes_display": "AD",
-      "n_unique_codes": 1,
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
       "forms_display": "Maternal Outcome (Kobo)",
       "sources_display": "Kobo",
       "review_flag": "OK"
@@ -288,14 +284,12 @@
         }
       ],
       "n_path_rows": 8,
-      "unique_codes": [
-        "VR"
-      ],
+      "unique_codes": [],
       "needs_review": false,
       "review_reason": "",
       "resources_used": "Encounter",
-      "unique_codes_display": "VR",
-      "n_unique_codes": 1,
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
       "forms_display": "Maternal Outcome (Kobo)",
       "sources_display": "Kobo",
       "review_flag": "OK"
@@ -320,15 +314,13 @@
       ],
       "n_path_rows": 8,
       "unique_codes": [
-        "SP000738",
-        "active",
-        "encounter-diagnosis"
+        "SP000738"
       ],
       "needs_review": false,
       "review_reason": "",
       "resources_used": "Condition",
-      "unique_codes_display": "SP000738, active, encounter-diagnosis",
-      "n_unique_codes": 3,
+      "unique_codes_display": "SP000738",
+      "n_unique_codes": 1,
       "forms_display": "Maternal Outcome (Kobo)",
       "sources_display": "Kobo",
       "review_flag": "OK"
@@ -538,7 +530,7 @@
     },
     {
       "label": "Diproses (UTC)",
-      "value": "2026-11-13T07:55:21Z"
+      "value": "2026-11-13T08:13:48Z"
     }
   ]
 }
