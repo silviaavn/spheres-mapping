@@ -9,10 +9,10 @@ Belum: ANC, PNC, form lain
 
 ## Ringkasan semua form
 
-| Form | Payload | Jenis resource | Code di kamus | Code per submission |
-|---|---|---|---|---|
-| Maternal Outcome | 12 | 7 | 14 | 10 |
-| **Total unik (semua form)** | **12** | **7** | **14** | – |
+| Form | Payload | Jenis resource | Code |
+|---|---|---|---|
+| Maternal Outcome | 12 | 7 | 14 |
+| **Total unik (semua form)** | **12** | **7** | **14** |
 
 ---
 
@@ -83,6 +83,7 @@ Belum: ANC, PNC, form lain
 ---
 
 ## Log perubahan output
+- 2026-11-13: Kolom "Code per submission" dihapus (tidak dipakai).
 - 2026-11-13: Tabel frekuensi payload diberi kolom Code pembeda, Display, dan Variabel Kobo.
 - 2026-11-13: Dicek ulang dengan Kobo_3. Angka tidak berubah (12 payload, 14 code). Display SP000396/SP000397 dibetulkan.
 - 2026-11-13: File dipisah jadi `aturan.md`, `revisi.md`, `output.md`.

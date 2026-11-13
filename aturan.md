@@ -14,7 +14,7 @@ Terakhir diperbarui: 2026-11-13
 - Code yang menentukan identitas payload: `PractitionerRole.code`, `Condition.code`, `EpisodeOfCare.type`, `Observation.code`.
 - Ditambah pilihan jawaban coded (`Observation.valueCodeableConcept`) dan opsi role PractitionerRole.
 - Code tetap HL7 (status, category, class, participant.type, diagnosis.use, clinicalStatus, organization-type, physicalType) **tidak dihitung**.
-- Bedakan: **code di kamus** (semua opsi) vs **code per submission** (hanya opsi yang terpilih).
+- Semua opsi coded di kamus dihitung (bukan hanya yang terpilih saat submission).
 
 ## Frekuensi
 - **Frekuensi payload** = di berapa form payload yang sama (resource + determining code) dipakai.
@@ -36,6 +36,7 @@ Terakhir diperbarui: 2026-11-13
 - `jumlah code` = isi 1 di setiap baris determining code / opsi coded.
 
 ## Log perubahan aturan
+- 2026-11-13: Konsep "code per submission" dihapus; yang dihitung hanya code di kamus.
 - 2026-11-13: Tambah checklist form baru (minta daftar variabel BQ, cek tally, isi kolom Nama Column BQ).
 - 2026-11-13: Payload di output wajib ditulis lengkap dengan display.
 - 2026-11-13: Frekuensi didefinisikan ulang jadi "dipakai di berapa form".
