@@ -67,6 +67,7 @@ Data Faskes,Identitas Faskes,,,,,,,,Organization,Organization.active,true,Tidak 
 ,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,
 Data Nakes,Identitas Nakes,nama_bidan_desa,,Nama Bidan Desa,string,,,,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,1
+Data Pengentry,Identitas Data Entry,nama_data_entry,,Nama Data Entry,string,,,,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,1
 ,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,
 ,Episode Kehamilan,,,,,,,"dilakukan pencarian EpisodeOfCare, jika tidak ada maka buat di tanggal saat ini (karena tidak ada pertanyaan spesifik di kobo ini)",EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,,,,,,,1
