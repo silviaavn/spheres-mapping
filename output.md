@@ -12,11 +12,13 @@ Belum: ANC, PNC, form lain
 
 ## Ringkasan semua form
 
-| Form | Payload | Jenis resource | Code |
-|---|---|---|---|
-| Maternal Outcome | 12 | 7 | 14 |
-| Raffle | 7 | 7 | 6 |
-| **Total unik (semua form)** | **15** | **8** | **19** |
+| Form | Payload | Code |
+|---|---|---|
+| Maternal Outcome | 12 | 14 |
+| Raffle | 7 | 6 |
+| **Total (non-unik)** | **19** | **20** |
+| **Total unik** | **15** | **19** |
+| Selisih (dipakai ulang antar form) | 4 | 1 |
 
 ---
 
@@ -79,40 +81,29 @@ Variabel Kobo / BQ per payload: lihat tabel tally BQ di `revisi.md`.
 
 ---
 
-## Form: Maternal Outcome — payload per resource
+## Payload per resource (semua form)
 
-| Resource | Jumlah |
-|---|---|
-| Observation | 5 |
-| EpisodeOfCare | 2 (status finished, penutup episode di hari ke-43) |
-| PractitionerRole | 1 |
-| Practitioner | 1 |
-| Patient | 1 |
-| Encounter | 1 |
-| Condition | 1 |
-| **Total** | **12** |
-| ~~Organization~~ | master data, tidak dihitung |
-| ~~Location~~ | master data, tidak dihitung |
+| Resource | Maternal Outcome | Raffle | Total (non-unik) | Total unik | Pembeda (unik) |
+|---|---|---|---|---|---|
+| Observation | 5 | 1 | 6 | 6 | SP000389, 93857-1, 81956-5, LT000005, 79378-6, 385438008 |
+| EpisodeOfCare | 2 | 1 | 3 | 2 | ANC, PNC |
+| Condition | 1 | 1 | 2 | 2 | SP000738, SP001135 |
+| Patient | 1 | 1 | 2 | 1 | – |
+| Practitioner | 1 | 1 | 2 | 1 | – |
+| Encounter | 1 | 1 | 2 | 1 | – |
+| PractitionerRole | 1 | – | 1 | 1 | – |
+| Location | – | 1 | 1 | 1 | – |
+| **Total** | **12** | **7** | **19** | **15** | |
 
-## Form: Raffle — payload per resource
-
-| Resource | Jumlah | Pembeda / catatan |
-|---|---|---|
-| Patient | 1 | Nama Ibu, NIK Ibu, Nomor Telepon |
-| Location | 1 | Lokasi/Fasilitas Kesehatan + Kecamatan + Kelurahan (dibuat dari form) |
-| Practitioner | 1 | Nama Bidan Desa |
-| EpisodeOfCare | 1 | ANC (dicari dulu; kalau tidak ada baru dibuat) |
-| Encounter | 1 | Tanggal Kunjungan Pelayanan; Nama Data Entry di participant ADM (2 blok kamus = 1 payload) |
-| Condition | 1 | SP001135 Presensi Posyandu (+ Keterangan di `.note`) |
-| Observation | 1 | 385438008 Source of information (Input Data) |
-| **Total** | **7** | |
-| ~~Organization~~ | – | master data, tidak dihitung |
-
-Code Raffle (6): ANC, SP001135, 385438008, SP000776 / SP000777 / SP000778 (value Input Data).
+Catatan:
+- Organization tidak dihitung di semua form (master data). Location di Maternal Outcome juga tidak dihitung (lookup), tapi di Raffle dihitung karena dibuat dari form.
+- EpisodeOfCare: Maternal Outcome = ANC & PNC ditutup (finished, hari ke-43); Raffle = ANC dicari dulu, kalau tidak ada baru dibuat.
+- Encounter muncul di 2 blok kamus (data utama + statusHistory) = 1 payload.
 
 ---
 
 ## Log perubahan output
+- 2026-11-13: Ringkasan diberi Total non-unik vs unik; kolom Jenis resource dihapus. Section payload per form diganti jadi satu tabel "Payload per resource (semua form)".
 - 2026-11-13: Raffle direvisi: Location dibuat dari form (payload jadi 7), Condition.code jadi SP001135. Total unik lintas form jadi 15 payload, 8 jenis resource, 19 code.
 - 2026-11-13: Tambah form Raffle (6 payload, 6 baris code). Total unik lintas form jadi 14 payload, 18 code. Frekuensi Practitioner, Patient, Encounter, EpisodeOfCare ANC, dan code ANC naik jadi 2.
 - 2026-11-13: Kolom "Code per submission" dihapus (tidak dipakai).
