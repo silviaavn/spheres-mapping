@@ -1,0 +1,544 @@
+{
+  "rows": [
+    {
+      "concept_id": "data_entry_clerk_type",
+      "canonical_label": "Siapa yang melakukan entry data?",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "PractitionerRole",
+          "n_path_rows": 3
+        }
+      ],
+      "n_path_rows": 3,
+      "unique_codes": [
+        "223366009",
+        "SP000396",
+        "SP000397"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "PractitionerRole",
+      "unique_codes_display": "223366009, SP000396, SP000397",
+      "n_unique_codes": 3,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "data_entry_clerk_staff_id",
+      "canonical_label": "Nama yang melakukan entry data",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Practitioner",
+          "n_path_rows": 1
+        }
+      ],
+      "n_path_rows": 1,
+      "unique_codes": [],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Practitioner",
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "nik_yang_melakukan_entry_data",
+      "canonical_label": "NIK yang melakukan entry data",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Practitioner",
+          "n_path_rows": 2
+        }
+      ],
+      "n_path_rows": 2,
+      "unique_codes": [],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Practitioner",
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "nama_ibu",
+      "canonical_label": "Nama Ibu",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Patient",
+          "n_path_rows": 1
+        }
+      ],
+      "n_path_rows": 1,
+      "unique_codes": [],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Patient",
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "nik_ibu",
+      "canonical_label": "NIK Ibu",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Patient",
+          "n_path_rows": 5
+        }
+      ],
+      "n_path_rows": 5,
+      "unique_codes": [
+        "female"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Patient",
+      "unique_codes_display": "female",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "puskesmas_name",
+      "canonical_label": "Puskesmas",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Organization",
+          "n_path_rows": 3
+        }
+      ],
+      "n_path_rows": 3,
+      "unique_codes": [],
+      "needs_review": false,
+      "review_reason": "Dicocokkan ke master data existing, kodenya tidak dihitung.",
+      "resources_used": "Organization",
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "MASTER DATA"
+    },
+    {
+      "concept_id": "_derived_organization",
+      "canonical_label": "(derived, tidak ada variabel Kobo langsung)",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Organization",
+          "n_path_rows": 3
+        }
+      ],
+      "n_path_rows": 3,
+      "unique_codes": [],
+      "needs_review": false,
+      "review_reason": "Dicocokkan ke master data existing, kodenya tidak dihitung.",
+      "resources_used": "Organization",
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "MASTER DATA"
+    },
+    {
+      "concept_id": "_derived_location",
+      "canonical_label": "(derived, tidak ada variabel Kobo langsung)",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Location",
+          "n_path_rows": 24
+        }
+      ],
+      "n_path_rows": 24,
+      "unique_codes": [],
+      "needs_review": false,
+      "review_reason": "Dicocokkan ke master data existing, kodenya tidak dihitung.",
+      "resources_used": "Location",
+      "unique_codes_display": "–",
+      "n_unique_codes": 0,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "MASTER DATA"
+    },
+    {
+      "concept_id": "tanggal_pencatatan",
+      "canonical_label": "Tanggal Pencatatan",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Encounter",
+          "n_path_rows": 17
+        }
+      ],
+      "n_path_rows": 17,
+      "unique_codes": [
+        "AD"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Encounter",
+      "unique_codes_display": "AD",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "_derived_encounter",
+      "canonical_label": "(derived, tidak ada variabel Kobo langsung)",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Encounter",
+          "n_path_rows": 8
+        }
+      ],
+      "n_path_rows": 8,
+      "unique_codes": [
+        "VR"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Encounter",
+      "unique_codes_display": "VR",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "_derived_condition",
+      "canonical_label": "(derived, tidak ada variabel Kobo langsung)",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Condition",
+          "n_path_rows": 8
+        }
+      ],
+      "n_path_rows": 8,
+      "unique_codes": [
+        "SP000738",
+        "active",
+        "encounter-diagnosis"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Condition",
+      "unique_codes_display": "SP000738, active, encounter-diagnosis",
+      "n_unique_codes": 3,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "_derived_episodeofcare",
+      "canonical_label": "(derived, tidak ada variabel Kobo langsung)",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "EpisodeOfCare",
+          "n_path_rows": 2
+        },
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "EpisodeOfCare",
+          "n_path_rows": 2
+        }
+      ],
+      "n_path_rows": 4,
+      "unique_codes": [
+        "ANC",
+        "PNC"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "EpisodeOfCare",
+      "unique_codes_display": "ANC, PNC",
+      "n_unique_codes": 2,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "outcome_001",
+      "canonical_label": "Keadaan Ibu",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Observation",
+          "n_path_rows": 13
+        }
+      ],
+      "n_path_rows": 13,
+      "unique_codes": [
+        "102514002",
+        "39104002",
+        "419099009",
+        "SP000389"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Observation",
+      "unique_codes_display": "102514002, 39104002, 419099009, SP000389",
+      "n_unique_codes": 4,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "delivery_date",
+      "canonical_label": "Tanggal Persalinan",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Observation",
+          "n_path_rows": 11
+        }
+      ],
+      "n_path_rows": 11,
+      "unique_codes": [
+        "93857-1"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Observation",
+      "unique_codes_display": "93857-1",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "tanggal_meninggal",
+      "canonical_label": "Tanggal Meninggal",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Observation",
+          "n_path_rows": 12
+        }
+      ],
+      "n_path_rows": 12,
+      "unique_codes": [
+        "81956-5"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Observation",
+      "unique_codes_display": "81956-5",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "tempat_meninggal",
+      "canonical_label": "Tempat Meninggal",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Observation",
+          "n_path_rows": 12
+        }
+      ],
+      "n_path_rows": 12,
+      "unique_codes": [
+        "LT000005"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Observation",
+      "unique_codes_display": "LT000005",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    },
+    {
+      "concept_id": "sebab_meninggal",
+      "canonical_label": "Penyebab Meninggal",
+      "n_forms": 1,
+      "forms": [
+        "Maternal Outcome (Kobo)"
+      ],
+      "sources": [
+        "Kobo"
+      ],
+      "variants": [
+        {
+          "form": "Maternal Outcome (Kobo)",
+          "source": "Kobo",
+          "resource": "Observation",
+          "n_path_rows": 12
+        }
+      ],
+      "n_path_rows": 12,
+      "unique_codes": [
+        "79378-6"
+      ],
+      "needs_review": false,
+      "review_reason": "",
+      "resources_used": "Observation",
+      "unique_codes_display": "79378-6",
+      "n_unique_codes": 1,
+      "forms_display": "Maternal Outcome (Kobo)",
+      "sources_display": "Kobo",
+      "review_flag": "OK"
+    }
+  ],
+  "meta": [
+    {
+      "label": "Dihasilkan oleh",
+      "value": "scripts/parse_crosscheck.py",
+      "type": "code"
+    },
+    {
+      "label": "Diproses (UTC)",
+      "value": "2026-11-13T07:43:16Z"
+    }
+  ]
+}

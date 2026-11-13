@@ -1,0 +1,105 @@
+{
+  "rows": [
+    {
+      "resource": "PractitionerRole",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 3,
+      "n_instances": 1,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "resource": "Practitioner",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 3,
+      "n_instances": 1,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "resource": "Patient",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 6,
+      "n_instances": 1,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "resource": "Organization",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 6,
+      "n_instances": 1,
+      "confidence": "master_data",
+      "note": "Master data (referensi ke record existing), tidak dihitung sebagai resource/instance baru dalam total.",
+      "counted": false
+    },
+    {
+      "resource": "Location",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 24,
+      "n_instances": 1,
+      "confidence": "master_data",
+      "note": "Master data (referensi ke record existing), tidak dihitung sebagai resource/instance baru dalam total.",
+      "counted": false
+    },
+    {
+      "resource": "Encounter",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 25,
+      "n_instances": 1,
+      "confidence": "auto",
+      "note": "3 blok anchor terpisah untuk resource ini di sheet, tidak ada field yang membedakan nilainya -> digabung jadi 1 instance, tapi ini tebakan heuristik, perlu konfirmasi manual. [Dikonfirmasi manual: dianggap 1 instance.]",
+      "counted": true
+    },
+    {
+      "resource": "Condition",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 8,
+      "n_instances": 1,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "resource": "EpisodeOfCare",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 4,
+      "n_instances": 2,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh EpisodeOfCare.type.coding = ANC). / Instance terpisah (dibedakan oleh EpisodeOfCare.type.coding = PNC).",
+      "counted": true
+    },
+    {
+      "resource": "Observation",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_path_rows": 60,
+      "n_instances": 5,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh Observation.category.coding = vital-signs). / Instance terpisah (dibedakan oleh Observation.category.coding = survey). / Instance terpisah (dibedakan oleh Observation.category.coding = survey). / Instance terpisah (dibedakan oleh Observation.category.coding = survey). / Instance terpisah (dibedakan oleh Observation.category.coding = survey).",
+      "counted": true
+    }
+  ],
+  "meta": [
+    {
+      "label": "Dihasilkan oleh",
+      "value": "scripts/parse_crosscheck.py",
+      "type": "code"
+    },
+    {
+      "label": "Diproses (UTC)",
+      "value": "2026-11-13T07:43:16Z"
+    }
+  ]
+}

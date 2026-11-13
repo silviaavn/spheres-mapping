@@ -1,0 +1,205 @@
+{
+  "rows": [
+    {
+      "instance_id": "maternal-outcome:PractitionerRole:1",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "PractitionerRole",
+      "concept_ids": [
+        "data_entry_clerk_type"
+      ],
+      "concept_labels_display": "Siapa yang melakukan entry data?",
+      "n_path_rows": 3,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Practitioner:2",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Practitioner",
+      "concept_ids": [
+        "data_entry_clerk_staff_id",
+        "nik_yang_melakukan_entry_data"
+      ],
+      "concept_labels_display": "Nama yang melakukan entry data, NIK yang melakukan entry data",
+      "n_path_rows": 3,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Patient:3",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Patient",
+      "concept_ids": [
+        "nama_ibu",
+        "nik_ibu"
+      ],
+      "concept_labels_display": "Nama Ibu, NIK Ibu",
+      "n_path_rows": 6,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Organization:4",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Organization",
+      "concept_ids": [
+        "puskesmas_name"
+      ],
+      "concept_labels_display": "Puskesmas",
+      "n_path_rows": 6,
+      "confidence": "master_data",
+      "note": "Master data (dicocokkan ke record existing berdasarkan nama/identitas), tidak dihitung sebagai instance baru per submission.",
+      "counted": false
+    },
+    {
+      "instance_id": "maternal-outcome:Location:5",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Location",
+      "concept_ids": [],
+      "concept_labels_display": "(tidak terhubung ke variabel Kobo spesifik)",
+      "n_path_rows": 24,
+      "confidence": "master_data",
+      "note": "Master data (dicocokkan ke record existing berdasarkan nama/identitas), tidak dihitung sebagai instance baru per submission.",
+      "counted": false
+    },
+    {
+      "instance_id": "maternal-outcome:Encounter:6",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Encounter",
+      "concept_ids": [
+        "tanggal_pencatatan"
+      ],
+      "concept_labels_display": "Tanggal Pencatatan",
+      "n_path_rows": 25,
+      "confidence": "confirmed",
+      "note": "3 blok anchor terpisah untuk resource ini di sheet, tidak ada field yang membedakan nilainya -> digabung jadi 1 instance, tapi ini tebakan heuristik, perlu konfirmasi manual. [Dikonfirmasi manual: dianggap 1 instance.]",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Condition:7",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Condition",
+      "concept_ids": [],
+      "concept_labels_display": "(tidak terhubung ke variabel Kobo spesifik)",
+      "n_path_rows": 8,
+      "confidence": "auto",
+      "note": "",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:EpisodeOfCare:8",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "EpisodeOfCare",
+      "concept_ids": [],
+      "concept_labels_display": "(tidak terhubung ke variabel Kobo spesifik)",
+      "n_path_rows": 2,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh EpisodeOfCare.type.coding = ANC).",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:EpisodeOfCare:9",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "EpisodeOfCare",
+      "concept_ids": [],
+      "concept_labels_display": "(tidak terhubung ke variabel Kobo spesifik)",
+      "n_path_rows": 2,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh EpisodeOfCare.type.coding = PNC).",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Observation:10",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Observation",
+      "concept_ids": [
+        "outcome_001"
+      ],
+      "concept_labels_display": "Keadaan Ibu",
+      "n_path_rows": 13,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh Observation.category.coding = vital-signs).",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Observation:11",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Observation",
+      "concept_ids": [
+        "delivery_date"
+      ],
+      "concept_labels_display": "Tanggal Persalinan",
+      "n_path_rows": 11,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh Observation.category.coding = survey).",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Observation:12",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Observation",
+      "concept_ids": [
+        "tanggal_meninggal"
+      ],
+      "concept_labels_display": "Tanggal Meninggal",
+      "n_path_rows": 12,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh Observation.category.coding = survey).",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Observation:13",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Observation",
+      "concept_ids": [
+        "tempat_meninggal"
+      ],
+      "concept_labels_display": "Tempat Meninggal",
+      "n_path_rows": 12,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh Observation.category.coding = survey).",
+      "counted": true
+    },
+    {
+      "instance_id": "maternal-outcome:Observation:14",
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "resource": "Observation",
+      "concept_ids": [
+        "sebab_meninggal"
+      ],
+      "concept_labels_display": "Penyebab Meninggal",
+      "n_path_rows": 12,
+      "confidence": "auto",
+      "note": "Instance terpisah (dibedakan oleh Observation.category.coding = survey).",
+      "counted": true
+    }
+  ],
+  "meta": [
+    {
+      "label": "Dihasilkan oleh",
+      "value": "scripts/parse_crosscheck.py",
+      "type": "code"
+    },
+    {
+      "label": "Diproses (UTC)",
+      "value": "2026-11-13T07:43:16Z"
+    }
+  ]
+}

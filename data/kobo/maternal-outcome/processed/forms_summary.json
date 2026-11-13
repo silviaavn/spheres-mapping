@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "form": "Maternal Outcome (Kobo)",
+      "source": "Kobo",
+      "n_variables": 12,
+      "n_resource_types": 7,
+      "n_instances_total": 12,
+      "n_path_rows_total": 109,
+      "n_unique_codes": 19,
+      "n_systems": 9,
+      "n_master_data_resources": 2,
+      "status": "ok",
+      "n_flags": 0
+    }
+  ],
+  "meta": [
+    {
+      "label": "Dihasilkan oleh",
+      "value": "scripts/parse_crosscheck.py",
+      "type": "code"
+    },
+    {
+      "label": "Diproses (UTC)",
+      "value": "2026-11-13T07:43:16Z"
+    }
+  ]
+}

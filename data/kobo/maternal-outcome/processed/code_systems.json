@@ -1,0 +1,60 @@
+{
+  "rows": [
+    {
+      "system": "http://snomed.info/sct",
+      "category": "SNOMED CT",
+      "n_uses": 4
+    },
+    {
+      "system": "http://terminology.kemkes.go.id/sp",
+      "category": "SatuSehat/Kemenkes",
+      "n_uses": 4
+    },
+    {
+      "system": "http://loinc.org",
+      "category": "LOINC",
+      "n_uses": 3
+    },
+    {
+      "system": "http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type",
+      "category": "SatuSehat/Kemenkes",
+      "n_uses": 2
+    },
+    {
+      "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+      "category": "HL7 Terminology",
+      "n_uses": 1
+    },
+    {
+      "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "category": "HL7 Terminology",
+      "n_uses": 1
+    },
+    {
+      "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+      "category": "HL7 Terminology",
+      "n_uses": 1
+    },
+    {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "category": "HL7 Terminology",
+      "n_uses": 1
+    },
+    {
+      "system": "http://terminology.kemkes.go.id/CodeSystem/location-type",
+      "category": "SatuSehat/Kemenkes",
+      "n_uses": 1
+    }
+  ],
+  "meta": [
+    {
+      "label": "Dihasilkan oleh",
+      "value": "scripts/parse_crosscheck.py",
+      "type": "code"
+    },
+    {
+      "label": "Diproses (UTC)",
+      "value": "2026-11-13T07:43:16Z"
+    }
+  ]
+}
