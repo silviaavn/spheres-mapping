@@ -1,6 +1,6 @@
 # Output Hitungan Payload & Code — Form Kobo
 
-Terakhir diperbarui: 2026-11-13 (sumber: Maternal Outcome Kobo_3)
+Terakhir diperbarui: 2026-11-13 (sumber: `mapping/kobo-data-dictionary-maternal-outcome.csv`)
 Aturan hitung: lihat `aturan.md`
 Form yang sudah dihitung: **Maternal Outcome**
 Belum: ANC, PNC, form lain
