@@ -1,6 +1,6 @@
 # Output Hitungan Payload & Code — Form Kobo
 
-Terakhir diperbarui: 2026-11-13
+Terakhir diperbarui: 2026-11-13 (sumber: Maternal Outcome Kobo_3)
 Aturan hitung: lihat `aturan.md`
 Form yang sudah dihitung: **Maternal Outcome**
 Belum: ANC, PNC, form lain
@@ -38,8 +38,8 @@ Belum: ANC, PNC, form lain
 | # | Code | Display | CodeSystem | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
 | 1 | 223366009 | Healthcare professional | snomed | Maternal Outcome | 1 |
-| 2 | SP000396 | (cek display, lihat `revisi.md` #2) | kemkes sp | Maternal Outcome | 1 |
-| 3 | SP000397 | (cek display, lihat `revisi.md` #2) | kemkes sp | Maternal Outcome | 1 |
+| 2 | SP000396 | Data entry staff | kemkes sp | Maternal Outcome | 1 |
+| 3 | SP000397 | Field/call center staff | kemkes sp | Maternal Outcome | 1 |
 | 4 | SP000738 | Kunjungan pemantauan luaran maternal | kemkes sp | Maternal Outcome | 1 |
 | 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome | 1 |
 | 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome | 1 |
@@ -83,5 +83,6 @@ Belum: ANC, PNC, form lain
 ---
 
 ## Log perubahan output
+- 2026-11-13: Dicek ulang dengan Kobo_3. Angka tidak berubah (12 payload, 14 code). Display SP000396/SP000397 dibetulkan.
 - 2026-11-13: File dipisah jadi `aturan.md`, `revisi.md`, `output.md`.
 - 2026-11-13: Maternal Outcome dihitung. Repo dibersihkan; isi lama ada di commit `0aba562`.
