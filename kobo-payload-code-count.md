@@ -10,7 +10,7 @@ Belum: ANC, PNC, form lain (tambahkan di bawah)
 
 **Payload (instance)**
 - 1 payload = 1 resource FHIR yang dibuat dari submission form.
-- Resource yang sama tapi beda pembeda (mis. EpisodeOfCare ANC vs PNC, Observation beda `code`) = payload berbeda.
+- Identitas payload = resource + determining code (mis. `Observation | SP000389`, `EpisodeOfCare | ANC`). Resource tanpa determining code (Patient, Practitioner, Encounter) identitasnya cukup nama resource.
 - Encounter yang muncul di 2 blok kamus (data utama + statusHistory) = **1 payload**.
 - **Patient dihitung.**
 - **Organization dan Location TIDAK dihitung**: keduanya diambil dari master data (lookup/reference), bukan dibuat dari form.
@@ -20,6 +20,11 @@ Belum: ANC, PNC, form lain (tambahkan di bawah)
 - Ditambah pilihan jawaban coded (`Observation.valueCodeableConcept`) dan opsi role PractitionerRole.
 - Code tetap HL7 (status, category, class, participant.type, diagnosis.use, clinicalStatus, organization-type, physicalType) **tidak dihitung**.
 - Bedakan: **code di kamus** (semua opsi) vs **code per submission** (hanya opsi yang terpilih).
+
+**Frekuensi**
+- **Frekuensi payload** = di berapa form payload yang sama (resource + determining code) dipakai.
+- **Frekuensi code** = di berapa form code yang sama (code + CodeSystem) dipakai.
+- Contoh: kalau SP000389 nanti juga dipakai di form PNC, frekuensinya jadi 2.
 
 **Kolom di data dictionary**
 - `jumlah instance` = isi 1 di baris pertama setiap payload.
@@ -34,38 +39,47 @@ Belum: ANC, PNC, form lain (tambahkan di bawah)
 | Maternal Outcome | 12 | 7 | 14 | 10 |
 | **Total unik (semua form)** | **12** | **7** | **14** | – |
 
-> Kalau form baru ditambahkan, hitung ulang baris "Total unik": payload/code yang sama di beberapa form hanya dihitung sekali.
+> Kalau form baru ditambahkan, hitung ulang baris "Total unik": payload/code yang sama di beberapa form hanya dihitung sekali, lalu naikkan frekuensinya di tabel di bawah.
 
 ---
 
-## Form: Maternal Outcome
+## Frekuensi payload (lintas form)
 
-### Frekuensi payload
+| # | Payload (resource + pembeda) | Dipakai di form | Frekuensi |
+|---|---|---|---|
+| 1 | PractitionerRole | Maternal Outcome | 1 |
+| 2 | Practitioner | Maternal Outcome | 1 |
+| 3 | Patient | Maternal Outcome | 1 |
+| 4 | Encounter | Maternal Outcome | 1 |
+| 5 | Condition \| SP000738 | Maternal Outcome | 1 |
+| 6 | EpisodeOfCare \| ANC | Maternal Outcome | 1 |
+| 7 | EpisodeOfCare \| PNC | Maternal Outcome | 1 |
+| 8 | Observation \| SP000389 (Keadaan Ibu) | Maternal Outcome | 1 |
+| 9 | Observation \| 93857-1 (Tgl Persalinan) | Maternal Outcome | 1 |
+| 10 | Observation \| 81956-5 (Tgl Meninggal) | Maternal Outcome | 1 |
+| 11 | Observation \| LT000005 (Tempat Meninggal) | Maternal Outcome | 1 |
+| 12 | Observation \| 79378-6 (Penyebab Meninggal) | Maternal Outcome | 1 |
 
-| Resource | Jumlah | Pembeda |
-|---|---|---|
-| Observation | 5 | Keadaan Ibu (SP000389), Tgl Persalinan (93857-1), Tgl Meninggal (81956-5), Tempat Meninggal (LT000005), Penyebab Meninggal (79378-6) |
-| EpisodeOfCare | 2 | ANC, PNC (status finished — penutup episode di hari ke-43) |
-| PractitionerRole | 1 | |
-| Practitioner | 1 | |
-| Patient | 1 | |
-| Encounter | 1 | |
-| Condition | 1 | SP000738 |
-| **Total** | **12** | |
-| ~~Organization~~ | – | master data, tidak dihitung |
-| ~~Location~~ | – | master data, tidak dihitung |
+## Frekuensi code (lintas form)
 
-### Frekuensi code (semua muncul 1x)
+| # | Code | Display | CodeSystem | Dipakai di form | Frekuensi |
+|---|---|---|---|---|---|
+| 1 | 223366009 | Healthcare professional | snomed | Maternal Outcome | 1 |
+| 2 | SP000396 | (cek display, lihat temuan #2) | kemkes sp | Maternal Outcome | 1 |
+| 3 | SP000397 | (cek display, lihat temuan #2) | kemkes sp | Maternal Outcome | 1 |
+| 4 | SP000738 | Kunjungan pemantauan luaran maternal | kemkes sp | Maternal Outcome | 1 |
+| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome | 1 |
+| 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome | 1 |
+| 7 | SP000389 | Keadaan Ibu | kemkes sp | Maternal Outcome | 1 |
+| 8 | 102514002 | Well female adult | snomed | Maternal Outcome | 1 |
+| 9 | 39104002 | Illness | snomed | Maternal Outcome | 1 |
+| 10 | 419099009 | Dead | snomed | Maternal Outcome | 1 |
+| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome | 1 |
+| 12 | 81956-5 | Date and time of death | loinc | Maternal Outcome | 1 |
+| 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome | 1 |
+| 14 | 79378-6 | Cause of death | loinc | Maternal Outcome | 1 |
 
-| Resource | Code |
-|---|---|
-| PractitionerRole | 223366009, SP000396, SP000397 (pilih 1) |
-| Condition | SP000738 |
-| EpisodeOfCare | ANC, PNC |
-| Observation (code) | SP000389, 93857-1, 81956-5, LT000005, 79378-6 |
-| Observation (value Keadaan Ibu) | 102514002, 39104002, 419099009 (pilih 1) |
-
-### Jumlah per CodeSystem
+## Jumlah per CodeSystem (code unik lintas form)
 
 | CodeSystem | Jumlah | Code |
 |---|---|---|
@@ -76,11 +90,30 @@ Belum: ANC, PNC, form lain (tambahkan di bawah)
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 1 | LT000005 |
 | **Total** | **14** | |
 
+---
+
+## Form: Maternal Outcome
+
+### Payload per resource
+
+| Resource | Jumlah |
+|---|---|
+| Observation | 5 |
+| EpisodeOfCare | 2 (status finished, penutup episode di hari ke-43) |
+| PractitionerRole | 1 |
+| Practitioner | 1 |
+| Patient | 1 |
+| Encounter | 1 |
+| Condition | 1 |
+| **Total** | **12** |
+| ~~Organization~~ | master data, tidak dihitung |
+| ~~Location~~ | master data, tidak dihitung |
+
 ### Koreksi kolom `jumlah instance` di dictionary
 
 | Baris CSV | Sekarang | Seharusnya |
 |---|---|---|
-| 12 (baris kosong) | 1 | kosong — pindahkan ke baris Patient |
+| 12 (baris kosong) | 1 | kosong (pindahkan ke baris Patient) |
 | 13 (Patient.name.text) | kosong | 1 |
 | Organization / Location | kosong | tetap kosong (master data) |
 
@@ -100,4 +133,5 @@ Setelah koreksi: total = 12.
 
 ## Log perubahan
 
-- 2026-11-13 — Dibuat. Maternal Outcome dihitung. Aturan: Patient masuk, Organization & Location tidak (master data). Repo dibersihkan; isi lama ada di commit `0aba562`.
+- 2026-11-13: Frekuensi payload/code didefinisikan ulang jadi "dipakai di berapa form". Tabel frekuensi dipindah ke bagian lintas form.
+- 2026-11-13: Dibuat. Maternal Outcome dihitung. Aturan: Patient masuk, Organization & Location tidak (master data). Repo dibersihkan; isi lama ada di commit `0aba562`.
