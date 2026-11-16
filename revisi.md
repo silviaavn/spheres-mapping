@@ -1,6 +1,6 @@
 # Revisi Data Dictionary — Form Kobo
 
-Terakhir diperbarui: 2026-11-13
+Terakhir diperbarui: 2026-11-16
 File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv`; SiGizi ANC → `mapping/kobo-data-dictionary-sigizi-anc.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
 
 > Maternal Outcome: nomor baris di bawah mengikuti Kobo_3. Di file `mapping/`, baris setelah 11 bergeser +1 karena ada baris baru `Practitioner.identifier.value`.
@@ -115,26 +115,26 @@ Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7
 
 ### Tally variabel BQ vs dictionary
 
-**49 variabel BQ vs 47 variabel di dictionary** ⚠️. Belum cocok: `pemeriksaan_anc_usia_kehamilan` dan `pemeriksaan_anc_aksi` tidak ada di dictionary (S16, S17), `puskesmas_domisili` ada tapi di luar payload (S19).
+**49 variabel BQ = 49 variabel di dictionary = 49 kolom di file mentah** ✅ (setelah S16, S17, S19). Semua masuk payload. Struktur kolom file mentah: `raw/sigizi-anc-kolom.md`. Catatan: di Excel kolom NIK ada sebelum Nama (S29).
 
 | Variabel BQ | Variabel di dictionary (baris asli) | Path FHIR | Cocok? |
 |---|---|---|---|
-| nama | Nama Ibu (8) | Patient.name.text | ✅ |
-| nik | No Ktp (10) | Patient.identifier (nik) | ✅ |
+| nama | Nama Ibu (8) | Patient.name.text | ✅ (Excel kolom C, S29) |
+| nik | No Ktp (10) | Patient.identifier (nik) | ✅ (Excel kolom B, S29) |
 | tanggal_lahir | Tanggal Lahir (18) | Patient.birthDate | ✅ |
 | umur | Umur (150) | Observation 424144002 | ✅ |
 | prov_domisili | Nama Provinsi (26) | Patient.address.extension province | ✅ (isi nama → lookup kode, P14) |
 | kabkota_domisili | Nama Kabupaten (29), Kab/Kota (23) | Patient.address.city + extension city | ✅ |
 | kec_domisili | Nama Kecamatan (32) | Patient.address.extension district | ✅ |
-| puskesmas_domisili | Puskesmas Domisili (1048) | Organization.partOf (Posyandu) | ⚠️ di luar payload (S19) |
+| puskesmas_domisili | Puskesmas Domisili (baris baru) | Patient.managingOrganization (kunci lookup posyandu) | ✅ (S19) |
 | desakel_domisili | Nama Desa (35) | Patient.address.extension village | ✅ |
-| posyandu_domisili | Posyandu Domisili (1027) | Patient.managingOrganization | ✅ (S19) |
+| posyandu_domisili | Posyandu Domisili (1027) | Patient.managingOrganization.reference (lookup master data) | ✅ (S19) |
 | alamat_domisili | Alamat Domisili (20 → 21) | Patient.address.line | ✅ (S1) |
-| faskes_yang_melayani_anc | Faskes yang melayani ANC (43) | Organization.name, Location.name, Encounter.location.display | ⚠️ (S18) |
+| faskes_yang_melayani_anc | Faskes yang melayani ANC | Encounter.serviceProvider.reference (lookup master data) + Encounter.location.display | ✅ (S18) |
 | pemeriksaan_pertama | Pemeriksaan Pertama (264) | Observation SP000002 + Encounter.identifier K1M/K1A | ✅ (S20) |
 | tanggal_hpht | HPHT (164) | Observation 8665-2 + EpisodeOfCare.period.start | ✅ |
 | pemeriksaan_anc_tanggal_anc | Tanggal ANC (122) | Encounter.period.start | ✅ |
-| pemeriksaan_anc_usia_kehamilan | – | – | ❌ tidak ada (S16) |
+| pemeriksaan_anc_usia_kehamilan | Usia Kehamilan (baris baru) | Observation 18185-9 Gestational age | ✅ (S16) |
 | pemeriksaan_anc_tenaga_pemeriksa | Tenaga Pemeriksa (85 → 87) | PractitionerRole.code | ✅ |
 | pemeriksaan_anc_riwayat_imun_tt_terakhir | Riwayat Imun TT Terakhir (218 → 230) | Immunization VG139 / Observation SP000001 | ✅ |
 | pemeriksaan_anc_berat | Berat Badan (277) | Observation 29463-7 | ✅ |
@@ -167,7 +167,7 @@ Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7
 | pemeriksaan_anc_konseling | Konseling (1001 → 1003) | Procedure 1230101008 | ✅ |
 | pemeriksaan_anc_skrinning_keswa | Skrinning Keswa (1013 → 1015) | Procedure 385892002 | ✅ |
 | pemeriksaan_anc_tanggal_perkiraan_persalinan | Tanggal Perkiraan Persalinan (177) | Observation 11778-8 | ✅ |
-| pemeriksaan_anc_aksi | – | – | ❌ tidak ada (S17) |
+| pemeriksaan_anc_aksi | Aksi (baris baru) | Encounter.extension sigizi-aksi (valueUrl) | ✅ (S17) |
 
 ### Temuan
 
@@ -187,20 +187,24 @@ Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7
 | S12 | Spasi/tab/newline di sel Code & CodeSystem (`\t\nother-hcf` di 912/946, URL berakhiran spasi, `false `) | done (mapping/) |
 | S13 | Value Name beda dengan label di SiGizi: TD `Normal (< 140)` vs `Normal (<= 140)`, `Hipertensi (≥140)` vs `(>= 140)`, USG `hasil tidak normal` vs `kecurigaan hasil abnormal`, typo `eklmapsia`, `skrining TT` vs `skrinning TT`, `SPOG` vs `SpOG`, `letak bokong/ lintang`, `Normal <200` | done (mapping/): disamakan dengan label SiGizi. Catatan: di form sumber batas TD 140 masuk ke 2 pilihan (P16) |
 | S14 | Label variabel ada di baris pembuka blok (`.active`, `.category`, `contained.resourceType`), bukan di baris nilai | done (mapping/): label + kolom BQ pindah ke baris nilai (PractitionerRole.code, Procedure.status, quantity.value, ServiceRequest.code, protocolApplied) |
-| S15 | Baris 802: code Anemia Berat berisi `what do yo eeeee` | open (R5) |
-| S16 | `pemeriksaan_anc_usia_kehamilan` (file mentah: "24 Minggu") tidak ada di dictionary | open (R3) |
-| S17 | `pemeriksaan_anc_aksi` = kolom tombol "Aksi" di export web, selalu kosong | open (R4) |
-| S18 | Faskes yang melayani ANC: blok Organization (40–57) + Location (59–82) dibuat dari nama faskes. Isinya campur: puskesmas, RS, nama bidan (PMB), "Kunjungan rumah", "DSOG" | open (R1) |
-| S19 | Posyandu domisili: blok Organization posyandu (1030–1048) + `puskesmas_domisili` hanya di `Organization.partOf`, jadi di luar payload | open (R2) |
-| S20 | Pemeriksaan Pertama → `Encounter.identifier` K1M/K1A dengan system terminology (`.../CodeSystem/episodeofcare/ANC`). Identifier bukan tempat code | open (R9) |
-| S21 | 6 PractitionerRole "Laboratory worker" (1 per lab) tanpa data dari form (tidak ada nama/Practitioner). Reference `performer` jadi ambigu dengan PractitionerRole tenaga pemeriksa | open (R6) |
-| S22 | Lab "Tidak Diperiksa" (mayoritas di Padamara): ServiceRequest/Specimen/DiagnosticReport tetap dibuat? | open (R7) |
-| S23 | TTD: code KFA MedicationRequest `92000653` ≠ MedicationDispense `93015491`; form `BS077 Tablet Salut Selaput` padahal nama obat "Tablet Salut Gula". Jumlah 0 (banyak di Padamara) belum ada aturannya | open (R8) |
-| S24 | Condition `134435003` belum di-allow SatuSehat (catatan di kolom Keterangan dictionary) | open (R10) |
-| S25 | Encounter.class AMB/FLD/HH tidak punya sumber variabel | open (R11) |
-| S26 | EpisodeOfCare: belum ada keterangan cara mencari episode ANC aktif (tiap kunjungan ANC bisa bikin episode baru) | open (R12) |
-| S27 | Immunization riwayat TT: `occurrenceDateTime` = Tanggal ANC, padahal tanggal suntik sebenarnya tidak diketahui | open (R13) |
-| S28 | DiagnosticReport HIV/Hepatitis/Sifilis category `MB` (Microbiology), lebih tepat `SR` (Serology). MedicationDispense.category pakai CodeSystem `medicationrequest-category` | open (R14) |
+| S15 | Baris 802: code Anemia Berat berisi `what do yo eeeee` | done (mapping/): **OI000034** |
+| S16 | `pemeriksaan_anc_usia_kehamilan` (file mentah: "24 Minggu") tidak ada di dictionary | done (mapping/): Observation baru LOINC **18185-9** Gestational age, valueQuantity satuan `wk`, setelah blok HPHT |
+| S17 | `pemeriksaan_anc_aksi` = kolom "Aksi" di export web (link halaman perkembangan bumil SiGizi) | done (mapping/): `Encounter.extension` url `https://github.com/silviaavn/spheres-mapping/StructureDefinition/sigizi-aksi` (sementara, S31), `valueUrl` = isi Aksi. Di file Padamara kolom ini kosong 57/57 (S30) |
+| S18 | Faskes yang melayani ANC: blok Organization (40–57) + Location (59–82) dibuat dari nama faskes. Isinya campur: puskesmas, RS, nama bidan (PMB), "Kunjungan rumah", "DSOG" | done (mapping/): isian string → **lookup** master data. Blok Organization & Location dihapus. `Encounter.serviceProvider` = lookup Organization, `Encounter.location` = lookup Location. Reference Organization/Location lain diberi keterangan yang sama |
+| S19 | Posyandu domisili: blok Organization posyandu (1030–1048) + `puskesmas_domisili` hanya di `Organization.partOf`, jadi di luar payload | done (mapping/): string posyandu → **lookup** master data (type 131) dengan kunci posyandu + desa + puskesmas domisili. Blok Organization posyandu dihapus; `puskesmas_domisili` jadi baris "Kunci lookup" di Patient |
+| S20 | Pemeriksaan Pertama → `Encounter.identifier` K1M/K1A dengan system terminology (`.../CodeSystem/episodeofcare/ANC`) | ok: **kesepakatan SatuSehat**, tetap. K1M/K1A dihitung sebagai opsi code |
+| S21 | 6 PractitionerRole "Laboratory worker" (1 per lab) tanpa data dari form. Reference `performer` jadi ambigu dengan PractitionerRole tenaga pemeriksa | done (mapping/): 6 blok dihapus. `performer` ServiceRequest/Observation lab/DiagnosticReport = **lookup** PractitionerRole default lab milik Organization faskes. `ServiceRequest.requester` = PractitionerRole tenaga pemeriksa |
+| S22 | Lab "Tidak Diperiksa" (mayoritas di Padamara): ServiceRequest/Specimen/DiagnosticReport tetap dibuat? | done (mapping/): **tidak dibuat**; cukup Observation dengan dataAbsentReason not-performed (Definisi Operasional di baris pertama SR/Specimen/DR) |
+| S23 | TTD: code KFA MedicationRequest `92000653` ≠ MedicationDispense `93015491`. Jumlah 0 (banyak di Padamara) belum ada aturannya | done (mapping/): beda code KFA **ok**. Jumlah 0 → MedicationRequest/Dispense **tidak dibuat** (SatuSehat tidak menerima 0). Cara mencatat "0, bukan kosong" masih open (S32) |
+| S24 | Condition `134435003` belum di-allow SatuSehat (catatan di kolom Keterangan dictionary) | ok: tetap 134435003 |
+| S25 | Encounter.class AMB/FLD/HH tidak punya sumber variabel | ok: Definisi Operasional sudah ada (Faskes → AMB, luar faskes mis. Posyandu → FLD, kediaman pasien mis. Kunjungan rumah → HH). Diturunkan dari `faskes_yang_melayani_anc` (P21) |
+| S26 | EpisodeOfCare: belum ada keterangan cara mencari episode ANC aktif | done (mapping/): cari EpisodeOfCare ANC active milik pasien, kalau tidak ada buat baru |
+| S27 | Immunization riwayat TT: `occurrenceDateTime` = Tanggal ANC, padahal tanggal suntik sebenarnya tidak diketahui | ok: tetap Tanggal ANC; `primarySource` = false menandakan ini pernyataan. Ditulis di Definisi Operasional |
+| S28 | DiagnosticReport HIV/Hepatitis/Sifilis category `MB` (Microbiology), lebih tepat `SR` (Serology). MedicationDispense.category pakai CodeSystem `medicationrequest-category` | done (mapping/): `SR` Serology; CodeSystem jadi `http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category` |
+| S29 | Di file mentah kolom B = NIK, C = Nama, sedangkan urutan BQ `nama`, `nik` | open (pipeline P17): pastikan ingestion memetakan berdasarkan nama header |
+| S30 | Kolom Aksi di file Padamara kosong 57/57 (tidak ada hyperlink juga). Isi seperti `https://sigizikesga.kemkes.go.id/ppgbm/bumil/perkembangan/<id>.html` terlihat di sumber lain | info: mapping tetap dibuat |
+| S31 | URL extension `sigizi-aksi` masih sementara (belum ada canonical resmi). Perlu dicek juga apakah SatuSehat menerima extension custom di Encounter | open |
+| S32 | Jumlah TTD/MMS = 0: cara mencatat "diberikan 0" (bukan kosong) belum ditentukan | open (lihat opsi di laporan chat 2026-11-16) |
 
 ## Catatan pipeline (perlu update)
 
@@ -222,10 +226,18 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P12 | SiGizi ANC | IMT Sebelum Hamil: 9 dari 57 nilai di file Padamara sudah berubah jadi tanggal oleh Excel (mis. 21.9 → 21-09-2026) | Ingestion: baca kolom sebagai teks, tandai nilai bertipe tanggal sebagai error | open |
 | P13 | SiGizi ANC | Label pilihan beda huruf besar/kecil & spasi (`positif`/`Positif`, `SpOG`, `Normal < 200`). `-`, `--Pilih--` (Rhesus, 12 baris), dan kosong = tidak diisi | Converter: cocokkan Value Name tanpa beda huruf/spasi; `-`/`--Pilih--`/kosong → tidak buat resource | open |
 | P14 | SiGizi ANC | Prov/Kab/Kec/Desa domisili berisi **nama** (mis. JAWA TENGAH), sedangkan `valueCode` butuh kode Kemendagri | Converter: lookup nama → kode wilayah | open |
-| P15 | SiGizi ANC | Usia kehamilan berupa teks "24 Minggu" (kalau R3 disetujui) | Converter: ambil angkanya | open |
+| P15 | SiGizi ANC | Usia kehamilan (teks "24 Minggu") → Observation 18185-9, valueQuantity satuan `wk` | Ingestion: kolom `pemeriksaan_anc_usia_kehamilan`. Converter: ambil angkanya, buat Observation | open |
+| P17 | SiGizi ANC | Urutan kolom Excel: NIK (B) sebelum Nama (C), beda dengan urutan BQ | Ingestion: petakan berdasarkan nama header, bukan posisi | open |
+| P18 | SiGizi ANC | `faskes_yang_melayani_anc` dan `posyandu_domisili` berupa string → cocokkan ke master data Organization/Location (posyandu: + desa + puskesmas domisili). Blok Organization/Location tidak dibuat | Converter: fungsi pencocokan string (normalisasi huruf, spasi, singkatan "PKM"/"Puskesmas") + daftar yang tidak cocok untuk dicek manual | open |
+| P19 | SiGizi ANC | PractitionerRole petugas lab tidak dibuat; performer lab = PractitionerRole default lab milik Organization faskes (master data) | Converter + master data (setiap faskes perlu PractitionerRole default lab) | open |
+| P20 | SiGizi ANC | Lab "Tidak Diperiksa"/`-`/kosong → hanya Observation dataAbsentReason, tanpa ServiceRequest/Specimen/DiagnosticReport. TTD/MMS = 0 → MedicationRequest/Dispense tidak dibuat | Converter | open |
+| P21 | SiGizi ANC | Encounter.class diturunkan dari faskes: faskes → AMB, luar faskes (posyandu) → FLD, "Kunjungan rumah" → HH | Converter | open |
+| P22 | SiGizi ANC | Kolom `pemeriksaan_anc_aksi` → `Encounter.extension` sigizi-aksi (valueUrl) | Ingestion: pastikan link ikut terambil (di export Padamara kosong). Converter: cek apakah SatuSehat menerima extension ini; kalau tidak, buang sebelum kirim ke SatuSehat | open |
+| P23 | SiGizi ANC | Hb Anemia Berat → OI000034; DiagnosticReport HIV/Hepatitis/Sifilis category SR; EpisodeOfCare ANC dicari dulu (active) sebelum buat baru | Converter | open |
 | P16 | SiGizi ANC | Pilihan TD di form sumber `Normal (<= 140)` dan `Hipertensi (>= 140)` sama-sama memuat 140 | Info ke pemilik form SiGizi | open |
 
 ## Log perubahan revisi
+- 2026-11-16: SiGizi ANC: jawaban R1–R14 diterapkan. S15–S19, S21–S23, S26, S28 done; S20, S24, S25, S27 ok (tetap). Tambah S29–S32 dan P17–P23. Tally 49 = 49 = 49 kolom file mentah. Struktur kolom file mentah di `raw/sigizi-anc-kolom.md`.
 - 2026-11-16: Tambah review form SiGizi ANC: tally BQ (49 vs 47), temuan S1–S28 (S1–S14 done di `mapping/`, S15–S28 open menunggu jawaban R1–R14), catatan pipeline P12–P16.
 - 2026-11-16: Semua temuan dictionary MO (#12–#15) dan Raffle (R13, R16, R17) done sesuai jawaban user. Tambah P10, P11. Tidak ada temuan dictionary yang open.
 - 2026-11-16: MO: blok Organization & Location dihapus (#11), tambah #12–#15. Raffle: hapus baris dobel (R15), tambah R16–R17. Tambah P9.
