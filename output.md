@@ -2,9 +2,11 @@
 
 Terakhir diperbarui: 2026-11-13
 Aturan hitung: lihat `aturan.md`
-Form yang sudah dihitung:
-- **Maternal Outcome** (sumber: `mapping/kobo-data-dictionary-maternal-outcome.csv`)
-- **Raffle** (sumber: `mapping/kobo-data-dictionary-raffle.csv`)
+Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
+- **Maternal Outcome** → `output/maternal-outcome.md` (sumber: `mapping/kobo-data-dictionary-maternal-outcome.csv`)
+- **Raffle** → `output/raffle.md` (sumber: `mapping/kobo-data-dictionary-raffle.csv`)
+
+File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
 Belum: ANC, PNC, form lain
 
@@ -15,10 +17,10 @@ Belum: ANC, PNC, form lain
 | Form | Payload | Code |
 |---|---|---|
 | Maternal Outcome | 12 | 14 |
-| Raffle | 7 | 6 |
-| **Total (non-unik)** | **19** | **20** |
+| Raffle | 8 | 6 |
+| **Total (non-unik)** | **20** | **20** |
 | **Total unik** | **15** | **19** |
-| Selisih (dipakai ulang antar form) | 4 | 1 |
+| Selisih (dipakai ulang) | 5 | 1 |
 
 ---
 
@@ -27,7 +29,7 @@ Belum: ANC, PNC, form lain
 | # | Resource | Code pembeda | Display | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
 | 1 | PractitionerRole | – | – | Maternal Outcome | 1 |
-| 2 | Practitioner | – | – | Maternal Outcome, Raffle | 2 |
+| 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x: bidan desa + data entry) | 2 |
 | 3 | Patient | – | – | Maternal Outcome, Raffle | 2 |
 | 4 | Encounter | – | – | Maternal Outcome, Raffle | 2 |
 | 5 | Location | – | – | Raffle | 1 |
@@ -89,11 +91,11 @@ Variabel Kobo / BQ per payload: lihat tabel tally BQ di `revisi.md`.
 | EpisodeOfCare | 2 | 1 | 3 | 2 | ANC, PNC |
 | Condition | 1 | 1 | 2 | 2 | SP000738, SP001135 |
 | Patient | 1 | 1 | 2 | 1 | – |
-| Practitioner | 1 | 1 | 2 | 1 | – |
+| Practitioner | 1 | 2 | 3 | 1 | – (Raffle: bidan desa + data entry) |
 | Encounter | 1 | 1 | 2 | 1 | – |
 | PractitionerRole | 1 | – | 1 | 1 | – |
 | Location | – | 1 | 1 | 1 | – |
-| **Total** | **12** | **7** | **19** | **15** | |
+| **Total** | **12** | **8** | **20** | **15** | |
 
 Catatan:
 - Organization tidak dihitung di semua form (master data). Location di Maternal Outcome juga tidak dihitung (lookup), tapi di Raffle dihitung karena dibuat dari form.
@@ -103,6 +105,7 @@ Catatan:
 ---
 
 ## Log perubahan output
+- 2026-11-16: Tambah output per form (`output/maternal-outcome.md`, `output/raffle.md`), dibuat dengan `scripts/form_output.py`. Raffle jadi 8 payload (Practitioner data entry ditambahkan user di commit `9da6c8d`). Total non-unik 20, unik 15.
 - 2026-11-13: Ringkasan diberi Total non-unik vs unik; kolom Jenis resource dihapus. Section payload per form diganti jadi satu tabel "Payload per resource (semua form)".
 - 2026-11-13: Raffle direvisi: Location dibuat dari form (payload jadi 7), Condition.code jadi SP001135. Total unik lintas form jadi 15 payload, 8 jenis resource, 19 code.
 - 2026-11-13: Tambah form Raffle (6 payload, 6 baris code). Total unik lintas form jadi 14 payload, 18 code. Frekuensi Practitioner, Patient, Encounter, EpisodeOfCare ANC, dan code ANC naik jadi 2.
