@@ -1,7 +1,7 @@
 # Revisi Data Dictionary — Form Kobo
 
 Terakhir diperbarui: 2026-11-13
-File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
+File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv`; SiGizi ANC → `mapping/kobo-data-dictionary-sigizi-anc.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
 
 > Maternal Outcome: nomor baris di bawah mengikuti Kobo_3. Di file `mapping/`, baris setelah 11 bergeser +1 karena ada baris baru `Practitioner.identifier.value`.
 
@@ -109,6 +109,99 @@ Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hard
 | R17 | `lokasi_faskes` ditaruh di `Location.identifier`, sedangkan `Location.name` hanya berisi placeholder. Kalau isian lokasi_faskes berupa nama (bukan kode), seharusnya ke `Location.name` | done (mapping/): `lokasi_faskes` dipindah ke `Location.name` |
 | R13 | Practitioner data entry sudah ditambahkan (baris 70 di `mapping/`), tapi `Encounter.participant` ADM baru punya `individual.display` (baris 94). Belum ada `individual.reference` ke Practitioner data entry, padahal ATND (bidan) punya | done (mapping/): tambah `Encounter.participant.individual.reference` → Practitioner data entry. Reference ATND diberi keterangan Practitioner bidan desa |
 
+## Form: SiGizi ANC
+
+Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7 baris). Contoh data mentah: PUSKESMAS PADAMARA SiGizi Pengukuran ANC (57 baris, 2026-11-16). Versi revisi: `mapping/kobo-data-dictionary-sigizi-anc.csv` (ada 1 baris sisipan setelah baris 268 dan 2 sel multi-baris jadi 1 baris, jadi nomor baris bergeser; untuk nomor baris terbaru lihat `output/sigizi-anc.md`).
+
+### Tally variabel BQ vs dictionary
+
+**49 variabel BQ vs 47 variabel di dictionary** ⚠️. Belum cocok: `pemeriksaan_anc_usia_kehamilan` dan `pemeriksaan_anc_aksi` tidak ada di dictionary (S16, S17), `puskesmas_domisili` ada tapi di luar payload (S19).
+
+| Variabel BQ | Variabel di dictionary (baris asli) | Path FHIR | Cocok? |
+|---|---|---|---|
+| nama | Nama Ibu (8) | Patient.name.text | ✅ |
+| nik | No Ktp (10) | Patient.identifier (nik) | ✅ |
+| tanggal_lahir | Tanggal Lahir (18) | Patient.birthDate | ✅ |
+| umur | Umur (150) | Observation 424144002 | ✅ |
+| prov_domisili | Nama Provinsi (26) | Patient.address.extension province | ✅ (isi nama → lookup kode, P14) |
+| kabkota_domisili | Nama Kabupaten (29), Kab/Kota (23) | Patient.address.city + extension city | ✅ |
+| kec_domisili | Nama Kecamatan (32) | Patient.address.extension district | ✅ |
+| puskesmas_domisili | Puskesmas Domisili (1048) | Organization.partOf (Posyandu) | ⚠️ di luar payload (S19) |
+| desakel_domisili | Nama Desa (35) | Patient.address.extension village | ✅ |
+| posyandu_domisili | Posyandu Domisili (1027) | Patient.managingOrganization | ✅ (S19) |
+| alamat_domisili | Alamat Domisili (20 → 21) | Patient.address.line | ✅ (S1) |
+| faskes_yang_melayani_anc | Faskes yang melayani ANC (43) | Organization.name, Location.name, Encounter.location.display | ⚠️ (S18) |
+| pemeriksaan_pertama | Pemeriksaan Pertama (264) | Observation SP000002 + Encounter.identifier K1M/K1A | ✅ (S20) |
+| tanggal_hpht | HPHT (164) | Observation 8665-2 + EpisodeOfCare.period.start | ✅ |
+| pemeriksaan_anc_tanggal_anc | Tanggal ANC (122) | Encounter.period.start | ✅ |
+| pemeriksaan_anc_usia_kehamilan | – | – | ❌ tidak ada (S16) |
+| pemeriksaan_anc_tenaga_pemeriksa | Tenaga Pemeriksa (85 → 87) | PractitionerRole.code | ✅ |
+| pemeriksaan_anc_riwayat_imun_tt_terakhir | Riwayat Imun TT Terakhir (218 → 230) | Immunization VG139 / Observation SP000001 | ✅ |
+| pemeriksaan_anc_berat | Berat Badan (277) | Observation 29463-7 | ✅ |
+| pemeriksaan_anc_tinggi | Tinggi (190) | Observation 8302-2 | ✅ |
+| pemeriksaan_anc_lila | LILA (305) | Observation 284473002 | ✅ (S6) |
+| pemeriksaan_anc_tekanan_darah | Tekanan Darah (291) | Observation 392570002 | ✅ |
+| pemeriksaan_anc_tfu | TFU (322) | Observation 289625003 | ✅ |
+| pemeriksaan_anc_presentasi_janin | Presentasi Janin (381) | Observation 72155-5 | ✅ |
+| pemeriksaan_anc_djj | DJJ (366) | Observation 289437007 | ✅ |
+| pemeriksaan_anc_diperiksa_usg | USG (397 → 399), Diperiksa USG (409) | Procedure 88.78 + Observation 268445003 | ✅ |
+| pemeriksaan_anc_imt_sebelum_hamil | IMT Sebelum Hamil (204) | Observation OC000010 | ✅ (data P12) |
+| pemeriksaan_anc_jumlah_ttd_diterima | Jumlah TTD Diterima (424 → 457) | MedicationRequest + MedicationDispense TTD | ✅ |
+| pemeriksaan_anc_jumlah_mms_diterima | Jumlah MMS Diterima (494 → 515) | MedicationRequest + MedicationDispense MMS | ✅ |
+| pemeriksaan_anc_lab_golongan_darah | Lab : Golongan Darah (335) | Observation 883-9 | ✅ |
+| pemeriksaan_anc_lab_rhesus | Lab : Rhesus (351) | Observation 10331-7 | ✅ |
+| pemeriksaan_anc_lab_hiv | Lab : HIV (542 → 546) | ServiceRequest/Specimen/Observation/DiagnosticReport 68961-2 | ✅ |
+| pemeriksaan_anc_lab_hepatitis | Lab : Hepatitis (595 → 599) | ... 75410-1 | ✅ |
+| pemeriksaan_anc_lab_siphilis | Lab : Siphilis (648 → 652) | ... 22464-2 | ✅ |
+| pemeriksaan_anc_lab_protein_urine | Lab : Protein Urine (701 → 705) | ... 2887-8 | ✅ |
+| pemeriksaan_anc_lab_hb | Lab : Hb (754 → 758) | ... 718-7 | ✅ (S15) |
+| pemeriksaan_anc_lab_gula_sewaktu | Lab : Gula Sewaktu (827 → 831) | ... 74774-1 | ✅ |
+| pemeriksaan_anc_lab_lainnya | Lab : Lainnya (888) | Observation 15220000 | ✅ |
+| pemeriksaan_anc_tatalaksana_anemia | Tatalaksana Anemia (904) | Observation SP000007 | ✅ |
+| pemeriksaan_anc_pre_eklampsia | Pre Eklampsia (922) | Observation SP000010 | ✅ |
+| pemeriksaan_anc_tatalaksana_pre_eklampsia | Tatalaksana Pre Eklampsia (938) | Observation SP000012 | ✅ |
+| pemeriksaan_anc_status_gizi_kektidak_kek | Status Gizi KEK/Tidak KEK (318) | Observation LILA `interpretation` | ✅ |
+| pemeriksaan_anc_tatalaksana_kek | Tatalaksana KEK (957) | Observation SP000014 | ✅ |
+| pemeriksaan_anc_risiko_masalah_kesehatan_lainnya | Risiko Masalah Kesehatan Lainnya (971) | Observation SP000015 | ✅ |
+| pemeriksaan_anc_diberikan_tatalaksana_masalah_kesehatan_lainnya | Diberikan Tatalaksana ... (988) | Observation SP000016 | ✅ |
+| pemeriksaan_anc_konseling | Konseling (1001 → 1003) | Procedure 1230101008 | ✅ |
+| pemeriksaan_anc_skrinning_keswa | Skrinning Keswa (1013 → 1015) | Procedure 385892002 | ✅ |
+| pemeriksaan_anc_tanggal_perkiraan_persalinan | Tanggal Perkiraan Persalinan (177) | Observation 11778-8 | ✅ |
+| pemeriksaan_anc_aksi | – | – | ❌ tidak ada (S17) |
+
+### Temuan
+
+| # | Temuan | Status |
+|---|---|---|
+| S1 | Baris 21: path `Patient.line`, label "Alamat Domisili" di baris `.use` (20) | done (mapping/): jadi `Patient.address.line`, label pindah ke baris 21 |
+| S2 | Baris 75: path `Organization.address.extension.url` di blok Location (sama dengan MO #4, Raffle R5) | done (mapping/) |
+| S3 | Baris 94: typo `EpisodeOfCare.Identifer` | done (mapping/) |
+| S4 | Placeholder pakai kurung campur `(X}` / `(X)` (baris 106–107, 294–296, 891–894, 907–911, 925–929, 941–945, 960–961, 974–979, 991–992) | done (mapping/): jadi `{X}` |
+| S5 | Observation Pemeriksaan Pertama (SP000002) tidak punya `Observation.subject.reference` | done (mapping/): baris baru setelah baris 268 |
+| S6 | Baris 309 `Observation.valueQuantity.value` LILA tidak punya placeholder `{LILA}` | done (mapping/) |
+| S7 | Immunization: typo `occurenceDateTime` (224, 243), `vaccineCode` tanpa `.coding` (220, 239) | done (mapping/) |
+| S8 | Typo `medicataionReference` (449, 483, 507, 529) | done (mapping/): `medicationReference` |
+| S9 | `MedicationDispense.subject.display` (485, 531) tanpa `{Nama}` | done (mapping/) |
+| S10 | `Observation.Interpretation.coding` huruf besar (786, 792, 798, 802, 859, 863); KEK (318–320) tanpa `.coding` | done (mapping/): `Observation.interpretation.coding` |
+| S11 | `ServiceRequest.category/code`, `DiagnosticReport.category/code` (HIV, Hepatitis, Sifilis) dan `Specimen.type` tanpa `.coding`, padahal lab lain pakai | done (mapping/): semua pakai `.coding` |
+| S12 | Spasi/tab/newline di sel Code & CodeSystem (`\t\nother-hcf` di 912/946, URL berakhiran spasi, `false `) | done (mapping/) |
+| S13 | Value Name beda dengan label di SiGizi: TD `Normal (< 140)` vs `Normal (<= 140)`, `Hipertensi (≥140)` vs `(>= 140)`, USG `hasil tidak normal` vs `kecurigaan hasil abnormal`, typo `eklmapsia`, `skrining TT` vs `skrinning TT`, `SPOG` vs `SpOG`, `letak bokong/ lintang`, `Normal <200` | done (mapping/): disamakan dengan label SiGizi. Catatan: di form sumber batas TD 140 masuk ke 2 pilihan (P16) |
+| S14 | Label variabel ada di baris pembuka blok (`.active`, `.category`, `contained.resourceType`), bukan di baris nilai | done (mapping/): label + kolom BQ pindah ke baris nilai (PractitionerRole.code, Procedure.status, quantity.value, ServiceRequest.code, protocolApplied) |
+| S15 | Baris 802: code Anemia Berat berisi `what do yo eeeee` | open (R5) |
+| S16 | `pemeriksaan_anc_usia_kehamilan` (file mentah: "24 Minggu") tidak ada di dictionary | open (R3) |
+| S17 | `pemeriksaan_anc_aksi` = kolom tombol "Aksi" di export web, selalu kosong | open (R4) |
+| S18 | Faskes yang melayani ANC: blok Organization (40–57) + Location (59–82) dibuat dari nama faskes. Isinya campur: puskesmas, RS, nama bidan (PMB), "Kunjungan rumah", "DSOG" | open (R1) |
+| S19 | Posyandu domisili: blok Organization posyandu (1030–1048) + `puskesmas_domisili` hanya di `Organization.partOf`, jadi di luar payload | open (R2) |
+| S20 | Pemeriksaan Pertama → `Encounter.identifier` K1M/K1A dengan system terminology (`.../CodeSystem/episodeofcare/ANC`). Identifier bukan tempat code | open (R9) |
+| S21 | 6 PractitionerRole "Laboratory worker" (1 per lab) tanpa data dari form (tidak ada nama/Practitioner). Reference `performer` jadi ambigu dengan PractitionerRole tenaga pemeriksa | open (R6) |
+| S22 | Lab "Tidak Diperiksa" (mayoritas di Padamara): ServiceRequest/Specimen/DiagnosticReport tetap dibuat? | open (R7) |
+| S23 | TTD: code KFA MedicationRequest `92000653` ≠ MedicationDispense `93015491`; form `BS077 Tablet Salut Selaput` padahal nama obat "Tablet Salut Gula". Jumlah 0 (banyak di Padamara) belum ada aturannya | open (R8) |
+| S24 | Condition `134435003` belum di-allow SatuSehat (catatan di kolom Keterangan dictionary) | open (R10) |
+| S25 | Encounter.class AMB/FLD/HH tidak punya sumber variabel | open (R11) |
+| S26 | EpisodeOfCare: belum ada keterangan cara mencari episode ANC aktif (tiap kunjungan ANC bisa bikin episode baru) | open (R12) |
+| S27 | Immunization riwayat TT: `occurrenceDateTime` = Tanggal ANC, padahal tanggal suntik sebenarnya tidak diketahui | open (R13) |
+| S28 | DiagnosticReport HIV/Hepatitis/Sifilis category `MB` (Microbiology), lebih tepat `SR` (Serology). MedicationDispense.category pakai CodeSystem `medicationrequest-category` | open (R14) |
+
 ## Catatan pipeline (perlu update)
 
 Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR converter).
@@ -126,8 +219,14 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P11 | Maternal Outcome | Observation meninggal: `focus` dihapus, diganti `encounter.reference`. Keadaan Ibu category `survey`. PractitionerRole.practitioner → Practitioner data entry. EpisodeOfCare ANC/PNC: cari episode aktif pasien lalu ubah ke finished, isi `patient.reference` | Converter | open |
 | P9 | Maternal Outcome | Organization & Location tidak dibuat lagi: lookup master data untuk `Encounter.serviceProvider` dan `Encounter.location` | Converter | open |
 | P7 | Maternal Outcome | Practitioner.identifier pakai system nik (use / system / value), `nakes-his-number` dihapus | Converter | open |
+| P12 | SiGizi ANC | IMT Sebelum Hamil: 9 dari 57 nilai di file Padamara sudah berubah jadi tanggal oleh Excel (mis. 21.9 → 21-09-2026) | Ingestion: baca kolom sebagai teks, tandai nilai bertipe tanggal sebagai error | open |
+| P13 | SiGizi ANC | Label pilihan beda huruf besar/kecil & spasi (`positif`/`Positif`, `SpOG`, `Normal < 200`). `-`, `--Pilih--` (Rhesus, 12 baris), dan kosong = tidak diisi | Converter: cocokkan Value Name tanpa beda huruf/spasi; `-`/`--Pilih--`/kosong → tidak buat resource | open |
+| P14 | SiGizi ANC | Prov/Kab/Kec/Desa domisili berisi **nama** (mis. JAWA TENGAH), sedangkan `valueCode` butuh kode Kemendagri | Converter: lookup nama → kode wilayah | open |
+| P15 | SiGizi ANC | Usia kehamilan berupa teks "24 Minggu" (kalau R3 disetujui) | Converter: ambil angkanya | open |
+| P16 | SiGizi ANC | Pilihan TD di form sumber `Normal (<= 140)` dan `Hipertensi (>= 140)` sama-sama memuat 140 | Info ke pemilik form SiGizi | open |
 
 ## Log perubahan revisi
+- 2026-11-16: Tambah review form SiGizi ANC: tally BQ (49 vs 47), temuan S1–S28 (S1–S14 done di `mapping/`, S15–S28 open menunggu jawaban R1–R14), catatan pipeline P12–P16.
 - 2026-11-16: Semua temuan dictionary MO (#12–#15) dan Raffle (R13, R16, R17) done sesuai jawaban user. Tambah P10, P11. Tidak ada temuan dictionary yang open.
 - 2026-11-16: MO: blok Organization & Location dihapus (#11), tambah #12–#15. Raffle: hapus baris dobel (R15), tambah R16–R17. Tambah P9.
 - 2026-11-16: Semua variabel BQ sekarang masuk payload. Raffle: blok Organization dihapus (R14). MO: puskesmas_name ke serviceProvider (#10). Tambah P8.

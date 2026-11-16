@@ -11,7 +11,9 @@ import re
 import sys
 from collections import Counter, OrderedDict
 
-PEMBEDA_RESOURCES = {"Condition", "EpisodeOfCare", "Observation"}
+PEMBEDA_RESOURCES = {"Condition", "EpisodeOfCare", "Observation", "Procedure", "ServiceRequest", "DiagnosticReport",
+                     "Specimen", "Immunization", "MedicationRequest", "MedicationDispense"}
+PEMBEDA_PATHS = (".code.coding", ".type.coding", ".vaccineCode.coding")
 # Baris label yang bukan tempat nilai disimpan: cari baris nilai sesudahnya di blok yang sama.
 STRUCTURAL = re.compile(r"(\.status|\.use|\.system|\.url|\.category\.coding)$|^Observation\.code\.coding$")
 VALUE = re.compile(r"\.value([A-Z]\w*)?(\.coding)?$")
@@ -63,7 +65,7 @@ def build(data):
             if d["bq"] or d["var"]:
                 current["vars"].append((d["line"], d["bq"], d["var"], d["path"], d["df"]))
             if (current["res"] in PEMBEDA_RESOURCES and not current["code"] and d["jc"] == "1"
-                    and d["path"].endswith((".code.coding", ".type.coding"))):
+                    and d["path"].endswith(PEMBEDA_PATHS)):
                 current["code"], current["disp"] = d["code"], d["disp"]
         elif d["res"]:
             current = None  # blok resource lain: berhenti mengumpulkan

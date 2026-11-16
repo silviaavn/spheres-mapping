@@ -5,10 +5,11 @@ Aturan hitung: lihat `aturan.md`
 Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **Maternal Outcome** → `output/maternal-outcome.md` (sumber: `mapping/kobo-data-dictionary-maternal-outcome.csv`)
 - **Raffle** → `output/raffle.md` (sumber: `mapping/kobo-data-dictionary-raffle.csv`)
+- **SiGizi ANC** (sementara) → `output/sigizi-anc.md` (sumber: `mapping/kobo-data-dictionary-sigizi-anc.csv`). Belum masuk tabel frekuensi di bawah; menunggu jawaban R1–R14 di `revisi.md`
 
 File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
-Belum: ANC, PNC, form lain
+Belum: PNC, form lain
 
 ---
 
@@ -21,6 +22,19 @@ Belum: ANC, PNC, form lain
 | **Total (non-unik)** | **20** | **20** |
 | **Total unik** | **15** | **19** |
 | Selisih (dipakai ulang) | 5 | 1 |
+
+### Sementara, kalau SiGizi ANC ikut dihitung (sebelum jawaban R1–R14)
+
+| Form | Payload | Code |
+|---|---|---|
+| Maternal Outcome | 12 | 14 |
+| Raffle | 8 | 6 |
+| SiGizi ANC | 66 | 147 |
+| **Total (non-unik)** | **86** | **167** |
+| **Total unik** | **67** | **132** |
+| Selisih (dipakai ulang) | 19 | 35 |
+
+SiGizi ANC sendiri: 66 payload (56 unik di dalam form), 147 code (114 unik). Yang sama dengan form lain: payload Patient, PractitionerRole, Encounter, EpisodeOfCare ANC; code ANC. Angka ini bisa berubah, terutama dari R1 (Organization/Location faskes), R3 (usia kehamilan), R6 (6 PractitionerRole petugas lab), dan R9 (code K1M/K1A).
 
 ---
 
@@ -105,6 +119,7 @@ Catatan:
 ---
 
 ## Log perubahan output
+- 2026-11-16: Tambah SiGizi ANC sebagai angka sementara (66 payload, 147 code; total non-unik 86/167, unik 67/132). Tabel frekuensi belum diubah sampai R1–R14 dijawab. `scripts/form_output.py` mengenali code pembeda untuk Procedure, ServiceRequest, DiagnosticReport, Specimen, Immunization, MedicationRequest, MedicationDispense (output MO & Raffle tidak berubah).
 - 2026-11-16: Revisi reference & path di kedua dictionary (lihat `revisi.md`). Angka tidak berubah.
 - 2026-11-16: MO: blok Organization & Location dihapus dari dictionary (lookup master data). Angka tidak berubah.
 - 2026-11-16: Output per form menampilkan path tiap variabel BQ dan tanda 🔎 untuk lookup master data. Semua variabel BQ sudah masuk payload (0 di luar payload). Angka tidak berubah.
