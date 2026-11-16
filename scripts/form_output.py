@@ -129,11 +129,7 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
            f"| Code unik (code + CodeSystem) | {len({(d['code'], d['cs']) for d in codes})} |",
            f"| Variabel BQ (unik) | {len(bq)} |"]
     if raw is not None:
-        raw_out = [f"{c} `{b}`" for c, b in raw if b not in bq_in]
-        out.append(f"| Variabel di Excel export (`{raw_path}`) | {len(raw)} kolom, "
-                   + ("semua masuk payload ✅ |" if not raw_out else f"{len(raw_out)} belum masuk payload ⚠️: {', '.join(raw_out)} |"))
-    if raw is None or bq_out:
-        out.append(f"| Variabel BQ di luar payload | {len(bq_out)} {'✅' if not bq_out else '⚠️'} |")
+        out.append(f"| Variabel di Excel export | {len(raw)} |")
     out += ["",
            "## Payload", "",
            "| # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |",
@@ -178,3 +174,8 @@ if __name__ == "__main__":
     raw = load_raw(raw_path) if raw_path else None
     open(dst, "w", encoding="utf-8").write(render(form, src, data, payloads, codes, other, raw, raw_path))
     print(f"{form}: {len(payloads)} payload, {len(codes)} code -> {dst}")
+    bq_in = {b for p in payloads for _, b, _, _, _ in p["vars"] if b}
+    if raw is not None:
+        miss = [f"{c} {b}" for c, b in raw if b not in bq_in]
+        if miss:
+            print("PERINGATAN: kolom Excel export belum masuk payload:", ", ".join(miss))

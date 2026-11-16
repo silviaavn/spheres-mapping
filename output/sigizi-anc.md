@@ -12,7 +12,7 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Code (`jumlah code` = 1) | 142 |
 | Code unik (code + CodeSystem) | 114 |
 | Variabel BQ (unik) | 49 |
-| Variabel di Excel export (`raw/sigizi-anc-kolom.md`) | 49 kolom, semua masuk payload ✅ |
+| Variabel di Excel export | 49 |
 
 ## Payload
 

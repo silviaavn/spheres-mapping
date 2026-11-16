@@ -12,7 +12,6 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Code (`jumlah code` = 1) | 6 |
 | Code unik (code + CodeSystem) | 6 |
 | Variabel BQ (unik) | 12 |
-| Variabel BQ di luar payload | 0 ✅ |
 
 ## Payload
 
