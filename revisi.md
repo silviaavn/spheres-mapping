@@ -1,7 +1,7 @@
 # Revisi Data Dictionary — Form Kobo
 
 Terakhir diperbarui: 2026-11-13
-File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` baris setelah 91 bergeser +2)
+File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
 
 > Maternal Outcome: nomor baris di bawah mengikuti Kobo_3. Di file `mapping/`, baris setelah 11 bergeser +1 karena ada baris baru `Practitioner.identifier.value`.
 
@@ -43,7 +43,7 @@ Kolom **Nama Column BQ** sudah ditambahkan di `mapping/` (sebelum "Nama Column R
 | nik_yang_melakukan_entry_data | NIK yang melakukan entry data | Practitioner.identifier (nik) | ✅ |
 | nama_ibu | Nama Ibu | Patient.name.text | ✅ |
 | nik_ibu | NIK Ibu | Patient.identifier (nik) | ✅ |
-| puskesmas_name | Puskesmas | Organization.name (lookup master data) | ✅ |
+| puskesmas_name | Puskesmas | Encounter.serviceProvider.reference (lookup master data Organization) | ✅ |
 | tanggal_pencatatan | Tanggal Pencatatan | Encounter.period.start | ✅ |
 | outcome_001 | Keadaan Ibu | Observation SP000389 | ✅ |
 | delivery_date | Tanggal Persalinan | Observation 93857-1 | ✅ |
@@ -53,6 +53,7 @@ Kolom **Nama Column BQ** sudah ditambahkan di `mapping/` (sebelum "Nama Column R
 
 | # | Temuan | Status |
 |---|---|---|
+| 10 | `puskesmas_name` dipindah dari `Organization.name` ke `Encounter.serviceProvider.reference` (keterangan: lookup master data Organization). Definisi lama "spheres? puskesmas?" diganti. Blok Organization masih ada di dictionary | done (mapping/) |
 | 9 | Nama data entry juga masuk ke `Encounter.participant` (type ADM admitter). Kolom Variables di baris `Encounter.participant.individual.display` diisi "Nama yang melakukan entry data" | done (mapping/) |
 | 8 | `data_entry_clerk_staff_id` kelihatannya ID, bukan nama | done: dikonfirmasi isinya **nama**. Mapping ke `Practitioner.name.text` sudah benar, dan kolom yang sama juga dipakai untuk `Encounter.participant.individual.display` (ADM) |
 
@@ -67,7 +68,7 @@ Sumber: Kobo - Data Dictionary - Kobo Raffle (nomor baris = baris CSV asli, head
 | Variabel BQ | Variabel Kobo (baris) | Path FHIR | Cocok? |
 |---|---|---|---|
 | nama_data_entry | Nama Data Entry (baris baru) | Encounter.participant.individual.display (type ADM) | ✅ |
-| puskesmas | Puskesmas Pengampu (27) | Organization.name (lookup master data) | ✅ |
+| puskesmas | Puskesmas Pengampu | Encounter.serviceProvider.reference (lookup master data Organization) | ✅ |
 | kecamatan | Kecamatan (57) | Location.address district | ✅ |
 | kelurahan | Kelurahan (60) | Location.address village | ✅ |
 | lokasi_faskes | Lokasi/Fasilitas Kesehatan (43) | Location (dibuat dari form) | ✅ |
@@ -97,6 +98,7 @@ Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hard
 | R10 | Baris 43, 45: placeholder "Gedung {Tempat yang melayani ANC}" ditaruh di kolom Display. Seharusnya di kolom Definisi Operasional | done (mapping/) |
 | R11 | Dictionary Raffle belum punya kolom `jumlah code` dan `jumlah instance` | done (mapping/) |
 | R12 | "Input Data" (Observation 385438008: Sigizi / E-pus PKD / E-pus) tidak punya kolom BQ | done: lupa ditambahkan. Kolom BQ `input_data` dibuat (nama sementara, ganti kalau nama di pipeline beda). Lihat Catatan pipeline |
+| R14 | Variabel puskesmas belum masuk payload (hanya di blok Organization). Isian puskesmas dipilih dari list yang sudah ada, jadi Organization cukup di-lookup dari master data | done (mapping/): blok Organization dihapus. `puskesmas` dipindah ke `Encounter.serviceProvider.reference` dengan keterangan lookup master data. `Location.managingOrganization` dan `EpisodeOfCare.managingOrganization` diberi keterangan memakai Organization hasil lookup yang sama |
 | R13 | Practitioner data entry sudah ditambahkan (baris 70 di `mapping/`), tapi `Encounter.participant` ADM baru punya `individual.display` (baris 94). Belum ada `individual.reference` ke Practitioner data entry, padahal ATND (bidan) punya | open (saran: tambah baris `Encounter.participant.individual.reference` = Reference ke Practitioner data entry) |
 
 ## Catatan pipeline (perlu update)
@@ -111,9 +113,11 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P4 | Raffle | Condition.code SP000776 → **SP001135** Presensi Posyandu | Converter | open |
 | P5 | Raffle | Encounter.class display "field"; participant ATND reference ke Practitioner (bidan desa) | Converter | open |
 | P6 | Maternal Outcome | `data_entry_clerk_staff_id` (isinya nama) juga dipakai untuk `Encounter.participant` ADM `individual.display` | Converter | open |
+| P8 | Maternal Outcome, Raffle | `puskesmas_name` / `puskesmas` → lookup Organization di master data berdasarkan nama, lalu isi `Encounter.serviceProvider.reference`. Raffle: Organization yang sama dipakai untuk `Location.managingOrganization` dan `EpisodeOfCare.managingOrganization` | Converter | open |
 | P7 | Maternal Outcome | Practitioner.identifier pakai system nik (use / system / value), `nakes-his-number` dihapus | Converter | open |
 
 ## Log perubahan revisi
+- 2026-11-16: Semua variabel BQ sekarang masuk payload. Raffle: blok Organization dihapus (R14). MO: puskesmas_name ke serviceProvider (#10). Tambah P8.
 - 2026-11-16: User menambah Practitioner data entry di Raffle (commit `9da6c8d`). P2 diperbarui. Tambah R13.
 - 2026-11-13: R12 done (kolom BQ `input_data`). MO #8 done (staff_id = nama). R7, R9 disetujui. Tambah bagian Catatan pipeline (P1–P7).
 - 2026-11-13: Raffle R1–R11 done di `mapping/kobo-data-dictionary-raffle.csv`. Tambah R12. Maternal Outcome: nama data entry diisi di Encounter.participant ADM (#9).

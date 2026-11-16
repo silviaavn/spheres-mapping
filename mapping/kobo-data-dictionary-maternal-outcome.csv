@@ -23,7 +23,7 @@ Data Faskes Pengampu,Identitas Faskes,,,,,,,,,,,,Organization,Organization.activ
 ,,,,,,,,,,,,,Organization,Organization.identifier,official,Tidak ada,http://sys-ids.kemkes.go.id/organization/{{Org ID}},,,,FALSE,,,,,,,
 ,,,,,,,,,,,,,Organization,Organization.type,team,Organizational team,http://terminology.hl7.org/CodeSystem/organization-type,,,,FALSE,,,,,,,
 ,,FALSE,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,
-,,FALSE,TRUE,puskesmas_name,,Puskesmas,Puskesmas,,,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,,,
+,,FALSE,TRUE,,,,,,,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,,,
 ,Alamat Faskes,,,,,,,,,,,,Organization,Organization.address.city,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,,,
 ,,,,,,,,,,,,,Organization,Organization.address.country,ID,Tidak ada,Tidak ada,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -87,7 +87,7 @@ Data Faskes Pengampu,Identitas Faskes,,,,,,,,,,,,Organization,Organization.activ
 ,,,,,,,,,,,,,Encounter,Encounter.statusHistory.status,finished,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
-,,,,,,,,,,,spheres? puskesmas?,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,,,FALSE,,,,,,
+,,,,puskesmas_name,,Puskesmas,Puskesmas,,,,"Lookup ke master data Organization berdasarkan nama puskesmas (pilihan dari list), lalu isi reference ke Organization hasil lookup",,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,"ini harusnya bisa jadi trigger untuk menutup episodeofcare anc maupun pnc kalo masih ketinggalan, karena ditanya di hari ke 43",,EpisodeOfCare,EpisodeOfCare.type.coding,ANC,Antenatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,,,,FALSE,,,,,1,1
 ,,,,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,finished,Tidak ada,Tidak ada,,,,,FALSE,,,,,,

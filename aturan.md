@@ -9,7 +9,7 @@ Terakhir diperbarui: 2026-11-13
 - Dalam 1 form, resource yang sama tanpa code pembeda bisa muncul lebih dari 1x dan **dihitung masing-masing** (mis. Raffle: Practitioner bidan desa + Practitioner data entry = 2 payload). Di total unik tetap dihitung 1.
 - Encounter yang muncul di 2 blok kamus (data utama + statusHistory) = **1 payload**.
 - **Patient dihitung.**
-- **Organization TIDAK dihitung**: diambil dari master data (lookup/reference), bukan dibuat dari form.
+- **Organization TIDAK dihitung**: diambil dari master data (lookup/reference), bukan dibuat dari form. Variabel BQ puskesmas dipetakan ke `Encounter.serviceProvider.reference` dengan keterangan "Lookup ke master data Organization" di kolom Definisi Operasional. Kalau isian puskesmas dipilih dari list yang sudah ada, blok Organization tidak perlu ditulis di dictionary.
 - **Location**: tidak dihitung kalau hanya lookup ke master data (mis. Maternal Outcome). **Dihitung** kalau dibuat dari isian form (mis. Raffle: lokasi faskes + kecamatan + kelurahan).
 - Nama orang yang meng-input data (data entry) dimasukkan ke `Encounter.participant` dengan type `ADM` (admitter, http://terminology.hl7.org/CodeSystem/v3-ParticipationType). Tidak menambah payload karena masih di dalam Encounter.
 
@@ -31,6 +31,7 @@ Terakhir diperbarui: 2026-11-13
 ## Checklist setiap form baru
 1. **Minta daftar variabel BQ dari form** (nama kolom di BigQuery). Jangan mulai hitung sebelum daftar ini ada.
 2. Cek tally: jumlah variabel BQ = jumlah baris yang punya "Nama Variabel di Kobo". Cek juga isinya cocok satu-satu (mis. `staff_id` jangan dipasang ke baris nama).
+   **Semua variabel BQ harus masuk ke salah satu payload.** Cek bagian "Variabel di luar payload" di `output/<form>.md` harus kosong.
 3. Isi kolom **Nama Column BQ** (letaknya sebelum "Nama Column Raw") di dictionary.
 4. Isi kolom `jumlah instance` dan `jumlah code` di dictionary `mapping/`, lalu buat output per form:
    `python3 scripts/form_output.py mapping/kobo-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md`
@@ -41,6 +42,7 @@ Terakhir diperbarui: 2026-11-13
 - `jumlah code` = isi 1 di setiap baris determining code / opsi coded.
 
 ## Log perubahan aturan
+- 2026-11-16: Semua variabel BQ wajib masuk payload. Puskesmas → Encounter.serviceProvider.reference (lookup master data).
 - 2026-11-16: Output per form wajib dibuat dengan `scripts/form_output.py`. Resource sama dalam 1 form dihitung masing-masing.
 - 2026-11-13: Location dihitung kalau dibuat dari form. Nama data entry → Encounter.participant ADM.
 - 2026-11-13: Konsep "code per submission" dihapus; yang dihitung hanya code di kamus.

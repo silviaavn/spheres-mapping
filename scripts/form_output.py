@@ -7,10 +7,14 @@ Payload = baris dengan `jumlah instance` = 1. Code = baris dengan `jumlah code` 
 Nomor baris = nomor baris fisik di file CSV (header multi-baris ikut dihitung).
 """
 import csv
+import re
 import sys
 from collections import Counter, OrderedDict
 
 PEMBEDA_RESOURCES = {"Condition", "EpisodeOfCare", "Observation"}
+# Baris label yang bukan tempat nilai disimpan: cari baris nilai sesudahnya di blok yang sama.
+STRUCTURAL = re.compile(r"(\.status|\.use|\.system|\.url|\.category\.coding)$|^Observation\.code\.coding$")
+VALUE = re.compile(r"\.value([A-Z]\w*)?(\.coding)?$")
 
 
 def norm(h):
@@ -35,6 +39,7 @@ def load(path):
         bq=col("nama column bq"),
         var=col("nama variabel di kobo", "variables"),
         res=col("resource"), path=col("path"), code=col("code"),
+        df=col("definisi operasional", "definisi operasional (logic)"),
         disp=col("display"), cs=col("codesystem"),
         jc=col("jumlah code"), ji=col("jumlah instance"),
     )
@@ -50,25 +55,57 @@ def build(data):
     payloads, current = [], None
     for d in data:
         if d["ji"] == "1":
-            current = dict(line=d["line"], res=d["res"], code="", disp="", vars=[], last=d["line"])
+            current = dict(line=d["line"], res=d["res"], code="", disp="", vars=[], last=d["line"], rows=[])
             payloads.append(current)
         if current and d["res"] == current["res"]:
             current["last"] = d["line"]
+            current["rows"].append(d)
             if d["bq"] or d["var"]:
-                current["vars"].append((d["line"], d["bq"], d["var"]))
+                current["vars"].append((d["line"], d["bq"], d["var"], d["path"], d["df"]))
             if (current["res"] in PEMBEDA_RESOURCES and not current["code"] and d["jc"] == "1"
                     and d["path"].endswith((".code.coding", ".type.coding"))):
                 current["code"], current["disp"] = d["code"], d["disp"]
         elif d["res"]:
             current = None  # blok resource lain: berhenti mengumpulkan
+    # Variabel di blok lanjutan resource yang sama (mis. Encounter.serviceProvider di blok statusHistory)
+    # ikut ke payload itu, asal resource tersebut hanya punya 1 payload di form ini.
+    seen = {d["line"] for p in payloads for d in p["rows"]}
+    by_res = {}
+    for p in payloads:
+        by_res.setdefault(p["res"], []).append(p)
+    for d in data:
+        if d["line"] in seen or not (d["bq"] or d["var"]) or len(by_res.get(d["res"], [])) != 1:
+            continue
+        p = by_res[d["res"]][0]
+        p["vars"].append((d["line"], d["bq"], d["var"], d["path"], d["df"]))
+        p["rows"].append(d)
+    for p in payloads:
+        p["rows"].sort(key=lambda d: d["line"])
+        var_lines = {v[0] for v in p["vars"]}
+        resolved = []
+        for ln, b, k, pa, df in p["vars"]:
+            vln, vpa = ln, pa
+            if STRUCTURAL.search(pa):
+                for d in p["rows"]:
+                    if d["line"] <= ln:
+                        continue
+                    if d["line"] in var_lines:
+                        break
+                    if VALUE.search(d["path"]):
+                        vln, vpa = d["line"], d["path"]
+                        break
+            resolved.append((vln, b, k, vpa, "master data" in df.lower()))
+        p["vars"] = resolved
     codes = [d for d in data if d["jc"] == "1"]
-    in_payload = {v[0] for p in payloads for v in p["vars"]}
+    in_payload = {d["line"] for p in payloads for d in p["rows"] if d["bq"] or d["var"]}
     other_vars = [d for d in data if (d["bq"] or d["var"]) and d["line"] not in in_payload]
     return payloads, codes, other_vars
 
 
 def render(form, src, data, payloads, codes, other_vars):
     bq = OrderedDict((d["bq"], None) for d in data if d["bq"])
+    bq_in = {b for p in payloads for _, b, _, _, _ in p["vars"] if b}
+    bq_out = [b for b in bq if b not in bq_in]
     out = [f"# Output Form: {form}", "",
            f"Sumber: `{src}`",
            "Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.",
@@ -78,12 +115,14 @@ def render(form, src, data, payloads, codes, other_vars):
            f"| Payload (`jumlah instance` = 1) | {len(payloads)} |",
            f"| Code (`jumlah code` = 1) | {len(codes)} |",
            f"| Code unik (code + CodeSystem) | {len({(d['code'], d['cs']) for d in codes})} |",
-           f"| Variabel BQ (unik) | {len(bq)} |", "",
+           f"| Variabel BQ (unik) | {len(bq)} |",
+           f"| Variabel BQ di luar payload | {len(bq_out)} {'✅' if not bq_out else '⚠️'} |", "",
            "## Payload", "",
-           "| # | Baris | Resource | Code pembeda | Display | Variabel BQ (baris) |",
+           "| # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |",
            "|---|---|---|---|---|---|"]
     for i, p in enumerate(payloads, 1):
-        v = "<br>".join((f"`{b}` ({ln})" if b else f"_{k}_ ({ln}, tanpa BQ)") for ln, b, k in p["vars"]) or "–"
+        v = "<br>".join((f"`{b}` → `{pa}` ({ln})" if b else f"_{k}_ → `{pa}` ({ln}, tanpa BQ)")
+                        + (" 🔎 lookup master data" if md else "") for ln, b, k, pa, md in p["vars"]) or "–"
         out.append(f"| {i} | {p['line']}–{p['last']} | {p['res']} | {p['code'] or '–'} | {p['disp'] or '–'} | {v} |")
     out += ["", "### Payload per resource", "", "| Resource | Jumlah |", "|---|---|"]
     for r, n in Counter(p["res"] for p in payloads).most_common():
@@ -102,10 +141,11 @@ def render(form, src, data, payloads, codes, other_vars):
         out.append(f"| {cs} | {len(cl)} | {', '.join(cl)} |")
     out += [f"| **Total** | **{len(codes)}** | |", "",
             "## Variabel di luar payload", "",
-            "Variabel yang ada di dictionary tapi tidak masuk blok payload mana pun (mis. master data).", "",
+            "Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di sini = ⚠️ perlu dicek.", "",
             "| Baris | Variabel BQ | Variabel Kobo | Resource | Path |", "|---|---|---|---|---|"]
     for d in other_vars:
-        out.append(f"| {d['line']} | {d['bq'] or '–'} | {d['var'] or '–'} | {d['res'] or '–'} | `{d['path']}` |")
+        flag = "⚠️ " if d["bq"] else ""
+        out.append(f"| {d['line']} | {flag}{d['bq'] or '–'} | {d['var'] or '–'} | {d['res'] or '–'} | `{d['path']}` |")
     if not other_vars:
         out.append("| – | – | – | – | – |")
     out.append("")

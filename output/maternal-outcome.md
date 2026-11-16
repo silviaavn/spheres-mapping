@@ -12,23 +12,24 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Code (`jumlah code` = 1) | 14 |
 | Code unik (code + CodeSystem) | 14 |
 | Variabel BQ (unik) | 12 |
+| Variabel BQ di luar payload | 0 ✅ |
 
 ## Payload
 
-| # | Baris | Resource | Code pembeda | Display | Variabel BQ (baris) |
+| # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 6–8 | PractitionerRole | – | – | `data_entry_clerk_type` (6) |
-| 2 | 9–12 | Practitioner | – | – | `data_entry_clerk_staff_id` (9)<br>`nik_yang_melakukan_entry_data` (10) |
-| 3 | 14–19 | Patient | – | – | `nama_ibu` (14)<br>`nik_ibu` (15) |
-| 4 | 55–69 | Encounter | – | – | `data_entry_clerk_staff_id` (62)<br>`tanggal_pencatatan` (63) |
+| 1 | 6–8 | PractitionerRole | – | – | `data_entry_clerk_type` → `PractitionerRole.code.coding` (6) |
+| 2 | 9–12 | Practitioner | – | – | `data_entry_clerk_staff_id` → `Practitioner.name.text` (9)<br>`nik_yang_melakukan_entry_data` → `Practitioner.identifier.value` (12) |
+| 3 | 14–19 | Patient | – | – | `nama_ibu` → `Patient.name.text` (14)<br>`nik_ibu` → `Patient.identifier.value` (17) |
+| 4 | 55–69 | Encounter | – | – | `data_entry_clerk_staff_id` → `Encounter.participant.individual.display` (62)<br>`tanggal_pencatatan` → `Encounter.period.start` (63)<br>`puskesmas_name` → `Encounter.serviceProvider.reference` (90) 🔎 lookup master data |
 | 5 | 71–78 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | – |
 | 6 | 92–93 | EpisodeOfCare | ANC | Antenatal Care | – |
 | 7 | 95–96 | EpisodeOfCare | PNC | Postnatal Care | – |
-| 8 | 101–113 | Observation | SP000389 | Keadaan Ibu | `outcome_001` (101) |
-| 9 | 115–125 | Observation | 93857-1 | Date and time of obstetric delivery | `delivery_date` (115) |
-| 10 | 127–138 | Observation | 81956-5 | Date and time of death [TimeStamp] | `tanggal_meninggal` (127) |
-| 11 | 140–151 | Observation | LT000005 | Alamat Mati | `tempat_meninggal` (140) |
-| 12 | 153–164 | Observation | 79378-6 | Cause of death | `sebab_meninggal` (153) |
+| 8 | 101–113 | Observation | SP000389 | Keadaan Ibu | `outcome_001` → `Observation.valueCodeableConcept.coding` (104) |
+| 9 | 115–125 | Observation | 93857-1 | Date and time of obstetric delivery | `delivery_date` → `Observation.valueDateTime` (118) |
+| 10 | 127–138 | Observation | 81956-5 | Date and time of death [TimeStamp] | `tanggal_meninggal` → `Observation.valueDateTime` (130) |
+| 11 | 140–151 | Observation | LT000005 | Alamat Mati | `tempat_meninggal` → `Observation.valueString` (143) |
+| 12 | 153–164 | Observation | 79378-6 | Cause of death | `sebab_meninggal` → `Observation.valueString` (156) |
 
 ### Payload per resource
 
@@ -75,8 +76,8 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 ## Variabel di luar payload
 
-Variabel yang ada di dictionary tapi tidak masuk blok payload mana pun (mis. master data).
+Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di sini = ⚠️ perlu dicek.
 
 | Baris | Variabel BQ | Variabel Kobo | Resource | Path |
 |---|---|---|---|---|
-| 26 | puskesmas_name | Puskesmas | Organization | `Organization.name` |
+| – | – | – | – | – |
