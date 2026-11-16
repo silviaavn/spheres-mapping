@@ -46,7 +46,8 @@ Terakhir diperbarui: 2026-11-16
    **Semua variabel BQ harus masuk ke salah satu payload.** Cek bagian "Variabel di luar payload" di `output/<form>.md` harus kosong.
 3. Isi kolom **Nama Column BQ** (letaknya sebelum "Nama Column Raw") di dictionary.
 4. Isi kolom `jumlah instance` dan `jumlah code` di dictionary `mapping/`, lalu buat output per form:
-   `python3 scripts/form_output.py mapping/kobo-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md`
+   `python3 scripts/form_output.py mapping/kobo-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md [raw/<form>-kolom.md]`
+   Kalau ada file mentah, tambahkan argumen ke-4 `raw/<form>-kolom.md`: ringkasan menampilkan **Variabel di Excel export** (jumlah kolom dan apakah semua masuk payload) menggantikan baris "Variabel BQ di luar payload" (baris itu hanya muncul lagi kalau ada yang di luar payload).
 5. Update konsolidasi `output.md` (angka per form harus sama dengan `output/<form>.md`) dan `revisi.md`.
 
 ## Kolom di data dictionary
@@ -54,6 +55,7 @@ Terakhir diperbarui: 2026-11-16
 - `jumlah code` = isi 1 di setiap baris determining code / opsi coded.
 
 ## Log perubahan aturan
+- 2026-11-16: `form_output.py` menerima argumen ke-4 `raw/<form>-kolom.md`; ringkasan output per form menampilkan Variabel di Excel export.
 - 2026-11-16: (SiGizi ANC) File mentah = sumber kebenaran, semua kolom wajib punya mapping, lampiran `raw/<form>-kolom.md`. String faskes/posyandu → lookup master data. PractitionerRole petugas lab → lookup. Determining code diperluas untuk Procedure, ServiceRequest, DiagnosticReport, Specimen, Immunization, Medication, interpretation; daftar code yang tidak dihitung diperjelas (dipakai sejak SiGizi ANC).
 - 2026-11-16: Semua variabel BQ wajib masuk payload. Puskesmas → Encounter.serviceProvider.reference (lookup master data).
 - 2026-11-16: Output per form wajib dibuat dengan `scripts/form_output.py`. Resource sama dalam 1 form dihitung masing-masing.

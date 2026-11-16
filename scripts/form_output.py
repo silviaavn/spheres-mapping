@@ -104,7 +104,17 @@ def build(data):
     return payloads, codes, other_vars
 
 
-def render(form, src, data, payloads, codes, other_vars):
+def load_raw(path):
+    """Daftar variabel BQ dari tabel kolom file mentah (raw/<form>-kolom.md), urut kolom Excel."""
+    cols = []
+    for line in open(path, encoding="utf-8"):
+        m = re.match(r"\|\s*\d+\s*\|\s*([A-Z]+)\s*\|[^|]*\|\s*`([^`]+)`", line)
+        if m:
+            cols.append((m.group(1), m.group(2)))
+    return cols
+
+
+def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None):
     bq = OrderedDict((d["bq"], None) for d in data if d["bq"])
     bq_in = {b for p in payloads for _, b, _, _, _ in p["vars"] if b}
     bq_out = [b for b in bq if b not in bq_in]
@@ -117,8 +127,14 @@ def render(form, src, data, payloads, codes, other_vars):
            f"| Payload (`jumlah instance` = 1) | {len(payloads)} |",
            f"| Code (`jumlah code` = 1) | {len(codes)} |",
            f"| Code unik (code + CodeSystem) | {len({(d['code'], d['cs']) for d in codes})} |",
-           f"| Variabel BQ (unik) | {len(bq)} |",
-           f"| Variabel BQ di luar payload | {len(bq_out)} {'✅' if not bq_out else '⚠️'} |", "",
+           f"| Variabel BQ (unik) | {len(bq)} |"]
+    if raw is not None:
+        raw_out = [f"{c} `{b}`" for c, b in raw if b not in bq_in]
+        out.append(f"| Variabel di Excel export (`{raw_path}`) | {len(raw)} kolom, "
+                   + ("semua masuk payload ✅ |" if not raw_out else f"{len(raw_out)} belum masuk payload ⚠️: {', '.join(raw_out)} |"))
+    if raw is None or bq_out:
+        out.append(f"| Variabel BQ di luar payload | {len(bq_out)} {'✅' if not bq_out else '⚠️'} |")
+    out += ["",
            "## Payload", "",
            "| # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |",
            "|---|---|---|---|---|---|"]
@@ -156,7 +172,9 @@ def render(form, src, data, payloads, codes, other_vars):
 
 if __name__ == "__main__":
     src, form, dst = sys.argv[1], sys.argv[2], sys.argv[3]
+    raw_path = sys.argv[4] if len(sys.argv) > 4 else None  # opsional: raw/<form>-kolom.md (file mentah, mis. Excel export)
     data = load(src)
     payloads, codes, other = build(data)
-    open(dst, "w", encoding="utf-8").write(render(form, src, data, payloads, codes, other))
+    raw = load_raw(raw_path) if raw_path else None
+    open(dst, "w", encoding="utf-8").write(render(form, src, data, payloads, codes, other, raw, raw_path))
     print(f"{form}: {len(payloads)} payload, {len(codes)} code -> {dst}")
