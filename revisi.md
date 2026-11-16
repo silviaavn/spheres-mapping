@@ -53,6 +53,11 @@ Kolom **Nama Column BQ** sudah ditambahkan di `mapping/` (sebelum "Nama Column R
 
 | # | Temuan | Status |
 |---|---|---|
+| 11 | Puskesmas dipilih dari list, jadi Organization & Location cukup lookup ke master data | done (mapping/): blok Organization dan Location dihapus. `Encounter.location.reference` diberi keterangan lookup master data Location |
+| 12 | Observation Tanggal Meninggal (81956-5), Tempat Meninggal (LT000005), Penyebab Meninggal (79378-6) tidak punya `Observation.encounter.reference`, padahal 2 Observation lain punya. Ketiganya malah pakai `focus.reference` = Patient, yang sama dengan `subject` | open (saran: tambah `encounter.reference`, hapus `focus`) |
+| 13 | PractitionerRole tidak direferensi oleh resource mana pun dan tidak punya `PractitionerRole.practitioner.reference`, jadi tidak tersambung ke Practitioner data entry | open (saran: tambah `PractitionerRole.practitioner.reference` → Practitioner) |
+| 14 | EpisodeOfCare ANC & PNC hanya berisi `type` + `status` finished. Tidak ada `patient.reference` dan tidak ada keterangan cara mencari episode yang mau ditutup | open (saran: Definisi Operasional "cari EpisodeOfCare ANC/PNC aktif milik pasien, ubah status jadi finished", tambah `patient.reference`) |
+| 15 | Keadaan Ibu pakai category `vital-signs`, sedangkan Observation lain `survey` | open (minor, cek apakah memang disengaja) |
 | 10 | `puskesmas_name` dipindah dari `Organization.name` ke `Encounter.serviceProvider.reference` (keterangan: lookup master data Organization). Definisi lama "spheres? puskesmas?" diganti. Blok Organization masih ada di dictionary | done (mapping/) |
 | 9 | Nama data entry juga masuk ke `Encounter.participant` (type ADM admitter). Kolom Variables di baris `Encounter.participant.individual.display` diisi "Nama yang melakukan entry data" | done (mapping/) |
 | 8 | `data_entry_clerk_staff_id` kelihatannya ID, bukan nama | done: dikonfirmasi isinya **nama**. Mapping ke `Practitioner.name.text` sudah benar, dan kolom yang sama juga dipakai untuk `Encounter.participant.individual.display` (ADM) |
@@ -99,6 +104,9 @@ Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hard
 | R11 | Dictionary Raffle belum punya kolom `jumlah code` dan `jumlah instance` | done (mapping/) |
 | R12 | "Input Data" (Observation 385438008: Sigizi / E-pus PKD / E-pus) tidak punya kolom BQ | done: lupa ditambahkan. Kolom BQ `input_data` dibuat (nama sementara, ganti kalau nama di pipeline beda). Lihat Catatan pipeline |
 | R14 | Variabel puskesmas belum masuk payload (hanya di blok Organization). Isian puskesmas dipilih dari list yang sudah ada, jadi Organization cukup di-lookup dari master data | done (mapping/): blok Organization dihapus. `puskesmas` dipindah ke `Encounter.serviceProvider.reference` dengan keterangan lookup master data. `Location.managingOrganization` dan `EpisodeOfCare.managingOrganization` diberi keterangan memakai Organization hasil lookup yang sama |
+| R15 | Baris `Observation.encounter.reference` dobel di blok Observation Input Data | done (mapping/): baris kedua dihapus |
+| R16 | Ada 2 Practitioner (bidan desa & data entry), tapi `Observation.performer.reference` hanya ditulis "Reference ke resources Practitioner". Belum jelas yang mana | open (perlu konfirmasi) |
+| R17 | `lokasi_faskes` ditaruh di `Location.identifier`, sedangkan `Location.name` hanya berisi placeholder. Kalau isian lokasi_faskes berupa nama (bukan kode), seharusnya ke `Location.name` | open (perlu konfirmasi) |
 | R13 | Practitioner data entry sudah ditambahkan (baris 70 di `mapping/`), tapi `Encounter.participant` ADM baru punya `individual.display` (baris 94). Belum ada `individual.reference` ke Practitioner data entry, padahal ATND (bidan) punya | open (saran: tambah baris `Encounter.participant.individual.reference` = Reference ke Practitioner data entry) |
 
 ## Catatan pipeline (perlu update)
@@ -114,9 +122,11 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P5 | Raffle | Encounter.class display "field"; participant ATND reference ke Practitioner (bidan desa) | Converter | open |
 | P6 | Maternal Outcome | `data_entry_clerk_staff_id` (isinya nama) juga dipakai untuk `Encounter.participant` ADM `individual.display` | Converter | open |
 | P8 | Maternal Outcome, Raffle | `puskesmas_name` / `puskesmas` → lookup Organization di master data berdasarkan nama, lalu isi `Encounter.serviceProvider.reference`. Raffle: Organization yang sama dipakai untuk `Location.managingOrganization` dan `EpisodeOfCare.managingOrganization` | Converter | open |
+| P9 | Maternal Outcome | Organization & Location tidak dibuat lagi: lookup master data untuk `Encounter.serviceProvider` dan `Encounter.location` | Converter | open |
 | P7 | Maternal Outcome | Practitioner.identifier pakai system nik (use / system / value), `nakes-his-number` dihapus | Converter | open |
 
 ## Log perubahan revisi
+- 2026-11-16: MO: blok Organization & Location dihapus (#11), tambah #12–#15. Raffle: hapus baris dobel (R15), tambah R16–R17. Tambah P9.
 - 2026-11-16: Semua variabel BQ sekarang masuk payload. Raffle: blok Organization dihapus (R14). MO: puskesmas_name ke serviceProvider (#10). Tambah P8.
 - 2026-11-16: User menambah Practitioner data entry di Raffle (commit `9da6c8d`). P2 diperbarui. Tambah R13.
 - 2026-11-13: R12 done (kolom BQ `input_data`). MO #8 done (staff_id = nama). R7, R9 disetujui. Tambah bagian Catatan pipeline (P1–P7).

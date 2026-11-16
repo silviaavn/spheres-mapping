@@ -25,7 +25,7 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 5 | 55–63 | EpisodeOfCare | ANC | Antenatal Care | – |
 | 6 | 66–82 | Encounter | – | – | `nama_data_entry` → `Encounter.participant.individual.display` (76)<br>`tanggal_kunjungan` → `Encounter.period.start` (77)<br>`puskesmas` → `Encounter.serviceProvider.reference` (103) 🔎 lookup master data |
 | 7 | 84–91 | Condition | SP001135 | Presensi Posyandu | `keterangan` → `Condition.note` (91) |
-| 8 | 105–119 | Observation | 385438008 | Source of information | `input_data` → `Observation.valueCodeableConcept.coding` (108) |
+| 8 | 105–118 | Observation | 385438008 | Source of information | `input_data` → `Observation.valueCodeableConcept.coding` (108) |
 
 ### Payload per resource
 

@@ -112,7 +112,6 @@ Data Pengentry,Identitas Data Entry,nama_data_entry,,Nama Data Entry,string,,,,P
 ,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,,,,,,,
 ,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,,,,,,,
 ,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,,,,,
-,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,,,,,,,
 ,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,,,,,,,
 ,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,,,,,,,
 ,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,,,,,,,

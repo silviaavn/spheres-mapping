@@ -98,13 +98,14 @@ Variabel Kobo / BQ per payload: lihat tabel tally BQ di `revisi.md`.
 | **Total** | **12** | **8** | **20** | **15** | |
 
 Catatan:
-- Organization tidak dihitung di semua form (master data). Location di Maternal Outcome juga tidak dihitung (lookup), tapi di Raffle dihitung karena dibuat dari form.
+- Organization tidak dihitung di semua form (lookup master data, bloknya tidak ditulis di dictionary). Location di Maternal Outcome juga lookup (tidak dihitung), tapi di Raffle dihitung karena dibuat dari form.
 - EpisodeOfCare: Maternal Outcome = ANC & PNC ditutup (finished, hari ke-43); Raffle = ANC dicari dulu, kalau tidak ada baru dibuat.
 - Encounter muncul di 2 blok kamus (data utama + statusHistory) = 1 payload.
 
 ---
 
 ## Log perubahan output
+- 2026-11-16: MO: blok Organization & Location dihapus dari dictionary (lookup master data). Angka tidak berubah.
 - 2026-11-16: Output per form menampilkan path tiap variabel BQ dan tanda 🔎 untuk lookup master data. Semua variabel BQ sudah masuk payload (0 di luar payload). Angka tidak berubah.
 - 2026-11-16: Tambah output per form (`output/maternal-outcome.md`, `output/raffle.md`), dibuat dengan `scripts/form_output.py`. Raffle jadi 8 payload (Practitioner data entry ditambahkan user di commit `9da6c8d`). Total non-unik 20, unik 15.
 - 2026-11-13: Ringkasan diberi Total non-unik vs unik; kolom Jenis resource dihapus. Section payload per form diganti jadi satu tabel "Payload per resource (semua form)".
