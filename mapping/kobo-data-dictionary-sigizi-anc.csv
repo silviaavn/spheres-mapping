@@ -81,7 +81,7 @@ ex: Posyandu",,Encounter,Encounter.class,FLD,field,http://terminology.hl7.org/Co
 ,,faskes_yang_melayani_anc,{Faskes yang melayani ANC},,string,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,,,,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,,,,,,,,,,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,,,,,,,,,,,,
-,,,,,,,,"Extension custom ""aksi sigizi"" (URL sementara, ganti kalau ada canonical resmi)",,Encounter,Encounter.extension.url,Tidak ada,Tidak ada,https://github.com/silviaavn/spheres-mapping/StructureDefinition/sigizi-aksi,,,,,,,,,,,,,,
+,,,,,,,,"Extension custom ""aksi sigizi"" (awalan URL http://terminology.kemkes.go.id/sp/)",,Encounter,Encounter.extension.url,Tidak ada,Tidak ada,http://terminology.kemkes.go.id/sp/sigizi-aksi,,,,,,,,,,,,,,
 ,,pemeriksaan_anc_aksi,{Aksi},Aksi,,,,"Link halaman perkembangan bumil di SiGizi, mis. https://sigizikesga.kemkes.go.id/ppgbm/bumil/perkembangan/<id>.html",,Encounter,Encounter.extension.valueUrl,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,,,,,,,,,,,,1

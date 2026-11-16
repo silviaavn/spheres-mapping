@@ -189,7 +189,7 @@ Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7
 | S14 | Label variabel ada di baris pembuka blok (`.active`, `.category`, `contained.resourceType`), bukan di baris nilai | done (mapping/): label + kolom BQ pindah ke baris nilai (PractitionerRole.code, Procedure.status, quantity.value, ServiceRequest.code, protocolApplied) |
 | S15 | Baris 802: code Anemia Berat berisi `what do yo eeeee` | done (mapping/): **OI000034** |
 | S16 | `pemeriksaan_anc_usia_kehamilan` (file mentah: "24 Minggu") tidak ada di dictionary | done (mapping/): Observation baru LOINC **18185-9** Gestational age, valueQuantity satuan `wk`, setelah blok HPHT |
-| S17 | `pemeriksaan_anc_aksi` = kolom "Aksi" di export web (link halaman perkembangan bumil SiGizi) | done (mapping/): `Encounter.extension` url `https://github.com/silviaavn/spheres-mapping/StructureDefinition/sigizi-aksi` (sementara, S31), `valueUrl` = isi Aksi. Di file Padamara kolom ini kosong 57/57 (S30) |
+| S17 | `pemeriksaan_anc_aksi` = kolom "Aksi" di export web (link halaman perkembangan bumil SiGizi) | done (mapping/): `Encounter.extension` url `http://terminology.kemkes.go.id/sp/sigizi-aksi` (S31), `valueUrl` = isi Aksi. Di file Padamara kolom ini kosong 57/57 (S30) |
 | S18 | Faskes yang melayani ANC: blok Organization (40–57) + Location (59–82) dibuat dari nama faskes. Isinya campur: puskesmas, RS, nama bidan (PMB), "Kunjungan rumah", "DSOG" | done (mapping/): isian string → **lookup** master data. Blok Organization & Location dihapus. `Encounter.serviceProvider` = lookup Organization, `Encounter.location` = lookup Location. Reference Organization/Location lain diberi keterangan yang sama |
 | S19 | Posyandu domisili: blok Organization posyandu (1030–1048) + `puskesmas_domisili` hanya di `Organization.partOf`, jadi di luar payload | done (mapping/): string posyandu → **lookup** master data (type 131) dengan kunci posyandu + desa + puskesmas domisili. Blok Organization posyandu dihapus; `puskesmas_domisili` jadi baris "Kunci lookup" di Patient |
 | S20 | Pemeriksaan Pertama → `Encounter.identifier` K1M/K1A dengan system terminology (`.../CodeSystem/episodeofcare/ANC`) | ok: **kesepakatan SatuSehat**, tetap. K1M/K1A dihitung sebagai opsi code |
@@ -203,7 +203,7 @@ Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7
 | S28 | DiagnosticReport HIV/Hepatitis/Sifilis category `MB` (Microbiology), lebih tepat `SR` (Serology). MedicationDispense.category pakai CodeSystem `medicationrequest-category` | done (mapping/): `SR` Serology; CodeSystem jadi `http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category` |
 | S29 | Di file mentah kolom B = NIK, C = Nama, sedangkan urutan BQ `nama`, `nik` | open (pipeline P17): pastikan ingestion memetakan berdasarkan nama header |
 | S30 | Kolom Aksi di file Padamara kosong 57/57 (tidak ada hyperlink juga). Isi seperti `https://sigizikesga.kemkes.go.id/ppgbm/bumil/perkembangan/<id>.html` terlihat di sumber lain | info: mapping tetap dibuat |
-| S31 | URL extension `sigizi-aksi` masih sementara (belum ada canonical resmi). Perlu dicek juga apakah SatuSehat menerima extension custom di Encounter | open |
+| S31 | URL extension `sigizi-aksi` masih sementara. Perlu dicek juga apakah SatuSehat menerima extension custom di Encounter | URL done: pakai awalan `http://terminology.kemkes.go.id/sp/` → `http://terminology.kemkes.go.id/sp/sigizi-aksi`. Penerimaan di SatuSehat masih open (P22) |
 | S32 | Jumlah TTD/MMS = 0: cara mencatat "diberikan 0" (bukan kosong) belum ditentukan | open (lihat opsi di laporan chat 2026-11-16) |
 
 ## Catatan pipeline (perlu update)
@@ -232,11 +232,12 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P19 | SiGizi ANC | PractitionerRole petugas lab tidak dibuat; performer lab = PractitionerRole default lab milik Organization faskes (master data) | Converter + master data (setiap faskes perlu PractitionerRole default lab) | open |
 | P20 | SiGizi ANC | Lab "Tidak Diperiksa"/`-`/kosong → hanya Observation dataAbsentReason, tanpa ServiceRequest/Specimen/DiagnosticReport. TTD/MMS = 0 → MedicationRequest/Dispense tidak dibuat | Converter | open |
 | P21 | SiGizi ANC | Encounter.class diturunkan dari faskes: faskes → AMB, luar faskes (posyandu) → FLD, "Kunjungan rumah" → HH | Converter | open |
-| P22 | SiGizi ANC | Kolom `pemeriksaan_anc_aksi` → `Encounter.extension` sigizi-aksi (valueUrl) | Ingestion: pastikan link ikut terambil (di export Padamara kosong). Converter: cek apakah SatuSehat menerima extension ini; kalau tidak, buang sebelum kirim ke SatuSehat | open |
+| P22 | SiGizi ANC | Kolom `pemeriksaan_anc_aksi` → `Encounter.extension` url `http://terminology.kemkes.go.id/sp/sigizi-aksi` (valueUrl) | Ingestion: pastikan link ikut terambil (di export Padamara kosong). Converter: cek apakah SatuSehat menerima extension ini; kalau tidak, buang sebelum kirim ke SatuSehat | open |
 | P23 | SiGizi ANC | Hb Anemia Berat → OI000034; DiagnosticReport HIV/Hepatitis/Sifilis category SR; EpisodeOfCare ANC dicari dulu (active) sebelum buat baru | Converter | open |
 | P16 | SiGizi ANC | Pilihan TD di form sumber `Normal (<= 140)` dan `Hipertensi (>= 140)` sama-sama memuat 140 | Info ke pemilik form SiGizi | open |
 
 ## Log perubahan revisi
+- 2026-11-16: URL extension Aksi jadi `http://terminology.kemkes.go.id/sp/sigizi-aksi` (S31, P22).
 - 2026-11-16: SiGizi ANC: jawaban R1–R14 diterapkan. S15–S19, S21–S23, S26, S28 done; S20, S24, S25, S27 ok (tetap). Tambah S29–S32 dan P17–P23. Tally 49 = 49 = 49 kolom file mentah. Struktur kolom file mentah di `raw/sigizi-anc-kolom.md`.
 - 2026-11-16: Tambah review form SiGizi ANC: tally BQ (49 vs 47), temuan S1–S28 (S1–S14 done di `mapping/`, S15–S28 open menunggu jawaban R1–R14), catatan pipeline P12–P16.
 - 2026-11-16: Semua temuan dictionary MO (#12–#15) dan Raffle (R13, R16, R17) done sesuai jawaban user. Tambah P10, P11. Tidak ada temuan dictionary yang open.
