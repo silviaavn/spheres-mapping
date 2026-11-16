@@ -1,11 +1,11 @@
-# Output Hitungan Payload & Code — Form Kobo
+# Output Hitungan Payload & Code — Form Kobo & PHDT
 
 Terakhir diperbarui: 2026-11-16
 Aturan hitung: lihat `aturan.md`
 Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **Maternal Outcome** → `output/maternal-outcome.md` (sumber: `mapping/kobo-data-dictionary-maternal-outcome.csv`)
 - **Raffle** → `output/raffle.md` (sumber: `mapping/kobo-data-dictionary-raffle.csv`)
-- **SiGizi ANC** → `output/sigizi-anc.md` (sumber: `mapping/kobo-data-dictionary-sigizi-anc.csv`; struktur file mentah: `raw/sigizi-anc-kolom.md`)
+- **SiGizi ANC** → `output/sigizi-anc.md` (sumber: `mapping/phdt-data-dictionary-sigizi-anc.csv`, PHDT Data Dictionary; struktur file mentah: `raw/sigizi-anc-kolom.md`)
 
 File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
@@ -101,7 +101,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 67 | Procedure | 1230101008 | Counseling for pregnancy | SiGizi ANC | 1 |
 | 68 | Procedure | 385892002 | Mental health screening | SiGizi ANC | 1 |
 
-Variabel Kobo / BQ per payload: lihat `output/<form>.md`.
+Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 
 ## Frekuensi code (lintas form)
 
@@ -291,6 +291,7 @@ Catatan:
 ---
 
 ## Log perubahan output
+- 2026-11-16: Dictionary SiGizi ANC diganti nama jadi `mapping/phdt-data-dictionary-sigizi-anc.csv` (sumbernya PHDT Data Dictionary, bukan Kobo). Angka tidak berubah.
 - 2026-11-16: Ringkasan `output/sigizi-anc.md`: baris "Variabel BQ di luar payload" diganti "Variabel di Excel export" (SiGizi ANC: 49, angka saja). Baris ini tidak muncul di form Kobo (tidak ada file mentah). Angka tidak berubah.
 - 2026-11-16: SiGizi ANC final setelah jawaban R1–R14: **61 payload, 142 code** (−6 PractitionerRole lab, +1 Observation usia kehamilan 18185-9; code −6 Laboratory worker, +1 18185-9). Tabel frekuensi, CodeSystem, dan payload per resource diperbarui untuk 3 form. Total non-unik 81 payload / 162 code, unik 68 / 132.
 - 2026-11-16: Tambah SiGizi ANC sebagai angka sementara (66 payload, 147 code; total non-unik 86/167, unik 67/132). Tabel frekuensi belum diubah sampai R1–R14 dijawab. `scripts/form_output.py` mengenali code pembeda untuk Procedure, ServiceRequest, DiagnosticReport, Specimen, Immunization, MedicationRequest, MedicationDispense (output MO & Raffle tidak berubah).

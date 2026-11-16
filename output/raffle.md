@@ -63,6 +63,6 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di sini = ⚠️ perlu dicek.
 
-| Baris | Variabel BQ | Variabel Kobo | Resource | Path |
+| Baris | Variabel BQ | Variabel dictionary | Resource | Path |
 |---|---|---|---|---|
 | – | – | – | – | – |

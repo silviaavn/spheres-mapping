@@ -1,7 +1,7 @@
-# Revisi Data Dictionary — Form Kobo
+# Revisi Data Dictionary — Form Kobo & PHDT
 
 Terakhir diperbarui: 2026-11-16
-File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv`; SiGizi ANC → `mapping/kobo-data-dictionary-sigizi-anc.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
+File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv`; SiGizi ANC → `mapping/phdt-data-dictionary-sigizi-anc.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
 
 > Maternal Outcome: nomor baris di bawah mengikuti Kobo_3. Di file `mapping/`, baris setelah 11 bergeser +1 karena ada baris baru `Practitioner.identifier.value`.
 
@@ -109,9 +109,9 @@ Provinsi dan Kabupaten/Kota (31, 34, 51, 54) tidak perlu kolom BQ karena di-hard
 | R17 | `lokasi_faskes` ditaruh di `Location.identifier`, sedangkan `Location.name` hanya berisi placeholder. Kalau isian lokasi_faskes berupa nama (bukan kode), seharusnya ke `Location.name` | done (mapping/): `lokasi_faskes` dipindah ke `Location.name` |
 | R13 | Practitioner data entry sudah ditambahkan (baris 70 di `mapping/`), tapi `Encounter.participant` ADM baru punya `individual.display` (baris 94). Belum ada `individual.reference` ke Practitioner data entry, padahal ATND (bidan) punya | done (mapping/): tambah `Encounter.participant.individual.reference` → Practitioner data entry. Reference ATND diberi keterangan Practitioner bidan desa |
 
-## Form: SiGizi ANC
+## Form: SiGizi ANC (PHDT Data Dictionary)
 
-Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7 baris). Contoh data mentah: PUSKESMAS PADAMARA SiGizi Pengukuran ANC (57 baris, 2026-11-16). Versi revisi: `mapping/kobo-data-dictionary-sigizi-anc.csv` (ada 1 baris sisipan setelah baris 268 dan 2 sel multi-baris jadi 1 baris, jadi nomor baris bergeser; untuk nomor baris terbaru lihat `output/sigizi-anc.md`).
+Sumber: PHDT Data Dictionary - SiGiziANC (nomor baris = baris CSV asli, header 7 baris). Contoh data mentah: PUSKESMAS PADAMARA SiGizi Pengukuran ANC (57 baris, 2026-11-16). Versi revisi: `mapping/phdt-data-dictionary-sigizi-anc.csv` (ada 1 baris sisipan setelah baris 268 dan 2 sel multi-baris jadi 1 baris, jadi nomor baris bergeser; untuk nomor baris terbaru lihat `output/sigizi-anc.md`).
 
 ### Tally variabel BQ vs dictionary
 
@@ -237,6 +237,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P16 | SiGizi ANC | Pilihan TD di form sumber `Normal (<= 140)` dan `Hipertensi (>= 140)` sama-sama memuat 140 | Info ke pemilik form SiGizi | open |
 
 ## Log perubahan revisi
+- 2026-11-16: Dictionary SiGizi ANC diganti nama jadi `mapping/phdt-data-dictionary-sigizi-anc.csv` (sumber PHDT, bukan Kobo).
 - 2026-11-16: URL extension Aksi jadi `http://terminology.kemkes.go.id/sp/sigizi-aksi` (S31, P22).
 - 2026-11-16: SiGizi ANC: jawaban R1–R14 diterapkan. S15–S19, S21–S23, S26, S28 done; S20, S24, S25, S27 ok (tetap). Tambah S29–S32 dan P17–P23. Tally 49 = 49 = 49 kolom file mentah. Struktur kolom file mentah di `raw/sigizi-anc-kolom.md`.
 - 2026-11-16: Tambah review form SiGizi ANC: tally BQ (49 vs 47), temuan S1–S28 (S1–S14 done di `mapping/`, S15–S28 open menunggu jawaban R1–R14), catatan pipeline P12–P16.

@@ -156,7 +156,7 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
     out += [f"| **Total** | **{len(codes)}** | |", "",
             "## Variabel di luar payload", "",
             "Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di sini = ⚠️ perlu dicek.", "",
-            "| Baris | Variabel BQ | Variabel Kobo | Resource | Path |", "|---|---|---|---|---|"]
+            "| Baris | Variabel BQ | Variabel dictionary | Resource | Path |", "|---|---|---|---|---|"]
     for d in other_vars:
         flag = "⚠️ " if d["bq"] else ""
         out.append(f"| {d['line']} | {flag}{d['bq'] or '–'} | {d['var'] or '–'} | {d['res'] or '–'} | `{d['path']}` |")

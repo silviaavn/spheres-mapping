@@ -1,6 +1,6 @@
 # Output Form: SiGizi ANC
 
-Sumber: `mapping/kobo-data-dictionary-sigizi-anc.csv`
+Sumber: `mapping/phdt-data-dictionary-sigizi-anc.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.
 Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
@@ -267,6 +267,6 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di sini = ⚠️ perlu dicek.
 
-| Baris | Variabel BQ | Variabel Kobo | Resource | Path |
+| Baris | Variabel BQ | Variabel dictionary | Resource | Path |
 |---|---|---|---|---|
 | – | – | – | – | – |

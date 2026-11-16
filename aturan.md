@@ -1,6 +1,10 @@
-# Aturan Hitung Payload & Code — Form Kobo
+# Aturan Hitung Payload & Code — Form Kobo & PHDT
 
 Terakhir diperbarui: 2026-11-16
+
+## Sumber dictionary
+- **Kobo**: `mapping/kobo-data-dictionary-<form>.csv` (Maternal Outcome, Raffle).
+- **PHDT Data Dictionary** (mis. SiGizi): `mapping/phdt-data-dictionary-<form>.csv`. Jangan disebut Kobo.
 
 ## Sumber kebenaran: file mentah
 - Kalau ada **file mentah** (mis. export Excel SiGizi), file itu sumber kebenaran. Kobo tidak punya file mentah.
@@ -60,6 +64,7 @@ Terakhir diperbarui: 2026-11-16
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
+- 2026-11-16: Nama file dictionary dibedakan per sumber: `kobo-` untuk Kobo, `phdt-` untuk PHDT Data Dictionary.
 - 2026-11-16: Ringkasan output per form: "Variabel BQ di luar payload" tidak dicantumkan; kalau ada file mentah, tampilkan "Variabel di Excel export" (angka saja). `form_output.py` menerima argumen ke-4 `raw/<form>-kolom.md`.
 - 2026-11-16: (SiGizi ANC) File mentah = sumber kebenaran, semua kolom wajib punya mapping, lampiran `raw/<form>-kolom.md`. String faskes/posyandu → lookup master data. PractitionerRole petugas lab → lookup. Determining code diperluas untuk Procedure, ServiceRequest, DiagnosticReport, Specimen, Immunization, Medication, interpretation; daftar code yang tidak dihitung diperjelas (dipakai sejak SiGizi ANC).
 - 2026-11-16: Semua variabel BQ wajib masuk payload. Puskesmas → Encounter.serviceProvider.reference (lookup master data).
