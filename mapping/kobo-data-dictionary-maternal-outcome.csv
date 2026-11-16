@@ -6,6 +6,7 @@
 ,,FALSE,FALSE,data_entry_clerk_type,,Siapa yang melakukan entry data?,,,,healthworker,,,PractitionerRole,PractitionerRole.code.coding,223366009,Healthcare professional,http://snomed.info/sct,,,,,,,,,,1,1
 ,,,,,,,,,,data_entry_staff,,,PractitionerRole,PractitionerRole.code.coding,SP000396,Data entry staff,http://terminology.kemkes.go.id/sp,,,,,,,,,,1,
 ,,,,,,,,,,field_or_call_center_staff,,,PractitionerRole,PractitionerRole.code.coding,SP000397,Field/call center staff,http://terminology.kemkes.go.id/sp,,,,,,,,,,1,
+,,,,,,,,,,,Practitioner data entry (Nama yang melakukan entry data),,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner,,,,,,,,,,,,,
 ,,FALSE,FALSE,data_entry_clerk_staff_id,,Nama yang melakukan entry data,Nama yang melakukan entry data,String,,,,,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,,,,,,,,,1
 ,,FALSE,FALSE,nik_yang_melakukan_entry_data,,NIK yang melakukan entry data,NIK yang melakukan entry data,Numerik,,,,,Practitioner,Practitioner.identifier.use,official,Tidak ada,Tidak ada,,,,,,,,,,,
 ,,FALSE,FALSE,,,,,,,,,,Practitioner,Practitioner.identifier.system,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/id/nik,,,,,,,,,,,
@@ -57,17 +58,19 @@
 ,,,,,,,,,,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,puskesmas_name,,Puskesmas,Puskesmas,,,,"Lookup ke master data Organization berdasarkan nama puskesmas (pilihan dari list), lalu isi reference ke Organization hasil lookup",,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
-,,,,,,,,,,,"ini harusnya bisa jadi trigger untuk menutup episodeofcare anc maupun pnc kalo masih ketinggalan, karena ditanya di hari ke 43",,EpisodeOfCare,EpisodeOfCare.type.coding,ANC,Antenatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,,,,FALSE,,,,,1,1
+,,,,,,,,,,,"ini harusnya bisa jadi trigger untuk menutup episodeofcare anc maupun pnc kalo masih ketinggalan, karena ditanya di hari ke 43. Cari EpisodeOfCare ANC aktif milik pasien (berdasarkan patient + type ANC), lalu ubah status jadi finished.",,EpisodeOfCare,EpisodeOfCare.type.coding,ANC,Antenatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,,,,FALSE,,,,,1,1
 ,,,,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,finished,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
+,,,,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.patient.reference,Reference ke resources Patient,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.type.coding,PNC,Postnatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,,,,FALSE,,,,,1,1
+,,,,,,,,,,,"Cari EpisodeOfCare PNC aktif milik pasien (berdasarkan patient + type PNC), lalu ubah status jadi finished.",,EpisodeOfCare,EpisodeOfCare.type.coding,PNC,Postnatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,,,,FALSE,,,,,1,1
 ,,,,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,finished,Tidak ada,,,,,,FALSE,,,,,,
+,,,,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.patient.reference,Reference ke resources Patient,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,
 ,,,,outcome_001,,Keadaan Ibu,Keadaan Ibu,coded,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,1
-,,,,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,,,FALSE,,,,,,
+,,,,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.code.coding,SP000389,Keadaan Ibu ,http://terminology.kemkes.go.id/sp,,,,,FALSE,,,,,1,
 ,,,,,,,,,,sehat,,,Observation,Observation.valueCodeableConcept.coding,102514002,Well female adult,http://snomed.info/sct,,,,,FALSE,,,,,1,
 ,,,,,,,,,,sakit,,,Observation,Observation.valueCodeableConcept.coding,39104002,Illness,http://snomed.info/sct,,,,,FALSE,,,,,1,
@@ -98,8 +101,7 @@
 ,,,,,,,,,,,,,Observation,Observation.valueDateTime,Tidak ada,Tidak ada,Tidak ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Observation,Observation.focus.reference,Reference ke resources Patient,,,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Observation,Observation.focus.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
+,,,,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,,,FALSE,,,,,,
@@ -111,8 +113,7 @@
 ,,,,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Observation,Observation.focus.reference,Reference ke resources Patient,,,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Observation,Observation.focus.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
+,,,,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,,,FALSE,,,,,,
@@ -124,8 +125,7 @@
 ,,,,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Observation,Observation.focus.reference,Reference ke resources Patient,,,,,,,FALSE,,,,,,
-,,,,,,,,,,,,,Observation,Observation.focus.display,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
+,,,,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,,,FALSE,,,,,,
 ,,,,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,,,FALSE,,,,,,
