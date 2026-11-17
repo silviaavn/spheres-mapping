@@ -11,7 +11,7 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Payload (`jumlah instance` = 1) | 21 |
 | Code (`jumlah code` = 1) | 35 |
 | Code unik (code + CodeSystem) | 34 |
-| Variabel BQ (unik) | 40 |
+| Variabel BQ (unik) | 39 |
 | Variabel di Excel export | 40 |
 
 ## Payload
@@ -27,18 +27,18 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 7 | 74–83 | Patient | – | – | _Nama_ → `Patient.active` (74, tanpa BQ)<br>`identitas_kontak_nama` → `Patient.name.text` (75)<br>`identitas_kontak_nik` → `Patient.identifier.value` (78)<br>`identitas_kontak_lp` → `Patient.gender` (79)<br>`identitas_kontak_alamat` → `Patient.address.line` (83) |
 | 8 | 85–96 | Observation | 424144002 | Current chronological age | `identitas_kontak_umur` → `Observation.valueQuantity.value` (88) |
 | 9 | 99–109 | ServiceRequest | 185389009 | Follow-up visit | `dirujukdikirim_oleh` → `ServiceRequest.category.coding` (99) |
-| 10 | 111–125 | Encounter | – | – | `nama_fasyankes` → `Encounter.serviceProvider.reference` (145) 🔎 lookup master data |
+| 10 | 111–125 | Encounter | – | – | – |
 | 11 | 127–133 | Condition | Z20.1 | Contact with and exposure to tuberculosis | – |
-| 12 | 147–158 | Observation | 225368008 | Contact tracing | `identitas_kontak_metode_ik` → `Observation.valueCodeableConcept.coding` (150)<br>`tanggal_investigasi` → `Observation.effectiveDateTime` (155) |
-| 13 | 160–171 | Observation | SP000369 | Kontak Dengan Penderita TBC | _Kontak Dengan Penderita TBC_ → `Observation.status` (160, tanpa BQ)<br>`identitas_kontak_kontak_serumah` → `Observation.valueCodeableConcept.coding` (163)<br>`identitas_kontak_kontak_erat` → `Observation.valueCodeableConcept.coding` (164) |
-| 14 | 173–216 | QuestionnaireResponse | – | – | `hasil_skrining_batuk` → `QuestionnaireResponse.item.text` (184)<br>`hasil_skrining_gejala_lain_sesak_napas` → `QuestionnaireResponse.item.item.text` (189)<br>`hasil_skrining_gejala_lain_berkeringat_malam_hari_tanpa_kegiatan` → `QuestionnaireResponse.item.item.text` (192)<br>`hasil_skrining_gejala_lain_demam_meriang_1_bulan` → `QuestionnaireResponse.item.item.text` (195)<br>`hasil_skrining_faktor_risiko_dm` → `QuestionnaireResponse.item.item.text` (200)<br>`hasil_skrining_faktor_risiko_lansia_60_th` → `QuestionnaireResponse.item.item.text` (203)<br>`hasil_skrining_faktor_risiko_ibu_hamil` → `QuestionnaireResponse.item.item.text` (206)<br>`hasil_skrining_faktor_risiko_perokok` → `QuestionnaireResponse.item.item.text` (209)<br>`hasil_skrining_faktor_risiko_pernah_berobat_tbc_tapi_tidak_tuntas` → `QuestionnaireResponse.item.item.text` (212)<br>`memenuhi_syarat_rujukan_pemeriksaan_terduga` → `QuestionnaireResponse.item.text` (215) |
-| 15 | 219–230 | Observation | SP000206 | Dirujuk Pemeriksaan Terduga TBC | `dirujuk_pemeriksaan_terduga_tbc` → `Observation.valueBoolean` (222) |
-| 16 | 232–243 | Observation | 171400006 | Examination for suspected tuberculosis | `diperiksa_terduga_tbc` → `Observation.valueBoolean` (235) |
-| 17 | 245–256 | Observation | SP000207 | Hasil Pemeriksaan Terduga | _Hasil Pemeriksaan Terduga_ → `Observation.status` (245, tanpa BQ)<br>`hasil_pemeriksaan_terduga_sakit_tbc` → `Observation.valueCodeableConcept.coding` (248)<br>`hasil_pemeriksaan_terduga_tidak_tbc` → `Observation.valueCodeableConcept.coding` (249) |
-| 18 | 258–269 | Observation | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | `memenuhi_syarat_rujukan_pemeriksaan_eligibilitas_tpt` → `Observation.valueBoolean` (261) |
-| 19 | 271–282 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | `kesimpulan_hasil_pemeriksaan_eligibilitas_tpt` → `Observation.status` (271)<br>`memenuhi_syarat_tpt` → `Observation.valueCodeableConcept.coding` (274) |
-| 20 | 284–295 | Observation | SP000212 | Tanggal Pemberian TPT | _Tanggal Pemberian TPT_ → `Observation.status` (284, tanpa BQ)<br>`tanggal_pemberian_tpt__5_th` → `Observation.valueDateTime` (287)<br>`tanggal_pemberian_tpt__5_th_1` → `Observation.valueDateTime` (288) |
-| 21 | 297–314 | Observation | SP000213 | Hasil Akhir TPT | _Hasil Akhir TPT_ → `Observation.valueString` (300, tanpa BQ)<br>`hasil_akhir_tpt__5_th` → `Observation.valueCodeableConcept.coding` (301)<br>`hasil_akhir_tpt__5_th_1` → `Observation.valueCodeableConcept.coding` (302) |
+| 12 | 146–157 | Observation | 225368008 | Contact tracing | `identitas_kontak_metode_ik` → `Observation.valueCodeableConcept.coding` (149)<br>`tanggal_investigasi` → `Observation.effectiveDateTime` (154) |
+| 13 | 159–170 | Observation | SP000369 | Kontak Dengan Penderita TBC | _Kontak Dengan Penderita TBC_ → `Observation.status` (159, tanpa BQ)<br>`identitas_kontak_kontak_serumah` → `Observation.valueCodeableConcept.coding` (162)<br>`identitas_kontak_kontak_erat` → `Observation.valueCodeableConcept.coding` (163) |
+| 14 | 172–215 | QuestionnaireResponse | – | – | `hasil_skrining_batuk` → `QuestionnaireResponse.item.text` (183)<br>`hasil_skrining_gejala_lain_sesak_napas` → `QuestionnaireResponse.item.item.text` (188)<br>`hasil_skrining_gejala_lain_berkeringat_malam_hari_tanpa_kegiatan` → `QuestionnaireResponse.item.item.text` (191)<br>`hasil_skrining_gejala_lain_demam_meriang_1_bulan` → `QuestionnaireResponse.item.item.text` (194)<br>`hasil_skrining_faktor_risiko_dm` → `QuestionnaireResponse.item.item.text` (199)<br>`hasil_skrining_faktor_risiko_lansia_60_th` → `QuestionnaireResponse.item.item.text` (202)<br>`hasil_skrining_faktor_risiko_ibu_hamil` → `QuestionnaireResponse.item.item.text` (205)<br>`hasil_skrining_faktor_risiko_perokok` → `QuestionnaireResponse.item.item.text` (208)<br>`hasil_skrining_faktor_risiko_pernah_berobat_tbc_tapi_tidak_tuntas` → `QuestionnaireResponse.item.item.text` (211)<br>`memenuhi_syarat_rujukan_pemeriksaan_terduga` → `QuestionnaireResponse.item.text` (214) |
+| 15 | 218–229 | Observation | SP000206 | Dirujuk Pemeriksaan Terduga TBC | `dirujuk_pemeriksaan_terduga_tbc` → `Observation.valueBoolean` (221) |
+| 16 | 231–242 | Observation | 171400006 | Examination for suspected tuberculosis | `diperiksa_terduga_tbc` → `Observation.valueBoolean` (234) |
+| 17 | 244–255 | Observation | SP000207 | Hasil Pemeriksaan Terduga | _Hasil Pemeriksaan Terduga_ → `Observation.status` (244, tanpa BQ)<br>`hasil_pemeriksaan_terduga_sakit_tbc` → `Observation.valueCodeableConcept.coding` (247)<br>`hasil_pemeriksaan_terduga_tidak_tbc` → `Observation.valueCodeableConcept.coding` (248) |
+| 18 | 257–268 | Observation | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | `memenuhi_syarat_rujukan_pemeriksaan_eligibilitas_tpt` → `Observation.valueBoolean` (260) |
+| 19 | 270–281 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | `kesimpulan_hasil_pemeriksaan_eligibilitas_tpt` → `Observation.status` (270)<br>`memenuhi_syarat_tpt` → `Observation.valueCodeableConcept.coding` (273) |
+| 20 | 283–294 | Observation | SP000212 | Tanggal Pemberian TPT | _Tanggal Pemberian TPT_ → `Observation.status` (283, tanpa BQ)<br>`tanggal_pemberian_tpt__5_th` → `Observation.valueDateTime` (286)<br>`tanggal_pemberian_tpt__5_th_1` → `Observation.valueDateTime` (287) |
+| 21 | 296–313 | Observation | SP000213 | Hasil Akhir TPT | _Hasil Akhir TPT_ → `Observation.valueString` (299, tanpa BQ)<br>`hasil_akhir_tpt__5_th` → `Observation.valueCodeableConcept.coding` (300)<br>`hasil_akhir_tpt__5_th_1` → `Observation.valueCodeableConcept.coding` (301) |
 
 ### Payload per resource
 
@@ -70,29 +70,29 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 10 | 103 | ServiceRequest | `ServiceRequest.code.coding` | 185389009 | Follow-up visit | http://snomed.info/sct |
 | 11 | 104 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
 | 12 | 129 | Condition | `Condition.code.coding` | Z20.1 | Contact with and exposure to tuberculosis | http://hl7.org/fhir/sid/icd-10 |
-| 13 | 149 | Observation | `Observation.code.coding` | 225368008 | Contact tracing | http://snomed.info/sct |
-| 14 | 150 | Observation | `Observation.valueCodeableConcept.coding` | SP000200 | Invitasi kontak | http://terminology.kemkes.go.id/sp |
-| 15 | 151 | Observation | `Observation.valueCodeableConcept.coding` | 439708006 | Home visit | http://snomed.info/sct |
-| 16 | 162 | Observation | `Observation.code.coding` | SP000369 | Kontak Dengan Penderita TBC | http://terminology.kemkes.go.id/sp |
-| 17 | 163 | Observation | `Observation.valueCodeableConcept.coding` | SP000201 | Kontak Serumah | http://terminology.kemkes.go.id/sp |
-| 18 | 164 | Observation | `Observation.valueCodeableConcept.coding` | SP000202 | Kontak Erat | http://terminology.kemkes.go.id/sp |
-| 19 | 221 | Observation | `Observation.code.coding` | SP000206 | Dirujuk Pemeriksaan Terduga TBC | http://terminology.kemkes.go.id/sp |
-| 20 | 234 | Observation | `Observation.code.coding` | 171400006 | Examination for suspected tuberculosis | http://snomed.info/sct |
-| 21 | 247 | Observation | `Observation.code.coding` | SP000207 | Hasil Pemeriksaan Terduga | http://terminology.kemkes.go.id/sp |
-| 22 | 248 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
-| 23 | 249 | Observation | `Observation.valueCodeableConcept.coding` | SP000208 | Tidak TBC | http://terminology.kemkes.go.id/sp |
-| 24 | 260 | Observation | `Observation.code.coding` | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | http://terminology.kemkes.go.id/sp |
-| 25 | 273 | Observation | `Observation.code.coding` | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | http://terminology.kemkes.go.id/sp |
-| 26 | 274 | Observation | `Observation.valueCodeableConcept.coding` | SP000211 | Memenuhi syarat TPT | http://terminology.kemkes.go.id/sp |
-| 27 | 275 | Observation | `Observation.valueCodeableConcept.coding` | SP000374 | Tidak Memenuhi Syarat TPT | http://terminology.kemkes.go.id/sp |
-| 28 | 286 | Observation | `Observation.code.coding` | SP000212 | Tanggal Pemberian TPT | http://terminology.kemkes.go.id/sp |
-| 29 | 299 | Observation | `Observation.code.coding` | SP000213 | Hasil Akhir TPT | http://terminology.kemkes.go.id/sp |
-| 30 | 301 | Observation | `Observation.valueCodeableConcept.coding` | 371001000 | Patient cured | http://snomed.info/sct |
-| 31 | 303 | Observation | `Observation.valueCodeableConcept.coding` | 182992009 | Treatment completed | http://snomed.info/sct |
-| 32 | 304 | Observation | `Observation.valueCodeableConcept.coding` | CP000094 | Pengobatan Gagal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 33 | 305 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
-| 34 | 306 | Observation | `Observation.valueCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
-| 35 | 307 | Observation | `Observation.valueCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 13 | 148 | Observation | `Observation.code.coding` | 225368008 | Contact tracing | http://snomed.info/sct |
+| 14 | 149 | Observation | `Observation.valueCodeableConcept.coding` | SP000200 | Invitasi kontak | http://terminology.kemkes.go.id/sp |
+| 15 | 150 | Observation | `Observation.valueCodeableConcept.coding` | 439708006 | Home visit | http://snomed.info/sct |
+| 16 | 161 | Observation | `Observation.code.coding` | SP000369 | Kontak Dengan Penderita TBC | http://terminology.kemkes.go.id/sp |
+| 17 | 162 | Observation | `Observation.valueCodeableConcept.coding` | SP000201 | Kontak Serumah | http://terminology.kemkes.go.id/sp |
+| 18 | 163 | Observation | `Observation.valueCodeableConcept.coding` | SP000202 | Kontak Erat | http://terminology.kemkes.go.id/sp |
+| 19 | 220 | Observation | `Observation.code.coding` | SP000206 | Dirujuk Pemeriksaan Terduga TBC | http://terminology.kemkes.go.id/sp |
+| 20 | 233 | Observation | `Observation.code.coding` | 171400006 | Examination for suspected tuberculosis | http://snomed.info/sct |
+| 21 | 246 | Observation | `Observation.code.coding` | SP000207 | Hasil Pemeriksaan Terduga | http://terminology.kemkes.go.id/sp |
+| 22 | 247 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
+| 23 | 248 | Observation | `Observation.valueCodeableConcept.coding` | SP000208 | Tidak TBC | http://terminology.kemkes.go.id/sp |
+| 24 | 259 | Observation | `Observation.code.coding` | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | http://terminology.kemkes.go.id/sp |
+| 25 | 272 | Observation | `Observation.code.coding` | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | http://terminology.kemkes.go.id/sp |
+| 26 | 273 | Observation | `Observation.valueCodeableConcept.coding` | SP000211 | Memenuhi syarat TPT | http://terminology.kemkes.go.id/sp |
+| 27 | 274 | Observation | `Observation.valueCodeableConcept.coding` | SP000374 | Tidak Memenuhi Syarat TPT | http://terminology.kemkes.go.id/sp |
+| 28 | 285 | Observation | `Observation.code.coding` | SP000212 | Tanggal Pemberian TPT | http://terminology.kemkes.go.id/sp |
+| 29 | 298 | Observation | `Observation.code.coding` | SP000213 | Hasil Akhir TPT | http://terminology.kemkes.go.id/sp |
+| 30 | 300 | Observation | `Observation.valueCodeableConcept.coding` | 371001000 | Patient cured | http://snomed.info/sct |
+| 31 | 302 | Observation | `Observation.valueCodeableConcept.coding` | 182992009 | Treatment completed | http://snomed.info/sct |
+| 32 | 303 | Observation | `Observation.valueCodeableConcept.coding` | CP000094 | Pengobatan Gagal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 33 | 304 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
+| 34 | 305 | Observation | `Observation.valueCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
+| 35 | 306 | Observation | `Observation.valueCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 
 ### Code per CodeSystem
 

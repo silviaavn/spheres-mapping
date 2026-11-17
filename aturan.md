@@ -20,6 +20,7 @@ Terakhir diperbarui: 2026-11-17
 - Encounter yang muncul di 2 blok kamus (data utama + statusHistory) = **1 payload**.
 - **Patient dihitung.**
 - **Organization TIDAK dihitung**: diambil dari master data (lookup/reference), bukan dibuat dari form. Variabel BQ puskesmas dipetakan ke `Encounter.serviceProvider.reference` dengan keterangan "Lookup ke master data Organization" di kolom Definisi Operasional. Kalau isian puskesmas dipilih dari list yang sudah ada, blok Organization tidak perlu ditulis di dictionary.
+- Pengecualian (SITB): kalau form punya variabel faskes pelapor (kode, nama, jenis, kepemilikan, alamat), blok Organization + Location faskes **tetap dimapping dan dihitung payload**: cari di master data, kalau match di-update dari form.
 - **Location**: tidak dihitung kalau hanya lookup ke master data (mis. Maternal Outcome). **Dihitung** kalau dibuat dari isian form (mis. Raffle: lokasi faskes + kecamatan + kelurahan).
 - Isian berupa **string bebas** yang menunjuk faskes/posyandu (mis. SiGizi: Faskes yang melayani ANC, Posyandu Domisili) tetap **lookup**: cocokkan string ke master data. Organization/Location tidak ditulis dan tidak dihitung. Kolom lain yang membantu pencocokan (mis. desa, puskesmas domisili) ditulis sebagai baris "Kunci lookup" di resource yang mereferensi.
 - **PractitionerRole petugas lab** tidak dibuat dari form: lookup ke master data PractitionerRole default lab milik Organization faskes. Tidak dihitung.
@@ -66,6 +67,7 @@ Terakhir diperbarui: 2026-11-17
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
+- 2026-11-17: (SITB) Blok faskes dengan variabel dari form tetap dimapping dan dihitung (match + update).
 - 2026-11-17: (SITB) Opsi coded reasonCode, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, Observation.method ikut dihitung sebagai code. Baris dicoret di sheet dan kolom data lokal SITB (No. Urut, Bulan, No. Reg Fasyankes) tidak dimapping.
 - 2026-11-16: Nama file dictionary dibedakan per sumber: `kobo-` untuk Kobo, `phdt-` untuk PHDT Data Dictionary.
 - 2026-11-16: Ringkasan output per form: "Variabel BQ di luar payload" tidak dicantumkan; kalau ada file mentah, tampilkan "Variabel di Excel export" (angka saja). `form_output.py` menerima argumen ke-4 `raw/<form>-kolom.md`.

@@ -119,8 +119,8 @@ File asli **tidak** disimpan di repo karena berisi data pasien. File ini berisi 
 | 109 | DG | Pemeriksaan Paket Standar Uji Kepekaan / Hasil Pemeriksaan / ... | `pemeriksaan_paket_standar_uji_kepekaan_hasil_pemeriksaan_5` | 0/2039 | 0/4403 |  |
 | 110 | DH | Tanda Tangan Petugas Pemeriksa | `tanda_tangan_petugas_pemeriksa` ⛔ tidak dimapping | 0/2039 | 0/4403 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 111 | DI | Keterangan | `keterangan` ⛔ tidak dimapping | 0/2039 | 0/4403 |  |
-| 112 | DJ | Nama Fasyankes | `nama_fasyankes` 🆕 belum ada di BQ | 2039/2039 | 4403/4403 | *(identitas / teks bebas, tidak ditampilkan)* |
-| 113 | DK | Kabupaten Fasyankes | `kabupaten_fasyankes` 🆕 belum ada di BQ | 2039/2039 | 4403/4403 | `Kab. Purbalingga` (6442) |
-| 114 | DL | Provinsi Fasyankes | `provinsi_fasyankes` 🆕 belum ada di BQ | 2039/2039 | 4403/4403 | `Jawa Tengah` (6442) |
+| 112 | DJ | Nama Fasyankes | `–` | 2039/2039 | 4403/4403 | 25 nilai berbeda (teks bebas), contoh tidak ditampilkan |
+| 113 | DK | Kabupaten Fasyankes | `–` | 2039/2039 | 4403/4403 | `Kab. Purbalingga` (6442) |
+| 114 | DL | Provinsi Fasyankes | `–` | 2039/2039 | 4403/4403 | `Jawa Tengah` (6442) |
 
 Kolom BQ yang tidak ada di file mentah: `puskesmas_name`, `puskesmas_id`, `file_name`, `file_date`, `ingestion_timestamp`, `uuid`, `hash_code`

@@ -233,24 +233,24 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 
 | # | Asumsi | Berlaku di | Status |
 |---|---|---|---|
-| A1 | 7 kolom metadata pipeline BQ tidak dihitung di tally dan tidak dimapping | semua | perlu konfirmasi |
+| A1 | 7 kolom metadata pipeline BQ tidak dihitung di tally dan tidak dimapping | semua | **disetujui**: metadata tidak perlu dicek di tally |
 | A2 | Variabel yang ditandai "tidak dimapping" oleh tim (sheet variabel) tetap tidak dimapping, walaupun `aturan.md` bilang semua variabel BQ wajib masuk payload. Perlu keputusan: ikuti tim atau petakan | semua | **diputuskan**: No. Urut, Bulan, No. Reg Fasyankes/Kab = data lokal SITB, tidak perlu. Keputusan lama tim lain tetap. `status_pengobatan` → CarePlan (T03S-6) |
-| A3 | Faskes pelapor (Kode/Nama/Jenis/Kepemilikan/Provinsi/Kab) = **lookup** master data. Blok Organization & Location dihapus, kolomnya jadi baris "Kunci lookup" di `Encounter.serviceProvider.reference` | semua | perlu konfirmasi |
-| A4 | PractitionerRole petugas lab / radiografer = lookup PractitionerRole default lab (sama dengan SiGizi S21). Bloknya dihapus | TB 06, TB 03 SO, TB 04 | perlu konfirmasi |
-| A5 | Practitioner "PJ SITB" yang direferensi banyak resource tidak dibuat dari form → lookup master data Practitioner PJ SITB faskes | TB 06, TB 03, TB 04 | perlu konfirmasi |
+| A3 | Faskes pelapor (Kode/Nama/Jenis/Kepemilikan/Provinsi/Kab) = **lookup** master data. Blok Organization & Location dihapus, kolomnya jadi baris "Kunci lookup" di `Encounter.serviceProvider.reference` | semua | **diubah**: blok Data Faskes (Organization + Location) **tetap dimapping** dan dihitung payload, karena ada variabel faskes lain di form. Faskes dicari di master data (Kode Fasyankes), kalau match di-update dari form. Baris "Kunci lookup" di Encounter dihapus. TB 16K tetap lookup (T16-7) |
+| A4 | PractitionerRole petugas lab / radiografer = lookup PractitionerRole default lab (sama dengan SiGizi S21). Bloknya dihapus | TB 06, TB 03 SO, TB 04 | **disetujui** |
+| A5 | Practitioner "PJ SITB" yang direferensi banyak resource tidak dibuat dari form → lookup master data Practitioner PJ SITB faskes | TB 06, TB 03, TB 04 | **disetujui** |
 | A6 | Opsi coded berikut dihitung sebagai code: `ServiceRequest.reasonCode`, `CarePlan.activity.detail.code/productCodeableConcept/statusReason`, `CarePlan.activity.outcomeCodeableConcept`, `Encounter.hospitalization.admitSource`, `QuestionnaireResponse...answer.valueCoding`, `Observation.component.code/valueCodeableConcept`, `Observation.method` (LJ/MGIT). `Specimen.collection.method`, category, dataAbsentReason, unit tetap tidak dihitung | semua | **disetujui** → masuk `aturan.md` |
-| A7 | Blok template (1 blok untuk banyak kolom, mis. follow up BTA/Biakan bulan ke-1 s.d. 24) dihitung 1 payload sesuai yang tertulis di dictionary | TB 03 RO | perlu konfirmasi |
-| A8 | `EpisodeOfCare.type` di register TB 03 tetap per register: TB 03 SO = TB-SO, TB 03 RO = TB-RO (opsi lainnya dihapus) | TB 03 SO, TB 03 RO | perlu konfirmasi |
+| A7 | Blok template (1 blok untuk banyak kolom, mis. follow up BTA/Biakan bulan ke-1 s.d. 24) dihitung 1 payload sesuai yang tertulis di dictionary | TB 03 RO | **disetujui** |
+| A8 | `EpisodeOfCare.type` di register TB 03 tetap per register: TB 03 SO = TB-SO, TB 03 RO = TB-RO (opsi lainnya dihapus) | TB 03 SO, TB 03 RO | **disetujui** |
 | A9 | No. BPJS di TB 06 dipetakan ke Coverage (struktur sama dengan TB 03 SO) | TB 06 | **dibatalkan**: No. BPJS dicoret di sheet TB06 (baris 119); blok Coverage dihapus |
-| A10 | Teks bebas "Keterangan (tempat pemeriksaan selain mikroskopis)" → `Observation.note.text` (Observation Hasil Pemeriksaan Diagnosis TBC); "Tindak lanjut penambahan resistansi" → `CarePlan.note.text` | TB 06 | perlu konfirmasi |
-| A11 | Kolom BQ `nama_fasyankes` di TB 16K (tidak ada di export) diduga dari header laporan → kunci lookup Organization di Encounter | TB 16K | perlu konfirmasi |
+| A10 | Teks bebas "Keterangan (tempat pemeriksaan selain mikroskopis)" → `Observation.note.text` (Observation Hasil Pemeriksaan Diagnosis TBC); "Tindak lanjut penambahan resistansi" → `CarePlan.note.text` | TB 06 | **disetujui** |
+| A11 | Kolom BQ `nama_fasyankes` di TB 16K (tidak ada di export) diduga dari header laporan → kunci lookup Organization di Encounter | TB 16K | **diubah**: `nama_fasyankes` adalah kolom terakhir tabel BQ `sitb_tb_16k` (setelah `hash_code`) dan tidak ada di export → diperlakukan sebagai metadata pipeline, tidak dimapping |
 | A12 | Kolom file mentah yang belum ada di BQ diberi nama BQ sementara (T06-1, T04-1) | TB 06, TB 04 | **disetujui**: dicatat di P25 |
 
 ### Temuan umum (semua form SITB)
 
 | # | Temuan | Status |
 |---|---|---|
-| G1 | Blok Organization faskes (+ Location gedung faskes) ditulis lengkap di dictionary padahal faskes dipilih dari kode SITB | done (mapping/): dihapus, kolom faskes jadi Kunci lookup di Encounter (A3) |
+| G1 | Blok Organization faskes (+ Location gedung faskes) ditulis lengkap di dictionary padahal faskes dipilih dari kode SITB | **diubah** (A3): blok Organization + Location faskes dikembalikan dan dihitung payload (TB 06, TB 03 SO, TB 03 RO, TB 04). Path `Organization.address.extension.url` di blok Location diperbaiki jadi `Location.…` (TB 06 baris 39, TB 04 baris 69) |
 | G2 | PractitionerRole "Laboratory worker"/"Medical radiographer" tanpa data form, 1 blok per pemeriksaan (TB 06: 9, TB 03 SO: 9, TB 04: 16) | done (mapping/): dihapus; `performer` = lookup (A4) |
 | G3 | Banyak reference ke "Practitioner" (PJ SITB) dan Organization/Location tanpa blok resource-nya | done (mapping/): Definisi Operasional diisi keterangan lookup (A5) |
 | G4 | Path tanpa `.coding`: `ServiceRequest.code/category`, `DiagnosticReport.code/category`, `Observation.code/category/valueCodeableConcept`, `Specimen.type` | done (mapping/): ditambah `.coding` (TB 06: 40 baris, TB 03 SO: 37, TB 03 RO: 9, TB 04: 38, TB 16K: 3) |
@@ -268,7 +268,7 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 
 | # | Temuan | Status |
 |---|---|---|
-| T06-1 | Kolom AC "Klasifikasi Terduga TBC" ada di export (11 terisi) dan di dictionary (EoC terduga `type`), tapi tidak ada di BQ | done (mapping/): nama BQ sementara `klasifikasi_terduga_tbc` (P25) |
+| T06-1 | Kolom AC "Klasifikasi Terduga TBC" ada di export (11 terisi) dan di dictionary (EoC terduga `type`), tapi tidak ada di BQ | done (mapping/): nama BQ sementara `klasifikasi_terduga_tbc`. Sumbernya kolom AC export SITB `TB_06` di Drive + baris 78 dictionary (`{Klasifikasi Kasus Terduga TB}`); **belum ada di BQ** (P25) |
 | T06-2 | Keterangan, Tindak lanjut penambahan resistansi hanya label tanpa resource | done (mapping/): note.text (A10). No. BPJS dicoret di sheet, tidak dimapping |
 | T06-3 | Tanggal Hasil Pemeriksaan TCM-XDR tidak punya baris | done (mapping/): `Observation.issued` di Observation TCM XDR |
 | T06-4 | Tindak Lanjut "Belum Mulai Pengobatan" tidak ada di opsi. Dictionary: sheet `TB06` baris 1020 (label Tindak Lanjut), opsi di baris 1024–1031. Export: `TB_06` kolom CL, 14 baris (baris Excel 1702, 2067, 2105, 2116, 2495, 2592, 4957, 5523, 5580, 5586, 5603, 6072, 6125, 6131) | done (mapping/): code baru **SP001136** Belum Mulai Pengobatan di `CarePlan.activity.detail.code.coding` (kelompok CarePlan active / not-started) |
@@ -283,7 +283,7 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 | T03S-2 | Pekerjaan berisi `Lain-lain:<teks>` | open (pipeline P26) |
 | T03S-3 | Hasil Tes HIV "Tidak Diketahui" tidak ada di opsi. Dictionary: sheet `TB 03 SO` baris 1077–1078 (ODHIV 165816005 / Bukan ODHIV 165815009). Export: `TB_03SO` kolom CB, 8 baris (baris Excel 122, 199, 353, 467, 716, 725, 728, 963) | done (mapping/): `Observation.dataAbsentReason.coding` = `unknown` (data-absent-reason), Value Name "Tidak Diketahui" |
 | T03S-4 | Paduan Pengobatan berisi teks bebas di luar daftar code. Dictionary: sheet `TB 03 SO` baris 362 (CP000005) dan opsi baris 363–438. Export: `TB_03SO` kolom AQ, 4 baris: "Kategori 1 + levo 4 tablet" (baris Excel 408), "RHE" (776), "INH 1X300 MG, RIFAMPICIN …" (940), "INH 1X100MG, RIF …" (951) | done (mapping/): **SP001137 Paduan lainnya** untuk teks yang tidak cocok; SP001138–SP001140 dibatalkan. Teks asli selalu di `productCodeableConcept.text`. Varian mirip (Dosis Baru/Lama, `{}`, singkatan BPaLM, `2RHZE 4RH`) = baris alias dengan code lama. Hasil cek BQ 17 Nov: 13 dari 136 nilai cocok langsung |
-| T03S-6 | Status Pengobatan (Sesuai standar 943 / Tidak sesuai standar 10) sebelumnya tidak dimapping | done (mapping/) **sementara**: `CarePlan.activity.detail.description` (teks) di CarePlan Pengobatan; belum ada code |
+| T03S-6 | Status Pengobatan (Sesuai standar 943 / Tidak sesuai standar 10) sebelumnya tidak dimapping | done (mapping/): `CarePlan.activity.detail.description` (string, **tidak perlu code**). Path ini baru pertama dipakai (belum ada di dictionary lain) |
 | T03S-5 | Terapi DM "OHO" vs Value Name "Obat Hipoglikemik Oral (OHO)" | open (P24) |
 
 ### TB 03 RO (Register Pasien TBC RO)
@@ -293,7 +293,7 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 | T03R-1 | `EpisodeOfCare.type` berisi TB-SO dan TB-RO | done (mapping/): opsi TB-SO dihapus (A8) |
 | T03R-2 | 54 kolom follow up (bulan ke-1 s.d. 24, BTA & Biakan, plus kolom kedua bulan 4–6) hanya punya 1 blok template dengan BQ `BTA` / `B` | done (mapping/): 1 baris per kolom BQ di dalam template (A7, P27) |
 | T03R-3 | Baris Observation setengah jadi (identifier/status/category/code tanpa nilai) di antara template BTA dan Biakan | done (mapping/): dihapus |
-| T03R-4 | Hasil lab hanya Observation; tidak ada ServiceRequest/Specimen/DiagnosticReport seperti TB 03 SO | open (konsistensi) |
+| T03R-4 | Hasil lab hanya Observation; tidak ada ServiceRequest/Specimen/DiagnosticReport seperti TB 03 SO | open: menunggu keputusan (usulan cara buat di laporan chat 2026-11-17) |
 | T03R-5 | Paduan Pengobatan di export pakai singkatan. Export: `TB_03RO` kolom AP: "Bdq Lzd Mfx Pa" 12 baris (baris Excel 19–20, 22–31), "Lfx RHZE" 2 baris (18, 21). Code-nya **ada** di sheet `TB 03 RO`: baris 441 CP000086 (Bedaquline Pretomanid Linezolid Moxifloxacin) dan baris 439 CP000084 (RHZE + Levofloxacin) | done (mapping/): baris alias `Bdq Lzd Mfx Pa` → CP000086, `Lfx RHZE` → CP000084; varian Dosis Baru → CP000016; selain itu SP001137 Paduan lainnya |
 | T03R-6 | Riwayat Pengobatan di export tanpa nomor ("Pasien TB …") vs Value Name "1. Pasien TB …"; DM "Ya/Tidak" vs "positif/negatif" | open (P24) |
 | T03R-7 | File contoh hanya 14 baris | info |
@@ -302,11 +302,12 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 
 | # | Temuan | Status |
 |---|---|---|
-| T04-1 | Kolom DJ–DL (Nama/Kabupaten/Provinsi Fasyankes) ada di export dan dictionary, tapi tidak ada di BQ | done (mapping/): nama BQ sementara `nama_fasyankes`, `kabupaten_fasyankes`, `provinsi_fasyankes` sebagai kunci lookup (P25) |
+| T04-1 | Kolom DJ–DL (Nama/Kabupaten/Provinsi Fasyankes) ada di export dan dictionary, tapi tidak ada di BQ | **ditutup**: format export/BQ TB 04 sudah berubah, kolom Nama/Kabupaten/Provinsi Fasyankes tidak ada lagi. Baris dictionary blok Organization tetap ada tanpa kolom BQ (lihat T04-6) |
 | T04-2 | Header TB 04 Fasyankes dan TB 04 Rujukan sama (114 kolom) | ok: 1 dictionary `phdt-data-dictionary-sitb-tb04.csv` |
 | T04-3 | Observation LPA Lini 2 memakai code `X099380` (LPA Lini 1) | done (mapping/): `X099381` |
 | T04-4 | Opsi pertama `Specimen.type` = Pleural fluid (418564007), jadi identitas payload Specimen di output ikut opsi pertama | ok: converter memilih code sesuai Value Name, urutan opsi tidak berpengaruh ke data |
 | T04-5 | "No. Identitas Sediaan" dan "Alasan Pemeriksaan" dipakai di 16 Specimen / 16 ServiceRequest | ok (keputusan tim) |
+| T04-6 | Blok Data Faskes TB 04 dikembalikan (A3), tapi kolom BQ untuk Nama/Kabupaten/Provinsi Fasyankes tidak ada di format baru. Faskes hanya bisa dicocokkan dari metadata `puskesmas_id` / `puskesmas_name` | open: pakai metadata untuk match? |
 
 ### TB 16K (Investigasi Kontak)
 
@@ -318,7 +319,7 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 | T16-4 | Value Name bergeser 1 baris di Observation kasus indeks (TB SO di baris code) | done (mapping/) |
 | T16-5 | `SP000208` Tidak TBC pakai CodeSystem SNOMED; `SP000369` tanpa CodeSystem; `https://` di episodeofcare-type | done (mapping/) |
 | T16-6 | Practitioner & PractitionerRole kader dicoret di sheet (baris 14–15); yang berlaku Observation "Kader Kesehatan" SP000373 dengan `valueString` | done (mapping/): nama kader → `Observation.valueString` (koreksi: temuan awal salah) |
-| T16-7 | Organisasi kader (Nama Fasyankes/Organisasi Kader) di blok Organization (baris 29) | done (mapping/) **sementara**: lookup Organization di `Observation.performer.reference` pada Observation Kader Kesehatan |
+| T16-7 | Organisasi kader (Nama Fasyankes/Organisasi Kader) di blok Organization (baris 29) | **disetujui**: lookup Organization di `Observation.performer.reference`; tidak ada blok Organization/Location terpisah di TB 16K |
 | T16-8 | Encounter terpotong oleh Condition (statusHistory di blok kedua) | ok: dihitung 1 payload |
 | T16-9 | Kolom TPT "< 5 th" dan "≥ 5 th" | done (mapping/): keduanya ke Observation yang sama |
 | T16-10 | Observation "Memenuhi syarat TPT" (SP000211) dicoret di sheet (baris 328–339), tapi kolom BQ `memenuhi_syarat_tpt` ada | done (mapping/): dipetakan ke opsi SP000211 di Observation Kesimpulan Eligibilitas TPT (baris 318) |
@@ -354,10 +355,10 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P23 | SiGizi ANC | Hb Anemia Berat → OI000034; DiagnosticReport HIV/Hepatitis/Sifilis category SR; EpisodeOfCare ANC dicari dulu (active) sebelum buat baru | Converter | open |
 | P16 | SiGizi ANC | Pilihan TD di form sumber `Normal (<= 140)` dan `Hipertensi (>= 140)` sama-sama memuat 140 | Info ke pemilik form SiGizi | open |
 | P24 | SITB (semua) | Isi export memakai singkatan/format lain dari Value Name: `D/ND/RD/RND/IDT`, `S/R/I`, `L/P`, `Neg/Pos`, `ODHIV/Bukan ODHIV`, `Ya/Tidak` vs `positif/negatif`, centang `V`, `Fasyankes: <nama faskes>` (Dirujuk/dikirim oleh), singkatan paduan pengobatan (`Bdq Lzd Mfx Pa` → CP000086, `Lfx RHZE` → CP000084) | Converter: tabel normalisasi nilai → Value Name; `Fasyankes: <nama>` → opsi Fasyankes + lookup Organization asal | open |
-| P25 | TB 06, TB 04 | Kolom export yang belum ada di BQ: `klasifikasi_terduga_tbc` (TB 06 kolom AC), `nama_fasyankes`, `kabupaten_fasyankes`, `provinsi_fasyankes` (TB 04 kolom DJ–DL). Nama sementara | Ingestion: tambah kolom (ganti nama kalau di pipeline beda) | open |
+| P25 | TB 06 | Kolom export yang belum ada di BQ: `klasifikasi_terduga_tbc` (TB 06 kolom AC "Klasifikasi Terduga TBC"). Nama sementara. (TB 04 DJ–DL dihapus dari daftar: format baru tidak punya kolom ini) | Ingestion: tambah kolom (ganti nama kalau di pipeline beda) | open |
 | P26 | TB 03 SO | Pekerjaan `Lain-lain:<teks>` | Converter: pecah jadi opsi Lain-lain + teks | open |
 | P27 | TB 03 RO | Follow up BTA & Biakan bulan ke-1 s.d. 24 (54 kolom) memakai 1 template Observation | Converter: buat 1 Observation BTA dan/atau Biakan per bulan yang terisi | open |
-| P28 | SITB (semua) | Organization/Location faskes, Practitioner PJ SITB, PractitionerRole default lab tidak dibuat dari form | Converter: lookup Organization dengan Kode Fasyankes (TB 06, TB 03) / Nama + Kab + Prov (TB 04) / Nama (TB 16K). Master data: Practitioner PJ SITB & PractitionerRole default lab per faskes | open |
+| P28 | SITB (semua) | Faskes pelapor: cari Organization di master data (Kode Fasyankes; TB 04 lihat T04-6), kalau match **update** Organization + Location dari form. TB 16K: lookup saja. Practitioner PJ SITB & PractitionerRole default lab tetap lookup master data | Converter + master data | open |
 | P29 | TB 16K | Kolom centang `V` (Kontak serumah/erat, Memenuhi syarat rujukan eligibilitas) dan TPT `< 5 th` / `≥ 5 th` | Converter: `V` = pilih opsi itu; ambil kolom TPT yang terisi | open |
 | P30 | TB 03 SO, TB 03 RO | `EpisodeOfCare.type` tetap per register (SO = TB-SO, RO = TB-RO) | Converter | open |
 | P31 | TB 03 SO | `status_pengobatan` (Sesuai standar / Tidak sesuai standar) → `CarePlan.activity.detail.description` di CarePlan Pengobatan (sementara, teks) | Converter | open |
@@ -366,6 +367,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P34 | TB 03 SO, TB 03 RO | Paduan pengobatan: cocokkan teks ke Value Name tanpa beda huruf besar/kecil (termasuk baris alias); tidak cocok → SP001137 Paduan lainnya; nilai salah input (mis. `(40)`, `-41`) → tidak dibuat. `productCodeableConcept.text` selalu diisi teks asli | Converter | open |
 
 ## Log perubahan revisi
+- 2026-11-17: Jawaban user: A1, A4, A5, A7, A8, A10, T16-7 disetujui. A3 diubah (blok faskes tetap dimapping & update). A11: `nama_fasyankes` = metadata pipeline. T03S-6 tanpa code. T04-1 ditutup (format baru), tambah T04-6. P25, P28 diperbarui.
 - 2026-11-17: Paduan pengobatan: SP001138–SP001140 dibatalkan, SP001137 = Paduan lainnya; baris alias + `productCodeableConcept.text` (TB 03 SO & RO). T03R-5 done. P33 diperbarui, tambah P34.
 - 2026-11-17: T06-4 (SP001136), T03S-3 (dataAbsentReason unknown), T03S-4 (SP001137–SP001140) done. Tambah P33.
 - 2026-11-17: Jawaban user diterapkan: A2 (data lokal SITB tidak perlu; Status Pengobatan → CarePlan), A6 disetujui (masuk aturan), A9 batal (No. BPJS dicoret), G11 & T04-4 ok, T16-6 dikoreksi. Baris dicoret di sheet sekarang dihapus (G13). Lokasi baris T06-4, T03S-3, T03S-4, T03R-5 ditambahkan; T03R-5 ternyata hanya singkatan (code ada).

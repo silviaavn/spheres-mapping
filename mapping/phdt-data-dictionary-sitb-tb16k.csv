@@ -104,9 +104,9 @@ Identitas Kontak,Identitas Kontak,,,Nama,string,,,,Patient,Patient.active,true,T
 ,,,,,,,(nama faskes perujuk),,ServiceRequest,ServiceRequest.code.coding,737492002,Outpatient care management,http://snomed.info/sct,,,1,
 ,,,,,,,,,ServiceRequest,ServiceRequest.subject.reference,Reference ke resources Patient,,,,,,
 ,,,,,,,,,ServiceRequest,ServiceRequest.occurrenceDateTime,Tidak ada,Tidak ada,Tidak ada,,,,
-,,,,,,"Jika diisi ""Internal"" maka reference sesuai organization dari {Nama Fasyankes/Organisasi Kader}, jika bukan ""internal"" maka tidak perlu dibuat",,"Lookup ke master data Organization (faskes pelapor, sama dengan Encounter.serviceProvider)",ServiceRequest,ServiceRequest.requester.reference,Reference ke resources Organization,,,,,,
+,,,,,,"Jika diisi ""Internal"" maka reference sesuai organization dari {Nama Fasyankes/Organisasi Kader}, jika bukan ""internal"" maka tidak perlu dibuat",,Lookup ke master data Organization (faskes pelapor),ServiceRequest,ServiceRequest.requester.reference,Reference ke resources Organization,,,,,,
 ,,,,,,"Jika diisi ""Internal"" maka diisi dari {Nama Fasyankes/Organisasi Kader}, jika bukan ""internal"" maka diisi sesuai {Dirujuk/Dikirim Oleh}",,,ServiceRequest,ServiceRequest.requester.display,Tidak ada,Tidak ada,Tidak ada,,,,
-,,,,,,,,"Lookup ke master data Organization (faskes pelapor, sama dengan Encounter.serviceProvider)",ServiceRequest,ServiceRequest.performer.reference,Reference ke resources Organization,,,,,,
+,,,,,,,,Lookup ke master data Organization (faskes pelapor),ServiceRequest,ServiceRequest.performer.reference,Reference ke resources Organization,,,,,,
 ,,,,,,,,,,,,,,,,,
 ,Kunjungan kontak dengan pasien TBC,,,,,,,,Encounter,Encounter.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/encounter/{{Org_id}},,,,1
 ,,,,,,,,,Encounter,Encounter.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/sitb/{{Org_id}},,,,
@@ -141,8 +141,7 @@ Identitas Kontak,Identitas Kontak,,,Nama,string,,,,Patient,Patient.active,true,T
 ,,,,,,,,,Encounter,Encounter.statusHistory.status,finished,Tidak ada,Tidak ada,,,,
 ,,,,,,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,,
 ,,,,,,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,,
-,,,,,,,,Lookup ke master data Organization berdasarkan Nama Fasyankes (baris Kunci lookup di bawah),Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,,
-,,nama_fasyankes,,Nama Fasyankes,,,,"Kunci lookup master data Organization: Nama Fasyankes (kolom ada di BQ, tidak ada di export; diduga dari header laporan)",Encounter,Encounter.serviceProvider.reference,,,,,,,
+,,,,,,,,Lookup ke master data Organization (faskes pelapor dari metadata pipeline puskesmas_id),Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,,
 ,,,,,,,,,,,,,,,,,
 Investigasi Kontak,,identitas_kontak_metode_ik,,Metode IK,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,,1
 ,,,,,select one,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,,

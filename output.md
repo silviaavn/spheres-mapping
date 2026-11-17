@@ -25,14 +25,14 @@ Belum: PNC, SITB TB 13 SO/RO, form lain
 | Maternal Outcome | 12 | 14 |
 | Raffle | 8 | 6 |
 | SiGizi ANC | 61 | 142 |
-| SITB TB 06 | 54 | 276 |
-| SITB TB 03 SO | 61 | 329 |
-| SITB TB 03 RO | 29 | 357 |
-| SITB TB 04 | 69 | 579 |
+| SITB TB 06 | 56 | 276 |
+| SITB TB 03 SO | 62 | 329 |
+| SITB TB 03 RO | 30 | 357 |
+| SITB TB 04 | 71 | 579 |
 | SITB TB 16K | 21 | 35 |
-| **Total (non-unik)** | **315** | **1738** |
-| **Total unik** | **147** | **434** |
-| Selisih (dipakai ulang) | 168 | 1304 |
+| **Total (non-unik)** | **321** | **1738** |
+| **Total unik** | **148** | **434** |
+| Selisih (dipakai ulang) | 173 | 1304 |
 
 ---
 
@@ -54,7 +54,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome | 1 |
 | 11 | Observation | LT000005 | Alamat Mati | Maternal Outcome | 1 |
 | 12 | Observation | 79378-6 | Cause of death | Maternal Outcome | 1 |
-| 13 | Location | – | – | Raffle | 1 |
+| 13 | Location | – | – | Raffle, SITB TB 06, SITB TB 04 | 3 |
 | 14 | Condition | SP001135 | Presensi Posyandu | Raffle | 1 |
 | 15 | Observation | 385438008 | Source of information | Raffle | 1 |
 | 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC | 1 |
@@ -110,85 +110,86 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 66 | Observation | SP000016 | Tatalaksana Masalah Kesehatan | SiGizi ANC | 1 |
 | 67 | Procedure | 1230101008 | Counseling for pregnancy | SiGizi ANC | 1 |
 | 68 | Procedure | 385892002 | Mental health screening | SiGizi ANC | 1 |
-| 69 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04 | 3 |
-| 70 | Condition | Z03.0 | Observation for suspected tuberculosis | SITB TB 06 | 1 |
-| 71 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 72 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 4 |
-| 73 | Observation | OC000191 | Jumlah Skoring TBC Anak | SITB TB 06, SITB TB 03 SO | 2 |
-| 74 | ServiceRequest | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
-| 75 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 76 | DiagnosticReport | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
-| 77 | Procedure | 424489006 | Mantoux test | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 78 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 79 | Observation | 55277-8 | HIV status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 80 | Observation | 33248-6 | Diabetes status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 81 | ServiceRequest | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 04 (2x) | 3 |
-| 82 | Specimen | 119334006 | Sputum specimen | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO | 3 |
-| 83 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
-| 84 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 04 (2x) | 3 |
-| 85 | ServiceRequest | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
-| 86 | Observation | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
-| 87 | DiagnosticReport | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
-| 88 | ServiceRequest | X099380 | Line Probe Assay (LPA) Lini 1 | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
-| 89 | Observation | X099380 | Line Probe Assay (LPA) Lini 1 | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
-| 90 | DiagnosticReport | X099380 | Line Probe Assay (LPA) Lini 1 | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
-| 91 | ServiceRequest | X099381 | Line Probe Assay (LPA) Lini 2 | SITB TB 06, SITB TB 04 | 2 |
-| 92 | Observation | X099381 | Line Probe Assay (LPA) Lini 2 | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
-| 93 | DiagnosticReport | X099381 | Line Probe Assay (LPA) Lini 2 | SITB TB 06, SITB TB 04 | 2 |
-| 94 | ServiceRequest | X099388 | Biakan TB | SITB TB 06, SITB TB 03 SO | 2 |
-| 95 | Observation | X099388 | Biakan TB | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 96 | DiagnosticReport | X099388 | Biakan TB | SITB TB 06, SITB TB 03 SO | 2 |
-| 97 | ServiceRequest | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 04 | 2 |
-| 98 | Observation | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
-| 99 | DiagnosticReport | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 04 | 2 |
-| 100 | Observation | 106229004 | Qualifier for type of diagnosis | SITB TB 06, SITB TB 03 SO, SITB TB 16K | 3 |
-| 101 | CarePlan | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 102 | Observation | 365866002 | Finding of human immunodeficiency virus status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 103 | Procedure | SP000046 | Terapi Antiretroviral (ART) | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 104 | Observation | SP000047 | Hasil Tes Diabetes Melitus | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 105 | Coverage | – | – | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 106 | Observation | 85658-3 | Occupation [Type] | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 107 | Observation | 82810-3 | Pregnancy status | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 108 | Observation | 225368008 | Contact tracing | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 109 | Procedure | TK000016 | Edukasi Tes HIV | SITB TB 03 SO | 1 |
-| 110 | Procedure | SP000371 | Cotrimoxazole | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 111 | Observation | 1284985006 | Diabetes mellitus management program | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 112 | Observation | SP000797 | Pindah Register Pasien TB RO | SITB TB 03 SO | 1 |
-| 113 | EpisodeOfCare | TB-RO | Tuberkulosis Resisten Obat | SITB TB 03 RO | 1 |
-| 114 | Condition | 171126009 | Tuberculosis screening | SITB TB 04 | 1 |
-| 115 | Specimen | 418564007 | Pleural fluid specimen | SITB TB 04 (16x) | 1 |
-| 116 | ServiceRequest | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | SITB TB 04 (2x) | 1 |
-| 117 | Observation | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | SITB TB 04 (2x) | 1 |
-| 118 | DiagnosticReport | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | SITB TB 04 (2x) | 1 |
-| 119 | ServiceRequest | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | SITB TB 04 (2x) | 1 |
-| 120 | Observation | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | SITB TB 04 (2x) | 1 |
-| 121 | DiagnosticReport | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | SITB TB 04 (2x) | 1 |
-| 122 | ServiceRequest | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | SITB TB 04 (2x) | 1 |
-| 123 | Observation | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | SITB TB 04 (2x) | 1 |
-| 124 | DiagnosticReport | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | SITB TB 04 (2x) | 1 |
-| 125 | ServiceRequest | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | SITB TB 04 (2x) | 1 |
-| 126 | Observation | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | SITB TB 04 (2x) | 1 |
-| 127 | DiagnosticReport | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | SITB TB 04 (2x) | 1 |
-| 128 | ServiceRequest | MK099927 | Pemeriksaan PCR Open System | SITB TB 04 | 1 |
-| 129 | Observation | MK099927 | Pemeriksaan PCR Open System | SITB TB 04 | 1 |
-| 130 | DiagnosticReport | MK099927 | Pemeriksaan PCR Open System | SITB TB 04 | 1 |
-| 131 | ServiceRequest | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
-| 132 | Observation | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
-| 133 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
-| 134 | Group | – | – | SITB TB 16K | 1 |
-| 135 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
-| 136 | RelatedPerson | – | – | SITB TB 16K | 1 |
-| 137 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K | 1 |
-| 138 | ServiceRequest | 185389009 | Follow-up visit | SITB TB 16K | 1 |
-| 139 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
-| 140 | Observation | SP000369 | Kontak Dengan Penderita TBC | SITB TB 16K | 1 |
-| 141 | Observation | SP000206 | Dirujuk Pemeriksaan Terduga TBC | SITB TB 16K | 1 |
-| 142 | Observation | 171400006 | Examination for suspected tuberculosis | SITB TB 16K | 1 |
-| 143 | Observation | SP000207 | Hasil Pemeriksaan Terduga | SITB TB 16K | 1 |
-| 144 | Observation | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | SITB TB 16K | 1 |
-| 145 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | SITB TB 16K | 1 |
-| 146 | Observation | SP000212 | Tanggal Pemberian TPT | SITB TB 16K | 1 |
-| 147 | Observation | SP000213 | Hasil Akhir TPT | SITB TB 16K | 1 |
+| 69 | Organization | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
+| 70 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04 | 3 |
+| 71 | Condition | Z03.0 | Observation for suspected tuberculosis | SITB TB 06 | 1 |
+| 72 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 4 |
+| 74 | Observation | OC000191 | Jumlah Skoring TBC Anak | SITB TB 06, SITB TB 03 SO | 2 |
+| 75 | ServiceRequest | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
+| 76 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 77 | DiagnosticReport | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
+| 78 | Procedure | 424489006 | Mantoux test | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 79 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 80 | Observation | 55277-8 | HIV status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 81 | Observation | 33248-6 | Diabetes status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 82 | ServiceRequest | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 04 (2x) | 3 |
+| 83 | Specimen | 119334006 | Sputum specimen | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO | 3 |
+| 84 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
+| 85 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 04 (2x) | 3 |
+| 86 | ServiceRequest | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
+| 87 | Observation | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
+| 88 | DiagnosticReport | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
+| 89 | ServiceRequest | X099380 | Line Probe Assay (LPA) Lini 1 | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
+| 90 | Observation | X099380 | Line Probe Assay (LPA) Lini 1 | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
+| 91 | DiagnosticReport | X099380 | Line Probe Assay (LPA) Lini 1 | SITB TB 06, SITB TB 03 SO, SITB TB 04 | 3 |
+| 92 | ServiceRequest | X099381 | Line Probe Assay (LPA) Lini 2 | SITB TB 06, SITB TB 04 | 2 |
+| 93 | Observation | X099381 | Line Probe Assay (LPA) Lini 2 | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
+| 94 | DiagnosticReport | X099381 | Line Probe Assay (LPA) Lini 2 | SITB TB 06, SITB TB 04 | 2 |
+| 95 | ServiceRequest | X099388 | Biakan TB | SITB TB 06, SITB TB 03 SO | 2 |
+| 96 | Observation | X099388 | Biakan TB | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 97 | DiagnosticReport | X099388 | Biakan TB | SITB TB 06, SITB TB 03 SO | 2 |
+| 98 | ServiceRequest | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 04 | 2 |
+| 99 | Observation | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
+| 100 | DiagnosticReport | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 04 | 2 |
+| 101 | Observation | 106229004 | Qualifier for type of diagnosis | SITB TB 06, SITB TB 03 SO, SITB TB 16K | 3 |
+| 102 | CarePlan | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 103 | Observation | 365866002 | Finding of human immunodeficiency virus status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 104 | Procedure | SP000046 | Terapi Antiretroviral (ART) | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 105 | Observation | SP000047 | Hasil Tes Diabetes Melitus | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 106 | Coverage | – | – | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 107 | Observation | 85658-3 | Occupation [Type] | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 108 | Observation | 82810-3 | Pregnancy status | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 109 | Observation | 225368008 | Contact tracing | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
+| 110 | Procedure | TK000016 | Edukasi Tes HIV | SITB TB 03 SO | 1 |
+| 111 | Procedure | SP000371 | Cotrimoxazole | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 112 | Observation | 1284985006 | Diabetes mellitus management program | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 113 | Observation | SP000797 | Pindah Register Pasien TB RO | SITB TB 03 SO | 1 |
+| 114 | EpisodeOfCare | TB-RO | Tuberkulosis Resisten Obat | SITB TB 03 RO | 1 |
+| 115 | Condition | 171126009 | Tuberculosis screening | SITB TB 04 | 1 |
+| 116 | Specimen | 418564007 | Pleural fluid specimen | SITB TB 04 (16x) | 1 |
+| 117 | ServiceRequest | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | SITB TB 04 (2x) | 1 |
+| 118 | Observation | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | SITB TB 04 (2x) | 1 |
+| 119 | DiagnosticReport | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | SITB TB 04 (2x) | 1 |
+| 120 | ServiceRequest | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | SITB TB 04 (2x) | 1 |
+| 121 | Observation | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | SITB TB 04 (2x) | 1 |
+| 122 | DiagnosticReport | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | SITB TB 04 (2x) | 1 |
+| 123 | ServiceRequest | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | SITB TB 04 (2x) | 1 |
+| 124 | Observation | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | SITB TB 04 (2x) | 1 |
+| 125 | DiagnosticReport | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | SITB TB 04 (2x) | 1 |
+| 126 | ServiceRequest | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | SITB TB 04 (2x) | 1 |
+| 127 | Observation | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | SITB TB 04 (2x) | 1 |
+| 128 | DiagnosticReport | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | SITB TB 04 (2x) | 1 |
+| 129 | ServiceRequest | MK099927 | Pemeriksaan PCR Open System | SITB TB 04 | 1 |
+| 130 | Observation | MK099927 | Pemeriksaan PCR Open System | SITB TB 04 | 1 |
+| 131 | DiagnosticReport | MK099927 | Pemeriksaan PCR Open System | SITB TB 04 | 1 |
+| 132 | ServiceRequest | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
+| 133 | Observation | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
+| 134 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
+| 135 | Group | – | – | SITB TB 16K | 1 |
+| 136 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
+| 137 | RelatedPerson | – | – | SITB TB 16K | 1 |
+| 138 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K | 1 |
+| 139 | ServiceRequest | 185389009 | Follow-up visit | SITB TB 16K | 1 |
+| 140 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
+| 141 | Observation | SP000369 | Kontak Dengan Penderita TBC | SITB TB 16K | 1 |
+| 142 | Observation | SP000206 | Dirujuk Pemeriksaan Terduga TBC | SITB TB 16K | 1 |
+| 143 | Observation | 171400006 | Examination for suspected tuberculosis | SITB TB 16K | 1 |
+| 144 | Observation | SP000207 | Hasil Pemeriksaan Terduga | SITB TB 16K | 1 |
+| 145 | Observation | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | SITB TB 16K | 1 |
+| 146 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | SITB TB 16K | 1 |
+| 147 | Observation | SP000212 | Tanggal Pemberian TPT | SITB TB 16K | 1 |
+| 148 | Observation | SP000213 | Hasil Akhir TPT | SITB TB 16K | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 
@@ -669,8 +670,10 @@ Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 | Condition | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 9 | 7 | SP000738, SP001135, 134435003, Z03.0, A15.0, 171126009, Z20.1 |
 | Encounter | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 8 | 1 | – |
 | Patient | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 8 | 1 | – |
+| Organization | – | – | – | 1 | 1 | 1 | 1 | – | 4 | 1 | – |
 | QuestionnaireResponse | – | – | – | 1 | 1 | 1 | – | 1 | 4 | 1 | – |
 | CarePlan | – | – | – | 1 | 1 | 1 | – | – | 3 | 1 | – |
+| Location | – | 1 | – | 1 | – | – | 1 | – | 3 | 1 | – |
 | Practitioner | 1 | 2 | – | – | – | – | – | – | 3 | 1 | – |
 | Coverage | – | – | – | – | 1 | 1 | – | – | 2 | 1 | – |
 | MedicationDispense | – | – | 2 | – | – | – | – | – | 2 | 2 | 93015491, SP000370 |
@@ -678,9 +681,8 @@ Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 | PractitionerRole | 1 | – | 1 | – | – | – | – | – | 2 | 1 | – |
 | Group | – | – | – | – | – | – | – | 1 | 1 | 1 | – |
 | Immunization | – | – | 1 | – | – | – | – | – | 1 | 1 | VG139 |
-| Location | – | 1 | – | – | – | – | – | – | 1 | 1 | – |
 | RelatedPerson | – | – | – | – | – | – | – | 1 | 1 | 1 | – |
-| **Total** | **12** | **8** | **61** | **54** | **61** | **29** | **69** | **21** | **315** | **147** | |
+| **Total** | **12** | **8** | **61** | **56** | **62** | **30** | **71** | **21** | **321** | **148** | |
 
 Catatan:
 - Organization tidak dihitung di semua form (lookup master data, bloknya tidak ditulis di dictionary). Location di Maternal Outcome dan SiGizi ANC juga lookup (tidak dihitung), tapi di Raffle dihitung karena dibuat dari form.
@@ -688,7 +690,7 @@ Catatan:
 - PractitionerRole tenaga pemeriksa SiGizi ANC dan PractitionerRole MO sama-sama tanpa code pembeda tetap (code-nya opsi), jadi dihitung sebagai payload yang sama.
 - EpisodeOfCare: Maternal Outcome = ANC & PNC ditutup (finished, hari ke-43); Raffle = ANC dicari dulu, kalau tidak ada baru dibuat.
 - Encounter muncul di 2 blok kamus (data utama + statusHistory) = 1 payload.
-- SITB (TB 06, TB 03 SO, TB 03 RO, TB 04, TB 16K): Organization & Location faskes, PractitionerRole petugas lab/radiografer, dan Practitioner PJ SITB = lookup master data (tidak dihitung). Baris yang dicoret di sheet tidak dipakai (TB 16K: Practitioner/PractitionerRole kader → yang berlaku Observation SP000373). Lihat asumsi A1–A12 di `revisi.md`.
+- SITB (TB 06, TB 03 SO, TB 03 RO, TB 04): blok faskes (Organization + Location) **dihitung** karena dimapping dari variabel faskes di form (match + update). TB 16K: faskes lookup. PractitionerRole petugas lab/radiografer, dan Practitioner PJ SITB = lookup master data (tidak dihitung). Baris yang dicoret di sheet tidak dipakai (TB 16K: Practitioner/PractitionerRole kader → yang berlaku Observation SP000373). Lihat asumsi A1–A12 di `revisi.md`.
 - SITB: opsi coded yang mengikuti jawaban ikut dihitung sebagai code (reasonCode ServiceRequest, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, metode biakan) — disetujui, lihat `aturan.md`. Karena itu jumlah code SITB besar (mis. TB 04: 16 ServiceRequest × 9 alasan pemeriksaan, 16 Specimen × 11 jenis contoh uji).
 - SITB TB 04: 1 dictionary untuk TB 04 Fasyankes dan TB 04 Rujukan (header sama). TB 03 RO: follow up 24 bulan = 1 template BTA + 1 template Biakan (asumsi A7).
 - SITB: EpisodeOfCare TB-SO / TB-RO, Patient, Encounter, Condition A15.0, Observation umur (424144002), HIV/DM, lab (11545-1, X0993xx) dipakai ulang di beberapa form SITB → total unik jauh lebih kecil dari non-unik.
@@ -696,6 +698,7 @@ Catatan:
 ---
 
 ## Log perubahan output
+- 2026-11-17: Blok faskes dikembalikan (A3): +2 payload di TB 06 (56), TB 04 (71); +1 di TB 03 SO (62), TB 03 RO (30). Code tidak berubah.
 - 2026-11-17: SP001138–SP001140 dibatalkan; SP001137 jadi "Paduan lainnya" (TB 03 SO & RO). Varian teks paduan ditambah sebagai baris alias (code lama, tidak dihitung ulang). TB 03 SO 332 → **329** code, TB 03 RO 356 → **357** code. Total non-unik 315 / 1738, unik 147 / 434.
 - 2026-11-17: Code lokal baru: TB 06 SP001136 Belum Mulai Pengobatan (code 275 → **276**); TB 03 SO SP001137–SP001140 paduan pengobatan (code 328 → **332**). Hasil Tes HIV "Tidak Diketahui" → dataAbsentReason unknown (tidak dihitung). Total non-unik 315 / 1740, unik 147 / 437.
 - 2026-11-17: Jawaban user diterapkan. TB 06: 55 → **54 payload** (Coverage dihapus karena No. BPJS dicoret di sheet), code tetap 275. TB 03 SO: tetap 61 / 328 (Status Pengobatan masuk CarePlan sebagai teks). TB 16K: 24/39 → **21 payload / 35 code** (Practitioner, PractitionerRole kader, dan Observation SP000211 dicoret di sheet). Total non-unik 315 / 1735, unik 147 / 432.
