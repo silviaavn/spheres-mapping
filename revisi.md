@@ -271,7 +271,7 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 | T06-1 | Kolom AC "Klasifikasi Terduga TBC" ada di export (11 terisi) dan di dictionary (EoC terduga `type`), tapi tidak ada di BQ | done (mapping/): nama BQ sementara `klasifikasi_terduga_tbc` (P25) |
 | T06-2 | Keterangan, Tindak lanjut penambahan resistansi hanya label tanpa resource | done (mapping/): note.text (A10). No. BPJS dicoret di sheet, tidak dimapping |
 | T06-3 | Tanggal Hasil Pemeriksaan TCM-XDR tidak punya baris | done (mapping/): `Observation.issued` di Observation TCM XDR |
-| T06-4 | Tindak Lanjut "Belum Mulai Pengobatan" tidak ada di opsi. Dictionary: sheet `TB06` baris 1020 (label Tindak Lanjut), opsi di baris 1024–1031. Export: `TB_06` kolom CL, 14 baris (baris Excel 1702, 2067, 2105, 2116, 2495, 2592, 4957, 5523, 5580, 5586, 5603, 6072, 6125, 6131) | open |
+| T06-4 | Tindak Lanjut "Belum Mulai Pengobatan" tidak ada di opsi. Dictionary: sheet `TB06` baris 1020 (label Tindak Lanjut), opsi di baris 1024–1031. Export: `TB_06` kolom CL, 14 baris (baris Excel 1702, 2067, 2105, 2116, 2495, 2592, 4957, 5523, 5580, 5586, 5603, 6072, 6125, 6131) | done (mapping/): code baru **SP001136** Belum Mulai Pengobatan di `CarePlan.activity.detail.code.coding` (kelompok CarePlan active / not-started) |
 | T06-5 | Hasil Diagnosis "Bukan TBC" (4.429 baris) diproses lewat blok EoC "bukan TB" (cancelled); opsi type hanya TBC SO/RO | info |
 | T06-6 | File `TB_06SO` dan `TB_06RO` di Drive = format TB 06 tanpa kolom AC. Analisis memakai file `TB_06` gabungan | info |
 
@@ -281,8 +281,8 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 |---|---|---|
 | T03S-1 | `EpisodeOfCare.type` berisi TB-SO dan TB-RO padahal register SO | done (mapping/): opsi TB-RO dihapus (A8) |
 | T03S-2 | Pekerjaan berisi `Lain-lain:<teks>` | open (pipeline P26) |
-| T03S-3 | Hasil Tes HIV "Tidak Diketahui" tidak ada di opsi. Dictionary: sheet `TB 03 SO` baris 1077–1078 (ODHIV 165816005 / Bukan ODHIV 165815009). Export: `TB_03SO` kolom CB, 8 baris (baris Excel 122, 199, 353, 467, 716, 725, 728, 963) | open |
-| T03S-4 | Paduan Pengobatan berisi teks bebas di luar daftar code. Dictionary: sheet `TB 03 SO` baris 362 (CP000005) dan opsi baris 363–438. Export: `TB_03SO` kolom AQ, 4 baris: "Kategori 1 + levo 4 tablet" (baris Excel 408), "RHE" (776), "INH 1X300 MG, RIFAMPICIN …" (940), "INH 1X100MG, RIF …" (951) | open |
+| T03S-3 | Hasil Tes HIV "Tidak Diketahui" tidak ada di opsi. Dictionary: sheet `TB 03 SO` baris 1077–1078 (ODHIV 165816005 / Bukan ODHIV 165815009). Export: `TB_03SO` kolom CB, 8 baris (baris Excel 122, 199, 353, 467, 716, 725, 728, 963) | done (mapping/): `Observation.dataAbsentReason.coding` = `unknown` (data-absent-reason), Value Name "Tidak Diketahui" |
+| T03S-4 | Paduan Pengobatan berisi teks bebas di luar daftar code. Dictionary: sheet `TB 03 SO` baris 362 (CP000005) dan opsi baris 363–438. Export: `TB_03SO` kolom AQ, 4 baris: "Kategori 1 + levo 4 tablet" (baris Excel 408), "RHE" (776), "INH 1X300 MG, RIFAMPICIN …" (940), "INH 1X100MG, RIF …" (951) | done (mapping/): code baru **SP001137–SP001140** di `CarePlan.activity.detail.productCodeableConcept.coding`, Value Name = teks persis di export |
 | T03S-6 | Status Pengobatan (Sesuai standar 943 / Tidak sesuai standar 10) sebelumnya tidak dimapping | done (mapping/) **sementara**: `CarePlan.activity.detail.description` (teks) di CarePlan Pengobatan; belum ada code |
 | T03S-5 | Terapi DM "OHO" vs Value Name "Obat Hipoglikemik Oral (OHO)" | open (P24) |
 
@@ -362,8 +362,10 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P30 | TB 03 SO, TB 03 RO | `EpisodeOfCare.type` tetap per register (SO = TB-SO, RO = TB-RO) | Converter | open |
 | P31 | TB 03 SO | `status_pengobatan` (Sesuai standar / Tidak sesuai standar) → `CarePlan.activity.detail.description` di CarePlan Pengobatan (sementara, teks) | Converter | open |
 | P32 | TB 16K | Nama kader → `Observation.valueString` (Observation SP000373), organisasi kader → lookup Organization di `Observation.performer.reference`. Practitioner/PractitionerRole kader tidak dibuat | Converter | open |
+| P33 | TB 06, TB 03 SO | Code lokal baru (request 17 Nov 2026): SP001136 Belum Mulai Pengobatan (TB 06 Tindak Lanjut); SP001137–SP001140 paduan pengobatan teks bebas (TB 03 SO); Hasil Tes HIV "Tidak Diketahui" → dataAbsentReason unknown | Converter + daftar local code | open |
 
 ## Log perubahan revisi
+- 2026-11-17: T06-4 (SP001136), T03S-3 (dataAbsentReason unknown), T03S-4 (SP001137–SP001140) done. Tambah P33.
 - 2026-11-17: Jawaban user diterapkan: A2 (data lokal SITB tidak perlu; Status Pengobatan → CarePlan), A6 disetujui (masuk aturan), A9 batal (No. BPJS dicoret), G11 & T04-4 ok, T16-6 dikoreksi. Baris dicoret di sheet sekarang dihapus (G13). Lokasi baris T06-4, T03S-3, T03S-4, T03R-5 ditambahkan; T03R-5 ternyata hanya singkatan (code ada).
 - 2026-11-17: Tambah 5 form SITB (TB 06, TB 03 SO, TB 03 RO, TB 04 Fasyankes & Rujukan, TB 16K) dari PHDT_SITB_2.xlsx + schema BQ + export SITB di Drive. TB 13 SO/RO tidak dianalisis. Dijalankan tanpa tanya-jawab: asumsi A1–A12, temuan G1–G12, T06, T03S, T03R, T04, T16; catatan pipeline P24–P30.
 - 2026-11-16: Dictionary SiGizi ANC diganti nama jadi `mapping/phdt-data-dictionary-sigizi-anc.csv` (sumber PHDT, bukan Kobo).

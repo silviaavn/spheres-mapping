@@ -25,13 +25,13 @@ Belum: PNC, SITB TB 13 SO/RO, form lain
 | Maternal Outcome | 12 | 14 |
 | Raffle | 8 | 6 |
 | SiGizi ANC | 61 | 142 |
-| SITB TB 06 | 54 | 275 |
-| SITB TB 03 SO | 61 | 328 |
+| SITB TB 06 | 54 | 276 |
+| SITB TB 03 SO | 61 | 332 |
 | SITB TB 03 RO | 29 | 356 |
 | SITB TB 04 | 69 | 579 |
 | SITB TB 16K | 21 | 35 |
-| **Total (non-unik)** | **315** | **1735** |
-| **Total unik** | **147** | **432** |
+| **Total (non-unik)** | **315** | **1740** |
+| **Total unik** | **147** | **437** |
 | Selisih (dipakai ulang) | 168 | 1303 |
 
 ---
@@ -432,202 +432,207 @@ Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 | 234 | TK000022 | Akan diobati/dirujuk | kemkes | SITB TB 06 | 1 |
 | 235 | 699618001 | Administration of prophylactic antituberculosis agent | snomed | SITB TB 06 | 1 |
 | 236 | 266714009 | Previous treatment continue | snomed | SITB TB 06 | 1 |
-| 237 | 406149000 | Medication declined | snomed | SITB TB 06 | 1 |
-| 238 | 399307001 | Lost to follow-up | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 4 |
-| 239 | 365866002 | Finding of human immunodeficiency virus status | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 240 | 165816005 | Human immunodeficiency virus detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 241 | 165815009 | Human immunodeficiency virus not detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 242 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 243 | SP000047 | Hasil Tes Diabetes Melitus | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 244 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K | 3 |
-| 245 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 246 | 106540006 | Laborer | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 247 | 106304008 | Teacher | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 2 |
-| 248 | 106305009 | University/higher education teacher | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 249 | 444168002 | Homemaker | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 250 | OV000430 | Pegawai Swasta/ BUMN/ BUMD | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 251 | 65853000 | Student | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 252 | 106386007 | Agricultural animal husbandry/forestry worker, fisherman/hunter | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 253 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 254 | 36625000 | Livestock worker | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 255 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 256 | 236297007 | Civil servant | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 257 | OV000431 | Siswa Berasrama | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 258 | 236320001 | Vehicle driver (occupation) | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 259 | OV000432 | Tenaga Profesional Nonmedis | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 260 | OV000433 | TNI/ Polri | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 261 | OV000434 | Warga Binaan Pemasyarakatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 262 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 263 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 264 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 265 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 266 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 267 | CP000006 | Paduan OAT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 268 | CP000007 | OAT Kategori 1 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 269 | CP000008 | OAT Kategori 2 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 270 | CP000009 | OAT Kategori Anak | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 271 | CP000010 | OAT Paduan tidak standar TB SO | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 272 | CP000011 | OAT Paduan Jangka Pendek | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 273 | CP000012 | OAT Paduan Jangka Panjang | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 274 | CP000013 | OAT Paduan Individual | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 275 | CP000014 | OAT Paduan Monoresistan INH | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 276 | CP000005 | Paduan Pengobatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 277 | CP000015 | 2(HRZE)/4(HR)3 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 278 | CP000016 | 2(HRZE)/4(HR) - KDT Dosis Harian | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 279 | CP000017 | 2(HRZE)S/(HRZE)/5(HRE) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 280 | CP000018 | 2(HRZE)S/(HRZE)/5((HR)3E3) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 281 | CP000019 | 2HRZE/4HR | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 282 | CP000020 | 2HRZES/HRZE/ 5H3R3E3 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 283 | CP000021 | 2(HRZ)/4(HR) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 284 | CP000022 | 2(HRZ)/4(HR) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 285 | CP000023 | Km Cs Eto Lfx Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 286 | CP000024 | Km Cs Eto Lfx PAS E Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 287 | CP000025 | Km Cs Eto Lfx E Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 288 | CP000026 | Km Cs Eto Mfx PAS Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 289 | CP000027 | Km Cs Eto Mfx PAS E VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 290 | CP000028 | Cm Cs Eto Lfx E Z Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 291 | CP000029 | Cm Cs Eto Lfx PAS Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 292 | CP000030 | Cm Cs Eto Mfx Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 293 | CP000031 | Cm Cs Eto Mfx PAS Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 294 | CP000032 | Km Eto Cs PAS Z Bdq | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 295 | CP000033 | Lfx Eto Cs PAS Z Bdq | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 296 | CP000034 | Eto Cs PAS Z Bdq Lnz Clf | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 297 | CP000035 | Km Lfx (Eto/CS/PAS) Z Bdq (Lnz/Clf) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 298 | CP000036 | 5 Km Mfx(h) Eto Cfz Z H(h) E/ 5Mfx(h) Cfz Z E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 299 | CP000037 | 6 Dlm Lfx Eto Cs ZE B6/ 18 Lfx Eto Cs ZE B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 300 | CP000038 | 10 Cm Dlm Lzd Eto Cs Z E B6/14 Lzd Eto Cs Z E B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 301 | CP000039 | 6 Dlm Lzd Cfz Eto Cs PAS ZE B6/ 18 lzd Cfz Eto Cs PAS Z E B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 302 | CP000040 | Etambutol | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 303 | CP000041 | Paduan TPT 6Lfx 250 mg + E 400 mg Dewasa | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 304 | CP000042 | 6 Bdq-Lfx-Lzd-Cfz-Cs-VitB6 / 14 Lfx-Cfz-Cs-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 305 | CP000043 | 6 Bdq-Lfx-Cfz-Cs-E -VitB6/ 14 Lfx-Cfz-Cs-E-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 306 | CP000044 | 6 Bdq-Lfx-Lzd-Cfz-E / 14 Lfx-Cfz-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 307 | CP000045 | 6 Bdq-Mfx-Lzd-Cfz-E / 14 Mfx-Cfz-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 308 | CP000046 | 6 Bdq-Lzd-Cfz-Cs-E-VitB6 / 14 Lzd-Cfz-Cs-E -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 309 | CP000047 | 6 Bdq-Lzd-Cfz-Cs-Eto / 14 Lzd-Cfz-Cs-Eto- Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 310 | CP000048 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 311 | CP000049 | 20 Lfx-Lzd-Cfz-Cs-Eto -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 312 | CP000050 | 20 Mfx-Lzd-Cfz-Cs-E -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 313 | CP000051 | 20 Mfx-Lzd-Cfz-Cs-Z -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 314 | CP000052 | 6 Lfx-Lzd-Cfz-Cs-Amk-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 315 | CP000053 | 6 Lfx-Lzd-Cfz-Cs-S-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 316 | CP000054 | 6 Lfx-Lzd-Cfz-Eto-PAS / 14 Lfx-Lzd-Clz-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 317 | CP000055 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 318 | CP000056 | Pro TB 3 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 319 | CP000057 | 6 Bdq-Lfx-Lzd-Cfz-H(Hdose)-Z-E/5 Lfx-Cfz-Z-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 320 | CP000058 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 321 | CP000059 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 322 | CP000060 | 6 Bdq-Lfx-Eto-E-Z-Hh-Cfz/ 5 Lfx)-Cfz-Z-E (STR Non Inj) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 323 | CP000061 | 6 Bdq-Mfx-Eto-E-Z-Hh-Cfz/ 5-Mfx-Cfz-Z-E (STR Non Inj) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 324 | CP000062 | Paduan TPT 6H 100 mg (INH) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 325 | CP000063 | Paduan TPT 3HP Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 326 | CP000064 | Paduan TPT 6H 300 mg (INH) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 327 | CP000065 | Paduan TPT 6Lfx 250mg | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 328 | CP000066 | Paduan TPT 3HR KDT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 329 | CP000067 | Paduan TPT 3HR KDT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 330 | CP000068 | 5 Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 331 | CP000069 | 6 Lfx-Lzd-Cfz-Cs-Eto / 12 Lfx-Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 332 | CP000070 | 6 Lzd-Cfz-Cs-Eto / 5 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 333 | CP000071 | 6 Lzd-Cfz-Cs-Eto / 12 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 334 | CP000072 | 5 Lfx-Lzd-Cfz-Cs-Dlm / 5 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 335 | CP000073 | 6 Lfx-Lzd-Cfz-Cs-Dlm / 12 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 336 | CP000074 | 5 Lzd-Cfz-Cs-Dlm-Eto/5 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 337 | CP000075 | 6 Lzd-Cfz-Cs-Dlm-Eto/ 12 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 338 | CP000076 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz- Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 339 | CP000077 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 12 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 340 | CP000078 | 6 Bdq-Lzd-Cfz-Cs-PAS / 5 Cfz-Cs-PAS | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 341 | CP000079 | 6 Bdq-Lzd-Cfz-Cs- PAS / 12 Cfz-Cs-PAS | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 342 | CP000080 | Paduan TPT 6Lfx 100 mg + E 100 mg | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 343 | CP000081 | Paduan TPT 6Lfx 100mg | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 344 | CP000082 | Paduan TPT 3HR 300mg/450mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 345 | CP000083 | Paduan TPT 3HR 300mg/600mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 346 | CP000084 | RHZE (150/75/400/275) + Levofloxacin | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 347 | CP000085 | Bedaquline Pretomanid Linezolid (BPAL) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 348 | CP000086 | Bedaquline Pretomanid Linezolid Moxifloxacin (BPALM) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 349 | CP000087 | Paduan TPT 1HP 300mg/300mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 350 | CP000088 | Paduan TPT 1HP 300mg/150mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 351 | CP000089 | 6 BDQ-Lfx-Cfz-Hdt-Z-E-Lzd(2 bulan)/ 5 Lfx-Cfz-Z-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 352 | CP000090 | 2HPMZ/2HPM | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 353 | SP000795 | Sumber Obat | kemkes sp | SITB TB 03 SO | 1 |
-| 354 | SP000791 | Program TBC | kemkes sp | SITB TB 03 SO | 1 |
-| 355 | SP000792 | Asuransi | kemkes sp | SITB TB 03 SO | 1 |
-| 356 | SP000793 | Bayar Sendiri | kemkes sp | SITB TB 03 SO | 1 |
-| 357 | 371001000 | Patient cured | snomed | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 358 | 182992009 | Treatment completed | snomed | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 359 | CP000094 | Pengobatan Gagal | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 360 | CP000096 | Tidak dievaluasi/pindah | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 361 | TK000016 | Edukasi Tes HIV | kemkes | SITB TB 03 SO | 1 |
-| 362 | SP000371 | Cotrimoxazole | kemkes sp | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 363 | 1284985006 | Diabetes mellitus management program | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 364 | SP000372 | Obat Hipoglikemik Oral | kemkes sp | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 365 | 308755006 | Subcutaneous injection of insulin | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 366 | SP000797 | Pindah Register Pasien TB RO | kemkes sp | SITB TB 03 SO | 1 |
-| 367 | 17621005 | Normal | snomed | SITB TB 03 RO | 1 |
-| 368 | 2483006 | Cavity | snomed | SITB TB 03 RO | 1 |
-| 369 | 27925004 | Nodule | snomed | SITB TB 03 RO | 1 |
-| 370 | 1255665007 | Moderate | snomed | SITB TB 03 RO | 1 |
-| 371 | 47604008 | Miliary tuberculosis | snomed | SITB TB 03 RO | 1 |
-| 372 | 30746006 | Lymphadenopathy | snomed | SITB TB 03 RO | 1 |
-| 373 | 260544000 | Endobronchial (qualifier value) | snomed | SITB TB 03 RO | 1 |
-| 374 | 112674009 | Fibrosis | snomed | SITB TB 03 RO | 1 |
-| 375 | 442110002 | Fibrosis of pleura | snomed | SITB TB 03 RO | 1 |
-| 376 | 1303092009 | Pulmonary bulla | snomed | SITB TB 03 RO | 1 |
-| 377 | 60046008 | Pleural effusion | snomed | SITB TB 03 RO | 1 |
-| 378 | 36118008 | Pneumothorax | snomed | SITB TB 03 RO | 1 |
-| 379 | 12295008 | Bronchiectasis | snomed | SITB TB 03 RO | 1 |
-| 380 | 46621007 | Atelectasis | snomed | SITB TB 03 RO | 1 |
-| 381 | 9656002 | Consolidation | snomed | SITB TB 03 RO | 1 |
-| 382 | 309529002 | Lung mass | snomed | SITB TB 03 RO | 1 |
-| 383 | 385633008 | Improving | snomed | SITB TB 03 RO | 1 |
-| 384 | 230993007 | Worsening | snomed | SITB TB 03 RO | 1 |
-| 385 | 58158008 | Stable | snomed | SITB TB 03 RO | 1 |
-| 386 | 171126009 | Tuberculosis screening | snomed | SITB TB 04 | 1 |
-| 387 | SRR000013 | Pemeriksaan Diagnosis Baseline | kemkes clinical-term | SITB TB 04 (16x) | 1 |
-| 388 | SRR000007 | Pemeriksaan Diagnosis | kemkes clinical-term | SITB TB 04 (32x) | 1 |
-| 389 | SRR000009 | Pemeriksaan Ulang | kemkes clinical-term | SITB TB 04 (48x) | 1 |
-| 390 | SRR000008 | Follow Up | kemkes clinical-term | SITB TB 04 (48x) | 1 |
-| 391 | SRR000010 | Akhir Pengobatan | kemkes clinical-term | SITB TB 04 (16x) | 1 |
-| 392 | 418564007 | Pleural fluid specimen | snomed | SITB TB 04 (16x) | 1 |
-| 393 | 258450006 | Cerebrospinal fluid specimen | snomed | SITB TB 04 (16x) | 1 |
-| 394 | 119376003 | Tissue specimen | snomed | SITB TB 04 (16x) | 1 |
-| 395 | 309508006 | Soft tissue lesion fine needle aspirate specimen | snomed | SITB TB 04 (16x) | 1 |
-| 396 | 168137004 | Gastric aspirate specimen | snomed | SITB TB 04 (16x) | 1 |
-| 397 | 119303007 | Microbial isolate specimen | snomed | SITB TB 04 (16x) | 1 |
-| 398 | ST000001 | Sputum Pagi | kemkes clinical-term | SITB TB 04 (16x) | 1 |
-| 399 | ST000002 | Sputum Sewaktu | kemkes clinical-term | SITB TB 04 (16x) | 1 |
-| 400 | 123038009 | Specimen | snomed | SITB TB 04 (16x) | 1 |
-| 401 | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | kemkes sp | SITB TB 04 (6x) | 1 |
-| 402 | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | kemkes sp | SITB TB 04 (6x) | 1 |
-| 403 | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | kemkes sp | SITB TB 04 (6x) | 1 |
-| 404 | 46246-5 | Mycobacterium tuberculosis katG gene isoniazid high level resistance mutation [Identifier] by Molecular method | loinc | SITB TB 04 | 1 |
-| 405 | 63072-3 | Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method | loinc | SITB TB 04 | 1 |
-| 406 | X099783 | H Dosis Tinggi (High) | kemkes examination | SITB TB 04 | 1 |
-| 407 | 103960-1 | Prothionamide [Susceptibility] by Genotype method | loinc | SITB TB 04 | 1 |
-| 408 | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | kemkes examination | SITB TB 04 (3x) | 1 |
-| 409 | X099390 | Hasil Pemeriksaan Biakan TB (Metode: MGIT) | kemkes examination | SITB TB 04 (3x) | 1 |
-| 410 | OM000001 | LJ | kemkes clinical-term | SITB TB 04 | 1 |
-| 411 | OM000002 | MGIT | kemkes clinical-term | SITB TB 04 | 1 |
-| 412 | 20373-7 | Amikacin [Susceptibility] by Method for Slow-growing mycobacteria | loinc | SITB TB 04 | 1 |
-| 413 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K | 1 |
-| 414 | 415759006 | Tuberculosis index case | snomed | SITB TB 16K | 1 |
-| 415 | 185389009 | Follow-up visit | snomed | SITB TB 16K | 1 |
-| 416 | 737492002 | Outpatient care management | snomed | SITB TB 16K | 1 |
-| 417 | Z20.1 | Contact with and exposure to tuberculosis | icd-10 | SITB TB 16K | 1 |
-| 418 | SP000200 | Invitasi kontak | kemkes sp | SITB TB 16K | 1 |
-| 419 | 439708006 | Home visit | snomed | SITB TB 16K | 1 |
-| 420 | SP000369 | Kontak Dengan Penderita TBC | kemkes sp | SITB TB 16K | 1 |
-| 421 | SP000201 | Kontak Serumah | kemkes sp | SITB TB 16K | 1 |
-| 422 | SP000202 | Kontak Erat | kemkes sp | SITB TB 16K | 1 |
-| 423 | SP000206 | Dirujuk Pemeriksaan Terduga TBC | kemkes sp | SITB TB 16K | 1 |
-| 424 | 171400006 | Examination for suspected tuberculosis | snomed | SITB TB 16K | 1 |
-| 425 | SP000207 | Hasil Pemeriksaan Terduga | kemkes sp | SITB TB 16K | 1 |
-| 426 | SP000208 | Tidak TBC | kemkes sp | SITB TB 16K | 1 |
-| 427 | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | kemkes sp | SITB TB 16K | 1 |
-| 428 | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | kemkes sp | SITB TB 16K | 1 |
-| 429 | SP000211 | Memenuhi syarat TPT | kemkes sp | SITB TB 16K | 1 |
-| 430 | SP000374 | Tidak Memenuhi Syarat TPT | kemkes sp | SITB TB 16K | 1 |
-| 431 | SP000212 | Tanggal Pemberian TPT | kemkes sp | SITB TB 16K | 1 |
-| 432 | SP000213 | Hasil Akhir TPT | kemkes sp | SITB TB 16K | 1 |
+| 237 | SP001136 | Belum Mulai Pengobatan | kemkes sp | SITB TB 06 | 1 |
+| 238 | 406149000 | Medication declined | snomed | SITB TB 06 | 1 |
+| 239 | 399307001 | Lost to follow-up | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 4 |
+| 240 | 365866002 | Finding of human immunodeficiency virus status | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 241 | 165816005 | Human immunodeficiency virus detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 242 | 165815009 | Human immunodeficiency virus not detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 244 | SP000047 | Hasil Tes Diabetes Melitus | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K | 3 |
+| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 247 | 106540006 | Laborer | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 248 | 106304008 | Teacher | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 2 |
+| 249 | 106305009 | University/higher education teacher | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 250 | 444168002 | Homemaker | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 251 | OV000430 | Pegawai Swasta/ BUMN/ BUMD | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 252 | 65853000 | Student | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 253 | 106386007 | Agricultural animal husbandry/forestry worker, fisherman/hunter | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 254 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 255 | 36625000 | Livestock worker | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 256 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 257 | 236297007 | Civil servant | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 258 | OV000431 | Siswa Berasrama | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 259 | 236320001 | Vehicle driver (occupation) | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 260 | OV000432 | Tenaga Profesional Nonmedis | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 261 | OV000433 | TNI/ Polri | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 262 | OV000434 | Warga Binaan Pemasyarakatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 264 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 267 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 268 | CP000006 | Paduan OAT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 269 | CP000007 | OAT Kategori 1 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 270 | CP000008 | OAT Kategori 2 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 271 | CP000009 | OAT Kategori Anak | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 272 | CP000010 | OAT Paduan tidak standar TB SO | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 273 | CP000011 | OAT Paduan Jangka Pendek | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 274 | CP000012 | OAT Paduan Jangka Panjang | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 275 | CP000013 | OAT Paduan Individual | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 276 | CP000014 | OAT Paduan Monoresistan INH | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 277 | CP000005 | Paduan Pengobatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 278 | CP000015 | 2(HRZE)/4(HR)3 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 279 | CP000016 | 2(HRZE)/4(HR) - KDT Dosis Harian | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 280 | CP000017 | 2(HRZE)S/(HRZE)/5(HRE) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 281 | CP000018 | 2(HRZE)S/(HRZE)/5((HR)3E3) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 282 | CP000019 | 2HRZE/4HR | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 283 | CP000020 | 2HRZES/HRZE/ 5H3R3E3 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 284 | CP000021 | 2(HRZ)/4(HR) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 285 | CP000022 | 2(HRZ)/4(HR) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 286 | CP000023 | Km Cs Eto Lfx Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 287 | CP000024 | Km Cs Eto Lfx PAS E Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 288 | CP000025 | Km Cs Eto Lfx E Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 289 | CP000026 | Km Cs Eto Mfx PAS Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 290 | CP000027 | Km Cs Eto Mfx PAS E VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 291 | CP000028 | Cm Cs Eto Lfx E Z Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 292 | CP000029 | Cm Cs Eto Lfx PAS Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 293 | CP000030 | Cm Cs Eto Mfx Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 294 | CP000031 | Cm Cs Eto Mfx PAS Z VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 295 | CP000032 | Km Eto Cs PAS Z Bdq | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 296 | CP000033 | Lfx Eto Cs PAS Z Bdq | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 297 | CP000034 | Eto Cs PAS Z Bdq Lnz Clf | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 298 | CP000035 | Km Lfx (Eto/CS/PAS) Z Bdq (Lnz/Clf) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 299 | CP000036 | 5 Km Mfx(h) Eto Cfz Z H(h) E/ 5Mfx(h) Cfz Z E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 300 | CP000037 | 6 Dlm Lfx Eto Cs ZE B6/ 18 Lfx Eto Cs ZE B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 301 | CP000038 | 10 Cm Dlm Lzd Eto Cs Z E B6/14 Lzd Eto Cs Z E B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 302 | CP000039 | 6 Dlm Lzd Cfz Eto Cs PAS ZE B6/ 18 lzd Cfz Eto Cs PAS Z E B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 303 | CP000040 | Etambutol | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 304 | CP000041 | Paduan TPT 6Lfx 250 mg + E 400 mg Dewasa | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 305 | CP000042 | 6 Bdq-Lfx-Lzd-Cfz-Cs-VitB6 / 14 Lfx-Cfz-Cs-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 306 | CP000043 | 6 Bdq-Lfx-Cfz-Cs-E -VitB6/ 14 Lfx-Cfz-Cs-E-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 307 | CP000044 | 6 Bdq-Lfx-Lzd-Cfz-E / 14 Lfx-Cfz-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 308 | CP000045 | 6 Bdq-Mfx-Lzd-Cfz-E / 14 Mfx-Cfz-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 309 | CP000046 | 6 Bdq-Lzd-Cfz-Cs-E-VitB6 / 14 Lzd-Cfz-Cs-E -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 310 | CP000047 | 6 Bdq-Lzd-Cfz-Cs-Eto / 14 Lzd-Cfz-Cs-Eto- Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 311 | CP000048 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 312 | CP000049 | 20 Lfx-Lzd-Cfz-Cs-Eto -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 313 | CP000050 | 20 Mfx-Lzd-Cfz-Cs-E -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 314 | CP000051 | 20 Mfx-Lzd-Cfz-Cs-Z -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 315 | CP000052 | 6 Lfx-Lzd-Cfz-Cs-Amk-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 316 | CP000053 | 6 Lfx-Lzd-Cfz-Cs-S-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 317 | CP000054 | 6 Lfx-Lzd-Cfz-Eto-PAS / 14 Lfx-Lzd-Clz-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 318 | CP000055 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 319 | CP000056 | Pro TB 3 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 320 | CP000057 | 6 Bdq-Lfx-Lzd-Cfz-H(Hdose)-Z-E/5 Lfx-Cfz-Z-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 321 | CP000058 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 322 | CP000059 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 323 | CP000060 | 6 Bdq-Lfx-Eto-E-Z-Hh-Cfz/ 5 Lfx)-Cfz-Z-E (STR Non Inj) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 324 | CP000061 | 6 Bdq-Mfx-Eto-E-Z-Hh-Cfz/ 5-Mfx-Cfz-Z-E (STR Non Inj) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 325 | CP000062 | Paduan TPT 6H 100 mg (INH) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 326 | CP000063 | Paduan TPT 3HP Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 327 | CP000064 | Paduan TPT 6H 300 mg (INH) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 328 | CP000065 | Paduan TPT 6Lfx 250mg | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 329 | CP000066 | Paduan TPT 3HR KDT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 330 | CP000067 | Paduan TPT 3HR KDT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 331 | CP000068 | 5 Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 332 | CP000069 | 6 Lfx-Lzd-Cfz-Cs-Eto / 12 Lfx-Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 333 | CP000070 | 6 Lzd-Cfz-Cs-Eto / 5 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 334 | CP000071 | 6 Lzd-Cfz-Cs-Eto / 12 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 335 | CP000072 | 5 Lfx-Lzd-Cfz-Cs-Dlm / 5 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 336 | CP000073 | 6 Lfx-Lzd-Cfz-Cs-Dlm / 12 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 337 | CP000074 | 5 Lzd-Cfz-Cs-Dlm-Eto/5 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 338 | CP000075 | 6 Lzd-Cfz-Cs-Dlm-Eto/ 12 Cfz-Cs-Eto | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 339 | CP000076 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz- Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 340 | CP000077 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 12 Lfx-Cfz-Cs | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 341 | CP000078 | 6 Bdq-Lzd-Cfz-Cs-PAS / 5 Cfz-Cs-PAS | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 342 | CP000079 | 6 Bdq-Lzd-Cfz-Cs- PAS / 12 Cfz-Cs-PAS | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 343 | CP000080 | Paduan TPT 6Lfx 100 mg + E 100 mg | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 344 | CP000081 | Paduan TPT 6Lfx 100mg | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 345 | CP000082 | Paduan TPT 3HR 300mg/450mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 346 | CP000083 | Paduan TPT 3HR 300mg/600mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 347 | CP000084 | RHZE (150/75/400/275) + Levofloxacin | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 348 | CP000085 | Bedaquline Pretomanid Linezolid (BPAL) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 349 | CP000086 | Bedaquline Pretomanid Linezolid Moxifloxacin (BPALM) | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 350 | CP000087 | Paduan TPT 1HP 300mg/300mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 351 | CP000088 | Paduan TPT 1HP 300mg/150mg Lepasan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 352 | CP000089 | 6 BDQ-Lfx-Cfz-Hdt-Z-E-Lzd(2 bulan)/ 5 Lfx-Cfz-Z-E | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 353 | CP000090 | 2HPMZ/2HPM | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 354 | SP001137 | Kategori 1 + Levofloxacin 4 tablet | kemkes sp | SITB TB 03 SO | 1 |
+| 355 | SP001138 | RHE | kemkes sp | SITB TB 03 SO | 1 |
+| 356 | SP001139 | INH 1x300 mg, Rifampisin 1x450 mg, Pirazinamid 1500 mg (3x/minggu selain HD), Etambutol (3x/minggu selain HD) | kemkes sp | SITB TB 03 SO | 1 |
+| 357 | SP001140 | INH 1x100 mg, Rifampisin 1x450 mg, Etambutol 1x1500 mg | kemkes sp | SITB TB 03 SO | 1 |
+| 358 | SP000795 | Sumber Obat | kemkes sp | SITB TB 03 SO | 1 |
+| 359 | SP000791 | Program TBC | kemkes sp | SITB TB 03 SO | 1 |
+| 360 | SP000792 | Asuransi | kemkes sp | SITB TB 03 SO | 1 |
+| 361 | SP000793 | Bayar Sendiri | kemkes sp | SITB TB 03 SO | 1 |
+| 362 | 371001000 | Patient cured | snomed | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
+| 363 | 182992009 | Treatment completed | snomed | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
+| 364 | CP000094 | Pengobatan Gagal | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
+| 365 | CP000096 | Tidak dievaluasi/pindah | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
+| 366 | TK000016 | Edukasi Tes HIV | kemkes | SITB TB 03 SO | 1 |
+| 367 | SP000371 | Cotrimoxazole | kemkes sp | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 368 | 1284985006 | Diabetes mellitus management program | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 369 | SP000372 | Obat Hipoglikemik Oral | kemkes sp | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 370 | 308755006 | Subcutaneous injection of insulin | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 371 | SP000797 | Pindah Register Pasien TB RO | kemkes sp | SITB TB 03 SO | 1 |
+| 372 | 17621005 | Normal | snomed | SITB TB 03 RO | 1 |
+| 373 | 2483006 | Cavity | snomed | SITB TB 03 RO | 1 |
+| 374 | 27925004 | Nodule | snomed | SITB TB 03 RO | 1 |
+| 375 | 1255665007 | Moderate | snomed | SITB TB 03 RO | 1 |
+| 376 | 47604008 | Miliary tuberculosis | snomed | SITB TB 03 RO | 1 |
+| 377 | 30746006 | Lymphadenopathy | snomed | SITB TB 03 RO | 1 |
+| 378 | 260544000 | Endobronchial (qualifier value) | snomed | SITB TB 03 RO | 1 |
+| 379 | 112674009 | Fibrosis | snomed | SITB TB 03 RO | 1 |
+| 380 | 442110002 | Fibrosis of pleura | snomed | SITB TB 03 RO | 1 |
+| 381 | 1303092009 | Pulmonary bulla | snomed | SITB TB 03 RO | 1 |
+| 382 | 60046008 | Pleural effusion | snomed | SITB TB 03 RO | 1 |
+| 383 | 36118008 | Pneumothorax | snomed | SITB TB 03 RO | 1 |
+| 384 | 12295008 | Bronchiectasis | snomed | SITB TB 03 RO | 1 |
+| 385 | 46621007 | Atelectasis | snomed | SITB TB 03 RO | 1 |
+| 386 | 9656002 | Consolidation | snomed | SITB TB 03 RO | 1 |
+| 387 | 309529002 | Lung mass | snomed | SITB TB 03 RO | 1 |
+| 388 | 385633008 | Improving | snomed | SITB TB 03 RO | 1 |
+| 389 | 230993007 | Worsening | snomed | SITB TB 03 RO | 1 |
+| 390 | 58158008 | Stable | snomed | SITB TB 03 RO | 1 |
+| 391 | 171126009 | Tuberculosis screening | snomed | SITB TB 04 | 1 |
+| 392 | SRR000013 | Pemeriksaan Diagnosis Baseline | kemkes clinical-term | SITB TB 04 (16x) | 1 |
+| 393 | SRR000007 | Pemeriksaan Diagnosis | kemkes clinical-term | SITB TB 04 (32x) | 1 |
+| 394 | SRR000009 | Pemeriksaan Ulang | kemkes clinical-term | SITB TB 04 (48x) | 1 |
+| 395 | SRR000008 | Follow Up | kemkes clinical-term | SITB TB 04 (48x) | 1 |
+| 396 | SRR000010 | Akhir Pengobatan | kemkes clinical-term | SITB TB 04 (16x) | 1 |
+| 397 | 418564007 | Pleural fluid specimen | snomed | SITB TB 04 (16x) | 1 |
+| 398 | 258450006 | Cerebrospinal fluid specimen | snomed | SITB TB 04 (16x) | 1 |
+| 399 | 119376003 | Tissue specimen | snomed | SITB TB 04 (16x) | 1 |
+| 400 | 309508006 | Soft tissue lesion fine needle aspirate specimen | snomed | SITB TB 04 (16x) | 1 |
+| 401 | 168137004 | Gastric aspirate specimen | snomed | SITB TB 04 (16x) | 1 |
+| 402 | 119303007 | Microbial isolate specimen | snomed | SITB TB 04 (16x) | 1 |
+| 403 | ST000001 | Sputum Pagi | kemkes clinical-term | SITB TB 04 (16x) | 1 |
+| 404 | ST000002 | Sputum Sewaktu | kemkes clinical-term | SITB TB 04 (16x) | 1 |
+| 405 | 123038009 | Specimen | snomed | SITB TB 04 (16x) | 1 |
+| 406 | SP000720 | Pemeriksaan Xpert MTB RIF (Xpert) | kemkes sp | SITB TB 04 (6x) | 1 |
+| 407 | SP000721 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Plus | kemkes sp | SITB TB 04 (6x) | 1 |
+| 408 | SP000722 | Pemeriksaan Xpert MTB RIF (Truenat) Chip MTB Rif | kemkes sp | SITB TB 04 (6x) | 1 |
+| 409 | 46246-5 | Mycobacterium tuberculosis katG gene isoniazid high level resistance mutation [Identifier] by Molecular method | loinc | SITB TB 04 | 1 |
+| 410 | 63072-3 | Mycobacterium tuberculosis inhA gene isoniazid low level resistance mutation [Presence] by Molecular method | loinc | SITB TB 04 | 1 |
+| 411 | X099783 | H Dosis Tinggi (High) | kemkes examination | SITB TB 04 | 1 |
+| 412 | 103960-1 | Prothionamide [Susceptibility] by Genotype method | loinc | SITB TB 04 | 1 |
+| 413 | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | kemkes examination | SITB TB 04 (3x) | 1 |
+| 414 | X099390 | Hasil Pemeriksaan Biakan TB (Metode: MGIT) | kemkes examination | SITB TB 04 (3x) | 1 |
+| 415 | OM000001 | LJ | kemkes clinical-term | SITB TB 04 | 1 |
+| 416 | OM000002 | MGIT | kemkes clinical-term | SITB TB 04 | 1 |
+| 417 | 20373-7 | Amikacin [Susceptibility] by Method for Slow-growing mycobacteria | loinc | SITB TB 04 | 1 |
+| 418 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K | 1 |
+| 419 | 415759006 | Tuberculosis index case | snomed | SITB TB 16K | 1 |
+| 420 | 185389009 | Follow-up visit | snomed | SITB TB 16K | 1 |
+| 421 | 737492002 | Outpatient care management | snomed | SITB TB 16K | 1 |
+| 422 | Z20.1 | Contact with and exposure to tuberculosis | icd-10 | SITB TB 16K | 1 |
+| 423 | SP000200 | Invitasi kontak | kemkes sp | SITB TB 16K | 1 |
+| 424 | 439708006 | Home visit | snomed | SITB TB 16K | 1 |
+| 425 | SP000369 | Kontak Dengan Penderita TBC | kemkes sp | SITB TB 16K | 1 |
+| 426 | SP000201 | Kontak Serumah | kemkes sp | SITB TB 16K | 1 |
+| 427 | SP000202 | Kontak Erat | kemkes sp | SITB TB 16K | 1 |
+| 428 | SP000206 | Dirujuk Pemeriksaan Terduga TBC | kemkes sp | SITB TB 16K | 1 |
+| 429 | 171400006 | Examination for suspected tuberculosis | snomed | SITB TB 16K | 1 |
+| 430 | SP000207 | Hasil Pemeriksaan Terduga | kemkes sp | SITB TB 16K | 1 |
+| 431 | SP000208 | Tidak TBC | kemkes sp | SITB TB 16K | 1 |
+| 432 | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | kemkes sp | SITB TB 16K | 1 |
+| 433 | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | kemkes sp | SITB TB 16K | 1 |
+| 434 | SP000211 | Memenuhi syarat TPT | kemkes sp | SITB TB 16K | 1 |
+| 435 | SP000374 | Tidak Memenuhi Syarat TPT | kemkes sp | SITB TB 16K | 1 |
+| 436 | SP000212 | Tanggal Pemberian TPT | kemkes sp | SITB TB 16K | 1 |
+| 437 | SP000213 | Hasil Akhir TPT | kemkes sp | SITB TB 16K | 1 |
 
 ## Jumlah per CodeSystem (code unik lintas form)
 
@@ -636,7 +641,7 @@ Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 | http://snomed.info/sct | 120 | 223366009, 102514002, 39104002, 419099009, 385438008, 309453006, 309343006, 309367003, 224535009, 134435003, 424144002, 392570002, 2004005, 38341003, 45007003, 284473002, 289625003, 289437007, 289441006, 289440007, 312668007, 289439005, 1209182005, 268445003, 169221005, 169255008, 122555007, 122575003, 860635002, 166921001, 166922008, 15220000, 74964007, 116859006, 3457005, 48194001, 398254007, 15938005, 135840009, 308116003, 435591000124104, 40733004, 73211009, 414916001, 56717001, 56265001, 1230101008, 385892002, 257622000, 154283005, 423997002, 707307002, 707308007, 424489006, 35140007, 268376005, 268375009, 10828004, 260385009, 261665006, 119334006, 110379001, 106229004, 699618001, 266714009, 406149000, 399307001, 365866002, 165816005, 165815009, 225368008, 106540006, 106304008, 106305009, 444168002, 65853000, 106386007, 106388008, 36625000, 77715000, 236297007, 236320001, 160906004, 741062008, 371001000, 182992009, 1284985006, 308755006, 17621005, 2483006, 27925004, 1255665007, 47604008, 30746006, 260544000, 112674009, 442110002, 1303092009, 60046008, 36118008, 12295008, 46621007, 9656002, 309529002, 385633008, 230993007, 58158008, 171126009, 418564007, 258450006, 119376003, 309508006, 168137004, 119303007, 123038009, 415759006, 185389009, 737492002, 439708006, 171400006 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 116 | OC000010, OI000018, OI000035, OI000032, OI000033, OI000034, EHA000001, EHA000002, EHA000003, EHA000004, EHA000005, QRI000001, QRI000002, OC000191, OV000430, OV000431, OV000432, OV000433, OV000434, CP000006, CP000007, CP000008, CP000009, CP000010, CP000011, CP000012, CP000013, CP000014, CP000005, CP000015, CP000016, CP000017, CP000018, CP000019, CP000020, CP000021, CP000022, CP000023, CP000024, CP000025, CP000026, CP000027, CP000028, CP000029, CP000030, CP000031, CP000032, CP000033, CP000034, CP000035, CP000036, CP000037, CP000038, CP000039, CP000040, CP000041, CP000042, CP000043, CP000044, CP000045, CP000046, CP000047, CP000048, CP000049, CP000050, CP000051, CP000052, CP000053, CP000054, CP000055, CP000056, CP000057, CP000058, CP000059, CP000060, CP000061, CP000062, CP000063, CP000064, CP000065, CP000066, CP000067, CP000068, CP000069, CP000070, CP000071, CP000072, CP000073, CP000074, CP000075, CP000076, CP000077, CP000078, CP000079, CP000080, CP000081, CP000082, CP000083, CP000084, CP000085, CP000086, CP000087, CP000088, CP000089, CP000090, CP000094, CP000096, SRR000013, SRR000007, SRR000009, SRR000008, SRR000010, ST000001, ST000002, OM000001, OM000002 |
 | http://loinc.org | 67 | 93857-1, 81956-5, 79378-6, 8665-2, 18185-9, 11778-8, 8302-2, 29463-7, 883-9, LA19710-5, LA19709-7, LA19708-9, LA28449-9, 10331-7, LA6576-8, LA6577-6, 72155-5, 68961-2, LA15255-5, LA15256-3, 75410-1, 22464-2, 2887-8, 718-7, 74774-1, 88874-3, 76772-3, 104742-2, 24648-8, 23539-0, 71773-6, 55277-8, 33248-6, 11545-1, LA11841-6, LA11842-4, LA11843-2, 89371-9, LA11882-0, LA11883-8, LA11884-6, 89488-1, 96110-2, 89487-3, 89484-0, 89482-4, 89483-2, 13956-8, 89489-9, 20629-2, 96112-8, LA24225-7, LA6676-6, LA16550-8, 20383-6, 23609-1, 23607-5, 53716-7, 41502-6, 85658-3, 82810-3, LA15173-0, LA26683-5, 46246-5, 63072-3, 103960-1, 20373-7 |
-| http://terminology.kemkes.go.id/sp | 57 | SP000396, SP000397, SP000738, SP000389, SP001135, SP000776, SP000777, SP000778, SP000001, SP000002, SP000003, SP000004, SP000005, SP000006, SP000370, SP000007, SP000008, SP000009, SP000010, SP000011, SP000012, SP000013, SP000014, SP000015, SP000016, SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP000046, SP000047, SP000795, SP000791, SP000792, SP000793, SP000371, SP000372, SP000797, SP000720, SP000721, SP000722, SP000373, SP000200, SP000369, SP000201, SP000202, SP000206, SP000207, SP000208, SP000209, SP000210, SP000211, SP000374, SP000212, SP000213 |
+| http://terminology.kemkes.go.id/sp | 62 | SP000396, SP000397, SP000738, SP000389, SP001135, SP000776, SP000777, SP000778, SP000001, SP000002, SP000003, SP000004, SP000005, SP000006, SP000370, SP000007, SP000008, SP000009, SP000010, SP000011, SP000012, SP000013, SP000014, SP000015, SP000016, SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP001136, SP000046, SP000047, SP001137, SP001138, SP001139, SP001140, SP000795, SP000791, SP000792, SP000793, SP000371, SP000372, SP000797, SP000720, SP000721, SP000722, SP000373, SP000200, SP000369, SP000201, SP000202, SP000206, SP000207, SP000208, SP000209, SP000210, SP000211, SP000374, SP000212, SP000213 |
 | http://terminology.kemkes.go.id/CodeSystem/examination | 20 | X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099770, X099771, X099772, X099781, X099391, X099392, X099774, X099775, X099776, X099778, X099783, X099389, X099390 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 | new, relapse, failure-cat1, failure-cat2, loss-to-follow-up, failure-2line, not-eval, unknown, other, failure, treatment-non-conversion-2, non-standard-treatment, treatment-non-conversion-1, history-of-close-contact with-TB-DR, co-infected-TBHIV, TB-DR-relapse, TB-DR-returns |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 | ANC.B6.DE14, ANC.B6.DE22, ANC.B8.DE1, ANC.B8.DE3, ANC.B9.DE24, ANC.B9.DE29, ANC.B8.DE111, ANC.B9.DE32, ANC.B9.DE60, ANC.B9.DE96, ANC.B9.DE114, ANC.B9.DE175, ANC.B9.DE159 |
@@ -650,7 +655,7 @@ Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 1 | LT000005 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 | N |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 | 88.78 |
-| **Total** | **432** | |
+| **Total** | **437** | |
 
 ---
 
@@ -694,6 +699,7 @@ Catatan:
 ---
 
 ## Log perubahan output
+- 2026-11-17: Code lokal baru: TB 06 SP001136 Belum Mulai Pengobatan (code 275 → **276**); TB 03 SO SP001137–SP001140 paduan pengobatan (code 328 → **332**). Hasil Tes HIV "Tidak Diketahui" → dataAbsentReason unknown (tidak dihitung). Total non-unik 315 / 1740, unik 147 / 437.
 - 2026-11-17: Jawaban user diterapkan. TB 06: 55 → **54 payload** (Coverage dihapus karena No. BPJS dicoret di sheet), code tetap 275. TB 03 SO: tetap 61 / 328 (Status Pengobatan masuk CarePlan sebagai teks). TB 16K: 24/39 → **21 payload / 35 code** (Practitioner, PractitionerRole kader, dan Observation SP000211 dicoret di sheet). Total non-unik 315 / 1735, unik 147 / 432.
 - 2026-11-17: Tambah 5 form SITB: TB 06 (55 payload / 275 code), TB 03 SO (61 / 328), TB 03 RO (29 / 356), TB 04 (69 / 579), TB 16K (24 / 39). Total non-unik jadi 319 payload / 1739 code, unik 148 / 434. Semua tabel di file ini sekarang dibuat ulang dari 8 dictionary di `mapping/` (angka 3 form lama tidak berubah; urutan baris yang frekuensinya sama di tabel Payload per resource bisa bergeser).
 - 2026-11-16: Dictionary SiGizi ANC diganti nama jadi `mapping/phdt-data-dictionary-sigizi-anc.csv` (sumbernya PHDT Data Dictionary, bukan Kobo). Angka tidak berubah.

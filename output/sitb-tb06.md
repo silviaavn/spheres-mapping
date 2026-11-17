@@ -9,8 +9,8 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 54 |
-| Code (`jumlah code` = 1) | 275 |
-| Code unik (code + CodeSystem) | 116 |
+| Code (`jumlah code` = 1) | 276 |
+| Code unik (code + CodeSystem) | 117 |
 | Variabel BQ (unik) | 93 |
 | Variabel di Excel export | 97 |
 
@@ -68,10 +68,10 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 48 | 823–890 | Observation | X099383 | Pemeriksaan Paket Standar Kepekaan | `hasil_pemeriksaan_paket_standar_uji_kepekaan_h_dosis_tinggi` → `Observation.component.code.coding` (828)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_h` → `Observation.component.code.coding` (834)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_km` → `Observation.component.code.coding` (840)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_cm` → `Observation.component.code.coding` (846)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_lfx` → `Observation.component.code.coding` (852)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_mfx_dosis_tinggi` → `Observation.component.code.coding` (858)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_mfx` → `Observation.component.code.coding` (864)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan` → `Observation.component.code.coding` (870)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_1` → `Observation.component.code.coding` (872)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_2` → `Observation.component.code.coding` (874)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_3` → `Observation.component.code.coding` (876)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_4` → `Observation.component.code.coding` (878)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_5` → `Observation.component.code.coding` (880)<br>`tanggal_hasil_pemeriksaan_uji_kepekaan` → `Observation.effectiveDateTime` (887) |
 | 49 | 892–903 | DiagnosticReport | X099383 | Pemeriksaan Paket Standar Kepekaan | – |
 | 50 | 906–917 | Observation | 106229004 | Qualifier for type of diagnosis | `tipe_diagnosis` → `Observation.valueCodeableConcept.coding` (909) |
-| 51 | 920–945 | CarePlan | – | – | `tindak_lanjut` → `CarePlan.status` (920)<br>`tempat_pengobatan_dirujuk_ke_nama_fasyankes` → `CarePlan.activity.detail.performer.reference` (933) 🔎 lookup master data<br>`tempat_pengobatan_tidak_dirujuk` → `CarePlan.activity.detail.performer.reference` (934) 🔎 lookup master data<br>`tanggal_mulai_pengobatan_tbc_tglblnthn` → `CarePlan.activity.detail.scheduledPeriod.start` (936)<br>`tindak_lanjut_penambahan_resistansi` → `CarePlan.note.text` (944) |
-| 52 | 947–958 | Observation | 365866002 | Finding of human immunodeficiency virus status | `hasil_tes_hiv` → `Observation.valueCodeableConcept.coding` (950)<br>`tanggal_tes_hiv` → `Observation.issued` (956) |
-| 53 | 960–970 | Procedure | SP000046 | Terapi Antiretroviral (ART) | `art` → `Procedure.category.coding` (960) |
-| 54 | 972–983 | Observation | SP000047 | Hasil Tes Diabetes Melitus | `hasil_tes_dm` → `Observation.valueCodeableConcept.coding` (975) |
+| 51 | 920–946 | CarePlan | – | – | `tindak_lanjut` → `CarePlan.status` (920)<br>`tempat_pengobatan_dirujuk_ke_nama_fasyankes` → `CarePlan.activity.detail.performer.reference` (934) 🔎 lookup master data<br>`tempat_pengobatan_tidak_dirujuk` → `CarePlan.activity.detail.performer.reference` (935) 🔎 lookup master data<br>`tanggal_mulai_pengobatan_tbc_tglblnthn` → `CarePlan.activity.detail.scheduledPeriod.start` (937)<br>`tindak_lanjut_penambahan_resistansi` → `CarePlan.note.text` (945) |
+| 52 | 948–959 | Observation | 365866002 | Finding of human immunodeficiency virus status | `hasil_tes_hiv` → `Observation.valueCodeableConcept.coding` (951)<br>`tanggal_tes_hiv` → `Observation.issued` (957) |
+| 53 | 961–971 | Procedure | SP000046 | Terapi Antiretroviral (ART) | `art` → `Procedure.category.coding` (961) |
+| 54 | 973–984 | Observation | SP000047 | Hasil Tes Diabetes Melitus | `hasil_tes_dm` → `Observation.valueCodeableConcept.coding` (976) |
 
 ### Payload per resource
 
@@ -359,16 +359,17 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 263 | 924 | CarePlan | `CarePlan.activity.detail.code.coding` | TK000022 | Akan diobati/dirujuk | http://terminology.kemkes.go.id |
 | 264 | 925 | CarePlan | `CarePlan.activity.detail.code.coding` | 699618001 | Administration of prophylactic antituberculosis agent | http://snomed.info/sct |
 | 265 | 926 | CarePlan | `CarePlan.activity.detail.code.coding` | 266714009 | Previous treatment continue | http://snomed.info/sct |
-| 266 | 929 | CarePlan | `CarePlan.activity.detail.statusReason.coding` | 406149000 | Medication declined | http://snomed.info/sct |
-| 267 | 930 | CarePlan | `CarePlan.activity.detail.statusReason.coding` | 419099009 | Dead | http://snomed.info/sct |
-| 268 | 931 | CarePlan | `CarePlan.activity.detail.statusReason.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
-| 269 | 949 | Observation | `Observation.code.coding` | 365866002 | Finding of human immunodeficiency virus status | http://snomed.info/sct |
-| 270 | 950 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
-| 271 | 951 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
-| 272 | 961 | Procedure | `Procedure.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
-| 273 | 974 | Observation | `Observation.code.coding` | SP000047 | Hasil Tes Diabetes Melitus | http://terminology.kemkes.go.id/sp |
-| 274 | 975 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
-| 275 | 976 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 266 | 927 | CarePlan | `CarePlan.activity.detail.code.coding` | SP001136 | Belum Mulai Pengobatan | http://terminology.kemkes.go.id/sp |
+| 267 | 930 | CarePlan | `CarePlan.activity.detail.statusReason.coding` | 406149000 | Medication declined | http://snomed.info/sct |
+| 268 | 931 | CarePlan | `CarePlan.activity.detail.statusReason.coding` | 419099009 | Dead | http://snomed.info/sct |
+| 269 | 932 | CarePlan | `CarePlan.activity.detail.statusReason.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
+| 270 | 950 | Observation | `Observation.code.coding` | 365866002 | Finding of human immunodeficiency virus status | http://snomed.info/sct |
+| 271 | 951 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
+| 272 | 952 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
+| 273 | 962 | Procedure | `Procedure.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
+| 274 | 975 | Observation | `Observation.code.coding` | SP000047 | Hasil Tes Diabetes Melitus | http://terminology.kemkes.go.id/sp |
+| 275 | 976 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 276 | 977 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -378,13 +379,13 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | http://terminology.kemkes.go.id/CodeSystem/examination | 55 | X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099770, X099771, X099772, X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099379, X099379, X099781, X099391, X099392, X099379, X099380, X099380, X099781, X099774, X099774, X099380, X099381, X099381, X099781, X099774, X099774, X099775, X099774, X099774, X099774, X099774, X099381, X099388, X099388, X099388, X099383, X099383, X099776, X099778, X099383 |
 | http://snomed.info/sct | 40 | 257622000, 424144002, 154283005, 423997002, 707307002, 707308007, 424489006, 35140007, 424489006, 35140007, 268376005, 268375009, 10828004, 260385009, 261665006, 10828004, 260385009, 261665006, 119334006, 260385009, 119334006, 260385009, 119334006, 119334006, 119334006, 119334006, 119334006, 110379001, 119334006, 106229004, 699618001, 266714009, 406149000, 419099009, 399307001, 365866002, 165816005, 165815009, 10828004, 260385009 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 22 | new, relapse, failure-cat1, failure-cat2, loss-to-follow-up, failure-2line, not-eval, unknown, other, failure, failure-cat2, treatment-non-conversion-2, non-standard-treatment, failure-cat1, treatment-non-conversion-1, relapse, loss-to-follow-up, history-of-close-contact with-TB-DR, co-infected-TBHIV, failure-2line, TB-DR-relapse, TB-DR-returns |
+| http://terminology.kemkes.go.id/sp | 9 | SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP001136, SP000046, SP000047 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 8 | EHA000001, EHA000002, EHA000003, EHA000004, EHA000005, QRI000001, QRI000002, OC000191 |
-| http://terminology.kemkes.go.id/sp | 8 | SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP000046, SP000047 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 6 | TB-SO, TB-RO, TB-SO, TB-RO, TB-SO, TB-RO |
 | http://hl7.org/fhir/sid/icd-10 | 3 | Z03.0, A15.0, A16.2 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 | tb-bac, tb-clin |
 | http://terminology.kemkes.go.id | 1 | TK000022 |
-| **Total** | **275** | |
+| **Total** | **276** | |
 
 ## Variabel di luar payload
 

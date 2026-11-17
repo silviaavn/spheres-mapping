@@ -924,6 +924,7 @@ Pemeriksaan Paket Standar Kepekaan,,,,,,,,,ServiceRequest,ServiceRequest.categor
 ,,,,,,,Akan diobati/dirujuk,,CarePlan,CarePlan.activity.detail.code.coding,TK000022,Akan diobati/dirujuk,http://terminology.kemkes.go.id,,,1,
 ,,,,,,,Pengobatan Pencegahan,,CarePlan,CarePlan.activity.detail.code.coding,699618001,Administration of prophylactic antituberculosis agent,http://snomed.info/sct,,,1,
 ,,,,,,,Melanjutkan Pengobatan Sebelumnya,,CarePlan,CarePlan.activity.detail.code.coding,266714009,Previous treatment continue,http://snomed.info/sct,,,1,
+,,,,,,,Belum Mulai Pengobatan,Code baru (request 17 Nov 2026),CarePlan,CarePlan.activity.detail.code.coding,SP001136,Belum Mulai Pengobatan,http://terminology.kemkes.go.id/sp,,,1,
 ,,,,,,"Mapping ini digunakan jika variabel Tindak Lanjut diisi “Menolak Pengobatan”, “Meninggal sebelum pengobatan”, “Lost to follow up sebelum pengobatan”",,,CarePlan,CarePlan.status,revoked,Tidak Ada,Tidak Ada,,,,
 ,,,,,,,,,CarePlan,CarePlan.activity.detail.status,cancelled,Tidak Ada,Tidak Ada,,,,
 ,,,,,,,Menolak Pengobatan,,CarePlan,CarePlan.activity.detail.statusReason.coding,406149000,Medication declined,http://snomed.info/sct,,,1,
