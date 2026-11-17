@@ -340,6 +340,8 @@ Data Pasien,Identitas Pasien,,,,,,,,Patient,Patient.active,true,Tidak ada,Tidak 
 ,,paduan_oat,,,,,Paduan Jangka Panjang,,CarePlan,CarePlan.activity.detail.productCodeableConcept.coding,CP000012,OAT Paduan Jangka Panjang,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,,1,
 ,,paduan_oat,,,,,Paduan Individual,,CarePlan,CarePlan.activity.detail.productCodeableConcept.coding,CP000013,OAT Paduan Individual,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,,1,
 ,,paduan_oat,,,,,Paduan Monoresistan INH,,CarePlan,CarePlan.activity.detail.productCodeableConcept.coding,CP000014,OAT Paduan Monoresistan INH,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,,1,
+,,,,,,,,Activity Status Pengobatan,CarePlan,CarePlan.activity.detail.status,in-progress,,,,,,
+,,status_pengobatan,,Status Pengobatan,,,,"Status Pengobatan SITB (Sesuai standar / Tidak sesuai standar) sebagai teks. SEMENTARA: belum ada code; kalau ada code, pindah ke activity.detail.code + statusReason",CarePlan,CarePlan.activity.detail.description,,,,,,,
 ,,,,,,,,,,,,,,,,,
 ,,,,Paduan Pengobatan,,,,,CarePlan,CarePlan.activity.detail.status,in-progress,,,,,,
 ,,,,,,,,,CarePlan,CarePlan.activity.detail.code.coding,CP000005,Paduan Pengobatan,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,,1,

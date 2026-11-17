@@ -17,7 +17,7 @@ File asli **tidak** disimpan di repo karena berisi data pasien. File ini berisi 
 | 8 | J | Nomor Register Terduga | `nomor_register_terduga` | 953/953 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 9 | K | Nomor Register Pasien | `nomor_register_pasien` | 953/953 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 10 | L | Nomor BPJS | `nomor_bpjs` | 10/953 | *(identitas / teks bebas, tidak ditampilkan)* |
-| 11 | M | Status Pengobatan | `status_pengobatan` ⛔ tidak dimapping | 953/953 | `Sesuai standar` (943), `Tidak sesuai standar` (10) |
+| 11 | M | Status Pengobatan | `status_pengobatan` | 953/953 | `Sesuai standar` (943), `Tidak sesuai standar` (10) |
 | 12 | N | Nama Lengkap Pasien | `nama_lengkap_pasien` | 953/953 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 13 | O | Umur (Tahun) | `umur_tahun` | 953/953 | `<angka>` (953) |
 | 14 | P | Jenis Kelamin | `jenis_kelamin` | 953/953 | `L` (515), `P` (438) |

@@ -26,12 +26,6 @@ Data Pasien,Identitas Pasien,,,,,,,,Patient,Patient.active,true,Tidak ada,Tidak 
 ,,alamat_lengkap_terduga_tbc_alamat_lengkap,{Alamat Lengkap},Alamat Lengkap,,,,,Patient,Patient.address.line,Tidak ada,Tidak ada,Tidak ada,,,,
 ,,,,,,,,,Patient,Patient.address.use,home,Home,http://hl7.org/fhir/address-use,,,,
 ,,,,,,,,,,,,,,,,,
-,,,,,,,,Reference ke Patient,Coverage,Coverage.beneficiary,reference to Patient,,,,,,1
-,,,,,,,,,Coverage,Coverage.status,active,,,,,,
-,,,,,,,,,Coverage,Coverage.type.coding,PUBLICPOL,public healthcare,http://terminology.hl7.org/CodeSystem/v3-ActCode,,,,
-,,,,,,,,,Coverage,Coverage.identifier.system,Tidak ada,Tidak ada,https://sys-ids.kemkes.go.id/insurance-subscriber-id,,,,
-,,no_bpjs,,No. BPJS,,,,Dibuat hanya kalau No. BPJS terisi (struktur sama dengan TB 03 SO),Coverage,Coverage.identifier.value,Tidak ada,Tidak ada,Tidak ada,,,,
-,,,,,,,,,,,,,,,,,
 ,EoC terduga TB (jika {Hasil Diagnosis} kosong),no_register_terduga,{No Register Terduga},No Register Terduga,,,,,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,Tidak ada,,,,1
 ,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,waitlist,Tidak Ada,Tidak Ada,,,,
 ,,klasifikasi_terduga_tbc,{Klasifikasi Kasus Terduga TB},Klasifikasi Kasus Terduga TB,,,Terduga TBC SO,,EpisodeOfCare,EpisodeOfCare.type.coding,TB-SO,Tuberkulosis Sensitif Obat,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,,1,

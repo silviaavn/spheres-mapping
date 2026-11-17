@@ -15,7 +15,7 @@ File asli **tidak** disimpan di repo karena berisi data pasien. File ini berisi 
 | 6 | H | NIK (Nomor Identitas Kependudukan) | `nik_nomor_identitas_kependudukan` | 6201/6201 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 7 | I | No Register SITB | `no_register_sitb` | 6201/6201 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 8 | J | No Register Terduga | `no_register_terduga` | 6201/6201 | *(identitas / teks bebas, tidak ditampilkan)* |
-| 9 | K | No. BPJS | `no_bpjs` | 113/6201 | *(identitas / teks bebas, tidak ditampilkan)* |
+| 9 | K | No. BPJS | `no_bpjs` ⛔ tidak dimapping | 113/6201 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 10 | L | Status Diagnosis | `status_diagnosis` ⛔ tidak dimapping | 5424/6201 | `Sesuai standar` (5387), `Tidak sesuai standar` (37) |
 | 11 | M | Nama Lengkap Terduga TBC | `nama_lengkap_terduga_tbc` | 6201/6201 | *(identitas / teks bebas, tidak ditampilkan)* |
 | 12 | N | Umur (Tahun) | `umur_tahun` | 6201/6201 | `<angka>` (6201) |

@@ -1,6 +1,6 @@
 # Aturan Hitung Payload & Code — Form Kobo & PHDT
 
-Terakhir diperbarui: 2026-11-16
+Terakhir diperbarui: 2026-11-17
 
 ## Sumber dictionary
 - **Kobo**: `mapping/kobo-data-dictionary-<form>.csv` (Maternal Outcome, Raffle).
@@ -31,6 +31,7 @@ Terakhir diperbarui: 2026-11-16
 - Code yang menentukan identitas payload: `PractitionerRole.code`, `Condition.code`, `EpisodeOfCare.type`, `Observation.code`, `Procedure.code`, `ServiceRequest.code`, `DiagnosticReport.code`, `Specimen.type`, `Immunization.vaccineCode`, code Medication (`contained.code`).
 - Observation dengan 2 coding di `code` (mis. LOINC + ANC custom): **keduanya dihitung**; code pembeda = coding pertama.
 - Ditambah pilihan jawaban coded (`Observation.valueCodeableConcept`, `Observation.interpretation`), opsi role PractitionerRole, dan opsi code lain yang mengikuti jawaban (mis. `Encounter.identifier` K1M/K1A, kesepakatan SatuSehat).
+- Opsi coded yang mengikuti jawaban **juga dihitung** di: `ServiceRequest.reasonCode`, `CarePlan.activity.detail.code` / `productCodeableConcept` / `statusReason`, `CarePlan.activity.outcomeCodeableConcept`, `Encounter.hospitalization.admitSource`, `QuestionnaireResponse...answer.valueCoding`, `Observation.component.code` / `component.valueCodeableConcept`, `Observation.method` (mis. metode biakan LJ/MGIT).
 - **Tidak dihitung** juga: category (termasuk yang SNOMED / v2-0074), `Specimen.collection.method`, `Immunization.reasonCode`, form / ingredient / extension Medication, unit (UCUM, v3-orderableDrugForm), `dataAbsentReason`.
 - Code tetap HL7 (status, category, class, participant.type, diagnosis.use, clinicalStatus, organization-type, physicalType) **tidak dihitung**.
 - Semua opsi coded di kamus dihitung (bukan hanya yang terpilih saat submission).
@@ -48,6 +49,7 @@ Terakhir diperbarui: 2026-11-16
 1. **Minta daftar variabel BQ dari form** (nama kolom di BigQuery). Jangan mulai hitung sebelum daftar ini ada. Kalau ada file mentah, cocokkan juga kolom mentah ↔ BQ (lihat "Sumber kebenaran: file mentah") dan buat `raw/<form>-kolom.md`.
 2. Cek tally: jumlah variabel BQ = jumlah baris yang punya "Nama Variabel di Kobo". Cek juga isinya cocok satu-satu (mis. `staff_id` jangan dipasang ke baris nama).
    **Semua variabel BQ harus masuk ke salah satu payload.** Cek bagian "Variabel di luar payload" di `output/<form>.md` harus kosong.
+   Pengecualian: kolom data lokal sistem sumber yang tidak perlu dikirim (SITB: No. Urut, Bulan, No. Registrasi Fasyankes / Kab/Kota) dan baris yang **dicoret** (strikethrough) di sheet dictionary. Keduanya dicatat di `revisi.md` sebagai "tidak dimapping".
 3. Isi kolom **Nama Column BQ** (letaknya sebelum "Nama Column Raw") di dictionary.
 4. Isi kolom `jumlah instance` dan `jumlah code` di dictionary `mapping/`, lalu buat output per form:
    `python3 scripts/form_output.py mapping/kobo-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md [raw/<form>-kolom.md]`
@@ -64,6 +66,7 @@ Terakhir diperbarui: 2026-11-16
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
+- 2026-11-17: (SITB) Opsi coded reasonCode, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, Observation.method ikut dihitung sebagai code. Baris dicoret di sheet dan kolom data lokal SITB (No. Urut, Bulan, No. Reg Fasyankes) tidak dimapping.
 - 2026-11-16: Nama file dictionary dibedakan per sumber: `kobo-` untuk Kobo, `phdt-` untuk PHDT Data Dictionary.
 - 2026-11-16: Ringkasan output per form: "Variabel BQ di luar payload" tidak dicantumkan; kalau ada file mentah, tampilkan "Variabel di Excel export" (angka saja). `form_output.py` menerima argumen ke-4 `raw/<form>-kolom.md`.
 - 2026-11-16: (SiGizi ANC) File mentah = sumber kebenaran, semua kolom wajib punya mapping, lampiran `raw/<form>-kolom.md`. String faskes/posyandu → lookup master data. PractitionerRole petugas lab → lookup. Determining code diperluas untuk Procedure, ServiceRequest, DiagnosticReport, Specimen, Immunization, Medication, interpretation; daftar code yang tidak dihitung diperjelas (dipakai sejak SiGizi ANC).
