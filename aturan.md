@@ -20,7 +20,8 @@ Terakhir diperbarui: 2026-11-17
 - Encounter yang muncul di 2 blok kamus (data utama + statusHistory) = **1 payload**.
 - **Patient dihitung.**
 - **Organization TIDAK dihitung**: diambil dari master data (lookup/reference), bukan dibuat dari form. Variabel BQ puskesmas dipetakan ke `Encounter.serviceProvider.reference` dengan keterangan "Lookup ke master data Organization" di kolom Definisi Operasional. Kalau isian puskesmas dipilih dari list yang sudah ada, blok Organization tidak perlu ditulis di dictionary.
-- Pengecualian (SITB): kalau form punya variabel faskes pelapor (kode, nama, jenis, kepemilikan, alamat), blok Organization + Location faskes **tetap dimapping dan dihitung payload**: cari di master data, kalau match di-update dari form.
+- Pengecualian (SITB): kalau form punya variabel faskes pelapor (kode, nama, jenis, kepemilikan, alamat), blok Organization + Location faskes **tetap dimapping dan dihitung payload**: cari di master data, kalau match di-update dari form (TB 06, TB 03 SO/RO). Kalau tidak ada variabel faskes (TB 04, TB 16K), cukup lookup seperti MO & Raffle.
+- Kolom tambahan buatan user di export (tidak punya nomor kolom SITB) bukan variabel: tidak dihitung di tally.
 - **Location**: tidak dihitung kalau hanya lookup ke master data (mis. Maternal Outcome). **Dihitung** kalau dibuat dari isian form (mis. Raffle: lokasi faskes + kecamatan + kelurahan).
 - Isian berupa **string bebas** yang menunjuk faskes/posyandu (mis. SiGizi: Faskes yang melayani ANC, Posyandu Domisili) tetap **lookup**: cocokkan string ke master data. Organization/Location tidak ditulis dan tidak dihitung. Kolom lain yang membantu pencocokan (mis. desa, puskesmas domisili) ditulis sebagai baris "Kunci lookup" di resource yang mereferensi.
 - **PractitionerRole petugas lab** tidak dibuat dari form: lookup ke master data PractitionerRole default lab milik Organization faskes. Tidak dihitung.

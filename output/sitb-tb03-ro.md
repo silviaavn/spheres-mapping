@@ -8,8 +8,8 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 | Item | Jumlah |
 |---|---|
-| Payload (`jumlah instance` = 1) | 30 |
-| Code (`jumlah code` = 1) | 357 |
+| Payload (`jumlah instance` = 1) | 50 |
+| Code (`jumlah code` = 1) | 377 |
 | Code unik (code + CodeSystem) | 242 |
 | Variabel BQ (unik) | 140 |
 | Variabel di Excel export | 144 |
@@ -35,25 +35,48 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 15 | 291–309 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | `hasil_pemeriksaan_tuberkulinigra` → `Observation.valueCodeableConcept.coding` (294)<br>`nama_lengkap_pasien` → `Observation.subject.display` (304)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (306)<br>`tgl_mulai_pengobatan` → `Observation.issued` (307) |
 | 16 | 311–339 | Observation | 24648-8 | XR Chest PA upright | `hasil_foto_toraks` → `Observation.valueCodeableConcept.coding` (314)<br>`nama_lengkap_pasien` → `Observation.subject.display` (334)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (336)<br>`tgl_mulai_pengobatan` → `Observation.issued` (337) |
 | 17 | 341–456 | CarePlan | – | – | `nama_lengkap_pasien` → `CarePlan.subject.display` (347)<br>`tgl_mulai_pengobatan` → `CarePlan.period.start` (349)<br>`hasil_akhir_pengobatan_tanggal_hhbbtttt` → `CarePlan.period.end` (350)<br>`nama_fasyankes_satelit_tbc_ro_lanjutan_pengobatan` → `CarePlan.contributor.reference` (354) 🔎 lookup master data<br>`paduan_oat` → `CarePlan.activity.detail.code.coding` (357)<br>`paduan_pengobatan` → `CarePlan.activity.detail.status` (367)<br>`paduan_pengobatan` → `CarePlan.activity.detail.productCodeableConcept.coding` (445)<br>`paduan_pengobatan` → `CarePlan.activity.detail.productCodeableConcept.coding` (446)<br>`paduan_pengobatan` → `CarePlan.activity.detail.productCodeableConcept.coding` (447)<br>`paduan_pengobatan` → `CarePlan.activity.detail.productCodeableConcept.coding` (448)<br>`paduan_pengobatan` → `CarePlan.activity.detail.productCodeableConcept.text` (449)<br>`hasil_akhir_pengobatan_hasil` → `CarePlan.activity.outcomeCodeableConcept.coding` (450)<br>`keterangan` → `CarePlan.note` (456) |
-| 18 | 459–484 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | `jenis_pemeriksaan_diagnosis` → `Observation.status` (459)<br>`hasil_pemeriksaan_diagnosis_tbc` → `Observation.valueCodeableConcept.coding` (470)<br>`nama_lengkap_pasien` → `Observation.subject.display` (479)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (481)<br>`tanggal_hasil_pemeriksaan_diagnosis_tbc` → `Observation.issued` (482) |
-| 19 | 487–547 | Observation | X099379 | Pemeriksaan TCM XDR | `hasil_pemeriksaan_xpert_tcm_xdr_valid_invalid_no_result_error` → `Observation.valueCodeableConcept.coding` (490)<br>`hasil_pemeriksaan_xpert_tcm_xdr_mtb` → `Observation.component.code.coding` (495)<br>`hasil_pemeriksaan_xpert_tcm_xdr_h_dosis_rendah_low` → `Observation.component.code.coding` (502)<br>`hasil_pemeriksaan_xpert_tcm_xdr_h` → `Observation.component.code.coding` (507)<br>`hasil_pemeriksaan_xpert_tcm_xdr_eto` → `Observation.component.code.coding` (512)<br>`hasil_pemeriksaan_xpert_tcm_xdr_fq_dosis_rendah_low` → `Observation.component.code.coding` (516)<br>`hasil_pemeriksaan_xpert_tcm_xdr_fq` → `Observation.component.code.coding` (521)<br>`hasil_pemeriksaan_xpert_tcm_xdr_amk` → `Observation.component.code.coding` (526)<br>`hasil_pemeriksaan_xpert_tcm_xdr_km` → `Observation.component.code.coding` (531)<br>`hasil_pemeriksaan_xpert_tcm_xdr_cm` → `Observation.component.code.coding` (536)<br>`nama_lengkap_pasien` → `Observation.subject.display` (542)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (544)<br>`tanggal_hasil_pemeriksaan_tcmxdr` → `Observation.issued` (545) |
-| 20 | 550–578 | Observation | X099380 | Line Probe Assay (LPA) Lini 1 | `hasil_pemeriksaan_lpa_line_probe_assay_lini_1_valid_invalid` → `Observation.valueCodeableConcept.coding` (553)<br>_MTB_ → `Observation.component.code.coding` (556, tanpa BQ)<br>`hasil_pemeriksaan_lpa_line_probe_assay_lini_1_mtb` → `Observation.component.valueCodeableConcept.coding` (557)<br>_R_ → `Observation.component.code.coding` (560, tanpa BQ)<br>`hasil_pemeriksaan_lpa_line_probe_assay_lini_1_r` → `Observation.component.valueCodeableConcept.coding` (561)<br>_H_ → `Observation.component.code.coding` (566, tanpa BQ)<br>`hasil_pemeriksaan_lpa_line_probe_assay_lini_1_h` → `Observation.component.valueCodeableConcept.coding` (567)<br>`nama_lengkap_pasien` → `Observation.subject.display` (573)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (575)<br>`tgl_mulai_pengobatan` → `Observation.issued` (576) |
-| 21 | 580–632 | Observation | X099381 | Line Probe Assay (LPA) Lini 2 | `hasil_pemeriksaan_lpa_lini_2_valid_invalid` → `Observation.valueCodeableConcept.coding` (583)<br>`hasil_pemeriksaan_lpa_lini_2_mtb` → `Observation.component.code.coding` (586)<br>`hasil_pemeriksaan_lpa_lini_2_fq_lfx` → `Observation.component.code.coding` (590)<br>`hasil_pemeriksaan_lpa_lini_2_fq_mfx` → `Observation.component.code.coding` (596)<br>`hasil_pemeriksaan_lpa_lini_2_fq_mfx_dt` → `Observation.component.code.coding` (602)<br>`hasil_pemeriksaan_lpa_lini_2_slid_km` → `Observation.component.code.coding` (608)<br>`hasil_pemeriksaan_lpa_lini_2_slid_amk` → `Observation.component.code.coding` (614)<br>`hasil_pemeriksaan_lpa_lini_2_slid_cm` → `Observation.component.code.coding` (620)<br>`nama_lengkap_pasien` → `Observation.subject.display` (627)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (629)<br>`tgl_mulai_pengobatan` → `Observation.issued` (630) |
-| 22 | 634–640 | Specimen | 119334006 | Sputum specimen | `tanggal_pengambilan_dahak_untuk_uji_kepekaan_hhbbtttt` → `Specimen.collectedDateTime` (637)<br>`nama_lengkap_pasien` → `Specimen.subject.display` (639)<br>`tanggal_pengambilan_dahak_untuk_uji_kepekaan_hhbbtttt` → `Specimen.receivedTime` (640) |
-| 23 | 642–709 | Observation | X099383 | Pemeriksaan Paket Standar Kepekaan | `hasil_pemeriksaan_paket_standar_uji_kepekaan_h_dosis_tinggi` → `Observation.component.code.coding` (647)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_h` → `Observation.component.code.coding` (653)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_km` → `Observation.component.code.coding` (659)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_cm` → `Observation.component.code.coding` (665)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_lfx` → `Observation.component.code.coding` (671)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_mfx_dosis_tinggi` → `Observation.component.code.coding` (677)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_mfx` → `Observation.component.code.coding` (683)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan` → `Observation.component.code.coding` (689)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_1` → `Observation.component.code.coding` (691)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_2` → `Observation.component.code.coding` (693)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_3` → `Observation.component.code.coding` (695)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_4` → `Observation.component.code.coding` (697)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_5` → `Observation.component.code.coding` (699)<br>`nama_lengkap_pasien` → `Observation.subject.display` (704)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (706)<br>`tanggal_hasil_uji_kepekaan_keluar_hhbbtttt` → `Observation.issued` (707) |
-| 24 | 711–754 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | _BTA_ → `Observation.valueCodeableConcept.coding` (715, tanpa BQ)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__1_bta` → `Observation.valueCodeableConcept.coding` (721)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__2_bta` → `Observation.valueCodeableConcept.coding` (722)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__3_bta` → `Observation.valueCodeableConcept.coding` (723)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_bta` → `Observation.valueCodeableConcept.coding` (724)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_bta_2` → `Observation.valueCodeableConcept.coding` (725)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_bta` → `Observation.valueCodeableConcept.coding` (726)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_bta2` → `Observation.valueCodeableConcept.coding` (727)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_bta` → `Observation.valueCodeableConcept.coding` (728)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_bta2` → `Observation.valueCodeableConcept.coding` (729)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__7_bta` → `Observation.valueCodeableConcept.coding` (730)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__8_bta` → `Observation.valueCodeableConcept.coding` (731)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__9_bta` → `Observation.valueCodeableConcept.coding` (732)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__10_bta` → `Observation.valueCodeableConcept.coding` (733)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__11_bta` → `Observation.valueCodeableConcept.coding` (734)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__12_bta` → `Observation.valueCodeableConcept.coding` (735)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__13_bta` → `Observation.valueCodeableConcept.coding` (736)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__14_bta` → `Observation.valueCodeableConcept.coding` (737)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__15_bta` → `Observation.valueCodeableConcept.coding` (738)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__16_bta` → `Observation.valueCodeableConcept.coding` (739)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__17_bta` → `Observation.valueCodeableConcept.coding` (740)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__18_bta` → `Observation.valueCodeableConcept.coding` (741)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__19_bta` → `Observation.valueCodeableConcept.coding` (742)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__20_bta` → `Observation.valueCodeableConcept.coding` (743)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__21_bta` → `Observation.valueCodeableConcept.coding` (744)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__22_bta` → `Observation.valueCodeableConcept.coding` (745)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__23_bta` → `Observation.valueCodeableConcept.coding` (746)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__24_bta` → `Observation.valueCodeableConcept.coding` (747)<br>`nama_lengkap_pasien` → `Observation.subject.display` (749)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (751) |
-| 25 | 756–800 | Observation | X099388 | Biakan TB | _Biakan_ → `Observation.identifier` (756, tanpa BQ)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__1_b` → `Observation.valueCodeableConcept.coding` (767)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__2_b` → `Observation.valueCodeableConcept.coding` (768)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__3_b` → `Observation.valueCodeableConcept.coding` (769)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_b` → `Observation.valueCodeableConcept.coding` (770)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_b_2` → `Observation.valueCodeableConcept.coding` (771)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_b` → `Observation.valueCodeableConcept.coding` (772)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_b2` → `Observation.valueCodeableConcept.coding` (773)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_b` → `Observation.valueCodeableConcept.coding` (774)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_b2` → `Observation.valueCodeableConcept.coding` (775)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__7_b` → `Observation.valueCodeableConcept.coding` (776)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__8_b` → `Observation.valueCodeableConcept.coding` (777)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__9_b` → `Observation.valueCodeableConcept.coding` (778)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__10_b` → `Observation.valueCodeableConcept.coding` (779)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__11_b` → `Observation.valueCodeableConcept.coding` (780)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__12_b` → `Observation.valueCodeableConcept.coding` (781)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__13_b` → `Observation.valueCodeableConcept.coding` (782)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__14_b` → `Observation.valueCodeableConcept.coding` (783)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__15_b` → `Observation.valueCodeableConcept.coding` (784)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__16_b` → `Observation.valueCodeableConcept.coding` (785)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__17_b` → `Observation.valueCodeableConcept.coding` (786)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__18_b` → `Observation.valueCodeableConcept.coding` (787)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__19_b` → `Observation.valueCodeableConcept.coding` (788)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__20_b` → `Observation.valueCodeableConcept.coding` (789)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__21_b` → `Observation.valueCodeableConcept.coding` (790)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__22_b` → `Observation.valueCodeableConcept.coding` (791)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__23_b` → `Observation.valueCodeableConcept.coding` (792)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__24_b` → `Observation.valueCodeableConcept.coding` (793)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (797)<br>`tgl_mulai_pengobatan` → `Observation.issued` (798) |
-| 26 | 803–814 | Observation | 365866002 | Finding of human immunodeficiency virus status | `kegiatan_tbchiv_hasil_tes_hiv` → `Observation.valueCodeableConcept.coding` (806)<br>`nama_lengkap_pasien` → `Observation.subject.display` (809)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (811) |
-| 27 | 816–826 | Procedure | SP000371 | Cotrimoxazole | `kegiatan_tbchiv_kotrimoksasol` → `Procedure.category.coding` (816)<br>`nama_lengkap_pasien` → `Procedure.subject.display` (821)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.start` (823)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.end` (824) |
-| 28 | 828–838 | Procedure | SP000046 | Terapi Antiretroviral (ART) | `kegiatan_tbchiv_art` → `Procedure.category.coding` (828)<br>`nama_lengkap_pasien` → `Procedure.subject.display` (833)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.start` (835)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.end` (836) |
-| 29 | 840–851 | Observation | SP000047 | Hasil Tes Diabetes Melitus | `kegiatan_tbcdm_dm` → `Observation.valueCodeableConcept.coding` (843)<br>`nama_lengkap_pasien` → `Observation.subject.display` (846)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (848)<br>`tgl_mulai_pengobatan` → `Observation.issued` (849) |
-| 30 | 853–864 | Observation | 1284985006 | Diabetes mellitus management program | `kegiatan_tbcdm_terapi_dm` → `Observation.valueCodeableConcept.coding` (856)<br>`nama_lengkap_pasien` → `Observation.subject.display` (859)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (861)<br>`tgl_mulai_pengobatan` → `Observation.issued` (862) |
+| 18 | 459–468 | ServiceRequest | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | `tanggal_hasil_pemeriksaan_diagnosis_tbc` → `ServiceRequest.occurrenceDateTime` (466) |
+| 19 | 470–475 | Specimen | 119334006 | Sputum specimen | – |
+| 20 | 477–504 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | `jenis_pemeriksaan_diagnosis` → `Observation.status` (477)<br>`hasil_pemeriksaan_diagnosis_tbc` → `Observation.valueCodeableConcept.coding` (488)<br>`nama_lengkap_pasien` → `Observation.subject.display` (497)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (499)<br>`tanggal_hasil_pemeriksaan_diagnosis_tbc` → `Observation.issued` (500) |
+| 21 | 506–515 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | `tanggal_hasil_pemeriksaan_diagnosis_tbc` → `DiagnosticReport.issued` (511) |
+| 22 | 518–527 | ServiceRequest | X099379 | Pemeriksaan TCM XDR | `tanggal_hasil_pemeriksaan_tcmxdr` → `ServiceRequest.occurrenceDateTime` (525) |
+| 23 | 529–534 | Specimen | 119334006 | Sputum specimen | – |
+| 24 | 536–598 | Observation | X099379 | Pemeriksaan TCM XDR | `hasil_pemeriksaan_xpert_tcm_xdr_valid_invalid_no_result_error` → `Observation.valueCodeableConcept.coding` (539)<br>`hasil_pemeriksaan_xpert_tcm_xdr_mtb` → `Observation.component.code.coding` (544)<br>`hasil_pemeriksaan_xpert_tcm_xdr_h_dosis_rendah_low` → `Observation.component.code.coding` (551)<br>`hasil_pemeriksaan_xpert_tcm_xdr_h` → `Observation.component.code.coding` (556)<br>`hasil_pemeriksaan_xpert_tcm_xdr_eto` → `Observation.component.code.coding` (561)<br>`hasil_pemeriksaan_xpert_tcm_xdr_fq_dosis_rendah_low` → `Observation.component.code.coding` (565)<br>`hasil_pemeriksaan_xpert_tcm_xdr_fq` → `Observation.component.code.coding` (570)<br>`hasil_pemeriksaan_xpert_tcm_xdr_amk` → `Observation.component.code.coding` (575)<br>`hasil_pemeriksaan_xpert_tcm_xdr_km` → `Observation.component.code.coding` (580)<br>`hasil_pemeriksaan_xpert_tcm_xdr_cm` → `Observation.component.code.coding` (585)<br>`nama_lengkap_pasien` → `Observation.subject.display` (591)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (593)<br>`tanggal_hasil_pemeriksaan_tcmxdr` → `Observation.issued` (594) |
+| 25 | 600–609 | DiagnosticReport | X099379 | Pemeriksaan TCM XDR | `tanggal_hasil_pemeriksaan_tcmxdr` → `DiagnosticReport.issued` (605) |
+| 26 | 612–621 | ServiceRequest | X099380 | Line Probe Assay (LPA) Lini 1 | – |
+| 27 | 623–628 | Specimen | 119334006 | Sputum specimen | – |
+| 28 | 630–660 | Observation | X099380 | Line Probe Assay (LPA) Lini 1 | `hasil_pemeriksaan_lpa_line_probe_assay_lini_1_valid_invalid` → `Observation.valueCodeableConcept.coding` (633)<br>_MTB_ → `Observation.component.code.coding` (636, tanpa BQ)<br>`hasil_pemeriksaan_lpa_line_probe_assay_lini_1_mtb` → `Observation.component.valueCodeableConcept.coding` (637)<br>_R_ → `Observation.component.code.coding` (640, tanpa BQ)<br>`hasil_pemeriksaan_lpa_line_probe_assay_lini_1_r` → `Observation.component.valueCodeableConcept.coding` (641)<br>_H_ → `Observation.component.code.coding` (646, tanpa BQ)<br>`hasil_pemeriksaan_lpa_line_probe_assay_lini_1_h` → `Observation.component.valueCodeableConcept.coding` (647)<br>`nama_lengkap_pasien` → `Observation.subject.display` (653)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (655)<br>`tgl_mulai_pengobatan` → `Observation.issued` (656) |
+| 29 | 662–671 | DiagnosticReport | X099380 | Line Probe Assay (LPA) Lini 1 | – |
+| 30 | 673–682 | ServiceRequest | X099381 | Line Probe Assay (LPA) Lini 2 | – |
+| 31 | 684–689 | Specimen | 119334006 | Sputum specimen | – |
+| 32 | 691–745 | Observation | X099381 | Line Probe Assay (LPA) Lini 2 | `hasil_pemeriksaan_lpa_lini_2_valid_invalid` → `Observation.valueCodeableConcept.coding` (694)<br>`hasil_pemeriksaan_lpa_lini_2_mtb` → `Observation.component.code.coding` (697)<br>`hasil_pemeriksaan_lpa_lini_2_fq_lfx` → `Observation.component.code.coding` (701)<br>`hasil_pemeriksaan_lpa_lini_2_fq_mfx` → `Observation.component.code.coding` (707)<br>`hasil_pemeriksaan_lpa_lini_2_fq_mfx_dt` → `Observation.component.code.coding` (713)<br>`hasil_pemeriksaan_lpa_lini_2_slid_km` → `Observation.component.code.coding` (719)<br>`hasil_pemeriksaan_lpa_lini_2_slid_amk` → `Observation.component.code.coding` (725)<br>`hasil_pemeriksaan_lpa_lini_2_slid_cm` → `Observation.component.code.coding` (731)<br>`nama_lengkap_pasien` → `Observation.subject.display` (738)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (740)<br>`tgl_mulai_pengobatan` → `Observation.issued` (741) |
+| 33 | 747–756 | DiagnosticReport | X099381 | Line Probe Assay (LPA) Lini 2 | – |
+| 34 | 758–767 | ServiceRequest | X099383 | Pemeriksaan Paket Standar Kepekaan | `tanggal_pengambilan_dahak_untuk_uji_kepekaan_hhbbtttt` → `ServiceRequest.occurrenceDateTime` (765) |
+| 35 | 769–775 | Specimen | 119334006 | Sputum specimen | `tanggal_pengambilan_dahak_untuk_uji_kepekaan_hhbbtttt` → `Specimen.collection.collectedDateTime` (772)<br>`nama_lengkap_pasien` → `Specimen.subject.display` (774)<br>`tanggal_pengambilan_dahak_untuk_uji_kepekaan_hhbbtttt` → `Specimen.receivedTime` (775) |
+| 36 | 777–846 | Observation | X099383 | Pemeriksaan Paket Standar Kepekaan | `hasil_pemeriksaan_paket_standar_uji_kepekaan_h_dosis_tinggi` → `Observation.component.code.coding` (782)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_h` → `Observation.component.code.coding` (788)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_km` → `Observation.component.code.coding` (794)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_cm` → `Observation.component.code.coding` (800)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_lfx` → `Observation.component.code.coding` (806)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_mfx_dosis_tinggi` → `Observation.component.code.coding` (812)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_mfx` → `Observation.component.code.coding` (818)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan` → `Observation.component.code.coding` (824)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_1` → `Observation.component.code.coding` (826)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_2` → `Observation.component.code.coding` (828)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_3` → `Observation.component.code.coding` (830)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_4` → `Observation.component.code.coding` (832)<br>`hasil_pemeriksaan_paket_standar_uji_kepekaan_5` → `Observation.component.code.coding` (834)<br>`nama_lengkap_pasien` → `Observation.subject.display` (839)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (841)<br>`tanggal_hasil_uji_kepekaan_keluar_hhbbtttt` → `Observation.issued` (842) |
+| 37 | 848–857 | DiagnosticReport | X099383 | Pemeriksaan Paket Standar Kepekaan | `tanggal_hasil_uji_kepekaan_keluar_hhbbtttt` → `DiagnosticReport.issued` (853) |
+| 38 | 859–868 | ServiceRequest | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | – |
+| 39 | 870–875 | Specimen | 119334006 | Sputum specimen | – |
+| 40 | 877–922 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | _BTA_ → `Observation.valueCodeableConcept.coding` (881, tanpa BQ)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__1_bta` → `Observation.valueCodeableConcept.coding` (887)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__2_bta` → `Observation.valueCodeableConcept.coding` (888)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__3_bta` → `Observation.valueCodeableConcept.coding` (889)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_bta` → `Observation.valueCodeableConcept.coding` (890)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_bta_2` → `Observation.valueCodeableConcept.coding` (891)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_bta` → `Observation.valueCodeableConcept.coding` (892)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_bta2` → `Observation.valueCodeableConcept.coding` (893)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_bta` → `Observation.valueCodeableConcept.coding` (894)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_bta2` → `Observation.valueCodeableConcept.coding` (895)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__7_bta` → `Observation.valueCodeableConcept.coding` (896)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__8_bta` → `Observation.valueCodeableConcept.coding` (897)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__9_bta` → `Observation.valueCodeableConcept.coding` (898)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__10_bta` → `Observation.valueCodeableConcept.coding` (899)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__11_bta` → `Observation.valueCodeableConcept.coding` (900)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__12_bta` → `Observation.valueCodeableConcept.coding` (901)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__13_bta` → `Observation.valueCodeableConcept.coding` (902)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__14_bta` → `Observation.valueCodeableConcept.coding` (903)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__15_bta` → `Observation.valueCodeableConcept.coding` (904)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__16_bta` → `Observation.valueCodeableConcept.coding` (905)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__17_bta` → `Observation.valueCodeableConcept.coding` (906)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__18_bta` → `Observation.valueCodeableConcept.coding` (907)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__19_bta` → `Observation.valueCodeableConcept.coding` (908)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__20_bta` → `Observation.valueCodeableConcept.coding` (909)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__21_bta` → `Observation.valueCodeableConcept.coding` (910)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__22_bta` → `Observation.valueCodeableConcept.coding` (911)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__23_bta` → `Observation.valueCodeableConcept.coding` (912)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__24_bta` → `Observation.valueCodeableConcept.coding` (913)<br>`nama_lengkap_pasien` → `Observation.subject.display` (915)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (917) |
+| 41 | 924–933 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | – |
+| 42 | 935–944 | ServiceRequest | X099388 | Biakan TB | – |
+| 43 | 946–951 | Specimen | 119334006 | Sputum specimen | – |
+| 44 | 953–999 | Observation | X099388 | Biakan TB | _Biakan_ → `Observation.identifier` (953, tanpa BQ)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__1_b` → `Observation.valueCodeableConcept.coding` (964)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__2_b` → `Observation.valueCodeableConcept.coding` (965)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__3_b` → `Observation.valueCodeableConcept.coding` (966)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_b` → `Observation.valueCodeableConcept.coding` (967)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__4_b_2` → `Observation.valueCodeableConcept.coding` (968)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_b` → `Observation.valueCodeableConcept.coding` (969)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__5_b2` → `Observation.valueCodeableConcept.coding` (970)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_b` → `Observation.valueCodeableConcept.coding` (971)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__6_b2` → `Observation.valueCodeableConcept.coding` (972)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__7_b` → `Observation.valueCodeableConcept.coding` (973)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__8_b` → `Observation.valueCodeableConcept.coding` (974)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__9_b` → `Observation.valueCodeableConcept.coding` (975)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__10_b` → `Observation.valueCodeableConcept.coding` (976)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__11_b` → `Observation.valueCodeableConcept.coding` (977)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__12_b` → `Observation.valueCodeableConcept.coding` (978)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__13_b` → `Observation.valueCodeableConcept.coding` (979)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__14_b` → `Observation.valueCodeableConcept.coding` (980)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__15_b` → `Observation.valueCodeableConcept.coding` (981)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__16_b` → `Observation.valueCodeableConcept.coding` (982)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__17_b` → `Observation.valueCodeableConcept.coding` (983)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__18_b` → `Observation.valueCodeableConcept.coding` (984)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__19_b` → `Observation.valueCodeableConcept.coding` (985)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__20_b` → `Observation.valueCodeableConcept.coding` (986)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__21_b` → `Observation.valueCodeableConcept.coding` (987)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__22_b` → `Observation.valueCodeableConcept.coding` (988)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__23_b` → `Observation.valueCodeableConcept.coding` (989)<br>`pemeriksaan_dahak_follow_up_bta_dan_biakan_pasien_tbc_ro_bulan_ke__24_b` → `Observation.valueCodeableConcept.coding` (990)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (994)<br>`tgl_mulai_pengobatan` → `Observation.issued` (995) |
+| 45 | 1001–1010 | DiagnosticReport | X099388 | Biakan TB | – |
+| 46 | 1013–1024 | Observation | 365866002 | Finding of human immunodeficiency virus status | `kegiatan_tbchiv_hasil_tes_hiv` → `Observation.valueCodeableConcept.coding` (1016)<br>`nama_lengkap_pasien` → `Observation.subject.display` (1019)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (1021) |
+| 47 | 1026–1036 | Procedure | SP000371 | Cotrimoxazole | `kegiatan_tbchiv_kotrimoksasol` → `Procedure.category.coding` (1026)<br>`nama_lengkap_pasien` → `Procedure.subject.display` (1031)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.start` (1033)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.end` (1034) |
+| 48 | 1038–1048 | Procedure | SP000046 | Terapi Antiretroviral (ART) | `kegiatan_tbchiv_art` → `Procedure.category.coding` (1038)<br>`nama_lengkap_pasien` → `Procedure.subject.display` (1043)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.start` (1045)<br>`tgl_mulai_pengobatan` → `Procedure.performedPeriod.end` (1046) |
+| 49 | 1050–1061 | Observation | SP000047 | Hasil Tes Diabetes Melitus | `kegiatan_tbcdm_dm` → `Observation.valueCodeableConcept.coding` (1053)<br>`nama_lengkap_pasien` → `Observation.subject.display` (1056)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (1058)<br>`tgl_mulai_pengobatan` → `Observation.issued` (1059) |
+| 50 | 1063–1074 | Observation | 1284985006 | Diabetes mellitus management program | `kegiatan_tbcdm_terapi_dm` → `Observation.valueCodeableConcept.coding` (1066)<br>`nama_lengkap_pasien` → `Observation.subject.display` (1069)<br>`tgl_mulai_pengobatan` → `Observation.effectiveDateTime` (1071)<br>`tgl_mulai_pengobatan` → `Observation.issued` (1072) |
 
 ### Payload per resource
 
 | Resource | Jumlah |
 |---|---|
 | Observation | 18 |
+| ServiceRequest | 7 |
+| Specimen | 7 |
+| DiagnosticReport | 7 |
 | Procedure | 3 |
 | Organization | 1 |
 | Patient | 1 |
@@ -63,8 +86,7 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Condition | 1 |
 | QuestionnaireResponse | 1 |
 | CarePlan | 1 |
-| Specimen | 1 |
-| **Total** | **30** |
+| **Total** | **50** |
 
 ## Code
 
@@ -268,179 +290,199 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 196 | 453 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
 | 197 | 454 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
 | 198 | 455 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 199 | 461 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 200 | 462 | Observation | `Observation.code.coding` | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | http://loinc.org |
-| 201 | 463 | Observation | `Observation.code.coding` | X099379 | Pemeriksaan TCM XDR | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 202 | 464 | Observation | `Observation.code.coding` | X099380 | Line Probe Assay (LPA) Lini 1 | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 203 | 465 | Observation | `Observation.code.coding` | X099381 | Line Probe Assay (LPA) Lini 2 | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 204 | 466 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 205 | 467 | Observation | `Observation.code.coding` | X099383 | Pemeriksaan Paket Standar Kepekaan | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 206 | 468 | Observation | `Observation.code.coding` | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 207 | 469 | Observation | `Observation.code.coding` | MK099927 | Pemeriksaan PCR Open System | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 208 | 470 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 209 | 471 | Observation | `Observation.valueCodeableConcept.coding` | X099770 | Rifampisin sensitive | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 210 | 472 | Observation | `Observation.valueCodeableConcept.coding` | X099771 | Rifampisin resistan | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 211 | 473 | Observation | `Observation.valueCodeableConcept.coding` | X099772 | Rifampisin indeterminate | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 212 | 489 | Observation | `Observation.code.coding` | X099379 | Pemeriksaan TCM XDR | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 213 | 490 | Observation | `Observation.valueCodeableConcept.coding` | X099781 | Hasil Valid | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 214 | 495 | Observation | `Observation.component.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 215 | 496 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 216 | 498 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 217 | 500 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 218 | 502 | Observation | `Observation.component.code.coding` | X099391 | H Dosis Rendah (Low) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 219 | 503 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 220 | 504 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 221 | 505 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 222 | 507 | Observation | `Observation.component.code.coding` | 89488-1 | Isoniazid [Susceptibility] by Genotype method | http://loinc.org |
-| 223 | 508 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 224 | 509 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 225 | 510 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 226 | 512 | Observation | `Observation.component.code.coding` | 96110-2 | Ethionamide [Susceptibility] by Genotype method | http://loinc.org |
-| 227 | 513 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 228 | 514 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 229 | 516 | Observation | `Observation.component.code.coding` | X099392 | FQ Dosis Rendah (Low) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 230 | 517 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 231 | 518 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 232 | 519 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 233 | 521 | Observation | `Observation.component.code.coding` | 89487-3 | Fluoroquinolone [Susceptibility] by Genotype method | http://loinc.org |
-| 234 | 522 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 235 | 523 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 236 | 524 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 237 | 526 | Observation | `Observation.component.code.coding` | 89484-0 | Amikacin [Susceptibility] by Genotype method | http://loinc.org |
-| 238 | 527 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 239 | 528 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 240 | 529 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 241 | 531 | Observation | `Observation.component.code.coding` | 89482-4 | Kanamycin [Susceptibility] by Genotype method | http://loinc.org |
-| 242 | 532 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 243 | 533 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 244 | 534 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 245 | 536 | Observation | `Observation.component.code.coding` | 89483-2 | Capreomycin [Susceptibility] by Genotype method | http://loinc.org |
-| 246 | 537 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 247 | 538 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 248 | 539 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 249 | 552 | Observation | `Observation.code.coding` | X099380 | Line Probe Assay (LPA) Lini 1 | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 250 | 553 | Observation | `Observation.valueCodeableConcept.coding` | X099781 | Hasil Valid | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 251 | 556 | Observation | `Observation.component.code.coding` | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | http://loinc.org |
-| 252 | 557 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 253 | 558 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 254 | 560 | Observation | `Observation.component.code.coding` | 89489-9 | rifAMPin [Susceptibility] by Genotype method | http://loinc.org |
-| 255 | 561 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 256 | 562 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 257 | 563 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 258 | 564 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 259 | 566 | Observation | `Observation.component.code.coding` | 89488-1 | Isoniazid [Susceptibility] by Genotype method | http://loinc.org |
-| 260 | 567 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 261 | 568 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 262 | 569 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 263 | 570 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 264 | 582 | Observation | `Observation.code.coding` | X099381 | Line Probe Assay (LPA) Lini 2 | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 265 | 583 | Observation | `Observation.valueCodeableConcept.coding` | X099781 | Hasil Valid | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 266 | 586 | Observation | `Observation.component.code.coding` | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | http://loinc.org |
-| 267 | 587 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 268 | 588 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 269 | 590 | Observation | `Observation.component.code.coding` | 20629-2 | levoFLOXacin [Susceptibility] | http://loinc.org |
-| 270 | 591 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 271 | 592 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 272 | 593 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 273 | 594 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 274 | 596 | Observation | `Observation.component.code.coding` | 96112-8 | Moxifloxacin [Susceptibility] by Genotype method | http://loinc.org |
-| 275 | 597 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 276 | 598 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 277 | 599 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 278 | 600 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 279 | 602 | Observation | `Observation.component.code.coding` | X099775 | Moxifloxacin DT (Mfx DT) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 280 | 603 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 281 | 604 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 282 | 605 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 283 | 606 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 284 | 608 | Observation | `Observation.component.code.coding` | 89482-4 | Kanamycin [Susceptibility] by Genotype method | http://loinc.org |
-| 285 | 609 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 286 | 610 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 287 | 611 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 288 | 612 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 289 | 614 | Observation | `Observation.component.code.coding` | 89484-0 | Amikacin [Susceptibility] by Genotype method | http://loinc.org |
-| 290 | 615 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 291 | 616 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 292 | 617 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 293 | 618 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 294 | 620 | Observation | `Observation.component.code.coding` | 89483-2 | Capreomycin [Susceptibility] by Genotype method | http://loinc.org |
-| 295 | 621 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 296 | 622 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 297 | 623 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 298 | 624 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 299 | 635 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
-| 300 | 644 | Observation | `Observation.code.coding` | X099383 | Pemeriksaan Paket Standar Kepekaan | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 301 | 647 | Observation | `Observation.component.code.coding` | X099776 | H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 302 | 648 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 303 | 649 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 304 | 650 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 305 | 653 | Observation | `Observation.component.code.coding` | 20383-6 | Isoniazid [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
-| 306 | 654 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 307 | 655 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 308 | 656 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 309 | 659 | Observation | `Observation.component.code.coding` | 23609-1 | Kanamycin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
-| 310 | 660 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 311 | 661 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 312 | 662 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 313 | 665 | Observation | `Observation.component.code.coding` | 23607-5 | Capreomycin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
-| 314 | 666 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 315 | 667 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 316 | 668 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 317 | 671 | Observation | `Observation.component.code.coding` | 53716-7 | levoFLOXacin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
-| 318 | 672 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 319 | 673 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 320 | 674 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 321 | 677 | Observation | `Observation.component.code.coding` | X099778 | Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 322 | 678 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 323 | 679 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 324 | 680 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 325 | 683 | Observation | `Observation.component.code.coding` | 41502-6 | Moxifloxacin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
-| 326 | 684 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
-| 327 | 685 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
-| 328 | 686 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
-| 329 | 689 | Observation | `Observation.component.code.coding` | SP000472 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya | http://terminology.kemkes.go.id/sp |
-| 330 | 691 | Observation | `Observation.component.code.coding` | SP000473 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 1 | http://terminology.kemkes.go.id/sp |
-| 331 | 693 | Observation | `Observation.component.code.coding` | SP000474 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 2 | http://terminology.kemkes.go.id/sp |
-| 332 | 695 | Observation | `Observation.component.code.coding` | SP000475 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 3 | http://terminology.kemkes.go.id/sp |
-| 333 | 697 | Observation | `Observation.component.code.coding` | SP000476 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 4 | http://terminology.kemkes.go.id/sp |
-| 334 | 699 | Observation | `Observation.component.code.coding` | SP000477 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 5 | http://terminology.kemkes.go.id/sp |
-| 335 | 714 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 336 | 715 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
-| 337 | 716 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
-| 338 | 717 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
-| 339 | 718 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
-| 340 | 759 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 341 | 760 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 342 | 761 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 343 | 762 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | + | http://loinc.org |
-| 344 | 763 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | ++ | http://loinc.org |
-| 345 | 764 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | +++ | http://loinc.org |
-| 346 | 765 | Observation | `Observation.valueCodeableConcept.coding` | 110379001 | Mycobacterium, non-tuberculosis (organism) | http://snomed.info/sct |
-| 347 | 805 | Observation | `Observation.code.coding` | 365866002 | Finding of human immunodeficiency virus status | http://snomed.info/sct |
-| 348 | 806 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
-| 349 | 807 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
-| 350 | 817 | Procedure | `Procedure.code.coding` | SP000371 | Cotrimoxazole | http://terminology.kemkes.go.id/sp |
-| 351 | 829 | Procedure | `Procedure.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
-| 352 | 842 | Observation | `Observation.code.coding` | SP000047 | Hasil Tes Diabetes Melitus | http://terminology.kemkes.go.id/sp |
-| 353 | 843 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
-| 354 | 844 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
-| 355 | 855 | Observation | `Observation.code.coding` | 1284985006 | Diabetes mellitus management program | http://snomed.info/sct |
-| 356 | 856 | Observation | `Observation.valueCodeableConcept.coding` | SP000372 | Obat Hipoglikemik Oral | http://terminology.kemkes.go.id/sp |
-| 357 | 857 | Observation | `Observation.valueCodeableConcept.coding` | 308755006 | Subcutaneous injection of insulin | http://snomed.info/sct |
+| 199 | 463 | ServiceRequest | `ServiceRequest.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 200 | 471 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 201 | 479 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 202 | 480 | Observation | `Observation.code.coding` | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | http://loinc.org |
+| 203 | 481 | Observation | `Observation.code.coding` | X099379 | Pemeriksaan TCM XDR | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 204 | 482 | Observation | `Observation.code.coding` | X099380 | Line Probe Assay (LPA) Lini 1 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 205 | 483 | Observation | `Observation.code.coding` | X099381 | Line Probe Assay (LPA) Lini 2 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 206 | 484 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 207 | 485 | Observation | `Observation.code.coding` | X099383 | Pemeriksaan Paket Standar Kepekaan | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 208 | 486 | Observation | `Observation.code.coding` | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 209 | 487 | Observation | `Observation.code.coding` | MK099927 | Pemeriksaan PCR Open System | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 210 | 488 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 211 | 489 | Observation | `Observation.valueCodeableConcept.coding` | X099770 | Rifampisin sensitive | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 212 | 490 | Observation | `Observation.valueCodeableConcept.coding` | X099771 | Rifampisin resistan | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 213 | 491 | Observation | `Observation.valueCodeableConcept.coding` | X099772 | Rifampisin indeterminate | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 214 | 508 | DiagnosticReport | `DiagnosticReport.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 215 | 522 | ServiceRequest | `ServiceRequest.code.coding` | X099379 | Pemeriksaan TCM XDR | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 216 | 530 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 217 | 538 | Observation | `Observation.code.coding` | X099379 | Pemeriksaan TCM XDR | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 218 | 539 | Observation | `Observation.valueCodeableConcept.coding` | X099781 | Hasil Valid | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 219 | 544 | Observation | `Observation.component.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
+| 220 | 545 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 221 | 547 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 222 | 549 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 223 | 551 | Observation | `Observation.component.code.coding` | X099391 | H Dosis Rendah (Low) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 224 | 552 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 225 | 553 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 226 | 554 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 227 | 556 | Observation | `Observation.component.code.coding` | 89488-1 | Isoniazid [Susceptibility] by Genotype method | http://loinc.org |
+| 228 | 557 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 229 | 558 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 230 | 559 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 231 | 561 | Observation | `Observation.component.code.coding` | 96110-2 | Ethionamide [Susceptibility] by Genotype method | http://loinc.org |
+| 232 | 562 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 233 | 563 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 234 | 565 | Observation | `Observation.component.code.coding` | X099392 | FQ Dosis Rendah (Low) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 235 | 566 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 236 | 567 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 237 | 568 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 238 | 570 | Observation | `Observation.component.code.coding` | 89487-3 | Fluoroquinolone [Susceptibility] by Genotype method | http://loinc.org |
+| 239 | 571 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 240 | 572 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 241 | 573 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 242 | 575 | Observation | `Observation.component.code.coding` | 89484-0 | Amikacin [Susceptibility] by Genotype method | http://loinc.org |
+| 243 | 576 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 244 | 577 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 245 | 578 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 246 | 580 | Observation | `Observation.component.code.coding` | 89482-4 | Kanamycin [Susceptibility] by Genotype method | http://loinc.org |
+| 247 | 581 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 248 | 582 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 249 | 583 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 250 | 585 | Observation | `Observation.component.code.coding` | 89483-2 | Capreomycin [Susceptibility] by Genotype method | http://loinc.org |
+| 251 | 586 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 252 | 587 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 253 | 588 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 254 | 602 | DiagnosticReport | `DiagnosticReport.code.coding` | X099379 | Pemeriksaan TCM XDR | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 255 | 616 | ServiceRequest | `ServiceRequest.code.coding` | X099380 | Line Probe Assay (LPA) Lini 1 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 256 | 624 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 257 | 632 | Observation | `Observation.code.coding` | X099380 | Line Probe Assay (LPA) Lini 1 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 258 | 633 | Observation | `Observation.valueCodeableConcept.coding` | X099781 | Hasil Valid | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 259 | 636 | Observation | `Observation.component.code.coding` | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | http://loinc.org |
+| 260 | 637 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 261 | 638 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 262 | 640 | Observation | `Observation.component.code.coding` | 89489-9 | rifAMPin [Susceptibility] by Genotype method | http://loinc.org |
+| 263 | 641 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 264 | 642 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 265 | 643 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 266 | 644 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 267 | 646 | Observation | `Observation.component.code.coding` | 89488-1 | Isoniazid [Susceptibility] by Genotype method | http://loinc.org |
+| 268 | 647 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 269 | 648 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 270 | 649 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 271 | 650 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 272 | 664 | DiagnosticReport | `DiagnosticReport.code.coding` | X099380 | Line Probe Assay (LPA) Lini 1 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 273 | 677 | ServiceRequest | `ServiceRequest.code.coding` | X099381 | Line Probe Assay (LPA) Lini 2 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 274 | 685 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 275 | 693 | Observation | `Observation.code.coding` | X099381 | Line Probe Assay (LPA) Lini 2 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 276 | 694 | Observation | `Observation.valueCodeableConcept.coding` | X099781 | Hasil Valid | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 277 | 697 | Observation | `Observation.component.code.coding` | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | http://loinc.org |
+| 278 | 698 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 279 | 699 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 280 | 701 | Observation | `Observation.component.code.coding` | 20629-2 | levoFLOXacin [Susceptibility] | http://loinc.org |
+| 281 | 702 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 282 | 703 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 283 | 704 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 284 | 705 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 285 | 707 | Observation | `Observation.component.code.coding` | 96112-8 | Moxifloxacin [Susceptibility] by Genotype method | http://loinc.org |
+| 286 | 708 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 287 | 709 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 288 | 710 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 289 | 711 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 290 | 713 | Observation | `Observation.component.code.coding` | X099775 | Moxifloxacin DT (Mfx DT) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 291 | 714 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 292 | 715 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 293 | 716 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 294 | 717 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 295 | 719 | Observation | `Observation.component.code.coding` | 89482-4 | Kanamycin [Susceptibility] by Genotype method | http://loinc.org |
+| 296 | 720 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 297 | 721 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 298 | 722 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 299 | 723 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 300 | 725 | Observation | `Observation.component.code.coding` | 89484-0 | Amikacin [Susceptibility] by Genotype method | http://loinc.org |
+| 301 | 726 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 302 | 727 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 303 | 728 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 304 | 729 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 305 | 731 | Observation | `Observation.component.code.coding` | 89483-2 | Capreomycin [Susceptibility] by Genotype method | http://loinc.org |
+| 306 | 732 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 307 | 733 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 308 | 734 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
+| 309 | 735 | Observation | `Observation.component.valueCodeableConcept.coding` | X099774 | Ress Inffered (RI) | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 310 | 749 | DiagnosticReport | `DiagnosticReport.code.coding` | X099381 | Line Probe Assay (LPA) Lini 2 | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 311 | 762 | ServiceRequest | `ServiceRequest.code.coding` | X099383 | Pemeriksaan Paket Standar Kepekaan | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 312 | 770 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 313 | 779 | Observation | `Observation.code.coding` | X099383 | Pemeriksaan Paket Standar Kepekaan | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 314 | 782 | Observation | `Observation.component.code.coding` | X099776 | H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 315 | 783 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 316 | 784 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 317 | 785 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 318 | 788 | Observation | `Observation.component.code.coding` | 20383-6 | Isoniazid [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
+| 319 | 789 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 320 | 790 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 321 | 791 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 322 | 794 | Observation | `Observation.component.code.coding` | 23609-1 | Kanamycin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
+| 323 | 795 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 324 | 796 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 325 | 797 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 326 | 800 | Observation | `Observation.component.code.coding` | 23607-5 | Capreomycin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
+| 327 | 801 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 328 | 802 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 329 | 803 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 330 | 806 | Observation | `Observation.component.code.coding` | 53716-7 | levoFLOXacin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
+| 331 | 807 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 332 | 808 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 333 | 809 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 334 | 812 | Observation | `Observation.component.code.coding` | X099778 | Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 335 | 813 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 336 | 814 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 337 | 815 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 338 | 818 | Observation | `Observation.component.code.coding` | 41502-6 | Moxifloxacin [Susceptibility] by Method for Slow-growing mycobacteria | http://loinc.org |
+| 339 | 819 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24225-7 | Susceptible | http://loinc.org |
+| 340 | 820 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6676-6 | Resistant | http://loinc.org |
+| 341 | 821 | Observation | `Observation.component.valueCodeableConcept.coding` | LA16550-8 | Intermediate | http://loinc.org |
+| 342 | 824 | Observation | `Observation.component.code.coding` | SP000472 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya | http://terminology.kemkes.go.id/sp |
+| 343 | 826 | Observation | `Observation.component.code.coding` | SP000473 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 1 | http://terminology.kemkes.go.id/sp |
+| 344 | 828 | Observation | `Observation.component.code.coding` | SP000474 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 2 | http://terminology.kemkes.go.id/sp |
+| 345 | 830 | Observation | `Observation.component.code.coding` | SP000475 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 3 | http://terminology.kemkes.go.id/sp |
+| 346 | 832 | Observation | `Observation.component.code.coding` | SP000476 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 4 | http://terminology.kemkes.go.id/sp |
+| 347 | 834 | Observation | `Observation.component.code.coding` | SP000477 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 5 | http://terminology.kemkes.go.id/sp |
+| 348 | 850 | DiagnosticReport | `DiagnosticReport.code.coding` | X099383 | Pemeriksaan Paket Standar Kepekaan | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 349 | 863 | ServiceRequest | `ServiceRequest.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 350 | 871 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 351 | 880 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 352 | 881 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 353 | 882 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
+| 354 | 883 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
+| 355 | 884 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
+| 356 | 926 | DiagnosticReport | `DiagnosticReport.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 357 | 939 | ServiceRequest | `ServiceRequest.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 358 | 947 | Specimen | `Specimen.type.coding` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 359 | 956 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 360 | 957 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 361 | 958 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 362 | 959 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | + | http://loinc.org |
+| 363 | 960 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | ++ | http://loinc.org |
+| 364 | 961 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | +++ | http://loinc.org |
+| 365 | 962 | Observation | `Observation.valueCodeableConcept.coding` | 110379001 | Mycobacterium, non-tuberculosis (organism) | http://snomed.info/sct |
+| 366 | 1003 | DiagnosticReport | `DiagnosticReport.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 367 | 1015 | Observation | `Observation.code.coding` | 365866002 | Finding of human immunodeficiency virus status | http://snomed.info/sct |
+| 368 | 1016 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
+| 369 | 1017 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
+| 370 | 1027 | Procedure | `Procedure.code.coding` | SP000371 | Cotrimoxazole | http://terminology.kemkes.go.id/sp |
+| 371 | 1039 | Procedure | `Procedure.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
+| 372 | 1052 | Observation | `Observation.code.coding` | SP000047 | Hasil Tes Diabetes Melitus | http://terminology.kemkes.go.id/sp |
+| 373 | 1053 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 374 | 1054 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 375 | 1065 | Observation | `Observation.code.coding` | 1284985006 | Diabetes mellitus management program | http://snomed.info/sct |
+| 376 | 1066 | Observation | `Observation.valueCodeableConcept.coding` | SP000372 | Obat Hipoglikemik Oral | http://terminology.kemkes.go.id/sp |
+| 377 | 1067 | Observation | `Observation.valueCodeableConcept.coding` | 308755006 | Subcutaneous injection of insulin | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah | Code |
 |---|---|---|
-| http://loinc.org | 121 | 85658-3, 82810-3, LA15173-0, LA26683-5, 33248-6, 55277-8, 23539-0, 71773-6, LA6576-8, LA6577-6, 23539-0, 71773-6, 24648-8, 11545-1, 89371-9, LA6577-6, 88874-3, LA11882-0, LA11882-0, LA11883-8, LA11882-0, LA11883-8, LA11884-6, 89488-1, LA11882-0, LA11883-8, LA11884-6, 96110-2, LA11882-0, LA11883-8, LA11882-0, LA11883-8, LA11884-6, 89487-3, LA11882-0, LA11883-8, LA11884-6, 89484-0, LA11882-0, LA11883-8, LA11884-6, 89482-4, LA11882-0, LA11883-8, LA11884-6, 89483-2, LA11882-0, LA11883-8, LA11884-6, 13956-8, LA6576-8, LA6577-6, 89489-9, LA11882-0, LA11883-8, LA11884-6, 89488-1, LA11882-0, LA11883-8, LA11884-6, 13956-8, LA6576-8, LA6577-6, 20629-2, LA11882-0, LA11883-8, LA11884-6, 96112-8, LA11882-0, LA11883-8, LA11884-6, LA11882-0, LA11883-8, LA11884-6, 89482-4, LA11882-0, LA11883-8, LA11884-6, 89484-0, LA11882-0, LA11883-8, LA11884-6, 89483-2, LA11882-0, LA11883-8, LA11884-6, LA24225-7, LA6676-6, LA16550-8, 20383-6, LA24225-7, LA6676-6, LA16550-8, 23609-1, LA24225-7, LA6676-6, LA16550-8, 23607-5, LA24225-7, LA6676-6, LA16550-8, 53716-7, LA24225-7, LA6676-6, LA16550-8, LA24225-7, LA6676-6, LA16550-8, 41502-6, LA24225-7, LA6676-6, LA16550-8, 11545-1, LA11841-6, LA11842-4, LA11843-2, LA6577-6, LA6576-8, LA11841-6, LA11842-4, LA11843-2 |
+| http://loinc.org | 125 | 85658-3, 82810-3, LA15173-0, LA26683-5, 33248-6, 55277-8, 23539-0, 71773-6, LA6576-8, LA6577-6, 23539-0, 71773-6, 24648-8, 11545-1, 11545-1, 89371-9, LA6577-6, 11545-1, 88874-3, LA11882-0, LA11882-0, LA11883-8, LA11882-0, LA11883-8, LA11884-6, 89488-1, LA11882-0, LA11883-8, LA11884-6, 96110-2, LA11882-0, LA11883-8, LA11882-0, LA11883-8, LA11884-6, 89487-3, LA11882-0, LA11883-8, LA11884-6, 89484-0, LA11882-0, LA11883-8, LA11884-6, 89482-4, LA11882-0, LA11883-8, LA11884-6, 89483-2, LA11882-0, LA11883-8, LA11884-6, 13956-8, LA6576-8, LA6577-6, 89489-9, LA11882-0, LA11883-8, LA11884-6, 89488-1, LA11882-0, LA11883-8, LA11884-6, 13956-8, LA6576-8, LA6577-6, 20629-2, LA11882-0, LA11883-8, LA11884-6, 96112-8, LA11882-0, LA11883-8, LA11884-6, LA11882-0, LA11883-8, LA11884-6, 89482-4, LA11882-0, LA11883-8, LA11884-6, 89484-0, LA11882-0, LA11883-8, LA11884-6, 89483-2, LA11882-0, LA11883-8, LA11884-6, LA24225-7, LA6676-6, LA16550-8, 20383-6, LA24225-7, LA6676-6, LA16550-8, 23609-1, LA24225-7, LA6676-6, LA16550-8, 23607-5, LA24225-7, LA6676-6, LA16550-8, 53716-7, LA24225-7, LA6676-6, LA16550-8, LA24225-7, LA6676-6, LA16550-8, 41502-6, LA24225-7, LA6676-6, LA16550-8, 11545-1, 11545-1, LA11841-6, LA11842-4, LA11843-2, 11545-1, LA6577-6, LA6576-8, LA11841-6, LA11842-4, LA11843-2 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 100 | EHA000002, EHA000003, EHA000004, EHA000005, EHA000002, OV000430, OV000431, OV000432, OV000433, OV000434, QRI000001, QRI000002, CP000006, CP000007, CP000008, CP000009, CP000010, CP000011, CP000012, CP000013, CP000014, CP000005, CP000015, CP000016, CP000017, CP000018, CP000019, CP000020, CP000021, CP000022, CP000023, CP000024, CP000025, CP000026, CP000027, CP000028, CP000029, CP000030, CP000031, CP000032, CP000033, CP000034, CP000035, CP000036, CP000037, CP000038, CP000039, CP000040, CP000041, CP000042, CP000043, CP000044, CP000045, CP000046, CP000047, CP000048, CP000049, CP000050, CP000051, CP000052, CP000053, CP000054, CP000055, CP000056, CP000057, CP000058, CP000059, CP000060, CP000061, CP000062, CP000063, CP000064, CP000065, CP000066, CP000067, CP000068, CP000069, CP000070, CP000071, CP000072, CP000073, CP000074, CP000075, CP000076, CP000077, CP000078, CP000079, CP000080, CP000081, CP000082, CP000083, CP000084, CP000085, CP000086, CP000087, CP000088, CP000089, CP000090, CP000094, CP000096 |
-| http://snomed.info/sct | 69 | 257622000, 225368008, 424144002, 106540006, 106304008, 106304008, 106305009, 444168002, 65853000, 106386007, 106388008, 36625000, 77715000, 236297007, 236320001, 223366009, 160906004, 741062008, 261665006, 74964007, 74964007, 225368008, 154283005, 423997002, 10828004, 260385009, 261665006, 10828004, 260385009, 261665006, 424489006, 35140007, 424489006, 35140007, 268376005, 268375009, 17621005, 2483006, 27925004, 1255665007, 47604008, 30746006, 260544000, 112674009, 442110002, 1303092009, 60046008, 36118008, 12295008, 46621007, 9656002, 309529002, 385633008, 230993007, 58158008, 371001000, 182992009, 419099009, 399307001, 119334006, 260385009, 110379001, 365866002, 165816005, 165815009, 10828004, 260385009, 1284985006, 308755006 |
-| http://terminology.kemkes.go.id/CodeSystem/examination | 31 | X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099770, X099771, X099772, X099379, X099781, X099391, X099392, X099380, X099781, X099774, X099774, X099381, X099781, X099774, X099774, X099775, X099774, X099774, X099774, X099774, X099383, X099776, X099778, X099388 |
+| http://snomed.info/sct | 75 | 257622000, 225368008, 424144002, 106540006, 106304008, 106304008, 106305009, 444168002, 65853000, 106386007, 106388008, 36625000, 77715000, 236297007, 236320001, 223366009, 160906004, 741062008, 261665006, 74964007, 74964007, 225368008, 154283005, 423997002, 10828004, 260385009, 261665006, 10828004, 260385009, 261665006, 424489006, 35140007, 424489006, 35140007, 268376005, 268375009, 17621005, 2483006, 27925004, 1255665007, 47604008, 30746006, 260544000, 112674009, 442110002, 1303092009, 60046008, 36118008, 12295008, 46621007, 9656002, 309529002, 385633008, 230993007, 58158008, 371001000, 182992009, 419099009, 399307001, 119334006, 119334006, 119334006, 119334006, 119334006, 119334006, 260385009, 119334006, 110379001, 365866002, 165816005, 165815009, 10828004, 260385009, 1284985006, 308755006 |
+| http://terminology.kemkes.go.id/CodeSystem/examination | 41 | X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099770, X099771, X099772, X099379, X099379, X099781, X099391, X099392, X099379, X099380, X099380, X099781, X099774, X099774, X099380, X099381, X099381, X099781, X099774, X099774, X099775, X099774, X099774, X099774, X099774, X099381, X099383, X099383, X099776, X099778, X099383, X099388, X099388, X099388 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 22 | new, relapse, failure-cat1, failure-cat2, loss-to-follow-up, failure-2line, not-eval, unknown, other, failure, failure-cat2, treatment-non-conversion-2, non-standard-treatment, failure-cat1, treatment-non-conversion-1, relapse, loss-to-follow-up, history-of-close-contact with-TB-DR, co-infected-TBHIV, failure-2line, TB-DR-relapse, TB-DR-returns |
 | http://terminology.kemkes.go.id/sp | 11 | SP001137, SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP000371, SP000046, SP000047, SP000372 |
 | http://hl7.org/fhir/sid/icd-10 | 2 | A15.0, A16.2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 | TB-RO |
-| **Total** | **357** | |
+| **Total** | **377** | |
 
 ## Variabel di luar payload
 

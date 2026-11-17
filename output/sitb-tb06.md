@@ -11,8 +11,8 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Payload (`jumlah instance` = 1) | 56 |
 | Code (`jumlah code` = 1) | 276 |
 | Code unik (code + CodeSystem) | 117 |
-| Variabel BQ (unik) | 93 |
-| Variabel di Excel export | 97 |
+| Variabel BQ (unik) | 92 |
+| Variabel di Excel export | 96 |
 
 ## Payload
 
@@ -21,7 +21,7 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | 1 | 2–21 | Organization | – | – | `alamat_lengkap_faskes_kode_fasyankes` → `Organization.identifier` (3)<br>`alamat_lengkap_faskes_jenis_fasyankes` → `Organization.type` (4)<br>`alamat_lengkap_faskes_nama_fasyankes` → `Organization.name` (5)<br>`alamat_lengkap_faskes_kabupatenkota` → `Organization.address.city` (6)<br>`alamat_lengkap_faskes_provinsi` → `Organization.address.extension.extension.valueCode` (10)<br>`alamat_lengkap_faskes_kepemilikan_fasyankes` → `Organization.type` (20) |
 | 2 | 24–47 | Location | – | – | – |
 | 3 | 50–75 | Patient | – | – | `no_rekam_medis` → `Patient.identifier.value` (53)<br>`nik_nomor_identitas_kependudukan` → `Patient.identifier.value` (56)<br>`nama_lengkap_terduga_tbc` → `Patient.name.text` (57)<br>`jenis_kelamin` → `Patient.gender` (58)<br>`alamat_lengkap_terduga_tbc_provinsi` → `Patient.address.extension.extension.valueCode` (64)<br>`alamat_lengkap_terduga_tbc_kabupatenkota` → `Patient.address.extension.extension.valueCode` (67)<br>`alamat_lengkap_terduga_tbc_kecamatan` → `Patient.address.extension.extension.valueCode` (70)<br>`alamat_lengkap_terduga_tbc_kelurahan` → `Patient.address.extension.extension.valueCode` (73)<br>`alamat_lengkap_terduga_tbc_alamat_lengkap` → `Patient.address.line` (74) |
-| 4 | 77–86 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | `no_register_terduga` → `EpisodeOfCare.identifier` (77)<br>`klasifikasi_terduga_tbc` → `EpisodeOfCare.type.coding` (79)<br>`tanggal_didaftar` → `EpisodeOfCare.period.start` (81) |
+| 4 | 77–86 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | `no_register_terduga` → `EpisodeOfCare.identifier` (77)<br>_Klasifikasi Kasus Terduga TB_ → `EpisodeOfCare.type.coding` (79, tanpa BQ)<br>`tanggal_didaftar` → `EpisodeOfCare.period.start` (81) |
 | 5 | 89–101 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | `hasil_diagnosis` → `EpisodeOfCare.type.coding` (90)<br>`terkonfirmasi_tbc` → `EpisodeOfCare.status` (93)<br>`tanggal_hasil_diagnosis` → `EpisodeOfCare.statusHistory.period.start` (95) |
 | 6 | 104–116 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | _Terkonfirmasi TBC_ → `EpisodeOfCare.status` (108, tanpa BQ) |
 | 7 | 117–150 | Encounter | – | – | `no_register_sitb` → `Encounter.identifier` (118)<br>`dirujukdikirim_oleh` → `Encounter.hospitalization.admitSource.coding` (120) |
