@@ -634,57 +634,65 @@ Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
 
 ## Jumlah per CodeSystem (code unik lintas form)
 
-| CodeSystem | Jumlah | Code |
-|---|---|---|
-| http://snomed.info/sct | 120 | 223366009, 102514002, 39104002, 419099009, 385438008, 309453006, 309343006, 309367003, 224535009, 134435003, 424144002, 392570002, 2004005, 38341003, 45007003, 284473002, 289625003, 289437007, 289441006, 289440007, 312668007, 289439005, 1209182005, 268445003, 169221005, 169255008, 122555007, 122575003, 860635002, 166921001, 166922008, 15220000, 74964007, 116859006, 3457005, 48194001, 398254007, 15938005, 135840009, 308116003, 435591000124104, 40733004, 73211009, 414916001, 56717001, 56265001, 1230101008, 385892002, 257622000, 154283005, 423997002, 707307002, 707308007, 424489006, 35140007, 268376005, 268375009, 10828004, 260385009, 261665006, 119334006, 110379001, 106229004, 699618001, 266714009, 406149000, 399307001, 365866002, 165816005, 165815009, 225368008, 106540006, 106304008, 106305009, 444168002, 65853000, 106386007, 106388008, 36625000, 77715000, 236297007, 236320001, 160906004, 741062008, 371001000, 182992009, 1284985006, 308755006, 17621005, 2483006, 27925004, 1255665007, 47604008, 30746006, 260544000, 112674009, 442110002, 1303092009, 60046008, 36118008, 12295008, 46621007, 9656002, 309529002, 385633008, 230993007, 58158008, 171126009, 418564007, 258450006, 119376003, 309508006, 168137004, 119303007, 123038009, 415759006, 185389009, 737492002, 439708006, 171400006 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 116 | OC000010, OI000018, OI000035, OI000032, OI000033, OI000034, EHA000001, EHA000002, EHA000003, EHA000004, EHA000005, QRI000001, QRI000002, OC000191, OV000430, OV000431, OV000432, OV000433, OV000434, CP000006, CP000007, CP000008, CP000009, CP000010, CP000011, CP000012, CP000013, CP000014, CP000005, CP000015, CP000016, CP000017, CP000018, CP000019, CP000020, CP000021, CP000022, CP000023, CP000024, CP000025, CP000026, CP000027, CP000028, CP000029, CP000030, CP000031, CP000032, CP000033, CP000034, CP000035, CP000036, CP000037, CP000038, CP000039, CP000040, CP000041, CP000042, CP000043, CP000044, CP000045, CP000046, CP000047, CP000048, CP000049, CP000050, CP000051, CP000052, CP000053, CP000054, CP000055, CP000056, CP000057, CP000058, CP000059, CP000060, CP000061, CP000062, CP000063, CP000064, CP000065, CP000066, CP000067, CP000068, CP000069, CP000070, CP000071, CP000072, CP000073, CP000074, CP000075, CP000076, CP000077, CP000078, CP000079, CP000080, CP000081, CP000082, CP000083, CP000084, CP000085, CP000086, CP000087, CP000088, CP000089, CP000090, CP000094, CP000096, SRR000013, SRR000007, SRR000009, SRR000008, SRR000010, ST000001, ST000002, OM000001, OM000002 |
-| http://loinc.org | 67 | 93857-1, 81956-5, 79378-6, 8665-2, 18185-9, 11778-8, 8302-2, 29463-7, 883-9, LA19710-5, LA19709-7, LA19708-9, LA28449-9, 10331-7, LA6576-8, LA6577-6, 72155-5, 68961-2, LA15255-5, LA15256-3, 75410-1, 22464-2, 2887-8, 718-7, 74774-1, 88874-3, 76772-3, 104742-2, 24648-8, 23539-0, 71773-6, 55277-8, 33248-6, 11545-1, LA11841-6, LA11842-4, LA11843-2, 89371-9, LA11882-0, LA11883-8, LA11884-6, 89488-1, 96110-2, 89487-3, 89484-0, 89482-4, 89483-2, 13956-8, 89489-9, 20629-2, 96112-8, LA24225-7, LA6676-6, LA16550-8, 20383-6, 23609-1, 23607-5, 53716-7, 41502-6, 85658-3, 82810-3, LA15173-0, LA26683-5, 46246-5, 63072-3, 103960-1, 20373-7 |
-| http://terminology.kemkes.go.id/sp | 59 | SP000396, SP000397, SP000738, SP000389, SP001135, SP000776, SP000777, SP000778, SP000001, SP000002, SP000003, SP000004, SP000005, SP000006, SP000370, SP000007, SP000008, SP000009, SP000010, SP000011, SP000012, SP000013, SP000014, SP000015, SP000016, SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP001136, SP000046, SP000047, SP001137, SP000795, SP000791, SP000792, SP000793, SP000371, SP000372, SP000797, SP000720, SP000721, SP000722, SP000373, SP000200, SP000369, SP000201, SP000202, SP000206, SP000207, SP000208, SP000209, SP000210, SP000211, SP000374, SP000212, SP000213 |
-| http://terminology.kemkes.go.id/CodeSystem/examination | 20 | X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099770, X099771, X099772, X099781, X099391, X099392, X099774, X099775, X099776, X099778, X099783, X099389, X099390 |
-| http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 | new, relapse, failure-cat1, failure-cat2, loss-to-follow-up, failure-2line, not-eval, unknown, other, failure, treatment-non-conversion-2, non-standard-treatment, treatment-non-conversion-1, history-of-close-contact with-TB-DR, co-infected-TBHIV, TB-DR-relapse, TB-DR-returns |
-| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 | ANC.B6.DE14, ANC.B6.DE22, ANC.B8.DE1, ANC.B8.DE3, ANC.B9.DE24, ANC.B9.DE29, ANC.B8.DE111, ANC.B9.DE32, ANC.B9.DE60, ANC.B9.DE96, ANC.B9.DE114, ANC.B9.DE175, ANC.B9.DE159 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 4 | ANC, PNC, TB-SO, TB-RO |
-| http://hl7.org/fhir/sid/icd-10 | 4 | Z03.0, A15.0, A16.2, Z20.1 |
-| http://sys-ids.kemkes.go.id/kfa | 3 | VG139, 92000653, 93015491 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 | K1M, K1A |
-| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 | ANC.SS.DE58, ANC.SS.DE3 |
-| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 | tb-bac, tb-clin |
-| http://terminology.kemkes.go.id | 2 | TK000022, TK000016 |
-| http://terminology.kemkes.go.id/CodeSystem/location-type | 1 | LT000005 |
-| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 | N |
-| http://hl7.org/fhir/sid/icd-9-cm | 1 | 88.78 |
-| **Total** | **434** | |
+Daftar code satu per baris: lihat tabel Frekuensi code di atas (kolom CodeSystem).
+
+| CodeSystem | Jumlah |
+|---|---|
+| http://snomed.info/sct | 120 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 116 |
+| http://loinc.org | 67 |
+| http://terminology.kemkes.go.id/sp | 59 |
+| http://terminology.kemkes.go.id/CodeSystem/examination | 20 |
+| http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
+| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 4 |
+| http://hl7.org/fhir/sid/icd-10 | 4 |
+| http://sys-ids.kemkes.go.id/kfa | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
+| http://terminology.kemkes.go.id | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/location-type | 1 |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
+| http://hl7.org/fhir/sid/icd-9-cm | 1 |
+| **Total** | **434** |
 
 ---
 
 ## Payload per resource (semua form)
 
-| Resource | Maternal Outcome | Raffle | SiGizi ANC | SITB TB 06 | SITB TB 03 SO | SITB TB 03 RO | SITB TB 04 | SITB TB 16K | Total (non-unik) | Total unik | Pembeda (unik) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Observation | 5 | 1 | 30 | 17 | 23 | 18 | 17 | 14 | 125 | 71 | SP000389, 93857-1, 81956-5, LT000005, 79378-6, 385438008, 424144002, 8665-2, 18185-9, 11778-8, 8302-2, OC000010, SP000001, SP000002, 29463-7, 392570002, 284473002, 289625003, 883-9, 10331-7, 289437007, 72155-5, 268445003, 68961-2, 75410-1, 22464-2, 2887-8, 718-7, 74774-1, 15220000, SP000007, SP000010, SP000012, SP000014, SP000015, SP000016, OC000191, 24648-8, 23539-0, 55277-8, 33248-6, 11545-1, X099379, X099380, X099381, X099388, X099383, 106229004, 365866002, SP000047, 85658-3, 82810-3, 225368008, 1284985006, SP000797, SP000720, SP000721, SP000722, MK099926, MK099927, X099389, SP000373, 415759006, SP000369, SP000206, 171400006, SP000207, SP000209, SP000210, SP000212, SP000213 |
-| ServiceRequest | – | – | 6 | 9 | 9 | 7 | 16 | 1 | 48 | 20 | 68961-2, 75410-1, 22464-2, 2887-8, 718-7, 74774-1, 24648-8, 11545-1, X099379, X099380, X099381, X099388, X099383, SP000720, SP000721, SP000722, MK099926, MK099927, X099389, 185389009 |
-| DiagnosticReport | – | – | 6 | 9 | 9 | 7 | 16 | – | 47 | 19 | 68961-2, 75410-1, 22464-2, 2887-8, 718-7, 74774-1, 24648-8, 11545-1, X099379, X099380, X099381, X099388, X099383, SP000720, SP000721, SP000722, MK099926, MK099927, X099389 |
-| Specimen | – | – | 6 | 8 | 9 | 7 | 16 | – | 46 | 4 | 122555007, 122575003, 119334006, 418564007 |
-| Procedure | – | – | 3 | 2 | 4 | 3 | – | – | 12 | 7 | 88.78, 1230101008, 385892002, 424489006, SP000046, TK000016, SP000371 |
-| EpisodeOfCare | 2 | 1 | 1 | 3 | 1 | 1 | 1 | – | 10 | 4 | ANC, PNC, TB-SO, TB-RO |
-| Condition | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 9 | 7 | SP000738, SP001135, 134435003, Z03.0, A15.0, 171126009, Z20.1 |
-| Encounter | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 8 | 1 | – |
-| Patient | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 8 | 1 | – |
-| QuestionnaireResponse | – | – | – | 1 | 1 | 1 | – | 1 | 4 | 1 | – |
-| CarePlan | – | – | – | 1 | 1 | 1 | – | – | 3 | 1 | – |
-| Organization | – | – | – | 1 | 1 | 1 | – | – | 3 | 1 | – |
-| Practitioner | 1 | 2 | – | – | – | – | – | – | 3 | 1 | – |
-| Coverage | – | – | – | – | 1 | 1 | – | – | 2 | 1 | – |
-| Location | – | 1 | – | 1 | – | – | – | – | 2 | 1 | – |
-| MedicationDispense | – | – | 2 | – | – | – | – | – | 2 | 2 | 93015491, SP000370 |
-| MedicationRequest | – | – | 2 | – | – | – | – | – | 2 | 2 | 92000653, SP000370 |
-| PractitionerRole | 1 | – | 1 | – | – | – | – | – | 2 | 1 | – |
-| Group | – | – | – | – | – | – | – | 1 | 1 | 1 | – |
-| Immunization | – | – | 1 | – | – | – | – | – | 1 | 1 | VG139 |
-| RelatedPerson | – | – | – | – | – | – | – | 1 | 1 | 1 | – |
-| **Total** | **12** | **8** | **61** | **56** | **62** | **50** | **69** | **21** | **339** | **148** | |
+Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat tabel Frekuensi payload.
+
+| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | EpisodeOfCare | Condition | Encounter | Patient | QuestionnaireResponse | CarePlan | Organization | Practitioner | Coverage | Location | MedicationDispense | MedicationRequest | PractitionerRole | Group | Immunization | RelatedPerson | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Maternal Outcome | 5 | – | – | – | – | 2 | 1 | 1 | 1 | – | – | – | 1 | – | – | – | – | 1 | – | – | – | 12 |
+| Raffle | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | 2 | – | 1 | – | – | – | – | – | – | 8 |
+| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | 2 | 2 | 1 | – | 1 | – | 61 |
+| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 3 | 2 | 1 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | 56 |
+| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 62 |
+| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 50 |
+| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| SITB TB 16K | 14 | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | 1 | – | 1 | 21 |
+| **Total (non-unik)** | **125** | **48** | **47** | **46** | **12** | **10** | **9** | **8** | **8** | **4** | **3** | **3** | **3** | **2** | **2** | **2** | **2** | **2** | **1** | **1** | **1** | **339** |
+| **Total unik** | **71** | **20** | **19** | **4** | **7** | **4** | **7** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **2** | **2** | **1** | **1** | **1** | **1** | **148** |
+
+Catatan:
+- Organization tidak dihitung di Kobo, SiGizi, TB 04, dan TB 16K (lookup master data, bloknya tidak ditulis di dictionary). Location di Maternal Outcome dan SiGizi ANC juga lookup (tidak dihitung), tapi di Raffle dihitung karena dibuat dari form.
+- SiGizi ANC: faskes & posyandu berupa string → lookup master data. PractitionerRole petugas lab → lookup (tidak dihitung). 6 Specimen di SiGizi ANC hanya 2 jenis (darah vena ×5, urine ×1). Code Observation dengan 2 coding (LOINC + ANC custom) dihitung dua-duanya.
+- PractitionerRole tenaga pemeriksa SiGizi ANC dan PractitionerRole MO sama-sama tanpa code pembeda tetap (code-nya opsi), jadi dihitung sebagai payload yang sama.
+- EpisodeOfCare: Maternal Outcome = ANC & PNC ditutup (finished, hari ke-43); Raffle = ANC dicari dulu, kalau tidak ada baru dibuat.
+- Encounter muncul di 2 blok kamus (data utama + statusHistory) = 1 payload.
+- SITB TB 06, TB 03 SO, TB 03 RO: blok faskes (Organization + Location) **dihitung** karena dimapping dari variabel faskes di form (match + update). TB 04 dan TB 16K: faskes lookup (TB 04 lewat metadata `puskesmas_id` / `puskesmas_name`). PractitionerRole petugas lab/radiografer dan Practitioner PJ SITB = lookup master data (tidak dihitung). Baris yang dicoret di sheet tidak dipakai. Lihat asumsi A1–A12 di `revisi.md`.
+- SITB: opsi coded yang mengikuti jawaban ikut dihitung sebagai code (reasonCode ServiceRequest, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, metode biakan) — disetujui, lihat `aturan.md`. Karena itu jumlah code SITB besar (mis. TB 04: 16 ServiceRequest × 9 alasan pemeriksaan, 16 Specimen × 11 jenis contoh uji).
+- SITB TB 04: 1 dictionary untuk TB 04 Fasyankes dan TB 04 Rujukan (header sama). TB 03 RO: follow up 24 bulan = 1 template BTA + 1 template Biakan (asumsi A7); setiap pemeriksaan lab punya ServiceRequest + Specimen + Observation + DiagnosticReport (T03R-4).
+- SITB: EpisodeOfCare TB-SO / TB-RO, Patient, Encounter, Condition A15.0, Observation umur (424144002), HIV/DM, lab (11545-1, X0993xx) dipakai ulang di beberapa form SITB → total unik jauh lebih kecil dari non-unik.
+
+---
+
+---
 
 ## Log perubahan output
+- 2026-11-18: Format tabel: "Jumlah per CodeSystem" hanya CodeSystem + jumlah (daftar code per baris ada di tabel Frekuensi code). "Payload per resource" ditranspos: baris = form, kolom = resource FHIR, tanpa kolom pembeda; ditambah baris Total unik. Bagian Catatan dikembalikan (sempat terhapus 17 Nov) dan diperbarui. Angka tidak berubah. Format yang sama dipakai di `output/<form>.md` (Code per CodeSystem tanpa daftar code).
 - 2026-11-17: TB 04 lookup faskes saja (blok Org/Location dihapus, 71 → **69** payload). TB 03 RO: ServiceRequest + Specimen + DiagnosticReport untuk 7 pemeriksaan lab (30 → **50** payload, 357 → **377** code). TB 06 kolom AC (tambahan user) tidak dihitung. Total non-unik 339 / 1758, unik 148 / 434.
 - 2026-11-17: Blok faskes dikembalikan (A3): +2 payload di TB 06 (56), TB 04 (71); +1 di TB 03 SO (62), TB 03 RO (30). Code tidak berubah.
 - 2026-11-17: SP001138–SP001140 dibatalkan; SP001137 jadi "Paduan lainnya" (TB 03 SO & RO). Varian teks paduan ditambah sebagai baris alias (code lama, tidak dihitung ulang). TB 03 SO 332 → **329** code, TB 03 RO 356 → **357** code. Total non-unik 315 / 1738, unik 147 / 434.

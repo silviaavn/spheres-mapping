@@ -64,14 +64,14 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 ### Code per CodeSystem
 
-| CodeSystem | Jumlah | Code |
-|---|---|---|
-| http://snomed.info/sct | 4 | 223366009, 102514002, 39104002, 419099009 |
-| http://terminology.kemkes.go.id/sp | 4 | SP000396, SP000397, SP000738, SP000389 |
-| http://loinc.org | 3 | 93857-1, 81956-5, 79378-6 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 | ANC, PNC |
-| http://terminology.kemkes.go.id/CodeSystem/location-type | 1 | LT000005 |
-| **Total** | **14** | |
+| CodeSystem | Jumlah |
+|---|---|
+| http://snomed.info/sct | 4 |
+| http://terminology.kemkes.go.id/sp | 4 |
+| http://loinc.org | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/location-type | 1 |
+| **Total** | **14** |
 
 ## Variabel di luar payload
 

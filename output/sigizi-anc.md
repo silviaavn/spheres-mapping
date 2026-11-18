@@ -248,20 +248,20 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 ### Code per CodeSystem
 
-| CodeSystem | Jumlah | Code |
-|---|---|---|
-| http://snomed.info/sct | 52 | 309453006, 309343006, 309367003, 224535009, 134435003, 424144002, 392570002, 2004005, 38341003, 45007003, 284473002, 289625003, 289437007, 289441006, 289440007, 312668007, 289439005, 1209182005, 268445003, 169221005, 169255008, 122555007, 122555007, 122555007, 122575003, 122555007, 860635002, 122555007, 166921001, 166922008, 15220000, 74964007, 116859006, 74964007, 3457005, 48194001, 398254007, 15938005, 135840009, 308116003, 74964007, 3457005, 435591000124104, 3457005, 40733004, 73211009, 414916001, 56717001, 56265001, 74964007, 1230101008, 385892002 |
-| http://loinc.org | 43 | 8665-2, 18185-9, 11778-8, 8302-2, 29463-7, 883-9, LA19710-5, LA19709-7, LA19708-9, LA28449-9, 10331-7, LA6576-8, LA6577-6, 72155-5, 68961-2, 68961-2, LA15255-5, LA15256-3, 68961-2, 75410-1, 75410-1, LA6576-8, LA6577-6, 75410-1, 22464-2, 22464-2, LA6576-8, LA6577-6, 22464-2, 2887-8, 2887-8, LA6576-8, LA6577-6, 2887-8, 718-7, 718-7, 718-7, 74774-1, 74774-1, 74774-1, 88874-3, 76772-3, 104742-2 |
-| http://terminology.kemkes.go.id/sp | 18 | SP000001, SP000002, SP000003, SP000004, SP000005, SP000006, SP000370, SP000370, SP000007, SP000008, SP000009, SP000010, SP000011, SP000012, SP000013, SP000014, SP000015, SP000016 |
-| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 | ANC.B6.DE14, ANC.B6.DE22, ANC.B8.DE1, ANC.B8.DE3, ANC.B9.DE24, ANC.B9.DE29, ANC.B8.DE111, ANC.B9.DE32, ANC.B9.DE60, ANC.B9.DE96, ANC.B9.DE114, ANC.B9.DE175, ANC.B9.DE159 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 | OC000010, OI000018, OI000035, OI000032, OI000033, OI000034 |
-| http://sys-ids.kemkes.go.id/kfa | 3 | VG139, 92000653, 93015491 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 | K1M, K1A |
-| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 | ANC.SS.DE58, ANC.SS.DE3 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 | ANC |
-| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 | N |
-| http://hl7.org/fhir/sid/icd-9-cm | 1 | 88.78 |
-| **Total** | **142** | |
+| CodeSystem | Jumlah |
+|---|---|
+| http://snomed.info/sct | 52 |
+| http://loinc.org | 43 |
+| http://terminology.kemkes.go.id/sp | 18 |
+| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 |
+| http://sys-ids.kemkes.go.id/kfa | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
+| http://hl7.org/fhir/sid/icd-9-cm | 1 |
+| **Total** | **142** |
 
 ## Variabel di luar payload
 

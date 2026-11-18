@@ -147,13 +147,13 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
             "|---|---|---|---|---|---|---|"]
     for i, d in enumerate(codes, 1):
         out.append(f"| {i} | {d['line']} | {d['res']} | `{d['path']}` | {d['code']} | {d['disp']} | {d['cs']} |")
-    out += ["", "### Code per CodeSystem", "", "| CodeSystem | Jumlah | Code |", "|---|---|---|"]
+    out += ["", "### Code per CodeSystem", "", "| CodeSystem | Jumlah |", "|---|---|"]
     by_cs = OrderedDict()
     for d in codes:
         by_cs.setdefault(d["cs"], []).append(d["code"])
     for cs, cl in sorted(by_cs.items(), key=lambda x: -len(x[1])):
-        out.append(f"| {cs} | {len(cl)} | {', '.join(cl)} |")
-    out += [f"| **Total** | **{len(codes)}** | |", "",
+        out.append(f"| {cs} | {len(cl)} |")
+    out += [f"| **Total** | **{len(codes)}** |", "",
             "## Variabel di luar payload", "",
             "Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di sini = ⚠️ perlu dicek.", "",
             "| Baris | Variabel BQ | Variabel dictionary | Resource | Path |", "|---|---|---|---|---|"]

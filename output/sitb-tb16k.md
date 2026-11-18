@@ -96,15 +96,15 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 ### Code per CodeSystem
 
-| CodeSystem | Jumlah | Code |
-|---|---|---|
-| http://terminology.kemkes.go.id/sp | 14 | SP000373, SP000200, SP000369, SP000201, SP000202, SP000206, SP000207, SP000208, SP000209, SP000210, SP000211, SP000374, SP000212, SP000213 |
-| http://snomed.info/sct | 14 | 424144002, 106229004, 415759006, 424144002, 185389009, 737492002, 225368008, 439708006, 171400006, 56717001, 371001000, 182992009, 419099009, 399307001 |
-| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 | tb-bac, tb-clin |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 | TB-SO, TB-RO |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 | CP000094, CP000096 |
-| http://hl7.org/fhir/sid/icd-10 | 1 | Z20.1 |
-| **Total** | **35** | |
+| CodeSystem | Jumlah |
+|---|---|
+| http://terminology.kemkes.go.id/sp | 14 |
+| http://snomed.info/sct | 14 |
+| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
+| http://hl7.org/fhir/sid/icd-10 | 1 |
+| **Total** | **35** |
 
 ## Variabel di luar payload
 

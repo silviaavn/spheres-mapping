@@ -377,19 +377,19 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 ### Code per CodeSystem
 
-| CodeSystem | Jumlah | Code |
-|---|---|---|
-| http://loinc.org | 130 | 24648-8, 24648-8, 24648-8, 23539-0, 71773-6, LA6576-8, LA6577-6, 23539-0, 71773-6, 55277-8, 33248-6, 11545-1, 11545-1, LA11841-6, LA11842-4, LA11843-2, 11545-1, 11545-1, 11545-1, LA11841-6, LA11842-4, LA11843-2, 11545-1, 11545-1, 89371-9, 11545-1, 89371-9, LA6577-6, 11545-1, 89371-9, 88874-3, LA11882-0, LA11883-8, LA11882-0, LA11883-8, LA11884-6, 89488-1, LA11882-0, LA11883-8, LA11884-6, 96110-2, LA11882-0, LA11883-8, LA11882-0, LA11883-8, LA11884-6, 89487-3, LA11882-0, LA11883-8, LA11884-6, 89484-0, LA11882-0, LA11883-8, LA11884-6, 89482-4, LA11882-0, LA11883-8, LA11884-6, 89483-2, LA11882-0, LA11883-8, LA11884-6, 13956-8, LA6576-8, LA6577-6, 89489-9, LA11882-0, LA11883-8, LA11884-6, 89488-1, LA11882-0, LA11883-8, LA11884-6, 13956-8, LA6576-8, LA6577-6, 20629-2, LA11882-0, LA11883-8, LA11884-6, 96112-8, LA11882-0, LA11883-8, LA11884-6, LA11882-0, LA11883-8, LA11884-6, 89482-4, LA11882-0, LA11883-8, LA11884-6, 89484-0, LA11882-0, LA11883-8, LA11884-6, 89483-2, LA11882-0, LA11883-8, LA11884-6, LA6577-6, LA6576-8, LA11841-6, LA11842-4, LA11843-2, LA24225-7, LA6676-6, LA16550-8, 20383-6, LA24225-7, LA6676-6, LA16550-8, 23609-1, LA24225-7, LA6676-6, LA16550-8, 23607-5, LA24225-7, LA6676-6, LA16550-8, 53716-7, LA24225-7, LA6676-6, LA16550-8, LA24225-7, LA6676-6, LA16550-8, 41502-6, LA24225-7, LA6676-6, LA16550-8 |
-| http://terminology.kemkes.go.id/CodeSystem/examination | 55 | X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099770, X099771, X099772, X099379, X099380, X099381, X099388, X099383, MK099926, MK099927, X099379, X099379, X099781, X099391, X099392, X099379, X099380, X099380, X099781, X099774, X099774, X099380, X099381, X099381, X099781, X099774, X099774, X099775, X099774, X099774, X099774, X099774, X099381, X099388, X099388, X099388, X099383, X099383, X099776, X099778, X099383 |
-| http://snomed.info/sct | 40 | 257622000, 424144002, 154283005, 423997002, 707307002, 707308007, 424489006, 35140007, 424489006, 35140007, 268376005, 268375009, 10828004, 260385009, 261665006, 10828004, 260385009, 261665006, 119334006, 260385009, 119334006, 260385009, 119334006, 119334006, 119334006, 119334006, 119334006, 110379001, 119334006, 106229004, 699618001, 266714009, 406149000, 419099009, 399307001, 365866002, 165816005, 165815009, 10828004, 260385009 |
-| http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 22 | new, relapse, failure-cat1, failure-cat2, loss-to-follow-up, failure-2line, not-eval, unknown, other, failure, failure-cat2, treatment-non-conversion-2, non-standard-treatment, failure-cat1, treatment-non-conversion-1, relapse, loss-to-follow-up, history-of-close-contact with-TB-DR, co-infected-TBHIV, failure-2line, TB-DR-relapse, TB-DR-returns |
-| http://terminology.kemkes.go.id/sp | 9 | SP000472, SP000473, SP000474, SP000475, SP000476, SP000477, SP001136, SP000046, SP000047 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 8 | EHA000001, EHA000002, EHA000003, EHA000004, EHA000005, QRI000001, QRI000002, OC000191 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 6 | TB-SO, TB-RO, TB-SO, TB-RO, TB-SO, TB-RO |
-| http://hl7.org/fhir/sid/icd-10 | 3 | Z03.0, A15.0, A16.2 |
-| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 | tb-bac, tb-clin |
-| http://terminology.kemkes.go.id | 1 | TK000022 |
-| **Total** | **276** | |
+| CodeSystem | Jumlah |
+|---|---|
+| http://loinc.org | 130 |
+| http://terminology.kemkes.go.id/CodeSystem/examination | 55 |
+| http://snomed.info/sct | 40 |
+| http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 22 |
+| http://terminology.kemkes.go.id/sp | 9 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 8 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 6 |
+| http://hl7.org/fhir/sid/icd-10 | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
+| http://terminology.kemkes.go.id | 1 |
+| **Total** | **276** |
 
 ## Variabel di luar payload
 

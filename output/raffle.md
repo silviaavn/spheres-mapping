@@ -52,12 +52,12 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
 ### Code per CodeSystem
 
-| CodeSystem | Jumlah | Code |
-|---|---|---|
-| http://terminology.kemkes.go.id/sp | 4 | SP001135, SP000776, SP000777, SP000778 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 | ANC |
-| http://snomed.info/sct | 1 | 385438008 |
-| **Total** | **6** | |
+| CodeSystem | Jumlah |
+|---|---|
+| http://terminology.kemkes.go.id/sp | 4 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
+| http://snomed.info/sct | 1 |
+| **Total** | **6** |
 
 ## Variabel di luar payload
 
