@@ -1,0 +1,50 @@
+# spheres-mapping
+
+Konsolidasi mapping FHIR (SatuSehat) dari data dictionary form SPHERES: form **Kobo** dan **PHDT Data Dictionary** (SiGizi, SITB, dll). Untuk setiap form dihitung payload (resource FHIR) dan code-nya, lalu digabung jadi angka lintas form.
+
+## Mulai dari mana
+
+| File | Isi |
+|---|---|
+| [`form-tracker.md`](form-tracker.md) | Daftar semua sumber data/laporan + status: masih diperlukan, dimapping ke FHIR, sudah direview. Versi editable: [Sheet](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj) |
+| [`aturan.md`](aturan.md) | Aturan hitung payload & code, checklist setiap form baru, log perubahan aturan |
+| [`output.md`](output.md) | Konsolidasi semua form: ringkasan, jumlah per CodeSystem, payload per resource |
+| [`frekuensi-payload.md`](frekuensi-payload.md) | Setiap payload unik dan form yang memakainya |
+| [`frekuensi-code.md`](frekuensi-code.md) | Setiap code unik (dengan CodeSystem) dan form yang memakainya |
+| [`revisi.md`](revisi.md) | Temuan yang perlu diperbaiki di data dictionary dan catatan pipeline |
+
+## Struktur folder
+
+```
+mapping/   data dictionary per form (CSV)
+           kobo-data-dictionary-<form>.csv   → form Kobo
+           phdt-data-dictionary-<form>.csv   → PHDT Data Dictionary (SiGizi, SITB)
+output/    output per form: payload, code, nomor baris dictionary
+raw/       struktur kolom file mentah (header, variabel BQ, jumlah terisi)
+           file asli tidak di-commit, kolom identitas pasien tidak ditampilkan
+scripts/   form_output.py: membuat output/<form>.md dari dictionary
+```
+
+## Form yang sudah dihitung
+
+Maternal Outcome, Raffle (Kobo) · SiGizi ANC · SITB TB 06, TB 03 SO, TB 03 RO, TB 04 (Fasyankes & Rujukan), TB 16K. Angka terbaru ada di [`output.md`](output.md), status per form di [`form-tracker.md`](form-tracker.md).
+
+## Menambah form baru
+
+Ikuti checklist di [`aturan.md`](aturan.md#checklist-setiap-form-baru). Singkatnya:
+
+1. Minta daftar variabel BQ form tersebut. Kalau ada file mentah, buat `raw/<form>-kolom.md`.
+2. Cek tally: semua variabel BQ harus masuk ke salah satu payload.
+3. Isi kolom `Nama Column BQ`, `jumlah instance`, dan `jumlah code` di dictionary `mapping/`.
+4. Buat output per form:
+   ```
+   python3 scripts/form_output.py mapping/<sumber>-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md [raw/<form>-kolom.md]
+   ```
+5. Update `output.md`, `frekuensi-payload.md`, `frekuensi-code.md`, dan `revisi.md`.
+6. Ubah **Status review** form itu jadi ✅ di `form-tracker.md` dan di Sheet.
+
+## Konvensi
+
+- Payload = 1 resource FHIR yang dibuat dari submission form, identitasnya resource + determining code.
+- Organization, Location, dan PractitionerRole yang hanya di-lookup ke master data tidak dihitung (detail dan pengecualian di `aturan.md`).
+- Extension custom memakai prefix `http://terminology.kemkes.go.id/sp/`. Code `SPxxx` memakai CodeSystem `http://terminology.kemkes.go.id/sp`, code `TKxxx` memakai `http://terminology.kemkes.go.id`.
