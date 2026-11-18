@@ -1,6 +1,6 @@
 # Aturan Hitung Payload & Code — Form Kobo & PHDT
 
-Terakhir diperbarui: 2026-11-17
+Terakhir diperbarui: 2026-11-18
 
 ## Sumber dictionary
 - **Kobo**: `mapping/kobo-data-dictionary-<form>.csv` (Maternal Outcome, Raffle).
@@ -57,6 +57,7 @@ Terakhir diperbarui: 2026-11-17
    `python3 scripts/form_output.py mapping/kobo-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md [raw/<form>-kolom.md]`
    Kalau ada file mentah, tambahkan argumen ke-4 `raw/<form>-kolom.md`.
 5. Update konsolidasi `output.md`, `frekuensi-payload.md`, `frekuensi-code.md` (angka per form harus sama dengan `output/<form>.md`) dan `revisi.md`.
+6. Update **Status review** form itu jadi ✅ di `daftar-sumber-data.md` (dan di Sheet "Daftar Sumber Data Puskesmas - Mapping FHIR"), lalu hitung ulang baris ringkasan di atas tabel (Sudah direview). Kalau form belum ada di daftar, tambahkan barisnya.
 
 ## Kolom di data dictionary
 - `jumlah instance` = isi 1 di baris pertama setiap payload.
@@ -68,6 +69,7 @@ Terakhir diperbarui: 2026-11-17
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
+- 2026-11-18: Tambah `daftar-sumber-data.md` (daftar semua sumber data/laporan + status diperlukan, dimapping, review). Checklist langkah 6: setiap form selesai, update Status review di file ini.
 - 2026-11-18: `output.md` hanya berisi ringkasan, jumlah per CodeSystem, payload per resource, catatan; frekuensi payload & code di `frekuensi-payload.md` / `frekuensi-code.md`. Format output: tabel per CodeSystem hanya jumlah; tabel Payload per resource di `output.md` = baris form × kolom resource FHIR.
 - 2026-11-17: (SITB) Blok faskes dengan variabel dari form tetap dimapping dan dihitung (match + update).
 - 2026-11-17: (SITB) Opsi coded reasonCode, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, Observation.method ikut dihitung sebagai code. Baris dicoret di sheet dan kolom data lokal SITB (No. Urut, Bulan, No. Reg Fasyankes) tidak dimapping.
