@@ -45,7 +45,7 @@ Terakhir diperbarui: 2026-11-17
 
 ## Total unik lintas form
 - Payload/code yang sama di beberapa form hanya dihitung sekali.
-- Setiap form baru masuk: tambahkan nama form di kolom "Dipakai di form" di `output.md`, naikkan frekuensinya, lalu hitung ulang baris "Total unik".
+- Setiap form baru masuk: tambahkan nama form di kolom "Dipakai di form" di `frekuensi-payload.md` / `frekuensi-code.md` (dibuat ulang otomatis bersama `output.md`), naikkan frekuensinya, lalu hitung ulang baris "Total unik".
 
 ## Checklist setiap form baru
 1. **Minta daftar variabel BQ dari form** (nama kolom di BigQuery). Jangan mulai hitung sebelum daftar ini ada. Kalau ada file mentah, cocokkan juga kolom mentah ↔ BQ (lihat "Sumber kebenaran: file mentah") dan buat `raw/<form>-kolom.md`.
@@ -56,7 +56,7 @@ Terakhir diperbarui: 2026-11-17
 4. Isi kolom `jumlah instance` dan `jumlah code` di dictionary `mapping/`, lalu buat output per form:
    `python3 scripts/form_output.py mapping/kobo-data-dictionary-<form>.csv "<Nama Form>" output/<form>.md [raw/<form>-kolom.md]`
    Kalau ada file mentah, tambahkan argumen ke-4 `raw/<form>-kolom.md`.
-5. Update konsolidasi `output.md` (angka per form harus sama dengan `output/<form>.md`) dan `revisi.md`.
+5. Update konsolidasi `output.md`, `frekuensi-payload.md`, `frekuensi-code.md` (angka per form harus sama dengan `output/<form>.md`) dan `revisi.md`.
 
 ## Kolom di data dictionary
 - `jumlah instance` = isi 1 di baris pertama setiap payload.
@@ -68,7 +68,7 @@ Terakhir diperbarui: 2026-11-17
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
-- 2026-11-18: Format output: tabel per CodeSystem hanya jumlah; tabel Payload per resource di `output.md` = baris form × kolom resource FHIR.
+- 2026-11-18: `output.md` hanya berisi ringkasan, jumlah per CodeSystem, payload per resource, catatan; frekuensi payload & code di `frekuensi-payload.md` / `frekuensi-code.md`. Format output: tabel per CodeSystem hanya jumlah; tabel Payload per resource di `output.md` = baris form × kolom resource FHIR.
 - 2026-11-17: (SITB) Blok faskes dengan variabel dari form tetap dimapping dan dihitung (match + update).
 - 2026-11-17: (SITB) Opsi coded reasonCode, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, Observation.method ikut dihitung sebagai code. Baris dicoret di sheet dan kolom data lokal SITB (No. Urut, Bulan, No. Reg Fasyankes) tidak dimapping.
 - 2026-11-16: Nama file dictionary dibedakan per sumber: `kobo-` untuk Kobo, `phdt-` untuk PHDT Data Dictionary.
