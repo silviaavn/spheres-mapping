@@ -122,11 +122,15 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
            f"Sumber: `{src}`",
            "Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.",
            "Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.", "",
+           "File terkait: [`output.md`](../output.md) (konsolidasi semua form) · "
+           "[`frekuensi-payload.md`](../frekuensi-payload.md) · [`frekuensi-code.md`](../frekuensi-code.md) · "
+           f"[dictionary](../{src})" + (f" · [struktur file mentah](../{raw_path})" if raw_path else ""), "",
            "## Ringkasan", "",
            "| Item | Jumlah |", "|---|---|",
            f"| Payload (`jumlah instance` = 1) | {len(payloads)} |",
            f"| Code (`jumlah code` = 1) | {len(codes)} |",
            f"| Code unik (code + CodeSystem) | {len({(d['code'], d['cs']) for d in codes})} |",
+           f"| Code SP (`http://terminology.kemkes.go.id/sp`) | {sum(1 for d in codes if d['cs'].strip().rstrip('/') == 'http://terminology.kemkes.go.id/sp')} |",
            f"| Variabel BQ (unik) | {len(bq)} |"]
     if raw is not None:
         out.append(f"| Variabel di Excel export | {len(raw)} |")

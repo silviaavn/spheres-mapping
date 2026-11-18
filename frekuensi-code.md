@@ -1,6 +1,8 @@
 # Frekuensi Code (lintas form)
 
-Bagian dari konsolidasi `output.md`. Dibuat otomatis, jangan diedit manual. Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul N kali di form itu.
+Bagian dari konsolidasi [`output.md`](output.md). Dibuat otomatis, jangan diedit manual. Lihat juga [`frekuensi-payload.md`](frekuensi-payload.md).
+
+Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul N kali di form itu.
 
 | # | Code | Display | CodeSystem | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|

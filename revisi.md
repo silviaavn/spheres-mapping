@@ -219,7 +219,7 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 
 | Form | Kolom file mentah | Variabel BQ (total / isi form) | Dipetakan ke payload | Tidak dimapping (keputusan tim) | Kolom baru (belum ada di BQ) |
 |---|---|---|---|---|---|
-| TB 06 | 96 | 103 / 96 | 93 | 4: `no_urut`, `bulan` (lokal SITB); `status_diagnosis`, `no_bpjs` (dicoret di sheet) | – (kolom AC "Klasifikasi Terduga TBC" = tambahan user, tidak dihitung) |
+| TB 06 | 96 | 103 / 96 | 92 | 4: `no_urut`, `bulan` (lokal SITB); `status_diagnosis`, `no_bpjs` (dicoret di sheet) | – (kolom AC "Klasifikasi Terduga TBC" = tambahan user, tidak dihitung) |
 | TB 03 SO | 84 | 91 / 84 | 76 | 8: `no_urut`, `no_registrasi_fasyankes`, `noregistrasi_tbc_kabkota`, `bulan` (lokal SITB); 4× `..._no_reg_lab` (keputusan tim) | – |
 | TB 03 RO | 144 | 151 / 144 | 140 | 4: `no_urut`, `no_registrasi_fasyankes`, `no_registrasi_tbc_kabkota`, `bulan` (lokal SITB) | – |
 | TB 04 | 114 | 118 / 111 | 102 | 12: `no_urut` (lokal SITB); 9× `..._noreg_lab`, `tanda_tangan_petugas_pemeriksa`, `keterangan` (keputusan tim) | `nama_fasyankes`, `kabupaten_fasyankes`, `provinsi_fasyankes` (T04-1) |
@@ -368,6 +368,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P35 | TB 03 RO | Pemeriksaan lab sekarang ServiceRequest + Specimen + Observation + DiagnosticReport (7 pemeriksaan, 2 di antaranya template follow up per bulan). Tanggal permintaan/pengambilan tidak ada di export (kecuali Uji Kepekaan) → pakai tanggal hasil. Path `Specimen.collectedDateTime` diperbaiki jadi `Specimen.collection.collectedDateTime` (TB 03 SO & RO) | Converter | open |
 
 ## Log perubahan revisi
+- 2026-11-18: Tally TB 06: variabel BQ yang dipetakan 93 → 92 (kolom AC tambahan user tidak dihitung).
 - 2026-11-17: P25/T06-1 ditutup (kolom AC = tambahan user). T03S-6: path sudah dipakai di TB 02 baris 95. T04-6: TB 04 lookup saja. T03R-4: SR/Specimen/DR ditambah di TB 03 RO (+20 payload). Tambah P35.
 - 2026-11-17: Jawaban user: A1, A4, A5, A7, A8, A10, T16-7 disetujui. A3 diubah (blok faskes tetap dimapping & update). A11: `nama_fasyankes` = metadata pipeline. T03S-6 tanpa code. T04-1 ditutup (format baru), tambah T04-6. P25, P28 diperbarui.
 - 2026-11-17: Paduan pengobatan: SP001138–SP001140 dibatalkan, SP001137 = Paduan lainnya; baris alias + `productCodeableConcept.text` (TB 03 SO & RO). T03R-5 done. P33 diperbarui, tambah P34.

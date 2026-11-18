@@ -1,6 +1,6 @@
 # Frekuensi Payload (lintas form)
 
-Bagian dari konsolidasi `output.md`. Dibuat otomatis, jangan diedit manual.
+Bagian dari konsolidasi [`output.md`](output.md). Dibuat otomatis, jangan diedit manual. Lihat juga [`frekuensi-code.md`](frekuensi-code.md).
 
 Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 
@@ -155,4 +155,4 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 147 | Observation | SP000212 | Tanggal Pemberian TPT | SITB TB 16K | 1 |
 | 148 | Observation | SP000213 | Hasil Akhir TPT | SITB TB 16K | 1 |
 
-Variabel dictionary / BQ per payload: lihat `output/<form>.md`.
+Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).

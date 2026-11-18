@@ -1,16 +1,16 @@
 # Output Hitungan Payload & Code — Form Kobo & PHDT
 
 Terakhir diperbarui: 2026-11-18
-Aturan hitung: lihat `aturan.md`
+Aturan hitung: lihat [`aturan.md`](aturan.md) · Temuan & catatan pipeline: [`revisi.md`](revisi.md)
 Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
-- **Maternal Outcome** → `output/maternal-outcome.md` (sumber: `mapping/kobo-data-dictionary-maternal-outcome.csv`)
-- **Raffle** → `output/raffle.md` (sumber: `mapping/kobo-data-dictionary-raffle.csv`)
-- **SiGizi ANC** → `output/sigizi-anc.md` (sumber: `mapping/phdt-data-dictionary-sigizi-anc.csv`, PHDT Data Dictionary; struktur file mentah: `raw/sigizi-anc-kolom.md`)
-- **SITB TB 06** → `output/sitb-tb06.md` (sumber: `mapping/phdt-data-dictionary-sitb-tb06.csv`; file mentah: `raw/sitb-tb06-kolom.md`)
-- **SITB TB 03 SO** → `output/sitb-tb03-so.md` (sumber: `mapping/phdt-data-dictionary-sitb-tb03-so.csv`; file mentah: `raw/sitb-tb03-so-kolom.md`)
-- **SITB TB 03 RO** → `output/sitb-tb03-ro.md` (sumber: `mapping/phdt-data-dictionary-sitb-tb03-ro.csv`; file mentah: `raw/sitb-tb03-ro-kolom.md`)
-- **SITB TB 04** (Fasyankes & Rujukan) → `output/sitb-tb04.md` (sumber: `mapping/phdt-data-dictionary-sitb-tb04.csv`; file mentah: `raw/sitb-tb04-kolom.md`)
-- **SITB TB 16K** → `output/sitb-tb16k.md` (sumber: `mapping/phdt-data-dictionary-sitb-tb16k.csv`; file mentah: `raw/sitb-tb16k-kolom.md`)
+- **Maternal Outcome** → [`output/maternal-outcome.md`](output/maternal-outcome.md) (sumber: [`mapping/kobo-data-dictionary-maternal-outcome.csv`](mapping/kobo-data-dictionary-maternal-outcome.csv))
+- **Raffle** → [`output/raffle.md`](output/raffle.md) (sumber: [`mapping/kobo-data-dictionary-raffle.csv`](mapping/kobo-data-dictionary-raffle.csv))
+- **SiGizi ANC** → [`output/sigizi-anc.md`](output/sigizi-anc.md) (sumber: [`mapping/phdt-data-dictionary-sigizi-anc.csv`](mapping/phdt-data-dictionary-sigizi-anc.csv), PHDT Data Dictionary; struktur file mentah: [`raw/sigizi-anc-kolom.md`](raw/sigizi-anc-kolom.md))
+- **SITB TB 06** → [`output/sitb-tb06.md`](output/sitb-tb06.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb06.csv`](mapping/phdt-data-dictionary-sitb-tb06.csv); file mentah: [`raw/sitb-tb06-kolom.md`](raw/sitb-tb06-kolom.md))
+- **SITB TB 03 SO** → [`output/sitb-tb03-so.md`](output/sitb-tb03-so.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb03-so.csv`](mapping/phdt-data-dictionary-sitb-tb03-so.csv); file mentah: [`raw/sitb-tb03-so-kolom.md`](raw/sitb-tb03-so-kolom.md))
+- **SITB TB 03 RO** → [`output/sitb-tb03-ro.md`](output/sitb-tb03-ro.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb03-ro.csv`](mapping/phdt-data-dictionary-sitb-tb03-ro.csv); file mentah: [`raw/sitb-tb03-ro-kolom.md`](raw/sitb-tb03-ro-kolom.md))
+- **SITB TB 04** (Fasyankes & Rujukan) → [`output/sitb-tb04.md`](output/sitb-tb04.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb04.csv`](mapping/phdt-data-dictionary-sitb-tb04.csv); file mentah: [`raw/sitb-tb04-kolom.md`](raw/sitb-tb04-kolom.md))
+- **SITB TB 16K** → [`output/sitb-tb16k.md`](output/sitb-tb16k.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb16k.csv`](mapping/phdt-data-dictionary-sitb-tb16k.csv); file mentah: [`raw/sitb-tb16k-kolom.md`](raw/sitb-tb16k-kolom.md))
 
 File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
@@ -36,19 +36,21 @@ File terpisah (detail):
 
 ## Ringkasan semua form
 
-| Form | Payload | Code |
-|---|---|---|
-| Maternal Outcome | 12 | 14 |
-| Raffle | 8 | 6 |
-| SiGizi ANC | 61 | 142 |
-| SITB TB 06 | 56 | 276 |
-| SITB TB 03 SO | 62 | 329 |
-| SITB TB 03 RO | 50 | 377 |
-| SITB TB 04 | 69 | 579 |
-| SITB TB 16K | 21 | 35 |
-| **Total (non-unik)** | **339** | **1758** |
-| **Total unik** | **148** | **434** |
-| Selisih (dipakai ulang) | 191 | 1324 |
+Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` (sudah termasuk di kolom Code).
+
+| Form | Payload | Code | Code SP |
+|---|---|---|---|
+| Maternal Outcome | 12 | 14 | 4 |
+| Raffle | 8 | 6 | 4 |
+| SiGizi ANC | 61 | 142 | 18 |
+| SITB TB 06 | 56 | 276 | 9 |
+| SITB TB 03 SO | 62 | 329 | 10 |
+| SITB TB 03 RO | 50 | 377 | 11 |
+| SITB TB 04 | 69 | 579 | 24 |
+| SITB TB 16K | 21 | 35 | 14 |
+| **Total (non-unik)** | **339** | **1758** | **94** |
+| **Total unik** | **148** | **434** | **59** |
+| Selisih (dipakai ulang) | 191 | 1324 | 35 |
 
 ---
 
@@ -113,6 +115,7 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 ---
 
 ## Log perubahan output
+- 2026-11-18: Ringkasan semua form: tambah kolom **Code SP** (CodeSystem `http://terminology.kemkes.go.id/sp`). Daftar form diberi link. Output per form diberi baris File terkait (link ke `output.md`, frekuensi, dictionary, file mentah) dan baris Code SP di Ringkasan.
 - 2026-11-18: `output.md` dirampingkan: tambah Daftar isi; tabel Frekuensi payload dan Frekuensi code dipindah ke file terpisah `frekuensi-payload.md` dan `frekuensi-code.md`. Angka tidak berubah.
 - 2026-11-18: Format tabel: "Jumlah per CodeSystem" hanya CodeSystem + jumlah (daftar code per baris ada di tabel Frekuensi code). "Payload per resource" ditranspos: baris = form, kolom = resource FHIR, tanpa kolom pembeda; ditambah baris Total unik. Bagian Catatan dikembalikan (sempat terhapus 17 Nov) dan diperbarui. Angka tidak berubah. Format yang sama dipakai di `output/<form>.md` (Code per CodeSystem tanpa daftar code).
 - 2026-11-17: TB 04 lookup faskes saja (blok Org/Location dihapus, 71 → **69** payload). TB 03 RO: ServiceRequest + Specimen + DiagnosticReport untuk 7 pemeriksaan lab (30 → **50** payload, 357 → **377** code). TB 06 kolom AC (tambahan user) tidak dihitung. Total non-unik 339 / 1758, unik 148 / 434.

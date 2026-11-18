@@ -4,6 +4,8 @@ Sumber: `mapping/phdt-data-dictionary-sitb-tb06.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.
 Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 
+File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuensi-payload.md`](../frekuensi-payload.md) · [`frekuensi-code.md`](../frekuensi-code.md) · [dictionary](../mapping/phdt-data-dictionary-sitb-tb06.csv) · [struktur file mentah](../raw/sitb-tb06-kolom.md)
+
 ## Ringkasan
 
 | Item | Jumlah |
@@ -11,6 +13,7 @@ Kolom **Baris** = nomor baris di file CSV sumber, untuk ditelusuri.
 | Payload (`jumlah instance` = 1) | 56 |
 | Code (`jumlah code` = 1) | 276 |
 | Code unik (code + CodeSystem) | 117 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 9 |
 | Variabel BQ (unik) | 92 |
 | Variabel di Excel export | 96 |
 
