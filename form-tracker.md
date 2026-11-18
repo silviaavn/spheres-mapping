@@ -2,7 +2,7 @@
 
 Versi editable: Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). Status review di-update di file ini **dan** di Sheet setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 231 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 205 · Sudah direview: 7
+Total: 232 laporan · Masih diperlukan: 218 · Dimapping ke FHIR: 206 · Sudah direview: 9
 
 | No | Sumber - Laporan | Masih diperlukan | Dimapping ke FHIR | Status review | Catatan |
 |---|---|:-:|:-:|:-:|---|
@@ -105,7 +105,7 @@ Total: 231 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 205 · Sudah d
 | 97 | Kobo - DDTK | ✅ | ✅ | ❌ |  |
 | 98 | Kobo - Form Pendataan Kader | ✅ | ✅ | ❌ |  |
 | 99 | Kobo - SDIDTK | ✅ | ✅ | ❌ |  |
-| 100 | Kobo - Maternal Outcome | ✅ | ✅ | ❌ |  |
+| 100 | Kobo - Maternal Outcome | ✅ | ✅ | ✅ |  |
 | 101 | KuApps New - BidanKu: ANC | ✅ | ✅ | ❌ |  |
 | 102 | KuApps New - BidanKu: PNC | ✅ | ✅ | ❌ |  |
 | 103 | KuApps New - BidanKu: BBL | ✅ | ✅ | ❌ |  |
@@ -237,3 +237,4 @@ Total: 231 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 205 · Sudah d
 | 229 | SIM RS Data - Tripat Hipertensi | ✅ | ✅ | ❌ |  |
 | 230 | SIM RS Data - Tripat Stroke | ✅ | ✅ | ❌ |  |
 | 231 | SIM RS Data - Tripat TB | ✅ | ✅ | ❌ |  |
+| 232 | Kobo - Raffle | ✅ | ✅ | ✅ |  |
