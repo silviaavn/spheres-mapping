@@ -38,10 +38,10 @@ Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah d
 | 30 | SIGIZI (Balita Gizi Kurang) - Pantau PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_pantau_pmt_2025` |  |
 | 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_riwayat_pmt_2025` |  |
 | 32 | SIGIZI (Balita Gizi Kurang) - Survey PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_survey_pmt_2025` |  |
-| 33 | SIGIZI IBU - Daftar Bumil | ✅ | ✅ | ❌ |  |  |
-| 34 | SIGIZI IBU - Daftar Nifas | ✅ | ✅ | ❌ |  |  |
-| 35 | SIGIZI IBU - Pengukuran ANC Bumil | ✅ | ✅ | ✅ |  |  |
-| 36 | SIGIZI IBU - Kohort Ibu | ✅ | ✅ | ❌ |  |  |
+| 33 | SIGIZI IBU - Daftar Bumil | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_daftar_bumil` |  |
+| 34 | SIGIZI IBU - Daftar Nifas | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_ibu_nifas` |  |
+| 35 | SIGIZI IBU - Pengukuran ANC Bumil | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sigizi_kesga_bumil_anc` |  |
+| 36 | SIGIZI IBU - Kohort Ibu | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_kohort_ibu` |  |
 | 37 | SIGIZI IBU - Rekap 12T (tidak dipakai karena data agregat) | ❌ | ❌ | ❌ |  |  |
 | 38 | SIGIZI IBU - Rekap PWS (hilang dari SIGIZI) | ❌ | ❌ | ❌ |  |  |
 | 39 | ASIK - Data Individu Kohort Bayi | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_test` |  |
