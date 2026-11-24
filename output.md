@@ -81,6 +81,37 @@ Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **SIM RS - Goetoeng BBL** (tracker #194) → [`output/rs-goetoeng-bbl.md`](output/rs-goetoeng-bbl.md) (sumber: [`mapping/phdt-data-dictionary-rs-goetoeng-bbl.csv`](mapping/phdt-data-dictionary-rs-goetoeng-bbl.csv), sheet `Mapping BBL Goeteng` di `PHDT_Data_Rumah_Sakit.xlsx`, ⚠️ belum comprehensive review)
 - **SIM RS - Goetoeng Diabetes Melitus** (tracker #196) → [`output/rs-goetoeng-dm.md`](output/rs-goetoeng-dm.md) (sumber: [`mapping/phdt-data-dictionary-rs-goetoeng-dm.csv`](mapping/phdt-data-dictionary-rs-goetoeng-dm.csv), sheet `Mapping DM Goeteng` di `PHDT_Data_Rumah_Sakit.xlsx`, ⚠️ belum comprehensive review)
 - **SIM RS - Goetoeng Hipertensi** (tracker #197) → [`output/rs-goetoeng-ht.md`](output/rs-goetoeng-ht.md) (sumber: [`mapping/phdt-data-dictionary-rs-goetoeng-ht.csv`](mapping/phdt-data-dictionary-rs-goetoeng-ht.csv), sheet `Mapping HT Goeteng` di `PHDT_Data_Rumah_Sakit.xlsx`, ⚠️ belum comprehensive review)
+- **SIM RS - Harapan Ibu ANC** (tracker #137, memakai template Spheres `template-anc`) → [`output/rs-harapan-ibu-anc.md`](output/rs-harapan-ibu-anc.md) (⚠️ belum comprehensive review)
+- **SIM RS - Harapan Ibu INC** (tracker #138, memakai template Spheres `template-inc`) → [`output/rs-harapan-ibu-inc.md`](output/rs-harapan-ibu-inc.md) (⚠️ belum comprehensive review)
+- **SIM RS - Harapan Ibu PNC** (tracker #139, memakai template Spheres `template-pnc`) → [`output/rs-harapan-ibu-pnc.md`](output/rs-harapan-ibu-pnc.md) (⚠️ belum comprehensive review)
+- **SIM RS - Harapan Ibu BBL** (tracker #140, memakai template Spheres `template-bbl-neo`) → [`output/rs-harapan-ibu-bbl.md`](output/rs-harapan-ibu-bbl.md) (⚠️ belum comprehensive review)
+- **SIM RS - At tin ANC** (tracker #128, memakai template Spheres `template-anc`) → [`output/rs-attin-anc.md`](output/rs-attin-anc.md) (⚠️ belum comprehensive review)
+- **SIM RS - At tin INC** (tracker #129, memakai template Spheres `template-inc`) → [`output/rs-attin-inc.md`](output/rs-attin-inc.md) (⚠️ belum comprehensive review)
+- **SIM RS - At tin PNC** (tracker #130, memakai template Spheres `template-pnc`) → [`output/rs-attin-pnc.md`](output/rs-attin-pnc.md) (⚠️ belum comprehensive review)
+- **SIM RS - At tin BBL** (tracker #131, memakai template Spheres `template-bbl-inc`) → [`output/rs-attin-bbl.md`](output/rs-attin-bbl.md) (⚠️ belum comprehensive review)
+- **SIM RS - Nirmala ANC** (tracker #164, memakai template Spheres `template-anc`) → [`output/rs-nirmala-anc.md`](output/rs-nirmala-anc.md) (⚠️ belum comprehensive review)
+- **SIM RS - Nirmala INC** (tracker #165, memakai template Spheres `template-inc`) → [`output/rs-nirmala-inc.md`](output/rs-nirmala-inc.md) (⚠️ belum comprehensive review)
+- **SIM RS - Nirmala PNC** (tracker #166, memakai template Spheres `template-pnc`) → [`output/rs-nirmala-pnc.md`](output/rs-nirmala-pnc.md) (⚠️ belum comprehensive review)
+- **SIM RS - Nirmala BBL** (tracker #167, memakai template Spheres `template-bbl-inc`) → [`output/rs-nirmala-bbl.md`](output/rs-nirmala-bbl.md) (⚠️ belum comprehensive review)
+- **SIM RS - PKU ANC** (tracker #182, memakai template Spheres `template-anc`) → [`output/rs-pku-anc.md`](output/rs-pku-anc.md) (⚠️ belum comprehensive review)
+- **SIM RS - PKU BBL** (tracker #185, memakai template Spheres `template-bbl-inc`) → [`output/rs-pku-bbl.md`](output/rs-pku-bbl.md) (⚠️ belum comprehensive review)
+- **SIM RS - MPH Hepatitis** (tracker #159, memakai template Spheres `template-hepb`) → [`output/rs-mph-hepatitis.md`](output/rs-mph-hepatitis.md) (⚠️ belum comprehensive review)
+- **SIM RS - Ummu Hani Hepatitis** (tracker #177, memakai template Spheres `template-hepb`) → [`output/rs-ummu-hani-hepatitis.md`](output/rs-ummu-hani-hepatitis.md) (⚠️ belum comprehensive review)
+- **SIM RS - PKU Hepatitis** (tracker #186, memakai template Spheres `template-hepb`) → [`output/rs-pku-hepatitis.md`](output/rs-pku-hepatitis.md) (⚠️ belum comprehensive review)
+- **SIM RS - Siaga Medika Hepatitis** (tracker #150, memakai template Spheres `template-hepb`) → [`output/rs-siaga-medika-hepatitis.md`](output/rs-siaga-medika-hepatitis.md) (⚠️ belum comprehensive review)
+- **Kobo Modul ANC** (tracker #83) → [`output/kobo-modul-anc.md`](output/kobo-modul-anc.md) (sumber: [`mapping/phdt-data-dictionary-kobo-modul-anc.csv`](mapping/phdt-data-dictionary-kobo-modul-anc.csv), sheet `ANC Kobo` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Modul INC** (tracker #84) → [`output/kobo-modul-inc.md`](output/kobo-modul-inc.md) (sumber: [`mapping/phdt-data-dictionary-kobo-modul-inc.csv`](mapping/phdt-data-dictionary-kobo-modul-inc.csv), sheet `INC Kobo` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Modul Neonatus** (tracker #85) → [`output/kobo-modul-neonatus.md`](output/kobo-modul-neonatus.md) (sumber: [`mapping/phdt-data-dictionary-kobo-modul-neonatus.csv`](mapping/phdt-data-dictionary-kobo-modul-neonatus.csv), sheet `Neonatus Kobo` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Modul PNC** (tracker #86) → [`output/kobo-modul-pnc.md`](output/kobo-modul-pnc.md) (sumber: [`mapping/phdt-data-dictionary-kobo-modul-pnc.csv`](mapping/phdt-data-dictionary-kobo-modul-pnc.csv), sheet `PNC Kobo` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Buku KIA 1 - ANC** (tracker #88) → [`output/kobo-kia1-anc.md`](output/kobo-kia1-anc.md) (sumber: [`mapping/phdt-data-dictionary-kobo-kia1-anc.csv`](mapping/phdt-data-dictionary-kobo-kia1-anc.csv), sheet `Mapping Kobo Buku KIA 1 - ANC (` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Buku KIA 2 - Luaran Kehamilan** (tracker #89) → [`output/kobo-kia2-luaran.md`](output/kobo-kia2-luaran.md) (sumber: [`mapping/phdt-data-dictionary-kobo-kia2-luaran.csv`](mapping/phdt-data-dictionary-kobo-kia2-luaran.csv), sheet `Mapping Variable Buku KIA Entry` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Buku KIA 3 - PNC** (tracker #90) → [`output/kobo-kia3-pnc.md`](output/kobo-kia3-pnc.md) (sumber: [`mapping/phdt-data-dictionary-kobo-kia3-pnc.csv`](mapping/phdt-data-dictionary-kobo-kia3-pnc.csv), sheet `Mapping Kobo Buku KIA 3 - PNC` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Buku KIA 4 - Cadre** (tracker #91) → [`output/kobo-kia4-cadre.md`](output/kobo-kia4-cadre.md) (sumber: [`mapping/phdt-data-dictionary-kobo-kia4-cadre.csv`](mapping/phdt-data-dictionary-kobo-kia4-cadre.csv), sheet `Mapping Variabel Kobo Buku KIA` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Buku KIA 5 - Vaksinatorku** (tracker #92) → [`output/kobo-kia5-vaksinator.md`](output/kobo-kia5-vaksinator.md) (sumber: [`mapping/phdt-data-dictionary-kobo-kia5-vaksinator.csv`](mapping/phdt-data-dictionary-kobo-kia5-vaksinator.csv), sheet `Mapping Kobo Vaksinator (revise` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Neonatus Outcome** (tracker #93) → [`output/kobo-neonatus-outcome.md`](output/kobo-neonatus-outcome.md) (sumber: [`mapping/phdt-data-dictionary-kobo-neonatus-outcome.csv`](mapping/phdt-data-dictionary-kobo-neonatus-outcome.csv), sheet `Neonatal Outcome Kobo` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Neonatus Outcome v2** (tracker #94) → [`output/kobo-neonatus-outcome-v2.md`](output/kobo-neonatus-outcome-v2.md) (sumber: [`mapping/phdt-data-dictionary-kobo-neonatus-outcome-v2.csv`](mapping/phdt-data-dictionary-kobo-neonatus-outcome-v2.csv), sheet `Neonatal Outcome v2` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo DDTK** (tracker #101) → [`output/kobo-ddtk.md`](output/kobo-ddtk.md) (sumber: [`mapping/phdt-data-dictionary-kobo-ddtk.csv`](mapping/phdt-data-dictionary-kobo-ddtk.csv), sheet `DDTK Kobo` di `Kobo_-_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **Kobo Data BBL** (tidak ada baris tracker, tidak masuk total) → [`output/kobo-data-bbl.md`](output/kobo-data-bbl.md) (38 payload / 124 code)
 - **SiGizi Balita BNBA** → [`output/sigizi-balita-bnba.md`](output/sigizi-balita-bnba.md) (sumber: [`mapping/phdt-data-dictionary-sigizi-balita-bnba.csv`](mapping/phdt-data-dictionary-sigizi-balita-bnba.csv), sheet `Copy of SiGizi_Balita` baris 2-538 di `PHDT_SIGIZI.xlsx`; BQ: `balita bnba`; ⚠️ belum comprehensive review)
 - **SiGizi Balita Vitamin A** → [`output/sigizi-balita-vitamin-a.md`](output/sigizi-balita-vitamin-a.md) (sumber: [`mapping/phdt-data-dictionary-sigizi-balita-vitamin-a.csv`](mapping/phdt-data-dictionary-sigizi-balita-vitamin-a.csv), sheet `Copy of Sigizi Balita Vitamin A` baris 2-akhir di `PHDT_SIGIZI.xlsx`; BQ: `vitamin a`; ⚠️ belum comprehensive review)
 - **SiGizi Balita Mendapat PMT 2024** → [`output/sigizi-balita-mendapat-pmt-2024.md`](output/sigizi-balita-mendapat-pmt-2024.md) (sumber: [`mapping/phdt-data-dictionary-sigizi-balita-mendapat-pmt-2024.csv`](mapping/phdt-data-dictionary-sigizi-balita-mendapat-pmt-2024.csv), sheet `Copy of SiGizi_Balita` baris 539-887 di `PHDT_SIGIZI.xlsx`; BQ: `mendapat pmt 2024`; ⚠️ belum comprehensive review)
@@ -223,9 +254,39 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | SIM RS Goetoeng BBL | 34 | 68 | 124 | 14 |
 | SIM RS Goetoeng Diabetes Melitus | 12 | 6 | 4 | 0 |
 | SIM RS Goetoeng Hipertensi | 13 | 5 | 3 | 0 |
-| **Total (non-unik)** | **5136** | **3902** | **9735** | **1063** |
-| **Total unik** | – | **996** | **2648** | **436** |
-| Selisih (dipakai ulang) | – | 2906 | 7087 | 627 |
+| SIM RS Harapan Ibu ANC | 76 | 89 | 176 | 22 |
+| SIM RS Harapan Ibu INC | 81 | 67 | 160 | 16 |
+| SIM RS Harapan Ibu PNC | 86 | 67 | 145 | 21 |
+| SIM RS Harapan Ibu BBL | 105 | 79 | 110 | 2 |
+| SIM RS At tin ANC | 76 | 89 | 176 | 22 |
+| SIM RS At tin INC | 81 | 67 | 160 | 16 |
+| SIM RS At tin PNC | 86 | 67 | 145 | 21 |
+| SIM RS At tin BBL | 109 | 82 | 122 | 2 |
+| SIM RS Nirmala ANC | 76 | 89 | 176 | 22 |
+| SIM RS Nirmala INC | 81 | 67 | 160 | 16 |
+| SIM RS Nirmala PNC | 86 | 67 | 145 | 21 |
+| SIM RS Nirmala BBL | 109 | 82 | 122 | 2 |
+| SIM RS PKU ANC | 76 | 89 | 176 | 22 |
+| SIM RS PKU BBL | 109 | 82 | 122 | 2 |
+| SIM RS MPH Hepatitis | 40 | 20 | 22 | 0 |
+| SIM RS Ummu Hani Hepatitis | 40 | 20 | 22 | 0 |
+| SIM RS PKU Hepatitis | 40 | 20 | 22 | 0 |
+| SIM RS Siaga Medika Hepatitis | 40 | 20 | 22 | 0 |
+| Kobo Modul ANC | 75 | 86 | 172 | 16 |
+| Kobo Modul INC | 108 | 80 | 243 | 41 |
+| Kobo Modul Neonatus | 89 | 50 | 98 | 2 |
+| Kobo Modul PNC | 118 | 98 | 225 | 27 |
+| Kobo Buku KIA 1 - ANC | 404 | 167 | 668 | 53 |
+| Kobo Buku KIA 2 - Luaran Kehamilan | 48 | 38 | 87 | 3 |
+| Kobo Buku KIA 3 - PNC | 145 | 75 | 168 | 21 |
+| Kobo Buku KIA 4 - Cadre | 83 | 44 | 51 | 15 |
+| Kobo Buku KIA 5 - Vaksinatorku | 100 | 40 | 64 | 12 |
+| Kobo Neonatus Outcome | 25 | 14 | 25 | 6 |
+| Kobo Neonatus Outcome v2 | 208 | 89 | 239 | 57 |
+| Kobo DDTK | 20 | 11 | 10 | 0 |
+| **Total (non-unik)** | **7956** | **5857** | **13968** | **1523** |
+| **Total unik** | – | **1191** | **3172** | **517** |
+| Selisih (dipakai ulang) | – | 4666 | 10796 | 1006 |
 
 ---
 
@@ -235,28 +296,29 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 1062 |
-| http://terminology.kemkes.go.id/sp | 436 |
-| http://loinc.org | 391 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 298 |
-| http://hl7.org/fhir/sid/icd-10 | 116 |
-|  | 51 |
-| http://hl7.org/fhir/sid/icd-9-cm | 49 |
+| http://snomed.info/sct | 1399 |
+| http://terminology.kemkes.go.id/sp | 517 |
+| http://loinc.org | 449 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 303 |
+| http://hl7.org/fhir/sid/icd-10 | 119 |
+|  | 62 |
+| http://hl7.org/fhir/sid/icd-9-cm | 50 |
 | http://terminology.kemkes.go.id | 48 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 29 |
+| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 27 |
+| http://sys-ids.kemkes.go.id/kfa | 21 |
 | http://terminology.kemkes.go.id/CodeSystem/examination | 21 |
-| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 19 |
-| http://terminology.kemkes.go.id/CodeSystem/organization-type | 18 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-type | 19 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
-| http://sys-ids.kemkes.go.id/kfa | 14 |
-| http://hl7.org/fhir/sid/cvx | 10 |
-| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 9 |
+| http://hl7.org/fhir/sid/cvx | 13 |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 10 |
+| http://sys-ids.kemkes.go.id/kf | 9 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 7 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 7 |
 | https://loinc.org | 7 |
-| http://sys-ids.kemkes.go.id/kf | 7 |
 | http://terminology.hl7.org/CodeSystem/admit-source | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
+| http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | 5 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
 | http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
@@ -269,7 +331,8 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 | http://terminology.hl7. org/CodeSystem/v3-Ob servationInterpretatio n | 1 |
 | CUSTOM | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
-| **Total** | **2648** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **3172** |
 
 ---
 
@@ -277,105 +340,135 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuensi-payload.md`](frekuensi-payload.md).
 
-| Form | Observation | Procedure | ServiceRequest | DiagnosticReport | Condition | Specimen | Encounter | Patient | PractitionerRole | Immunization | EpisodeOfCare | QuestionnaireResponse | Practitioner | RelatedPerson | MedicationDispense | MedicationRequest | MedicationStatement | Coverage | CarePlan | Medication | Composition | AllergyIntolerance | Organization | FamilyMemberHistory | Goal | Location | Group | Account | ClinicalImpression | Consent | Total |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Maternal Outcome | 5 | – | – | – | 1 | – | 1 | 1 | 1 | – | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
-| Raffle | 1 | – | – | – | 1 | – | 1 | 1 | – | – | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 8 |
-| SiGizi ANC | 30 | 3 | 6 | 6 | 1 | 6 | 1 | 1 | 1 | 1 | 1 | – | – | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
-| SITB TB 06 | 17 | 2 | 9 | 9 | 2 | 8 | 1 | 1 | – | – | 3 | 1 | – | – | – | – | – | – | 1 | – | – | – | 1 | – | – | 1 | – | – | – | – | 56 |
-| SITB TB 03 SO | 23 | 4 | 9 | 9 | 1 | 9 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | – | 62 |
-| SITB TB 03 RO | 18 | 3 | 7 | 7 | 1 | 7 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | – | 50 |
-| SITB TB 04 | 17 | – | 16 | 16 | 1 | 16 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
-| SITB TB 16K | 14 | – | 1 | – | 1 | – | 1 | 1 | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 21 |
-| MPDN Kematian Bayi | 16 | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 19 |
-| MPDN Kematian Ibu | 7 | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 10 |
-| ePus Pelayanan Pasien | 24 | 2 | 1 | – | 9 | – | 1 | 1 | – | – | – | – | 1 | – | 1 | 1 | – | 1 | 3 | – | – | 1 | – | 1 | – | – | – | – | – | – | 47 |
-| ePus Kunjungan Ibu Hamil | 46 | 5 | 17 | 16 | 4 | 16 | 1 | 1 | – | 2 | 1 | – | – | – | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 114 |
-| ePus Laboratorium | 92 | – | 74 | 73 | – | 65 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 309 |
-| ePus Rujukan Eksternal | – | – | 1 | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
-| ePus ANC | 82 | 3 | 19 | 19 | 3 | 6 | 1 | 1 | 14 | 3 | 1 | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 155 |
-| ePus INC | 49 | 9 | 1 | – | 3 | – | 1 | 1 | 1 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
-| ePus PNC | 50 | 9 | 3 | 2 | 4 | 1 | 1 | 1 | 2 | – | 1 | – | 1 | – | 2 | 2 | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | 82 |
-| ePus MTBS | 53 | 14 | 9 | 8 | 7 | 8 | 1 | 1 | – | 17 | – | 1 | 1 | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 125 |
-| ePus MTBM | 35 | 8 | 1 | – | 4 | – | 1 | 1 | – | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 57 |
-| ePus Tumbang Anak | 14 | 1 | – | – | 2 | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
-| ePus Tumbang DDTK | 14 | 4 | 1 | – | 3 | – | 1 | 1 | – | – | – | 2 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 29 |
-| ePus Tumbang KPSP | – | – | – | – | – | – | – | – | – | – | – | 14 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
-| ePus Tumbang TDD | – | – | – | – | – | – | – | – | – | – | – | 8 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 8 |
-| ePus Tumbang TDL | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 4 |
-| ePus Tumbang KMPE | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
-| ePus Tumbang M-CHAT-R | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
-| Dapodik PAUD | 32 | – | – | – | 4 | – | 1 | 1 | – | – | – | – | – | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | 42 |
-| ePus Tumbang GPPH | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
-| SITB TB 01 | 25 | 1 | – | – | 1 | – | 1 | 1 | – | – | 2 | 1 | – | 2 | – | – | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 37 |
-| SITB TB 02 | 1 | – | 2 | – | 1 | – | 1 | 1 | – | – | – | 1 | – | – | 2 | 2 | – | – | 1 | – | – | – | – | – | – | – | – | – | 1 | – | 13 |
-| ELSMIL Ibu Hamil | 28 | – | 2 | 1 | 2 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 36 |
-| ELSMIL Pasca Persalinan | 22 | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
-| ELSMIL Baduta | 29 | – | – | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
-| SIPTM | 31 | 2 | 3 | 1 | 7 | 1 | 1 | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | 1 | 3 | – | – | – | – | – | 52 |
-| ASIK Skrining PTM | 41 | – | 20 | 20 | 1 | 14 | 1 | 1 | 6 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 104 |
-| ASIK CKG Bayi Baru Lahir (v2) | 17 | 5 | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 25 |
-| ASIK CKG Balita (v2) | 17 | 3 | 2 | 2 | 1 | 2 | 1 | 1 | 2 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 32 |
-| ASIK CKG Dewasa Laki-laki | 53 | – | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
-| ASIK CKG Dewasa Perempuan | 58 | – | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 66 |
-| ASIK CKG Lansia (27 Apr 2026) | 90 | 1 | – | – | 1 | – | 1 | 1 | – | – | – | 7 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 101 |
-| Informed Consent | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | 3 |
-| SIHEPI Rekap 3e | 44 | 1 | 4 | 3 | 1 | 3 | 1 | 1 | – | 5 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 65 |
-| eKohort ANC | 20 | 1 | 5 | 5 | 1 | 5 | 1 | 1 | – | 2 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 43 |
-| eKohort INC | 46 | 4 | 1 | – | 2 | – | 1 | 1 | – | – | – | – | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 58 |
-| SiGizi Balita BNBA | 14 | 1 | – | – | 1 | – | 1 | 1 | – | – | – | 1 | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
-| SiGizi Balita Vitamin A | 13 | 1 | – | – | 1 | – | 1 | 1 | – | – | – | – | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 22 |
-| SiGizi Balita Mendapat PMT 2024 | 12 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 15 |
-| SiGizi Balita Pemantauan PMT 2024 | 6 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 9 |
-| SiGizi Balita ASI Eksklusif | 7 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
-| SiGizi Balita MPASI | 6 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 9 |
-| SiGizi PMT 2025 BB Tidak Naik - Pantau | 12 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 15 |
-| SiGizi PMT 2025 BB Tidak Naik - Riwayat | 16 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
-| SiGizi PMT 2025 BB Tidak Naik - Survey | 1 | – | – | – | 1 | – | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
-| SiGizi PMT 2025 BB Kurang - Pantau | 18 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 21 |
-| SiGizi PMT 2025 BB Kurang - Riwayat | 16 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
-| SiGizi PMT 2025 BB Kurang - Survey | 1 | – | – | – | 1 | – | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
-| SiGizi PMT 2025 Gizi Kurang - Pantau | 39 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 42 |
-| SiGizi PMT 2025 Gizi Kurang - Riwayat | 16 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
-| SiGizi PMT 2025 Gizi Kurang - Survey | 1 | – | – | – | 1 | – | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
-| SiGizi Ibu Nifas | 3 | 3 | – | – | 1 | – | 1 | 1 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
-| SiGizi Kohort Ibu | 17 | 1 | 3 | 3 | 15 | 3 | 14 | 1 | 1 | 2 | 2 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 63 |
-| SIM RS Tripat ANC | 9 | 1 | – | – | 1 | – | 1 | 1 | 2 | 1 | 1 | – | 2 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
-| SIM RS Tripat BBL (sheet 'INC BBL') | 11 | 2 | – | – | 1 | – | 1 | 1 | 2 | – | 1 | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
-| SIM RS Tripat PNC | 13 | 1 | – | – | 2 | – | 1 | 1 | 2 | – | 1 | – | 2 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
-| SIM RS Narmada INC | 57 | 5 | – | – | 10 | – | 1 | 1 | – | 4 | 3 | – | 1 | 1 | – | – | 1 | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | 86 |
-| SIM RS Narmada KIA | 37 | 2 | – | – | 4 | – | 1 | 1 | – | 1 | 2 | – | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 50 |
-| SIM RS Panti Nugroho ANC | 17 | 2 | – | – | 2 | – | 1 | 1 | 1 | 3 | 1 | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
-| SIM RS Panti Nugroho INC | 23 | 3 | 1 | – | 2 | – | 1 | 1 | 1 | – | 2 | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 37 |
-| SIM RS Panti Nugroho PNC | 38 | 10 | 1 | – | 6 | – | 1 | 1 | 1 | – | 1 | – | 1 | – | 3 | 2 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | 67 |
-| SIM RS Panti Nugroho BBL | 14 | 7 | – | – | 1 | – | 1 | 1 | 1 | 2 | 1 | – | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
-| SIM RS Panti Nugroho Diabetes Melitus | 3 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 7 |
-| SIM RS Panti Nugroho Hipertensi | 7 | 2 | 2 | 1 | 3 | 1 | 1 | 1 | 1 | – | – | – | 1 | – | – | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
-| SIM RS Panti Nugroho Stroke | 5 | 2 | 2 | 1 | 3 | 1 | 1 | 1 | 1 | – | – | – | 1 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
-| SIM RS Ummu Hani ANC | 11 | 1 | – | – | 3 | – | 1 | 1 | 2 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
-| SIM RS Ummu Hani INC | 23 | 4 | 1 | – | 2 | – | 1 | 1 | 3 | – | 2 | – | 3 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 41 |
-| SIM RS Ummu Hani PNC | 28 | 5 | 1 | – | 4 | – | 1 | 1 | 2 | – | 1 | – | 2 | 1 | 3 | 2 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | 53 |
-| SIM RS Ummu Hani BBL | 13 | 7 | – | – | 1 | – | 1 | 1 | 1 | 2 | 1 | – | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 30 |
-| SIM RS MPH ANC | 18 | 2 | – | – | 3 | – | 1 | 1 | 2 | 1 | 1 | – | 2 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 33 |
-| SIM RS MPH INC | 24 | 4 | 1 | – | 2 | – | 1 | 1 | 2 | – | 2 | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 40 |
-| SIM RS MPH PNC | 27 | 2 | 2 | – | 4 | – | 1 | 1 | 2 | – | 1 | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 43 |
-| SIM RS MPH BBL | 25 | 4 | 1 | – | 1 | – | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 42 |
-| SIM RS MPH Diabetes Melitus | 6 | 2 | 2 | 2 | 3 | 1 | 1 | 1 | 2 | – | – | – | 2 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
-| SIM RS MPH Hipertensi | 5 | 2 | 2 | 1 | 3 | 1 | 1 | 1 | 1 | – | – | – | 1 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
-| SIM RS Siaga Medika ANC | 36 | 2 | 15 | 15 | 1 | 6 | 1 | 1 | 16 | 3 | 1 | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 100 |
-| SIM RS Siaga Medika INC | 29 | 5 | – | – | 2 | – | 1 | 1 | – | – | 2 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 42 |
-| SIM RS Siaga Medika PNC | 30 | 9 | – | – | 4 | – | 1 | 1 | 1 | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 49 |
-| SIM RS Siaga Medika BBL | 22 | 4 | 1 | – | 1 | – | 1 | 1 | – | 2 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 37 |
-| SIM RS PKU INC | 46 | 8 | 1 | – | 5 | – | 1 | 1 | 1 | – | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 66 |
-| SIM RS PKU PNC | 38 | 10 | 1 | – | 6 | – | 1 | 1 | 1 | – | 1 | – | 1 | – | 3 | 2 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | 67 |
-| SIM RS Goetoeng ANC | 3 | 97 | 1 | – | 2 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 106 |
-| SIM RS Goetoeng INC | 5 | 48 | 1 | – | 6 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | 64 |
-| SIM RS Goetoeng PNC | 4 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 9 |
-| SIM RS Goetoeng BBL | 5 | 52 | – | – | 6 | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | 68 |
-| SIM RS Goetoeng Diabetes Melitus | 3 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 6 |
-| SIM RS Goetoeng Hipertensi | 2 | – | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
-| **Total (non-unik)** | **2000** | **396** | **255** | **222** | **205** | **183** | **96** | **89** | **81** | **58** | **55** | **54** | **54** | **34** | **27** | **25** | **17** | **12** | **9** | **7** | **4** | **4** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **3902** |
-| **Total unik** | **576** | **171** | **33** | **109** | **60** | **7** | **1** | **1** | **1** | **3** | **6** | **1** | **1** | **1** | **5** | **6** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **996** |
+| Form | Observation | Procedure | Condition | ServiceRequest | DiagnosticReport | Specimen | PractitionerRole | Immunization | Encounter | Patient | Practitioner | EpisodeOfCare | QuestionnaireResponse | RelatedPerson | MedicationDispense | MedicationRequest | MedicationStatement | Coverage | Medication | CarePlan | FamilyMemberHistory | AllergyIntolerance | Composition | Organization | Goal | DocumentReference | Location | Consent | Media | Group | Account | ClinicalImpression | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Maternal Outcome | 5 | – | 1 | – | – | – | 1 | – | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
+| Raffle | 1 | – | 1 | – | – | – | – | – | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 8 |
+| SiGizi ANC | 30 | 3 | 1 | 6 | 6 | 6 | 1 | 1 | 1 | 1 | – | 1 | – | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
+| SITB TB 06 | 17 | 2 | 2 | 9 | 9 | 8 | – | – | 1 | 1 | – | 3 | 1 | – | – | – | – | – | – | 1 | – | – | – | 1 | – | – | 1 | – | – | – | – | – | 56 |
+| SITB TB 03 SO | 23 | 4 | 1 | 9 | 9 | 9 | – | – | 1 | 1 | – | 1 | 1 | – | – | – | – | 1 | – | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | 62 |
+| SITB TB 03 RO | 18 | 3 | 1 | 7 | 7 | 7 | – | – | 1 | 1 | – | 1 | 1 | – | – | – | – | 1 | – | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | 50 |
+| SITB TB 04 | 17 | – | 1 | 16 | 16 | 16 | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| SITB TB 16K | 14 | – | 1 | 1 | – | – | – | – | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | 21 |
+| MPDN Kematian Bayi | 16 | – | – | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 19 |
+| MPDN Kematian Ibu | 7 | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 10 |
+| ePus Pelayanan Pasien | 24 | 2 | 9 | 1 | – | – | – | – | 1 | 1 | 1 | – | – | – | 1 | 1 | – | 1 | – | 3 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | 47 |
+| ePus Kunjungan Ibu Hamil | 46 | 5 | 4 | 17 | 16 | 16 | – | 2 | 1 | 1 | – | 1 | – | – | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 114 |
+| ePus Laboratorium | 92 | – | – | 74 | 73 | 65 | 2 | – | 1 | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 309 |
+| ePus Rujukan Eksternal | – | – | 1 | 1 | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
+| ePus ANC | 82 | 3 | 3 | 19 | 19 | 6 | 14 | 3 | 1 | 1 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 155 |
+| ePus INC | 49 | 9 | 3 | 1 | – | – | 1 | – | 1 | 1 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| ePus PNC | 50 | 9 | 4 | 3 | 2 | 1 | 2 | – | 1 | 1 | 1 | 1 | – | – | 2 | 2 | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 82 |
+| ePus MTBS | 53 | 14 | 7 | 9 | 8 | 8 | – | 17 | 1 | 1 | 1 | – | 1 | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 125 |
+| ePus MTBM | 35 | 8 | 4 | 1 | – | – | – | 3 | 1 | 1 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 57 |
+| ePus Tumbang Anak | 14 | 1 | 2 | – | – | – | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
+| ePus Tumbang DDTK | 14 | 4 | 3 | 1 | – | – | – | – | 1 | 1 | 1 | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 29 |
+| ePus Tumbang KPSP | – | – | – | – | – | – | – | – | – | – | – | – | 14 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
+| ePus Tumbang TDD | – | – | – | – | – | – | – | – | – | – | – | – | 8 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 8 |
+| ePus Tumbang TDL | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 4 |
+| ePus Tumbang KMPE | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
+| ePus Tumbang M-CHAT-R | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
+| Dapodik PAUD | 32 | – | 4 | – | – | – | – | – | 1 | 1 | – | – | – | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | 42 |
+| ePus Tumbang GPPH | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
+| SITB TB 01 | 25 | 1 | 1 | – | – | – | – | – | 1 | 1 | – | 2 | 1 | 2 | – | – | 2 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 37 |
+| SITB TB 02 | 1 | – | 1 | 2 | – | – | – | – | 1 | 1 | – | – | 1 | – | 2 | 2 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 1 | 13 |
+| ELSMIL Ibu Hamil | 28 | – | 2 | 2 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 36 |
+| ELSMIL Pasca Persalinan | 22 | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
+| ELSMIL Baduta | 29 | – | – | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
+| SIPTM | 31 | 2 | 7 | 3 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | 1 | – | – | – | – | 1 | – | – | – | 3 | – | – | – | – | – | – | – | 52 |
+| ASIK Skrining PTM | 41 | – | 1 | 20 | 20 | 14 | 6 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 104 |
+| ASIK CKG Bayi Baru Lahir (v2) | 17 | 5 | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 25 |
+| ASIK CKG Balita (v2) | 17 | 3 | 1 | 2 | 2 | 2 | 2 | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 32 |
+| ASIK CKG Dewasa Laki-laki | 53 | – | 1 | 1 | 1 | 1 | 1 | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
+| ASIK CKG Dewasa Perempuan | 58 | – | 1 | 1 | 1 | 1 | 1 | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 66 |
+| ASIK CKG Lansia (27 Apr 2026) | 90 | 1 | 1 | – | – | – | – | – | 1 | 1 | – | – | 7 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 101 |
+| Informed Consent | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 3 |
+| SIHEPI Rekap 3e | 44 | 1 | 1 | 4 | 3 | 3 | – | 5 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 65 |
+| eKohort ANC | 20 | 1 | 1 | 5 | 5 | 5 | – | 2 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 43 |
+| eKohort INC | 46 | 4 | 2 | 1 | – | – | – | – | 1 | 1 | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 58 |
+| SiGizi Balita BNBA | 14 | 1 | 1 | – | – | – | – | – | 1 | 1 | – | – | 1 | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
+| SiGizi Balita Vitamin A | 13 | 1 | 1 | – | – | – | – | – | 1 | 1 | – | – | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 22 |
+| SiGizi Balita Mendapat PMT 2024 | 12 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 15 |
+| SiGizi Balita Pemantauan PMT 2024 | 6 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 9 |
+| SiGizi Balita ASI Eksklusif | 7 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
+| SiGizi Balita MPASI | 6 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 9 |
+| SiGizi PMT 2025 BB Tidak Naik - Pantau | 12 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 15 |
+| SiGizi PMT 2025 BB Tidak Naik - Riwayat | 16 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
+| SiGizi PMT 2025 BB Tidak Naik - Survey | 1 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
+| SiGizi PMT 2025 BB Kurang - Pantau | 18 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 21 |
+| SiGizi PMT 2025 BB Kurang - Riwayat | 16 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
+| SiGizi PMT 2025 BB Kurang - Survey | 1 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
+| SiGizi PMT 2025 Gizi Kurang - Pantau | 39 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 42 |
+| SiGizi PMT 2025 Gizi Kurang - Riwayat | 16 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
+| SiGizi PMT 2025 Gizi Kurang - Survey | 1 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
+| SiGizi Ibu Nifas | 3 | 3 | 1 | – | – | – | – | – | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
+| SiGizi Kohort Ibu | 17 | 1 | 15 | 3 | 3 | 3 | 1 | 2 | 14 | 1 | – | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 63 |
+| SIM RS Tripat ANC | 9 | 1 | 1 | – | – | – | 2 | 1 | 1 | 1 | 2 | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| SIM RS Tripat BBL (sheet 'INC BBL') | 11 | 2 | 1 | – | – | – | 2 | – | 1 | 1 | 2 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
+| SIM RS Tripat PNC | 13 | 1 | 2 | – | – | – | 2 | – | 1 | 1 | 2 | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
+| SIM RS Narmada INC | 57 | 5 | 10 | – | – | – | – | 4 | 1 | 1 | 1 | 3 | – | 1 | – | – | 1 | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | 86 |
+| SIM RS Narmada KIA | 37 | 2 | 4 | – | – | – | – | 1 | 1 | 1 | 1 | 2 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 50 |
+| SIM RS Panti Nugroho ANC | 17 | 2 | 2 | – | – | – | 1 | 3 | 1 | 1 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
+| SIM RS Panti Nugroho INC | 23 | 3 | 2 | 1 | – | – | 1 | – | 1 | 1 | 2 | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 37 |
+| SIM RS Panti Nugroho PNC | 38 | 10 | 6 | 1 | – | – | 1 | – | 1 | 1 | 1 | 1 | – | – | 3 | 2 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS Panti Nugroho BBL | 14 | 7 | 1 | – | – | – | 1 | 2 | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
+| SIM RS Panti Nugroho Diabetes Melitus | 3 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 7 |
+| SIM RS Panti Nugroho Hipertensi | 7 | 2 | 3 | 2 | 1 | 1 | 1 | – | 1 | 1 | 1 | – | – | – | – | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
+| SIM RS Panti Nugroho Stroke | 5 | 2 | 3 | 2 | 1 | 1 | 1 | – | 1 | 1 | 1 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| SIM RS Ummu Hani ANC | 11 | 1 | 3 | – | – | – | 2 | 1 | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
+| SIM RS Ummu Hani INC | 23 | 4 | 2 | 1 | – | – | 3 | – | 1 | 1 | 3 | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 41 |
+| SIM RS Ummu Hani PNC | 28 | 5 | 4 | 1 | – | – | 2 | – | 1 | 1 | 2 | 1 | – | 1 | 3 | 2 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 53 |
+| SIM RS Ummu Hani BBL | 13 | 7 | 1 | – | – | – | 1 | 2 | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 30 |
+| SIM RS MPH ANC | 18 | 2 | 3 | – | – | – | 2 | 1 | 1 | 1 | 2 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 33 |
+| SIM RS MPH INC | 24 | 4 | 2 | 1 | – | – | 2 | – | 1 | 1 | 2 | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 40 |
+| SIM RS MPH PNC | 27 | 2 | 4 | 2 | – | – | 2 | – | 1 | 1 | 2 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 43 |
+| SIM RS MPH BBL | 25 | 4 | 1 | 1 | – | – | 1 | 2 | 1 | 1 | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | 42 |
+| SIM RS MPH Diabetes Melitus | 6 | 2 | 3 | 2 | 2 | 1 | 2 | – | 1 | 1 | 2 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
+| SIM RS MPH Hipertensi | 5 | 2 | 3 | 2 | 1 | 1 | 1 | – | 1 | 1 | 1 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| SIM RS Siaga Medika ANC | 36 | 2 | 1 | 15 | 15 | 6 | 16 | 3 | 1 | 1 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 100 |
+| SIM RS Siaga Medika INC | 29 | 5 | 2 | – | – | – | – | – | 1 | 1 | 1 | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 42 |
+| SIM RS Siaga Medika PNC | 30 | 9 | 4 | – | – | – | 1 | – | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 49 |
+| SIM RS Siaga Medika BBL | 22 | 4 | 1 | 1 | – | – | – | 2 | 1 | 1 | – | 1 | 1 | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | 37 |
+| SIM RS PKU INC | 46 | 8 | 5 | 1 | – | – | 1 | – | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 66 |
+| SIM RS PKU PNC | 38 | 10 | 6 | 1 | – | – | 1 | – | 1 | 1 | 1 | 1 | – | – | 3 | 2 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS Goetoeng ANC | 3 | 97 | 2 | 1 | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 106 |
+| SIM RS Goetoeng INC | 5 | 48 | 6 | 1 | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 64 |
+| SIM RS Goetoeng PNC | 4 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 9 |
+| SIM RS Goetoeng BBL | 5 | 52 | 6 | – | – | – | – | – | 1 | 1 | – | 1 | – | – | – | – | – | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 68 |
+| SIM RS Goetoeng Diabetes Melitus | 3 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 6 |
+| SIM RS Goetoeng Hipertensi | 2 | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
+| SIM RS Harapan Ibu ANC | 52 | 2 | 3 | 6 | 6 | 6 | 7 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 89 |
+| SIM RS Harapan Ibu INC | 46 | 8 | 5 | 1 | – | – | 1 | – | 1 | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS Harapan Ibu PNC | 38 | 10 | 6 | 1 | – | – | 1 | – | 1 | 1 | 1 | 1 | – | – | 3 | 2 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS Harapan Ibu BBL | 59 | 7 | 4 | – | – | – | 1 | 2 | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 79 |
+| SIM RS At tin ANC | 52 | 2 | 3 | 6 | 6 | 6 | 7 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 89 |
+| SIM RS At tin INC | 46 | 8 | 5 | 1 | – | – | 1 | – | 1 | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS At tin PNC | 38 | 10 | 6 | 1 | – | – | 1 | – | 1 | 1 | 1 | 1 | – | – | 3 | 2 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS At tin BBL | 62 | 7 | 4 | – | – | – | 1 | 2 | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 82 |
+| SIM RS Nirmala ANC | 52 | 2 | 3 | 6 | 6 | 6 | 7 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 89 |
+| SIM RS Nirmala INC | 46 | 8 | 5 | 1 | – | – | 1 | – | 1 | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS Nirmala PNC | 38 | 10 | 6 | 1 | – | – | 1 | – | 1 | 1 | 1 | 1 | – | – | 3 | 2 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
+| SIM RS Nirmala BBL | 62 | 7 | 4 | – | – | – | 1 | 2 | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 82 |
+| SIM RS PKU ANC | 52 | 2 | 3 | 6 | 6 | 6 | 7 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 89 |
+| SIM RS PKU BBL | 62 | 7 | 4 | – | – | – | 1 | 2 | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 82 |
+| SIM RS MPH Hepatitis | 3 | 2 | 3 | 2 | 1 | 1 | 2 | – | 1 | 1 | 2 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| SIM RS Ummu Hani Hepatitis | 3 | 2 | 3 | 2 | 1 | 1 | 2 | – | 1 | 1 | 2 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| SIM RS PKU Hepatitis | 3 | 2 | 3 | 2 | 1 | 1 | 2 | – | 1 | 1 | 2 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| SIM RS Siaga Medika Hepatitis | 3 | 2 | 3 | 2 | 1 | 1 | 2 | – | 1 | 1 | 2 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
+| Kobo Modul ANC | 47 | 3 | 2 | 6 | 6 | 6 | 7 | 3 | 1 | 1 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 86 |
+| Kobo Modul INC | 56 | 9 | 3 | 1 | – | – | 2 | – | 1 | 1 | 2 | 2 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 80 |
+| Kobo Modul Neonatus | 29 | 9 | 1 | 1 | – | – | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | 50 |
+| Kobo Modul PNC | 52 | 10 | 8 | 5 | 2 | 1 | 4 | – | 1 | 1 | 2 | 1 | 1 | – | 4 | 3 | – | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 98 |
+| Kobo Buku KIA 1 - ANC | 125 | 14 | 6 | 1 | – | – | 2 | 3 | 1 | 1 | 1 | – | – | – | 1 | 1 | 1 | 2 | – | 3 | 3 | 1 | – | – | – | 1 | – | – | – | – | – | – | 167 |
+| Kobo Buku KIA 2 - Luaran Kehamilan | 29 | 1 | 2 | – | – | – | 2 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 38 |
+| Kobo Buku KIA 3 - PNC | 45 | 9 | 7 | 4 | – | – | 1 | 1 | 1 | 1 | 1 | 2 | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 75 |
+| Kobo Buku KIA 4 - Cadre | 16 | 1 | 1 | – | – | – | 2 | 15 | 1 | 1 | 3 | – | – | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 44 |
+| Kobo Buku KIA 5 - Vaksinatorku | 5 | – | 1 | – | – | – | 1 | 25 | 1 | 1 | 1 | – | – | 4 | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 40 |
+| Kobo Neonatus Outcome | 8 | – | – | – | – | – | 1 | – | – | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
+| Kobo Neonatus Outcome v2 | 60 | 6 | 3 | – | – | – | 4 | 3 | 1 | 1 | 4 | – | 1 | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | 2 | – | – | – | 89 |
+| Kobo DDTK | 4 | – | 1 | – | – | – | 1 | – | 1 | 1 | 1 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
+| **Total (non-unik)** | **3193** | **556** | **313** | **311** | **258** | **218** | **155** | **129** | **125** | **119** | **95** | **81** | **61** | **60** | **43** | **37** | **26** | **15** | **15** | **13** | **6** | **6** | **4** | **3** | **3** | **3** | **2** | **2** | **2** | **1** | **1** | **1** | **5857** |
+| **Total unik** | **727** | **181** | **74** | **35** | **109** | **7** | **1** | **17** | **1** | **1** | **1** | **6** | **1** | **1** | **6** | **7** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1191** |
 
 ---
 
@@ -434,9 +527,14 @@ Perbedaan antar versi:
 
 - **SIM RS (34 form)**: tiap sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` = 1 form di tracker (#128–#236). Sheet `Template` (ANC, INC, PNC, BBL neo, BBL INC, TB, HepB) generik, tidak dihitung di total. Beberapa hal yang perlu dicek: `Mapping PNC PKU` hasil hitungnya sama persis dengan `Mapping PNC Panti Nugroho` (67 / 131), kemungkinan salinan; `Goetoeng ANC` 106 payload dari hanya 21 variabel karena satu variabel tindakan dipetakan ke ±97 Procedure code berbeda; `Mapping INC BBL Tripat` dipakai sebagai BBL Tripat (#231). Tidak ada sheet untuk Hepatitis, TB, dan Tripat INC.
 
+
+- **Kobo (12 form, baru)**: dari `Kobo_-_Data_Dictionary.xlsx`. Sheet `ANC Kobo`, `INC Kobo`, `Neonatus Kobo`, `PNC Kobo`, `Mapping Kobo Buku KIA 1 - ANC`, `Mapping Variable Buku KIA Entry Form 2`, `Mapping Kobo Buku KIA 3 - PNC`, `Mapping Variabel Kobo Buku KIA 4- Cadre`, `Mapping Kobo Vaksinator (revisedform)`, `Neonatal Outcome Kobo`, `Neonatal Outcome v2`, `DDTK Kobo`. Dilewati: `Variabel ...`, `tarikan ...`, `Copy of Neonatus Kobo`, `Deprecated PNC`, `epus pnc dan buku kia`, `rencana INC`, `Variabel ANC (sigizi lama)` (= SiGizi ANC yang sudah dihitung), `Mapping Kobo Buku KIA 5 - Vaksinator (tdk dipakai)`. `Maternal Outcome Kobo` dan `Kobo Raffle` tidak dihitung ulang (angka Maternal Outcome / Raffle yang sudah ada tetap). `Data BBL Kobo` dihitung terpisah karena tidak ada baris tracker yang cocok. Buku KIA 1 - ANC punya 404 variabel unik (kolom `Question/answer option` dipakai sebagai Variables).
+- **SIM RS template Spheres**: sheet TRACKER di file RS mencatat RS yang memakai Excel template Spheres. RS tanpa sheet mapping sendiri memakai angka template: ANC/INC/PNC = template ANC/INC/PNC, BBL = template BBL (neo) untuk Harapan Ibu dan BBL (INC) untuk At tin, Nirmala, PKU, Hepatitis = template HepB. Panti Nugroho Hepatitis, Nirmala Hepatitis, dan Harapan Ibu Hepatitis tidak dihitung (notes: form SIHEPI baru). Margono dan Goetoeng (selain sheet yang sudah ada) belum kirim data.
+
 ---
 
 ## Log perubahan output
+- 2026-11-24 (3): Tambah 12 form Kobo dari `Kobo_-_Data_Dictionary.xlsx` (#83–86, #88–94, #101) dan 18 form SIM RS yang memakai template Spheres (berdasarkan notes sheet TRACKER di file RS: Harapan Ibu, At tin, Nirmala ANC/INC/PNC/BBL; PKU ANC/BBL; Hepatitis MPH, Ummu Hani, PKU, Siaga Medika). Tiap RS dihitung sebagai form sendiri dengan angka template (non-unik). ⚠️ belum comprehensive review.
 - 2026-11-24 (2): Tambah 34 form SIM RS dari `PHDT_Data_Rumah_Sakit.xlsx` (ANC/INC/PNC/BBL/KIA/DM/HT/Stroke; RS Tripat, Narmada, Panti Nugroho, Ummu Hani, MPH, Siaga Medika, PKU, Goetoeng; ⚠️ belum comprehensive review). Variabel raw = variabel unik di dictionary. Sheet Template (ANC/INC/PNC/BBL/TB/HepB) dibuat dictionary-nya tapi tidak masuk total (belum terikat ke satu RS). Perbaikan QR Lansia: 1 QR per baris `QuestionnaireResponse.questionnaire` (27 Apr 2026: 7 QR, payload 101). Total non-unik lihat tabel di atas.
 - 2026-11-24: Tambah 9 form: ASIK CKG BBL (v2) 25/41, Balita (v2) 32/102, Dewasa Laki-laki 61/202, Dewasa Perempuan 66/223, Lansia (27 Apr 2026) 95/458, Informed Consent 3/8, SiHepi Rekap 3e 65/118, eKohort ANC 43/78, eKohort INC 58/74 (⚠️ belum comprehensive review). Versi lain CKG (BBL v1, Balita v1, Lansia 2026/2025) dan eKohort ANC lama dihitung terpisah, tidak masuk total (bagian Versi ASIK CKG). Total non-unik **2509 payload / 6888 code** (variabel raw 3345), unik **771 / 2070** (sudah termasuk 17 form SiGizi dari commit `c4de31c`).
 - 2026-11-24: Tambah 17 form SiGizi (314 payload / 772 code; Kohort Ibu 63/94, PMT 2025 Pantau Gizi Kurang 42/101, BNBA 24/48, …), ⚠️ belum comprehensive review. Total non-unik **2061 payload / 5584 code** (sebelumnya 1747 / 4812), unik **668 / 1717** (sebelumnya 635 / 1631).

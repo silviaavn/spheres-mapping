@@ -94,7 +94,37 @@ FORMS = [("Maternal Outcome", "kobo-data-dictionary-maternal-outcome"), ("Raffle
          ("SIM RS Goetoeng PNC", "phdt-data-dictionary-rs-goetoeng-pnc"),
          ("SIM RS Goetoeng BBL", "phdt-data-dictionary-rs-goetoeng-bbl"),
          ("SIM RS Goetoeng Diabetes Melitus", "phdt-data-dictionary-rs-goetoeng-dm"),
-         ("SIM RS Goetoeng Hipertensi", "phdt-data-dictionary-rs-goetoeng-ht")]
+         ("SIM RS Goetoeng Hipertensi", "phdt-data-dictionary-rs-goetoeng-ht"),
+         ("SIM RS Harapan Ibu ANC", "phdt-data-dictionary-rs-harapan-ibu-anc"),
+         ("SIM RS Harapan Ibu INC", "phdt-data-dictionary-rs-harapan-ibu-inc"),
+         ("SIM RS Harapan Ibu PNC", "phdt-data-dictionary-rs-harapan-ibu-pnc"),
+         ("SIM RS Harapan Ibu BBL", "phdt-data-dictionary-rs-harapan-ibu-bbl"),
+         ("SIM RS At tin ANC", "phdt-data-dictionary-rs-attin-anc"),
+         ("SIM RS At tin INC", "phdt-data-dictionary-rs-attin-inc"),
+         ("SIM RS At tin PNC", "phdt-data-dictionary-rs-attin-pnc"),
+         ("SIM RS At tin BBL", "phdt-data-dictionary-rs-attin-bbl"),
+         ("SIM RS Nirmala ANC", "phdt-data-dictionary-rs-nirmala-anc"),
+         ("SIM RS Nirmala INC", "phdt-data-dictionary-rs-nirmala-inc"),
+         ("SIM RS Nirmala PNC", "phdt-data-dictionary-rs-nirmala-pnc"),
+         ("SIM RS Nirmala BBL", "phdt-data-dictionary-rs-nirmala-bbl"),
+         ("SIM RS PKU ANC", "phdt-data-dictionary-rs-pku-anc"),
+         ("SIM RS PKU BBL", "phdt-data-dictionary-rs-pku-bbl"),
+         ("SIM RS MPH Hepatitis", "phdt-data-dictionary-rs-mph-hepatitis"),
+         ("SIM RS Ummu Hani Hepatitis", "phdt-data-dictionary-rs-ummu-hani-hepatitis"),
+         ("SIM RS PKU Hepatitis", "phdt-data-dictionary-rs-pku-hepatitis"),
+         ("SIM RS Siaga Medika Hepatitis", "phdt-data-dictionary-rs-siaga-medika-hepatitis"),
+         ("Kobo Modul ANC", "phdt-data-dictionary-kobo-modul-anc"),
+         ("Kobo Modul INC", "phdt-data-dictionary-kobo-modul-inc"),
+         ("Kobo Modul Neonatus", "phdt-data-dictionary-kobo-modul-neonatus"),
+         ("Kobo Modul PNC", "phdt-data-dictionary-kobo-modul-pnc"),
+         ("Kobo Buku KIA 1 - ANC", "phdt-data-dictionary-kobo-kia1-anc"),
+         ("Kobo Buku KIA 2 - Luaran Kehamilan", "phdt-data-dictionary-kobo-kia2-luaran"),
+         ("Kobo Buku KIA 3 - PNC", "phdt-data-dictionary-kobo-kia3-pnc"),
+         ("Kobo Buku KIA 4 - Cadre", "phdt-data-dictionary-kobo-kia4-cadre"),
+         ("Kobo Buku KIA 5 - Vaksinatorku", "phdt-data-dictionary-kobo-kia5-vaksinator"),
+         ("Kobo Neonatus Outcome", "phdt-data-dictionary-kobo-neonatus-outcome"),
+         ("Kobo Neonatus Outcome v2", "phdt-data-dictionary-kobo-neonatus-outcome-v2"),
+         ("Kobo DDTK", "phdt-data-dictionary-kobo-ddtk")]
 if nform: FORMS = FORMS[:nform]
 SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http://terminology.kemkes.go.id/sp": "kemkes sp",
          "http://terminology.kemkes.go.id": "kemkes", "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes": "WHO anc-custom-codes",
@@ -106,7 +136,7 @@ SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http:
 # Variabel raw per form: kolom file mentah (raw/*.md) kalau ada; kalau tidak ada file mentah = jumlah variabel di dictionary
 RAW = {"Maternal Outcome": 12, "Raffle": 12, "SiGizi ANC": "sigizi-anc", "SITB TB 06": "sitb-tb06", "SITB TB 03 SO": "sitb-tb03-so",
        "SITB TB 03 RO": "sitb-tb03-ro", "SITB TB 04": "sitb-tb04", "SITB TB 16K": "sitb-tb16k", "MPDN Kematian Bayi": 37, "MPDN Kematian Ibu": 24,
-       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38, "ePus Tumbang KPSP": 123, "ePus Tumbang TDD": 37, "ePus Tumbang TDL": 6, "ePus Tumbang KMPE": 14, "ePus Tumbang M-CHAT-R": 20, "Dapodik PAUD": 75, "ePus Tumbang GPPH": 10, "SITB TB 01": 82, "SITB TB 02": 22, "ELSMIL Ibu Hamil": 36, "ELSMIL Pasca Persalinan": 29, "ELSMIL Baduta": 38, "SIPTM": 60, "ASIK Skrining PTM": 67, "SiGizi Balita BNBA": 33, "SiGizi Balita Vitamin A": 14, "SiGizi Balita Mendapat PMT 2024": 30, "SiGizi Balita Pemantauan PMT 2024": 18, "SiGizi Balita ASI Eksklusif": 22, "SiGizi Balita MPASI": 28, "SiGizi PMT 2025 BB Tidak Naik - Pantau": 24, "SiGizi PMT 2025 BB Tidak Naik - Riwayat": 34, "SiGizi PMT 2025 BB Tidak Naik - Survey": 20, "SiGizi PMT 2025 BB Kurang - Pantau": 24, "SiGizi PMT 2025 BB Kurang - Riwayat": 34, "SiGizi PMT 2025 BB Kurang - Survey": 20, "SiGizi PMT 2025 Gizi Kurang - Pantau": 51, "SiGizi PMT 2025 Gizi Kurang - Riwayat": 34, "SiGizi PMT 2025 Gizi Kurang - Survey": 20, "SiGizi Ibu Nifas": 14, "SiGizi Kohort Ibu": 42, "ASIK CKG Bayi Baru Lahir (v2)": 35, "ASIK CKG Balita (v2)": 57, "ASIK CKG Dewasa Laki-laki": 123, "ASIK CKG Dewasa Perempuan": 130, "ASIK CKG Lansia (27 Apr 2026)": 188, "Informed Consent": 27, "SIHEPI Rekap 3e": 93, "eKohort ANC": 34, "eKohort INC": 84, "SIM RS Tripat ANC": 31, "SIM RS Tripat BBL (sheet 'INC BBL')": 36, "SIM RS Tripat PNC": 36, "SIM RS Narmada INC": 225, "SIM RS Narmada KIA": 70, "SIM RS Panti Nugroho ANC": 43, "SIM RS Panti Nugroho INC": 55, "SIM RS Panti Nugroho PNC": 85, "SIM RS Panti Nugroho BBL": 49, "SIM RS Panti Nugroho Diabetes Melitus": 19, "SIM RS Panti Nugroho Hipertensi": 40, "SIM RS Panti Nugroho Stroke": 35, "SIM RS Ummu Hani ANC": 33, "SIM RS Ummu Hani INC": 54, "SIM RS Ummu Hani PNC": 65, "SIM RS Ummu Hani BBL": 45, "SIM RS MPH ANC": 43, "SIM RS MPH INC": 54, "SIM RS MPH PNC": 59, "SIM RS MPH BBL": 73, "SIM RS MPH Diabetes Melitus": 44, "SIM RS MPH Hipertensi": 35, "SIM RS Siaga Medika ANC": 61, "SIM RS Siaga Medika INC": 58, "SIM RS Siaga Medika PNC": 71, "SIM RS Siaga Medika BBL": 64, "SIM RS PKU INC": 81, "SIM RS PKU PNC": 85, "SIM RS Goetoeng ANC": 21, "SIM RS Goetoeng INC": 35, "SIM RS Goetoeng PNC": 27, "SIM RS Goetoeng BBL": 34, "SIM RS Goetoeng Diabetes Melitus": 12, "SIM RS Goetoeng Hipertensi": 13}
+       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38, "ePus Tumbang KPSP": 123, "ePus Tumbang TDD": 37, "ePus Tumbang TDL": 6, "ePus Tumbang KMPE": 14, "ePus Tumbang M-CHAT-R": 20, "Dapodik PAUD": 75, "ePus Tumbang GPPH": 10, "SITB TB 01": 82, "SITB TB 02": 22, "ELSMIL Ibu Hamil": 36, "ELSMIL Pasca Persalinan": 29, "ELSMIL Baduta": 38, "SIPTM": 60, "ASIK Skrining PTM": 67, "SiGizi Balita BNBA": 33, "SiGizi Balita Vitamin A": 14, "SiGizi Balita Mendapat PMT 2024": 30, "SiGizi Balita Pemantauan PMT 2024": 18, "SiGizi Balita ASI Eksklusif": 22, "SiGizi Balita MPASI": 28, "SiGizi PMT 2025 BB Tidak Naik - Pantau": 24, "SiGizi PMT 2025 BB Tidak Naik - Riwayat": 34, "SiGizi PMT 2025 BB Tidak Naik - Survey": 20, "SiGizi PMT 2025 BB Kurang - Pantau": 24, "SiGizi PMT 2025 BB Kurang - Riwayat": 34, "SiGizi PMT 2025 BB Kurang - Survey": 20, "SiGizi PMT 2025 Gizi Kurang - Pantau": 51, "SiGizi PMT 2025 Gizi Kurang - Riwayat": 34, "SiGizi PMT 2025 Gizi Kurang - Survey": 20, "SiGizi Ibu Nifas": 14, "SiGizi Kohort Ibu": 42, "ASIK CKG Bayi Baru Lahir (v2)": 35, "ASIK CKG Balita (v2)": 57, "ASIK CKG Dewasa Laki-laki": 123, "ASIK CKG Dewasa Perempuan": 130, "ASIK CKG Lansia (27 Apr 2026)": 188, "Informed Consent": 27, "SIHEPI Rekap 3e": 93, "eKohort ANC": 34, "eKohort INC": 84, "SIM RS Tripat ANC": 31, "SIM RS Tripat BBL (sheet 'INC BBL')": 36, "SIM RS Tripat PNC": 36, "SIM RS Narmada INC": 225, "SIM RS Narmada KIA": 70, "SIM RS Panti Nugroho ANC": 43, "SIM RS Panti Nugroho INC": 55, "SIM RS Panti Nugroho PNC": 85, "SIM RS Panti Nugroho BBL": 49, "SIM RS Panti Nugroho Diabetes Melitus": 19, "SIM RS Panti Nugroho Hipertensi": 40, "SIM RS Panti Nugroho Stroke": 35, "SIM RS Ummu Hani ANC": 33, "SIM RS Ummu Hani INC": 54, "SIM RS Ummu Hani PNC": 65, "SIM RS Ummu Hani BBL": 45, "SIM RS MPH ANC": 43, "SIM RS MPH INC": 54, "SIM RS MPH PNC": 59, "SIM RS MPH BBL": 73, "SIM RS MPH Diabetes Melitus": 44, "SIM RS MPH Hipertensi": 35, "SIM RS Siaga Medika ANC": 61, "SIM RS Siaga Medika INC": 58, "SIM RS Siaga Medika PNC": 71, "SIM RS Siaga Medika BBL": 64, "SIM RS PKU INC": 81, "SIM RS PKU PNC": 85, "SIM RS Goetoeng ANC": 21, "SIM RS Goetoeng INC": 35, "SIM RS Goetoeng PNC": 27, "SIM RS Goetoeng BBL": 34, "SIM RS Goetoeng Diabetes Melitus": 12, "SIM RS Goetoeng Hipertensi": 13, "SIM RS Harapan Ibu ANC": 76, "SIM RS Harapan Ibu INC": 81, "SIM RS Harapan Ibu PNC": 86, "SIM RS Harapan Ibu BBL": 105, "SIM RS At tin ANC": 76, "SIM RS At tin INC": 81, "SIM RS At tin PNC": 86, "SIM RS At tin BBL": 109, "SIM RS Nirmala ANC": 76, "SIM RS Nirmala INC": 81, "SIM RS Nirmala PNC": 86, "SIM RS Nirmala BBL": 109, "SIM RS PKU ANC": 76, "SIM RS PKU BBL": 109, "SIM RS MPH Hepatitis": 40, "SIM RS Ummu Hani Hepatitis": 40, "SIM RS PKU Hepatitis": 40, "SIM RS Siaga Medika Hepatitis": 40, "Kobo Modul ANC": 75, "Kobo Modul INC": 108, "Kobo Modul Neonatus": 89, "Kobo Modul PNC": 118, "Kobo Buku KIA 1 - ANC": 404, "Kobo Buku KIA 2 - Luaran Kehamilan": 48, "Kobo Buku KIA 3 - PNC": 145, "Kobo Buku KIA 4 - Cadre": 83, "Kobo Buku KIA 5 - Vaksinatorku": 100, "Kobo Neonatus Outcome": 25, "Kobo Neonatus Outcome v2": 208, "Kobo DDTK": 20}
 def raw_n(name):
     r = RAW[name]
     return r if isinstance(r, int) else len(fo.load_raw(f"{repo}/raw/{r}-kolom.md"))
