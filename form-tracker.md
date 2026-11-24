@@ -48,6 +48,10 @@ Total: 283 laporan · Masih diperlukan: 230 · Dimapping ke FHIR: 213 · Sudah d
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
 | 74 | eKohort - Pelayanan Ibu ANC (Final Format; file lama 140 / 247 tidak dipakai) | 43 / 78 |
 | 77 | eKohort - Pelayanan Ibu Bersalin (INC) | 58 / 74 |
+| 79 | Buku KIA - Identitas dan ANC | 206 / 388 |
+| 80 | Buku KIA - INC | 60 / 108 |
+| 81 | Buku KIA - PNC | 14 / 32 |
+| 82 | Buku KIA - Anak | 189 / 284 |
 | 78 | Informed Consent | 3 / 8 |
 | 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
 | 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
@@ -223,10 +227,10 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 76 | eKohort (app sudah mati dari kemenkes) - Laporan Kohort Ibu | ❌ | ✅ | ❌ |  |  |
 | 77 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu Bersalin | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 78 | Informed Consent | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 79 | Buku KIA - Identitas dan ANC | ❌ | ✅ | ❌ |  |  |
-| 80 | Buku KIA - INC | ❌ | ✅ | ❌ |  |  |
-| 81 | Buku KIA - PNC | ❌ | ✅ | ❌ |  |  |
-| 82 | Buku KIA - Anak | ❌ | ✅ | ❌ |  |  |
+| 79 | Buku KIA - Identitas dan ANC | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 80 | Buku KIA - INC | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 81 | Buku KIA - PNC | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 82 | Buku KIA - Anak | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 83 | Kobo - Modul ANC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_antenatal_care` |  |
 | 84 | Kobo - Modul INC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_intranatal_care` |  |
 | 85 | Kobo - Modul Neonatus | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_bayi_neonatus` |  |

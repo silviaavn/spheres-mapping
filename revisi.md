@@ -890,6 +890,22 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | #94 Kobo Neonatus Outcome v2 | 208 / 212 | 89 / 239 |
 | #101 Kobo DDTK | 20 / 20 | 11 / 10 |
 
+## Buku KIA 2024 (4 CSV PHDT: ANC, INC, PNC, Anak 0-6 tahun)
+
+⚠️ belum comprehensive review (tanpa daftar variabel BQ).
+
+**Asumsi**
+- BK1: file `Mapping ANC` = tracker #79 (Identitas dan ANC), `INC` = #80, `PNC` = #81, `Anak Usia 0-6 Tahun` = #82. Variabel diambil dari kolom `Variables`; kolom OCR/Kobo SID/JSON di file ANC tidak dipakai.
+- BK2: Encounter dan Patient dihitung 1 per form (aturan standar); resource yang berulang per kunjungan/usia (Anak: Immunization 22, QuestionnaireResponse 22, Procedure 44) dihitung per blok sesuai dictionary.
+- BK3: Organization (faskes) dihitung lookup master data, tidak dihitung.
+
+| Form | Variabel unik / baris | Payload / code | Referensi | Selisih | Variabel di luar payload |
+|---|---|---|---|---|---|
+| #79 Buku KIA - Identitas dan ANC | 235 / 295 | 206 / 388 | 296 | -61 | 12 |
+| #80 Buku KIA - INC | 79 / 84 | 60 / 108 | 58 | +21 | 4 |
+| #81 Buku KIA - PNC | 26 / 26 | 14 / 32 | 17 | +9 | 9 |
+| #82 Buku KIA - Anak | 266 / 834 | 189 / 284 | 267 | -1 | 34 |
+
 ## Log perubahan revisi
 - 2026-11-24: Tambah bagian SISMAL (Regmal 1 20/54, Validasi Indigenous 7/12): asumsi SM1–SM4, temuan SM-1–SM-5, catatan pipeline P44–P45. Verifikasi Uji Silang tidak dihitung (isi salinan TB-TPT). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
@@ -926,3 +942,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24 (2): Tambah bagian SIM RS (34 form). Perbaikan CK3 (QR Lansia terpisah) dan CK-1 (blok lab Lansia terlewat).
 - 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
 - 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
+- 2026-11-24 (4): Tambah bagian Buku KIA 2024 (4 form).

@@ -34,6 +34,10 @@ FORMS = [
  ("ekohort-anc", "eKohort - Pelayanan Ibu ANC (Final Format)", "csv", "ANC_Final", 2, None, 74, 36, "eKohort | ANC", True, "Final Format"),
  ("ekohort-anc-lama", "eKohort - Pelayanan Ibu ANC (file eKohort lama)", "csv", "eKohort.csv", 2, 725, 74, 36, "eKohort | ANC", False, "file lama"),
  ("ekohort-inc", "eKohort - Pelayanan Ibu Bersalin (INC)", "csv", "eKohort.csv", 726, None, 77, 85, "eKohort | INC", True, ""),
+ ("buku-kia-anc", "Buku KIA - Identitas dan ANC (2024)", "csv", "ANC_Buku_KIA", 2, None, 79, 296, "Buku KIA | Identitas+ANC", True, ""),
+ ("buku-kia-inc", "Buku KIA - INC (2024)", "csv", "INC_Buku_KIA", 2, None, 80, 58, "Buku KIA | INC", True, ""),
+ ("buku-kia-pnc", "Buku KIA - PNC (2024)", "csv", "PNC_Buku_KIA", 2, None, 81, 17, "Buku KIA | PNC", True, ""),
+ ("buku-kia-anak", "Buku KIA - Anak Usia 0-6 Tahun (2024)", "csv", "Anak_Usia_0-6", 2, None, 82, 267, "Buku KIA | Anak", True, ""),
 ]
 stats = {}
 shifted = []
