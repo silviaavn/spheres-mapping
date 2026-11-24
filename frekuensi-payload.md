@@ -6,91 +6,91 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 
 | # | Resource | Code pembeda | Display | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
-| 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC | 2 |
-| 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x) | 2 |
-| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 10 |
-| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K | 8 |
+| 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x) | 6 |
+| 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x), ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 9 |
+| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 20 |
+| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 18 |
 | 5 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | Maternal Outcome | 1 |
-| 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC | 3 |
-| 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome | 1 |
-| 8 | Observation | SP000389 | Keadaan Ibu | Maternal Outcome | 1 |
-| 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome | 1 |
-| 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
+| 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC | 5 |
+| 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome, ePus PNC | 2 |
+| 8 | Observation | SP000389 | Keadaan Ibu | Maternal Outcome, ePus PNC | 2 |
+| 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome, ePus INC, ePus PNC | 3 |
+| 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC | 5 |
 | 11 | Observation | LT000005 | Alamat Mati | Maternal Outcome | 1 |
 | 12 | Observation | 79378-6 | Cause of death | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 13 | Location | – | – | Raffle, SITB TB 06 | 2 |
 | 14 | Condition | SP001135 | Presensi Posyandu | Raffle | 1 |
 | 15 | Observation | 385438008 | Source of information | Raffle | 1 |
-| 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC | 1 |
-| 17 | Observation | 424144002 | Current chronological age | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x) | 6 |
-| 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC | 1 |
-| 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi | 2 |
-| 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC | 1 |
-| 21 | Observation | 8302-2 | Body height | SiGizi ANC | 1 |
+| 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC | 3 |
+| 17 | Observation | 424144002 | Current chronological age | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 10 |
+| 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
+| 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
 | 22 | Observation | OC000010 | Indeks Massa Tubuh Sebelum Hamil | SiGizi ANC | 1 |
 | 23 | Immunization | VG139 | Td | SiGizi ANC | 1 |
-| 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC | 1 |
-| 25 | Observation | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | SiGizi ANC | 1 |
-| 26 | Observation | 29463-7 | Body weight | SiGizi ANC | 1 |
+| 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC, ePus ANC | 2 |
+| 25 | Observation | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | SiGizi ANC, ePus ANC | 2 |
+| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK | 7 |
 | 27 | Observation | 392570002 | Blood pressure finding | SiGizi ANC | 1 |
-| 28 | Observation | 284473002 | Mid upper arm circumference | SiGizi ANC | 1 |
+| 28 | Observation | 284473002 | Mid upper arm circumference | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK | 7 |
 | 29 | Observation | 289625003 | Finding of fundal height of uterus | SiGizi ANC | 1 |
-| 30 | Observation | 883-9 | ABO group [Type] in Blood | SiGizi ANC | 1 |
-| 31 | Observation | 10331-7 | Rh [Type] in Blood | SiGizi ANC | 1 |
-| 32 | Observation | 289437007 | Finding of fetal heart rate | SiGizi ANC | 1 |
-| 33 | Observation | 72155-5 | Position in womb Fetus [RHEA] | SiGizi ANC | 1 |
-| 34 | Procedure | 88.78 | Diagnostic ultrasound of gravid uterus | SiGizi ANC | 1 |
-| 35 | Observation | 268445003 | Ultrasound scan - obstetric | SiGizi ANC | 1 |
-| 36 | MedicationRequest | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | SiGizi ANC | 1 |
-| 37 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | SiGizi ANC | 1 |
-| 38 | MedicationRequest | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC | 1 |
-| 39 | MedicationDispense | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC | 1 |
+| 30 | Observation | 883-9 | ABO group [Type] in Blood | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC | 4 |
+| 31 | Observation | 10331-7 | Rh [Type] in Blood | SiGizi ANC, ePus ANC | 2 |
+| 32 | Observation | 289437007 | Finding of fetal heart rate | SiGizi ANC, ePus INC | 2 |
+| 33 | Observation | 72155-5 | Position in womb Fetus [RHEA] | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 4 |
+| 34 | Procedure | 88.78 | Diagnostic ultrasound of gravid uterus | SiGizi ANC, ePus ANC | 2 |
+| 35 | Observation | 268445003 | Ultrasound scan - obstetric | SiGizi ANC, ePus ANC | 2 |
+| 36 | MedicationRequest | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 37 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 38 | MedicationRequest | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC, ePus Pelayanan Pasien | 2 |
+| 39 | MedicationDispense | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC, ePus Pelayanan Pasien | 2 |
 | 40 | ServiceRequest | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 41 | Specimen | 122555007 | Venous blood specimen | SiGizi ANC (5x) | 1 |
-| 42 | Observation | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
+| 42 | Observation | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
 | 43 | DiagnosticReport | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 44 | ServiceRequest | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
-| 45 | Observation | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
+| 45 | Observation | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
 | 46 | DiagnosticReport | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 47 | ServiceRequest | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
-| 48 | Observation | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
+| 48 | Observation | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
 | 49 | DiagnosticReport | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
 | 50 | ServiceRequest | 2887-8 | Protein [Presence] in Urine | SiGizi ANC | 1 |
 | 51 | Specimen | 122575003 | Urine specimen | SiGizi ANC | 1 |
-| 52 | Observation | 2887-8 | Protein [Presence] in Urine | SiGizi ANC | 1 |
-| 53 | DiagnosticReport | 2887-8 | Protein [Presence] in Urine | SiGizi ANC | 1 |
+| 52 | Observation | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
+| 53 | DiagnosticReport | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
 | 54 | ServiceRequest | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC | 1 |
-| 55 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC | 1 |
-| 56 | DiagnosticReport | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC | 1 |
+| 55 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ePus MTBS (2x) | 5 |
+| 56 | DiagnosticReport | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ePus MTBS (2x) | 5 |
 | 57 | ServiceRequest | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC | 1 |
-| 58 | Observation | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC | 1 |
-| 59 | DiagnosticReport | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC | 1 |
-| 60 | Observation | 15220000 | Laboratory test | SiGizi ANC | 1 |
-| 61 | Observation | SP000007 | Tatalaksana Anemia | SiGizi ANC | 1 |
-| 62 | Observation | SP000010 | Skrining Hipertensi dalam Kehamilan | SiGizi ANC | 1 |
-| 63 | Observation | SP000012 | Tatalaksana Pre Eklampsia | SiGizi ANC | 1 |
-| 64 | Observation | SP000014 | Tatalaksana KEK | SiGizi ANC | 1 |
-| 65 | Observation | SP000015 | Risiko Masalah Kesehatan | SiGizi ANC | 1 |
-| 66 | Observation | SP000016 | Tatalaksana Masalah Kesehatan | SiGizi ANC | 1 |
-| 67 | Procedure | 1230101008 | Counseling for pregnancy | SiGizi ANC | 1 |
-| 68 | Procedure | 385892002 | Mental health screening | SiGizi ANC | 1 |
+| 58 | Observation | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
+| 59 | DiagnosticReport | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
+| 60 | Observation | 15220000 | Laboratory test | SiGizi ANC, ePus ANC | 2 |
+| 61 | Observation | SP000007 | Tatalaksana Anemia | SiGizi ANC, ePus ANC | 2 |
+| 62 | Observation | SP000010 | Skrining Hipertensi dalam Kehamilan | SiGizi ANC, ePus ANC | 2 |
+| 63 | Observation | SP000012 | Tatalaksana Pre Eklampsia | SiGizi ANC, ePus ANC | 2 |
+| 64 | Observation | SP000014 | Tatalaksana KEK | SiGizi ANC, ePus ANC | 2 |
+| 65 | Observation | SP000015 | Risiko Masalah Kesehatan | SiGizi ANC, ePus ANC | 2 |
+| 66 | Observation | SP000016 | Tatalaksana Masalah Kesehatan | SiGizi ANC, ePus ANC | 2 |
+| 67 | Procedure | 1230101008 | Counseling for pregnancy | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
+| 68 | Procedure | 385892002 | Mental health screening | SiGizi ANC, ePus ANC | 2 |
 | 69 | Organization | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 70 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04 | 3 |
 | 71 | Condition | Z03.0 | Observation for suspected tuberculosis | SITB TB 06 | 1 |
 | 72 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 4 |
+| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x) | 9 |
 | 74 | Observation | OC000191 | Jumlah Skoring TBC Anak | SITB TB 06, SITB TB 03 SO | 2 |
 | 75 | ServiceRequest | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
-| 76 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 76 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus PNC | 4 |
 | 77 | DiagnosticReport | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
 | 78 | Procedure | 424489006 | Mantoux test | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 79 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 79 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Laboratorium | 4 |
 | 80 | Observation | 55277-8 | HIV status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 81 | Observation | 33248-6 | Diabetes status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 82 | ServiceRequest | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
 | 83 | Specimen | 119334006 | Sputum specimen | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO (7x) | 3 |
-| 84 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
-| 85 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
+| 84 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x), ePus Kunjungan Ibu Hamil, ePus Laboratorium | 6 |
+| 85 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (2x), ePus Kunjungan Ibu Hamil, ePus Laboratorium | 6 |
 | 86 | ServiceRequest | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
 | 87 | Observation | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
 | 88 | DiagnosticReport | X099379 | Pemeriksaan TCM XDR | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
@@ -107,15 +107,15 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 99 | Observation | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
 | 100 | DiagnosticReport | X099383 | Pemeriksaan Paket Standar Kepekaan | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
 | 101 | Observation | 106229004 | Qualifier for type of diagnosis | SITB TB 06, SITB TB 03 SO, SITB TB 16K | 3 |
-| 102 | CarePlan | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 102 | CarePlan | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien (3x), ePus PNC | 5 |
 | 103 | Observation | 365866002 | Finding of human immunodeficiency virus status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 104 | Procedure | SP000046 | Terapi Antiretroviral (ART) | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 104 | Procedure | SP000046 | Terapi Antiretroviral (ART) | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil | 4 |
 | 105 | Observation | SP000047 | Hasil Tes Diabetes Melitus | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 106 | Coverage | – | – | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 107 | Observation | 85658-3 | Occupation [Type] | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 106 | Coverage | – | – | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal | 6 |
+| 107 | Observation | 85658-3 | Occupation [Type] | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien | 3 |
 | 108 | Observation | 82810-3 | Pregnancy status | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 109 | Observation | 225368008 | Contact tracing | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 110 | Procedure | TK000016 | Edukasi Tes HIV | SITB TB 03 SO | 1 |
+| 110 | Procedure | TK000016 | Edukasi Tes HIV | SITB TB 03 SO, ePus Kunjungan Ibu Hamil | 2 |
 | 111 | Procedure | SP000371 | Cotrimoxazole | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 112 | Observation | 1284985006 | Diabetes mellitus management program | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 113 | Observation | SP000797 | Pindah Register Pasien TB RO | SITB TB 03 SO | 1 |
@@ -142,7 +142,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 134 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
 | 135 | Group | – | – | SITB TB 16K | 1 |
 | 136 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
-| 137 | RelatedPerson | – | – | SITB TB 16K | 1 |
+| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x) | 5 |
 | 138 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K | 1 |
 | 139 | ServiceRequest | 185389009 | Follow-up visit | SITB TB 16K | 1 |
 | 140 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
@@ -158,17 +158,378 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 150 | Observation | 39016-1 | Age at death | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 151 | Observation | OC000028 | Jenis Tempat Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 152 | Observation | SP000098 | Tipe Penyelenggara Faskes Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi | 1 |
-| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi | 1 |
-| 155 | Observation | OC000013 | Penolong Persalinan | MPDN Kematian Bayi | 1 |
+| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi, ePus INC | 2 |
+| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
+| 155 | Observation | OC000013 | Penolong Persalinan | MPDN Kematian Bayi, ePus INC | 2 |
 | 156 | Observation | SP000075 | Tipe Penyelenggara Faskes Lahir | MPDN Kematian Bayi | 1 |
-| 157 | Observation | 57715-5 | Birth time | MPDN Kematian Bayi | 1 |
-| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi | 1 |
-| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 157 | Observation | 57715-5 | Birth time | MPDN Kematian Bayi, ePus INC | 2 |
+| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi, ePus INC | 2 |
+| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC | 4 |
 | 160 | Observation | 57722-1 | Birth plurality of Pregnancy | MPDN Kematian Bayi | 1 |
-| 161 | Observation | 30525-0 | Age | MPDN Kematian Bayi | 1 |
+| 161 | Observation | 30525-0 | Age | MPDN Kematian Bayi, ePus INC | 2 |
 | 162 | Composition | – | – | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 163 | Condition | – | – | MPDN Kematian Ibu | 1 |
+| 163 | Condition | – | – | MPDN Kematian Ibu, ePus Pelayanan Pasien (9x), ePus Kunjungan Ibu Hamil (2x), ePus Rujukan Eksternal, ePus MTBS (2x), ePus MTBM, ePus Tumbang DDTK (3x) | 7 |
 | 164 | Observation | OC000026 | Masa terjadi Kematian Ibu | MPDN Kematian Ibu | 1 |
+| 165 | Observation | 161572004 | History of congenital anomaly | ePus Pelayanan Pasien | 1 |
+| 166 | Observation | 51848-0 | Evaluation note | ePus Pelayanan Pasien | 1 |
+| 167 | Observation | 61150-9 | Subjective Narrative | ePus Pelayanan Pasien | 1 |
+| 168 | Observation | 72225-6 | Objective Narrative | ePus Pelayanan Pasien | 1 |
+| 169 | Observation | 77977-7 | Illness duration | ePus Pelayanan Pasien | 1 |
+| 170 | Observation | 72166-2 | Tobacco smoking status | ePus Pelayanan Pasien | 1 |
+| 171 | Observation | 11331-6 | History of Alcohol use | ePus Pelayanan Pasien | 1 |
+| 172 | Observation | 878899005 | Inadequate intake of plant fiber | ePus Pelayanan Pasien | 1 |
+| 173 | Procedure | 84635008 | Disease process or condition education | ePus Pelayanan Pasien | 1 |
+| 174 | FamilyMemberHistory | – | – | ePus Pelayanan Pasien | 1 |
+| 175 | AllergyIntolerance | – | – | ePus Pelayanan Pasien | 1 |
+| 176 | Observation | 67775-7 | Level of responsiveness | ePus Pelayanan Pasien | 1 |
+| 177 | Observation | 75910-0 | Canadian triage and acuity scale [CTAS] | ePus Pelayanan Pasien | 1 |
+| 178 | Observation | 276361009 | Waist circumference | ePus Pelayanan Pasien | 1 |
+| 179 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | ePus Pelayanan Pasien | 1 |
+| 180 | Observation | 59575-1 | Body mass index (BMI) [Percentile] Per age | ePus Pelayanan Pasien | 1 |
+| 181 | Observation | 8480-6 | Systolic blood pressure | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC | 5 |
+| 182 | Observation | 8462-4 | Diastolic blood pressure | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC | 5 |
+| 183 | Observation | 9279-1 | Respiratory rate | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x) | 6 |
+| 184 | Observation | 8867-4 | Heart rate | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC | 4 |
+| 185 | Observation | 8884-9 | Heart rate rythm | ePus Pelayanan Pasien | 1 |
+| 186 | Observation | 8310-5 | Body temperature | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM | 5 |
+| 187 | Observation | 129861002 | Physical activity finding | ePus Pelayanan Pasien | 1 |
+| 188 | Observation | 80316-3 | Pain scale [Type] | ePus Pelayanan Pasien | 1 |
+| 189 | ServiceRequest | – | – | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (70x), ePus Rujukan Eksternal, ePus ANC (19x), ePus PNC (2x), ePus MTBS (9x), ePus MTBM, ePus Tumbang DDTK | 9 |
+| 190 | Procedure | – | – | ePus Pelayanan Pasien, ePus MTBS (12x), ePus MTBM (6x) | 3 |
+| 191 | Observation | 32418-6 | Obstetric trimester Stated | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 192 | Observation | – | – | ePus Kunjungan Ibu Hamil, ePus Laboratorium (53x), ePus ANC (13x), ePus INC (2x), ePus MTBS | 5 |
+| 193 | Observation | 11881-0 | Uterus Fundal height Tape measure | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 3 |
+| 194 | Observation | 32392-3 | Deep tendon reflex of Patellar | ePus Kunjungan Ibu Hamil | 1 |
+| 195 | Observation | 55283-6 | Fetal Heart rate | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
+| 196 | Observation | 249111004 | Engagement of head | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
+| 197 | Observation | 89087-1 | Fetal Body weight Estimated | ePus Kunjungan Ibu Hamil (2x), ePus ANC | 2 |
+| 198 | Observation | 246435002 | Number of fetuses | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 199 | Immunization | – | – | ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), ePus MTBS (17x), ePus MTBM (3x) | 4 |
+| 200 | Procedure | 99.38 | Administration of tetanus toxoid | ePus Kunjungan Ibu Hamil | 1 |
+| 201 | Observation | SP000122 | Catat di Buku KIA | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC | 3 |
+| 202 | Specimen | – | – | ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (64x), ePus ANC (6x), ePus PNC, ePus MTBS (8x) | 5 |
+| 203 | DiagnosticReport | – | – | ePus Kunjungan Ibu Hamil (7x), ePus Laboratorium (3x), ePus ANC (3x), ePus PNC | 4 |
+| 204 | Observation | SP000115 | Pemeriksaan Laboratorium Thalassemia | ePus Kunjungan Ibu Hamil | 1 |
+| 205 | Observation | 278977008 | Human immunodeficiency virus status | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 206 | Observation | 72178-7 | Given a mosquito net [RHEA] | ePus Kunjungan Ibu Hamil | 1 |
+| 207 | Observation | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 208 | DiagnosticReport | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 209 | Observation | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | ePus Kunjungan Ibu Hamil (2x), ePus MTBS | 2 |
+| 210 | DiagnosticReport | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | ePus Kunjungan Ibu Hamil (2x), ePus MTBS | 2 |
+| 211 | Observation | 50687-3 | Plasmodium sp Ag [Presence] in Blood | ePus Kunjungan Ibu Hamil | 1 |
+| 212 | MedicationStatement | – | – | ePus Kunjungan Ibu Hamil (2x), ePus PNC | 2 |
+| 213 | Observation | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | ePus Kunjungan Ibu Hamil | 1 |
+| 214 | DiagnosticReport | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | ePus Kunjungan Ibu Hamil | 1 |
+| 215 | Procedure | 830039004 | Genitourinary medicine service | ePus Kunjungan Ibu Hamil | 1 |
+| 216 | Observation | 386413005 | Risk identification | ePus Kunjungan Ibu Hamil | 1 |
+| 217 | ServiceRequest | 737492002 | Outpatient care management | ePus Kunjungan Ibu Hamil | 1 |
+| 218 | Observation | SP000383 | Keadaan Ibu Saat Tiba | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
+| 219 | Specimen | 119361006 | Plasma | ePus Laboratorium | 1 |
+| 220 | ServiceRequest | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | ePus Laboratorium | 1 |
+| 221 | DiagnosticReport | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | ePus Laboratorium | 1 |
+| 222 | Observation | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | ePus Laboratorium | 1 |
+| 223 | DiagnosticReport | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | ePus Laboratorium | 1 |
+| 224 | DiagnosticReport | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | ePus Laboratorium | 1 |
+| 225 | Observation | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 226 | DiagnosticReport | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 227 | Observation | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 228 | DiagnosticReport | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 229 | Observation | 3084-1 | Urate [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 230 | DiagnosticReport | 3084-1 | Urate [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 231 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 232 | DiagnosticReport | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 233 | Observation | 41653-7 | Glucose [Mass/volume] in Capillary blood by Glucometer | ePus Laboratorium | 1 |
+| 234 | DiagnosticReport | 41653-7 | Glucose [Mass/volume] in Capillary blood by Glucometer | ePus Laboratorium | 1 |
+| 235 | Observation | 2571-8 | Triglyceride [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 236 | DiagnosticReport | 2571-8 | Triglyceride [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 237 | Observation | 2085-9 | Cholesterol in HDL [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 238 | DiagnosticReport | 2085-9 | Cholesterol in HDL [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 239 | Observation | 2089-1 | Cholesterol in LDL [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 240 | DiagnosticReport | 2089-1 | Cholesterol in LDL [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 241 | Observation | 1751-7 | Albumin [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 242 | DiagnosticReport | 1751-7 | Albumin [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 243 | Observation | 2324-2 | Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 244 | DiagnosticReport | 2324-2 | Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 245 | Observation | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | ePus Laboratorium | 1 |
+| 246 | DiagnosticReport | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | ePus Laboratorium | 1 |
+| 247 | Observation | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 248 | DiagnosticReport | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 249 | Observation | 1742-6 | Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 250 | DiagnosticReport | 1742-6 | Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 251 | Observation | 2157-6 | Creatine kinase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 252 | DiagnosticReport | 2157-6 | Creatine kinase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 253 | Observation | 20977-5 | Urea [Mass/volume] in Blood | ePus Laboratorium | 1 |
+| 254 | DiagnosticReport | 20977-5 | Urea [Mass/volume] in Blood | ePus Laboratorium | 1 |
+| 255 | Observation | 2885-2 | Protein [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 256 | DiagnosticReport | 2885-2 | Protein [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
+| 257 | Observation | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | ePus Laboratorium | 1 |
+| 258 | DiagnosticReport | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | ePus Laboratorium | 1 |
+| 259 | DiagnosticReport | 58410-2 | CBC panel - Blood by Automated count | ePus Laboratorium | 1 |
+| 260 | DiagnosticReport | 26453-1 | Erythrocytes [#/volume] in Blood | ePus Laboratorium | 1 |
+| 261 | DiagnosticReport | 26464-8 | Leukocytes [#/volume] in Blood | ePus Laboratorium (2x), ePus MTBS | 2 |
+| 262 | DiagnosticReport | 26515-7 | Platelets [#/volume] in Blood | ePus Laboratorium, ePus MTBS | 2 |
+| 263 | DiagnosticReport | 20570-8 | Hematocrit [Volume Fraction] of Blood | ePus Laboratorium, ePus MTBS | 2 |
+| 264 | DiagnosticReport | 11067-6 | Bleeding time | ePus Laboratorium | 1 |
+| 265 | DiagnosticReport | 30341-2 | Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | ePus Laboratorium | 1 |
+| 266 | DiagnosticReport | 17009-2 | IgM [Presence] in Serum | ePus Laboratorium | 1 |
+| 267 | DiagnosticReport | 3183-1 | Clotting time of Blood by Lee White method | ePus Laboratorium | 1 |
+| 268 | DiagnosticReport | 17007-6 | IgG [Presence] in Serum | ePus Laboratorium | 1 |
+| 269 | DiagnosticReport | 30428-7 | MCV [Entitic volume] | ePus Laboratorium | 1 |
+| 270 | DiagnosticReport | 28539-5 | MCH [Entitic mass] | ePus Laboratorium | 1 |
+| 271 | DiagnosticReport | 28540-3 | MCHC [Mass/volume] | ePus Laboratorium | 1 |
+| 272 | DiagnosticReport | 26511-6 | Neutrophils/100 leukocytes in Blood | ePus Laboratorium (2x) | 1 |
+| 273 | ServiceRequest | 26464-8 | Leukocytes [#/volume] in Blood | ePus Laboratorium | 1 |
+| 274 | ServiceRequest | 26511-6 | Neutrophils/100 leukocytes in Blood | ePus Laboratorium | 1 |
+| 275 | DiagnosticReport | 26478-8 | Lymphocytes/100 leukocytes in Blood | ePus Laboratorium | 1 |
+| 276 | Observation | 882-1 | ABO and Rh group [Type] in Blood | ePus Laboratorium | 1 |
+| 277 | DiagnosticReport | 882-1 | ABO and Rh group [Type] in Blood | ePus Laboratorium | 1 |
+| 278 | DiagnosticReport | 883-9 | ABO group [Type] in Blood | ePus Laboratorium | 1 |
+| 279 | Observation | 17566-1 | Salmonella typhi O Ab [Presence] in Serum | ePus Laboratorium | 1 |
+| 280 | DiagnosticReport | 17566-1 | Salmonella typhi O Ab [Presence] in Serum | ePus Laboratorium | 1 |
+| 281 | Observation | 22529-2 | Salmonella typhi H Ab [Presence] in Serum | ePus Laboratorium | 1 |
+| 282 | DiagnosticReport | 22529-2 | Salmonella typhi H Ab [Presence] in Serum | ePus Laboratorium | 1 |
+| 283 | ServiceRequest | 743-5 | Monocytes [#/volume] in Blood by Manual count | ePus Laboratorium | 1 |
+| 284 | DiagnosticReport | 743-5 | Monocytes [#/volume] in Blood by Manual count | ePus Laboratorium | 1 |
+| 285 | DiagnosticReport | 87546-8 | Dengue virus IgG and IgM panel - Serum Qualitative | ePus Laboratorium | 1 |
+| 286 | DiagnosticReport | 29676-4 | Dengue virus IgG Ab [Presence] in Serum | ePus Laboratorium | 1 |
+| 287 | DiagnosticReport | 25338-5 | Dengue virus IgM Ab [Presence] in Serum | ePus Laboratorium | 1 |
+| 288 | DiagnosticReport | 91064-6 | Dengue virus NS1 Ag [Presence] in Serum or Plasma by Immunoassay | ePus Laboratorium | 1 |
+| 289 | DiagnosticReport | 47085-6 | Plasmodium sp DNA [Presence] in Blood by NAA with probe detection | ePus Laboratorium | 1 |
+| 290 | DiagnosticReport | 34534-8 | 12 lead EKG panel | ePus Laboratorium | 1 |
+| 291 | DiagnosticReport | 11525-3 | US for pregnancy | ePus Laboratorium | 1 |
+| 292 | DiagnosticReport | 5778-6 | Color of Urine | ePus Laboratorium | 1 |
+| 293 | DiagnosticReport | 32167-9 | Clarity of Urine | ePus Laboratorium | 1 |
+| 294 | DiagnosticReport | 2756-5 | pH of Urine | ePus Laboratorium | 1 |
+| 295 | DiagnosticReport | 2965-2 | Specific gravity of Urine | ePus Laboratorium | 1 |
+| 296 | DiagnosticReport | 2349-9 | Glucose [Presence] in Urine | ePus Laboratorium | 1 |
+| 297 | DiagnosticReport | 33903-6 | Ketones [Presence] in Urine | ePus Laboratorium | 1 |
+| 298 | DiagnosticReport | 1977-8 | Bilirubin.total [Presence] in Urine | ePus Laboratorium | 1 |
+| 299 | DiagnosticReport | 34927-4 | Urobilinogen [Moles/volume] in Urine | ePus Laboratorium | 1 |
+| 300 | Observation | 105906-2 | Blood [Presence] in Urine | ePus Laboratorium | 1 |
+| 301 | DiagnosticReport | 105906-2 | Blood [Presence] in Urine | ePus Laboratorium | 1 |
+| 302 | Observation | 32710-6 | Nitrite [Presence] in Urine | ePus Laboratorium | 1 |
+| 303 | DiagnosticReport | 32710-6 | Nitrite [Presence] in Urine | ePus Laboratorium | 1 |
+| 304 | Observation | 105087-1 | Epithelial cells.squamous [Presence] in Urine | ePus Laboratorium | 1 |
+| 305 | DiagnosticReport | 105087-1 | Epithelial cells.squamous [Presence] in Urine | ePus Laboratorium | 1 |
+| 306 | Observation | 105089-7 | Epithelial cells.non-squamous [Presence] in Urine | ePus Laboratorium | 1 |
+| 307 | DiagnosticReport | 105089-7 | Epithelial cells.non-squamous [Presence] in Urine | ePus Laboratorium | 1 |
+| 308 | Observation | 85093-3 | Crystal casts [Presence] in Urine sediment by Light microscopy | ePus Laboratorium | 1 |
+| 309 | DiagnosticReport | 85093-3 | Crystal casts [Presence] in Urine sediment by Light microscopy | ePus Laboratorium | 1 |
+| 310 | Observation | 105107-7 | Erythrocytes [#/area] in Urine sediment | ePus Laboratorium | 1 |
+| 311 | DiagnosticReport | 105107-7 | Erythrocytes [#/area] in Urine sediment | ePus Laboratorium | 1 |
+| 312 | Observation | 105104-4 | Leukocytes [#/area] in Urine sediment | ePus Laboratorium | 1 |
+| 313 | DiagnosticReport | 105104-4 | Leukocytes [#/area] in Urine sediment | ePus Laboratorium | 1 |
+| 314 | Observation | 105908-8 | Bacteria [#/area] in Urine sediment | ePus Laboratorium | 1 |
+| 315 | DiagnosticReport | 105908-8 | Bacteria [#/area] in Urine sediment | ePus Laboratorium | 1 |
+| 316 | Observation | 2106-3 | Choriogonadotropin [Presence] in Urine | ePus Laboratorium | 1 |
+| 317 | DiagnosticReport | 2106-3 | Choriogonadotropin [Presence] in Urine | ePus Laboratorium | 1 |
+| 318 | Observation | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | ePus Laboratorium | 1 |
+| 319 | DiagnosticReport | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | ePus Laboratorium | 1 |
+| 320 | EpisodeOfCare | – | – | ePus ANC | 1 |
+| 321 | Observation | 11977-6 | [#] Parity | ePus ANC (2x), ePus PNC (2x) | 2 |
+| 322 | Observation | 69043-8 | Other pregnancy outcomes # | ePus ANC, ePus PNC | 2 |
+| 323 | Observation | SP000050 | Riwayat Onset Persalinan | ePus ANC, ePus PNC | 2 |
+| 324 | Observation | SP000132 | Memiliki Buku KIA | ePus ANC, ePus PNC | 2 |
+| 325 | Observation | 56077-1 | Body weight --pre current pregnancy | ePus ANC, ePus PNC | 2 |
+| 326 | Condition | 404684003 | Clinical finding | ePus ANC, ePus Tumbang Anak (2x) | 2 |
+| 327 | Observation | 3401000175105 | Total number of prenatal care visits | ePus ANC | 1 |
+| 328 | Observation | SP000134 | Jenis Lokasi Screening | ePus ANC, ePus PNC | 2 |
+| 329 | Observation | SP000131 | Status Pindahan | ePus ANC, ePus INC, ePus PNC | 3 |
+| 330 | Observation | 10197-2 | Physical findings of Eye Narrative | ePus ANC (2x) | 1 |
+| 331 | Observation | 10206-1 | Physical findings of Skin Narrative | ePus ANC | 1 |
+| 332 | Observation | 11411-6 | Physical findings of Neck Narrative | ePus ANC | 1 |
+| 333 | Observation | 32453-3 | Physical findings of Mouth | ePus ANC | 1 |
+| 334 | Observation | 297268004 | Ear, nose and throat finding | ePus ANC | 1 |
+| 335 | Observation | 10200-4 | Physical findings of Heart Narrative | ePus ANC | 1 |
+| 336 | Observation | 301230006 | Lung finding | ePus ANC | 1 |
+| 337 | Observation | 10191-5 | Physical findings of Abdomen Narrative | ePus ANC | 1 |
+| 338 | Observation | 116307009 | Finding of upper limb | ePus ANC | 1 |
+| 339 | Observation | 116312005 | Finding of lower limb | ePus ANC | 1 |
+| 340 | Observation | 102572006 | Edema of lower extremity (finding) | ePus ANC | 1 |
+| 341 | Observation | 299412000 | Finding of patella structure | ePus ANC | 1 |
+| 342 | Observation | 8478-0 | Mean blood pressure | ePus ANC | 1 |
+| 343 | Observation | SP000634 | Tinggi fundus terdeteksi | ePus ANC | 1 |
+| 344 | Observation | SP000635 | Tinggi fundus jari | ePus ANC | 1 |
+| 345 | DiagnosticReport | 11850-5 | Gestational sac Mean diameter US | ePus ANC | 1 |
+| 346 | DiagnosticReport | 11957-8 | Fetal Crown Rump length US | ePus ANC | 1 |
+| 347 | DiagnosticReport | 11948-7 | Fetal Heart rate US | ePus ANC | 1 |
+| 348 | DiagnosticReport | 11820-8 | Fetal Head Diameter.biparietal US | ePus ANC | 1 |
+| 349 | DiagnosticReport | 11984-2 | Fetal Head Circumference US | ePus ANC | 1 |
+| 350 | DiagnosticReport | 11979-2 | Fetal Abdomen Circumference US | ePus ANC | 1 |
+| 351 | DiagnosticReport | 11963-6 | Fetal Femur diaphysis [Length] US | ePus ANC | 1 |
+| 352 | DiagnosticReport | 11832-3 | Fetal Amniotic fluid space Maximum diameter largest pocket US | ePus ANC | 1 |
+| 353 | Observation | 365662002 | Finding of amniotic fluid appearance | ePus ANC, ePus INC | 2 |
+| 354 | DiagnosticReport | 72155-5 | Position in womb Fetus [RHEA] | ePus ANC | 1 |
+| 355 | DiagnosticReport | 11877-8 | Fetal presentation US | ePus ANC | 1 |
+| 356 | DiagnosticReport | 11878-6 | Number of fetuses by US | ePus ANC | 1 |
+| 357 | DiagnosticReport | 11888-5 | Gestational age US composite estimate | ePus ANC | 1 |
+| 358 | DiagnosticReport | 11781-2 | Delivery date US composite estimate | ePus ANC | 1 |
+| 359 | Condition | 34842007 | Antepartum hemorrhage | ePus ANC | 1 |
+| 360 | Observation | OC000001 | Jarak kehamilan | ePus ANC, ePus INC | 2 |
+| 361 | Observation | 73211009 | Diabetes mellitus | ePus ANC | 1 |
+| 362 | Observation | 66071002 | Viral hepatitis type B | ePus ANC | 1 |
+| 363 | Observation | 76272004 | Syphilis | ePus ANC | 1 |
+| 364 | Observation | 61462000 | Malaria | ePus ANC | 1 |
+| 365 | Observation | 56717001 | Tuberculosis | ePus ANC | 1 |
+| 366 | Condition | 386337006 | Intrapartal care | ePus INC | 1 |
+| 367 | Observation | 271692001 | Presentation of fetus | ePus INC | 1 |
+| 368 | Observation | 289282009 | Amniotic membrane finding | ePus INC | 1 |
+| 369 | Observation | SP000123 | Integrasi Program | ePus INC | 1 |
+| 370 | Observation | 76516-4 | Gestational age—​at birth | ePus INC | 1 |
+| 371 | Observation | 118215003 | Delivery finding | ePus INC | 1 |
+| 372 | Observation | 405195003 | Intrapartum maternal status | ePus INC | 1 |
+| 373 | Observation | 387700009 | Prolonged latent phase of labor | ePus INC | 1 |
+| 374 | Observation | 249120008 | Onset of labor first stage | ePus INC | 1 |
+| 375 | Observation | 249160009 | Onset of labor second stage | ePus INC | 1 |
+| 376 | Observation | OC000018 | Onset Kala III | ePus INC | 1 |
+| 377 | Observation | 236994008 | Placental delivery procedure | ePus INC | 1 |
+| 378 | Observation | 289267004 | Finding of completeness of placenta | ePus INC | 1 |
+| 379 | Procedure | SP000127 | Injeksi Oksitosin | ePus INC | 1 |
+| 380 | Procedure | 302384005 | Controlled cord traction of placenta | ePus INC | 1 |
+| 381 | Procedure | 236996005 | Abdominal uterine fundal massage | ePus INC | 1 |
+| 382 | Observation | OC000019 | Onset Kala IV | ePus INC | 1 |
+| 383 | Condition | 9293002 | Atony of uterus | ePus INC | 1 |
+| 384 | Observation | 719051004 | Quantity of postpartum maternal blood loss | ePus INC | 1 |
+| 385 | Observation | 717809003 | Immediate postpartum care | ePus INC | 1 |
+| 386 | Procedure | 717809003 | Immediate postpartum care | ePus INC | 1 |
+| 387 | Condition | 199746004 | Obstructed labor | ePus INC | 1 |
+| 388 | Observation | SP000379 | Tatalaksana Komplikasi Persalinan | ePus INC | 1 |
+| 389 | Observation | 63893-2 | Outcome of pregnancy | ePus INC | 1 |
+| 390 | ServiceRequest | 409014006 | Delivery care management | ePus INC, ePus PNC | 2 |
+| 391 | Procedure | SP000130 | Menggunakan Partograf | ePus INC | 1 |
+| 392 | Procedure | 431868002 | Initiation of breastfeeding | ePus INC | 1 |
+| 393 | Observation | OC000016 | Waktu Inisiasi Menyusui Dini | ePus INC | 1 |
+| 394 | Procedure | 409063005 | Counselling | ePus INC (2x) | 1 |
+| 395 | Procedure | SP000126 | ARV Profilaksis | ePus INC | 1 |
+| 396 | Observation | 249222005 | Neonatal condition | ePus INC | 1 |
+| 397 | Condition | Z39.2 | Routine postpartum follow-up | ePus PNC | 1 |
+| 398 | Condition | 289530006 | Vaginal bleeding | ePus PNC | 1 |
+| 399 | Observation | 81661-1 | Blood Loss [Volume] Measured | ePus PNC | 1 |
+| 400 | Observation | 364297003 | Female perineum observable | ePus PNC | 1 |
+| 401 | Observation | OC000020 | Tanda Infeksi Perineum | ePus PNC | 1 |
+| 402 | Observation | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | ePus PNC | 1 |
+| 403 | Observation | 32422-8 | Physical findings of breast | ePus PNC | 1 |
+| 404 | Observation | 289700000 | Uterine contractions present | ePus PNC | 1 |
+| 405 | Observation | 249214003 | Color of lochia | ePus PNC | 1 |
+| 406 | Observation | 249215002 | Odor of lochia | ePus PNC | 1 |
+| 407 | Observation | OC000017 | Produksi ASI | ePus PNC | 1 |
+| 408 | Observation | 252041008 | Micturition finding | ePus PNC | 1 |
+| 409 | Observation | 300375001 | Able to defecate | ePus PNC | 1 |
+| 410 | Procedure | 408988007 | Newborn care education | ePus PNC | 1 |
+| 411 | Observation | 8345-1 | Body weight Measured --post partum | ePus PNC | 1 |
+| 412 | Observation | 8305-5 | Body height --post partum | ePus PNC | 1 |
+| 413 | Condition | 47821001 | Postpartum hemorrhage | ePus PNC | 1 |
+| 414 | Observation | 289084000 | Difficulty performing breastfeeding | ePus PNC | 1 |
+| 415 | Medication | – | – | ePus PNC | 1 |
+| 416 | Procedure | 767224000 | Administration of vitamin A | ePus PNC, ePus MTBS | 2 |
+| 417 | MedicationRequest | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | ePus PNC, ePus MTBS | 2 |
+| 418 | MedicationDispense | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | ePus PNC, ePus MTBS (2x) | 2 |
+| 419 | Procedure | 711029005 | Counseling about breastfeeding | ePus PNC | 1 |
+| 420 | Procedure | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | ePus PNC | 1 |
+| 421 | Procedure | 72531000052105 | Counseling for contraception | ePus PNC | 1 |
+| 422 | Procedure | SP000135 | Konseling Tanda Bahaya Bayi Baru Lahir | ePus PNC | 1 |
+| 423 | Procedure | 441041000124100 | Counseling about nutrition | ePus PNC, ePus Tumbang DDTK | 2 |
+| 424 | Procedure | PC000001 | Perawatan Tali Pusat | ePus PNC | 1 |
+| 425 | Procedure | ED000010 | Edukasi PHBS | ePus PNC | 1 |
+| 426 | Observation | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | ePus PNC | 1 |
+| 427 | DiagnosticReport | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | ePus PNC | 1 |
+| 428 | Observation | SP000046 | Terapi Antiretroviral (ART) | ePus PNC | 1 |
+| 429 | Observation | SP000124 | Obat anti malaria | ePus PNC | 1 |
+| 430 | Observation | SP000125 | Obat anti tuberkulosis | ePus PNC | 1 |
+| 431 | Observation | SP000139 | KB Pasca Plasenta | ePus PNC (2x) | 1 |
+| 432 | Observation | PC000004 | KB Pasca Persalinan | ePus PNC (2x) | 1 |
+| 433 | Observation | SP000380 | Tatalaksana Komplikasi Pendarahan | ePus PNC | 1 |
+| 434 | Observation | 736286003 | Hypertension clinical management plan | ePus PNC | 1 |
+| 435 | Observation | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | ePus PNC | 1 |
+| 436 | Condition | 359746009 | Patient’s condition stable | ePus PNC | 1 |
+| 437 | Observation | 35025007 | Manual pelvic examination | ePus PNC | 1 |
+| 438 | Observation | SP000666 | Hari setelah melahirkan | ePus PNC | 1 |
+| 439 | Observation | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | ePus PNC | 1 |
+| 440 | Condition | SP000273 | Integrated management of childhood illness | ePus MTBS | 1 |
+| 441 | Observation | 9843-4 | Head Occipital-frontal circumference | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
+| 442 | Observation | SP000261 | Tipe Kunjungan | ePus MTBS, ePus MTBM | 2 |
+| 443 | Observation | OC000099 | Status daerah endemis malaria tempat tinggal | ePus MTBS (2x) | 1 |
+| 444 | Observation | OC000088 | Pemeriksaan tanda bahaya umum | ePus MTBS | 1 |
+| 445 | Observation | OC000089 | Klasifikasi status kegawatan | ePus MTBS | 1 |
+| 446 | Observation | 103228002 | Hemoglobin saturation with oxygen | ePus MTBS, ePus MTBM (2x) | 2 |
+| 447 | Observation | OC000090 | Pemeriksaan tanda dan gejala sukar bernafas | ePus MTBS | 1 |
+| 448 | Observation | OC000091 | Klasifikasi batuk dan/atau sukar bernapas | ePus MTBS | 1 |
+| 449 | Condition | 62315008 | Diarrhea | ePus MTBS, ePus MTBM | 2 |
+| 450 | Observation | OC000113 | Durasi diare | ePus MTBS, ePus MTBM | 2 |
+| 451 | Observation | 405729008 | Hematochezia | ePus MTBS | 1 |
+| 452 | Observation | OC000097 | Pemeriksaan tanda dan gejala diare | ePus MTBS, ePus MTBM | 2 |
+| 453 | Observation | OC000098 | Klasifikasi diare | ePus MTBS, ePus MTBM | 2 |
+| 454 | Condition | 386661006 | Fever | ePus MTBS | 1 |
+| 455 | Observation | 81264-4 | Fever duration | ePus MTBS | 1 |
+| 456 | Observation | OC000121 | Pemeriksaan tanda dan gejala demam | ePus MTBS | 1 |
+| 457 | Observation | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | ePus MTBS | 1 |
+| 458 | DiagnosticReport | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | ePus MTBS | 1 |
+| 459 | Observation | OC000100 | Klasifikasi demam | ePus MTBS | 1 |
+| 460 | Condition | 14189004 | Measles | ePus MTBS | 1 |
+| 461 | Observation | OC000101 | Pemeriksaan tanda dan gejala campak | ePus MTBS | 1 |
+| 462 | Observation | OC000102 | Klasifikasi campak | ePus MTBS | 1 |
+| 463 | Observation | OC000104 | Pemeriksaan infeksi dengue | ePus MTBS | 1 |
+| 464 | Observation | 38520-3 | Capillary fragility | ePus MTBS | 1 |
+| 465 | Observation | 20570-8 | Hematocrit [Volume Fraction] of Blood | ePus MTBS | 1 |
+| 466 | Observation | 26464-8 | Leukocytes [#/volume] in Blood | ePus MTBS | 1 |
+| 467 | Observation | 26515-7 | Platelets [#/volume] in Blood | ePus MTBS | 1 |
+| 468 | Observation | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | ePus MTBS | 1 |
+| 469 | DiagnosticReport | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | ePus MTBS | 1 |
+| 470 | Observation | OC000105 | Klasifikasi infeksi dengue | ePus MTBS | 1 |
+| 471 | Condition | 300197009 | Ear problem | ePus MTBS | 1 |
+| 472 | Observation | OC000106 | Pemeriksaan tanda dan gejala masalah telinga | ePus MTBS | 1 |
+| 473 | Observation | OC000107 | Klasifikasi masalah telinga | ePus MTBS | 1 |
+| 474 | Observation | 284521000 | Pitting edema | ePus MTBS | 1 |
+| 475 | Observation | 1153600001 | Weight for height z-score | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 476 | Observation | OV000253 | Terlalu lemah untuk menyusu | ePus MTBS | 1 |
+| 477 | Observation | 271398006 | Weight steady | ePus MTBS | 1 |
+| 478 | Observation | OC000108 | Klasifikasi status gizi | ePus MTBS | 1 |
+| 479 | Observation | 1153604005 | Body height for age z-score | ePus MTBS | 1 |
+| 480 | Observation | 1153594009 | Head circumference for age z-score | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 481 | Observation | OC000111 | Klasifikasi anemia | ePus MTBS | 1 |
+| 482 | Observation | PC000013 | Riwayat tes HIV ibu | ePus MTBS, ePus MTBM | 2 |
+| 483 | Observation | SP000247 | Hasil Tes HIV Ibu | ePus MTBS | 1 |
+| 484 | Procedure | PC000014 | Riwayat tes HIV anak | ePus MTBS, ePus MTBM | 2 |
+| 485 | Observation | SP000248 | Hasil Tes HIV Anak | ePus MTBS | 1 |
+| 486 | Observation | OC000084 | Tes virologis HIV anak | ePus MTBS, ePus MTBM | 2 |
+| 487 | Observation | OC000083 | Tes serologis HIV anak | ePus MTBS, ePus MTBM | 2 |
+| 488 | Observation | 63895-7 | Breastfeeding status | ePus MTBS, ePus MTBM (2x) | 2 |
+| 489 | Observation | 254387007 | Human immunodeficiency virus infection classification systems | ePus MTBS, ePus MTBM | 2 |
+| 490 | Observation | OC000114 | Membutuhkan suplemen vitamin A | ePus MTBS | 1 |
+| 491 | MedicationRequest | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | ePus MTBS | 1 |
+| 492 | EpisodeOfCare | Neonate | Neonate | ePus MTBM | 1 |
+| 493 | Condition | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | ePus MTBM | 1 |
+| 494 | Observation | OC000078 | Pemeriksaan tanda dan gejala infeksi | ePus MTBM | 1 |
+| 495 | Observation | OC000126 | Klasifikasi infeksi | ePus MTBM | 1 |
+| 496 | Condition | 18165001 | Jaundice | ePus MTBM | 1 |
+| 497 | Observation | OC000128 | Umur pertama kali timbul kuning | ePus MTBM | 1 |
+| 498 | Observation | SP000214 | Pemeriksaan Kondisi Ikterus | ePus MTBM | 1 |
+| 499 | Observation | OC000129 | Klasifikasi ikterus | ePus MTBM | 1 |
+| 500 | Observation | OC000079 | Tes serologis HIV ibu | ePus MTBM | 1 |
+| 501 | Observation | 1153593003 | Weight for age z-score | ePus MTBM (2x), ePus Tumbang Anak | 2 |
+| 502 | Observation | 79740000 | Candidiasis of mouth | ePus MTBM (2x) | 1 |
+| 503 | Observation | SP000271 | Terdapat Celah Bibir atau Langit-Langit | ePus MTBM (2x) | 1 |
+| 504 | Observation | OC000082 | Posisi menyusu bayi | ePus MTBM | 1 |
+| 505 | Observation | OC000081 | Posisi pelekatan bayi pada puting | ePus MTBM | 1 |
+| 506 | Observation | OC000080 | Efektifitas hisapan bayi | ePus MTBM | 1 |
+| 507 | Observation | OC000085 | Klasifikasi berat badan menurut umur dan/atau masalah pemberian ASI | ePus MTBM | 1 |
+| 508 | Observation | OC000086 | Klasifikasi Berat Badan Menurut Umur dan/atau Masalah Pemberian Minum | ePus MTBM | 1 |
+| 509 | Observation | OC000087 | Pemberian Vitamin K pada Bayi Baru Lahir | ePus MTBM | 1 |
+| 510 | Procedure | 448883004 | Injection of vitamin K1 | ePus MTBM | 1 |
+| 511 | Observation | 8308-9 | Body height --standing | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 512 | Observation | 50373000 | Body height measure | ePus Tumbang Anak | 1 |
+| 513 | Observation | OC000012 | Kenaikan Berat Badan Adekuat | ePus Tumbang Anak | 1 |
+| 514 | Observation | 1153590000 | Length for age z-score | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 515 | Observation | 1145307003 | Exclusively breastfed | ePus Tumbang Anak | 1 |
+| 516 | Observation | OC000009 | Makanan Pendamping ASI (MPASI) | ePus Tumbang Anak | 1 |
+| 517 | Procedure | 408429008 | Recommendation to caregiver regarding child's development program | ePus Tumbang Anak | 1 |
+| 518 | Observation | SP000061 | Intervensi Dini Masalah Perkembangan Anak | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 519 | Observation | SP000064 | Tindakan Pengobatan Lain | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 520 | Observation | OC000034 | Surat Pengantar Rujukan | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 521 | Observation | 1153596006 | Body mass index for age z-score | ePus Tumbang DDTK (2x) | 1 |
+| 522 | Observation | SP000059 | Tren Pertumbuhan Anak | ePus Tumbang DDTK | 1 |
+| 523 | Procedure | 410295000 | Growth/development education, guidance, and counseling | ePus Tumbang DDTK | 1 |
+| 524 | Procedure | SP000060 | Intervensi Dini Masalah Pertumbuhan Anak | ePus Tumbang DDTK | 1 |
+| 525 | Procedure | SP000063 | Intervensi Dini Masalah Perilaku & Emosi | ePus Tumbang DDTK | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).

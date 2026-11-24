@@ -21,6 +21,17 @@ Kolom **Variabel raw** = angka di `output.md`. Kolom **PHDT** = angka di daftar 
 | SITB TB 03 SO | SITB - TB 03 SO (register TB) | 84 | 75 | +9 | ⚠️ beda (dugaan: kolom SITB yang di-skip di PHDT) |
 | SITB TB 16K | SITB - TB 16K | 40 | 24 | +16 | ⚠️ beda (dugaan: kolom SITB yang di-skip di PHDT) |
 | Raffle | (tidak ada di daftar) | 12 | – | – | ➖ belum bisa dibandingkan |
+| ePus pelayanan | ePuskesmas - Pelayanan | 81 | 80 | +1 | ⚠️ beda (belum dijelaskan) |
+| ePus kunjungan-ibu-hamil | ePuskesmas - KIA | 68 | 97 | -29 | ⚠️ beda (belum dijelaskan) |
+| ePus lab | ePuskesmas - Laboratorium | 22 | 23 | -1 | ⚠️ beda (belum dijelaskan) |
+| ePus rujukan-eksternal | ePuskesmas - Rujukan | 23 | 22 | +1 | ⚠️ beda (belum dijelaskan) |
+| ePus anc | ePuskesmas - ANC - Ibu Hamil | 123 | 136 | -13 | ⚠️ beda (belum dijelaskan) |
+| ePus inc | ePuskesmas - INC - Persalinan | 93 | 82 | +11 | ⚠️ beda (belum dijelaskan) |
+| ePus pnc | ePuskesmas - PNC - Ibu Nifas | 107 | 96 | +11 | ⚠️ beda (belum dijelaskan) |
+| ePus mtbs | ePuskesmas - MTBS | 187 | 187 | +0 | ✅ cocok |
+| ePus mtbm | ePuskesmas - MTBM | 105 | 115 | -10 | ⚠️ beda (belum dijelaskan) |
+| ePus tumbang-anak | ePuskesmas - Tumbang - Anak | 34 | 34 | +0 | ✅ cocok |
+| ePus tumbang-ddtk | ePuskesmas - Tumbang - DDTK | 38 | 38 | +0 | ✅ cocok |
 
 Keputusan (2026-11-24): selisih di SITB dianggap wajar karena sebelumnya banyak kolom SITB yang di-skip di PHDT Data Dictionary (dugaan, belum dicek per kolom). **Angka output utama tidak diubah.** Selisih SiGizi ANC (+4) belum dijelaskan.
 
@@ -248,4 +259,5 @@ Sel kosong = jumlah variabel belum diisi di sumber. Angka 0 = sumber mencatat 0 
 | SIM RS Data | Tripat TB |  |
 
 ## Log perubahan
+- 2026-11-24: Tally ditambah 11 form ePuskesmas (belum comprehensive review): cocok = MTBS, Tumbang Anak, Tumbang DDTK; beda = Pelayanan +1, Kunjungan Ibu Hamil −29, Lab −1, Rujukan +1, ANC −13 (baris 136 = PHDT), INC +11, PNC +11, MTBM −10. Angka output utama tidak diubah.
 - 2026-11-24: Dibuat dari daftar PHDT Data Dictionary (216 baris berisi). Tally 9 form di output utama: 5 cocok, 4 beda (SiGizi ANC, TB 06, TB 03 SO, TB 16K), Raffle tidak ada di daftar.

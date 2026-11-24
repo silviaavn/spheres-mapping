@@ -13,10 +13,21 @@ Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **SITB TB 16K** → [`output/sitb-tb16k.md`](output/sitb-tb16k.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb16k.csv`](mapping/phdt-data-dictionary-sitb-tb16k.csv); file mentah: [`raw/sitb-tb16k-kolom.md`](raw/sitb-tb16k-kolom.md))
 - **MPDN Kematian Bayi** → [`output/mpdn-kematian-bayi.md`](output/mpdn-kematian-bayi.md) (sumber: [`mapping/phdt-data-dictionary-mpdn-kematian-bayi.csv`](mapping/phdt-data-dictionary-mpdn-kematian-bayi.csv), PHDT Data Dictionary; **belum ada file mentah dan daftar variabel BQ**, belum ada comprehensive review)
 - **MPDN Kematian Ibu** → [`output/mpdn-kematian-ibu.md`](output/mpdn-kematian-ibu.md) (sumber: [`mapping/phdt-data-dictionary-mpdn-kematian-ibu.csv`](mapping/phdt-data-dictionary-mpdn-kematian-ibu.csv), PHDT Data Dictionary; **belum ada file mentah dan daftar variabel BQ**, belum ada comprehensive review)
+- **ePuskesmas Pelayanan Pasien** → [`output/epus-pelayanan.md`](output/epus-pelayanan.md) (sumber: [`mapping/phdt-data-dictionary-epus-pelayanan.csv`](mapping/phdt-data-dictionary-epus-pelayanan.csv), sheet `epus layanan`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas Kunjungan Ibu Hamil** → [`output/epus-kunjungan-ibu-hamil.md`](output/epus-kunjungan-ibu-hamil.md) (sumber: [`mapping/phdt-data-dictionary-epus-kunjungan-ibu-hamil.csv`](mapping/phdt-data-dictionary-epus-kunjungan-ibu-hamil.csv), sheet `old epusk kunjungan ibu hamil`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas Laboratorium** → [`output/epus-lab.md`](output/epus-lab.md) (sumber: [`mapping/phdt-data-dictionary-epus-lab.csv`](mapping/phdt-data-dictionary-epus-lab.csv), sheet `epus lab`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas Rujukan Eksternal** → [`output/epus-rujukan-eksternal.md`](output/epus-rujukan-eksternal.md) (sumber: [`mapping/phdt-data-dictionary-epus-rujukan-eksternal.csv`](mapping/phdt-data-dictionary-epus-rujukan-eksternal.csv), sheet `epus rujukan eksternal`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian ANC** → [`output/epus-anc.md`](output/epus-anc.md) (sumber: [`mapping/phdt-data-dictionary-epus-anc.csv`](mapping/phdt-data-dictionary-epus-anc.csv), sheet `epus ordal anc`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian INC** → [`output/epus-inc.md`](output/epus-inc.md) (sumber: [`mapping/phdt-data-dictionary-epus-inc.csv`](mapping/phdt-data-dictionary-epus-inc.csv), sheet `epus ordal inc`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian PNC** → [`output/epus-pnc.md`](output/epus-pnc.md) (sumber: [`mapping/phdt-data-dictionary-epus-pnc.csv`](mapping/phdt-data-dictionary-epus-pnc.csv), sheet `epus ordal pnc`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian MTBS** → [`output/epus-mtbs.md`](output/epus-mtbs.md) (sumber: [`mapping/phdt-data-dictionary-epus-mtbs.csv`](mapping/phdt-data-dictionary-epus-mtbs.csv), sheet `epus mtbs`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian MTBM** → [`output/epus-mtbm.md`](output/epus-mtbm.md) (sumber: [`mapping/phdt-data-dictionary-epus-mtbm.csv`](mapping/phdt-data-dictionary-epus-mtbm.csv), sheet `epus mbtm`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian Tumbuh Kembang Anak** → [`output/epus-tumbang-anak.md`](output/epus-tumbang-anak.md) (sumber: [`mapping/phdt-data-dictionary-epus-tumbang-anak.csv`](mapping/phdt-data-dictionary-epus-tumbang-anak.csv), sheet `epusk tumbang`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
+- **ePuskesmas KIA Harian Tumbuh Kembang DDTK** → [`output/epus-tumbang-ddtk.md`](output/epus-tumbang-ddtk.md) (sumber: [`mapping/phdt-data-dictionary-epus-tumbang-ddtk.csv`](mapping/phdt-data-dictionary-epus-tumbang-ddtk.csv), sheet `epus DDTKSDIDTK`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
 
 File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
-Belum: PNC, SITB TB 13 SO/RO, form lain
+Belum: SITB TB 13 SO/RO, form lain. Form ePuskesmas lain (Kunjungan Pasien BPJS, Kunjungan Pasien, Kohort KIA, LPLPO, Tumbuh Kembang KPSP/TDD/TDL/KMPE/M-CHAT-R/GPPH) belum ada mapping, tidak dihitung.
 
 ---
 
@@ -38,7 +49,7 @@ File terpisah (detail):
 
 ## Ringkasan semua form
 
-Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` (sudah termasuk di kolom Code).
+Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comprehensive review). Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` (sudah termasuk di kolom Code).
 
 | Form | Variabel raw | Payload | Code | Code SP |
 |---|---|---|---|---|
@@ -52,9 +63,20 @@ Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file menta
 | SITB TB 16K | 40 | 21 | 35 | 14 |
 | MPDN Kematian Bayi | 37 | 19 | 112 | 37 |
 | MPDN Kematian Ibu | 24 | 10 | 50 | 17 |
-| **Total (non-unik)** | **612** | **368** | **1920** | **148** |
-| **Total unik** | – | **164** | **510** | **80** |
-| Selisih (dipakai ulang) | – | 204 | 1410 | 68 |
+| ePus Pelayanan Pasien | 81 | 47 | 62 | 2 |
+| ePus Kunjungan Ibu Hamil | 68 | 114 | 198 | 11 |
+| ePus Laboratorium | 22 | 309 | 429 | 0 |
+| ePus Rujukan Eksternal | 23 | 5 | 0 | 0 |
+| ePus ANC | 123 | 155 | 321 | 24 |
+| ePus INC | 93 | 69 | 206 | 22 |
+| ePus PNC | 107 | 82 | 161 | 27 |
+| ePus MTBS | 187 | 125 | 268 | 19 |
+| ePus MTBM | 105 | 57 | 139 | 20 |
+| ePus Tumbang Anak | 34 | 19 | 55 | 8 |
+| ePus Tumbang DDTK | 38 | 29 | 68 | 10 |
+| **Total (non-unik)** | **1493** | **1379** | **3827** | **291** |
+| **Total unik** | – | **525** | **1252** | **154** |
+| Selisih (dipakai ulang) | – | 854 | 2575 | 137 |
 
 ---
 
@@ -64,26 +86,35 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 136 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 120 |
-| http://terminology.kemkes.go.id/sp | 80 |
-| http://loinc.org | 76 |
+| http://snomed.info/sct | 397 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 271 |
+| http://loinc.org | 250 |
+| http://terminology.kemkes.go.id/sp | 154 |
+| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 26 |
 | http://terminology.kemkes.go.id/CodeSystem/examination | 20 |
+| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 19 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
-| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 15 |
+| http://hl7.org/fhir/sid/icd-10 | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 12 |
+| http://sys-ids.kemkes.go.id/kfa | 11 |
+| http://hl7.org/fhir/sid/cvx | 8 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 7 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 7 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
 | http://terminology.kemkes.go.id | 5 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 4 |
-| http://hl7.org/fhir/sid/icd-10 | 4 |
-| http://sys-ids.kemkes.go.id/kfa | 3 |
+| http://sys-ids.kemkes.go.id/kf | 5 |
+| http://hl7.org/fhir/sid/icd-9-cm | 4 |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
-| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 |
-| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 |
+| http://terminology.hl7.org/CodeSystem/admit-source | 3 |
+| hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 3 |
+| http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
-| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **510** |
+| http://terminology.kemkes.go.id/CodeSystem/kptl | 1 |
+| http://terminology.hl7. org/CodeSystem/admit -source | 1 |
+| https://loinc.org | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/ | 1 |
+| **Total** | **1252** |
 
 ---
 
@@ -91,20 +122,31 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuensi-payload.md`](frekuensi-payload.md).
 
-| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | Patient | EpisodeOfCare | Condition | Encounter | QuestionnaireResponse | CarePlan | Organization | Practitioner | Coverage | Location | MedicationDispense | MedicationRequest | PractitionerRole | Composition | Group | Immunization | RelatedPerson | Total |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Maternal Outcome | 5 | – | – | – | – | 1 | 2 | 1 | 1 | – | – | – | 1 | – | – | – | – | 1 | – | – | – | – | 12 |
-| Raffle | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | 2 | – | 1 | – | – | – | – | – | – | – | 8 |
-| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | 2 | 2 | 1 | – | – | 1 | – | 61 |
-| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 1 | 3 | 2 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | 56 |
-| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | 62 |
-| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | 50 |
-| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
-| SITB TB 16K | 14 | 1 | – | – | – | 1 | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | 1 | – | 1 | 21 |
-| MPDN Kematian Bayi | 16 | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 19 |
-| MPDN Kematian Ibu | 7 | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 10 |
-| **Total (non-unik)** | **148** | **48** | **47** | **46** | **12** | **11** | **10** | **10** | **8** | **4** | **3** | **3** | **3** | **2** | **2** | **2** | **2** | **2** | **2** | **1** | **1** | **1** | **368** |
-| **Total unik** | **85** | **20** | **19** | **4** | **7** | **1** | **4** | **8** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **2** | **2** | **1** | **1** | **1** | **1** | **1** | **164** |
+| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | Condition | Immunization | Patient | PractitionerRole | Encounter | EpisodeOfCare | QuestionnaireResponse | Practitioner | MedicationDispense | MedicationRequest | CarePlan | Coverage | RelatedPerson | Organization | MedicationStatement | Location | Composition | Group | FamilyMemberHistory | AllergyIntolerance | Medication | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Maternal Outcome | 5 | – | – | – | – | 1 | – | 1 | 1 | 1 | 2 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
+| Raffle | 1 | – | – | – | – | 1 | – | 1 | – | 1 | 1 | – | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 8 |
+| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | – | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | 61 |
+| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 2 | – | 1 | – | 1 | 3 | 1 | – | – | – | 1 | – | – | 1 | – | 1 | – | – | – | – | – | 56 |
+| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | – | 1 | – | 1 | 1 | 1 | – | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 62 |
+| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | – | 1 | – | 1 | 1 | 1 | – | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 50 |
+| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| SITB TB 16K | 14 | 1 | – | – | – | 1 | – | 1 | – | 1 | – | 1 | – | – | – | – | – | 1 | – | – | – | – | 1 | – | – | – | 21 |
+| MPDN Kematian Bayi | 16 | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 19 |
+| MPDN Kematian Ibu | 7 | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 10 |
+| ePus Pelayanan Pasien | 24 | 1 | – | – | 2 | 9 | – | 1 | – | 1 | – | – | 1 | 1 | 1 | 3 | 1 | – | – | – | – | – | – | 1 | 1 | – | 47 |
+| ePus Kunjungan Ibu Hamil | 46 | 17 | 16 | 16 | 5 | 4 | 2 | 1 | – | 1 | 1 | – | – | 1 | 1 | – | 1 | – | – | 2 | – | – | – | – | – | – | 114 |
+| ePus Laboratorium | 92 | 74 | 73 | 65 | – | – | – | 1 | 2 | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 309 |
+| ePus Rujukan Eksternal | – | 1 | – | – | – | 1 | – | 1 | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 5 |
+| ePus ANC | 82 | 19 | 19 | 6 | 3 | 3 | 3 | 1 | 14 | 1 | 1 | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | 155 |
+| ePus INC | 49 | 1 | – | – | 9 | 3 | – | 1 | 1 | 1 | 1 | 1 | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 69 |
+| ePus PNC | 50 | 3 | 2 | 1 | 9 | 4 | – | 1 | 2 | 1 | 1 | – | 1 | 2 | 2 | 1 | – | – | – | 1 | – | – | – | – | – | 1 | 82 |
+| ePus MTBS | 53 | 9 | 8 | 8 | 14 | 7 | 17 | 1 | – | 1 | – | 1 | 1 | 2 | 2 | – | – | 1 | – | – | – | – | – | – | – | – | 125 |
+| ePus MTBM | 35 | 1 | – | – | 8 | 4 | 3 | 1 | – | 1 | 1 | 1 | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 57 |
+| ePus Tumbang Anak | 14 | – | – | – | 1 | 2 | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
+| ePus Tumbang DDTK | 14 | 1 | – | – | 4 | 3 | – | 1 | – | 1 | – | 2 | 1 | – | – | – | – | 2 | – | – | – | – | – | – | – | – | 29 |
+| **Total (non-unik)** | **607** | **175** | **165** | **142** | **67** | **50** | **26** | **21** | **21** | **18** | **15** | **11** | **10** | **9** | **9** | **7** | **6** | **6** | **3** | **3** | **2** | **2** | **1** | **1** | **1** | **1** | **1379** |
+| **Total unik** | **299** | **27** | **104** | **6** | **34** | **24** | **2** | **1** | **1** | **1** | **6** | **1** | **1** | **3** | **4** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **525** |
 
 ---
 
@@ -121,6 +163,8 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 - SITB: EpisodeOfCare TB-SO / TB-RO, Patient, Encounter, Condition A15.0, Observation umur (424144002), HIV/DM, lab (11545-1, X0993xx) dipakai ulang di beberapa form SITB → total unik jauh lebih kecil dari non-unik.
 
 - MPDN Kematian Bayi / Ibu: **belum ada comprehensive review**, file mentah, dan daftar variabel BQ (tally BQ belum bisa dicek; kolom Nama Column BQ kosong). Satu payload Composition per laporan; Location di `Composition.contained` ikut di dalam Composition (tidak dihitung terpisah). Dua Patient (ibu + bayi) di Bayi dihitung 2 payload. Tidak ada Encounter, dan Practitioner PJ MPDN tidak dibuat (lookup). `Composition.type` (COM000001/2/3) dihitung sebagai code; ICD-PM / ICD-MM (daftar eksternal) dan kode ICD dinamis di Condition tidak dihitung. Asumsi dan temuan: `revisi.md` bagian MPDN.
+- **ePuskesmas (11 form, ⚠️ belum comprehensive review)**: dictionary dari `PHDT_ePus.xlsx`, tidak ada file mentah dan daftar BQ. Pemisahan blok payload otomatis (heuristik), belum dicek manual per blok; blok Condition yang `clinicalStatus`-nya setelah `code` bisa menyatu, dan Laboratorium (banyak baris alias), Kunjungan Ibu Hamil, ANC, MTBS kemungkinan perlu dicek ulang. Organization/Location dianggap lookup (tidak dihitung). Code dihitung dari path determining/opsi coded saja; `conclusionCode` tidak dihitung; kode dinamis (`{kode ...}`) = payload tanpa code. Detail asumsi EA1–EA10: `revisi.md`.
+
 ---
 
 ## Log perubahan output

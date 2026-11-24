@@ -23,11 +23,12 @@ output/    output per form: payload, code, nomor baris dictionary
 raw/       struktur kolom file mentah (header, variabel BQ, jumlah terisi)
            file asli tidak di-commit, kolom identitas pasien tidak ditampilkan
 scripts/   form_output.py: membuat output/<form>.md dari dictionary
+           epus_prepare.py: memecah PHDT_ePus.xlsx jadi dictionary per form (mapping/phdt-data-dictionary-epus-*.csv)
 ```
 
 ## Form yang sudah dihitung
 
-Maternal Outcome, Raffle (Kobo) · SiGizi ANC · SITB TB 06, TB 03 SO, TB 03 RO, TB 04 (Fasyankes & Rujukan), TB 16K. Angka terbaru ada di [`output.md`](output.md), status per form di [`form-tracker.md`](form-tracker.md).
+Maternal Outcome, Raffle (Kobo) · SiGizi ANC · SITB TB 06, TB 03 SO, TB 03 RO, TB 04 (Fasyankes & Rujukan), TB 16K · MPDN Kematian Bayi, Kematian Ibu · 11 form ePuskesmas (Pelayanan, Kunjungan Ibu Hamil, Laboratorium, Rujukan Eksternal, ANC, INC, PNC, MTBS, MTBM, Tumbang Anak, Tumbang DDTK; ⚠️ belum comprehensive review). Angka terbaru ada di [`output.md`](output.md), status per form di [`form-tracker.md`](form-tracker.md).
 
 ## Menambah form baru
 

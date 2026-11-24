@@ -4,26 +4,43 @@ Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHI
 
 Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah direview: 9
 
-⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini: MPDN - Laporan Kematian Bayi (#72, 19 payload / 112 code) dan MPDN - Laporan Kematian Ibu (#73, 10 payload / 50 code). Lihat `revisi.md` bagian MPDN (asumsi MA1–MA10, temuan MG/MB/MI).
+⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
+
+| # | Laporan | Payload / code |
+|---|---|---|
+| 1 | ePuskesmas - Pelayanan Pasien | 47 / 62 |
+| 3 | ePuskesmas - Laporan Kunjungan Ibu Hamil (sheet lama) | 114 / 198 |
+| 5 | ePuskesmas - Laboratorium | 309 / 429 |
+| 8 | ePuskesmas - Rujukan Eksternal | 5 / 0 |
+| 11 | KIA Harian - ANC | 155 / 321 |
+| 12 | KIA Harian - INC | 69 / 206 |
+| 13 | KIA Harian - PNC | 82 / 161 |
+| 14 | KIA Harian - MTBS | 125 / 268 |
+| 15 | KIA Harian - MTBM | 57 / 139 |
+| 16 | KIA Harian - Tumbuh Kembang (2 dictionary: Anak 19 / 55, DDTK 29 / 68) | 48 / 123 |
+| 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
+| 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
+
+Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet).
 
 | No | Sumber - Laporan | Masih diperlukan | Dimapping ke FHIR | Status review | Table BQ Purbalingga | Table BQ Lombok Barat |
 |---|---|:-:|:-:|:-:|---|---|
-| 1 | ePuskesmas - Pelayanan Pasien | ✅ | ✅ | ❌ |  |  |
+| 1 | ePuskesmas - Pelayanan Pasien | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 2 | ePuskesmas - Pemeriksaan Medis (tidak dipakai lagi) | ❌ | ❌ | ❌ |  |  |
-| 3 | ePuskesmas - Laporan Kunjungan Ibu Hamil | ✅ | ✅ | ❌ |  |  |
+| 3 | ePuskesmas - Laporan Kunjungan Ibu Hamil | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 4 | ePuskesmas - Laporan Kohort KIA | ✅ | ❌ | ❌ |  |  |
-| 5 | ePuskesmas - Laboratorium | ✅ | ✅ | ❌ |  |  |
+| 5 | ePuskesmas - Laboratorium | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 6 | ePuskesmas - LPLPO (UKP6) | ✅ | ❌ | ❌ |  |  |
 | 7 | ePuskesmas - Kinerja Puskesmas (tidak dipakai lagi) | ❌ | ❌ | ❌ |  |  |
-| 8 | ePuskesmas - Rujukan Eksternal | ✅ | ✅ | ❌ |  |  |
+| 8 | ePuskesmas - Rujukan Eksternal | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 9 | ePuskesmas - Kunjungan Pasien BPJS | ✅ | ✅ | ❌ |  |  |
 | 10 | ePuskesmas - Kunjungan Pasien | ✅ | ✅ | ❌ |  |  |
-| 11 | ePuskesmas (Laporan Pelayanan KIA Harian) - ANC | ✅ | ✅ | ❌ |  |  |
-| 12 | ePuskesmas (Laporan Pelayanan KIA Harian) - INC | ✅ | ✅ | ❌ |  |  |
-| 13 | ePuskesmas (Laporan Pelayanan KIA Harian) - PNC | ✅ | ✅ | ❌ |  |  |
-| 14 | ePuskesmas (Laporan Pelayanan KIA Harian) - MTBS | ✅ | ✅ | ❌ |  |  |
-| 15 | ePuskesmas (Laporan Pelayanan KIA Harian) - MTBM | ✅ | ✅ | ❌ |  |  |
-| 16 | ePuskesmas (Laporan Pelayanan KIA Harian) - Tumbuh Kembang | ✅ | ✅ | ❌ |  |  |
+| 11 | ePuskesmas (Laporan Pelayanan KIA Harian) - ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 12 | ePuskesmas (Laporan Pelayanan KIA Harian) - INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 13 | ePuskesmas (Laporan Pelayanan KIA Harian) - PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 14 | ePuskesmas (Laporan Pelayanan KIA Harian) - MTBS | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 15 | ePuskesmas (Laporan Pelayanan KIA Harian) - MTBM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 16 | ePuskesmas (Laporan Pelayanan KIA Harian) - Tumbuh Kembang | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 17 | SiGizi - Posyandu Balita BNBA (daftar status gizi) | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bnba` |  |
 | 18 | SiGizi - Balita Vitamin A | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_vitamin_a` |  |
 | 19 | SiGizi - Balita Mendapat PMT 2024 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_mendapat_pmt` |  |

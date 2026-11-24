@@ -10,14 +10,14 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2 | SP000396 | Data entry staff | kemkes sp | Maternal Outcome | 1 |
 | 3 | SP000397 | Field/call center staff | kemkes sp | Maternal Outcome | 1 |
 | 4 | SP000738 | Kunjungan pemantauan luaran maternal | kemkes sp | Maternal Outcome | 1 |
-| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome, Raffle, SiGizi ANC | 3 |
-| 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome | 1 |
-| 7 | SP000389 | Keadaan Ibu | kemkes sp | Maternal Outcome | 1 |
-| 8 | 102514002 | Well female adult | snomed | Maternal Outcome | 1 |
-| 9 | 39104002 | Illness | snomed | Maternal Outcome | 1 |
-| 10 | 419099009 | Dead | snomed | Maternal Outcome, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 5 |
-| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome | 1 |
-| 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
+| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC | 5 |
+| 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome, ePus PNC | 2 |
+| 7 | SP000389 | Keadaan Ibu | kemkes sp | Maternal Outcome, ePus PNC | 2 |
+| 8 | 102514002 | Well female adult | snomed | Maternal Outcome, ePus INC | 2 |
+| 9 | 39104002 | Illness | snomed | Maternal Outcome, ePus INC | 2 |
+| 10 | 419099009 | Dead | snomed | Maternal Outcome, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC (3x), ePus PNC | 7 |
+| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome, ePus INC, ePus PNC | 3 |
+| 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC | 5 |
 | 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome | 1 |
 | 14 | 79378-6 | Cause of death | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 15 | SP001135 | Presensi Posyandu | kemkes sp | Raffle | 1 |
@@ -25,129 +25,129 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 17 | SP000776 | Sigizi | kemkes sp | Raffle | 1 |
 | 18 | SP000777 | E-pus PKD | kemkes sp | Raffle | 1 |
 | 19 | SP000778 | E-pus | kemkes sp | Raffle | 1 |
-| 20 | 309453006 | Registered midwife | snomed | SiGizi ANC, MPDN Kematian Bayi | 2 |
-| 21 | 309343006 | Physician | snomed | SiGizi ANC, MPDN Kematian Bayi | 2 |
-| 22 | 309367003 | Obstetrician and gynecologist | snomed | SiGizi ANC | 1 |
-| 23 | 224535009 | Registered nurse | snomed | SiGizi ANC | 1 |
-| 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC | 1 |
-| 25 | K1A | Tidak ada | episodeofcare/ANC | SiGizi ANC | 1 |
-| 26 | 134435003 | Routine antenatal care | snomed | SiGizi ANC | 1 |
-| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x) | 6 |
-| 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC | 1 |
-| 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi | 2 |
-| 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC | 1 |
-| 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 33 | 8302-2 | Body height | loinc | SiGizi ANC | 1 |
-| 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC | 1 |
+| 20 | 309453006 | Registered midwife | snomed | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC | 6 |
+| 21 | 309343006 | Physician | snomed | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC | 6 |
+| 22 | 309367003 | Obstetrician and gynecologist | snomed | SiGizi ANC, ePus ANC, ePus INC, ePus PNC | 4 |
+| 23 | 224535009 | Registered nurse | snomed | SiGizi ANC, ePus ANC, ePus INC, ePus PNC | 4 |
+| 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC | 2 |
+| 25 | K1A | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC | 2 |
+| 26 | 134435003 | Routine antenatal care | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC | 3 |
+| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 10 |
+| 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
+| 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
+| 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
 | 35 | OC000010 | Indeks Massa Tubuh Sebelum Hamil | kemkes clinical-term | SiGizi ANC | 1 |
 | 36 | ANC.SS.DE58 | IMT Sebelum Hamil | kemkes anc-custom-codes | SiGizi ANC | 1 |
-| 37 | VG139 | Td | kfa | SiGizi ANC | 1 |
-| 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC | 1 |
-| 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC | 1 |
-| 40 | 29463-7 | Body weight | loinc | SiGizi ANC | 1 |
-| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC | 1 |
+| 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x) | 3 |
+| 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK | 7 |
+| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
 | 42 | 392570002 | Blood pressure finding | snomed | SiGizi ANC | 1 |
 | 43 | 2004005 | Normal blood pressure | snomed | SiGizi ANC | 1 |
-| 44 | 38341003 | Hypertension | snomed | SiGizi ANC | 1 |
+| 44 | 38341003 | Hypertension | snomed | SiGizi ANC, ePus INC | 2 |
 | 45 | 45007003 | Hypotension | snomed | SiGizi ANC | 1 |
-| 46 | 284473002 | Mid upper arm circumference | snomed | SiGizi ANC | 1 |
-| 47 | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | kemkes anc-custom-codes | SiGizi ANC | 1 |
-| 48 | OI000018 | Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC | 1 |
-| 49 | N | Normal | v3-ObservationInterpretation | SiGizi ANC | 1 |
-| 50 | OI000035 | Risiko Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC | 1 |
+| 46 | 284473002 | Mid upper arm circumference | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK | 7 |
+| 47 | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | kemkes anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil | 2 |
+| 48 | OI000018 | Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 49 | N | Normal | v3-ObservationInterpretation | SiGizi ANC, ePus ANC (13x), ePus PNC | 3 |
+| 50 | OI000035 | Risiko Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 51 | 289625003 | Finding of fundal height of uterus | snomed | SiGizi ANC | 1 |
 | 52 | SP000003 | Sesuai Usia Kehamilan | kemkes sp | SiGizi ANC | 1 |
 | 53 | SP000004 | Tidak Sesuai Usia Kehamilan | kemkes sp | SiGizi ANC | 1 |
-| 54 | 883-9 | ABO group [Type] in Blood | loinc | SiGizi ANC | 1 |
-| 55 | ANC.B9.DE24 | Blood type | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 56 | LA19710-5 | Group A | loinc | SiGizi ANC | 1 |
-| 57 | LA19709-7 | Group B | loinc | SiGizi ANC | 1 |
-| 58 | LA19708-9 | Group O | loinc | SiGizi ANC | 1 |
-| 59 | LA28449-9 | Group AB | loinc | SiGizi ANC | 1 |
-| 60 | 10331-7 | Rh [Type] in Blood | loinc | SiGizi ANC | 1 |
-| 61 | ANC.B9.DE29 | Rh factor | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 62 | LA6576-8 | Positive | loinc | SiGizi ANC (4x), SITB TB 06 (4x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 5 |
-| 63 | LA6577-6 | Negative | loinc | SiGizi ANC (4x), SITB TB 06 (5x), SITB TB 03 SO (4x), SITB TB 03 RO (5x), SITB TB 04 (7x) | 5 |
-| 64 | 289437007 | Finding of fetal heart rate | snomed | SiGizi ANC | 1 |
-| 65 | 289441006 | Normal fetal heart rate | snomed | SiGizi ANC | 1 |
-| 66 | 289440007 | Fetal heart rate not observed | snomed | SiGizi ANC | 1 |
-| 67 | 312668007 | Abnormal fetal heart rate | snomed | SiGizi ANC | 1 |
-| 68 | 289439005 | Fetal heart rate absent | snomed | SiGizi ANC | 1 |
-| 69 | 72155-5 | Position in womb Fetus [RHEA] | loinc | SiGizi ANC | 1 |
-| 70 | ANC.B8.DE111 | Fetal presentation | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 71 | 1209182005 | Cephalic fetal presentation | snomed | SiGizi ANC | 1 |
-| 72 | SP000005 | Letak Bokong/ Lintang | kemkes sp | SiGizi ANC | 1 |
-| 73 | SP000006 | Organ Tubuh Lainnya | kemkes sp | SiGizi ANC | 1 |
-| 74 | 88.78 | Diagnostic ultrasound of gravid uterus | icd-9-cm | SiGizi ANC | 1 |
-| 75 | 268445003 | Ultrasound scan - obstetric | snomed | SiGizi ANC | 1 |
-| 76 | 169221005 | Ultrasound obstetric scan normal | snomed | SiGizi ANC | 1 |
-| 77 | 169255008 | Ultrasound scan abnormal | snomed | SiGizi ANC | 1 |
-| 78 | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | kfa | SiGizi ANC | 1 |
-| 79 | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | kfa | SiGizi ANC | 1 |
-| 80 | SP000370 | Multiple Micronutrient Supplement | kemkes sp | SiGizi ANC (2x) | 1 |
-| 81 | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x) | 1 |
-| 82 | 122555007 | Venous blood specimen | snomed | SiGizi ANC (5x) | 1 |
-| 83 | ANC.B9.DE32 | HIV test | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 84 | LA15255-5 | Reactive | loinc | SiGizi ANC | 1 |
-| 85 | LA15256-3 | Nonreactive | loinc | SiGizi ANC | 1 |
-| 86 | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x) | 1 |
-| 87 | ANC.B9.DE60 | Hepatitis B test conducted | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 88 | 22464-2 | Reagin Ab [Presence] in Specimen | loinc | SiGizi ANC (3x) | 1 |
-| 89 | ANC.B9.DE96 | Syphilis test conducted | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 90 | 2887-8 | Protein [Presence] in Urine | loinc | SiGizi ANC (3x) | 1 |
-| 91 | 122575003 | Urine specimen | snomed | SiGizi ANC | 1 |
-| 92 | ANC.B9.DE114 | Urine test conducted | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 93 | 718-7 | Hemoglobin [Mass/volume] in Blood | loinc | SiGizi ANC (3x) | 1 |
-| 94 | ANC.B9.DE175 | Blood hemoglobin test conducted | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 95 | 860635002 | No anemia present | snomed | SiGizi ANC | 1 |
+| 54 | 883-9 | ABO group [Type] in Blood | loinc | SiGizi ANC, ePus Laboratorium (3x), ePus ANC, ePus INC | 4 |
+| 55 | ANC.B9.DE24 | Blood type | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
+| 56 | LA19710-5 | Group A | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC | 4 |
+| 57 | LA19709-7 | Group B | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC | 4 |
+| 58 | LA19708-9 | Group O | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC | 4 |
+| 59 | LA28449-9 | Group AB | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC | 4 |
+| 60 | 10331-7 | Rh [Type] in Blood | loinc | SiGizi ANC, ePus ANC | 2 |
+| 61 | ANC.B9.DE29 | Rh factor | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
+| 62 | LA6576-8 | Positive | loinc | SiGizi ANC (4x), SITB TB 06 (4x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium (21x), ePus ANC (4x), ePus MTBS (3x) | 9 |
+| 63 | LA6577-6 | Negative | loinc | SiGizi ANC (4x), SITB TB 06 (5x), SITB TB 03 SO (4x), SITB TB 03 RO (5x), SITB TB 04 (7x), ePus Kunjungan Ibu Hamil (10x), ePus Laboratorium (22x), ePus ANC (4x), ePus MTBS (3x) | 9 |
+| 64 | 289437007 | Finding of fetal heart rate | snomed | SiGizi ANC, ePus INC | 2 |
+| 65 | 289441006 | Normal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
+| 66 | 289440007 | Fetal heart rate not observed | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
+| 67 | 312668007 | Abnormal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
+| 68 | 289439005 | Fetal heart rate absent | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
+| 69 | 72155-5 | Position in womb Fetus [RHEA] | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 4 |
+| 70 | ANC.B8.DE111 | Fetal presentation | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x) | 3 |
+| 71 | 1209182005 | Cephalic fetal presentation | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), ePus INC | 4 |
+| 72 | SP000005 | Letak Bokong/ Lintang | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 73 | SP000006 | Organ Tubuh Lainnya | kemkes sp | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC (2x) | 3 |
+| 74 | 88.78 | Diagnostic ultrasound of gravid uterus | icd-9-cm | SiGizi ANC, ePus ANC | 2 |
+| 75 | 268445003 | Ultrasound scan - obstetric | snomed | SiGizi ANC, ePus ANC | 2 |
+| 76 | 169221005 | Ultrasound obstetric scan normal | snomed | SiGizi ANC, ePus ANC | 2 |
+| 77 | 169255008 | Ultrasound scan abnormal | snomed | SiGizi ANC, ePus ANC | 2 |
+| 78 | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil | 2 |
+| 79 | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
+| 80 | SP000370 | Multiple Micronutrient Supplement | kemkes sp | SiGizi ANC (2x), ePus Pelayanan Pasien (2x) | 2 |
+| 81 | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
+| 82 | 122555007 | Venous blood specimen | snomed | SiGizi ANC (5x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium, ePus ANC (5x) | 4 |
+| 83 | ANC.B9.DE32 | HIV test | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
+| 84 | LA15255-5 | Reactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x) | 6 |
+| 85 | LA15256-3 | Nonreactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x) | 6 |
+| 86 | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
+| 87 | ANC.B9.DE60 | Hepatitis B test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
+| 88 | 22464-2 | Reagin Ab [Presence] in Specimen | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
+| 89 | ANC.B9.DE96 | Syphilis test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
+| 90 | 2887-8 | Protein [Presence] in Urine | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
+| 91 | 122575003 | Urine specimen | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium (16x), ePus ANC | 4 |
+| 92 | ANC.B9.DE114 | Urine test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
+| 93 | 718-7 | Hemoglobin [Mass/volume] in Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (4x), ePus Laboratorium (4x), ePus ANC (3x), ePus MTBS (6x) | 5 |
+| 94 | ANC.B9.DE175 | Blood hemoglobin test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
+| 95 | 860635002 | No anemia present | snomed | SiGizi ANC, ePus MTBS | 2 |
 | 96 | OI000032 | Anemia ringan | kemkes clinical-term | SiGizi ANC | 1 |
 | 97 | OI000033 | Anemia sedang | kemkes clinical-term | SiGizi ANC | 1 |
 | 98 | OI000034 | Anemia berat | kemkes clinical-term | SiGizi ANC | 1 |
-| 99 | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | loinc | SiGizi ANC (3x) | 1 |
-| 100 | ANC.B9.DE159 | Blood glucose test conducted | WHO anc-custom-codes | SiGizi ANC | 1 |
+| 99 | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus ANC (3x) | 3 |
+| 100 | ANC.B9.DE159 | Blood glucose test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 101 | 166921001 | Blood glucose normal | snomed | SiGizi ANC | 1 |
 | 102 | 166922008 | Blood glucose abnormal | snomed | SiGizi ANC | 1 |
-| 103 | 15220000 | Laboratory test | snomed | SiGizi ANC | 1 |
-| 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 5 |
-| 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC | 1 |
-| 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC | 1 |
-| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x) | 3 |
-| 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC | 1 |
-| 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC | 1 |
-| 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC | 1 |
-| 111 | 116859006 | Transfusion of blood product | snomed | SiGizi ANC | 1 |
-| 112 | 3457005 | Patient referral | snomed | SiGizi ANC (3x) | 1 |
-| 113 | SP000010 | Skrining Hipertensi dalam Kehamilan | kemkes sp | SiGizi ANC | 1 |
-| 114 | SP000011 | Tidak Pre Eklampsia/ Eklampsia | kemkes sp | SiGizi ANC | 1 |
-| 115 | 48194001 | Pregnancy-induced hypertension | snomed | SiGizi ANC | 1 |
-| 116 | 398254007 | Pre-eclampsia | snomed | SiGizi ANC | 1 |
-| 117 | 15938005 | Eclampsia | snomed | SiGizi ANC | 1 |
-| 118 | SP000012 | Tatalaksana Pre Eklampsia | kemkes sp | SiGizi ANC | 1 |
-| 119 | 135840009 | Blood pressure monitoring | snomed | SiGizi ANC | 1 |
-| 120 | 308116003 | Antihypertensive therapy | snomed | SiGizi ANC | 1 |
-| 121 | SP000013 | Pemberian MgSO4 | kemkes sp | SiGizi ANC | 1 |
-| 122 | SP000014 | Tatalaksana KEK | kemkes sp | SiGizi ANC | 1 |
-| 123 | 435591000124104 | Nutrition supplement therapy | snomed | SiGizi ANC | 1 |
-| 124 | SP000015 | Risiko Masalah Kesehatan | kemkes sp | SiGizi ANC | 1 |
-| 125 | 40733004 | Infectious disease | snomed | SiGizi ANC | 1 |
-| 126 | 73211009 | Diabetes mellitus | snomed | SiGizi ANC | 1 |
-| 127 | 414916001 | Obesity | snomed | SiGizi ANC | 1 |
-| 128 | 56717001 | Tuberculosis | snomed | SiGizi ANC, SITB TB 16K | 2 |
-| 129 | 56265001 | Heart disease | snomed | SiGizi ANC | 1 |
-| 130 | SP000016 | Tatalaksana Masalah Kesehatan | kemkes sp | SiGizi ANC | 1 |
-| 131 | 1230101008 | Counseling for pregnancy | snomed | SiGizi ANC | 1 |
-| 132 | 385892002 | Mental health screening | snomed | SiGizi ANC | 1 |
+| 103 | 15220000 | Laboratory test | snomed | SiGizi ANC, ePus ANC | 2 |
+| 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC | 6 |
+| 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC, ePus ANC, ePus MTBS (3x) | 3 |
+| 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC, ePus ANC | 2 |
+| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x) | 6 |
+| 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC, ePus ANC, ePus PNC | 3 |
+| 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 111 | 116859006 | Transfusion of blood product | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
+| 112 | 3457005 | Patient referral | snomed | SiGizi ANC (3x), ePus ANC (3x) | 2 |
+| 113 | SP000010 | Skrining Hipertensi dalam Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 114 | SP000011 | Tidak Pre Eklampsia/ Eklampsia | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 115 | 48194001 | Pregnancy-induced hypertension | snomed | SiGizi ANC, ePus ANC, ePus INC (2x) | 3 |
+| 116 | 398254007 | Pre-eclampsia | snomed | SiGizi ANC, ePus ANC (2x), ePus INC | 3 |
+| 117 | 15938005 | Eclampsia | snomed | SiGizi ANC, ePus ANC (2x), ePus INC | 3 |
+| 118 | SP000012 | Tatalaksana Pre Eklampsia | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 119 | 135840009 | Blood pressure monitoring | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
+| 120 | 308116003 | Antihypertensive therapy | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
+| 121 | SP000013 | Pemberian MgSO4 | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 122 | SP000014 | Tatalaksana KEK | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 123 | 435591000124104 | Nutrition supplement therapy | snomed | SiGizi ANC, ePus ANC | 2 |
+| 124 | SP000015 | Risiko Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 125 | 40733004 | Infectious disease | snomed | SiGizi ANC, ePus ANC (2x), ePus INC | 3 |
+| 126 | 73211009 | Diabetes mellitus | snomed | SiGizi ANC, ePus ANC (2x) | 2 |
+| 127 | 414916001 | Obesity | snomed | SiGizi ANC, ePus ANC | 2 |
+| 128 | 56717001 | Tuberculosis | snomed | SiGizi ANC, SITB TB 16K, ePus ANC (2x) | 3 |
+| 129 | 56265001 | Heart disease | snomed | SiGizi ANC, ePus ANC | 2 |
+| 130 | SP000016 | Tatalaksana Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 131 | 1230101008 | Counseling for pregnancy | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
+| 132 | 385892002 | Mental health screening | snomed | SiGizi ANC, ePus ANC | 2 |
 | 133 | TB-SO | Tuberkulosis Sensitif Obat | episodeofcare-type | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04, SITB TB 16K | 4 |
 | 134 | TB-RO | Tuberkulosis Resisten Obat | episodeofcare-type | SITB TB 06 (3x), SITB TB 03 RO, SITB TB 04, SITB TB 16K | 4 |
 | 135 | EHA000001 | Kader/ Komunitas | kemkes clinical-term | SITB TB 06 | 1 |
-| 136 | EHA000002 | Datang sendiri | kemkes clinical-term | SITB TB 06, SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 04 | 4 |
+| 136 | EHA000002 | Datang sendiri | kemkes clinical-term | SITB TB 06, SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 04, ePus ANC, ePus INC, ePus PNC | 7 |
 | 137 | EHA000003 | Kegiatan ACF | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 138 | 257622000 | Healthcare facility | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
 | 139 | EHA000004 | Skrining TBC DM | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 140 | EHA000005 | Pemadanan Data BPJS | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 141 | Z03.0 | Observation for suspected tuberculosis | icd-10 | SITB TB 06 | 1 |
-| 142 | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | icd-10 | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 142 | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | icd-10 | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Tumbang DDTK | 4 |
 | 143 | A16.2 | Tuberculosis of lung, without mention of bacteriological or histological confirmation | icd-10 | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 144 | QRI000001 | Terduga TBC SO | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 145 | QRI000002 | Terduga TBC RO | kemkes clinical-term | SITB TB 06, SITB TB 03 RO | 2 |
@@ -171,26 +171,26 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 163 | 154283005 | Pulmonary tuberculosis | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 164 | 423997002 | Tuberculosis, extrapulmonary | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 165 | OC000191 | Jumlah Skoring TBC Anak | kemkes clinical-term | SITB TB 06, SITB TB 03 SO | 2 |
-| 166 | 24648-8 | XR Chest PA upright | loinc | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 167 | 707307002 | Tuberculosis screening chest X-ray abnormal | snomed | SITB TB 06, SITB TB 03 SO | 2 |
-| 168 | 707308007 | Tuberculosis screening chest X-ray normal | snomed | SITB TB 06, SITB TB 03 SO | 2 |
+| 166 | 24648-8 | XR Chest PA upright | loinc | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 03 RO, ePus PNC (3x) | 4 |
+| 167 | 707307002 | Tuberculosis screening chest X-ray abnormal | snomed | SITB TB 06, SITB TB 03 SO, ePus PNC | 3 |
+| 168 | 707308007 | Tuberculosis screening chest X-ray normal | snomed | SITB TB 06, SITB TB 03 SO, ePus PNC | 3 |
 | 169 | 424489006 | Mantoux test | snomed | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
 | 170 | 35140007 | Interferon gamma assay | snomed | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
-| 171 | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
-| 172 | 268376005 | Mantoux: positive | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 173 | 268375009 | Mantoux: negative | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 171 | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x), ePus Laboratorium (3x) | 4 |
+| 172 | 268376005 | Mantoux: positive | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Laboratorium | 4 |
+| 173 | 268375009 | Mantoux: negative | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Laboratorium | 4 |
 | 174 | 71773-6 | Mycobacterium tuberculosis stimulated gamma interferon [Interpretation] in Blood Qualitative | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
 | 175 | 55277-8 | HIV status | loinc | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 176 | 10828004 | Positive | snomed | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO (3x) | 3 |
-| 177 | 260385009 | Negative | snomed | SITB TB 06 (5x), SITB TB 03 SO (8x), SITB TB 03 RO (4x), SITB TB 04 (2x) | 4 |
+| 177 | 260385009 | Negative | snomed | SITB TB 06 (5x), SITB TB 03 SO (8x), SITB TB 03 RO (4x), SITB TB 04 (2x), ePus Kunjungan Ibu Hamil, ePus Laboratorium | 6 |
 | 178 | 261665006 | Unknown | snomed | SITB TB 06 (2x), SITB TB 03 SO (3x), SITB TB 03 RO (3x) | 3 |
 | 179 | 33248-6 | Diabetes status | loinc | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 180 | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | loinc | SITB TB 06 (9x), SITB TB 03 SO (18x), SITB TB 03 RO (6x), SITB TB 04 (6x) | 4 |
-| 181 | 119334006 | Sputum specimen | snomed | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO (7x), SITB TB 04 (32x) | 4 |
-| 182 | LA11841-6 | 1+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x) | 4 |
-| 183 | LA11842-4 | 2+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x) | 4 |
-| 184 | LA11843-2 | 3+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x) | 4 |
-| 185 | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | loinc | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO | 3 |
+| 180 | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | loinc | SITB TB 06 (9x), SITB TB 03 SO (18x), SITB TB 03 RO (6x), SITB TB 04 (6x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x) | 6 |
+| 181 | 119334006 | Sputum specimen | snomed | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO (7x), SITB TB 04 (32x), ePus Kunjungan Ibu Hamil, ePus Laboratorium (2x) | 6 |
+| 182 | LA11841-6 | 1+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x) | 6 |
+| 183 | LA11842-4 | 2+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x) | 6 |
+| 184 | LA11843-2 | 3+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x) | 6 |
+| 185 | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | loinc | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO, ePus Laboratorium (3x) | 4 |
 | 186 | X099379 | Pemeriksaan TCM XDR | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (6x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
 | 187 | X099380 | Line Probe Assay (LPA) Lini 1 | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (6x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
 | 188 | X099381 | Line Probe Assay (LPA) Lini 2 | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
@@ -246,12 +246,12 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 238 | 406149000 | Medication declined | snomed | SITB TB 06 | 1 |
 | 239 | 399307001 | Lost to follow-up | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 4 |
 | 240 | 365866002 | Finding of human immunodeficiency virus status | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 241 | 165816005 | Human immunodeficiency virus detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 242 | 165815009 | Human immunodeficiency virus not detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 241 | 165816005 | Human immunodeficiency virus detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus ANC, ePus MTBS, ePus MTBM | 7 |
+| 242 | 165815009 | Human immunodeficiency virus not detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus ANC | 5 |
+| 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC | 6 |
 | 244 | SP000047 | Hasil Tes Diabetes Melitus | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K | 3 |
-| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien | 3 |
 | 247 | 106540006 | Laborer | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 248 | 106304008 | Teacher | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 2 |
 | 249 | 106305009 | University/higher education teacher | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
@@ -368,13 +368,13 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 360 | 182992009 | Treatment completed | snomed | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
 | 361 | CP000094 | Pengobatan Gagal | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
 | 362 | CP000096 | Tidak dievaluasi/pindah | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
-| 363 | TK000016 | Edukasi Tes HIV | kemkes | SITB TB 03 SO | 1 |
+| 363 | TK000016 | Edukasi Tes HIV | kemkes | SITB TB 03 SO, ePus Kunjungan Ibu Hamil | 2 |
 | 364 | SP000371 | Cotrimoxazole | kemkes sp | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 365 | 1284985006 | Diabetes mellitus management program | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 366 | SP000372 | Obat Hipoglikemik Oral | kemkes sp | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 367 | 308755006 | Subcutaneous injection of insulin | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 368 | SP000797 | Pindah Register Pasien TB RO | kemkes sp | SITB TB 03 SO | 1 |
-| 369 | 17621005 | Normal | snomed | SITB TB 03 RO | 1 |
+| 369 | 17621005 | Normal | snomed | SITB TB 03 RO, ePus Tumbang Anak (5x), ePus Tumbang DDTK (6x) | 3 |
 | 370 | 2483006 | Cavity | snomed | SITB TB 03 RO | 1 |
 | 371 | 27925004 | Nodule | snomed | SITB TB 03 RO | 1 |
 | 372 | 1255665007 | Moderate | snomed | SITB TB 03 RO | 1 |
@@ -394,17 +394,17 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 386 | 230993007 | Worsening | snomed | SITB TB 03 RO | 1 |
 | 387 | 58158008 | Stable | snomed | SITB TB 03 RO | 1 |
 | 388 | 171126009 | Tuberculosis screening | snomed | SITB TB 04 | 1 |
-| 389 | SRR000013 | Pemeriksaan Diagnosis Baseline | kemkes clinical-term | SITB TB 04 (16x) | 1 |
-| 390 | SRR000007 | Pemeriksaan Diagnosis | kemkes clinical-term | SITB TB 04 (32x) | 1 |
-| 391 | SRR000009 | Pemeriksaan Ulang | kemkes clinical-term | SITB TB 04 (48x) | 1 |
-| 392 | SRR000008 | Follow Up | kemkes clinical-term | SITB TB 04 (48x) | 1 |
-| 393 | SRR000010 | Akhir Pengobatan | kemkes clinical-term | SITB TB 04 (16x) | 1 |
+| 389 | SRR000013 | Pemeriksaan Diagnosis Baseline | kemkes clinical-term | SITB TB 04 (16x), ePus Tumbang DDTK | 2 |
+| 390 | SRR000007 | Pemeriksaan Diagnosis | kemkes clinical-term | SITB TB 04 (32x), ePus Tumbang DDTK | 2 |
+| 391 | SRR000009 | Pemeriksaan Ulang | kemkes clinical-term | SITB TB 04 (48x), ePus Tumbang DDTK | 2 |
+| 392 | SRR000008 | Follow Up | kemkes clinical-term | SITB TB 04 (48x), ePus Tumbang DDTK | 2 |
+| 393 | SRR000010 | Akhir Pengobatan | kemkes clinical-term | SITB TB 04 (16x), ePus Tumbang DDTK | 2 |
 | 394 | 418564007 | Pleural fluid specimen | snomed | SITB TB 04 (16x) | 1 |
-| 395 | 258450006 | Cerebrospinal fluid specimen | snomed | SITB TB 04 (16x) | 1 |
-| 396 | 119376003 | Tissue specimen | snomed | SITB TB 04 (16x) | 1 |
-| 397 | 309508006 | Soft tissue lesion fine needle aspirate specimen | snomed | SITB TB 04 (16x) | 1 |
-| 398 | 168137004 | Gastric aspirate specimen | snomed | SITB TB 04 (16x) | 1 |
-| 399 | 119303007 | Microbial isolate specimen | snomed | SITB TB 04 (16x) | 1 |
+| 395 | 258450006 | Cerebrospinal fluid specimen | snomed | SITB TB 04 (16x), ePus Laboratorium | 2 |
+| 396 | 119376003 | Tissue specimen | snomed | SITB TB 04 (16x), ePus Laboratorium (2x) | 2 |
+| 397 | 309508006 | Soft tissue lesion fine needle aspirate specimen | snomed | SITB TB 04 (16x), ePus Laboratorium | 2 |
+| 398 | 168137004 | Gastric aspirate specimen | snomed | SITB TB 04 (16x), ePus Laboratorium | 2 |
+| 399 | 119303007 | Microbial isolate specimen | snomed | SITB TB 04 (16x), ePus Laboratorium | 2 |
 | 400 | ST000001 | Sputum Pagi | kemkes clinical-term | SITB TB 04 (16x) | 1 |
 | 401 | ST000002 | Sputum Sewaktu | kemkes clinical-term | SITB TB 04 (16x) | 1 |
 | 402 | 123038009 | Specimen | snomed | SITB TB 04 (16x) | 1 |
@@ -420,10 +420,10 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 412 | OM000001 | LJ | kemkes clinical-term | SITB TB 04 | 1 |
 | 413 | OM000002 | MGIT | kemkes clinical-term | SITB TB 04 | 1 |
 | 414 | 20373-7 | Amikacin [Susceptibility] by Method for Slow-growing mycobacteria | loinc | SITB TB 04 | 1 |
-| 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K | 1 |
+| 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K, ePus Kunjungan Ibu Hamil | 2 |
 | 416 | 415759006 | Tuberculosis index case | snomed | SITB TB 16K | 1 |
-| 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K | 1 |
-| 418 | 737492002 | Outpatient care management | snomed | SITB TB 16K | 1 |
+| 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM | 4 |
+| 418 | 737492002 | Outpatient care management | snomed | SITB TB 16K, ePus Kunjungan Ibu Hamil, ePus Tumbang DDTK | 3 |
 | 419 | Z20.1 | Contact with and exposure to tuberculosis | icd-10 | SITB TB 16K | 1 |
 | 420 | SP000200 | Invitasi kontak | kemkes sp | SITB TB 16K | 1 |
 | 421 | 439708006 | Home visit | snomed | SITB TB 16K | 1 |
@@ -451,27 +451,27 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 443 | TK000020 | Kode subgroup | kemkes | MPDN Kematian Bayi | 1 |
 | 444 | TK000021 | Kode detail | kemkes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 445 | OC000028 | Jenis Tempat Meninggal | kemkes clinical-term | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 446 | LT000008 | Dalam perjalanan dari rumah/masyarakat | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 447 | LT000009 | Dalam perjalanan ke faskes lain | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 446 | LT000008 | Dalam perjalanan dari rumah/masyarakat | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 447 | LT000009 | Dalam perjalanan ke faskes lain | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 448 | SP000099 | FASKES | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 449 | 102 | Pusat Kesehatan Masyarakat | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 450 | OT000006 | Rumah Sakit Pemerintah | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 451 | OT000007 | Rumah Sakit Swasta | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 452 | LT000006 | Rumah Ibu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 449 | 102 | Pusat Kesehatan Masyarakat | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 450 | OT000006 | Rumah Sakit Pemerintah | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 451 | OT000007 | Rumah Sakit Swasta | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 452 | LT000006 | Rumah Ibu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 453 | 104 | Rumah Sakit | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 461 | 394573001 | Maternity clinic | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 463 | 264362003 | Home | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 464 | LT000007 | Rumah Dukun | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 465 | LT000010 | Lainnya | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 466 | LT000011 | Belum Tahu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 461 | 394573001 | Maternity clinic | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 463 | 264362003 | Home | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 464 | LT000007 | Rumah Dukun | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 465 | LT000010 | Lainnya | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 466 | LT000011 | Belum Tahu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 467 | SP000098 | Tipe Penyelenggara Faskes Meninggal | kemkes sp | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 468 | SP000076 | RSU - Pemprop | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 469 | SP000077 | PUSKESMAS - Pemkab | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
@@ -488,27 +488,27 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 480 | SP000088 | RSU - Organisasi Islam | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 481 | SP000089 | RSU - Organisasi Sosial | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 482 | SP000090 | RS - Swasta/Lainnya | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi | 1 |
-| 484 | 57071-3 | Obstetric delivery method | loinc | MPDN Kematian Bayi | 1 |
+| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi, ePus INC | 2 |
+| 484 | 57071-3 | Obstetric delivery method | loinc | MPDN Kematian Bayi, ePus INC | 2 |
 | 485 | 289259007 | Vaginal delivery | snomed | MPDN Kematian Bayi | 1 |
-| 486 | 200144004 | Deliveries by cesarean | snomed | MPDN Kematian Bayi | 1 |
-| 487 | 48782003 | Delivery normal | snomed | MPDN Kematian Bayi | 1 |
-| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi | 1 |
-| 489 | 303071001 | Person in the family | snomed | MPDN Kematian Bayi | 1 |
-| 490 | OV000012 | Dukun | kemkes clinical-term | MPDN Kematian Bayi | 1 |
-| 491 | 11935004 | Obstetrician Occupation | snomed | MPDN Kematian Bayi | 1 |
+| 486 | 200144004 | Deliveries by cesarean | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
+| 487 | 48782003 | Delivery normal | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
+| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi, ePus INC | 2 |
+| 489 | 303071001 | Person in the family | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
+| 490 | OV000012 | Dukun | kemkes clinical-term | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
+| 491 | 11935004 | Obstetrician Occupation | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
 | 492 | SP000075 | Tipe Penyelenggara Faskes Lahir | kemkes sp | MPDN Kematian Bayi | 1 |
-| 493 | 57715-5 | Birth time | loinc | MPDN Kematian Bayi | 1 |
-| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi | 1 |
-| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 493 | 57715-5 | Birth time | loinc | MPDN Kematian Bayi, ePus INC | 2 |
+| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi, ePus INC | 2 |
+| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC | 4 |
 | 496 | ANC.B6.DE24 | Number of pregnancies (gravida) | WHO anc-custom-codes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi | 1 |
+| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 498 | 57722-1 | Birth plurality of Pregnancy | loinc | MPDN Kematian Bayi | 1 |
 | 499 | 237244005 | Single pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 500 | 65147003 | Twin pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 501 | 64254006 | Triplet pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 502 | OV000394 | Kehamilan Ganda Empat atau Lebih | snomed | MPDN Kematian Bayi | 1 |
-| 503 | 30525-0 | Age | loinc | MPDN Kematian Bayi | 1 |
+| 503 | 30525-0 | Age | loinc | MPDN Kematian Bayi, ePus INC | 2 |
 | 504 | COM000002 | Formulir Informasi Kematian Perinatal Lahir Mati | composition-type | MPDN Kematian Bayi | 1 |
 | 505 | COM000003 | Formulir Informasi Kematian Perinatal Lahir Hidup | composition-type | MPDN Kematian Bayi | 1 |
 | 506 | OC000026 | Masa terjadi Kematian Ibu | kemkes clinical-term | MPDN Kematian Ibu | 1 |
@@ -516,3 +516,745 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 508 | 1156682000 | Maternal intrapartum period | snomed | MPDN Kematian Ibu | 1 |
 | 509 | 255410009 | Maternal postpartum | snomed | MPDN Kematian Ibu | 1 |
 | 510 | COM000001 | Formulir Informasi Kematian Maternal | composition-type | MPDN Kematian Ibu | 1 |
+| 511 | 161572004 | History of congenital anomaly | snomed | ePus Pelayanan Pasien | 1 |
+| 512 | 51848-0 | Evaluation note | loinc | ePus Pelayanan Pasien | 1 |
+| 513 | 61150-9 | Subjective Narrative | loinc | ePus Pelayanan Pasien | 1 |
+| 514 | 72225-6 | Objective Narrative | loinc | ePus Pelayanan Pasien | 1 |
+| 515 | 77977-7 | Illness duration | loinc | ePus Pelayanan Pasien | 1 |
+| 516 | 72166-2 | Tobacco smoking status | loinc | ePus Pelayanan Pasien | 1 |
+| 517 | 77176002 | Smoker | snomed | ePus Pelayanan Pasien | 1 |
+| 518 | 8392000 | Non-smoker | snomed | ePus Pelayanan Pasien | 1 |
+| 519 | 11331-6 | History of Alcohol use | loinc | ePus Pelayanan Pasien | 1 |
+| 520 | 219006 | Current drinker | snomed | ePus Pelayanan Pasien | 1 |
+| 521 | 105542008 | Non - drinker | snomed | ePus Pelayanan Pasien | 1 |
+| 522 | 878899005 | Inadequate intake of plant fiber | loinc | ePus Pelayanan Pasien | 1 |
+| 523 | 84635008 | Disease process or condition education | snomed | ePus Pelayanan Pasien | 1 |
+| 524 | 10913 | Edukasi Kesehatan Individu | kemkes kptl | ePus Pelayanan Pasien | 1 |
+| 525 | 67775-7 | Level of responsiveness | loinc | ePus Pelayanan Pasien | 1 |
+| 526 | 248234008 | Mentally alert | snomed | ePus Pelayanan Pasien | 1 |
+| 527 | LA9340-6 | Alert | loinc | ePus Pelayanan Pasien | 1 |
+| 528 | 20602000 | Apathy | snomed | ePus Pelayanan Pasien | 1 |
+| 529 | 2776000 | Delirium | snomed | ePus Pelayanan Pasien | 1 |
+| 530 | 271782001 | Somnolence | snomed | ePus Pelayanan Pasien | 1 |
+| 531 | LA25163-9 | Stuporous | loinc | ePus Pelayanan Pasien | 1 |
+| 532 | 274659008 | Semicoma | snomed | ePus Pelayanan Pasien | 1 |
+| 533 | 371632003 | Coma | snomed | ePus Pelayanan Pasien | 1 |
+| 534 | LA9343-0 | Unresponsive | loinc | ePus Pelayanan Pasien | 1 |
+| 535 | 75910-0 | Canadian triage and acuity scale [CTAS] | loinc | ePus Pelayanan Pasien | 1 |
+| 536 | LA6113-0 | 2 | loinc | ePus Pelayanan Pasien | 1 |
+| 537 | LA6114-8 | 3 | loinc | ePus Pelayanan Pasien | 1 |
+| 538 | LA10137-0 | 5 | loinc | ePus Pelayanan Pasien | 1 |
+| 539 | 276361009 | Waist circumference | snomed | ePus Pelayanan Pasien | 1 |
+| 540 | 39156-5 | Body mass index (BMI) [Ratio] | loinc | ePus Pelayanan Pasien | 1 |
+| 541 | 59575-1 | Body mass index (BMI) [Percentile] Per age | loinc | ePus Pelayanan Pasien | 1 |
+| 542 | 248324001 | Well nourished | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
+| 543 | 248325000 | Undernourished | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
+| 544 | OI000001 | Gizi Buruk | kemkes clinical-term | ePus Pelayanan Pasien, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 545 | 248342006 | Underweight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak | 2 |
+| 546 | 43664005 | Normal weight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak | 2 |
+| 547 | 238131007 | Overweight | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak | 3 |
+| 548 | 414915002 | Obese | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak | 3 |
+| 549 | 8480-6 | Systolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC | 5 |
+| 550 | 8462-4 | Diastolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC | 5 |
+| 551 | 9279-1 | Respiratory rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x) | 6 |
+| 552 | 8867-4 | Heart rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC | 4 |
+| 553 | 8884-9 | Heart rate rythm | loinc | ePus Pelayanan Pasien | 1 |
+| 554 | 271636001 | Pulse regular | snomed | ePus Pelayanan Pasien | 1 |
+| 555 | 61086009 | Pulse irregular | snomed | ePus Pelayanan Pasien | 1 |
+| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x) | 5 |
+| 557 | 129861002 | Physical activity finding | snomed | ePus Pelayanan Pasien | 1 |
+| 558 | 80316-3 | Pain scale [Type] | loinc | ePus Pelayanan Pasien | 1 |
+| 559 | 81765008 | No pain | snomed | ePus Pelayanan Pasien | 1 |
+| 560 | 40196000 | Mild pain | snomed | ePus Pelayanan Pasien (2x) | 1 |
+| 561 | 50415004 | Moderate pain | snomed | ePus Pelayanan Pasien (2x) | 1 |
+| 562 | 76948002 | Severe pain | snomed | ePus Pelayanan Pasien (2x) | 1 |
+| 563 | 1991000124105 | Referred by self | snomed | ePus Pelayanan Pasien | 1 |
+| 564 | outp | From outpatient department | http://terminology.hl7. org/CodeSystem/admit -source | ePus Pelayanan Pasien | 1 |
+| 565 | SP000020 | Umur Bulan | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 4 |
+| 566 | SP000021 | Umur Hari | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 4 |
+| 567 | 32418-6 | Obstetric trimester Stated | loinc | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 568 | ANC.SS.DE13 | Trimester ke | kemkes anc-custom-codes | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 569 | hosp-trans | Transferred from other hospital | http://terminology.hl7.org/CodeSystem/admit-source | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 570 | 11881-0 | Uterus Fundal height Tape measure | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 3 |
+| 571 | ANC.B8.DE105 | Symphysis-fundal height | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil | 1 |
+| 572 | 32392-3 | Deep tendon reflex of Patellar | loinc | ePus Kunjungan Ibu Hamil | 1 |
+| 573 | 55283-6 | Fetal Heart rate | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
+| 574 | ANC.B8.DE107 | Fetal heart rate | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC | 2 |
+| 575 | 249111004 | Engagement of head | loinc | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 576 | ANC.SS.DE46 | Kepala Terhadap PAP | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 577 | 62098001 | Head not engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
+| 578 | 249112006 | Head engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
+| 579 | 89087-1 | Fetal Body weight Estimated | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC | 2 |
+| 580 | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 581 | 6096002 | Breech presentation | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC (2x) | 3 |
+| 582 | 260415000 | Not detected | snomed | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 583 | 246435002 | Number of fetuses | snomed | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 584 | ANC.B8.DE109 | Number of fetuses | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC | 2 |
+| 585 | 99.38 | Administration of tetanus toxoid | icd-9-cm | ePus Kunjungan Ibu Hamil | 1 |
+| 586 | SP000122 | Catat di Buku KIA | kemkes sp | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC | 3 |
+| 587 | SP000115 | Pemeriksaan Laboratorium Thalassemia | kemkes sp | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 588 | 94537-8 | Hemoglobin panel - Blood by HPLC | loinc | ePus Kunjungan Ibu Hamil | 1 |
+| 589 | 718-7 | Hemoglobin [Mass/volume] in Blood | kemkes sp | ePus Kunjungan Ibu Hamil (2x) | 1 |
+| 590 | 278977008 | Human immunodeficiency virus status | snomed | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 591 | 57071-3 | Obstetric delivery method | https://loinc.org | ePus Kunjungan Ibu Hamil | 1 |
+| 592 | 72178-7 | Given a mosquito net [RHEA] | loinc | ePus Kunjungan Ibu Hamil | 1 |
+| 593 | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | loinc | ePus Kunjungan Ibu Hamil (6x) | 1 |
+| 594 | 119297000 | Blood specimen | snomed | ePus Kunjungan Ibu Hamil (5x), ePus Laboratorium (45x), ePus PNC, ePus MTBS (8x) | 4 |
+| 595 | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | loinc | ePus Kunjungan Ibu Hamil (6x), ePus MTBS (3x) | 2 |
+| 596 | 50687-3 | Plasmodium sp Ag [Presence] in Blood | loinc | ePus Kunjungan Ibu Hamil | 1 |
+| 597 | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | loinc | ePus Kunjungan Ibu Hamil (3x) | 1 |
+| 598 | 830039004 | Genitourinary medicine service | snomed | ePus Kunjungan Ibu Hamil | 1 |
+| 599 | 386413005 | Risk identification | snomed | ePus Kunjungan Ibu Hamil | 1 |
+| 600 | 1156040003 | Self reported | snomed | ePus Kunjungan Ibu Hamil | 1 |
+| 601 | 257514003 | Member of public involved incidentally | snomed | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
+| 602 | 106292003 | Professional nurse | snomed | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
+| 603 | O13 | Gestational [pregnancy-induced] hypertension without significant proteinuria | icd-10 | ePus Kunjungan Ibu Hamil, ePus PNC | 2 |
+| 604 | O06.9 | Unspecified abortion Complete or unspecified, without complication | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
+| 605 | O20.9 | Haemorrhage in early pregnancy, unspecified | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
+| 606 | O98.9 | Unspecified maternal infectious or parasitic disease complicating pregnancy, childbirth and the puerperium | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
+| 607 | O42.9 | Premature rupture of membranes, unspecified | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
+| 608 | O99.8 | Other specified diseases and conditions complicating pregnancy, childbirth and the puerperium | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
+| 609 | SP000383 | Keadaan Ibu Saat Tiba | kemkes sp | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
+| 610 | 63238001 | Dead on arrival at hospital | snomed | ePus Kunjungan Ibu Hamil | 1 |
+| 611 | 438949009 | Alive | snomed | ePus Kunjungan Ibu Hamil, ePus INC (3x), ePus PNC | 3 |
+| 612 | 119361006 | Plasma | snomed | ePus Laboratorium | 1 |
+| 613 | 119364003 | Serum | snomed | ePus Laboratorium (2x) | 1 |
+| 614 | 258580003 | Whole blood specimen | snomed | ePus Laboratorium | 1 |
+| 615 | ST000001 | Sputum Pagi | snomed | ePus Laboratorium | 1 |
+| 616 | ST000002 | Sputum Sewaktu | snomed | ePus Laboratorium | 1 |
+| 617 | 119339001 | Stool specimen | snomed | ePus Laboratorium | 1 |
+| 618 | emd | From accident/emergency department | http://terminology.hl7.org/CodeSystem/admit-source | ePus Laboratorium | 1 |
+| 619 | outp | From outpatient department | http://terminology.hl7.org/CodeSystem/admit-source | ePus Laboratorium | 1 |
+| 620 | SRC000011 | Pemeriksaaan TCM XDR | kemkes clinical-term | ePus Laboratorium | 1 |
+| 621 | LA11882-0 | Detected | snomed | ePus Laboratorium | 1 |
+| 622 | LA11883-8 | Not detected | snomed | ePus Laboratorium | 1 |
+| 623 | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | loinc | ePus Laboratorium (3x) | 1 |
+| 624 | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 625 | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 626 | 3084-1 | Urate [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 627 | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 628 | 41653-7 | Glucose [Mass/volume] in Capillary blood by Glucometer | loinc | ePus Laboratorium (3x) | 1 |
+| 629 | 2571-8 | Triglyceride [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 630 | 2085-9 | Cholesterol in HDL [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 631 | 2089-1 | Cholesterol in LDL [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 632 | 1751-7 | Albumin [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 633 | 2324-2 | Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 634 | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 635 | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 636 | 1742-6 | Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 637 | 2157-6 | Creatine kinase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 638 | 20977-5 | Urea [Mass/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 639 | 2885-2 | Protein [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 640 | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | loinc | ePus Laboratorium (3x) | 1 |
+| 641 | 58410-2 | CBC panel - Blood by Automated count | loinc | ePus Laboratorium (2x) | 1 |
+| 642 | 6690-2 | Leukocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium (5x) | 1 |
+| 643 | 789-8 | Erythrocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium | 1 |
+| 644 | 4544-3 | Hematocrit [Volume Fraction] of Blood by Automated count | loinc | ePus Laboratorium | 1 |
+| 645 | 787-2 | MCV [Entitic mean volume] in Red Blood Cells by Automated count | loinc | ePus Laboratorium | 1 |
+| 646 | 785-6 | MCH [Entitic mass] by Automated count | loinc | ePus Laboratorium | 1 |
+| 647 | 786-4 | MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count | loinc | ePus Laboratorium | 1 |
+| 648 | 26453-1 | Erythrocytes [#/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 649 | 26464-8 | Leukocytes [#/volume] in Blood | loinc | ePus Laboratorium (6x), ePus MTBS (3x) | 2 |
+| 650 | 26515-7 | Platelets [#/volume] in Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x) | 2 |
+| 651 | 20570-8 | Hematocrit [Volume Fraction] of Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x) | 2 |
+| 652 | 11067-6 | Bleeding time | loinc | ePus Laboratorium (3x) | 1 |
+| 653 | 30341-2 | Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | loinc | ePus Laboratorium (3x) | 1 |
+| 654 | 17009-2 | IgM [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
+| 655 | 3183-1 | Clotting time of Blood by Lee White method | loinc | ePus Laboratorium (3x) | 1 |
+| 656 | 17007-6 | IgG [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
+| 657 | 30428-7 | MCV [Entitic volume] | loinc | ePus Laboratorium (3x) | 1 |
+| 658 | 28539-5 | MCH [Entitic mass] | loinc | ePus Laboratorium (3x) | 1 |
+| 659 | 28540-3 | MCHC [Mass/volume] | loinc | ePus Laboratorium (3x) | 1 |
+| 660 | 26511-6 | Neutrophils/100 leukocytes in Blood | loinc | ePus Laboratorium (6x) | 1 |
+| 661 | 804-5 | Leukocytes [#/volume] in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 662 | 23761-0 | Neutrophils/100 leukocytes in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 663 | 770-8 | Neutrophils/100 leukocytes in Blood by Automated count | loinc | ePus Laboratorium (3x) | 1 |
+| 664 | 26505-8 | Segmented neutrophils/100 leukocytes in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 665 | 769-0 | Segmented neutrophils/100 leukocytes in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 666 | 32200-8 | Segmented neutrophils/100 leukocytes in Blood by Automated count | loinc | ePus Laboratorium (3x) | 1 |
+| 667 | 26508-2 | Band form neutrophils/100 leukocytes in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 668 | 764-1 | Band form neutrophils/100 leukocytes in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 669 | 35332-6 | Band form neutrophils/100 leukocytes in Blood by Automated count | loinc | ePus Laboratorium (3x) | 1 |
+| 670 | 26478-8 | Lymphocytes/100 leukocytes in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 671 | 882-1 | ABO and Rh group [Type] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 672 | LA21321-7 | O Pos | loinc | ePus Laboratorium | 1 |
+| 673 | LA21322-5 | O Neg | loinc | ePus Laboratorium | 1 |
+| 674 | LA21327-4 | B Pos | loinc | ePus Laboratorium | 1 |
+| 675 | LA21328-2 | B Neg | loinc | ePus Laboratorium | 1 |
+| 676 | LA21323-3 | AB Pos | loinc | ePus Laboratorium | 1 |
+| 677 | LA21324-1 | AB Neg | loinc | ePus Laboratorium | 1 |
+| 678 | LA21325-8 | A Pos | loinc | ePus Laboratorium | 1 |
+| 679 | LA21326-6 | A Neg | loinc | ePus Laboratorium | 1 |
+| 680 | 17566-1 | Salmonella typhi O Ab [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
+| 681 | 22529-2 | Salmonella typhi H Ab [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
+| 682 | 743-5 | Monocytes [#/volume] in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 683 | 705-4 | Basophils [#/volume] in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 684 | 712-0 | Eosinophils [#/volume] in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
+| 685 | 26484-6 | Monocytes [#/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 686 | 26449-9 | Eosinophils [#/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 687 | 26444-0 | Basophils [#/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 688 | 87546-8 | Dengue virus IgG and IgM panel - Serum Qualitative | loinc | ePus Laboratorium (2x) | 1 |
+| 689 | 29676-4 | Dengue virus IgG Ab [Presence] in Serum | loinc | ePus Laboratorium (4x) | 1 |
+| 690 | 25338-5 | Dengue virus IgM Ab [Presence] in Serum | loinc | ePus Laboratorium (4x) | 1 |
+| 691 | 91064-6 | Dengue virus NS1 Ag [Presence] in Serum or Plasma by Immunoassay | loinc | ePus Laboratorium (3x) | 1 |
+| 692 | 47085-6 | Plasmodium sp DNA [Presence] in Blood by NAA with probe detection | loinc | ePus Laboratorium (3x) | 1 |
+| 693 | 34534-8 | 12 lead EKG panel | loinc | ePus Laboratorium (3x) | 1 |
+| 694 | 66862007 | Radiologist | snomed | ePus Laboratorium (2x), ePus ANC (13x) | 2 |
+| 695 | 11525-3 | US for pregnancy | loinc | ePus Laboratorium (3x), ePus ANC (11x) | 2 |
+| 696 | 5778-6 | Color of Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 697 | 32167-9 | Clarity of Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 698 | 2756-5 | pH of Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 699 | 2965-2 | Specific gravity of Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 700 | 2349-9 | Glucose [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 701 | 33903-6 | Ketones [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 702 | 1977-8 | Bilirubin.total [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 703 | 34927-4 | Urobilinogen [Moles/volume] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 704 | 105906-2 | Blood [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 705 | 32710-6 | Nitrite [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 706 | 105087-1 | Epithelial cells.squamous [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 707 | 105089-7 | Epithelial cells.non-squamous [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 708 | 85093-3 | Crystal casts [Presence] in Urine sediment by Light microscopy | loinc | ePus Laboratorium (3x) | 1 |
+| 709 | 105107-7 | Erythrocytes [#/area] in Urine sediment | loinc | ePus Laboratorium (3x) | 1 |
+| 710 | 105104-4 | Leukocytes [#/area] in Urine sediment | loinc | ePus Laboratorium (3x) | 1 |
+| 711 | 105908-8 | Bacteria [#/area] in Urine sediment | loinc | ePus Laboratorium (3x) | 1 |
+| 712 | 2106-3 | Choriogonadotropin [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
+| 713 | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | loinc | ePus Laboratorium (3x) | 1 |
+| 714 | K2 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
+| 715 | K3 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
+| 716 | K4 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
+| 717 | K5 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
+| 718 | K6 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
+| 719 | 305956004 | Referral by physician | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
+| 720 | 306052007 | Referral by midwife | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
+| 721 | SP000116 | Rujukan dari Puskesmas Pembantu | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
+| 722 | SP000117 | Rujukan dari Puskesmas | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
+| 723 | SP000118 | Rujukan dari Rumah Bersalin / Klinik | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
+| 724 | SP000119 | Rujukan dari Rumah Sakit | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
+| 725 | 11977-6 | [#] Parity | loinc | ePus ANC (2x), ePus PNC (2x) | 2 |
+| 726 | 69043-8 | Other pregnancy outcomes # | loinc | ePus ANC, ePus PNC | 2 |
+| 727 | ANC.B6.DE32 | Parity | WHO anc-custom-codes | ePus ANC, ePus PNC | 2 |
+| 728 | SP000050 | Riwayat Onset Persalinan | loinc | ePus ANC, ePus PNC | 2 |
+| 729 | SP000132 | Memiliki Buku KIA | kemkes sp | ePus ANC, ePus PNC | 2 |
+| 730 | 56077-1 | Body weight --pre current pregnancy | loinc | ePus ANC, ePus PNC | 2 |
+| 731 | ANC.B8.DE2 | Pre-gestational weight | WHO anc-custom-codes | ePus ANC, ePus PNC | 2 |
+| 732 | 404684003 | Clinical finding | snomed | ePus ANC, ePus Tumbang Anak (2x) | 2 |
+| 733 | 3401000175105 | Total number of prenatal care visits | snomed | ePus ANC | 1 |
+| 734 | SP000134 | Jenis Lokasi Screening | kemkes sp | ePus ANC, ePus PNC | 2 |
+| 735 | 82242000 | Children’s hospital | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
+| 736 | 104 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC | 3 |
+| 737 | OT000003 | RS ODHA | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC | 3 |
+| 738 | OT000004 | Bidan Praktek Mandiri | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC | 3 |
+| 739 | SP000131 | Status Pindahan | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
+| 740 | 10197-2 | Physical findings of Eye Narrative | loinc | ePus ANC (2x) | 1 |
+| 741 | ANC.SS.DE26 | Pemeriksaan Fisik Konjungtiva | kemkes anc-custom-codes | ePus ANC | 1 |
+| 742 | A | Abnormal | v3-ObservationInterpretation | ePus ANC (13x) | 1 |
+| 743 | ANC.SS.DE27 | Pemeriksaan Fisik Sklera | kemkes anc-custom-codes | ePus ANC | 1 |
+| 744 | 10206-1 | Physical findings of Skin Narrative | loinc | ePus ANC | 1 |
+| 745 | 11411-6 | Physical findings of Neck Narrative | loinc | ePus ANC | 1 |
+| 746 | ANC.SS.DE28 | Pemeriksaan Fisik Leher | kemkes anc-custom-codes | ePus ANC | 1 |
+| 747 | N | Normal | kemkes anc-custom-codes | ePus ANC | 1 |
+| 748 | 32453-3 | Physical findings of Mouth | loinc | ePus ANC | 1 |
+| 749 | ANC.SS.DE29 | Pemeriksaan Fisik Area Mulut | v3-ObservationInterpretation | ePus ANC | 1 |
+| 750 | 297268004 | Ear, nose and throat finding | snomed | ePus ANC | 1 |
+| 751 | ANC.SS.DE30 | Pemeriksaan Fisik Telinga Hidung dan Tenggorokan (THT) | kemkes anc-custom-codes | ePus ANC | 1 |
+| 752 | 10200-4 | Physical findings of Heart Narrative | loinc | ePus ANC | 1 |
+| 753 | ANC.SS.DE31 | Pemeriksaan Fisik Dada (Auskultasi Jantung) | kemkes anc-custom-codes | ePus ANC | 1 |
+| 754 | 301230006 | Lung finding | snomed | ePus ANC | 1 |
+| 755 | ANC.SS.DE32 | Pemeriksaan Fisik Dada (Auskultasi Paru) | kemkes anc-custom-codes | ePus ANC | 1 |
+| 756 | 10191-5 | Physical findings of Abdomen Narrative | loinc | ePus ANC | 1 |
+| 757 | ANC.SS.DE33 | Pemeriksaan Fisik Perut | kemkes anc-custom-codes | ePus ANC | 1 |
+| 758 | 116307009 | Finding of upper limb | snomed | ePus ANC | 1 |
+| 759 | ANC.SS.DE34 | Pemeriksaan Fisik Tungkai | kemkes anc-custom-codes | ePus ANC (4x) | 1 |
+| 760 | 116312005 | Finding of lower limb | snomed | ePus ANC | 1 |
+| 761 | 102572006 | Edema of lower extremity (finding) | snomed | ePus ANC | 1 |
+| 762 | 299412000 | Finding of patella structure | snomed | ePus ANC | 1 |
+| 763 | ANC.B8.DE17 | Systolic blood pressure | WHO anc-custom-codes | ePus ANC | 1 |
+| 764 | ANC.B8.DE19 | Diastolic blood pressure | WHO anc-custom-codes | ePus ANC | 1 |
+| 765 | ANC.SS.DE2 | Pernapasan | kemkes anc-custom-codes | ePus ANC | 1 |
+| 766 | 8478-0 | Mean blood pressure | loinc | ePus ANC | 1 |
+| 767 | SP000634 | Tinggi fundus terdeteksi | kemkes sp | ePus ANC | 1 |
+| 768 | SP000635 | Tinggi fundus jari | kemkes sp | ePus ANC | 1 |
+| 769 | 11850-5 | Gestational sac Mean diameter US | loinc | ePus ANC (2x) | 1 |
+| 770 | ANC.SS.DE36 | Gestational sac (GS) USG | kemkes anc-custom-codes | ePus ANC | 1 |
+| 771 | 11957-8 | Fetal Crown Rump length US | loinc | ePus ANC (2x) | 1 |
+| 772 | ANC.SS.DE37 | Fetal Crown Rump Length (CRL) USG | kemkes anc-custom-codes | ePus ANC | 1 |
+| 773 | 11948-7 | Fetal Heart rate US | loinc | ePus ANC (2x) | 1 |
+| 774 | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | kemkes anc-custom-codes | ePus ANC | 1 |
+| 775 | 11820-8 | Fetal Head Diameter.biparietal US | loinc | ePus ANC (2x) | 1 |
+| 776 | 11984-2 | Fetal Head Circumference US | loinc | ePus ANC (2x) | 1 |
+| 777 | 11979-2 | Fetal Abdomen Circumference US | loinc | ePus ANC (2x) | 1 |
+| 778 | 11963-6 | Fetal Femur diaphysis [Length] US | loinc | ePus ANC (2x) | 1 |
+| 779 | 11832-3 | Fetal Amniotic fluid space Maximum diameter largest pocket US | loinc | ePus ANC (2x) | 1 |
+| 780 | 365662002 | Finding of amniotic fluid appearance | snomed | ePus ANC, ePus INC | 2 |
+| 781 | 168090003 | Amniotic fluid clear | snomed | ePus ANC, ePus INC | 2 |
+| 782 | 408781009 | Straw colored amniotic fluid | snomed | ePus ANC, ePus INC | 2 |
+| 783 | 249134008 | Bloodstained liquor | snomed | ePus ANC, ePus INC | 2 |
+| 784 | 168092006 | Amniotic fluid -meconium stain | snomed | ePus ANC, ePus INC | 2 |
+| 785 | 11525-3 | US for pregnancy | snomed | ePus ANC (2x) | 1 |
+| 786 | 271692001 | Presentation of fetus | snomed | ePus ANC, ePus INC | 2 |
+| 787 | ANC.SS.DE41 | Letak Janin USG | WHO anc-custom-codes | ePus ANC | 1 |
+| 788 | 398236008 | Intrauterine | snomed | ePus ANC, ePus INC | 2 |
+| 789 | 298109001 | Ectopic | snomed | ePus ANC, ePus INC | 2 |
+| 790 | 72155-5 | Position in womb Fetus [RHEA] | snomed | ePus ANC | 1 |
+| 791 | 11877-8 | Fetal presentation US | loinc | ePus ANC (2x) | 1 |
+| 792 | 11878-6 | Number of fetuses by US | loinc | ePus ANC (2x) | 1 |
+| 793 | 249111004 | Engagement of head | snomed | ePus ANC, ePus INC | 2 |
+| 794 | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | kemkes anc-custom-codes | ePus ANC | 1 |
+| 795 | 11888-5 | Gestational age US composite estimate | loinc | ePus ANC (2x) | 1 |
+| 796 | ANC.B6.DE20 | Ultrasound | WHO anc-custom-codes | ePus ANC | 1 |
+| 797 | 11781-2 | Delivery date US composite estimate | loinc | ePus ANC (2x) | 1 |
+| 798 | ANC.SS.DE40 | Hari Perkiraan Lahir (HPL) USG | kemkes anc-custom-codes | ePus ANC | 1 |
+| 799 | 34842007 | Antepartum hemorrhage | snomed | ePus ANC | 1 |
+| 800 | 386639001 | Termination of pregnancy | snomed | ePus ANC, ePus INC | 2 |
+| 801 | 91302008 | Sepsis | snomed | ePus ANC | 1 |
+| 802 | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf | ePus ANC, ePus PNC | 2 |
+| 803 | OC000001 | Jarak kehamilan | kemkes clinical-term | ePus ANC, ePus INC | 2 |
+| 804 | ANC.SS.DE53 | Jarak kehamilan | kemkes anc-custom-codes | ePus ANC, ePus INC | 2 |
+| 805 | 66071002 | Viral hepatitis type B | snomed | ePus ANC | 1 |
+| 806 | 76272004 | Syphilis | snomed | ePus ANC | 1 |
+| 807 | 61462000 | Malaria | snomed | ePus ANC, ePus MTBS | 2 |
+| 808 | 386337006 | Intrapartal care | snomed | ePus INC | 1 |
+| 809 | 288203005 | Transverse/oblique lie | snomed | ePus INC (2x) | 1 |
+| 810 | 70028003 | Vertex presentation | snomed | ePus INC | 1 |
+| 811 | 249083005 | Posterior fontanelle presenting | snomed | ePus INC | 1 |
+| 812 | 23954006 | Acromion presentation | snomed | ePus INC | 1 |
+| 813 | 8014007 | Brow presentation of fetus | snomed | ePus INC | 1 |
+| 814 | 8017000 | Face presentation | snomed | ePus INC | 1 |
+| 815 | 249097002 | Footling breech presentation | snomed | ePus INC | 1 |
+| 816 | 124736009 | Compound presentation | snomed | ePus INC | 1 |
+| 817 | 289282009 | Amniotic membrane finding | snomed | ePus INC | 1 |
+| 818 | 249125003 | Intact membranes | snomed | ePus INC | 1 |
+| 819 | SP000120 | Non-intact membrane | snomed | ePus INC | 1 |
+| 820 | SP000123 | Integrasi Program | kemkes sp | ePus INC | 1 |
+| 821 | SP000124 | Obat anti malaria | kemkes sp | ePus INC, ePus PNC | 2 |
+| 822 | SP000125 | Obar anti hepatitis B | kemkes sp | ePus INC, ePus PNC | 2 |
+| 823 | 76516-4 | Gestational age—​at birth | loinc | ePus INC | 1 |
+| 824 | 118215003 | Delivery finding | snomed | ePus INC | 1 |
+| 825 | 125677006 | Relative | snomed | ePus INC | 1 |
+| 826 | 200138003 | Vacuum extractor delivery - delivered | snomed | ePus INC | 1 |
+| 827 | 200130005 | Forceps delivery - delivered | snomed | ePus INC | 1 |
+| 828 | 405195003 | Intrapartum maternal status | snomed | ePus INC | 1 |
+| 829 | 131148009 | Bleeding | snomed | ePus INC | 1 |
+| 830 | 386661006 | Fever | snomed | ePus INC, ePus MTBS | 2 |
+| 831 | 91175000 | Seizure | snomed | ePus INC, ePus MTBS, ePus MTBM | 3 |
+| 832 | 249215002 | Odor of lochia | snomed | ePus INC, ePus PNC | 2 |
+| 833 | 59283008 | Maternal death | snomed | ePus INC | 1 |
+| 834 | 387700009 | Prolonged latent phase of labor | snomed | ePus INC | 1 |
+| 835 | 398143009 | Uterine contraction monitoring | snomed | ePus INC (2x) | 1 |
+| 836 | 289708007 | Regular uterine contractions | snomed | ePus INC (2x) | 1 |
+| 837 | 289739009 | Uterine contractions problem | snomed | ePus INC (2x) | 1 |
+| 838 | 364270005 | Frequency of uterine contraction | snomed | ePus INC (2x) | 1 |
+| 839 | 364274001 | Duration of uterine contraction | snomed | ePus INC (2x) | 1 |
+| 840 | SP000399 | <20 detik | kemkes sp | ePus INC (2x) | 1 |
+| 841 | SP000400 | 20-40 detik | kemkes sp | ePus INC (2x) | 1 |
+| 842 | SP000401 | >40 detik | kemkes sp | ePus INC (2x) | 1 |
+| 843 | 249120008 | Onset of labor first stage | snomed | ePus INC | 1 |
+| 844 | 249160009 | Onset of labor second stage | snomed | ePus INC | 1 |
+| 845 | OC000018 | Onset Kala III | kemkes clinical-term | ePus INC | 1 |
+| 846 | 236994008 | Placental delivery procedure | kemkes clinical-term | ePus INC | 1 |
+| 847 | 289267004 | Finding of completeness of placenta | snomed | ePus INC | 1 |
+| 848 | 249170006 | Complete placenta at delivery | snomed | ePus INC | 1 |
+| 849 | 268479002 | Incomplete placenta at delivery | snomed | ePus INC | 1 |
+| 850 | SP000127 | Injeksi Oksitosin | kemkes sp | ePus INC | 1 |
+| 851 | 302384005 | Controlled cord traction of placenta | snomed | ePus INC | 1 |
+| 852 | 236996005 | Abdominal uterine fundal massage | snomed | ePus INC | 1 |
+| 853 | OC000019 | Onset Kala IV | kemkes clinical-term | ePus INC | 1 |
+| 854 | 9293002 | Atony of uterus | snomed | ePus INC (2x) | 1 |
+| 855 | 1148943004 | Retention of placenta and uterine membrane | snomed | ePus INC | 1 |
+| 856 | 283380005 | Laceration of perineum | snomed | ePus INC | 1 |
+| 857 | 84007008 | Shock during AND/OR following labor AND/OR delivery | snomed | ePus INC | 1 |
+| 858 | 118216002 | Labor finding | snomed | ePus INC | 1 |
+| 859 | 719051004 | Quantity of postpartum maternal blood loss | snomed | ePus INC | 1 |
+| 860 | 717809003 | Immediate postpartum care | snomed | ePus INC (2x) | 1 |
+| 861 | 8462-4 | Diastolic blood pressure | snomed | ePus INC | 1 |
+| 862 | 199746004 | Obstructed labor | snomed | ePus INC | 1 |
+| 863 | 38010008 | Intrapartum hemorrhage | snomed | ePus INC (2x) | 1 |
+| 864 | 44223004 | Premature rupture of membranes | snomed | ePus INC | 1 |
+| 865 | 199745000 | Complication occurring during labor and delivery | snomed | ePus INC (2x) | 1 |
+| 866 | SP000379 | Tatalaksana Komplikasi Persalinan | kemkes sp | ePus INC | 1 |
+| 867 | 63893-2 | Outcome of pregnancy | loinc | ePus INC | 1 |
+| 868 | LA14270-5 | Live birth | loinc | ePus INC (2x) | 1 |
+| 869 | LA14271-3 | Stillborn | loinc | ePus INC (2x) | 1 |
+| 870 | LA14272-1 | Miscarriage | loinc | ePus INC | 1 |
+| 871 | LA14273-9 | Induced abortion | loinc | ePus INC | 1 |
+| 872 | 409014006 | Delivery care management | snomed | ePus INC, ePus PNC | 2 |
+| 873 | SP000130 | Menggunakan Partograf | kemkes sp | ePus INC | 1 |
+| 874 | 431868002 | Initiation of breastfeeding | snomed | ePus INC | 1 |
+| 875 | OC000016 | Waktu Inisiasi Menyusui Dini | kemkes clinical-term | ePus INC | 1 |
+| 876 | OV000014 | Kurang dari 1 Jam | kemkes clinical-term | ePus INC | 1 |
+| 877 | OV000015 | Lebih dari 1 Jam | kemkes clinical-term | ePus INC | 1 |
+| 878 | 409063005 | Counselling | snomed | ePus INC (2x) | 1 |
+| 879 | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | kemkes clinical-term | ePus INC, ePus PNC | 2 |
+| 880 | SP000121 | Edukasi Tanda Bahaya Baru Lahir | kemkes sp | ePus INC | 1 |
+| 881 | ED000009 | Edukasi IMD dan ASI Eksklusif | kemkes clinical-term | ePus INC | 1 |
+| 882 | ED000005 | Edukasi Gizi | kemkes clinical-term | ePus INC | 1 |
+| 883 | PC000001 | Perawatan Tali Pusat | kemkes clinical-term | ePus INC, ePus PNC | 2 |
+| 884 | ED000010 | Edukasi PHBS | kemkes clinical-term | ePus INC, ePus PNC | 2 |
+| 885 | SP000126 | ARV Profilaksis | kemkes sp | ePus INC | 1 |
+| 886 | 249222005 | Neonatal condition | snomed | ePus INC | 1 |
+| 887 | Z39.2 | Routine postpartum follow-up | icd-10 | ePus PNC | 1 |
+| 888 | 289530006 | Vaginal bleeding | snomed | ePus PNC | 1 |
+| 889 | 81661-1 | Blood Loss [Volume] Measured | loinc | ePus PNC | 1 |
+| 890 | 364297003 | Female perineum observable | loinc | ePus PNC | 1 |
+| 891 | OC000020 | Tanda Infeksi Perineum | kemkes clinical-term | ePus PNC | 1 |
+| 892 | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | kemkes clinical-term | ePus PNC | 1 |
+| 893 | 32422-8 | Physical findings of breast | loinc | ePus PNC | 1 |
+| 894 | 300885006 | Swelling of breast | snomed | ePus PNC | 1 |
+| 895 | 290070001 | Red breast | snomed | ePus PNC | 1 |
+| 896 | 54302000 | Discharge from nipple | snomed | ePus PNC | 1 |
+| 897 | 53430007 | Pain of breast | snomed | ePus PNC | 1 |
+| 898 | 290084006 | Breast normal | snomed | ePus PNC | 1 |
+| 899 | 289700000 | Uterine contractions present | snomed | ePus PNC | 1 |
+| 900 | 249214003 | Color of lochia | snomed | ePus PNC | 1 |
+| 901 | 278072004 | Lochia rubra | snomed | ePus PNC | 1 |
+| 902 | 449828001 | Lochia serosa | snomed | ePus PNC | 1 |
+| 903 | 449827006 | Lochia alba | snomed | ePus PNC | 1 |
+| 904 | OC000017 | Produksi ASI | kemkes clinical-term | ePus PNC | 1 |
+| 905 | OV000016 | Produksi ASI ada | kemkes clinical-term | ePus PNC | 1 |
+| 906 | OV000017 | Produksi ASI ada tapi sedikit | kemkes clinical-term | ePus PNC | 1 |
+| 907 | OV000018 | Produksi ASI tidak ada | kemkes clinical-term | ePus PNC | 1 |
+| 908 | 252041008 | Micturition finding | snomed | ePus PNC | 1 |
+| 909 | 38671000119103 | Abnormal urination | snomed | ePus PNC | 1 |
+| 910 | 102834005 | Normal micturition | snomed | ePus PNC | 1 |
+| 911 | 300375001 | Able to defecate | snomed | ePus PNC | 1 |
+| 912 | 408988007 | Newborn care education | snomed | ePus PNC | 1 |
+| 913 | 8345-1 | Body weight Measured --post partum | loinc | ePus PNC | 1 |
+| 914 | 8305-5 | Body height --post partum | loinc | ePus PNC | 1 |
+| 915 | 47821001 | Postpartum hemorrhage | snomed | ePus PNC | 1 |
+| 916 | O86.8 | Other specified puerperal infections | icd-10 | ePus PNC | 1 |
+| 917 | 58703003 | Postpartum depression | snomed | ePus PNC | 1 |
+| 918 | O90.8 | Other complications of the puerperium, not elsewhere classified | icd-10 | ePus PNC | 1 |
+| 919 | 289084000 | Difficulty performing breastfeeding | snomed | ePus PNC | 1 |
+| 920 | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf | ePus PNC (2x) | 1 |
+| 921 | 767224000 | Administration of vitamin A | snomed | ePus PNC, ePus MTBS | 2 |
+| 922 | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf | ePus PNC, ePus MTBS | 2 |
+| 923 | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf | ePus PNC, ePus MTBS (2x) | 2 |
+| 924 | 711029005 | Counseling about breastfeeding | snomed | ePus PNC | 1 |
+| 925 | 72531000052105 | Counseling for contraception | snomed | ePus PNC | 1 |
+| 926 | SP000135 | Konseling Tanda Bahaya Bayi Baru Lahir | kemkes sp | ePus PNC | 1 |
+| 927 | 441041000124100 | Counseling about nutrition | snomed | ePus PNC | 1 |
+| 928 | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | loinc | ePus PNC (3x) | 1 |
+| 929 | 432555000 | Product containing artesunate | snomed | ePus PNC | 1 |
+| 930 | 64115004 | Product containing amodiaquine | snomed | ePus PNC | 1 |
+| 931 | 324919005 | Product containing precisely quinine sulfate 200 milligram/1 each conventional release oral tablet | snomed | ePus PNC | 1 |
+| 932 | 29175007 | Product containing rifampicin | snomed | ePus PNC | 1 |
+| 933 | 81335000 | Product containing isoniazid | snomed | ePus PNC | 1 |
+| 934 | 13592004 | Product containing pyrazinamide | snomed | ePus PNC | 1 |
+| 935 | 24450004 | Product containing ethambutol | snomed | ePus PNC | 1 |
+| 936 | 159016003 | Medical radiographer | snomed | ePus PNC | 1 |
+| 937 | SP000139 | KB Pasca Plasenta | kemkes sp | ePus PNC (2x) | 1 |
+| 938 | LA6524-8 | Oral contraceptive pill | loinc | ePus PNC (2x) | 1 |
+| 939 | 237122005 | Lactational amenorrhea | snomed | ePus PNC (2x) | 1 |
+| 940 | LA6525-5 | Injectable/implantable hormone | loinc | ePus PNC (2x) | 1 |
+| 941 | LA6527-1 | Intrauterine device | loinc | ePus PNC (2x) | 1 |
+| 942 | SP000097 | Implan | kemkes sp | ePus PNC (2x) | 1 |
+| 943 | LA6523-0 | Condom | loinc | ePus PNC (2x) | 1 |
+| 944 | 22523008 | Vasectomy | snomed | ePus PNC (2x) | 1 |
+| 945 | 77543007 | Ligation of fallopian tube | snomed | ePus PNC (2x) | 1 |
+| 946 | PC000004 | KB Pasca Persalinan | kemkes clinical-term | ePus PNC (2x) | 1 |
+| 947 | SP000380 | Tatalaksana Komplikasi Pendarahan | kemkes sp | ePus PNC | 1 |
+| 948 | 736286003 | Hypertension clinical management plan | snomed | ePus PNC | 1 |
+| 949 | SP000133 | Pemantauan Protein Urin | kemkes sp | ePus PNC (2x) | 1 |
+| 950 | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | kemkes sp | ePus PNC | 1 |
+| 951 | 135840009 | Blood pressure monitoring | kemkes sp | ePus PNC | 1 |
+| 952 | SP000136 | Pemberian MgSO4 | kemkes sp | ePus PNC | 1 |
+| 953 | SP000137 | Pemberian Diazepam Injeksi | kemkes sp | ePus PNC | 1 |
+| 954 | 359746009 | Patient’s condition stable | snomed | ePus PNC, ePus MTBS | 2 |
+| 955 | 162668006 | Patient’s condition unstable | snomed | ePus PNC | 1 |
+| 956 | 268910001 | Patient’s condition improved | snomed | ePus PNC | 1 |
+| 957 | 35025007 | Manual pelvic examination | snomed | ePus PNC | 1 |
+| 958 | SP000666 | Hari setelah melahirkan | kemkes sp | ePus PNC | 1 |
+| 959 | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | kemkes sp | ePus PNC | 1 |
+| 960 | SP000273 | Integrated management of childhood illness | kemkes sp | ePus MTBS | 1 |
+| 961 | 9843-4 | Head Occipital-frontal circumference | loinc | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
+| 962 | SP000261 | Tipe Kunjungan | kemkes sp | ePus MTBS, ePus MTBM | 2 |
+| 963 | SP000262 | Kunjungan Pertama | kemkes sp | ePus MTBS, ePus MTBM | 2 |
+| 964 | SP000263 | Kunjungan Ulang | kemkes sp | ePus MTBS, ePus MTBM | 2 |
+| 965 | OC000099 | Status daerah endemis malaria tempat tinggal | kemkes clinical-term | ePus MTBS (2x) | 1 |
+| 966 | OV000221 | Daerah non endemis | kemkes clinical-term | ePus MTBS (2x) | 1 |
+| 967 | OV000321 | Sangat pucat | kemkes clinical-term | ePus MTBS | 1 |
+| 968 | 1237486008 | Pale discoloration of entire skin of body | snomed | ePus MTBS (2x) | 1 |
+| 969 | OV000322 | Tidak pucat | kemkes clinical-term | ePus MTBS | 1 |
+| 970 | OC000088 | Pemeriksaan tanda bahaya umum | kemkes clinical-term | ePus MTBS | 1 |
+| 971 | 288853006 | Able to drink | snomed | ePus MTBS | 1 |
+| 972 | OV000207 | Anak memuntahkan semua makanan dan minuman | kemkes clinical-term | ePus MTBS | 1 |
+| 973 | SP000260 | Riwayat Kejang Selama Sakit | kemkes sp | ePus MTBS | 1 |
+| 974 | 422768004 | Unresponsive | snomed | ePus MTBS | 1 |
+| 975 | 130987000 | Acute confusion | snomed | ePus MTBS | 1 |
+| 976 | OV000171 | Rewel | kemkes clinical-term | ePus MTBS | 1 |
+| 977 | OV000208 | Anak tidak dapat ditenangkan | kemkes clinical-term | ePus MTBS | 1 |
+| 978 | SP000259 | Pandangan Kosong atau Mata Tidak Membuka | kemkes sp | ePus MTBS | 1 |
+| 979 | SP000258 | Anak Tidak Bersuara atau Menangis Melengking | kemkes sp | ePus MTBS | 1 |
+| 980 | 67909005 | Chest wall retraction | snomed | ePus MTBS (2x) | 1 |
+| 981 | 70407001 | Stridor | snomed | ePus MTBS | 1 |
+| 982 | 248568003 | Nasal flaring | snomed | ePus MTBS | 1 |
+| 983 | OV000211 | Anak mencari posisi paling nyaman dan menolak berbaring | kemkes clinical-term | ePus MTBS | 1 |
+| 984 | 3415004 | Cyanosis | snomed | ePus MTBS, ePus MTBM | 2 |
+| 985 | 26825009 | Cutis marmorata | snomed | ePus MTBS | 1 |
+| 986 | OC000089 | Klasifikasi status kegawatan | kemkes clinical-term | ePus MTBS | 1 |
+| 987 | 410429000 | Cardiac arrest | snomed | ePus MTBS | 1 |
+| 988 | OV000137 | Penyakit sangat berat | kemkes clinical-term | ePus MTBS | 1 |
+| 989 | 103228002 | Hemoglobin saturation with oxygen | snomed | ePus MTBS, ePus MTBM (2x) | 2 |
+| 990 | OC000090 | Pemeriksaan tanda dan gejala sukar bernafas | kemkes clinical-term | ePus MTBS | 1 |
+| 991 | 56018004 | Wheezing | snomed | ePus MTBS | 1 |
+| 992 | OC000091 | Klasifikasi batuk dan/atau sukar bernapas | kemkes clinical-term | ePus MTBS | 1 |
+| 993 | OV000287 | Pneumonia berat | kemkes clinical-term | ePus MTBS | 1 |
+| 994 | 233604007 | Pneumonia | snomed | ePus MTBS | 1 |
+| 995 | OV000288 | Batuk bukan pneumonia | kemkes clinical-term | ePus MTBS | 1 |
+| 996 | 62315008 | Diarrhea | snomed | ePus MTBS, ePus MTBM | 2 |
+| 997 | OC000113 | Durasi diare | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 998 | 405729008 | Hematochezia | snomed | ePus MTBS | 1 |
+| 999 | OC000097 | Pemeriksaan tanda dan gejala diare | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1000 | 214264003 | Lethargy | snomed | ePus MTBS (2x) | 1 |
+| 1001 | SP000257 | Rewel atau Mudah Marah | kemkes sp | ePus MTBS | 1 |
+| 1002 | 246923005 | Sunken eyes | snomed | ePus MTBS, ePus MTBM | 2 |
+| 1003 | SP000256 | Tidak Bisa Minum atau Malas Minum | kemkes sp | ePus MTBS | 1 |
+| 1004 | 17173007 | Excessive thirst | snomed | ePus MTBS | 1 |
+| 1005 | SP000255 | Turgor Kulit Perut | kemkes sp | ePus MTBS, ePus MTBM | 2 |
+| 1006 | OV000181 | Cubitan kulit perut kembalinya sangat lambat | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1007 | OV000182 | Cubitan kulit perut kembalinya lambat | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1008 | OC000098 | Klasifikasi diare | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1009 | OV000217 | Diare persisten berat | kemkes clinical-term | ePus MTBS | 1 |
+| 1010 | OV000218 | Diare persisten | kemkes clinical-term | ePus MTBS | 1 |
+| 1011 | 46799006 | Dysenteric diarrhea | snomed | ePus MTBS | 1 |
+| 1012 | OV000214 | Diare dehidrasi berat | kemkes clinical-term | ePus MTBS | 1 |
+| 1013 | OV000215 | Diare dehidrasi ringan/sedang | kemkes clinical-term | ePus MTBS | 1 |
+| 1014 | OV000186 | Diare tanpa dehidrasi | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1015 | OV000219 | Daerah endemis tinggi | kemkes clinical-term | ePus MTBS | 1 |
+| 1016 | OV000220 | Daerah endemis rendah | kemkes clinical-term | ePus MTBS | 1 |
+| 1017 | 81264-4 | Fever duration | loinc | ePus MTBS | 1 |
+| 1018 | OC000121 | Pemeriksaan tanda dan gejala demam | kemkes clinical-term | ePus MTBS | 1 |
+| 1019 | 405947006 | Nuchal rigidity | snomed | ePus MTBS | 1 |
+| 1020 | OV000222 | Ada penyebab lain dari demam | kemkes clinical-term | ePus MTBS | 1 |
+| 1021 | OC000100 | Klasifikasi demam | kemkes clinical-term | ePus MTBS | 1 |
+| 1022 | OV000223 | Penyakit berat dengan demam | kemkes clinical-term | ePus MTBS | 1 |
+| 1023 | OV000224 | Demam mungkin bukan malaria | kemkes clinical-term | ePus MTBS | 1 |
+| 1024 | OV000225 | Penyakit berat dengan demam | kemkes clinical-term | ePus MTBS | 1 |
+| 1025 | OV000226 | Demam bukan malaria | kemkes clinical-term | ePus MTBS | 1 |
+| 1026 | 14189004 | Measles | snomed | ePus MTBS (2x) | 1 |
+| 1027 | OC000101 | Pemeriksaan tanda dan gejala campak | kemkes clinical-term | ePus MTBS | 1 |
+| 1028 | 271807003 | Eruption of skin | snomed | ePus MTBS (2x) | 1 |
+| 1029 | SP000253 | Batuk atau Pilek atau Mata Merah | kemkes sp | ePus MTBS | 1 |
+| 1030 | 1071000119107 | Oral lesion | snomed | ePus MTBS | 1 |
+| 1031 | OV000228 | Ada luka di mulut dalam atau luas | kemkes clinical-term | ePus MTBS | 1 |
+| 1032 | 246679005 | Discharge from eye | snomed | ePus MTBS | 1 |
+| 1033 | 64634000 | Corneal opacity | snomed | ePus MTBS | 1 |
+| 1034 | OC000102 | Klasifikasi campak | kemkes clinical-term | ePus MTBS | 1 |
+| 1035 | OV000229 | Campak dengan komplikasi berat | kemkes clinical-term | ePus MTBS | 1 |
+| 1036 | SP000252 | Campak Dengan Komplikasi Pada Mata Dan/Atau Mulut | kemkes sp | ePus MTBS | 1 |
+| 1037 | OC000104 | Pemeriksaan infeksi dengue | kemkes clinical-term | ePus MTBS | 1 |
+| 1038 | OV000273 | Demam tinggi terus menerus | kemkes clinical-term | ePus MTBS | 1 |
+| 1039 | OV000274 | Badan teraba dingin | kemkes clinical-term | ePus MTBS | 1 |
+| 1040 | SP000251 | Lemas atau Gelisah | kemkes sp | ePus MTBS | 1 |
+| 1041 | 422587007 | Nausea | snomed | ePus MTBS | 1 |
+| 1042 | 422400008 | Vomiting | snomed | ePus MTBS | 1 |
+| 1043 | OV000275 | Muntah terus menerus | kemkes clinical-term | ePus MTBS | 1 |
+| 1044 | 21522001 | Abdominal pain | snomed | ePus MTBS | 1 |
+| 1045 | SP000250 | Perdarahan Berupa Mimisan atau Muntah Darah (Coklat Seperti Kopi) atau BAB Berdarah (Berwarna Hitam) | kemkes sp | ePus MTBS | 1 |
+| 1046 | 279001004 | Pain finding at anatomical site | snomed | ePus MTBS | 1 |
+| 1047 | OV000276 | BAK terakhir ≥6 jam | kemkes clinical-term | ePus MTBS | 1 |
+| 1048 | OV000233 | Kaki/ tangan tampak pucat | kemkes clinical-term | ePus MTBS | 1 |
+| 1049 | OV000234 | Waktu pengisian kapiler >2 detik | kemkes clinical-term | ePus MTBS | 1 |
+| 1050 | 771542000 | Cold extremity | snomed | ePus MTBS | 1 |
+| 1051 | 64661000 | Thready pulse | snomed | ePus MTBS | 1 |
+| 1052 | 86651002 | Pulse fast | snomed | ePus MTBS | 1 |
+| 1053 | OV000235 | Nyeri tekan perut kanan atas | kemkes clinical-term | ePus MTBS | 1 |
+| 1054 | 17672001 | Accumulation of fluid | snomed | ePus MTBS | 1 |
+| 1055 | 271813007 | Petechiae | snomed | ePus MTBS | 1 |
+| 1056 | 249366005 | Bleeding from nose | snomed | ePus MTBS | 1 |
+| 1057 | 18165001 | Jaundice | snomed | ePus MTBS, ePus MTBM (2x) | 2 |
+| 1058 | 17077006 | Abnormal respiratory rate | snomed | ePus MTBS | 1 |
+| 1059 | OV000236 | Ada pembesaran hepar >2 cm | kemkes clinical-term | ePus MTBS | 1 |
+| 1060 | 38520-3 | Capillary fragility | loinc | ePus MTBS | 1 |
+| 1061 | 846603004 | Positive capillary fragility test | snomed | ePus MTBS | 1 |
+| 1062 | 829990003 | Negative capillary fragility test | snomed | ePus MTBS | 1 |
+| 1063 | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | ePus MTBS (3x) | 1 |
+| 1064 | OC000105 | Klasifikasi infeksi dengue | kemkes clinical-term | ePus MTBS | 1 |
+| 1065 | 20927009 | Dengue hemorrhagic fever | snomed | ePus MTBS | 1 |
+| 1066 | 722863008 | Dengue with warning signs | snomed | ePus MTBS | 1 |
+| 1067 | 722862003 | Dengue without warning signs | snomed | ePus MTBS | 1 |
+| 1068 | OV000129 | Demam mungkin bukan dengue | kemkes clinical-term | ePus MTBS | 1 |
+| 1069 | 300197009 | Ear problem | snomed | ePus MTBS (2x) | 1 |
+| 1070 | OC000106 | Pemeriksaan tanda dan gejala masalah telinga | kemkes clinical-term | ePus MTBS | 1 |
+| 1071 | 301354004 | Pain of ear | snomed | ePus MTBS | 1 |
+| 1072 | OV000278 | Ada rasa penuh di telinga | kemkes clinical-term | ePus MTBS | 1 |
+| 1073 | 300132001 | Ear discharge | snomed | ePus MTBS | 1 |
+| 1074 | 162364004 | Ear discharge present | snomed | ePus MTBS | 1 |
+| 1075 | 300874009 | Swelling of ear | snomed | ePus MTBS | 1 |
+| 1076 | OC000107 | Klasifikasi masalah telinga | kemkes clinical-term | ePus MTBS | 1 |
+| 1077 | 52404001 | Mastoiditis | snomed | ePus MTBS | 1 |
+| 1078 | OV000241 | Infeksi telinga akut | kemkes clinical-term | ePus MTBS | 1 |
+| 1079 | OV000289 | Infeksi telinga kronis | kemkes clinical-term | ePus MTBS | 1 |
+| 1080 | OV000242 | Tidak ada infeksi telinga | kemkes clinical-term | ePus MTBS | 1 |
+| 1081 | 284521000 | Pitting edema | snomed | ePus MTBS | 1 |
+| 1082 | 420829009 | 1+ pitting edema | snomed | ePus MTBS | 1 |
+| 1083 | 421605005 | 2+ pitting edema | snomed | ePus MTBS | 1 |
+| 1084 | 421346005 | 3+ pitting edema | snomed | ePus MTBS | 1 |
+| 1085 | 1153600001 | Weight for height z-score | snomed | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 1086 | 1153598007 | Weight for length z score | snomed | ePus MTBS (2x), ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 1087 | OV000253 | Terlalu lemah untuk menyusu | kemkes clinical-term | ePus MTBS | 1 |
+| 1088 | 271398006 | Weight steady | snomed | ePus MTBS | 1 |
+| 1089 | OC000108 | Klasifikasi status gizi | kemkes clinical-term | ePus MTBS | 1 |
+| 1090 | OI000004 | Risiko Gizi Lebih | kemkes clinical-term | ePus MTBS, ePus Tumbang Anak | 2 |
+| 1091 | OV000254 | Gizi buruk dengan komplikasi berat | kemkes clinical-term | ePus MTBS | 1 |
+| 1092 | OV000255 | Gizi buruk tanpa komplikasi | kemkes clinical-term | ePus MTBS | 1 |
+| 1093 | 1153604005 | Body height for age z-score | snomed | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 1094 | 1153594009 | Head circumference for age z-score | snomed | ePus MTBS | 1 |
+| 1095 | OC000111 | Klasifikasi anemia | kemkes clinical-term | ePus MTBS | 1 |
+| 1096 | OV000272 | Anemia berat | kemkes clinical-term | ePus MTBS | 1 |
+| 1097 | 271737000 | Anemia | snomed | ePus MTBS | 1 |
+| 1098 | PC000013 | Riwayat tes HIV ibu | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1099 | SP000247 | Hasil Tes HIV Ibu | kemkes sp | ePus MTBS | 1 |
+| 1100 | PC000014 | Riwayat tes HIV anak | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1101 | SP000248 | Hasil Tes HIV Anak | kemkes sp | ePus MTBS | 1 |
+| 1102 | OC000084 | Tes virologis HIV anak | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1103 | OC000083 | Tes serologis HIV anak | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1104 | 63895-7 | Breastfeeding status | loinc | ePus MTBS, ePus MTBM (2x) | 2 |
+| 1105 | 254387007 | Human immunodeficiency virus infection classification systems | snomed | ePus MTBS, ePus MTBM | 2 |
+| 1106 | OV000187 | Terpajan HIV: mungkin infeksi HIV | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
+| 1107 | SP000249 | Mungkin Bukan Infeksi HIV | kemkes sp | ePus MTBS | 1 |
+| 1108 | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx | ePus MTBS, ePus MTBM | 2 |
+| 1109 | VG45 | HepB | kfa | ePus MTBS (5x), ePus MTBM | 2 |
+| 1110 | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx | ePus MTBS (4x) | 1 |
+| 1111 | VG107 | DTAP | kfa | ePus MTBS (4x) | 1 |
+| 1112 | VG17 | HIB | kfa | ePus MTBS (4x) | 1 |
+| 1113 | 129 | Japanese Encephalitis, unspecified formulation | http://hl7.org/fhir/sid/cvx | ePus MTBS | 1 |
+| 1114 | VG129 | Japanese encephalitis | kfa | ePus MTBS | 1 |
+| 1115 | 19 | BCG | http://hl7.org/fhir/sid/cvx | ePus MTBS, ePus MTBM | 2 |
+| 1116 | VG19 | BCG | kfa | ePus MTBS, ePus MTBM | 2 |
+| 1117 | 02 | OPV | http://hl7.org/fhir/sid/cvx | ePus MTBS (4x), ePus MTBM | 2 |
+| 1118 | VG89 | POLIO | kfa | ePus MTBS (5x), ePus MTBM | 2 |
+| 1119 | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx | ePus MTBS (3x) | 1 |
+| 1120 | VG152 | PneumoPCV | kfa | ePus MTBS (3x) | 1 |
+| 1121 | 04 | M/R | http://hl7.org/fhir/sid/cvx | ePus MTBS (2x) | 1 |
+| 1122 | VG03 | MMR | kfa | ePus MTBS (2x) | 1 |
+| 1123 | 10 | IPV | http://hl7.org/fhir/sid/cvx | ePus MTBS | 1 |
+| 1124 | OC000114 | Membutuhkan suplemen vitamin A | kemkes clinical-term | ePus MTBS | 1 |
+| 1125 | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf | ePus MTBS | 1 |
+| 1126 | Neonate | Neonate | episodeofcare-type | ePus MTBM | 1 |
+| 1127 | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | kemkes clinical-term | ePus MTBM | 1 |
+| 1128 | 68276009 | Bottle, device | snomed | ePus MTBM (2x) | 1 |
+| 1129 | 468332001 | Drinking cup | snomed | ePus MTBM (2x) | 1 |
+| 1130 | 394841004 | Other category | snomed | ePus MTBM | 1 |
+| 1131 | OC000078 | Pemeriksaan tanda dan gejala infeksi | kemkes clinical-term | ePus MTBM | 1 |
+| 1132 | OV000167 | Bayi tidak BAB 48 jam setelah lahir | kemkes clinical-term | ePus MTBM | 1 |
+| 1133 | SP000264 | Muntah Berisi Susu atau Cairan Berwarna Hijau | kemkes sp | ePus MTBM (3x) | 1 |
+| 1134 | 116289008 | Abdominal bloating | snomed | ePus MTBM (2x) | 1 |
+| 1135 | 230145002 | Difficulty breathing | snomed | ePus MTBM (2x) | 1 |
+| 1136 | SP000265 | Bayi Tampak Lemah atau Tidak Mau Menghisap | kemkes sp | ePus MTBM | 1 |
+| 1137 | SP000266 | Ada Tanda Biru di Sekitar Mulut Saat Menangis atau Menghisap | kemkes sp | ePus MTBM | 1 |
+| 1138 | 267036007 | Dyspnea | snomed | ePus MTBM | 1 |
+| 1139 | 260407003 | Weak | snomed | ePus MTBM | 1 |
+| 1140 | 284511008 | Difficulty in initiating movement | snomed | ePus MTBM | 1 |
+| 1141 | OV000124 | Bayi tidak mau mengisap | kemkes clinical-term | ePus MTBM | 1 |
+| 1142 | SP000267 | Ada Gerakan Kejang | kemkes sp | ePus MTBM | 1 |
+| 1143 | OV000125 | Suhu tubuh >37,5°C | kemkes clinical-term | ePus MTBM | 1 |
+| 1144 | SP000268 | Suhu tubuh <37,5°C | kemkes sp | ePus MTBM | 1 |
+| 1145 | 204712000 | Anal atresia | snomed | ePus MTBM | 1 |
+| 1146 | SP000269 | Kondisi Mata Bernanah | kemkes sp | ePus MTBM | 1 |
+| 1147 | OV000130 | Mata bernanah banyak | kemkes clinical-term | ePus MTBM | 1 |
+| 1148 | OV000131 | Mata bernanah sedikit | kemkes clinical-term | ePus MTBM | 1 |
+| 1149 | OV000132 | Pusar kemerahan | kemkes clinical-term | ePus MTBM | 1 |
+| 1150 | OV000282 | Pusar kemerahan meluas sampai dinding perut >1 cm | kemkes clinical-term | ePus MTBM | 1 |
+| 1151 | 35745008 | Umbilical discharge | snomed | ePus MTBM | 1 |
+| 1152 | 271760008 | Pustule | snomed | ePus MTBM | 1 |
+| 1153 | 62085005 | Grunting respiration | snomed | ePus MTBM | 1 |
+| 1154 | OV000133 | Perbedaan saturasi oksigen >3% | kemkes clinical-term | ePus MTBM | 1 |
+| 1155 | 301283003 | Finding of rate of respiration | snomed | ePus MTBM | 1 |
+| 1156 | 271823003 | Tachypnea | snomed | ePus MTBM | 1 |
+| 1157 | 86684002 | Bradypnea | snomed | ePus MTBM | 1 |
+| 1158 | OC000126 | Klasifikasi infeksi | kemkes clinical-term | ePus MTBM | 1 |
+| 1159 | OV000134 | Infeksi bakteri berat | kemkes clinical-term | ePus MTBM | 1 |
+| 1160 | OV000135 | Infeksi bakteri lokal | kemkes clinical-term | ePus MTBM | 1 |
+| 1161 | OV000136 | Mungkin bukan infeksi | kemkes clinical-term | ePus MTBM | 1 |
+| 1162 | OC000128 | Umur pertama kali timbul kuning | kemkes clinical-term | ePus MTBM | 1 |
+| 1163 | OV000174 | Timbul kuning pada hari pertama (<24 jam) setelah lahir | kemkes clinical-term | ePus MTBM | 1 |
+| 1164 | OV000175 | Timbul kuning pada umur >24 jam sampai dengan umur 14 hari | kemkes clinical-term | ePus MTBM | 1 |
+| 1165 | OV000176 | Timbul kuning pada umur >14 hari | kemkes clinical-term | ePus MTBM | 1 |
+| 1166 | SP000214 | Pemeriksaan Kondisi Ikterus | kemkes sp | ePus MTBM | 1 |
+| 1167 | SP000215 | Kuning Pada Mata atau Kulit | kemkes sp | ePus MTBM | 1 |
+| 1168 | SP000216 | Kuning Pada Telapak Tangan dan Telapak Kaki | kemkes sp | ePus MTBM | 1 |
+| 1169 | OC000129 | Klasifikasi ikterus | kemkes clinical-term | ePus MTBM | 1 |
+| 1170 | OV000179 | Ikterus berat | kemkes clinical-term | ePus MTBM | 1 |
+| 1171 | OV000180 | Tidak ada ikterus | kemkes clinical-term | ePus MTBM | 1 |
+| 1172 | OV000127 | Bayi bergerak atas kemauan sendiri | kemkes clinical-term | ePus MTBM | 1 |
+| 1173 | OV000128 | Bayi bergerak hanya ketika dirangsang | kemkes clinical-term | ePus MTBM | 1 |
+| 1174 | 302001007 | Does not move | snomed | ePus MTBM | 1 |
+| 1175 | SP000270 | Gelisah atau Rewel | kemkes sp | ePus MTBM | 1 |
+| 1176 | OV000183 | Cubitan kulit perut kembali segera | kemkes clinical-term | ePus MTBM | 1 |
+| 1177 | OV000184 | Diare dehidrasi berat | kemkes clinical-term | ePus MTBM | 1 |
+| 1178 | OV000185 | Diare dehidrasi ringan/sedang | kemkes clinical-term | ePus MTBM | 1 |
+| 1179 | OC000079 | Tes serologis HIV ibu | kemkes clinical-term | ePus MTBM | 1 |
+| 1180 | OV000188 | Infeksi HIV tidak diketahui | kemkes clinical-term | ePus MTBM | 1 |
+| 1181 | OV000189 | Bukan infeksi HIV | kemkes clinical-term | ePus MTBM | 1 |
+| 1182 | 1153593003 | Weight for age z-score | snomed | ePus MTBM (2x), ePus Tumbang Anak | 2 |
+| 1183 | OV000190 | < 2 kg (umur < 7 hari) | kemkes clinical-term | ePus MTBM (2x) | 1 |
+| 1184 | 79740000 | Candidiasis of mouth | snomed | ePus MTBM (2x) | 1 |
+| 1185 | SP000271 | Terdapat Celah Bibir atau Langit-Langit | kemkes sp | ePus MTBM (2x) | 1 |
+| 1186 | OC000082 | Posisi menyusu bayi | kemkes clinical-term | ePus MTBM | 1 |
+| 1187 | OV000193 | Posisi menyusu bayi benar | kemkes clinical-term | ePus MTBM | 1 |
+| 1188 | OV000194 | Posisi menyusu bayi salah | kemkes clinical-term | ePus MTBM | 1 |
+| 1189 | OC000081 | Posisi pelekatan bayi pada puting | kemkes clinical-term | ePus MTBM | 1 |
+| 1190 | OV000195 | Tidak melekat sama sekali | kemkes clinical-term | ePus MTBM | 1 |
+| 1191 | OV000196 | Tidak melekat dengan baik | kemkes clinical-term | ePus MTBM | 1 |
+| 1192 | OV000197 | Melekat dengan baik | kemkes clinical-term | ePus MTBM | 1 |
+| 1193 | OC000080 | Efektifitas hisapan bayi | kemkes clinical-term | ePus MTBM | 1 |
+| 1194 | OV000198 | Tidak mengisap sama sekali | kemkes clinical-term | ePus MTBM | 1 |
+| 1195 | OV000199 | Tidak mengisap dengan efektif | kemkes clinical-term | ePus MTBM | 1 |
+| 1196 | OV000200 | Mengisap dengan efektif | kemkes clinical-term | ePus MTBM | 1 |
+| 1197 | OC000085 | Klasifikasi berat badan menurut umur dan/atau masalah pemberian ASI | kemkes clinical-term | ePus MTBM | 1 |
+| 1198 | OV000201 | Berat badan sangat rendah menurut umur | kemkes clinical-term | ePus MTBM (2x) | 1 |
+| 1199 | OV000202 | Berat badan rendah menurut umur dan/atau masalah pemberian ASI | kemkes clinical-term | ePus MTBM | 1 |
+| 1200 | OV000203 | Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian ASI | kemkes clinical-term | ePus MTBM | 1 |
+| 1201 | OC000086 | Klasifikasi Berat Badan Menurut Umur dan/atau Masalah Pemberian Minum | kemkes clinical-term | ePus MTBM | 1 |
+| 1202 | OV000204 | Berat badan rendah menurut umur dan/atau masalah pemberian minum | kemkes clinical-term | ePus MTBM | 1 |
+| 1203 | OV000205 | Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian minum | kemkes clinical-term | ePus MTBM | 1 |
+| 1204 | OC000087 | Pemberian Vitamin K pada Bayi Baru Lahir | kemkes clinical-term | ePus MTBM | 1 |
+| 1205 | 448883004 | Injection of vitamin K1 | snomed | ePus MTBM | 1 |
+| 1206 | 8308-9 | Body height --standing | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1207 | 8306-3 | Body height --lying | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1208 | 50373000 | Body height measure | loinc | ePus Tumbang Anak | 1 |
+| 1209 | 10904000 | Standing position | snomed | ePus Tumbang Anak | 1 |
+| 1210 | 102538003 | Recumbent body position | snomed | ePus Tumbang Anak | 1 |
+| 1211 | OC000012 | Kenaikan Berat Badan Adekuat | kemkes  | ePus Tumbang Anak | 1 |
+| 1212 | 1153590000 | Length for age z-score | snomed | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1213 | OI000010 | Risiko Berat Badan Lebih | kemkes clinical-term | ePus Tumbang Anak | 1 |
+| 1214 | OI000007 | Berat Badan Sangat Kurang | kemkes clinical-term | ePus Tumbang Anak | 1 |
+| 1215 | 1153594009 | Head circumference for age z-score | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1216 | 170218003 | Child examination: gross motor development | snomed | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
+| 1217 | 170219006 | Child examination: fine motor development | snomed | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
+| 1218 | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | kemkes sp | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
+| 1219 | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | kemkes sp | ePus Tumbang Anak (3x) | 1 |
+| 1220 | 410519009 | At risk | snomed | ePus Tumbang Anak (5x), ePus Tumbang DDTK (6x) | 2 |
+| 1221 | 1145307003 | Exclusively breastfed | snomed | ePus Tumbang Anak | 1 |
+| 1222 | OC000009 | Makanan Pendamping ASI (MPASI) | kemkes clinical-term | ePus Tumbang Anak | 1 |
+| 1223 | 723509005 | High risk | snomed | ePus Tumbang Anak | 1 |
+| 1224 | 408429008 | Recommendation to caregiver regarding child's development program | snomed | ePus Tumbang Anak | 1 |
+| 1225 | SP000061 | Intervensi Dini Masalah Perkembangan Anak | kemkes sp | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1226 | SP000064 | Tindakan Pengobatan Lain | kemkes sp | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1227 | OC000034 | Surat Pengantar Rujukan | kemkes clinical-term | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1228 | 1153596006 | Body mass index for age z-score | snomed | ePus Tumbang DDTK (2x) | 1 |
+| 1229 | SP000059 | Tren Pertumbuhan Anak | kemkes sp | ePus Tumbang DDTK | 1 |
+| 1230 | 58236001 | Normal growth | snomed | ePus Tumbang DDTK | 1 |
+| 1231 | 440301000124106 | Below expected growth rate | snomed | ePus Tumbang DDTK | 1 |
+| 1232 | 704352005 | At increased risk of delayed growth | snomed | ePus Tumbang DDTK | 1 |
+| 1233 | SP000057 | Perlambatan Pertumbuhan Linear | kemkes sp | ePus Tumbang DDTK | 1 |
+| 1234 | SP000058 | Early Adiposity Rebound | kemkes sp | ePus Tumbang DDTK | 1 |
+| 1235 | Ds | Perkembangan sesuai usia | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK | 1 |
+| 1236 | Dm | Perkembangan meragukan | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK | 1 |
+| 1237 | Dp | Perkembangan curiga adanya penyimpangan | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK | 1 |
+| 1238 | 64957009 | Uncertain | snomed | ePus Tumbang DDTK (2x) | 1 |
+| 1239 | 441041000124100 | Counseling about nutrition | icd-9-cm | ePus Tumbang DDTK | 1 |
+| 1240 | 410295000 | Growth/development education, guidance, and counseling | icd-9-cm | ePus Tumbang DDTK | 1 |
+| 1241 | SP000060 | Intervensi Dini Masalah Pertumbuhan Anak | kemkes sp | ePus Tumbang DDTK | 1 |
+| 1242 | SP000063 | Intervensi Dini Masalah Perilaku & Emosi | kemkes sp | ePus Tumbang DDTK | 1 |
+| 1243 | SRR000011 | Monitoring rutin | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1244 | SRR000012 | PPIA | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1245 | SR000001 | Penanganan / perawatan lanjut pasien (medik) | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1246 | SR000002 | Sarana dan prasarana (Ruang Perawatan Biasa) | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1247 | SR000003 | Sarana dan prasarana (Ruang intensive (ICU, CVCU/ICCU, NICU, PICU, HCU)) | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1248 | SR000004 | Sarana dan prasarana (Ruang Isolasi) | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1249 | SR000005 | Dokter spesialis / sub spesialis tidak tersedia | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1250 | SR000006 | Tindakan Khusus | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1251 | SR000007 | Rujuk balik | kemkes clinical-term | ePus Tumbang DDTK | 1 |
+| 1252 | 171128005 | Venereal disease screening | snomed | ePus Tumbang DDTK | 1 |

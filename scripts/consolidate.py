@@ -9,7 +9,18 @@ FORMS = [("Maternal Outcome", "kobo-data-dictionary-maternal-outcome"), ("Raffle
          ("SiGizi ANC", "phdt-data-dictionary-sigizi-anc"), ("SITB TB 06", "phdt-data-dictionary-sitb-tb06"),
          ("SITB TB 03 SO", "phdt-data-dictionary-sitb-tb03-so"), ("SITB TB 03 RO", "phdt-data-dictionary-sitb-tb03-ro"),
          ("SITB TB 04", "phdt-data-dictionary-sitb-tb04"), ("SITB TB 16K", "phdt-data-dictionary-sitb-tb16k"),
-         ("MPDN Kematian Bayi", "phdt-data-dictionary-mpdn-kematian-bayi"), ("MPDN Kematian Ibu", "phdt-data-dictionary-mpdn-kematian-ibu")]
+         ("MPDN Kematian Bayi", "phdt-data-dictionary-mpdn-kematian-bayi"), ("MPDN Kematian Ibu", "phdt-data-dictionary-mpdn-kematian-ibu"),
+         ("ePus Pelayanan Pasien", "phdt-data-dictionary-epus-pelayanan"),
+         ("ePus Kunjungan Ibu Hamil", "phdt-data-dictionary-epus-kunjungan-ibu-hamil"),
+         ("ePus Laboratorium", "phdt-data-dictionary-epus-lab"),
+         ("ePus Rujukan Eksternal", "phdt-data-dictionary-epus-rujukan-eksternal"),
+         ("ePus ANC", "phdt-data-dictionary-epus-anc"),
+         ("ePus INC", "phdt-data-dictionary-epus-inc"),
+         ("ePus PNC", "phdt-data-dictionary-epus-pnc"),
+         ("ePus MTBS", "phdt-data-dictionary-epus-mtbs"),
+         ("ePus MTBM", "phdt-data-dictionary-epus-mtbm"),
+         ("ePus Tumbang Anak", "phdt-data-dictionary-epus-tumbang-anak"),
+         ("ePus Tumbang DDTK", "phdt-data-dictionary-epus-tumbang-ddtk")]
 if nform: FORMS = FORMS[:nform]
 SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http://terminology.kemkes.go.id/sp": "kemkes sp",
          "http://terminology.kemkes.go.id": "kemkes", "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes": "WHO anc-custom-codes",
@@ -20,7 +31,8 @@ SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http:
          "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation": "v3-ObservationInterpretation"}
 # Variabel raw per form: kolom file mentah (raw/*.md) kalau ada; kalau tidak ada file mentah = jumlah variabel di dictionary
 RAW = {"Maternal Outcome": 12, "Raffle": 12, "SiGizi ANC": "sigizi-anc", "SITB TB 06": "sitb-tb06", "SITB TB 03 SO": "sitb-tb03-so",
-       "SITB TB 03 RO": "sitb-tb03-ro", "SITB TB 04": "sitb-tb04", "SITB TB 16K": "sitb-tb16k", "MPDN Kematian Bayi": 37, "MPDN Kematian Ibu": 24}
+       "SITB TB 03 RO": "sitb-tb03-ro", "SITB TB 04": "sitb-tb04", "SITB TB 16K": "sitb-tb16k", "MPDN Kematian Bayi": 37, "MPDN Kematian Ibu": 24,
+       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38}
 def raw_n(name):
     r = RAW[name]
     return r if isinstance(r, int) else len(fo.load_raw(f"{repo}/raw/{r}-kolom.md"))

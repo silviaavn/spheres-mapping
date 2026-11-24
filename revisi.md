@@ -394,6 +394,75 @@ Daftar kolom BQ belum ada, jadi tally BQ ↔ dictionary belum bisa dicek. Sebaga
 | MI1 | Ibu | `Condition.code.coding` = `{Kode ICD}` dengan CodeSystem `http://snomed.info/sct` (baris 30). Isinya kode ICD, seharusnya `http://hl7.org/fhir/sid/icd-10` (seperti Condition TB) | open |
 | MI2 | Ibu | Masa Terjadi Kematian Ibu memakai path `Observation.valueCodeableConcept` tanpa `.coding` (baris 71–73), berbeda dengan blok lain | open |
 
+## Form ePuskesmas (PHDT_ePus.xlsx): 11 dictionary
+
+Sumber: `PHDT_ePus.xlsx` (19 sheet), dipecah per form jadi `mapping/phdt-data-dictionary-epus-<form>.csv` oleh `scripts/epus_prepare.py` (bisa diulang dari file asli).
+
+> **Belum comprehensive review.** Dikerjakan tanpa daftar variabel BQ, tanpa file mentah, dan belum dibahas dengan tim. Pemisahan blok payload dan penentuan code dilakukan otomatis (heuristik) dan **belum dicek manual per blok**. Angka di bawah = hasil hitung dictionary, bukan angka final. Semua asumsi ditandai EA.
+
+### Sheet → form
+
+| Sheet | Form di tracker | Dictionary | Baris sheet → CSV |
+|---|---|---|---|
+| `epus layanan` | #1 Pelayanan Pasien | `mapping/phdt-data-dictionary-epus-pelayanan.csv` | 978 → 317 |
+| `old epusk kunjungan ibu hamil` | #3 Kunjungan Ibu Hamil | `mapping/phdt-data-dictionary-epus-kunjungan-ibu-hamil.csv` | 1344 → 1245 |
+| `epus lab` | #5 Laboratorium | `mapping/phdt-data-dictionary-epus-lab.csv` | 4606 → 3340 |
+| `epus rujukan eksternal` | #8 Rujukan Eksternal | `mapping/phdt-data-dictionary-epus-rujukan-eksternal.csv` | 46 → 46 |
+| `epus ordal anc` | #11 ANC | `mapping/phdt-data-dictionary-epus-anc.csv` | 2383 → 2053 |
+| `epus ordal inc` | #12 INC | `mapping/phdt-data-dictionary-epus-inc.csv` | 1242 → 1134 |
+| `epus ordal pnc` | #13 PNC | `mapping/phdt-data-dictionary-epus-pnc.csv` | 2200 → 1195 |
+| `epus mtbs` | #14 MTBS | `mapping/phdt-data-dictionary-epus-mtbs.csv` | 3193 → 2260 |
+| `epus mbtm` | #15 MTBM | `mapping/phdt-data-dictionary-epus-mtbm.csv` | 3517 → 1140 |
+| `epusk tumbang` | #16 Tumbuh Kembang (Anak) | `mapping/phdt-data-dictionary-epus-tumbang-anak.csv` | 1281 → 338 |
+| `epus DDTKSDIDTK` | #16 Tumbuh Kembang (DDTK) | `mapping/phdt-data-dictionary-epus-tumbang-ddtk.csv` | 1389 → 475 |
+
+Sheet yang **tidak dipakai**: `Daftar Isi`; `epus layanan (revised)` (parsial, hanya dipakai untuk mengisi nama kolom raw Pelayanan); `var epus bumil (KIA)`, `var epus mtbs`, `tracker variable anc/inc/pnc` (daftar variabel/tracker, bukan mapping FHIR); `Epusk Data Pasien` (tidak ada di tracker maupun daftar PHDT, belum ada keputusan).
+Form tracker yang belum ada mapping di file ini, diabaikan: #4 Kohort KIA, #6 LPLPO, #9 Kunjungan BPJS, #10 Kunjungan Pasien, dan Tumbuh Kembang KPSP/TDD/TDL/KMPE/M-CHAT-R/GPPH.
+
+### Hasil hitung dan perbandingan variabel dengan PHDT
+
+Variabel = nama variabel unik di dictionary. "Baris" = jumlah baris variabel (nama yang sama di beberapa blok dihitung tiap baris). Angka yang dipakai di output utama = variabel unik.
+
+| Form | Payload | Code | Variabel (unik) | Variabel (baris) | PHDT (referensi) | Selisih unik vs PHDT |
+|---|---|---|---|---|---|---|
+| ePuskesmas Pelayanan Pasien | 47 | 62 | 81 | 81 | 80 (ePuskesmas | Pelayanan) | +1 |
+| ePuskesmas Kunjungan Ibu Hamil | 114 | 198 | 68 | 75 | 97 (ePuskesmas | KIA) | -29 |
+| ePuskesmas Laboratorium | 309 | 429 | 22 | 22 | 23 (ePuskesmas | Laboratorium) | -1 |
+| ePuskesmas Rujukan Eksternal | 5 | 0 | 23 | 23 | 22 (ePuskesmas | Rujukan) | +1 |
+| ePuskesmas ANC (KIA Harian) | 155 | 321 | 123 | 136 | 136 (ePuskesmas | ANC - Ibu Hamil) | -13 |
+| ePuskesmas INC (KIA Harian) | 69 | 206 | 93 | 93 | 82 (ePuskesmas | INC - Persalinan) | +11 |
+| ePuskesmas PNC (KIA Harian) | 82 | 161 | 107 | 109 | 96 (ePuskesmas | PNC - Ibu Nifas) | +11 |
+| ePuskesmas MTBS (KIA Harian) | 125 | 268 | 187 | 199 | 187 (ePuskesmas | MTBS) | +0 |
+| ePuskesmas MTBM (KIA Harian) | 57 | 139 | 105 | 121 | 115 (ePuskesmas | MTBM) | -10 |
+| ePuskesmas Tumbuh Kembang - Anak | 19 | 55 | 34 | 34 | 34 (ePuskesmas | Tumbang - Anak) | +0 |
+| ePuskesmas Tumbuh Kembang - DDTK/SDIDTK | 29 | 68 | 38 | 38 | 38 (ePuskesmas | Tumbang - DDTK) | +0 |
+
+Selisih tidak mengubah angka output. Catatan: ANC baris = 136 = PHDT, unik 123 (13 nama muncul di >1 blok); MTBS 187 cocok; Tumbang Anak/DDTK cocok; Kunjungan Ibu Hamil memakai sheet lama (`old epusk kunjungan ibu hamil`) dibanding PHDT "KIA" 97; selisih INC/PNC (+11) dan MTBM (−10) belum dijelaskan.
+
+### Asumsi yang diambil
+
+| # | Asumsi | Berlaku di | Status |
+|---|---|---|---|
+| EA1 | Sheet dipetakan ke form berdasarkan nama sheet dan kecocokan jumlah variabel dengan PHDT (tabel di atas) | semua | open |
+| EA2 | Organization dan Location = lookup master data, tidak dihitung payload (sama seperti form lain) | semua | open |
+| EA3 | Pemisahan blok payload otomatis: tiap resource baru / pengulangan code pembeda = payload baru. Patient dan Encounter dihitung sekali per form. Blok Condition yang `clinicalStatus`-nya di bawah `code` (mis. RPS/RPD di Pelayanan) bisa menyatu. Lab (banyak baris alias), Kunjungan Ibu Hamil, ANC, MTBS perlu dicek ulang | semua | open |
+| EA4 | Code dihitung hanya dari path determining/opsi coded (Observation/Condition/Procedure/ServiceRequest/DiagnosticReport .code, Specimen.type, EpisodeOfCare.type, Immunization.vaccineCode, valueCodeableConcept, interpretation, method, component, reasonCode, CarePlan activity, QuestionnaireResponse answer). `conclusionCode` dan code HL7 tetap tidak dihitung | semua | open |
+| EA5 | Kode dinamis (`kode dapat merujuk ...`, `{kode ...}`) = 1 payload, 0 code (Lab: template ServiceRequest/Observation/DiagnosticReport tidak dihitung, hanya baris per-pemeriksaan) | Lab, Pelayanan | open |
+| EA6 | Kode LOINC yang rusak jadi tanggal di Excel (mis. `8302-02-01` → `8302-2`) dipulihkan otomatis. Jumlahnya 3–13 sel per form (kecuali Rujukan Eksternal: 0); dibuat ulang oleh `scripts/epus_prepare.py` | semua | done |
+| EA7 | Kolom catatan di sheet digabung ke `Keterangan`. Resource salah ketik `Careplan` → `CarePlan` (Pelayanan 4 baris); resource kosong diisi dari path (Pelayanan 12 baris) | Pelayanan | done |
+| EA8 | Nama kolom raw Pelayanan diambil dari sheet `epus layanan (revised)` (64 baris) kalau cocok; form lain kolom `Nama Column BQ` / `Nama Column Raw` dibiarkan kosong | Pelayanan, lainnya | open |
+| EA9 | Tumbuh Kembang = 1 baris tracker (#16) tapi 2 dictionary (Anak, DDTK), dihitung sebagai 2 form | #16 | open |
+| EA10 | Praktisi lab (PractitionerRole kode 1290220002) = lookup, tidak dihitung (seperti SiGizi ANC) | Lab, ANC, PNC, MTBS, Kunjungan | open |
+
+### Temuan awal (otomatis)
+
+| # | Temuan | Status |
+|---|---|---|
+| EF1 | Tidak ada daftar BQ / file mentah, tally BQ belum bisa dicek. Pelayanan 64 dari 81 variabel dapat nama raw dari sheet revised | open |
+| EF2 | Kunjungan Ibu Hamil: 1 baris `resource` berisi path (`Observation.dataAbsentReason`) dibetulkan; sheet bernama "old", perlu dikonfirmasi apakah ini versi yang dipakai | open |
+| EF3 | Rujukan Eksternal: 23 variabel tapi 5 payload dan 0 code (isian bebas / lookup); referensi PHDT 22 | open |
+| EF4 | Angka Lab (309 payload) sangat bergantung pada jumlah baris alias per pemeriksaan; perlu dipastikan satu pemeriksaan = satu set ServiceRequest/Specimen/Observation/DiagnosticReport | open |
+
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
 Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
@@ -478,3 +547,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-13: Semua item open dibetulkan langsung di `mapping/kobo-data-dictionary-maternal-outcome.csv`. Tidak ada item open tersisa.
 - 2026-11-13: Cek Kobo_3. #1, #2, #3, #5 dan koreksi instance done. #4 masih salah (path berubah tapi belum benar). Tambah #6, #7, dan koreksi instance #4.
 - 2026-11-13: Dibuat dari review Maternal Outcome.
+- 2026-11-24: Tambah bagian ePuskesmas (11 form dari `PHDT_ePus.xlsx`): sheet→form, hasil hitung, perbandingan variabel dengan PHDT, asumsi EA1–EA10, temuan EF1–EF4. ⚠️ belum comprehensive review.
