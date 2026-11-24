@@ -65,7 +65,7 @@ Terakhir diperbarui: 2026-11-18
 
 ## Ringkasan di output per form
 - Baris: Payload, Code, Code unik, Variabel BQ (unik).
-- Kalau ada file mentah, tambah baris **Variabel di Excel export** = jumlah kolom di file mentah (angka saja, tanpa keterangan tambahan).
+- Semua form punya baris **Variabel raw** = jumlah kolom di file mentah. Kalau belum ada file mentah, pakai jumlah variabel di dictionary (placeholder bukan variabel tidak dihitung) dan kirim sebagai argumen ke-5 `form_output.py`. Kolom **Variabel raw** juga ada di tabel Ringkasan semua form di `output.md`.
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
@@ -85,3 +85,4 @@ Terakhir diperbarui: 2026-11-18
 - 2026-11-13: Payload di output wajib ditulis lengkap dengan display.
 - 2026-11-13: Frekuensi didefinisikan ulang jadi "dipakai di berapa form".
 - 2026-11-13: Dibuat. Patient masuk hitungan; Organization & Location tidak (master data).
+- 2026-11-24: Variabel raw wajib ada di output per form dan di ringkasan `output.md` (menggantikan "Variabel di Excel export").

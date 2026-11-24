@@ -15,7 +15,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Code unik (code + CodeSystem) | 85 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 24 |
 | Variabel BQ (unik) | 99 |
-| Variabel di Excel export | 114 |
+| Variabel raw (kolom Excel export) | 114 |
 
 ## Payload
 

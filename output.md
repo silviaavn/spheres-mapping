@@ -38,23 +38,23 @@ File terpisah (detail):
 
 ## Ringkasan semua form
 
-Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` (sudah termasuk di kolom Code).
+Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` (sudah termasuk di kolom Code).
 
-| Form | Payload | Code | Code SP |
-|---|---|---|---|
-| Maternal Outcome | 12 | 14 | 4 |
-| Raffle | 8 | 6 | 4 |
-| SiGizi ANC | 61 | 142 | 18 |
-| SITB TB 06 | 56 | 276 | 9 |
-| SITB TB 03 SO | 62 | 329 | 10 |
-| SITB TB 03 RO | 50 | 377 | 11 |
-| SITB TB 04 | 69 | 579 | 24 |
-| SITB TB 16K | 21 | 35 | 14 |
-| MPDN Kematian Bayi | 19 | 112 | 37 |
-| MPDN Kematian Ibu | 10 | 50 | 17 |
-| **Total (non-unik)** | **368** | **1920** | **148** |
-| **Total unik** | **164** | **510** | **80** |
-| Selisih (dipakai ulang) | 204 | 1410 | 68 |
+| Form | Variabel raw | Payload | Code | Code SP |
+|---|---|---|---|---|
+| Maternal Outcome | 12 | 12 | 14 | 4 |
+| Raffle | 12 | 8 | 6 | 4 |
+| SiGizi ANC | 49 | 61 | 142 | 18 |
+| SITB TB 06 | 96 | 56 | 276 | 9 |
+| SITB TB 03 SO | 84 | 62 | 329 | 10 |
+| SITB TB 03 RO | 144 | 50 | 377 | 11 |
+| SITB TB 04 | 114 | 69 | 579 | 24 |
+| SITB TB 16K | 40 | 21 | 35 | 14 |
+| MPDN Kematian Bayi | 37 | 19 | 112 | 37 |
+| MPDN Kematian Ibu | 24 | 10 | 50 | 17 |
+| **Total (non-unik)** | **612** | **368** | **1920** | **148** |
+| **Total unik** | – | **164** | **510** | **80** |
+| Selisih (dipakai ulang) | – | 204 | 1410 | 68 |
 
 ---
 
@@ -124,6 +124,7 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 ---
 
 ## Log perubahan output
+- 2026-11-24: Ringkasan semua form: tambah kolom **Variabel raw** (total 612). Di `output/<form>.md` baris "Variabel di Excel export" diganti "Variabel raw" dan ditambahkan juga untuk Maternal Outcome (12), Raffle (12), MPDN Kematian Bayi (37), MPDN Kematian Ibu (24). Angka payload/code tidak berubah.
 - 2026-11-24: Tambah 2 form MPDN dari `PHDT_Data_Dictionary_-_MPDN.csv`: Kematian Bayi (19 payload / 112 code) dan Kematian Ibu (10 / 50). Belum ada daftar variabel BQ dan belum ada comprehensive review. Total non-unik 339 / 1758 → **368 / 1920**, unik 148 / 434 → **164 / 510**. Resource baru: Composition. Tabel di file ini dan `frekuensi-*.md` dibuat ulang untuk 10 form dengan `scripts/consolidate.py` (hasilnya identik dengan versi lama untuk 8 form sebelumnya).
 - 2026-11-18: Ringkasan semua form: tambah kolom **Code SP** (CodeSystem `http://terminology.kemkes.go.id/sp`). Daftar form diberi link. Output per form diberi baris File terkait (link ke `output.md`, frekuensi, dictionary, file mentah) dan baris Code SP di Ringkasan.
 - 2026-11-18: `output.md` dirampingkan: tambah Daftar isi; tabel Frekuensi payload dan Frekuensi code dipindah ke file terpisah `frekuensi-payload.md` dan `frekuensi-code.md`. Angka tidak berubah.

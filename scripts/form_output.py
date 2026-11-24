@@ -114,7 +114,7 @@ def load_raw(path):
     return cols
 
 
-def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None):
+def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None, raw_count=None):
     bq = OrderedDict((d["bq"], None) for d in data if d["bq"])
     bq_in = {b for p in payloads for _, b, _, _, _ in p["vars"] if b}
     bq_out = [b for b in bq if b not in bq_in]
@@ -133,7 +133,9 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
            f"| Code SP (`http://terminology.kemkes.go.id/sp`) | {sum(1 for d in codes if d['cs'].strip().rstrip('/') == 'http://terminology.kemkes.go.id/sp')} |",
            f"| Variabel BQ (unik) | {len(bq)} |"]
     if raw is not None:
-        out.append(f"| Variabel di Excel export | {len(raw)} |")
+        out.append(f"| Variabel raw (kolom Excel export) | {len(raw)} |")
+    elif raw_count is not None:
+        out.append(f"| Variabel raw (variabel dictionary; belum ada file mentah) | {raw_count} |")
     out += ["",
            "## Payload", "",
            "| # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |",
@@ -172,11 +174,12 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
 
 if __name__ == "__main__":
     src, form, dst = sys.argv[1], sys.argv[2], sys.argv[3]
-    raw_path = sys.argv[4] if len(sys.argv) > 4 else None  # opsional: raw/<form>-kolom.md (file mentah, mis. Excel export)
+    raw_path = sys.argv[4] if len(sys.argv) > 4 else None  # opsional: raw/<form>-kolom.md (file mentah, mis. Excel export); pakai "" kalau tidak ada
     data = load(src)
     payloads, codes, other = build(data)
     raw = load_raw(raw_path) if raw_path else None
-    open(dst, "w", encoding="utf-8").write(render(form, src, data, payloads, codes, other, raw, raw_path))
+    raw_count = int(sys.argv[5]) if len(sys.argv) > 5 else None  # opsional: jumlah variabel raw kalau tidak ada file mentah
+    open(dst, "w", encoding="utf-8").write(render(form, src, data, payloads, codes, other, raw, raw_path, raw_count))
     print(f"{form}: {len(payloads)} payload, {len(codes)} code -> {dst}")
     bq_in = {b for p in payloads for _, b, _, _, _ in p["vars"] if b}
     if raw is not None:

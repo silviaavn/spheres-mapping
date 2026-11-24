@@ -18,6 +18,12 @@ SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http:
          "http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC": "episodeofcare/ANC", "http://terminology.kemkes.go.id/CodeSystem/organization-type": "organization-type",
          "http://terminology.kemkes.go.id/CodeSystem/composition-type": "composition-type",
          "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation": "v3-ObservationInterpretation"}
+# Variabel raw per form: kolom file mentah (raw/*.md) kalau ada; kalau tidak ada file mentah = jumlah variabel di dictionary
+RAW = {"Maternal Outcome": 12, "Raffle": 12, "SiGizi ANC": "sigizi-anc", "SITB TB 06": "sitb-tb06", "SITB TB 03 SO": "sitb-tb03-so",
+       "SITB TB 03 RO": "sitb-tb03-ro", "SITB TB 04": "sitb-tb04", "SITB TB 16K": "sitb-tb16k", "MPDN Kematian Bayi": 37, "MPDN Kematian Ibu": 24}
+def raw_n(name):
+    r = RAW[name]
+    return r if isinstance(r, int) else len(fo.load_raw(f"{repo}/raw/{r}-kolom.md"))
 def short(cs):
     cs = cs.strip()
     if cs in SHORT: return SHORT[cs]
@@ -54,14 +60,14 @@ for i, ((cd, cs), e) in enumerate(cod.items(), 1):
 L.append("")
 open(f"{outdir}/frekuensi-code.md", "w", encoding="utf-8").write("\n".join(L))
 # --- tabel output.md
-T = ["| Form | Payload | Code | Code SP |", "|---|---|---|---|"]
-tp = tc = ts = 0
+T = ["| Form | Variabel raw | Payload | Code | Code SP |", "|---|---|---|---|---|"]
+tp = tc = ts = tr = 0
 for name, (p, c) in data.items():
-    sp = sum(1 for d in c if d["cs"].strip().rstrip("/") == SP); tp += len(p); tc += len(c); ts += sp
-    T.append(f"| {name} | {len(p)} | {len(c)} | {sp} |")
+    sp = sum(1 for d in c if d["cs"].strip().rstrip("/") == SP); tp += len(p); tc += len(c); ts += sp; rn = raw_n(name); tr += rn
+    T.append(f"| {name} | {rn} | {len(p)} | {len(c)} | {sp} |")
 usp = sum(1 for (cd, cs) in cod if cs.rstrip("/") == SP)
-T += [f"| **Total (non-unik)** | **{tp}** | **{tc}** | **{ts}** |", f"| **Total unik** | **{len(pay)}** | **{len(cod)}** | **{usp}** |",
-      f"| Selisih (dipakai ulang) | {tp-len(pay)} | {tc-len(cod)} | {ts-usp} |", ""]
+T += [f"| **Total (non-unik)** | **{tr}** | **{tp}** | **{tc}** | **{ts}** |", f"| **Total unik** | – | **{len(pay)}** | **{len(cod)}** | **{usp}** |",
+      f"| Selisih (dipakai ulang) | – | {tp-len(pay)} | {tc-len(cod)} | {ts-usp} |", ""]
 bycs = OrderedDict()
 for (cd, cs) in cod: bycs[cs] = bycs.get(cs, 0) + 1
 T += ["| CodeSystem | Jumlah |", "|---|---|"] + [f"| {cs} | {n} |" for cs, n in sorted(bycs.items(), key=lambda x: -x[1])] + [f"| **Total** | **{len(cod)}** |", ""]

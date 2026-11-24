@@ -440,6 +440,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P38 | MPDN Bayi, Ibu | Dugaan sebab kematian = component kode group / subgroup / detail dari daftar ICD-PM (Bayi) dan ICD-MM (Ibu). Practitioner PJ MPDN = lookup (MA8) | Converter: pemetaan ICD-PM / ICD-MM ke code. Master data Practitioner PJ MPDN | open |
 
 ## Log perubahan revisi
+- 2026-11-24: Tambah jumlah **Variabel raw** di semua output form dan ringkasan `output.md` (MPDN Bayi 37, Ibu 24 = variabel dictionary tanpa placeholder; belum ada file mentah).
 - 2026-11-24: Tambah review MPDN Kematian Bayi dan Kematian Ibu (dictionary dipecah jadi 2 file): hasil hitung 19/112 dan 10/50, tally variabel 37 dan 24 (cocok rekap user, tanpa BQ), asumsi MA1–MA10, temuan MG1–MG6, MB1–MB6, MI1–MI2, perubahan file F1–F5, catatan pipeline P36–P38. **Belum ada comprehensive review**, file mentah, dan daftar BQ.
 - 2026-11-18: Tally TB 06: variabel BQ yang dipetakan 93 → 92 (kolom AC tambahan user tidak dihitung).
 - 2026-11-17: P25/T06-1 ditutup (kolom AC = tambahan user). T03S-6: path sudah dipakai di TB 02 baris 95. T04-6: TB 04 lookup saja. T03R-4: SR/Specimen/DR ditambah di TB 03 RO (+20 payload). Tambah P35.
