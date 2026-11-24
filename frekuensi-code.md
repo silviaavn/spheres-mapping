@@ -6,7 +6,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 
 | # | Code | Display | CodeSystem | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
-| 1 | 223366009 | Healthcare professional | snomed | Maternal Outcome, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 1 | 223366009 | Healthcare professional | snomed | Maternal Outcome, SITB TB 03 SO, SITB TB 03 RO, SISMAL Regmal 1 | 4 |
 | 2 | SP000396 | Data entry staff | kemkes sp | Maternal Outcome | 1 |
 | 3 | SP000397 | Field/call center staff | kemkes sp | Maternal Outcome | 1 |
 | 4 | SP000738 | Kunjungan pemantauan luaran maternal | kemkes sp | Maternal Outcome | 1 |
@@ -21,7 +21,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome | 1 |
 | 14 | 79378-6 | Cause of death | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC | 6 |
 | 15 | SP001135 | Presensi Posyandu | kemkes sp | Raffle | 1 |
-| 16 | 385438008 | Source of information | snomed | Raffle | 1 |
+| 16 | 385438008 | Source of information | snomed | Raffle, SISMAL Regmal 1 | 2 |
 | 17 | SP000776 | Sigizi | kemkes sp | Raffle | 1 |
 | 18 | SP000777 | E-pus PKD | kemkes sp | Raffle | 1 |
 | 19 | SP000778 | E-pus | kemkes sp | Raffle | 1 |
@@ -32,7 +32,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
 | 25 | K1A | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
 | 26 | 134435003 | Routine antenatal care | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SiGizi Kohort Ibu (13x) | 7 |
-| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SIHEPI Rekap 3e, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 17 |
+| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SIHEPI Rekap 3e, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu, SISMAL Regmal 1 (2x) | 18 |
 | 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC | 15 |
 | 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 13 |
 | 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika INC | 14 |
@@ -45,8 +45,8 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), eKohort ANC (2x), SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho ANC (3x), SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC (3x) | 12 |
 | 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC, ePus ANC, SiGizi Kohort Ibu, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC | 5 |
 | 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
-| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC | 37 |
-| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SITB TB 01 (2x), ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC | 12 |
+| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SISMAL Regmal 1 | 38 |
+| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SITB TB 01 (2x), ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SISMAL Regmal 1 | 13 |
 | 42 | 392570002 | Blood pressure finding | snomed | SiGizi ANC | 1 |
 | 43 | 2004005 | Normal blood pressure | snomed | SiGizi ANC | 1 |
 | 44 | 38341003 | Hypertension | snomed | SiGizi ANC, ePus INC | 2 |
@@ -112,7 +112,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC, SITB TB 01, ASIK CKG Dewasa Laki-laki (8x), ASIK CKG Dewasa Perempuan (8x), ASIK CKG Lansia (27 Apr 2026) (8x), SIM RS Siaga Medika ANC | 11 |
 | 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC, ePus ANC, ePus MTBS (3x), SIM RS Siaga Medika ANC | 4 |
 | 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC, ePus ANC, SIM RS Siaga Medika ANC | 3 |
-| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x), SITB TB 01, ELSMIL Ibu Hamil (4x), ELSMIL Pasca Persalinan (3x), ELSMIL Baduta (3x), SIPTM, SIHEPI Rekap 3e, SiGizi PMT 2025 BB Tidak Naik - Survey (2x), SiGizi PMT 2025 BB Kurang - Survey (2x), SiGizi PMT 2025 Gizi Kurang - Survey (2x) | 16 |
+| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x), SITB TB 01, ELSMIL Ibu Hamil (4x), ELSMIL Pasca Persalinan (3x), ELSMIL Baduta (3x), SIPTM, SIHEPI Rekap 3e, SiGizi PMT 2025 BB Tidak Naik - Survey (2x), SiGizi PMT 2025 BB Kurang - Survey (2x), SiGizi PMT 2025 Gizi Kurang - Survey (2x), SISMAL Regmal 1 (2x) | 17 |
 | 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
 | 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC, ePus ANC, ePus PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC | 8 |
 | 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
@@ -250,18 +250,18 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 242 | 165815009 | Human immunodeficiency virus not detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus ANC, SITB TB 01 | 6 |
 | 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SITB TB 01, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC | 10 |
 | 244 | SP000047 | Hasil Tes Diabetes Melitus | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
-| 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K | 3 |
-| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM, SIHEPI Rekap 3e | 5 |
+| 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K, SISMAL Regmal 1, SISMAL Validasi Indigenous | 5 |
+| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM, SIHEPI Rekap 3e, SISMAL Regmal 1 | 6 |
 | 247 | 106540006 | Laborer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
 | 248 | 106304008 | Teacher | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SIPTM | 3 |
 | 249 | 106305009 | University/higher education teacher | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 250 | 444168002 | Homemaker | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 250 | 444168002 | Homemaker | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 251 | OV000430 | Pegawai Swasta/ BUMN/ BUMD | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 252 | 65853000 | Student | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 252 | 65853000 | Student | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 253 | 106386007 | Agricultural animal husbandry/forestry worker, fisherman/hunter | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 254 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 254 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 255 | 36625000 | Livestock worker | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
-| 256 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 256 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 257 | 236297007 | Civil servant | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD, SIPTM | 4 |
 | 258 | OV000431 | Siswa Berasrama | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 259 | 236320001 | Vehicle driver (occupation) | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
@@ -270,9 +270,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 262 | OV000434 | Warga Binaan Pemasyarakatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD, SIPTM, SIHEPI Rekap 3e | 5 |
 | 264 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO, SIHEPI Rekap 3e | 3 |
-| 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 6 |
-| 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 6 |
-| 267 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 6 |
+| 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SISMAL Regmal 1 | 7 |
+| 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SISMAL Regmal 1 | 7 |
+| 267 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SISMAL Regmal 1 | 7 |
 | 268 | CP000006 | Paduan OAT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SITB TB 02 | 4 |
 | 269 | CP000007 | OAT Kategori 1 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
 | 270 | CP000008 | OAT Kategori 2 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
@@ -420,13 +420,13 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 412 | OM000001 | LJ | kemkes clinical-term | SITB TB 04 | 1 |
 | 413 | OM000002 | MGIT | kemkes clinical-term | SITB TB 04 | 1 |
 | 414 | 20373-7 | Amikacin [Susceptibility] by Method for Slow-growing mycobacteria | loinc | SITB TB 04 | 1 |
-| 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K, ePus Kunjungan Ibu Hamil | 2 |
+| 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K, ePus Kunjungan Ibu Hamil, SISMAL Regmal 1 | 3 |
 | 416 | 415759006 | Tuberculosis index case | snomed | SITB TB 16K | 1 |
-| 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, SITB TB 02, ELSMIL Ibu Hamil | 6 |
+| 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, SITB TB 02, ELSMIL Ibu Hamil, SISMAL Regmal 1 | 7 |
 | 418 | 737492002 | Outpatient care management | snomed | SITB TB 16K, ePus Kunjungan Ibu Hamil, ePus Tumbang DDTK, SIPTM (2x), SIHEPI Rekap 3e, eKohort INC | 6 |
 | 419 | Z20.1 | Contact with and exposure to tuberculosis | icd-10 | SITB TB 16K | 1 |
 | 420 | SP000200 | Invitasi kontak | kemkes sp | SITB TB 16K | 1 |
-| 421 | 439708006 | Home visit | snomed | SITB TB 16K | 1 |
+| 421 | 439708006 | Home visit | snomed | SITB TB 16K, SISMAL Regmal 1 | 2 |
 | 422 | SP000369 | Kontak Dengan Penderita TBC | kemkes sp | SITB TB 16K | 1 |
 | 423 | SP000201 | Kontak Serumah | kemkes sp | SITB TB 16K, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 424 | SP000202 | Kontak Erat | kemkes sp | SITB TB 16K | 1 |
@@ -463,7 +463,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
 | 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
 | 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 7 |
-| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
+| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SISMAL Regmal 1 | 4 |
 | 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 5 |
 | 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 10 |
 | 461 | 394573001 | Maternity clinic | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
@@ -561,7 +561,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 553 | 8884-9 | Heart rate rythm | loinc | ePus Pelayanan Pasien | 1 |
 | 554 | 271636001 | Pulse regular | snomed | ePus Pelayanan Pasien | 1 |
 | 555 | 61086009 | Pulse irregular | snomed | ePus Pelayanan Pasien | 1 |
-| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL | 15 |
+| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL, SISMAL Regmal 1 | 16 |
 | 557 | 129861002 | Physical activity finding | snomed | ePus Pelayanan Pasien | 1 |
 | 558 | 80316-3 | Pain scale [Type] | loinc | ePus Pelayanan Pasien | 1 |
 | 559 | 81765008 | No pain | snomed | ePus Pelayanan Pasien | 1 |
@@ -1391,7 +1391,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1383 | 308004006 | Writer | snomed | Dapodik PAUD | 1 |
 | 1384 | 78705009 | Radio and television announcer | snomed | Dapodik PAUD | 1 |
 | 1385 | 308040008 | Pilot - aircraft | snomed | Dapodik PAUD | 1 |
-| 1386 | 14406004 | Policeman | snomed | Dapodik PAUD, SIPTM | 2 |
+| 1386 | 14406004 | Policeman | snomed | Dapodik PAUD, SIPTM, SISMAL Regmal 1 | 3 |
 | 1387 | 159062006 | Artist | snomed | Dapodik PAUD | 1 |
 | 1388 | 80409005 | Translator | snomed | Dapodik PAUD | 1 |
 | 1389 | 29536009 | Journalist | snomed | Dapodik PAUD | 1 |
@@ -1524,9 +1524,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1516 | 224294005 | No formal education | snomed | SIPTM | 1 |
 | 1517 | 38901000087109 | University diploma achieved | snomed | SIPTM | 1 |
 | 1518 | SP000244 | Pedagang kecil | kemkes sp | SIPTM | 1 |
-| 1519 | 302314004 | Military personnel | snomed | SIPTM | 1 |
-| 1520 | TK000041 | Pegawai/karyawan swasta | kemkes | SIPTM | 1 |
-| 1521 | 73438004 | Unemployed | snomed | SIPTM | 1 |
+| 1519 | 302314004 | Military personnel | snomed | SIPTM, SISMAL Regmal 1 | 2 |
+| 1520 | TK000041 | Pegawai/karyawan swasta | kemkes | SIPTM, SISMAL Regmal 1 | 2 |
+| 1521 | 73438004 | Unemployed | snomed | SIPTM, SISMAL Regmal 1 | 2 |
 | 1522 | 105493001 | Retired, life even | snomed | SIPTM | 1 |
 | 1523 | SP000288 | Tenaga Kerja Indonesia | kemkes sp | SIPTM | 1 |
 | 1524 | 158891000 | University lecturer | snomed | SIPTM | 1 |
@@ -2054,7 +2054,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2046 | SP000493 | Makanan Lengkap | kemkes sp | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2047 | 228070005 | Snack food | snomed | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2048 | SP000494 | Makanan Lengkap dan Makanan Kudapan | kemkes sp | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
-| 2049 | 131 | Posyandu | organization-type | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
+| 2049 | 131 | Posyandu | organization-type | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey, SISMAL Regmal 1 | 4 |
 | 2050 | SP000495 | Kelas Ibu Hamil | kemkes sp | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2051 | QRI000016 | Ya, setiap hari | kemkes clinical-term | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2052 | QRI000015 | Ya, tidak setiap hari | kemkes clinical-term | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
@@ -2654,3 +2654,41 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2646 | 93.90 | Non-invasive mechanical ventilation | icd-9-cm | SIM RS Goetoeng BBL (5x) | 1 |
 | 2647 | 96.71 | Continuous invasive mechanical ventilation for less than 96 consecutive hours | icd-9-cm | SIM RS Goetoeng BBL (3x) | 1 |
 | 2648 | 96.72 | Continuous invasive mechanical ventilation for 96 consecutive hours or more | icd-9-cm | SIM RS Goetoeng BBL (2x) | 1 |
+| 2649 | SP000757 | Status Kependudukan (Khusus Papua) | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2650 | SP000758 | Orang Asli Papua (OAP) | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2651 | SP000759 | Bukan Orang Asli Papua | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2652 | SP000760 | Pasien Beralamat (KTP) Diluar Wilayah | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2653 | 67630004 | Miner | snomed | SISMAL Regmal 1 | 1 |
+| 2654 | SP000754 | Pedagang | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2655 | 34484007 | Forestry worker | snomed | SISMAL Regmal 1 | 1 |
+| 2656 | 34024003 | Gardener | snomed | SISMAL Regmal 1 | 1 |
+| 2657 | SP000803 | Fasyankes Pencatat | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2658 | 138 | Puskesmas Pembantu | organization-type | SISMAL Regmal 1 | 1 |
+| 2659 | SP000761 | Faskes Swasta | kemkes organization-ownership | SISMAL Regmal 1 | 1 |
+| 2660 | SP000804 | Kantor Kesehatan Pelabuhan | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2661 | SP000805 | Perdhaki | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2662 | SP000806 | Pos Kesehatan TNI | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2663 | 418775008 | Finding method | snomed | SISMAL Regmal 1 | 1 |
+| 2664 | SP000807 | Passive Case Detection | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2665 | SP000808 | Mass Blood Survey | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2666 | SP000809 | Survei Non PE | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2667 | SP000810 | Surveilans Migrasi | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2668 | 702705002 | Mobile clinic | snomed | SISMAL Regmal 1 | 1 |
+| 2669 | 365690003 | Finding of presence of organism | snomed | SISMAL Regmal 1 | 1 |
+| 2670 | 30020004 | Plasmodium falciparum | snomed | SISMAL Regmal 1 | 1 |
+| 2671 | 56395006 | Plasmodium malariae | snomed | SISMAL Regmal 1 | 1 |
+| 2672 | 49918008 | Plasmodium knowlesi | snomed | SISMAL Regmal 1 | 1 |
+| 2673 | 74746009 | Plasmodium vivax | snomed | SISMAL Regmal 1 | 1 |
+| 2674 | 18508006 | Plasmodium ovale | snomed | SISMAL Regmal 1 | 1 |
+| 2675 | 21070001 | Mixed malaria | snomed | SISMAL Regmal 1 | 1 |
+| 2676 | B54 | Unspecified malaria | icd-10 | SISMAL Validasi Indigenous | 1 |
+| 2677 | 409496000 | Mode of transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2678 | 418427004 | Vector-borne transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2679 | 418912005 | Transfusion transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2680 | 417409004 | Transplacental transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2681 | SP000740 | Kategori Wilayah Penularan | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2682 | SP000741 | Dalam Wilayah Puskesmas | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2683 | SP000742 | Luar Wilayah Puskesmas | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2684 | SP000743 | Luar Wilayah Kabupaten/Kota | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2685 | SP000744 | Luar Wilayah Provinsi | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2686 | SP000745 | Luar Wilayah Negara | kemkes sp | SISMAL Validasi Indigenous | 1 |

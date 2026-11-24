@@ -45,6 +45,8 @@ Kolom **Variabel raw** = angka di `output.md`. Kolom **PHDT** = angka di daftar 
 | elsmil-pasca-persalinan | ELSMIL - Pasca Persalinan | 29 (baris 29) | 29 | 0 (baris) | ⚠️ belum review |
 | elsmil-baduta | ELSMIL - Baduta | 38 (baris 45) | 42 | 3 (baris) | ⚠️ belum review |
 | siptm | SIPTM (baru, tidak ada di PHDT) | 60 (baris 60) | – | dihitung dari mapping | ⚠️ belum review |
+| sismal-regmal1 | SISMAL - Regmal 1 (baru, tidak ada di PHDT) | 49 (baris 49) | – | dihitung dari mapping (laporan punya 88 variabel) | ⚠️ belum review |
+| sismal-validasi-indigenous | SISMAL - Validasi Kasus Indigenous (baru, tidak ada di PHDT) | 14 (baris 14) | – | dihitung dari mapping | ⚠️ belum review |
 | asik-skrining-ptm | ASIK - Data Skrining PTM | 67 (baris 89) | 64 | 25 (baris) | ⚠️ belum review |
 | asik-ckg-bbl | ASIK - CKG - Bayi Baru Lahir (v2; v1: 33 / 33) | 35 (baris 35) | 33 | 2 (baris) | ⚠️ belum review |
 | asik-ckg-balita | ASIK - CKG Balita dan Anak Pra-Sekolah (v2; v1: 62 / 63) | 57 (baris 58) | 59 | −1 (baris) | ⚠️ belum review |
@@ -178,6 +180,7 @@ Sel kosong = jumlah variabel belum diisi di sumber. Angka 0 = sumber mencatat 0 
 | Dapodik | PAUD (semester) | 93 |
 | Dapodik | Antropometri DDTK (monthly) | 37 |
 | SIPTM |  | (dihitung dari mapping: 60 unik / 60 baris; belum ada angka PHDT) |
+| SISMAL | Regmal 1, Validasi Kasus Indigenous |  (dihitung dari mapping: 49 dan 14 unik; belum ada angka PHDT) |
 | SIGA | Balita (BKB - K0) | 0 |
 | SIGA | Balita (BKB - R1) | 0 |
 | SIM RS Data | At tin ANC | 76 |
@@ -298,3 +301,4 @@ Sel kosong = jumlah variabel belum diisi di sumber. Angka 0 = sumber mencatat 0 
 - 2026-11-24: Dibuat dari daftar PHDT Data Dictionary (216 baris berisi). Tally 9 form di output utama: 5 cocok, 4 beda (SiGizi ANC, TB 06, TB 03 SO, TB 16K), Raffle tidak ada di daftar.
 - 2026-11-24: Tally ditambah Dapodik PAUD (sheet `Copy of DAPODIK`, dipilih user): 75 variabel unik / 87 baris vs PHDT 93 (−6 baris), angka output utama tidak diubah.
 - 2026-11-24: Tally ditambah 7 form dari 5 CSV (TB 01, TB 02, Elsmil x3, SIPTM, ASIK PTM). SIPTM tidak ada di daftar PHDT: ditambahkan baris baru, jumlah variabel dihitung dari mapping (60). Angka output utama tidak diubah.
+- 2026-11-24: Tally ditambah 2 form SISMAL (Regmal 1 49, Validasi Indigenous 14), tidak ada di daftar PHDT; jumlah dihitung dari mapping. Angka output utama tidak diubah.

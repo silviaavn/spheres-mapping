@@ -29,11 +29,12 @@ scripts/   form_output.py: membuat output/<form>.md dari dictionary
            csvform_prepare.py: sama, untuk CSV PHDT (SITB TB 01/TB 02, ELSMIL x3, SIPTM, ASIK Skrining PTM)
            phdt2_prepare.py: sama, untuk PHDT_ASIK_CKG.xlsx (5 form CKG, beberapa versi) + CSV Informed Consent, SiHepi Rekap 3e, eKohort ANC/INC
            sigizi_prepare.py: sama, untuk PHDT_SIGIZI.xlsx + schema BQ (17 form SiGizi selain ANC), sekaligus isi Nama Column BQ
+           sismal_prepare.py: sama, untuk PHDT_SISMAL.xlsx (SISMAL Regmal 1, Validasi Kasus Indigenous)
 ```
 
 ## Form yang sudah dihitung
 
-Maternal Outcome, Raffle (Kobo) · SiGizi ANC · SITB TB 06, TB 03 SO, TB 03 RO, TB 04 (Fasyankes & Rujukan), TB 16K · MPDN Kematian Bayi, Kematian Ibu · 11 form ePuskesmas (Pelayanan, Kunjungan Ibu Hamil, Laboratorium, Rujukan Eksternal, ANC, INC, PNC, MTBS, MTBM, Tumbang Anak, DDTK, KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH; ⚠️ belum comprehensive review) · Dapodik PAUD (⚠️ belum comprehensive review). Angka terbaru ada di [`output.md`](output.md), status per form di [`form-tracker.md`](form-tracker.md). · SITB TB 01, TB 02, ELSMIL (Ibu Hamil, Pasca Persalinan, Baduta), SIPTM, ASIK Skrining PTM (⚠️ belum comprehensive review) · ASIK CKG (BBL, Balita, Dewasa Laki-laki, Dewasa Perempuan, Lansia; versi terbaru dipakai, versi lain di `output.md`), Informed Consent, SiHepi Rekap 3e, eKohort ANC dan INC (⚠️ belum comprehensive review)
+Maternal Outcome, Raffle (Kobo) · SiGizi ANC · SITB TB 06, TB 03 SO, TB 03 RO, TB 04 (Fasyankes & Rujukan), TB 16K · MPDN Kematian Bayi, Kematian Ibu · 11 form ePuskesmas (Pelayanan, Kunjungan Ibu Hamil, Laboratorium, Rujukan Eksternal, ANC, INC, PNC, MTBS, MTBM, Tumbang Anak, DDTK, KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH; ⚠️ belum comprehensive review) · Dapodik PAUD (⚠️ belum comprehensive review). Angka terbaru ada di [`output.md`](output.md), status per form di [`form-tracker.md`](form-tracker.md). · SITB TB 01, TB 02, ELSMIL (Ibu Hamil, Pasca Persalinan, Baduta), SIPTM, ASIK Skrining PTM (⚠️ belum comprehensive review) · SISMAL Regmal 1 dan Validasi Kasus Indigenous (⚠️ belum comprehensive review) · ASIK CKG (BBL, Balita, Dewasa Laki-laki, Dewasa Perempuan, Lansia; versi terbaru dipakai, versi lain di `output.md`), Informed Consent, SiHepi Rekap 3e, eKohort ANC dan INC (⚠️ belum comprehensive review)
 
 ## Menambah form baru
 

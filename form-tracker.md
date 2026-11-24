@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah direview: 9
+Total: 283 laporan · Masih diperlukan: 230 · Dimapping ke FHIR: 213 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -88,6 +88,8 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 194 | SIM RS Data - Goetoeng BBL | 68 / 124 |
 | 196 | SIM RS Data - Goetoeng Diabetes Melitus | 6 / 4 |
 | 197 | SIM RS Data - Goetoeng Hipertensi | 5 / 3 |
+| 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
+| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 12 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
@@ -176,7 +178,7 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 61 | SITB - TB 15P (Penerima TPT) | ❌ | ✅ | ❌ |  |  |
 | 62 | SITB - TB 16K (IK) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_16k` |  |
 | 63 | Data Absensi Pegawai - Dari tarikan fingerprint | ✅ | ❌ | ❌ |  |  |
-| 64 | SISMAL (Malaria) - Regmal 1 | ❌ | ✅ | ❌ |  |  |
+| 64 | SISMAL (Malaria) - Regmal 1 | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 65 | ASPAK - Alat Kesehatan | ✅ | ❌ | ❌ |  |  |
 | 66 | ASPAK - Sarana | ✅ | ❌ | ❌ |  |  |
 | 67 | ASPAK - Prasarana | ✅ | ❌ | ❌ |  |  |
@@ -350,3 +352,49 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 235 | SIM RS Data - Tripat Stroke | ✅ | ✅ | ❌ |  |  |
 | 236 | SIM RS Data - Tripat TB | ✅ | ✅ | ❌ |  |  |
 | 237 | SIPTM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 238 | SISMAL (Malaria) - Ketenagaan | ❌ | ❌ | ❌ |  |  |
+| 239 | SISMAL (Malaria) - Data Dasar Lab Malaria | ❌ | ❌ | ❌ |  |  |
+| 240 | SISMAL (Malaria) - Mikroskopis Fasyankes | ❌ | ❌ | ❌ |  |  |
+| 241 | SISMAL (Malaria) - CrossChecker Kab/Kota | ❌ | ❌ | ❌ |  |  |
+| 242 | SISMAL (Malaria) - Uji Silang | ❌ | ❌ | ❌ |  |  |
+| 243 | SISMAL (Malaria) - Verifikasi Uji Silang | ✅ | ❌ | ❌ |  |  |
+| 244 | SISMAL (Malaria) - Rekap Uji Silang | ❌ | ❌ | ❌ |  |  |
+| 245 | SISMAL (Malaria) - Zero Report | ✅ | ❌ | ❌ |  |  |
+| 246 | SISMAL (Malaria) - Regmal 1 WNA | ❌ | ❌ | ❌ |  |  |
+| 247 | SISMAL (Malaria) - Regmal 1 Desa Domisili | ❌ | ❌ | ❌ |  |  |
+| 248 | SISMAL (Malaria) - Rekap Regmal-2 | ❌ | ❌ | ❌ |  |  |
+| 249 | SISMAL (Malaria) - Kasus PE | ❌ | ❌ | ❌ |  |  |
+| 250 | SISMAL (Malaria) - Malaria - KIA | ❌ | ❌ | ❌ |  |  |
+| 251 | SISMAL (Malaria) - Tarik Data-1 | ❌ | ❌ | ❌ |  |  |
+| 252 | SISMAL (Malaria) - Tarik Data-1 Publik | ❌ | ❌ | ❌ |  |  |
+| 253 | SISMAL (Malaria) - Tarik Data-1 Private | ❌ | ❌ | ❌ |  |  |
+| 254 | SISMAL (Malaria) - Logistik Stok | ✅ | ❌ | ❌ |  |  |
+| 255 | SISMAL (Malaria) - Logistik ED | ❌ | ❌ | ❌ |  |  |
+| 256 | SISMAL (Malaria) - Logistik Stok Out | ❌ | ❌ | ❌ |  |  |
+| 257 | SISMAL (Malaria) - Regmal2 | ❌ | ❌ | ❌ |  |  |
+| 258 | SISMAL (Malaria) - Regmal 2 Public | ❌ | ❌ | ❌ |  |  |
+| 259 | SISMAL (Malaria) - Regmal 2 Private | ❌ | ❌ | ❌ |  |  |
+| 260 | SISMAL (Malaria) - Regmal 1 Rujukan | ❌ | ❌ | ❌ |  |  |
+| 261 | SISMAL (Malaria) - Reseptifitas dan Fokus | ❌ | ❌ | ❌ |  |  |
+| 262 | SISMAL (Malaria) - Identifikasi Jentik | ❌ | ❌ | ❌ |  |  |
+| 263 | SISMAL (Malaria) - Identifikasi Nyamuk | ✅ | ❌ | ❌ |  |  |
+| 264 | SISMAL (Malaria) - Pengendalian Vektor | ❌ | ❌ | ❌ |  |  |
+| 265 | SISMAL (Malaria) - Rekap Pengendalian Vektor | ❌ | ❌ | ❌ |  |  |
+| 266 | SISMAL (Malaria) - Kelengkapan Per Bulan Publik | ❌ | ❌ | ❌ |  |  |
+| 267 | SISMAL (Malaria) - Kelengkapan Per Bulan Private | ❌ | ❌ | ❌ |  |  |
+| 268 | SISMAL (Malaria) - Kelengkapan Per Bulan Nasional | ❌ | ❌ | ❌ |  |  |
+| 269 | SISMAL (Malaria) - Data dan Monitoring Kader | ✅ | ❌ | ❌ |  |  |
+| 270 | SISMAL (Malaria) - Kinerja Kader | ✅ | ❌ | ❌ |  |  |
+| 271 | SISMAL (Malaria) - MMP dan Monitoring Kader MMP | ✅ | ❌ | ❌ |  |  |
+| 272 | SISMAL (Malaria) - Rekap Laporan MMP | ✅ | ❌ | ❌ |  |  |
+| 273 | SISMAL (Malaria) - Data Dasar Penduduk | ✅ | ❌ | ❌ |  |  |
+| 274 | SISMAL (Malaria) - Kinerja Kader MMP | ❌ | ❌ | ❌ |  |  |
+| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 276 | SISMAL (Malaria) - Rekap Data Individu Knowlesi Fasyankes | ✅ | ❌ | ❌ |  |  |
+| 277 | SISMAL (Malaria) - Rekap Data Individu Knowlesi Lab | ✅ | ❌ | ❌ |  |  |
+| 278 | SISMAL (Malaria) - Rekap Agregat Data Surveilans Knowlesi Lab | ❌ | ❌ | ❌ |  |  |
+| 279 | SISMAL (Malaria) - Data Rekap Laporan Konfirmasi PCR untuk P. Knowlesi | ❌ | ❌ | ❌ |  |  |
+| 280 | SISMAL (Malaria) - Laporan Rekap Kelambu | ❌ | ❌ | ❌ |  |  |
+| 281 | SISMAL (Malaria) - Laporan Rekap IRS | ❌ | ❌ | ❌ |  |  |
+| 282 | SISMAL (Malaria) - Laporan PME Bulanan | ❌ | ❌ | ❌ |  |  |
+| 283 | SISMAL (Malaria) - Laporan PME Tahunan | ❌ | ❌ | ❌ |  |  |
