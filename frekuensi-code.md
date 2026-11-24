@@ -1258,3 +1258,12 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1250 | SR000006 | Tindakan Khusus | kemkes clinical-term | ePus Tumbang DDTK | 1 |
 | 1251 | SR000007 | Rujuk balik | kemkes clinical-term | ePus Tumbang DDTK | 1 |
 | 1252 | 171128005 | Venereal disease screening | snomed | ePus Tumbang DDTK | 1 |
+| 1253 | 863888006 | 6/60 visual acuity of left eye | snomed | ePus Tumbang TDL | 1 |
+| 1254 | 400911007 | Tumbling E test | snomed | ePus Tumbang TDL (4x) | 1 |
+| 1255 | 863887001 | 6/60 visual acuity of right eye | snomed | ePus Tumbang TDL | 1 |
+| 1256 | 836333004 | 6/12 visual acuity of left eye | snomed | ePus Tumbang TDL | 1 |
+| 1257 | 836332009 | 6/12 visual acuity of right eye | snomed | ePus Tumbang TDL | 1 |
+| 1258 | 373067005 | No | snomed | ePus Tumbang GPPH (10x) | 1 |
+| 1259 | SP000363 | Kadang-Kadang | kemkes sp | ePus Tumbang GPPH (10x) | 1 |
+| 1260 | 70232002 | Frequent | snomed | ePus Tumbang GPPH (10x) | 1 |
+| 1261 | SP000366 | Selalu | kemkes sp | ePus Tumbang GPPH (10x) | 1 |

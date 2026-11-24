@@ -20,7 +20,13 @@ FORMS = [("Maternal Outcome", "kobo-data-dictionary-maternal-outcome"), ("Raffle
          ("ePus MTBS", "phdt-data-dictionary-epus-mtbs"),
          ("ePus MTBM", "phdt-data-dictionary-epus-mtbm"),
          ("ePus Tumbang Anak", "phdt-data-dictionary-epus-tumbang-anak"),
-         ("ePus Tumbang DDTK", "phdt-data-dictionary-epus-tumbang-ddtk")]
+         ("ePus Tumbang DDTK", "phdt-data-dictionary-epus-tumbang-ddtk"),
+         ("ePus Tumbang KPSP", "phdt-data-dictionary-epus-tumbang-kpsp"),
+         ("ePus Tumbang TDD", "phdt-data-dictionary-epus-tumbang-tdd"),
+         ("ePus Tumbang TDL", "phdt-data-dictionary-epus-tumbang-tdl"),
+         ("ePus Tumbang KMPE", "phdt-data-dictionary-epus-tumbang-kmpe"),
+         ("ePus Tumbang M-CHAT-R", "phdt-data-dictionary-epus-tumbang-mchat"),
+         ("ePus Tumbang GPPH", "phdt-data-dictionary-epus-tumbang-gpph")]
 if nform: FORMS = FORMS[:nform]
 SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http://terminology.kemkes.go.id/sp": "kemkes sp",
          "http://terminology.kemkes.go.id": "kemkes", "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes": "WHO anc-custom-codes",
@@ -32,7 +38,7 @@ SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http:
 # Variabel raw per form: kolom file mentah (raw/*.md) kalau ada; kalau tidak ada file mentah = jumlah variabel di dictionary
 RAW = {"Maternal Outcome": 12, "Raffle": 12, "SiGizi ANC": "sigizi-anc", "SITB TB 06": "sitb-tb06", "SITB TB 03 SO": "sitb-tb03-so",
        "SITB TB 03 RO": "sitb-tb03-ro", "SITB TB 04": "sitb-tb04", "SITB TB 16K": "sitb-tb16k", "MPDN Kematian Bayi": 37, "MPDN Kematian Ibu": 24,
-       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38}
+       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38, "ePus Tumbang KPSP": 123, "ePus Tumbang TDD": 37, "ePus Tumbang TDL": 6, "ePus Tumbang KMPE": 14, "ePus Tumbang M-CHAT-R": 20, "ePus Tumbang GPPH": 10}
 def raw_n(name):
     r = RAW[name]
     return r if isinstance(r, int) else len(fo.load_raw(f"{repo}/raw/{r}-kolom.md"))

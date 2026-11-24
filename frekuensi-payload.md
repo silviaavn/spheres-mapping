@@ -78,7 +78,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 70 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04 | 3 |
 | 71 | Condition | Z03.0 | Observation for suspected tuberculosis | SITB TB 06 | 1 |
 | 72 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x) | 9 |
+| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x), ePus Tumbang KPSP (14x), ePus Tumbang TDD (8x), ePus Tumbang KMPE, ePus Tumbang M-CHAT-R, ePus Tumbang GPPH | 14 |
 | 74 | Observation | OC000191 | Jumlah Skoring TBC Anak | SITB TB 06, SITB TB 03 SO | 2 |
 | 75 | ServiceRequest | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
 | 76 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus PNC | 4 |
@@ -531,5 +531,9 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 523 | Procedure | 410295000 | Growth/development education, guidance, and counseling | ePus Tumbang DDTK | 1 |
 | 524 | Procedure | SP000060 | Intervensi Dini Masalah Pertumbuhan Anak | ePus Tumbang DDTK | 1 |
 | 525 | Procedure | SP000063 | Intervensi Dini Masalah Perilaku & Emosi | ePus Tumbang DDTK | 1 |
+| 526 | Observation | 863888006 | 6/60 visual acuity of left eye | ePus Tumbang TDL | 1 |
+| 527 | Observation | 863887001 | 6/60 visual acuity of right eye | ePus Tumbang TDL | 1 |
+| 528 | Observation | 836333004 | 6/12 visual acuity of left eye | ePus Tumbang TDL | 1 |
+| 529 | Observation | 836332009 | 6/12 visual acuity of right eye | ePus Tumbang TDL | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).

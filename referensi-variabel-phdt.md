@@ -32,6 +32,12 @@ Kolom **Variabel raw** = angka di `output.md`. Kolom **PHDT** = angka di daftar 
 | ePus mtbm | ePuskesmas - MTBM | 105 | 115 | -10 | ⚠️ beda (belum dijelaskan) |
 | ePus tumbang-anak | ePuskesmas - Tumbang - Anak | 34 | 34 | +0 | ✅ cocok |
 | ePus tumbang-ddtk | ePuskesmas - Tumbang - DDTK | 38 | 38 | +0 | ✅ cocok |
+| ePus tumbang-kpsp | ePuskesmas - Tumbang - KPSP | 123 (baris 141) | 140 | +1 (baris) | ⚠️ baris +1 |
+| ePus tumbang-tdd | ePuskesmas - Tumbang - TDD | 37 (baris 48) | 48 | +0 (baris) | ✅ baris cocok |
+| ePus tumbang-tdl | ePuskesmas - Tumbang - TDL | 6 (baris 21) | 21 | +0 (baris) | ✅ baris cocok |
+| ePus tumbang-kmpe | ePuskesmas - Tumbang - KMPE | 14 (baris 14) | 14 | +0 (baris) | ✅ baris cocok |
+| ePus tumbang-mchat | ePuskesmas - Tumbang - M-CHAT-R | 20 (baris 20) | 20 | +0 (baris) | ✅ baris cocok |
+| ePus tumbang-gpph | ePuskesmas - Tumbang - GPPH | 10 (baris 10) | 10 | +0 (baris) | ✅ baris cocok |
 
 Keputusan (2026-11-24): selisih di SITB dianggap wajar karena sebelumnya banyak kolom SITB yang di-skip di PHDT Data Dictionary (dugaan, belum dicek per kolom). **Angka output utama tidak diubah.** Selisih SiGizi ANC (+4) belum dijelaskan.
 
@@ -259,5 +265,6 @@ Sel kosong = jumlah variabel belum diisi di sumber. Angka 0 = sumber mencatat 0 
 | SIM RS Data | Tripat TB |  |
 
 ## Log perubahan
+- 2026-11-24: Tally ditambah 6 form Tumbuh Kembang (KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH): jumlah baris variabel cocok dengan PHDT (KPSP +1), variabel unik lebih kecil karena pertanyaan berulang antar kelompok umur. Belum comprehensive review.
 - 2026-11-24: Tally ditambah 11 form ePuskesmas (belum comprehensive review): cocok = MTBS, Tumbang Anak, Tumbang DDTK; beda = Pelayanan +1, Kunjungan Ibu Hamil −29, Lab −1, Rujukan +1, ANC −13 (baris 136 = PHDT), INC +11, PNC +11, MTBM −10. Angka output utama tidak diubah.
 - 2026-11-24: Dibuat dari daftar PHDT Data Dictionary (216 baris berisi). Tally 9 form di output utama: 5 cocok, 4 beda (SiGizi ANC, TB 06, TB 03 SO, TB 16K), Raffle tidak ada di daftar.

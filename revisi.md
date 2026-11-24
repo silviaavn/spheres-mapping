@@ -463,6 +463,38 @@ Selisih tidak mengubah angka output. Catatan: ANC baris = 136 = PHDT, unik 123 (
 | EF3 | Rujukan Eksternal: 23 variabel tapi 5 payload dan 0 code (isian bebas / lookup); referensi PHDT 22 | open |
 | EF4 | Angka Lab (309 payload) sangat bergantung pada jumlah baris alias per pemeriksaan; perlu dipastikan satu pemeriksaan = satu set ServiceRequest/Specimen/Observation/DiagnosticReport | open |
 
+## Tumbuh Kembang tambahan (Childhood Development Toolkit): KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH
+
+Sumber: `Childhood_Development_Toolkit_Data_Dictionary.xlsx` (12 sheet), dipecah per form oleh `scripts/tumbang_prepare.py` ke `mapping/phdt-data-dictionary-epus-tumbang-<form>.csv` (pakai logika yang sama dengan `epus_prepare.py`). Form ini melengkapi baris #16 (Tumbuh Kembang) di tracker.
+
+> **Belum comprehensive review.** Tanpa daftar BQ dan file mentah, belum dibahas dengan tim. Angka = hasil hitung otomatis dari dictionary.
+
+### Sheet → form
+
+| Form | Sheet | Payload | Code | Variabel (unik) | Variabel (baris) | PHDT | Selisih baris vs PHDT |
+|---|---|---|---|---|---|---|---|
+| KPSP | `KPSP` | 14 | 0 | 123 | 141 | 140 | +1 |
+| TDD | `TDD New` | 8 | 0 | 37 | 48 | 48 | +0 |
+| TDL | `TDL New` | 4 | 8 | 6 | 21 | 21 | +0 |
+| KMPE | `KMPE` | 1 | 0 | 14 | 14 | 14 | +0 |
+| M-CHAT-R | `M-CHAT` | 1 | 0 | 20 | 20 | 20 | +0 |
+| GPPH | `GPPH` | 1 | 40 | 10 | 10 | 10 | +0 |
+
+Variabel unik lebih kecil dari baris karena pertanyaan yang sama muncul di beberapa kelompok umur (KPSP 14 kelompok, TDD 8). Jumlah **baris** cocok dengan PHDT (KPSP +1; lainnya 0). Angka output memakai variabel unik, sama seperti form lain.
+
+Sheet yang **tidak dihitung**: `Tracker` (tabel status, isinya rumus), `TDD Deprecated` dan `TDL Deprecated` (versi lama; PHDT 48 dan 21 cocok dengan versi New), `SDIDTK` (475 baris path **identik** dengan dictionary ePus DDTK yang sudah dihitung, tidak dihitung ulang), `PAUD` (daftar kolom export Dapodik tanpa mapping FHIR), `Copy of DAPODIK` (ada mapping, tapi belum jelas form mana: variabel PDF 75 unik / 87, Excel export 52 unik / 70, tidak cocok dengan PHDT Dapodik PAUD 93 maupun Antropometri DDTK 37), `WB Toolkit` (kosong).
+
+### Asumsi
+
+| # | Asumsi | Status |
+|---|---|---|
+| EB1 | 1 QuestionnaireResponse per kelompok umur / kuesioner = 1 payload (KPSP 14, TDD 8, KMPE 1, M-CHAT-R 1, GPPH 1) | open |
+| EB2 | Jawaban Ya/Tidak (`answer.valueBoolean`) bukan code; hanya opsi `answer.valueCoding` yang dihitung (GPPH 40) | open |
+| EB3 | Sheet tidak punya blok Patient/Encounter (hanya reference ke resource dari kunjungan), jadi tidak dihitung di form ini | open |
+| EB4 | TDL: 4 Observation (Kartu E 6/60 dan 6/12 × mata kiri/kanan), code SNOMED tajam penglihatan + method (8 code) | open |
+| EB5 | TDD dan TDL memakai sheet `New`; `Deprecated` diabaikan | open |
+| EB6 | `QuestionnaireResponse.questionnaire` berisi "Tidak Ada" (belum ada canonical Questionnaire), jadi QR tidak punya code pembeda | open |
+
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
 Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
@@ -548,3 +580,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-13: Cek Kobo_3. #1, #2, #3, #5 dan koreksi instance done. #4 masih salah (path berubah tapi belum benar). Tambah #6, #7, dan koreksi instance #4.
 - 2026-11-13: Dibuat dari review Maternal Outcome.
 - 2026-11-24: Tambah bagian ePuskesmas (11 form dari `PHDT_ePus.xlsx`): sheet→form, hasil hitung, perbandingan variabel dengan PHDT, asumsi EA1–EA10, temuan EF1–EF4. ⚠️ belum comprehensive review.
+- 2026-11-24: Tambah bagian Tumbuh Kembang tambahan (KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH) dari `Childhood_Development_Toolkit_Data_Dictionary.xlsx`: asumsi EB1–EB6. SDIDTK = DDTK yang sudah ada. Dapodik belum dicocokkan.

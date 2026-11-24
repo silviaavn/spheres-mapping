@@ -17,11 +17,11 @@ Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah d
 | 13 | KIA Harian - PNC | 82 / 161 |
 | 14 | KIA Harian - MTBS | 125 / 268 |
 | 15 | KIA Harian - MTBM | 57 / 139 |
-| 16 | KIA Harian - Tumbuh Kembang (2 dictionary: Anak 19 / 55, DDTK 29 / 68) | 48 / 123 |
+| 16 | Tumbuh Kembang (8 dictionary: Anak 19 / 55, DDTK 29 / 68, KPSP 14 / 0, TDD 8 / 0, TDL 4 / 8, KMPE 1 / 0, M-CHAT-R 1 / 0, GPPH 1 / 40) | 77 / 171 |
 | 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
 
-Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet).
+Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet).
 
 | No | Sumber - Laporan | Masih diperlukan | Dimapping ke FHIR | Status review | Table BQ Purbalingga | Table BQ Lombok Barat |
 |---|---|:-:|:-:|:-:|---|---|
