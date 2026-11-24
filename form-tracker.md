@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah direview: 9
+Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -18,9 +18,16 @@ Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah d
 | 14 | KIA Harian - MTBS | 125 / 268 |
 | 15 | KIA Harian - MTBM | 57 / 139 |
 | 16 | Tumbuh Kembang (8 dictionary: Anak 19 / 55, DDTK 29 / 68, KPSP 14 / 0, TDD 8 / 0, TDL 4 / 8, KMPE 1 / 0, M-CHAT-R 1 / 0, GPPH 1 / 40) | 77 / 171 |
+| 42 | ASIK - Data Skrining PTM | 104 / 146 |
+| 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | 37 / 94 |
+| 51 | SITB - TB 02 (Kartu Identitas Pasien) | 13 / 15 |
 | 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
+| 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
+| 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
+| 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
 | 124 | Dapodik - PAUD (semester) | 42 / 190 |
+| 237 | SIPTM (baru ditambahkan) | 52 / 214 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet).
 
@@ -67,7 +74,7 @@ Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kemban
 | 39 | ASIK - Data Individu Kohort Bayi | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_test` |  |
 | 40 | ASIK - Data Individu Kohort Baduta | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_baduta` |  |
 | 41 | ASIK - Data Individu Kohort WUS | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_wus` |  |
-| 42 | ASIK - Data Skrining PTM | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_skrining_ptm` |  |
+| 42 | ASIK - Data Skrining PTM | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.asik_skrining_ptm` |  |
 | 43 | ASIK - CKG-Klaster BBL | ✅ | ✅ | ❌ |  |  |
 | 44 | ASIK - CKG-Klaster Balita Pra Sekolah | ✅ | ✅ | ❌ |  |  |
 | 45 | ASIK - CKG-Klaster Remaja dan Usia Sekolah | ❌ | ✅ | ❌ |  |  |
@@ -75,8 +82,8 @@ Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kemban
 | 47 | ASIK - CKG-Klaster Dewasa Perempuan | ✅ | ✅ | ❌ |  |  |
 | 48 | ASIK - CKG-Klaster Lansia | ✅ | ✅ | ❌ |  |  |
 | 49 | SiHepi - Form Rekap 3e | ✅ | ✅ | ❌ |  |  |
-| 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | ❌ | ✅ | ❌ |  |  |
-| 51 | SITB - TB 02 (Kartu Identitas Pasien) | ❌ | ✅ | ❌ |  |  |
+| 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 51 | SITB - TB 02 (Kartu Identitas Pasien) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 52 | SITB - TB 03 SO (Sensitif Obat) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_03` |  |
 | 53 | SITB - TB 03 RO (Resisten Obat) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_03ro` |  |
 | 54 | SITB - TB 04 Fasyankes (pemeriksaan lab) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_04_fasyankes` |  |
@@ -146,9 +153,9 @@ Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kemban
 | 118 | Genomics - TB | ✅ | ✅ | ❌ |  |  |
 | 119 | Genomics - Klebsiella | ✅ | ✅ | ❌ |  |  |
 | 120 | Genomics - Dengue | ✅ | ✅ | ❌ |  |  |
-| 121 | ELSMIL (BKKBN) - Ibu Hamil | ✅ | ✅ | ❌ |  |  |
-| 122 | ELSMIL (BKKBN) - Pasca Persalinan | ✅ | ✅ | ❌ |  |  |
-| 123 | ELSMIL (BKKBN) - Baduta | ✅ | ✅ | ❌ |  |  |
+| 121 | ELSMIL (BKKBN) - Ibu Hamil | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 122 | ELSMIL (BKKBN) - Pasca Persalinan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 123 | ELSMIL (BKKBN) - Baduta | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 124 | Dapodik - PAUD (semester) | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 125 | Dapodik - Antropometri DDTK (monthly) | ✅ | ✅ | ❌ |  |  |
 | 126 | SIGA - Balita (BKB - K0) | ✅ | ✅ | ❌ |  |  |
@@ -262,3 +269,4 @@ Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kemban
 | 234 | SIM RS Data - Tripat Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 235 | SIM RS Data - Tripat Stroke | ✅ | ✅ | ❌ |  |  |
 | 236 | SIM RS Data - Tripat TB | ✅ | ✅ | ❌ |  |  |
+| 237 | SIPTM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |

@@ -514,6 +514,46 @@ Payload: Observation 32, Condition 4, RelatedPerson 3, Patient 1, Encounter 1, A
 | DA3 | Pemisahan blok payload otomatis (heuristik), belum dicek manual per blok | open |
 | DA4 | Selisih −6 baris vs PHDT belum dijelaskan; angka output memakai variabel unik (75) | open |
 
+## 5 CSV PHDT tambahan: SITB TB 01, TB 02, ELSMIL (3 form), SIPTM, ASIK Skrining PTM
+
+Sumber: `PHDT_SITB_-_TB_01.csv`, `PHDT_SITB_-_TB_02.csv`, `PHDT_Data_Dictionary_-_Elsmil.csv`, `PHDT_Data_Dictionary_-_SIPTM.csv`, `PHDT_Data_Dictionary_-_ASIK_PTM.csv`. Diproses `scripts/csvform_prepare.py` ke `mapping/phdt-data-dictionary-<form>.csv` (logika sama dengan `epus_prepare.py`).
+
+> **Belum comprehensive review.** Tanpa daftar BQ dan file mentah, belum dibahas dengan tim. Angka = hasil hitung otomatis dari dictionary.
+
+| Form | Slug | Payload | Code | Variabel (unik) | Variabel (baris) | PHDT | Selisih vs PHDT |
+|---|---|---|---|---|---|---|---|
+| SITB - TB 01 (Kartu Pengobatan Pasien) | `sitb-tb01` | 37 | 94 | 82 | 88 | 78 | +10 (baris) / +4 (unik) |
+| SITB - TB 02 (Kartu Identitas Pasien) | `sitb-tb02` | 13 | 15 | 22 | 22 | 22 | +0 (baris) / +0 (unik) |
+| ELSMIL Ibu Hamil | `elsmil-ibu-hamil` | 36 | 104 | 36 | 37 | 37 | +0 (baris) / -1 (unik) |
+| ELSMIL Pasca Persalinan | `elsmil-pasca-persalinan` | 24 | 96 | 29 | 29 | 29 | +0 (baris) / +0 (unik) |
+| ELSMIL Baduta | `elsmil-baduta` | 31 | 78 | 38 | 45 | 42 | +3 (baris) / -4 (unik) |
+| SIPTM | `siptm` | 52 | 214 | 60 | 60 | – (tidak ada) | dihitung dari mapping |
+| ASIK - Data Skrining PTM | `asik-skrining-ptm` | 104 | 146 | 67 | 89 | 64 | +25 (baris) / +3 (unik) |
+
+Payload per resource:
+
+- SITB - TB 01 (Kartu Pengobatan Pasien): Observation 25, EpisodeOfCare 2, RelatedPerson 2, MedicationStatement 2, Patient 1, Encounter 1, Condition 1, QuestionnaireResponse 1, CarePlan 1, Procedure 1
+- SITB - TB 02 (Kartu Identitas Pasien): MedicationRequest 2, MedicationDispense 2, ServiceRequest 2, Patient 1, Observation 1, Encounter 1, Condition 1, QuestionnaireResponse 1, CarePlan 1, ClinicalImpression 1
+- ELSMIL Ibu Hamil: Observation 28, Condition 2, ServiceRequest 2, Patient 1, Encounter 1, Specimen 1, DiagnosticReport 1
+- ELSMIL Pasca Persalinan: Observation 22, Patient 1, Condition 1
+- ELSMIL Baduta: Observation 29, Patient 1, Immunization 1
+- SIPTM: Observation 31, Condition 7, ServiceRequest 3, Goal 3, Procedure 2, Patient 1, Encounter 1, Specimen 1, DiagnosticReport 1, FamilyMemberHistory 1, MedicationRequest 1
+- ASIK - Data Skrining PTM: Observation 41, ServiceRequest 20, DiagnosticReport 20, Specimen 14, PractitionerRole 6, Patient 1, Encounter 1, Condition 1
+
+| # | Asumsi / temuan | Status |
+|---|---|---|
+| CS1 | Satu file Elsmil dipecah 3 form menurut kolom Categories: baris CSV 2–483 = Ibu Hamil, 484–810 = Pasca Persalinan, 811–akhir = Baduta (termasuk sub-bagian berulang, Bayi Baru Lahir 0–28 hari, Baduta >28 hari–23 bulan, Pendampingan Bulanan) | open |
+| CS2 | SIPTM belum ada di tracker dan daftar PHDT → ditambahkan sebagai #237 di tracker; jumlah variabel dihitung dari mapping (60 unik), tidak ada angka PHDT | open |
+| CS3 | TB 01 dan TB 02 berstatus "Masih diperlukan ❌" di tracker, tetap dihitung karena sudah ada mapping | open |
+| CS4 | TB 01: resource `Careplan` (6 baris) diperbaiki otomatis jadi `CarePlan`; 2 blok Organization (faskes asal & faskes) = lookup, tidak dihitung; baris No. Reg TBC.03 / Tahun / No. Urut Kontak tidak punya Resource di dictionary (variabel di luar payload) | open |
+| CS5 | TB 02: 5 variabel di luar payload (Organization lookup: Nama UPK, Telp UPK, Provinsi; No. Reg. TBC UPK & Kab/Kota tanpa Resource) | open |
+| CS6 | Elsmil Baduta: 4 sel Resource berisi path (mis. `Observation.valueQuantity.value`), diubah otomatis jadi Resource + Path | open |
+| CS7 | SIPTM: 1 variabel tanpa Resource (baris 305, "Rujuk RS" curiga tuli kongenital) → di luar payload, perlu dilengkapi | open |
+| CS8 | ASIK PTM: 109 baris kosong dibuang; sel Resource berisi path diperbaiki otomatis; PractitionerRole petugas lab (14 blok) dan Organization/Location puskesmas = lookup, tidak dihitung; 6 baris "//Petugas Lab" tetap di luar payload | open |
+| CS9 | Pemisahan blok payload otomatis (heuristik), belum dicek manual per blok; blok Condition yang `clinicalStatus`-nya setelah `code` bisa menyatu | open |
+
+- 2026-11-24: Tambah 7 form dari 5 CSV (asumsi CS1–CS9), ⚠️ belum comprehensive review. Sebelumnya TB 01/TB 02/Elsmil/ASIK PTM belum dicocokkan; SIPTM baru.
+
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
 Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
@@ -601,3 +641,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24: Tambah bagian ePuskesmas (11 form dari `PHDT_ePus.xlsx`): sheet→form, hasil hitung, perbandingan variabel dengan PHDT, asumsi EA1–EA10, temuan EF1–EF4. ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian Tumbuh Kembang tambahan (KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH) dari `Childhood_Development_Toolkit_Data_Dictionary.xlsx`: asumsi EB1–EB6. SDIDTK = DDTK yang sudah ada. Dapodik belum dicocokkan.
 - 2026-11-24: Tambah bagian Dapodik PAUD (42 payload, 190 code, asumsi DA1–DA4). Sheet dipilih user. Dapodik Antropometri DDTK tetap belum ada mapping.
+- 2026-11-24: Tambah bagian 5 CSV PHDT (SITB TB 01, TB 02, ELSMIL x3, SIPTM, ASIK Skrining PTM): 7 form, asumsi CS1–CS9. ⚠️ belum comprehensive review.

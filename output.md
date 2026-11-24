@@ -30,11 +30,18 @@ Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **ePuskesmas Tumbuh Kembang - KMPE** → [`output/epus-tumbang-kmpe.md`](output/epus-tumbang-kmpe.md) (sumber: [`mapping/phdt-data-dictionary-epus-tumbang-kmpe.csv`](mapping/phdt-data-dictionary-epus-tumbang-kmpe.csv), sheet `KMPE` di `Childhood_Development_Toolkit_Data_Dictionary.xlsx`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
 - **ePuskesmas Tumbuh Kembang - M-CHAT-R** → [`output/epus-tumbang-mchat.md`](output/epus-tumbang-mchat.md) (sumber: [`mapping/phdt-data-dictionary-epus-tumbang-mchat.csv`](mapping/phdt-data-dictionary-epus-tumbang-mchat.csv), sheet `M-CHAT` di `Childhood_Development_Toolkit_Data_Dictionary.xlsx`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
 - **Dapodik PAUD** → [`output/dapodik-paud.md`](output/dapodik-paud.md) (sumber: [`mapping/phdt-data-dictionary-dapodik-paud.csv`](mapping/phdt-data-dictionary-dapodik-paud.csv), sheet `Copy of DAPODIK` di `Childhood_Development_Toolkit_Data_Dictionary.xlsx`, ⚠️ belum comprehensive review)
+- **SITB - TB 01 (Kartu Pengobatan Pasien)** → [`output/sitb-tb01.md`](output/sitb-tb01.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb01.csv`](mapping/phdt-data-dictionary-sitb-tb01.csv), ⚠️ belum comprehensive review)
+- **SITB - TB 02 (Kartu Identitas Pasien)** → [`output/sitb-tb02.md`](output/sitb-tb02.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb02.csv`](mapping/phdt-data-dictionary-sitb-tb02.csv), ⚠️ belum comprehensive review)
+- **ELSMIL Ibu Hamil** → [`output/elsmil-ibu-hamil.md`](output/elsmil-ibu-hamil.md) (sumber: [`mapping/phdt-data-dictionary-elsmil-ibu-hamil.csv`](mapping/phdt-data-dictionary-elsmil-ibu-hamil.csv), ⚠️ belum comprehensive review)
+- **ELSMIL Pasca Persalinan** → [`output/elsmil-pasca-persalinan.md`](output/elsmil-pasca-persalinan.md) (sumber: [`mapping/phdt-data-dictionary-elsmil-pasca-persalinan.csv`](mapping/phdt-data-dictionary-elsmil-pasca-persalinan.csv), ⚠️ belum comprehensive review)
+- **ELSMIL Baduta** → [`output/elsmil-baduta.md`](output/elsmil-baduta.md) (sumber: [`mapping/phdt-data-dictionary-elsmil-baduta.csv`](mapping/phdt-data-dictionary-elsmil-baduta.csv), ⚠️ belum comprehensive review)
+- **SIPTM** → [`output/siptm.md`](output/siptm.md) (sumber: [`mapping/phdt-data-dictionary-siptm.csv`](mapping/phdt-data-dictionary-siptm.csv), ⚠️ belum comprehensive review)
+- **ASIK - Data Skrining PTM** → [`output/asik-skrining-ptm.md`](output/asik-skrining-ptm.md) (sumber: [`mapping/phdt-data-dictionary-asik-skrining-ptm.csv`](mapping/phdt-data-dictionary-asik-skrining-ptm.csv), ⚠️ belum comprehensive review)
 - **ePuskesmas Tumbuh Kembang - GPPH** → [`output/epus-tumbang-gpph.md`](output/epus-tumbang-gpph.md) (sumber: [`mapping/phdt-data-dictionary-epus-tumbang-gpph.csv`](mapping/phdt-data-dictionary-epus-tumbang-gpph.csv), sheet `GPPH` di `Childhood_Development_Toolkit_Data_Dictionary.xlsx`; ⚠️ **belum comprehensive review**, belum ada file mentah dan daftar variabel BQ)
 
 File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
-Belum: SITB TB 13 SO/RO, form lain. Form ePuskesmas lain (Kunjungan Pasien BPJS, Kunjungan Pasien, Kohort KIA, LPLPO, Dapodik Antropometri DDTK) belum ada mapping yang bisa dicocokkan, tidak dihitung.
+Belum: SITB TB 13 SO/RO, form lain. Form ePuskesmas lain (Kunjungan Pasien BPJS, Kunjungan Pasien, Kohort KIA, LPLPO, Dapodik Antropometri DDTK) belum ada mapping yang bisa dicocokkan, tidak dihitung. SITB TB 01/TB 02, ELSMIL (3 form), SIPTM, dan ASIK Skrining PTM sudah dihitung (lihat catatan di bawah).
 
 ---
 
@@ -88,9 +95,16 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | ePus Tumbang M-CHAT-R | 20 | 1 | 0 | 0 |
 | Dapodik PAUD | 75 | 42 | 190 | 75 |
 | ePus Tumbang GPPH | 10 | 1 | 40 | 20 |
-| **Total (non-unik)** | **1778** | **1450** | **4065** | **386** |
-| **Total unik** | – | **552** | **1393** | **228** |
-| Selisih (dipakai ulang) | – | 898 | 2672 | 158 |
+| SITB TB 01 | 82 | 37 | 94 | 15 |
+| SITB TB 02 | 22 | 13 | 15 | 0 |
+| ELSMIL Ibu Hamil | 36 | 36 | 104 | 33 |
+| ELSMIL Pasca Persalinan | 29 | 24 | 96 | 35 |
+| ELSMIL Baduta | 38 | 31 | 78 | 29 |
+| SIPTM | 60 | 52 | 214 | 7 |
+| ASIK Skrining PTM | 67 | 104 | 146 | 10 |
+| **Total (non-unik)** | **2112** | **1747** | **4812** | **515** |
+| **Total unik** | – | **635** | **1631** | **289** |
+| Selisih (dipakai ulang) | – | 1112 | 3181 | 226 |
 
 ---
 
@@ -100,36 +114,37 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 457 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 272 |
-| http://loinc.org | 253 |
-| http://terminology.kemkes.go.id/sp | 228 |
+| http://snomed.info/sct | 554 |
+| http://terminology.kemkes.go.id/sp | 289 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 279 |
+| http://loinc.org | 271 |
+|  | 38 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 26 |
-| http://terminology.kemkes.go.id/CodeSystem/examination | 20 |
+| http://terminology.kemkes.go.id/CodeSystem/examination | 21 |
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 19 |
+| http://hl7.org/fhir/sid/icd-10 | 17 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
-| http://hl7.org/fhir/sid/icd-10 | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 12 |
 | http://sys-ids.kemkes.go.id/kfa | 11 |
+| http://terminology.kemkes.go.id | 11 |
 | http://hl7.org/fhir/sid/cvx | 8 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 7 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 7 |
+| https://loinc.org | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
-| http://terminology.kemkes.go.id | 5 |
+| http://hl7.org/fhir/sid/icd-9-cm | 5 |
+| http://terminology.hl7.org/CodeSystem/admit-source | 5 |
 | http://sys-ids.kemkes.go.id/kf | 5 |
-| http://hl7.org/fhir/sid/icd-9-cm | 4 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
-| http://terminology.hl7.org/CodeSystem/admit-source | 3 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 3 |
 | http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
-|  | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/kptl | 1 |
 | http://terminology.hl7. org/CodeSystem/admit -source | 1 |
-| https://loinc.org | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/ | 1 |
-| **Total** | **1393** |
+| http://terminology.kemkes.go.id/CodeSystem/immunization-reason | 1 |
+| **Total** | **1631** |
 
 ---
 
@@ -137,38 +152,45 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuensi-payload.md`](frekuensi-payload.md).
 
-| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | Condition | QuestionnaireResponse | Immunization | Patient | PractitionerRole | Encounter | EpisodeOfCare | Practitioner | MedicationDispense | MedicationRequest | RelatedPerson | CarePlan | Coverage | Organization | MedicationStatement | Location | Composition | Group | FamilyMemberHistory | AllergyIntolerance | Medication | Account | Total |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Maternal Outcome | 5 | – | – | – | – | 1 | – | – | 1 | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
-| Raffle | 1 | – | – | – | – | 1 | – | – | 1 | – | 1 | 1 | 2 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 8 |
-| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | – | 1 | 1 | 1 | 1 | 1 | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
-| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 2 | 1 | – | 1 | – | 1 | 3 | – | – | – | – | 1 | – | 1 | – | 1 | – | – | – | – | – | – | 56 |
-| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | 1 | – | 1 | – | 1 | 1 | – | – | – | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | 62 |
-| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | 1 | – | 1 | – | 1 | 1 | – | – | – | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | 50 |
-| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | – | – | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
-| SITB TB 16K | 14 | 1 | – | – | – | 1 | 1 | – | 1 | – | 1 | – | – | – | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | 21 |
-| MPDN Kematian Bayi | 16 | – | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 19 |
-| MPDN Kematian Ibu | 7 | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 10 |
-| ePus Pelayanan Pasien | 24 | 1 | – | – | 2 | 9 | – | – | 1 | – | 1 | – | 1 | 1 | 1 | – | 3 | 1 | – | – | – | – | – | 1 | 1 | – | – | 47 |
-| ePus Kunjungan Ibu Hamil | 46 | 17 | 16 | 16 | 5 | 4 | – | 2 | 1 | – | 1 | 1 | – | 1 | 1 | – | – | 1 | – | 2 | – | – | – | – | – | – | – | 114 |
-| ePus Laboratorium | 92 | 74 | 73 | 65 | – | – | – | – | 1 | 2 | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 309 |
-| ePus Rujukan Eksternal | – | 1 | – | – | – | 1 | – | – | 1 | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 5 |
-| ePus ANC | 82 | 19 | 19 | 6 | 3 | 3 | – | 3 | 1 | 14 | 1 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 155 |
-| ePus INC | 49 | 1 | – | – | 9 | 3 | 1 | – | 1 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 69 |
-| ePus PNC | 50 | 3 | 2 | 1 | 9 | 4 | – | – | 1 | 2 | 1 | 1 | 1 | 2 | 2 | – | 1 | – | – | 1 | – | – | – | – | – | 1 | – | 82 |
-| ePus MTBS | 53 | 9 | 8 | 8 | 14 | 7 | 1 | 17 | 1 | – | 1 | – | 1 | 2 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | 125 |
-| ePus MTBM | 35 | 1 | – | – | 8 | 4 | 1 | 3 | 1 | – | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 57 |
-| ePus Tumbang Anak | 14 | – | – | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
-| ePus Tumbang DDTK | 14 | 1 | – | – | 4 | 3 | 2 | – | 1 | – | 1 | – | 1 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | 29 |
-| ePus Tumbang KPSP | – | – | – | – | – | – | 14 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
-| ePus Tumbang TDD | – | – | – | – | – | – | 8 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 8 |
-| ePus Tumbang TDL | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 4 |
-| ePus Tumbang KMPE | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
-| ePus Tumbang M-CHAT-R | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
-| Dapodik PAUD | 32 | – | – | – | – | 4 | – | – | 1 | – | 1 | – | – | – | – | 3 | – | – | – | – | – | – | – | – | – | – | 1 | 42 |
-| ePus Tumbang GPPH | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
-| **Total (non-unik)** | **643** | **175** | **165** | **142** | **67** | **54** | **36** | **26** | **22** | **21** | **19** | **15** | **10** | **9** | **9** | **9** | **7** | **6** | **3** | **3** | **2** | **2** | **1** | **1** | **1** | **1** | **1** | **1450** |
-| **Total unik** | **323** | **27** | **104** | **6** | **34** | **26** | **1** | **2** | **1** | **1** | **1** | **6** | **1** | **3** | **4** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **552** |
+| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | Condition | QuestionnaireResponse | Patient | PractitionerRole | Immunization | Encounter | EpisodeOfCare | MedicationRequest | MedicationDispense | RelatedPerson | Practitioner | CarePlan | Coverage | MedicationStatement | Organization | Goal | Location | Composition | FamilyMemberHistory | Group | AllergyIntolerance | Medication | Account | ClinicalImpression | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Maternal Outcome | 5 | – | – | – | – | 1 | – | 1 | 1 | – | 1 | 2 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
+| Raffle | 1 | – | – | – | – | 1 | – | 1 | – | – | 1 | 1 | – | – | – | 2 | – | – | – | – | – | 1 | – | – | – | – | – | – | – | 8 |
+| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | – | 1 | 1 | 1 | 1 | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
+| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 2 | 1 | 1 | – | – | 1 | 3 | – | – | – | – | 1 | – | – | 1 | – | 1 | – | – | – | – | – | – | – | 56 |
+| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | 62 |
+| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | 50 |
+| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | – | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| SITB TB 16K | 14 | 1 | – | – | – | 1 | 1 | 1 | – | – | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 21 |
+| MPDN Kematian Bayi | 16 | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 19 |
+| MPDN Kematian Ibu | 7 | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 10 |
+| ePus Pelayanan Pasien | 24 | 1 | – | – | 2 | 9 | – | 1 | – | – | 1 | – | 1 | 1 | – | 1 | 3 | 1 | – | – | – | – | – | 1 | – | 1 | – | – | – | 47 |
+| ePus Kunjungan Ibu Hamil | 46 | 17 | 16 | 16 | 5 | 4 | – | 1 | – | 2 | 1 | 1 | 1 | 1 | – | – | – | 1 | 2 | – | – | – | – | – | – | – | – | – | – | 114 |
+| ePus Laboratorium | 92 | 74 | 73 | 65 | – | – | – | 1 | 2 | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 309 |
+| ePus Rujukan Eksternal | – | 1 | – | – | – | 1 | – | 1 | – | – | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 5 |
+| ePus ANC | 82 | 19 | 19 | 6 | 3 | 3 | – | 1 | 14 | 3 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 155 |
+| ePus INC | 49 | 1 | – | – | 9 | 3 | 1 | 1 | 1 | – | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| ePus PNC | 50 | 3 | 2 | 1 | 9 | 4 | – | 1 | 2 | – | 1 | 1 | 2 | 2 | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 1 | – | – | 82 |
+| ePus MTBS | 53 | 9 | 8 | 8 | 14 | 7 | 1 | 1 | – | 17 | 1 | – | 2 | 2 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 125 |
+| ePus MTBM | 35 | 1 | – | – | 8 | 4 | 1 | 1 | – | 3 | 1 | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 57 |
+| ePus Tumbang Anak | 14 | – | – | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
+| ePus Tumbang DDTK | 14 | 1 | – | – | 4 | 3 | 2 | 1 | – | – | 1 | – | – | – | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 29 |
+| ePus Tumbang KPSP | – | – | – | – | – | – | 14 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
+| ePus Tumbang TDD | – | – | – | – | – | – | 8 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 8 |
+| ePus Tumbang TDL | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 4 |
+| ePus Tumbang KMPE | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
+| ePus Tumbang M-CHAT-R | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
+| Dapodik PAUD | 32 | – | – | – | – | 4 | – | 1 | – | – | 1 | – | – | – | 3 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | 42 |
+| ePus Tumbang GPPH | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
+| SITB TB 01 | 25 | – | – | – | 1 | 1 | 1 | 1 | – | – | 1 | 2 | – | – | 2 | – | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | 37 |
+| SITB TB 02 | 1 | 2 | – | – | – | 1 | 1 | 1 | – | – | 1 | – | 2 | 2 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | 1 | 13 |
+| ELSMIL Ibu Hamil | 28 | 2 | 1 | 1 | – | 2 | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 36 |
+| ELSMIL Pasca Persalinan | 22 | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
+| ELSMIL Baduta | 29 | – | – | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
+| SIPTM | 31 | 3 | 1 | 1 | 2 | 7 | – | 1 | – | – | 1 | – | 1 | – | – | – | – | – | – | – | 3 | – | – | 1 | – | – | – | – | – | 52 |
+| ASIK Skrining PTM | 41 | 20 | 20 | 14 | – | 1 | – | 1 | 6 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 104 |
+| **Total (non-unik)** | **820** | **202** | **187** | **158** | **70** | **67** | **38** | **29** | **27** | **27** | **24** | **17** | **12** | **11** | **11** | **10** | **9** | **6** | **5** | **3** | **3** | **2** | **2** | **2** | **1** | **1** | **1** | **1** | **1** | **1747** |
+| **Total unik** | **391** | **27** | **108** | **6** | **36** | **31** | **1** | **1** | **1** | **2** | **1** | **6** | **5** | **4** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **635** |
 
 ---
 
@@ -191,9 +213,12 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 
 - **Dapodik PAUD**: sheet `Copy of DAPODIK` (dipilih user karena jumlah variabel paling dekat dengan PHDT: 75 unik / 87 baris vs 93), ⚠️ belum comprehensive review. 42 payload (Observation 32, Condition 4, RelatedPerson 3, Patient, Encounter, Account), 190 code (Condition 55, Observation 135). Pemisahan blok otomatis (heuristik), belum dicek manual.
 
+- **SITB TB 01 / TB 02, ELSMIL (Ibu Hamil, Pasca Persalinan, Baduta), SIPTM, ASIK Skrining PTM**: dari 5 file CSV PHDT (⚠️ belum comprehensive review, tanpa daftar BQ dan file mentah). Variabel raw = variabel unik di dictionary. Payload/code: TB 01 37/94, TB 02 13/15, Elsmil Ibu Hamil 36/104, Pasca Persalinan 24/96, Baduta 31/78, SIPTM 52/214, ASIK PTM 104/146. Elsmil 1 file dipecah 3 form menurut kolom Categories (baris 2–483 / 484–810 / 811–akhir). SIPTM tidak ada di tracker maupun daftar PHDT: ditambahkan sebagai #237, jumlah variabel dihitung dari mapping (60 unik). Blok payload otomatis (heuristik), belum dicek manual.
+
 ---
 
 ## Log perubahan output
+- 2026-11-24: Tambah 7 form dari 5 CSV (SITB TB 01 37/94, TB 02 13/15, ELSMIL Ibu Hamil 36/104, Pasca Persalinan 24/96, Baduta 31/78, SIPTM 52/214, ASIK Skrining PTM 104/146), ⚠️ belum comprehensive review. Total non-unik **1747 payload / 4812 code**, unik **635 / 1631** (sebelumnya 1450 / 4065 dan 552 / 1393).
 - 2026-11-24: Ringkasan semua form: tambah kolom **Variabel raw** (total 612). Di `output/<form>.md` baris "Variabel di Excel export" diganti "Variabel raw" dan ditambahkan juga untuk Maternal Outcome (12), Raffle (12), MPDN Kematian Bayi (37), MPDN Kematian Ibu (24). Angka payload/code tidak berubah.
 - 2026-11-24: Tambah 2 form MPDN dari `PHDT_Data_Dictionary_-_MPDN.csv`: Kematian Bayi (19 payload / 112 code) dan Kematian Ibu (10 / 50). Belum ada daftar variabel BQ dan belum ada comprehensive review. Total non-unik 339 / 1758 → **368 / 1920**, unik 148 / 434 → **164 / 510**. Resource baru: Composition. Tabel di file ini dan `frekuensi-*.md` dibuat ulang untuk 10 form dengan `scripts/consolidate.py` (hasilnya identik dengan versi lama untuk 8 form sebelumnya).
 - 2026-11-18: Ringkasan semua form: tambah kolom **Code SP** (CodeSystem `http://terminology.kemkes.go.id/sp`). Daftar form diberi link. Output per form diberi baris File terkait (link ke `output.md`, frekuensi, dictionary, file mentah) dan baris Code SP di Ringkasan.
