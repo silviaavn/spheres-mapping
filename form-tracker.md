@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah direview: 9
+Total: 283 laporan · Masih diperlukan: 230 · Dimapping ke FHIR: 213 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -88,36 +88,8 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 194 | SIM RS Data - Goetoeng BBL | 68 / 124 |
 | 196 | SIM RS Data - Goetoeng Diabetes Melitus | 6 / 4 |
 | 197 | SIM RS Data - Goetoeng Hipertensi | 5 / 3 |
-| 137 | SIM RS Data - Harapan Ibu ANC (template Spheres) | 89 / 176 |
-| 138 | SIM RS Data - Harapan Ibu INC (template Spheres) | 67 / 160 |
-| 139 | SIM RS Data - Harapan Ibu PNC (template Spheres) | 67 / 145 |
-| 140 | SIM RS Data - Harapan Ibu BBL (template Spheres) | 79 / 110 |
-| 128 | SIM RS Data - At tin ANC (template Spheres) | 89 / 176 |
-| 129 | SIM RS Data - At tin INC (template Spheres) | 67 / 160 |
-| 130 | SIM RS Data - At tin PNC (template Spheres) | 67 / 145 |
-| 131 | SIM RS Data - At tin BBL (template Spheres) | 82 / 122 |
-| 164 | SIM RS Data - Nirmala ANC (template Spheres) | 89 / 176 |
-| 165 | SIM RS Data - Nirmala INC (template Spheres) | 67 / 160 |
-| 166 | SIM RS Data - Nirmala PNC (template Spheres) | 67 / 145 |
-| 167 | SIM RS Data - Nirmala BBL (template Spheres) | 82 / 122 |
-| 182 | SIM RS Data - PKU ANC (template Spheres) | 89 / 176 |
-| 185 | SIM RS Data - PKU BBL (template Spheres) | 82 / 122 |
-| 159 | SIM RS Data - MPH Hepatitis (template Spheres) | 20 / 22 |
-| 177 | SIM RS Data - Ummu Hani Hepatitis (template Spheres) | 20 / 22 |
-| 186 | SIM RS Data - PKU Hepatitis (template Spheres) | 20 / 22 |
-| 150 | SIM RS Data - Siaga Medika Hepatitis (template Spheres) | 20 / 22 |
-| 83 | Kobo Modul ANC | 86 / 172 |
-| 84 | Kobo Modul INC | 80 / 243 |
-| 85 | Kobo Modul Neonatus | 50 / 98 |
-| 86 | Kobo Modul PNC | 98 / 225 |
-| 88 | Kobo Buku KIA 1 - ANC | 167 / 668 |
-| 89 | Kobo Buku KIA 2 - Luaran Kehamilan | 38 / 87 |
-| 90 | Kobo Buku KIA 3 - PNC | 75 / 168 |
-| 91 | Kobo Buku KIA 4 - Cadre | 44 / 51 |
-| 92 | Kobo Buku KIA 5 - Vaksinatorku | 40 / 64 |
-| 93 | Kobo Neonatus Outcome | 14 / 25 |
-| 94 | Kobo Neonatus Outcome v2 | 89 / 239 |
-| 101 | Kobo DDTK | 11 / 10 |
+| 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
+| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 12 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
@@ -137,7 +109,7 @@ Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel �
 | 48 | CKG Lansia | 2026 | `CKG Lansia 2026` | 82 / 366 |  |
 | 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 80 / 361 |  |
 
-SIM RS: 34 sheet sendiri + 18 baris yang memakai template Spheres = 52 dari 109 baris (#128–#236) sudah ada sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` (sheet Template generik tidak dihitung). Sisanya (Margono semua; Hepatitis Panti Nugroho/Nirmala/Harapan Ibu/Goetoeng/Tripat/Narmada/At tin; TB semua RS; DM/HT/Stroke yang tidak punya sheet; Tripat INC; Narmada ANC/PNC/BBL; dst.) belum ada file mapping. Kobo: 12 form dari `Kobo_-_Data_Dictionary.xlsx` dihitung (#83–86, #88–94, #101).
+SIM RS: 34 dari 109 baris (#128–#236) sudah ada sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` (sheet Template generik tidak dihitung). Sisanya (RS At tin, Harapan Ibu, Nirmala, Margono; Hepatitis/TB semua RS; Tripat INC/Hepatitis/DM/HT/Stroke/TB; dst.) belum ada file mapping.
 
 Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 2026 belum punya blok lab (ServiceRequest / Specimen / DiagnosticReport / PractitionerRole) yang ada di 2025 dan 2026: terlewat, belum dimapping (konfirmasi 2026-11-24). Lansia punya QR terpisah (7 baris `QuestionnaireResponse.questionnaire`), jadi 7 QR dihitung. eKohort INC (#77) belum 100% termapping ke FHIR (konfirmasi 2026-11-24). Sheet `CKG Lansia (tidak dipakai)` tidak dihitung. Klaster Remaja (#45), eKohort PNC (#75), dan Laporan Kohort Ibu (#76) belum ada mapping. #43–#48 masih ada kolom Table BQ kosong.
 
@@ -206,7 +178,7 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 61 | SITB - TB 15P (Penerima TPT) | ❌ | ✅ | ❌ |  |  |
 | 62 | SITB - TB 16K (IK) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_16k` |  |
 | 63 | Data Absensi Pegawai - Dari tarikan fingerprint | ✅ | ❌ | ❌ |  |  |
-| 64 | SISMAL (Malaria) - Regmal 1 | ❌ | ✅ | ❌ |  |  |
+| 64 | SISMAL (Malaria) - Regmal 1 | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 65 | ASPAK - Alat Kesehatan | ✅ | ❌ | ❌ |  |  |
 | 66 | ASPAK - Sarana | ✅ | ❌ | ❌ |  |  |
 | 67 | ASPAK - Prasarana | ✅ | ❌ | ❌ |  |  |
@@ -225,25 +197,25 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 80 | Buku KIA - INC | ❌ | ✅ | ❌ |  |  |
 | 81 | Buku KIA - PNC | ❌ | ✅ | ❌ |  |  |
 | 82 | Buku KIA - Anak | ❌ | ✅ | ❌ |  |  |
-| 83 | Kobo - Modul ANC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_antenatal_care` |  |
-| 84 | Kobo - Modul INC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_intranatal_care` |  |
-| 85 | Kobo - Modul Neonatus | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_bayi_neonatus` |  |
-| 86 | Kobo - Modul PNC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_post_natal_care` |  |
+| 83 | Kobo - Modul ANC | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_antenatal_care` |  |
+| 84 | Kobo - Modul INC | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_intranatal_care` |  |
+| 85 | Kobo - Modul Neonatus | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_bayi_neonatus` |  |
+| 86 | Kobo - Modul PNC | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_pencatatan_pelayanan_post_natal_care` |  |
 | 87 | Kobo - Enumeration Form | ✅ | ❌ | ❌ |  |  |
-| 88 | Kobo - Buku KIA 1 - ANC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_kia_anc` |  |
-| 89 | Kobo - Buku KIA 2 - Luaran Kehamilan | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_kia_luaran_kehamilan` |  |
-| 90 | Kobo - Buku KIA 3 - PNC | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_kia_pnc` |  |
-| 91 | Kobo - Buku KIA 4 - Cadre | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_kia_cadre` |  |
-| 92 | Kobo - Buku KIA 5 - Vaksinatorku | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.e-form_kia_vaccinator` |  |
-| 93 | Kobo - Neonatus Outcome | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.neonatus_outcome` |  |
-| 94 | Kobo - Neonatus Outcome v2 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.neonatus_outcome_v2` |  |
+| 88 | Kobo - Buku KIA 1 - ANC | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_kia_anc` |  |
+| 89 | Kobo - Buku KIA 2 - Luaran Kehamilan | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_kia_luaran_kehamilan` |  |
+| 90 | Kobo - Buku KIA 3 - PNC | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_kia_pnc` |  |
+| 91 | Kobo - Buku KIA 4 - Cadre | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_kia_cadre` |  |
+| 92 | Kobo - Buku KIA 5 - Vaksinatorku | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_kia_vaccinator` |  |
+| 93 | Kobo - Neonatus Outcome | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.neonatus_outcome` |  |
+| 94 | Kobo - Neonatus Outcome v2 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.neonatus_outcome_v2` |  |
 | 95 | Kobo - PPIx Daily | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_ppix_daily` |  |
 | 96 | Kobo - PPIx Monthly | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_ppix_monthly` |  |
 | 97 | Kobo - POPIX | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_popix` |  |
 | 98 | Kobo - PrePOPIX | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_prepopix` |  |
 | 99 | Kobo - POPIX H 1 2 | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_popix_H_1_2` |  |
 | 100 | Kobo - SBPI | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_sbpi` |  |
-| 101 | Kobo - DDTK | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.kobo-ddtk` |  |
+| 101 | Kobo - DDTK | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.kobo_form.kobo-ddtk` |  |
 | 102 | Kobo - Form Pendataan Kader | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_data_kader` |  |
 | 103 | Kobo - SDIDTK | ✅ | ✅ | ❌ |  |  |
 | 104 | Kobo - Maternal Outcome | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.kobo_form.e-form_maternal_outcome` |  |
@@ -270,19 +242,19 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 125 | Dapodik - Antropometri DDTK (monthly) | ✅ | ✅ | ❌ |  |  |
 | 126 | SIGA - Balita (BKB - K0) | ✅ | ✅ | ❌ |  |  |
 | 127 | SIGA - Balita (BKB - R1) | ✅ | ✅ | ❌ |  |  |
-| 128 | SIM RS Data - At tin ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 129 | SIM RS Data - At tin INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 130 | SIM RS Data - At tin PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 131 | SIM RS Data - At tin BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 128 | SIM RS Data - At tin ANC | ✅ | ✅ | ❌ |  |  |
+| 129 | SIM RS Data - At tin INC | ✅ | ✅ | ❌ |  |  |
+| 130 | SIM RS Data - At tin PNC | ✅ | ✅ | ❌ |  |  |
+| 131 | SIM RS Data - At tin BBL | ✅ | ✅ | ❌ |  |  |
 | 132 | SIM RS Data - At tin Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 133 | SIM RS Data - At tin Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 134 | SIM RS Data - At tin Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 135 | SIM RS Data - At tin Stroke | ✅ | ✅ | ❌ |  |  |
 | 136 | SIM RS Data - At tin TB | ✅ | ✅ | ❌ |  |  |
-| 137 | SIM RS Data - Harapan Ibu ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 138 | SIM RS Data - Harapan Ibu INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 139 | SIM RS Data - Harapan Ibu PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 140 | SIM RS Data - Harapan Ibu BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 137 | SIM RS Data - Harapan Ibu ANC | ✅ | ✅ | ❌ |  |  |
+| 138 | SIM RS Data - Harapan Ibu INC | ✅ | ✅ | ❌ |  |  |
+| 139 | SIM RS Data - Harapan Ibu PNC | ✅ | ✅ | ❌ |  |  |
+| 140 | SIM RS Data - Harapan Ibu BBL | ✅ | ✅ | ❌ |  |  |
 | 141 | SIM RS Data - Harapan Ibu Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 142 | SIM RS Data - Harapan Ibu Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 143 | SIM RS Data - Harapan Ibu Hipertensi | ✅ | ✅ | ❌ |  |  |
@@ -292,7 +264,7 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 147 | SIM RS Data - Siaga Medika INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 148 | SIM RS Data - Siaga Medika PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 149 | SIM RS Data - Siaga Medika BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 150 | SIM RS Data - Siaga Medika Hepatitis | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 150 | SIM RS Data - Siaga Medika Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 151 | SIM RS Data - Siaga Medika Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 152 | SIM RS Data - Siaga Medika Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 153 | SIM RS Data - Siaga Medika Stroke | ✅ | ✅ | ❌ |  |  |
@@ -301,15 +273,15 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 156 | SIM RS Data - MPH INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 157 | SIM RS Data - MPH PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 158 | SIM RS Data - MPH BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 159 | SIM RS Data - MPH Hepatitis | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 159 | SIM RS Data - MPH Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 160 | SIM RS Data - MPH Diabetes Melitus | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 161 | SIM RS Data - MPH Hipertensi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 162 | SIM RS Data - MPH Stroke | ✅ | ✅ | ❌ |  |  |
 | 163 | SIM RS Data - MPH TB | ✅ | ✅ | ❌ |  |  |
-| 164 | SIM RS Data - Nirmala ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 165 | SIM RS Data - Nirmala INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 166 | SIM RS Data - Nirmala PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 167 | SIM RS Data - Nirmala BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 164 | SIM RS Data - Nirmala ANC | ✅ | ✅ | ❌ |  |  |
+| 165 | SIM RS Data - Nirmala INC | ✅ | ✅ | ❌ |  |  |
+| 166 | SIM RS Data - Nirmala PNC | ✅ | ✅ | ❌ |  |  |
+| 167 | SIM RS Data - Nirmala BBL | ✅ | ✅ | ❌ |  |  |
 | 168 | SIM RS Data - Nirmala Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 169 | SIM RS Data - Nirmala Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 170 | SIM RS Data - Nirmala Hipertensi | ✅ | ✅ | ❌ |  |  |
@@ -319,16 +291,16 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 174 | SIM RS Data - Ummu Hani INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 175 | SIM RS Data - Ummu Hani PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 176 | SIM RS Data - Ummu Hani BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 177 | SIM RS Data - Ummu Hani Hepatitis | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 177 | SIM RS Data - Ummu Hani Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 178 | SIM RS Data - Ummu Hani Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 179 | SIM RS Data - Ummu Hani Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 180 | SIM RS Data - Ummu Hani Stroke | ✅ | ✅ | ❌ |  |  |
 | 181 | SIM RS Data - Ummu Hani TB | ✅ | ✅ | ❌ |  |  |
-| 182 | SIM RS Data - PKU ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 182 | SIM RS Data - PKU ANC | ✅ | ✅ | ❌ |  |  |
 | 183 | SIM RS Data - PKU INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 184 | SIM RS Data - PKU PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 185 | SIM RS Data - PKU BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 186 | SIM RS Data - PKU Hepatitis | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 185 | SIM RS Data - PKU BBL | ✅ | ✅ | ❌ |  |  |
+| 186 | SIM RS Data - PKU Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 187 | SIM RS Data - PKU Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 188 | SIM RS Data - PKU Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 189 | SIM RS Data - PKU Stroke | ✅ | ✅ | ❌ |  |  |
@@ -380,3 +352,49 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 235 | SIM RS Data - Tripat Stroke | ✅ | ✅ | ❌ |  |  |
 | 236 | SIM RS Data - Tripat TB | ✅ | ✅ | ❌ |  |  |
 | 237 | SIPTM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 238 | SISMAL (Malaria) - Ketenagaan | ❌ | ❌ | ❌ |  |  |
+| 239 | SISMAL (Malaria) - Data Dasar Lab Malaria | ❌ | ❌ | ❌ |  |  |
+| 240 | SISMAL (Malaria) - Mikroskopis Fasyankes | ❌ | ❌ | ❌ |  |  |
+| 241 | SISMAL (Malaria) - CrossChecker Kab/Kota | ❌ | ❌ | ❌ |  |  |
+| 242 | SISMAL (Malaria) - Uji Silang | ❌ | ❌ | ❌ |  |  |
+| 243 | SISMAL (Malaria) - Verifikasi Uji Silang | ✅ | ❌ | ❌ |  |  |
+| 244 | SISMAL (Malaria) - Rekap Uji Silang | ❌ | ❌ | ❌ |  |  |
+| 245 | SISMAL (Malaria) - Zero Report | ✅ | ❌ | ❌ |  |  |
+| 246 | SISMAL (Malaria) - Regmal 1 WNA | ❌ | ❌ | ❌ |  |  |
+| 247 | SISMAL (Malaria) - Regmal 1 Desa Domisili | ❌ | ❌ | ❌ |  |  |
+| 248 | SISMAL (Malaria) - Rekap Regmal-2 | ❌ | ❌ | ❌ |  |  |
+| 249 | SISMAL (Malaria) - Kasus PE | ❌ | ❌ | ❌ |  |  |
+| 250 | SISMAL (Malaria) - Malaria - KIA | ❌ | ❌ | ❌ |  |  |
+| 251 | SISMAL (Malaria) - Tarik Data-1 | ❌ | ❌ | ❌ |  |  |
+| 252 | SISMAL (Malaria) - Tarik Data-1 Publik | ❌ | ❌ | ❌ |  |  |
+| 253 | SISMAL (Malaria) - Tarik Data-1 Private | ❌ | ❌ | ❌ |  |  |
+| 254 | SISMAL (Malaria) - Logistik Stok | ✅ | ❌ | ❌ |  |  |
+| 255 | SISMAL (Malaria) - Logistik ED | ❌ | ❌ | ❌ |  |  |
+| 256 | SISMAL (Malaria) - Logistik Stok Out | ❌ | ❌ | ❌ |  |  |
+| 257 | SISMAL (Malaria) - Regmal2 | ❌ | ❌ | ❌ |  |  |
+| 258 | SISMAL (Malaria) - Regmal 2 Public | ❌ | ❌ | ❌ |  |  |
+| 259 | SISMAL (Malaria) - Regmal 2 Private | ❌ | ❌ | ❌ |  |  |
+| 260 | SISMAL (Malaria) - Regmal 1 Rujukan | ❌ | ❌ | ❌ |  |  |
+| 261 | SISMAL (Malaria) - Reseptifitas dan Fokus | ❌ | ❌ | ❌ |  |  |
+| 262 | SISMAL (Malaria) - Identifikasi Jentik | ❌ | ❌ | ❌ |  |  |
+| 263 | SISMAL (Malaria) - Identifikasi Nyamuk | ✅ | ❌ | ❌ |  |  |
+| 264 | SISMAL (Malaria) - Pengendalian Vektor | ❌ | ❌ | ❌ |  |  |
+| 265 | SISMAL (Malaria) - Rekap Pengendalian Vektor | ❌ | ❌ | ❌ |  |  |
+| 266 | SISMAL (Malaria) - Kelengkapan Per Bulan Publik | ❌ | ❌ | ❌ |  |  |
+| 267 | SISMAL (Malaria) - Kelengkapan Per Bulan Private | ❌ | ❌ | ❌ |  |  |
+| 268 | SISMAL (Malaria) - Kelengkapan Per Bulan Nasional | ❌ | ❌ | ❌ |  |  |
+| 269 | SISMAL (Malaria) - Data dan Monitoring Kader | ✅ | ❌ | ❌ |  |  |
+| 270 | SISMAL (Malaria) - Kinerja Kader | ✅ | ❌ | ❌ |  |  |
+| 271 | SISMAL (Malaria) - MMP dan Monitoring Kader MMP | ✅ | ❌ | ❌ |  |  |
+| 272 | SISMAL (Malaria) - Rekap Laporan MMP | ✅ | ❌ | ❌ |  |  |
+| 273 | SISMAL (Malaria) - Data Dasar Penduduk | ✅ | ❌ | ❌ |  |  |
+| 274 | SISMAL (Malaria) - Kinerja Kader MMP | ❌ | ❌ | ❌ |  |  |
+| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 276 | SISMAL (Malaria) - Rekap Data Individu Knowlesi Fasyankes | ✅ | ❌ | ❌ |  |  |
+| 277 | SISMAL (Malaria) - Rekap Data Individu Knowlesi Lab | ✅ | ❌ | ❌ |  |  |
+| 278 | SISMAL (Malaria) - Rekap Agregat Data Surveilans Knowlesi Lab | ❌ | ❌ | ❌ |  |  |
+| 279 | SISMAL (Malaria) - Data Rekap Laporan Konfirmasi PCR untuk P. Knowlesi | ❌ | ❌ | ❌ |  |  |
+| 280 | SISMAL (Malaria) - Laporan Rekap Kelambu | ❌ | ❌ | ❌ |  |  |
+| 281 | SISMAL (Malaria) - Laporan Rekap IRS | ❌ | ❌ | ❌ |  |  |
+| 282 | SISMAL (Malaria) - Laporan PME Bulanan | ❌ | ❌ | ❌ |  |  |
+| 283 | SISMAL (Malaria) - Laporan PME Tahunan | ❌ | ❌ | ❌ |  |  |

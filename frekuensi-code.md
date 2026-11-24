@@ -6,22 +6,22 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 
 | # | Code | Display | CodeSystem | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
-| 1 | 223366009 | Healthcare professional | snomed | Maternal Outcome, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 2 | SP000396 | Data entry staff | kemkes sp | Maternal Outcome, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 | 10 |
-| 3 | SP000397 | Field/call center staff | kemkes sp | Maternal Outcome, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 | 10 |
+| 1 | 223366009 | Healthcare professional | snomed | Maternal Outcome, SITB TB 03 SO, SITB TB 03 RO, SISMAL Regmal 1 | 4 |
+| 2 | SP000396 | Data entry staff | kemkes sp | Maternal Outcome | 1 |
+| 3 | SP000397 | Field/call center staff | kemkes sp | Maternal Outcome | 1 |
 | 4 | SP000738 | Kunjungan pemantauan luaran maternal | kemkes sp | Maternal Outcome | 1 |
-| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SIHEPI Rekap 3e, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 31 |
-| 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome, ePus PNC, SiGizi Ibu Nifas, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 25 |
-| 7 | SP000389 | Keadaan Ibu | kemkes sp | Maternal Outcome, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Neonatus Outcome v2 | 12 |
+| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SIHEPI Rekap 3e, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 21 |
+| 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome, ePus PNC, SiGizi Ibu Nifas, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 16 |
+| 7 | SP000389 | Keadaan Ibu | kemkes sp | Maternal Outcome, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
 | 8 | 102514002 | Well female adult | snomed | Maternal Outcome, ePus INC | 2 |
 | 9 | 39104002 | Illness | snomed | Maternal Outcome, ePus INC, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 5 |
 | 10 | 419099009 | Dead | snomed | Maternal Outcome, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC (3x), ePus PNC, SITB TB 01 | 8 |
-| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome, ePus INC, ePus PNC, SIHEPI Rekap 3e, eKohort INC (2x), SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 25 |
-| 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, Kobo Modul INC (2x), Kobo Buku KIA 2 - Luaran Kehamilan (2x), Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (4x) | 13 |
-| 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome, Kobo Buku KIA 2 - Luaran Kehamilan (2x), Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 | 4 |
-| 14 | 79378-6 | Cause of death | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, Kobo Modul INC (2x), Kobo Buku KIA 2 - Luaran Kehamilan (2x), Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (4x) | 10 |
+| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome, ePus INC, ePus PNC, SIHEPI Rekap 3e, eKohort INC (2x), SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 17 |
+| 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC | 8 |
+| 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome | 1 |
+| 14 | 79378-6 | Cause of death | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC | 6 |
 | 15 | SP001135 | Presensi Posyandu | kemkes sp | Raffle | 1 |
-| 16 | 385438008 | Source of information | snomed | Raffle | 1 |
+| 16 | 385438008 | Source of information | snomed | Raffle, SISMAL Regmal 1 | 2 |
 | 17 | SP000776 | Sigizi | kemkes sp | Raffle | 1 |
 | 18 | SP000777 | E-pus PKD | kemkes sp | Raffle | 1 |
 | 19 | SP000778 | E-pus | kemkes sp | Raffle | 1 |
@@ -32,116 +32,116 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
 | 25 | K1A | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
 | 26 | 134435003 | Routine antenatal care | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SiGizi Kohort Ibu (13x) | 7 |
-| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SIHEPI Rekap 3e, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 17 |
-| 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC (3x) | 21 |
-| 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 19 |
-| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika INC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 20 |
-| 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Siaga Medika INC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan | 17 |
-| 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan | 16 |
-| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC (2x), Kobo Buku KIA 1 - ANC | 32 |
-| 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC, ePus ANC, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 18 |
-| 35 | OC000010 | Indeks Massa Tubuh Sebelum Hamil | kemkes clinical-term | SiGizi ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 9 |
-| 36 | ANC.SS.DE58 | IMT Sebelum Hamil | kemkes anc-custom-codes | SiGizi ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 9 |
-| 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), eKohort ANC (2x), SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho ANC (3x), SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x), Kobo Buku KIA 1 - ANC | 18 |
-| 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC, ePus ANC, SiGizi Kohort Ibu, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC | 11 |
-| 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 8 |
-| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 4 - Cadre, Kobo Neonatus Outcome v2 (3x), Kobo DDTK | 51 |
-| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SITB TB 01 (2x), ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 18 |
+| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SIHEPI Rekap 3e, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu, SISMAL Regmal 1 (2x) | 18 |
+| 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC | 15 |
+| 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 13 |
+| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika INC | 14 |
+| 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Siaga Medika INC | 10 |
+| 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA | 9 |
+| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU INC | 22 |
+| 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC, ePus ANC, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 12 |
+| 35 | OC000010 | Indeks Massa Tubuh Sebelum Hamil | kemkes clinical-term | SiGizi ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu | 3 |
+| 36 | ANC.SS.DE58 | IMT Sebelum Hamil | kemkes anc-custom-codes | SiGizi ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu | 3 |
+| 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), eKohort ANC (2x), SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho ANC (3x), SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC (3x) | 12 |
+| 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC, ePus ANC, SiGizi Kohort Ibu, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC | 5 |
+| 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SISMAL Regmal 1 | 38 |
+| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SITB TB 01 (2x), ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SISMAL Regmal 1 | 13 |
 | 42 | 392570002 | Blood pressure finding | snomed | SiGizi ANC | 1 |
 | 43 | 2004005 | Normal blood pressure | snomed | SiGizi ANC | 1 |
 | 44 | 38341003 | Hypertension | snomed | SiGizi ANC, ePus INC | 2 |
 | 45 | 45007003 | Hypotension | snomed | SiGizi ANC | 1 |
 | 46 | 284473002 | Mid upper arm circumference | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 12 |
-| 47 | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | kemkes anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 16 |
-| 48 | OI000018 | Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul PNC, Kobo Buku KIA 2 - Luaran Kehamilan | 26 |
-| 49 | N | Normal | v3-ObservationInterpretation | SiGizi ANC, ePus ANC (13x), ePus PNC, ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki (16x), ASIK CKG Dewasa Perempuan (16x), ASIK CKG Lansia (27 Apr 2026) (16x), eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS MPH BBL (8x), SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL (8x), SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC (2x), SIM RS At tin ANC, SIM RS At tin PNC (2x), SIM RS Nirmala ANC, SIM RS Nirmala PNC (2x), SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus (9x), Kobo Modul PNC, Kobo Buku KIA 1 - ANC (12x) | 32 |
-| 50 | OI000035 | Risiko Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC | 18 |
+| 47 | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | kemkes anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 10 |
+| 48 | OI000018 | Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 16 |
+| 49 | N | Normal | v3-ObservationInterpretation | SiGizi ANC, ePus ANC (13x), ePus PNC, ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki (16x), ASIK CKG Dewasa Perempuan (16x), ASIK CKG Lansia (27 Apr 2026) (16x), eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS MPH BBL (8x), SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL (8x), SIM RS PKU PNC | 21 |
+| 50 | OI000035 | Risiko Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 10 |
 | 51 | 289625003 | Finding of fundal height of uterus | snomed | SiGizi ANC | 1 |
 | 52 | SP000003 | Sesuai Usia Kehamilan | kemkes sp | SiGizi ANC | 1 |
 | 53 | SP000004 | Tidak Sesuai Usia Kehamilan | kemkes sp | SiGizi ANC | 1 |
-| 54 | 883-9 | ABO group [Type] in Blood | loinc | SiGizi ANC, ePus Laboratorium (3x), ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 16 |
-| 55 | ANC.B9.DE24 | Blood type | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 11 |
-| 56 | LA19710-5 | Group A | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 16 |
-| 57 | LA19709-7 | Group B | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 16 |
-| 58 | LA19708-9 | Group O | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 16 |
-| 59 | LA28449-9 | Group AB | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 16 |
-| 60 | 10331-7 | Rh [Type] in Blood | loinc | SiGizi ANC, ePus ANC, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 11 |
-| 61 | ANC.B9.DE29 | Rh factor | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 9 |
-| 62 | LA6576-8 | Positive | loinc | SiGizi ANC (4x), SITB TB 06 (4x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium (21x), ePus ANC (4x), ePus MTBS (3x), SIHEPI Rekap 3e (2x), eKohort ANC (2x), SiGizi Kohort Ibu, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC (4x), SIM RS Harapan Ibu ANC (5x), SIM RS At tin ANC (5x), SIM RS Nirmala ANC (5x), SIM RS PKU ANC (5x), Kobo Modul ANC (4x), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC (6x) | 21 |
-| 63 | LA6577-6 | Negative | loinc | SiGizi ANC (4x), SITB TB 06 (5x), SITB TB 03 SO (4x), SITB TB 03 RO (5x), SITB TB 04 (7x), ePus Kunjungan Ibu Hamil (10x), ePus Laboratorium (22x), ePus ANC (4x), ePus MTBS (3x), SIHEPI Rekap 3e (2x), eKohort ANC (3x), SiGizi Kohort Ibu, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC (4x), SIM RS Harapan Ibu ANC (5x), SIM RS At tin ANC (5x), SIM RS Nirmala ANC (5x), SIM RS PKU ANC (5x), Kobo Modul ANC (4x), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC (11x) | 21 |
+| 54 | 883-9 | ABO group [Type] in Blood | loinc | SiGizi ANC, ePus Laboratorium (3x), ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 9 |
+| 55 | ANC.B9.DE24 | Blood type | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 56 | LA19710-5 | Group A | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 9 |
+| 57 | LA19709-7 | Group B | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 9 |
+| 58 | LA19708-9 | Group O | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 9 |
+| 59 | LA28449-9 | Group AB | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 9 |
+| 60 | 10331-7 | Rh [Type] in Blood | loinc | SiGizi ANC, ePus ANC, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC | 4 |
+| 61 | ANC.B9.DE29 | Rh factor | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SIM RS Siaga Medika ANC | 3 |
+| 62 | LA6576-8 | Positive | loinc | SiGizi ANC (4x), SITB TB 06 (4x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium (21x), ePus ANC (4x), ePus MTBS (3x), SIHEPI Rekap 3e (2x), eKohort ANC (2x), SiGizi Kohort Ibu, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC (4x) | 14 |
+| 63 | LA6577-6 | Negative | loinc | SiGizi ANC (4x), SITB TB 06 (5x), SITB TB 03 SO (4x), SITB TB 03 RO (5x), SITB TB 04 (7x), ePus Kunjungan Ibu Hamil (10x), ePus Laboratorium (22x), ePus ANC (4x), ePus MTBS (3x), SIHEPI Rekap 3e (2x), eKohort ANC (3x), SiGizi Kohort Ibu, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC (4x) | 14 |
 | 64 | 289437007 | Finding of fetal heart rate | snomed | SiGizi ANC, ePus INC | 2 |
 | 65 | 289441006 | Normal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC, eKohort INC | 4 |
 | 66 | 289440007 | Fetal heart rate not observed | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
 | 67 | 312668007 | Abnormal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC, eKohort INC | 4 |
 | 68 | 289439005 | Fetal heart rate absent | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
-| 69 | 72155-5 | Position in womb Fetus [RHEA] | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 27 |
-| 70 | ANC.B8.DE111 | Fetal presentation | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), eKohort INC, SIM RS Tripat ANC, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC (2x), SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 15 |
+| 69 | 72155-5 | Position in womb Fetus [RHEA] | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 17 |
+| 70 | ANC.B8.DE111 | Fetal presentation | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), eKohort INC, SIM RS Tripat ANC, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC (2x) | 9 |
 | 71 | 1209182005 | Cephalic fetal presentation | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), ePus INC, eKohort INC | 5 |
-| 72 | SP000005 | Letak Bokong/ Lintang | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 7 |
-| 73 | SP000006 | Organ Tubuh Lainnya | kemkes sp | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC (2x), SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 12 |
-| 74 | 88.78 | Diagnostic ultrasound of gravid uterus | icd-9-cm | SiGizi ANC, ePus ANC, eKohort ANC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC (2x), Kobo Modul ANC, Kobo Buku KIA 1 - ANC (4x) | 12 |
+| 72 | SP000005 | Letak Bokong/ Lintang | kemkes sp | SiGizi ANC, ePus ANC | 2 |
+| 73 | SP000006 | Organ Tubuh Lainnya | kemkes sp | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC (2x), SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 6 |
+| 74 | 88.78 | Diagnostic ultrasound of gravid uterus | icd-9-cm | SiGizi ANC, ePus ANC, eKohort ANC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC (2x) | 10 |
 | 75 | 268445003 | Ultrasound scan - obstetric | snomed | SiGizi ANC, ePus ANC | 2 |
 | 76 | 169221005 | Ultrasound obstetric scan normal | snomed | SiGizi ANC, ePus ANC | 2 |
 | 77 | 169255008 | Ultrasound scan abnormal | snomed | SiGizi ANC, ePus ANC | 2 |
 | 78 | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil | 2 |
 | 79 | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 80 | SP000370 | Multiple Micronutrient Supplement | kemkes sp | SiGizi ANC (2x), ePus Pelayanan Pasien (2x) | 2 |
-| 81 | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS Siaga Medika ANC (2x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x), Kobo Buku KIA 1 - ANC | 17 |
+| 81 | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS Siaga Medika ANC (2x) | 11 |
 | 82 | 122555007 | Venous blood specimen | snomed | SiGizi ANC (5x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium, ePus ANC (5x), ELSMIL Ibu Hamil, SIHEPI Rekap 3e (3x), eKohort ANC (4x), SiGizi Kohort Ibu (2x) | 8 |
-| 83 | ANC.B9.DE32 | HIV test | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 13 |
-| 84 | LA15255-5 | Reactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), SIHEPI Rekap 3e (7x), eKohort ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 19 |
-| 85 | LA15256-3 | Nonreactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), SIHEPI Rekap 3e (7x), eKohort ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 19 |
-| 86 | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x), Kobo Buku KIA 1 - ANC | 16 |
-| 87 | ANC.B9.DE60 | Hepatitis B test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC (2x) | 13 |
-| 88 | 22464-2 | Reagin Ab [Presence] in Specimen | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x) | 15 |
-| 89 | ANC.B9.DE96 | Syphilis test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 13 |
-| 90 | 2887-8 | Protein [Presence] in Urine | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), eKohort ANC (3x), SiGizi Kohort Ibu (3x), SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x) | 12 |
+| 83 | ANC.B9.DE32 | HIV test | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC | 7 |
+| 84 | LA15255-5 | Reactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), SIHEPI Rekap 3e (7x), eKohort ANC, SIM RS Siaga Medika ANC | 13 |
+| 85 | LA15256-3 | Nonreactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), SIHEPI Rekap 3e (7x), eKohort ANC, SIM RS Siaga Medika ANC | 13 |
+| 86 | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS Siaga Medika ANC (3x) | 10 |
+| 87 | ANC.B9.DE60 | Hepatitis B test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC | 7 |
+| 88 | 22464-2 | Reagin Ab [Presence] in Specimen | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS Siaga Medika ANC (3x) | 10 |
+| 89 | ANC.B9.DE96 | Syphilis test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC | 7 |
+| 90 | 2887-8 | Protein [Presence] in Urine | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), eKohort ANC (3x), SiGizi Kohort Ibu (3x), SIM RS Siaga Medika ANC (3x) | 7 |
 | 91 | 122575003 | Urine specimen | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium (16x), ePus ANC, eKohort ANC, SiGizi Kohort Ibu | 6 |
-| 92 | ANC.B9.DE114 | Urine test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 12 |
-| 93 | 718-7 | Hemoglobin [Mass/volume] in Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (4x), ePus Laboratorium (4x), ePus ANC (3x), ePus MTBS (6x), ELSMIL Ibu Hamil (3x), ASIK CKG Balita (v2), eKohort ANC (3x), SiGizi Kohort Ibu (3x), SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x), Kobo Buku KIA 1 - ANC (2x) | 16 |
-| 94 | ANC.B9.DE175 | Blood hemoglobin test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 14 |
+| 92 | ANC.B9.DE114 | Urine test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 7 |
+| 93 | 718-7 | Hemoglobin [Mass/volume] in Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (4x), ePus Laboratorium (4x), ePus ANC (3x), ePus MTBS (6x), ELSMIL Ibu Hamil (3x), ASIK CKG Balita (v2), eKohort ANC (3x), SiGizi Kohort Ibu (3x), SIM RS Siaga Medika ANC (3x) | 10 |
+| 94 | ANC.B9.DE175 | Blood hemoglobin test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 8 |
 | 95 | 860635002 | No anemia present | snomed | SiGizi ANC, ePus MTBS | 2 |
 | 96 | OI000032 | Anemia ringan | kemkes clinical-term | SiGizi ANC | 1 |
 | 97 | OI000033 | Anemia sedang | kemkes clinical-term | SiGizi ANC | 1 |
 | 98 | OI000034 | Anemia berat | kemkes clinical-term | SiGizi ANC | 1 |
-| 99 | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus ANC (3x), SIPTM (3x), ASIK Skrining PTM (3x), SiGizi Kohort Ibu (3x), SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x), Kobo Buku KIA 1 - ANC (2x) | 13 |
-| 100 | ANC.B9.DE159 | Blood glucose test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 11 |
+| 99 | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus ANC (3x), SIPTM (3x), ASIK Skrining PTM (3x), SiGizi Kohort Ibu (3x), SIM RS Siaga Medika ANC (3x) | 7 |
+| 100 | ANC.B9.DE159 | Blood glucose test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 5 |
 | 101 | 166921001 | Blood glucose normal | snomed | SiGizi ANC | 1 |
 | 102 | 166922008 | Blood glucose abnormal | snomed | SiGizi ANC | 1 |
 | 103 | 15220000 | Laboratory test | snomed | SiGizi ANC, ePus ANC | 2 |
-| 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC, SITB TB 01, ASIK CKG Dewasa Laki-laki (8x), ASIK CKG Dewasa Perempuan (8x), ASIK CKG Lansia (27 Apr 2026) (8x), SIM RS Siaga Medika ANC, Kobo Modul ANC | 12 |
-| 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC, ePus ANC, ePus MTBS (3x), SIM RS Siaga Medika ANC, Kobo Modul ANC | 5 |
-| 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC, ePus ANC, SIM RS Siaga Medika ANC, Kobo Modul ANC | 4 |
-| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x), SITB TB 01, ELSMIL Ibu Hamil (4x), ELSMIL Pasca Persalinan (3x), ELSMIL Baduta (3x), SIPTM, SIHEPI Rekap 3e, SiGizi PMT 2025 BB Tidak Naik - Survey (2x), SiGizi PMT 2025 BB Kurang - Survey (2x), SiGizi PMT 2025 Gizi Kurang - Survey (2x) | 16 |
-| 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 10 |
-| 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC, ePus ANC, ePus PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Modul PNC | 18 |
-| 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 10 |
+| 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC, SITB TB 01, ASIK CKG Dewasa Laki-laki (8x), ASIK CKG Dewasa Perempuan (8x), ASIK CKG Lansia (27 Apr 2026) (8x), SIM RS Siaga Medika ANC | 11 |
+| 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC, ePus ANC, ePus MTBS (3x), SIM RS Siaga Medika ANC | 4 |
+| 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC, ePus ANC, SIM RS Siaga Medika ANC | 3 |
+| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x), SITB TB 01, ELSMIL Ibu Hamil (4x), ELSMIL Pasca Persalinan (3x), ELSMIL Baduta (3x), SIPTM, SIHEPI Rekap 3e, SiGizi PMT 2025 BB Tidak Naik - Survey (2x), SiGizi PMT 2025 BB Kurang - Survey (2x), SiGizi PMT 2025 Gizi Kurang - Survey (2x), SISMAL Regmal 1 (2x) | 17 |
+| 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC, ePus ANC, ePus PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC | 8 |
+| 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
 | 111 | 116859006 | Transfusion of blood product | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
 | 112 | 3457005 | Patient referral | snomed | SiGizi ANC (3x), ePus ANC (3x), SIPTM (2x), eKohort INC | 4 |
-| 113 | SP000010 | Skrining Hipertensi dalam Kehamilan | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 10 |
-| 114 | SP000011 | Tidak Pre Eklampsia/ Eklampsia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 10 |
+| 113 | SP000010 | Skrining Hipertensi dalam Kehamilan | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 114 | SP000011 | Tidak Pre Eklampsia/ Eklampsia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
 | 115 | 48194001 | Pregnancy-induced hypertension | snomed | SiGizi ANC, ePus ANC, ePus INC (2x) | 3 |
 | 116 | 398254007 | Pre-eclampsia | snomed | SiGizi ANC, ePus ANC (2x), ePus INC | 3 |
 | 117 | 15938005 | Eclampsia | snomed | SiGizi ANC, ePus ANC (2x), ePus INC | 3 |
-| 118 | SP000012 | Tatalaksana Pre Eklampsia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 10 |
+| 118 | SP000012 | Tatalaksana Pre Eklampsia | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
 | 119 | 135840009 | Blood pressure monitoring | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
 | 120 | 308116003 | Antihypertensive therapy | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
-| 121 | SP000013 | Pemberian MgSO4 | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC | 17 |
-| 122 | SP000014 | Tatalaksana KEK | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 10 |
+| 121 | SP000013 | Pemberian MgSO4 | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 122 | SP000014 | Tatalaksana KEK | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
 | 123 | 435591000124104 | Nutrition supplement therapy | snomed | SiGizi ANC, ePus ANC | 2 |
-| 124 | SP000015 | Risiko Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC | 17 |
+| 124 | SP000015 | Risiko Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS PKU INC | 9 |
 | 125 | 40733004 | Infectious disease | snomed | SiGizi ANC, ePus ANC (2x), ePus INC | 3 |
 | 126 | 73211009 | Diabetes mellitus | snomed | SiGizi ANC, ePus ANC (2x) | 2 |
 | 127 | 414916001 | Obesity | snomed | SiGizi ANC, ePus ANC | 2 |
 | 128 | 56717001 | Tuberculosis | snomed | SiGizi ANC, SITB TB 16K, ePus ANC (2x), SITB TB 01 | 4 |
 | 129 | 56265001 | Heart disease | snomed | SiGizi ANC, ePus ANC | 2 |
-| 130 | SP000016 | Tatalaksana Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 7 |
+| 130 | SP000016 | Tatalaksana Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 131 | 1230101008 | Counseling for pregnancy | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 132 | 385892002 | Mental health screening | snomed | SiGizi ANC, ePus ANC | 2 |
 | 133 | TB-SO | Tuberkulosis Sensitif Obat | episodeofcare-type | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04, SITB TB 16K, SITB TB 01 | 5 |
 | 134 | TB-RO | Tuberkulosis Resisten Obat | episodeofcare-type | SITB TB 06 (3x), SITB TB 03 RO, SITB TB 04, SITB TB 16K, SITB TB 01 | 5 |
 | 135 | EHA000001 | Kader/ Komunitas | kemkes clinical-term | SITB TB 06, SITB TB 01 | 2 |
-| 136 | EHA000002 | Datang sendiri | kemkes clinical-term | SITB TB 06, SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 04, ePus ANC, ePus INC, ePus PNC, SITB TB 01, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 20 |
+| 136 | EHA000002 | Datang sendiri | kemkes clinical-term | SITB TB 06, SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 04, ePus ANC, ePus INC, ePus PNC, SITB TB 01, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 15 |
 | 137 | EHA000003 | Kegiatan ACF | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 138 | 257622000 | Healthcare facility | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 01 | 5 |
 | 139 | EHA000004 | Skrining TBC DM | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
@@ -171,7 +171,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 163 | 154283005 | Pulmonary tuberculosis | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 164 | 423997002 | Tuberculosis, extrapulmonary | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 165 | OC000191 | Jumlah Skoring TBC Anak | kemkes clinical-term | SITB TB 06, SITB TB 03 SO, SITB TB 01 | 3 |
-| 166 | 24648-8 | XR Chest PA upright | loinc | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 03 RO, ePus PNC (3x), SITB TB 01, Kobo Modul PNC (3x) | 6 |
+| 166 | 24648-8 | XR Chest PA upright | loinc | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 03 RO, ePus PNC (3x), SITB TB 01 | 5 |
 | 167 | 707307002 | Tuberculosis screening chest X-ray abnormal | snomed | SITB TB 06, SITB TB 03 SO, ePus PNC | 3 |
 | 168 | 707308007 | Tuberculosis screening chest X-ray normal | snomed | SITB TB 06, SITB TB 03 SO, ePus PNC | 3 |
 | 169 | 424489006 | Mantoux test | snomed | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
@@ -187,9 +187,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 179 | 33248-6 | Diabetes status | loinc | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
 | 180 | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | loinc | SITB TB 06 (9x), SITB TB 03 SO (18x), SITB TB 03 RO (6x), SITB TB 04 (6x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 10 |
 | 181 | 119334006 | Sputum specimen | snomed | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO (7x), SITB TB 04 (32x), ePus Kunjungan Ibu Hamil, ePus Laboratorium (2x) | 6 |
-| 182 | LA11841-6 | 1+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC, Kobo Buku KIA 1 - ANC (5x) | 9 |
-| 183 | LA11842-4 | 2+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC, Kobo Buku KIA 1 - ANC (5x) | 9 |
-| 184 | LA11843-2 | 3+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC, Kobo Buku KIA 1 - ANC (5x) | 9 |
+| 182 | LA11841-6 | 1+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC | 8 |
+| 183 | LA11842-4 | 2+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC | 8 |
+| 184 | LA11843-2 | 3+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC | 8 |
 | 185 | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | loinc | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO, ePus Laboratorium (3x) | 4 |
 | 186 | X099379 | Pemeriksaan TCM XDR | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (6x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
 | 187 | X099380 | Line Probe Assay (LPA) Lini 1 | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (6x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
@@ -248,20 +248,20 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 240 | 365866002 | Finding of human immunodeficiency virus status | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
 | 241 | 165816005 | Human immunodeficiency virus detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus ANC, ePus MTBS, ePus MTBM, SITB TB 01 | 8 |
 | 242 | 165815009 | Human immunodeficiency virus not detected | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus ANC, SITB TB 01 | 6 |
-| 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SITB TB 01, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul INC, Kobo Modul PNC | 22 |
+| 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SITB TB 01, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC | 10 |
 | 244 | SP000047 | Hasil Tes Diabetes Melitus | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
-| 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K | 3 |
-| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM, SIHEPI Rekap 3e, Kobo Buku KIA 1 - ANC | 6 |
+| 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K, SISMAL Regmal 1, SISMAL Validasi Indigenous | 5 |
+| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM, SIHEPI Rekap 3e, SISMAL Regmal 1 | 6 |
 | 247 | 106540006 | Laborer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
 | 248 | 106304008 | Teacher | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SIPTM | 3 |
 | 249 | 106305009 | University/higher education teacher | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 250 | 444168002 | Homemaker | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 250 | 444168002 | Homemaker | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 251 | OV000430 | Pegawai Swasta/ BUMN/ BUMD | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 252 | 65853000 | Student | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 252 | 65853000 | Student | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 253 | 106386007 | Agricultural animal husbandry/forestry worker, fisherman/hunter | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 254 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 254 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 255 | 36625000 | Livestock worker | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
-| 256 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
+| 256 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM, SISMAL Regmal 1 | 4 |
 | 257 | 236297007 | Civil servant | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD, SIPTM | 4 |
 | 258 | OV000431 | Siswa Berasrama | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 259 | 236320001 | Vehicle driver (occupation) | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
@@ -270,9 +270,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 262 | OV000434 | Warga Binaan Pemasyarakatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD, SIPTM, SIHEPI Rekap 3e | 5 |
 | 264 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO, SIHEPI Rekap 3e | 3 |
-| 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
-| 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
-| 267 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
+| 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SISMAL Regmal 1 | 7 |
+| 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SISMAL Regmal 1 | 7 |
+| 267 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SISMAL Regmal 1 | 7 |
 | 268 | CP000006 | Paduan OAT | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SITB TB 02 | 4 |
 | 269 | CP000007 | OAT Kategori 1 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
 | 270 | CP000008 | OAT Kategori 2 | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
@@ -420,13 +420,13 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 412 | OM000001 | LJ | kemkes clinical-term | SITB TB 04 | 1 |
 | 413 | OM000002 | MGIT | kemkes clinical-term | SITB TB 04 | 1 |
 | 414 | 20373-7 | Amikacin [Susceptibility] by Method for Slow-growing mycobacteria | loinc | SITB TB 04 | 1 |
-| 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K, ePus Kunjungan Ibu Hamil, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 4 - Cadre | 4 |
+| 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K, ePus Kunjungan Ibu Hamil, SISMAL Regmal 1 | 3 |
 | 416 | 415759006 | Tuberculosis index case | snomed | SITB TB 16K | 1 |
-| 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, SITB TB 02, ELSMIL Ibu Hamil | 6 |
+| 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, SITB TB 02, ELSMIL Ibu Hamil, SISMAL Regmal 1 | 7 |
 | 418 | 737492002 | Outpatient care management | snomed | SITB TB 16K, ePus Kunjungan Ibu Hamil, ePus Tumbang DDTK, SIPTM (2x), SIHEPI Rekap 3e, eKohort INC | 6 |
 | 419 | Z20.1 | Contact with and exposure to tuberculosis | icd-10 | SITB TB 16K | 1 |
 | 420 | SP000200 | Invitasi kontak | kemkes sp | SITB TB 16K | 1 |
-| 421 | 439708006 | Home visit | snomed | SITB TB 16K | 1 |
+| 421 | 439708006 | Home visit | snomed | SITB TB 16K, SISMAL Regmal 1 | 2 |
 | 422 | SP000369 | Kontak Dengan Penderita TBC | kemkes sp | SITB TB 16K | 1 |
 | 423 | SP000201 | Kontak Serumah | kemkes sp | SITB TB 16K, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 424 | SP000202 | Kontak Erat | kemkes sp | SITB TB 16K | 1 |
@@ -440,39 +440,39 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 432 | SP000374 | Tidak Memenuhi Syarat TPT | kemkes sp | SITB TB 16K | 1 |
 | 433 | SP000212 | Tanggal Pemberian TPT | kemkes sp | SITB TB 16K | 1 |
 | 434 | SP000213 | Hasil Akhir TPT | kemkes sp | SITB TB 16K | 1 |
-| 435 | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | loinc | MPDN Kematian Bayi, eKohort INC, Kobo Buku KIA 2 - Luaran Kehamilan | 3 |
+| 435 | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | loinc | MPDN Kematian Bayi, eKohort INC | 2 |
 | 436 | 276507005 | Fetal death | snomed | MPDN Kematian Bayi | 1 |
 | 437 | 276506001 | Newborn death | snomed | MPDN Kematian Bayi, eKohort INC | 2 |
-| 438 | 39016-1 | Age at death | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (3x) | 4 |
-| 439 | SP000716 | Umur Jam (saat meninggal) | kemkes sp | MPDN Kematian Bayi, Kobo Neonatus Outcome v2 (3x) | 2 |
-| 440 | SP000717 | Umur Menit (saat meninggal) | kemkes sp | MPDN Kematian Bayi, Kobo Neonatus Outcome v2 (3x) | 2 |
-| 441 | SP000718 | Umur Detik (saat meninggal) | kemkes sp | MPDN Kematian Bayi, Kobo Neonatus Outcome v2 (3x) | 2 |
+| 438 | 39016-1 | Age at death | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 439 | SP000716 | Umur Jam (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
+| 440 | SP000717 | Umur Menit (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
+| 441 | SP000718 | Umur Detik (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
 | 442 | TK000019 | Kode group | kemkes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 443 | TK000020 | Kode subgroup | kemkes | MPDN Kematian Bayi | 1 |
 | 444 | TK000021 | Kode detail | kemkes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 445 | OC000028 | Jenis Tempat Meninggal | kemkes clinical-term | MPDN Kematian Bayi, MPDN Kematian Ibu, Kobo Neonatus Outcome v2 (3x) | 3 |
-| 446 | LT000008 | Dalam perjalanan dari rumah/masyarakat | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Neonatus Outcome v2 (3x) | 15 |
-| 447 | LT000009 | Dalam perjalanan ke faskes lain | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC | 12 |
-| 448 | SP000099 | FASKES | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, Kobo Neonatus Outcome v2 (3x) | 3 |
+| 445 | OC000028 | Jenis Tempat Meninggal | kemkes clinical-term | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 446 | LT000008 | Dalam perjalanan dari rumah/masyarakat | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 9 |
+| 447 | LT000009 | Dalam perjalanan ke faskes lain | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 448 | SP000099 | FASKES | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 449 | 102 | Pusat Kesehatan Masyarakat | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 8 |
-| 450 | OT000006 | Rumah Sakit Pemerintah | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 6 |
-| 451 | OT000007 | Rumah Sakit Swasta | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 6 |
-| 452 | LT000006 | Rumah Ibu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 6 |
+| 450 | OT000006 | Rumah Sakit Pemerintah | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
+| 451 | OT000007 | Rumah Sakit Swasta | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
+| 452 | LT000006 | Rumah Ibu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
 | 453 | 104 | Rumah Sakit | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 4 |
-| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x) | 15 |
-| 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 6 |
-| 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 6 |
+| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 10 |
+| 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
+| 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
 | 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 7 |
-| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
-| 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, SiGizi Kohort Ibu, Kobo Modul INC, Kobo Modul PNC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (6x) | 9 |
-| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x) | 15 |
+| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SISMAL Regmal 1 | 4 |
+| 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 5 |
+| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 10 |
 | 461 | 394573001 | Maternity clinic | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
-| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Buku KIA 2 - Luaran Kehamilan | 16 |
+| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 10 |
 | 463 | 264362003 | Home | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Kohort Ibu | 10 |
-| 464 | LT000007 | Rumah Dukun | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC | 12 |
-| 465 | LT000010 | Lainnya | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC, Kobo Neonatus Outcome v2 (3x) | 7 |
-| 466 | LT000011 | Belum Tahu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC, Kobo Neonatus Outcome v2 (3x) | 7 |
-| 467 | SP000098 | Tipe Penyelenggara Faskes Meninggal | kemkes sp | MPDN Kematian Bayi, MPDN Kematian Ibu, Kobo Neonatus Outcome v2 (3x) | 3 |
+| 464 | LT000007 | Rumah Dukun | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 465 | LT000010 | Lainnya | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
+| 466 | LT000011 | Belum Tahu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC, SIM RS Panti Nugroho INC, SIM RS PKU INC | 5 |
+| 467 | SP000098 | Tipe Penyelenggara Faskes Meninggal | kemkes sp | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 468 | SP000076 | RSU - Pemprop | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 469 | SP000077 | PUSKESMAS - Pemkab | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 470 | SP000078 | RSU - Pemkot | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
@@ -488,30 +488,30 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 480 | SP000088 | RSU - Organisasi Islam | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 481 | SP000089 | RSU - Organisasi Sosial | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 482 | SP000090 | RS - Swasta/Lainnya | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi, ePus INC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome | 15 |
-| 484 | 57071-3 | Obstetric delivery method | loinc | MPDN Kematian Bayi, ePus INC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 | 19 |
+| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi, ePus INC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 484 | 57071-3 | Obstetric delivery method | loinc | MPDN Kematian Bayi, ePus INC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 9 |
 | 485 | 289259007 | Vaginal delivery | snomed | MPDN Kematian Bayi | 1 |
 | 486 | 200144004 | Deliveries by cesarean | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC, SiGizi Kohort Ibu | 6 |
 | 487 | 48782003 | Delivery normal | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC, SiGizi Kohort Ibu | 6 |
-| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, eKohort INC, SIM RS Panti Nugroho INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 3 - PNC | 13 |
+| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, eKohort INC, SIM RS Panti Nugroho INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
 | 489 | 303071001 | Person in the family | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
-| 490 | OV000012 | Dukun | kemkes clinical-term | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, SIM RS Siaga Medika INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 3 - PNC | 7 |
+| 490 | OV000012 | Dukun | kemkes clinical-term | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, SIM RS Siaga Medika INC | 4 |
 | 491 | 11935004 | Obstetrician Occupation | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC | 5 |
 | 492 | SP000075 | Tipe Penyelenggara Faskes Lahir | kemkes sp | MPDN Kematian Bayi | 1 |
-| 493 | 57715-5 | Birth time | loinc | MPDN Kematian Bayi, ePus INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 12 |
-| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi, ePus INC, ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 4 - Cadre, Kobo Neonatus Outcome v2 (3x) | 20 |
-| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 30 |
-| 496 | ANC.B6.DE24 | Number of pregnancies (gravida) | WHO anc-custom-codes | MPDN Kematian Bayi, MPDN Kematian Ibu, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 26 |
-| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 17 |
-| 498 | 57722-1 | Birth plurality of Pregnancy | loinc | MPDN Kematian Bayi, Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
+| 493 | 57715-5 | Birth time | loinc | MPDN Kematian Bayi, ePus INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 7 |
+| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi, ePus INC, ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 11 |
+| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 16 |
+| 496 | ANC.B6.DE24 | Number of pregnancies (gravida) | WHO anc-custom-codes | MPDN Kematian Bayi, MPDN Kematian Ibu, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 13 |
+| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC | 11 |
+| 498 | 57722-1 | Birth plurality of Pregnancy | loinc | MPDN Kematian Bayi | 1 |
 | 499 | 237244005 | Single pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 500 | 65147003 | Twin pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 501 | 64254006 | Triplet pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 502 | OV000394 | Kehamilan Ganda Empat atau Lebih | snomed | MPDN Kematian Bayi | 1 |
-| 503 | 30525-0 | Age | loinc | MPDN Kematian Bayi, ePus INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 4 |
+| 503 | 30525-0 | Age | loinc | MPDN Kematian Bayi, ePus INC | 2 |
 | 504 | COM000002 | Formulir Informasi Kematian Perinatal Lahir Mati | composition-type | MPDN Kematian Bayi | 1 |
 | 505 | COM000003 | Formulir Informasi Kematian Perinatal Lahir Hidup | composition-type | MPDN Kematian Bayi | 1 |
-| 506 | OC000026 | Masa terjadi Kematian Ibu | kemkes clinical-term | MPDN Kematian Ibu, Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
+| 506 | OC000026 | Masa terjadi Kematian Ibu | kemkes clinical-term | MPDN Kematian Ibu | 1 |
 | 507 | 1156679005 | Maternal antenatal period | snomed | MPDN Kematian Ibu | 1 |
 | 508 | 1156682000 | Maternal intrapartum period | snomed | MPDN Kematian Ibu | 1 |
 | 509 | 255410009 | Maternal postpartum | snomed | MPDN Kematian Ibu | 1 |
@@ -530,38 +530,38 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 522 | 878899005 | Inadequate intake of plant fiber | loinc | ePus Pelayanan Pasien | 1 |
 | 523 | 84635008 | Disease process or condition education | snomed | ePus Pelayanan Pasien | 1 |
 | 524 | 10913 | Edukasi Kesehatan Individu | kemkes kptl | ePus Pelayanan Pasien | 1 |
-| 525 | 67775-7 | Level of responsiveness | loinc | ePus Pelayanan Pasien, SIM RS Narmada INC, Kobo Modul PNC | 3 |
+| 525 | 67775-7 | Level of responsiveness | loinc | ePus Pelayanan Pasien, SIM RS Narmada INC | 2 |
 | 526 | 248234008 | Mentally alert | snomed | ePus Pelayanan Pasien | 1 |
 | 527 | LA9340-6 | Alert | loinc | ePus Pelayanan Pasien | 1 |
 | 528 | 20602000 | Apathy | snomed | ePus Pelayanan Pasien | 1 |
 | 529 | 2776000 | Delirium | snomed | ePus Pelayanan Pasien | 1 |
 | 530 | 271782001 | Somnolence | snomed | ePus Pelayanan Pasien | 1 |
-| 531 | LA25163-9 | Stuporous | loinc | ePus Pelayanan Pasien, Kobo Modul PNC | 2 |
+| 531 | LA25163-9 | Stuporous | loinc | ePus Pelayanan Pasien | 1 |
 | 532 | 274659008 | Semicoma | snomed | ePus Pelayanan Pasien | 1 |
 | 533 | 371632003 | Coma | snomed | ePus Pelayanan Pasien | 1 |
-| 534 | LA9343-0 | Unresponsive | loinc | ePus Pelayanan Pasien, Kobo Modul PNC | 2 |
-| 535 | 75910-0 | Canadian triage and acuity scale [CTAS] | loinc | ePus Pelayanan Pasien, SIM RS Narmada INC, Kobo Modul INC | 3 |
-| 536 | LA6113-0 | 2 | loinc | ePus Pelayanan Pasien, Kobo Modul INC, Kobo Modul PNC | 3 |
-| 537 | LA6114-8 | 3 | loinc | ePus Pelayanan Pasien, Kobo Modul INC, Kobo Modul PNC | 3 |
-| 538 | LA10137-0 | 5 | loinc | ePus Pelayanan Pasien, SIM RS Narmada INC, Kobo Modul INC, Kobo Modul PNC | 4 |
+| 534 | LA9343-0 | Unresponsive | loinc | ePus Pelayanan Pasien | 1 |
+| 535 | 75910-0 | Canadian triage and acuity scale [CTAS] | loinc | ePus Pelayanan Pasien, SIM RS Narmada INC | 2 |
+| 536 | LA6113-0 | 2 | loinc | ePus Pelayanan Pasien | 1 |
+| 537 | LA6114-8 | 3 | loinc | ePus Pelayanan Pasien | 1 |
+| 538 | LA10137-0 | 5 | loinc | ePus Pelayanan Pasien, SIM RS Narmada INC | 2 |
 | 539 | 276361009 | Waist circumference | snomed | ePus Pelayanan Pasien | 1 |
 | 540 | 39156-5 | Body mass index (BMI) [Ratio] | loinc | ePus Pelayanan Pasien, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Narmada KIA | 6 |
 | 541 | 59575-1 | Body mass index (BMI) [Percentile] Per age | loinc | ePus Pelayanan Pasien | 1 |
 | 542 | 248324001 | Well nourished | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
 | 543 | 248325000 | Undernourished | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
-| 544 | OI000001 | Gizi Buruk | kemkes clinical-term | ePus Pelayanan Pasien, ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2) (3x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), Kobo Modul Neonatus | 12 |
+| 544 | OI000001 | Gizi Buruk | kemkes clinical-term | ePus Pelayanan Pasien, ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2) (3x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
 | 545 | 248342006 | Underweight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak, ASIK CKG Lansia (27 Apr 2026), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024 (2x), SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu | 11 |
 | 546 | 43664005 | Normal weight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu | 10 |
 | 547 | 238131007 | Overweight | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu | 11 |
 | 548 | 414915002 | Obese | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu | 11 |
-| 549 | 8480-6 | Systolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, eKohort INC, SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC (2x), SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC (2x), SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC (2x), SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 49 |
-| 550 | 8462-4 | Diastolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, eKohort ANC, eKohort INC, SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 47 |
-| 551 | 9279-1 | Respiratory rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort ANC, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL (2x), SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL (2x), SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC (2x) | 41 |
-| 552 | 8867-4 | Heart rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, eKohort ANC, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL (2x), SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL (2x), SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC (2x) | 39 |
+| 549 | 8480-6 | Systolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, eKohort INC, SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS PKU PNC | 30 |
+| 550 | 8462-4 | Diastolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, eKohort ANC, eKohort INC, SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 28 |
+| 551 | 9279-1 | Respiratory rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort ANC, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC | 26 |
+| 552 | 8867-4 | Heart rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, eKohort ANC, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC | 24 |
 | 553 | 8884-9 | Heart rate rythm | loinc | ePus Pelayanan Pasien | 1 |
 | 554 | 271636001 | Pulse regular | snomed | ePus Pelayanan Pasien | 1 |
 | 555 | 61086009 | Pulse irregular | snomed | ePus Pelayanan Pasien | 1 |
-| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC (2x) | 24 |
+| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL, SISMAL Regmal 1 | 16 |
 | 557 | 129861002 | Physical activity finding | snomed | ePus Pelayanan Pasien | 1 |
 | 558 | 80316-3 | Pain scale [Type] | loinc | ePus Pelayanan Pasien | 1 |
 | 559 | 81765008 | No pain | snomed | ePus Pelayanan Pasien | 1 |
@@ -571,15 +571,15 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 563 | 1991000124105 | Referred by self | snomed | ePus Pelayanan Pasien | 1 |
 | 564 | outp | From outpatient department | http://terminology.hl7. org/CodeSystem/admit -source | ePus Pelayanan Pasien | 1 |
 | 565 | SP000020 | Umur Bulan | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Goetoeng ANC, SIM RS Goetoeng PNC | 11 |
-| 566 | SP000021 | Umur Hari | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Goetoeng ANC, SIM RS Goetoeng PNC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (3x) | 12 |
-| 567 | 32418-6 | Obstetric trimester Stated | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC (3x) | 8 |
-| 568 | ANC.SS.DE13 | Trimester ke | kemkes anc-custom-codes | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC (3x) | 8 |
+| 566 | SP000021 | Umur Hari | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Goetoeng ANC, SIM RS Goetoeng PNC | 10 |
+| 567 | 32418-6 | Obstetric trimester Stated | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC | 3 |
+| 568 | ANC.SS.DE13 | Trimester ke | kemkes anc-custom-codes | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC | 3 |
 | 569 | hosp-trans | Transferred from other hospital | http://terminology.hl7.org/CodeSystem/admit-source | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
-| 570 | 11881-0 | Uterus Fundal height Tape measure | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 36 |
-| 571 | ANC.B8.DE105 | Symphysis-fundal height | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS MPH ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 13 |
+| 570 | 11881-0 | Uterus Fundal height Tape measure | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 21 |
+| 571 | ANC.B8.DE105 | Symphysis-fundal height | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS MPH ANC | 7 |
 | 572 | 32392-3 | Deep tendon reflex of Patellar | loinc | ePus Kunjungan Ibu Hamil | 1 |
-| 573 | 55283-6 | Fetal Heart rate | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 25 |
-| 574 | ANC.B8.DE107 | Fetal heart rate | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC, eKohort ANC, eKohort INC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 16 |
+| 573 | 55283-6 | Fetal Heart rate | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 15 |
+| 574 | ANC.B8.DE107 | Fetal heart rate | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC, eKohort ANC, eKohort INC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 10 |
 | 575 | 249111004 | Engagement of head | loinc | ePus Kunjungan Ibu Hamil (2x), eKohort INC | 2 |
 | 576 | ANC.SS.DE46 | Kepala Terhadap PAP | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), eKohort INC | 2 |
 | 577 | 62098001 | Head not engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC | 4 |
@@ -589,9 +589,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 581 | 6096002 | Breech presentation | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC (2x), eKohort INC | 4 |
 | 582 | 260415000 | Not detected | snomed | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
 | 583 | 246435002 | Number of fetuses | snomed | ePus Kunjungan Ibu Hamil (2x) | 1 |
-| 584 | ANC.B8.DE109 | Number of fetuses | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 | 15 |
+| 584 | ANC.B8.DE109 | Number of fetuses | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC | 6 |
 | 585 | 99.38 | Administration of tetanus toxoid | icd-9-cm | ePus Kunjungan Ibu Hamil | 1 |
-| 586 | SP000122 | Catat di Buku KIA | kemkes sp | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 18 |
+| 586 | SP000122 | Catat di Buku KIA | kemkes sp | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 9 |
 | 587 | SP000115 | Pemeriksaan Laboratorium Thalassemia | kemkes sp | ePus Kunjungan Ibu Hamil (2x) | 1 |
 | 588 | 94537-8 | Hemoglobin panel - Blood by HPLC | loinc | ePus Kunjungan Ibu Hamil | 1 |
 | 589 | 718-7 | Hemoglobin [Mass/volume] in Blood | kemkes sp | ePus Kunjungan Ibu Hamil (2x) | 1 |
@@ -608,13 +608,13 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 600 | 1156040003 | Self reported | snomed | ePus Kunjungan Ibu Hamil | 1 |
 | 601 | 257514003 | Member of public involved incidentally | snomed | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
 | 602 | 106292003 | Professional nurse | snomed | ePus Kunjungan Ibu Hamil, ePus INC, Dapodik PAUD | 3 |
-| 603 | O13 | Gestational [pregnancy-induced] hypertension without significant proteinuria | icd-10 | ePus Kunjungan Ibu Hamil, ePus PNC, ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Goetoeng INC (4x), SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 13 |
+| 603 | O13 | Gestational [pregnancy-induced] hypertension without significant proteinuria | icd-10 | ePus Kunjungan Ibu Hamil, ePus PNC, ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Goetoeng INC (4x) | 9 |
 | 604 | O06.9 | Unspecified abortion Complete or unspecified, without complication | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
 | 605 | O20.9 | Haemorrhage in early pregnancy, unspecified | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
 | 606 | O98.9 | Unspecified maternal infectious or parasitic disease complicating pregnancy, childbirth and the puerperium | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
 | 607 | O42.9 | Premature rupture of membranes, unspecified | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
 | 608 | O99.8 | Other specified diseases and conditions complicating pregnancy, childbirth and the puerperium | icd-10 | ePus Kunjungan Ibu Hamil, SIM RS Goetoeng INC (2x) | 2 |
-| 609 | SP000383 | Keadaan Ibu Saat Tiba | kemkes sp | ePus Kunjungan Ibu Hamil, ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 3 - PNC | 12 |
+| 609 | SP000383 | Keadaan Ibu Saat Tiba | kemkes sp | ePus Kunjungan Ibu Hamil, ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
 | 610 | 63238001 | Dead on arrival at hospital | snomed | ePus Kunjungan Ibu Hamil | 1 |
 | 611 | 438949009 | Alive | snomed | ePus Kunjungan Ibu Hamil, ePus INC (3x), ePus PNC, ELSMIL Pasca Persalinan | 4 |
 | 612 | 119361006 | Plasma | snomed | ePus Laboratorium | 1 |
@@ -629,7 +629,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 621 | LA11882-0 | Detected | snomed | ePus Laboratorium | 1 |
 | 622 | LA11883-8 | Not detected | snomed | ePus Laboratorium | 1 |
 | 623 | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | loinc | ePus Laboratorium (3x) | 1 |
-| 624 | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus (3x), SIM RS Goetoeng Diabetes Melitus, Kobo Buku KIA 1 - ANC (2x) | 10 |
+| 624 | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus (3x), SIM RS Goetoeng Diabetes Melitus | 9 |
 | 625 | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 626 | 3084-1 | Urate [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
 | 627 | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus (3x), SIM RS Goetoeng Diabetes Melitus | 9 |
@@ -645,20 +645,20 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 637 | 2157-6 | Creatine kinase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
 | 638 | 20977-5 | Urea [Mass/volume] in Blood | loinc | ePus Laboratorium (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 639 | 2885-2 | Protein [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
-| 640 | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Buku KIA 1 - ANC | 6 |
+| 640 | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 641 | 58410-2 | CBC panel - Blood by Automated count | loinc | ePus Laboratorium (2x), ASIK CKG Balita (v2) (2x) | 2 |
-| 642 | 6690-2 | Leukocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium (5x), Kobo Buku KIA 1 - ANC | 2 |
+| 642 | 6690-2 | Leukocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium (5x) | 1 |
 | 643 | 789-8 | Erythrocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium, ASIK CKG Balita (v2) | 2 |
-| 644 | 4544-3 | Hematocrit [Volume Fraction] of Blood by Automated count | loinc | ePus Laboratorium, Kobo Buku KIA 1 - ANC | 2 |
+| 644 | 4544-3 | Hematocrit [Volume Fraction] of Blood by Automated count | loinc | ePus Laboratorium | 1 |
 | 645 | 787-2 | MCV [Entitic mean volume] in Red Blood Cells by Automated count | loinc | ePus Laboratorium | 1 |
 | 646 | 785-6 | MCH [Entitic mass] by Automated count | loinc | ePus Laboratorium | 1 |
 | 647 | 786-4 | MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count | loinc | ePus Laboratorium | 1 |
 | 648 | 26453-1 | Erythrocytes [#/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
-| 649 | 26464-8 | Leukocytes [#/volume] in Blood | loinc | ePus Laboratorium (6x), ePus MTBS (3x), SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 6 |
-| 650 | 26515-7 | Platelets [#/volume] in Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 9 |
+| 649 | 26464-8 | Leukocytes [#/volume] in Blood | loinc | ePus Laboratorium (6x), ePus MTBS (3x) | 2 |
+| 650 | 26515-7 | Platelets [#/volume] in Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 651 | 20570-8 | Hematocrit [Volume Fraction] of Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x) | 2 |
 | 652 | 11067-6 | Bleeding time | loinc | ePus Laboratorium (3x) | 1 |
-| 653 | 30341-2 | Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | loinc | ePus Laboratorium (3x), SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 5 |
+| 653 | 30341-2 | Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | loinc | ePus Laboratorium (3x) | 1 |
 | 654 | 17009-2 | IgM [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
 | 655 | 3183-1 | Clotting time of Blood by Lee White method | loinc | ePus Laboratorium (3x) | 1 |
 | 656 | 17007-6 | IgG [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
@@ -718,7 +718,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 710 | 105104-4 | Leukocytes [#/area] in Urine sediment | loinc | ePus Laboratorium (3x) | 1 |
 | 711 | 105908-8 | Bacteria [#/area] in Urine sediment | loinc | ePus Laboratorium (3x) | 1 |
 | 712 | 2106-3 | Choriogonadotropin [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
-| 713 | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | loinc | ePus Laboratorium (3x), SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Buku KIA 1 - ANC | 6 |
+| 713 | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | loinc | ePus Laboratorium (3x) | 1 |
 | 714 | K2 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
 | 715 | K3 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
 | 716 | K4 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
@@ -726,90 +726,90 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 718 | K6 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
 | 719 | 305956004 | Referral by physician | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
 | 720 | 306052007 | Referral by midwife | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
-| 721 | SP000116 | Rujukan dari Puskesmas Pembantu | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 11 |
-| 722 | SP000117 | Rujukan dari Puskesmas | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC (8x), SIM RS Goetoeng PNC, SIM RS Goetoeng BBL (9x), SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 20 |
-| 723 | SP000118 | Rujukan dari Rumah Bersalin / Klinik | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 11 |
-| 724 | SP000119 | Rujukan dari Rumah Sakit | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Goetoeng BBL, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 14 |
-| 725 | 11977-6 | [#] Parity | loinc | ePus ANC (2x), ePus PNC (2x), SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 27 |
-| 726 | 69043-8 | Other pregnancy outcomes # | loinc | ePus ANC, ePus PNC, SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 27 |
-| 727 | ANC.B6.DE32 | Parity | WHO anc-custom-codes | ePus ANC, ePus PNC, SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 25 |
+| 721 | SP000116 | Rujukan dari Puskesmas Pembantu | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 722 | SP000117 | Rujukan dari Puskesmas | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC (8x), SIM RS Goetoeng PNC, SIM RS Goetoeng BBL (9x) | 15 |
+| 723 | SP000118 | Rujukan dari Rumah Bersalin / Klinik | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 724 | SP000119 | Rujukan dari Rumah Sakit | kemkes sp | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Goetoeng BBL | 9 |
+| 725 | 11977-6 | [#] Parity | loinc | ePus ANC (2x), ePus PNC (2x), SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 13 |
+| 726 | 69043-8 | Other pregnancy outcomes # | loinc | ePus ANC, ePus PNC, SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 13 |
+| 727 | ANC.B6.DE32 | Parity | WHO anc-custom-codes | ePus ANC, ePus PNC, SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 12 |
 | 728 | SP000050 | Riwayat Onset Persalinan | loinc | ePus ANC, ePus PNC | 2 |
-| 729 | SP000132 | Memiliki Buku KIA | kemkes sp | ePus ANC, ePus PNC, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 11 |
-| 730 | 56077-1 | Body weight --pre current pregnancy | loinc | ePus ANC, ePus PNC, ELSMIL Ibu Hamil, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 9 |
-| 731 | ANC.B8.DE2 | Pre-gestational weight | WHO anc-custom-codes | ePus ANC, ePus PNC, ELSMIL Ibu Hamil, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 9 |
+| 729 | SP000132 | Memiliki Buku KIA | kemkes sp | ePus ANC, ePus PNC, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 6 |
+| 730 | 56077-1 | Body weight --pre current pregnancy | loinc | ePus ANC, ePus PNC, ELSMIL Ibu Hamil | 3 |
+| 731 | ANC.B8.DE2 | Pre-gestational weight | WHO anc-custom-codes | ePus ANC, ePus PNC, ELSMIL Ibu Hamil | 3 |
 | 732 | 404684003 | Clinical finding | snomed | ePus ANC, ePus Tumbang Anak (2x) | 2 |
 | 733 | 3401000175105 | Total number of prenatal care visits | snomed | ePus ANC, eKohort ANC | 2 |
-| 734 | SP000134 | Jenis Lokasi Screening | kemkes sp | ePus ANC, ePus PNC, Kobo Modul PNC | 3 |
+| 734 | SP000134 | Jenis Lokasi Screening | kemkes sp | ePus ANC, ePus PNC | 2 |
 | 735 | 82242000 | Children’s hospital | snomed | ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 5 |
 | 736 | 104 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC, ELSMIL Pasca Persalinan | 4 |
-| 737 | OT000003 | RS ODHA | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, Kobo Modul PNC | 7 |
-| 738 | OT000004 | Bidan Praktek Mandiri | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul PNC | 10 |
-| 739 | SP000131 | Status Pindahan | kemkes sp | ePus ANC, ePus INC, ePus PNC, Kobo Modul INC, Kobo Modul PNC | 5 |
-| 740 | 10197-2 | Physical findings of Eye Narrative | loinc | ePus ANC (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC (2x) | 5 |
-| 741 | ANC.SS.DE26 | Pemeriksaan Fisik Konjungtiva | kemkes anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 742 | A | Abnormal | v3-ObservationInterpretation | ePus ANC (13x), ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (5x), SIM RS MPH BBL (8x), SIM RS Siaga Medika BBL (8x), Kobo Modul Neonatus (8x), Kobo Buku KIA 1 - ANC (12x) | 8 |
-| 743 | ANC.SS.DE27 | Pemeriksaan Fisik Sklera | kemkes anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 744 | 10206-1 | Physical findings of Skin Narrative | loinc | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 5 |
-| 745 | 11411-6 | Physical findings of Neck Narrative | loinc | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 746 | ANC.SS.DE28 | Pemeriksaan Fisik Leher | kemkes anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 737 | OT000003 | RS ODHA | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 738 | OT000004 | Bidan Praktek Mandiri | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 739 | SP000131 | Status Pindahan | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
+| 740 | 10197-2 | Physical findings of Eye Narrative | loinc | ePus ANC (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
+| 741 | ANC.SS.DE26 | Pemeriksaan Fisik Konjungtiva | kemkes anc-custom-codes | ePus ANC | 1 |
+| 742 | A | Abnormal | v3-ObservationInterpretation | ePus ANC (13x), ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (5x), SIM RS MPH BBL (8x), SIM RS Siaga Medika BBL (8x) | 6 |
+| 743 | ANC.SS.DE27 | Pemeriksaan Fisik Sklera | kemkes anc-custom-codes | ePus ANC | 1 |
+| 744 | 10206-1 | Physical findings of Skin Narrative | loinc | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
+| 745 | 11411-6 | Physical findings of Neck Narrative | loinc | ePus ANC | 1 |
+| 746 | ANC.SS.DE28 | Pemeriksaan Fisik Leher | kemkes anc-custom-codes | ePus ANC | 1 |
 | 747 | N | Normal | kemkes anc-custom-codes | ePus ANC | 1 |
-| 748 | 32453-3 | Physical findings of Mouth | loinc | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 4 |
+| 748 | 32453-3 | Physical findings of Mouth | loinc | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 749 | ANC.SS.DE29 | Pemeriksaan Fisik Area Mulut | v3-ObservationInterpretation | ePus ANC | 1 |
 | 750 | 297268004 | Ear, nose and throat finding | snomed | ePus ANC | 1 |
-| 751 | ANC.SS.DE30 | Pemeriksaan Fisik Telinga Hidung dan Tenggorokan (THT) | kemkes anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 752 | 10200-4 | Physical findings of Heart Narrative | loinc | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 751 | ANC.SS.DE30 | Pemeriksaan Fisik Telinga Hidung dan Tenggorokan (THT) | kemkes anc-custom-codes | ePus ANC | 1 |
+| 752 | 10200-4 | Physical findings of Heart Narrative | loinc | ePus ANC | 1 |
 | 753 | ANC.SS.DE31 | Pemeriksaan Fisik Dada (Auskultasi Jantung) | kemkes anc-custom-codes | ePus ANC | 1 |
 | 754 | 301230006 | Lung finding | snomed | ePus ANC | 1 |
 | 755 | ANC.SS.DE32 | Pemeriksaan Fisik Dada (Auskultasi Paru) | kemkes anc-custom-codes | ePus ANC | 1 |
-| 756 | 10191-5 | Physical findings of Abdomen Narrative | loinc | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 5 |
+| 756 | 10191-5 | Physical findings of Abdomen Narrative | loinc | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 757 | ANC.SS.DE33 | Pemeriksaan Fisik Perut | kemkes anc-custom-codes | ePus ANC | 1 |
 | 758 | 116307009 | Finding of upper limb | snomed | ePus ANC | 1 |
-| 759 | ANC.SS.DE34 | Pemeriksaan Fisik Tungkai | kemkes anc-custom-codes | ePus ANC (4x), Kobo Buku KIA 1 - ANC | 2 |
+| 759 | ANC.SS.DE34 | Pemeriksaan Fisik Tungkai | kemkes anc-custom-codes | ePus ANC (4x) | 1 |
 | 760 | 116312005 | Finding of lower limb | snomed | ePus ANC | 1 |
 | 761 | 102572006 | Edema of lower extremity (finding) | snomed | ePus ANC | 1 |
 | 762 | 299412000 | Finding of patella structure | snomed | ePus ANC | 1 |
-| 763 | ANC.B8.DE17 | Systolic blood pressure | WHO anc-custom-codes | ePus ANC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 8 |
-| 764 | ANC.B8.DE19 | Diastolic blood pressure | WHO anc-custom-codes | ePus ANC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 8 |
-| 765 | ANC.SS.DE2 | Pernapasan | kemkes anc-custom-codes | ePus ANC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC | 5 |
+| 763 | ANC.B8.DE17 | Systolic blood pressure | WHO anc-custom-codes | ePus ANC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC | 6 |
+| 764 | ANC.B8.DE19 | Diastolic blood pressure | WHO anc-custom-codes | ePus ANC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC | 6 |
+| 765 | ANC.SS.DE2 | Pernapasan | kemkes anc-custom-codes | ePus ANC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA | 4 |
 | 766 | 8478-0 | Mean blood pressure | loinc | ePus ANC | 1 |
 | 767 | SP000634 | Tinggi fundus terdeteksi | kemkes sp | ePus ANC | 1 |
 | 768 | SP000635 | Tinggi fundus jari | kemkes sp | ePus ANC | 1 |
-| 769 | 11850-5 | Gestational sac Mean diameter US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (3x), Kobo Buku KIA 1 - ANC | 3 |
-| 770 | ANC.SS.DE36 | Gestational sac (GS) USG | kemkes anc-custom-codes | ePus ANC, SIM RS Siaga Medika ANC, Kobo Buku KIA 1 - ANC (2x) | 3 |
-| 771 | 11957-8 | Fetal Crown Rump length US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
-| 772 | ANC.SS.DE37 | Fetal Crown Rump Length (CRL) USG | kemkes anc-custom-codes | ePus ANC, SIM RS Siaga Medika ANC, Kobo Buku KIA 1 - ANC | 3 |
-| 773 | 11948-7 | Fetal Heart rate US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
-| 774 | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | kemkes anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 775 | 11820-8 | Fetal Head Diameter.biparietal US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
-| 776 | 11984-2 | Fetal Head Circumference US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
-| 777 | 11979-2 | Fetal Abdomen Circumference US | loinc | ePus ANC (2x), Kobo Buku KIA 1 - ANC | 2 |
-| 778 | 11963-6 | Fetal Femur diaphysis [Length] US | loinc | ePus ANC (2x), Kobo Buku KIA 1 - ANC | 2 |
-| 779 | 11832-3 | Fetal Amniotic fluid space Maximum diameter largest pocket US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
+| 769 | 11850-5 | Gestational sac Mean diameter US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (3x) | 2 |
+| 770 | ANC.SS.DE36 | Gestational sac (GS) USG | kemkes anc-custom-codes | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 771 | 11957-8 | Fetal Crown Rump length US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
+| 772 | ANC.SS.DE37 | Fetal Crown Rump Length (CRL) USG | kemkes anc-custom-codes | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 773 | 11948-7 | Fetal Heart rate US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
+| 774 | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | kemkes anc-custom-codes | ePus ANC | 1 |
+| 775 | 11820-8 | Fetal Head Diameter.biparietal US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
+| 776 | 11984-2 | Fetal Head Circumference US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
+| 777 | 11979-2 | Fetal Abdomen Circumference US | loinc | ePus ANC (2x) | 1 |
+| 778 | 11963-6 | Fetal Femur diaphysis [Length] US | loinc | ePus ANC (2x) | 1 |
+| 779 | 11832-3 | Fetal Amniotic fluid space Maximum diameter largest pocket US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
 | 780 | 365662002 | Finding of amniotic fluid appearance | snomed | ePus ANC, ePus INC | 2 |
 | 781 | 168090003 | Amniotic fluid clear | snomed | ePus ANC, ePus INC | 2 |
 | 782 | 408781009 | Straw colored amniotic fluid | snomed | ePus ANC, ePus INC | 2 |
 | 783 | 249134008 | Bloodstained liquor | snomed | ePus ANC, ePus INC | 2 |
 | 784 | 168092006 | Amniotic fluid -meconium stain | snomed | ePus ANC, ePus INC | 2 |
 | 785 | 11525-3 | US for pregnancy | snomed | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
-| 786 | 271692001 | Presentation of fetus | snomed | ePus ANC, ePus INC, eKohort INC, Kobo Buku KIA 1 - ANC | 4 |
+| 786 | 271692001 | Presentation of fetus | snomed | ePus ANC, ePus INC, eKohort INC | 3 |
 | 787 | ANC.SS.DE41 | Letak Janin USG | WHO anc-custom-codes | ePus ANC, SIM RS Siaga Medika ANC | 2 |
 | 788 | 398236008 | Intrauterine | snomed | ePus ANC, ePus INC | 2 |
 | 789 | 298109001 | Ectopic | snomed | ePus ANC, ePus INC | 2 |
 | 790 | 72155-5 | Position in womb Fetus [RHEA] | snomed | ePus ANC, SIM RS Siaga Medika ANC | 2 |
-| 791 | 11877-8 | Fetal presentation US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
-| 792 | 11878-6 | Number of fetuses by US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x), Kobo Buku KIA 1 - ANC | 3 |
+| 791 | 11877-8 | Fetal presentation US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
+| 792 | 11878-6 | Number of fetuses by US | loinc | ePus ANC (2x), SIM RS Siaga Medika ANC (2x) | 2 |
 | 793 | 249111004 | Engagement of head | snomed | ePus ANC, ePus INC | 2 |
 | 794 | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | kemkes anc-custom-codes | ePus ANC, ELSMIL Ibu Hamil, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA | 5 |
-| 795 | 11888-5 | Gestational age US composite estimate | loinc | ePus ANC (2x), Kobo Buku KIA 1 - ANC (2x) | 2 |
-| 796 | ANC.B6.DE20 | Ultrasound | WHO anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC (2x) | 2 |
-| 797 | 11781-2 | Delivery date US composite estimate | loinc | ePus ANC (2x), Kobo Buku KIA 1 - ANC (2x) | 2 |
-| 798 | ANC.SS.DE40 | Hari Perkiraan Lahir (HPL) USG | kemkes anc-custom-codes | ePus ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 795 | 11888-5 | Gestational age US composite estimate | loinc | ePus ANC (2x) | 1 |
+| 796 | ANC.B6.DE20 | Ultrasound | WHO anc-custom-codes | ePus ANC | 1 |
+| 797 | 11781-2 | Delivery date US composite estimate | loinc | ePus ANC (2x) | 1 |
+| 798 | ANC.SS.DE40 | Hari Perkiraan Lahir (HPL) USG | kemkes anc-custom-codes | ePus ANC | 1 |
 | 799 | 34842007 | Antepartum hemorrhage | snomed | ePus ANC | 1 |
 | 800 | 386639001 | Termination of pregnancy | snomed | ePus ANC, ePus INC, SiGizi Ibu Nifas | 3 |
 | 801 | 91302008 | Sepsis | snomed | ePus ANC | 1 |
 | 802 | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf | ePus ANC, ePus PNC | 2 |
-| 803 | OC000001 | Jarak kehamilan | kemkes clinical-term | ePus ANC, ePus INC, SiGizi Kohort Ibu, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC | 13 |
-| 804 | ANC.SS.DE53 | Jarak kehamilan | kemkes anc-custom-codes | ePus ANC, ePus INC, SiGizi Kohort Ibu, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC | 13 |
+| 803 | OC000001 | Jarak kehamilan | kemkes clinical-term | ePus ANC, ePus INC, SiGizi Kohort Ibu, SIM RS PKU INC | 4 |
+| 804 | ANC.SS.DE53 | Jarak kehamilan | kemkes anc-custom-codes | ePus ANC, ePus INC, SiGizi Kohort Ibu, SIM RS PKU INC | 4 |
 | 805 | 66071002 | Viral hepatitis type B | snomed | ePus ANC | 1 |
 | 806 | 76272004 | Syphilis | snomed | ePus ANC | 1 |
 | 807 | 61462000 | Malaria | snomed | ePus ANC, ePus MTBS | 2 |
@@ -824,11 +824,11 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 816 | 124736009 | Compound presentation | snomed | ePus INC | 1 |
 | 817 | 289282009 | Amniotic membrane finding | snomed | ePus INC, eKohort INC | 2 |
 | 818 | 249125003 | Intact membranes | snomed | ePus INC, eKohort INC | 2 |
-| 819 | SP000120 | Non-intact membrane | snomed | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC | 9 |
-| 820 | SP000123 | Integrasi Program | kemkes sp | ePus INC, SITB TB 01, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 821 | SP000124 | Obat anti malaria | kemkes sp | ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul INC, Kobo Modul PNC | 17 |
-| 822 | SP000125 | Obar anti hepatitis B | kemkes sp | ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul INC, Kobo Modul PNC | 17 |
-| 823 | 76516-4 | Gestational age—​at birth | loinc | ePus INC, ELSMIL Baduta, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL (2x), SIM RS At tin INC, SIM RS At tin BBL (2x), SIM RS Nirmala INC, SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul INC, Kobo Modul Neonatus, Kobo Buku KIA 2 - Luaran Kehamilan (2x), Kobo Buku KIA 4 - Cadre | 23 |
+| 819 | SP000120 | Non-intact membrane | snomed | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 820 | SP000123 | Integrasi Program | kemkes sp | ePus INC, SITB TB 01, SIM RS PKU INC | 3 |
+| 821 | SP000124 | Obat anti malaria | kemkes sp | ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC | 5 |
+| 822 | SP000125 | Obar anti hepatitis B | kemkes sp | ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC | 5 |
+| 823 | 76516-4 | Gestational age—​at birth | loinc | ePus INC, ELSMIL Baduta, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC | 12 |
 | 824 | 118215003 | Delivery finding | snomed | ePus INC | 1 |
 | 825 | 125677006 | Relative | snomed | ePus INC | 1 |
 | 826 | 200138003 | Vacuum extractor delivery - delivered | snomed | ePus INC, SiGizi Kohort Ibu | 2 |
@@ -845,20 +845,20 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 837 | 289739009 | Uterine contractions problem | snomed | ePus INC (2x) | 1 |
 | 838 | 364270005 | Frequency of uterine contraction | snomed | ePus INC (2x) | 1 |
 | 839 | 364274001 | Duration of uterine contraction | snomed | ePus INC (2x) | 1 |
-| 840 | SP000399 | <20 detik | kemkes sp | ePus INC (2x), Kobo Modul INC (2x) | 2 |
-| 841 | SP000400 | 20-40 detik | kemkes sp | ePus INC (2x), Kobo Modul INC (2x) | 2 |
-| 842 | SP000401 | >40 detik | kemkes sp | ePus INC (2x), Kobo Modul INC (2x) | 2 |
+| 840 | SP000399 | <20 detik | kemkes sp | ePus INC (2x) | 1 |
+| 841 | SP000400 | 20-40 detik | kemkes sp | ePus INC (2x) | 1 |
+| 842 | SP000401 | >40 detik | kemkes sp | ePus INC (2x) | 1 |
 | 843 | 249120008 | Onset of labor first stage | snomed | ePus INC, eKohort INC | 2 |
 | 844 | 249160009 | Onset of labor second stage | snomed | ePus INC, eKohort INC (2x) | 2 |
-| 845 | OC000018 | Onset Kala III | kemkes clinical-term | ePus INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 6 |
+| 845 | OC000018 | Onset Kala III | kemkes clinical-term | ePus INC, SIM RS PKU INC | 2 |
 | 846 | 236994008 | Placental delivery procedure | kemkes clinical-term | ePus INC | 1 |
 | 847 | 289267004 | Finding of completeness of placenta | snomed | ePus INC | 1 |
 | 848 | 249170006 | Complete placenta at delivery | snomed | ePus INC | 1 |
 | 849 | 268479002 | Incomplete placenta at delivery | snomed | ePus INC | 1 |
-| 850 | SP000127 | Injeksi Oksitosin | kemkes sp | ePus INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 3 - PNC | 7 |
+| 850 | SP000127 | Injeksi Oksitosin | kemkes sp | ePus INC, SIM RS PKU INC | 2 |
 | 851 | 302384005 | Controlled cord traction of placenta | snomed | ePus INC, eKohort INC | 2 |
 | 852 | 236996005 | Abdominal uterine fundal massage | snomed | ePus INC, eKohort INC | 2 |
-| 853 | OC000019 | Onset Kala IV | kemkes clinical-term | ePus INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 6 |
+| 853 | OC000019 | Onset Kala IV | kemkes clinical-term | ePus INC, SIM RS PKU INC | 2 |
 | 854 | 9293002 | Atony of uterus | snomed | ePus INC (2x) | 1 |
 | 855 | 1148943004 | Retention of placenta and uterine membrane | snomed | ePus INC | 1 |
 | 856 | 283380005 | Laceration of perineum | snomed | ePus INC | 1 |
@@ -866,39 +866,39 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 858 | 118216002 | Labor finding | snomed | ePus INC | 1 |
 | 859 | 719051004 | Quantity of postpartum maternal blood loss | snomed | ePus INC | 1 |
 | 860 | 717809003 | Immediate postpartum care | snomed | ePus INC (2x) | 1 |
-| 861 | 8462-4 | Diastolic blood pressure | snomed | ePus INC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS PKU INC, SIM RS Goetoeng Hipertensi, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC | 12 |
+| 861 | 8462-4 | Diastolic blood pressure | snomed | ePus INC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS PKU INC, SIM RS Goetoeng Hipertensi | 9 |
 | 862 | 199746004 | Obstructed labor | snomed | ePus INC | 1 |
 | 863 | 38010008 | Intrapartum hemorrhage | snomed | ePus INC (2x) | 1 |
 | 864 | 44223004 | Premature rupture of membranes | snomed | ePus INC | 1 |
 | 865 | 199745000 | Complication occurring during labor and delivery | snomed | ePus INC (2x) | 1 |
-| 866 | SP000379 | Tatalaksana Komplikasi Persalinan | kemkes sp | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 10 |
-| 867 | 63893-2 | Outcome of pregnancy | loinc | ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 12 |
-| 868 | LA14270-5 | Live birth | loinc | ePus INC (2x), SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 12 |
-| 869 | LA14271-3 | Stillborn | loinc | ePus INC (2x), SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 12 |
-| 870 | LA14272-1 | Miscarriage | loinc | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
-| 871 | LA14273-9 | Induced abortion | loinc | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
+| 866 | SP000379 | Tatalaksana Komplikasi Persalinan | kemkes sp | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 867 | 63893-2 | Outcome of pregnancy | loinc | ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 7 |
+| 868 | LA14270-5 | Live birth | loinc | ePus INC (2x), SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 7 |
+| 869 | LA14271-3 | Stillborn | loinc | ePus INC (2x), SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 7 |
+| 870 | LA14272-1 | Miscarriage | loinc | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 6 |
+| 871 | LA14273-9 | Induced abortion | loinc | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 6 |
 | 872 | 409014006 | Delivery care management | snomed | ePus INC, ePus PNC | 2 |
-| 873 | SP000130 | Menggunakan Partograf | kemkes sp | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 3 - PNC | 11 |
+| 873 | SP000130 | Menggunakan Partograf | kemkes sp | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
 | 874 | 431868002 | Initiation of breastfeeding | snomed | ePus INC, eKohort INC | 2 |
-| 875 | OC000016 | Waktu Inisiasi Menyusui Dini | kemkes clinical-term | ePus INC, eKohort INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC | 16 |
-| 876 | OV000014 | Kurang dari 1 Jam | kemkes clinical-term | ePus INC, eKohort INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC | 16 |
-| 877 | OV000015 | Lebih dari 1 Jam | kemkes clinical-term | ePus INC, eKohort INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC | 16 |
+| 875 | OC000016 | Waktu Inisiasi Menyusui Dini | kemkes clinical-term | ePus INC, eKohort INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC | 6 |
+| 876 | OV000014 | Kurang dari 1 Jam | kemkes clinical-term | ePus INC, eKohort INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC | 6 |
+| 877 | OV000015 | Lebih dari 1 Jam | kemkes clinical-term | ePus INC, eKohort INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC | 6 |
 | 878 | 409063005 | Counselling | snomed | ePus INC (2x) | 1 |
-| 879 | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | kemkes clinical-term | ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 19 |
-| 880 | SP000121 | Edukasi Tanda Bahaya Baru Lahir | kemkes sp | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 10 |
-| 881 | ED000009 | Edukasi IMD dan ASI Eksklusif | kemkes clinical-term | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 11 |
-| 882 | ED000005 | Edukasi Gizi | kemkes clinical-term | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 10 |
-| 883 | PC000001 | Perawatan Tali Pusat | kemkes clinical-term | ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC | 25 |
-| 884 | ED000010 | Edukasi PHBS | kemkes clinical-term | ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 19 |
-| 885 | SP000126 | ARV Profilaksis | kemkes sp | ePus INC, SIHEPI Rekap 3e, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 9 |
+| 879 | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | kemkes clinical-term | ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 10 |
+| 880 | SP000121 | Edukasi Tanda Bahaya Baru Lahir | kemkes sp | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 881 | ED000009 | Edukasi IMD dan ASI Eksklusif | kemkes clinical-term | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 882 | ED000005 | Edukasi Gizi | kemkes clinical-term | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 883 | PC000001 | Perawatan Tali Pusat | kemkes clinical-term | ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 12 |
+| 884 | ED000010 | Edukasi PHBS | kemkes clinical-term | ePus INC, ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 10 |
+| 885 | SP000126 | ARV Profilaksis | kemkes sp | ePus INC, SIHEPI Rekap 3e, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 4 |
 | 886 | 249222005 | Neonatal condition | snomed | ePus INC, ELSMIL Pasca Persalinan | 2 |
-| 887 | Z39.2 | Routine postpartum follow-up | icd-10 | ePus PNC, SIM RS Tripat PNC, SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
+| 887 | Z39.2 | Routine postpartum follow-up | icd-10 | ePus PNC, SIM RS Tripat PNC, SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 888 | 289530006 | Vaginal bleeding | snomed | ePus PNC | 1 |
-| 889 | 81661-1 | Blood Loss [Volume] Measured | loinc | ePus PNC, eKohort INC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
+| 889 | 81661-1 | Blood Loss [Volume] Measured | loinc | ePus PNC, eKohort INC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
 | 890 | 364297003 | Female perineum observable | loinc | ePus PNC | 1 |
-| 891 | OC000020 | Tanda Infeksi Perineum | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
-| 892 | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
-| 893 | 32422-8 | Physical findings of breast | loinc | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
+| 891 | OC000020 | Tanda Infeksi Perineum | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 892 | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 893 | 32422-8 | Physical findings of breast | loinc | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 894 | 300885006 | Swelling of breast | snomed | ePus PNC | 1 |
 | 895 | 290070001 | Red breast | snomed | ePus PNC | 1 |
 | 896 | 54302000 | Discharge from nipple | snomed | ePus PNC | 1 |
@@ -909,21 +909,21 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 901 | 278072004 | Lochia rubra | snomed | ePus PNC | 1 |
 | 902 | 449828001 | Lochia serosa | snomed | ePus PNC | 1 |
 | 903 | 449827006 | Lochia alba | snomed | ePus PNC | 1 |
-| 904 | OC000017 | Produksi ASI | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
-| 905 | OV000016 | Produksi ASI ada | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
-| 906 | OV000017 | Produksi ASI ada tapi sedikit | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 10 |
-| 907 | OV000018 | Produksi ASI tidak ada | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 11 |
+| 904 | OC000017 | Produksi ASI | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 905 | OV000016 | Produksi ASI ada | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 906 | OV000017 | Produksi ASI ada tapi sedikit | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 907 | OV000018 | Produksi ASI tidak ada | kemkes clinical-term | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 908 | 252041008 | Micturition finding | snomed | ePus PNC | 1 |
 | 909 | 38671000119103 | Abnormal urination | snomed | ePus PNC | 1 |
 | 910 | 102834005 | Normal micturition | snomed | ePus PNC | 1 |
 | 911 | 300375001 | Able to defecate | snomed | ePus PNC | 1 |
 | 912 | 408988007 | Newborn care education | snomed | ePus PNC | 1 |
-| 913 | 8345-1 | Body weight Measured --post partum | loinc | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 12 |
-| 914 | 8305-5 | Body height --post partum | loinc | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 11 |
+| 913 | 8345-1 | Body weight Measured --post partum | loinc | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
+| 914 | 8305-5 | Body height --post partum | loinc | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
 | 915 | 47821001 | Postpartum hemorrhage | snomed | ePus PNC, ELSMIL Pasca Persalinan | 2 |
 | 916 | O86.8 | Other specified puerperal infections | icd-10 | ePus PNC | 1 |
 | 917 | 58703003 | Postpartum depression | snomed | ePus PNC | 1 |
-| 918 | O90.8 | Other complications of the puerperium, not elsewhere classified | icd-10 | ePus PNC, ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 12 |
+| 918 | O90.8 | Other complications of the puerperium, not elsewhere classified | icd-10 | ePus PNC, ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
 | 919 | 289084000 | Difficulty performing breastfeeding | snomed | ePus PNC | 1 |
 | 920 | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf | ePus PNC (2x) | 1 |
 | 921 | 767224000 | Administration of vitamin A | snomed | ePus PNC, ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 4 |
@@ -931,9 +931,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 923 | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf | ePus PNC, ePus MTBS (2x), SiGizi Balita Vitamin A | 3 |
 | 924 | 711029005 | Counseling about breastfeeding | snomed | ePus PNC | 1 |
 | 925 | 72531000052105 | Counseling for contraception | snomed | ePus PNC | 1 |
-| 926 | SP000135 | Konseling Tanda Bahaya Bayi Baru Lahir | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
+| 926 | SP000135 | Konseling Tanda Bahaya Bayi Baru Lahir | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
 | 927 | 441041000124100 | Counseling about nutrition | snomed | ePus PNC | 1 |
-| 928 | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | loinc | ePus PNC (3x), Kobo Modul PNC (3x) | 2 |
+| 928 | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | loinc | ePus PNC (3x) | 1 |
 | 929 | 432555000 | Product containing artesunate | snomed | ePus PNC | 1 |
 | 930 | 64115004 | Product containing amodiaquine | snomed | ePus PNC | 1 |
 | 931 | 324919005 | Product containing precisely quinine sulfate 200 milligram/1 each conventional release oral tablet | snomed | ePus PNC | 1 |
@@ -942,23 +942,23 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 934 | 13592004 | Product containing pyrazinamide | snomed | ePus PNC | 1 |
 | 935 | 24450004 | Product containing ethambutol | snomed | ePus PNC | 1 |
 | 936 | 159016003 | Medical radiographer | snomed | ePus PNC | 1 |
-| 937 | SP000139 | KB Pasca Plasenta | kemkes sp | ePus PNC (2x), SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, Kobo Modul INC, Kobo Modul PNC (2x) | 6 |
-| 938 | LA6524-8 | Oral contraceptive pill | loinc | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 16 |
+| 937 | SP000139 | KB Pasca Plasenta | kemkes sp | ePus PNC (2x), SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC | 4 |
+| 938 | LA6524-8 | Oral contraceptive pill | loinc | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 9 |
 | 939 | 237122005 | Lactational amenorrhea | snomed | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta | 4 |
-| 940 | LA6525-5 | Injectable/implantable hormone | loinc | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 16 |
-| 941 | LA6527-1 | Intrauterine device | loinc | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 17 |
-| 942 | SP000097 | Implan | kemkes sp | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 16 |
-| 943 | LA6523-0 | Condom | loinc | ePus PNC (2x), ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 14 |
+| 940 | LA6525-5 | Injectable/implantable hormone | loinc | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 9 |
+| 941 | LA6527-1 | Intrauterine device | loinc | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 9 |
+| 942 | SP000097 | Implan | kemkes sp | ePus PNC (2x), ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 9 |
+| 943 | LA6523-0 | Condom | loinc | ePus PNC (2x), ELSMIL Pasca Persalinan, ELSMIL Baduta, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 8 |
 | 944 | 22523008 | Vasectomy | snomed | ePus PNC (2x), ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
 | 945 | 77543007 | Ligation of fallopian tube | snomed | ePus PNC (2x), ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
-| 946 | PC000004 | KB Pasca Persalinan | kemkes clinical-term | ePus PNC (2x), ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 3 - PNC | 12 |
-| 947 | SP000380 | Tatalaksana Komplikasi Pendarahan | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 7 |
-| 948 | 736286003 | Hypertension clinical management plan | snomed | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 7 |
-| 949 | SP000133 | Pemantauan Protein Urin | kemkes sp | ePus PNC (2x), SIM RS Panti Nugroho PNC (2x), SIM RS Siaga Medika PNC, SIM RS PKU PNC (2x), SIM RS Harapan Ibu PNC (2x), SIM RS At tin PNC (2x), SIM RS Nirmala PNC (2x), Kobo Modul PNC (2x) | 8 |
-| 950 | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 10 |
+| 946 | PC000004 | KB Pasca Persalinan | kemkes clinical-term | ePus PNC (2x), ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
+| 947 | SP000380 | Tatalaksana Komplikasi Pendarahan | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 948 | 736286003 | Hypertension clinical management plan | snomed | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 949 | SP000133 | Pemantauan Protein Urin | kemkes sp | ePus PNC (2x), SIM RS Panti Nugroho PNC (2x), SIM RS Siaga Medika PNC, SIM RS PKU PNC (2x) | 4 |
+| 950 | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 951 | 135840009 | Blood pressure monitoring | kemkes sp | ePus PNC | 1 |
-| 952 | SP000136 | Pemberian MgSO4 | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
-| 953 | SP000137 | Pemberian Diazepam Injeksi | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
+| 952 | SP000136 | Pemberian MgSO4 | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 953 | SP000137 | Pemberian Diazepam Injeksi | kemkes sp | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
 | 954 | 359746009 | Patient’s condition stable | snomed | ePus PNC, ePus MTBS | 2 |
 | 955 | 162668006 | Patient’s condition unstable | snomed | ePus PNC | 1 |
 | 956 | 268910001 | Patient’s condition improved | snomed | ePus PNC | 1 |
@@ -966,7 +966,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 958 | SP000666 | Hari setelah melahirkan | kemkes sp | ePus PNC | 1 |
 | 959 | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | kemkes sp | ePus PNC | 1 |
 | 960 | SP000273 | Integrated management of childhood illness | kemkes sp | ePus MTBS | 1 |
-| 961 | 9843-4 | Head Occipital-frontal circumference | loinc | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, Kobo Buku KIA 3 - PNC | 6 |
+| 961 | 9843-4 | Head Occipital-frontal circumference | loinc | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD | 5 |
 | 962 | SP000261 | Tipe Kunjungan | kemkes sp | ePus MTBS, ePus MTBM | 2 |
 | 963 | SP000262 | Kunjungan Pertama | kemkes sp | ePus MTBS, ePus MTBM | 2 |
 | 964 | SP000263 | Kunjungan Ulang | kemkes sp | ePus MTBS, ePus MTBM | 2 |
@@ -1043,7 +1043,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1035 | OV000229 | Campak dengan komplikasi berat | kemkes clinical-term | ePus MTBS | 1 |
 | 1036 | SP000252 | Campak Dengan Komplikasi Pada Mata Dan/Atau Mulut | kemkes sp | ePus MTBS | 1 |
 | 1037 | OC000104 | Pemeriksaan infeksi dengue | kemkes clinical-term | ePus MTBS | 1 |
-| 1038 | OV000273 | Demam tinggi terus menerus | kemkes clinical-term | ePus MTBS, Kobo Buku KIA 1 - ANC | 2 |
+| 1038 | OV000273 | Demam tinggi terus menerus | kemkes clinical-term | ePus MTBS | 1 |
 | 1039 | OV000274 | Badan teraba dingin | kemkes clinical-term | ePus MTBS | 1 |
 | 1040 | SP000251 | Lemas atau Gelisah | kemkes sp | ePus MTBS | 1 |
 | 1041 | 422587007 | Nausea | snomed | ePus MTBS | 1 |
@@ -1095,7 +1095,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1087 | OV000253 | Terlalu lemah untuk menyusu | kemkes clinical-term | ePus MTBS | 1 |
 | 1088 | 271398006 | Weight steady | snomed | ePus MTBS | 1 |
 | 1089 | OC000108 | Klasifikasi status gizi | kemkes clinical-term | ePus MTBS | 1 |
-| 1090 | OI000004 | Risiko Gizi Lebih | kemkes clinical-term | ePus MTBS, ePus Tumbang Anak, ASIK CKG Balita (v2) (2x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), Kobo Modul Neonatus | 11 |
+| 1090 | OI000004 | Risiko Gizi Lebih | kemkes clinical-term | ePus MTBS, ePus Tumbang Anak, ASIK CKG Balita (v2) (2x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 10 |
 | 1091 | OV000254 | Gizi buruk dengan komplikasi berat | kemkes clinical-term | ePus MTBS | 1 |
 | 1092 | OV000255 | Gizi buruk tanpa komplikasi | kemkes clinical-term | ePus MTBS | 1 |
 | 1093 | 1153604005 | Body height for age z-score | snomed | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 10 |
@@ -1109,29 +1109,29 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1101 | SP000248 | Hasil Tes HIV Anak | kemkes sp | ePus MTBS | 1 |
 | 1102 | OC000084 | Tes virologis HIV anak | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
 | 1103 | OC000083 | Tes serologis HIV anak | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
-| 1104 | 63895-7 | Breastfeeding status | loinc | ePus MTBS, ePus MTBM (2x), SiGizi Balita MPASI, Kobo Buku KIA 3 - PNC | 4 |
+| 1104 | 63895-7 | Breastfeeding status | loinc | ePus MTBS, ePus MTBM (2x), SiGizi Balita MPASI | 3 |
 | 1105 | 254387007 | Human immunodeficiency virus infection classification systems | snomed | ePus MTBS, ePus MTBM | 2 |
 | 1106 | OV000187 | Terpajan HIV: mungkin infeksi HIV | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
 | 1107 | SP000249 | Mungkin Bukan Infeksi HIV | kemkes sp | ePus MTBS | 1 |
 | 1108 | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx | ePus MTBS, ePus MTBM | 2 |
-| 1109 | VG45 | HepB | kfa | ePus MTBS (5x), ePus MTBM, ELSMIL Baduta, SIHEPI Rekap 3e, SIM RS Narmada INC (2x), SIM RS Panti Nugroho BBL (2x), SIM RS Ummu Hani BBL (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (5x), Kobo Neonatus Outcome v2 (3x) | 18 |
+| 1109 | VG45 | HepB | kfa | ePus MTBS (5x), ePus MTBM, ELSMIL Baduta, SIHEPI Rekap 3e, SIM RS Narmada INC (2x), SIM RS Panti Nugroho BBL (2x), SIM RS Ummu Hani BBL (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL | 9 |
 | 1110 | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx | ePus MTBS (4x) | 1 |
-| 1111 | VG107 | DTAP | kfa | ePus MTBS (4x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (4x) | 3 |
-| 1112 | VG17 | HIB | kfa | ePus MTBS (4x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (4x) | 3 |
+| 1111 | VG107 | DTAP | kfa | ePus MTBS (4x) | 1 |
+| 1112 | VG17 | HIB | kfa | ePus MTBS (4x) | 1 |
 | 1113 | 129 | Japanese Encephalitis, unspecified formulation | http://hl7.org/fhir/sid/cvx | ePus MTBS | 1 |
-| 1114 | VG129 | Japanese encephalitis | kfa | ePus MTBS, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 3 |
+| 1114 | VG129 | Japanese encephalitis | kfa | ePus MTBS | 1 |
 | 1115 | 19 | BCG | http://hl7.org/fhir/sid/cvx | ePus MTBS, ePus MTBM | 2 |
-| 1116 | VG19 | BCG | kfa | ePus MTBS, ePus MTBM, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 4 |
+| 1116 | VG19 | BCG | kfa | ePus MTBS, ePus MTBM | 2 |
 | 1117 | 02 | OPV | http://hl7.org/fhir/sid/cvx | ePus MTBS (4x), ePus MTBM | 2 |
-| 1118 | VG89 | POLIO | kfa | ePus MTBS (5x), ePus MTBM, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (6x) | 4 |
+| 1118 | VG89 | POLIO | kfa | ePus MTBS (5x), ePus MTBM | 2 |
 | 1119 | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx | ePus MTBS (3x) | 1 |
-| 1120 | VG152 | PneumoPCV | kfa | ePus MTBS (3x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (3x) | 3 |
-| 1121 | 04 | M/R | http://hl7.org/fhir/sid/cvx | ePus MTBS (2x), Kobo Buku KIA 5 - Vaksinatorku (2x) | 2 |
-| 1122 | VG03 | MMR | kfa | ePus MTBS (2x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 3 |
+| 1120 | VG152 | PneumoPCV | kfa | ePus MTBS (3x) | 1 |
+| 1121 | 04 | M/R | http://hl7.org/fhir/sid/cvx | ePus MTBS (2x) | 1 |
+| 1122 | VG03 | MMR | kfa | ePus MTBS (2x) | 1 |
 | 1123 | 10 | IPV | http://hl7.org/fhir/sid/cvx | ePus MTBS | 1 |
 | 1124 | OC000114 | Membutuhkan suplemen vitamin A | kemkes clinical-term | ePus MTBS | 1 |
 | 1125 | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf | ePus MTBS, SiGizi Balita Vitamin A | 2 |
-| 1126 | Neonate | Neonate | episodeofcare-type | ePus MTBM, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Neonatus Outcome | 14 |
+| 1126 | Neonate | Neonate | episodeofcare-type | ePus MTBM, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL | 8 |
 | 1127 | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | kemkes clinical-term | ePus MTBM | 1 |
 | 1128 | 68276009 | Bottle, device | snomed | ePus MTBM (2x) | 1 |
 | 1129 | 468332001 | Drinking cup | snomed | ePus MTBM (2x) | 1 |
@@ -1163,7 +1163,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1155 | 301283003 | Finding of rate of respiration | snomed | ePus MTBM | 1 |
 | 1156 | 271823003 | Tachypnea | snomed | ePus MTBM | 1 |
 | 1157 | 86684002 | Bradypnea | snomed | ePus MTBM | 1 |
-| 1158 | OC000126 | Klasifikasi infeksi | kemkes clinical-term | ePus MTBM, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 5 |
+| 1158 | OC000126 | Klasifikasi infeksi | kemkes clinical-term | ePus MTBM | 1 |
 | 1159 | OV000134 | Infeksi bakteri berat | kemkes clinical-term | ePus MTBM | 1 |
 | 1160 | OV000135 | Infeksi bakteri lokal | kemkes clinical-term | ePus MTBM | 1 |
 | 1161 | OV000136 | Mungkin bukan infeksi | kemkes clinical-term | ePus MTBM | 1 |
@@ -1176,7 +1176,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1168 | SP000216 | Kuning Pada Telapak Tangan dan Telapak Kaki | kemkes sp | ePus MTBM | 1 |
 | 1169 | OC000129 | Klasifikasi ikterus | kemkes clinical-term | ePus MTBM | 1 |
 | 1170 | OV000179 | Ikterus berat | kemkes clinical-term | ePus MTBM | 1 |
-| 1171 | OV000180 | Tidak ada ikterus | kemkes clinical-term | ePus MTBM, Kobo Buku KIA 3 - PNC | 2 |
+| 1171 | OV000180 | Tidak ada ikterus | kemkes clinical-term | ePus MTBM | 1 |
 | 1172 | OV000127 | Bayi bergerak atas kemauan sendiri | kemkes clinical-term | ePus MTBM | 1 |
 | 1173 | OV000128 | Bayi bergerak hanya ketika dirangsang | kemkes clinical-term | ePus MTBM | 1 |
 | 1174 | 302001007 | Does not move | snomed | ePus MTBM | 1 |
@@ -1211,15 +1211,15 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1203 | OV000205 | Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian minum | kemkes clinical-term | ePus MTBM | 1 |
 | 1204 | OC000087 | Pemberian Vitamin K pada Bayi Baru Lahir | kemkes clinical-term | ePus MTBM | 1 |
 | 1205 | 448883004 | Injection of vitamin K1 | snomed | ePus MTBM | 1 |
-| 1206 | 8308-9 | Body height --standing | loinc | ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), Kobo Buku KIA 4 - Cadre | 12 |
-| 1207 | 8306-3 | Body height --lying | loinc | ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo DDTK | 17 |
+| 1206 | 8308-9 | Body height --standing | loinc | ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
+| 1207 | 8306-3 | Body height --lying | loinc | ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL | 13 |
 | 1208 | 50373000 | Body height measure | loinc | ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
 | 1209 | 10904000 | Standing position | snomed | ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
 | 1210 | 102538003 | Recumbent body position | snomed | ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
 | 1211 | OC000012 | Kenaikan Berat Badan Adekuat | kemkes  | ePus Tumbang Anak | 1 |
 | 1212 | 1153590000 | Length for age z-score | snomed | ePus Tumbang Anak, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 9 |
-| 1213 | OI000010 | Risiko Berat Badan Lebih | kemkes clinical-term | ePus Tumbang Anak, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), Kobo Modul Neonatus | 10 |
-| 1214 | OI000007 | Berat Badan Sangat Kurang | kemkes clinical-term | ePus Tumbang Anak, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), Kobo Modul Neonatus | 9 |
+| 1213 | OI000010 | Risiko Berat Badan Lebih | kemkes clinical-term | ePus Tumbang Anak, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 9 |
+| 1214 | OI000007 | Berat Badan Sangat Kurang | kemkes clinical-term | ePus Tumbang Anak, ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 8 |
 | 1215 | 1153594009 | Head circumference for age z-score | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
 | 1216 | 170218003 | Child examination: gross motor development | snomed | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
 | 1217 | 170219006 | Child examination: fine motor development | snomed | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
@@ -1268,7 +1268,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1260 | 365481000 | Finding of household composition | snomed | Dapodik PAUD | 1 |
 | 1261 | SP000241 | Moda Transportasi yang digunakan untuk bersekolah | kemkes sp | Dapodik PAUD | 1 |
 | 1262 | SP000239 | Kartu Perlindungan Sosial | kemkes sp | Dapodik PAUD (2x) | 1 |
-| 1263 | 82589-3 | Highest level of education | loinc | Dapodik PAUD (3x), SIPTM, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, Kobo Buku KIA 1 - ANC | 6 |
+| 1263 | 82589-3 | Highest level of education | loinc | Dapodik PAUD (3x), SIPTM, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 5 |
 | 1264 | OC000149 | Pekerjaan orang tua | kemkes clinical-term | Dapodik PAUD (4x) | 1 |
 | 1265 | 81323004 | Normal general body function | snomed | Dapodik PAUD (3x) | 1 |
 | 1266 | 397540003 | Visual impairment | snomed | Dapodik PAUD (3x) | 1 |
@@ -1391,7 +1391,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1383 | 308004006 | Writer | snomed | Dapodik PAUD | 1 |
 | 1384 | 78705009 | Radio and television announcer | snomed | Dapodik PAUD | 1 |
 | 1385 | 308040008 | Pilot - aircraft | snomed | Dapodik PAUD | 1 |
-| 1386 | 14406004 | Policeman | snomed | Dapodik PAUD, SIPTM | 2 |
+| 1386 | 14406004 | Policeman | snomed | Dapodik PAUD, SIPTM, SISMAL Regmal 1 | 3 |
 | 1387 | 159062006 | Artist | snomed | Dapodik PAUD | 1 |
 | 1388 | 80409005 | Translator | snomed | Dapodik PAUD | 1 |
 | 1389 | 29536009 | Journalist | snomed | Dapodik PAUD | 1 |
@@ -1446,7 +1446,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1438 | SP000096 | Tidak ada tempat BAB layak | kemkes sp | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
 | 1439 | 398780007 | Contraception education | snomed | ELSMIL Ibu Hamil | 1 |
 | 1440 | 423925001 | Family planning observable | snomed | ELSMIL Ibu Hamil | 1 |
-| 1441 | 8659-5 | Birth control method - Reported | loinc | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, Kobo Buku KIA 2 - Luaran Kehamilan | 4 |
+| 1441 | 8659-5 | Birth control method - Reported | loinc | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
 | 1442 | LA6528-9 | Vasectomy/tubal ligation/hysterectomy | loinc | ELSMIL Ibu Hamil | 1 |
 | 1443 | 736796006 | Reason for no contraception (observable entity) | snomed | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan | 2 |
 | 1444 | 276367008 | Wanted pregnancy (finding) | snomed | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan | 2 |
@@ -1477,7 +1477,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1469 | LA32662-1 | Tried but was not able to apply for, or was not eligible | loinc | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
 | 1470 | LA32663-9 | Did not apply for | loinc | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
 | 1471 | SP000145 | Bantuan sosial yang sedang dalam proses | kemkes sp | ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta | 3 |
-| 1472 | SP000140 | Program Keluarga Harapan | kemkes sp | ELSMIL Ibu Hamil (2x), ELSMIL Pasca Persalinan (2x), ELSMIL Baduta (2x), Kobo Modul PNC | 4 |
+| 1472 | SP000140 | Program Keluarga Harapan | kemkes sp | ELSMIL Ibu Hamil (2x), ELSMIL Pasca Persalinan (2x), ELSMIL Baduta (2x) | 3 |
 | 1473 | SP000141 | Bantu Non Tunai | kemkes sp | ELSMIL Ibu Hamil (2x), ELSMIL Pasca Persalinan (2x), ELSMIL Baduta (2x) | 3 |
 | 1474 | SP000142 | Program Indonesia Pintar | kemkes sp | ELSMIL Ibu Hamil (2x), ELSMIL Pasca Persalinan (2x), ELSMIL Baduta (2x) | 3 |
 | 1475 | SP000143 | Kartu Indonesia Sehat | kemkes sp | ELSMIL Ibu Hamil (2x), ELSMIL Pasca Persalinan (2x), ELSMIL Baduta (2x) | 3 |
@@ -1524,9 +1524,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1516 | 224294005 | No formal education | snomed | SIPTM | 1 |
 | 1517 | 38901000087109 | University diploma achieved | snomed | SIPTM | 1 |
 | 1518 | SP000244 | Pedagang kecil | kemkes sp | SIPTM | 1 |
-| 1519 | 302314004 | Military personnel | snomed | SIPTM | 1 |
-| 1520 | TK000041 | Pegawai/karyawan swasta | kemkes | SIPTM | 1 |
-| 1521 | 73438004 | Unemployed | snomed | SIPTM | 1 |
+| 1519 | 302314004 | Military personnel | snomed | SIPTM, SISMAL Regmal 1 | 2 |
+| 1520 | TK000041 | Pegawai/karyawan swasta | kemkes | SIPTM, SISMAL Regmal 1 | 2 |
+| 1521 | 73438004 | Unemployed | snomed | SIPTM, SISMAL Regmal 1 | 2 |
 | 1522 | 105493001 | Retired, life even | snomed | SIPTM | 1 |
 | 1523 | SP000288 | Tenaga Kerja Indonesia | kemkes sp | SIPTM | 1 |
 | 1524 | 158891000 | University lecturer | snomed | SIPTM | 1 |
@@ -1638,32 +1638,32 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1630 | 162572001 | Suspected malignancy | snomed | ASIK Skrining PTM | 1 |
 | 1631 | SP000114 | Suspek Thalassemia | kemkes sp | ASIK Skrining PTM | 1 |
 | 1632 | Z01.8 | Other specified special examinations | icd-10 | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
-| 1633 | 424144002.0 | Current chronological age | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Modul ANC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (3x) | 29 |
-| 1634 | 89269-5 | Body height Measured --at birth | loinc | ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul Neonatus, Kobo Buku KIA 2 - Luaran Kehamilan | 15 |
+| 1633 | 424144002.0 | Current chronological age | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 13 |
+| 1634 | 89269-5 | Body height Measured --at birth | loinc | ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 9 |
 | 1635 | 103228002.0 | Hemoglobin saturation with oxygen | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 1636 | SP000449 | Hasil Pemeriksaan Skrining Penyakit Jantung Bawaan | kemkes sp | ASIK CKG Bayi Baru Lahir (v2) | 1 |
 | 1637 | 410519009.0 | At risk | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2) (3x) | 2 |
-| 1638 | 260385009.0 | Negative | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (7x), Kobo Buku KIA 1 - ANC | 5 |
-| 1639 | 29575-8 | Thyrotropin [Units/volume] in DBS | loinc | ASIK CKG Bayi Baru Lahir (v2), SIM RS MPH BBL, Kobo Modul Neonatus | 3 |
+| 1638 | 260385009.0 | Negative | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (7x) | 4 |
+| 1639 | 29575-8 | Thyrotropin [Units/volume] in DBS | loinc | ASIK CKG Bayi Baru Lahir (v2), SIM RS MPH BBL | 2 |
 | 1640 | POS | Positve | v3-ObservationInterpretation | ASIK CKG Bayi Baru Lahir (v2) (6x) | 1 |
 | 1641 | NEG | Negative | v3-ObservationInterpretation | ASIK CKG Bayi Baru Lahir (v2) (6x), ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x) | 4 |
 | 1642 | 32546-4 | Glucose-6-Phosphate dehydrogenase [Enzymatic activity/mass] in Red Blood Cells | loinc | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 1643 | 57086-1 | Congenital adrenal hyperplasia newborn screening panel | loinc | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 1644 | 25179006.0 | Blood unit collection | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
-| 1645 | 400984005.0 | Congenital hypothyroidism screening test | snomed | ASIK CKG Bayi Baru Lahir (v2), SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC | 5 |
+| 1645 | 400984005.0 | Congenital hypothyroidism screening test | snomed | ASIK CKG Bayi Baru Lahir (v2), SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 1646 | 3016-3 | Thyrotropin [Units/volume] in Serum or Plasma | loinc | ASIK CKG Bayi Baru Lahir (v2) | 1 |
 | 1647 | 252298007.0 | Glucose-6-phosphate dehydrogenase deficiency spot test | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
 | 1648 | 431420002.0 | Screening for congenital adrenal hyperplasia | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
 | 1649 | TK000151 | Edukasi skrining hiperbilirubinemia dan kelainan saluran empedu | kemkes | ASIK CKG Bayi Baru Lahir (v2) | 1 |
-| 1650 | 267030001.0 | Yellow or jaundiced color | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x), Kobo Buku KIA 3 - PNC | 2 |
+| 1650 | 267030001.0 | Yellow or jaundiced color | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 1651 | 225592001.0 | Finding of color of stool | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
-| 1652 | 271863002.0 | Stool color abnormal | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x), Kobo Buku KIA 3 - PNC | 2 |
+| 1652 | 271863002.0 | Stool color abnormal | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 1653 | 167605001.0 | Stool color normal | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 1654 | 1145403003.0 | Macrocephaly | snomed | ASIK CKG Balita (v2) (2x) | 1 |
 | 1655 | 840673007.0 | Normal Head | snomed | ASIK CKG Balita (v2) (2x) | 1 |
 | 1656 | 1148757008.0 | Microcephaly | snomed | ASIK CKG Balita (v2) (2x) | 1 |
-| 1657 | 17621005.0 | Normal | snomed | ASIK CKG Balita (v2) (4x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Buku KIA 1 - ANC (6x) | 5 |
-| 1658 | 723509005.0 | High risk | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), Kobo Buku KIA 1 - ANC | 5 |
+| 1657 | 17621005.0 | Normal | snomed | ASIK CKG Balita (v2) (4x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1658 | 723509005.0 | High risk | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x) | 4 |
 | 1659 | TK000154 | ≥1 cm, lebih dari 1 KGB, tidak nyeri | kemkes | ASIK CKG Balita (v2) | 1 |
 | 1660 | TK000155 | <1 cm, lebih dari 1 KGB, tidak nyeri | kemkes | ASIK CKG Balita (v2) | 1 |
 | 1661 | TK000156 | <1 cm, tidak nyeri | kemkes | ASIK CKG Balita (v2) | 1 |
@@ -1676,21 +1676,21 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1668 | TK000163 | Curiga kelainan pupil putih pada anak | kemkes | ASIK CKG Balita (v2) | 1 |
 | 1669 | 45089002.0 | Normal vision | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x) | 4 |
 | 1670 | 7973008.0 | Abnormal vision | snomed | ASIK CKG Balita (v2) | 1 |
-| 1671 | 1153593003.0 | Weight for age z-score | snomed | ASIK CKG Balita (v2), Kobo Modul Neonatus | 2 |
-| 1672 | 248342006.0 | Underweight | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 6 |
-| 1673 | 43664005.0 | Normal weight | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 6 |
+| 1671 | 1153593003.0 | Weight for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1672 | 248342006.0 | Underweight | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1673 | 43664005.0 | Normal weight | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
 | 1674 | 1153604005.0 | Body height for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
-| 1675 | 1153590000.0 | Length for age z score | snomed | ASIK CKG Balita (v2), Kobo Modul Neonatus | 2 |
-| 1676 | 17489000.0 | Body height normal for age | snomed | ASIK CKG Balita (v2), Kobo Modul Neonatus | 2 |
-| 1677 | 444000005.0 | Short stature for age | snomed | ASIK CKG Balita (v2), Kobo Modul Neonatus | 2 |
-| 1678 | OI000011 | Sangat Pendek | kemkes clinical-term | ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), Kobo Modul Neonatus | 9 |
-| 1679 | 83077003.0 | Tall for age | snomed | ASIK CKG Balita (v2), Kobo Modul Neonatus | 2 |
+| 1675 | 1153590000.0 | Length for age z score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1676 | 17489000.0 | Body height normal for age | snomed | ASIK CKG Balita (v2) | 1 |
+| 1677 | 444000005.0 | Short stature for age | snomed | ASIK CKG Balita (v2) | 1 |
+| 1678 | OI000011 | Sangat Pendek | kemkes clinical-term | ASIK CKG Balita (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 8 |
+| 1679 | 83077003.0 | Tall for age | snomed | ASIK CKG Balita (v2) | 1 |
 | 1680 | 1153600001.0 | Weight for height z-score | snomed | ASIK CKG Balita (v2) | 1 |
-| 1681 | 1153598007.0 | Weight for length z score | snomed | ASIK CKG Balita (v2), Kobo Modul Neonatus | 2 |
-| 1682 | 248324001.0 | Well nourished | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Lansia (27 Apr 2026) (3x), Kobo Modul Neonatus | 3 |
-| 1683 | 248325000.0 | Undernourished | snomed | ASIK CKG Balita (v2) (3x), Kobo Modul Neonatus | 2 |
-| 1684 | 238131007.0 | Overweight | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 6 |
-| 1685 | 414915002.0 | Obese | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Modul Neonatus, Kobo Buku KIA 1 - ANC | 6 |
+| 1681 | 1153598007.0 | Weight for length z score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1682 | 248324001.0 | Well nourished | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Lansia (27 Apr 2026) (3x) | 2 |
+| 1683 | 248325000.0 | Undernourished | snomed | ASIK CKG Balita (v2) (3x) | 1 |
+| 1684 | 238131007.0 | Overweight | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
+| 1685 | 414915002.0 | Obese | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 1686 | 1153596006.0 | Body mass index for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
 | 1687 | 1153594009.0 | Head circumference for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
 | 1688 | SP000450 | Faktor Risiko Tuberkulosis | kemkes sp | ASIK CKG Balita (v2) | 1 |
@@ -1700,12 +1700,12 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1692 | SP000452 | Keluhan dan Gejala Diabetes Melitus Pada Bayi dan Anak Prasekolah | kemkes sp | ASIK CKG Balita (v2) | 1 |
 | 1693 | SP000453 | Tidak Ada Keluhan dan Gejala Diabetes | kemkes sp | ASIK CKG Balita (v2) | 1 |
 | 1694 | SP000454 | Ada Keluhan dan Gejala Diabetes | kemkes sp | ASIK CKG Balita (v2) | 1 |
-| 1695 | 1290220002.0 | Laboratory worker | snomed | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIM RS MPH Diabetes Melitus, SIM RS Siaga Medika ANC (6x), SIM RS Harapan Ibu ANC (6x), SIM RS At tin ANC (6x), SIM RS Nirmala ANC (6x), SIM RS PKU ANC (6x), SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Modul ANC (6x), Kobo Modul PNC | 15 |
-| 1696 | 119297000.0 | Blood specimen | snomed | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, Kobo Modul PNC | 4 |
+| 1695 | 1290220002.0 | Laboratory worker | snomed | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIM RS MPH Diabetes Melitus, SIM RS Siaga Medika ANC (6x) | 5 |
+| 1696 | 119297000.0 | Blood specimen | snomed | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan | 3 |
 | 1697 | 714628002.0 | Prediabetes | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (5x), ASIK CKG Dewasa Perempuan (5x), ASIK CKG Lansia (27 Apr 2026) (4x) | 4 |
 | 1698 | 302866003.0 | Hypoglycemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (3x) | 4 |
 | 1699 | 80394007.0 | Hyperglycemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
-| 1700 | 271737000.0 | Anemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Neonatus Outcome v2 | 5 |
+| 1700 | 271737000.0 | Anemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 1701 | 860635002.0 | No anemia present | snomed | ASIK CKG Balita (v2), ASIK CKG Lansia (27 Apr 2026) (2x) | 2 |
 | 1702 | L | Low | v3-ObservationInterpretation | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 1703 | 788-0 | Erythrocyte distribution width [Ratio] by Automated count | loinc | ASIK CKG Balita (v2) | 1 |
@@ -1723,7 +1723,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1715 | OI000042 | Hipertensi Derajat 3 | kemkes clinical-term | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
 | 1716 | 268607006.0 | Hypertension risk level | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
 | 1717 | 56218007.0 | Systolic hypertension | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
-| 1718 | 73211009.0 | Diabetes mellitus | snomed | ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x), SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC (2x), SIM RS At tin ANC (2x), SIM RS Nirmala ANC (2x), SIM RS PKU ANC (2x), Kobo Modul ANC (2x) | 11 |
+| 1718 | 73211009.0 | Diabetes mellitus | snomed | ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x), SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 6 |
 | 1719 | 263654008 | Abnormal | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1720 | 102594003.0 | Electrocardiogram abnormal | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
 | 1721 | 26141007 | ST segment depression | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
@@ -1732,12 +1732,12 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1724 | 164889003 | Electrocardiographic atrial fibrillation | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1725 | 164918000 | Pathological Q wave | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1726 | 76388001 | ST segment elevation | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
-| 1727 | H | High | v3-ObservationInterpretation | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (3x), Kobo Modul Neonatus | 4 |
+| 1727 | H | High | v3-ObservationInterpretation | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (3x) | 3 |
 | 1728 | 100898-6 | Lipid panel - Serum or Plasma | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1729 | 370992007.0 | Dyslipidemia | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
 | 1730 | OC000173 | Prediksi Risiko PTM tanpa Pemeriksaan Laboratorium | kemkes clinical-term | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
-| 1731 | 723505004.0 | Low risk | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), Kobo Buku KIA 1 - ANC | 4 |
-| 1732 | 25594002.0 | Moderate risk of | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Buku KIA 1 - ANC | 4 |
+| 1731 | 723505004.0 | Low risk | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x) | 3 |
+| 1732 | 25594002.0 | Moderate risk of | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1733 | 2160-0 | Creatinine [Mass/volume] in Serum or Plasma | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1734 | 62238-1 | Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI) | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1735 | 391483001.0 | Microscopy (acid fast bacilli) | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
@@ -1759,7 +1759,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1751 | 300221005.0 | Hearing for whisper impaired | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1752 | 76517002.0 | Otoscopy | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1753 | 400911007.0 | Tumbling E test | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
-| 1754 | 397540003.0 | Visual impairment | snomed | ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (3x), Kobo Buku KIA 1 - ANC (3x) | 4 |
+| 1754 | 397540003.0 | Visual impairment | snomed | ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (3x) | 3 |
 | 1755 | 252973004.0 | Snellen chart assessment | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1756 | 441841000.0 | Pinhole visual acuity test | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1757 | 39021009.0 | Disorder of refraction | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
@@ -1773,12 +1773,12 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1765 | 86465-2 | AST to platelet ratio index in Serum and Blood by calculation | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1766 | 30352-9 | Hemoglobin [Mass/volume] in Capillary blood | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1767 | 13607009.0 | Manual examination of breast | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
-| 1768 | 290084006.0 | Breast normal | snomed | ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 12 |
+| 1768 | 290084006.0 | Breast normal | snomed | ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
 | 1769 | 89164003.0 | Breast lump | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 1770 | 134405005.0 | Suspected breast cancer | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 1771 | 367644007.0 | Simple cyst | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 1772 | 449837001.0 | Complex cyst of breast | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
-| 1773 | 451024007.0 | Inspection of vagina using vaginal speculum | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Kobo Buku KIA 1 - ANC (3x) | 3 |
+| 1773 | 451024007.0 | Inspection of vagina using vaginal speculum | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 1774 | 395100000.0 | No evidence of cancer found | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 1775 | 315266007.0 | Suspected cervical cancer | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 1776 | 300557001.0 | Aceto-white reaction positive | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
@@ -1793,7 +1793,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1785 | 702817009.0 | Prehypertension | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
 | 1786 | 24184005.0 | Blood pressure above reference range | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
 | 1787 | 162650008.0 | Examination not done on subject of record | snomed | ASIK CKG Lansia (27 Apr 2026) (3x) | 1 |
-| 1788 | 261665006.0 | Unknown | snomed | ASIK CKG Lansia (27 Apr 2026) (11x), Kobo Buku KIA 1 - ANC (5x) | 2 |
+| 1788 | 261665006.0 | Unknown | snomed | ASIK CKG Lansia (27 Apr 2026) (11x) | 1 |
 | 1789 | 1754-1 | Albumin [Mass/volume] in Urine | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1790 | 2149-3 | Creatine [Mass/volume] in Urine | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1791 | 32294-1 | Albumin/Creatinine [Ratio] in Urine | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
@@ -1821,7 +1821,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1813 | 164735009.0 | Fundoscopy abnormal | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1814 | 395197008.0 | Hepatitis C viral load | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1815 | 82334004.0 | Indeterminate | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
-| 1816 | 260413007.0 | None | snomed | ASIK CKG Lansia (27 Apr 2026) (4x), Kobo Buku KIA 1 - ANC (3x) | 2 |
+| 1816 | 260413007.0 | None | snomed | ASIK CKG Lansia (27 Apr 2026) (4x) | 1 |
 | 1817 | 302814007.0 | Early yaws skin lesion | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1818 | 106936-8 | Treponema pallidum IgG+IgM Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay |  | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1819 | TK000169 | Benar semua kata | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
@@ -1833,7 +1833,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1825 | TK000197 | Kemungkinan depresi | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
 | 1826 | TK000196 | Tidak depresi | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
 | 1827 | 48542-5 | Geriatric depression scale (GDS) panel | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
-| 1828 | 35489007.0 | Depression | snomed | ASIK CKG Lansia (27 Apr 2026), Kobo Buku KIA 1 - ANC | 2 |
+| 1828 | 35489007.0 | Depression | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1829 | 48512-8 | Are you basically satisfied with your life [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1830 | 48515-1 | Do you often get bored [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 1831 | 48521-9 | Do you often feel helpless [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
@@ -1939,7 +1939,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1931 | SP000217 | PNS/BUMN/TNI/POLRI | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1932 | SP000218 | Karyawan Swasta | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1933 | 159812002 | Farming/fishing occupation | snomed | SIHEPI Rekap 3e | 1 |
-| 1934 | ANC.B6.DE25 | Number of miscarriages and/or abortions | WHO anc-custom-codes | SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 23 |
+| 1934 | ANC.B6.DE25 | Number of miscarriages and/or abortions | WHO anc-custom-codes | SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 10 |
 | 1935 | SP000160 | Tanggal Masuk Perawatan, Dukungan, dan Pengobatan (PDP) HIV | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1936 | SP000161 | Tanggal Mendapat atau Memulai ARV | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1937 | SP000162 | Sifilis Ditangani | kemkes sp | SIHEPI Rekap 3e | 1 |
@@ -1948,7 +1948,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1940 | 72181-1 | HIV results shared with partner [RHEA] | loinc | SIHEPI Rekap 3e | 1 |
 | 1941 | SP000165 | Pasangan Diperiksa Sifilis | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1942 | SP000166 | Jumlah Anak Dilahirkan | kemkes sp | SIHEPI Rekap 3e | 1 |
-| 1943 | OT000003 | RS ODHA | organization-type | SIHEPI Rekap 3e, Kobo Modul INC | 2 |
+| 1943 | OT000003 | RS ODHA | organization-type | SIHEPI Rekap 3e | 1 |
 | 1944 | SP000169 | Pemantauan Anak dari Ibu HIV | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1945 | SP000170 | Tanggal ARV Profilaksis | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1946 | SP000171 | Tanggal Dry Blood Spot Early Infant Diagnosis Pada Usia 6-8 Minggu | kemkes sp | SIHEPI Rekap 3e | 1 |
@@ -1985,7 +1985,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1977 | SP000197 | Tanggal Pengambilan Obat Pencegahan Hepatitis B | kemkes sp | SIHEPI Rekap 3e (4x) | 1 |
 | 1978 | SP000198 | Status Akhir Pengobatan Pencegahan Hepatitis B | kemkes sp | SIHEPI Rekap 3e | 1 |
 | 1979 | 85712-8 | Expected delivery location | https://loinc.org | eKohort INC | 1 |
-| 1980 | 73.59 | Other manually assisted delivery | icd-9-cm | eKohort INC (2x), SiGizi Ibu Nifas, SIM RS Siaga Medika INC, SIM RS Goetoeng INC (3x), Kobo Modul INC | 5 |
+| 1980 | 73.59 | Other manually assisted delivery | icd-9-cm | eKohort INC (2x), SiGizi Ibu Nifas, SIM RS Siaga Medika INC, SIM RS Goetoeng INC (3x) | 4 |
 | 1981 | 74.0 | Classical cesarean section | icd-9-cm | eKohort INC (2x) | 1 |
 | 1982 | 281050002 | Livebirth | snomed | eKohort INC | 1 |
 | 1983 | 289437007 | Finding of fetal heart rate | loinc | eKohort INC | 1 |
@@ -2054,7 +2054,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2046 | SP000493 | Makanan Lengkap | kemkes sp | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2047 | 228070005 | Snack food | snomed | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2048 | SP000494 | Makanan Lengkap dan Makanan Kudapan | kemkes sp | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
-| 2049 | 131 | Posyandu | organization-type | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
+| 2049 | 131 | Posyandu | organization-type | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey, SISMAL Regmal 1 | 4 |
 | 2050 | SP000495 | Kelas Ibu Hamil | kemkes sp | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2051 | QRI000016 | Ya, setiap hari | kemkes clinical-term | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
 | 2052 | QRI000015 | Ya, tidak setiap hari | kemkes clinical-term | SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 3 |
@@ -2065,7 +2065,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2057 | 236973005 | Delivery procedure | snomed | SiGizi Ibu Nifas | 1 |
 | 2058 | SP000724 | Tanggal Abortus | kemkes sp | SiGizi Ibu Nifas | 1 |
 | 2059 | 69.51 | Aspiration curettage of uterus for termination of pregnancy | icd-9-cm | SiGizi Ibu Nifas | 1 |
-| 2060 | SP000683 | Tatalaksana Tindakan | kemkes sp | SiGizi Ibu Nifas, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC | 15 |
+| 2060 | SP000683 | Tatalaksana Tindakan | kemkes sp | SiGizi Ibu Nifas, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 5 |
 | 2061 | SP000651 | Sumber Pembiayaan Pelayanan Kesehatan | kemkes sp | SiGizi Kohort Ibu | 1 |
 | 2062 | SP000652 | Jaminan Kesehatan Nasional (JKN) | kemkes sp | SiGizi Kohort Ibu | 1 |
 | 2063 | 73.59 | Other manually assisted delivery |  | SiGizi Kohort Ibu | 1 |
@@ -2076,65 +2076,65 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2068 | 16356006 | Multiple pregnancy | snomed | SiGizi Kohort Ibu | 1 |
 | 2069 | 109894007 | Retained placenta | snomed | SiGizi Kohort Ibu | 1 |
 | 2070 | 237361005 | Antepartum fetal death | snomed | SiGizi Kohort Ibu | 1 |
-| 2071 | 309453006.0 | Registered midwife | snomed | SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x), Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (3x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x), Kobo DDTK | 50 |
-| 2072 | 309367003.0 | Obstetrician and gynecologist | snomed | SIM RS Tripat ANC (2x), SIM RS Tripat PNC (2x), SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, Kobo Modul ANC, Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 (3x) | 37 |
-| 2073 | 224535009.0 | Registered nurse | snomed | SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (5x), SIM RS Ummu Hani PNC (3x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (3x), SIM RS MPH INC (3x), SIM RS MPH PNC (3x), SIM RS MPH BBL (2x), SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x), Kobo Modul ANC, Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 (3x), Kobo DDTK | 46 |
+| 2071 | 309453006.0 | Registered midwife | snomed | SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 23 |
+| 2072 | 309367003.0 | Obstetrician and gynecologist | snomed | SIM RS Tripat ANC (2x), SIM RS Tripat PNC (2x), SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 17 |
+| 2073 | 224535009.0 | Registered nurse | snomed | SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (5x), SIM RS Ummu Hani PNC (3x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (3x), SIM RS MPH INC (3x), SIM RS MPH PNC (3x), SIM RS MPH BBL (2x), SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 21 |
 | 2074 | 768827000.0 | Nutritionist | snomed | SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC | 3 |
-| 2075 | 134435003.0 | Routine antenatal care | snomed | SIM RS Tripat ANC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Goetoeng ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 11 |
-| 2076 | 1209182005.0 | Cephalic fetal presentation | snomed | SIM RS Tripat ANC, SIM RS Narmada INC (3x), SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC (2x) | 16 |
-| 2077 | 6096002.0 | Breech presentation | snomed | SIM RS Tripat ANC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 16 |
+| 2075 | 134435003.0 | Routine antenatal care | snomed | SIM RS Tripat ANC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Goetoeng ANC | 5 |
+| 2076 | 1209182005.0 | Cephalic fetal presentation | snomed | SIM RS Tripat ANC, SIM RS Narmada INC (3x), SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC | 10 |
+| 2077 | 6096002.0 | Breech presentation | snomed | SIM RS Tripat ANC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC | 11 |
 | 2078 | 73161006.0 | Transverse lie | snomed | SIM RS Tripat ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC | 3 |
 | 2079 | 63750008.0 | Oblique lie | snomed | SIM RS Tripat ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC | 3 |
 | 2080 | 71388002.0 | Procedure | snomed | SIM RS Tripat ANC, SIM RS Tripat PNC | 2 |
-| 2081 | 82296001.0 | Pediatrician | snomed | SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 7 |
-| 2082 | Z00.1 | Routine child health examination | icd-10 | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL, SIM RS Harapan Ibu BBL (4x), SIM RS At tin BBL (4x), SIM RS Nirmala BBL (4x), SIM RS PKU BBL (4x), Kobo Modul Neonatus, Kobo Buku KIA 4 - Cadre, Kobo Neonatus Outcome v2 (3x) | 14 |
-| 2083 | 365475008.0 | Place in family order | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 4 - Cadre | 12 |
-| 2084 | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | loinc | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
+| 2081 | 82296001.0 | Pediatrician | snomed | SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 3 |
+| 2082 | Z00.1 | Routine child health examination | icd-10 | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL | 7 |
+| 2083 | 365475008.0 | Place in family order | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 6 |
+| 2084 | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | loinc | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 5 |
 | 2085 | 302083008.0 | Finding of Apgar score | snomed | SIM RS Tripat BBL (sheet 'INC BBL') | 1 |
-| 2086 | 276654001.0 | Congenital malformation | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 (3x) | 12 |
-| 2087 | 386412000.0 | Resuscitation of neonate | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 9 |
-| 2088 | 431868002.0 | Initiation of breastfeeding | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC | 19 |
+| 2086 | 276654001.0 | Congenital malformation | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 5 |
+| 2087 | 386412000.0 | Resuscitation of neonate | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 4 |
+| 2088 | 431868002.0 | Initiation of breastfeeding | snomed | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL, SIM RS PKU INC | 9 |
 | 2089 | 36682004.0 | Physiotherapist | snomed | SIM RS Tripat PNC | 1 |
-| 2090 | 305956004.0 | Referral by physician | snomed | SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 13 |
-| 2091 | 404684003.0 | Clinical finding | snomed | SIM RS Tripat PNC, SIM RS Narmada INC (3x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul ANC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 14 |
-| 2092 | 116859006.0 | Transfusion of blood product | snomed | SIM RS Tripat PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul PNC | 16 |
-| 2093 | 417662000.0 | History of clinical finding in subject | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC | 2 |
-| 2094 | 450891000124109.0 | Past pregnancy history of complication of pregnancy, childbirth and/or puerperium | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC (3x) | 2 |
-| 2095 | 161809000.0 | Past pregnancy history of postpartum hemorrhage | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC (2x) | 2 |
-| 2096 | 161806007.0 | Past pregnancy history of eclampsia | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC (3x) | 2 |
-| 2097 | 74964007.0 | Other | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC (4x), SIM RS Panti Nugroho INC (2x), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH ANC (3x), SIM RS MPH INC, SIM RS Siaga Medika ANC (5x), SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Harapan Ibu ANC (3x), SIM RS Harapan Ibu INC (2x), SIM RS Harapan Ibu BBL, SIM RS At tin ANC (3x), SIM RS At tin INC (2x), SIM RS At tin BBL, SIM RS Nirmala ANC (3x), SIM RS Nirmala INC (2x), SIM RS Nirmala BBL, SIM RS PKU ANC (3x), SIM RS PKU BBL, Kobo Modul ANC (4x), Kobo Modul INC (2x), Kobo Modul Neonatus, Kobo Modul PNC (4x), Kobo Buku KIA 1 - ANC (14x), Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x), Kobo Neonatus Outcome v2 (11x) | 33 |
+| 2090 | 305956004.0 | Referral by physician | snomed | SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 8 |
+| 2091 | 404684003.0 | Clinical finding | snomed | SIM RS Tripat PNC, SIM RS Narmada INC (3x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 8 |
+| 2092 | 116859006.0 | Transfusion of blood product | snomed | SIM RS Tripat PNC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC, SIM RS Goetoeng ANC | 7 |
+| 2093 | 417662000.0 | History of clinical finding in subject | snomed | SIM RS Narmada INC | 1 |
+| 2094 | 450891000124109.0 | Past pregnancy history of complication of pregnancy, childbirth and/or puerperium | snomed | SIM RS Narmada INC | 1 |
+| 2095 | 161809000.0 | Past pregnancy history of postpartum hemorrhage | snomed | SIM RS Narmada INC | 1 |
+| 2096 | 161806007.0 | Past pregnancy history of eclampsia | snomed | SIM RS Narmada INC | 1 |
+| 2097 | 74964007.0 | Other | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC (4x), SIM RS Panti Nugroho INC (2x), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH ANC (3x), SIM RS MPH INC, SIM RS Siaga Medika ANC (5x), SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Goetoeng INC, SIM RS Goetoeng PNC | 13 |
 | 2098 | 726001007.0 | Past pregnancy history of live birth | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
-| 2099 | 3401000175105.0 | Total number of prenatal care visits | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, Kobo Buku KIA 1 - ANC | 3 |
+| 2099 | 3401000175105.0 | Total number of prenatal care visits | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC | 2 |
 | 2100 | 243826008.0 | Antenatal care status | snomed | SIM RS Narmada INC | 1 |
 | 2101 | 17854005.0 | Regular | snomed | SIM RS Narmada INC | 1 |
 | 2102 | 49608001.0 | Irregular | snomed | SIM RS Narmada INC | 1 |
-| 2103 | 422587007.0 | Nausea | snomed | SIM RS Narmada INC (2x), Kobo Buku KIA 1 - ANC | 2 |
-| 2104 | 422400008.0 | Vomiting | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC | 2 |
-| 2105 | 289530006.0 | Vaginal bleeding | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (4x), Kobo Buku KIA 3 - PNC | 12 |
-| 2106 | 413320001.0 | Physical health problem | snomed | SIM RS Narmada INC (2x), Kobo Buku KIA 1 - ANC | 2 |
-| 2107 | 161805006.0 | Past pregnancy history of cesarean section | snomed | SIM RS Narmada INC (2x), Kobo Buku KIA 1 - ANC (2x) | 2 |
+| 2103 | 422587007.0 | Nausea | snomed | SIM RS Narmada INC (2x) | 1 |
+| 2104 | 422400008.0 | Vomiting | snomed | SIM RS Narmada INC | 1 |
+| 2105 | 289530006.0 | Vaginal bleeding | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 2106 | 413320001.0 | Physical health problem | snomed | SIM RS Narmada INC (2x) | 1 |
+| 2107 | 161805006.0 | Past pregnancy history of cesarean section | snomed | SIM RS Narmada INC (2x) | 1 |
 | 2108 | 10741751000119100 | Anemia in mother complicating childbirth | snomed | SIM RS Narmada INC | 1 |
-| 2109 | 199746004.0 | Obstructed labor | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 3 - PNC | 9 |
-| 2110 | 48194001.0 | Pregnancy-induced hypertension | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC (2x), SIM RS At tin ANC, SIM RS At tin INC (2x), SIM RS Nirmala ANC, SIM RS Nirmala INC (2x), SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC (2x), Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 | 18 |
-| 2111 | 38010008.0 | Intrapartum hemorrhage | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 8 |
-| 2112 | 40733004.0 | Infectious disease | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC (2x), SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC (2x), SIM RS Harapan Ibu INC, SIM RS At tin ANC (2x), SIM RS At tin INC, SIM RS Nirmala ANC (2x), SIM RS Nirmala INC, SIM RS PKU ANC (2x), Kobo Modul ANC (2x), Kobo Modul INC, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 | 19 |
-| 2113 | 386639001.0 | Termination of pregnancy | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC | 17 |
-| 2114 | 44223004.0 | Premature rupture of membranes | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Neonatus Outcome v2 | 9 |
-| 2115 | 38341003.0 | Hypertensive disorder, systemic arterial | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Buku KIA 1 - ANC | 8 |
-| 2116 | 398254007.0 | Pre-eclampsia | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC (2x), SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC (2x), SIM RS Harapan Ibu INC, SIM RS At tin ANC (2x), SIM RS At tin INC, SIM RS Nirmala ANC (2x), SIM RS Nirmala INC, SIM RS PKU ANC (2x), Kobo Modul ANC (2x), Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC | 19 |
-| 2117 | 15938005.0 | Eclampsia | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC (2x), SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC (2x), SIM RS Harapan Ibu INC, SIM RS At tin ANC (2x), SIM RS At tin INC, SIM RS Nirmala ANC (2x), SIM RS Nirmala INC, SIM RS PKU ANC (2x), Kobo Modul ANC (2x), Kobo Modul INC, Kobo Buku KIA 3 - PNC | 18 |
-| 2118 | 9293002.0 | Atony of uterus | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC (2x), SIM RS At tin INC (2x), SIM RS Nirmala INC (2x), Kobo Modul INC (2x) | 8 |
-| 2119 | 283380005.0 | Laceration of perineum | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC (2x), SIM RS At tin INC (2x), SIM RS Nirmala INC (2x), Kobo Modul INC (2x) | 8 |
-| 2120 | 199745000.0 | Complication occurring during labor and delivery | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu INC (2x), SIM RS Harapan Ibu PNC, SIM RS At tin INC (2x), SIM RS At tin PNC, SIM RS Nirmala INC (2x), SIM RS Nirmala PNC, Kobo Modul INC | 15 |
+| 2109 | 199746004.0 | Obstructed labor | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 4 |
+| 2110 | 48194001.0 | Pregnancy-induced hypertension | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 7 |
+| 2111 | 38010008.0 | Intrapartum hemorrhage | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 4 |
+| 2112 | 40733004.0 | Infectious disease | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC (2x), SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2113 | 386639001.0 | Termination of pregnancy | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2114 | 44223004.0 | Premature rupture of membranes | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 4 |
+| 2115 | 38341003.0 | Hypertensive disorder, systemic arterial | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 4 |
+| 2116 | 398254007.0 | Pre-eclampsia | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC (2x), SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2117 | 15938005.0 | Eclampsia | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS MPH ANC (2x), SIM RS Siaga Medika ANC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2118 | 9293002.0 | Atony of uterus | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 4 |
+| 2119 | 283380005.0 | Laceration of perineum | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 4 |
+| 2120 | 199745000.0 | Complication occurring during labor and delivery | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS PKU PNC | 8 |
 | 2121 | 59566000.0 | Oligohydramnios | snomed | SIM RS Narmada INC | 1 |
 | 2122 | 53443007.0 | Prolonged labor | snomed | SIM RS Narmada INC | 1 |
 | 2123 | 1365934004.0 | Failed attempted induction of labor | snomed | SIM RS Narmada INC | 1 |
-| 2124 | 130955003.0 | Fetal distress | snomed | SIM RS Narmada INC, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 5 |
+| 2124 | 130955003.0 | Fetal distress | snomed | SIM RS Narmada INC | 1 |
 | 2125 | 199747008.0 | Obstructed labor due to fetal malposition | snomed | SIM RS Narmada INC | 1 |
 | 2126 | 199397009.0 | Cephalopelvic disproportion | snomed | SIM RS Narmada INC | 1 |
-| 2127 | 371380006.0 | Amniotic fluid leaking | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC | 2 |
+| 2127 | 371380006.0 | Amniotic fluid leaking | snomed | SIM RS Narmada INC | 1 |
 | 2128 | 433068007.0 | Aneurysm of thoracic aorta | snomed | SIM RS Narmada INC | 1 |
-| 2129 | 38206000.0 | Exceptionally large at birth | snomed | SIM RS Narmada INC, Kobo Buku KIA 1 - ANC | 2 |
+| 2129 | 38206000.0 | Exceptionally large at birth | snomed | SIM RS Narmada INC | 1 |
 | 2130 | 740597009.0 | Umbilical cord complication during labor and delivery | snomed | SIM RS Narmada INC | 1 |
 | 2131 | 420209000.0 | History of contraceptive usage | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2132 | 161772002.0 | History of oral contraceptive usage | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
@@ -2156,45 +2156,45 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2148 | 43381005.0 | Passive smoker | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2149 | 77176002.0 | Smoker | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2150 | 105542008.0 | Non - drinker | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
-| 2151 | 219006.0 | Current drinker | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC (2x) | 3 |
-| 2152 | 248234008.0 | Mentally alert | snomed | SIM RS Narmada INC, Kobo Modul PNC | 2 |
+| 2151 | 219006.0 | Current drinker | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 2152 | 248234008.0 | Mentally alert | snomed | SIM RS Narmada INC | 1 |
 | 2153 | 300202002.0 | Response to voice | snomed | SIM RS Narmada INC | 1 |
 | 2154 | 450847001.0 | Response to pain | snomed | SIM RS Narmada INC | 1 |
 | 2155 | 422768004.0 | Unresponsive | snomed | SIM RS Narmada INC | 1 |
 | 2156 | 130987000.0 | Acute confusion | snomed | SIM RS Narmada INC | 1 |
 | 2157 | 2776000.0 | Delirium | snomed | SIM RS Narmada INC | 1 |
-| 2158 | LA6115-5 | 4.0 | loinc | SIM RS Narmada INC, Kobo Modul INC, Kobo Modul PNC | 3 |
+| 2158 | LA6115-5 | 4.0 | loinc | SIM RS Narmada INC | 1 |
 | 2159 | 9269-2 | Glasgow coma score total | loinc | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
-| 2160 | ANC.B8.DE36 | Pulse rate | WHO anc-custom-codes | SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC | 3 |
-| 2161 | ANC.B8.DE34 | Body temperature | WHO anc-custom-codes | SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC | 3 |
+| 2160 | ANC.B8.DE36 | Pulse rate | WHO anc-custom-codes | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 2161 | ANC.B8.DE34 | Body temperature | WHO anc-custom-codes | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2162 | 250554003.0 | Measurement of oxygen saturation at periphery | snomed | SIM RS Narmada INC | 1 |
-| 2163 | 284473002.0 | Mid upper arm circumference | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo DDTK | 26 |
-| 2164 | 8017000.0 | Face presentation | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 11 |
-| 2165 | 249097002.0 | Footling breech presentation | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 11 |
-| 2166 | 124736009.0 | Compound presentation | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 11 |
-| 2167 | 48782003.0 | Delivery normal | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 | 17 |
-| 2168 | 200138003.0 | Vacuum extractor delivery - delivered | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 | 12 |
-| 2169 | 200130005.0 | Forceps delivery - delivered | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 11 |
-| 2170 | 200144004.0 | Deliveries by cesarean | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome v2 | 17 |
-| 2171 | 249111004.0 | Engagement of head | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 11 |
-| 2172 | 249112006.0 | Head engaged | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 11 |
-| 2173 | 62098001.0 | Head not engaged | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 11 |
-| 2174 | 249120008.0 | Onset of labor first stage | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2175 | 364270005.0 | Frequency of uterine contraction | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Modul INC (2x) | 3 |
-| 2176 | 398143009.0 | Uterine contraction monitoring | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Modul INC (2x) | 3 |
+| 2163 | 284473002.0 | Mid upper arm circumference | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 11 |
+| 2164 | 8017000.0 | Face presentation | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 2165 | 249097002.0 | Footling breech presentation | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 2166 | 124736009.0 | Compound presentation | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 2167 | 48782003.0 | Delivery normal | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2168 | 200138003.0 | Vacuum extractor delivery - delivered | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2169 | 200130005.0 | Forceps delivery - delivered | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2170 | 200144004.0 | Deliveries by cesarean | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2171 | 249111004.0 | Engagement of head | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 2172 | 249112006.0 | Head engaged | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 2173 | 62098001.0 | Head not engaged | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 2174 | 249120008.0 | Onset of labor first stage | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC | 3 |
+| 2175 | 364270005.0 | Frequency of uterine contraction | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 2176 | 398143009.0 | Uterine contraction monitoring | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2177 | 289719005.0 | Strong uterine contractions | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2178 | 289716003.0 | Moderate uterine contractions | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2179 | 289715004.0 | Mild uterine contractions | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
-| 2180 | 364274001.0 | Duration of uterine contraction | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, Kobo Modul INC (2x) | 3 |
-| 2181 | 289437007.0 | Finding of fetal heart rate | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 8 |
-| 2182 | 289441006.0 | Normal fetal heart rate | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2183 | 312668007.0 | Abnormal fetal heart rate | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
+| 2180 | 364274001.0 | Duration of uterine contraction | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 2181 | 289437007.0 | Finding of fetal heart rate | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC | 3 |
+| 2182 | 289441006.0 | Normal fetal heart rate | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC | 3 |
+| 2183 | 312668007.0 | Abnormal fetal heart rate | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC | 3 |
 | 2184 | 248910006.0 | Uterine cervix finding | loinc | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
-| 2185 | 365662002.0 | Finding of amniotic fluid appearance | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 12 |
-| 2186 | 168090003.0 | Amniotic fluid clear | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 12 |
-| 2187 | 408781009.0 | Straw colored amniotic fluid | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 12 |
-| 2188 | 249134008.0 | Bloodstained liquor | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 12 |
-| 2189 | 168092006.0 | Amniotic fluid -meconium stain | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC | 16 |
+| 2185 | 365662002.0 | Finding of amniotic fluid appearance | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2186 | 168090003.0 | Amniotic fluid clear | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2187 | 408781009.0 | Straw colored amniotic fluid | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2188 | 249134008.0 | Bloodstained liquor | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2189 | 168092006.0 | Amniotic fluid -meconium stain | snomed | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
 | 2190 | 32750006.0 | Inspection | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2191 | 424679001.0 | pH measurement, vaginal fluid | snomed | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
 | 2192 | 387672006.0 | Cardiotochogram | snomed | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Goetoeng ANC | 3 |
@@ -2203,14 +2203,14 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2195 | 169876006.0 | Birth head circumference | snomed | SIM RS Narmada INC | 1 |
 | 2196 | 3941000175104.0 | Birth abdominal circumference | snomed | SIM RS Narmada INC | 1 |
 | 2197 | 3931000175105.0 | Birth chest circumference | snomed | SIM RS Narmada INC | 1 |
-| 2198 | 9272-6 | 1 minute Apgar Score | loinc | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 5 |
-| 2199 | 57284007.0 | Severe birth asphyxia | snomed | SIM RS Narmada INC (3x), SIM RS Panti Nugroho BBL (3x), SIM RS At tin BBL (3x), SIM RS Nirmala BBL (3x), SIM RS PKU BBL (3x) | 5 |
-| 2200 | 77362009.0 | Mild to moderate birth asphyxia | snomed | SIM RS Narmada INC (3x), SIM RS Panti Nugroho BBL (3x), SIM RS At tin BBL (3x), SIM RS Nirmala BBL (3x), SIM RS PKU BBL (3x) | 5 |
-| 2201 | 275307002.0 | Apgar normal | snomed | SIM RS Narmada INC (3x), SIM RS Panti Nugroho BBL (3x), SIM RS At tin BBL (3x), SIM RS Nirmala BBL (3x), SIM RS PKU BBL (3x) | 5 |
+| 2198 | 9272-6 | 1 minute Apgar Score | loinc | SIM RS Narmada INC, SIM RS Panti Nugroho BBL | 2 |
+| 2199 | 57284007.0 | Severe birth asphyxia | snomed | SIM RS Narmada INC (3x), SIM RS Panti Nugroho BBL (3x) | 2 |
+| 2200 | 77362009.0 | Mild to moderate birth asphyxia | snomed | SIM RS Narmada INC (3x), SIM RS Panti Nugroho BBL (3x) | 2 |
+| 2201 | 275307002.0 | Apgar normal | snomed | SIM RS Narmada INC (3x), SIM RS Panti Nugroho BBL (3x) | 2 |
 | 2202 | 32406-1 | 1 minute Apgar Color | loinc | SIM RS Narmada INC | 1 |
-| 2203 | LA6722-8 | The baby's whole body is completely bluish-gray or pale | loinc | SIM RS Narmada INC (3x), Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
-| 2204 | LA6723-6 | Good color in body with bluish hands or feet | loinc | SIM RS Narmada INC (3x), Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
-| 2205 | LA6724-4 | Good color all over | loinc | SIM RS Narmada INC (3x), Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
+| 2203 | LA6722-8 | The baby's whole body is completely bluish-gray or pale | loinc | SIM RS Narmada INC (3x) | 1 |
+| 2204 | LA6723-6 | Good color in body with bluish hands or feet | loinc | SIM RS Narmada INC (3x) | 1 |
+| 2205 | LA6724-4 | Good color all over | loinc | SIM RS Narmada INC (3x) | 1 |
 | 2206 | 32407-9 | 1 minute Apgar Heart rate | loinc | SIM RS Narmada INC | 1 |
 | 2207 | LA6716-0 | No heart rate | loinc | SIM RS Narmada INC (3x) | 1 |
 | 2208 | LA6717-8 | Fewer than 100 beats per minute | loinc | SIM RS Narmada INC (3x) | 1 |
@@ -2224,181 +2224,181 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2216 | LA6714-5 | Some flexion of arms and legs | loinc | SIM RS Narmada INC (3x) | 1 |
 | 2217 | LA6715-2 | Active motion | loinc | SIM RS Narmada INC (3x) | 1 |
 | 2218 | 32410-3 | 1 minute Apgar Respiratory effort | loinc | SIM RS Narmada INC | 1 |
-| 2219 | LA6725-1 | Not breathing | loinc | SIM RS Narmada INC (3x), Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
-| 2220 | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | loinc | SIM RS Narmada INC (3x), Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
-| 2221 | LA6727-7 | Good, strong cry; normal rate and effort of breathing | loinc | SIM RS Narmada INC (3x), Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
-| 2222 | 9274-2 | 5 minute Apgar Score | loinc | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x) | 6 |
+| 2219 | LA6725-1 | Not breathing | loinc | SIM RS Narmada INC (3x) | 1 |
+| 2220 | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | loinc | SIM RS Narmada INC (3x) | 1 |
+| 2221 | LA6727-7 | Good, strong cry; normal rate and effort of breathing | loinc | SIM RS Narmada INC (3x) | 1 |
+| 2222 | 9274-2 | 5 minute Apgar Score | loinc | SIM RS Narmada INC, SIM RS Panti Nugroho BBL | 2 |
 | 2223 | 32411-1 | 5 minute Apgar Color | loinc | SIM RS Narmada INC | 1 |
 | 2224 | 32412-9 | 5 minute Apgar Heart rate | loinc | SIM RS Narmada INC | 1 |
 | 2225 | 32414-5 | 5 minute Apgar Reflex irritability | loinc | SIM RS Narmada INC | 1 |
 | 2226 | 32413-7 | 5 minute Apgar Muscle tone | loinc | SIM RS Narmada INC | 1 |
 | 2227 | 32415-2 | 5 minute Apgar Respiratory effort | loinc | SIM RS Narmada INC | 1 |
-| 2228 | 9271-8 | 10 minute Apgar Score | loinc | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 5 |
+| 2228 | 9271-8 | 10 minute Apgar Score | loinc | SIM RS Narmada INC, SIM RS Panti Nugroho BBL | 2 |
 | 2229 | 32401-2 | 10 minute Apgar Color | loinc | SIM RS Narmada INC | 1 |
 | 2230 | 32402-0 | 10 minute Apgar Heart rate | loinc | SIM RS Narmada INC | 1 |
 | 2231 | 32404-6 | 10 minute Apgar Reflex irritability | loinc | SIM RS Narmada INC | 1 |
 | 2232 | 32403-8 | 10 minute Apgar Muscle tone | loinc | SIM RS Narmada INC | 1 |
 | 2233 | 32405-3 | 10 minute Apgar Respiratory effort | loinc | SIM RS Narmada INC | 1 |
-| 2234 | 448883004.0 | Injection of vitamin K1 | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x) | 10 |
-| 2235 | PC000002 | Pemberian Salep Antibiotik Mata | kemkes clinical-term | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x) | 10 |
-| 2236 | 30.0 | hepatitis B immune globulin | http://hl7.org/fhir/sid/cvx | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 7 |
+| 2234 | 448883004.0 | Injection of vitamin K1 | snomed | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 3 |
+| 2235 | PC000002 | Pemberian Salep Antibiotik Mata | kemkes clinical-term | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 3 |
+| 2236 | 30.0 | hepatitis B immune globulin | http://hl7.org/fhir/sid/cvx | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 3 |
 | 2237 | 249278006.0 | Ability to pass urine | snomed | SIM RS Narmada INC | 1 |
 | 2238 | 276397000.0 | Has passed meconium | snomed | SIM RS Narmada INC | 1 |
 | 2239 | 1255917009.0 | Maternal perinatal care | snomed | SIM RS Narmada KIA | 1 |
-| 2240 | 288203005.0 | Transverse/oblique lie | snomed | SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 13 |
-| 2241 | 243787009 | Antenatal screening | loinc | SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC | 2 |
-| 2242 | 34842007.0 | Antepartum hemorrhage | snomed | SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 9 |
-| 2243 | 91302008.0 | Sepsis | snomed | SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 3 - PNC | 10 |
-| 2244 | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC (2x), SIM RS Ummu Hani PNC (2x), SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC (2x), SIM RS Harapan Ibu PNC (2x), SIM RS At tin PNC (2x), SIM RS Nirmala PNC (2x), Kobo Modul ANC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 13 |
-| 2245 | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC (2x), SIM RS Ummu Hani PNC (2x), SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC (2x), SIM RS Harapan Ibu PNC (2x), SIM RS At tin PNC (2x), SIM RS Nirmala PNC (2x), Kobo Modul ANC, Kobo Modul PNC (2x), Kobo Buku KIA 3 - PNC | 12 |
-| 2246 | 3457005.0 | Patient referral | snomed | SIM RS Panti Nugroho ANC (3x), SIM RS Ummu Hani PNC, SIM RS MPH ANC (3x), SIM RS MPH PNC, SIM RS Siaga Medika ANC (3x), SIM RS Harapan Ibu ANC (3x), SIM RS At tin ANC (3x), SIM RS Nirmala ANC (3x), SIM RS PKU ANC (3x), Kobo Modul ANC (3x), Kobo Buku KIA 1 - ANC | 11 |
+| 2240 | 288203005.0 | Transverse/oblique lie | snomed | SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 2241 | 243787009 | Antenatal screening | loinc | SIM RS Narmada KIA | 1 |
+| 2242 | 34842007.0 | Antepartum hemorrhage | snomed | SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 4 |
+| 2243 | 91302008.0 | Sepsis | snomed | SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 4 |
+| 2244 | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC (2x), SIM RS Ummu Hani PNC (2x), SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC (2x) | 6 |
+| 2245 | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC (2x), SIM RS Ummu Hani PNC (2x), SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC (2x) | 6 |
+| 2246 | 3457005.0 | Patient referral | snomed | SIM RS Panti Nugroho ANC (3x), SIM RS Ummu Hani PNC, SIM RS MPH ANC (3x), SIM RS MPH PNC, SIM RS Siaga Medika ANC (3x) | 5 |
 | 2247 | 12763006.0 | Blood pressure below reference range (finding) | snomed | SIM RS Panti Nugroho ANC | 1 |
-| 2248 | 135840009.0 | Blood pressure monitoring | snomed | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul PNC | 14 |
-| 2249 | 308116003.0 | Antihypertensive therapy | snomed | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Modul PNC | 22 |
-| 2250 | 435591000124104.0 | Nutrition supplement therapy | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 8 |
-| 2251 | 414916001.0 | Obesity | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 8 |
-| 2252 | 56717001.0 | Tuberculosis | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC (2x), SIM RS At tin ANC (2x), SIM RS Nirmala ANC (2x), SIM RS PKU ANC (2x), Kobo Modul ANC (2x) | 8 |
-| 2253 | 56265001.0 | Heart disease | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Neonatus Outcome v2 | 9 |
-| 2254 | 385892002.0 | Mental health screening | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 9 |
-| 2255 | 309343006.0 | Physician | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x), Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x), Kobo DDTK | 43 |
-| 2256 | 386337006.0 | Intrapartal care | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Goetoeng INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 13 |
-| 2257 | 438949009.0 | Alive | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC (2x), SIM RS Ummu Hani PNC, SIM RS MPH INC (2x), SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 21 |
-| 2258 | 419099009.0 | Dead | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan (2x), Kobo Buku KIA 3 - PNC (3x), Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (4x) | 23 |
-| 2259 | 246435002.0 | Number of fetuses | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 1 - ANC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 | 12 |
-| 2260 | 271692001.0 | Presentation of fetus | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 10 |
-| 2261 | 398236008.0 | Intrauterine | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC (2x) | 11 |
-| 2262 | 298109001.0 | Ectopic | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC (2x) | 11 |
-| 2263 | 70028003.0 | Vertex presentation | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 8 |
-| 2264 | 249083005.0 | Posterior fontanelle presenting | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 8 |
-| 2265 | 8014007.0 | Brow presentation of fetus | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 9 |
-| 2266 | 289282009.0 | Amniotic membrane finding | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 9 |
-| 2267 | 249125003.0 | Intact membranes | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 9 |
-| 2268 | 264362003.0 | Home | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (10x) | 10 |
-| 2269 | 102.0 | Pusat Kesehatan Masyarakat | organization-type | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (7x) | 11 |
-| 2270 | 103.0 | Klinik | organization-type | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (7x) | 10 |
-| 2271 | 82242000.0 | Children’s hospital | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Modul PNC (2x) | 8 |
-| 2272 | 104.0 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul PNC, Kobo Buku KIA 2 - Luaran Kehamilan | 8 |
-| 2273 | 101.0 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 3 |
-| 2274 | 394573001.0 | Maternity clinic | snomed | SIM RS Panti Nugroho INC, SIM RS PKU INC, Kobo Modul INC | 3 |
-| 2275 | SP000398 | Usia Kehamilan Saat Persalinan (hari) | kemkes sp | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC | 16 |
-| 2276 | 405195003.0 | Intrapartum maternal status | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 9 |
-| 2277 | 102514002.0 | Well female adult | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 10 |
-| 2278 | 39104002.0 | Illness | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan (2x) | 10 |
-| 2279 | 131148009.0 | Bleeding | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Neonatus Outcome v2 | 10 |
-| 2280 | 386661006.0 | Fever | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (2x) | 14 |
-| 2281 | 91175000.0 | Seizure | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu BBL, SIM RS At tin INC, SIM RS At tin BBL, SIM RS Nirmala INC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC | 15 |
-| 2282 | 249215002.0 | Odor of lochia | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 17 |
-| 2283 | 59283008.0 | Maternal death | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan (2x) | 10 |
-| 2284 | 430701006.0 | Resuscitation using intravenous fluid | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2285 | SP000156 | Pemberian Obat Uterotonik | kemkes sp | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2286 | 236998006.0 | Bimanual uterine massage | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2287 | 360362007.0 | Suture of laceration of perineum | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Goetoeng ANC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 8 |
-| 2288 | 28233006.0 | Manual removal of retained placenta | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2289 | 409014006.0 | Delivery care management | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala INC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC (2x) | 19 |
-| 2290 | 409063005.0 | Counselling | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC (2x), SIM RS MPH INC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS Harapan Ibu INC (2x), SIM RS At tin INC (2x), SIM RS Nirmala INC (2x), Kobo Modul INC (2x), Kobo Buku KIA 1 - ANC | 10 |
-| 2291 | 306052007.0 | Referral by midwife | snomed | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul INC, Kobo Modul PNC | 8 |
-| 2292 | SP000684 | Tatalaksana Obat | kemkes sp | SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS PKU ANC | 13 |
-| 2293 | 364297003.0 | Female perineum observable | loinc | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2294 | 300885006.0 | Swelling of breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2295 | 290070001.0 | Red breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2296 | 54302000.0 | Discharge from nipple | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2297 | 53430007.0 | Pain of breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2298 | 289700000.0 | Uterine contractions present | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2299 | 249214003.0 | Color of lochia | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2300 | 278072004.0 | Lochia rubra | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2301 | 449828001.0 | Lochia serosa | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2302 | 113291006.0 | Lochia sanguinolenta | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2303 | 449827006.0 | Lochia alba | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2304 | 1145307003.0 | Exclusively breastfed | snomed | SIM RS Panti Nugroho PNC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 4 - Cadre | 10 |
-| 2305 | 252041008.0 | Micturition finding | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2306 | 49650001.0 | Dysuria | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 11 |
-| 2307 | 249288007.0 | Incomplete emptying of urinary bladder | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2308 | 162116003.0 | Increased frequency of urination | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2309 | 42112009.0 | Enuresis | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2310 | 102834005.0 | Normal micturition | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2311 | 267064002.0 | Retention of urine | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2312 | 300375001.0 | Able to defecate | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2313 | 408988007.0 | Newborn care education | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2314 | 47821001.0 | Postpartum hemorrhage | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC (2x), SIM RS At tin PNC (2x), SIM RS Nirmala PNC (2x), Kobo Modul PNC (2x), Kobo Buku KIA 3 - PNC (2x) | 10 |
-| 2315 | 198188007.0 | Chronic uterine inflammatory disease | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2316 | 111367007.0 | Pelvic abscess | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2317 | 211063003.0 | Infected abrasion of perineum | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2318 | 76902006.0 | Tetanus | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2319 | 266579006.0 | Inflammatory disorder of breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 10 |
-| 2320 | 49746001.0 | Engorgement of breasts | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2321 | 82231009.0 | Inversion of nipple | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 9 |
-| 2322 | 58703003.0 | Postpartum depression | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC (2x), SIM RS At tin PNC (2x), SIM RS Nirmala PNC (2x), Kobo Modul PNC (2x) | 9 |
-| 2323 | 289084000.0 | Difficulty performing breastfeeding | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul PNC | 13 |
-| 2324 | 767224000.0 | Administration of vitamin A | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC (2x), Kobo Buku KIA 4 - Cadre | 8 |
-| 2325 | 711029005.0 | Counseling about breastfeeding | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
-| 2326 | 72531000052105.0 | Counseling for contraception | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
-| 2327 | 441041000124100.0 | Counseling about nutrition | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
-| 2328 | ED000012 | Edukasi lainnya | kemkes clinical-term | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 8 |
-| 2329 | 395264002.0 | Product containing tenofovir | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC | 9 |
-| 2330 | 432555000.0 | Product containing artesunate | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2331 | 64115004.0 | Product containing amodiaquine | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2332 | 324919005.0 | Product containing precisely quinine sulfate 200 milligram/1 each conventional release oral tablet | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2333 | 29175007.0 | Product containing rifampicin | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2334 | 81335000.0 | Product containing isoniazid | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2335 | 13592004.0 | Product containing pyrazinamide | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2336 | 24450004.0 | Product containing ethambutol | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu PNC, SIM RS At tin ANC, SIM RS At tin PNC, SIM RS Nirmala ANC, SIM RS Nirmala PNC, SIM RS PKU ANC, Kobo Modul PNC | 10 |
-| 2337 | 237122005.0 | Lactational amenorrhea | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 12 |
-| 2338 | 22523008.0 | Vasectomy | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 11 |
-| 2339 | 77543007.0 | Ligation of fallopian tube | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC (2x) | 12 |
-| 2340 | 135840009.0 | Blood pressure monitoring | kemkes sp | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 7 |
-| 2341 | 359746009.0 | Patient’s condition stable | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 7 |
-| 2342 | 162668006.0 | Patient’s condition unstable | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 3 - PNC | 7 |
-| 2343 | 268910001.0 | Patient’s condition improved | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Goetoeng INC, SIM RS Goetoeng BBL, SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 8 |
-| 2344 | 80281008.0 | Cleft lip | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2345 | 13213009.0 | Congenital heart disease | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2346 | 35045004.0 | Microtia | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2347 | 22006008.0 | Hypertelorism | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2348 | 367506006.0 | Polydactyly | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2349 | 52781008.0 | Congenital hip dysplasia | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2350 | 1156475005.0 | Congenital talipes equinovarus | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2351 | 253098009.0 | Neural tube defect | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2352 | 118928003.0 | Disorder of abdominal wall | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2353 | 42030000.0 | Disorder of the genitourinary system | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2354 | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | kemkes clinical-term" | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
-| 2355 | 8.0 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus | 7 |
+| 2248 | 135840009.0 | Blood pressure monitoring | snomed | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC | 5 |
+| 2249 | 308116003.0 | Antihypertensive therapy | snomed | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 9 |
+| 2250 | 435591000124104.0 | Nutrition supplement therapy | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 3 |
+| 2251 | 414916001.0 | Obesity | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 3 |
+| 2252 | 56717001.0 | Tuberculosis | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 3 |
+| 2253 | 56265001.0 | Heart disease | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 3 |
+| 2254 | 385892002.0 | Mental health screening | snomed | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 3 |
+| 2255 | 309343006.0 | Physician | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 16 |
+| 2256 | 386337006.0 | Intrapartal care | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Goetoeng INC | 8 |
+| 2257 | 438949009.0 | Alive | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC (2x), SIM RS Ummu Hani PNC, SIM RS MPH INC (2x), SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC (2x), SIM RS PKU PNC | 10 |
+| 2258 | 419099009.0 | Dead | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 10 |
+| 2259 | 246435002.0 | Number of fetuses | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC | 3 |
+| 2260 | 271692001.0 | Presentation of fetus | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2261 | 398236008.0 | Intrauterine | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2262 | 298109001.0 | Ectopic | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 2263 | 70028003.0 | Vertex presentation | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC | 4 |
+| 2264 | 249083005.0 | Posterior fontanelle presenting | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC | 4 |
+| 2265 | 8014007.0 | Brow presentation of fetus | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2266 | 289282009.0 | Amniotic membrane finding | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2267 | 249125003.0 | Intact membranes | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2268 | 264362003.0 | Home | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2269 | 102.0 | Pusat Kesehatan Masyarakat | organization-type | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2270 | 103.0 | Klinik | organization-type | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2271 | 82242000.0 | Children’s hospital | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2272 | 104.0 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2273 | 101.0 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | SIM RS Panti Nugroho INC, SIM RS PKU INC | 2 |
+| 2274 | 394573001.0 | Maternity clinic | snomed | SIM RS Panti Nugroho INC, SIM RS PKU INC | 2 |
+| 2275 | SP000398 | Usia Kehamilan Saat Persalinan (hari) | kemkes sp | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC | 8 |
+| 2276 | 405195003.0 | Intrapartum maternal status | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2277 | 102514002.0 | Well female adult | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2278 | 39104002.0 | Illness | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2279 | 131148009.0 | Bleeding | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2280 | 386661006.0 | Fever | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2281 | 91175000.0 | Seizure | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2282 | 249215002.0 | Odor of lochia | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 9 |
+| 2283 | 59283008.0 | Maternal death | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 2284 | 430701006.0 | Resuscitation using intravenous fluid | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2285 | SP000156 | Pemberian Obat Uterotonik | kemkes sp | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2286 | 236998006.0 | Bimanual uterine massage | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2287 | 360362007.0 | Suture of laceration of perineum | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Goetoeng ANC | 4 |
+| 2288 | 28233006.0 | Manual removal of retained placenta | snomed | SIM RS Panti Nugroho INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 3 |
+| 2289 | 409014006.0 | Delivery care management | snomed | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC | 10 |
+| 2290 | 409063005.0 | Counselling | snomed | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC (2x), SIM RS MPH INC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 5 |
+| 2291 | 306052007.0 | Referral by midwife | snomed | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 3 |
+| 2292 | SP000684 | Tatalaksana Obat | kemkes sp | SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC | 3 |
+| 2293 | 364297003.0 | Female perineum observable | loinc | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2294 | 300885006.0 | Swelling of breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2295 | 290070001.0 | Red breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2296 | 54302000.0 | Discharge from nipple | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2297 | 53430007.0 | Pain of breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2298 | 289700000.0 | Uterine contractions present | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2299 | 249214003.0 | Color of lochia | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2300 | 278072004.0 | Lochia rubra | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2301 | 449828001.0 | Lochia serosa | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2302 | 113291006.0 | Lochia sanguinolenta | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2303 | 449827006.0 | Lochia alba | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2304 | 1145307003.0 | Exclusively breastfed | snomed | SIM RS Panti Nugroho PNC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU PNC | 4 |
+| 2305 | 252041008.0 | Micturition finding | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2306 | 49650001.0 | Dysuria | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2307 | 249288007.0 | Incomplete emptying of urinary bladder | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2308 | 162116003.0 | Increased frequency of urination | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2309 | 42112009.0 | Enuresis | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2310 | 102834005.0 | Normal micturition | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2311 | 267064002.0 | Retention of urine | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2312 | 300375001.0 | Able to defecate | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2313 | 408988007.0 | Newborn care education | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2314 | 47821001.0 | Postpartum hemorrhage | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2315 | 198188007.0 | Chronic uterine inflammatory disease | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2316 | 111367007.0 | Pelvic abscess | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2317 | 211063003.0 | Infected abrasion of perineum | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2318 | 76902006.0 | Tetanus | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2319 | 266579006.0 | Inflammatory disorder of breast | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2320 | 49746001.0 | Engorgement of breasts | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2321 | 82231009.0 | Inversion of nipple | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2322 | 58703003.0 | Postpartum depression | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2323 | 289084000.0 | Difficulty performing breastfeeding | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 2324 | 767224000.0 | Administration of vitamin A | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2325 | 711029005.0 | Counseling about breastfeeding | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 2326 | 72531000052105.0 | Counseling for contraception | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 2327 | 441041000124100.0 | Counseling about nutrition | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 2328 | ED000012 | Edukasi lainnya | kemkes clinical-term | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 3 |
+| 2329 | 395264002.0 | Product containing tenofovir | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2330 | 432555000.0 | Product containing artesunate | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2331 | 64115004.0 | Product containing amodiaquine | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2332 | 324919005.0 | Product containing precisely quinine sulfate 200 milligram/1 each conventional release oral tablet | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2333 | 29175007.0 | Product containing rifampicin | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2334 | 81335000.0 | Product containing isoniazid | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2335 | 13592004.0 | Product containing pyrazinamide | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2336 | 24450004.0 | Product containing ethambutol | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2337 | 237122005.0 | Lactational amenorrhea | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 5 |
+| 2338 | 22523008.0 | Vasectomy | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 5 |
+| 2339 | 77543007.0 | Ligation of fallopian tube | snomed | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC (2x), SIM RS MPH PNC (2x), SIM RS Siaga Medika PNC (2x), SIM RS PKU PNC | 5 |
+| 2340 | 135840009.0 | Blood pressure monitoring | kemkes sp | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 3 |
+| 2341 | 359746009.0 | Patient’s condition stable | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2342 | 162668006.0 | Patient’s condition unstable | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 2343 | 268910001.0 | Patient’s condition improved | snomed | SIM RS Panti Nugroho PNC, SIM RS PKU PNC, SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 4 |
+| 2344 | 80281008.0 | Cleft lip | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2345 | 13213009.0 | Congenital heart disease | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2346 | 35045004.0 | Microtia | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2347 | 22006008.0 | Hypertelorism | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2348 | 367506006.0 | Polydactyly | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2349 | 52781008.0 | Congenital hip dysplasia | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2350 | 1156475005.0 | Congenital talipes equinovarus | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2351 | 253098009.0 | Neural tube defect | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2352 | 118928003.0 | Disorder of abdominal wall | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2353 | 42030000.0 | Disorder of the genitourinary system | snomed | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2354 | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | kemkes clinical-term" | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 2355 | 8.0 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
 | 2356 | E14 | Unspecified diabetes mellitus | icd-10 | SIM RS Panti Nugroho Diabetes Melitus, SIM RS MPH Diabetes Melitus, SIM RS Goetoeng Diabetes Melitus | 3 |
-| 2357 | 69280009.0 | Specialized physician | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi, SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x) | 8 |
+| 2357 | 69280009.0 | Specialized physician | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi | 4 |
 | 2358 | 59058001.0 | General physician | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
 | 2359 | SP000925 | Rujukan dari Klinik | kemkes sp | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
 | 2360 | I10 | Essential (primary) hypertension | icd-10 | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Hipertensi, SIM RS Goetoeng Hipertensi | 3 |
 | 2361 | 8480-6 | Systolic blood pressure | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Goetoeng Hipertensi | 4 |
-| 2362 | 15220000.0 | Laboratory test | snomed | SIM RS Panti Nugroho Hipertensi (3x), SIM RS Panti Nugroho Stroke (3x), SIM RS MPH Diabetes Melitus (3x), SIM RS MPH Hipertensi (3x), SIM RS Siaga Medika ANC, SIM RS MPH Hepatitis (3x), SIM RS Ummu Hani Hepatitis (3x), SIM RS PKU Hepatitis (3x), SIM RS Siaga Medika Hepatitis (3x), Kobo Modul ANC, Kobo Modul INC | 11 |
-| 2363 | 123038009.0 | Specimen | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis | 8 |
-| 2364 | TK000028 | Diagnostic procedure | kemkes | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis | 7 |
-| 2365 | 277132007.0 | Therapeutic procedure | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis | 8 |
+| 2362 | 15220000.0 | Laboratory test | snomed | SIM RS Panti Nugroho Hipertensi (3x), SIM RS Panti Nugroho Stroke (3x), SIM RS MPH Diabetes Melitus (3x), SIM RS MPH Hipertensi (3x), SIM RS Siaga Medika ANC | 5 |
+| 2363 | 123038009.0 | Specimen | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
+| 2364 | TK000028 | Diagnostic procedure | kemkes | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 3 |
+| 2365 | 277132007.0 | Therapeutic procedure | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
 | 2366 | 736286003.0 | Hypertension clinical management plan | snomed | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Hipertensi | 2 |
 | 2367 | I64 | Stroke, not specified as haemorrhage or infarction | icd-10 | SIM RS Panti Nugroho Stroke | 1 |
 | 2368 | 80051000119107.0 | Stroke care management | snomed | SIM RS Panti Nugroho Stroke | 1 |
 | 2369 | 736251000.0 | Stroke care plan | snomed | SIM RS Panti Nugroho Stroke | 1 |
-| 2370 | 609496007.0 | Complication occurring during pregnancy | snomed | SIM RS Ummu Hani ANC (2x), SIM RS MPH ANC (2x), SIM RS Harapan Ibu ANC (2x), SIM RS At tin ANC (2x), SIM RS Nirmala ANC (2x), SIM RS PKU ANC (2x) | 6 |
-| 2371 | 49052-4 | Gestational age in days | kemkes sp | SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC | 6 |
+| 2370 | 609496007.0 | Complication occurring during pregnancy | snomed | SIM RS Ummu Hani ANC (2x), SIM RS MPH ANC (2x) | 2 |
+| 2371 | 49052-4 | Gestational age in days | kemkes sp | SIM RS Ummu Hani ANC, SIM RS MPH ANC | 2 |
 | 2372 | 56542007.0 | Medical record administrator | snomed | SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC | 5 |
-| 2373 | 23954006.0 | Acromion presentation | snomed | SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 7 |
-| 2374 | 289259007.0 | Vaginal delivery | snomed | SIM RS Ummu Hani INC, SIM RS MPH INC, Kobo Buku KIA 1 - ANC | 3 |
-| 2375 | 289854007.0 | Perineum intact | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC, Kobo Modul PNC | 3 |
-| 2376 | 57759005.0 | First degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC, Kobo Modul PNC | 3 |
-| 2377 | 6234006.0 | Second degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC, Kobo Modul PNC | 3 |
-| 2378 | 10217006.0 | Third degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC, Kobo Modul PNC | 3 |
-| 2379 | 399031001.0 | Fourth degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC, Kobo Modul PNC | 3 |
+| 2373 | 23954006.0 | Acromion presentation | snomed | SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC | 3 |
+| 2374 | 289259007.0 | Vaginal delivery | snomed | SIM RS Ummu Hani INC, SIM RS MPH INC | 2 |
+| 2375 | 289854007.0 | Perineum intact | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
+| 2376 | 57759005.0 | First degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
+| 2377 | 6234006.0 | Second degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
+| 2378 | 10217006.0 | Third degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
+| 2379 | 399031001.0 | Fourth degree perineal laceration | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
 | 2380 | 409019001.0 | Postpartum care management | snomed | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
 | 2381 | 243787009.0 | Antenatal screening | loinc | SIM RS MPH ANC | 1 |
-| 2382 | 11935004.0 | Obstetrician | snomed | SIM RS MPH INC, SIM RS Siaga Medika INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 3 - PNC | 5 |
-| 2383 | 185389009.0 | Follow-up visit | snomed | SIM RS MPH PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, Kobo Modul INC, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 7 |
-| 2384 | 104.0 | Rumah Sakit | organization-type | SIM RS MPH BBL, Kobo Modul INC, Kobo Modul PNC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (7x) | 5 |
-| 2385 | 20564-1 | Oxygen saturation in Blood | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 3 |
-| 2386 | SP000296 | Skrining Penyakit Jantung Bawaan | kemkes sp | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 3 |
-| 2387 | 408989004.0 | Newborn care management | snomed | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Buku KIA 3 - PNC (2x) | 3 |
-| 2388 | 10199-8 | Physical findings of Head Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 3 |
-| 2389 | 10192-3 | Physical findings of Back Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 3 |
-| 2390 | 11388-6 | Physical findings of Buttocks Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 3 |
-| 2391 | 11400-9 | Physical findings of Genitalia Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 3 |
-| 2392 | 787859002.0 | Vaccine product | snomed | SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Buku KIA 4 - Cadre (2x), Kobo Buku KIA 5 - Vaksinatorku (4x) | 4 |
-| 2393 | 113076002.0 | Glucose tolerance test | snomed | SIM RS MPH Diabetes Melitus (3x), Kobo Buku KIA 1 - ANC | 2 |
+| 2382 | 11935004.0 | Obstetrician | snomed | SIM RS MPH INC, SIM RS Siaga Medika INC | 2 |
+| 2383 | 185389009.0 | Follow-up visit | snomed | SIM RS MPH PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC | 3 |
+| 2384 | 104.0 | Rumah Sakit | organization-type | SIM RS MPH BBL | 1 |
+| 2385 | 20564-1 | Oxygen saturation in Blood | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2386 | SP000296 | Skrining Penyakit Jantung Bawaan | kemkes sp | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2387 | 408989004.0 | Newborn care management | snomed | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2388 | 10199-8 | Physical findings of Head Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2389 | 10192-3 | Physical findings of Back Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2390 | 11388-6 | Physical findings of Buttocks Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2391 | 11400-9 | Physical findings of Genitalia Narrative | loinc | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2392 | 787859002.0 | Vaccine product | snomed | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 2393 | 113076002.0 | Glucose tolerance test | snomed | SIM RS MPH Diabetes Melitus (3x) | 1 |
 | 2394 | 736284000.0 | Diabetes clinical management plan | snomed | SIM RS MPH Diabetes Melitus | 1 |
 | 2395 | 29463-7 | Body weight |  | SIM RS Siaga Medika ANC | 1 |
 | 2396 | ANC.B8.DE3 | Current weight |  | SIM RS Siaga Medika ANC | 1 |
@@ -2406,45 +2406,45 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2398 | 66862007.0 | Radiologist | snomed | SIM RS Siaga Medika ANC (9x) | 1 |
 | 2399 | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG |  | SIM RS Siaga Medika ANC | 1 |
 | 2400 | 260415000.0 | Not detected | snomed | SIM RS Siaga Medika ANC | 1 |
-| 2401 | 122555007.0 | Venous blood specimen | snomed | SIM RS Siaga Medika ANC (5x), SIM RS Harapan Ibu ANC (5x), SIM RS At tin ANC (5x), SIM RS Nirmala ANC (5x), SIM RS PKU ANC (5x), Kobo Modul ANC (5x) | 6 |
+| 2401 | 122555007.0 | Venous blood specimen | snomed | SIM RS Siaga Medika ANC (5x) | 1 |
 | 2402 | 68961-2 |  |  | SIM RS Siaga Medika ANC | 1 |
-| 2403 | 122575003.0 | Urine specimen | snomed | SIM RS Siaga Medika ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 6 |
+| 2403 | 122575003.0 | Urine specimen | snomed | SIM RS Siaga Medika ANC | 1 |
 | 2404 | 438791000124102.0 | Vitamin C supplement therapy | snomed | SIM RS Siaga Medika ANC | 1 |
 | 2405 | SP000685 | Rujukan dari Bidan Praktik Mandiri (BPM) | kemkes sp | SIM RS Siaga Medika INC | 1 |
-| 2406 | SP000461 | Usia Kehamilan (Hari) | kemkes sp | SIM RS Siaga Medika INC, Kobo Modul ANC | 2 |
+| 2406 | SP000461 | Usia Kehamilan (Hari) | kemkes sp | SIM RS Siaga Medika INC | 1 |
 | 2407 | SP000686 | Faktor Risiko Persalinan | kemkes sp | SIM RS Siaga Medika INC | 1 |
 | 2408 | SP000687 | Tidak Ada Faktor Risiko Persalinan | kemkes sp | SIM RS Siaga Medika INC | 1 |
 | 2409 | SP000688 | Ada Faktor Risiko Persalinan | kemkes sp | SIM RS Siaga Medika INC | 1 |
-| 2410 | 106292003.0 | Professional nurse | snomed | SIM RS Siaga Medika INC, Kobo Modul INC | 2 |
-| 2411 | 303071001.0 | Person in the family | snomed | SIM RS Siaga Medika INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC (3x), Kobo Buku KIA 3 - PNC (2x) | 4 |
-| 2412 | 125677006.0 | Relative | snomed | SIM RS Siaga Medika INC, Kobo Modul INC | 2 |
-| 2413 | 257514003.0 | Member of public involved incidentally | snomed | SIM RS Siaga Medika INC, Kobo Modul INC | 2 |
-| 2414 | 74.1 | Classical cesarean section | icd-9-cm | SIM RS Siaga Medika INC, Kobo Modul INC | 2 |
-| 2415 | 72.7 | Vacuum extraction | icd-9-cm | SIM RS Siaga Medika INC, Kobo Modul INC | 2 |
-| 2416 | 72.0 | Low forceps delivery | icd-9-cm | SIM RS Siaga Medika INC, Kobo Modul INC | 2 |
-| 2417 | 289440007.0 | Fetal heart rate not observed | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2418 | 289439005.0 | Fetal heart rate absent | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 1 - ANC | 6 |
-| 2419 | 387700009.0 | Prolonged latent phase of labor | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2420 | 249160009.0 | Onset of labor second stage | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2421 | 236994008.0 | Placental delivery procedure | kemkes clinical-term | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2422 | 289267004.0 | Finding of completeness of placenta | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2423 | 249170006.0 | Complete placenta at delivery | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2424 | 268479002.0 | Incomplete placenta at delivery | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2425 | 302384005.0 | Controlled cord traction of placenta | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2426 | 236996005.0 | Abdominal uterine fundal massage | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2427 | 1148943004.0 | Retention of placenta and uterine membrane | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2428 | 84007008.0 | Shock during AND/OR following labor AND/OR delivery | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2429 | 118216002.0 | Labor finding | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
-| 2430 | 10756061000119109 | Pain during postpartum period due to and following cesarean section | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC | 4 |
-| 2431 | 719051004.0 | Quantity of postpartum maternal blood loss | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC, Kobo Buku KIA 3 - PNC | 6 |
-| 2432 | 717809003.0 | Immediate postpartum care | snomed | SIM RS PKU INC, SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Modul INC | 5 |
+| 2410 | 106292003.0 | Professional nurse | snomed | SIM RS Siaga Medika INC | 1 |
+| 2411 | 303071001.0 | Person in the family | snomed | SIM RS Siaga Medika INC | 1 |
+| 2412 | 125677006.0 | Relative | snomed | SIM RS Siaga Medika INC | 1 |
+| 2413 | 257514003.0 | Member of public involved incidentally | snomed | SIM RS Siaga Medika INC | 1 |
+| 2414 | 74.1 | Classical cesarean section | icd-9-cm | SIM RS Siaga Medika INC | 1 |
+| 2415 | 72.7 | Vacuum extraction | icd-9-cm | SIM RS Siaga Medika INC | 1 |
+| 2416 | 72.0 | Low forceps delivery | icd-9-cm | SIM RS Siaga Medika INC | 1 |
+| 2417 | 289440007.0 | Fetal heart rate not observed | snomed | SIM RS PKU INC | 1 |
+| 2418 | 289439005.0 | Fetal heart rate absent | snomed | SIM RS PKU INC | 1 |
+| 2419 | 387700009.0 | Prolonged latent phase of labor | snomed | SIM RS PKU INC | 1 |
+| 2420 | 249160009.0 | Onset of labor second stage | snomed | SIM RS PKU INC | 1 |
+| 2421 | 236994008.0 | Placental delivery procedure | kemkes clinical-term | SIM RS PKU INC | 1 |
+| 2422 | 289267004.0 | Finding of completeness of placenta | snomed | SIM RS PKU INC | 1 |
+| 2423 | 249170006.0 | Complete placenta at delivery | snomed | SIM RS PKU INC | 1 |
+| 2424 | 268479002.0 | Incomplete placenta at delivery | snomed | SIM RS PKU INC | 1 |
+| 2425 | 302384005.0 | Controlled cord traction of placenta | snomed | SIM RS PKU INC | 1 |
+| 2426 | 236996005.0 | Abdominal uterine fundal massage | snomed | SIM RS PKU INC | 1 |
+| 2427 | 1148943004.0 | Retention of placenta and uterine membrane | snomed | SIM RS PKU INC | 1 |
+| 2428 | 84007008.0 | Shock during AND/OR following labor AND/OR delivery | snomed | SIM RS PKU INC | 1 |
+| 2429 | 118216002.0 | Labor finding | snomed | SIM RS PKU INC | 1 |
+| 2430 | 10756061000119109 | Pain during postpartum period due to and following cesarean section | snomed | SIM RS PKU INC | 1 |
+| 2431 | 719051004.0 | Quantity of postpartum maternal blood loss | snomed | SIM RS PKU INC | 1 |
+| 2432 | 717809003.0 | Immediate postpartum care | snomed | SIM RS PKU INC | 1 |
 | 2433 | 1991000124105.0 | Referred by self | snomed | SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 4 |
-| 2434 | 737481003.0 | Inpatient care management | snomed | SIM RS Goetoeng ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 2434 | 737481003.0 | Inpatient care management | snomed | SIM RS Goetoeng ANC | 1 |
 | 2435 | SP000821 | Konsultasi Medis | kemkes sp | SIM RS Goetoeng ANC (3x) | 1 |
 | 2436 | 34608000.0 | Alanine aminotransferase measurement | snomed | SIM RS Goetoeng ANC | 1 |
 | 2437 | 86228006.0 | Uric acid measurement | snomed | SIM RS Goetoeng ANC | 1 |
 | 2438 | 70901006.0 | Creatinine measurement | snomed | SIM RS Goetoeng ANC | 1 |
-| 2439 | 27171005.0 | Urinalysis | snomed | SIM RS Goetoeng ANC (2x), Kobo Buku KIA 1 - ANC | 2 |
+| 2439 | 27171005.0 | Urinalysis | snomed | SIM RS Goetoeng ANC (2x) | 1 |
 | 2440 | 105010007.0 | Urea measurement | snomed | SIM RS Goetoeng ANC | 1 |
 | 2441 | 396550006.0 | Blood test | snomed | SIM RS Goetoeng ANC | 1 |
 | 2442 | 45896001.0 | Aspartate aminotransferase measurement | snomed | SIM RS Goetoeng ANC | 1 |
@@ -2623,7 +2623,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2615 | 72.79 | Other vacuum extraction | icd-9-cm | SIM RS Goetoeng INC | 1 |
 | 2616 | 75.92 | Evacuation of other hematoma of vulva or vagina | icd-9-cm | SIM RS Goetoeng INC | 1 |
 | 2617 | 371001000.0 | Patient cured | snomed | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
-| 2618 | 183797002.0 | Duration of inpatient stay | snomed | SIM RS Goetoeng INC, SIM RS Goetoeng BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 6 |
+| 2618 | 183797002.0 | Duration of inpatient stay | snomed | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
 | 2619 | SP000811 | Jalur Masuk Rawat Inap | kemkes sp | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
 | 2620 | 225728007.0 | Accident and Emergency department | snomed | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
 | 2621 | 309942007.0 | Obstetrics and gynecology department | snomed | SIM RS Goetoeng INC | 1 |
@@ -2654,527 +2654,41 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2646 | 93.90 | Non-invasive mechanical ventilation | icd-9-cm | SIM RS Goetoeng BBL (5x) | 1 |
 | 2647 | 96.71 | Continuous invasive mechanical ventilation for less than 96 consecutive hours | icd-9-cm | SIM RS Goetoeng BBL (3x) | 1 |
 | 2648 | 96.72 | Continuous invasive mechanical ventilation for 96 consecutive hours or more | icd-9-cm | SIM RS Goetoeng BBL (2x) | 1 |
-| 2649 | 268445003.0 | Ultrasound scan - obstetric | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2650 | 169221005.0 | Ultrasound obstetric scan normal | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2651 | 169255008.0 | Ultrasound scan abnormal | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2652 | 1230101008.0 | Counseling for pregnancy | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2653 | 278977008.0 | Human immunodeficiency virus status | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC | 6 |
-| 2654 | 165816005.0 | Human immunodeficiency virus detected | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC (2x) | 6 |
-| 2655 | 165815009.0 | Human immunodeficiency virus not detected | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Buku KIA 1 - ANC (2x) | 6 |
-| 2656 | 66071002.0 | Viral hepatitis type B | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2657 | 39007-0 | Hepatitis B virus e Ag [Presence] in Specimen | loinc | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC | 4 |
-| 2658 | 76272004.0 | Syphilis | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2659 | 61462000.0 | Malaria | snomed | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 5 |
-| 2660 | SP000157 | Obat Diabetes Mellitus | kemkes sp | SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC | 4 |
-| 2661 | 57074-7 | Labor and delivery process Narrative | loinc | SIM RS Harapan Ibu INC, SIM RS At tin INC, SIM RS Nirmala INC, Kobo Buku KIA 2 - Luaran Kehamilan | 4 |
-| 2662 | 80313002.0 | Palpitations | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 4 |
-| 2663 | 271939006.0 | Vaginal discharge | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 5 |
-| 2664 | 267036007.0 | Dyspnea | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (2x) | 5 |
-| 2665 | 248858001.0 | Vulva finding | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 4 |
-| 2666 | 274671002.0 | Pelvic and perineal pain | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 4 |
-| 2667 | 289552002.0 | White vaginal discharge | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 5 |
-| 2668 | 25064002.0 | Headache | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC (3x) | 5 |
-| 2669 | 111516008.0 | Blurring of visual image | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 5 |
-| 2670 | 79922009.0 | Epigastric pain | snomed | SIM RS Harapan Ibu PNC, SIM RS At tin PNC, SIM RS Nirmala PNC, Kobo Modul PNC | 4 |
-| 2671 | 12729009.0 | Prolonged rupture of membranes | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2672 | 415105001.0 | Placental abruption | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2673 | 206376005.0 | Neonatal sepsis | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x) | 6 |
-| 2674 | 765106006.0 | Early-onset neonatal sepsis | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2675 | 765107002.0 | Late-onset neonatal sepsis | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2676 | 82353009.0 | Congenital infectious disease | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2677 | 66844003.0 | Generalized infection during labor | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2678 | 178280004.0 | Postnatal infection | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2679 | 392230005.0 | Catheterization of vein | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2680 | 40617009.0 | Artificial ventilation | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2681 | 281789004.0 | Antibiotic therapy | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2682 | 305351004.0 | Admission to intensive care unit | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2683 | 272125009.0 | Priorities | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2684 | 394849002.0 | High priority | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2685 | 394848005.0 | Normal priority | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2686 | 1251527002.0 | Low priority | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2687 | 78033-8 | Hospital stay duration | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2688 | 1023001.0 | Apnea | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2689 | 67909005.0 | Chest wall retraction | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2690 | 248568003.0 | Nasal flaring | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2691 | 62085005.0 | Grunting respiration | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2692 | 3415004.0 | Cyanosis | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Buku KIA 1 - ANC | 5 |
-| 2693 | 214264003.0 | Lethargy | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2694 | 247905005.0 | Lack of spontaneous movement | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2695 | 835279003.0 | Decreased reflex | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2696 | 95631006.0 | Neonatal drowsiness | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2697 | 103019006.0 | Bulging fontanelle | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2698 | 65668001.0 | Otorrhea | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2699 | 239095007.0 | Omphalitis | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2700 | 271760008.0 | Pustule | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2701 | 18165001.0 | Jaundice | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Buku KIA 1 - ANC | 5 |
-| 2702 | 364826005.0 | Finding related to ability to perform breastfeeding | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2703 | 289080009.0 | Able to perform breastfeeding | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2704 | 289081008.0 | Unable to perform breastfeeding | snomed | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2705 | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2706 | 26499-4 | Neutrophils [#/volume] in Blood | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2707 | 33959-8 | Procalcitonin [Mass/volume] in Serum or Plasma | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2708 | 1988-5 | C reactive protein [Mass/volume] in Serum or Plasma | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2709 | 11337-3 | History of Hospitalization | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2710 | 11347-2 | History of Outpatient visits | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2711 | 8690-0 | History of Surgical procedures | loinc | SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL | 4 |
-| 2712 | B19 | Unspecified viral hepatitis | icd-10 | SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x) | 4 |
-| 2713 | 1285318003.0 | Viral hepatitis disease management program | snomed | SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis | 4 |
-| 2714 | 223366009.0 | Healthcare professional | snomed | Kobo Modul INC, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 | 9 |
-| 2715 | 385438008.0 | Source of information | snomed | Kobo Modul INC | 1 |
-| 2716 | SP000746 | Sumber data Manual Register Puskesmas | kemkes sp | Kobo Modul INC | 1 |
-| 2717 | SP000747 | Sumber data PNV Ruta | kemkes sp | Kobo Modul INC | 1 |
-| 2718 | SP000748 | Sumber data PNV Bides | kemkes sp | Kobo Modul INC | 1 |
-| 2719 | SP000749 | Sumber data Birth Confirmation | kemkes sp | Kobo Modul INC | 1 |
-| 2720 | SP000750 | Sumber data PMB (Praktik Mandiri Bidan) | kemkes sp | Kobo Modul INC | 1 |
-| 2721 | SP000751 | Sumber data Rumah Sakit | kemkes sp | Kobo Modul INC | 1 |
-| 2722 | SP000752 | Sumber data Lainnya | kemkes sp | Kobo Modul INC | 1 |
-| 2723 | LA6112-2 | 1.0 | loinc | Kobo Modul INC, Kobo Modul PNC | 2 |
-| 2724 | 63238001.0 | Dead on arrival at hospital | snomed | Kobo Modul INC, Kobo Modul PNC | 2 |
-| 2725 | SP000120 | Non-intact membrane | kemkes sp | Kobo Modul INC | 1 |
-| 2726 | 118215003.0 | Delivery finding | snomed | Kobo Modul INC | 1 |
-| 2727 | 289708007.0 | Regular uterine contractions | snomed | Kobo Modul INC (2x) | 1 |
-| 2728 | 289739009.0 | Uterine contractions problem | snomed | Kobo Modul INC (2x) | 1 |
-| 2729 | SP000755 | Apakah Ibu pernah melakukan pemeriksaan kehamilan ke Faskes? | kemkes sp | Kobo Modul INC | 1 |
-| 2730 | SP000786 | Ya, pernah melakukan pemeriksaan kehamilan di fasilitas kesehatan | kemkes sp | Kobo Modul INC | 1 |
-| 2731 | SP000787 | Ya, pernah melakukan pemeriksaan kehamilan di fasilitas kesehatan namun di luar kota | kemkes sp | Kobo Modul INC | 1 |
-| 2732 | SP000788 | Tidak pernah melakukan pemeriksaan kehamilan di fasilitas kesehatan | kemkes sp | Kobo Modul INC | 1 |
-| 2733 | 75204-8 | Prenatal care indicator [CDC.CS] | loinc | Kobo Modul INC | 1 |
-| 2734 | 101572-6 | Prenatal visits for this pregnancy | loinc | Kobo Modul INC | 1 |
-| 2735 | 35094-2 | Blood pressure panel | loinc | Kobo Modul INC | 1 |
-| 2736 | 63963-3 | Date of end of pregnancy | loinc | Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 2 |
-| 2737 | 736282001.0 | Neonatal critical care plan | snomed | Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC | 2 |
-| 2738 | 118213005.0 | Postpartum finding | snomed | Kobo Modul PNC | 1 |
-| 2739 | 20602000.0 | Apathy | snomed | Kobo Modul PNC | 1 |
-| 2740 | 271782001.0 | Somnolence | snomed | Kobo Modul PNC | 1 |
-| 2741 | 371632003.0 | Coma | snomed | Kobo Modul PNC | 1 |
-| 2742 | 112648003.0 | Massive hemorrhage | snomed | Kobo Modul PNC (2x) | 1 |
-| 2743 | 27942005.0 | Shock | snomed | Kobo Modul PNC (2x) | 1 |
-| 2744 | 871562009.0 | Detection of severe acute respiratory syndrome coronavirus 2 | snomed | Kobo Modul PNC | 1 |
-| 2745 | 92000809.0 | Retinol Palmitate 200.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf | Kobo Modul PNC | 1 |
-| 2746 | 93018284.0 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf | Kobo Modul PNC | 1 |
-| 2747 | 159016003.0 | Medical radiographer | snomed | Kobo Modul PNC | 1 |
-| 2748 | 707307002.0 | Tuberculosis screening chest X-ray abnormal | snomed | Kobo Modul PNC | 1 |
-| 2749 | 707308007.0 | Tuberculosis screening chest X-ray normal | snomed | Kobo Modul PNC | 1 |
-| 2750 | 35025007.0 | Manual pelvic examination | snomed | Kobo Modul PNC, Kobo Buku KIA 1 - ANC | 2 |
-| 2751 | SP000395 | Pendaftaran Pertama Formulir KoBo | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre | 3 |
-| 2752 | SP000402 | Kepemilikan Nomor Induk Kependudukan | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x), Kobo Neonatus Outcome v2 (3x) | 4 |
-| 2753 | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 4 |
-| 2754 | SP000404 | Tidak Punya Kartu Tanda Penduduk | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 4 |
-| 2755 | SP000405 | Tidak Membawa Kartu Tanda Penduduk | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 4 |
-| 2756 | SP000406 | Kartu Tanda Penduduk Hilang | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 4 |
-| 2757 | SP000407 | Privasi | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2758 | SP000408 | Kepemilikan BPJS | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2759 | SP000409 | Rekan Serumah | kemkes sp | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 2 |
-| 2760 | 40683002.0 | Parent | snomed | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 2 |
-| 2761 | 375005.0 | Sibling | snomed | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 2 |
-| 2762 | 127848009.0 | Spouse | snomed | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 2 |
-| 2763 | 113163005.0 | Friend | snomed | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 2 |
-| 2764 | 105529008.0 | Lives alone | snomed | Kobo Buku KIA 1 - ANC, Kobo Buku KIA 3 - PNC | 2 |
-| 2765 | 29298-7 | Reason for visit | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2766 | SP000410 | Kunjungan Terjadwal | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2767 | SP000411 | Pemeriksaan Masalah Kesehatan | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2768 | 77386006.0 | Pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2769 | SP000412 | Tanda Bahaya Kehamilan | kemkes sp | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2770 | 95837007.0 | Central cyanosis | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2771 | 282020008.0 | Premature delivery | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2772 | 3950001.0 | Birth | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2773 | SP000413 | Terlihat Sangat Sakit | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2774 | 14094001.0 | Excessive vomiting in pregnancy | snomed | Kobo Buku KIA 1 - ANC (2x), Kobo Neonatus Outcome v2 | 2 |
-| 2775 | 76948002.0 | Severe pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2776 | 21522001.0 | Abdominal pain | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2777 | 418107008.0 | Unconscious | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2778 | 8765009.0 | Hematemesis | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2779 | SP000459 | Nafas pendek dan jantung berbedar | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2780 | 289567003.0 | Vaginal discharge problem | snomed | Kobo Buku KIA 1 - ANC (4x) | 1 |
-| 2781 | 289432001.0 | Fetal movements absent | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2782 | 10759661000119108 | Preterm premature rupture of membranes with onset of labor unknown | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2783 | 249196008.0 | Distress from pain in labor | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2784 | 45007003.0 | Low blood pressure | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2785 | 14760008.0 | Constipation | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2786 | 70514001.0 | Uterine contraction, function | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2787 | 49727002.0 | Cough | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2788 | 62315008.0 | Diarrhea | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2789 | 404640003.0 | Dizziness | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2790 | 276372004.0 | Weak fetal movements | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2791 | 386661006.0 | Fever |  | Kobo Buku KIA 1 - ANC | 1 |
-| 2792 | 6142004.0 | Influenza | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2793 | 251846002.0 | Fluid loss | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2794 | 16331000.0 | Heartburn | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2795 | 417163006.0 | Traumatic or non-traumatic injury | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2796 | 1279539008.0 | Victim of domestic violence | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2797 | 449918009.0 | Cramp in lower leg | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2798 | SP000414 | Kaki Kemerahan | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2799 | 48694002.0 | Anxiety | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2800 | 413307004.0 | Mental health problem | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2801 | 267038008.0 | Edema | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2802 | 131148009.0 | Bleeding |  | Kobo Buku KIA 1 - ANC | 1 |
-| 2803 | 297982009.0 | Skin problem | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2804 | SP000415 | Jenis Kekerasan Lainnya | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2805 | 275707000.0 | Acute pelvic pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2806 | 47933007.0 | Foot pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2807 | 279039007.0 | Low back pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2808 | 203508001.0 | Bony pelvic pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2809 | 22253000.0 | Pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2810 | 418363000.0 | Itching of skin | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2811 | 84229001.0 | Fatigue | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2812 | 11885-1 | Gestational age Estimated from last menstrual period | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2813 | 11779-6 | Delivery date Estimated from last menstrual period | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2814 | ANC.B6.DE40 | Hari Perkiraan Lahir (HPL) USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 2815 | SP000416 | Tahun Hamil | kemkes sp | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2816 | 161744009.0 | Past pregnancy history of miscarriage | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2817 | 272058002.0 | Past pregnancy history of delivery procedure | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2818 | 275568006.0 | Past pregnancy history of normal delivery | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2819 | 726624001.0 | Past pregnancy history of previous delivery by vacuum extraction | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2820 | 161813007.0 | Past pregnancy history of previous forceps delivery | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2821 | SP000417 | Riwayat Penolong Persalinan Sebelumnya | kemkes sp | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2822 | 816150000.0 | Past pregnancy history of shoulder dystocia | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2823 | 709881001.0 | Past pregnancy history of gestational hypertension | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2824 | 161413004.0 | History of infectious disease | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2825 | 2858002.0 | Puerperal sepsis | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2826 | 105651000119100.0 | Past pregnancy history of pre-eclampsia | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2827 | 252112002.0 | Number of stillbirths | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2828 | 1290882004.0 | History of seizure | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2829 | 472971004.0 | Past pregnancy history of gestational diabetes mellitus | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2830 | 110483000.0 | Tobacco user | snomed | Kobo Buku KIA 1 - ANC (3x) | 1 |
-| 2831 | 361055000.0 | Misuses drugs | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2832 | 267016006.0 | History of abnormal uterine bleeding | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2833 | 1290170006.0 | Past pregnancy history of early neonatal death | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2834 | 15758941000119102 | History of perineal laceration | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2835 | 473011001.0 | Allergic condition | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2836 | 716186003.0 | No known allergy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2837 | SP000418 | Memiliki Alergi | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2838 | 106203-3 | Allergy intolerance list | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2839 | 161615003.0 | History of surgery | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2840 | 11401008.0 | Dilation and curettage of uterus | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2841 | 42010004.0 | Uterine myomectomy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2842 | 387741004.0 | Excision of cyst of ovary | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2843 | 83152002.0 | Oophorectomy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2844 | 120053002.0 | Fallopian tube excision | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2845 | 120038005.0 | Cervix excision | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2846 | 12658000.0 | Operation on female genital organs | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2847 | 443508001.0 | No history of clinical finding in subject | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2848 | 396782006.0 | Medical history unknown | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2849 | SP000419 | Memiliki Riwayat Penyakit Terdahulu | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2850 | 472968007.0 | History of autoimmune disorder of endocrine system | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2851 | 266992002.0 | History of blood disorder | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2852 | SP000420 | Riwayat Kanker Ginekologi | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2853 | 266987004.0 | History of cancer | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2854 | 161445009.0 | History of diabetes mellitus | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2855 | 472970003.0 | History of diabetes mellitus type 1 | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2856 | 472969004.0 | History of diabetes mellitus type 2 | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2857 | 161480008.0 | History of epilepsy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2858 | 161501007.0 | History of hypertension | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2859 | 275552000.0 | History of kidney disease | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2860 | 275544003.0 | History of heart disorder | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2861 | 275536003.0 | History of thyroid disorder | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2862 | 161614004.0 | H/O: multiple allergies | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2863 | 107921000119107.0 | History of immune disorder | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2864 | 161527007.0 | History of asthma | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2865 | 161414005.0 | History of tuberculosis | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2866 | 429721005.0 | History of hepatitis B | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2867 | 161464003.0 | History of psychiatric disorder | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2868 | 1087151000119108 | History of syphilis | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2869 | 691501000119103.0 | History of gastritis | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2870 | 281667005.0 | Maternal history of disorder | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2871 | VG213 | COVID-19 | kfa | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2872 | SP000422 | Status Imunisasi Tetanus | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2873 | OV000283 | Imunisasi lengkap | kemkes clinical-term | Kobo Buku KIA 1 - ANC | 1 |
-| 2874 | 171279008.0 | Immunization due | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2875 | 90351000119108.0 | Vaccination not done | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2876 | 171278000.0 | Immunization status unknown | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2877 | 1208604004.0 | Caffeine intake | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2878 | SP000375 | Lebih dari 2 cangkir kopi (diseduh, disaring, instan, atau espresso) | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2879 | SP000376 | Lebih dari 4 cangkir teh | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2880 | SP000377 | Lebih dari 12 batang (50g) coklat | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2881 | SP000378 | Lebih dari 1 kaleng soda atau minuman berenergi | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2882 | 1222873005.0 | Does not use caffeine | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2883 | SP000424 | Riwayat Perilaku Berisiko Sebelum Hamil | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2884 | 308658001.0 | Abnormal eating pattern | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2885 | 43994002.0 | Lack of physical activity | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2886 | SP000425 | Konsumsi Obat Teratogenik | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2887 | SP000426 | Penggunaan Kosmetik Yang Mengandung Zat Berbahaya | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2888 | 285140009.0 | At risk environment | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2889 | SP000427 | Konsumsi Alkohol atau Obat-Obatan Terlarang | kemkes sp | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2890 | 365980008.0 | Finding of tobacco use and exposure | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2891 | 702979003.0 | Never used tobacco | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2892 | 702975009.0 | Ex-tobacco user | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2893 | 1237409004.0 | Uses condom as protection for sex | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2894 | 428211000124100.0 | Assessment of substance use | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2895 | 733460004.0 | Marijuana user | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2896 | 733461000.0 | Cocaine user | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2897 | SP000428 | Obat Terlarang Suntik | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2898 | 16932000.0 | Nausea and vomiting | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2899 | 102551008.0 | Cramp in foot | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2900 | 13016151000119101 | Constipation during pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2901 | 9121000119106.0 | Low back pain in pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2902 | 70781000052101.0 | Pelvic girdle pain during pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2903 | 1156031002.0 | Venous varices in pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2904 | 237285000.0 | Gestational edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2905 | 230145002.0 | Difficulty breathing | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2906 | 60845006.0 | Dyspnea on exertion | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2907 | 68154008.0 | Chronic cough | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2908 | 1237486008.0 | Pale discoloration of entire skin of body | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2909 | 423066003.0 | Finding of mouth region | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2910 | ANC.SS.DE29 | Pemeriksaan Fisik Area Mulut | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 2911 | 297268004.0 | Ear, nose and throat finding | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2912 | 116312005.0 | Finding of lower limb | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2913 | 11412-4 | Physical findings of Respiratory system Narrative | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2914 | 271823003.0 | Tachypnea | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2915 | 86684002.0 | Slow respiration | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2916 | 56018004.0 | Wheezing | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2917 | 48409008.0 | Respiratory crackles | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2918 | ANC.SS.DE31 | Pemeriksaan Fisik Dada (Auskultasi Jantung) |  | Kobo Buku KIA 1 - ANC | 1 |
-| 2919 | 88610006.0 | Heart murmur | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2920 | 64661000.0 | Thready pulse | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2921 | 3424008.0 | Tachycardia | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2922 | 48867003.0 | Bradycardia | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2923 | 698247007.0 | Cardiac arrhythmia | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2924 | 83547004.0 | Cold sweat | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2925 | 10193-1 | Physical findings of Breasts Narrative | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2926 | 290074005.0 | Nodule of skin of breast | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2927 | 271941007.0 | Discharge from the breast | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2928 | 238810007.0 | Flushing | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2929 | 112104007.0 | Localized pain | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2930 | 52297004.0 | Bleeding from breast | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2931 | 50177009.0 | Body temperature above reference range | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2932 | ANC.SS.DE33 | Pemeriksaan Fisik Perut | v3-ObservationInterpretation | Kobo Buku KIA 1 - ANC | 1 |
-| 2933 | 128050000.0 | Neoplasm of abdomen | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2934 | SP000429 | Nyeri Saat Palpasi Ringan | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2935 | SP000430 | Nyeri Saat Palpasi Dalam | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2936 | SP000431 | Nyeri Saat Dekompresi | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2937 | 1351322008.0 | Foul smelling amniotic fluid | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2938 | 25694009.0 | Papule | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2939 | 82515000.0 | Vesicle | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2940 | 427788009.0 | Ulcer of genital labium | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2941 | 30746006.0 | Lymphadenopathy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2942 | SP000432 | Friability Cervix | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2943 | 836474000.0 | Mucopurulent discharge | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2944 | 289553007.0 | Creamy vaginal discharge | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2945 | 113023007.0 | Examination of vagina | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2946 | 177194007.0 | Manual dilation of cervix | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2947 | 364223009.0 | Vulva observable | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2948 | 263654008.0 | Abnormal | snomed | Kobo Buku KIA 1 - ANC (5x) | 1 |
-| 2949 | 249300001.0 | Urethral finding | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2950 | 248910006.0 | Uterine cervix finding | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2951 | 44972-8 | Edema site | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2952 | 26237000.0 | Ankle edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2953 | 82014009.0 | Peripheral edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2954 | 262703009.0 | Edema of lumbar cord | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2955 | 449615005.0 | Swelling of lower leg | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2956 | 423484008.0 | Grade of edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2957 | 420829009.0 | 1+ pitting edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2958 | 421605005.0 | 2+ pitting edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2959 | 421346005.0 | 3+ pitting edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2960 | 421129002.0 | 4+ pitting edema | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2961 | SP000433 | Usia Kehamilan Saat Pengukuran Tinggi Fundus Uteri | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2962 | 313178001.0 | Gestation less than 24 weeks | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2963 | 313180007.0 | Gestation greater than 24 weeks | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2964 | 289438002.0 | Fetal heart rate present | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2965 | 32279003.0 | Fetal movement finding | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2966 | 289431008.0 | Fetal movements present | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2967 | 364619008.0 | Measure of fetal movement | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2968 | 6096002.0 | Breech presentation | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2969 | 288203005.0 | Transverse/oblique lie | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2970 | 57630001.0 | First trimester pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2971 | 59466002.0 | Second trimester pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2972 | 41587001.0 | Third trimester pregnancy | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2973 | SP000672 | Jumlah kantong kehamilan | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2974 | 50607009.0 | Singular | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2975 | 255204007.0 | Multiple | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2976 | SP000673 | Letak kantong kehamilan | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 2977 | 1156316003.0 | Cannot be determined | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2978 | 11615-2 | Fetal Heart Activity US | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2979 | LA9633-4 | Present | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2980 | LA9634-2 | Absent | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2981 | 404964004 | Antepartum fetal status | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2982 | ANC.SS.DE41 | Letak Janin USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 2983 | 11727-5 | Fetal Body weight estimated by US | loinc | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2984 | ANC.SS.DE45 | Berat janin USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 2985 | 77012006 | Amniotic fluid | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2986 | 1228877003.0 | Amniotic fluid volume below reference range | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2987 | 289293006.0 | Amniotic fluid volume above reference range | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2988 | 78067005 | Placental structure | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2989 | 11994-1 | Placenta position US | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 2990 | 36813001.0 | Placenta previa | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2991 | 445122007.0 | Low-lying placenta | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2992 | 658011000005105.0 | Position of placenta low in anterior wall of uterus | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2993 | 658031000005101.0 | Position of placenta low in posterior wall of uterus | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2994 | 658091000005102.0 | Position of placenta in right side of uterus | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2995 | 658081000005100.0 | Position of placenta in left side of uterus | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2996 | 658101000005106.0 | Position of placenta in fundus uteri | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2997 | 23952005.0 | Body of uterus structure | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 2998 | ANC.SS.DE59 | Biparietal Diameter (BPD) USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 2999 | ANC.SS.DE42 | Head Circumference (HC) USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 3000 | ANC.SS.DE43 | Abdominal Circumference (AC) USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 3001 | ANC.SS.DE44 | Femur Length (FL) USG | kemkes anc-custom-codes | Kobo Buku KIA 1 - ANC | 1 |
-| 3002 | 425551008.0 | Antenatal ultrasound scan for possible abnormality | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3003 | 5196-1 | Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3004 | 712853001.0 | Antenatal screening for viral hepatitis type B | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 3005 | 440500007.0 | Dried blood spot specimen | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3006 | 75408-5 | Hepatitis B virus e Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3007 | 24110-9 | Treponema pallidum Ab [Presence] in Serum by Immunoassay | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3008 | 20507-0 | Reagin Ab [Presence] in Serum by RPR | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3009 | 169698000.0 | Antenatal syphilis screening | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 3010 | 708184003.0 | Clinical pathology service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3011 | 117010004.0 | Urine culture | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3012 | 653-6 | Microscopic observation [Identifier] in Urine by Gram stain | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3013 | 337439000.0 | Urinalysis test strips | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3014 | 5809-9 | Reducing substances [Presence] in Urine | loinc | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 3015 | 630-4 | Bacteria identified in Urine by Culture | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3016 | 102104-7 | Streptococcus agalactiae [Susceptibility] in Urine by Culture | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3017 | 8745002.0 | Gram-positive bacterium | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3018 | 81325006.0 | Gram-negative bacterium | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3019 | 5802-4 | Nitrite [Presence] in Urine by Test strip | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3020 | LA11844-0 | 4+ | loinc | Kobo Buku KIA 1 - ANC (5x) | 1 |
-| 3021 | 5799-2 | Leukocyte esterase [Presence] in Urine by Test strip | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3022 | 20454-5 | Protein [Presence] in Urine by Test strip | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3023 | 25428-4 | Glucose [Presence] in Urine by Test strip | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3024 | 26604007.0 | Complete blood count | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3025 | PC000015 | Point of Care Testing HB Meter | kemkes clinical-term | Kobo Buku KIA 1 - ANC | 1 |
-| 3026 | 413885003.0 | Colorimetric laboratory test | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3027 | 96354-6 | Platelets Large [#/volume] in Blood by Automated count | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3028 | SP000670 | Hasil Tes HIV Pasangan | kemkes sp | Kobo Buku KIA 1 - ANC | 1 |
-| 3029 | 419984006.0 | Inconclusive | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3030 | 33747003.0 | Glucose measurement, blood |  | Kobo Buku KIA 1 - ANC | 1 |
-| 3031 | 1552-9 | Glucose [Mass/volume] in Serum or Plasma --pre 75 g glucose PO | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3032 | 1507-3 | Glucose [Mass/volume] in Serum or Plasma --1 hour post 75 g glucose PO | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3033 | 1518-0 | Glucose [Mass/volume] in Serum or Plasma --2 hours post 75 g glucose PO | loinc | Kobo Buku KIA 1 - ANC | 1 |
-| 3034 | 61310001.0 | Nutrition Education | snomed | Kobo Buku KIA 1 - ANC (2x) | 1 |
-| 3035 | ED000011 | Edukasi KB pasca salin | kemkes clinical-term | Kobo Buku KIA 1 - ANC | 1 |
-| 3036 | 1268646002.0 | Gestational diabetes mellitus screening | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3037 | 11429006.0 | Consultation | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3038 | 737492002.0 | Outpatient care management | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3039 | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | kfa | Kobo Buku KIA 1 - ANC | 1 |
-| 3040 | 409073007.0 | Education | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3041 | 103693007.0 | Diagnostic procedure | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3042 | 182832007.0 | Procedure related to management of drug administration | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3043 | 409011003.0 | Antenatal care management | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3044 | 1240781000168102 | Nutrition service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3045 | 714088003.0 | Midwifery service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3046 | 310066004.0 | Pediatric service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3047 | 792848000.0 | Internal medicine service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3048 | 788005004.0 | Neurology service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3049 | 310149003.0 | Ear, nose and throat service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3050 | 310116007.0 | Psychiatry service | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3051 | 224891009.0 | Healthcare services | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3052 | 408822009.0 | Contraception status not decided | snomed | Kobo Buku KIA 1 - ANC | 1 |
-| 3053 | 11638-4 | [#] Births.still living | loinc | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3054 | 276507005.0 | Fetal death | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3055 | 276506001.0 | Newborn death | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3056 | 249197004.0 | Maternal condition during puerperium (observable entity) | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3057 | 249222005.0 | Neonatal condition | snomed | Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (6x) | 4 |
-| 3058 | 72892002.0 | Normal pregnancy | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3059 | 198609003.0 | Complication of pregnancy, childbirth and/or puerperium | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3060 | 445375000.0 | Does not use contraception | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3061 | 79192-1 | Maternal pregnancy information Narrative | loinc | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3062 | 236974004.0 | Instrumental delivery | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3063 | 302079008.0 | Finding of state at birth | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3064 | 310506006.0 | Reason for termination of pregnancy | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3065 | 69.0 | Dilation and curettage of uterus | icd-9-cm | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3066 | 1156679005.0 | Maternal antenatal period | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3067 | 1156682000.0 | Maternal intrapartum period | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3068 | 255410009.0 | Maternal postpartum | snomed | Kobo Buku KIA 2 - Luaran Kehamilan | 1 |
-| 3069 | 397644002.0 | Right to privacy maintained | snomed | Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x), Kobo Neonatus Outcome v2 (2x) | 4 |
-| 3070 | 1363121004.0 | Unassisted birth | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3071 | O75.9 | Complication of labour and delivery, unspecified | icd-10 | Kobo Buku KIA 3 - PNC | 1 |
-| 3072 | 210484005.0 | Open wound of perineum | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3073 | 449891003.0 | Healing wound of perineum | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3074 | 237339000.0 | Infection - perineal wound | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3075 | 40521000119100.0 | Postpartum pregnancy-induced hypertension | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3076 | SP000381 | Tatalaksana Komplikasi Infeksi |  | Kobo Buku KIA 3 - PNC | 1 |
-| 3077 | 736286003.0 | Hypertension clinical management plan |  | Kobo Buku KIA 3 - PNC | 1 |
-| 3078 | SP000380 | Tatalaksana Komplikasi Pendarahan |  | Kobo Buku KIA 3 - PNC | 1 |
-| 3079 | SP000382 | Tatalaksana Komplikasi Mastitis |  | Kobo Buku KIA 3 - PNC | 1 |
-| 3080 | SP000384 | Keadaan Ibu Saat Pulang | kemkes sp | Kobo Buku KIA 3 - PNC | 1 |
-| 3081 | 86651-7 | Birth control method at exit Reported --at exit | loinc | Kobo Buku KIA 3 - PNC | 1 |
-| 3082 | 86653-3 | Reason for no birth control use - Reported --at exit | loinc | Kobo Buku KIA 3 - PNC | 1 |
-| 3083 | Z00.1 | Routine child health examination |  | Kobo Buku KIA 3 - PNC | 1 |
-| 3084 | Neonate | Neonate |  | Kobo Buku KIA 3 - PNC | 1 |
-| 3085 | 102500002.0 | Good neonatal condition at birth | snomed | Kobo Buku KIA 3 - PNC (2x), Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (3x) | 3 |
-| 3086 | 42052009.0 | Omphalitis of newborn | snomed | Kobo Buku KIA 3 - PNC (2x) | 1 |
-| 3087 | 95627000.0 | Fever of newborn | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3088 | 268850004.0 | Neonatal diarrhea | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3089 | 48000002.0 | Vomiting in newborn | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3090 | 387712008.0 | Neonatal jaundice | snomed | Kobo Buku KIA 3 - PNC (2x) | 1 |
-| 3091 | 13791008.0 | Asthenia | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3092 | 13629008.0 | Hypothermia of newborn | snomed | Kobo Buku KIA 3 - PNC (2x) | 1 |
-| 3093 | 95629002.0 | Excessive crying of newborn | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3094 | 1179627006.0 | Neonatal respiratory distress | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3095 | 87476004.0 | Neonatal seizure | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3096 | 722934009.0 | Neonatal difficulty in feeding at breast | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3097 | 249229001.0 | Finding of umbilical stump | loinc | Kobo Buku KIA 3 - PNC | 1 |
-| 3098 | 276402001.0 | Neonatal cord moist | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3099 | 276401008.0 | Neonatal cord dry | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3100 | SP000390 | Ikterus derajat 1 | kemkes sp | Kobo Buku KIA 3 - PNC | 1 |
-| 3101 | SP000391 | Ikterus derajat 2 | kemkes sp | Kobo Buku KIA 3 - PNC | 1 |
-| 3102 | SP000392 | Ikterus derajat 3 | kemkes sp | Kobo Buku KIA 3 - PNC | 1 |
-| 3103 | SP000393 | Ikterus derajat 4 | kemkes sp | Kobo Buku KIA 3 - PNC | 1 |
-| 3104 | SP000394 | Ikterus derajat 5 | kemkes sp | Kobo Buku KIA 3 - PNC | 1 |
-| 3105 | 276707008.0 | Infant in poor condition at birth | kemkes sp | Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (3x) | 3 |
-| 3106 | 413654009.0 | Birth asphyxia | snomed | Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x) | 2 |
-| 3107 | 56110009.0 | Fetal birth trauma | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3108 | 276659006.0 | Clinical infection of newborn | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3109 | 66091009.0 | Congenital disease | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3110 | 43424001.0 | Tetanus neonatorum | snomed | Kobo Buku KIA 3 - PNC | 1 |
-| 3111 | 22925008.0 | Neonatal disorde | snomed | Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome | 2 |
-| 3112 | 365552003.0 | Finding of income details | snomed | Kobo Buku KIA 4 - Cadre | 1 |
-| 3113 | SP000654 | <Rp 1500000 | kemkes sp | Kobo Buku KIA 4 - Cadre | 1 |
-| 3114 | SP000655 | Rp 1500000- Rp 2500000 | kemkes sp | Kobo Buku KIA 4 - Cadre | 1 |
-| 3115 | SP000656 | Rp 2500001 - Rp 3500000 | kemkes sp | Kobo Buku KIA 4 - Cadre | 1 |
-| 3116 | SP000657 | >Rp 3500000 | kemkes sp | Kobo Buku KIA 4 - Cadre | 1 |
-| 3117 | 8338-6 | Body weight Measured --ante partum | loinc | Kobo Buku KIA 4 - Cadre | 1 |
-| 3118 | 8287-5 | Head Occipital-frontal circumference by Tape measure | loinc | Kobo Buku KIA 4 - Cadre, Kobo DDTK | 2 |
-| 3119 | OC000164 | Jumlah kapsul vitamin A yang diberikan | kemkes clinical-term | Kobo Buku KIA 4 - Cadre | 1 |
-| 3120 | OV000310 | 1 kapsul biru | kemkes clinical-term | Kobo Buku KIA 4 - Cadre | 1 |
-| 3121 | SP000653 | 1 kapsul merah | kemkes sp | Kobo Buku KIA 4 - Cadre | 1 |
-| 3122 | SP000647 | Mendapatkan makanan tambahan | kemkes sp | Kobo Buku KIA 4 - Cadre | 1 |
-| 3123 | 365856005.0 | Screening finding | snomed | Kobo Buku KIA 4 - Cadre | 1 |
-| 3124 | 102506008.0 | Well child | snomed | Kobo Buku KIA 4 - Cadre | 1 |
-| 3125 | 704352005.0 | At increased risk of delayed growth | snomed | Kobo Buku KIA 4 - Cadre | 1 |
-| 3126 | VG88 | FLU | kfa | Kobo Buku KIA 4 - Cadre | 1 |
-| 3127 | VG21 | VARICELLA | kfa | Kobo Buku KIA 4 - Cadre | 1 |
-| 3128 | VG85 | HepA | kfa | Kobo Buku KIA 4 - Cadre | 1 |
-| 3129 | VG91 | TYPHOID | kfa | Kobo Buku KIA 4 - Cadre | 1 |
-| 3130 | VG122 | ROTAVIRUS | kfa | Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (3x) | 2 |
-| 3131 | Z26.9 | Need for immunization against unspecified infectious disease | icd-10 | Kobo Buku KIA 5 - Vaksinatorku | 1 |
-| 3132 | 178.0 | OPV bivalent | http://hl7.org/fhir/sid/cvx | Kobo Buku KIA 5 - Vaksinatorku (4x) | 1 |
-| 3133 | 198.0 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx | Kobo Buku KIA 5 - Vaksinatorku (4x) | 1 |
-| 3134 | 10.0 | IPV | http://hl7.org/fhir/sid/cvx | Kobo Buku KIA 5 - Vaksinatorku (2x) | 1 |
-| 3135 | SP000715 | Umur Minggu | kemkes sp | Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (3x) | 2 |
-| 3136 | SP000719 | Umur Minggu (saat meninggal) | kemkes sp | Kobo Neonatus Outcome | 1 |
-| 3137 | SP001120 | Sahabat Sehat | kemkes sp | Kobo Neonatus Outcome v2 (4x) | 1 |
-| 3138 | 89009-5 | Encounter location [Type] |  | Kobo Neonatus Outcome v2 | 1 |
-| 3139 | 131.0 | Posyandu | organization-type | Kobo Neonatus Outcome v2 | 1 |
-| 3140 | SP001121 | Kepemilikan Nomor Telepon | kemkes sp | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3141 | SP001122 | Alasan Tidak Ada Nomor Telepon | kemkes sp | Kobo Neonatus Outcome v2 (2x) | 1 |
-| 3142 | SP000516 | Tidak punya HP | kemkes sp | Kobo Neonatus Outcome v2 (2x) | 1 |
-| 3143 | SP000517 | HP hilang | kemkes sp | Kobo Neonatus Outcome v2 (2x) | 1 |
-| 3144 | 288266004.0 | Born after induced labor | snomed | Kobo Neonatus Outcome v2 | 1 |
-| 3145 | 248982007.0 | Pregnancy, childbirth and puerperium finding | snomed | Kobo Neonatus Outcome v2 | 1 |
-| 3146 | 19829001.0 | Disorder of lung | snomed | Kobo Neonatus Outcome v2 | 1 |
-| 3147 | 102499006.0 | Fit and well | snomed | Kobo Neonatus Outcome v2 | 1 |
-| 3148 | 213257006.0 | Generally unwell | snomed | Kobo Neonatus Outcome v2 | 1 |
-| 3149 | LA33-6 | Yes | loinc | Kobo Neonatus Outcome v2 | 1 |
-| 3150 | LA32-8 | No | loinc | Kobo Neonatus Outcome v2 | 1 |
-| 3151 | LA4489-6 | Unknown | loinc | Kobo Neonatus Outcome v2 | 1 |
-| 3152 | SP001111 | Nomor HP tervalidasi dapat terhubung | kemkes sp | Kobo Neonatus Outcome v2 | 1 |
-| 3153 | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | kemkes sp | Kobo Neonatus Outcome v2 | 1 |
-| 3154 | SP001113 | Tidak ada nomor HP yang terhubung | kemkes sp | Kobo Neonatus Outcome v2 | 1 |
-| 3155 | SP001127 | Nomor HP yang diberikan salah sambung | kemkes sp | Kobo Neonatus Outcome v2 | 1 |
-| 3156 | LA19705-5 | Given | loinc | Kobo Neonatus Outcome v2 | 1 |
-| 3157 | LA19761-8 | Not given | loinc | Kobo Neonatus Outcome v2 | 1 |
-| 3158 | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | kemkes sp | Kobo Neonatus Outcome v2 | 1 |
-| 3159 | 21842-0 | Birthplace | loinc | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3160 | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3161 | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3162 | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3163 | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3164 | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3165 | 364586004.0 | State at birth | snomed | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3166 | 367494004.0 | Premature birth of newborn | snomed | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3167 | 427390007.0 | History of hepatitis B vaccination | snomed | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3168 | SP001133 | Pernah diperiksa di fasilitas kesehatan | kemkes sp | Kobo Neonatus Outcome v2 (6x) | 1 |
-| 3169 | 158999002.0 | Community midwife | kemkes sp | Kobo Neonatus Outcome v2 (3x) | 1 |
-| 3170 | 106304008.0 | Teacher | snomed | Kobo DDTK | 1 |
-| 3171 | 158922001.0 | Physical training teacher | snomed | Kobo DDTK | 1 |
-| 3172 | 170245002.0 | Child examination: school screening | snomed | Kobo DDTK | 1 |
+| 2649 | SP000757 | Status Kependudukan (Khusus Papua) | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2650 | SP000758 | Orang Asli Papua (OAP) | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2651 | SP000759 | Bukan Orang Asli Papua | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2652 | SP000760 | Pasien Beralamat (KTP) Diluar Wilayah | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2653 | 67630004 | Miner | snomed | SISMAL Regmal 1 | 1 |
+| 2654 | SP000754 | Pedagang | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2655 | 34484007 | Forestry worker | snomed | SISMAL Regmal 1 | 1 |
+| 2656 | 34024003 | Gardener | snomed | SISMAL Regmal 1 | 1 |
+| 2657 | SP000803 | Fasyankes Pencatat | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2658 | 138 | Puskesmas Pembantu | organization-type | SISMAL Regmal 1 | 1 |
+| 2659 | SP000761 | Faskes Swasta | kemkes organization-ownership | SISMAL Regmal 1 | 1 |
+| 2660 | SP000804 | Kantor Kesehatan Pelabuhan | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2661 | SP000805 | Perdhaki | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2662 | SP000806 | Pos Kesehatan TNI | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2663 | 418775008 | Finding method | snomed | SISMAL Regmal 1 | 1 |
+| 2664 | SP000807 | Passive Case Detection | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2665 | SP000808 | Mass Blood Survey | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2666 | SP000809 | Survei Non PE | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2667 | SP000810 | Surveilans Migrasi | kemkes sp | SISMAL Regmal 1 | 1 |
+| 2668 | 702705002 | Mobile clinic | snomed | SISMAL Regmal 1 | 1 |
+| 2669 | 365690003 | Finding of presence of organism | snomed | SISMAL Regmal 1 | 1 |
+| 2670 | 30020004 | Plasmodium falciparum | snomed | SISMAL Regmal 1 | 1 |
+| 2671 | 56395006 | Plasmodium malariae | snomed | SISMAL Regmal 1 | 1 |
+| 2672 | 49918008 | Plasmodium knowlesi | snomed | SISMAL Regmal 1 | 1 |
+| 2673 | 74746009 | Plasmodium vivax | snomed | SISMAL Regmal 1 | 1 |
+| 2674 | 18508006 | Plasmodium ovale | snomed | SISMAL Regmal 1 | 1 |
+| 2675 | 21070001 | Mixed malaria | snomed | SISMAL Regmal 1 | 1 |
+| 2676 | B54 | Unspecified malaria | icd-10 | SISMAL Validasi Indigenous | 1 |
+| 2677 | 409496000 | Mode of transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2678 | 418427004 | Vector-borne transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2679 | 418912005 | Transfusion transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2680 | 417409004 | Transplacental transmission | snomed | SISMAL Validasi Indigenous | 1 |
+| 2681 | SP000740 | Kategori Wilayah Penularan | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2682 | SP000741 | Dalam Wilayah Puskesmas | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2683 | SP000742 | Luar Wilayah Puskesmas | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2684 | SP000743 | Luar Wilayah Kabupaten/Kota | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2685 | SP000744 | Luar Wilayah Provinsi | kemkes sp | SISMAL Validasi Indigenous | 1 |
+| 2686 | SP000745 | Luar Wilayah Negara | kemkes sp | SISMAL Validasi Indigenous | 1 |

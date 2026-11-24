@@ -664,6 +664,58 @@ Payload per resource:
 
 - 2026-11-24: Tambah 17 form SiGizi (asumsi/temuan SG1–SG14, catatan pipeline P39–P43), ⚠️ belum comprehensive review. Total 314 payload / 772 code.
 
+## SISMAL (PHDT_SISMAL.xlsx): Regmal 1, Validasi Kasus Indigenous
+
+Sumber: `PHDT_SISMAL.xlsx` (sheet `Mapping Regmal 1`, `Mapping Indigeneous`). ⚠️ belum comprehensive review (tanpa daftar BQ dan file mentah). Dictionary dibuat otomatis dengan `scripts/sismal_prepare.py`.
+
+### Hasil hitung
+
+| Form | Variabel | Payload | Code | Code SP |
+|---|---|---|---|---|
+| SISMAL Regmal 1 | 49 | 20 | 54 | 14 |
+| SISMAL Validasi Indigenous | 14 | 7 | 12 | 6 |
+
+Regmal 1: Observation 14, Patient 1, PractitionerRole 1, Practitioner 1, Encounter 1, Condition 1, ServiceRequest 1. Indigenous: Observation 2, Patient, Encounter, Condition, Location, Procedure masing-masing 1.
+
+### Sheet → form
+
+| Sheet | Status |
+|---|---|
+| Mapping Regmal 1 | dihitung |
+| Mapping Indigeneous | dihitung |
+| Verifikasi Uji Silang | **tidak dihitung**: isinya salinan template TB-TPT (bukan form malaria), perlu dikirim ulang oleh tim |
+| Sheet laporan lain (Rekap dst.) | bukan form input per pasien, tidak dihitung |
+
+### Asumsi yang diambil
+
+| No | Asumsi | Status |
+|---|---|---|
+| SM1 | Organization (faskes) = lookup master data, tidak dihitung (sesuai aturan) | perlu konfirmasi |
+| SM2 | Location "Alamat Asal Penularan" di Indigenous dibuat dari isian form, jadi dihitung | perlu konfirmasi |
+| SM3 | Opsi `valueCodeableConcept` dihitung sebagai code (54 code Regmal 1) | sesuai aturan |
+| SM4 | Baris Observation yang hanya tipe data (`number`, `string`, `date`) di kolom Variables dipindah ke kolom Data Type | done |
+
+### Perbaikan otomatis pada file
+
+| Perbaikan | Jumlah |
+|---|---|
+| Path `valuecodeableConcept` → `valueCodeableConcept` | 31 |
+| Path `valueinteger` → `valueInteger` | 1 |
+| Code `ofiicial` → `official`, `social history` → `social-history` | 1 + 1 |
+| `Organization.*` di blok Location → `Location.*` | 1 blok |
+| Blok ServiceRequest yang kolomnya bergeser 1 kolom dirapikan (`unshift`) | 19 baris |
+| Sisa tipe data di kolom Variables dibersihkan | 5 |
+
+### Temuan
+
+| No | Temuan | Status |
+|---|---|---|
+| SM-1 | Regmal 1 punya 88 variabel di laporan, tapi hanya 49 ada di dictionary (sisanya `parkir` / `tidak dimapping` di sheet Variable Regmal 1) | open |
+| SM-2 | `Condition.code` di Regmal 1 kosong (jenis malaria tidak punya code penentu); Knowlesi belum dimapping | open |
+| SM-3 | Status Validasi (Indigenous) belum punya path FHIR | open |
+| SM-4 | `Location.type` di Indigenous: code belum pasti | open |
+| SM-5 | Verifikasi Uji Silang belum ada mapping malaria | open |
+
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
 Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
@@ -726,6 +778,8 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P41 | SiGizi (17 form) | `puskesmas` / `pukesmas` → lookup `Encounter.serviceProvider.reference`; `posyandu` → lookup `Encounter.location.reference` (bukan Organization baru) | Converter: lookup master data Organization/Location | open |
 | P42 | SiGizi Vitamin A | Kolom export baru `nama_ortu` → RelatedPerson (PRN); `tanggal_pemberian` → `Procedure.performedPeriod.start` dan fallback tanggal Encounter / MedicationDispense kalau `tanggal_pengukuran` kosong | Converter | open |
 | P43 | SiGizi Kohort Ibu | 14 Encounter per pasien (12 kunjungan bulanan dari kolom `tahun_<bulan>` + 1 kunjungan utama + 1 persalinan), masing-masing dengan Condition sendiri; Encounter hanya dibuat kalau tanggal bulan itu terisi | Converter | open |
+| P44 | SISMAL Regmal 1, Validasi Indigenous | Kolom `Variables` kadang berisi tipe data (`number`/`string`/`date`) bukan nama variabel; ServiceRequest Regmal 1 kolomnya bergeser 1 kolom (sudah dirapikan). Path salah ketik (`valuecodeableConcept`, `valueinteger`) sudah dibetulkan di CSV | Converter: pakai CSV hasil perbaikan, bukan sheet asli |
+| P45 | SISMAL Indigenous | Location "Alamat Asal Penularan" dibuat dari form (bukan lookup), `Location.type.coding` menjadi penentu | Converter: buat Location baru; kode `Location.type` menunggu SM-4 |
 
 ## SIM RS (PHDT_Data_Rumah_Sakit.xlsx)
 
@@ -808,6 +862,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | #101 Kobo DDTK | 20 / 20 | 11 / 10 |
 
 ## Log perubahan revisi
+- 2026-11-24: Tambah bagian SISMAL (Regmal 1 20/54, Validasi Indigenous 7/12): asumsi SM1–SM4, temuan SM-1–SM-5, catatan pipeline P44–P45. Verifikasi Uji Silang tidak dihitung (isi salinan TB-TPT). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian SiGizi 17 form (SG1–SG14) dan catatan pipeline P39–P43. Keputusan user: PMT 2025 = 9 form, `no` tidak dimapping, `detail` → extension `sigizi-detail` valueString.
 - 2026-11-24: Tambah bagian perbandingan jumlah variabel dengan PHDT Data Dictionary (4 form beda: SiGizi ANC, TB 06, TB 03 SO, TB 16K). Angka output utama tidak berubah.
