@@ -6,40 +6,40 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 
 | # | Resource | Code pembeda | Display | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
-| 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x), ASIK Skrining PTM (6x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SiGizi Kohort Ibu | 11 |
-| 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x), ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SIHEPI Rekap 3e, eKohort ANC, eKohort INC (3x) | 12 |
-| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Informed Consent, SIHEPI Rekap 3e, eKohort ANC, eKohort INC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 54 |
-| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, eKohort INC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu (14x) | 49 |
+| 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x), ASIK Skrining PTM (6x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SiGizi Kohort Ibu, SIM RS Tripat ANC (2x), SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Tripat PNC (2x), SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC (16x), SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 34 |
+| 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x), ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SIHEPI Rekap 3e, eKohort ANC, eKohort INC (3x), SIM RS Tripat ANC (2x), SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Tripat PNC (2x), SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC (2x), SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng PNC | 39 |
+| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Informed Consent, SIHEPI Rekap 3e, eKohort ANC, eKohort INC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, SIM RS Goetoeng Diabetes Melitus, SIM RS Goetoeng Hipertensi | 88 |
+| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, eKohort INC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu (14x), SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, SIM RS Goetoeng Diabetes Melitus, SIM RS Goetoeng Hipertensi | 83 |
 | 5 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | Maternal Outcome | 1 |
-| 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SIHEPI Rekap 3e, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu (2x) | 9 |
-| 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome, ePus PNC, SiGizi Ibu Nifas | 3 |
-| 8 | Observation | SP000389 | Keadaan Ibu | Maternal Outcome, ePus PNC | 2 |
-| 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome, ePus INC, ePus PNC, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, eKohort INC, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 8 |
-| 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC | 5 |
+| 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SIHEPI Rekap 3e, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 21 |
+| 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome, ePus PNC, SiGizi Ibu Nifas, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 16 |
+| 8 | Observation | SP000389 | Keadaan Ibu | Maternal Outcome, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
+| 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome, ePus INC, ePus PNC, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, eKohort INC, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 18 |
+| 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC | 8 |
 | 11 | Observation | LT000005 | Alamat Mati | Maternal Outcome | 1 |
-| 12 | Observation | 79378-6 | Cause of death | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
+| 12 | Observation | 79378-6 | Cause of death | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC | 6 |
 | 13 | Location | – | – | Raffle, SITB TB 06 | 2 |
 | 14 | Condition | SP001135 | Presensi Posyandu | Raffle | 1 |
 | 15 | Observation | 385438008 | Source of information | Raffle | 1 |
 | 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SiGizi Kohort Ibu (13x) | 7 |
 | 17 | Observation | 424144002 | Current chronological age | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SIHEPI Rekap 3e, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 17 |
-| 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 7 |
-| 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC | 8 |
-| 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC | 6 |
-| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Kohort Ibu | 14 |
+| 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC | 15 |
+| 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika INC | 14 |
+| 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Siaga Medika INC | 10 |
+| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU INC | 22 |
 | 22 | Observation | OC000010 | Indeks Massa Tubuh Sebelum Hamil | SiGizi ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu | 3 |
-| 23 | Immunization | VG139 | Td | SiGizi ANC | 1 |
-| 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC, ePus ANC, SiGizi Kohort Ibu | 3 |
+| 23 | Immunization | VG139 | Td | SiGizi ANC, SIM RS Tripat ANC | 2 |
+| 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC, ePus ANC, SiGizi Kohort Ibu, SIM RS Panti Nugroho ANC, SIM RS Siaga Medika ANC | 5 |
 | 25 | Observation | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | SiGizi ANC, ePus ANC | 2 |
-| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu | 28 |
+| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS MPH BBL, SIM RS Siaga Medika ANC, SIM RS Siaga Medika BBL, SIM RS PKU INC | 38 |
 | 27 | Observation | 392570002 | Blood pressure finding | SiGizi ANC | 1 |
 | 28 | Observation | 284473002 | Mid upper arm circumference | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK, ELSMIL Ibu Hamil, eKohort ANC, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 12 |
 | 29 | Observation | 289625003 | Finding of fundal height of uterus | SiGizi ANC | 1 |
-| 30 | Observation | 883-9 | ABO group [Type] in Blood | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM | 5 |
-| 31 | Observation | 10331-7 | Rh [Type] in Blood | SiGizi ANC, ePus ANC | 2 |
+| 30 | Observation | 883-9 | ABO group [Type] in Blood | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM, SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 9 |
+| 31 | Observation | 10331-7 | Rh [Type] in Blood | SiGizi ANC, ePus ANC, SIM RS Ummu Hani BBL, SIM RS Siaga Medika ANC | 4 |
 | 32 | Observation | 289437007 | Finding of fetal heart rate | SiGizi ANC, ePus INC | 2 |
-| 33 | Observation | 72155-5 | Position in womb Fetus [RHEA] | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC (2x) | 5 |
-| 34 | Procedure | 88.78 | Diagnostic ultrasound of gravid uterus | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
+| 33 | Observation | 72155-5 | Position in womb Fetus [RHEA] | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 17 |
+| 34 | Procedure | 88.78 | Diagnostic ultrasound of gravid uterus | SiGizi ANC, ePus ANC, eKohort ANC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC (2x) | 10 |
 | 35 | Observation | 268445003 | Ultrasound scan - obstetric | SiGizi ANC, ePus ANC | 2 |
 | 36 | MedicationRequest | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
 | 37 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
@@ -47,30 +47,30 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 39 | MedicationDispense | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC, ePus Pelayanan Pasien | 2 |
 | 40 | ServiceRequest | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 41 | Specimen | 122555007 | Venous blood specimen | SiGizi ANC (5x), SiGizi Kohort Ibu (2x) | 2 |
-| 42 | Observation | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC | 10 |
+| 42 | Observation | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC | 11 |
 | 43 | DiagnosticReport | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 44 | ServiceRequest | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
-| 45 | Observation | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC | 9 |
+| 45 | Observation | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC | 10 |
 | 46 | DiagnosticReport | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 47 | ServiceRequest | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
-| 48 | Observation | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC | 9 |
+| 48 | Observation | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, SIM RS Siaga Medika ANC | 10 |
 | 49 | DiagnosticReport | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
 | 50 | ServiceRequest | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, SiGizi Kohort Ibu | 2 |
 | 51 | Specimen | 122575003 | Urine specimen | SiGizi ANC, SiGizi Kohort Ibu | 2 |
-| 52 | Observation | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC, SiGizi Kohort Ibu | 6 |
-| 53 | DiagnosticReport | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC, SiGizi Kohort Ibu | 6 |
+| 52 | Observation | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 7 |
+| 53 | DiagnosticReport | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 7 |
 | 54 | ServiceRequest | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, SiGizi Kohort Ibu | 2 |
-| 55 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil, ASIK CKG Balita (v2), eKohort ANC, SiGizi Kohort Ibu | 9 |
-| 56 | DiagnosticReport | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu | 8 |
+| 55 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil, ASIK CKG Balita (v2), eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 10 |
+| 56 | DiagnosticReport | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil, eKohort ANC, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 9 |
 | 57 | ServiceRequest | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, SiGizi Kohort Ibu | 2 |
-| 58 | Observation | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM, SiGizi Kohort Ibu | 6 |
-| 59 | DiagnosticReport | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM, SiGizi Kohort Ibu | 6 |
+| 58 | Observation | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 7 |
+| 59 | DiagnosticReport | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM, SiGizi Kohort Ibu, SIM RS Siaga Medika ANC | 7 |
 | 60 | Observation | 15220000 | Laboratory test | SiGizi ANC, ePus ANC | 2 |
-| 61 | Observation | SP000007 | Tatalaksana Anemia | SiGizi ANC, ePus ANC | 2 |
-| 62 | Observation | SP000010 | Skrining Hipertensi dalam Kehamilan | SiGizi ANC, ePus ANC | 2 |
-| 63 | Observation | SP000012 | Tatalaksana Pre Eklampsia | SiGizi ANC, ePus ANC | 2 |
-| 64 | Observation | SP000014 | Tatalaksana KEK | SiGizi ANC, ePus ANC | 2 |
-| 65 | Observation | SP000015 | Risiko Masalah Kesehatan | SiGizi ANC, ePus ANC | 2 |
+| 61 | Observation | SP000007 | Tatalaksana Anemia | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 62 | Observation | SP000010 | Skrining Hipertensi dalam Kehamilan | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 63 | Observation | SP000012 | Tatalaksana Pre Eklampsia | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 64 | Observation | SP000014 | Tatalaksana KEK | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 5 |
+| 65 | Observation | SP000015 | Risiko Masalah Kesehatan | SiGizi ANC, ePus ANC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS PKU INC | 9 |
 | 66 | Observation | SP000016 | Tatalaksana Masalah Kesehatan | SiGizi ANC, ePus ANC | 2 |
 | 67 | Procedure | 1230101008 | Counseling for pregnancy | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 68 | Procedure | 385892002 | Mental health screening | SiGizi ANC, ePus ANC | 2 |
@@ -78,7 +78,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 70 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04, SITB TB 01 | 4 |
 | 71 | Condition | Z03.0 | Observation for suspected tuberculosis | SITB TB 06 | 1 |
 | 72 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x), ePus Tumbang KPSP (14x), ePus Tumbang TDD (8x), ePus Tumbang KMPE, ePus Tumbang M-CHAT-R, ePus Tumbang GPPH, SITB TB 01, SITB TB 02, ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SiGizi Balita BNBA, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 24 |
+| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x), ePus Tumbang KPSP (14x), ePus Tumbang TDD (8x), ePus Tumbang KMPE, ePus Tumbang M-CHAT-R, ePus Tumbang GPPH, SITB TB 01, SITB TB 02, ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (7x), SiGizi Balita BNBA, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 26 |
 | 74 | Observation | OC000191 | Jumlah Skoring TBC Anak | SITB TB 06, SITB TB 03 SO, SITB TB 01 | 3 |
 | 75 | ServiceRequest | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
 | 76 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus PNC, SITB TB 01 | 5 |
@@ -111,9 +111,9 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 103 | Observation | 365866002 | Finding of human immunodeficiency virus status | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
 | 104 | Procedure | SP000046 | Terapi Antiretroviral (ART) | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil | 4 |
 | 105 | Observation | SP000047 | Hasil Tes Diabetes Melitus | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
-| 106 | Coverage | – | – | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal | 6 |
+| 106 | Coverage | – | – | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 12 |
 | 107 | Observation | 85658-3 | Occupation [Type] | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM, SIHEPI Rekap 3e | 5 |
-| 108 | Observation | 82810-3 | Pregnancy status | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
+| 108 | Observation | 82810-3 | Pregnancy status | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 6 |
 | 109 | Observation | 225368008 | Contact tracing | SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 3 |
 | 110 | Procedure | TK000016 | Edukasi Tes HIV | SITB TB 03 SO, ePus Kunjungan Ibu Hamil, SITB TB 01 | 3 |
 | 111 | Procedure | SP000371 | Cotrimoxazole | SITB TB 03 SO, SITB TB 03 RO | 2 |
@@ -142,7 +142,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 134 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
 | 135 | Group | – | – | SITB TB 16K | 1 |
 | 136 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
-| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x), SITB TB 01 (2x), Informed Consent, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita ASI Eksklusif, SiGizi Kohort Ibu | 12 |
+| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x), SITB TB 01 (2x), Informed Consent, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita ASI Eksklusif, SiGizi Kohort Ibu, SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL (2x), SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL (2x), SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL (2x), SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL (2x) | 25 |
 | 138 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K | 1 |
 | 139 | ServiceRequest | 185389009 | Follow-up visit | SITB TB 16K | 1 |
 | 140 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
@@ -158,57 +158,57 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 150 | Observation | 39016-1 | Age at death | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 151 | Observation | OC000028 | Jenis Tempat Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 152 | Observation | SP000098 | Tipe Penyelenggara Faskes Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 5 |
-| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC, SiGizi Kohort Ibu | 6 |
-| 155 | Observation | OC000013 | Penolong Persalinan | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan | 3 |
+| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS PKU INC | 9 |
+| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC, SiGizi Kohort Ibu, SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 12 |
+| 155 | Observation | OC000013 | Penolong Persalinan | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, SIM RS Panti Nugroho INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
 | 156 | Observation | SP000075 | Tipe Penyelenggara Faskes Lahir | MPDN Kematian Bayi | 1 |
-| 157 | Observation | 57715-5 | Birth time | MPDN Kematian Bayi, ePus INC | 2 |
-| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi, ePus INC, ELSMIL Baduta (2x), ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A | 6 |
-| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu | 6 |
+| 157 | Observation | 57715-5 | Birth time | MPDN Kematian Bayi, ePus INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 7 |
+| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi, ePus INC, ELSMIL Baduta (2x), ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 12 |
+| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC, SIHEPI Rekap 3e, SiGizi Kohort Ibu, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 16 |
 | 160 | Observation | 57722-1 | Birth plurality of Pregnancy | MPDN Kematian Bayi | 1 |
 | 161 | Observation | 30525-0 | Age | MPDN Kematian Bayi, ePus INC | 2 |
-| 162 | Composition | – | – | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 163 | Condition | – | – | MPDN Kematian Ibu, ePus Pelayanan Pasien (9x), ePus Kunjungan Ibu Hamil (2x), ePus Rujukan Eksternal, ePus MTBS (2x), ePus MTBM, ePus Tumbang DDTK (3x), eKohort INC (2x) | 8 |
+| 162 | Composition | – | – | MPDN Kematian Bayi, MPDN Kematian Ibu, SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 4 |
+| 163 | Condition | – | – | MPDN Kematian Ibu, ePus Pelayanan Pasien (9x), ePus Kunjungan Ibu Hamil (2x), ePus Rujukan Eksternal, ePus MTBS (2x), ePus MTBM, ePus Tumbang DDTK (3x), eKohort INC (2x), SIM RS Narmada INC, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho Hipertensi (2x), SIM RS Panti Nugroho Stroke (2x), SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi (2x), SIM RS PKU INC, SIM RS Goetoeng ANC, SIM RS Goetoeng PNC | 17 |
 | 164 | Observation | OC000026 | Masa terjadi Kematian Ibu | MPDN Kematian Ibu | 1 |
 | 165 | Observation | 161572004 | History of congenital anomaly | ePus Pelayanan Pasien | 1 |
 | 166 | Observation | 51848-0 | Evaluation note | ePus Pelayanan Pasien | 1 |
 | 167 | Observation | 61150-9 | Subjective Narrative | ePus Pelayanan Pasien | 1 |
 | 168 | Observation | 72225-6 | Objective Narrative | ePus Pelayanan Pasien | 1 |
 | 169 | Observation | 77977-7 | Illness duration | ePus Pelayanan Pasien | 1 |
-| 170 | Observation | 72166-2 | Tobacco smoking status | ePus Pelayanan Pasien, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan | 3 |
-| 171 | Observation | 11331-6 | History of Alcohol use | ePus Pelayanan Pasien | 1 |
+| 170 | Observation | 72166-2 | Tobacco smoking status | ePus Pelayanan Pasien, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, SIM RS Narmada INC, SIM RS Narmada KIA | 5 |
+| 171 | Observation | 11331-6 | History of Alcohol use | ePus Pelayanan Pasien, SIM RS Narmada INC, SIM RS Narmada KIA | 3 |
 | 172 | Observation | 878899005 | Inadequate intake of plant fiber | ePus Pelayanan Pasien | 1 |
 | 173 | Procedure | 84635008 | Disease process or condition education | ePus Pelayanan Pasien | 1 |
-| 174 | FamilyMemberHistory | – | – | ePus Pelayanan Pasien, SIPTM | 2 |
-| 175 | AllergyIntolerance | – | – | ePus Pelayanan Pasien | 1 |
-| 176 | Observation | 67775-7 | Level of responsiveness | ePus Pelayanan Pasien | 1 |
-| 177 | Observation | 75910-0 | Canadian triage and acuity scale [CTAS] | ePus Pelayanan Pasien | 1 |
+| 174 | FamilyMemberHistory | – | – | ePus Pelayanan Pasien, SIPTM, SIM RS Narmada INC | 3 |
+| 175 | AllergyIntolerance | – | – | ePus Pelayanan Pasien, SIM RS Narmada INC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 4 |
+| 176 | Observation | 67775-7 | Level of responsiveness | ePus Pelayanan Pasien, SIM RS Narmada INC | 2 |
+| 177 | Observation | 75910-0 | Canadian triage and acuity scale [CTAS] | ePus Pelayanan Pasien, SIM RS Narmada INC | 2 |
 | 178 | Observation | 276361009 | Waist circumference | ePus Pelayanan Pasien | 1 |
-| 179 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | ePus Pelayanan Pasien, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
+| 179 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | ePus Pelayanan Pasien, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Narmada KIA | 6 |
 | 180 | Observation | 59575-1 | Body mass index (BMI) [Percentile] Per age | ePus Pelayanan Pasien | 1 |
-| 181 | Observation | 8480-6 | Systolic blood pressure | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), eKohort ANC, eKohort INC | 12 |
-| 182 | Observation | 8462-4 | Diastolic blood pressure | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), eKohort ANC | 11 |
-| 183 | Observation | 9279-1 | Respiratory rate | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort ANC, eKohort INC | 8 |
-| 184 | Observation | 8867-4 | Heart rate | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, eKohort ANC, eKohort INC | 6 |
+| 181 | Observation | 8480-6 | Systolic blood pressure | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), eKohort ANC, eKohort INC, SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x), SIM RS PKU PNC, SIM RS Goetoeng Hipertensi | 34 |
+| 182 | Observation | 8462-4 | Diastolic blood pressure | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), eKohort ANC, SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC (2x), SIM RS PKU PNC, SIM RS Goetoeng Hipertensi | 34 |
+| 183 | Observation | 9279-1 | Respiratory rate | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort ANC, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC | 26 |
+| 184 | Observation | 8867-4 | Heart rate | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, eKohort ANC, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC | 24 |
 | 185 | Observation | 8884-9 | Heart rate rythm | ePus Pelayanan Pasien | 1 |
-| 186 | Observation | 8310-5 | Body temperature | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM, eKohort INC | 6 |
+| 186 | Observation | 8310-5 | Body temperature | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM, eKohort INC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL | 15 |
 | 187 | Observation | 129861002 | Physical activity finding | ePus Pelayanan Pasien | 1 |
 | 188 | Observation | 80316-3 | Pain scale [Type] | ePus Pelayanan Pasien | 1 |
-| 189 | ServiceRequest | – | – | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (70x), ePus Rujukan Eksternal, ePus ANC (19x), ePus PNC (2x), ePus MTBS (9x), ePus MTBM, ePus Tumbang DDTK, SITB TB 02 (2x), ELSMIL Ibu Hamil (2x), SIPTM (3x), ASIK Skrining PTM (20x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (4x), eKohort ANC (5x) | 18 |
-| 190 | Procedure | – | – | ePus Pelayanan Pasien, ePus MTBS (12x), ePus MTBM (6x), eKohort INC (4x) | 4 |
+| 189 | ServiceRequest | – | – | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (70x), ePus Rujukan Eksternal, ePus ANC (19x), ePus PNC (2x), ePus MTBS (9x), ePus MTBM, ePus Tumbang DDTK, SITB TB 02 (2x), ELSMIL Ibu Hamil (2x), SIPTM (3x), ASIK Skrining PTM (20x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (4x), eKohort ANC (5x), SIM RS Siaga Medika ANC (15x), SIM RS Goetoeng ANC, SIM RS Goetoeng INC | 21 |
+| 190 | Procedure | – | – | ePus Pelayanan Pasien, ePus MTBS (12x), ePus MTBM (6x), eKohort INC (4x), SIM RS Narmada INC, SIM RS Goetoeng ANC | 6 |
 | 191 | Observation | 32418-6 | Obstetric trimester Stated | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC | 3 |
-| 192 | Observation | – | – | ePus Kunjungan Ibu Hamil, ePus Laboratorium (53x), ePus ANC (13x), ePus INC (2x), ePus MTBS, ELSMIL Baduta, SIPTM (2x), ASIK Skrining PTM (7x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIHEPI Rekap 3e (7x), eKohort INC (17x) | 13 |
-| 193 | Observation | 11881-0 | Uterus Fundal height Tape measure | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC | 6 |
+| 192 | Observation | – | – | ePus Kunjungan Ibu Hamil, ePus Laboratorium (53x), ePus ANC (13x), ePus INC (2x), ePus MTBS, ELSMIL Baduta, SIPTM (2x), ASIK Skrining PTM (7x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIHEPI Rekap 3e (7x), eKohort INC (17x), SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS Siaga Medika ANC (10x), SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 23 |
+| 193 | Observation | 11881-0 | Uterus Fundal height Tape measure | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 21 |
 | 194 | Observation | 32392-3 | Deep tendon reflex of Patellar | ePus Kunjungan Ibu Hamil | 1 |
-| 195 | Observation | 55283-6 | Fetal Heart rate | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort ANC | 4 |
+| 195 | Observation | 55283-6 | Fetal Heart rate | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 15 |
 | 196 | Observation | 249111004 | Engagement of head | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC | 4 |
-| 197 | Observation | 89087-1 | Fetal Body weight Estimated | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, eKohort ANC | 4 |
+| 197 | Observation | 89087-1 | Fetal Body weight Estimated | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, eKohort ANC, SIM RS Narmada INC, SIM RS Narmada KIA | 6 |
 | 198 | Observation | 246435002 | Number of fetuses | ePus Kunjungan Ibu Hamil (2x) | 1 |
-| 199 | Immunization | – | – | ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), ePus MTBS (17x), ePus MTBM (3x), ELSMIL Baduta, SIHEPI Rekap 3e (5x), eKohort ANC (2x), SiGizi Kohort Ibu (2x) | 8 |
+| 199 | Immunization | – | – | ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), ePus MTBS (17x), ePus MTBM (3x), ELSMIL Baduta, SIHEPI Rekap 3e (5x), eKohort ANC (2x), SiGizi Kohort Ibu (2x), SIM RS Narmada INC (4x), SIM RS Narmada KIA, SIM RS Panti Nugroho ANC (3x), SIM RS Panti Nugroho BBL (2x), SIM RS Ummu Hani ANC, SIM RS Ummu Hani BBL (2x), SIM RS MPH ANC, SIM RS MPH BBL, SIM RS Siaga Medika ANC (3x), SIM RS Siaga Medika BBL | 18 |
 | 200 | Procedure | 99.38 | Administration of tetanus toxoid | ePus Kunjungan Ibu Hamil | 1 |
-| 201 | Observation | SP000122 | Catat di Buku KIA | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC | 3 |
-| 202 | Specimen | – | – | ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (64x), ePus ANC (6x), ePus PNC, ePus MTBS (8x), ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM (14x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (3x), eKohort ANC (5x) | 13 |
-| 203 | DiagnosticReport | – | – | ePus Kunjungan Ibu Hamil (7x), ePus Laboratorium (3x), ePus ANC (3x), ePus PNC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (3x), eKohort ANC (3x) | 8 |
+| 201 | Observation | SP000122 | Catat di Buku KIA | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 9 |
+| 202 | Specimen | – | – | ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (64x), ePus ANC (6x), ePus PNC, ePus MTBS (8x), ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM (14x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (3x), eKohort ANC (5x), SIM RS Siaga Medika ANC (6x) | 14 |
+| 203 | DiagnosticReport | – | – | ePus Kunjungan Ibu Hamil (7x), ePus Laboratorium (3x), ePus ANC (3x), ePus PNC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (3x), eKohort ANC (3x), SIM RS MPH Diabetes Melitus, SIM RS Siaga Medika ANC (3x) | 10 |
 | 204 | Observation | SP000115 | Pemeriksaan Laboratorium Thalassemia | ePus Kunjungan Ibu Hamil | 1 |
 | 205 | Observation | 278977008 | Human immunodeficiency virus status | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
 | 206 | Observation | 72178-7 | Given a mosquito net [RHEA] | ePus Kunjungan Ibu Hamil | 1 |
@@ -217,26 +217,26 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 209 | Observation | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | ePus Kunjungan Ibu Hamil (2x), ePus MTBS | 2 |
 | 210 | DiagnosticReport | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | ePus Kunjungan Ibu Hamil (2x), ePus MTBS | 2 |
 | 211 | Observation | 50687-3 | Plasmodium sp Ag [Presence] in Blood | ePus Kunjungan Ibu Hamil | 1 |
-| 212 | MedicationStatement | – | – | ePus Kunjungan Ibu Hamil (2x), ePus PNC, SITB TB 01 (2x) | 3 |
+| 212 | MedicationStatement | – | – | ePus Kunjungan Ibu Hamil (2x), ePus PNC, SITB TB 01 (2x), SIM RS Tripat ANC, SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho Hipertensi (2x), SIM RS Panti Nugroho Stroke (2x), SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi (2x) | 11 |
 | 213 | Observation | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | ePus Kunjungan Ibu Hamil | 1 |
 | 214 | DiagnosticReport | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | ePus Kunjungan Ibu Hamil | 1 |
 | 215 | Procedure | 830039004 | Genitourinary medicine service | ePus Kunjungan Ibu Hamil | 1 |
 | 216 | Observation | 386413005 | Risk identification | ePus Kunjungan Ibu Hamil | 1 |
 | 217 | ServiceRequest | 737492002 | Outpatient care management | ePus Kunjungan Ibu Hamil, eKohort INC | 2 |
-| 218 | Observation | SP000383 | Keadaan Ibu Saat Tiba | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
+| 218 | Observation | SP000383 | Keadaan Ibu Saat Tiba | ePus Kunjungan Ibu Hamil, ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
 | 219 | Specimen | 119361006 | Plasma | ePus Laboratorium | 1 |
 | 220 | ServiceRequest | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | ePus Laboratorium | 1 |
 | 221 | DiagnosticReport | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | ePus Laboratorium | 1 |
 | 222 | Observation | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | ePus Laboratorium | 1 |
 | 223 | DiagnosticReport | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | ePus Laboratorium | 1 |
 | 224 | DiagnosticReport | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | ePus Laboratorium | 1 |
-| 225 | Observation | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
+| 225 | Observation | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Goetoeng Diabetes Melitus | 8 |
 | 226 | DiagnosticReport | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK Skrining PTM | 2 |
 | 227 | Observation | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 228 | DiagnosticReport | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK Skrining PTM | 2 |
 | 229 | Observation | 3084-1 | Urate [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
 | 230 | DiagnosticReport | 3084-1 | Urate [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
-| 231 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
+| 231 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x), SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS Goetoeng Diabetes Melitus | 9 |
 | 232 | DiagnosticReport | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | ePus Laboratorium, ASIK CKG Balita (v2) | 2 |
 | 233 | Observation | 41653-7 | Glucose [Mass/volume] in Capillary blood by Glucometer | ePus Laboratorium | 1 |
 | 234 | DiagnosticReport | 41653-7 | Glucose [Mass/volume] in Capillary blood by Glucometer | ePus Laboratorium | 1 |
@@ -250,7 +250,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 242 | DiagnosticReport | 1751-7 | Albumin [Mass/volume] in Serum or Plasma | ePus Laboratorium | 1 |
 | 243 | Observation | 2324-2 | Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
 | 244 | DiagnosticReport | 2324-2 | Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
-| 245 | Observation | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | ePus Laboratorium, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 245 | Observation | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | ePus Laboratorium, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Goetoeng Diabetes Melitus | 8 |
 | 246 | DiagnosticReport | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | ePus Laboratorium, ASIK Skrining PTM | 2 |
 | 247 | Observation | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 248 | DiagnosticReport | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | ePus Laboratorium | 1 |
@@ -326,23 +326,23 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 318 | Observation | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | ePus Laboratorium | 1 |
 | 319 | DiagnosticReport | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | ePus Laboratorium | 1 |
 | 320 | EpisodeOfCare | – | – | ePus ANC | 1 |
-| 321 | Observation | 11977-6 | [#] Parity | ePus ANC (2x), ePus PNC (2x), SIHEPI Rekap 3e | 3 |
-| 322 | Observation | 69043-8 | Other pregnancy outcomes # | ePus ANC, ePus PNC, SIHEPI Rekap 3e | 3 |
+| 321 | Observation | 11977-6 | [#] Parity | ePus ANC (2x), ePus PNC (2x), SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 13 |
+| 322 | Observation | 69043-8 | Other pregnancy outcomes # | ePus ANC, ePus PNC, SIHEPI Rekap 3e, SIM RS Tripat PNC, SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 13 |
 | 323 | Observation | SP000050 | Riwayat Onset Persalinan | ePus ANC, ePus PNC | 2 |
-| 324 | Observation | SP000132 | Memiliki Buku KIA | ePus ANC, ePus PNC | 2 |
+| 324 | Observation | SP000132 | Memiliki Buku KIA | ePus ANC, ePus PNC, SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 6 |
 | 325 | Observation | 56077-1 | Body weight --pre current pregnancy | ePus ANC, ePus PNC, ELSMIL Ibu Hamil | 3 |
 | 326 | Condition | 404684003 | Clinical finding | ePus ANC, ePus Tumbang Anak (2x) | 2 |
 | 327 | Observation | 3401000175105 | Total number of prenatal care visits | ePus ANC, eKohort ANC | 2 |
 | 328 | Observation | SP000134 | Jenis Lokasi Screening | ePus ANC, ePus PNC | 2 |
 | 329 | Observation | SP000131 | Status Pindahan | ePus ANC, ePus INC, ePus PNC | 3 |
-| 330 | Observation | 10197-2 | Physical findings of Eye Narrative | ePus ANC (2x) | 1 |
-| 331 | Observation | 10206-1 | Physical findings of Skin Narrative | ePus ANC | 1 |
+| 330 | Observation | 10197-2 | Physical findings of Eye Narrative | ePus ANC (2x), SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
+| 331 | Observation | 10206-1 | Physical findings of Skin Narrative | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 332 | Observation | 11411-6 | Physical findings of Neck Narrative | ePus ANC | 1 |
-| 333 | Observation | 32453-3 | Physical findings of Mouth | ePus ANC | 1 |
+| 333 | Observation | 32453-3 | Physical findings of Mouth | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 334 | Observation | 297268004 | Ear, nose and throat finding | ePus ANC | 1 |
 | 335 | Observation | 10200-4 | Physical findings of Heart Narrative | ePus ANC | 1 |
 | 336 | Observation | 301230006 | Lung finding | ePus ANC | 1 |
-| 337 | Observation | 10191-5 | Physical findings of Abdomen Narrative | ePus ANC | 1 |
+| 337 | Observation | 10191-5 | Physical findings of Abdomen Narrative | ePus ANC, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 338 | Observation | 116307009 | Finding of upper limb | ePus ANC | 1 |
 | 339 | Observation | 116312005 | Finding of lower limb | ePus ANC | 1 |
 | 340 | Observation | 102572006 | Edema of lower extremity (finding) | ePus ANC | 1 |
@@ -350,22 +350,22 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 342 | Observation | 8478-0 | Mean blood pressure | ePus ANC | 1 |
 | 343 | Observation | SP000634 | Tinggi fundus terdeteksi | ePus ANC | 1 |
 | 344 | Observation | SP000635 | Tinggi fundus jari | ePus ANC | 1 |
-| 345 | DiagnosticReport | 11850-5 | Gestational sac Mean diameter US | ePus ANC | 1 |
-| 346 | DiagnosticReport | 11957-8 | Fetal Crown Rump length US | ePus ANC | 1 |
-| 347 | DiagnosticReport | 11948-7 | Fetal Heart rate US | ePus ANC | 1 |
-| 348 | DiagnosticReport | 11820-8 | Fetal Head Diameter.biparietal US | ePus ANC | 1 |
-| 349 | DiagnosticReport | 11984-2 | Fetal Head Circumference US | ePus ANC | 1 |
+| 345 | DiagnosticReport | 11850-5 | Gestational sac Mean diameter US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 346 | DiagnosticReport | 11957-8 | Fetal Crown Rump length US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 347 | DiagnosticReport | 11948-7 | Fetal Heart rate US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 348 | DiagnosticReport | 11820-8 | Fetal Head Diameter.biparietal US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 349 | DiagnosticReport | 11984-2 | Fetal Head Circumference US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
 | 350 | DiagnosticReport | 11979-2 | Fetal Abdomen Circumference US | ePus ANC | 1 |
 | 351 | DiagnosticReport | 11963-6 | Fetal Femur diaphysis [Length] US | ePus ANC | 1 |
-| 352 | DiagnosticReport | 11832-3 | Fetal Amniotic fluid space Maximum diameter largest pocket US | ePus ANC | 1 |
+| 352 | DiagnosticReport | 11832-3 | Fetal Amniotic fluid space Maximum diameter largest pocket US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
 | 353 | Observation | 365662002 | Finding of amniotic fluid appearance | ePus ANC, ePus INC | 2 |
-| 354 | DiagnosticReport | 72155-5 | Position in womb Fetus [RHEA] | ePus ANC | 1 |
-| 355 | DiagnosticReport | 11877-8 | Fetal presentation US | ePus ANC | 1 |
-| 356 | DiagnosticReport | 11878-6 | Number of fetuses by US | ePus ANC | 1 |
+| 354 | DiagnosticReport | 72155-5 | Position in womb Fetus [RHEA] | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 355 | DiagnosticReport | 11877-8 | Fetal presentation US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
+| 356 | DiagnosticReport | 11878-6 | Number of fetuses by US | ePus ANC, SIM RS Siaga Medika ANC | 2 |
 | 357 | DiagnosticReport | 11888-5 | Gestational age US composite estimate | ePus ANC | 1 |
 | 358 | DiagnosticReport | 11781-2 | Delivery date US composite estimate | ePus ANC | 1 |
 | 359 | Condition | 34842007 | Antepartum hemorrhage | ePus ANC | 1 |
-| 360 | Observation | OC000001 | Jarak kehamilan | ePus ANC, ePus INC, SiGizi Kohort Ibu | 3 |
+| 360 | Observation | OC000001 | Jarak kehamilan | ePus ANC, ePus INC, SiGizi Kohort Ibu, SIM RS PKU INC | 4 |
 | 361 | Observation | 73211009 | Diabetes mellitus | ePus ANC | 1 |
 | 362 | Observation | 66071002 | Viral hepatitis type B | ePus ANC | 1 |
 | 363 | Observation | 76272004 | Syphilis | ePus ANC | 1 |
@@ -374,73 +374,73 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 366 | Condition | 386337006 | Intrapartal care | ePus INC, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 3 |
 | 367 | Observation | 271692001 | Presentation of fetus | ePus INC | 1 |
 | 368 | Observation | 289282009 | Amniotic membrane finding | ePus INC, eKohort INC | 2 |
-| 369 | Observation | SP000123 | Integrasi Program | ePus INC, SITB TB 01 | 2 |
-| 370 | Observation | 76516-4 | Gestational age—​at birth | ePus INC, ELSMIL Baduta | 2 |
+| 369 | Observation | SP000123 | Integrasi Program | ePus INC, SITB TB 01, SIM RS PKU INC | 3 |
+| 370 | Observation | 76516-4 | Gestational age—​at birth | ePus INC, ELSMIL Baduta, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC | 11 |
 | 371 | Observation | 118215003 | Delivery finding | ePus INC | 1 |
 | 372 | Observation | 405195003 | Intrapartum maternal status | ePus INC | 1 |
 | 373 | Observation | 387700009 | Prolonged latent phase of labor | ePus INC | 1 |
 | 374 | Observation | 249120008 | Onset of labor first stage | ePus INC | 1 |
 | 375 | Observation | 249160009 | Onset of labor second stage | ePus INC | 1 |
-| 376 | Observation | OC000018 | Onset Kala III | ePus INC | 1 |
+| 376 | Observation | OC000018 | Onset Kala III | ePus INC, SIM RS PKU INC | 2 |
 | 377 | Observation | 236994008 | Placental delivery procedure | ePus INC | 1 |
 | 378 | Observation | 289267004 | Finding of completeness of placenta | ePus INC | 1 |
-| 379 | Procedure | SP000127 | Injeksi Oksitosin | ePus INC | 1 |
+| 379 | Procedure | SP000127 | Injeksi Oksitosin | ePus INC, SIM RS PKU INC | 2 |
 | 380 | Procedure | 302384005 | Controlled cord traction of placenta | ePus INC | 1 |
 | 381 | Procedure | 236996005 | Abdominal uterine fundal massage | ePus INC | 1 |
-| 382 | Observation | OC000019 | Onset Kala IV | ePus INC | 1 |
+| 382 | Observation | OC000019 | Onset Kala IV | ePus INC, SIM RS PKU INC | 2 |
 | 383 | Condition | 9293002 | Atony of uterus | ePus INC | 1 |
 | 384 | Observation | 719051004 | Quantity of postpartum maternal blood loss | ePus INC | 1 |
 | 385 | Observation | 717809003 | Immediate postpartum care | ePus INC | 1 |
 | 386 | Procedure | 717809003 | Immediate postpartum care | ePus INC | 1 |
 | 387 | Condition | 199746004 | Obstructed labor | ePus INC | 1 |
-| 388 | Observation | SP000379 | Tatalaksana Komplikasi Persalinan | ePus INC | 1 |
-| 389 | Observation | 63893-2 | Outcome of pregnancy | ePus INC, SiGizi Kohort Ibu | 2 |
+| 388 | Observation | SP000379 | Tatalaksana Komplikasi Persalinan | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
+| 389 | Observation | 63893-2 | Outcome of pregnancy | ePus INC, SiGizi Kohort Ibu, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 7 |
 | 390 | ServiceRequest | 409014006 | Delivery care management | ePus INC, ePus PNC | 2 |
-| 391 | Procedure | SP000130 | Menggunakan Partograf | ePus INC | 1 |
+| 391 | Procedure | SP000130 | Menggunakan Partograf | ePus INC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 6 |
 | 392 | Procedure | 431868002 | Initiation of breastfeeding | ePus INC | 1 |
-| 393 | Observation | OC000016 | Waktu Inisiasi Menyusui Dini | ePus INC | 1 |
+| 393 | Observation | OC000016 | Waktu Inisiasi Menyusui Dini | ePus INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS PKU INC | 5 |
 | 394 | Procedure | 409063005 | Counselling | ePus INC (2x) | 1 |
-| 395 | Procedure | SP000126 | ARV Profilaksis | ePus INC, SIHEPI Rekap 3e | 2 |
+| 395 | Procedure | SP000126 | ARV Profilaksis | ePus INC, SIHEPI Rekap 3e, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 4 |
 | 396 | Observation | 249222005 | Neonatal condition | ePus INC, ELSMIL Pasca Persalinan | 2 |
-| 397 | Condition | Z39.2 | Routine postpartum follow-up | ePus PNC | 1 |
+| 397 | Condition | Z39.2 | Routine postpartum follow-up | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
 | 398 | Condition | 289530006 | Vaginal bleeding | ePus PNC | 1 |
-| 399 | Observation | 81661-1 | Blood Loss [Volume] Measured | ePus PNC, eKohort INC | 2 |
+| 399 | Observation | 81661-1 | Blood Loss [Volume] Measured | ePus PNC, eKohort INC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
 | 400 | Observation | 364297003 | Female perineum observable | ePus PNC | 1 |
-| 401 | Observation | OC000020 | Tanda Infeksi Perineum | ePus PNC | 1 |
-| 402 | Observation | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | ePus PNC | 1 |
-| 403 | Observation | 32422-8 | Physical findings of breast | ePus PNC | 1 |
+| 401 | Observation | OC000020 | Tanda Infeksi Perineum | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 402 | Observation | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 403 | Observation | 32422-8 | Physical findings of breast | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 404 | Observation | 289700000 | Uterine contractions present | ePus PNC | 1 |
 | 405 | Observation | 249214003 | Color of lochia | ePus PNC | 1 |
 | 406 | Observation | 249215002 | Odor of lochia | ePus PNC | 1 |
-| 407 | Observation | OC000017 | Produksi ASI | ePus PNC | 1 |
+| 407 | Observation | OC000017 | Produksi ASI | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 408 | Observation | 252041008 | Micturition finding | ePus PNC | 1 |
 | 409 | Observation | 300375001 | Able to defecate | ePus PNC | 1 |
 | 410 | Procedure | 408988007 | Newborn care education | ePus PNC | 1 |
-| 411 | Observation | 8345-1 | Body weight Measured --post partum | ePus PNC | 1 |
-| 412 | Observation | 8305-5 | Body height --post partum | ePus PNC | 1 |
+| 411 | Observation | 8345-1 | Body weight Measured --post partum | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
+| 412 | Observation | 8305-5 | Body height --post partum | ePus PNC, SIM RS Tripat PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
 | 413 | Condition | 47821001 | Postpartum hemorrhage | ePus PNC, ELSMIL Pasca Persalinan | 2 |
 | 414 | Observation | 289084000 | Difficulty performing breastfeeding | ePus PNC | 1 |
-| 415 | Medication | – | – | ePus PNC | 1 |
+| 415 | Medication | – | – | ePus PNC, SIM RS Panti Nugroho PNC (2x), SIM RS Ummu Hani PNC (2x), SIM RS PKU PNC (2x) | 4 |
 | 416 | Procedure | 767224000 | Administration of vitamin A | ePus PNC, ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 4 |
 | 417 | MedicationRequest | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | ePus PNC, ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 4 |
 | 418 | MedicationDispense | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | ePus PNC, ePus MTBS (2x), SiGizi Balita BNBA (2x), SiGizi Balita Vitamin A (2x) | 4 |
 | 419 | Procedure | 711029005 | Counseling about breastfeeding | ePus PNC | 1 |
-| 420 | Procedure | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | ePus PNC | 1 |
+| 420 | Procedure | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | ePus PNC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 421 | Procedure | 72531000052105 | Counseling for contraception | ePus PNC | 1 |
-| 422 | Procedure | SP000135 | Konseling Tanda Bahaya Bayi Baru Lahir | ePus PNC | 1 |
+| 422 | Procedure | SP000135 | Konseling Tanda Bahaya Bayi Baru Lahir | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
 | 423 | Procedure | 441041000124100 | Counseling about nutrition | ePus PNC, ePus Tumbang DDTK | 2 |
-| 424 | Procedure | PC000001 | Perawatan Tali Pusat | ePus PNC | 1 |
-| 425 | Procedure | ED000010 | Edukasi PHBS | ePus PNC | 1 |
+| 424 | Procedure | PC000001 | Perawatan Tali Pusat | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
+| 425 | Procedure | ED000010 | Edukasi PHBS | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
 | 426 | Observation | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | ePus PNC | 1 |
 | 427 | DiagnosticReport | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | ePus PNC | 1 |
-| 428 | Observation | SP000046 | Terapi Antiretroviral (ART) | ePus PNC | 1 |
-| 429 | Observation | SP000124 | Obat anti malaria | ePus PNC | 1 |
-| 430 | Observation | SP000125 | Obat anti tuberkulosis | ePus PNC | 1 |
-| 431 | Observation | SP000139 | KB Pasca Plasenta | ePus PNC (2x) | 1 |
-| 432 | Observation | PC000004 | KB Pasca Persalinan | ePus PNC (2x), ELSMIL Pasca Persalinan | 2 |
-| 433 | Observation | SP000380 | Tatalaksana Komplikasi Pendarahan | ePus PNC | 1 |
-| 434 | Observation | 736286003 | Hypertension clinical management plan | ePus PNC | 1 |
-| 435 | Observation | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | ePus PNC | 1 |
+| 428 | Observation | SP000046 | Terapi Antiretroviral (ART) | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 429 | Observation | SP000124 | Obat anti malaria | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 430 | Observation | SP000125 | Obat anti tuberkulosis | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 431 | Observation | SP000139 | KB Pasca Plasenta | ePus PNC (2x), SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC | 4 |
+| 432 | Observation | PC000004 | KB Pasca Persalinan | ePus PNC (2x), ELSMIL Pasca Persalinan, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 7 |
+| 433 | Observation | SP000380 | Tatalaksana Komplikasi Pendarahan | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 434 | Observation | 736286003 | Hypertension clinical management plan | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 3 |
+| 435 | Observation | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | ePus PNC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 6 |
 | 436 | Condition | 359746009 | Patient’s condition stable | ePus PNC | 1 |
 | 437 | Observation | 35025007 | Manual pelvic examination | ePus PNC | 1 |
 | 438 | Observation | SP000666 | Hari setelah melahirkan | ePus PNC | 1 |
@@ -497,7 +497,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 489 | Observation | 254387007 | Human immunodeficiency virus infection classification systems | ePus MTBS, ePus MTBM | 2 |
 | 490 | Observation | OC000114 | Membutuhkan suplemen vitamin A | ePus MTBS | 1 |
 | 491 | MedicationRequest | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
-| 492 | EpisodeOfCare | Neonate | Neonate | ePus MTBM | 1 |
+| 492 | EpisodeOfCare | Neonate | Neonate | ePus MTBM, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL | 8 |
 | 493 | Condition | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | ePus MTBM | 1 |
 | 494 | Observation | OC000078 | Pemeriksaan tanda dan gejala infeksi | ePus MTBM | 1 |
 | 495 | Observation | OC000126 | Klasifikasi infeksi | ePus MTBM | 1 |
@@ -540,7 +540,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 532 | Observation | 365481000 | Finding of household composition | Dapodik PAUD | 1 |
 | 533 | Observation | SP000241 | Moda Transportasi yang digunakan untuk bersekolah | Dapodik PAUD | 1 |
 | 534 | Observation | SP000239 | Kartu Perlindungan Sosial | Dapodik PAUD | 1 |
-| 535 | Observation | 82589-3 | Highest level of education | Dapodik PAUD (3x), SIPTM | 2 |
+| 535 | Observation | 82589-3 | Highest level of education | Dapodik PAUD (3x), SIPTM, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 5 |
 | 536 | Observation | OC000149 | Pekerjaan orang tua | Dapodik PAUD (4x) | 1 |
 | 537 | Condition | 81323004 | Normal general body function | Dapodik PAUD (3x) | 1 |
 | 538 | Observation | 365552003 | Finding of income details | Dapodik PAUD (3x) | 1 |
@@ -563,8 +563,8 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 555 | Observation | 48635004 | Fine needle biopsy | SITB TB 01 | 1 |
 | 556 | Observation | SP000790 | Hasil Pemeriksaan Kontak TBC | SITB TB 01 | 1 |
 | 557 | Observation | SP000796 | Jumlah OAT | SITB TB 01 (2x) | 1 |
-| 558 | MedicationRequest | – | – | SITB TB 02 (2x), SIPTM | 2 |
-| 559 | MedicationDispense | – | – | SITB TB 02 (2x) | 1 |
+| 558 | MedicationRequest | – | – | SITB TB 02 (2x), SIPTM, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS PKU PNC | 5 |
+| 559 | MedicationDispense | – | – | SITB TB 02 (2x), SIM RS Panti Nugroho PNC (2x), SIM RS Ummu Hani PNC (2x), SIM RS PKU PNC (2x) | 4 |
 | 560 | ClinicalImpression | – | – | SITB TB 02 | 1 |
 | 561 | Observation | 1362035007 | Number of biological children | ELSMIL Ibu Hamil | 1 |
 | 562 | Observation | SP000065 | Tanggal Lahir Anak Terakhir | ELSMIL Ibu Hamil | 1 |
@@ -588,12 +588,12 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 580 | Observation | SP000147 | Komplikasi pasca persalinan | ELSMIL Pasca Persalinan | 1 |
 | 581 | Observation | SP000227 | Alasan menggunakan KB | ELSMIL Pasca Persalinan | 1 |
 | 582 | Observation | SP000229 | Sudah mendapatkan tablet tambah darah | ELSMIL Pasca Persalinan | 1 |
-| 583 | Observation | 103975-9 | Previous delivery date | ELSMIL Baduta | 1 |
+| 583 | Observation | 103975-9 | Previous delivery date | ELSMIL Baduta, SIM RS Tripat ANC | 2 |
 | 584 | Observation | 243816001 | Contraception status | ELSMIL Baduta | 1 |
-| 585 | Observation | 89269-5 | Body height Measured --at birth | ELSMIL Baduta, ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A | 4 |
+| 585 | Observation | 89269-5 | Body height Measured --at birth | ELSMIL Baduta, ASIK CKG Bayi Baru Lahir (v2), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 10 |
 | 586 | Observation | SP000024 | Monitoring ASI Eksklusif Bulan 0 | ELSMIL Baduta, SiGizi Balita ASI Eksklusif | 2 |
 | 587 | Observation | 16090371000119103 | Exposure to second hand tobacco smoke | ELSMIL Baduta (2x) | 1 |
-| 588 | Observation | 8306-3 | Body height --lying | ELSMIL Baduta | 1 |
+| 588 | Observation | 8306-3 | Body height --lying | ELSMIL Baduta, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 589 | Observation | SP000152 | Baduta hanya diberikan ASI saja kecuali vitamin dan oralit | ELSMIL Baduta | 1 |
 | 590 | Observation | SP000153 | Baduta>= 6 bulan diberikan ASI | ELSMIL Baduta | 1 |
 | 591 | Observation | IM-Baduta | Imunisasi Program Rutin Baduta | ELSMIL Baduta | 1 |
@@ -642,14 +642,14 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 634 | Observation | SP000112 | Hasil Kuesioner Kanker Kolorektal dengan Risiko Tinggi | ASIK Skrining PTM | 1 |
 | 635 | Observation | SP000114 | Suspek Thalassemia | ASIK Skrining PTM | 1 |
 | 636 | Condition | Z01.8 | Other specified special examinations | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
-| 637 | Observation | 424144002.0 | Current chronological age | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 637 | Observation | 424144002.0 | Current chronological age | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 13 |
 | 638 | Observation | 103228002.0 | Hemoglobin saturation with oxygen | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 639 | Observation | SP000449 | Hasil Pemeriksaan Skrining Penyakit Jantung Bawaan | ASIK CKG Bayi Baru Lahir (v2) | 1 |
-| 640 | Observation | 29575-8 | Thyrotropin [Units/volume] in DBS | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 640 | Observation | 29575-8 | Thyrotropin [Units/volume] in DBS | ASIK CKG Bayi Baru Lahir (v2), SIM RS MPH BBL | 2 |
 | 641 | Observation | 32546-4 | Glucose-6-Phosphate dehydrogenase [Enzymatic activity/mass] in Red Blood Cells | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 642 | Observation | 57086-1 | Congenital adrenal hyperplasia newborn screening panel | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
 | 643 | Procedure | 25179006.0 | Blood unit collection | ASIK CKG Bayi Baru Lahir (v2) | 1 |
-| 644 | Procedure | 400984005.0 | Congenital hypothyroidism screening test | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 644 | Procedure | 400984005.0 | Congenital hypothyroidism screening test | ASIK CKG Bayi Baru Lahir (v2), SIM RS MPH BBL, SIM RS Siaga Medika BBL | 3 |
 | 645 | Observation | 3016-3 | Thyrotropin [Units/volume] in Serum or Plasma | ASIK CKG Bayi Baru Lahir (v2) | 1 |
 | 646 | Procedure | 252298007.0 | Glucose-6-phosphate dehydrogenase deficiency spot test | ASIK CKG Bayi Baru Lahir (v2) | 1 |
 | 647 | Procedure | 431420002.0 | Screening for congenital adrenal hyperplasia | ASIK CKG Bayi Baru Lahir (v2) | 1 |
@@ -775,7 +775,232 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 767 | Procedure | 386639001 | Termination of pregnancy | SiGizi Ibu Nifas | 1 |
 | 768 | Procedure | SP000683 | Tatalaksana Tindakan | SiGizi Ibu Nifas | 1 |
 | 769 | Observation | SP000651 | Sumber Pembiayaan Pelayanan Kesehatan | SiGizi Kohort Ibu | 1 |
-| 770 | Procedure | 73.59 | Other manually assisted delivery | SiGizi Kohort Ibu | 1 |
+| 770 | Procedure | 73.59 | Other manually assisted delivery | SiGizi Kohort Ibu, SIM RS Siaga Medika INC, SIM RS Goetoeng INC (3x) | 3 |
 | 771 | Condition | 161805006 | Past pregnancy history of cesarean section | SiGizi Kohort Ibu | 1 |
+| 772 | Condition | 134435003.0 | Routine antenatal care | SIM RS Tripat ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Goetoeng ANC | 4 |
+| 773 | Procedure | 71388002.0 | Procedure | SIM RS Tripat ANC, SIM RS Tripat PNC | 2 |
+| 774 | Condition | Z00.1 | Routine child health examination | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL | 7 |
+| 775 | Observation | 365475008.0 | Place in family order | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 6 |
+| 776 | Observation | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 5 |
+| 777 | Observation | 302083008.0 | Finding of Apgar score | SIM RS Tripat BBL (sheet 'INC BBL') | 1 |
+| 778 | Observation | 276654001.0 | Congenital malformation | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL | 5 |
+| 779 | Procedure | 386412000.0 | Resuscitation of neonate | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 4 |
+| 780 | Procedure | 431868002.0 | Initiation of breastfeeding | SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani INC, SIM RS Ummu Hani BBL, SIM RS MPH INC, SIM RS MPH BBL, SIM RS Siaga Medika INC, SIM RS Siaga Medika BBL, SIM RS PKU INC | 9 |
+| 781 | Condition | 404684003.0 | Clinical finding | SIM RS Tripat PNC, SIM RS Narmada INC (3x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 8 |
+| 782 | Observation | 116859006.0 | Transfusion of blood product | SIM RS Tripat PNC | 1 |
+| 783 | Condition | 417662000.0 | History of clinical finding in subject | SIM RS Narmada INC | 1 |
+| 784 | Observation | 450891000124109.0 | Past pregnancy history of complication of pregnancy, childbirth and/or puerperium | SIM RS Narmada INC | 1 |
+| 785 | Observation | 726001007.0 | Past pregnancy history of live birth | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 786 | Observation | 3401000175105.0 | Total number of prenatal care visits | SIM RS Narmada INC, SIM RS Panti Nugroho ANC | 2 |
+| 787 | Observation | 243826008.0 | Antenatal care status | SIM RS Narmada INC | 1 |
+| 788 | Condition | 422587007.0 | Nausea | SIM RS Narmada INC (2x) | 1 |
+| 789 | Condition | 161805006.0 | Past pregnancy history of cesarean section | SIM RS Narmada INC | 1 |
+| 790 | Observation | 420209000.0 | History of contraceptive usage | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 791 | Observation | SP000644 | Komplikasi KB Sebelumnya | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 792 | Observation | SP000645 | Alasan Berhenti KB | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 793 | Condition | 56728002.0 | Chronic cervicitis | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 794 | Observation | 9269-2 | Glasgow coma score total | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 795 | Observation | 250554003.0 | Measurement of oxygen saturation at periphery | SIM RS Narmada INC | 1 |
+| 796 | Observation | 284473002.0 | Mid upper arm circumference | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS MPH PNC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 11 |
+| 797 | Observation | 249111004.0 | Engagement of head | SIM RS Narmada INC (2x), SIM RS Narmada KIA (2x), SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 7 |
+| 798 | Observation | 249120008.0 | Onset of labor first stage | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC | 3 |
+| 799 | Observation | 289437007.0 | Finding of fetal heart rate | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS PKU INC | 3 |
+| 800 | Observation | 248910006.0 | Uterine cervix finding | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 801 | Observation | 365662002.0 | Finding of amniotic fluid appearance | SIM RS Narmada INC (2x), SIM RS Narmada KIA, SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC | 8 |
+| 802 | Observation | 32750006.0 | Inspection | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 803 | Observation | 424679001.0 | pH measurement, vaginal fluid | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 804 | Procedure | 387672006.0 | Cardiotochogram | SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Goetoeng ANC | 3 |
+| 805 | Observation | 251666009.0 | Cardiotochogram finding | SIM RS Narmada INC, SIM RS Narmada KIA | 2 |
+| 806 | Observation | 169876006.0 | Birth head circumference | SIM RS Narmada INC | 1 |
+| 807 | Observation | 3941000175104.0 | Birth abdominal circumference | SIM RS Narmada INC | 1 |
+| 808 | Observation | 3931000175105.0 | Birth chest circumference | SIM RS Narmada INC | 1 |
+| 809 | Observation | 9272-6 | 1 minute Apgar Score | SIM RS Narmada INC, SIM RS Panti Nugroho BBL | 2 |
+| 810 | Observation | 9274-2 | 5 minute Apgar Score | SIM RS Narmada INC, SIM RS Panti Nugroho BBL | 2 |
+| 811 | Observation | 9271-8 | 10 minute Apgar Score | SIM RS Narmada INC, SIM RS Panti Nugroho BBL | 2 |
+| 812 | Procedure | 448883004.0 | Injection of vitamin K1 | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 3 |
+| 813 | Procedure | PC000002 | Pemberian Salep Antibiotik Mata | SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 3 |
+| 814 | Observation | 249278006.0 | Ability to pass urine | SIM RS Narmada INC | 1 |
+| 815 | Observation | 276397000.0 | Has passed meconium | SIM RS Narmada INC | 1 |
+| 816 | Condition | 1255917009.0 | Maternal perinatal care | SIM RS Narmada KIA | 1 |
+| 817 | Observation | 11525-3 | US for pregnancy | SIM RS Narmada KIA | 1 |
+| 818 | Observation | 243787009 | Antenatal screening | SIM RS Narmada KIA | 1 |
+| 819 | Condition | 34842007.0 | Antepartum hemorrhage | SIM RS Panti Nugroho ANC, SIM RS Ummu Hani ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 4 |
+| 820 | MedicationRequest | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC | 6 |
+| 821 | MedicationDispense | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH ANC, SIM RS Siaga Medika ANC, SIM RS PKU PNC | 6 |
+| 822 | Procedure | 385892002.0 | Mental health screening | SIM RS Panti Nugroho ANC, SIM RS MPH ANC, SIM RS Siaga Medika ANC | 3 |
+| 823 | Condition | 386337006.0 | Intrapartal care | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Goetoeng INC | 8 |
+| 824 | Observation | 246435002.0 | Number of fetuses | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC | 3 |
+| 825 | Observation | 271692001.0 | Presentation of fetus | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 826 | Observation | 289282009.0 | Amniotic membrane finding | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 827 | Observation | 405195003.0 | Intrapartum maternal status | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS Siaga Medika INC, SIM RS PKU INC | 5 |
+| 828 | Condition | 199746004.0 | Obstructed labor | SIM RS Panti Nugroho INC, SIM RS PKU INC | 2 |
+| 829 | ServiceRequest | 409014006.0 | Delivery care management | SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC | 10 |
+| 830 | Procedure | 409063005.0 | Counselling | SIM RS Panti Nugroho INC, SIM RS Ummu Hani INC (2x), SIM RS MPH INC (2x), SIM RS Siaga Medika INC, SIM RS PKU INC (2x) | 5 |
+| 831 | Observation | SP000683 | Tatalaksana Tindakan | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC | 4 |
+| 832 | Observation | SP000684 | Tatalaksana Obat | SIM RS Panti Nugroho PNC, SIM RS PKU INC, SIM RS PKU PNC | 3 |
+| 833 | Condition | 199745000.0 | Complication occurring during labor and delivery | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani INC, SIM RS MPH INC, SIM RS PKU INC, SIM RS PKU PNC | 5 |
+| 834 | Condition | 289530006.0 | Vaginal bleeding | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 835 | Observation | 364297003.0 | Female perineum observable | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 836 | Observation | 289700000.0 | Uterine contractions present | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 837 | Observation | 249214003.0 | Color of lochia | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 838 | Observation | 249215002.0 | Odor of lochia | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 839 | Observation | 1145307003.0 | Exclusively breastfed | SIM RS Panti Nugroho PNC, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS PKU PNC | 4 |
+| 840 | Observation | 252041008.0 | Micturition finding | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 841 | Observation | 300375001.0 | Able to defecate | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 842 | Procedure | 408988007.0 | Newborn care education | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 843 | Condition | 47821001.0 | Postpartum hemorrhage | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 844 | Observation | 289084000.0 | Difficulty performing breastfeeding | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS MPH PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 5 |
+| 845 | Procedure | 767224000.0 | Administration of vitamin A | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 846 | Procedure | 711029005.0 | Counseling about breastfeeding | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 847 | Procedure | 72531000052105.0 | Counseling for contraception | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 848 | Procedure | 441041000124100.0 | Counseling about nutrition | SIM RS Panti Nugroho PNC, SIM RS Ummu Hani PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 4 |
+| 849 | Procedure | ED000012 | Edukasi lainnya | SIM RS Panti Nugroho PNC, SIM RS Siaga Medika PNC, SIM RS PKU PNC | 3 |
+| 850 | Observation | 395264002.0 | Product containing tenofovir | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 851 | Condition | 359746009.0 | Patient’s condition stable | SIM RS Panti Nugroho PNC, SIM RS PKU PNC | 2 |
+| 852 | Procedure | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL | 2 |
+| 853 | Condition | E14 | Unspecified diabetes mellitus | SIM RS Panti Nugroho Diabetes Melitus, SIM RS MPH Diabetes Melitus, SIM RS Goetoeng Diabetes Melitus | 3 |
+| 854 | Condition | I10 | Essential (primary) hypertension | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Hipertensi, SIM RS Goetoeng Hipertensi | 3 |
+| 855 | ServiceRequest | 15220000.0 | Laboratory test | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
+| 856 | Specimen | 123038009.0 | Specimen | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
+| 857 | Observation | 15220000.0 | Laboratory test | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC | 5 |
+| 858 | DiagnosticReport | 15220000.0 | Laboratory test | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
+| 859 | Procedure | TK000028 | Diagnostic procedure | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 3 |
+| 860 | Procedure | 277132007.0 | Therapeutic procedure | SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi | 4 |
+| 861 | ServiceRequest | 736286003.0 | Hypertension clinical management plan | SIM RS Panti Nugroho Hipertensi, SIM RS MPH Hipertensi | 2 |
+| 862 | Condition | I64 | Stroke, not specified as haemorrhage or infarction | SIM RS Panti Nugroho Stroke | 1 |
+| 863 | Procedure | 80051000119107.0 | Stroke care management | SIM RS Panti Nugroho Stroke | 1 |
+| 864 | ServiceRequest | 736251000.0 | Stroke care plan | SIM RS Panti Nugroho Stroke | 1 |
+| 865 | Condition | 609496007.0 | Complication occurring during pregnancy | SIM RS Ummu Hani ANC, SIM RS MPH ANC | 2 |
+| 866 | Procedure | 409019001.0 | Postpartum care management | SIM RS Ummu Hani PNC, SIM RS MPH PNC | 2 |
+| 867 | Observation | 243787009.0 | Antenatal screening | SIM RS MPH ANC | 1 |
+| 868 | ServiceRequest | 185389009.0 | Follow-up visit | SIM RS MPH PNC | 1 |
+| 869 | Observation | 20564-1 | Oxygen saturation in Blood | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 870 | Procedure | SP000296 | Skrining Penyakit Jantung Bawaan | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 871 | Procedure | 408989004.0 | Newborn care management | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 872 | Observation | 10199-8 | Physical findings of Head Narrative | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 873 | Observation | 10192-3 | Physical findings of Back Narrative | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 874 | Observation | 11388-6 | Physical findings of Buttocks Narrative | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 875 | Observation | 11400-9 | Physical findings of Genitalia Narrative | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 876 | Immunization | 787859002.0 | Vaccine product | SIM RS MPH BBL, SIM RS Siaga Medika BBL | 2 |
+| 877 | ServiceRequest | 736284000.0 | Diabetes clinical management plan | SIM RS MPH Diabetes Melitus | 1 |
+| 878 | Observation | 289625003.0 | Finding of fundal height of uterus | SIM RS Siaga Medika ANC | 1 |
+| 879 | Observation | SP000686 | Faktor Risiko Persalinan | SIM RS Siaga Medika INC | 1 |
+| 880 | Condition | 38341003.0 | Hypertensive disorder, systemic arterial | SIM RS Siaga Medika INC | 1 |
+| 881 | Observation | 387700009.0 | Prolonged latent phase of labor | SIM RS PKU INC | 1 |
+| 882 | Observation | 249160009.0 | Onset of labor second stage | SIM RS PKU INC | 1 |
+| 883 | Observation | 236994008.0 | Placental delivery procedure | SIM RS PKU INC | 1 |
+| 884 | Observation | 289267004.0 | Finding of completeness of placenta | SIM RS PKU INC | 1 |
+| 885 | Procedure | 302384005.0 | Controlled cord traction of placenta | SIM RS PKU INC | 1 |
+| 886 | Procedure | 236996005.0 | Abdominal uterine fundal massage | SIM RS PKU INC | 1 |
+| 887 | Condition | 9293002.0 | Atony of uterus | SIM RS PKU INC | 1 |
+| 888 | Observation | 719051004.0 | Quantity of postpartum maternal blood loss | SIM RS PKU INC | 1 |
+| 889 | Procedure | 717809003.0 | Immediate postpartum care | SIM RS PKU INC | 1 |
+| 890 | Procedure | SP000821 | Konsultasi Medis | SIM RS Goetoeng ANC (3x) | 1 |
+| 891 | Procedure | 34608000.0 | Alanine aminotransferase measurement | SIM RS Goetoeng ANC | 1 |
+| 892 | Procedure | 86228006.0 | Uric acid measurement | SIM RS Goetoeng ANC | 1 |
+| 893 | Procedure | 70901006.0 | Creatinine measurement | SIM RS Goetoeng ANC | 1 |
+| 894 | Procedure | 27171005.0 | Urinalysis | SIM RS Goetoeng ANC (2x) | 1 |
+| 895 | Procedure | 105010007.0 | Urea measurement | SIM RS Goetoeng ANC | 1 |
+| 896 | Procedure | 396550006.0 | Blood test | SIM RS Goetoeng ANC | 1 |
+| 897 | Procedure | 45896001.0 | Aspartate aminotransferase measurement | SIM RS Goetoeng ANC | 1 |
+| 898 | Procedure | 165566005.0 | Whole blood clotting time procedure | SIM RS Goetoeng ANC | 1 |
+| 899 | Procedure | 40675008.0 | Serologic test for syphilis | SIM RS Goetoeng ANC | 1 |
+| 900 | Procedure | 269826008.0 | ABO blood grouping | SIM RS Goetoeng ANC (2x) | 1 |
+| 901 | Procedure | 271061004.0 | Random blood glucose measurement | SIM RS Goetoeng ANC (2x) | 1 |
+| 902 | Procedure | 104176001.0 | HIV antibody test | SIM RS Goetoeng ANC | 1 |
+| 903 | Procedure | 72406003.0 | Bleeding time | SIM RS Goetoeng ANC | 1 |
+| 904 | Procedure | 47758006.0 | Hepatitis B surface antigen measurement | SIM RS Goetoeng ANC | 1 |
+| 905 | Procedure | 43396009.0 | Hemoglobin A1c measurement | SIM RS Goetoeng ANC | 1 |
+| 906 | Procedure | 14740000.0 | Triglycerides measurement | SIM RS Goetoeng ANC | 1 |
+| 907 | Procedure | 22644003.0 | Low density lipoprotein measurement | SIM RS Goetoeng ANC | 1 |
+| 908 | Procedure | 17888004.0 | High density lipoprotein measurement | SIM RS Goetoeng ANC | 1 |
+| 909 | Procedure | 121868005.0 | Total cholesterol measurement | SIM RS Goetoeng ANC | 1 |
+| 910 | Procedure | 410136007.0 | Nursing coordination management | SIM RS Goetoeng ANC (2x) | 1 |
+| 911 | Procedure | 410175003.0 | Dietary regime management | SIM RS Goetoeng ANC | 1 |
+| 912 | Procedure | SP000824 | Tindakan Non Operatif Non Medis | SIM RS Goetoeng ANC (2x) | 1 |
+| 913 | Procedure | 182810003.0 | Intensive care monitoring | SIM RS Goetoeng ANC (2x) | 1 |
+| 914 | Procedure | 424029000.0 | Personal hygiene case management | SIM RS Goetoeng ANC (3x) | 1 |
+| 915 | Procedure | 410188000.0 | Taking patient vital signs assessment | SIM RS Goetoeng ANC (2x) | 1 |
+| 916 | Procedure | 237433000.0 | Breast care procedure | SIM RS Goetoeng ANC | 1 |
+| 917 | Procedure | 386372009.0 | Nutrition management | SIM RS Goetoeng ANC | 1 |
+| 918 | Procedure | 18949003.0 | Change of dressing | SIM RS Goetoeng ANC (2x) | 1 |
+| 919 | Procedure | 57.94 | Insertion of indwelling urinary catheter | SIM RS Goetoeng ANC, SIM RS Goetoeng INC | 2 |
+| 920 | Procedure | 38.93 | Venous catheterization, not elsewhere classified | SIM RS Goetoeng ANC (2x) | 1 |
+| 921 | Procedure | 96.39 | Other transanal enema | SIM RS Goetoeng ANC | 1 |
+| 922 | Procedure | 99.1 | Injection or infusion of therapeutic or prophylactic substance | SIM RS Goetoeng ANC (2x) | 1 |
+| 923 | Procedure | SP000823 | Perawatan Luka Operasi | SIM RS Goetoeng ANC | 1 |
+| 924 | Procedure | 386761002.0 | Local anesthesia | SIM RS Goetoeng ANC | 1 |
+| 925 | Procedure | 69.7 | Insertion of intrauterine contraceptive device | SIM RS Goetoeng ANC, SIM RS Goetoeng INC (3x) | 2 |
+| 926 | Procedure | SP000819 | Pemberian Anastesi Operatif Besar Khusus | SIM RS Goetoeng ANC | 1 |
+| 927 | Procedure | SP000825 | Operatif Besar Khusus | SIM RS Goetoeng ANC | 1 |
+| 928 | Procedure | SP000820 | Pengawasan Pre-Eklampsia Berat | SIM RS Goetoeng ANC | 1 |
+| 929 | Procedure | 48403009.0 | Insertion of infusion pump | SIM RS Goetoeng ANC (2x) | 1 |
+| 930 | Procedure | 43060002.0 | Intravenous injection | SIM RS Goetoeng ANC (3x) | 1 |
+| 931 | Procedure | 313006001.0 | Doppler ultrasonography of fetal heart for heart sounds | SIM RS Goetoeng ANC | 1 |
+| 932 | Procedure | 765172009.0 | Doppler ultrasound | SIM RS Goetoeng ANC | 1 |
+| 933 | Procedure | 441689006.0 | Measurement of total hemoglobin concentration | SIM RS Goetoeng ANC | 1 |
+| 934 | Procedure | 234083009.0 | Venous puncture | SIM RS Goetoeng ANC (2x) | 1 |
+| 935 | Procedure | 133858001.0 | Preoperative procedure | SIM RS Goetoeng ANC | 1 |
+| 936 | Procedure | 99.04 | Transfusion of packed cells | SIM RS Goetoeng ANC, SIM RS Goetoeng INC (2x), SIM RS Goetoeng BBL (2x) | 3 |
+| 937 | Procedure | 5447007.0 | Transfusion | SIM RS Goetoeng ANC | 1 |
+| 938 | Procedure | 89.52 | Electrocardiogram | SIM RS Goetoeng ANC (2x), SIM RS Goetoeng INC (3x), SIM RS Goetoeng BBL (2x) | 3 |
+| 939 | Procedure | 165745004.0 | Rhesus blood grouping | SIM RS Goetoeng ANC | 1 |
+| 940 | Procedure | 386432004.0 | Shock management | SIM RS Goetoeng ANC | 1 |
+| 941 | Procedure | 386219007.0 | Control of hemorrhage in postpartum uterus | SIM RS Goetoeng ANC | 1 |
+| 942 | Procedure | 116859006.0 | Transfusion of blood product | SIM RS Goetoeng ANC | 1 |
+| 943 | Procedure | 26758005.0 | Albumin measurement | SIM RS Goetoeng ANC | 1 |
+| 944 | Procedure | 99.60 | Cardiopulmonary resuscitation, not otherwise specified | SIM RS Goetoeng ANC, SIM RS Goetoeng BBL (4x) | 2 |
+| 945 | Procedure | 278297009.0 | Blood gas analysis | SIM RS Goetoeng ANC | 1 |
+| 946 | Procedure | 96.07 | Insertion of other (naso-)gastric tube | SIM RS Goetoeng ANC | 1 |
+| 947 | Procedure | 96.6 | Enteral infusion of concentrated nutritional substances | SIM RS Goetoeng ANC | 1 |
+| 948 | Procedure | 173830003.0 | Gastric lavage | SIM RS Goetoeng ANC | 1 |
+| 949 | Procedure | 57931004.0 | Puncture of artery | SIM RS Goetoeng ANC | 1 |
+| 950 | Procedure | 51241000.0 | Control of hemorrhage | SIM RS Goetoeng ANC | 1 |
+| 951 | Procedure | 97.37 | Removal of tracheostomy tube | SIM RS Goetoeng ANC | 1 |
+| 952 | Procedure | SP000826 | Tindakan Non Medis | SIM RS Goetoeng ANC (2x) | 1 |
+| 953 | Procedure | 276026009.0 | Fluid balance regulation | SIM RS Goetoeng ANC | 1 |
+| 954 | Procedure | 104177005.0 | Electrolyte measurement | SIM RS Goetoeng ANC | 1 |
+| 955 | Procedure | 87.44 | Routine chest x-ray, so described | SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng BBL (13x) | 3 |
+| 956 | Procedure | 96.04 | Insertion of endotracheal tube | SIM RS Goetoeng ANC, SIM RS Goetoeng BBL (5x) | 2 |
+| 957 | Procedure | 226007004.0 | Post-surgical wound care | SIM RS Goetoeng ANC | 1 |
+| 958 | Procedure | SP000827 | Pemasangan dan Monitoring Syringe Pump | SIM RS Goetoeng ANC | 1 |
+| 959 | Procedure | SP000822 | Konsultasi Non Medis | SIM RS Goetoeng ANC | 1 |
+| 960 | Procedure | 360362007.0 | Suture of laceration of perineum | SIM RS Goetoeng ANC | 1 |
+| 961 | Procedure | 73.1 | Other surgical induction of labor | SIM RS Goetoeng ANC | 1 |
+| 962 | Procedure | 309878003.0 | Exploration of uterine cavity | SIM RS Goetoeng ANC | 1 |
+| 963 | Procedure | SP000818 | Pemasangan IUD/ Implan | SIM RS Goetoeng ANC | 1 |
+| 964 | Observation | SP000815 | Jenis Kasus Pasien | SIM RS Goetoeng ANC, SIM RS Goetoeng PNC | 2 |
+| 965 | Observation | 184061005.0 | Patient registration status | SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL | 4 |
+| 966 | Condition | O61.0 | Failed medical induction of labour | SIM RS Goetoeng INC (2x) | 1 |
+| 967 | Condition | O42 | Premature rupture of membranes | SIM RS Goetoeng INC (2x) | 1 |
+| 968 | Procedure | 74.4 | Cesarean section of other specified type | SIM RS Goetoeng INC (2x) | 1 |
+| 969 | Procedure | 73.4 | Medical induction of labor | SIM RS Goetoeng INC (2x) | 1 |
+| 970 | Procedure | 90.59 | Microscopic examination of blood, Other microscopic examination | SIM RS Goetoeng INC (2x), SIM RS Goetoeng BBL (4x) | 2 |
+| 971 | Procedure | 75.32 | Fetal EKG (scalp) | SIM RS Goetoeng INC (2x) | 1 |
+| 972 | Procedure | 91.39 | Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Other microscopic examination | SIM RS Goetoeng INC | 1 |
+| 973 | Procedure | 66.39 | Other bilateral destruction or occlusion of fallopian tubes | SIM RS Goetoeng INC (2x) | 1 |
+| 974 | Procedure | 90.52 | Microscopic examination of blood, Culture | SIM RS Goetoeng INC (2x) | 1 |
+| 975 | Procedure | 88.09 | Other soft tissue x-ray of abdominal wall | SIM RS Goetoeng INC (2x), SIM RS Goetoeng BBL (8x) | 2 |
+| 976 | Procedure | 97.71 | Removal of intrauterine contraceptive device | SIM RS Goetoeng INC (3x) | 1 |
+| 977 | Procedure | 65.29 | Other local excision or destruction of ovary | SIM RS Goetoeng INC (2x) | 1 |
+| 978 | Procedure | 69.02 | Dilation and curettage following delivery or abortion | SIM RS Goetoeng INC (2x) | 1 |
+| 979 | Procedure | 70.79 | Other repair of vagina | SIM RS Goetoeng INC | 1 |
+| 980 | Procedure | 75.69 | Repair of other current obstetric laceration | SIM RS Goetoeng INC (3x) | 1 |
+| 981 | Procedure | 75.51 | Repair of current obstetric laceration of cervix | SIM RS Goetoeng INC (2x) | 1 |
+| 982 | Procedure | 90.95 | Microscopic examination of specimen from lower gastrointestinal tract and of stool, Toxicology | SIM RS Goetoeng INC | 1 |
+| 983 | Procedure | 91.3 | Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen | SIM RS Goetoeng INC | 1 |
+| 984 | Procedure | 73.6 | Episiotomy | SIM RS Goetoeng INC | 1 |
+| 985 | Procedure | 72.79 | Other vacuum extraction | SIM RS Goetoeng INC | 1 |
+| 986 | Procedure | 75.92 | Evacuation of other hematoma of vulva or vagina | SIM RS Goetoeng INC | 1 |
+| 987 | Condition | 268910001.0 | Patient's condition improved | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
+| 988 | Observation | 183797002.0 | Duration of inpatient stay | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
+| 989 | Observation | SP000811 | Jalur Masuk Rawat Inap | SIM RS Goetoeng INC, SIM RS Goetoeng BBL | 2 |
+| 990 | Condition | P22.0 | Respiratory distress syndrome of newborn | SIM RS Goetoeng BBL (2x) | 1 |
+| 991 | Condition | P23.9 | Congenital pneumonia, unspecified | SIM RS Goetoeng BBL (2x) | 1 |
+| 992 | Procedure | 96.05 | Other intubation of respiratory tract | SIM RS Goetoeng BBL (2x) | 1 |
+| 993 | Procedure | 90.41 | Microscopic examination of specimen from trachea, bronchus, pleura,lung,and other thoracic specimen, and of sputum, Bacterial smear | SIM RS Goetoeng BBL (2x) | 1 |
+| 994 | Procedure | 93.90 | Non-invasive mechanical ventilation | SIM RS Goetoeng BBL (5x) | 1 |
+| 995 | Procedure | 96.71 | Continuous invasive mechanical ventilation for less than 96 consecutive hours | SIM RS Goetoeng BBL (3x) | 1 |
+| 996 | Procedure | 96.72 | Continuous invasive mechanical ventilation for 96 consecutive hours or more | SIM RS Goetoeng BBL (2x) | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).

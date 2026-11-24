@@ -54,3 +54,5 @@ Ikuti checklist di [`aturan.md`](aturan.md#checklist-setiap-form-baru). Singkatn
 - Payload = 1 resource FHIR yang dibuat dari submission form, identitasnya resource + determining code.
 - Organization, Location, dan PractitionerRole yang hanya di-lookup ke master data tidak dihitung (detail dan pengecualian di `aturan.md`).
 - Extension custom memakai prefix `http://terminology.kemkes.go.id/sp/`. Code `SPxxx` memakai CodeSystem `http://terminology.kemkes.go.id/sp`, code `TKxxx` memakai `http://terminology.kemkes.go.id`.
+
+- 2026-11-24: Tambah 34 form SIM RS (`scripts/rs_prepare.py`, `mapping/phdt-data-dictionary-rs-*.csv`, `output/rs-*.md`) dari `PHDT_Data_Rumah_Sakit.xlsx`. ⚠️ belum comprehensive review.

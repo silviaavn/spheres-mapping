@@ -40,7 +40,7 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 44 | ASIK - CKG-Klaster Balita Pra Sekolah (versi 2; v1 29 / 99) | 32 / 102 |
 | 46 | ASIK - CKG-Klaster Dewasa Laki-laki | 61 / 202 |
 | 47 | ASIK - CKG-Klaster Dewasa Perempuan | 66 / 223 |
-| 48 | ASIK - CKG-Klaster Lansia (versi 27 Apr 2026; 2026 79 / 366, 2025 77 / 361) | 95 / 458 |
+| 48 | ASIK - CKG-Klaster Lansia (versi 27 Apr 2026; 2026 82 / 366, 2025 80 / 361) | 101 / 458 |
 | 49 | SiHepi - Form Rekap 3e | 65 / 118 |
 | 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | 37 / 94 |
 | 51 | SITB - TB 02 (Kartu Identitas Pasien) | 13 / 15 |
@@ -54,6 +54,40 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
 | 124 | Dapodik - PAUD (semester) | 42 / 190 |
 | 237 | SIPTM (baru ditambahkan) | 52 / 214 |
+| 228 | SIM RS Data - Tripat ANC | 20 / 28 |
+| 231 | SIM RS Data - Tripat BBL (sheet 'INC BBL') | 23 / 20 |
+| 230 | SIM RS Data - Tripat PNC | 24 / 28 |
+| 219 | SIM RS Data - Narmada INC | 86 / 262 |
+| 222 | SIM RS Data - Narmada KIA | 50 / 107 |
+| 200 | SIM RS Data - Panti Nugroho ANC | 31 / 68 |
+| 201 | SIM RS Data - Panti Nugroho INC | 37 / 118 |
+| 202 | SIM RS Data - Panti Nugroho PNC | 67 / 131 |
+| 203 | SIM RS Data - Panti Nugroho BBL | 31 / 55 |
+| 205 | SIM RS Data - Panti Nugroho Diabetes Melitus | 7 / 4 |
+| 206 | SIM RS Data - Panti Nugroho Hipertensi | 23 / 21 |
+| 207 | SIM RS Data - Panti Nugroho Stroke | 20 / 23 |
+| 173 | SIM RS Data - Ummu Hani ANC | 23 / 49 |
+| 174 | SIM RS Data - Ummu Hani INC | 41 / 94 |
+| 175 | SIM RS Data - Ummu Hani PNC | 53 / 110 |
+| 176 | SIM RS Data - Ummu Hani BBL | 30 / 51 |
+| 155 | SIM RS Data - MPH ANC | 33 / 87 |
+| 156 | SIM RS Data - MPH INC | 40 / 91 |
+| 157 | SIM RS Data - MPH PNC | 43 / 104 |
+| 158 | SIM RS Data - MPH BBL | 42 / 59 |
+| 160 | SIM RS Data - MPH Diabetes Melitus | 24 / 37 |
+| 161 | SIM RS Data - MPH Hipertensi | 20 / 22 |
+| 146 | SIM RS Data - Siaga Medika ANC | 100 / 181 |
+| 147 | SIM RS Data - Siaga Medika INC | 42 / 125 |
+| 148 | SIM RS Data - Siaga Medika PNC | 49 / 110 |
+| 149 | SIM RS Data - Siaga Medika BBL | 37 / 48 |
+| 183 | SIM RS Data - PKU INC | 66 / 175 |
+| 184 | SIM RS Data - PKU PNC | 67 / 131 |
+| 191 | SIM RS Data - Goetoeng ANC | 106 / 111 |
+| 192 | SIM RS Data - Goetoeng INC | 64 / 245 |
+| 193 | SIM RS Data - Goetoeng PNC | 9 / 21 |
+| 194 | SIM RS Data - Goetoeng BBL | 68 / 124 |
+| 196 | SIM RS Data - Goetoeng Diabetes Melitus | 6 / 4 |
+| 197 | SIM RS Data - Goetoeng Hipertensi | 5 / 3 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
@@ -69,11 +103,13 @@ Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel �
 | 44 | CKG Balita dan Anak Pra-Sekolah | v1 | `CKG Balita dan Anak Pra-Sekolah` | 29 / 99 |  |
 | 46 | CKG Dewasa Laki-laki | 1 versi | `CKG Dewasa Laki-laki` | 61 / 202 | ✅ |
 | 47 | CKG Dewasa Perempuan | 1 versi | `CKG Dewasa Perempuan` | 66 / 223 | ✅ |
-| 48 | CKG Lansia | 27 April 2026 (terbaru) | `CKG Lansia 27 April 2026` | 95 / 458 | ✅ |
-| 48 | CKG Lansia | 2026 | `CKG Lansia 2026` | 79 / 366 |  |
-| 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 77 / 361 |  |
+| 48 | CKG Lansia | 27 April 2026 (terbaru) | `CKG Lansia 27 April 2026` | 101 / 458 | ✅ |
+| 48 | CKG Lansia | 2026 | `CKG Lansia 2026` | 82 / 366 |  |
+| 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 80 / 361 |  |
 
-Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 2026 tidak punya blok lab (ServiceRequest / Specimen / DiagnosticReport / PractitionerRole) yang ada di 2025 dan 2026 (perlu konfirmasi). Sheet `CKG Lansia (tidak dipakai)` tidak dihitung. Klaster Remaja (#45), eKohort PNC (#75), dan Laporan Kohort Ibu (#76) belum ada mapping. #43–#48 masih ada kolom Table BQ kosong.
+SIM RS: 34 dari 109 baris (#128–#236) sudah ada sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` (sheet Template generik tidak dihitung). Sisanya (RS At tin, Harapan Ibu, Nirmala, Margono; Hepatitis/TB semua RS; Tripat INC/Hepatitis/DM/HT/Stroke/TB; dst.) belum ada file mapping.
+
+Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 2026 belum punya blok lab (ServiceRequest / Specimen / DiagnosticReport / PractitionerRole) yang ada di 2025 dan 2026: terlewat, belum dimapping (konfirmasi 2026-11-24). Lansia punya QR terpisah (7 baris `QuestionnaireResponse.questionnaire`), jadi 7 QR dihitung. eKohort INC (#77) belum 100% termapping ke FHIR (konfirmasi 2026-11-24). Sheet `CKG Lansia (tidak dipakai)` tidak dihitung. Klaster Remaja (#45), eKohort PNC (#75), dan Laporan Kohort Ibu (#76) belum ada mapping. #43–#48 masih ada kolom Table BQ kosong.
 
 | No | Sumber - Laporan | Masih diperlukan | Dimapping ke FHIR | Status review | Table BQ Purbalingga | Table BQ Lombok Barat |
 |---|---|:-:|:-:|:-:|---|---|
@@ -222,22 +258,22 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 143 | SIM RS Data - Harapan Ibu Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 144 | SIM RS Data - Harapan Ibu Stroke | ✅ | ✅ | ❌ |  |  |
 | 145 | SIM RS Data - Harapan Ibu TB | ✅ | ✅ | ❌ |  |  |
-| 146 | SIM RS Data - Siaga Medika ANC | ✅ | ✅ | ❌ |  |  |
-| 147 | SIM RS Data - Siaga Medika INC | ✅ | ✅ | ❌ |  |  |
-| 148 | SIM RS Data - Siaga Medika PNC | ✅ | ✅ | ❌ |  |  |
-| 149 | SIM RS Data - Siaga Medika BBL | ✅ | ✅ | ❌ |  |  |
+| 146 | SIM RS Data - Siaga Medika ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 147 | SIM RS Data - Siaga Medika INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 148 | SIM RS Data - Siaga Medika PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 149 | SIM RS Data - Siaga Medika BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 150 | SIM RS Data - Siaga Medika Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 151 | SIM RS Data - Siaga Medika Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 152 | SIM RS Data - Siaga Medika Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 153 | SIM RS Data - Siaga Medika Stroke | ✅ | ✅ | ❌ |  |  |
 | 154 | SIM RS Data - Siaga Medika TB | ✅ | ✅ | ❌ |  |  |
-| 155 | SIM RS Data - MPH ANC | ✅ | ✅ | ❌ |  |  |
-| 156 | SIM RS Data - MPH INC | ✅ | ✅ | ❌ |  |  |
-| 157 | SIM RS Data - MPH PNC | ✅ | ✅ | ❌ |  |  |
-| 158 | SIM RS Data - MPH BBL | ✅ | ✅ | ❌ |  |  |
+| 155 | SIM RS Data - MPH ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 156 | SIM RS Data - MPH INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 157 | SIM RS Data - MPH PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 158 | SIM RS Data - MPH BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 159 | SIM RS Data - MPH Hepatitis | ✅ | ✅ | ❌ |  |  |
-| 160 | SIM RS Data - MPH Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
-| 161 | SIM RS Data - MPH Hipertensi | ✅ | ✅ | ❌ |  |  |
+| 160 | SIM RS Data - MPH Diabetes Melitus | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 161 | SIM RS Data - MPH Hipertensi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 162 | SIM RS Data - MPH Stroke | ✅ | ✅ | ❌ |  |  |
 | 163 | SIM RS Data - MPH TB | ✅ | ✅ | ❌ |  |  |
 | 164 | SIM RS Data - Nirmala ANC | ✅ | ✅ | ❌ |  |  |
@@ -249,41 +285,41 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 170 | SIM RS Data - Nirmala Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 171 | SIM RS Data - Nirmala Stroke | ✅ | ✅ | ❌ |  |  |
 | 172 | SIM RS Data - Nirmala TB | ✅ | ✅ | ❌ |  |  |
-| 173 | SIM RS Data - Ummu Hani ANC | ✅ | ✅ | ❌ |  |  |
-| 174 | SIM RS Data - Ummu Hani INC | ✅ | ✅ | ❌ |  |  |
-| 175 | SIM RS Data - Ummu Hani PNC | ✅ | ✅ | ❌ |  |  |
-| 176 | SIM RS Data - Ummu Hani BBL | ✅ | ✅ | ❌ |  |  |
+| 173 | SIM RS Data - Ummu Hani ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 174 | SIM RS Data - Ummu Hani INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 175 | SIM RS Data - Ummu Hani PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 176 | SIM RS Data - Ummu Hani BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 177 | SIM RS Data - Ummu Hani Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 178 | SIM RS Data - Ummu Hani Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 179 | SIM RS Data - Ummu Hani Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 180 | SIM RS Data - Ummu Hani Stroke | ✅ | ✅ | ❌ |  |  |
 | 181 | SIM RS Data - Ummu Hani TB | ✅ | ✅ | ❌ |  |  |
 | 182 | SIM RS Data - PKU ANC | ✅ | ✅ | ❌ |  |  |
-| 183 | SIM RS Data - PKU INC | ✅ | ✅ | ❌ |  |  |
-| 184 | SIM RS Data - PKU PNC | ✅ | ✅ | ❌ |  |  |
+| 183 | SIM RS Data - PKU INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 184 | SIM RS Data - PKU PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 185 | SIM RS Data - PKU BBL | ✅ | ✅ | ❌ |  |  |
 | 186 | SIM RS Data - PKU Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 187 | SIM RS Data - PKU Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 188 | SIM RS Data - PKU Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 189 | SIM RS Data - PKU Stroke | ✅ | ✅ | ❌ |  |  |
 | 190 | SIM RS Data - PKU TB | ✅ | ✅ | ❌ |  |  |
-| 191 | SIM RS Data - Goetoeng ANC | ✅ | ✅ | ❌ |  |  |
-| 192 | SIM RS Data - Goetoeng INC | ✅ | ✅ | ❌ |  |  |
-| 193 | SIM RS Data - Goetoeng PNC | ✅ | ✅ | ❌ |  |  |
-| 194 | SIM RS Data - Goetoeng BBL | ✅ | ✅ | ❌ |  |  |
+| 191 | SIM RS Data - Goetoeng ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 192 | SIM RS Data - Goetoeng INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 193 | SIM RS Data - Goetoeng PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 194 | SIM RS Data - Goetoeng BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 195 | SIM RS Data - Goetoeng Hepatitis | ✅ | ✅ | ❌ |  |  |
-| 196 | SIM RS Data - Goetoeng Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
-| 197 | SIM RS Data - Goetoeng Hipertensi | ✅ | ✅ | ❌ |  |  |
+| 196 | SIM RS Data - Goetoeng Diabetes Melitus | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 197 | SIM RS Data - Goetoeng Hipertensi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 198 | SIM RS Data - Goetoeng Stroke | ✅ | ✅ | ❌ |  |  |
 | 199 | SIM RS Data - Goetoeng TB | ✅ | ✅ | ❌ |  |  |
-| 200 | SIM RS Data - Panti Nugroho ANC | ✅ | ✅ | ❌ |  |  |
-| 201 | SIM RS Data - Panti Nugroho INC | ✅ | ✅ | ❌ |  |  |
-| 202 | SIM RS Data - Panti Nugroho PNC | ✅ | ✅ | ❌ |  |  |
-| 203 | SIM RS Data - Panti Nugroho BBL | ✅ | ✅ | ❌ |  |  |
+| 200 | SIM RS Data - Panti Nugroho ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 201 | SIM RS Data - Panti Nugroho INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 202 | SIM RS Data - Panti Nugroho PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 203 | SIM RS Data - Panti Nugroho BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 204 | SIM RS Data - Panti Nugroho Hepatitis | ✅ | ✅ | ❌ |  |  |
-| 205 | SIM RS Data - Panti Nugroho Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
-| 206 | SIM RS Data - Panti Nugroho Hipertensi | ✅ | ✅ | ❌ |  |  |
-| 207 | SIM RS Data - Panti Nugroho Stroke | ✅ | ✅ | ❌ |  |  |
+| 205 | SIM RS Data - Panti Nugroho Diabetes Melitus | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 206 | SIM RS Data - Panti Nugroho Hipertensi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 207 | SIM RS Data - Panti Nugroho Stroke | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 208 | SIM RS Data - Panti Nugroho TB | ✅ | ✅ | ❌ |  |  |
 | 209 | SIM RS Data - Margono ANC | ✅ | ✅ | ❌ |  |  |
 | 210 | SIM RS Data - Margono INC | ✅ | ✅ | ❌ |  |  |
@@ -295,19 +331,19 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 216 | SIM RS Data - Margono Stroke | ✅ | ✅ | ❌ |  |  |
 | 217 | SIM RS Data - Margono TB | ✅ | ✅ | ❌ |  |  |
 | 218 | SIM RS Data - Narmada ANC | ✅ | ✅ | ❌ |  |  |
-| 219 | SIM RS Data - Narmada INC | ✅ | ✅ | ❌ |  |  |
+| 219 | SIM RS Data - Narmada INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 220 | SIM RS Data - Narmada PNC | ✅ | ✅ | ❌ |  |  |
 | 221 | SIM RS Data - Narmada BBL | ✅ | ✅ | ❌ |  |  |
-| 222 | SIM RS Data - Narmada KIA | ✅ | ✅ | ❌ |  |  |
+| 222 | SIM RS Data - Narmada KIA | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 223 | SIM RS Data - Narmada Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 224 | SIM RS Data - Narmada Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 225 | SIM RS Data - Narmada Hipertensi | ✅ | ✅ | ❌ |  |  |
 | 226 | SIM RS Data - Narmada Stroke | ✅ | ✅ | ❌ |  |  |
 | 227 | SIM RS Data - Narmada TB | ✅ | ✅ | ❌ |  |  |
-| 228 | SIM RS Data - Tripat ANC | ✅ | ✅ | ❌ |  |  |
+| 228 | SIM RS Data - Tripat ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 229 | SIM RS Data - Tripat INC | ✅ | ✅ | ❌ |  |  |
-| 230 | SIM RS Data - Tripat PNC | ✅ | ✅ | ❌ |  |  |
-| 231 | SIM RS Data - Tripat BBL | ✅ | ✅ | ❌ |  |  |
+| 230 | SIM RS Data - Tripat PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 231 | SIM RS Data - Tripat BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 232 | SIM RS Data - Tripat Hepatitis | ✅ | ✅ | ❌ |  |  |
 | 233 | SIM RS Data - Tripat Diabetes Melitus | ✅ | ✅ | ❌ |  |  |
 | 234 | SIM RS Data - Tripat Hipertensi | ✅ | ✅ | ❌ |  |  |

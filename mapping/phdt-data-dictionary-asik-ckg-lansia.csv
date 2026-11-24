@@ -2023,7 +2023,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 "dari sini adalah kuesioner yang berbeda, yang atas sepanjang itu adalah 1 kuesioner CKG",,,,,,,,,,,,,,,,,
-Skilas (Skring lansia sederhana),,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0042,,,
+Skilas (Skring lansia sederhana),,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0042,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -2243,7 +2243,7 @@ Interpretasi Mini Cog,,,,hasil_interpretasi_mini_cog,code,,,,,Observation,Observ
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-AD-8 INA (The Ascertain Dementia 8-item Informant Questionnaire versi Indonesia),,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0052,,,
+AD-8 INA (The Ascertain Dementia 8-item Informant Questionnaire versi Indonesia),,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0052,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -2359,7 +2359,7 @@ SPBB,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Mobilitas terbatas,,,Observation,Observation.interpretation.coding,160697000.0,Mobilitas fair,http://snomed.info/sct,,1,
 ,,,,,,,Mobilitas normal,,,Observation,Observation.interpretation.coding,82971005.0,Limited mobility,http://snomed.info/sct,,1,
-MNA-SF,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0044,,,
+MNA-SF,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0044,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -2479,7 +2479,7 @@ Interpretasi MNA SF,,,,,code,,,,,Observation,Observation.identifier.value,Interp
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-Penapisan Risiko Kanker Paru,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/sp/Questionnaire/Q00020,,,
+Penapisan Risiko Kanker Paru,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/sp/Questionnaire/Q00020,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -2516,7 +2516,7 @@ Penapisan Risiko Kanker Paru,,,,,,,,,,QuestionnaireResponse,QuestionnaireRespons
 ,,,,,code,,,,,QuestionnaireResponse,QuestionnaireResponse.item.text,Hasil Penapisan Risiko Kanker Paru,,,,,
 ,,,,,,,Tidak Ada Risiko Kanker Paru,,,QuestionnaireResponse,QuestionnaireResponse.item.answer.valueCoding,723505004.0,Low risk,http://snomed.info/sct,,1,
 ,,,,,,,Ada Risiko Kanker Paru,,,QuestionnaireResponse,QuestionnaireResponse.item.answer.valueCoding,723509005.0,High risk,http://snomed.info/sct,,1,
-Aktivitas Fisik,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/sp/Questionnaire/Q00021,,,
+Aktivitas Fisik,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/sp/Questionnaire/Q00021,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -2601,7 +2601,7 @@ Aktivitas Fisik,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnai
 ,,,,,code,,,,,QuestionnaireResponse,QuestionnaireResponse.item.text,Hasil Tingkat Aktivitas Sedang Dan Berat,,,,,
 ,,,,,,,"""Cukup"" / ""Aktivitas Fisik Cukup""",,,QuestionnaireResponse,QuestionnaireResponse.item.answer.valueCoding,424805008.0,Exercise above recommended level,http://snomed.info/sct,,1,
 ,,,,,,,"""Kurang"" / ""Aktivitas Fisik Kurang""",,,QuestionnaireResponse,QuestionnaireResponse.item.answer.valueCoding,413300002.0,Exercise below recommended level,http://snomed.info/sct,,1,
-Kuesioner TB CKG,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/sp/Questionnaire/Q00022,,,
+Kuesioner TB CKG,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/sp/Questionnaire/Q00022,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

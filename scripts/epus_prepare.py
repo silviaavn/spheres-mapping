@@ -235,6 +235,8 @@ def flag(rows):
                     else:
                         break
                 backup = min(backup, len(cur["rows"]) - 1)
+        elif res == "QuestionnaireResponse" and path == "QuestionnaireResponse.questionnaire" and path in cur["seen"]:
+            start = True   # QR terpisah: 1 header questionnaire = 1 QR
         elif path in cur["seen"] and path.endswith(SINGLE_SUFFIX):
             start = True
         if start:

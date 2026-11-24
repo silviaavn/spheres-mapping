@@ -1693,7 +1693,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0042,,,
+,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0042,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -1911,7 +1911,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,apakah_sulit_membuat_keputusan,,,,"Tidak, berubah",,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0052,,,
+,,,,apakah_sulit_membuat_keputusan,,,,"Tidak, berubah",,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0052,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -2026,7 +2026,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Mobilitas terbatas,,,Observation,Observation.interpretation.coding,160697000.0,Mobilitas fair,http://snomed.info/sct,,1,
 ,,,,,,,Mobilitas normal,,,Observation,Observation.interpretation.coding,82971005.0,Limited mobility,http://snomed.info/sct,,1,
-,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0044,,,
+,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.questionnaire,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/Questionnaire/Q0044,,,1
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

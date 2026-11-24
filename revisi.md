@@ -564,18 +564,18 @@ Sumber: `PHDT_ASIK_CKG.xlsx` + 4 CSV PHDT (`IC_1`, `SIHEPI`, `eKohort`, `eKohort
 | ASIK CKG Balita (v2) | sheet `Sheet9` | 32 / 102 | 57 / 58 | 59 | −1 |
 | ASIK CKG Dewasa Laki-laki | sheet `CKG Dewasa Laki-laki` | 61 / 202 | 123 / 132 | 132 | 0 |
 | ASIK CKG Dewasa Perempuan | sheet `CKG Dewasa Perempuan` | 66 / 223 | 130 / 139 | 132 | +7 |
-| ASIK CKG Lansia (27 Apr 2026) | sheet `CKG Lansia 27 April 2026` | 95 / 458 | 188 / 204 | 180 | +24 |
+| ASIK CKG Lansia (27 Apr 2026) | sheet `CKG Lansia 27 April 2026` | 101 / 458 | 188 / 204 | 180 | +24 |
 | Informed Consent | `IC_1` | 3 / 8 | 27 / 28 | 28 | 0 |
 | SiHepi Rekap 3e | `SIHEPI` | 65 / 118 | 93 / 115 | 115 | 0 |
 | eKohort ANC (Final Format) | `eKohort_ANC_Final_Format` | 43 / 78 | 34 / 34 | 36 | −2 |
 | eKohort INC (Bersalin) | `eKohort`, baris 726–akhir | 58 / 74 | 84 / 85 | 85 | 0 |
 
-Versi lain (tidak masuk total, output per form tersedia): BBL v1 25 / 56, Balita v1 29 / 99, Lansia 2026 79 / 366, Lansia 2025 77 / 361, eKohort ANC lama 140 / 247 (190 variabel). Tabel perbandingan versi: `output.md` bagian "Versi ASIK CKG".
+Versi lain (tidak masuk total, output per form tersedia): BBL v1 25 / 56, Balita v1 29 / 99, Lansia 2026 82 / 366, Lansia 2025 80 / 361, eKohort ANC lama 140 / 247 (190 variabel). Tabel perbandingan versi: `output.md` bagian "Versi ASIK CKG".
 
 **Asumsi**
 - CK1: untuk form yang punya beberapa versi, versi terbaru dipakai di total konsolidasi (BBL v2, Balita v2, Lansia 27 April 2026); versi lain dihitung terpisah.
 - CK2: `Sheet9` = Balita versi 2 (tarikan baru). Dasarnya nama kolom raw (`Nama Lengkap`, `NIK`) sama dengan BBL v2 dan sheet `Hasil Check Tarikan Baru dan Lama`, contoh data `individu-bayi-2025-08.xlsx`. **Perlu konfirmasi user.**
-- CK3: di sheet CKG Dewasa/Lansia/Balita, baris QuestionnaireResponse berselang-seling dengan blok Observation (satu QR per form, item bersarang). Dihitung **1 QuestionnaireResponse per form** (di form lain, mis. KPSP, QR memang banyak). Tanpa aturan ini hasil heuristik membengkak (Lansia 174, Dewasa Laki-laki 109).
+- CK3: di sheet CKG, baris QuestionnaireResponse berselang-seling dengan blok Observation. Jumlah QR dihitung dari jumlah baris `QuestionnaireResponse.questionnaire` (konfirmasi user 2026-11-24: sebagian form punya QR terpisah): BBL 0 (tanpa QR), Balita 1, Dewasa Laki-laki 1, Dewasa Perempuan 1 (= 1 payload), **Lansia 27 April 2026 = 7, Lansia 2026 = 4, Lansia 2025 = 4**. Tanpa aturan ini hasil heuristik membengkak (Lansia 174, Dewasa Laki-laki 109).
 - CK4: baris "Contoh Data: ..." dan baris angka di ujung sheet (jumlah variabel, mis. 35, 58) dibuang. Di sheet Dewasa/Lansia kolom `Nama Column Raw` berisi nomor urut, jadi tidak dipakai; variabel = kolom `Variables` (nama variabel lama), bukan `Variabel v2`/`v2025`/`v2026`/`v27April2026`.
 - CK5: sheet `CKG Lansia (tidak dipakai)`, `Pivot Table 1`, `All Variable`, `All Variable v2`, `Detail1-Lansia`, `variabel ckg dewasa`, `Hasil Check Tarikan Baru dan Lama`, `lansia` bukan dictionary, tidak dihitung. Klaster Remaja (#45) tidak ada mapping, dilewati.
 - IC1: Informed Consent: Patient, Consent, RelatedPerson (hanya kalau `status_responden` = wali responden) = 3 payload. Kode klausul `Consent.provision.provision[n].code.coding` (SP000840–SP000847) dihitung sebagai code (8). Ditambah ke `COUNT_PATHS` di `epus_prepare.py`. Category/scope/status/type Consent (HL7) tidak dihitung. `faskes_id` pada form ini pakai ID database berbeda dengan ID Organization SatuSehat (lookup).
@@ -584,7 +584,7 @@ Versi lain (tidak masuk total, output per form tersedia): BBL v1 25 / 56, Balita
 - SH1: SiHepi: 93 variabel unik / 115 baris (nama yang sama muncul di beberapa blok); PractitionerRole lab (3) = lookup, tidak dihitung.
 
 **Temuan terbuka (belum ditanyakan ke tim)**
-- CK-1: **Lansia 27 April 2026 tidak punya blok lab** (ServiceRequest, Specimen, DiagnosticReport, PractitionerRole) yang ada di Lansia 2025 dan 2026. Sengaja dihapus atau terlewat?
+- CK-1: **Lansia 27 April 2026 belum punya blok lab** (ServiceRequest, Specimen, DiagnosticReport, PractitionerRole) yang ada di Lansia 2025 dan 2026. Konfirmasi user 2026-11-24: **terlewat**, belum dimapping. Payload/code Lansia akan naik setelah blok lab ditambahkan.
 - CK-2: `interpretasi_kolesterol_total` (baris 603 di Dewasa Laki-laki dan Perempuan) tanpa Resource/Path.
 - CK-3: BBL v2 baris 342 dan 374 (Tanggal Pemeriksaan Skrining Kelainan Saluran Empedu 14–28 hari / 2–4 bulan) tanpa mapping. `Kode Faskes` (BBL dan Balita, baris akhir) tanpa mapping.
 - CK-4: Di semua sheet CKG, 1 baris `Organization.address.extension` dengan Resource `Location` (baris 58–70 tergantung sheet): Resource/Path tidak cocok. Organization/Location = lookup (tidak dihitung).
@@ -727,6 +727,57 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P42 | SiGizi Vitamin A | Kolom export baru `nama_ortu` → RelatedPerson (PRN); `tanggal_pemberian` → `Procedure.performedPeriod.start` dan fallback tanggal Encounter / MedicationDispense kalau `tanggal_pengukuran` kosong | Converter | open |
 | P43 | SiGizi Kohort Ibu | 14 Encounter per pasien (12 kunjungan bulanan dari kolom `tahun_<bulan>` + 1 kunjungan utama + 1 persalinan), masing-masing dengan Condition sendiri; Encounter hanya dibuat kalau tanggal bulan itu terisi | Converter | open |
 
+## SIM RS (PHDT_Data_Rumah_Sakit.xlsx)
+
+⚠️ belum comprehensive review (tanpa daftar BQ dan file mentah). Tiap sheet mapping = 1 form tracker (#128–#236). Variabel = kolom `Variables`; header kolom berbeda-beda antar sheet (ada `API SIMRS Name`, `Logic`, atau tanpa `Nama Column Raw`), dibaca per nama kolom.
+
+**Asumsi**
+- RS1: `Mapping INC BBL Tripat` dipakai sebagai BBL Tripat (#231). `Mapping KIA Narmada` = #222, `Stroke/DM/HT ... (Template)` yang bernama RS tertentu (Panti Nugroho, MPH) dipakai sebagai form RS itu.
+- RS2: sheet `Mapping ANC/INC/PNC/BBL (neo)/BBL (INC) Template`, `TB Template`, `HepB (Template)` generik, dictionary dibuat (`mapping/phdt-data-dictionary-rs-template-*.csv`) tapi **tidak masuk total**.
+- RS3: sheet `Variable ...`, `Variabel INC/KIA Narmada`, `Sheet6`, `TRACKER`, `Daftar Isi` bukan dictionary, dilewati.
+
+**Temuan terbuka**
+- RS-1: `Mapping PNC PKU` hasilnya sama persis dengan `Mapping PNC Panti Nugroho` (67 payload / 131 code): kemungkinan salinan.
+- RS-2: `Goetoeng ANC` 106 payload dari 21 variabel: satu variabel tindakan dipetakan ke ±97 Procedure code berbeda (tiap code = 1 payload sesuai aturan). Mohon dicek apakah memang maksudnya.
+- RS-3: Belum ada sheet untuk Hepatitis, TB, Tripat INC, dan RS At tin, Harapan Ibu, Nirmala, Margono.
+
+| Form | Variabel unik / baris | Angka PHDT | Payload / code |
+|---|---|---|---|
+| #228 Tripat ANC | 31 / 31 | 31 | 20 / 28 |
+| #231 Tripat BBL (sheet 'INC BBL') | 36 / 36 | – | 23 / 20 |
+| #230 Tripat PNC | 36 / 36 | 36 | 24 / 28 |
+| #219 Narmada INC | 225 / 227 | – | 86 / 262 |
+| #222 Narmada KIA | 70 / 70 | – | 50 / 107 |
+| #200 Panti Nugroho ANC | 43 / 56 | 56 | 31 / 68 |
+| #201 Panti Nugroho INC | 55 / 56 | 56 | 37 / 118 |
+| #202 Panti Nugroho PNC | 85 / 89 | 89 | 67 / 131 |
+| #203 Panti Nugroho BBL | 49 / 50 | 50 | 31 / 55 |
+| #205 Panti Nugroho Diabetes Melitus | 19 / 19 | 19 | 7 / 4 |
+| #206 Panti Nugroho Hipertensi | 40 / 40 | 41 | 23 / 21 |
+| #207 Panti Nugroho Stroke | 35 / 35 | 35 | 20 / 23 |
+| #173 Ummu Hani ANC | 33 / 34 | 35 | 23 / 49 |
+| #174 Ummu Hani INC | 54 / 58 | 53 | 41 / 94 |
+| #175 Ummu Hani PNC | 65 / 66 | 67 | 53 / 110 |
+| #176 Ummu Hani BBL | 45 / 45 | 0 | 30 / 51 |
+| #155 MPH ANC | 43 / 44 | 45 | 33 / 87 |
+| #156 MPH INC | 54 / 55 | 55 | 40 / 91 |
+| #157 MPH PNC | 59 / 60 | 60 | 43 / 104 |
+| #158 MPH BBL | 73 / 73 | 73 | 42 / 59 |
+| #160 MPH Diabetes Melitus | 44 / 55 | 52 | 24 / 37 |
+| #161 MPH Hipertensi | 35 / 35 | 34 | 20 / 22 |
+| #146 Siaga Medika ANC | 61 / 74 | 75 | 100 / 181 |
+| #147 Siaga Medika INC | 58 / 67 | 67 | 42 / 125 |
+| #148 Siaga Medika PNC | 71 / 72 | 49 | 49 / 110 |
+| #149 Siaga Medika BBL | 64 / 64 | 72 | 37 / 48 |
+| #183 PKU INC | 81 / 90 | 81 | 66 / 175 |
+| #184 PKU PNC | 85 / 89 | 47 | 67 / 131 |
+| #191 Goetoeng ANC | 21 / 23 | 23 | 106 / 111 |
+| #192 Goetoeng INC | 35 / 38 | 35 | 64 / 245 |
+| #193 Goetoeng PNC | 27 / 27 | 27 | 9 / 21 |
+| #194 Goetoeng BBL | 34 / 37 | 35 | 68 / 124 |
+| #196 Goetoeng Diabetes Melitus | 12 / 12 | 11 | 6 / 4 |
+| #197 Goetoeng Hipertensi | 13 / 13 | 12 | 5 / 3 |
+
 ## Log perubahan revisi
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian SiGizi 17 form (SG1–SG14) dan catatan pipeline P39–P43. Keputusan user: PMT 2025 = 9 form, `no` tidak dimapping, `detail` → extension `sigizi-detail` valueString.
@@ -759,3 +810,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24: Tambah bagian Tumbuh Kembang tambahan (KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH) dari `Childhood_Development_Toolkit_Data_Dictionary.xlsx`: asumsi EB1–EB6. SDIDTK = DDTK yang sudah ada. Dapodik belum dicocokkan.
 - 2026-11-24: Tambah bagian Dapodik PAUD (42 payload, 190 code, asumsi DA1–DA4). Sheet dipilih user. Dapodik Antropometri DDTK tetap belum ada mapping.
 - 2026-11-24: Tambah bagian 5 CSV PHDT (SITB TB 01, TB 02, ELSMIL x3, SIPTM, ASIK Skrining PTM): 7 form, asumsi CS1–CS9. ⚠️ belum comprehensive review.
+- 2026-11-24 (2): Tambah bagian SIM RS (34 form). Perbaikan CK3 (QR Lansia terpisah) dan CK-1 (blok lab Lansia terlewat).

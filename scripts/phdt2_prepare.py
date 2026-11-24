@@ -64,8 +64,16 @@ for slug, nama, kind, key, a, b, trk, ref, lab, main, ver in FORMS:
                bq="Nama Column BQ" if "Nama Column BQ" in hdr else None, tracker=trk, ref=ref, ref_label=lab)
     rows, log = ep.prepare(cfg, book(data[0], body), None)
     # CKG: baris QuestionnaireResponse berselang-seling dengan blok Observation, tetapi hanya 1 QR per form
-    ep.SINGLETON = {"Patient", "Encounter", "QuestionnaireResponse"} if slug.startswith("asik-ckg") else {"Patient", "Encounter"}
+    # Lansia: QR terpisah per bagian -> 1 QR per header QuestionnaireResponse.questionnaire (blok QR tanpa header = lanjutan)
+    lansia = slug.startswith("asik-ckg-lansia")
+    ep.SINGLETON = {"Patient", "Encounter", "QuestionnaireResponse"} if slug.startswith("asik-ckg") and not lansia else {"Patient", "Encounter"}
     blocks, payloads = ep.flag(rows)
+    if lansia:
+        for b in blocks:
+            if b["res"] == "QuestionnaireResponse" and not b["reason"] and not any(r["Path"].startswith("QuestionnaireResponse.questionnaire") for r in b["rows"]):
+                b["first"]["jumlah instance"] = ""
+                b["reason"] = "lanjutan QR"
+        payloads = [b for b in payloads if not b["reason"]]
     keep = [r for r in rows if any(r[c] for c in ep.OUT_COLS[:15])]
     ep.write_csv(f"{repo}/mapping/phdt-data-dictionary-{slug}.csv", keep)
     v = [r["Variables"] for r in keep if r["Variables"]]

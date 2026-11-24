@@ -1,0 +1,475 @@
+Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Format/Value,Value Name,Definisi Operasional,Agregat/Individu,Resource,Path,Code,Display,CodeSystem,Keterangan,jumlah code,jumlah instance
+Data Pasien,Identitas Diri,,NAMA,Nama Ibu,string,,,,,Patient,Patient.name.text,Tidak ada,Tidak ada,Tidak ada,,,1
+,,,,,,,,,,Patient,Patient.identifier.use,official,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.identifier.system,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/id/nik,,,
+,,,,,,,,,,Patient,Patient.identifier.value,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.active,true,Tidak ada,Tidak ada,,,
+,,,JK,Jenis Kelamin,kategorik,P,Perempuan,,,Patient,Patient.gender,female,Tidak ada,Tidak ada,,,
+,,,,Tanggal Lahir,,,,Apakah bisa estimasikan tanggal lahir dari variabel TANGGAL dan UMUR,,Patient,Patient.birthDate,Tidak ada,Tidak ada,Tidak ada,,,
+,Alamat,,,Alamat Domisili,,,,,,Patient,Patient.address.use,home,Tidak ada,Tidak ada,,,
+,,,ALAMAT,,,,,,,Patient,Patient.line,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.city,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.country,ID,Tidak ada,Tidak ada,,,
+,,,,Nama Provinsi,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,province,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,Nama Kabupaten,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,city,Tidak ada,Tidak ada,,,
+,,,KABUPATEN,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,Nama Kecamatan,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,district,Tidak ada,Tidak ada,,,
+,,,KECAMATAN,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,Nama Desa,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,village,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.identifier,official,Tidak ada,http://sys-ids.kemkes.go.id/organization/{{Org ID}},,,
+,,,,,,,,,,Organization,Organization.type,prov,Healthcare Provider,http://terminology.hl7.org/CodeSystem/organization-type,,,
+,,,,Faskes yang melayani ANC,string,,RS Goeteng Taroenadibrata,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
+,Alamat Faskes,,,,,,,,,Organization,Organization.address.city,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.country,ID,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.url,province,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.url,city,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.url,district,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.url,village,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Organization,Organization.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,Lokasi Faskes,,,,,,,,,Location,Location.identifier,Tidak ada,Gedung {Faskes yang melayani ANC},http://sys-ids.kemkes.go.id/location/{{Org_id}},,,
+,,,,,,,,,,Location,Location.status,active,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.name,Tidak ada,Gedung {Faskes yang melayani ANC},Tidak ada,,,
+,,,,,,,,,,Location,Location.mode,instance,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.use,work,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.city,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.country,ID,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,province,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,city,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,district,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,village,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.physicalType.coding,bu,Building,http://terminology.hl7.org/CodeSystem/location-physical-type,,,
+,,,,,,,,,,Location,Location.position.longitude,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.position.latitude,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.position.altitude,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.managingOrganization.reference,Reference ke resources Organization,,,,,
+,Lokasi Poli,,,,,,,,,,,,,,,,
+,,,UNIT,Unit Ruangan,kategorik,,KANDUNGAN,,,Location,Location.identifier,Tidak ada,Poli Kandungan,http://sys-ids.kemkes.go.id/location/{{Org_id}},,,
+,,,,,,,,,,Location,Location.status,active,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.name,Tidak ada,Poli Kandungan,Tidak ada,,,
+,,,,,,,,,,Location,Location.mode,instance,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.use,work,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.city,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.country,ID,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,province,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,city,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,district,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Location,Location.address.extension.extension.url,village,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.physicalType.coding,ro,Room,http://terminology.hl7.org/CodeSystem/location-physical-type,,,
+,,,,,,,,,,Location,Location.position.longitude,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.position.latitude,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.position.altitude,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Location,Location.managingOrganization.reference,Reference ke resources Organization (Gedung Faskes),,,,,
+,Kunjungan ANC,,,,,,,,,Encounter,Encounter.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/encounter/{{Org_id}},,,1
+,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.class,AMB,ambulatory,http://terminology.hl7.org/CodeSystem/v3-ActCode,,,
+,,,,,,,,,,Encounter,Encounter.episodeOfCare.reference,Reference ke resources EpisodeOfCare,,,,,
+,,,,,,,,,,Encounter,Encounter.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Encounter,Encounter.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.participant.type.coding,ATND,attender,http://terminology.hl7.org/CodeSystem/v3-ParticipationType,,,
+,,,,,,,,,,Encounter,Encounter.participant.individual.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,DPJP,string,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,TANGGAL,Tanggal Kunjungan,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location (Poli Kandungan),,,,,
+,,,UNIT,Unit Ruangan,kategorik,,KANDUNGAN,,,Encounter,Encounter.location.display,Tidak ada,,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
+,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
+,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
+,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
+,,,,,,,,,,Condition,Condition.code.coding,134435003.0,Routine antenatal care,http://snomed.info/sct,,1,
+,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
+,,,ASAL PASIEN,Asal Pasien,kategorik,,DATANG SENDIRI,,,Encounter,Encounter.hospitalization.admitSource.coding,1991000124105.0,Referred by self,http://snomed.info/sct,,1,
+,,,ASAL PASIEN,,,,LAIN - LAIN,,,Encounter,Encounter.hospitalization.admitSource.coding,other,Other,http://terminology.hl7.org/CodeSystem/admit-source,,1,
+,,,ASAL PASIEN,,,,PUSKESMAS,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000117,Rujukan dari Puskesmas,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.statusHistory.status,arrived,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.statusHistory.status,in-progress,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.statusHistory.status,finished,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,
+,,,CARAPLG,Cara Pulang,kategorik,,Pulang Diijinkan Dokter,,,Encounter,Encounter.hospitalization.dischargeDisposition.coding,home,Home,http://terminology.hl7.org/CodeSystem/discharge-disposition,,,
+,,,,,,,,,,Encounter,Encounter.hospitalization.dischargeDisposition.text,Tidak Ada,Pulang Diijinkan Dokter,Tidak Ada,,,
+,,,CARAPLG,,,,Selesai Konsul,,,Encounter,Encounter.hospitalization.dischargeDisposition.coding,home,Home,http://terminology.hl7.org/CodeSystem/discharge-disposition,,,
+,,,,,,,,,,Encounter,Encounter.hospitalization.dischargeDisposition.text,Tidak Ada,Selesai Konsul,Tidak Ada,,,
+,,,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,
+,,,,Cara Pulang,kategorik,,,,,ServiceRequest,ServiceRequest.category,3457005.0,Patient referral,http://snomed.info/sct,,,1
+,,,,,,,,,,ServiceRequest,ServiceRequest.status,active,Tidak ada,Tidak ada,,,
+,,,,,,,,,,ServiceRequest,ServiceRequest.intent,original-order,Tidak ada,Tidak ada,,,
+,,,,,,,,,,ServiceRequest,ServiceRequest.priority,routine,Tidak ada,Tidak ada,,,
+,,,CARAPLG,,,,Kontrol Kembali,,,ServiceRequest,ServiceRequest.code,185389009.0,Follow-up visit,http://snomed.info/sct,,1,
+,,,CARAPLG,,,,Rujuk Rawat Inap,,,ServiceRequest,ServiceRequest.code,737481003.0,Inpatient care management,http://snomed.info/sct,,1,
+,,,,,,,,,,ServiceRequest,ServiceRequest.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,ServiceRequest,ServiceRequest.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,ServiceRequest,ServiceRequest.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,ServiceRequest,ServiceRequest.occurrenceDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,ServiceRequest,ServiceRequest.requester.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,ServiceRequest,ServiceRequest.requester.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,ServiceRequest,ServiceRequest.performer.reference,Reference ke resources Organization,,,,,
+,,,,Cara Bayar,kategorik,,,,,Coverage,Coverage.identifier,Tidak Ada,Tidak Ada,https://sys-ids.kemkes.go.id/insurance-subscriber/{{Org_BPJS}},,,1
+,,,CARA BAYAR,,,,UMUM,,,Coverage,Coverage.type.coding,pay,Pay,http://terminology.hl7.org/CodeSystem/coverage-selfpay,,,
+,,,,,,,,"Digunakan jika mengisi ""BPJ PBI"" atau ""BPJS Non PBI""",,Coverage,Coverage.type.coding,PUBLICPOL,public healthcare,http://terminology.hl7.org/CodeSystem/v3-ActCode,,,
+,,,,,,,,,,Coverage,Coverage.beneficiary,Reference ke resources Patient,,,,,
+,,,,,,,,"Hanya diisi jika mengisi ""BPJ PBI"" atau ""BPJS Non PBI""",,Coverage,Coverage.payor.reference,Reference ke Resources Organization (BPJS),,,,,
+,,,CARA BAYAR,,,,BPJS PBI,,,Coverage,Coverage.payor.display,Tidak Ada,BPJS PBI,Tidak Ada,,,
+,,,CARA BAYAR,,,,BPJS Non PBI,,,Coverage,Coverage.payor.display,Tidak Ada,BPJS Non PBI,Tidak Ada,,,
+,,,,,,,,,,Coverage,Coverage.status,active,Tidak Ada,Tidak Ada,,,
+,,,UMUR,Umur,,(...) Tahun (...) Bulan (...) Hari,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
+,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,a,year,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.component.code.coding,SP000020,Umur Bulan,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.component..valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.component.valueQuantity.code,mo,month,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.component.code.coding,SP000021,Umur Hari,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.component..valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.component.valueQuantity.code,d,day,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Diagnosis,string,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
+,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
+,,,DIAGNOSA,,,,,Diisi dengan code ICD yang ada di excel,,Condition,Condition.code.coding,Tidak ada,Tidak Ada,http://hl7.org/fhir/sid/icd-10,,,
+,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Condition,Condition.recorder.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,Condition,Condition.recorder.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,PROSEDUR ICD9,Prosedur,string,,,Diisi dengan code ICD yang ada di excel,,Procedure,Procedure.code.coding,Tidak ada,Tidak Ada,http://hl7.org/fhir/sid/icd-9-cm,,,1
+,,,,,,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Procedure,Procedure.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Procedure,Procedure.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Procedure,Procedure.performedPeriod.start,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Organization,,,,,
+,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TINDAKAN,Tindakan,string,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Procedure,Procedure.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Procedure,Procedure.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Procedure,Procedure.performedPeriod.start,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Organization,,,,,
+,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TINDAKAN,,string,,KONSULTASI MEDIS DOKTER SPESIALIS,,,Procedure,Procedure.category.coding,11429006.0,Consultation,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000821,Konsultasi Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,KONSULTASI MEDIS DOKTER SPESIALIS,Tidak ada,,,
+,,,,,,,USG KANDUNGAN,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,88.78,Diagnostic ultrasound of gravid uterus,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,VACUTAINER BESAR,,,,,,,,,,
+,,,,,,,SGPT,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,34608000.0,Alanine aminotransferase measurement,http://snomed.info/sct,,1,1
+,,,,,,,SPUIT 3CC,,,,,,,,,,
+,,,,,,,ASAM URAT,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,86228006.0,Uric acid measurement,http://snomed.info/sct,,1,1
+,,,,,,,VACUTAINER KECIL,,,,,,,,,,
+,,,,,,,CREATININ,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,70901006.0,Creatinine measurement,http://snomed.info/sct,,1,1
+,,,,,,,URINE RUTIN,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,27171005.0,Urinalysis,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak Ada,URINE RUTIN,Tidak Ada,,,
+,,,,,,,UREUM,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,105010007.0,Urea measurement,http://snomed.info/sct,,1,1
+,,,,,,,DARAH RUTIN,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,396550006.0,Blood test,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak Ada,DARAH RUTIN,Tidak Ada,,,
+,,,,,,,SGOT,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,45896001.0,Aspartate aminotransferase measurement,http://snomed.info/sct,,1,1
+,,,,,,,WAKTU PEMBEKUAN (CT),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,165566005.0,Whole blood clotting time procedure,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak Ada,WAKTU PEMBEKUAN (CT),Tidak Ada,,,
+,,,,,,,Sifilis,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,40675008.0,Serologic test for syphilis,http://snomed.info/sct,,1,1
+,,,,,,,GOLONGAN DARAH (ABO),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,269826008.0,ABO blood grouping,http://snomed.info/sct,,1,1
+,,,,,,,URINE LENGKAP,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,27171005.0,Urinalysis,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak Ada,URINE LENGKAP,Tidak Ada,,,
+,,,,,,,GLUKOSA SEWAKTU,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,271061004.0,Random blood glucose measurement,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,GLUKOSA SEWAKTU,Tidak ada,,,
+,,,,,,,ANTI HIV,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,104176001.0,HIV antibody test,http://snomed.info/sct,,1,1
+,,,,,,,WAKTU PERDARAHAN (BT),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,72406003.0,Bleeding time,http://snomed.info/sct,,1,1
+,,,,,,,HBSAG,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,47758006.0,Hepatitis B surface antigen measurement,http://snomed.info/sct,,1,1
+,,,,,,,HBA1C,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,43396009.0,Hemoglobin A1c measurement,http://snomed.info/sct,,1,1
+,,,,,,,TRIGLISERIDA,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,14740000.0,Triglycerides measurement,http://snomed.info/sct,,1,1
+,,,,,,,LDL,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,22644003.0,Low density lipoprotein measurement,http://snomed.info/sct,,1,1
+,,,,,,,HDL,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,17888004.0,High density lipoprotein measurement,http://snomed.info/sct,,1,1
+,,,,,,,CHOLESTEROL (TOTAL),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,121868005.0,Total cholesterol measurement,http://snomed.info/sct,,1,1
+,,,,,,,CSSD BASIC SET,,,,,,,,,,
+,,,,,,,JFK,,,,,,,,,,
+,,,,,,,KAMAR INAP (AKOMODASI),,,,,,,,,,
+,,,,,,,ASUHAN KEPERAWATAN,,,Procedure,Procedure.category.coding,119270007.0,Management procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,410136007.0,Nursing coordination management,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Preocedure.code.text,Tidak ada,ASUHAN KEPERAWATAN,Tidak ada,,,
+,,,,,,,DIET,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,410175003.0,Dietary regime management,http://snomed.info/sct,,1,1
+,,,,,,,TINDAKAN NON OPERATIF NON MEDIS KECIL,,,Procedure,Procedure.category.coding,362961001.0,Procedure by intent,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000824,Tindakan Non Operatif Non Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,TINDAKAN NON OPERATIF NON MEDIS KECIL,Tidak ada,,,
+,,,,,,,TINDAKAN NON OPERATIF NON MEDIS SEDERHANA,,,Procedure,Procedure.category.coding,362961001.0,Procedure by intent,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000824,Tindakan Non Operatif Non Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,TINDAKAN NON OPERATIF NON MEDIS SEDERHANA,Tidak ada,,,
+,,,,,,,"P.16 - PENGAWASAN PASIEN INTENSIF ( KONTROL VITAL SIGN ISTW,OKSIGENISASI,SUQTIONNING,PENGAWASAN DRIP/IRIGASI,PENDARAHAN, CAIRAN) BANGSAL",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,182810003.0,Intensive care monitoring,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,"P.16 - PENGAWASAN PASIEN INTENSIF ( KONTROL VITAL SIGN ISTW,OKSIGENISASI,SUQTIONNING,PENGAWASAN DRIP/IRIGASI,PENDARAHAN, CAIRAN) BANGSAL",Tidak ada,,,
+,,,,,,,P.9 PERSONAL HEGYENE,,,Procedure,Procedure.category.coding,119270007.0,Management procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,424029000.0,Personal hygiene case management,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,P.9 PERSONAL HEGYENE,Tidak ada,,,
+,,,,,,,ADMINISTRASI,,,,,,,,,,
+,,,,,,,P.8 - PEMERIKSAAN VITAL SIGN (RAWAT INAP),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,410188000.0,Taking patient vital signs assessment,http://snomed.info/sct,,1,1
+,,,,,,,P.1 - BREAST CARE,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,237433000.0,Breast care procedure,http://snomed.info/sct,,1,1
+,,,,,,,ASUHAN GIZI,,,Procedure,Procedure.category.coding,119270007.0,Management procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,386372009.0,Nutrition management,http://snomed.info/sct,,1,1
+,,,,,,,C.36 - REDRESSING INFUS,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,18949003.0,Change of dressing,http://snomed.info/sct,,1,1
+,,,,,,,VISITE DOKTER SPESIALIS - KAMAR INAP,,,,,,,,,,
+,,,,,,,P.33 - PEMASANGAN DAN MELEPAS DOWER CATETER,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,57.94,Insertion of indwelling urinary catheter,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,P.31 - PEMASANGAN DAN MELEPAS INFUS DEWASA,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,38.93,"Venous catheterization, not elsewhere classified",http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,P.20 - LAVEMENT (PROGRAM),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,96.39,Other transanal enema,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,P.27 - INJECTIE IM/SUB KUTAN/INTRA KUTAN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,99.1,Injection or infusion of therapeutic or prophylactic substance,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,TINDAKAN RR - R3,,,,,,,,,,
+,,,,,,,CSSD GANTI BALUT,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,18949003.0,Change of dressing,http://snomed.info/sct,,1,1
+,,,,,,,P.3 - PERAWATAN LUKA OPERASI DAN ATAU HETTING AFF,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000823,Perawatan Luka Operasi,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,ANESTESI KECIL,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,386761002.0,Local anesthesia,http://snomed.info/sct,,1,1
+,,,,,,,PASANG IUD,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,69.7,Insertion of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,ANESTESI OPERATIF BESAR KHUSUS,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000819,Pemberian Anastesi Operatif Besar Khusus,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,OPERATIF BESAR KHUSUS,,,Procedure,Procedure.category.coding,387713003.0,Surgical procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000825,Operatif Besar Khusus,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,PENGAWASAN PEB,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000820,Pengawasan Pre-Eklampsia Berat,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,P.18 - PEMASANGAN DAN MONITORING SYRINGE PUMP,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,48403009.0,Insertion of infusion pump,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.usedCode.coding,465254002.0,Syringe pump,http://snomed.info/sct,,,
+,,,,,,,P.29 - INJECTIE IV PER SLANG,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,43060002.0,Intravenous injection,http://snomed.info/sct,,1,1
+,,,,,,,PEMERIKSAAN PJJ DENGAN DOPPLER,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,313006001.0,Doppler ultrasonography of fetal heart for heart sounds,http://snomed.info/sct,,1,1
+,,,,,,,DOPPLER,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,765172009.0,Doppler ultrasound,http://snomed.info/sct,,1,1
+,,,,,,,P.8 - PEMERIKSAAN VITAL SIGN (VK),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,410188000.0,Taking patient vital signs assessment,http://snomed.info/sct,,1,1
+,,,,,,,KAMAR INAP BAYI NORMAL,,,,,,,,,,
+,,,,,,,HEMOGLOBIN,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,441689006.0,Measurement of total hemoglobin concentration,http://snomed.info/sct,,1,1
+,,,,,,,SPUIT 1CC,,,,,,,,,,
+,,,,,,,"C.2 - PERSONAL HYGIENE : MEMANDIKAN, VULVA HYGIENE, ORAL HYGIENE, MENOLONG BAB",,,Procedure,Procedure.category.coding,119270007.0,Management procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,424029000.0,Personal hygiene case management,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,"C.2 - PERSONAL HYGIENE : MEMANDIKAN, VULVA HYGIENE, ORAL HYGIENE, MENOLONG BAB",Tidak ada,,,
+,,,,,,,TINDAKAN RR - R1,,,,,,,,,,
+,,,,,,,P.24 - PENGAMBILAN DARAH VENA,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,234083009.0,Venous puncture,http://snomed.info/sct,,1,1
+,,,,,,,"P.21 - PERSIAPAN PASIEN OPERASI (LAVEMENT,CUKUR,DLL)",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,133858001.0,Preoperative procedure,http://snomed.info/sct,,1,1
+,,,,,,,JASA PMI (2 BAG) PER 1 FEBRUARI 2024,,,,,,,,,,
+,,,,,,,PRC (PACK RED CELL) 1 BAG,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,99.04,Transfusion of packed cells,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,P.16 - PASANG TRANSFUSI,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,5447007.0,Transfusion,http://snomed.info/sct,,1,1
+,,,,,,,"P.10 - PERSONAL HEGYENE : MEMANDIKAN PASIEN, PERAWATAN LUKA, PERAWATAN CATHETER, ORAL HYGIENE (VK)",,,Procedure,Procedure.category.coding,119270007.0,Management procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,424029000.0,Personal hygiene case management,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,"P.10 - PERSONAL HEGYENE : MEMANDIKAN PASIEN, PERAWATAN LUKA, PERAWATAN CATHETER, ORAL HYGIENE (VK)",Tidak ada,,,
+,,,,,,,PEMERIKSAAN EKG,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,PELAYANAN DARAH (GOL. DARAH ABO & RHESUS),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,269826008.0,ABO blood grouping,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,165745004.0,Rhesus blood grouping,http://snomed.info/sct,,1,1
+,,,,,,,P.29 - INJECTIE IV PER SLANG (PERI / VK),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,43060002.0,Intravenous injection,http://snomed.info/sct,,1,1
+,,,,,,,Pengawasan Syock / Presyock,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,386432004.0,Shock management,http://snomed.info/sct,,1,1
+,,,,,,,PENANGANAN PERDARAHAN POST PARTUM,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,386219007.0,Control of hemorrhage in postpartum uterus,http://snomed.info/sct,,1,1
+,,,,,,,TRANSFUSI DARAH PMI,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,116859006.0,Transfusion of blood product,http://snomed.info/sct,,1,1
+,,,,,,,JASA PMI (3 BAG) PER 1 FEBRUARI 2024,,,,,,,,,,
+,,,,,,,"C.5 - PEMBERIAN INJEKSI SC, IC, IM 1 PAKET",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,99.1,Injection or infusion of therapeutic or prophylactic substance,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,ALBUMIN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,26758005.0,Albumin measurement,http://snomed.info/sct,,1,1
+,,,,,,,"P.23 - RJP BAYI, ANAK, DEWASA",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,99.60,"Cardiopulmonary resuscitation, not otherwise specified",http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,C.41 - PERAWATAN JENAZAH,,,,,,,,,,
+,,,,,,,ANALISA GAS DARAH,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,278297009.0,Blood gas analysis,http://snomed.info/sct,,1,1
+,,,,,,,LEADER CODE BLUE,,,,,,,,,,
+,,,,,,,C.14 - PEMASANGAN NGT DENGAN PENYULIT,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,96.07,Insertion of other (naso-)gastric tube,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,C.9 - PEMASANGAN INFUS DENGAN PENYULIT,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,38.93,"Venous catheterization, not elsewhere classified",http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,C.9 - PEMASANGAN INFUS DENGAN PENYULIT,Tidak ada,,,
+,,,,,,,C.16 - MEMBERI DIET PER SONDE,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,96.6,Enteral infusion of concentrated nutritional substances,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,C.16 - MEMBERI DIET PER SONDE,Tidak ada,,,
+,,,,,,,C.15 - MAAG SPOELING,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,173830003.0,Gastric lavage,http://snomed.info/sct,,1,1
+,,,,,,,C.11 - PENGAMBILAN DARAH ARTERI,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,57931004.0,Puncture of artery,http://snomed.info/sct,,1,1
+,,,,,,,C.10 - PENGAMBILAN DARAH VENA,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,234083009.0,Venous puncture,http://snomed.info/sct,,1,1
+,,,,,,,C.40 - PENGAWASAN PENDARAHAN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,51241000.0,Control of hemorrhage,http://snomed.info/sct,,1,1
+,,,,,,,"C.38 - MELAKUKAN SUCTION : SUCTION PADA OROFARINGEAL AIRWAY, SUCTION ENDOTRACHEAL TUBE",,,,,,,,,,
+,,,,,,,C.12 - PEMERIKSAAN GDS DENGAN GLUKOTEST,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,271061004.0,Random blood glucose measurement,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,C.12 - PEMERIKSAAN GDS DENGAN GLUKOTEST,Tidak ada,,,
+,,,,,,,C.44 - EXTUBASI,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,97.37,Removal of tracheostomy tube,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,TINDAKAN NON MEDIS SEDERHANA,,,Procedure,Procedure.category.coding,362961001.0,Procedure by intent,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000826,Tindakan Non Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,TINDAKAN NON MEDIS SEDERHANA,Tidak ada,,,
+,,,,,,,"C.4 - MELAKUKAN PENGHITUNGAN BALANCE CAIRAN TIAP JAM : INTAKE, AIR METABOLISME, OUTPUT, IWL",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,276026009.0,Fluid balance regulation,http://snomed.info/sct,,1,1
+,,,,,,,"C.3 - PENGAWASAN PASIEN INTENSIF : KU, GCS, MONITORING EKG, PUPIL DAN REAKTIVITASNYA, TD, MAP, HR, RR, SPO2 TIAP JAM",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,182810003.0,Intensive care monitoring,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,"C.3 - PENGAWASAN PASIEN INTENSIF : KU, GCS, MONITORING EKG, PUPIL DAN REAKTIVITASNYA, TD, MAP, HR, RR, SPO2 TIAP JAM",Tidak ada,,,
+,,,,,,,"ELEKTROLIT (NA, K, CL)",,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,104177005.0,Electrolyte measurement,http://snomed.info/sct,,1,1
+,,,,,,,Thorax PA,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,C.21 - PEMASANGAN VENTILATOR (PERAWAT),,,,,,,,,,
+,,,,,,,C.19 - PEMASANGAN ET (PERAWAT),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,96.04,Insertion of endotracheal tube,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,PENGAWASAN VENTILATOR,,,,,,,,,,
+,,,,,,,C.26 - PERAWATAN LUKA POST OPERASI DAN ATAU HECTING AFF,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,226007004.0,Post-surgical wound care,http://snomed.info/sct,,1,1
+,,,,,,,C.24 - PEMASANGAN DAN MONITORING INFUS PUMP,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,48403009.0,Insertion of infusion pump,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,C.24 - PEMASANGAN DAN MONITORING INFUS PUMP,Tidak ada,,,
+,,,,,,,C.23 - PEMASANGAN DAN MONITORING SYRINGE PUMP,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000827,Pemasangan dan Monitoring Syringe Pump,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,C.23 - PEMASANGAN DAN MONITORING SYRINGE PUMP,Tidak ada,,,
+,,,,,,,ASUHAN KEPERAWATAN ICU,,,Procedure,Procedure.category.coding,119270007.0,Management procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,410136007.0,Nursing coordination management,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Preocedure.code.text,Tidak ada,ASUHAN KEPERAWATAN ICU,Tidak ada,,,
+,,,,,,,JASA PELAYANAN 2 (ICU),,,,,,,,,,
+,,,,,,,JASA PELAYANAN 1 (ICU) DR. ANESTESI,,,,,,,,,,
+,,,,,,,C.1 - PEMBERIAN INJEKSI INTRAVENA VIA SLANG INFUS,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,43060002.0,Intravenous injection,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,C.1 - PEMBERIAN INJEKSI INTRAVENA VIA SLANG INFUS,Tidak ada,,,
+,,,,,,,ALAT HABIS PAKAI / WASHLAP,,,,,,,,,,
+,,,,,,,KAMAR INAP ICU,,,,,,,,,,
+,,,,,,,KONSULTASI NON MEDIS,,,Procedure,Procedure.category.coding,11429006.0,Consultation,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000822,Konsultasi Non Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,KONSULTASI NON MEDIS,Tidak ada,,,
+,,,,,,,PENITIPAN JENAZAH PER HARI,,,,,,,,,,
+,,,,,,,CSSD GV,,,,,,,,,,
+,,,,,,,GANTI BALUT,,,,,,,,,,
+,,,,,,,HECTING PERINEUM,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,360362007.0,Suture of laceration of perineum,http://snomed.info/sct,,1,1
+,,,,,,,PERSALINAN PACUAN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,73.1,Other surgical induction of labor,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,EXPLORASI UTERUS (PARTUS RS),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,309878003.0,Exploration of uterine cavity,http://snomed.info/sct,,1,1
+,,,,,,,PASANG IUD / IMPLAN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000818,Pemasangan IUD/ Implan,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,KONSULTASI MEDIS KLINIK SPESIALIS,,,Procedure,Procedure.category.coding,11429006.0,Consultation,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000821,Konsultasi Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,KONSULTASI MEDIS KLINIK SPESIALIS,Tidak ada,,,
+,,,,,,,JASA CYTO IBS,,,,,,,,,,
+,,,,,,,JASA CYTO CSSD,,,,,,,,,,
+,,,,,,,PEMERIKSAAN PJJ DENGAN CID +CTG,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,387672006.0,Cardiotochogram,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,PEMERIKSAAN PJJ DENGAN CID +CTG,Tidak ada,,,
+,,,,,,,EKG UMUM,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,1
+,,,,,,,KONSULTASI DOKTER SPESIAL,,,Procedure,Procedure.category.coding,11429006.0,Consultation,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000821,Konsultasi Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,KONSULTASI DOKTER SPESIAL,Tidak ada,,,
+,,,,,,,TINDAKAN NON MEDIS KECIL,,,Procedure,Procedure.category.coding,362961001.0,Procedure by intent,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.code.coding,SP000826,Tindakan Non Medis,http://terminology.kemkes.go.id/sp,,1,1
+,,,,,,,,,,Procedure,Procedure.code.text,Tidak ada,TINDAKAN NON MEDIS KECIL,Tidak ada,,,
+,,,,,,,JASA PMI (1 BAG) PER 1 FEBRUARI 2024,,,,,,,,,,
+,,,,Jenis Kasus,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
+,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,SP000815,Jenis Kasus Pasien,http://terminology.kemkes.go.id/sp,,1,
+,,,JENIS KASUS,,,,Kasus Baru,,,Observation,Observation.valueCodeableConcept.coding,SP000816,Kasus Baru,http://terminology.kemkes.go.id/sp,,1,
+,,,JENIS KASUS,,,,Kasus Lama,,,Observation,Observation.valueCodeableConcept.coding,SP000817,Kasus Lama,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Status Pasien,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
+,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,184061005.0,Patient registration status,http://snomed.info/sct,,1,
+,,,STATUS PASIEN,,,,BARU,,,Observation,Observation.valueCodeableConcept.coding,SP000812,Pasien Baru,http://terminology.kemkes.go.id/sp,,1,
+,,,STATUS PASIEN,,,,LAMA,,,Observation,Observation.valueCodeableConcept.coding,SP000813,Pasien Lama,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
+,,,NAMA,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,TANGGAL,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
+,,,DPJP,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,JAM REG,,time,HH:MM:SS,,,,,,,,,,,
+,,,JAM DILAYANI,,time,HH:MM:SS,,,,,,,,,,,
+,,,JAM MENUNGGU,,time,HH:MM:SS,,,,,,,,,,,
+,,,NOMR,,numerik,,,,,,,,,,,,
