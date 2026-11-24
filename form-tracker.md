@@ -18,6 +18,23 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 14 | KIA Harian - MTBS | 125 / 268 |
 | 15 | KIA Harian - MTBM | 57 / 139 |
 | 16 | Tumbuh Kembang (8 dictionary: Anak 19 / 55, DDTK 29 / 68, KPSP 14 / 0, TDD 8 / 0, TDL 4 / 8, KMPE 1 / 0, M-CHAT-R 1 / 0, GPPH 1 / 40) | 77 / 171 |
+| 17 | SiGizi - Posyandu Balita BNBA (daftar status gizi) | 24 / 48 |
+| 18 | SiGizi - Balita Vitamin A | 22 / 47 |
+| 19 | SiGizi - Balita Mendapat PMT 2024 | 15 / 44 |
+| 20 | SiGizi - Balita Pemantauan PMT 2024 | 9 / 12 |
+| 21 | SiGizi - Asi Eksklusif | 11 / 36 |
+| 22 | SiGizi - Balita Pemantauan MPASI | 9 / 30 |
+| 24 | SIGIZI (Balita BB Tidak Naik) - Pantau PMT 2025 | 15 / 32 |
+| 25 | SIGIZI (Balita BB Tidak Naik) - Riwayat PMT 2025 | 19 / 74 |
+| 26 | SIGIZI (Balita BB Tidak Naik) - Survey PMT 2025 | 5 / 16 |
+| 27 | SIGIZI (Balita BB Kurang) - Pantau PMT 2025 | 21 / 46 |
+| 28 | SIGIZI (Balita BB Kurang) - Riwayat PMT 2025 | 19 / 74 |
+| 29 | SIGIZI (Balita BB Kurang) - Survey PMT 2025 | 5 / 16 |
+| 30 | SIGIZI (Balita Gizi Kurang) - Pantau PMT 2025 | 42 / 101 |
+| 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | 19 / 74 |
+| 32 | SIGIZI (Balita Gizi Kurang) - Survey PMT 2025 | 5 / 16 |
+| 34 | SIGIZI IBU - Daftar Nifas | 11 / 12 |
+| 36 | SIGIZI IBU - Kohort Ibu | 63 / 94 |
 | 42 | ASIK - Data Skrining PTM | 104 / 146 |
 | 43 | ASIK - CKG-Klaster BBL (versi 2; v1 25 / 56) | 25 / 41 |
 | 44 | ASIK - CKG-Klaster Balita Pra Sekolah (versi 2; v1 29 / 99) | 32 / 102 |
@@ -38,7 +55,7 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 124 | Dapodik - PAUD (semester) | 42 / 190 |
 | 237 | SIPTM (baru ditambahkan) | 52 / 214 |
 
-Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
+Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
 ### Versi ASIK CKG (PHDT_ASIK_CKG.xlsx)
 
@@ -76,26 +93,26 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 14 | ePuskesmas (Laporan Pelayanan KIA Harian) - MTBS | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 15 | ePuskesmas (Laporan Pelayanan KIA Harian) - MTBM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 16 | ePuskesmas (Laporan Pelayanan KIA Harian) - Tumbuh Kembang | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 17 | SiGizi - Posyandu Balita BNBA (daftar status gizi) | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bnba` |  |
-| 18 | SiGizi - Balita Vitamin A | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_vitamin_a` |  |
-| 19 | SiGizi - Balita Mendapat PMT 2024 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_mendapat_pmt` |  |
-| 20 | SiGizi - Balita Pemantauan PMT 2024 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_dipantau_pmt` |  |
-| 21 | SiGizi - Asi Eksklusif | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_asi_ekslusif` |  |
-| 22 | SiGizi - Balita Pemantauan MPASI | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_mpasi` |  |
+| 17 | SiGizi - Posyandu Balita BNBA (daftar status gizi) | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bnba` |  |
+| 18 | SiGizi - Balita Vitamin A | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_vitamin_a` |  |
+| 19 | SiGizi - Balita Mendapat PMT 2024 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_mendapat_pmt` |  |
+| 20 | SiGizi - Balita Pemantauan PMT 2024 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_dipantau_pmt` |  |
+| 21 | SiGizi - Asi Eksklusif | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_asi_ekslusif` |  |
+| 22 | SiGizi - Balita Pemantauan MPASI | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_mpasi` |  |
 | 23 | SiGizi - Daftar Balita | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_daftar_balita` |  |
-| 24 | SIGIZI (Balita BB Tidak Naik) - Pantau PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_tidak_naik_pantau_pmt_2025` |  |
-| 25 | SIGIZI (Balita BB Tidak Naik) - Riwayat PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_tidak_naik_riwayat_pmt_2025` |  |
-| 26 | SIGIZI (Balita BB Tidak Naik) - Survey PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_tidak_naik_survey_pmt_2025` |  |
-| 27 | SIGIZI (Balita BB Kurang) - Pantau PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_kurang_pantau_pmt_2025` |  |
-| 28 | SIGIZI (Balita BB Kurang) - Riwayat PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_kurang_riwayat_pmt_2025` |  |
-| 29 | SIGIZI (Balita BB Kurang) - Survey PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_kurang_survey_pmt_2025` |  |
-| 30 | SIGIZI (Balita Gizi Kurang) - Pantau PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_pantau_pmt_2025` |  |
-| 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_riwayat_pmt_2025` |  |
-| 32 | SIGIZI (Balita Gizi Kurang) - Survey PMT 2025 | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_survey_pmt_2025` |  |
+| 24 | SIGIZI (Balita BB Tidak Naik) - Pantau PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_tidak_naik_pantau_pmt_2025` |  |
+| 25 | SIGIZI (Balita BB Tidak Naik) - Riwayat PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_tidak_naik_riwayat_pmt_2025` |  |
+| 26 | SIGIZI (Balita BB Tidak Naik) - Survey PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_tidak_naik_survey_pmt_2025` |  |
+| 27 | SIGIZI (Balita BB Kurang) - Pantau PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_kurang_pantau_pmt_2025` |  |
+| 28 | SIGIZI (Balita BB Kurang) - Riwayat PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_kurang_riwayat_pmt_2025` |  |
+| 29 | SIGIZI (Balita BB Kurang) - Survey PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_bb_kurang_survey_pmt_2025` |  |
+| 30 | SIGIZI (Balita Gizi Kurang) - Pantau PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_pantau_pmt_2025` |  |
+| 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_riwayat_pmt_2025` |  |
+| 32 | SIGIZI (Balita Gizi Kurang) - Survey PMT 2025 | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_balita_gizi_kurang_survey_pmt_2025` |  |
 | 33 | SIGIZI IBU - Daftar Bumil | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_daftar_bumil` |  |
-| 34 | SIGIZI IBU - Daftar Nifas | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_ibu_nifas` |  |
+| 34 | SIGIZI IBU - Daftar Nifas | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_ibu_nifas` |  |
 | 35 | SIGIZI IBU - Pengukuran ANC Bumil | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sigizi_kesga_bumil_anc` |  |
-| 36 | SIGIZI IBU - Kohort Ibu | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.sigizi_kohort_ibu` |  |
+| 36 | SIGIZI IBU - Kohort Ibu | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_kohort_ibu` |  |
 | 37 | SIGIZI IBU - Rekap 12T (tidak dipakai karena data agregat) | ❌ | ❌ | ❌ |  |  |
 | 38 | SIGIZI IBU - Rekap PWS (hilang dari SIGIZI) | ❌ | ❌ | ❌ |  |  |
 | 39 | ASIK - Data Individu Kohort Bayi | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_test` |  |

@@ -28,6 +28,7 @@ scripts/   form_output.py: membuat output/<form>.md dari dictionary
            dapodik_prepare.py: sama, untuk sheet `Copy of DAPODIK` (Dapodik PAUD)
            csvform_prepare.py: sama, untuk CSV PHDT (SITB TB 01/TB 02, ELSMIL x3, SIPTM, ASIK Skrining PTM)
            phdt2_prepare.py: sama, untuk PHDT_ASIK_CKG.xlsx (5 form CKG, beberapa versi) + CSV Informed Consent, SiHepi Rekap 3e, eKohort ANC/INC
+           sigizi_prepare.py: sama, untuk PHDT_SIGIZI.xlsx + schema BQ (17 form SiGizi selain ANC), sekaligus isi Nama Column BQ
 ```
 
 ## Form yang sudah dihitung
