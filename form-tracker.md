@@ -19,17 +19,44 @@ Total: 237 laporan · Masih diperlukan: 217 · Dimapping ke FHIR: 212 · Sudah d
 | 15 | KIA Harian - MTBM | 57 / 139 |
 | 16 | Tumbuh Kembang (8 dictionary: Anak 19 / 55, DDTK 29 / 68, KPSP 14 / 0, TDD 8 / 0, TDL 4 / 8, KMPE 1 / 0, M-CHAT-R 1 / 0, GPPH 1 / 40) | 77 / 171 |
 | 42 | ASIK - Data Skrining PTM | 104 / 146 |
+| 43 | ASIK - CKG-Klaster BBL (versi 2; v1 25 / 56) | 25 / 41 |
+| 44 | ASIK - CKG-Klaster Balita Pra Sekolah (versi 2; v1 29 / 99) | 32 / 102 |
+| 46 | ASIK - CKG-Klaster Dewasa Laki-laki | 61 / 202 |
+| 47 | ASIK - CKG-Klaster Dewasa Perempuan | 66 / 223 |
+| 48 | ASIK - CKG-Klaster Lansia (versi 27 Apr 2026; 2026 79 / 366, 2025 77 / 361) | 95 / 458 |
+| 49 | SiHepi - Form Rekap 3e | 65 / 118 |
 | 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | 37 / 94 |
 | 51 | SITB - TB 02 (Kartu Identitas Pasien) | 13 / 15 |
 | 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
+| 74 | eKohort - Pelayanan Ibu ANC (Final Format; file lama 140 / 247 tidak dipakai) | 43 / 78 |
+| 77 | eKohort - Pelayanan Ibu Bersalin (INC) | 58 / 74 |
+| 78 | Informed Consent | 3 / 8 |
 | 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
 | 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
 | 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
 | 124 | Dapodik - PAUD (semester) | 42 / 190 |
 | 237 | SIPTM (baru ditambahkan) | 52 / 214 |
 
-Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet).
+Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
+
+### Versi ASIK CKG (PHDT_ASIK_CKG.xlsx)
+
+Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel ⚠️ di atas dan di `output.md`); versi lain dihitung terpisah, tidak masuk total. Detail dan perbedaan antar versi: `output.md` bagian "Versi ASIK CKG".
+
+| # | Form | Versi | Sheet | Payload / code | Dipakai |
+|---|---|---|---|---|---|
+| 43 | CKG BBL | v2 (tarikan baru) | `CKG Bayi Baru Lahir 2` | 25 / 41 | ✅ |
+| 43 | CKG BBL | v1 | `CKG Bayi Baru Lahir` | 25 / 56 |  |
+| 44 | CKG Balita dan Anak Pra-Sekolah | v2 (tarikan baru, asumsi) | `Sheet9` | 32 / 102 | ✅ |
+| 44 | CKG Balita dan Anak Pra-Sekolah | v1 | `CKG Balita dan Anak Pra-Sekolah` | 29 / 99 |  |
+| 46 | CKG Dewasa Laki-laki | 1 versi | `CKG Dewasa Laki-laki` | 61 / 202 | ✅ |
+| 47 | CKG Dewasa Perempuan | 1 versi | `CKG Dewasa Perempuan` | 66 / 223 | ✅ |
+| 48 | CKG Lansia | 27 April 2026 (terbaru) | `CKG Lansia 27 April 2026` | 95 / 458 | ✅ |
+| 48 | CKG Lansia | 2026 | `CKG Lansia 2026` | 79 / 366 |  |
+| 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 77 / 361 |  |
+
+Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 2026 tidak punya blok lab (ServiceRequest / Specimen / DiagnosticReport / PractitionerRole) yang ada di 2025 dan 2026 (perlu konfirmasi). Sheet `CKG Lansia (tidak dipakai)` tidak dihitung. Klaster Remaja (#45), eKohort PNC (#75), dan Laporan Kohort Ibu (#76) belum ada mapping. #43–#48 masih ada kolom Table BQ kosong.
 
 | No | Sumber - Laporan | Masih diperlukan | Dimapping ke FHIR | Status review | Table BQ Purbalingga | Table BQ Lombok Barat |
 |---|---|:-:|:-:|:-:|---|---|
@@ -75,13 +102,13 @@ Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kemban
 | 40 | ASIK - Data Individu Kohort Baduta | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_baduta` |  |
 | 41 | ASIK - Data Individu Kohort WUS | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_wus` |  |
 | 42 | ASIK - Data Skrining PTM | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.asik_skrining_ptm` |  |
-| 43 | ASIK - CKG-Klaster BBL | ✅ | ✅ | ❌ |  |  |
-| 44 | ASIK - CKG-Klaster Balita Pra Sekolah | ✅ | ✅ | ❌ |  |  |
+| 43 | ASIK - CKG-Klaster BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 44 | ASIK - CKG-Klaster Balita Pra Sekolah | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 45 | ASIK - CKG-Klaster Remaja dan Usia Sekolah | ❌ | ✅ | ❌ |  |  |
-| 46 | ASIK - CKG-Klaster Dewasa Laki-laki | ✅ | ✅ | ❌ |  |  |
-| 47 | ASIK - CKG-Klaster Dewasa Perempuan | ✅ | ✅ | ❌ |  |  |
-| 48 | ASIK - CKG-Klaster Lansia | ✅ | ✅ | ❌ |  |  |
-| 49 | SiHepi - Form Rekap 3e | ✅ | ✅ | ❌ |  |  |
+| 46 | ASIK - CKG-Klaster Dewasa Laki-laki | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 47 | ASIK - CKG-Klaster Dewasa Perempuan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 48 | ASIK - CKG-Klaster Lansia | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 49 | SiHepi - Form Rekap 3e | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 51 | SITB - TB 02 (Kartu Identitas Pasien) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 52 | SITB - TB 03 SO (Sensitif Obat) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_03` |  |
@@ -106,11 +133,11 @@ Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kemban
 | 71 | SMILE (oleh Dinkes) - ATM (HIV, AIDS, Malaria) | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.smile_atm` |  |
 | 72 | MPDN (oleh Dinkes) - Laporan Kematian Bayi | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.mpdn_laporan_kematian_bayi` | `spheres-lombok-barat.raw_data.mpdn_laporan_kematian_bayi` |
 | 73 | MPDN (oleh Dinkes) - Laporan Kematian Ibu | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.mpdn_laporan_kematian_ibu` | `spheres-lombok-barat.raw_data.mpdn_laporan_kematian_ibu` |
-| 74 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu ANC | ❌ | ✅ | ❌ |  |  |
+| 74 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu ANC | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 75 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu PNC | ❌ | ✅ | ❌ |  |  |
 | 76 | eKohort (app sudah mati dari kemenkes) - Laporan Kohort Ibu | ❌ | ✅ | ❌ |  |  |
-| 77 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu Bersalin | ❌ | ✅ | ❌ |  |  |
-| 78 | Informed Consent | ❌ | ✅ | ❌ |  |  |
+| 77 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu Bersalin | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 78 | Informed Consent | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 79 | Buku KIA - Identitas dan ANC | ❌ | ✅ | ❌ |  |  |
 | 80 | Buku KIA - INC | ❌ | ✅ | ❌ |  |  |
 | 81 | Buku KIA - PNC | ❌ | ✅ | ❌ |  |  |

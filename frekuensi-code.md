@@ -10,13 +10,13 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 2 | SP000396 | Data entry staff | kemkes sp | Maternal Outcome | 1 |
 | 3 | SP000397 | Field/call center staff | kemkes sp | Maternal Outcome | 1 |
 | 4 | SP000738 | Kunjungan pemantauan luaran maternal | kemkes sp | Maternal Outcome | 1 |
-| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC | 5 |
+| 5 | ANC | Antenatal Care | episodeofcare-type | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SIHEPI Rekap 3e, eKohort ANC | 7 |
 | 6 | PNC | Postnatal Care | episodeofcare-type | Maternal Outcome, ePus PNC | 2 |
 | 7 | SP000389 | Keadaan Ibu | kemkes sp | Maternal Outcome, ePus PNC | 2 |
 | 8 | 102514002 | Well female adult | snomed | Maternal Outcome, ePus INC | 2 |
 | 9 | 39104002 | Illness | snomed | Maternal Outcome, ePus INC | 2 |
 | 10 | 419099009 | Dead | snomed | Maternal Outcome, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC (3x), ePus PNC, SITB TB 01 | 8 |
-| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome, ePus INC, ePus PNC | 3 |
+| 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome, ePus INC, ePus PNC, SIHEPI Rekap 3e, eKohort INC (2x) | 5 |
 | 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC | 5 |
 | 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome | 1 |
 | 14 | 79378-6 | Cause of death | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
@@ -25,37 +25,37 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 17 | SP000776 | Sigizi | kemkes sp | Raffle | 1 |
 | 18 | SP000777 | E-pus PKD | kemkes sp | Raffle | 1 |
 | 19 | SP000778 | E-pus | kemkes sp | Raffle | 1 |
-| 20 | 309453006 | Registered midwife | snomed | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC, ELSMIL Pasca Persalinan, SIPTM | 8 |
-| 21 | 309343006 | Physician | snomed | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC, ELSMIL Pasca Persalinan | 7 |
+| 20 | 309453006 | Registered midwife | snomed | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC, ELSMIL Pasca Persalinan, SIPTM, eKohort INC | 9 |
+| 21 | 309343006 | Physician | snomed | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC (2x), ePus PNC, ELSMIL Pasca Persalinan, eKohort INC | 8 |
 | 22 | 309367003 | Obstetrician and gynecologist | snomed | SiGizi ANC, ePus ANC, ePus INC, ePus PNC | 4 |
 | 23 | 224535009 | Registered nurse | snomed | SiGizi ANC, ePus ANC, ePus INC, ePus PNC | 4 |
-| 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC | 2 |
-| 25 | K1A | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC | 2 |
-| 26 | 134435003 | Routine antenatal care | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil | 4 |
-| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM | 13 |
-| 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil | 6 |
-| 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM | 9 |
-| 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC, ePus ANC, ELSMIL Ibu Hamil | 3 |
+| 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
+| 25 | K1A | Tidak ada | episodeofcare/ANC | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
+| 26 | 134435003 | Routine antenatal care | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC | 6 |
+| 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SIHEPI Rekap 3e | 14 |
+| 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC | 5 |
+| 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC | 5 |
+| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC | 8 |
+| 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC | 6 |
+| 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SIHEPI Rekap 3e, eKohort ANC | 6 |
+| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC | 13 |
+| 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC, ePus ANC, ELSMIL Ibu Hamil, eKohort ANC | 4 |
 | 35 | OC000010 | Indeks Massa Tubuh Sebelum Hamil | kemkes clinical-term | SiGizi ANC, ELSMIL Ibu Hamil | 2 |
 | 36 | ANC.SS.DE58 | IMT Sebelum Hamil | kemkes anc-custom-codes | SiGizi ANC, ELSMIL Ibu Hamil | 2 |
-| 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x) | 3 |
+| 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), eKohort ANC (2x) | 4 |
 | 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
-| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM | 11 |
-| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SITB TB 01 (2x), ELSMIL Ibu Hamil | 4 |
+| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC | 17 |
+| 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC, SITB TB 01 (2x), ELSMIL Ibu Hamil, eKohort ANC | 5 |
 | 42 | 392570002 | Blood pressure finding | snomed | SiGizi ANC | 1 |
 | 43 | 2004005 | Normal blood pressure | snomed | SiGizi ANC | 1 |
 | 44 | 38341003 | Hypertension | snomed | SiGizi ANC, ePus INC | 2 |
 | 45 | 45007003 | Hypotension | snomed | SiGizi ANC | 1 |
-| 46 | 284473002 | Mid upper arm circumference | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK, ELSMIL Ibu Hamil | 8 |
-| 47 | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | kemkes anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil | 3 |
-| 48 | OI000018 | Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 49 | N | Normal | v3-ObservationInterpretation | SiGizi ANC, ePus ANC (13x), ePus PNC | 3 |
-| 50 | OI000035 | Risiko Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
+| 46 | 284473002 | Mid upper arm circumference | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK, ELSMIL Ibu Hamil, eKohort ANC | 9 |
+| 47 | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | kemkes anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil, eKohort ANC | 4 |
+| 48 | OI000018 | Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, eKohort ANC | 5 |
+| 49 | N | Normal | v3-ObservationInterpretation | SiGizi ANC, ePus ANC (13x), ePus PNC, ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki (16x), ASIK CKG Dewasa Perempuan (16x), ASIK CKG Lansia (27 Apr 2026) (16x), eKohort ANC | 8 |
+| 50 | OI000035 | Risiko Kurang Energi Kronis (KEK) | kemkes clinical-term | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC | 4 |
 | 51 | 289625003 | Finding of fundal height of uterus | snomed | SiGizi ANC | 1 |
 | 52 | SP000003 | Sesuai Usia Kehamilan | kemkes sp | SiGizi ANC | 1 |
 | 53 | SP000004 | Tidak Sesuai Usia Kehamilan | kemkes sp | SiGizi ANC | 1 |
@@ -67,39 +67,39 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 59 | LA28449-9 | Group AB | loinc | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM | 5 |
 | 60 | 10331-7 | Rh [Type] in Blood | loinc | SiGizi ANC, ePus ANC | 2 |
 | 61 | ANC.B9.DE29 | Rh factor | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
-| 62 | LA6576-8 | Positive | loinc | SiGizi ANC (4x), SITB TB 06 (4x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium (21x), ePus ANC (4x), ePus MTBS (3x) | 9 |
-| 63 | LA6577-6 | Negative | loinc | SiGizi ANC (4x), SITB TB 06 (5x), SITB TB 03 SO (4x), SITB TB 03 RO (5x), SITB TB 04 (7x), ePus Kunjungan Ibu Hamil (10x), ePus Laboratorium (22x), ePus ANC (4x), ePus MTBS (3x) | 9 |
+| 62 | LA6576-8 | Positive | loinc | SiGizi ANC (4x), SITB TB 06 (4x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium (21x), ePus ANC (4x), ePus MTBS (3x), SIHEPI Rekap 3e (2x), eKohort ANC (2x) | 11 |
+| 63 | LA6577-6 | Negative | loinc | SiGizi ANC (4x), SITB TB 06 (5x), SITB TB 03 SO (4x), SITB TB 03 RO (5x), SITB TB 04 (7x), ePus Kunjungan Ibu Hamil (10x), ePus Laboratorium (22x), ePus ANC (4x), ePus MTBS (3x), SIHEPI Rekap 3e (2x), eKohort ANC (3x) | 11 |
 | 64 | 289437007 | Finding of fetal heart rate | snomed | SiGizi ANC, ePus INC | 2 |
-| 65 | 289441006 | Normal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
+| 65 | 289441006 | Normal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC, eKohort INC | 4 |
 | 66 | 289440007 | Fetal heart rate not observed | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
-| 67 | 312668007 | Abnormal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
+| 67 | 312668007 | Abnormal fetal heart rate | snomed | SiGizi ANC, ePus ANC, ePus INC, eKohort INC | 4 |
 | 68 | 289439005 | Fetal heart rate absent | snomed | SiGizi ANC, ePus ANC, ePus INC | 3 |
-| 69 | 72155-5 | Position in womb Fetus [RHEA] | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 4 |
-| 70 | ANC.B8.DE111 | Fetal presentation | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x) | 3 |
-| 71 | 1209182005 | Cephalic fetal presentation | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), ePus INC | 4 |
+| 69 | 72155-5 | Position in womb Fetus [RHEA] | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC (2x) | 5 |
+| 70 | ANC.B8.DE111 | Fetal presentation | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), eKohort INC | 4 |
+| 71 | 1209182005 | Cephalic fetal presentation | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (2x), ePus INC, eKohort INC | 5 |
 | 72 | SP000005 | Letak Bokong/ Lintang | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 73 | SP000006 | Organ Tubuh Lainnya | kemkes sp | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC (2x) | 3 |
-| 74 | 88.78 | Diagnostic ultrasound of gravid uterus | icd-9-cm | SiGizi ANC, ePus ANC | 2 |
+| 74 | 88.78 | Diagnostic ultrasound of gravid uterus | icd-9-cm | SiGizi ANC, ePus ANC, eKohort ANC | 3 |
 | 75 | 268445003 | Ultrasound scan - obstetric | snomed | SiGizi ANC, ePus ANC | 2 |
 | 76 | 169221005 | Ultrasound obstetric scan normal | snomed | SiGizi ANC, ePus ANC | 2 |
 | 77 | 169255008 | Ultrasound scan abnormal | snomed | SiGizi ANC, ePus ANC | 2 |
 | 78 | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil | 2 |
 | 79 | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC | 3 |
 | 80 | SP000370 | Multiple Micronutrient Supplement | kemkes sp | SiGizi ANC (2x), ePus Pelayanan Pasien (2x) | 2 |
-| 81 | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), SITB TB 01 | 5 |
-| 82 | 122555007 | Venous blood specimen | snomed | SiGizi ANC (5x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium, ePus ANC (5x), ELSMIL Ibu Hamil | 5 |
-| 83 | ANC.B9.DE32 | HIV test | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
-| 84 | LA15255-5 | Reactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01 | 7 |
-| 85 | LA15256-3 | Nonreactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01 | 7 |
-| 86 | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
-| 87 | ANC.B9.DE60 | Hepatitis B test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
-| 88 | 22464-2 | Reagin Ab [Presence] in Specimen | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
-| 89 | ANC.B9.DE96 | Syphilis test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
-| 90 | 2887-8 | Protein [Presence] in Urine | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x) | 4 |
-| 91 | 122575003 | Urine specimen | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium (16x), ePus ANC | 4 |
-| 92 | ANC.B9.DE114 | Urine test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
-| 93 | 718-7 | Hemoglobin [Mass/volume] in Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (4x), ePus Laboratorium (4x), ePus ANC (3x), ePus MTBS (6x), ELSMIL Ibu Hamil (3x) | 6 |
-| 94 | ANC.B9.DE175 | Blood hemoglobin test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ELSMIL Ibu Hamil | 5 |
+| 81 | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x) | 10 |
+| 82 | 122555007 | Venous blood specimen | snomed | SiGizi ANC (5x), ePus Kunjungan Ibu Hamil (9x), ePus Laboratorium, ePus ANC (5x), ELSMIL Ibu Hamil, SIHEPI Rekap 3e (3x), eKohort ANC (4x) | 7 |
+| 83 | ANC.B9.DE32 | HIV test | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC | 6 |
+| 84 | LA15255-5 | Reactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), SIHEPI Rekap 3e (7x), eKohort ANC | 12 |
+| 85 | LA15256-3 | Nonreactive | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (2x), ePus ANC, ePus MTBS (4x), ePus MTBM (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x), SIHEPI Rekap 3e (7x), eKohort ANC | 12 |
+| 86 | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x) | 9 |
+| 87 | ANC.B9.DE60 | Hepatitis B test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC | 6 |
+| 88 | 22464-2 | Reagin Ab [Presence] in Specimen | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (6x), ePus Laboratorium (3x), ePus ANC (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e (3x), eKohort ANC (3x) | 9 |
+| 89 | ANC.B9.DE96 | Syphilis test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, SIHEPI Rekap 3e, eKohort ANC | 6 |
+| 90 | 2887-8 | Protein [Presence] in Urine | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), ePus ANC (3x), eKohort ANC (3x) | 5 |
+| 91 | 122575003 | Urine specimen | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium (16x), ePus ANC, eKohort ANC | 5 |
+| 92 | ANC.B9.DE114 | Urine test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, eKohort ANC | 5 |
+| 93 | 718-7 | Hemoglobin [Mass/volume] in Blood | loinc | SiGizi ANC (3x), ePus Kunjungan Ibu Hamil (4x), ePus Laboratorium (4x), ePus ANC (3x), ePus MTBS (6x), ELSMIL Ibu Hamil (3x), ASIK CKG Balita (v2), eKohort ANC (3x) | 8 |
+| 94 | ANC.B9.DE175 | Blood hemoglobin test conducted | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ELSMIL Ibu Hamil, eKohort ANC | 6 |
 | 95 | 860635002 | No anemia present | snomed | SiGizi ANC, ePus MTBS | 2 |
 | 96 | OI000032 | Anemia ringan | kemkes clinical-term | SiGizi ANC | 1 |
 | 97 | OI000033 | Anemia sedang | kemkes clinical-term | SiGizi ANC | 1 |
@@ -109,15 +109,15 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 101 | 166921001 | Blood glucose normal | snomed | SiGizi ANC | 1 |
 | 102 | 166922008 | Blood glucose abnormal | snomed | SiGizi ANC | 1 |
 | 103 | 15220000 | Laboratory test | snomed | SiGizi ANC, ePus ANC | 2 |
-| 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC, SITB TB 01 | 7 |
+| 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC, SITB TB 01, ASIK CKG Dewasa Laki-laki (8x), ASIK CKG Dewasa Perempuan (8x), ASIK CKG Lansia (27 Apr 2026) (8x) | 10 |
 | 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC, ePus ANC, ePus MTBS (3x) | 3 |
 | 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC, ePus ANC | 2 |
-| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x), SITB TB 01, ELSMIL Ibu Hamil (4x), ELSMIL Pasca Persalinan (3x), ELSMIL Baduta (3x), SIPTM | 12 |
+| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x), SITB TB 01, ELSMIL Ibu Hamil (4x), ELSMIL Pasca Persalinan (3x), ELSMIL Baduta (3x), SIPTM, SIHEPI Rekap 3e | 13 |
 | 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC, ePus ANC, ePus PNC | 3 |
 | 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 111 | 116859006 | Transfusion of blood product | snomed | SiGizi ANC, ePus ANC, ePus PNC | 3 |
-| 112 | 3457005 | Patient referral | snomed | SiGizi ANC (3x), ePus ANC (3x), SIPTM (2x) | 3 |
+| 112 | 3457005 | Patient referral | snomed | SiGizi ANC (3x), ePus ANC (3x), SIPTM (2x), eKohort INC | 4 |
 | 113 | SP000010 | Skrining Hipertensi dalam Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 114 | SP000011 | Tidak Pre Eklampsia/ Eklampsia | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 115 | 48194001 | Pregnancy-induced hypertension | snomed | SiGizi ANC, ePus ANC, ePus INC (2x) | 3 |
@@ -176,7 +176,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 168 | 707308007 | Tuberculosis screening chest X-ray normal | snomed | SITB TB 06, SITB TB 03 SO, ePus PNC | 3 |
 | 169 | 424489006 | Mantoux test | snomed | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
 | 170 | 35140007 | Interferon gamma assay | snomed | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
-| 171 | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x), ePus Laboratorium (3x), SITB TB 01 | 5 |
+| 171 | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x), ePus Laboratorium (3x), SITB TB 01, ASIK CKG Lansia (27 Apr 2026) | 6 |
 | 172 | 268376005 | Mantoux: positive | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Laboratorium | 4 |
 | 173 | 268375009 | Mantoux: negative | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Laboratorium | 4 |
 | 174 | 71773-6 | Mycobacterium tuberculosis stimulated gamma interferon [Interpretation] in Blood Qualitative | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x) | 3 |
@@ -185,11 +185,11 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 177 | 260385009 | Negative | snomed | SITB TB 06 (5x), SITB TB 03 SO (8x), SITB TB 03 RO (4x), SITB TB 04 (2x), ePus Kunjungan Ibu Hamil, ePus Laboratorium, SITB TB 01 (3x) | 7 |
 | 178 | 261665006 | Unknown | snomed | SITB TB 06 (2x), SITB TB 03 SO (3x), SITB TB 03 RO (3x) | 3 |
 | 179 | 33248-6 | Diabetes status | loinc | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
-| 180 | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | loinc | SITB TB 06 (9x), SITB TB 03 SO (18x), SITB TB 03 RO (6x), SITB TB 04 (6x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), SITB TB 01 | 7 |
+| 180 | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | loinc | SITB TB 06 (9x), SITB TB 03 SO (18x), SITB TB 03 RO (6x), SITB TB 04 (6x), ePus Kunjungan Ibu Hamil (3x), ePus Laboratorium (3x), SITB TB 01, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 10 |
 | 181 | 119334006 | Sputum specimen | snomed | SITB TB 06 (8x), SITB TB 03 SO (9x), SITB TB 03 RO (7x), SITB TB 04 (32x), ePus Kunjungan Ibu Hamil, ePus Laboratorium (2x) | 6 |
-| 182 | LA11841-6 | 1+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01 | 7 |
-| 183 | LA11842-4 | 2+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01 | 7 |
-| 184 | LA11843-2 | 3+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01 | 7 |
+| 182 | LA11841-6 | 1+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC | 8 |
+| 183 | LA11842-4 | 2+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC | 8 |
+| 184 | LA11843-2 | 3+ | loinc | SITB TB 06 (3x), SITB TB 03 SO (6x), SITB TB 03 RO (2x), SITB TB 04 (3x), ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium (2x), SITB TB 01, eKohort ANC | 8 |
 | 185 | 89371-9 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | loinc | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO, ePus Laboratorium (3x) | 4 |
 | 186 | X099379 | Pemeriksaan TCM XDR | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (6x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
 | 187 | X099380 | Line Probe Assay (LPA) Lini 1 | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (6x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
@@ -198,14 +198,14 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 190 | X099383 | Pemeriksaan Paket Standar Kepekaan | kemkes examination | SITB TB 06 (6x), SITB TB 03 SO (3x), SITB TB 03 RO (4x), SITB TB 04 (3x) | 4 |
 | 191 | MK099926 | Pemeriksaan TCM MTB Rif INH (BDMAX) | kemkes examination | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO, SITB TB 04 (6x) | 4 |
 | 192 | MK099927 | Pemeriksaan PCR Open System | kemkes examination | SITB TB 06 (3x), SITB TB 03 SO (3x), SITB TB 03 RO, SITB TB 04 (3x) | 4 |
-| 193 | X099770 | Rifampisin sensitive | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (4x) | 4 |
-| 194 | X099771 | Rifampisin resistan | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (4x) | 4 |
-| 195 | X099772 | Rifampisin indeterminate | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (4x) | 4 |
+| 193 | X099770 | Rifampisin sensitive | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (4x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 7 |
+| 194 | X099771 | Rifampisin resistan | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (4x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 7 |
+| 195 | X099772 | Rifampisin indeterminate | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (4x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 7 |
 | 196 | X099781 | Hasil Valid | kemkes examination | SITB TB 06 (3x), SITB TB 03 SO (2x), SITB TB 03 RO (3x), SITB TB 04 (3x) | 4 |
-| 197 | LA11882-0 | Detected | loinc | SITB TB 06 (17x), SITB TB 03 SO (11x), SITB TB 03 RO (18x), SITB TB 04 (26x), SITB TB 01 | 5 |
-| 198 | LA11883-8 | Not detected | loinc | SITB TB 06 (17x), SITB TB 03 SO (11x), SITB TB 03 RO (17x), SITB TB 04 (26x), SITB TB 01 | 5 |
+| 197 | LA11882-0 | Detected | loinc | SITB TB 06 (17x), SITB TB 03 SO (11x), SITB TB 03 RO (18x), SITB TB 04 (26x), SITB TB 01, ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x) | 8 |
+| 198 | LA11883-8 | Not detected | loinc | SITB TB 06 (17x), SITB TB 03 SO (11x), SITB TB 03 RO (17x), SITB TB 04 (26x), SITB TB 01, ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 8 |
 | 199 | X099391 | H Dosis Rendah (Low) | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (2x) | 4 |
-| 200 | LA11884-6 | Indeterminate | loinc | SITB TB 06 (15x), SITB TB 03 SO (9x), SITB TB 03 RO (15x), SITB TB 04 (18x) | 4 |
+| 200 | LA11884-6 | Indeterminate | loinc | SITB TB 06 (15x), SITB TB 03 SO (9x), SITB TB 03 RO (15x), SITB TB 04 (18x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 7 |
 | 201 | 89488-1 | Isoniazid [Susceptibility] by Genotype method | loinc | SITB TB 06 (2x), SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
 | 202 | 96110-2 | Ethionamide [Susceptibility] by Genotype method | loinc | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (2x) | 4 |
 | 203 | X099392 | FQ Dosis Rendah (Low) | kemkes examination | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 | 4 |
@@ -213,7 +213,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 205 | 89484-0 | Amikacin [Susceptibility] by Genotype method | loinc | SITB TB 06 (2x), SITB TB 03 SO, SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
 | 206 | 89482-4 | Kanamycin [Susceptibility] by Genotype method | loinc | SITB TB 06 (2x), SITB TB 03 SO, SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
 | 207 | 89483-2 | Capreomycin [Susceptibility] by Genotype method | loinc | SITB TB 06 (2x), SITB TB 03 SO, SITB TB 03 RO (2x), SITB TB 04 (2x) | 4 |
-| 208 | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | loinc | SITB TB 06 (2x), SITB TB 03 SO, SITB TB 03 RO (2x), SITB TB 04 (3x) | 4 |
+| 208 | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | loinc | SITB TB 06 (2x), SITB TB 03 SO, SITB TB 03 RO (2x), SITB TB 04 (3x), ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 209 | 89489-9 | rifAMPin [Susceptibility] by Genotype method | loinc | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04 (2x) | 4 |
 | 210 | X099774 | Ress Inffered (RI) | kemkes examination | SITB TB 06 (8x), SITB TB 03 SO (2x), SITB TB 03 RO (8x), SITB TB 04 (11x) | 4 |
 | 211 | 20629-2 | levoFLOXacin [Susceptibility] | loinc | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
@@ -237,8 +237,8 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 229 | SP000476 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 4 | kemkes sp | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
 | 230 | SP000477 | Hasil Pemeriksaan Paket Standar Uji Kepekaan Lainnya 5 | kemkes sp | SITB TB 06, SITB TB 03 RO, SITB TB 04 | 3 |
 | 231 | 106229004 | Qualifier for type of diagnosis | snomed | SITB TB 06, SITB TB 03 SO, SITB TB 16K, SITB TB 01 | 4 |
-| 232 | tb-bac | Terkonfirmasi bakteriologis | kemkes tb-case-definition | SITB TB 06, SITB TB 03 SO, SITB TB 16K, SITB TB 01 | 4 |
-| 233 | tb-clin | Terdiagnosis klinis | kemkes tb-case-definition | SITB TB 06, SITB TB 03 SO, SITB TB 16K, SITB TB 01 | 4 |
+| 232 | tb-bac | Terkonfirmasi bakteriologis | kemkes tb-case-definition | SITB TB 06, SITB TB 03 SO, SITB TB 16K, SITB TB 01, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 233 | tb-clin | Terdiagnosis klinis | kemkes tb-case-definition | SITB TB 06, SITB TB 03 SO, SITB TB 16K, SITB TB 01, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 234 | TK000022 | Akan diobati/dirujuk | kemkes | SITB TB 06, SITB TB 02 | 2 |
 | 235 | 699618001 | Administration of prophylactic antituberculosis agent | snomed | SITB TB 06 | 1 |
 | 236 | 266714009 | Previous treatment continue | snomed | SITB TB 06 | 1 |
@@ -251,7 +251,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 243 | SP000046 | Terapi Antiretroviral (ART) | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC, SITB TB 01 | 7 |
 | 244 | SP000047 | Hasil Tes Diabetes Melitus | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 4 |
 | 245 | 225368008 | Contact tracing | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SITB TB 16K | 3 |
-| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM | 4 |
+| 246 | 85658-3 | Occupation [Type] | loinc | SITB TB 03 SO, SITB TB 03 RO, ePus Pelayanan Pasien, SIPTM, SIHEPI Rekap 3e | 5 |
 | 247 | 106540006 | Laborer | snomed | SITB TB 03 SO, SITB TB 03 RO, SIPTM | 3 |
 | 248 | 106304008 | Teacher | snomed | SITB TB 03 SO (2x), SITB TB 03 RO (2x), SIPTM | 3 |
 | 249 | 106305009 | University/higher education teacher | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
@@ -268,8 +268,8 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 260 | OV000432 | Tenaga Profesional Nonmedis | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 261 | OV000433 | TNI/ Polri | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD | 3 |
 | 262 | OV000434 | Warga Binaan Pemasyarakatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD, SIPTM | 4 |
-| 264 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD, SIPTM, SIHEPI Rekap 3e | 5 |
+| 264 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO, SIHEPI Rekap 3e | 3 |
 | 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
 | 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
 | 267 | LA26683-5 | Not Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO, SITB TB 01 | 3 |
@@ -423,12 +423,12 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 415 | SP000373 | Kader Kesehatan | kemkes sp | SITB TB 16K, ePus Kunjungan Ibu Hamil | 2 |
 | 416 | 415759006 | Tuberculosis index case | snomed | SITB TB 16K | 1 |
 | 417 | 185389009 | Follow-up visit | snomed | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, SITB TB 02, ELSMIL Ibu Hamil | 6 |
-| 418 | 737492002 | Outpatient care management | snomed | SITB TB 16K, ePus Kunjungan Ibu Hamil, ePus Tumbang DDTK, SIPTM (2x) | 4 |
+| 418 | 737492002 | Outpatient care management | snomed | SITB TB 16K, ePus Kunjungan Ibu Hamil, ePus Tumbang DDTK, SIPTM (2x), SIHEPI Rekap 3e, eKohort INC | 6 |
 | 419 | Z20.1 | Contact with and exposure to tuberculosis | icd-10 | SITB TB 16K | 1 |
 | 420 | SP000200 | Invitasi kontak | kemkes sp | SITB TB 16K | 1 |
 | 421 | 439708006 | Home visit | snomed | SITB TB 16K | 1 |
 | 422 | SP000369 | Kontak Dengan Penderita TBC | kemkes sp | SITB TB 16K | 1 |
-| 423 | SP000201 | Kontak Serumah | kemkes sp | SITB TB 16K | 1 |
+| 423 | SP000201 | Kontak Serumah | kemkes sp | SITB TB 16K, ASIK CKG Lansia (27 Apr 2026) | 2 |
 | 424 | SP000202 | Kontak Erat | kemkes sp | SITB TB 16K | 1 |
 | 425 | SP000206 | Dirujuk Pemeriksaan Terduga TBC | kemkes sp | SITB TB 16K | 1 |
 | 426 | 171400006 | Examination for suspected tuberculosis | snomed | SITB TB 16K | 1 |
@@ -440,9 +440,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 432 | SP000374 | Tidak Memenuhi Syarat TPT | kemkes sp | SITB TB 16K | 1 |
 | 433 | SP000212 | Tanggal Pemberian TPT | kemkes sp | SITB TB 16K | 1 |
 | 434 | SP000213 | Hasil Akhir TPT | kemkes sp | SITB TB 16K | 1 |
-| 435 | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | loinc | MPDN Kematian Bayi | 1 |
+| 435 | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | loinc | MPDN Kematian Bayi, eKohort INC | 2 |
 | 436 | 276507005 | Fetal death | snomed | MPDN Kematian Bayi | 1 |
-| 437 | 276506001 | Newborn death | snomed | MPDN Kematian Bayi | 1 |
+| 437 | 276506001 | Newborn death | snomed | MPDN Kematian Bayi, eKohort INC | 2 |
 | 438 | 39016-1 | Age at death | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 439 | SP000716 | Umur Jam (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
 | 440 | SP000717 | Umur Menit (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
@@ -454,21 +454,21 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 446 | LT000008 | Dalam perjalanan dari rumah/masyarakat | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
 | 447 | LT000009 | Dalam perjalanan ke faskes lain | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 448 | SP000099 | FASKES | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 449 | 102 | Pusat Kesehatan Masyarakat | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, ELSMIL Pasca Persalinan | 6 |
+| 449 | 102 | Pusat Kesehatan Masyarakat | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e | 7 |
 | 450 | OT000006 | Rumah Sakit Pemerintah | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 451 | OT000007 | Rumah Sakit Swasta | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 452 | LT000006 | Rumah Ibu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
-| 453 | 104 | Rumah Sakit | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 453 | 104 | Rumah Sakit | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, SIHEPI Rekap 3e | 3 |
+| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e | 6 |
 | 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
-| 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e | 6 |
 | 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
-| 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ELSMIL Pasca Persalinan | 3 |
-| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ELSMIL Pasca Persalinan, SIHEPI Rekap 3e | 4 |
+| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e | 6 |
 | 461 | 394573001 | Maternity clinic | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
-| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
-| 463 | 264362003 | Home | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC | 5 |
+| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e | 6 |
+| 463 | 264362003 | Home | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e | 6 |
 | 464 | LT000007 | Rumah Dukun | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 465 | LT000010 | Lainnya | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
 | 466 | LT000011 | Belum Tahu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus INC | 3 |
@@ -488,21 +488,21 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 480 | SP000088 | RSU - Organisasi Islam | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 481 | SP000089 | RSU - Organisasi Sosial | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
 | 482 | SP000090 | RS - Swasta/Lainnya | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
-| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi, ePus INC | 2 |
+| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi, ePus INC, SIHEPI Rekap 3e | 3 |
 | 484 | 57071-3 | Obstetric delivery method | loinc | MPDN Kematian Bayi, ePus INC | 2 |
 | 485 | 289259007 | Vaginal delivery | snomed | MPDN Kematian Bayi | 1 |
-| 486 | 200144004 | Deliveries by cesarean | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan | 4 |
-| 487 | 48782003 | Delivery normal | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan | 4 |
-| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan | 3 |
+| 486 | 200144004 | Deliveries by cesarean | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC | 5 |
+| 487 | 48782003 | Delivery normal | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC | 5 |
+| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, eKohort INC | 4 |
 | 489 | 303071001 | Person in the family | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
 | 490 | OV000012 | Dukun | kemkes clinical-term | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC | 3 |
-| 491 | 11935004 | Obstetrician Occupation | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan | 4 |
+| 491 | 11935004 | Obstetrician Occupation | snomed | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, eKohort INC | 5 |
 | 492 | SP000075 | Tipe Penyelenggara Faskes Lahir | kemkes sp | MPDN Kematian Bayi | 1 |
 | 493 | 57715-5 | Birth time | loinc | MPDN Kematian Bayi, ePus INC | 2 |
-| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi, ePus INC | 2 |
-| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC | 4 |
-| 496 | ANC.B6.DE24 | Number of pregnancies (gravida) | WHO anc-custom-codes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ELSMIL Ibu Hamil | 4 |
+| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi, ePus INC, ASIK CKG Bayi Baru Lahir (v2) | 3 |
+| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC, SIHEPI Rekap 3e | 5 |
+| 496 | ANC.B6.DE24 | Number of pregnancies (gravida) | WHO anc-custom-codes | MPDN Kematian Bayi, MPDN Kematian Ibu, SIHEPI Rekap 3e | 3 |
+| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ELSMIL Ibu Hamil, SIHEPI Rekap 3e, eKohort ANC | 6 |
 | 498 | 57722-1 | Birth plurality of Pregnancy | loinc | MPDN Kematian Bayi | 1 |
 | 499 | 237244005 | Single pregnancy | snomed | MPDN Kematian Bayi | 1 |
 | 500 | 65147003 | Twin pregnancy | snomed | MPDN Kematian Bayi | 1 |
@@ -545,23 +545,23 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 537 | LA6114-8 | 3 | loinc | ePus Pelayanan Pasien | 1 |
 | 538 | LA10137-0 | 5 | loinc | ePus Pelayanan Pasien | 1 |
 | 539 | 276361009 | Waist circumference | snomed | ePus Pelayanan Pasien | 1 |
-| 540 | 39156-5 | Body mass index (BMI) [Ratio] | loinc | ePus Pelayanan Pasien, ASIK Skrining PTM | 2 |
+| 540 | 39156-5 | Body mass index (BMI) [Ratio] | loinc | ePus Pelayanan Pasien, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
 | 541 | 59575-1 | Body mass index (BMI) [Percentile] Per age | loinc | ePus Pelayanan Pasien | 1 |
 | 542 | 248324001 | Well nourished | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
 | 543 | 248325000 | Undernourished | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
-| 544 | OI000001 | Gizi Buruk | kemkes clinical-term | ePus Pelayanan Pasien, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
-| 545 | 248342006 | Underweight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak | 2 |
+| 544 | OI000001 | Gizi Buruk | kemkes clinical-term | ePus Pelayanan Pasien, ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2) (3x) | 4 |
+| 545 | 248342006 | Underweight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 546 | 43664005 | Normal weight | snomed | ePus Pelayanan Pasien, ePus Tumbang Anak | 2 |
 | 547 | 238131007 | Overweight | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak | 3 |
 | 548 | 414915002 | Obese | snomed | ePus Pelayanan Pasien, ePus MTBS, ePus Tumbang Anak | 3 |
-| 549 | 8480-6 | Systolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM | 7 |
-| 550 | 8462-4 | Diastolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM | 7 |
-| 551 | 9279-1 | Respiratory rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x) | 6 |
-| 552 | 8867-4 | Heart rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC | 4 |
+| 549 | 8480-6 | Systolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), eKohort ANC, eKohort INC | 12 |
+| 550 | 8462-4 | Diastolic blood pressure | loinc | ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, SIPTM, ASIK Skrining PTM, eKohort ANC, eKohort INC | 9 |
+| 551 | 9279-1 | Respiratory rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort ANC, eKohort INC | 8 |
+| 552 | 8867-4 | Heart rate | loinc | ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, eKohort ANC, eKohort INC | 6 |
 | 553 | 8884-9 | Heart rate rythm | loinc | ePus Pelayanan Pasien | 1 |
 | 554 | 271636001 | Pulse regular | snomed | ePus Pelayanan Pasien | 1 |
 | 555 | 61086009 | Pulse irregular | snomed | ePus Pelayanan Pasien | 1 |
-| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x) | 5 |
+| 556 | 8310-5 | Body temperature | loinc | ePus Pelayanan Pasien, ePus ANC, ePus PNC, ePus MTBS, ePus MTBM (2x), eKohort INC | 6 |
 | 557 | 129861002 | Physical activity finding | snomed | ePus Pelayanan Pasien | 1 |
 | 558 | 80316-3 | Pain scale [Type] | loinc | ePus Pelayanan Pasien | 1 |
 | 559 | 81765008 | No pain | snomed | ePus Pelayanan Pasien | 1 |
@@ -572,21 +572,21 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 564 | outp | From outpatient department | http://terminology.hl7. org/CodeSystem/admit -source | ePus Pelayanan Pasien | 1 |
 | 565 | SP000020 | Umur Bulan | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 | 5 |
 | 566 | SP000021 | Umur Hari | kemkes sp | ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 4 |
-| 567 | 32418-6 | Obstetric trimester Stated | loinc | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
-| 568 | ANC.SS.DE13 | Trimester ke | kemkes anc-custom-codes | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
+| 567 | 32418-6 | Obstetric trimester Stated | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC | 3 |
+| 568 | ANC.SS.DE13 | Trimester ke | kemkes anc-custom-codes | ePus Kunjungan Ibu Hamil, ePus ANC, eKohort ANC | 3 |
 | 569 | hosp-trans | Transferred from other hospital | http://terminology.hl7.org/CodeSystem/admit-source | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
-| 570 | 11881-0 | Uterus Fundal height Tape measure | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil | 4 |
-| 571 | ANC.B8.DE105 | Symphysis-fundal height | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil | 2 |
+| 570 | 11881-0 | Uterus Fundal height Tape measure | loinc | ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC | 6 |
+| 571 | ANC.B8.DE105 | Symphysis-fundal height | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil, ELSMIL Ibu Hamil, eKohort ANC, eKohort INC | 4 |
 | 572 | 32392-3 | Deep tendon reflex of Patellar | loinc | ePus Kunjungan Ibu Hamil | 1 |
-| 573 | 55283-6 | Fetal Heart rate | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
-| 574 | ANC.B8.DE107 | Fetal heart rate | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC | 2 |
-| 575 | 249111004 | Engagement of head | loinc | ePus Kunjungan Ibu Hamil (2x) | 1 |
-| 576 | ANC.SS.DE46 | Kepala Terhadap PAP | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x) | 1 |
-| 577 | 62098001 | Head not engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
-| 578 | 249112006 | Head engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
-| 579 | 89087-1 | Fetal Body weight Estimated | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil | 3 |
+| 573 | 55283-6 | Fetal Heart rate | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort ANC | 4 |
+| 574 | ANC.B8.DE107 | Fetal heart rate | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC, eKohort ANC, eKohort INC | 4 |
+| 575 | 249111004 | Engagement of head | loinc | ePus Kunjungan Ibu Hamil (2x), eKohort INC | 2 |
+| 576 | ANC.SS.DE46 | Kepala Terhadap PAP | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), eKohort INC | 2 |
+| 577 | 62098001 | Head not engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC | 4 |
+| 578 | 249112006 | Head engaged | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC, eKohort INC | 4 |
+| 579 | 89087-1 | Fetal Body weight Estimated | loinc | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, eKohort ANC | 4 |
 | 580 | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x) | 1 |
-| 581 | 6096002 | Breech presentation | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC (2x) | 3 |
+| 581 | 6096002 | Breech presentation | snomed | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC (2x), eKohort INC | 4 |
 | 582 | 260415000 | Not detected | snomed | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
 | 583 | 246435002 | Number of fetuses | snomed | ePus Kunjungan Ibu Hamil (2x) | 1 |
 | 584 | ANC.B8.DE109 | Number of fetuses | WHO anc-custom-codes | ePus Kunjungan Ibu Hamil (2x), ePus ANC | 2 |
@@ -596,7 +596,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 588 | 94537-8 | Hemoglobin panel - Blood by HPLC | loinc | ePus Kunjungan Ibu Hamil | 1 |
 | 589 | 718-7 | Hemoglobin [Mass/volume] in Blood | kemkes sp | ePus Kunjungan Ibu Hamil (2x) | 1 |
 | 590 | 278977008 | Human immunodeficiency virus status | snomed | ePus Kunjungan Ibu Hamil, ePus ANC | 2 |
-| 591 | 57071-3 | Obstetric delivery method | https://loinc.org | ePus Kunjungan Ibu Hamil, ELSMIL Pasca Persalinan | 2 |
+| 591 | 57071-3 | Obstetric delivery method | https://loinc.org | ePus Kunjungan Ibu Hamil, ELSMIL Pasca Persalinan, eKohort INC | 3 |
 | 592 | 72178-7 | Given a mosquito net [RHEA] | loinc | ePus Kunjungan Ibu Hamil | 1 |
 | 593 | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | loinc | ePus Kunjungan Ibu Hamil (6x) | 1 |
 | 594 | 119297000 | Blood specimen | snomed | ePus Kunjungan Ibu Hamil (5x), ePus Laboratorium (45x), ePus PNC, ePus MTBS (8x), SIPTM, ASIK Skrining PTM (14x) | 6 |
@@ -629,41 +629,41 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 621 | LA11882-0 | Detected | snomed | ePus Laboratorium | 1 |
 | 622 | LA11883-8 | Not detected | snomed | ePus Laboratorium | 1 |
 | 623 | 94500-6 | SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection | loinc | ePus Laboratorium (3x) | 1 |
-| 624 | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
-| 625 | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
+| 624 | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
+| 625 | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 626 | 3084-1 | Urate [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
-| 627 | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 627 | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
 | 628 | 41653-7 | Glucose [Mass/volume] in Capillary blood by Glucometer | loinc | ePus Laboratorium (3x) | 1 |
-| 629 | 2571-8 | Triglyceride [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
-| 630 | 2085-9 | Cholesterol in HDL [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
+| 629 | 2571-8 | Triglyceride [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 630 | 2085-9 | Cholesterol in HDL [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 5 |
 | 631 | 2089-1 | Cholesterol in LDL [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
 | 632 | 1751-7 | Albumin [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
 | 633 | 2324-2 | Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
-| 634 | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
-| 635 | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
+| 634 | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 635 | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 636 | 1742-6 | Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
 | 637 | 2157-6 | Creatine kinase [Enzymatic activity/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
-| 638 | 20977-5 | Urea [Mass/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
+| 638 | 20977-5 | Urea [Mass/volume] in Blood | loinc | ePus Laboratorium (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 639 | 2885-2 | Protein [Mass/volume] in Serum or Plasma | loinc | ePus Laboratorium (3x) | 1 |
-| 640 | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x) | 2 |
-| 641 | 58410-2 | CBC panel - Blood by Automated count | loinc | ePus Laboratorium (2x) | 1 |
+| 640 | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | loinc | ePus Laboratorium (3x), ASIK Skrining PTM (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 641 | 58410-2 | CBC panel - Blood by Automated count | loinc | ePus Laboratorium (2x), ASIK CKG Balita (v2) (2x) | 2 |
 | 642 | 6690-2 | Leukocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium (5x) | 1 |
-| 643 | 789-8 | Erythrocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium | 1 |
+| 643 | 789-8 | Erythrocytes [#/volume] in Blood by Automated count | loinc | ePus Laboratorium, ASIK CKG Balita (v2) | 2 |
 | 644 | 4544-3 | Hematocrit [Volume Fraction] of Blood by Automated count | loinc | ePus Laboratorium | 1 |
 | 645 | 787-2 | MCV [Entitic mean volume] in Red Blood Cells by Automated count | loinc | ePus Laboratorium | 1 |
 | 646 | 785-6 | MCH [Entitic mass] by Automated count | loinc | ePus Laboratorium | 1 |
 | 647 | 786-4 | MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count | loinc | ePus Laboratorium | 1 |
 | 648 | 26453-1 | Erythrocytes [#/volume] in Blood | loinc | ePus Laboratorium (3x) | 1 |
 | 649 | 26464-8 | Leukocytes [#/volume] in Blood | loinc | ePus Laboratorium (6x), ePus MTBS (3x) | 2 |
-| 650 | 26515-7 | Platelets [#/volume] in Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x) | 2 |
+| 650 | 26515-7 | Platelets [#/volume] in Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
 | 651 | 20570-8 | Hematocrit [Volume Fraction] of Blood | loinc | ePus Laboratorium (3x), ePus MTBS (3x) | 2 |
 | 652 | 11067-6 | Bleeding time | loinc | ePus Laboratorium (3x) | 1 |
 | 653 | 30341-2 | Erythrocyte sedimentation rate [Velocity] in Red Blood Cells | loinc | ePus Laboratorium (3x) | 1 |
 | 654 | 17009-2 | IgM [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
 | 655 | 3183-1 | Clotting time of Blood by Lee White method | loinc | ePus Laboratorium (3x) | 1 |
 | 656 | 17007-6 | IgG [Presence] in Serum | loinc | ePus Laboratorium (3x) | 1 |
-| 657 | 30428-7 | MCV [Entitic volume] | loinc | ePus Laboratorium (3x) | 1 |
-| 658 | 28539-5 | MCH [Entitic mass] | loinc | ePus Laboratorium (3x) | 1 |
+| 657 | 30428-7 | MCV [Entitic volume] | loinc | ePus Laboratorium (3x), ASIK CKG Balita (v2) | 2 |
+| 658 | 28539-5 | MCH [Entitic mass] | loinc | ePus Laboratorium (3x), ASIK CKG Balita (v2) | 2 |
 | 659 | 28540-3 | MCHC [Mass/volume] | loinc | ePus Laboratorium (3x) | 1 |
 | 660 | 26511-6 | Neutrophils/100 leukocytes in Blood | loinc | ePus Laboratorium (6x) | 1 |
 | 661 | 804-5 | Leukocytes [#/volume] in Blood by Manual count | loinc | ePus Laboratorium (3x) | 1 |
@@ -698,7 +698,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 690 | 25338-5 | Dengue virus IgM Ab [Presence] in Serum | loinc | ePus Laboratorium (4x) | 1 |
 | 691 | 91064-6 | Dengue virus NS1 Ag [Presence] in Serum or Plasma by Immunoassay | loinc | ePus Laboratorium (3x) | 1 |
 | 692 | 47085-6 | Plasmodium sp DNA [Presence] in Blood by NAA with probe detection | loinc | ePus Laboratorium (3x) | 1 |
-| 693 | 34534-8 | 12 lead EKG panel | loinc | ePus Laboratorium (3x) | 1 |
+| 693 | 34534-8 | 12 lead EKG panel | loinc | ePus Laboratorium (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 694 | 66862007 | Radiologist | snomed | ePus Laboratorium (2x), ePus ANC (13x), ASIK Skrining PTM (6x) | 3 |
 | 695 | 11525-3 | US for pregnancy | loinc | ePus Laboratorium (3x), ePus ANC (11x) | 2 |
 | 696 | 5778-6 | Color of Urine | loinc | ePus Laboratorium (3x) | 1 |
@@ -719,35 +719,35 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 711 | 105908-8 | Bacteria [#/area] in Urine sediment | loinc | ePus Laboratorium (3x) | 1 |
 | 712 | 2106-3 | Choriogonadotropin [Presence] in Urine | loinc | ePus Laboratorium (3x) | 1 |
 | 713 | 11258-1 | Hepatitis B virus DNA [Units/volume] in Serum | loinc | ePus Laboratorium (3x) | 1 |
-| 714 | K2 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
-| 715 | K3 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
-| 716 | K4 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
-| 717 | K5 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
-| 718 | K6 | Tidak ada | episodeofcare/ANC | ePus ANC | 1 |
+| 714 | K2 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
+| 715 | K3 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
+| 716 | K4 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
+| 717 | K5 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
+| 718 | K6 | Tidak ada | episodeofcare/ANC | ePus ANC, eKohort ANC | 2 |
 | 719 | 305956004 | Referral by physician | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
 | 720 | 306052007 | Referral by midwife | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
 | 721 | SP000116 | Rujukan dari Puskesmas Pembantu | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
 | 722 | SP000117 | Rujukan dari Puskesmas | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
 | 723 | SP000118 | Rujukan dari Rumah Bersalin / Klinik | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
 | 724 | SP000119 | Rujukan dari Rumah Sakit | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
-| 725 | 11977-6 | [#] Parity | loinc | ePus ANC (2x), ePus PNC (2x) | 2 |
-| 726 | 69043-8 | Other pregnancy outcomes # | loinc | ePus ANC, ePus PNC | 2 |
-| 727 | ANC.B6.DE32 | Parity | WHO anc-custom-codes | ePus ANC, ePus PNC | 2 |
+| 725 | 11977-6 | [#] Parity | loinc | ePus ANC (2x), ePus PNC (2x), SIHEPI Rekap 3e | 3 |
+| 726 | 69043-8 | Other pregnancy outcomes # | loinc | ePus ANC, ePus PNC, SIHEPI Rekap 3e | 3 |
+| 727 | ANC.B6.DE32 | Parity | WHO anc-custom-codes | ePus ANC, ePus PNC, SIHEPI Rekap 3e | 3 |
 | 728 | SP000050 | Riwayat Onset Persalinan | loinc | ePus ANC, ePus PNC | 2 |
 | 729 | SP000132 | Memiliki Buku KIA | kemkes sp | ePus ANC, ePus PNC | 2 |
 | 730 | 56077-1 | Body weight --pre current pregnancy | loinc | ePus ANC, ePus PNC, ELSMIL Ibu Hamil | 3 |
 | 731 | ANC.B8.DE2 | Pre-gestational weight | WHO anc-custom-codes | ePus ANC, ePus PNC, ELSMIL Ibu Hamil | 3 |
 | 732 | 404684003 | Clinical finding | snomed | ePus ANC, ePus Tumbang Anak (2x) | 2 |
-| 733 | 3401000175105 | Total number of prenatal care visits | snomed | ePus ANC | 1 |
+| 733 | 3401000175105 | Total number of prenatal care visits | snomed | ePus ANC, eKohort ANC | 2 |
 | 734 | SP000134 | Jenis Lokasi Screening | kemkes sp | ePus ANC, ePus PNC | 2 |
-| 735 | 82242000 | Children’s hospital | snomed | ePus ANC, ePus INC, ePus PNC | 3 |
+| 735 | 82242000 | Children’s hospital | snomed | ePus ANC, ePus INC, ePus PNC, SIHEPI Rekap 3e | 4 |
 | 736 | 104 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC, ELSMIL Pasca Persalinan | 4 |
 | 737 | OT000003 | RS ODHA | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC | 3 |
 | 738 | OT000004 | Bidan Praktek Mandiri | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | ePus ANC, ePus INC, ePus PNC | 3 |
 | 739 | SP000131 | Status Pindahan | kemkes sp | ePus ANC, ePus INC, ePus PNC | 3 |
 | 740 | 10197-2 | Physical findings of Eye Narrative | loinc | ePus ANC (2x) | 1 |
 | 741 | ANC.SS.DE26 | Pemeriksaan Fisik Konjungtiva | kemkes anc-custom-codes | ePus ANC | 1 |
-| 742 | A | Abnormal | v3-ObservationInterpretation | ePus ANC (13x) | 1 |
+| 742 | A | Abnormal | v3-ObservationInterpretation | ePus ANC (13x), ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (5x) | 4 |
 | 743 | ANC.SS.DE27 | Pemeriksaan Fisik Sklera | kemkes anc-custom-codes | ePus ANC | 1 |
 | 744 | 10206-1 | Physical findings of Skin Narrative | loinc | ePus ANC | 1 |
 | 745 | 11411-6 | Physical findings of Neck Narrative | loinc | ePus ANC | 1 |
@@ -768,9 +768,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 760 | 116312005 | Finding of lower limb | snomed | ePus ANC | 1 |
 | 761 | 102572006 | Edema of lower extremity (finding) | snomed | ePus ANC | 1 |
 | 762 | 299412000 | Finding of patella structure | snomed | ePus ANC | 1 |
-| 763 | ANC.B8.DE17 | Systolic blood pressure | WHO anc-custom-codes | ePus ANC | 1 |
-| 764 | ANC.B8.DE19 | Diastolic blood pressure | WHO anc-custom-codes | ePus ANC | 1 |
-| 765 | ANC.SS.DE2 | Pernapasan | kemkes anc-custom-codes | ePus ANC | 1 |
+| 763 | ANC.B8.DE17 | Systolic blood pressure | WHO anc-custom-codes | ePus ANC, eKohort ANC | 2 |
+| 764 | ANC.B8.DE19 | Diastolic blood pressure | WHO anc-custom-codes | ePus ANC, eKohort ANC | 2 |
+| 765 | ANC.SS.DE2 | Pernapasan | kemkes anc-custom-codes | ePus ANC, eKohort ANC | 2 |
 | 766 | 8478-0 | Mean blood pressure | loinc | ePus ANC | 1 |
 | 767 | SP000634 | Tinggi fundus terdeteksi | kemkes sp | ePus ANC | 1 |
 | 768 | SP000635 | Tinggi fundus jari | kemkes sp | ePus ANC | 1 |
@@ -791,7 +791,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 783 | 249134008 | Bloodstained liquor | snomed | ePus ANC, ePus INC | 2 |
 | 784 | 168092006 | Amniotic fluid -meconium stain | snomed | ePus ANC, ePus INC | 2 |
 | 785 | 11525-3 | US for pregnancy | snomed | ePus ANC (2x) | 1 |
-| 786 | 271692001 | Presentation of fetus | snomed | ePus ANC, ePus INC | 2 |
+| 786 | 271692001 | Presentation of fetus | snomed | ePus ANC, ePus INC, eKohort INC | 3 |
 | 787 | ANC.SS.DE41 | Letak Janin USG | WHO anc-custom-codes | ePus ANC | 1 |
 | 788 | 398236008 | Intrauterine | snomed | ePus ANC, ePus INC | 2 |
 | 789 | 298109001 | Ectopic | snomed | ePus ANC, ePus INC | 2 |
@@ -799,7 +799,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 791 | 11877-8 | Fetal presentation US | loinc | ePus ANC (2x) | 1 |
 | 792 | 11878-6 | Number of fetuses by US | loinc | ePus ANC (2x) | 1 |
 | 793 | 249111004 | Engagement of head | snomed | ePus ANC, ePus INC | 2 |
-| 794 | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | kemkes anc-custom-codes | ePus ANC, ELSMIL Ibu Hamil | 2 |
+| 794 | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | kemkes anc-custom-codes | ePus ANC, ELSMIL Ibu Hamil, eKohort ANC | 3 |
 | 795 | 11888-5 | Gestational age US composite estimate | loinc | ePus ANC (2x) | 1 |
 | 796 | ANC.B6.DE20 | Ultrasound | WHO anc-custom-codes | ePus ANC | 1 |
 | 797 | 11781-2 | Delivery date US composite estimate | loinc | ePus ANC (2x) | 1 |
@@ -814,21 +814,21 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 806 | 76272004 | Syphilis | snomed | ePus ANC | 1 |
 | 807 | 61462000 | Malaria | snomed | ePus ANC, ePus MTBS | 2 |
 | 808 | 386337006 | Intrapartal care | snomed | ePus INC | 1 |
-| 809 | 288203005 | Transverse/oblique lie | snomed | ePus INC (2x) | 1 |
-| 810 | 70028003 | Vertex presentation | snomed | ePus INC | 1 |
+| 809 | 288203005 | Transverse/oblique lie | snomed | ePus INC (2x), eKohort INC | 2 |
+| 810 | 70028003 | Vertex presentation | snomed | ePus INC, eKohort INC | 2 |
 | 811 | 249083005 | Posterior fontanelle presenting | snomed | ePus INC | 1 |
 | 812 | 23954006 | Acromion presentation | snomed | ePus INC | 1 |
 | 813 | 8014007 | Brow presentation of fetus | snomed | ePus INC | 1 |
 | 814 | 8017000 | Face presentation | snomed | ePus INC | 1 |
 | 815 | 249097002 | Footling breech presentation | snomed | ePus INC | 1 |
 | 816 | 124736009 | Compound presentation | snomed | ePus INC | 1 |
-| 817 | 289282009 | Amniotic membrane finding | snomed | ePus INC | 1 |
-| 818 | 249125003 | Intact membranes | snomed | ePus INC | 1 |
+| 817 | 289282009 | Amniotic membrane finding | snomed | ePus INC, eKohort INC | 2 |
+| 818 | 249125003 | Intact membranes | snomed | ePus INC, eKohort INC | 2 |
 | 819 | SP000120 | Non-intact membrane | snomed | ePus INC | 1 |
 | 820 | SP000123 | Integrasi Program | kemkes sp | ePus INC, SITB TB 01 | 2 |
 | 821 | SP000124 | Obat anti malaria | kemkes sp | ePus INC, ePus PNC | 2 |
 | 822 | SP000125 | Obar anti hepatitis B | kemkes sp | ePus INC, ePus PNC | 2 |
-| 823 | 76516-4 | Gestational age—​at birth | loinc | ePus INC, ELSMIL Baduta | 2 |
+| 823 | 76516-4 | Gestational age—​at birth | loinc | ePus INC, ELSMIL Baduta, eKohort INC | 3 |
 | 824 | 118215003 | Delivery finding | snomed | ePus INC | 1 |
 | 825 | 125677006 | Relative | snomed | ePus INC | 1 |
 | 826 | 200138003 | Vacuum extractor delivery - delivered | snomed | ePus INC | 1 |
@@ -838,7 +838,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 830 | 386661006 | Fever | snomed | ePus INC, ePus MTBS | 2 |
 | 831 | 91175000 | Seizure | snomed | ePus INC, ePus MTBS, ePus MTBM | 3 |
 | 832 | 249215002 | Odor of lochia | snomed | ePus INC, ePus PNC | 2 |
-| 833 | 59283008 | Maternal death | snomed | ePus INC | 1 |
+| 833 | 59283008 | Maternal death | snomed | ePus INC, eKohort INC | 2 |
 | 834 | 387700009 | Prolonged latent phase of labor | snomed | ePus INC | 1 |
 | 835 | 398143009 | Uterine contraction monitoring | snomed | ePus INC (2x) | 1 |
 | 836 | 289708007 | Regular uterine contractions | snomed | ePus INC (2x) | 1 |
@@ -848,16 +848,16 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 840 | SP000399 | <20 detik | kemkes sp | ePus INC (2x) | 1 |
 | 841 | SP000400 | 20-40 detik | kemkes sp | ePus INC (2x) | 1 |
 | 842 | SP000401 | >40 detik | kemkes sp | ePus INC (2x) | 1 |
-| 843 | 249120008 | Onset of labor first stage | snomed | ePus INC | 1 |
-| 844 | 249160009 | Onset of labor second stage | snomed | ePus INC | 1 |
+| 843 | 249120008 | Onset of labor first stage | snomed | ePus INC, eKohort INC | 2 |
+| 844 | 249160009 | Onset of labor second stage | snomed | ePus INC, eKohort INC (2x) | 2 |
 | 845 | OC000018 | Onset Kala III | kemkes clinical-term | ePus INC | 1 |
 | 846 | 236994008 | Placental delivery procedure | kemkes clinical-term | ePus INC | 1 |
 | 847 | 289267004 | Finding of completeness of placenta | snomed | ePus INC | 1 |
 | 848 | 249170006 | Complete placenta at delivery | snomed | ePus INC | 1 |
 | 849 | 268479002 | Incomplete placenta at delivery | snomed | ePus INC | 1 |
 | 850 | SP000127 | Injeksi Oksitosin | kemkes sp | ePus INC | 1 |
-| 851 | 302384005 | Controlled cord traction of placenta | snomed | ePus INC | 1 |
-| 852 | 236996005 | Abdominal uterine fundal massage | snomed | ePus INC | 1 |
+| 851 | 302384005 | Controlled cord traction of placenta | snomed | ePus INC, eKohort INC | 2 |
+| 852 | 236996005 | Abdominal uterine fundal massage | snomed | ePus INC, eKohort INC | 2 |
 | 853 | OC000019 | Onset Kala IV | kemkes clinical-term | ePus INC | 1 |
 | 854 | 9293002 | Atony of uterus | snomed | ePus INC (2x) | 1 |
 | 855 | 1148943004 | Retention of placenta and uterine membrane | snomed | ePus INC | 1 |
@@ -866,7 +866,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 858 | 118216002 | Labor finding | snomed | ePus INC | 1 |
 | 859 | 719051004 | Quantity of postpartum maternal blood loss | snomed | ePus INC | 1 |
 | 860 | 717809003 | Immediate postpartum care | snomed | ePus INC (2x) | 1 |
-| 861 | 8462-4 | Diastolic blood pressure | snomed | ePus INC | 1 |
+| 861 | 8462-4 | Diastolic blood pressure | snomed | ePus INC, ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 862 | 199746004 | Obstructed labor | snomed | ePus INC | 1 |
 | 863 | 38010008 | Intrapartum hemorrhage | snomed | ePus INC (2x) | 1 |
 | 864 | 44223004 | Premature rupture of membranes | snomed | ePus INC | 1 |
@@ -879,10 +879,10 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 871 | LA14273-9 | Induced abortion | loinc | ePus INC | 1 |
 | 872 | 409014006 | Delivery care management | snomed | ePus INC, ePus PNC | 2 |
 | 873 | SP000130 | Menggunakan Partograf | kemkes sp | ePus INC | 1 |
-| 874 | 431868002 | Initiation of breastfeeding | snomed | ePus INC | 1 |
-| 875 | OC000016 | Waktu Inisiasi Menyusui Dini | kemkes clinical-term | ePus INC | 1 |
-| 876 | OV000014 | Kurang dari 1 Jam | kemkes clinical-term | ePus INC | 1 |
-| 877 | OV000015 | Lebih dari 1 Jam | kemkes clinical-term | ePus INC | 1 |
+| 874 | 431868002 | Initiation of breastfeeding | snomed | ePus INC, eKohort INC | 2 |
+| 875 | OC000016 | Waktu Inisiasi Menyusui Dini | kemkes clinical-term | ePus INC, eKohort INC | 2 |
+| 876 | OV000014 | Kurang dari 1 Jam | kemkes clinical-term | ePus INC, eKohort INC | 2 |
+| 877 | OV000015 | Lebih dari 1 Jam | kemkes clinical-term | ePus INC, eKohort INC | 2 |
 | 878 | 409063005 | Counselling | snomed | ePus INC (2x) | 1 |
 | 879 | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | kemkes clinical-term | ePus INC, ePus PNC | 2 |
 | 880 | SP000121 | Edukasi Tanda Bahaya Baru Lahir | kemkes sp | ePus INC | 1 |
@@ -890,11 +890,11 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 882 | ED000005 | Edukasi Gizi | kemkes clinical-term | ePus INC | 1 |
 | 883 | PC000001 | Perawatan Tali Pusat | kemkes clinical-term | ePus INC, ePus PNC | 2 |
 | 884 | ED000010 | Edukasi PHBS | kemkes clinical-term | ePus INC, ePus PNC | 2 |
-| 885 | SP000126 | ARV Profilaksis | kemkes sp | ePus INC | 1 |
+| 885 | SP000126 | ARV Profilaksis | kemkes sp | ePus INC, SIHEPI Rekap 3e | 2 |
 | 886 | 249222005 | Neonatal condition | snomed | ePus INC, ELSMIL Pasca Persalinan | 2 |
 | 887 | Z39.2 | Routine postpartum follow-up | icd-10 | ePus PNC | 1 |
 | 888 | 289530006 | Vaginal bleeding | snomed | ePus PNC | 1 |
-| 889 | 81661-1 | Blood Loss [Volume] Measured | loinc | ePus PNC | 1 |
+| 889 | 81661-1 | Blood Loss [Volume] Measured | loinc | ePus PNC, eKohort INC | 2 |
 | 890 | 364297003 | Female perineum observable | loinc | ePus PNC | 1 |
 | 891 | OC000020 | Tanda Infeksi Perineum | kemkes clinical-term | ePus PNC | 1 |
 | 892 | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | kemkes clinical-term | ePus PNC | 1 |
@@ -1095,7 +1095,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1087 | OV000253 | Terlalu lemah untuk menyusu | kemkes clinical-term | ePus MTBS | 1 |
 | 1088 | 271398006 | Weight steady | snomed | ePus MTBS | 1 |
 | 1089 | OC000108 | Klasifikasi status gizi | kemkes clinical-term | ePus MTBS | 1 |
-| 1090 | OI000004 | Risiko Gizi Lebih | kemkes clinical-term | ePus MTBS, ePus Tumbang Anak | 2 |
+| 1090 | OI000004 | Risiko Gizi Lebih | kemkes clinical-term | ePus MTBS, ePus Tumbang Anak, ASIK CKG Balita (v2) (2x) | 3 |
 | 1091 | OV000254 | Gizi buruk dengan komplikasi berat | kemkes clinical-term | ePus MTBS | 1 |
 | 1092 | OV000255 | Gizi buruk tanpa komplikasi | kemkes clinical-term | ePus MTBS | 1 |
 | 1093 | 1153604005 | Body height for age z-score | snomed | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
@@ -1114,7 +1114,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1106 | OV000187 | Terpajan HIV: mungkin infeksi HIV | kemkes clinical-term | ePus MTBS, ePus MTBM | 2 |
 | 1107 | SP000249 | Mungkin Bukan Infeksi HIV | kemkes sp | ePus MTBS | 1 |
 | 1108 | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx | ePus MTBS, ePus MTBM | 2 |
-| 1109 | VG45 | HepB | kfa | ePus MTBS (5x), ePus MTBM, ELSMIL Baduta | 3 |
+| 1109 | VG45 | HepB | kfa | ePus MTBS (5x), ePus MTBM, ELSMIL Baduta, SIHEPI Rekap 3e | 4 |
 | 1110 | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx | ePus MTBS (4x) | 1 |
 | 1111 | VG107 | DTAP | kfa | ePus MTBS (4x) | 1 |
 | 1112 | VG17 | HIB | kfa | ePus MTBS (4x) | 1 |
@@ -1211,15 +1211,15 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1203 | OV000205 | Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian minum | kemkes clinical-term | ePus MTBM | 1 |
 | 1204 | OC000087 | Pemberian Vitamin K pada Bayi Baru Lahir | kemkes clinical-term | ePus MTBM | 1 |
 | 1205 | 448883004 | Injection of vitamin K1 | snomed | ePus MTBM | 1 |
-| 1206 | 8308-9 | Body height --standing | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
-| 1207 | 8306-3 | Body height --lying | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
+| 1206 | 8308-9 | Body height --standing | loinc | ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2) | 3 |
+| 1207 | 8306-3 | Body height --lying | loinc | ePus Tumbang Anak, ePus Tumbang DDTK, ASIK CKG Balita (v2) | 3 |
 | 1208 | 50373000 | Body height measure | loinc | ePus Tumbang Anak | 1 |
 | 1209 | 10904000 | Standing position | snomed | ePus Tumbang Anak | 1 |
 | 1210 | 102538003 | Recumbent body position | snomed | ePus Tumbang Anak | 1 |
 | 1211 | OC000012 | Kenaikan Berat Badan Adekuat | kemkes  | ePus Tumbang Anak | 1 |
 | 1212 | 1153590000 | Length for age z-score | snomed | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
-| 1213 | OI000010 | Risiko Berat Badan Lebih | kemkes clinical-term | ePus Tumbang Anak | 1 |
-| 1214 | OI000007 | Berat Badan Sangat Kurang | kemkes clinical-term | ePus Tumbang Anak | 1 |
+| 1213 | OI000010 | Risiko Berat Badan Lebih | kemkes clinical-term | ePus Tumbang Anak, ASIK CKG Balita (v2) | 2 |
+| 1214 | OI000007 | Berat Badan Sangat Kurang | kemkes clinical-term | ePus Tumbang Anak, ASIK CKG Balita (v2) | 2 |
 | 1215 | 1153594009 | Head circumference for age z-score | loinc | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
 | 1216 | 170218003 | Child examination: gross motor development | snomed | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
 | 1217 | 170219006 | Child examination: fine motor development | snomed | ePus Tumbang Anak (3x), ePus Tumbang DDTK | 2 |
@@ -1240,9 +1240,9 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1232 | 704352005 | At increased risk of delayed growth | snomed | ePus Tumbang DDTK | 1 |
 | 1233 | SP000057 | Perlambatan Pertumbuhan Linear | kemkes sp | ePus Tumbang DDTK | 1 |
 | 1234 | SP000058 | Early Adiposity Rebound | kemkes sp | ePus Tumbang DDTK | 1 |
-| 1235 | Ds | Perkembangan sesuai usia | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK | 1 |
-| 1236 | Dm | Perkembangan meragukan | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK | 1 |
-| 1237 | Dp | Perkembangan curiga adanya penyimpangan | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK | 1 |
+| 1235 | Ds | Perkembangan sesuai usia | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK, ASIK CKG Balita (v2) | 2 |
+| 1236 | Dm | Perkembangan meragukan | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK, ASIK CKG Balita (v2) | 2 |
+| 1237 | Dp | Perkembangan curiga adanya penyimpangan | http://terminology.kemkes.go.id/Codesystem/kpsp | ePus Tumbang DDTK, ASIK CKG Balita (v2) | 2 |
 | 1238 | 64957009 | Uncertain | snomed | ePus Tumbang DDTK (2x) | 1 |
 | 1239 | 441041000124100 | Counseling about nutrition | icd-9-cm | ePus Tumbang DDTK | 1 |
 | 1240 | 410295000 | Growth/development education, guidance, and counseling | icd-9-cm | ePus Tumbang DDTK | 1 |
@@ -1406,7 +1406,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1398 | 827034002 | Scar of skin following Bacillus Calmette-Guerin immunization | snomed | SITB TB 01 | 1 |
 | 1399 | 2667000 | Absent | snomed | SITB TB 01 | 1 |
 | 1400 | 52101004 | Present | snomed | SITB TB 01 | 1 |
-| 1401 | 89372-7 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | loinc | SITB TB 01 | 1 |
+| 1401 | 89372-7 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | loinc | SITB TB 01, ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (3x) | 4 |
 | 1402 | 48635004 | Fine needle biopsy | snomed | SITB TB 01 | 1 |
 | 1403 | SP000790 | Hasil Pemeriksaan Kontak TBC | kemkes sp | SITB TB 01 | 1 |
 | 1404 | 11999007 | Inactive tuberculosis | snomed | SITB TB 01 | 1 |
@@ -1503,7 +1503,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1495 | SP000224 | Cukup atau Lebih Bulan: Umur kehamilan saat lahir >= 37 minggu | kemkes sp | ELSMIL Baduta | 1 |
 | 1496 | 10761241000119104 | Preterm labor with preterm delivery (finding) |  | ELSMIL Baduta | 1 |
 | 1497 | 89269-5 | Body height Measured --at birth | https://loinc.org | ELSMIL Baduta | 1 |
-| 1498 | 8339-4 | Birth weight Measured | https://loinc.org | ELSMIL Baduta (2x) | 1 |
+| 1498 | 8339-4 | Birth weight Measured | https://loinc.org | ELSMIL Baduta (2x), eKohort INC | 2 |
 | 1499 | SP000024 | Monitoring ASI Eksklusif Bulan 0 | kemkes sp | ELSMIL Baduta | 1 |
 | 1500 | SP000029 | Tidak ASI Eksklusif | kemkes sp | ELSMIL Baduta | 1 |
 | 1501 | 16090371000119103 | Exposure to second hand tobacco smoke | loinc | ELSMIL Baduta (2x) | 1 |
@@ -1539,7 +1539,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1531 | 18070006 | Impacted cerumen | snomed | SIPTM (2x) | 1 |
 | 1532 | 1091181000119108 | Chronic suppurative otitis media of right middle ear | snomed | SIPTM | 1 |
 | 1533 | 1088571000119107 | Chronic suppurative otitis media of left middle ear | snomed | SIPTM | 1 |
-| 1534 | X099241 | Tes IVA | kemkes examination | SIPTM, ASIK Skrining PTM (2x) | 2 |
+| 1534 | X099241 | Tes IVA | kemkes examination | SIPTM, ASIK Skrining PTM (2x), ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
 | 1535 | 300558006 | Aceto-white reaction negative | snomed | SIPTM, ASIK Skrining PTM (2x) | 2 |
 | 1536 | 300557001 | Aceto-white reaction positive | snomed | SIPTM, ASIK Skrining PTM (2x) | 2 |
 | 1537 | 37610005 | Inflammation of cervix | snomed | SIPTM | 1 |
@@ -1618,15 +1618,15 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1610 | SP000111 | Hasil Kuesioner PUMA | kemkes sp | ASIK Skrining PTM | 1 |
 | 1611 | 2569-2 | Lipids [Mass/volume] in Serum | loinc | ASIK Skrining PTM (15x) | 1 |
 | 1612 | 271921002 | Electrocardiogram finding | snomed | ASIK Skrining PTM (15x) | 1 |
-| 1613 | 164854000 | Electrocardiogram normal | snomed | ASIK Skrining PTM (5x) | 1 |
+| 1613 | 164854000 | Electrocardiogram normal | snomed | ASIK Skrining PTM (5x), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
 | 1614 | 102594003 | Electrocardiogram abnormal | snomed | ASIK Skrining PTM (5x) | 1 |
-| 1615 | 24601-7 | US Breast | loinc | ASIK Skrining PTM (3x) | 1 |
+| 1615 | 24601-7 | US Breast | loinc | ASIK Skrining PTM (3x), ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1616 | 367644007 | Simple cyst | snomed | ASIK Skrining PTM | 1 |
 | 1617 | 449837001 | Complex cyst of breast | snomed | ASIK Skrining PTM | 1 |
-| 1618 | 44550-2 | Human papillomavirus DNA [Presence] in Cervix by Probe | loinc | ASIK Skrining PTM (3x) | 1 |
+| 1618 | 44550-2 | Human papillomavirus DNA [Presence] in Cervix by Probe | loinc | ASIK Skrining PTM (3x), ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
 | 1619 | 787724008 | Human papillomavirus deoxyribonucleic acid not detected | snomed | ASIK Skrining PTM | 1 |
 | 1620 | SP000106 | HPV DNA Tipe 16/18 | kemkes sp | ASIK Skrining PTM | 1 |
-| 1621 | OV000351 | Positif (HPV tipe onkogenik lain) | kemkes clinical-term | ASIK Skrining PTM | 1 |
+| 1621 | OV000351 | Positif (HPV tipe onkogenik lain) | kemkes clinical-term | ASIK Skrining PTM, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
 | 1622 | 275981009 | Screening for malignant neoplasm of lung | snomed | ASIK Skrining PTM | 1 |
 | 1623 | 723505004 | Low risk | snomed | ASIK Skrining PTM (2x) | 1 |
 | 1624 | 25594002 | Moderate risk of | snomed | ASIK Skrining PTM (2x) | 1 |
@@ -1637,3 +1637,359 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1629 | SP000110 | Curiga Kanker Kolorektal | kemkes sp | ASIK Skrining PTM | 1 |
 | 1630 | 162572001 | Suspected malignancy | snomed | ASIK Skrining PTM | 1 |
 | 1631 | SP000114 | Suspek Thalassemia | kemkes sp | ASIK Skrining PTM | 1 |
+| 1632 | Z01.8 | Other specified special examinations | icd-10 | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 1633 | 424144002.0 | Current chronological age | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 5 |
+| 1634 | 89269-5 | Body height Measured --at birth | loinc | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1635 | 103228002.0 | Hemoglobin saturation with oxygen | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1636 | SP000449 | Hasil Pemeriksaan Skrining Penyakit Jantung Bawaan | kemkes sp | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1637 | 410519009.0 | At risk | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2) (3x) | 2 |
+| 1638 | 260385009.0 | Negative | snomed | ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (7x) | 4 |
+| 1639 | 29575-8 | Thyrotropin [Units/volume] in DBS | loinc | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1640 | POS | Positve | v3-ObservationInterpretation | ASIK CKG Bayi Baru Lahir (v2) (6x) | 1 |
+| 1641 | NEG | Negative | v3-ObservationInterpretation | ASIK CKG Bayi Baru Lahir (v2) (6x), ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x) | 4 |
+| 1642 | 32546-4 | Glucose-6-Phosphate dehydrogenase [Enzymatic activity/mass] in Red Blood Cells | loinc | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1643 | 57086-1 | Congenital adrenal hyperplasia newborn screening panel | loinc | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1644 | 25179006.0 | Blood unit collection | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1645 | 400984005.0 | Congenital hypothyroidism screening test | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1646 | 3016-3 | Thyrotropin [Units/volume] in Serum or Plasma | loinc | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1647 | 252298007.0 | Glucose-6-phosphate dehydrogenase deficiency spot test | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1648 | 431420002.0 | Screening for congenital adrenal hyperplasia | snomed | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1649 | TK000151 | Edukasi skrining hiperbilirubinemia dan kelainan saluran empedu | kemkes | ASIK CKG Bayi Baru Lahir (v2) | 1 |
+| 1650 | 267030001.0 | Yellow or jaundiced color | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1651 | 225592001.0 | Finding of color of stool | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1652 | 271863002.0 | Stool color abnormal | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1653 | 167605001.0 | Stool color normal | snomed | ASIK CKG Bayi Baru Lahir (v2) (2x) | 1 |
+| 1654 | 1145403003.0 | Macrocephaly | snomed | ASIK CKG Balita (v2) (2x) | 1 |
+| 1655 | 840673007.0 | Normal Head | snomed | ASIK CKG Balita (v2) (2x) | 1 |
+| 1656 | 1148757008.0 | Microcephaly | snomed | ASIK CKG Balita (v2) (2x) | 1 |
+| 1657 | 17621005.0 | Normal | snomed | ASIK CKG Balita (v2) (4x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1658 | 723509005.0 | High risk | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x) | 4 |
+| 1659 | TK000154 | ≥1 cm, lebih dari 1 KGB, tidak nyeri | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1660 | TK000155 | <1 cm, lebih dari 1 KGB, tidak nyeri | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1661 | TK000156 | <1 cm, tidak nyeri | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1662 | TK000157 | Negatif <10 mm | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1663 | TK000158 | Negatif <5 mm pada imunokompromais | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1664 | TK000159 | Positif ≥10 mm | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1665 | TK000160 | Positif ≥5 mm pada imunokompromais | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1666 | TK000162 | Dugaan bukan Tuberkulosis klinis | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1667 | TK000161 | Dugaan Tuberkulosis klinis | kemkes | ASIK CKG Balita (v2), ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1668 | TK000163 | Curiga kelainan pupil putih pada anak | kemkes | ASIK CKG Balita (v2) | 1 |
+| 1669 | 45089002.0 | Normal vision | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x) | 4 |
+| 1670 | 7973008.0 | Abnormal vision | snomed | ASIK CKG Balita (v2) | 1 |
+| 1671 | 1153593003.0 | Weight for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1672 | 248342006.0 | Underweight | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1673 | 43664005.0 | Normal weight | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
+| 1674 | 1153604005.0 | Body height for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1675 | 1153590000.0 | Length for age z score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1676 | 17489000.0 | Body height normal for age | snomed | ASIK CKG Balita (v2) | 1 |
+| 1677 | 444000005.0 | Short stature for age | snomed | ASIK CKG Balita (v2) | 1 |
+| 1678 | OI000011 | Sangat Pendek | kemkes clinical-term | ASIK CKG Balita (v2) | 1 |
+| 1679 | 83077003.0 | Tall for age | snomed | ASIK CKG Balita (v2) | 1 |
+| 1680 | 1153600001.0 | Weight for height z-score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1681 | 1153598007.0 | Weight for length z score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1682 | 248324001.0 | Well nourished | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Lansia (27 Apr 2026) (3x) | 2 |
+| 1683 | 248325000.0 | Undernourished | snomed | ASIK CKG Balita (v2) (3x) | 1 |
+| 1684 | 238131007.0 | Overweight | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
+| 1685 | 414915002.0 | Obese | snomed | ASIK CKG Balita (v2) (3x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1686 | 1153596006.0 | Body mass index for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1687 | 1153594009.0 | Head circumference for age z-score | snomed | ASIK CKG Balita (v2) | 1 |
+| 1688 | SP000450 | Faktor Risiko Tuberkulosis | kemkes sp | ASIK CKG Balita (v2) | 1 |
+| 1689 | SP000455 | Ada Risiko | kemkes sp | ASIK CKG Balita (v2) (2x) | 1 |
+| 1690 | SP000456 | Tidak Ada Risiko | kemkes sp | ASIK CKG Balita (v2) (2x) | 1 |
+| 1691 | SP000451 | Faktor Risiko Talasemia | kemkes sp | ASIK CKG Balita (v2) | 1 |
+| 1692 | SP000452 | Keluhan dan Gejala Diabetes Melitus Pada Bayi dan Anak Prasekolah | kemkes sp | ASIK CKG Balita (v2) | 1 |
+| 1693 | SP000453 | Tidak Ada Keluhan dan Gejala Diabetes | kemkes sp | ASIK CKG Balita (v2) | 1 |
+| 1694 | SP000454 | Ada Keluhan dan Gejala Diabetes | kemkes sp | ASIK CKG Balita (v2) | 1 |
+| 1695 | 1290220002.0 | Laboratory worker | snomed | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan | 3 |
+| 1696 | 119297000.0 | Blood specimen | snomed | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan | 3 |
+| 1697 | 714628002.0 | Prediabetes | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (5x), ASIK CKG Dewasa Perempuan (5x), ASIK CKG Lansia (27 Apr 2026) (4x) | 4 |
+| 1698 | 302866003.0 | Hypoglycemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (3x) | 4 |
+| 1699 | 80394007.0 | Hyperglycemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 4 |
+| 1700 | 271737000.0 | Anemia | snomed | ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1701 | 860635002.0 | No anemia present | snomed | ASIK CKG Balita (v2), ASIK CKG Lansia (27 Apr 2026) (2x) | 2 |
+| 1702 | L | Low | v3-ObservationInterpretation | ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 4 |
+| 1703 | 788-0 | Erythrocyte distribution width [Ratio] by Automated count | loinc | ASIK CKG Balita (v2) | 1 |
+| 1704 | SP000496 | Skrining Gangguan Pemusatan Perhatian dan Hiperaktivitas (GPPH) | kemkes sp | ASIK CKG Balita (v2) | 1 |
+| 1705 | 710075007.0 | Screening for child development | snomed | ASIK CKG Balita (v2) | 1 |
+| 1706 | 866042005.0 | Screening for autistic disorder | snomed | ASIK CKG Balita (v2) | 1 |
+| 1707 | TK000144 | Rencana menikah 1 tahun ke depan | kemkes | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1708 | vital-signs | Abdominal circumference | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1709 | 248311001.0 | Central obesity | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1710 | OI000040 | Tekanan Darah Optimal | kemkes clinical-term | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
+| 1711 | 2004005.0 | Normal blood pressure | snomed | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (6x) | 3 |
+| 1712 | OI000041 | Tekanan Darah Normal Tinggi | kemkes clinical-term | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
+| 1713 | 827069000.0 | Stage 1 hypertension | snomed | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
+| 1714 | 827068008.0 | Stage 1 hypertension | snomed | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
+| 1715 | OI000042 | Hipertensi Derajat 3 | kemkes clinical-term | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
+| 1716 | 268607006.0 | Hypertension risk level | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1717 | 56218007.0 | Systolic hypertension | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1718 | 73211009.0 | Diabetes mellitus | snomed | ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (4x) | 3 |
+| 1719 | 263654008 | Abnormal | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1720 | 102594003.0 | Electrocardiogram abnormal | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1721 | 26141007 | ST segment depression | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1722 | 59931005 | Electrocardiogram normal | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1723 | 164873001 | Electrocardiographic left ventricle hypertrophy | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1724 | 164889003 | Electrocardiographic atrial fibrillation | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1725 | 164918000 | Pathological Q wave | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1726 | 76388001 | ST segment elevation | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1727 | H | High | v3-ObservationInterpretation | ASIK CKG Dewasa Laki-laki (3x), ASIK CKG Dewasa Perempuan (3x), ASIK CKG Lansia (27 Apr 2026) (3x) | 3 |
+| 1728 | 100898-6 | Lipid panel - Serum or Plasma | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1729 | 370992007.0 | Dyslipidemia | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1730 | OC000173 | Prediksi Risiko PTM tanpa Pemeriksaan Laboratorium | kemkes clinical-term | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1731 | 723505004.0 | Low risk | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (3x) | 3 |
+| 1732 | 25594002.0 | Moderate risk of | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1733 | 2160-0 | Creatinine [Mass/volume] in Serum or Plasma | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1734 | 62238-1 | Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI) | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1735 | 391483001.0 | Microscopy (acid fast bacilli) | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1736 | 10828004.0 | Positive | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) (6x) | 3 |
+| 1737 | 258066000.0 | Polymerase chain reaction technique | snomed | ASIK CKG Dewasa Laki-laki (11x), ASIK CKG Dewasa Perempuan (11x), ASIK CKG Lansia (27 Apr 2026) (12x) | 3 |
+| 1738 | female | Female | http://hl7.org/fhir/administrative-gender | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1739 | male | Male | http://hl7.org/fhir/administrative-gender | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1740 | SP000435 | <20 bungkus per tahun | kemkes sp | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1741 | SP000436 | 20-30 bungkus per tahun | kemkes sp | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1742 | SP000437 | >30 bungkus per tahun | kemkes sp | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1743 | 410007005.0 | Rectal examination | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1744 | 248523006.0 | Rectal mass | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1745 | 300870000.0 | No mass present | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1746 | 14563-1 | Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1747 | 167667006.0 | Occult blood not detected in feces | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1748 | 59614000.0 | Occult blood detected in feces | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1749 | 247301006.0 | Finding of ability to hear whisper | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1750 | 275727004.0 | Hearing test normal | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1751 | 300221005.0 | Hearing for whisper impaired | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1752 | 76517002.0 | Otoscopy | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1753 | 400911007.0 | Tumbling E test | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1754 | 397540003.0 | Visual impairment | snomed | ASIK CKG Dewasa Laki-laki (4x), ASIK CKG Dewasa Perempuan (4x), ASIK CKG Lansia (27 Apr 2026) (3x) | 3 |
+| 1755 | 252973004.0 | Snellen chart assessment | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1756 | 441841000.0 | Pinhole visual acuity test | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1757 | 39021009.0 | Disorder of refraction | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1758 | OI000044 | Kelainan organik | kemkes clinical-term | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1759 | 40137007.0 | Pupil light reflex | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1760 | OV000393 | Suspek katarak | kemkes clinical-term | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1761 | 371405004.0 | Disorder of eye proper | snomed | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1762 | 11214006.0 | Reactive | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1763 | 131194007.0 | Non-Reactive | snomed | ASIK CKG Dewasa Laki-laki (2x), ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 3 |
+| 1764 | 72376-7 | Hepatitis C virus Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1765 | 86465-2 | AST to platelet ratio index in Serum and Blood by calculation | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1766 | 30352-9 | Hemoglobin [Mass/volume] in Capillary blood | loinc | ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 3 |
+| 1767 | 13607009.0 | Manual examination of breast | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1768 | 290084006.0 | Breast normal | snomed | ASIK CKG Dewasa Perempuan (2x), ASIK CKG Lansia (27 Apr 2026) (2x) | 2 |
+| 1769 | 89164003.0 | Breast lump | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1770 | 134405005.0 | Suspected breast cancer | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1771 | 367644007.0 | Simple cyst | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1772 | 449837001.0 | Complex cyst of breast | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1773 | 451024007.0 | Inspection of vagina using vaginal speculum | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1774 | 395100000.0 | No evidence of cancer found | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1775 | 315266007.0 | Suspected cervical cancer | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1776 | 300557001.0 | Aceto-white reaction positive | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1777 | 300558006.0 | Aceto-white reaction negative | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1778 | 787724008.0 | Human papillomavirus deoxyribonucleic acid not detected | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1779 | 787723002.0 | Human papillomavirus deoxyribonucleic acid detected | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1780 | 708311006.0 | Deoxyribonucleic acid of Human papillomavirus 52 | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1781 | 708299006.0 | Deoxyribonucleic acid of Human papillomavirus 18 | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1782 | 708298003.0 | Deoxyribonucleic acid of Human papillomavirus 16 | snomed | ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026) | 2 |
+| 1783 | 8480-6 |  |  | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1784 | 8462-4 | Diastolic blood pressure |  | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1785 | 702817009.0 | Prehypertension | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1786 | 24184005.0 | Blood pressure above reference range | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1787 | 162650008.0 | Examination not done on subject of record | snomed | ASIK CKG Lansia (27 Apr 2026) (3x) | 1 |
+| 1788 | 261665006.0 | Unknown | snomed | ASIK CKG Lansia (27 Apr 2026) (11x) | 1 |
+| 1789 | 1754-1 | Albumin [Mass/volume] in Urine | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1790 | 2149-3 | Creatine [Mass/volume] in Urine | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1791 | 32294-1 | Albumin/Creatinine [Ratio] in Urine | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1792 | 735623008.0 | Grade A2 albuminuria | v3-ObservationInterpretation | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1793 | 735624002.0 | Grade A3 albuminuria | v3-ObservationInterpretation | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1794 | 424489006.0 | Mantoux test | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1795 | 268376005.0 | Mantoux: positive | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1796 | 268375009.0 | Mantoux: negative | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1797 | 405262001.0 | Point of care testing | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1798 | 77399-4 | Human papilloma virus 16 DNA [Presence] in Cervix by NAA with probe detection | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1799 | 77400-0 | Human papilloma virus 18 DNA [Presence] in Cervix by NAA with probe detection | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1800 | 95534-4 | Human papilloma virus 52 DNA [Presence] in Cervix by NAA with probe detection | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1801 | 164178007.0 | Ear examination normal | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1802 | 699116001.0 | Ear examination abnormal | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1803 | 18070006.0 | Impacted cerumen | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1804 | 129127001.0 | Infection of ear | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1805 | SP000828 | Tes Penala | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1806 | 164728001.0 | Visual testing abnormal | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1807 | 397543001.0 | Mild visual impairment | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1808 | 397542006.0 | Moderate visual impairment | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1809 | 397541004.0 | Severe visual impairment | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1810 | 301950001.0 | Pupil normal | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1811 | 53524009.0 | Ophthalmoscopy | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1812 | 164734008.0 | Fundoscopy normal | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1813 | 164735009.0 | Fundoscopy abnormal | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1814 | 395197008.0 | Hepatitis C viral load | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1815 | 82334004.0 | Indeterminate | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1816 | 260413007.0 | None | snomed | ASIK CKG Lansia (27 Apr 2026) (4x) | 1 |
+| 1817 | 302814007.0 | Early yaws skin lesion | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1818 | 106936-8 | Treponema pallidum IgG+IgM Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay |  | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1819 | TK000169 | Benar semua kata | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1820 | SP000444 | Salah satu/Dua | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1821 | TK000170 | Tidak dapat mengingat/mengulang kata | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1822 | 38369006.0 | At increased risk for cognitive impairment | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1823 | TK000173 | Kemungkinan tidak ada gangguan kognitif | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1824 | 129845004.0 | At risk for malnutrition | snomed | ASIK CKG Lansia (27 Apr 2026) (3x) | 1 |
+| 1825 | TK000197 | Kemungkinan depresi | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1826 | TK000196 | Tidak depresi | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1827 | 48542-5 | Geriatric depression scale (GDS) panel | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1828 | 35489007.0 | Depression | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1829 | 48512-8 | Are you basically satisfied with your life [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1830 | 48515-1 | Do you often get bored [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1831 | 48521-9 | Do you often feel helpless [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1832 | 48528-4 | Do you feel pretty worthless the way you are now [GDS] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1833 | 96762-0 | Barthel index panel | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1834 | OI000048 | Ketergantungan total | kemkes clinical-term | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1835 | OI000047 | Ketergantungan berat | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1836 | OI000046 | Ketergantungan sedang | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1837 | OI000045 | Ketergantungan ringan | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1838 | 371153006.0 | Independent | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1839 | 96759-6 | Bowels | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1840 | LA31627-5 | Incontinent (or needs to be given enemas) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1841 | LA31626-7 | Occasional accident | loinc | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1842 | LA31625-9 | Continent | loinc | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1843 | 96760-4 | Bladder | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1844 | LA31628-3 | Incontinent, or catheterized and unable to manage alone | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1845 | 96767-9 | Grooming | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1846 | LA31643-2 | Needs help with personal care | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1847 | LA31644-0 | Independent face/hair/teeth/shaving (implements provided) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1848 | 83183-4 | Toilet Use | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1849 | LA12304-4 | Dependent | loinc | ASIK CKG Lansia (27 Apr 2026) (3x) | 1 |
+| 1850 | LA31631-7 | Needs some help, but can do something alone | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1851 | LA31632-5 | Independent (on and off, dressing, wiping) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1852 | 83184-2 | Feeding | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1853 | LA24937-7 | Unable | loinc | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1854 | LA31630-9 | Needs help cutting, spreading butter, etc., or requires modified diet | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1855 | LA12302-8 | Independent | loinc | ASIK CKG Lansia (27 Apr 2026) (3x) | 1 |
+| 1856 | 83185-9 | Transfer | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1857 | LA31633-3 | Unable, no sitting balance | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1858 | LA31634-1 | Major help (one or two people, physical), can sit | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1859 | LA31635-8 | Minor help (verbal or physical) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1860 | 83186-7 | Mobility | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1861 | LA31639-0 | Immobile or <50 yards | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1862 | LA31640-8 | Wheelchair independent, including corners, >50 yards | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1863 | LA31641-6 | Walks with help of one person (verbal or physical) >50 yards | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1864 | LA31642-4 | Independent (but may use any aid; for example, stick) >50 yards | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1865 | 83182-6 | Dressing | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1866 | LA31637-4 | Needs help but can do about half unaided | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1867 | LA31638-2 | Independent (including buttons, zips, laces, etc.) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1868 | 96758-8 | Stairs | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1869 | LA31629-1 | Needs help (verbal, physical, carrying aid) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1870 | 83181-8 | Bathing | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1871 | LA31636-6 | Independent (or in shower) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1872 | 72234-8 | Mini-Cog | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1873 | TK000167 | Benar 1 kata | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1874 | TK000168 | Benar 2 kata | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1875 | 79150-9 | Clock drawing panel [GPCOG] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1876 | 79106-1 | Please mark in all the numbers to indicate the hours of a clock | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1877 | 79107-9 | Please mark in hands to show 10 minutes past eleven o'clock (11:10) | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1878 | TK000171 | Gambar jam benar/tepat | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1879 | TK000172 | Gambar jam salah/tidak tepat | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1880 | 72233-0 | Total score [Mini-Cog] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1881 | 263703002.0 | Changed | snomed | ASIK CKG Lansia (27 Apr 2026) (8x) | 1 |
+| 1882 | 260388006.0 | Unchanged | snomed | ASIK CKG Lansia (27 Apr 2026) (9x) | 1 |
+| 1883 | 71722-3 | Total score [AD8] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1884 | N | Normal | http://terminology.hl7. org/CodeSystem/v3-Ob servationInterpretatio n | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1885 | 698464007.0 | At risk of dementia | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1886 | 66248-6 | Balance test [PhenX] | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1887 | LA18188-5 | Side by side stand | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1888 | LA18189-3 | Semi tandem stand | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1889 | LA18190-1 | Tandem stand | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1890 | 714283000.0 | Short Physical Performance Battery | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1891 | 66258-5 | For 4-Meter Walk | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1892 | 66264-3 | Safe to stand five times | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1893 | 160697000.0 | Mobilitas fair | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1894 | 82971005.0 | Limited mobility | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1895 | 64379006.0 | Decrease in appetite | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1896 | 79890006.0 | Loss of appetite | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1897 | 161825005.0 | Appetite normal | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1898 | TK000180 | Penurunan BB > 3 kg | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1899 | TK000181 | Penurunan BB antara 1-3 kg | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1900 | TK000183 | Harus berbaring di tempat tidur atau menggunakan kursi roda | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1901 | TK000184 | Bisa bangun dari tempat tidur atau kursi roda, tetapi tidak bisa keluar rumah | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1902 | TK000185 | Bisa bepergian keluar rumah | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1903 | TK000186 | Demensia atau depresi berat | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1904 | TK000187 | Demensia atau kepikunan ringan | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1905 | TK000188 | Tidak ada masalah psikologis | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1906 | TK000189 | IMT <19 | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1907 | TK000190 | IMT 19 -<21 | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1908 | TK000191 | IMT 21 -<23 | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1909 | TK000192 | IMT >= 23 | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1910 | 443371000124107.0 | Obese class I | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1911 | 443381000124105.0 | Obese class II | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1912 | TK000193 | <31 cm | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1913 | TK000194 | >= 31 cm | kemkes | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1914 | 8283-4 | Calf - right Maximum circumference | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1915 | 8282-6 | Calf - left Maximum circumference | loinc | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1916 | TK000195 | Mini Nutritional Assessment (MNA) SF | kemkes | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1917 | 2492009.0 | Malnutrition | snomed | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
+| 1918 | 424805008.0 | Exercise above recommended level | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1919 | 413300002.0 | Exercise below recommended level | snomed | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1920 | SP000831 | Tidak batuk | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1921 | SP000832 | Ya, lebih dari 2 minggu | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1922 | SP000833 | Ya, kurang dari 2 minggu | kemkes sp | ASIK CKG Lansia (27 Apr 2026) | 1 |
+| 1923 | SP000840 | Persetujuan IC 1 | kemkes sp | Informed Consent | 1 |
+| 1924 | SP000841 | Persetujuan IC 2 | kemkes sp | Informed Consent | 1 |
+| 1925 | SP000842 | Persetujuan IC 3 | kemkes sp | Informed Consent | 1 |
+| 1926 | SP000843 | Persetujuan IC 4 | kemkes sp | Informed Consent | 1 |
+| 1927 | SP000844 | Persetujuan IC 5 | kemkes sp | Informed Consent | 1 |
+| 1928 | SP000845 | Persetujuan IC 6 | kemkes sp | Informed Consent | 1 |
+| 1929 | SP000846 | Persetujuan IC 7 | kemkes sp | Informed Consent | 1 |
+| 1930 | SP000847 | Persetujuan IC 8 | kemkes sp | Informed Consent | 1 |
+| 1931 | SP000217 | PNS/BUMN/TNI/POLRI | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1932 | SP000218 | Karyawan Swasta | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1933 | 159812002 | Farming/fishing occupation | snomed | SIHEPI Rekap 3e | 1 |
+| 1934 | ANC.B6.DE25 | Number of miscarriages and/or abortions | WHO anc-custom-codes | SIHEPI Rekap 3e | 1 |
+| 1935 | SP000160 | Tanggal Masuk Perawatan, Dukungan, dan Pengobatan (PDP) HIV | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1936 | SP000161 | Tanggal Mendapat atau Memulai ARV | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1937 | SP000162 | Sifilis Ditangani | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1938 | SP000163 | Sifilis Diobati Adekuat | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1939 | SP000164 | Hepatitis B Ditangani atau Dirujuk | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1940 | 72181-1 | HIV results shared with partner [RHEA] | loinc | SIHEPI Rekap 3e | 1 |
+| 1941 | SP000165 | Pasangan Diperiksa Sifilis | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1942 | SP000166 | Jumlah Anak Dilahirkan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1943 | OT000003 | RS ODHA | organization-type | SIHEPI Rekap 3e | 1 |
+| 1944 | SP000169 | Pemantauan Anak dari Ibu HIV | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1945 | SP000170 | Tanggal ARV Profilaksis | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1946 | SP000171 | Tanggal Dry Blood Spot Early Infant Diagnosis Pada Usia 6-8 Minggu | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1947 | SP000167 | Hasil Dry Blood Spot Early Infant Diagnosis Pada Usia 6-8 Minggu | kemkes sp | SIHEPI Rekap 3e (2x) | 1 |
+| 1948 | SP000172 | Tanggal Konfirmasi Dry Blood Spot Early Infant Diagnosis dalam 12 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1949 | SP000168 | Hasil Konfirmasi Dry Blood Spot Early Infant Diagnosis dalam 12 Bulan | kemkes sp | SIHEPI Rekap 3e (2x) | 1 |
+| 1950 | SP000173 | Tanggal Deteksi Serologis HIV Usia > 9 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1951 | SP000174 | Hasil Deteksi Serologis HIV Usia > 9 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1952 | SP000175 | Tanggal Dirawat di Perawatan, Dukungan, dan Pengobatan (PDP) Saat Balita | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1953 | SP000176 | Tanggal Mendapat ARV Profilaksis Saat Balita | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1954 | SP000177 | Pemantauan Anak dari Ibu Sifilis | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1955 | SP000178 | Bayi Ditangani atau Dirujuk | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1956 | SP000179 | Tanggal Screening Sifilis Pada Usia < 2 Tahun | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1957 | SP000180 | Hasil Pemeriksaan Sifilis Pada Usia < 2 Tahun | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1958 | SP000181 | Pemantauan Anak dari Ibu Hepatitis | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1959 | SP000182 | Tanggal atau Jam Imunisasi HB 0 | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1960 | SP000183 | < 24 jam | kemkes sp | SIHEPI Rekap 3e (2x) | 1 |
+| 1961 | SP000184 | ≥ 24 jam | kemkes sp | SIHEPI Rekap 3e (2x) | 1 |
+| 1962 | SP000185 | Tanggal atau Jam Imunisasi HBIg | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1963 | SP000186 | Tanggal Imunisasi DPT/HB 1 | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1964 | SP000187 | Tanggal Imunisasi DPT/HB 2 | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1965 | SP000188 | Tanggal Imunisasi DPT/HB 3 | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1966 | SP000189 | Tanggal Screening HBsAg Pada Usia 9-12 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1967 | SP000190 | Hasil Pemeriksaan HBsAg Pada Usia 9-12 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1968 | SP000191 | Tanggal Screening Anti HBs Pada Usia 9 - 12 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1969 | SP000192 | Hasil Pemeriksaan Anti HBs Pada Usia 9 - 12 Bulan | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1970 | 121912002 | Hepatitis B virus deoxyribonucleic acid assay | snomed | SIHEPI Rekap 3e | 1 |
+| 1971 | 313476009 | Hepatitis B e antigen test | snomed | SIHEPI Rekap 3e | 1 |
+| 1972 | 34608000 | Alanine aminotransferase measurement | snomed | SIHEPI Rekap 3e | 1 |
+| 1973 | SP000193 | Memenuhi Kriteria Pengobatan Pencegahan Hepatitis B | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1974 | SP000194 | Metode Pemeriksaan Sirosis | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1975 | SP000195 | Status Sirosis | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1976 | SP000196 | Status Pengobatan Pencegahan Hepatitis B | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1977 | SP000197 | Tanggal Pengambilan Obat Pencegahan Hepatitis B | kemkes sp | SIHEPI Rekap 3e (4x) | 1 |
+| 1978 | SP000198 | Status Akhir Pengobatan Pencegahan Hepatitis B | kemkes sp | SIHEPI Rekap 3e | 1 |
+| 1979 | 85712-8 | Expected delivery location | https://loinc.org | eKohort INC | 1 |
+| 1980 | 73.59 | Other manually assisted delivery | icd-9-cm | eKohort INC (2x) | 1 |
+| 1981 | 74.0 | Classical cesarean section | icd-9-cm | eKohort INC (2x) | 1 |
+| 1982 | 281050002 | Livebirth | snomed | eKohort INC | 1 |
+| 1983 | 289437007 | Finding of fetal heart rate | loinc | eKohort INC | 1 |
+| 1984 | ANC.SS.DE41 | Letak Janin USG | snomed | eKohort INC | 1 |
+| 1985 | CUSTOM | non intact membrane | snomed | eKohort INC | 1 |
+| 1986 | CUSTOM |  |  | eKohort INC (8x) | 1 |
+| 1987 | CUSTOM | Faktor risiko eklampsia | CUSTOM | eKohort INC (7x) | 1 |

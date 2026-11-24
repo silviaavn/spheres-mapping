@@ -1,0 +1,266 @@
+Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Format/Value,Value Name,Definisi Operasional,Agregat/Individu,Resource,Path,Code,Display,CodeSystem,Keterangan,jumlah code,jumlah instance
+,INC (Persalinan),,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak ada,,,1
+,,,,Nama Provinsi,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,province,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode wilayah,Tidak ada,Tidak ada,,,
+,,,,Nama Kabupaten,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,city,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode wilayah,Tidak ada,Tidak ada,,,
+,,,,Nama Kecamatan,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,district,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode wilayah,Tidak ada,Tidak ada,,,
+,,,,Nama Desa,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.url,village,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode wilayah,Tidak ada,Tidak ada,,,
+,,,,Nama Lembaga Kesehatan,string,,,,,Organization,Organization.type,prov,Healthcare Provider,http://terminology.hl7.org/CodeSystem/organization-type,,,
+,,,,,,,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Nama Pemeriksa,string,,,,,Practitioner,Practitioner.name,Tidak ada,Tidak ada,Tidak ada,,,1
+,,,,No Ktp,string,16 digit,,,,Patient,Patient.identifier.use,official,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.identifier.system,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/id/nik,,,
+,,,,,,,,,,Patient,Patient.identifier.value,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Id Bersalinan,string,,,,,Encounter,Encounter.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/encounter/{{Org_id}},,,1
+,,,,Id Ibu,string,,,,,Patient,Patient.identifier.use,,,,,,
+,,,,,,,,,,Patient,Patient.identifier.system,,,,,,
+,,,,,,,,,,Patient,Patient.identifier.value,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Kala 1 Tgl,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,Kala 1 Jam,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.code.coding[x],249120008,Onset of labor first stage,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueDatetime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Kala 2 Tgl,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,Kala 2 Jam,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.code.coding[x],249160009,Onset of labor second stage,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueDatetime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,By Lahir Tgl,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,By Lahir Jam,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.code.coding[x],93857-1,Date and time of obstetric delivery,http://loinc.org,,1,
+,,,,Plasenta Lahir Tgl,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.categoriy.coding,procedure,Procedure,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,,,,,,1
+,,,,Plasenta Lahir Jam,dateTime,DDMMYYYY TT:TT,,,,Observation,Observation.valueDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Usia Kehamilan,number,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding[x],76516-4,Gestational age--at birth,http://loinc.org,,1,1
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,wk,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,wk,Tidak Ada,Tidak Ada,,,
+,,,,Usia Hpht,number,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding[x],,,,,,1
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,wk,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,wk,Tidak Ada,Tidak Ada,,,
+,,,,Presentasi Persalinan,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,1
+,,,,,,,BK,,,Observation,Observation.valueCodeableConcept.coding,70028003,Vertex presentation,http://snomed.info/sct,,1,
+,,,,,,,LLO,,,Observation,Observation.valueCodeableConcept.coding,288203005,Transverse/oblique lie,http://snomed.info/sct,,1,
+,,,,Berat Bayi Lahir,number,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding[x],8339-4,Birth weight Measured,https://loinc.org,,1,1
+,,,,,,,,,,Observation,Observation.valueDatetime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,g,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,g,Tidak Ada,Tidak Ada,,,
+,,,,Cara Persalinan,coded,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,57071-3,Obstetric delivery method,https://loinc.org,,1,1
+,,,,,,,normal,,,Observation,Observation.valueCodeableConcept.coding,48782003,Delivery normal,http://snomed.info/sct,,1,
+,,,,,,,sectio caesaria,,,Observation,Observation.valueCodeableConcept.coding,200144004,Deliveries by cesarean,http://snomed.info/sct,,1,
+,,,,Tempat Persalinan,string,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,85712-8,Expected delivery location,https://loinc.org,,1,1
+,,,,,,,,,,Observation,Observation.valueString,Tidak ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Procedure,Procedure.category,,,,,,1
+,,,,,,,,,,Procedure,Procedure.code,73.59,Other manually assisted delivery,http://hl7.org/fhir/sid/icd-9-cm,,1,
+,,,,,,,,,,Procedure,Procedure.code,74.0,Classical cesarean section,http://hl7.org/fhir/sid/icd-9-cm,,1,
+,,,,,,,,,,Procedure,Procedure.location,Reference ke Location,,,,,
+,,,,Alamat Persalinan,string,,,,,Location,Location.type.coding,LT000001,Lokasi Tempat Bersalin,http://terminology.kemkes.go.id/CodeSystem/location-type,,,
+,,,,,,,,,,Location,Location.address,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Penolong Persalinan,string,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],OC000013,Penolong Persalinan,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
+,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,309453006,Registered midwife,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,309343006,Physician Occupation,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,11935004,Obstetrician Occupation,http://snomed.info/sct,,1,
+,,,,Kala 3,coded,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],,Manajemen Kala 3,,,,
+,,,,,,,Injeksi Oksitosin,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,,,,Perenggangan Tali Pusat,,,Observation,Observation.valueCodeableConcept.coding,302384005,Controlled cord traction of placenta,http://snomed.info/sct,,1,
+,,,,,,,Masase Fundus Uteri,,,Observation,Observation.valueCodeableConcept.coding,236996005,Abdominal uterine fundal massage,http://snomed.info/sct,,1,
+,,,,Komplikasi,string,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
+,,,,,,,,,,Condition,Condition.code.coding,ICD -10 Code,ICD - 10 Description,http://hl7.org/fhir/sid/icd-10,,,
+,,,,Fasilitas Kesehatan,string,,,,,,,,,,,,
+,,,,Keadaan,string,,,,,,,,,,,,
+,,,,Keadaan Jam,time,,,,,,,,,,,,
+,,,,Pelayanan,coded,,,,,,,,,,,,
+,,,,,,,"Menggunakan Partograf,Catat di Buku KIA",,,,,,,,,,
+,,,,Pelayanan Imd,coded,,,,,Procedure,Procedure.category.coding,440626008,Procedure related to breastfeeding,http://snomed.info/sct,,,1
+,,,,,,,,,,Procedure,Procedure.code.coding[x],431868002,Initiation of breastfeeding,http://snomed.info/sct,,1,
+,,,,,,,,,,Procedure,Procedure.status,completed,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],OC000016,Waktu Inisiasi Menyusui Dini,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
+,,,,,,,<1 jam,,,Observation,Observation.valueCodeableConcept.coding,OV000014,Kurang dari 1 Jam,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
+,,,,,,,>1 jam,,,Observation,Observation.valueCodeableConcept.coding,OV000015,Lebih dari 1 Jam,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
+,,,,Keadaan Ibu,coded,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,,,,,,
+,,,,,,,H,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,,,,M,,,Observation,Observation.valueCodeableConcept.coding,59283008,Maternal death,http://snomed.info/sct,,1,
+,,,,Keadaan Bayi,coded,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,64710-7,"Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX]",http://loinc.org,,1,
+,,,,,,,H,,,Observation,Observation.valueCodeableConcept.coding,281050002,Livebirth,http://snomed.info/sct,,1,
+,,,,,,,M,,,Observation,Observation.valueCodeableConcept.coding,276506001,Newborn death,http://snomed.info/sct,,1,
+,,,,Integrasi Arv,string,,,,,,,,,,,,
+,,,,Integrasi Anti Malaria,string,,,,,,,,,,,,
+,,,,Integrasi Anti Tb,string,,,,,,,,,,,,
+,,,,D,date,DDMMYYYY,,,,,,,,,,,
+,,,,T,time,,,,,,,,,,,,
+,,,,U,string,,,,,,,,,,,,
+,,,,Kode Nakes,string,,,,,Practitioner,Practitioner.identifier,Tidak ada,Tidak ada,Tidak ada,,,1
+,,,,Nama Penolong,string,,,,,Procedure,Procedure.category,,,,,,1
+,,,,,,,,Jika Cara Persalinan Normal,,Procedure,Procedure.code,73.59,Other manually assisted delivery,http://hl7.org/fhir/sid/icd-9-cm,,1,
+,,,,,,,,Jika Cara Persalinan Cesar,,Procedure,Procedure.code,74.0,Classical cesarean section,http://hl7.org/fhir/sid/icd-9-cm,,1,
+,,,,,,,,,,Procedure,Procedure.performer,Reference ke Practitioner,,,,,
+,,,,,,,,,,Practitioner,Practitioner.name,Tidak Ada,Tidak Ada,Tidak Ada,,,1
+,,,,Kehamilan Ke,number,,,,,Observation,Observation.code[0].coding[0,11996-6,[#] Pregnancies,http://loinc.org,,,1
+,,,,Kode Tempat Persalinan,string,,,,,Observation,Observation.valueInteger[0],Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Tgl Persalinan,date,DDMMYYYY,,,,Observation,Observation.category[i].coding[i],survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,,,,,,,,Observation,Observation.code.coding,93857-1,Date and time of obstetric delivery,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.valueDateTime[0],Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Td,number,,,,,Observation,Observation.category[i].coding[i],vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,8480-6,Systolic blood pressure,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.code.coding,8462-4,Diastolic blood pressure,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,mm[Hg],Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,mm[Hg],Tidak Ada,Tidak Ada,,,
+,,,,Frekuensi Nadi,number,,,,,Observation,Observation.category[i].coding[i],vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,8867-4,Heart rate,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,beats/min,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,/min,Tidak Ada,Tidak Ada,,,
+,,,,Frekuensi Pernapasan,number,,,,,Observation,Observation.category[i].coding[i],vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,9279-1,Respiratory rate,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,/min,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,breaths/min,Tidak Ada,Tidak Ada,,,
+,,,,Suhu,number,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,8310-5,Body temperature,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,C,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,C,Tidak Ada,Tidak Ada,,,
+,,,,Tinggi Fundus Uteri,number,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,11881-0,Uterus Fundal height Tape measure,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE105,Symphysis-fundal height,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,cm,cm,http://unitsofmeasure.org,,,
+,,,,Kondisi Detak Jantung Janin,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],289437007,Finding of fetal heart rate,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.code.coding[x],ANC.B8.DE107,Fetal heart rate,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
+,,,,,,,normal,,,Observation,Observation.valueCodeableConcept.coding,289441006,Normal fetal heart rate,http://snomed.info/sct,,1,
+,,,,,,,tidak normal,,,Observation,Observation.valueCodeableConcept.coding,312668007,Abnormal fetal heart rate,http://snomed.info/sct,,1,
+,,,,Detak Jantung Janin,number,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.code,{beats}/min,Tidak Ada,http://unitsofmeasure.org,,,
+,,,,,,,,,,Observation,Observation.valueQuantity.unit,{beats}/min,Tidak Ada,Tidak Ada,,,
+,,,,Letak Janin,coded,,,,,Observation,Observation.category.coding,imaging,Imaging,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],271692001,Presentation of fetus,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding[x],ANC.SS.DE41,Letak Janin USG,http://snomed.info/sct,,1,
+,,,,,,,JGHIU,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,,,,JTHIU,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,Presentasi,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE111,Fetal presentation,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
+,,,,,,,Kepala,,,Observation,Observation.valueCodeableConcept.coding,1209182005,Cephalic fetal presentation,http://snomed.info/sct,,1,
+,,,,,,,Bokong,,,Observation,Observation.valueCodeableConcept.coding,6096002,Breech presentation,http://snomed.info/sct,,1,
+,,,,,,,Bagian Tubuh Lainnya,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,Posisi Kepala,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,249111004,Engagement of head,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.code.coding,ANC.SS.DE46,Kepala Terhadap PAP,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
+,,,,,,,Belum Masuk PAP,,,Observation,Observation.valueCodeableConcept.coding,62098001,Head not engaged,http://snomed.info/sct,,1,
+,,,,,,,Masuk PAP,,,Observation,Observation.valueCodeableConcept.coding,249112006,Head engaged,http://snomed.info/sct,,1,
+,,,,,,,Tidak Diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Kondisi Ketuban,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,289282009,Amniotic membrane finding,http://snomed.info/sct,,1,
+,,,,,,,intact,,,Observation,Observation.valueCodeableConcept.coding,249125003,Intact membranes,http://snomed.info/sct,,1,
+,,,,,,,tidak intact,,,Observation,Observation.valueCodeableConcept.coding,CUSTOM,non intact membrane,http://snomed.info/sct,,1,
+,,,,Riwayat Lab Anemia,coded,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Riwayat Lab Protein Urin,coded,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Riwayat Lab Diabetes,coded,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Riwayat Lab Hiv,coded,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Riwayat Lab Hepatitis B,coded,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Riwayat Lab Sifilis,coded,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,tidak diketahui,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://snomed.info/sct,,,
+,,,,Faktor Resiko Anemia,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,,,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Pre Eklampsia,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko eklampsia,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Diabetes,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko diabetes,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Hiv,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko HIV,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Hepatitis B,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko Hepatitis B,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Sifilis,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko Sifilis,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Malaria,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko Malaria,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Tb,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor risiko Tb,CUSTOM,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Faktor Resiko Lainnya,string,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,CUSTOM,Faktor Resiko Lainnya,,,1,
+,,,,,,,,,,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Kondisi Kala4,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,,,,,,
+,,,,,,,cukup,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,,,,normal,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,,,,kurang,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
+,,,,Jumlah Pendarahan,number,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,81661-1,Blood Loss [Volume] Measured,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,Jika ml,,Observation,Observation.valueQuantity.code,mL,mL,http://unitsofmeasure.org,,,
+,,,,,,,,Jika L,,Observation,Observation.valueQuantity.code,L,L,http://unitsofmeasure.org,,,
+,,,,Td Kala4,number,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],249160009,Onset of labor second stage,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueDatetime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Tindakan Kala4,string,,,,,Observation,Observation.category.coding,procedure,Procedure,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding[x],,,http://snomed.info/sct,,,
+,,,,,,,,,,Observation,Observation.valueString,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Ket Kala4,string,,,,,Observation,Observation.note,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Komplikasi Persalinan,string,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
+,,,,,,,,,,Condition,Condition.code.coding,ICD -10 Code,ICD - 10 Description,http://hl7.org/fhir/sid/icd-10,,,
+,,,,Tata Laksana Komplikasi Persalinan,string,,,,,Observation,Observation.category.coding,procedure,Procedure,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,,,,,,,Observation,Observation.code.coding,,,,,,
+,,,,,,,,,,Observation,Observation.valueBoolean,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Rujuk,coded,,,,,Observation,Observation.component.code,3457005,Patient referral,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.component.valueBoolean,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.hospitalization.dischargeDisposition.coding,other-hcf,Other healthcare facility,http://terminology.hl7.org/CodeSystem/discharge-disposition,,,
+,,,,Faskes Rujukan,string,,,,,ServiceRequest,ServiceRequest.category.coding,3457005,Patient referral,http://snomed.info/sct,,,1
+,,,,,,,,,,ServiceRequest,ServiceRequest.code.coding,737492002,Outpatient care management,http://snomed.info/sct,,1,
+,,,,,,,Puskesmas Poned,,,ServiceRequest,ServiceRequest.locationCode.coding,CSC,community service center,http://terminology.hl7.org/CodeSystem/v3-RoleCode,,,
+,,,,,,,RS,,,ServiceRequest,ServiceRequest.locationCode.coding,HOSP,Hospital,http://terminology.hl7.org/CodeSystem/v3-RoleCode,,,
+,,,,Nama Faskes Rujuk,string,,,,,ServiceRequest,ServiceRequest.performer,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,Konseling,coded,,,,,Procedure,Procedure.category,409063005,Counseling,http://snomed.info/sct,,,1
+,,,,,,,Konseling Tanda Bahaya Nifas,,,Procedure,Procedure.code,ECL < 409063005 | Counseling (procedure) |,,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.status,completed,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Procedure,Procedure.status,not-done,Tidak ada,Tidak ada,,,
+,,,,Status Pindahan,boolean,,ya,,,,,,,,,,
+,,,,,,,tidak,,,,,,,,,,

@@ -554,6 +554,50 @@ Payload per resource:
 
 - 2026-11-24: Tambah 7 form dari 5 CSV (asumsi CS1–CS9), ⚠️ belum comprehensive review. Sebelumnya TB 01/TB 02/Elsmil/ASIK PTM belum dicocokkan; SIPTM baru.
 
+## ASIK CKG (PHDT_ASIK_CKG.xlsx, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC
+
+Sumber: `PHDT_ASIK_CKG.xlsx` + 4 CSV PHDT (`IC_1`, `SIHEPI`, `eKohort`, `eKohort_ANC_Final_Format`). Dibuat dengan `scripts/phdt2_prepare.py`. ⚠️ **belum comprehensive review** (tanpa daftar BQ dan file mentah). Hasil (versi yang dipakai; payload / code; variabel unik / baris; PHDT):
+
+| Form | Sumber | Payload / code | Var unik / baris | PHDT | Selisih baris |
+|---|---|---|---|---|---|
+| ASIK CKG BBL (v2) | sheet `CKG Bayi Baru Lahir 2` | 25 / 41 | 35 / 35 | 33 | +2 |
+| ASIK CKG Balita (v2) | sheet `Sheet9` | 32 / 102 | 57 / 58 | 59 | −1 |
+| ASIK CKG Dewasa Laki-laki | sheet `CKG Dewasa Laki-laki` | 61 / 202 | 123 / 132 | 132 | 0 |
+| ASIK CKG Dewasa Perempuan | sheet `CKG Dewasa Perempuan` | 66 / 223 | 130 / 139 | 132 | +7 |
+| ASIK CKG Lansia (27 Apr 2026) | sheet `CKG Lansia 27 April 2026` | 95 / 458 | 188 / 204 | 180 | +24 |
+| Informed Consent | `IC_1` | 3 / 8 | 27 / 28 | 28 | 0 |
+| SiHepi Rekap 3e | `SIHEPI` | 65 / 118 | 93 / 115 | 115 | 0 |
+| eKohort ANC (Final Format) | `eKohort_ANC_Final_Format` | 43 / 78 | 34 / 34 | 36 | −2 |
+| eKohort INC (Bersalin) | `eKohort`, baris 726–akhir | 58 / 74 | 84 / 85 | 85 | 0 |
+
+Versi lain (tidak masuk total, output per form tersedia): BBL v1 25 / 56, Balita v1 29 / 99, Lansia 2026 79 / 366, Lansia 2025 77 / 361, eKohort ANC lama 140 / 247 (190 variabel). Tabel perbandingan versi: `output.md` bagian "Versi ASIK CKG".
+
+**Asumsi**
+- CK1: untuk form yang punya beberapa versi, versi terbaru dipakai di total konsolidasi (BBL v2, Balita v2, Lansia 27 April 2026); versi lain dihitung terpisah.
+- CK2: `Sheet9` = Balita versi 2 (tarikan baru). Dasarnya nama kolom raw (`Nama Lengkap`, `NIK`) sama dengan BBL v2 dan sheet `Hasil Check Tarikan Baru dan Lama`, contoh data `individu-bayi-2025-08.xlsx`. **Perlu konfirmasi user.**
+- CK3: di sheet CKG Dewasa/Lansia/Balita, baris QuestionnaireResponse berselang-seling dengan blok Observation (satu QR per form, item bersarang). Dihitung **1 QuestionnaireResponse per form** (di form lain, mis. KPSP, QR memang banyak). Tanpa aturan ini hasil heuristik membengkak (Lansia 174, Dewasa Laki-laki 109).
+- CK4: baris "Contoh Data: ..." dan baris angka di ujung sheet (jumlah variabel, mis. 35, 58) dibuang. Di sheet Dewasa/Lansia kolom `Nama Column Raw` berisi nomor urut, jadi tidak dipakai; variabel = kolom `Variables` (nama variabel lama), bukan `Variabel v2`/`v2025`/`v2026`/`v27April2026`.
+- CK5: sheet `CKG Lansia (tidak dipakai)`, `Pivot Table 1`, `All Variable`, `All Variable v2`, `Detail1-Lansia`, `variabel ckg dewasa`, `Hasil Check Tarikan Baru dan Lama`, `lansia` bukan dictionary, tidak dihitung. Klaster Remaja (#45) tidak ada mapping, dilewati.
+- IC1: Informed Consent: Patient, Consent, RelatedPerson (hanya kalau `status_responden` = wali responden) = 3 payload. Kode klausul `Consent.provision.provision[n].code.coding` (SP000840–SP000847) dihitung sebagai code (8). Ditambah ke `COUNT_PATHS` di `epus_prepare.py`. Category/scope/status/type Consent (HL7) tidak dihitung. `faskes_id` pada form ini pakai ID database berbeda dengan ID Organization SatuSehat (lookup).
+- EK1: eKohort ANC memakai file `Final Format` (34 variabel, mendekati PHDT 36). Bagian ANC di file `eKohort` lama (baris 2–725) dihitung terpisah sebagai versi lama (190 variabel, 140 payload, 247 code), tidak masuk total. eKohort INC hanya ada di file `eKohort` (baris 726–akhir). Baris 725 (sel `#NAME?`) ikut ANC lama.
+- EK2: 14 baris di `eKohort_ANC_Final_Format` (baris sumber 572–586, blok ServiceRequest Hepb + PractitionerRole lab) kehilangan 2 kolom (Definisi Operasional dan Agregat/Individu), sehingga Resource bergeser ke kolom Value Name. Digeser otomatis di skrip (tanpa mengubah file asli). Tanpa ini ANC terhitung 51 payload dengan "resource" palsu (`active`, `routine`, `75410-1`, dst.).
+- SH1: SiHepi: 93 variabel unik / 115 baris (nama yang sama muncul di beberapa blok); PractitionerRole lab (3) = lookup, tidak dihitung.
+
+**Temuan terbuka (belum ditanyakan ke tim)**
+- CK-1: **Lansia 27 April 2026 tidak punya blok lab** (ServiceRequest, Specimen, DiagnosticReport, PractitionerRole) yang ada di Lansia 2025 dan 2026. Sengaja dihapus atau terlewat?
+- CK-2: `interpretasi_kolesterol_total` (baris 603 di Dewasa Laki-laki dan Perempuan) tanpa Resource/Path.
+- CK-3: BBL v2 baris 342 dan 374 (Tanggal Pemeriksaan Skrining Kelainan Saluran Empedu 14–28 hari / 2–4 bulan) tanpa mapping. `Kode Faskes` (BBL dan Balita, baris akhir) tanpa mapping.
+- CK-4: Di semua sheet CKG, 1 baris `Organization.address.extension` dengan Resource `Location` (baris 58–70 tergantung sheet): Resource/Path tidak cocok. Organization/Location = lookup (tidak dihitung).
+- IC-1: Informed Consent: `is_teen` (Tidak dimapping), `kecamatan` (tidak dimapping), `status_responden` (kontrol pembuatan RelatedPerson, tanpa resource sendiri) tidak masuk payload.
+- EK-1: eKohort ANC Final: baris 368–369 punya Resource `Procedure` tetapi path `Observation.performer.actor...` (salah resource atau path); baris 466 `Reduksi Guladarah` tanpa Resource; `nama_lembaga` dipetakan ke Organization / Location (lookup).
+- EK-2: eKohort INC variabel tanpa Resource: Fasilitas Kesehatan, Keadaan, Keadaan Jam, Pelayanan (baris 82–85), Integrasi Arv, Integrasi Anti Malaria, Integrasi Anti Tb, D, T, U (102–107), Status Pindahan (265).
+- EK-3: eKohort ANC lama: typo Resource `Practioner` (diperbaiki otomatis jadi `Practitioner`).
+- SH-1: SiHepi baris 907: variabel `Keterangan` dengan BQ `TRUE` (kemungkinan sisa sel), tanpa Resource.
+
+**Catatan pipeline**: Consent baru (`Consent`, klausul SP000840–SP000847) perlu ditambahkan di converter. `FamilyMemberHistory`/`Consent` belum ada di form lain. Versi CKG: ingestion perlu tahu versi tarikan (nama kolom raw berubah antar versi).
+
+---
+
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
 Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
@@ -613,6 +657,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P38 | MPDN Bayi, Ibu | Dugaan sebab kematian = component kode group / subgroup / detail dari daftar ICD-PM (Bayi) dan ICD-MM (Ibu). Practitioner PJ MPDN = lookup (MA8) | Converter: pemetaan ICD-PM / ICD-MM ke code. Master data Practitioner PJ MPDN | open |
 
 ## Log perubahan revisi
+- 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian perbandingan jumlah variabel dengan PHDT Data Dictionary (4 form beda: SiGizi ANC, TB 06, TB 03 SO, TB 16K). Angka output utama tidak berubah.
 - 2026-11-24: Tambah jumlah **Variabel raw** di semua output form dan ringkasan `output.md` (MPDN Bayi 37, Ibu 24 = variabel dictionary tanpa placeholder; belum ada file mentah).
 - 2026-11-24: Tambah review MPDN Kematian Bayi dan Kematian Ibu (dictionary dipecah jadi 2 file): hasil hitung 19/112 dan 10/50, tally variabel 37 dan 24 (cocok rekap user, tanpa BQ), asumsi MA1–MA10, temuan MG1–MG6, MB1–MB6, MI1–MI2, perubahan file F1–F5, catatan pipeline P36–P38. **Belum ada comprehensive review**, file mentah, dan daftar BQ.

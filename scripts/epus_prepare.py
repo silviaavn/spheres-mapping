@@ -77,6 +77,7 @@ COUNT_PATHS = [re.compile(p) for p in [
     r"^Encounter\.hospitalization\.admitSource(\.coding)?$",
     r"^QuestionnaireResponse\.item(\.item)*\.answer\.valueCoding$",
     r"^Encounter\.identifier$",
+    r"^Consent\.provision(\.provision)?\.code(\.coding)?$",   # klausul IC (kode SP custom)
 ]]
 DET_PATHS = [re.compile(p) for p in [   # code pembeda payload (baris pertama yang cocok)
     r"^(Condition|DiagnosticReport|Observation|Procedure|ServiceRequest|PractitionerRole)\.code(\.coding)?$",
@@ -162,6 +163,9 @@ def prepare(cfg, wb, revised_map):
         elif "." in res:
             log["resource_fix"].append(("resource berisi path", res))
             res = res.split(".")[0]
+        if res == "Practioner":
+            log["resource_fix"].append(("Practioner", "Practitioner"))
+            res = "Practitioner"
         if res == "Careplan":
             log["resource_fix"].append(("Careplan", "CarePlan"))
             res = "CarePlan"
