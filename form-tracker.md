@@ -34,6 +34,7 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah d
 | 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | 19 / 74 |
 | 32 | SIGIZI (Balita Gizi Kurang) - Survey PMT 2025 | 5 / 16 |
 | 34 | SIGIZI IBU - Daftar Nifas | 11 / 12 |
+| 35 | SIGIZI IBU - Pengukuran ANC Bumil | 61 / 142 |
 | 36 | SIGIZI IBU - Kohort Ibu | 63 / 94 |
 | 42 | ASIK - Data Skrining PTM | 104 / 146 |
 | 43 | ASIK - CKG-Klaster BBL (versi 2; v1 25 / 56) | 25 / 41 |
@@ -44,74 +45,22 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah d
 | 49 | SiHepi - Form Rekap 3e | 65 / 118 |
 | 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | 37 / 94 |
 | 51 | SITB - TB 02 (Kartu Identitas Pasien) | 13 / 15 |
+| 52 | SITB - TB 03 SO (Sensitif Obat) | 62 / 329 |
+| 53 | SITB - TB 03 RO (Resisten Obat) | 50 / 377 |
+| 54 | SITB - TB 04 Fasyankes (pemeriksaan lab) (satu dictionary TB 04 bersama Rujukan) | 69 / 579 |
+| 55 | SITB - TB 04 Rujukan (pemeriksaan lab) (satu dictionary TB 04 bersama Fasyankes, dihitung 1x di #54) | ikut #54 |
+| 56 | SITB - TB 06 (terduga/suspek TB) | 56 / 276 |
+| 62 | SITB - TB 16K (IK) | 21 / 35 |
+| 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
 | 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
 | 74 | eKohort - Pelayanan Ibu ANC (Final Format; file lama 140 / 247 tidak dipakai) | 43 / 78 |
 | 77 | eKohort - Pelayanan Ibu Bersalin (INC) | 58 / 74 |
+| 78 | Informed Consent | 3 / 8 |
 | 79 | Buku KIA - Identitas dan ANC | 206 / 388 |
 | 80 | Buku KIA - INC | 60 / 108 |
 | 81 | Buku KIA - PNC | 14 / 32 |
 | 82 | Buku KIA - Anak | 189 / 284 |
-| 78 | Informed Consent | 3 / 8 |
-| 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
-| 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
-| 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
-| 124 | Dapodik - PAUD (semester) | 42 / 190 |
-| 237 | SIPTM (baru ditambahkan) | 52 / 214 |
-| 228 | SIM RS Data - Tripat ANC | 20 / 28 |
-| 231 | SIM RS Data - Tripat BBL (sheet 'INC BBL') | 23 / 20 |
-| 230 | SIM RS Data - Tripat PNC | 24 / 28 |
-| 219 | SIM RS Data - Narmada INC | 86 / 262 |
-| 222 | SIM RS Data - Narmada KIA | 50 / 107 |
-| 200 | SIM RS Data - Panti Nugroho ANC | 31 / 68 |
-| 201 | SIM RS Data - Panti Nugroho INC | 37 / 118 |
-| 202 | SIM RS Data - Panti Nugroho PNC | 67 / 131 |
-| 203 | SIM RS Data - Panti Nugroho BBL | 31 / 55 |
-| 205 | SIM RS Data - Panti Nugroho Diabetes Melitus | 7 / 4 |
-| 206 | SIM RS Data - Panti Nugroho Hipertensi | 23 / 21 |
-| 207 | SIM RS Data - Panti Nugroho Stroke | 20 / 23 |
-| 173 | SIM RS Data - Ummu Hani ANC | 23 / 49 |
-| 174 | SIM RS Data - Ummu Hani INC | 41 / 94 |
-| 175 | SIM RS Data - Ummu Hani PNC | 53 / 110 |
-| 176 | SIM RS Data - Ummu Hani BBL | 30 / 51 |
-| 155 | SIM RS Data - MPH ANC | 33 / 87 |
-| 156 | SIM RS Data - MPH INC | 40 / 91 |
-| 157 | SIM RS Data - MPH PNC | 43 / 104 |
-| 158 | SIM RS Data - MPH BBL | 42 / 59 |
-| 160 | SIM RS Data - MPH Diabetes Melitus | 24 / 37 |
-| 161 | SIM RS Data - MPH Hipertensi | 20 / 22 |
-| 146 | SIM RS Data - Siaga Medika ANC | 100 / 181 |
-| 147 | SIM RS Data - Siaga Medika INC | 42 / 125 |
-| 148 | SIM RS Data - Siaga Medika PNC | 49 / 110 |
-| 149 | SIM RS Data - Siaga Medika BBL | 37 / 48 |
-| 183 | SIM RS Data - PKU INC | 66 / 175 |
-| 184 | SIM RS Data - PKU PNC | 67 / 131 |
-| 191 | SIM RS Data - Goetoeng ANC | 106 / 111 |
-| 192 | SIM RS Data - Goetoeng INC | 64 / 245 |
-| 193 | SIM RS Data - Goetoeng PNC | 9 / 21 |
-| 194 | SIM RS Data - Goetoeng BBL | 68 / 124 |
-| 196 | SIM RS Data - Goetoeng Diabetes Melitus | 6 / 4 |
-| 197 | SIM RS Data - Goetoeng Hipertensi | 5 / 3 |
-| 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
-| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 12 |
-| 137 | SIM RS Data - Harapan Ibu ANC (template Spheres) | 89 / 176 |
-| 138 | SIM RS Data - Harapan Ibu INC (template Spheres) | 67 / 160 |
-| 139 | SIM RS Data - Harapan Ibu PNC (template Spheres) | 67 / 145 |
-| 140 | SIM RS Data - Harapan Ibu BBL (template Spheres) | 79 / 110 |
-| 128 | SIM RS Data - At tin ANC (template Spheres) | 89 / 176 |
-| 129 | SIM RS Data - At tin INC (template Spheres) | 67 / 160 |
-| 130 | SIM RS Data - At tin PNC (template Spheres) | 67 / 145 |
-| 131 | SIM RS Data - At tin BBL (template Spheres) | 82 / 122 |
-| 164 | SIM RS Data - Nirmala ANC (template Spheres) | 89 / 176 |
-| 165 | SIM RS Data - Nirmala INC (template Spheres) | 67 / 160 |
-| 166 | SIM RS Data - Nirmala PNC (template Spheres) | 67 / 145 |
-| 167 | SIM RS Data - Nirmala BBL (template Spheres) | 82 / 122 |
-| 182 | SIM RS Data - PKU ANC (template Spheres) | 89 / 176 |
-| 185 | SIM RS Data - PKU BBL (template Spheres) | 82 / 122 |
-| 159 | SIM RS Data - MPH Hepatitis (template Spheres) | 20 / 22 |
-| 177 | SIM RS Data - Ummu Hani Hepatitis (template Spheres) | 20 / 22 |
-| 186 | SIM RS Data - PKU Hepatitis (template Spheres) | 20 / 22 |
-| 150 | SIM RS Data - Siaga Medika Hepatitis (template Spheres) | 20 / 22 |
 | 83 | Kobo Modul ANC | 86 / 172 |
 | 84 | Kobo Modul INC | 80 / 243 |
 | 85 | Kobo Modul Neonatus | 50 / 98 |
@@ -124,6 +73,66 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah d
 | 93 | Kobo Neonatus Outcome | 14 / 25 |
 | 94 | Kobo Neonatus Outcome v2 | 89 / 239 |
 | 101 | Kobo DDTK | 11 / 10 |
+| 104 | Kobo - Maternal Outcome | 12 / 14 |
+| 105 | Kobo - Raffle | 8 / 6 |
+| 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
+| 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
+| 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
+| 124 | Dapodik - PAUD (semester) | 42 / 190 |
+| 128 | SIM RS Data - At tin ANC (template Spheres) | 89 / 176 |
+| 129 | SIM RS Data - At tin INC (template Spheres) | 67 / 160 |
+| 130 | SIM RS Data - At tin PNC (template Spheres) | 67 / 145 |
+| 131 | SIM RS Data - At tin BBL (template Spheres) | 82 / 122 |
+| 137 | SIM RS Data - Harapan Ibu ANC (template Spheres) | 89 / 176 |
+| 138 | SIM RS Data - Harapan Ibu INC (template Spheres) | 67 / 160 |
+| 139 | SIM RS Data - Harapan Ibu PNC (template Spheres) | 67 / 145 |
+| 140 | SIM RS Data - Harapan Ibu BBL (template Spheres) | 79 / 110 |
+| 146 | SIM RS Data - Siaga Medika ANC | 100 / 181 |
+| 147 | SIM RS Data - Siaga Medika INC | 42 / 125 |
+| 148 | SIM RS Data - Siaga Medika PNC | 49 / 110 |
+| 149 | SIM RS Data - Siaga Medika BBL | 37 / 48 |
+| 150 | SIM RS Data - Siaga Medika Hepatitis (template Spheres) | 20 / 22 |
+| 155 | SIM RS Data - MPH ANC | 33 / 87 |
+| 156 | SIM RS Data - MPH INC | 40 / 91 |
+| 157 | SIM RS Data - MPH PNC | 43 / 104 |
+| 158 | SIM RS Data - MPH BBL | 42 / 59 |
+| 159 | SIM RS Data - MPH Hepatitis (template Spheres) | 20 / 22 |
+| 160 | SIM RS Data - MPH Diabetes Melitus | 24 / 37 |
+| 161 | SIM RS Data - MPH Hipertensi | 20 / 22 |
+| 164 | SIM RS Data - Nirmala ANC (template Spheres) | 89 / 176 |
+| 165 | SIM RS Data - Nirmala INC (template Spheres) | 67 / 160 |
+| 166 | SIM RS Data - Nirmala PNC (template Spheres) | 67 / 145 |
+| 167 | SIM RS Data - Nirmala BBL (template Spheres) | 82 / 122 |
+| 173 | SIM RS Data - Ummu Hani ANC | 23 / 49 |
+| 174 | SIM RS Data - Ummu Hani INC | 41 / 94 |
+| 175 | SIM RS Data - Ummu Hani PNC | 53 / 110 |
+| 176 | SIM RS Data - Ummu Hani BBL | 30 / 51 |
+| 177 | SIM RS Data - Ummu Hani Hepatitis (template Spheres) | 20 / 22 |
+| 182 | SIM RS Data - PKU ANC (template Spheres) | 89 / 176 |
+| 183 | SIM RS Data - PKU INC | 66 / 175 |
+| 184 | SIM RS Data - PKU PNC | 67 / 131 |
+| 185 | SIM RS Data - PKU BBL (template Spheres) | 82 / 122 |
+| 186 | SIM RS Data - PKU Hepatitis (template Spheres) | 20 / 22 |
+| 191 | SIM RS Data - Goetoeng ANC | 106 / 111 |
+| 192 | SIM RS Data - Goetoeng INC | 64 / 245 |
+| 193 | SIM RS Data - Goetoeng PNC | 9 / 21 |
+| 194 | SIM RS Data - Goetoeng BBL | 68 / 124 |
+| 196 | SIM RS Data - Goetoeng Diabetes Melitus | 6 / 4 |
+| 197 | SIM RS Data - Goetoeng Hipertensi | 5 / 3 |
+| 200 | SIM RS Data - Panti Nugroho ANC | 31 / 68 |
+| 201 | SIM RS Data - Panti Nugroho INC | 37 / 118 |
+| 202 | SIM RS Data - Panti Nugroho PNC | 67 / 131 |
+| 203 | SIM RS Data - Panti Nugroho BBL | 31 / 55 |
+| 205 | SIM RS Data - Panti Nugroho Diabetes Melitus | 7 / 4 |
+| 206 | SIM RS Data - Panti Nugroho Hipertensi | 23 / 21 |
+| 207 | SIM RS Data - Panti Nugroho Stroke | 20 / 23 |
+| 219 | SIM RS Data - Narmada INC | 86 / 262 |
+| 222 | SIM RS Data - Narmada KIA | 50 / 107 |
+| 228 | SIM RS Data - Tripat ANC | 20 / 28 |
+| 230 | SIM RS Data - Tripat PNC | 24 / 28 |
+| 231 | SIM RS Data - Tripat BBL (sheet 'INC BBL') | 23 / 20 |
+| 237 | SIPTM (baru ditambahkan) | 52 / 214 |
+| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 12 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
