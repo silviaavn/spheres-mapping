@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 283 laporan · Masih diperlukan: 230 · Dimapping ke FHIR: 213 · Sudah direview: 9
+Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -142,6 +142,8 @@ Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel �
 | 48 | CKG Lansia | 27 April 2026 (terbaru) | `CKG Lansia 27 April 2026` | 101 / 458 | ✅ |
 | 48 | CKG Lansia | 2026 | `CKG Lansia 2026` | 82 / 366 |  |
 | 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 80 / 361 |  |
+
+SISMAL (Malaria): hanya form yang punya mapping yang dicatat di tracker (#64, #275); jenis form SISMAL lain tidak dimasukkan.
 
 SIM RS: 34 sheet sendiri + 18 baris yang memakai template Spheres = 52 dari 109 baris (#128–#236) sudah ada sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` (sheet Template generik tidak dihitung). Sisanya (Margono semua; Hepatitis Panti Nugroho/Nirmala/Harapan Ibu/Goetoeng/Tripat/Narmada/At tin; TB semua RS; DM/HT/Stroke yang tidak punya sheet; Tripat INC; Narmada ANC/PNC/BBL; dst.) belum ada file mapping. Kobo: 12 form dari `Kobo_-_Data_Dictionary.xlsx` dihitung (#83–86, #88–94, #101).
 
@@ -386,49 +388,4 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 235 | SIM RS Data - Tripat Stroke | ✅ | ✅ | ❌ |  |  |
 | 236 | SIM RS Data - Tripat TB | ✅ | ✅ | ❌ |  |  |
 | 237 | SIPTM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 238 | SISMAL (Malaria) - Ketenagaan | ❌ | ❌ | ❌ |  |  |
-| 239 | SISMAL (Malaria) - Data Dasar Lab Malaria | ❌ | ❌ | ❌ |  |  |
-| 240 | SISMAL (Malaria) - Mikroskopis Fasyankes | ❌ | ❌ | ❌ |  |  |
-| 241 | SISMAL (Malaria) - CrossChecker Kab/Kota | ❌ | ❌ | ❌ |  |  |
-| 242 | SISMAL (Malaria) - Uji Silang | ❌ | ❌ | ❌ |  |  |
-| 243 | SISMAL (Malaria) - Verifikasi Uji Silang | ✅ | ❌ | ❌ |  |  |
-| 244 | SISMAL (Malaria) - Rekap Uji Silang | ❌ | ❌ | ❌ |  |  |
-| 245 | SISMAL (Malaria) - Zero Report | ✅ | ❌ | ❌ |  |  |
-| 246 | SISMAL (Malaria) - Regmal 1 WNA | ❌ | ❌ | ❌ |  |  |
-| 247 | SISMAL (Malaria) - Regmal 1 Desa Domisili | ❌ | ❌ | ❌ |  |  |
-| 248 | SISMAL (Malaria) - Rekap Regmal-2 | ❌ | ❌ | ❌ |  |  |
-| 249 | SISMAL (Malaria) - Kasus PE | ❌ | ❌ | ❌ |  |  |
-| 250 | SISMAL (Malaria) - Malaria - KIA | ❌ | ❌ | ❌ |  |  |
-| 251 | SISMAL (Malaria) - Tarik Data-1 | ❌ | ❌ | ❌ |  |  |
-| 252 | SISMAL (Malaria) - Tarik Data-1 Publik | ❌ | ❌ | ❌ |  |  |
-| 253 | SISMAL (Malaria) - Tarik Data-1 Private | ❌ | ❌ | ❌ |  |  |
-| 254 | SISMAL (Malaria) - Logistik Stok | ✅ | ❌ | ❌ |  |  |
-| 255 | SISMAL (Malaria) - Logistik ED | ❌ | ❌ | ❌ |  |  |
-| 256 | SISMAL (Malaria) - Logistik Stok Out | ❌ | ❌ | ❌ |  |  |
-| 257 | SISMAL (Malaria) - Regmal2 | ❌ | ❌ | ❌ |  |  |
-| 258 | SISMAL (Malaria) - Regmal 2 Public | ❌ | ❌ | ❌ |  |  |
-| 259 | SISMAL (Malaria) - Regmal 2 Private | ❌ | ❌ | ❌ |  |  |
-| 260 | SISMAL (Malaria) - Regmal 1 Rujukan | ❌ | ❌ | ❌ |  |  |
-| 261 | SISMAL (Malaria) - Reseptifitas dan Fokus | ❌ | ❌ | ❌ |  |  |
-| 262 | SISMAL (Malaria) - Identifikasi Jentik | ❌ | ❌ | ❌ |  |  |
-| 263 | SISMAL (Malaria) - Identifikasi Nyamuk | ✅ | ❌ | ❌ |  |  |
-| 264 | SISMAL (Malaria) - Pengendalian Vektor | ❌ | ❌ | ❌ |  |  |
-| 265 | SISMAL (Malaria) - Rekap Pengendalian Vektor | ❌ | ❌ | ❌ |  |  |
-| 266 | SISMAL (Malaria) - Kelengkapan Per Bulan Publik | ❌ | ❌ | ❌ |  |  |
-| 267 | SISMAL (Malaria) - Kelengkapan Per Bulan Private | ❌ | ❌ | ❌ |  |  |
-| 268 | SISMAL (Malaria) - Kelengkapan Per Bulan Nasional | ❌ | ❌ | ❌ |  |  |
-| 269 | SISMAL (Malaria) - Data dan Monitoring Kader | ✅ | ❌ | ❌ |  |  |
-| 270 | SISMAL (Malaria) - Kinerja Kader | ✅ | ❌ | ❌ |  |  |
-| 271 | SISMAL (Malaria) - MMP dan Monitoring Kader MMP | ✅ | ❌ | ❌ |  |  |
-| 272 | SISMAL (Malaria) - Rekap Laporan MMP | ✅ | ❌ | ❌ |  |  |
-| 273 | SISMAL (Malaria) - Data Dasar Penduduk | ✅ | ❌ | ❌ |  |  |
-| 274 | SISMAL (Malaria) - Kinerja Kader MMP | ❌ | ❌ | ❌ |  |  |
 | 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 276 | SISMAL (Malaria) - Rekap Data Individu Knowlesi Fasyankes | ✅ | ❌ | ❌ |  |  |
-| 277 | SISMAL (Malaria) - Rekap Data Individu Knowlesi Lab | ✅ | ❌ | ❌ |  |  |
-| 278 | SISMAL (Malaria) - Rekap Agregat Data Surveilans Knowlesi Lab | ❌ | ❌ | ❌ |  |  |
-| 279 | SISMAL (Malaria) - Data Rekap Laporan Konfirmasi PCR untuk P. Knowlesi | ❌ | ❌ | ❌ |  |  |
-| 280 | SISMAL (Malaria) - Laporan Rekap Kelambu | ❌ | ❌ | ❌ |  |  |
-| 281 | SISMAL (Malaria) - Laporan Rekap IRS | ❌ | ❌ | ❌ |  |  |
-| 282 | SISMAL (Malaria) - Laporan PME Bulanan | ❌ | ❌ | ❌ |  |  |
-| 283 | SISMAL (Malaria) - Laporan PME Tahunan | ❌ | ❌ | ❌ |  |  |
