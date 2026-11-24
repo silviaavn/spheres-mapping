@@ -861,6 +861,35 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | #94 Kobo Neonatus Outcome v2 | 208 / 212 | 89 / 239 |
 | #101 Kobo DDTK | 20 / 20 | 11 / 10 |
 
+## Kobo (Kobo_-_Data_Dictionary.xlsx) dan template Spheres RS
+
+⚠️ belum comprehensive review.
+
+**Asumsi**
+- KB1: pasangan sheet ↔ tracker: ANC Kobo #83, INC Kobo #84, Neonatus Kobo #85, PNC Kobo #86, Buku KIA 1 ANC #88, Entry Form 2 Luaran Kehamilan #89, KIA 3 PNC #90, KIA 4 Cadre #91, Vaksinator (revisedform) #92, Neonatal Outcome Kobo #93, v2 #94, DDTK Kobo #101. `Data BBL Kobo` tidak punya baris tracker (mungkin bagian #85?), dihitung terpisah, tidak masuk total.
+- KB2: sheet `Maternal Outcome Kobo` dan `Kobo Raffle` tidak dihitung ulang (sudah ada dari commit sebelumnya).
+- KB3: Buku KIA 1 - ANC: kolom `Question/answer option` = Variables, `Kobo XML Value` = Value Name, `Kobo Data Column Name` = raw. Neonatal Outcome v2: `Kategori` / `Format` / `Value` dipetakan ke Categories / Format/Value / Value Name.
+- KB4: RS yang memakai template Spheres (dari notes sheet TRACKER di `PHDT_Data_Rumah_Sakit.xlsx`) dihitung sebagai form sendiri dengan angka template: Harapan Ibu & At tin & Nirmala (ANC/INC/PNC/BBL), PKU (ANC, BBL), Hepatitis MPH / Ummu Hani / PKU / Siaga Medika (template HepB). BBL: Harapan Ibu = neo, lainnya = INC. Nirmala BBL kurang variabel Kunjungan Neonatus (99% template), dan kode diagnosis INC Nirmala berisi deskripsi: tidak mengubah hitungan.
+
+**Perlu konfirmasi**
+- KB-1: Hepatitis Panti Nugroho: notes menyebut 'form sihepi baru' sekaligus 'Excel template Spheres'. Tidak dihitung (kemungkinan SIHEPI #49).
+- KB-2: Narmada INC dan KIA tidak semuanya dimapping (notes TRACKER).
+
+| Form | Variabel unik / baris | Payload / code |
+|---|---|---|
+| #83 Kobo Modul ANC | 75 / 88 | 86 / 172 |
+| #84 Kobo Modul INC | 108 / 108 | 80 / 243 |
+| #85 Kobo Modul Neonatus | 89 / 93 | 50 / 98 |
+| #86 Kobo Modul PNC | 118 / 126 | 98 / 225 |
+| #88 Kobo Buku KIA 1 - ANC | 404 / 421 | 167 / 668 |
+| #89 Kobo Buku KIA 2 - Luaran Kehamilan | 48 / 49 | 38 / 87 |
+| #90 Kobo Buku KIA 3 - PNC | 145 / 161 | 75 / 168 |
+| #91 Kobo Buku KIA 4 - Cadre | 83 / 84 | 44 / 51 |
+| #92 Kobo Buku KIA 5 - Vaksinatorku | 100 / 102 | 40 / 64 |
+| #93 Kobo Neonatus Outcome | 25 / 25 | 14 / 25 |
+| #94 Kobo Neonatus Outcome v2 | 208 / 212 | 89 / 239 |
+| #101 Kobo DDTK | 20 / 20 | 11 / 10 |
+
 ## Log perubahan revisi
 - 2026-11-24: Tambah bagian SISMAL (Regmal 1 20/54, Validasi Indigenous 7/12): asumsi SM1–SM4, temuan SM-1–SM-5, catatan pipeline P44–P45. Verifikasi Uji Silang tidak dihitung (isi salinan TB-TPT). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
@@ -895,4 +924,5 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24: Tambah bagian Dapodik PAUD (42 payload, 190 code, asumsi DA1–DA4). Sheet dipilih user. Dapodik Antropometri DDTK tetap belum ada mapping.
 - 2026-11-24: Tambah bagian 5 CSV PHDT (SITB TB 01, TB 02, ELSMIL x3, SIPTM, ASIK Skrining PTM): 7 form, asumsi CS1–CS9. ⚠️ belum comprehensive review.
 - 2026-11-24 (2): Tambah bagian SIM RS (34 form). Perbaikan CK3 (QR Lansia terpisah) dan CK-1 (blok lab Lansia terlewat).
+- 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
 - 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
