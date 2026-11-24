@@ -554,6 +554,73 @@ Payload per resource:
 
 - 2026-11-24: Tambah 7 form dari 5 CSV (asumsi CS1–CS9), ⚠️ belum comprehensive review. Sebelumnya TB 01/TB 02/Elsmil/ASIK PTM belum dicocokkan; SIPTM baru.
 
+## SiGizi (PHDT_SIGIZI.xlsx): 17 form Balita, PMT 2024/2025, Ibu Nifas, Kohort Ibu
+
+Sumber: `PHDT_SIGIZI.xlsx` (sheet "Copy of ...", sama dengan sumber SiGizi ANC) + schema BQ dari user (`bq_schema.xlsx`, kolom raw header + field name). Diproses `scripts/sigizi_prepare.py` ke `mapping/phdt-data-dictionary-sigizi-<form>.csv` (logika blok/payload sama dengan `epus_prepare.py`). File asli tidak di-commit. SiGizi ANC tidak diulang. Daftar Balita dan Daftar Bumil **ditunda** (draft mapping belum dimasukkan, menunggu keputusan user).
+
+> ⚠️ **Belum comprehensive review.** Sudah ada daftar BQ (tally dicek), belum ada file mentah dan belum dibahas dengan tim. Pemisahan blok payload otomatis (heuristik).
+
+| Form | Slug | Sheet / baris Excel | Tabel BQ | Kolom BQ | BQ cocok | Variabel raw | Payload | Code |
+|---|---|---|---|---|---|---|---|---|
+| SiGizi Balita BNBA | `balita-bnba` | `Copy of SiGizi_Balita` 2-538 | `balita bnba` | 35 | 35 | 33 | 24 | 48 |
+| SiGizi Balita Vitamin A | `balita-vitamin-a` | `Copy of Sigizi Balita Vitamin A` 2-akhir | `vitamin a` | 34 | 34 | 14 | 22 | 47 |
+| SiGizi Balita Mendapat PMT 2024 | `balita-mendapat-pmt-2024` | `Copy of SiGizi_Balita` 539-887 | `mendapat pmt 2024` | 30 | 30 | 30 | 15 | 44 |
+| SiGizi Balita Pemantauan PMT 2024 | `balita-pemantauan-pmt-2024` | `Copy of SiGizi_Balita` 888-1142 | `pemantauan pmt 2024` | 18 | 18 | 18 | 9 | 12 |
+| SiGizi Balita ASI Eksklusif | `balita-asi-eksklusif` | `Copy of Sigizi Balita ASI Ekskl` 2-akhir | `asi eksklusif` | 22 | 22 | 22 | 11 | 36 |
+| SiGizi Balita MPASI | `balita-mpasi` | `Copy of Sigizi Balita MPASI` 2-akhir | `mpasi` | 28 | 27 | 28 | 9 | 30 |
+| SiGizi PMT 2025 BB Tidak Naik - Pantau | `pmt2025-bb-tidak-naik-pantau` | `Copy of SiGizi_PMT_2025` 2-347 | `bb tidak naik pantau pmt 2025` | 24 | 24 | 24 | 15 | 32 |
+| SiGizi PMT 2025 BB Tidak Naik - Riwayat | `pmt2025-bb-tidak-naik-riwayat` | `Copy of SiGizi_PMT_2025` 1568-2013 | `bb tidak naik riwayat pmt 2025` | 34 | 34 | 34 | 19 | 74 |
+| SiGizi PMT 2025 BB Tidak Naik - Survey | `pmt2025-bb-tidak-naik-survey` | `Copy of SiGizi_PMT_2025` 2014-akhir | `bb tidak naik survey pmt 2025` | 20 | 20 | 20 | 5 | 16 |
+| SiGizi PMT 2025 BB Kurang - Pantau | `pmt2025-bb-kurang-pantau` | `Copy of SiGizi_PMT_2025` 348-786 | `bb kurang pantau pmt 2025` | 24 | 24 | 24 | 21 | 46 |
+| SiGizi PMT 2025 BB Kurang - Riwayat | `pmt2025-bb-kurang-riwayat` | `Copy of SiGizi_PMT_2025` 1568-2013 | `bb kurang riwayat pmt 2025` | 34 | 34 | 34 | 19 | 74 |
+| SiGizi PMT 2025 BB Kurang - Survey | `pmt2025-bb-kurang-survey` | `Copy of SiGizi_PMT_2025` 2014-akhir | `bb kurang survey pmt 2025` | 20 | 20 | 20 | 5 | 16 |
+| SiGizi PMT 2025 Gizi Kurang - Pantau | `pmt2025-gizi-kurang-pantau` | `Copy of SiGizi_PMT_2025` 787-1567 | `gizi kurang pantau pmt 2025` | 51 | 51 | 51 | 42 | 101 |
+| SiGizi PMT 2025 Gizi Kurang - Riwayat | `pmt2025-gizi-kurang-riwayat` | `Copy of SiGizi_PMT_2025` 1568-2013 | `gizi kurang riwayat pmt 2025` | 34 | 34 | 34 | 19 | 74 |
+| SiGizi PMT 2025 Gizi Kurang - Survey | `pmt2025-gizi-kurang-survey` | `Copy of SiGizi_PMT_2025` 2014-akhir | `gizi kurang survey pmt 2025` | 20 | 20 | 20 | 5 | 16 |
+| SiGizi Ibu Nifas | `ibu-nifas` | `Copy of SiGizi Nifas` 2-akhir | `ibu nifas` | 14 | 14 | 14 | 11 | 12 |
+| SiGizi Kohort Ibu | `kohort-ibu` | `Copy of SiGizi Kohort Ibu` 2-akhir | `kohort ibu` | 42 | 42 | 42 | 63 | 94 |
+
+Kolom BQ = field di schema tanpa metadata pipeline (`puskesmas_name/_id`, `file_*`, `uuid`, `hash_code`, `sheet_name`, `ingestion_timestamp`), tanpa `no` (data lokal, keputusan user R2), dan tanpa kolom di SG3. Variabel raw = kolom yang punya raw header di schema (PMT 2025 tidak punya raw header → jumlah kolom BQ).
+
+Payload per resource:
+
+- SiGizi Balita BNBA: Observation 14, MedicationRequest 2, MedicationDispense 2, Patient 1, RelatedPerson 1, Encounter 1, Condition 1, Procedure 1, QuestionnaireResponse 1
+- SiGizi Balita Vitamin A: Observation 13, MedicationRequest 2, MedicationDispense 2, Patient 1, RelatedPerson 1, Encounter 1, Condition 1, Procedure 1
+- SiGizi Balita Mendapat PMT 2024: Observation 12, Patient 1, Encounter 1, Condition 1
+- SiGizi Balita Pemantauan PMT 2024: Observation 6, Patient 1, Encounter 1, Condition 1
+- SiGizi Balita ASI Eksklusif: Observation 7, Patient 1, RelatedPerson 1, Encounter 1, Condition 1
+- SiGizi Balita MPASI: Observation 6, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 BB Tidak Naik - Pantau: Observation 12, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 BB Tidak Naik - Riwayat: Observation 16, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 BB Tidak Naik - Survey: Patient 1, Encounter 1, Condition 1, Observation 1, QuestionnaireResponse 1
+- SiGizi PMT 2025 BB Kurang - Pantau: Observation 18, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 BB Kurang - Riwayat: Observation 16, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 BB Kurang - Survey: Patient 1, Encounter 1, Condition 1, Observation 1, QuestionnaireResponse 1
+- SiGizi PMT 2025 Gizi Kurang - Pantau: Observation 39, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 Gizi Kurang - Riwayat: Observation 16, Patient 1, Encounter 1, Condition 1
+- SiGizi PMT 2025 Gizi Kurang - Survey: Patient 1, Encounter 1, Condition 1, Observation 1, QuestionnaireResponse 1
+- SiGizi Ibu Nifas: Observation 3, Procedure 3, EpisodeOfCare 2, Patient 1, Encounter 1, Condition 1
+- SiGizi Kohort Ibu: Observation 17, Condition 15, Encounter 14, ServiceRequest 3, Specimen 3, DiagnosticReport 3, EpisodeOfCare 2, Immunization 2, Patient 1, RelatedPerson 1, PractitionerRole 1, Procedure 1
+
+| # | Asumsi / temuan | Status |
+|---|---|---|
+| SG1 | Potongan sheet per form: `Copy of SiGizi_Balita` 2–538 BNBA, 539–887 Mendapat PMT 2024, 888–1142 Pemantauan PMT 2024; `Copy of SiGizi_PMT_2025` 2–347 Pantau BB Tidak Naik, 348–786 Pantau BB Kurang, 787–1567 Pantau Gizi Kurang, 1568–2013 Riwayat, 2014–akhir Survey. PMT 2025 = **9 form** (keputusan user R1): Riwayat dan Survey memakai dictionary yang sama untuk 3 kategori | open |
+| SG2 | Nama Column BQ diisi otomatis dari schema: cocokkan field name dulu, lalu raw header (berdasarkan nama, bukan posisi). Semua kolom BQ cocok **kecuali MPASI `pengukuran`** (kolom export, belum ada di dictionary) | open |
+| SG3 | Kolom BQ **tanpa raw header** yang tidak dimapping: `desakelurahan`, `jumlah_anak_diberi_vit_a` (Vitamin A), `jumlah_anak_asi_eksklusif` (ASI) = rekap agregat per desa yang ikut tercampur ke tabel individu; `zs_tbu_awal` (Mendapat PMT 2024), `zs_tbu_converted` (Pemantauan PMT 2024) = kolom turunan pipeline | open |
+| SG4 | Schema `pemantauan pmt 2024`: raw header mulai "Tinggi Badan (cm) Awal" **bergeser 1 baris** terhadap field name (mis. raw "Tinggi Badan (cm) Awal" tertulis di field `status_pertumbuhan`). Pencocokan pakai field name saja; `tinggi_badan_cm_awal` tetap dianggap kolom file mentah | open (cek schema) |
+| SG5 | Vitamin A: dictionary = salinan BNBA (format export lama, 34 kolom BQ termasuk berat, tinggi, BB/U, KPSP, KIA, `jml_vit_a`); raw header export sekarang hanya 14 kolom. Ditambahkan: blok RelatedPerson **Nama Ortu** (+1 payload, pola BNBA) dan baris **Tanggal Pemberian** (`Procedure.performedPeriod.start`, dipakai juga untuk tanggal lain kalau `Tanggal Pengukuran` kosong). Angka PHDT 32 mendekati format lama | open (konfirmasi) |
+| SG6 | `puskesmas` / `posyandu`: di sheet dipasang ke `Organization.name` (master data). Dipindah ke `Encounter.serviceProvider.reference` / `Encounter.location.reference` dengan keterangan lookup (aturan.md). Blok Organization/Location tetap di dictionary tapi tidak dihitung, label variabelnya dipindah ke Keterangan. Header file export Vitamin A & ASI memang "Pukesmas" (typo asli) | done (otomatis) |
+| SG7 | `detail` (5 form: BNBA, Vitamin A, Mendapat PMT 2024, ASI, MPASI) → `Encounter.extension` url `http://terminology.kemkes.go.id/sp/sigizi-detail`, `valueString` (keputusan user). Tidak menambah payload/code | done |
+| SG8 | `tindakan` tanpa mapping di Pemantauan PMT 2024 dan 9 form PMT 2025 → **asumsi** pola sama dengan Detail: `Encounter.extension` `sigizi-tindakan` `valueString`. Ibu Nifas sudah punya mapping Tindakan (Procedure SP000683 Tatalaksana Tindakan) dan dibiarkan | open (konfirmasi) |
+| SG9 | Kohort Ibu: kunjungan bulanan Januari–Desember (kolom `tahun_<bulan>`) dan kunjungan persalinan = **14 Encounter** dihitung masing-masing (+13 payload), sama seperti 13 Condition 134435003 per kunjungan. EpisodeOfCare ANC muncul 2x (dibuat + diperbarui saat persalinan) | open |
+| SG10 | Baris bergeser 1 kolom ke kiri (Resource di kolom Agregat/Individu, Path di kolom Resource): 52 baris Kohort Ibu (blok lab Hb/protein urin/gula darah) dan 13 baris Pantau Gizi Kurang 2025 → dikembalikan otomatis | done (otomatis) |
+| SG11 | Perbaikan path otomatis: `Patient.line` → `Patient.address.line` (Vitamin A, Nifas, Kohort); `Organization.address...` di blok Location → `Location.address...`; `ServiceRequest.code` / `Specimen.type` tanpa `.coding` → `.coding` (Kohort) | done (otomatis) |
+| SG12 | BNBA & Vitamin A: MedicationDispense Vitamin A 200.000 IU dan 100.000 IU memakai KFA **93018284** yang sama (MedicationRequest beda: 92000809 / 92000354). Kemungkinan salah salin | open |
+| SG13 | Pantau BB Tidak Naik (15 payload) dan Pantau BB Kurang (21 payload) punya 24 kolom BQ yang sama, tapi jumlah blok pemantauan di sheet beda (BB/U, berat, naik BB berulang 3x vs 5x). Perlu dicek apakah jumlah pemantauan memang beda per kategori | open |
+| SG14 | BNBA: `kelas_ibu_balita` dan `mbg` ada di dictionary dan BQ tapi tidak punya raw header di schema (kolom baru di export?). Ibu Nifas: PHDT 57 variabel vs 14 kolom BQ (selisih −43, penyebab belum diketahui). Vitamin A: PHDT 32 vs raw 14 (lihat SG5) | open |
+
+- 2026-11-24: Tambah 17 form SiGizi (asumsi/temuan SG1–SG14, catatan pipeline P39–P43), ⚠️ belum comprehensive review. Total 314 payload / 772 code.
+
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
 Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
@@ -611,8 +678,14 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P36 | MPDN Bayi, Ibu | Dua form baru tanpa Encounter: Patient (Bayi: ibu + bayi, nama bayi = `By Ny {Nama Ibu Hamil}`), Observation (Bayi 16, Ibu 7), Condition (Ibu), dan 1 Composition per laporan dengan `contained` Location (tipe lahir/meninggal) | Ingestion: tabel `mpdn_laporan_kematian_bayi` / `_ibu`. Converter: buat bundle Composition + Observation + Patient. **Daftar kolom BQ belum dicek** | open |
 | P37 | MPDN Bayi | Urutan pasien tergantung lahir mati / hidup: lahir mati → pasien 1 = ibu, pasien 2 = anak; lahir hidup → pasien 1 = bayi, pasien 2 = ibu (`subject` / `focus`, baris 41–43 dictionary asli). `Composition.type`: COM000002 (lahir mati) / COM000003 (lahir hidup) | Converter: logika pasien 1/2 dan `Composition.type` | open |
 | P38 | MPDN Bayi, Ibu | Dugaan sebab kematian = component kode group / subgroup / detail dari daftar ICD-PM (Bayi) dan ICD-MM (Ibu). Practitioner PJ MPDN = lookup (MA8) | Converter: pemetaan ICD-PM / ICD-MM ke code. Master data Practitioner PJ MPDN | open |
+| P39 | SiGizi Balita (BNBA, Vitamin A, Mendapat PMT 2024, ASI, MPASI) | Kolom `detail` → `Encounter.extension` `http://terminology.kemkes.go.id/sp/sigizi-detail` (`valueString`). `tindakan` (Pemantauan PMT 2024, PMT 2025 ×9) → `Encounter.extension` `sigizi-tindakan` (`valueString`, asumsi SG8) | Converter | open |
+| P40 | SiGizi Vitamin A, ASI, PMT 2024, Daftar Balita | Tabel BQ tercampur: kolom rekap agregat (`desakelurahan`, `jumlah_anak_*`), kolom format export lama (Vitamin A: berat, tinggi, BB/U, KPSP, KIA), kolom MPASI di `sigizi_daftar_balita`, kolom turunan `zs_tbu_awal` / `zs_tbu_converted` | Ingestion: pisahkan sheet rekap dari sheet individu; catat versi format export | open |
+| P41 | SiGizi (17 form) | `puskesmas` / `pukesmas` → lookup `Encounter.serviceProvider.reference`; `posyandu` → lookup `Encounter.location.reference` (bukan Organization baru) | Converter: lookup master data Organization/Location | open |
+| P42 | SiGizi Vitamin A | Kolom export baru `nama_ortu` → RelatedPerson (PRN); `tanggal_pemberian` → `Procedure.performedPeriod.start` dan fallback tanggal Encounter / MedicationDispense kalau `tanggal_pengukuran` kosong | Converter | open |
+| P43 | SiGizi Kohort Ibu | 14 Encounter per pasien (12 kunjungan bulanan dari kolom `tahun_<bulan>` + 1 kunjungan utama + 1 persalinan), masing-masing dengan Condition sendiri; Encounter hanya dibuat kalau tanggal bulan itu terisi | Converter | open |
 
 ## Log perubahan revisi
+- 2026-11-24: Tambah bagian SiGizi 17 form (SG1–SG14) dan catatan pipeline P39–P43. Keputusan user: PMT 2025 = 9 form, `no` tidak dimapping, `detail` → extension `sigizi-detail` valueString.
 - 2026-11-24: Tambah bagian perbandingan jumlah variabel dengan PHDT Data Dictionary (4 form beda: SiGizi ANC, TB 06, TB 03 SO, TB 16K). Angka output utama tidak berubah.
 - 2026-11-24: Tambah jumlah **Variabel raw** di semua output form dan ringkasan `output.md` (MPDN Bayi 37, Ibu 24 = variabel dictionary tanpa placeholder; belum ada file mentah).
 - 2026-11-24: Tambah review MPDN Kematian Bayi dan Kematian Ibu (dictionary dipecah jadi 2 file): hasil hitung 19/112 dan 10/50, tally variabel 37 dan 24 (cocok rekap user, tanpa BQ), asumsi MA1–MA10, temuan MG1–MG6, MB1–MB6, MI1–MI2, perubahan file F1–F5, catatan pipeline P36–P38. **Belum ada comprehensive review**, file mentah, dan daftar BQ.

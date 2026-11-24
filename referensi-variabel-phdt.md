@@ -46,6 +46,14 @@ Kolom **Variabel raw** = angka di `output.md`. Kolom **PHDT** = angka di daftar 
 | elsmil-baduta | ELSMIL - Baduta | 38 (baris 45) | 42 | 3 (baris) | ⚠️ belum review |
 | siptm | SIPTM (baru, tidak ada di PHDT) | 60 (baris 60) | – | dihitung dari mapping | ⚠️ belum review |
 | asik-skrining-ptm | ASIK - Data Skrining PTM | 67 (baris 89) | 64 | 25 (baris) | ⚠️ belum review |
+| sigizi-balita-bnba | SiGizi - Balita Tumbang (BNBA) | 33 | 34 | -1 | ⚠️ belum review |
+| sigizi-balita-vitamin-a | SiGizi - Balita Vitamin A | 14 | 32 | -18 | ⚠️ belum review |
+| sigizi-balita-mendapat/pemantauan-pmt-2024 | SiGizi - Balita PMT | 30 + 18 = 48 | 49 | -1 | ⚠️ belum review |
+| sigizi-balita-asi-eksklusif | SiGizi - Balita ASI Ekslusif | 22 | 22 | +0 | ⚠️ belum review |
+| sigizi-balita-mpasi | SiGizi - Balita MPASI | 28 | 28 | +0 | ⚠️ belum review |
+| sigizi-pmt2025 (9 tabel) | SiGizi - Balita PMT 2025 | 261 (9 tabel); unik per jenis: pantau BB 24 + pantau gizi kurang 51 + riwayat 34 + survey 20 = 129 | 154 | -25 (unik) | ⚠️ belum review |
+| sigizi-ibu-nifas | SiGizi - Ibu Nifas | 14 | 57 | -43 | ⚠️ belum review |
+| sigizi-kohort-ibu | (tidak ada di daftar) | 42 | – | – | ⚠️ belum review |
 
 Keputusan (2026-11-24): selisih di SITB dianggap wajar karena sebelumnya banyak kolom SITB yang di-skip di PHDT Data Dictionary (dugaan, belum dicek per kolom). **Angka output utama tidak diubah.** Selisih SiGizi ANC (+4) belum dijelaskan.
 
@@ -276,6 +284,7 @@ Sel kosong = jumlah variabel belum diisi di sumber. Angka 0 = sumber mencatat 0 
 ## Log perubahan
 - 2026-11-24: Tally ditambah 6 form Tumbuh Kembang (KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH): jumlah baris variabel cocok dengan PHDT (KPSP +1), variabel unik lebih kecil karena pertanyaan berulang antar kelompok umur. Belum comprehensive review.
 - 2026-11-24: Tally ditambah 11 form ePuskesmas (belum comprehensive review): cocok = MTBS, Tumbang Anak, Tumbang DDTK; beda = Pelayanan +1, Kunjungan Ibu Hamil −29, Lab −1, Rujukan +1, ANC −13 (baris 136 = PHDT), INC +11, PNC +11, MTBM −10. Angka output utama tidak diubah.
+- 2026-11-24: Tambah tally 17 form SiGizi (Balita, PMT 2024, PMT 2025 ×9, Nifas, Kohort Ibu). Variabel raw = kolom raw di schema BQ (tanpa `No`); PMT 2025 tidak punya raw header → jumlah kolom BQ.
 - 2026-11-24: Dibuat dari daftar PHDT Data Dictionary (216 baris berisi). Tally 9 form di output utama: 5 cocok, 4 beda (SiGizi ANC, TB 06, TB 03 SO, TB 16K), Raffle tidak ada di daftar.
 - 2026-11-24: Tally ditambah Dapodik PAUD (sheet `Copy of DAPODIK`, dipilih user): 75 variabel unik / 87 baris vs PHDT 93 (−6 baris), angka output utama tidak diubah.
 - 2026-11-24: Tally ditambah 7 form dari 5 CSV (TB 01, TB 02, Elsmil x3, SIPTM, ASIK PTM). SIPTM tidak ada di daftar PHDT: ditambahkan baris baru, jumlah variabel dihitung dari mapping (60). Angka output utama tidak diubah.

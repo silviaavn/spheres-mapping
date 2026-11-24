@@ -34,7 +34,24 @@ FORMS = [("Maternal Outcome", "kobo-data-dictionary-maternal-outcome"), ("Raffle
          ("ELSMIL Pasca Persalinan", "phdt-data-dictionary-elsmil-pasca-persalinan"),
          ("ELSMIL Baduta", "phdt-data-dictionary-elsmil-baduta"),
          ("SIPTM", "phdt-data-dictionary-siptm"),
-         ("ASIK Skrining PTM", "phdt-data-dictionary-asik-skrining-ptm")]
+         ("ASIK Skrining PTM", "phdt-data-dictionary-asik-skrining-ptm"),
+         ("SiGizi Balita BNBA", "phdt-data-dictionary-sigizi-balita-bnba"),
+         ("SiGizi Balita Vitamin A", "phdt-data-dictionary-sigizi-balita-vitamin-a"),
+         ("SiGizi Balita Mendapat PMT 2024", "phdt-data-dictionary-sigizi-balita-mendapat-pmt-2024"),
+         ("SiGizi Balita Pemantauan PMT 2024", "phdt-data-dictionary-sigizi-balita-pemantauan-pmt-2024"),
+         ("SiGizi Balita ASI Eksklusif", "phdt-data-dictionary-sigizi-balita-asi-eksklusif"),
+         ("SiGizi Balita MPASI", "phdt-data-dictionary-sigizi-balita-mpasi"),
+         ("SiGizi PMT 2025 BB Tidak Naik - Pantau", "phdt-data-dictionary-sigizi-pmt2025-bb-tidak-naik-pantau"),
+         ("SiGizi PMT 2025 BB Tidak Naik - Riwayat", "phdt-data-dictionary-sigizi-pmt2025-bb-tidak-naik-riwayat"),
+         ("SiGizi PMT 2025 BB Tidak Naik - Survey", "phdt-data-dictionary-sigizi-pmt2025-bb-tidak-naik-survey"),
+         ("SiGizi PMT 2025 BB Kurang - Pantau", "phdt-data-dictionary-sigizi-pmt2025-bb-kurang-pantau"),
+         ("SiGizi PMT 2025 BB Kurang - Riwayat", "phdt-data-dictionary-sigizi-pmt2025-bb-kurang-riwayat"),
+         ("SiGizi PMT 2025 BB Kurang - Survey", "phdt-data-dictionary-sigizi-pmt2025-bb-kurang-survey"),
+         ("SiGizi PMT 2025 Gizi Kurang - Pantau", "phdt-data-dictionary-sigizi-pmt2025-gizi-kurang-pantau"),
+         ("SiGizi PMT 2025 Gizi Kurang - Riwayat", "phdt-data-dictionary-sigizi-pmt2025-gizi-kurang-riwayat"),
+         ("SiGizi PMT 2025 Gizi Kurang - Survey", "phdt-data-dictionary-sigizi-pmt2025-gizi-kurang-survey"),
+         ("SiGizi Ibu Nifas", "phdt-data-dictionary-sigizi-ibu-nifas"),
+         ("SiGizi Kohort Ibu", "phdt-data-dictionary-sigizi-kohort-ibu")]
 if nform: FORMS = FORMS[:nform]
 SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http://terminology.kemkes.go.id/sp": "kemkes sp",
          "http://terminology.kemkes.go.id": "kemkes", "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes": "WHO anc-custom-codes",
@@ -46,7 +63,7 @@ SHORT = {"http://snomed.info/sct": "snomed", "http://loinc.org": "loinc", "http:
 # Variabel raw per form: kolom file mentah (raw/*.md) kalau ada; kalau tidak ada file mentah = jumlah variabel di dictionary
 RAW = {"Maternal Outcome": 12, "Raffle": 12, "SiGizi ANC": "sigizi-anc", "SITB TB 06": "sitb-tb06", "SITB TB 03 SO": "sitb-tb03-so",
        "SITB TB 03 RO": "sitb-tb03-ro", "SITB TB 04": "sitb-tb04", "SITB TB 16K": "sitb-tb16k", "MPDN Kematian Bayi": 37, "MPDN Kematian Ibu": 24,
-       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38, "ePus Tumbang KPSP": 123, "ePus Tumbang TDD": 37, "ePus Tumbang TDL": 6, "ePus Tumbang KMPE": 14, "ePus Tumbang M-CHAT-R": 20, "Dapodik PAUD": 75, "ePus Tumbang GPPH": 10, "SITB TB 01": 82, "SITB TB 02": 22, "ELSMIL Ibu Hamil": 36, "ELSMIL Pasca Persalinan": 29, "ELSMIL Baduta": 38, "SIPTM": 60, "ASIK Skrining PTM": 67}
+       "ePus Pelayanan Pasien": 81, "ePus Kunjungan Ibu Hamil": 68, "ePus Laboratorium": 22, "ePus Rujukan Eksternal": 23, "ePus ANC": 123, "ePus INC": 93, "ePus PNC": 107, "ePus MTBS": 187, "ePus MTBM": 105, "ePus Tumbang Anak": 34, "ePus Tumbang DDTK": 38, "ePus Tumbang KPSP": 123, "ePus Tumbang TDD": 37, "ePus Tumbang TDL": 6, "ePus Tumbang KMPE": 14, "ePus Tumbang M-CHAT-R": 20, "Dapodik PAUD": 75, "ePus Tumbang GPPH": 10, "SITB TB 01": 82, "SITB TB 02": 22, "ELSMIL Ibu Hamil": 36, "ELSMIL Pasca Persalinan": 29, "ELSMIL Baduta": 38, "SIPTM": 60, "ASIK Skrining PTM": 67, "SiGizi Balita BNBA": 33, "SiGizi Balita Vitamin A": 14, "SiGizi Balita Mendapat PMT 2024": 30, "SiGizi Balita Pemantauan PMT 2024": 18, "SiGizi Balita ASI Eksklusif": 22, "SiGizi Balita MPASI": 28, "SiGizi PMT 2025 BB Tidak Naik - Pantau": 24, "SiGizi PMT 2025 BB Tidak Naik - Riwayat": 34, "SiGizi PMT 2025 BB Tidak Naik - Survey": 20, "SiGizi PMT 2025 BB Kurang - Pantau": 24, "SiGizi PMT 2025 BB Kurang - Riwayat": 34, "SiGizi PMT 2025 BB Kurang - Survey": 20, "SiGizi PMT 2025 Gizi Kurang - Pantau": 51, "SiGizi PMT 2025 Gizi Kurang - Riwayat": 34, "SiGizi PMT 2025 Gizi Kurang - Survey": 20, "SiGizi Ibu Nifas": 14, "SiGizi Kohort Ibu": 42}
 def raw_n(name):
     r = RAW[name]
     return r if isinstance(r, int) else len(fo.load_raw(f"{repo}/raw/{r}-kolom.md"))

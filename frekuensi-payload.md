@@ -6,34 +6,34 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 
 | # | Resource | Code pembeda | Display | Dipakai di form | Frekuensi |
 |---|---|---|---|---|---|
-| 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x), ASIK Skrining PTM (6x) | 7 |
+| 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x), ASIK Skrining PTM (6x), SiGizi Kohort Ibu | 8 |
 | 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x), ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 9 |
-| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIPTM, ASIK Skrining PTM | 28 |
-| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM | 24 |
+| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIPTM, ASIK Skrining PTM, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 45 |
+| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu (14x) | 41 |
 | 5 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | Maternal Outcome | 1 |
-| 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC | 5 |
-| 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome, ePus PNC | 2 |
+| 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SiGizi Ibu Nifas, SiGizi Kohort Ibu (2x) | 7 |
+| 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome, ePus PNC, SiGizi Ibu Nifas | 3 |
 | 8 | Observation | SP000389 | Keadaan Ibu | Maternal Outcome, ePus PNC | 2 |
-| 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome, ePus INC, ePus PNC, ELSMIL Pasca Persalinan | 4 |
+| 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome, ePus INC, ePus PNC, ELSMIL Pasca Persalinan, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 6 |
 | 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu, ePus INC, ePus PNC | 5 |
 | 11 | Observation | LT000005 | Alamat Mati | Maternal Outcome | 1 |
 | 12 | Observation | 79378-6 | Cause of death | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 13 | Location | – | – | Raffle, SITB TB 06 | 2 |
 | 14 | Condition | SP001135 | Presensi Posyandu | Raffle | 1 |
 | 15 | Observation | 385438008 | Source of information | Raffle | 1 |
-| 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil | 4 |
-| 17 | Observation | 424144002 | Current chronological age | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM | 13 |
-| 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
+| 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu (13x) | 5 |
+| 17 | Observation | 424144002 | Current chronological age | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x), ePus Kunjungan Ibu Hamil, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SITB TB 01 (2x), SITB TB 02, ASIK Skrining PTM, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 16 |
+| 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 6 |
 | 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ELSMIL Ibu Hamil | 6 |
 | 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM | 9 |
-| 22 | Observation | OC000010 | Indeks Massa Tubuh Sebelum Hamil | SiGizi ANC, ELSMIL Ibu Hamil | 2 |
+| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD, SITB TB 01, ELSMIL Ibu Hamil, SIPTM, SiGizi Kohort Ibu | 10 |
+| 22 | Observation | OC000010 | Indeks Massa Tubuh Sebelum Hamil | SiGizi ANC, ELSMIL Ibu Hamil, SiGizi Kohort Ibu | 3 |
 | 23 | Immunization | VG139 | Td | SiGizi ANC | 1 |
-| 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC, ePus ANC | 2 |
+| 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC, ePus ANC, SiGizi Kohort Ibu | 3 |
 | 25 | Observation | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | SiGizi ANC, ePus ANC | 2 |
-| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM | 11 |
+| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01 (3x), ELSMIL Ibu Hamil, SIPTM, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x), SiGizi Kohort Ibu | 22 |
 | 27 | Observation | 392570002 | Blood pressure finding | SiGizi ANC | 1 |
-| 28 | Observation | 284473002 | Mid upper arm circumference | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK, ELSMIL Ibu Hamil | 8 |
+| 28 | Observation | 284473002 | Mid upper arm circumference | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK, ELSMIL Ibu Hamil, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Kohort Ibu | 11 |
 | 29 | Observation | 289625003 | Finding of fundal height of uterus | SiGizi ANC | 1 |
 | 30 | Observation | 883-9 | ABO group [Type] in Blood | SiGizi ANC, ePus Laboratorium, ePus ANC, ePus INC, SIPTM | 5 |
 | 31 | Observation | 10331-7 | Rh [Type] in Blood | SiGizi ANC, ePus ANC | 2 |
@@ -46,7 +46,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 38 | MedicationRequest | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC, ePus Pelayanan Pasien | 2 |
 | 39 | MedicationDispense | SP000370 | Multiple Micronutrient Supplement | SiGizi ANC, ePus Pelayanan Pasien | 2 |
 | 40 | ServiceRequest | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
-| 41 | Specimen | 122555007 | Venous blood specimen | SiGizi ANC (5x) | 1 |
+| 41 | Specimen | 122555007 | Venous blood specimen | SiGizi ANC (5x), SiGizi Kohort Ibu (2x) | 2 |
 | 42 | Observation | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SITB TB 01 | 5 |
 | 43 | DiagnosticReport | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
 | 44 | ServiceRequest | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | SiGizi ANC | 1 |
@@ -55,16 +55,16 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 47 | ServiceRequest | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
 | 48 | Observation | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC | 4 |
 | 49 | DiagnosticReport | 22464-2 | Reagin Ab [Presence] in Specimen | SiGizi ANC | 1 |
-| 50 | ServiceRequest | 2887-8 | Protein [Presence] in Urine | SiGizi ANC | 1 |
-| 51 | Specimen | 122575003 | Urine specimen | SiGizi ANC | 1 |
-| 52 | Observation | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
-| 53 | DiagnosticReport | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC | 4 |
-| 54 | ServiceRequest | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC | 1 |
-| 55 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil | 6 |
-| 56 | DiagnosticReport | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil | 6 |
-| 57 | ServiceRequest | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC | 1 |
-| 58 | Observation | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM | 5 |
-| 59 | DiagnosticReport | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM | 5 |
+| 50 | ServiceRequest | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, SiGizi Kohort Ibu | 2 |
+| 51 | Specimen | 122575003 | Urine specimen | SiGizi ANC, SiGizi Kohort Ibu | 2 |
+| 52 | Observation | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SiGizi Kohort Ibu | 5 |
+| 53 | DiagnosticReport | 2887-8 | Protein [Presence] in Urine | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, SiGizi Kohort Ibu | 5 |
+| 54 | ServiceRequest | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, SiGizi Kohort Ibu | 2 |
+| 55 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil, SiGizi Kohort Ibu | 7 |
+| 56 | DiagnosticReport | 718-7 | Hemoglobin [Mass/volume] in Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus ANC, ePus MTBS (2x), ELSMIL Ibu Hamil, SiGizi Kohort Ibu | 7 |
+| 57 | ServiceRequest | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, SiGizi Kohort Ibu | 2 |
+| 58 | Observation | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM, SiGizi Kohort Ibu | 6 |
+| 59 | DiagnosticReport | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, SIPTM, ASIK Skrining PTM, SiGizi Kohort Ibu | 6 |
 | 60 | Observation | 15220000 | Laboratory test | SiGizi ANC, ePus ANC | 2 |
 | 61 | Observation | SP000007 | Tatalaksana Anemia | SiGizi ANC, ePus ANC | 2 |
 | 62 | Observation | SP000010 | Skrining Hipertensi dalam Kehamilan | SiGizi ANC, ePus ANC | 2 |
@@ -78,7 +78,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 70 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04, SITB TB 01 | 4 |
 | 71 | Condition | Z03.0 | Observation for suspected tuberculosis | SITB TB 06 | 1 |
 | 72 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x), ePus Tumbang KPSP (14x), ePus Tumbang TDD (8x), ePus Tumbang KMPE, ePus Tumbang M-CHAT-R, ePus Tumbang GPPH, SITB TB 01, SITB TB 02 | 16 |
+| 73 | QuestionnaireResponse | – | – | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang Anak (2x), ePus Tumbang DDTK (2x), ePus Tumbang KPSP (14x), ePus Tumbang TDD (8x), ePus Tumbang KMPE, ePus Tumbang M-CHAT-R, ePus Tumbang GPPH, SITB TB 01, SITB TB 02, SiGizi Balita BNBA, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 20 |
 | 74 | Observation | OC000191 | Jumlah Skoring TBC Anak | SITB TB 06, SITB TB 03 SO, SITB TB 01 | 3 |
 | 75 | ServiceRequest | 24648-8 | XR Chest PA upright | SITB TB 06 | 1 |
 | 76 | Observation | 24648-8 | XR Chest PA upright | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, ePus PNC, SITB TB 01 | 5 |
@@ -142,7 +142,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 134 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
 | 135 | Group | – | – | SITB TB 16K | 1 |
 | 136 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
-| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x), SITB TB 01 (2x) | 7 |
+| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x), SITB TB 01 (2x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita ASI Eksklusif, SiGizi Kohort Ibu | 11 |
 | 138 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K | 1 |
 | 139 | ServiceRequest | 185389009 | Follow-up visit | SITB TB 16K | 1 |
 | 140 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
@@ -158,13 +158,13 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 150 | Observation | 39016-1 | Age at death | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 151 | Observation | OC000028 | Jenis Tempat Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
 | 152 | Observation | SP000098 | Tipe Penyelenggara Faskes Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
-| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan | 3 |
-| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan | 4 |
+| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan, SiGizi Kohort Ibu | 4 |
+| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus INC, ELSMIL Pasca Persalinan, SiGizi Kohort Ibu | 5 |
 | 155 | Observation | OC000013 | Penolong Persalinan | MPDN Kematian Bayi, ePus INC, ELSMIL Pasca Persalinan | 3 |
 | 156 | Observation | SP000075 | Tipe Penyelenggara Faskes Lahir | MPDN Kematian Bayi | 1 |
 | 157 | Observation | 57715-5 | Birth time | MPDN Kematian Bayi, ePus INC | 2 |
-| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi, ePus INC, ELSMIL Baduta (2x) | 3 |
-| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC | 4 |
+| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi, ePus INC, ELSMIL Baduta (2x), SiGizi Balita BNBA, SiGizi Balita Vitamin A | 5 |
+| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu, ePus ANC, ePus PNC, SiGizi Kohort Ibu | 5 |
 | 160 | Observation | 57722-1 | Birth plurality of Pregnancy | MPDN Kematian Bayi | 1 |
 | 161 | Observation | 30525-0 | Age | MPDN Kematian Bayi, ePus INC | 2 |
 | 162 | Composition | – | – | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
@@ -204,7 +204,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 196 | Observation | 249111004 | Engagement of head | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ePus INC | 3 |
 | 197 | Observation | 89087-1 | Fetal Body weight Estimated | ePus Kunjungan Ibu Hamil (2x), ePus ANC, ELSMIL Ibu Hamil | 3 |
 | 198 | Observation | 246435002 | Number of fetuses | ePus Kunjungan Ibu Hamil (2x) | 1 |
-| 199 | Immunization | – | – | ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), ePus MTBS (17x), ePus MTBM (3x), ELSMIL Baduta | 5 |
+| 199 | Immunization | – | – | ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x), ePus MTBS (17x), ePus MTBM (3x), ELSMIL Baduta, SiGizi Kohort Ibu (2x) | 6 |
 | 200 | Procedure | 99.38 | Administration of tetanus toxoid | ePus Kunjungan Ibu Hamil | 1 |
 | 201 | Observation | SP000122 | Catat di Buku KIA | ePus Kunjungan Ibu Hamil, ePus INC, ePus PNC | 3 |
 | 202 | Specimen | – | – | ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (64x), ePus ANC (6x), ePus PNC, ePus MTBS (8x), ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM (14x) | 8 |
@@ -365,13 +365,13 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 357 | DiagnosticReport | 11888-5 | Gestational age US composite estimate | ePus ANC | 1 |
 | 358 | DiagnosticReport | 11781-2 | Delivery date US composite estimate | ePus ANC | 1 |
 | 359 | Condition | 34842007 | Antepartum hemorrhage | ePus ANC | 1 |
-| 360 | Observation | OC000001 | Jarak kehamilan | ePus ANC, ePus INC | 2 |
+| 360 | Observation | OC000001 | Jarak kehamilan | ePus ANC, ePus INC, SiGizi Kohort Ibu | 3 |
 | 361 | Observation | 73211009 | Diabetes mellitus | ePus ANC | 1 |
 | 362 | Observation | 66071002 | Viral hepatitis type B | ePus ANC | 1 |
 | 363 | Observation | 76272004 | Syphilis | ePus ANC | 1 |
 | 364 | Observation | 61462000 | Malaria | ePus ANC | 1 |
 | 365 | Observation | 56717001 | Tuberculosis | ePus ANC | 1 |
-| 366 | Condition | 386337006 | Intrapartal care | ePus INC | 1 |
+| 366 | Condition | 386337006 | Intrapartal care | ePus INC, SiGizi Ibu Nifas, SiGizi Kohort Ibu | 3 |
 | 367 | Observation | 271692001 | Presentation of fetus | ePus INC | 1 |
 | 368 | Observation | 289282009 | Amniotic membrane finding | ePus INC | 1 |
 | 369 | Observation | SP000123 | Integrasi Program | ePus INC, SITB TB 01 | 2 |
@@ -394,7 +394,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 386 | Procedure | 717809003 | Immediate postpartum care | ePus INC | 1 |
 | 387 | Condition | 199746004 | Obstructed labor | ePus INC | 1 |
 | 388 | Observation | SP000379 | Tatalaksana Komplikasi Persalinan | ePus INC | 1 |
-| 389 | Observation | 63893-2 | Outcome of pregnancy | ePus INC | 1 |
+| 389 | Observation | 63893-2 | Outcome of pregnancy | ePus INC, SiGizi Kohort Ibu | 2 |
 | 390 | ServiceRequest | 409014006 | Delivery care management | ePus INC, ePus PNC | 2 |
 | 391 | Procedure | SP000130 | Menggunakan Partograf | ePus INC | 1 |
 | 392 | Procedure | 431868002 | Initiation of breastfeeding | ePus INC | 1 |
@@ -421,9 +421,9 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 413 | Condition | 47821001 | Postpartum hemorrhage | ePus PNC, ELSMIL Pasca Persalinan | 2 |
 | 414 | Observation | 289084000 | Difficulty performing breastfeeding | ePus PNC | 1 |
 | 415 | Medication | – | – | ePus PNC | 1 |
-| 416 | Procedure | 767224000 | Administration of vitamin A | ePus PNC, ePus MTBS | 2 |
-| 417 | MedicationRequest | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | ePus PNC, ePus MTBS | 2 |
-| 418 | MedicationDispense | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | ePus PNC, ePus MTBS (2x) | 2 |
+| 416 | Procedure | 767224000 | Administration of vitamin A | ePus PNC, ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 4 |
+| 417 | MedicationRequest | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | ePus PNC, ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 4 |
+| 418 | MedicationDispense | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | ePus PNC, ePus MTBS (2x), SiGizi Balita BNBA (2x), SiGizi Balita Vitamin A (2x) | 4 |
 | 419 | Procedure | 711029005 | Counseling about breastfeeding | ePus PNC | 1 |
 | 420 | Procedure | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | ePus PNC | 1 |
 | 421 | Procedure | 72531000052105 | Counseling for contraception | ePus PNC | 1 |
@@ -480,11 +480,11 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 472 | Observation | OC000106 | Pemeriksaan tanda dan gejala masalah telinga | ePus MTBS | 1 |
 | 473 | Observation | OC000107 | Klasifikasi masalah telinga | ePus MTBS | 1 |
 | 474 | Observation | 284521000 | Pitting edema | ePus MTBS | 1 |
-| 475 | Observation | 1153600001 | Weight for height z-score | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
+| 475 | Observation | 1153600001 | Weight for height z-score | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
 | 476 | Observation | OV000253 | Terlalu lemah untuk menyusu | ePus MTBS | 1 |
 | 477 | Observation | 271398006 | Weight steady | ePus MTBS | 1 |
 | 478 | Observation | OC000108 | Klasifikasi status gizi | ePus MTBS | 1 |
-| 479 | Observation | 1153604005 | Body height for age z-score | ePus MTBS | 1 |
+| 479 | Observation | 1153604005 | Body height for age z-score | ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 8 |
 | 480 | Observation | 1153594009 | Head circumference for age z-score | ePus MTBS, ePus Tumbang Anak, ePus Tumbang DDTK | 3 |
 | 481 | Observation | OC000111 | Klasifikasi anemia | ePus MTBS | 1 |
 | 482 | Observation | PC000013 | Riwayat tes HIV ibu | ePus MTBS, ePus MTBM | 2 |
@@ -493,10 +493,10 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 485 | Observation | SP000248 | Hasil Tes HIV Anak | ePus MTBS | 1 |
 | 486 | Observation | OC000084 | Tes virologis HIV anak | ePus MTBS, ePus MTBM | 2 |
 | 487 | Observation | OC000083 | Tes serologis HIV anak | ePus MTBS, ePus MTBM | 2 |
-| 488 | Observation | 63895-7 | Breastfeeding status | ePus MTBS, ePus MTBM (2x) | 2 |
+| 488 | Observation | 63895-7 | Breastfeeding status | ePus MTBS, ePus MTBM (2x), SiGizi Balita MPASI | 3 |
 | 489 | Observation | 254387007 | Human immunodeficiency virus infection classification systems | ePus MTBS, ePus MTBM | 2 |
 | 490 | Observation | OC000114 | Membutuhkan suplemen vitamin A | ePus MTBS | 1 |
-| 491 | MedicationRequest | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | ePus MTBS | 1 |
+| 491 | MedicationRequest | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | ePus MTBS, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
 | 492 | EpisodeOfCare | Neonate | Neonate | ePus MTBM | 1 |
 | 493 | Condition | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | ePus MTBM | 1 |
 | 494 | Observation | OC000078 | Pemeriksaan tanda dan gejala infeksi | ePus MTBM | 1 |
@@ -506,7 +506,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 498 | Observation | SP000214 | Pemeriksaan Kondisi Ikterus | ePus MTBM | 1 |
 | 499 | Observation | OC000129 | Klasifikasi ikterus | ePus MTBM | 1 |
 | 500 | Observation | OC000079 | Tes serologis HIV ibu | ePus MTBM | 1 |
-| 501 | Observation | 1153593003 | Weight for age z-score | ePus MTBM (2x), ePus Tumbang Anak | 2 |
+| 501 | Observation | 1153593003 | Weight for age z-score | ePus MTBM (2x), ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau (3x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (5x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
 | 502 | Observation | 79740000 | Candidiasis of mouth | ePus MTBM (2x) | 1 |
 | 503 | Observation | SP000271 | Terdapat Celah Bibir atau Langit-Langit | ePus MTBM (2x) | 1 |
 | 504 | Observation | OC000082 | Posisi menyusu bayi | ePus MTBM | 1 |
@@ -516,8 +516,8 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 508 | Observation | OC000086 | Klasifikasi Berat Badan Menurut Umur dan/atau Masalah Pemberian Minum | ePus MTBM | 1 |
 | 509 | Observation | OC000087 | Pemberian Vitamin K pada Bayi Baru Lahir | ePus MTBM | 1 |
 | 510 | Procedure | 448883004 | Injection of vitamin K1 | ePus MTBM | 1 |
-| 511 | Observation | 8308-9 | Body height --standing | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
-| 512 | Observation | 50373000 | Body height measure | ePus Tumbang Anak | 1 |
+| 511 | Observation | 8308-9 | Body height --standing | ePus Tumbang Anak, ePus Tumbang DDTK, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (9x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 10 |
+| 512 | Observation | 50373000 | Body height measure | ePus Tumbang Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
 | 513 | Observation | OC000012 | Kenaikan Berat Badan Adekuat | ePus Tumbang Anak | 1 |
 | 514 | Observation | 1153590000 | Length for age z-score | ePus Tumbang Anak, ePus Tumbang DDTK | 2 |
 | 515 | Observation | 1145307003 | Exclusively breastfed | ePus Tumbang Anak | 1 |
@@ -590,8 +590,8 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 582 | Observation | SP000229 | Sudah mendapatkan tablet tambah darah | ELSMIL Pasca Persalinan | 1 |
 | 583 | Observation | 103975-9 | Previous delivery date | ELSMIL Baduta | 1 |
 | 584 | Observation | 243816001 | Contraception status | ELSMIL Baduta | 1 |
-| 585 | Observation | 89269-5 | Body height Measured --at birth | ELSMIL Baduta | 1 |
-| 586 | Observation | SP000024 | Monitoring ASI Eksklusif Bulan 0 | ELSMIL Baduta | 1 |
+| 585 | Observation | 89269-5 | Body height Measured --at birth | ELSMIL Baduta, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
+| 586 | Observation | SP000024 | Monitoring ASI Eksklusif Bulan 0 | ELSMIL Baduta, SiGizi Balita ASI Eksklusif | 2 |
 | 587 | Observation | 16090371000119103 | Exposure to second hand tobacco smoke | ELSMIL Baduta (2x) | 1 |
 | 588 | Observation | 8306-3 | Body height --lying | ELSMIL Baduta | 1 |
 | 589 | Observation | SP000152 | Baduta hanya diberikan ASI saja kecuali vitamin dan oralit | ELSMIL Baduta | 1 |
@@ -641,5 +641,38 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 633 | Observation | SP000107 | Hasil Kuesioner Kanker Kolorektal | ASIK Skrining PTM | 1 |
 | 634 | Observation | SP000112 | Hasil Kuesioner Kanker Kolorektal dengan Risiko Tinggi | ASIK Skrining PTM | 1 |
 | 635 | Observation | SP000114 | Suspek Thalassemia | ASIK Skrining PTM | 1 |
+| 636 | Condition | 385984007 | Growth and development treatments and procedures | SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey | 15 |
+| 637 | Observation | 365910001 | Weight trend finding | SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (2x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (4x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (8x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 10 |
+| 638 | Observation | SP000022 | KPSP | SiGizi Balita BNBA, SiGizi Balita Vitamin A | 2 |
+| 639 | Observation | SP000023 | KIA | SiGizi Balita BNBA, SiGizi Balita Vitamin A | 2 |
+| 640 | Observation | SP000510 | Mendapat Makanan Bergizi Gratis (MBG) bulan ini | SiGizi Balita BNBA | 1 |
+| 641 | Observation | SP000036 | Jenis PMT | SiGizi Balita Mendapat PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 4 |
+| 642 | Observation | SP000037 | Pemberian MT ke- | SiGizi Balita Mendapat PMT 2024 | 1 |
+| 643 | Observation | SP000038 | Tahun Produksi MT | SiGizi Balita Mendapat PMT 2024 | 1 |
+| 644 | Observation | SP000039 | Jumlah Pemberian MT | SiGizi Balita Mendapat PMT 2024 | 1 |
+| 645 | Observation | SP000040 | Alasan Pemberian MT | SiGizi Balita Mendapat PMT 2024 | 1 |
+| 646 | Observation | SP000041 | Sumber Anggaran PMT | SiGizi Balita Mendapat PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat | 7 |
+| 647 | Observation | SP000043 | Pemantauan PMT ke- | SiGizi Balita Pemantauan PMT 2024 | 1 |
+| 648 | Observation | SP000044 | Tanggal Pemantauan PMT Awal | SiGizi Balita Pemantauan PMT 2024 | 1 |
+| 649 | Observation | SP000045 | Tanggal Pemantauan PMT Akhir | SiGizi Balita Pemantauan PMT 2024 | 1 |
+| 650 | Observation | SP000025 | Monitoring ASI Eksklusif Bulan 1 | SiGizi Balita ASI Eksklusif | 1 |
+| 651 | Observation | SP000026 | Monitoring ASI Eksklusif Bulan 2 | SiGizi Balita ASI Eksklusif | 1 |
+| 652 | Observation | SP000027 | Monitoring ASI Eksklusif Bulan 3 | SiGizi Balita ASI Eksklusif | 1 |
+| 653 | Observation | SP000028 | Monitoring ASI Eksklusif Bulan 4 | SiGizi Balita ASI Eksklusif | 1 |
+| 654 | Observation | SP000032 | Monitoring ASI Eksklusif Bulan 5 | SiGizi Balita ASI Eksklusif | 1 |
+| 655 | Observation | SP000033 | Monitoring ASI Eksklusif Bulan 6 | SiGizi Balita ASI Eksklusif | 1 |
+| 656 | Observation | SP000034 | Jenis MPASI | SiGizi Balita MPASI | 1 |
+| 657 | Observation | SP000035 | Kualitas MPASI | SiGizi Balita MPASI | 1 |
+| 658 | Observation | SP000491 | Mitra Pemberi MT | SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat | 6 |
+| 659 | Observation | SP000489 | Status Pemantauan Pemberian Makanan Tambahan | SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Pantau | 3 |
+| 660 | Observation | SP000490 | Siklus Pemberian Makanan Tambahan | SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat | 6 |
+| 661 | Observation | SP000492 | Jumlah Pemantauan PMT | SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Riwayat | 3 |
+| 662 | Procedure | 236973005 | Delivery procedure | SiGizi Ibu Nifas | 1 |
+| 663 | Observation | SP000724 | Tanggal Abortus | SiGizi Ibu Nifas | 1 |
+| 664 | Procedure | 386639001 | Termination of pregnancy | SiGizi Ibu Nifas | 1 |
+| 665 | Procedure | SP000683 | Tatalaksana Tindakan | SiGizi Ibu Nifas | 1 |
+| 666 | Observation | SP000651 | Sumber Pembiayaan Pelayanan Kesehatan | SiGizi Kohort Ibu | 1 |
+| 667 | Procedure | 73.59 | Other manually assisted delivery | SiGizi Kohort Ibu | 1 |
+| 668 | Condition | 161805006 | Past pregnancy history of cesarean section | SiGizi Kohort Ibu | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).
