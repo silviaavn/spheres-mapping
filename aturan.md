@@ -49,6 +49,7 @@ Terakhir diperbarui: 2026-11-18
 
 ## Checklist setiap form baru
 1. **Minta daftar variabel BQ dari form** (nama kolom di BigQuery). Jangan mulai hitung sebelum daftar ini ada. Kalau ada file mentah, cocokkan juga kolom mentah ↔ BQ (lihat "Sumber kebenaran: file mentah") dan buat `raw/<form>-kolom.md`.
+   Bandingkan juga jumlah variabel form dengan [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md) (lihat "Referensi jumlah variabel (PHDT)").
 2. Cek tally: jumlah variabel BQ = jumlah baris yang punya "Nama Variabel di Kobo". Cek juga isinya cocok satu-satu (mis. `staff_id` jangan dipasang ke baris nama).
    **Semua variabel BQ harus masuk ke salah satu payload.** Cek bagian "Variabel di luar payload" di `output/<form>.md` harus kosong.
    Pengecualian: kolom data lokal sistem sumber yang tidak perlu dikirim (SITB: No. Urut, Bulan, No. Registrasi Fasyankes / Kab/Kota) dan baris yang **dicoret** (strikethrough) di sheet dictionary. Keduanya dicatat di `revisi.md` sebagai "tidak dimapping".
@@ -58,6 +59,12 @@ Terakhir diperbarui: 2026-11-18
    Kalau ada file mentah, tambahkan argumen ke-4 `raw/<form>-kolom.md`.
 5. Update konsolidasi `output.md`, `frekuensi-payload.md`, `frekuensi-code.md` (angka per form harus sama dengan `output/<form>.md`) dan `revisi.md`.
 6. Update **Status review** form itu jadi ✅ di form tracker `form-tracker.md` (dan di Sheet "Daftar Sumber Data Puskesmas - Mapping FHIR"), lalu hitung ulang baris ringkasan di atas tabel (Sudah direview). Kalau form belum ada di daftar, tambahkan barisnya.
+
+## Referensi jumlah variabel (PHDT)
+- Daftar jumlah variabel per form dari PHDT Data Dictionary ada di [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Dipakai sebagai **angka pembanding** untuk form yang akan dikerjakan.
+- Setiap form baru: bandingkan jumlah variabel di mapping / file mentah (**Variabel raw**) dengan angka di daftar itu. Laporkan cocok atau tidak, dan kalau beda sebutkan selisihnya.
+- Kalau beda, **angka output utama tetap yang dipakai**. Daftar PHDT tidak otomatis benar: untuk SITB banyak kolom yang sebelumnya di-skip di PHDT Data Dictionary, jadi file mentah bisa punya lebih banyak kolom. Catat selisih dan penyebabnya (kalau diketahui) di `revisi.md`; kalau penyebab belum jelas, tulis "belum diketahui".
+- Tambahkan hasil perbandingan form itu ke tabel "Tally form yang sudah ada di output utama" di `referensi-variabel-phdt.md`.
 
 ## Kolom di data dictionary
 - `jumlah instance` = isi 1 di baris pertama setiap payload.
@@ -69,6 +76,7 @@ Terakhir diperbarui: 2026-11-18
 - "Variabel BQ di luar payload" **tidak dicantumkan** di ringkasan. Pengecekannya tetap lewat bagian "Variabel di luar payload" di bawah (harus kosong) dan peringatan dari script kalau ada kolom Excel export yang belum masuk payload.
 
 ## Log perubahan aturan
+- 2026-11-24: Tambah `referensi-variabel-phdt.md` (jumlah variabel per form dari PHDT Data Dictionary) dan aturan membandingkannya untuk setiap form baru. Angka output utama tetap dipakai kalau beda (SiGizi ANC, TB 06, TB 03 SO, TB 16K).
 - 2026-11-18: `daftar-sumber-data.md` diganti nama jadi `form-tracker.md` (Form Tracker). Langkah 6 checklist merujuk ke file ini.
 - 2026-11-18: Tambah `daftar-sumber-data.md` (daftar semua sumber data/laporan + status diperlukan, dimapping, review). Checklist langkah 6: setiap form selesai, update Status review di file ini.
 - 2026-11-18: `output.md` hanya berisi ringkasan, jumlah per CodeSystem, payload per resource, catatan; frekuensi payload & code di `frekuensi-payload.md` / `frekuensi-code.md`. Format output: tabel per CodeSystem hanya jumlah; tabel Payload per resource di `output.md` = baris form × kolom resource FHIR.

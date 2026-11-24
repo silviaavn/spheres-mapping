@@ -394,6 +394,19 @@ Daftar kolom BQ belum ada, jadi tally BQ ↔ dictionary belum bisa dicek. Sebaga
 | MI1 | Ibu | `Condition.code.coding` = `{Kode ICD}` dengan CodeSystem `http://snomed.info/sct` (baris 30). Isinya kode ICD, seharusnya `http://hl7.org/fhir/sid/icd-10` (seperti Condition TB) | open |
 | MI2 | Ibu | Masa Terjadi Kematian Ibu memakai path `Observation.valueCodeableConcept` tanpa `.coding` (baris 71–73), berbeda dengan blok lain | open |
 
+## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
+
+Sumber angka pembanding: [`referensi-variabel-phdt.md`](referensi-variabel-phdt.md). Hasil: 5 form cocok, 4 form beda, Raffle tidak ada di daftar PHDT.
+
+| Form | Variabel raw | PHDT | Selisih | Penyebab | Status |
+|---|---|---|---|---|---|
+| SiGizi ANC | 49 | 45 | +4 | belum diketahui | open |
+| SITB TB 06 | 96 | 69 | +27 | dugaan: banyak kolom SITB yang sebelumnya di-skip di PHDT (belum dicek per kolom) | angka output utama dipakai |
+| SITB TB 03 SO | 84 | 75 | +9 | dugaan sama dengan TB 06 | angka output utama dipakai |
+| SITB TB 16K | 40 | 24 | +16 | dugaan sama dengan TB 06 | angka output utama dipakai |
+
+Maternal Outcome, SITB TB 03 RO, SITB TB 04, MPDN Kematian Bayi, dan MPDN Kematian Ibu cocok (selisih 0).
+
 ## Catatan pipeline (perlu update)
 
 Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR converter).
@@ -440,6 +453,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P38 | MPDN Bayi, Ibu | Dugaan sebab kematian = component kode group / subgroup / detail dari daftar ICD-PM (Bayi) dan ICD-MM (Ibu). Practitioner PJ MPDN = lookup (MA8) | Converter: pemetaan ICD-PM / ICD-MM ke code. Master data Practitioner PJ MPDN | open |
 
 ## Log perubahan revisi
+- 2026-11-24: Tambah bagian perbandingan jumlah variabel dengan PHDT Data Dictionary (4 form beda: SiGizi ANC, TB 06, TB 03 SO, TB 16K). Angka output utama tidak berubah.
 - 2026-11-24: Tambah jumlah **Variabel raw** di semua output form dan ringkasan `output.md` (MPDN Bayi 37, Ibu 24 = variabel dictionary tanpa placeholder; belum ada file mentah).
 - 2026-11-24: Tambah review MPDN Kematian Bayi dan Kematian Ibu (dictionary dipecah jadi 2 file): hasil hitung 19/112 dan 10/50, tally variabel 37 dan 24 (cocok rekap user, tanpa BQ), asumsi MA1–MA10, temuan MG1–MG6, MB1–MB6, MI1–MI2, perubahan file F1–F5, catatan pipeline P36–P38. **Belum ada comprehensive review**, file mentah, dan daftar BQ.
 - 2026-11-18: Tally TB 06: variabel BQ yang dipetakan 93 → 92 (kolom AC tambahan user tidak dihitung).
