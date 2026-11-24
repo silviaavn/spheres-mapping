@@ -1,7 +1,7 @@
 # Revisi Data Dictionary — Form Kobo & PHDT
 
-Terakhir diperbarui: 2026-11-17
-File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv`; SiGizi ANC → `mapping/phdt-data-dictionary-sigizi-anc.csv`; SITB TB 06 / TB 03 SO / TB 03 RO / TB 04 / TB 16K → `mapping/phdt-data-dictionary-sitb-<form>.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
+Terakhir diperbarui: 2026-11-24
+File dictionary terbaru: Maternal Outcome → `mapping/kobo-data-dictionary-maternal-outcome.csv`; Raffle → `mapping/kobo-data-dictionary-raffle.csv`; SiGizi ANC → `mapping/phdt-data-dictionary-sigizi-anc.csv`; SITB TB 06 / TB 03 SO / TB 03 RO / TB 04 / TB 16K → `mapping/phdt-data-dictionary-sitb-<form>.csv`; MPDN Kematian Bayi / Kematian Ibu → `mapping/phdt-data-dictionary-mpdn-kematian-<bayi|ibu>.csv` (nomor baris di bawah mengikuti CSV asli; di `mapping/` nomor barisnya sudah berbeda karena ada baris tambahan/dihapus. Untuk nomor baris terbaru lihat `output/raffle.md`)
 
 > Maternal Outcome: nomor baris di bawah mengikuti Kobo_3. Di file `mapping/`, baris setelah 11 bergeser +1 karena ada baris baru `Practitioner.identifier.value`.
 
@@ -325,6 +325,75 @@ Kolom dictionary yang diambil: Categories s.d. CodeSystem, Personal Notes, plus 
 | T16-10 | Observation "Memenuhi syarat TPT" (SP000211) dicoret di sheet (baris 328–339), tapi kolom BQ `memenuhi_syarat_tpt` ada | done (mapping/): dipetakan ke opsi SP000211 di Observation Kesimpulan Eligibilitas TPT (baris 318) |
 | T16-11 | Ekstensi kode wilayah alamat kontak dicoret di sheet (baris 116–127) | done (mapping/): dihapus |
 
+## Form MPDN (PHDT Data Dictionary): Kematian Bayi, Kematian Ibu
+
+Sumber dictionary: `PHDT_Data_Dictionary_-_MPDN.csv` (1 file berisi 2 bagian, "LAPORAN KEMATIAN BAYI" dan "LAPORAN KEMATIAN IBU"), dipecah jadi `mapping/phdt-data-dictionary-mpdn-kematian-bayi.csv` dan `mapping/phdt-data-dictionary-mpdn-kematian-ibu.csv`. Nomor baris di bawah mengikuti file di `mapping/` (header = baris 1–3). Output: `output/mpdn-kematian-bayi.md`, `output/mpdn-kematian-ibu.md`. Tabel BQ di form tracker: `raw_data.mpdn_laporan_kematian_bayi` dan `raw_data.mpdn_laporan_kematian_ibu`.
+
+> **Belum ada comprehensive review.** Sesi 2026-11-24 dijalankan tanpa cross-check (permintaan user): tidak ada daftar variabel BQ, tidak ada file mentah, dan belum dibahas dengan tim MPDN. Angka payload/code dan temuan di bawah hanya hasil membaca dictionary. Keputusan yang diambil sendiri ditandai **asumsi** (MA1–MA10), semuanya masih menunggu konfirmasi.
+
+### Hasil hitung
+
+| Form | Payload | Code | Code unik | Code SP |
+|---|---|---|---|---|
+| MPDN Kematian Bayi | 19 (Patient 2, Observation 16, Composition 1) | 112 | 76 | 37 |
+| MPDN Kematian Ibu | 10 (Patient 1, Condition 1, Observation 7, Composition 1) | 50 | 50 | 17 |
+
+### Perubahan pada file (dibuat otomatis, bisa diulang dari file asli)
+
+| # | Perubahan | Status |
+|---|---|---|
+| F1 | Baris judul bagian dan 8 baris kosong di ujung bagian Ibu dibuang (file dipecah jadi 2) | done (mapping/) |
+| F2 | Kolom `Nama Column BQ` dan `Nama Column Raw` ditambahkan (**kosong**), plus `jumlah code` dan `jumlah instance` | done (mapping/) |
+| F3 | Angka `24` nyasar di kolom Subcategories (Ibu baris 164, di samping Status Data) dihapus. Isinya hitungan variabel, bukan data | done (mapping/) |
+| F4 | Spasi/tab/newline di kolom Code, Display, CodeSystem dirapikan (Bayi 16 sel, Ibu 1 sel). CodeSystem `https://loinc.org` di Cara Persalinan (57071-3) jadi `http://loinc.org` | done (mapping/) |
+| F5 | 26 baris `Composition.entry.display/reference` di Bayi jadi `Composition.section.entry.display/reference` (Composition tidak punya `entry` di level atas; 10 baris lain di Bayi dan semua di Ibu sudah memakai `section.entry`) | done (mapping/) |
+
+### Tally variabel (tanpa BQ)
+
+Daftar kolom BQ belum ada, jadi tally BQ ↔ dictionary belum bisa dicek. Sebagai pengganti: jumlah nama variabel unik di kolom `Original Variables`.
+
+| Form | Nama unik di dictionary | Bukan variabel (dikeluarkan) | Variabel | Rekap user | Cocok? |
+|---|---|---|---|---|---|
+| Kematian Bayi | 43 | `//PJ MPDN` + 5 placeholder nama (`nama pasien 1`, `nama pasien 2 (hanya lahir mati)`, `nama pasien 2 (hanya lahir hidup)`, `nama pasien bayi (hanya lahir hidup)`, `nama bayi (generated)`) = 6 | **37** | 37 | ✅ |
+| Kematian Ibu | 25 | `//PJ MPDN` = 1 | **24** | 24 | ✅ |
+
+- Semua variabel di dictionary masuk ke payload: bagian "Variabel di luar payload" di kedua `output/mpdn-*.md` kosong. Karena kolom BQ kosong, baris "Variabel BQ (unik)" di output = 0.
+- Cocok dengan rekap tim hanya kalau 6 nama di atas (Bayi) dan `//PJ MPDN` (Ibu) memang bukan kolom BQ. Perlu dicek begitu daftar BQ ada.
+
+### Asumsi yang diambil
+
+| # | Asumsi | Berlaku di | Status |
+|---|---|---|---|
+| MA1 | 1 `Composition` per laporan = 1 payload. Blok Location di `Composition.contained` (Faskes Lahir, Faskes Meninggal) adalah bagian dari Composition, **tidak** dihitung payload terpisah | Bayi, Ibu | open |
+| MA2 | Bayi punya 2 Patient (ibu dan bayi) = 2 payload (resource sama tanpa code pembeda dihitung masing-masing, seperti Practitioner di Raffle) | Bayi | open |
+| MA3 | `Composition.type.coding` (COM000001/2/3) dihitung sebagai code karena membedakan jenis formulir. `Composition.section.code` (LOINC penanda bagian) dan `Composition.contained.type` (LT000001, LT000005) tidak dihitung | Bayi, Ibu | open |
+| MA4 | Opsi `Observation.valueCodeableConcept` dan `Observation.component.code` dihitung (aturan A6 SITB). Component Usia Meninggal (SP000716–718) dan Dugaan Sebab (TK000019–21) ikut dihitung | Bayi, Ibu | open |
+| MA5 | Isian `ICD-PM.xlsx` / `[PUBLIC] ICD-MM (Maternal Mortality)` adalah penunjuk ke daftar kode eksternal, bukan satu code → tidak dihitung | Bayi, Ibu | open |
+| MA6 | Condition Diagnosis Kematian (Ibu) memakai `{Kode ICD}` dinamis → 1 payload, 0 code | Ibu | open |
+| MA7 | `Patient.gender`, `Patient.maritalStatus` (code tetap HL7) tidak dihitung sebagai code | Bayi, Ibu | open |
+| MA8 | `//PJ MPDN` bukan variabel; Practitioner PJ MPDN = lookup master data (seperti PJ SITB, A5), tidak dibuat dari form dan tidak dihitung payload | Bayi, Ibu | open |
+| MA9 | 5 placeholder nama pasien (`nama pasien 1`, dst.) bukan variabel, hanya isian referensi `subject.display` / `focus.display` | Bayi | open |
+| MA10 | Tidak ada file mentah dan daftar BQ → kolom `Nama Column BQ` / `Nama Column Raw` dibiarkan kosong, tidak ada nama BQ sementara | Bayi, Ibu | open |
+
+### Temuan
+
+| # | Form | Temuan | Status |
+|---|---|---|---|
+| MG1 | Bayi, Ibu | `//PJ MPDN` (awalan `//`) dipakai sebagai `performer.display` di 16 Observation Bayi, 7 Observation Ibu, dan `Composition.author.display`, tapi tidak ada blok Practitioner di dictionary. Perlu dipastikan asalnya (kolom BQ apa, atau lookup) | open |
+| MG2 | Bayi, Ibu | Tidak ada Encounter. Semua Observation/Condition hanya mereferensi Patient (form lain memakai `Observation.encounter.reference`). Perlu keputusan: laporan kematian tanpa Encounter, atau buat Encounter | open |
+| MG3 | Bayi, Ibu | `Observation.effectiveDateTime` = Tgl. Meninggal dan `issued` = Wkt. Lapor dipakai di semua Observation, termasuk data persalinan dan kehamilan (Jam Lahir, Berat Lahir, Gravida, Usia Kehamilan, Jenis Kehamilan, Umur Ibu). Tanggal meninggal sebagai waktu efektif berat lahir kurang tepat | open |
+| MG4 | Bayi | Variabel ditaruh di baris struktural, bukan baris nilai (mis. `Tgl. Meninggal` di `Observation.status`, baris 76). Hanya rapi di dictionary, tidak mengubah hitungan | open |
+| MG5 | Bayi, Ibu | Kode ICD-PM (Bayi) dan ICD-MM (Ibu) belum berupa daftar code. Butuh value set (`icd-10-pm`, `icd-10-mm`) supaya bisa dihitung dan divalidasi | open |
+| MG6 | Bayi, Ibu | Variabel status Composition bernama `Pelapor` di Bayi (baris 359; opsi `VALID TANPA NIK`, `... VERIFIED`, `... FINAL`) dan `Status Data` di Ibu (baris 164; opsi `VERIFIED`). Nama berbeda untuk data yang sama, dan isi `Pelapor` sebenarnya status verifikasi | open |
+| MB1 | Bayi | Component Umur Jam / Menit / Detik (SP000716–718, baris 61–68) tidak punya variabel. Hanya `Usia Meninggal (Hari)` yang ada. Dari mana nilai jam/menit/detik? | open |
+| MB2 | Bayi | Label "hanya lahir mati / hidup" tidak konsisten. `focus.display` berlabel "lahir mati" di 9 blok (baris 51, 83, 101, 133, 159, 191, 247, 259, 273), termasuk data persalinan yang ada di kedua jenis (Tempat Lahir, Tipe Faskes Lahir, Jam Lahir, Berat Lahir). Blok persalinan lain (Cara Persalinan, Penolong, Gravida, Usia Kehamilan, Jenis Kehamilan, Umur Ibu) berlabel "lahir hidup" | open |
+| MB3 | Bayi | Typo `Faskese Lahir` di kolom Original Variables (baris 335). Tidak diubah karena bisa jadi nama kolom asli | open |
+| MB4 | Bayi | Kode `OV000394` (Kehamilan Ganda Empat atau Lebih, baris 310) ber-CodeSystem SNOMED, padahal awalan `OV` = clinical-term Kemkes | open |
+| MB5 | Bayi, Ibu | Display kode 264362003 tidak sama: `Home` (Bayi baris 126) vs `Home (environment)` (Bayi baris 184, Ibu baris 113) | open |
+| MB6 | Bayi | `Composition.section` "Riwayat Kehamilan" yang kedua (isi: Umur Ibu, baris 413) memakai LOINC 45970-1 "Demographic information section", judul dan code tidak cocok | open |
+| MI1 | Ibu | `Condition.code.coding` = `{Kode ICD}` dengan CodeSystem `http://snomed.info/sct` (baris 30). Isinya kode ICD, seharusnya `http://hl7.org/fhir/sid/icd-10` (seperti Condition TB) | open |
+| MI2 | Ibu | Masa Terjadi Kematian Ibu memakai path `Observation.valueCodeableConcept` tanpa `.coding` (baris 71–73), berbeda dengan blok lain | open |
+
 ## Catatan pipeline (perlu update)
 
 Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR converter).
@@ -366,8 +435,12 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | P33 | TB 06, TB 03 SO, TB 03 RO | Code lokal baru: SP001136 Belum Mulai Pengobatan (TB 06 Tindak Lanjut); SP001137 Paduan lainnya (TB 03 SO & RO, menggantikan SP001137–SP001140 versi awal). Hasil Tes HIV "Tidak Diketahui" → dataAbsentReason unknown | Converter + daftar local code | open |
 | P34 | TB 03 SO, TB 03 RO | Paduan pengobatan: cocokkan teks ke Value Name tanpa beda huruf besar/kecil (termasuk baris alias); tidak cocok → SP001137 Paduan lainnya; nilai salah input (mis. `(40)`, `-41`) → tidak dibuat. `productCodeableConcept.text` selalu diisi teks asli | Converter | open |
 | P35 | TB 03 RO | Pemeriksaan lab sekarang ServiceRequest + Specimen + Observation + DiagnosticReport (7 pemeriksaan, 2 di antaranya template follow up per bulan). Tanggal permintaan/pengambilan tidak ada di export (kecuali Uji Kepekaan) → pakai tanggal hasil. Path `Specimen.collectedDateTime` diperbaiki jadi `Specimen.collection.collectedDateTime` (TB 03 SO & RO) | Converter | open |
+| P36 | MPDN Bayi, Ibu | Dua form baru tanpa Encounter: Patient (Bayi: ibu + bayi, nama bayi = `By Ny {Nama Ibu Hamil}`), Observation (Bayi 16, Ibu 7), Condition (Ibu), dan 1 Composition per laporan dengan `contained` Location (tipe lahir/meninggal) | Ingestion: tabel `mpdn_laporan_kematian_bayi` / `_ibu`. Converter: buat bundle Composition + Observation + Patient. **Daftar kolom BQ belum dicek** | open |
+| P37 | MPDN Bayi | Urutan pasien tergantung lahir mati / hidup: lahir mati → pasien 1 = ibu, pasien 2 = anak; lahir hidup → pasien 1 = bayi, pasien 2 = ibu (`subject` / `focus`, baris 41–43 dictionary asli). `Composition.type`: COM000002 (lahir mati) / COM000003 (lahir hidup) | Converter: logika pasien 1/2 dan `Composition.type` | open |
+| P38 | MPDN Bayi, Ibu | Dugaan sebab kematian = component kode group / subgroup / detail dari daftar ICD-PM (Bayi) dan ICD-MM (Ibu). Practitioner PJ MPDN = lookup (MA8) | Converter: pemetaan ICD-PM / ICD-MM ke code. Master data Practitioner PJ MPDN | open |
 
 ## Log perubahan revisi
+- 2026-11-24: Tambah review MPDN Kematian Bayi dan Kematian Ibu (dictionary dipecah jadi 2 file): hasil hitung 19/112 dan 10/50, tally variabel 37 dan 24 (cocok rekap user, tanpa BQ), asumsi MA1–MA10, temuan MG1–MG6, MB1–MB6, MI1–MI2, perubahan file F1–F5, catatan pipeline P36–P38. **Belum ada comprehensive review**, file mentah, dan daftar BQ.
 - 2026-11-18: Tally TB 06: variabel BQ yang dipetakan 93 → 92 (kolom AC tambahan user tidak dihitung).
 - 2026-11-17: P25/T06-1 ditutup (kolom AC = tambahan user). T03S-6: path sudah dipakai di TB 02 baris 95. T04-6: TB 04 lookup saja. T03R-4: SR/Specimen/DR ditambah di TB 03 RO (+20 payload). Tambah P35.
 - 2026-11-17: Jawaban user: A1, A4, A5, A7, A8, A10, T16-7 disetujui. A3 diubah (blok faskes tetap dimapping & update). A11: `nama_fasyankes` = metadata pipeline. T03S-6 tanpa code. T04-1 ditutup (format baru), tambah T04-6. P25, P28 diperbarui.

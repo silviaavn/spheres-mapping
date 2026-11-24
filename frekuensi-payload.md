@@ -8,23 +8,23 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 |---|---|---|---|---|---|
 | 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC | 2 |
 | 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x) | 2 |
-| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K | 8 |
+| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 10 |
 | 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K | 8 |
 | 5 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | Maternal Outcome | 1 |
 | 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC | 3 |
 | 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome | 1 |
 | 8 | Observation | SP000389 | Keadaan Ibu | Maternal Outcome | 1 |
 | 9 | Observation | 93857-1 | Date and time of obstetric delivery | Maternal Outcome | 1 |
-| 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome | 1 |
+| 10 | Observation | 81956-5 | Date and time of death [TimeStamp] | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 11 | Observation | LT000005 | Alamat Mati | Maternal Outcome | 1 |
-| 12 | Observation | 79378-6 | Cause of death | Maternal Outcome | 1 |
+| 12 | Observation | 79378-6 | Cause of death | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 13 | Location | – | – | Raffle, SITB TB 06 | 2 |
 | 14 | Condition | SP001135 | Presensi Posyandu | Raffle | 1 |
 | 15 | Observation | 385438008 | Source of information | Raffle | 1 |
 | 16 | Condition | 134435003 | Routine antenatal care | SiGizi ANC | 1 |
 | 17 | Observation | 424144002 | Current chronological age | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x) | 6 |
 | 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC | 1 |
-| 19 | Observation | 18185-9 | Gestational age | SiGizi ANC | 1 |
+| 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi | 2 |
 | 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC | 1 |
 | 21 | Observation | 8302-2 | Body height | SiGizi ANC | 1 |
 | 22 | Observation | OC000010 | Indeks Massa Tubuh Sebelum Hamil | SiGizi ANC | 1 |
@@ -154,5 +154,21 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 146 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | SITB TB 16K | 1 |
 | 147 | Observation | SP000212 | Tanggal Pemberian TPT | SITB TB 16K | 1 |
 | 148 | Observation | SP000213 | Hasil Akhir TPT | SITB TB 16K | 1 |
+| 149 | Observation | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | MPDN Kematian Bayi | 1 |
+| 150 | Observation | 39016-1 | Age at death | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 151 | Observation | OC000028 | Jenis Tempat Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 152 | Observation | SP000098 | Tipe Penyelenggara Faskes Meninggal | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 153 | Observation | 72150-6 | Delivery location | MPDN Kematian Bayi | 1 |
+| 154 | Observation | 57071-3 | Obstetric delivery method | MPDN Kematian Bayi | 1 |
+| 155 | Observation | OC000013 | Penolong Persalinan | MPDN Kematian Bayi | 1 |
+| 156 | Observation | SP000075 | Tipe Penyelenggara Faskes Lahir | MPDN Kematian Bayi | 1 |
+| 157 | Observation | 57715-5 | Birth time | MPDN Kematian Bayi | 1 |
+| 158 | Observation | 8339-4 | Birth weight Measured | MPDN Kematian Bayi | 1 |
+| 159 | Observation | 11996-6 | [#] Pregnancies | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 160 | Observation | 57722-1 | Birth plurality of Pregnancy | MPDN Kematian Bayi | 1 |
+| 161 | Observation | 30525-0 | Age | MPDN Kematian Bayi | 1 |
+| 162 | Composition | – | – | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 163 | Condition | – | – | MPDN Kematian Ibu | 1 |
+| 164 | Observation | OC000026 | Masa terjadi Kematian Ibu | MPDN Kematian Ibu | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).

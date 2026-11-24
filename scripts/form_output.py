@@ -39,7 +39,7 @@ def load(path):
 
     c = dict(
         bq=col("nama column bq"),
-        var=col("nama variabel di kobo", "variables"),
+        var=col("nama variabel di kobo", "original variables", "variables"),
         res=col("resource"), path=col("path"), code=col("code"),
         df=col("definisi operasional", "definisi operasional (logic)"),
         disp=col("display"), cs=col("codesystem"),

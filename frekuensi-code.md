@@ -17,16 +17,16 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 9 | 39104002 | Illness | snomed | Maternal Outcome | 1 |
 | 10 | 419099009 | Dead | snomed | Maternal Outcome, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 16K | 5 |
 | 11 | 93857-1 | Date and time of obstetric delivery | loinc | Maternal Outcome | 1 |
-| 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome | 1 |
+| 12 | 81956-5 | Date and time of death [TimeStamp] | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 13 | LT000005 | Alamat Mati | location-type | Maternal Outcome | 1 |
-| 14 | 79378-6 | Cause of death | loinc | Maternal Outcome | 1 |
+| 14 | 79378-6 | Cause of death | loinc | Maternal Outcome, MPDN Kematian Bayi, MPDN Kematian Ibu | 3 |
 | 15 | SP001135 | Presensi Posyandu | kemkes sp | Raffle | 1 |
 | 16 | 385438008 | Source of information | snomed | Raffle | 1 |
 | 17 | SP000776 | Sigizi | kemkes sp | Raffle | 1 |
 | 18 | SP000777 | E-pus PKD | kemkes sp | Raffle | 1 |
 | 19 | SP000778 | E-pus | kemkes sp | Raffle | 1 |
-| 20 | 309453006 | Registered midwife | snomed | SiGizi ANC | 1 |
-| 21 | 309343006 | Physician | snomed | SiGizi ANC | 1 |
+| 20 | 309453006 | Registered midwife | snomed | SiGizi ANC, MPDN Kematian Bayi | 2 |
+| 21 | 309343006 | Physician | snomed | SiGizi ANC, MPDN Kematian Bayi | 2 |
 | 22 | 309367003 | Obstetrician and gynecologist | snomed | SiGizi ANC | 1 |
 | 23 | 224535009 | Registered nurse | snomed | SiGizi ANC | 1 |
 | 24 | K1M | Tidak ada | episodeofcare/ANC | SiGizi ANC | 1 |
@@ -35,7 +35,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 27 | 424144002 | Current chronological age | snomed | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K (2x) | 6 |
 | 28 | 8665-2 | Last menstrual period start date | loinc | SiGizi ANC | 1 |
 | 29 | ANC.B6.DE14 | Last menstrual period (LMP) date | WHO anc-custom-codes | SiGizi ANC | 1 |
-| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC | 1 |
+| 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi | 2 |
 | 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC | 1 |
 | 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC | 1 |
 | 33 | 8302-2 | Body height | loinc | SiGizi ANC | 1 |
@@ -440,3 +440,79 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 432 | SP000374 | Tidak Memenuhi Syarat TPT | kemkes sp | SITB TB 16K | 1 |
 | 433 | SP000212 | Tanggal Pemberian TPT | kemkes sp | SITB TB 16K | 1 |
 | 434 | SP000213 | Hasil Akhir TPT | kemkes sp | SITB TB 16K | 1 |
+| 435 | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | loinc | MPDN Kematian Bayi | 1 |
+| 436 | 276507005 | Fetal death | snomed | MPDN Kematian Bayi | 1 |
+| 437 | 276506001 | Newborn death | snomed | MPDN Kematian Bayi | 1 |
+| 438 | 39016-1 | Age at death | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 439 | SP000716 | Umur Jam (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
+| 440 | SP000717 | Umur Menit (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
+| 441 | SP000718 | Umur Detik (saat meninggal) | kemkes sp | MPDN Kematian Bayi | 1 |
+| 442 | TK000019 | Kode group | kemkes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 443 | TK000020 | Kode subgroup | kemkes | MPDN Kematian Bayi | 1 |
+| 444 | TK000021 | Kode detail | kemkes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 445 | OC000028 | Jenis Tempat Meninggal | kemkes clinical-term | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 446 | LT000008 | Dalam perjalanan dari rumah/masyarakat | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 447 | LT000009 | Dalam perjalanan ke faskes lain | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 448 | SP000099 | FASKES | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 449 | 102 | Pusat Kesehatan Masyarakat | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 450 | OT000006 | Rumah Sakit Pemerintah | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 451 | OT000007 | Rumah Sakit Swasta | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 452 | LT000006 | Rumah Ibu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 453 | 104 | Rumah Sakit | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 454 | OT000002 | Pustu | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 455 | OT000010 | Klinik Medis Utama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 456 | OT000011 | Klinik Medis Pratama | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 457 | 103 | Klinik | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 458 | 101 | Tempat Praktik Mandiri Tenaga Kesehatan | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 459 | OT000004 | Bidan Praktek Mandiri | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 460 | OT000008 | Rumah Bersalin | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 461 | 394573001 | Maternity clinic | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 462 | OT000001 | Polindes | organization-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 463 | 264362003 | Home | snomed | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 464 | LT000007 | Rumah Dukun | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 465 | LT000010 | Lainnya | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 466 | LT000011 | Belum Tahu | location-type | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 467 | SP000098 | Tipe Penyelenggara Faskes Meninggal | kemkes sp | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 468 | SP000076 | RSU - Pemprop | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 469 | SP000077 | PUSKESMAS - Pemkab | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 470 | SP000078 | RSU - Pemkot | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 471 | SP000079 | RSU - Pemkab | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 472 | SP000080 | RSIA - Perusahaan | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 473 | SP000081 | RSU - TNI AD | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 474 | SP000082 | RS Bersalin - Swasta/Lainnya | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 475 | SP000083 | RS - Organisasi Islam | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 476 | SP000084 | RS Bersalin - Pemkab | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 477 | SP000085 | RSU - Swasta/Lainnya | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 478 | SP000086 | RSU - KEMENKES | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 479 | SP000087 | RSU - Perusahaan | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 480 | SP000088 | RSU - Organisasi Islam | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 481 | SP000089 | RSU - Organisasi Sosial | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 482 | SP000090 | RS - Swasta/Lainnya | kemkes sp | MPDN Kematian Bayi (2x), MPDN Kematian Ibu | 2 |
+| 483 | 72150-6 | Delivery location | loinc | MPDN Kematian Bayi | 1 |
+| 484 | 57071-3 | Obstetric delivery method | loinc | MPDN Kematian Bayi | 1 |
+| 485 | 289259007 | Vaginal delivery | snomed | MPDN Kematian Bayi | 1 |
+| 486 | 200144004 | Deliveries by cesarean | snomed | MPDN Kematian Bayi | 1 |
+| 487 | 48782003 | Delivery normal | snomed | MPDN Kematian Bayi | 1 |
+| 488 | OC000013 | Penolong Persalinan | kemkes clinical-term | MPDN Kematian Bayi | 1 |
+| 489 | 303071001 | Person in the family | snomed | MPDN Kematian Bayi | 1 |
+| 490 | OV000012 | Dukun | kemkes clinical-term | MPDN Kematian Bayi | 1 |
+| 491 | 11935004 | Obstetrician Occupation | snomed | MPDN Kematian Bayi | 1 |
+| 492 | SP000075 | Tipe Penyelenggara Faskes Lahir | kemkes sp | MPDN Kematian Bayi | 1 |
+| 493 | 57715-5 | Birth time | loinc | MPDN Kematian Bayi | 1 |
+| 494 | 8339-4 | Birth weight Measured | loinc | MPDN Kematian Bayi | 1 |
+| 495 | 11996-6 | [#] Pregnancies | loinc | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 496 | ANC.B6.DE24 | Number of pregnancies (gravida) | WHO anc-custom-codes | MPDN Kematian Bayi, MPDN Kematian Ibu | 2 |
+| 497 | ANC.B6.DE17 | Gestational age | WHO anc-custom-codes | MPDN Kematian Bayi | 1 |
+| 498 | 57722-1 | Birth plurality of Pregnancy | loinc | MPDN Kematian Bayi | 1 |
+| 499 | 237244005 | Single pregnancy | snomed | MPDN Kematian Bayi | 1 |
+| 500 | 65147003 | Twin pregnancy | snomed | MPDN Kematian Bayi | 1 |
+| 501 | 64254006 | Triplet pregnancy | snomed | MPDN Kematian Bayi | 1 |
+| 502 | OV000394 | Kehamilan Ganda Empat atau Lebih | snomed | MPDN Kematian Bayi | 1 |
+| 503 | 30525-0 | Age | loinc | MPDN Kematian Bayi | 1 |
+| 504 | COM000002 | Formulir Informasi Kematian Perinatal Lahir Mati | composition-type | MPDN Kematian Bayi | 1 |
+| 505 | COM000003 | Formulir Informasi Kematian Perinatal Lahir Hidup | composition-type | MPDN Kematian Bayi | 1 |
+| 506 | OC000026 | Masa terjadi Kematian Ibu | kemkes clinical-term | MPDN Kematian Ibu | 1 |
+| 507 | 1156679005 | Maternal antenatal period | snomed | MPDN Kematian Ibu | 1 |
+| 508 | 1156682000 | Maternal intrapartum period | snomed | MPDN Kematian Ibu | 1 |
+| 509 | 255410009 | Maternal postpartum | snomed | MPDN Kematian Ibu | 1 |
+| 510 | COM000001 | Formulir Informasi Kematian Maternal | composition-type | MPDN Kematian Ibu | 1 |

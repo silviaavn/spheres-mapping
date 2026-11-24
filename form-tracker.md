@@ -4,6 +4,8 @@ Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHI
 
 Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah direview: 9
 
+⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini: MPDN - Laporan Kematian Bayi (#72, 19 payload / 112 code) dan MPDN - Laporan Kematian Ibu (#73, 10 payload / 50 code). Lihat `revisi.md` bagian MPDN (asumsi MA1–MA10, temuan MG/MB/MI).
+
 | No | Sumber - Laporan | Masih diperlukan | Dimapping ke FHIR | Status review | Table BQ Purbalingga | Table BQ Lombok Barat |
 |---|---|:-:|:-:|:-:|---|---|
 | 1 | ePuskesmas - Pelayanan Pasien | ✅ | ✅ | ❌ |  |  |
@@ -77,8 +79,8 @@ Total: 236 laporan · Masih diperlukan: 216 · Dimapping ke FHIR: 211 · Sudah d
 | 69 | ASPAK - Data Umum | ✅ | ❌ | ❌ |  |  |
 | 70 | SMILE (oleh Dinkes) - Vaksinasi | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.smile_vaksinasi` |  |
 | 71 | SMILE (oleh Dinkes) - ATM (HIV, AIDS, Malaria) | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.smile_atm` |  |
-| 72 | MPDN (oleh Dinkes) - Laporan Kematian Bayi | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.mpdn_laporan_kematian_bayi` |  |
-| 73 | MPDN (oleh Dinkes) - Laporan Kematian Ibu | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.mpdn_laporan_kematian_ibu` |  |
+| 72 | MPDN (oleh Dinkes) - Laporan Kematian Bayi | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.mpdn_laporan_kematian_bayi` | `spheres-lombok-barat.raw_data.mpdn_laporan_kematian_bayi` |
+| 73 | MPDN (oleh Dinkes) - Laporan Kematian Ibu | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.mpdn_laporan_kematian_ibu` | `spheres-lombok-barat.raw_data.mpdn_laporan_kematian_ibu` |
 | 74 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu ANC | ❌ | ✅ | ❌ |  |  |
 | 75 | eKohort (app sudah mati dari kemenkes) - Pelayanan Ibu PNC | ❌ | ✅ | ❌ |  |  |
 | 76 | eKohort (app sudah mati dari kemenkes) - Laporan Kohort Ibu | ❌ | ✅ | ❌ |  |  |

@@ -1,6 +1,6 @@
 # Output Hitungan Payload & Code — Form Kobo & PHDT
 
-Terakhir diperbarui: 2026-11-18
+Terakhir diperbarui: 2026-11-24
 Aturan hitung: lihat [`aturan.md`](aturan.md) · Temuan & catatan pipeline: [`revisi.md`](revisi.md)
 Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **Maternal Outcome** → [`output/maternal-outcome.md`](output/maternal-outcome.md) (sumber: [`mapping/kobo-data-dictionary-maternal-outcome.csv`](mapping/kobo-data-dictionary-maternal-outcome.csv))
@@ -11,6 +11,8 @@ Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **SITB TB 03 RO** → [`output/sitb-tb03-ro.md`](output/sitb-tb03-ro.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb03-ro.csv`](mapping/phdt-data-dictionary-sitb-tb03-ro.csv); file mentah: [`raw/sitb-tb03-ro-kolom.md`](raw/sitb-tb03-ro-kolom.md))
 - **SITB TB 04** (Fasyankes & Rujukan) → [`output/sitb-tb04.md`](output/sitb-tb04.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb04.csv`](mapping/phdt-data-dictionary-sitb-tb04.csv); file mentah: [`raw/sitb-tb04-kolom.md`](raw/sitb-tb04-kolom.md))
 - **SITB TB 16K** → [`output/sitb-tb16k.md`](output/sitb-tb16k.md) (sumber: [`mapping/phdt-data-dictionary-sitb-tb16k.csv`](mapping/phdt-data-dictionary-sitb-tb16k.csv); file mentah: [`raw/sitb-tb16k-kolom.md`](raw/sitb-tb16k-kolom.md))
+- **MPDN Kematian Bayi** → [`output/mpdn-kematian-bayi.md`](output/mpdn-kematian-bayi.md) (sumber: [`mapping/phdt-data-dictionary-mpdn-kematian-bayi.csv`](mapping/phdt-data-dictionary-mpdn-kematian-bayi.csv), PHDT Data Dictionary; **belum ada file mentah dan daftar variabel BQ**, belum ada comprehensive review)
+- **MPDN Kematian Ibu** → [`output/mpdn-kematian-ibu.md`](output/mpdn-kematian-ibu.md) (sumber: [`mapping/phdt-data-dictionary-mpdn-kematian-ibu.csv`](mapping/phdt-data-dictionary-mpdn-kematian-ibu.csv), PHDT Data Dictionary; **belum ada file mentah dan daftar variabel BQ**, belum ada comprehensive review)
 
 File ini adalah **konsolidasi** lintas form. Angka per form di sini harus sama dengan file `output/<form>.md`.
 
@@ -48,9 +50,11 @@ Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.
 | SITB TB 03 RO | 50 | 377 | 11 |
 | SITB TB 04 | 69 | 579 | 24 |
 | SITB TB 16K | 21 | 35 | 14 |
-| **Total (non-unik)** | **339** | **1758** | **94** |
-| **Total unik** | **148** | **434** | **59** |
-| Selisih (dipakai ulang) | 191 | 1324 | 35 |
+| MPDN Kematian Bayi | 19 | 112 | 37 |
+| MPDN Kematian Ibu | 10 | 50 | 17 |
+| **Total (non-unik)** | **368** | **1920** | **148** |
+| **Total unik** | **164** | **510** | **80** |
+| Selisih (dipakai ulang) | 204 | 1410 | 68 |
 
 ---
 
@@ -60,24 +64,26 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 120 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 116 |
-| http://loinc.org | 67 |
-| http://terminology.kemkes.go.id/sp | 59 |
+| http://snomed.info/sct | 136 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 120 |
+| http://terminology.kemkes.go.id/sp | 80 |
+| http://loinc.org | 76 |
 | http://terminology.kemkes.go.id/CodeSystem/examination | 20 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
-| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 |
+| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 15 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-type | 12 |
+| http://terminology.kemkes.go.id/CodeSystem/location-type | 7 |
+| http://terminology.kemkes.go.id | 5 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 4 |
 | http://hl7.org/fhir/sid/icd-10 | 4 |
 | http://sys-ids.kemkes.go.id/kfa | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
-| http://terminology.kemkes.go.id | 2 |
-| http://terminology.kemkes.go.id/CodeSystem/location-type | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **434** |
+| **Total** | **510** |
 
 ---
 
@@ -85,18 +91,20 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuensi-payload.md`](frekuensi-payload.md).
 
-| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | EpisodeOfCare | Condition | Encounter | Patient | QuestionnaireResponse | CarePlan | Organization | Practitioner | Coverage | Location | MedicationDispense | MedicationRequest | PractitionerRole | Group | Immunization | RelatedPerson | Total |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Maternal Outcome | 5 | – | – | – | – | 2 | 1 | 1 | 1 | – | – | – | 1 | – | – | – | – | 1 | – | – | – | 12 |
-| Raffle | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | 2 | – | 1 | – | – | – | – | – | – | 8 |
-| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | 2 | 2 | 1 | – | 1 | – | 61 |
-| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 3 | 2 | 1 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | 56 |
-| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 62 |
-| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | 50 |
-| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
-| SITB TB 16K | 14 | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | 1 | – | 1 | 21 |
-| **Total (non-unik)** | **125** | **48** | **47** | **46** | **12** | **10** | **9** | **8** | **8** | **4** | **3** | **3** | **3** | **2** | **2** | **2** | **2** | **2** | **1** | **1** | **1** | **339** |
-| **Total unik** | **71** | **20** | **19** | **4** | **7** | **4** | **7** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **2** | **2** | **1** | **1** | **1** | **1** | **148** |
+| Form | Observation | ServiceRequest | DiagnosticReport | Specimen | Procedure | Patient | EpisodeOfCare | Condition | Encounter | QuestionnaireResponse | CarePlan | Organization | Practitioner | Coverage | Location | MedicationDispense | MedicationRequest | PractitionerRole | Composition | Group | Immunization | RelatedPerson | Total |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Maternal Outcome | 5 | – | – | – | – | 1 | 2 | 1 | 1 | – | – | – | 1 | – | – | – | – | 1 | – | – | – | – | 12 |
+| Raffle | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | 2 | – | 1 | – | – | – | – | – | – | – | 8 |
+| SiGizi ANC | 30 | 6 | 6 | 6 | 3 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | 2 | 2 | 1 | – | – | 1 | – | 61 |
+| SITB TB 06 | 17 | 9 | 9 | 8 | 2 | 1 | 3 | 2 | 1 | 1 | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | 56 |
+| SITB TB 03 SO | 23 | 9 | 9 | 9 | 4 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | 62 |
+| SITB TB 03 RO | 18 | 7 | 7 | 7 | 3 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | 50 |
+| SITB TB 04 | 17 | 16 | 16 | 16 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
+| SITB TB 16K | 14 | 1 | – | – | – | 1 | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | 1 | – | 1 | 21 |
+| MPDN Kematian Bayi | 16 | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 19 |
+| MPDN Kematian Ibu | 7 | – | – | – | – | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 10 |
+| **Total (non-unik)** | **148** | **48** | **47** | **46** | **12** | **11** | **10** | **10** | **8** | **4** | **3** | **3** | **3** | **2** | **2** | **2** | **2** | **2** | **2** | **1** | **1** | **1** | **368** |
+| **Total unik** | **85** | **20** | **19** | **4** | **7** | **1** | **4** | **8** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **2** | **2** | **1** | **1** | **1** | **1** | **1** | **164** |
 
 ---
 
@@ -112,9 +120,11 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 - SITB TB 04: 1 dictionary untuk TB 04 Fasyankes dan TB 04 Rujukan (header sama). TB 03 RO: follow up 24 bulan = 1 template BTA + 1 template Biakan (asumsi A7); setiap pemeriksaan lab punya ServiceRequest + Specimen + Observation + DiagnosticReport (T03R-4).
 - SITB: EpisodeOfCare TB-SO / TB-RO, Patient, Encounter, Condition A15.0, Observation umur (424144002), HIV/DM, lab (11545-1, X0993xx) dipakai ulang di beberapa form SITB → total unik jauh lebih kecil dari non-unik.
 
+- MPDN Kematian Bayi / Ibu: **belum ada comprehensive review**, file mentah, dan daftar variabel BQ (tally BQ belum bisa dicek; kolom Nama Column BQ kosong). Satu payload Composition per laporan; Location di `Composition.contained` ikut di dalam Composition (tidak dihitung terpisah). Dua Patient (ibu + bayi) di Bayi dihitung 2 payload. Tidak ada Encounter, dan Practitioner PJ MPDN tidak dibuat (lookup). `Composition.type` (COM000001/2/3) dihitung sebagai code; ICD-PM / ICD-MM (daftar eksternal) dan kode ICD dinamis di Condition tidak dihitung. Asumsi dan temuan: `revisi.md` bagian MPDN.
 ---
 
 ## Log perubahan output
+- 2026-11-24: Tambah 2 form MPDN dari `PHDT_Data_Dictionary_-_MPDN.csv`: Kematian Bayi (19 payload / 112 code) dan Kematian Ibu (10 / 50). Belum ada daftar variabel BQ dan belum ada comprehensive review. Total non-unik 339 / 1758 → **368 / 1920**, unik 148 / 434 → **164 / 510**. Resource baru: Composition. Tabel di file ini dan `frekuensi-*.md` dibuat ulang untuk 10 form dengan `scripts/consolidate.py` (hasilnya identik dengan versi lama untuk 8 form sebelumnya).
 - 2026-11-18: Ringkasan semua form: tambah kolom **Code SP** (CodeSystem `http://terminology.kemkes.go.id/sp`). Daftar form diberi link. Output per form diberi baris File terkait (link ke `output.md`, frekuensi, dictionary, file mentah) dan baris Code SP di Ringkasan.
 - 2026-11-18: `output.md` dirampingkan: tambah Daftar isi; tabel Frekuensi payload dan Frekuensi code dipindah ke file terpisah `frekuensi-payload.md` dan `frekuensi-code.md`. Angka tidak berubah.
 - 2026-11-18: Format tabel: "Jumlah per CodeSystem" hanya CodeSystem + jumlah (daftar code per baris ada di tabel Frekuensi code). "Payload per resource" ditranspos: baris = form, kolom = resource FHIR, tanpa kolom pembeda; ditambah baris Total unik. Bagian Catatan dikembalikan (sempat terhapus 17 Nov) dan diperbarui. Angka tidak berubah. Format yang sama dipakai di `output/<form>.md` (Code per CodeSystem tanpa daftar code).
