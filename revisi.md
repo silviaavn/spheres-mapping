@@ -417,7 +417,7 @@ Sumber: `PHDT_ePus.xlsx` (19 sheet), dipecah per form jadi `mapping/phdt-data-di
 | `epus DDTKSDIDTK` | #16 Tumbuh Kembang (DDTK) | `mapping/phdt-data-dictionary-epus-tumbang-ddtk.csv` | 1389 → 475 |
 
 Sheet yang **tidak dipakai**: `Daftar Isi`; `epus layanan (revised)` (parsial, hanya dipakai untuk mengisi nama kolom raw Pelayanan); `var epus bumil (KIA)`, `var epus mtbs`, `tracker variable anc/inc/pnc` (daftar variabel/tracker, bukan mapping FHIR); `Epusk Data Pasien` (tidak ada di tracker maupun daftar PHDT, belum ada keputusan).
-Form tracker yang belum ada mapping di file ini, diabaikan: #4 Kohort KIA, #6 LPLPO, #9 Kunjungan BPJS, #10 Kunjungan Pasien, dan Tumbuh Kembang KPSP/TDD/TDL/KMPE/M-CHAT-R/GPPH.
+Form tracker yang belum ada mapping di file ini, diabaikan: #4 Kohort KIA, #6 LPLPO, #9 Kunjungan BPJS, #10 Kunjungan Pasien, dan Dapodik Antropometri DDTK. (Tumbuh Kembang KPSP/TDD/TDL/KMPE/M-CHAT-R/GPPH dan Dapodik PAUD sudah dihitung, lihat bagian masing-masing.)
 
 ### Hasil hitung dan perbandingan variabel dengan PHDT
 
@@ -494,6 +494,25 @@ Sheet yang **tidak dihitung**: `Tracker` (tabel status, isinya rumus), `TDD Depr
 | EB4 | TDL: 4 Observation (Kartu E 6/60 dan 6/12 × mata kiri/kanan), code SNOMED tajam penglihatan + method (8 code) | open |
 | EB5 | TDD dan TDL memakai sheet `New`; `Deprecated` diabaikan | open |
 | EB6 | `QuestionnaireResponse.questionnaire` berisi "Tidak Ada" (belum ada canonical Questionnaire), jadi QR tidak punya code pembeda | open |
+
+## Dapodik PAUD (Childhood Development Toolkit, sheet `Copy of DAPODIK`)
+
+Sumber: sheet `Copy of DAPODIK` di `Childhood_Development_Toolkit_Data_Dictionary.xlsx`, diproses `scripts/dapodik_prepare.py` ke `mapping/phdt-data-dictionary-dapodik-paud.csv` (logika sama dengan `epus_prepare.py`).
+
+> **Belum comprehensive review.** Tanpa daftar BQ dan file mentah, belum dibahas dengan tim. Angka = hasil hitung otomatis dari dictionary.
+
+| Form | Sheet | Payload | Code | Variabel (unik) | Variabel (baris) | PHDT | Selisih baris vs PHDT |
+|---|---|---|---|---|---|---|---|
+| Dapodik PAUD | `Copy of DAPODIK` | 42 | 190 | 75 | 87 | 93 | −6 |
+
+Payload: Observation 32, Condition 4, RelatedPerson 3, Patient 1, Encounter 1, Account 1. Code: Condition.code 55, Observation 135.
+
+| # | Asumsi | Status |
+|---|---|---|
+| DA1 | Sheet `Copy of DAPODIK` = form Dapodik PAUD (semester), dipilih user karena jumlahnya paling dekat dengan PHDT (93). Sebelumnya baris Dapodik belum dicocokkan | open |
+| DA2 | Header kolom A di sheet bertulis "udah selesai semua"; dibaca sebagai kolom Categories | open |
+| DA3 | Pemisahan blok payload otomatis (heuristik), belum dicek manual per blok | open |
+| DA4 | Selisih −6 baris vs PHDT belum dijelaskan; angka output memakai variabel unik (75) | open |
 
 ## Perbandingan jumlah variabel dengan PHDT Data Dictionary (2026-11-24)
 
@@ -581,3 +600,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-13: Dibuat dari review Maternal Outcome.
 - 2026-11-24: Tambah bagian ePuskesmas (11 form dari `PHDT_ePus.xlsx`): sheet→form, hasil hitung, perbandingan variabel dengan PHDT, asumsi EA1–EA10, temuan EF1–EF4. ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian Tumbuh Kembang tambahan (KPSP, TDD, TDL, KMPE, M-CHAT-R, GPPH) dari `Childhood_Development_Toolkit_Data_Dictionary.xlsx`: asumsi EB1–EB6. SDIDTK = DDTK yang sudah ada. Dapodik belum dicocokkan.
+- 2026-11-24: Tambah bagian Dapodik PAUD (42 payload, 190 code, asumsi DA1–DA4). Sheet dipilih user. Dapodik Antropometri DDTK tetap belum ada mapping.

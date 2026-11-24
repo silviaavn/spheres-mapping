@@ -8,8 +8,8 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 |---|---|---|---|---|---|
 | 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x) | 6 |
 | 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x), ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 9 |
-| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 20 |
-| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK | 18 |
+| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD | 21 |
+| 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD | 19 |
 | 5 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | Maternal Outcome | 1 |
 | 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC | 5 |
 | 7 | EpisodeOfCare | PNC | Postnatal Care | Maternal Outcome, ePus PNC | 2 |
@@ -26,12 +26,12 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 18 | Observation | 8665-2 | Last menstrual period start date | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
 | 19 | Observation | 18185-9 | Gestational age | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
 | 20 | Observation | 11778-8 | Delivery date Estimated | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
+| 21 | Observation | 8302-2 | Body height | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD | 6 |
 | 22 | Observation | OC000010 | Indeks Massa Tubuh Sebelum Hamil | SiGizi ANC | 1 |
 | 23 | Immunization | VG139 | Td | SiGizi ANC | 1 |
 | 24 | Observation | SP000001 | Skrining Imunisasi Tetanus Toksoid | SiGizi ANC, ePus ANC | 2 |
 | 25 | Observation | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | SiGizi ANC, ePus ANC | 2 |
-| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK | 7 |
+| 26 | Observation | 29463-7 | Body weight | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD | 8 |
 | 27 | Observation | 392570002 | Blood pressure finding | SiGizi ANC | 1 |
 | 28 | Observation | 284473002 | Mid upper arm circumference | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus PNC, ePus MTBS (2x), ePus Tumbang DDTK | 7 |
 | 29 | Observation | 289625003 | Finding of fundal height of uterus | SiGizi ANC | 1 |
@@ -142,7 +142,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 134 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
 | 135 | Group | – | – | SITB TB 16K | 1 |
 | 136 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
-| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x) | 5 |
+| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x) | 6 |
 | 138 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K | 1 |
 | 139 | ServiceRequest | 185389009 | Follow-up visit | SITB TB 16K | 1 |
 | 140 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
@@ -446,7 +446,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 438 | Observation | SP000666 | Hari setelah melahirkan | ePus PNC | 1 |
 | 439 | Observation | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | ePus PNC | 1 |
 | 440 | Condition | SP000273 | Integrated management of childhood illness | ePus MTBS | 1 |
-| 441 | Observation | 9843-4 | Head Occipital-frontal circumference | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
+| 441 | Observation | 9843-4 | Head Occipital-frontal circumference | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD | 5 |
 | 442 | Observation | SP000261 | Tipe Kunjungan | ePus MTBS, ePus MTBM | 2 |
 | 443 | Observation | OC000099 | Status daerah endemis malaria tempat tinggal | ePus MTBS (2x) | 1 |
 | 444 | Observation | OC000088 | Pemeriksaan tanda bahaya umum | ePus MTBS | 1 |
@@ -535,5 +535,28 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 527 | Observation | 863887001 | 6/60 visual acuity of right eye | ePus Tumbang TDL | 1 |
 | 528 | Observation | 836333004 | 6/12 visual acuity of left eye | ePus Tumbang TDL | 1 |
 | 529 | Observation | 836332009 | 6/12 visual acuity of right eye | ePus Tumbang TDL | 1 |
+| 530 | Observation | 104890-9 | Nationality Person Narrative | Dapodik PAUD | 1 |
+| 531 | Condition | 170245002 | Child examination: school screening | Dapodik PAUD | 1 |
+| 532 | Observation | 365481000 | Finding of household composition | Dapodik PAUD | 1 |
+| 533 | Observation | SP000241 | Moda Transportasi yang digunakan untuk bersekolah | Dapodik PAUD | 1 |
+| 534 | Observation | SP000239 | Kartu Perlindungan Sosial | Dapodik PAUD | 1 |
+| 535 | Observation | 82589-3 | Highest level of education | Dapodik PAUD (3x) | 1 |
+| 536 | Observation | OC000149 | Pekerjaan orang tua | Dapodik PAUD (4x) | 1 |
+| 537 | Condition | 81323004 | Normal general body function | Dapodik PAUD (3x) | 1 |
+| 538 | Observation | 365552003 | Finding of income details | Dapodik PAUD (3x) | 1 |
+| 539 | Observation | SP000232 | Kartu Indonesia Pintar | Dapodik PAUD | 1 |
+| 540 | Account | – | – | Dapodik PAUD | 1 |
+| 541 | Observation | SP000243 | Program Indonesia Pintar | Dapodik PAUD | 1 |
+| 542 | Observation | 365475008 | Place in family order | Dapodik PAUD | 1 |
+| 543 | Observation | 224095004 | Number of siblings | Dapodik PAUD | 1 |
+| 544 | Observation | SP000230 | Jarak dari rumah ke sekolah | Dapodik PAUD | 1 |
+| 545 | Observation | SP000292 | Jarak dari rumah ke sekolah (km) | Dapodik PAUD | 1 |
+| 546 | Observation | SP000293 | Waktu tempuh dari rumah ke sekolah | Dapodik PAUD | 1 |
+| 547 | Observation | 105421008 | Educational achievement | Dapodik PAUD | 1 |
+| 548 | Observation | SP000309 | Beasiswa | Dapodik PAUD | 1 |
+| 549 | Observation | SP000328 | Asuransi Kesejahteraan | Dapodik PAUD | 1 |
+| 550 | Observation | 276031006 | Details of education | Dapodik PAUD | 1 |
+| 551 | Observation | 63764-5 | Hobby [LIBCSP] | Dapodik PAUD (2x) | 1 |
+| 552 | Observation | SP000357 | Cita-cita | Dapodik PAUD (2x) | 1 |
 
 Variabel dictionary / BQ per payload: lihat `output/<form>.md` (link di [`output.md`](output.md)).

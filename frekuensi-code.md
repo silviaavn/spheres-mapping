@@ -38,14 +38,14 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 30 | 18185-9 | Gestational age | loinc | SiGizi ANC, MPDN Kematian Bayi, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
 | 31 | 11778-8 | Delivery date Estimated | loinc | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
 | 32 | ANC.B6.DE22 | Expected date of delivery (EDD) | WHO anc-custom-codes | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, ePus PNC | 4 |
-| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC | 5 |
+| 33 | 8302-2 | Body height | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, Dapodik PAUD | 6 |
 | 34 | ANC.B8.DE1 | Height | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
 | 35 | OC000010 | Indeks Massa Tubuh Sebelum Hamil | kemkes clinical-term | SiGizi ANC | 1 |
 | 36 | ANC.SS.DE58 | IMT Sebelum Hamil | kemkes anc-custom-codes | SiGizi ANC | 1 |
 | 37 | VG139 | Td | kfa | SiGizi ANC, ePus Kunjungan Ibu Hamil (2x), ePus ANC (3x) | 3 |
 | 38 | SP000001 | Skrining Imunisasi Tetanus Toksoid | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 39 | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | kemkes sp | SiGizi ANC, ePus ANC | 2 |
-| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK | 7 |
+| 40 | 29463-7 | Body weight | loinc | SiGizi ANC, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus ANC, ePus INC, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD | 8 |
 | 41 | ANC.B8.DE3 | Current weight | WHO anc-custom-codes | SiGizi ANC, ePus ANC | 2 |
 | 42 | 392570002 | Blood pressure finding | snomed | SiGizi ANC | 1 |
 | 43 | 2004005 | Normal blood pressure | snomed | SiGizi ANC | 1 |
@@ -112,7 +112,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 104 | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | loinc | SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, ePus ANC | 6 |
 | 105 | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | loinc | SiGizi ANC, ePus ANC, ePus MTBS (3x) | 3 |
 | 106 | 104742-2 | Ova and parasites identified in Specimen | loinc | SiGizi ANC, ePus ANC | 2 |
-| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x) | 6 |
+| 107 | 74964007 | Other | snomed | SiGizi ANC (4x), SITB TB 03 SO (3x), SITB TB 03 RO (2x), ePus ANC (5x), ePus INC (3x), ePus PNC (2x), Dapodik PAUD (4x) | 7 |
 | 108 | SP000007 | Tatalaksana Anemia | kemkes sp | SiGizi ANC, ePus ANC | 2 |
 | 109 | SP000008 | Pemberian Tablet Tambah Darah | kemkes sp | SiGizi ANC, ePus ANC, ePus PNC | 3 |
 | 110 | SP000009 | Pemberian Fe Parenteral | kemkes sp | SiGizi ANC, ePus ANC | 2 |
@@ -262,13 +262,13 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 254 | 106388008 | Farmer | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 255 | 36625000 | Livestock worker | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 256 | 77715000 | Fisherman | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 257 | 236297007 | Civil servant | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 257 | 236297007 | Civil servant | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD | 3 |
 | 258 | OV000431 | Siswa Berasrama | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 259 | 236320001 | Vehicle driver (occupation) | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 260 | OV000432 | Tenaga Profesional Nonmedis | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 261 | OV000433 | TNI/ Polri | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 261 | OV000433 | TNI/ Polri | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD | 3 |
 | 262 | OV000434 | Warga Binaan Pemasyarakatan | kemkes clinical-term | SITB TB 03 SO, SITB TB 03 RO | 2 |
-| 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
+| 263 | 160906004 | Self-employed | snomed | SITB TB 03 SO, SITB TB 03 RO, Dapodik PAUD | 3 |
 | 264 | 741062008 | Not in labor force | snomed | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 265 | 82810-3 | Pregnancy status | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
 | 266 | LA15173-0 | Pregnant | loinc | SITB TB 03 SO, SITB TB 03 RO | 2 |
@@ -607,7 +607,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 599 | 386413005 | Risk identification | snomed | ePus Kunjungan Ibu Hamil | 1 |
 | 600 | 1156040003 | Self reported | snomed | ePus Kunjungan Ibu Hamil | 1 |
 | 601 | 257514003 | Member of public involved incidentally | snomed | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
-| 602 | 106292003 | Professional nurse | snomed | ePus Kunjungan Ibu Hamil, ePus INC | 2 |
+| 602 | 106292003 | Professional nurse | snomed | ePus Kunjungan Ibu Hamil, ePus INC, Dapodik PAUD | 3 |
 | 603 | O13 | Gestational [pregnancy-induced] hypertension without significant proteinuria | icd-10 | ePus Kunjungan Ibu Hamil, ePus PNC | 2 |
 | 604 | O06.9 | Unspecified abortion Complete or unspecified, without complication | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
 | 605 | O20.9 | Haemorrhage in early pregnancy, unspecified | icd-10 | ePus Kunjungan Ibu Hamil | 1 |
@@ -966,7 +966,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 958 | SP000666 | Hari setelah melahirkan | kemkes sp | ePus PNC | 1 |
 | 959 | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | kemkes sp | ePus PNC | 1 |
 | 960 | SP000273 | Integrated management of childhood illness | kemkes sp | ePus MTBS | 1 |
-| 961 | 9843-4 | Head Occipital-frontal circumference | loinc | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK | 4 |
+| 961 | 9843-4 | Head Occipital-frontal circumference | loinc | ePus MTBS, ePus MTBM, ePus Tumbang Anak, ePus Tumbang DDTK, Dapodik PAUD | 5 |
 | 962 | SP000261 | Tipe Kunjungan | kemkes sp | ePus MTBS, ePus MTBM | 2 |
 | 963 | SP000262 | Kunjungan Pertama | kemkes sp | ePus MTBS, ePus MTBM | 2 |
 | 964 | SP000263 | Kunjungan Ulang | kemkes sp | ePus MTBS, ePus MTBM | 2 |
@@ -1263,7 +1263,139 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 1255 | 863887001 | 6/60 visual acuity of right eye | snomed | ePus Tumbang TDL | 1 |
 | 1256 | 836333004 | 6/12 visual acuity of left eye | snomed | ePus Tumbang TDL | 1 |
 | 1257 | 836332009 | 6/12 visual acuity of right eye | snomed | ePus Tumbang TDL | 1 |
-| 1258 | 373067005 | No | snomed | ePus Tumbang GPPH (10x) | 1 |
-| 1259 | SP000363 | Kadang-Kadang | kemkes sp | ePus Tumbang GPPH (10x) | 1 |
-| 1260 | 70232002 | Frequent | snomed | ePus Tumbang GPPH (10x) | 1 |
-| 1261 | SP000366 | Selalu | kemkes sp | ePus Tumbang GPPH (10x) | 1 |
+| 1258 | 104890-9 | Nationality Person Narrative | loinc | Dapodik PAUD | 1 |
+| 1259 | 170245002 | Child examination: school screening | snomed | Dapodik PAUD | 1 |
+| 1260 | 365481000 | Finding of household composition | snomed | Dapodik PAUD | 1 |
+| 1261 | SP000241 | Moda Transportasi yang digunakan untuk bersekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1262 | SP000239 | Kartu Perlindungan Sosial | kemkes sp | Dapodik PAUD (2x) | 1 |
+| 1263 | 82589-3 | Highest level of education | loinc | Dapodik PAUD (3x) | 1 |
+| 1264 | OC000149 | Pekerjaan orang tua | kemkes clinical-term | Dapodik PAUD (4x) | 1 |
+| 1265 | 81323004 | Normal general body function | snomed | Dapodik PAUD (3x) | 1 |
+| 1266 | 397540003 | Visual impairment | snomed | Dapodik PAUD (3x) | 1 |
+| 1267 | 15188001 | Hearing loss | snomed | Dapodik PAUD (3x) | 1 |
+| 1268 | 86765009 | Mild intellectual disability | snomed | Dapodik PAUD (3x) | 1 |
+| 1269 | 61152003 | Moderate intellectual disability | snomed | Dapodik PAUD (3x) | 1 |
+| 1270 | 8510008 | Reduced mobility | snomed | Dapodik PAUD (3x) | 1 |
+| 1271 | 160693001 | Mobility poor | snomed | Dapodik PAUD (3x) | 1 |
+| 1272 | 5793009 | Mixed behavior and emotional disorder | snomed | Dapodik PAUD (3x) | 1 |
+| 1273 | 29164008 | Disturbance in speech | snomed | Dapodik PAUD (3x) | 1 |
+| 1274 | 406134008 | Multiple disability | snomed | Dapodik PAUD (3x) | 1 |
+| 1275 | 44548000 | Hyperactive behavior | snomed | Dapodik PAUD (3x) | 1 |
+| 1276 | 8273004 | Intelligence quotient high | snomed | Dapodik PAUD (3x) | 1 |
+| 1277 | 367358004 | Above average intellect | snomed | Dapodik PAUD (3x) | 1 |
+| 1278 | 1855002 | Developmental academic disorder | snomed | Dapodik PAUD (3x) | 1 |
+| 1279 | 70545002 | Narcotic drug user | snomed | Dapodik PAUD (3x) | 1 |
+| 1280 | 247701008 | Abnormal perception | snomed | Dapodik PAUD (3x) | 1 |
+| 1281 | 41040004 | Complete trisomy 21 syndrome | snomed | Dapodik PAUD (3x) | 1 |
+| 1282 | 35919005 | Pervasive developmental disorder | snomed | Dapodik PAUD (3x) | 1 |
+| 1283 | 365552003 | Finding of income details | snomed | Dapodik PAUD (3x) | 1 |
+| 1284 | SP000232 | Kartu Indonesia Pintar | kemkes sp | Dapodik PAUD | 1 |
+| 1285 | SP000327 | Tetap akan menerima KIP | kemkes sp | Dapodik PAUD | 1 |
+| 1286 | SP000243 | Program Indonesia Pintar | kemkes sp | Dapodik PAUD (2x) | 1 |
+| 1287 | SP000317 | Layak menerima PIP | kemkes sp | Dapodik PAUD | 1 |
+| 1288 | SP000318 | Alasan Layak PIP | kemkes sp | Dapodik PAUD | 1 |
+| 1289 | SP000319 | Daerah konflik | kemkes sp | Dapodik PAUD | 1 |
+| 1290 | SP000320 | Dampak bencana | kemkes sp | Dapodik PAUD | 1 |
+| 1291 | SP000321 | Kelainan fisik | kemkes sp | Dapodik PAUD | 1 |
+| 1292 | SP000322 | Keluarga narapidana | kemkes sp | Dapodik PAUD | 1 |
+| 1293 | SP000323 | Pemegang PKH/KPS/KKS | kemkes sp | Dapodik PAUD | 1 |
+| 1294 | SP000324 | Pernah Dropout | kemkes sp | Dapodik PAUD | 1 |
+| 1295 | SP000325 | Siswa miskin/rentan miskin | kemkes sp | Dapodik PAUD | 1 |
+| 1296 | SP000326 | Yatim Piatu/Panti Asuhan/Panti Sosial | kemkes sp | Dapodik PAUD | 1 |
+| 1297 | 365475008 | Place in family order | snomed | Dapodik PAUD | 1 |
+| 1298 | 224095004 | Number of siblings | snomed | Dapodik PAUD | 1 |
+| 1299 | SP000230 | Jarak dari rumah ke sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1300 | SP000290 | Kurang dari 1 km | kemkes sp | Dapodik PAUD | 1 |
+| 1301 | SP000291 | Lebih dari 1 km | kemkes sp | Dapodik PAUD | 1 |
+| 1302 | SP000292 | Jarak dari rumah ke sekolah (km) | kemkes sp | Dapodik PAUD | 1 |
+| 1303 | SP000293 | Waktu tempuh dari rumah ke sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1304 | 105421008 | Educational achievement | snomed | Dapodik PAUD | 1 |
+| 1305 | SP000294 | Jenis Prestasi | kemkes sp | Dapodik PAUD | 1 |
+| 1306 | SP000300 | Sains | kemkes sp | Dapodik PAUD | 1 |
+| 1307 | SP000301 | Seni | kemkes sp | Dapodik PAUD | 1 |
+| 1308 | SP000302 | Olahraga | kemkes sp | Dapodik PAUD | 1 |
+| 1309 | SP000295 | Tingkatan Prestasi | kemkes sp | Dapodik PAUD | 1 |
+| 1310 | SP000303 | Tingkat Sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1311 | SP000304 | Tingkat Kecamatan | kemkes sp | Dapodik PAUD | 1 |
+| 1312 | SP000305 | Tingkat Kabupaten | kemkes sp | Dapodik PAUD | 1 |
+| 1313 | SP000306 | Tingkat Provinsi | kemkes sp | Dapodik PAUD | 1 |
+| 1314 | SP000307 | Tingkat Nasional | kemkes sp | Dapodik PAUD | 1 |
+| 1315 | SP000308 | Tingkat Internasional | kemkes sp | Dapodik PAUD | 1 |
+| 1316 | SP000297 | Nama Prestasi | kemkes sp | Dapodik PAUD | 1 |
+| 1317 | SP000298 | Tahun Prestasi | kemkes sp | Dapodik PAUD | 1 |
+| 1318 | SP000299 | Penyelenggara | kemkes sp | Dapodik PAUD | 1 |
+| 1319 | SP000309 | Beasiswa | kemkes sp | Dapodik PAUD | 1 |
+| 1320 | SP000310 | Jenis Beasiswa | kemkes sp | Dapodik PAUD | 1 |
+| 1321 | SP000311 | Beasiswa Anak berprestasi | kemkes sp | Dapodik PAUD | 1 |
+| 1322 | SP000312 | Beasiswa Anak miskin/kemiskinan | kemkes sp | Dapodik PAUD | 1 |
+| 1323 | SP000313 | Beasiswa Pendidikan | kemkes sp | Dapodik PAUD | 1 |
+| 1324 | SP000314 | Beasiswa Unggulan | kemkes sp | Dapodik PAUD | 1 |
+| 1325 | SP000315 | Keterangan Beasiswa | kemkes sp | Dapodik PAUD | 1 |
+| 1326 | SP000316 | Periode Beasiswa | kemkes sp | Dapodik PAUD | 1 |
+| 1327 | SP000328 | Asuransi Kesejahteraan | kemkes sp | Dapodik PAUD | 1 |
+| 1328 | SP000329 | Dana Pensiun | kemkes sp | Dapodik PAUD | 1 |
+| 1329 | SP000330 | Jamkesmas | kemkes sp | Dapodik PAUD | 1 |
+| 1330 | SP000331 | Jamsostek | kemkes sp | Dapodik PAUD | 1 |
+| 1331 | SP000332 | BPJS | kemkes sp | Dapodik PAUD | 1 |
+| 1332 | SP000333 | Kartu Keluarga Sejahtera | kemkes sp | Dapodik PAUD | 1 |
+| 1333 | SP000334 | Kartu Indonesia Sehat | kemkes sp | Dapodik PAUD | 1 |
+| 1334 | SP000335 | Otonomi Khusus Papua | kemkes sp | Dapodik PAUD | 1 |
+| 1335 | SP000336 | Program Keluarga Harapan | kemkes sp | Dapodik PAUD | 1 |
+| 1336 | 276031006 | Details of education | snomed | Dapodik PAUD | 1 |
+| 1337 | SP000337 | Kompetensi Keahlian (SMK) | kemkes sp | Dapodik PAUD | 1 |
+| 1338 | SP000338 | Jenis Pendaftaran | kemkes sp | Dapodik PAUD | 1 |
+| 1339 | SP000339 | Siswa baru | kemkes sp | Dapodik PAUD | 1 |
+| 1340 | SP000340 | Siswa Pindahan | kemkes sp | Dapodik PAUD | 1 |
+| 1341 | SP000341 | Kembali bersekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1342 | 224293004 | Education received in the past | snomed | Dapodik PAUD | 1 |
+| 1343 | SP000342 | Jenis Lembaga Pendidikan | kemkes sp | Dapodik PAUD | 1 |
+| 1344 | SP000343 | Formal | kemkes sp | Dapodik PAUD | 1 |
+| 1345 | SP000344 | Informal | kemkes sp | Dapodik PAUD | 1 |
+| 1346 | SP000345 | Tanggal masuk sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1347 | SP000346 | Rombongan Belajar | kemkes sp | Dapodik PAUD | 1 |
+| 1348 | SP000347 | No Peserta Ujian Nasional | kemkes sp | Dapodik PAUD | 1 |
+| 1349 | SP000348 | No Seri Ijazah | kemkes sp | Dapodik PAUD | 1 |
+| 1350 | SP000349 | No SKHUN/SHUN | kemkes sp | Dapodik PAUD | 1 |
+| 1351 | SP000350 | Alasan utama keluar sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1352 | SP000351 | Mutasi | kemkes sp | Dapodik PAUD | 1 |
+| 1353 | 228137002 | Excluded from school permanently |  | Dapodik PAUD | 1 |
+| 1354 | 161131005 | Left school free will |  | Dapodik PAUD | 1 |
+| 1355 | SP000352 | Putus sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1356 | 419099009 | Dead |  | Dapodik PAUD | 1 |
+| 1357 | SP000353 | Hilang | kemkes sp | Dapodik PAUD | 1 |
+| 1358 | SP000354 | Lulus | kemkes sp | Dapodik PAUD | 1 |
+| 1359 | SP000355 | Tanggal keluar sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1360 | SP000356 | Alasan khusus keluar sekolah | kemkes sp | Dapodik PAUD | 1 |
+| 1361 | 63764-5 | Hobby [LIBCSP] | loinc | Dapodik PAUD (2x) | 1 |
+| 1362 | SP000357 | Cita-cita | kemkes sp | Dapodik PAUD (2x) | 1 |
+| 1363 | 129011005 | Shopping | snomed | Dapodik PAUD | 1 |
+| 1364 | 10496000 | Camping | snomed | Dapodik PAUD | 1 |
+| 1365 | 418060005 | Running | snomed | Dapodik PAUD | 1 |
+| 1366 | 88289009 | Soccer | snomed | Dapodik PAUD | 1 |
+| 1367 | 26550000 | Tennis | snomed | Dapodik PAUD | 1 |
+| 1368 | 84096006 | Surfing | snomed | Dapodik PAUD | 1 |
+| 1369 | 1968006 | Jogging | snomed | Dapodik PAUD | 1 |
+| 1370 | 48263008 | Eating | snomed | Dapodik PAUD | 1 |
+| 1371 | 1137717005 | Fishing | snomed | Dapodik PAUD | 1 |
+| 1372 | 50360004 | Reading | snomed | Dapodik PAUD | 1 |
+| 1373 | 111055000 | Mountain climbing | snomed | Dapodik PAUD | 1 |
+| 1374 | 14468000 | Sports activity | snomed | Dapodik PAUD | 1 |
+| 1375 | 129018004 | Traveling | snomed | Dapodik PAUD | 1 |
+| 1376 | 308047006 | Architect | snomed | Dapodik PAUD | 1 |
+| 1377 | 106325008 | Athlete, sportsman/related worker | snomed | Dapodik PAUD | 1 |
+| 1378 | 75271001 | Professional midwife | snomed | Dapodik PAUD | 1 |
+| 1379 | 158965000 | Medical practitioner | snomed | Dapodik PAUD | 1 |
+| 1380 | 265945005 | Performer (entertainment) | snomed | Dapodik PAUD | 1 |
+| 1381 | 308207007 | Chef | snomed | Dapodik PAUD | 1 |
+| 1382 | 12877000 | Lawyer | snomed | Dapodik PAUD | 1 |
+| 1383 | 308004006 | Writer | snomed | Dapodik PAUD | 1 |
+| 1384 | 78705009 | Radio and television announcer | snomed | Dapodik PAUD | 1 |
+| 1385 | 308040008 | Pilot - aircraft | snomed | Dapodik PAUD | 1 |
+| 1386 | 14406004 | Policeman | snomed | Dapodik PAUD | 1 |
+| 1387 | 159062006 | Artist | snomed | Dapodik PAUD | 1 |
+| 1388 | 80409005 | Translator | snomed | Dapodik PAUD | 1 |
+| 1389 | 29536009 | Journalist | snomed | Dapodik PAUD | 1 |
+| 1390 | 373067005 | No | snomed | ePus Tumbang GPPH (10x) | 1 |
+| 1391 | SP000363 | Kadang-Kadang | kemkes sp | ePus Tumbang GPPH (10x) | 1 |
+| 1392 | 70232002 | Frequent | snomed | ePus Tumbang GPPH (10x) | 1 |
+| 1393 | SP000366 | Selalu | kemkes sp | ePus Tumbang GPPH (10x) | 1 |
