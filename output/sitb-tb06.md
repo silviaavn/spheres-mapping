@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 56 |
 | Code (`jumlah code` = 1) | 301 |
 | Code unik (code + CodeSystem) | 124 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 9 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
 | Variabel BQ (unik) | 92 |
 | Variabel raw (kolom Excel export) | 96 |
 
@@ -101,8 +101,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 20 | Organization | `Organization.type` | SP000367 | Kementerian Kesehatan | http://terminology.kemkes.go.id/CodeSystem/organization-ownership |
-| 2 | 21 | Organization | `Organization.type` | SP000368 | Pemerintah Daerah Kabupaten/Kota | http://terminology.kemkes.go.id/CodeSystem/organization-ownership |
+| 1 | 20 | Organization | `Organization.type` | SP000367 | Kementerian Kesehatan | http://terminology.kemkes.go.id/sp |
+| 2 | 21 | Organization | `Organization.type` | SP000368 | Pemerintah Daerah Kabupaten/Kota | http://terminology.kemkes.go.id/sp |
 | 3 | 79 | EpisodeOfCare | `EpisodeOfCare.type.coding` | TB-SO | Tuberkulosis Sensitif Obat | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
 | 4 | 80 | EpisodeOfCare | `EpisodeOfCare.type.coding` | TB-RO | Tuberkulosis Resisten Obat | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
 | 5 | 90 | EpisodeOfCare | `EpisodeOfCare.type.coding` | TB-SO | Tuberkulosis Sensitif Obat | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
@@ -412,11 +412,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 40 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 22 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 16 |
-| http://terminology.kemkes.go.id/sp | 9 |
+| http://terminology.kemkes.go.id/sp | 11 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 8 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 6 |
 | http://hl7.org/fhir/sid/icd-10 | 3 |
-| http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/data-absent-reason | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
 |  | 1 |

@@ -233,7 +233,7 @@ Data Nakes,Role Nakes,,,Role Tenaga Pemeriksa,,,,,,PractitionerRole,Practitioner
 ,,,,Tanggal_Persalinan_Sebelumnya,,,,,,Observation,Observation.identifier,Tidak ada,Kehamilan ke 1,,,,1
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000050,Riwayat Onset Persalinan,http://loinc.org,,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000050,Riwayat Onset Persalinan,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.valueDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,

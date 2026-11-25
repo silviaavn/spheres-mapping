@@ -181,7 +181,7 @@ Investigasi Kontak,,identitas_kontak_metode_ik,,Metode IK,,,,,,Observation,Obser
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,identitas_kontak_kontak_serumah,,Kontak Dengan Penderita TBC,,"value dilihat dari kolom ""Kontak Serumah"" dan ""Kontak Erat"" yang dicentang",,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000369,Kontak Dengan Penderita TBC,,,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000369,Kontak Dengan Penderita TBC,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Kontak Serumah,,,Observation,Observation.valueCodeableConcept.coding,SP000201,Kontak Serumah,http://terminology.kemkes.go.id/sp,,1,
 ,,identitas_kontak_kontak_erat,,,,,Kontak Erat,,,Observation,Observation.valueCodeableConcept.coding,SP000202,Kontak Erat,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -263,7 +263,7 @@ Hasil Pemeriksaan Terduga,,hasil_pemeriksaan_terduga_sakit_tbc,,Hasil Pemeriksaa
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000207,Hasil Pemeriksaan Terduga,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,"Jika kolom ""Sakit TBC"" diisi, maka gunakan kode berikut",Sakit TBC,,,Observation,Observation.valueCodeableConcept.coding,56717001,Tuberculosis,http://snomed.info/sct,,1,
-,,hasil_pemeriksaan_terduga_tidak_tbc,,,,"Jika kolom ""Tidak TBC"" diisi, maka gunakan kode berikut",Tidak TBC,,,Observation,Observation.valueCodeableConcept.coding,SP000208,Tidak TBC,http://snomed.info/sct,,1,
+,,hasil_pemeriksaan_terduga_tidak_tbc,,,,"Jika kolom ""Tidak TBC"" diisi, maka gunakan kode berikut",Tidak TBC,,,Observation,Observation.valueCodeableConcept.coding,SP000208,Tidak TBC,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,Semua value dari kedua kolom hasil pemeriksaan terduga diisi di bagian ini dengan format YYYY-MM-DD,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

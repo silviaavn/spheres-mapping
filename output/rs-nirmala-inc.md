@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 67 |
 | Code (`jumlah code` = 1) | 164 |
 | Code unik (code + CodeSystem) | 157 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 18 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 19 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -162,7 +162,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 52 | 421 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 53 | 432 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
 | 54 | 433 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
-| 55 | 434 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 55 | 434 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://terminology.kemkes.go.id/sp |
 | 56 | 445 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
 | 57 | 496 | Observation | `Observation.code.coding` | SP000123 | Integrasi Program | http://terminology.kemkes.go.id/sp |
 | 58 | 497 | Observation | `Observation.valueCodeableConcept.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
@@ -277,9 +277,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 92 |
+| http://snomed.info/sct | 91 |
 | http://loinc.org | 23 |
-| http://terminology.kemkes.go.id/sp | 18 |
+| http://terminology.kemkes.go.id/sp | 19 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 5 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 3 |

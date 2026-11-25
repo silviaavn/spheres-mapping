@@ -642,7 +642,7 @@ Jika lokasi periksa rumah ibu/ lainnya, gunakan reference organization dan locat
 ,,,,,,,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Penanganan diberikan,,,,ppcomplication_treatment_inf,,Observation,Observation.status,final,Tidak Ada,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,procedure,Procedure,,,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000381,Tatalaksana Komplikasi Infeksi,,,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000381,Tatalaksana Komplikasi Infeksi,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.valueBoolean,True,Tidak ada,,,,
 ,,,,,,,,,,Observation,Observation.valueBoolean,False,Tidak ada,,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -668,7 +668,7 @@ Jika lokasi periksa rumah ibu/ lainnya, gunakan reference organization dan locat
 ,,,,Deskripsikan penanganan yang diberikan,,,,ppcomplication_treatment_htd,,Observation,Observation.note,{ppcomplication_treatment_htd},,,,,
 ,,,,Penanganan diberikan,,,,ppcomplication_treatment_hemo,,Observation,Observation.status,final,Tidak Ada,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,procedure,Procedure,,,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000380,Tatalaksana Komplikasi Pendarahan,,,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000380,Tatalaksana Komplikasi Pendarahan,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.valueBoolean,True,Tidak ada,,,,
 ,,,,,,,,,,Observation,Observation.valueBoolean,False,Tidak ada,,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -681,7 +681,7 @@ Jika lokasi periksa rumah ibu/ lainnya, gunakan reference organization dan locat
 ,,,,Deskripsikan penanganan yang diberikan,,,,ppcomplication_treatment_hemod,,Observation,Observation.note,{ppcomplication_treatment_hemod},,,,,
 ,,,,Penanganan diberikan,,,,ppcomplication_treatment_mas,,Observation,Observation.status,final,Tidak Ada,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,procedure,Procedure,,,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000382,Tatalaksana Komplikasi Mastitis,,,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000382,Tatalaksana Komplikasi Mastitis,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.valueBoolean,True,Tidak ada,,,,
 ,,,,,,,,,,Observation,Observation.valueBoolean,False,Tidak ada,,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,

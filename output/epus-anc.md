@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 155 |
 | Code (`jumlah code` = 1) | 346 |
 | Code unik (code + CodeSystem) | 228 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 24 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 25 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 123 |
 
@@ -230,7 +230,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 27 | 212 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 28 | 223 | Observation | `Observation.code.coding` | 11778-8 | Delivery date Estimated | http://loinc.org |
 | 29 | 224 | Observation | `Observation.code.coding` | ANC.B6.DE22 | Expected date of delivery (EDD) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 30 | 236 | Observation | `Observation.code.coding` | SP000050 | Riwayat Onset Persalinan | http://loinc.org |
+| 30 | 236 | Observation | `Observation.code.coding` | SP000050 | Riwayat Onset Persalinan | http://terminology.kemkes.go.id/sp |
 | 31 | 238 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 32 | 248 | Observation | `Observation.code.coding` | SP000132 | Memiliki Buku KIA | http://terminology.kemkes.go.id/sp |
 | 33 | 260 | Observation | `Observation.code.coding` | 56077-1 | Body weight --pre current pregnancy | http://loinc.org |
@@ -553,9 +553,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 108 |
-| http://loinc.org | 101 |
+| http://loinc.org | 100 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 27 |
-| http://terminology.kemkes.go.id/sp | 24 |
+| http://terminology.kemkes.go.id/sp | 25 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 23 |
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 20 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 13 |

@@ -204,20 +204,20 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Maternal Outcome | 12 | 12 | 14 | 4 |
 | Raffle | 12 | 8 | 6 | 4 |
 | SiGizi ANC | 49 | 61 | 154 | 18 |
-| SITB TB 06 | 96 | 56 | 301 | 9 |
-| SITB TB 03 SO | 84 | 62 | 358 | 10 |
-| SITB TB 03 RO | 144 | 50 | 403 | 11 |
+| SITB TB 06 | 96 | 56 | 301 | 11 |
+| SITB TB 03 SO | 84 | 62 | 358 | 12 |
+| SITB TB 03 RO | 144 | 50 | 403 | 13 |
 | SITB TB 04 | 114 | 69 | 616 | 24 |
-| SITB TB 16K | 40 | 24 | 38 | 13 |
+| SITB TB 16K | 40 | 24 | 38 | 15 |
 | MPDN Kematian Bayi | 37 | 19 | 115 | 37 |
 | MPDN Kematian Ibu | 24 | 10 | 50 | 17 |
 | ePus Pelayanan Pasien | 81 | 47 | 62 | 2 |
 | ePus Kunjungan Ibu Hamil | 68 | 114 | 206 | 11 |
 | ePus Laboratorium | 22 | 309 | 500 | 0 |
 | ePus Rujukan Eksternal | 23 | 5 | 0 | 0 |
-| ePus ANC | 123 | 155 | 346 | 24 |
-| ePus INC | 93 | 69 | 210 | 24 |
-| ePus PNC | 107 | 82 | 166 | 28 |
+| ePus ANC | 123 | 155 | 346 | 25 |
+| ePus INC | 93 | 69 | 210 | 25 |
+| ePus PNC | 107 | 82 | 166 | 29 |
 | ePus MTBS | 187 | 125 | 285 | 20 |
 | ePus MTBM | 105 | 57 | 139 | 20 |
 | ePus Tumbang Anak | 34 | 19 | 62 | 8 |
@@ -260,7 +260,7 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | KuApps BidanKu Anak | 199 | 81 | 157 | 9 |
 | KuApps BidanKu Anak Usia Sekolah dan Remaja | 47 | 31 | 83 | 2 |
 | KuApps BidanKu Dewasa | 72 | 39 | 122 | 25 |
-| KuApps BidanKu Lansia | 84 | 29 | 121 | 10 |
+| KuApps BidanKu Lansia | 84 | 29 | 121 | 11 |
 | Kuapps Spheres HT | 132 | 10 | 243 | 231 |
 | Kuapps Spheres DM | 133 | 10 | 245 | 233 |
 | Kuapps Spheres TB | 25 | 5 | 49 | 21 |
@@ -307,27 +307,27 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | SIM RS Narmada INC | 225 | 86 | 264 | 2 |
 | SIM RS Narmada KIA | 70 | 50 | 110 | 2 |
 | SIM RS Panti Nugroho ANC | 43 | 31 | 77 | 11 |
-| SIM RS Panti Nugroho INC | 55 | 37 | 121 | 10 |
+| SIM RS Panti Nugroho INC | 55 | 37 | 121 | 11 |
 | SIM RS Panti Nugroho PNC | 85 | 67 | 133 | 22 |
 | SIM RS Panti Nugroho BBL | 49 | 31 | 55 | 2 |
 | SIM RS Panti Nugroho Diabetes Melitus | 19 | 7 | 4 | 0 |
 | SIM RS Panti Nugroho Hipertensi | 40 | 23 | 21 | 4 |
 | SIM RS Panti Nugroho Stroke | 35 | 20 | 23 | 4 |
 | SIM RS Ummu Hani ANC | 33 | 23 | 49 | 2 |
-| SIM RS Ummu Hani INC | 54 | 41 | 97 | 8 |
+| SIM RS Ummu Hani INC | 54 | 41 | 97 | 9 |
 | SIM RS Ummu Hani PNC | 65 | 53 | 112 | 8 |
 | SIM RS Ummu Hani BBL | 45 | 30 | 55 | 2 |
 | SIM RS MPH ANC | 43 | 33 | 90 | 11 |
-| SIM RS MPH INC | 54 | 40 | 94 | 8 |
+| SIM RS MPH INC | 54 | 40 | 94 | 9 |
 | SIM RS MPH PNC | 59 | 43 | 104 | 6 |
 | SIM RS MPH BBL | 73 | 42 | 59 | 2 |
 | SIM RS MPH Diabetes Melitus | 44 | 24 | 37 | 3 |
 | SIM RS MPH Hipertensi | 35 | 20 | 22 | 3 |
 | SIM RS Siaga Medika ANC | 61 | 100 | 193 | 12 |
-| SIM RS Siaga Medika INC | 58 | 42 | 125 | 12 |
+| SIM RS Siaga Medika INC | 58 | 42 | 125 | 13 |
 | SIM RS Siaga Medika PNC | 71 | 49 | 110 | 15 |
 | SIM RS Siaga Medika BBL | 64 | 37 | 48 | 2 |
-| SIM RS PKU INC | 81 | 66 | 179 | 18 |
+| SIM RS PKU INC | 81 | 66 | 179 | 19 |
 | SIM RS PKU PNC | 85 | 67 | 133 | 22 |
 | SIM RS Goetoeng ANC | 21 | 106 | 111 | 22 |
 | SIM RS Goetoeng INC | 35 | 64 | 245 | 12 |
@@ -335,18 +335,18 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | SIM RS Goetoeng BBL | 34 | 68 | 124 | 14 |
 | SIM RS Goetoeng Diabetes Melitus | 12 | 6 | 4 | 0 |
 | SIM RS Goetoeng Hipertensi | 13 | 5 | 3 | 0 |
-| SISMAL Regmal 1 | 49 | 20 | 54 | 14 |
+| SISMAL Regmal 1 | 49 | 20 | 54 | 15 |
 | SISMAL Validasi Indigenous | 14 | 7 | 13 | 7 |
 | SIM RS Harapan Ibu ANC | 76 | 89 | 194 | 21 |
-| SIM RS Harapan Ibu INC | 81 | 67 | 164 | 18 |
+| SIM RS Harapan Ibu INC | 81 | 67 | 164 | 19 |
 | SIM RS Harapan Ibu PNC | 86 | 67 | 147 | 22 |
 | SIM RS Harapan Ibu BBL | 105 | 79 | 114 | 2 |
 | SIM RS At tin ANC | 76 | 89 | 194 | 21 |
-| SIM RS At tin INC | 81 | 67 | 164 | 18 |
+| SIM RS At tin INC | 81 | 67 | 164 | 19 |
 | SIM RS At tin PNC | 86 | 67 | 147 | 22 |
 | SIM RS At tin BBL | 109 | 82 | 126 | 2 |
 | SIM RS Nirmala ANC | 76 | 89 | 194 | 21 |
-| SIM RS Nirmala INC | 81 | 67 | 164 | 18 |
+| SIM RS Nirmala INC | 81 | 67 | 164 | 19 |
 | SIM RS Nirmala PNC | 86 | 67 | 147 | 22 |
 | SIM RS Nirmala BBL | 109 | 82 | 126 | 2 |
 | SIM RS PKU ANC | 76 | 89 | 194 | 21 |
@@ -361,25 +361,25 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Kobo Modul PNC | 118 | 98 | 228 | 28 |
 | Kobo Buku KIA 1 - ANC | 404 | 167 | 733 | 69 |
 | Kobo Buku KIA 2 - Luaran Kehamilan | 48 | 38 | 87 | 3 |
-| Kobo Buku KIA 3 - PNC | 145 | 75 | 175 | 23 |
+| Kobo Buku KIA 3 - PNC | 145 | 75 | 175 | 26 |
 | Kobo Buku KIA 4 - Cadre | 83 | 44 | 51 | 15 |
 | Kobo Buku KIA 5 - Vaksinatorku | 100 | 40 | 65 | 13 |
 | Kobo Neonatus Outcome | 25 | 14 | 25 | 5 |
 | Kobo Neonatus Outcome v2 | 208 | 89 | 276 | 52 |
 | Kobo DDTK | 20 | 11 | 10 | 0 |
-| Master Data (Prerequisite) | 15 | 0 | 15 | 15 |
-| **Total (non-unik)** | **11016** | **7344** | **19477** | **2815** |
-| **Total unik** | – | **1430** | **4341** | **1010** |
-| Selisih (dipakai ulang) | – | 5914 | 15136 | 1805 |
+| Master Data (Prerequisite) | 84 | 0 | 84 | 84 |
+| **Total (non-unik)** | **11085** | **7344** | **19546** | **2908** |
+| **Total unik** | – | **1430** | **4402** | **1082** |
+| Selisih (dipakai ulang) | – | 5914 | 15144 | 1826 |
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 1868 |
-| http://terminology.kemkes.go.id/sp | 1004 |
-| http://loinc.org | 504 |
+| http://snomed.info/sct | 1866 |
+| http://terminology.kemkes.go.id/sp | 1076 |
+| http://loinc.org | 503 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 338 |
 | http://hl7.org/fhir/sid/icd-10 | 120 |
-|  | 88 |
+|  | 83 |
 | http://terminology.kemkes.go.id | 61 |
 | http://hl7.org/fhir/sid/icd-9-cm | 53 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 37 |
@@ -402,7 +402,6 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | http://terminology.kemkes.go.id/CodeSystem/organization-type/sp | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
-| http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
 | http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
@@ -423,7 +422,7 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | https://www.ncbi.nlm.nih.gov/gene | 1 |
 | Viral Consensus Genome Sequence | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
-| **Total** | **4341** |
+| **Total** | **4402** |
 
 ---
 
@@ -732,6 +731,8 @@ Perbedaan antar versi:
 ## Log perubahan output
 - 2026-11-25 (6): 36 baris di 25 dictionary dibetulkan: kode SNOMED/LOINC yang salah diberi CodeSystem `kemkes.go.id/sp` dipindah ke SNOMED/LOINC, dan akhiran ".0" dihapus (mis. 718-7, 135840009, 49052-4, 276707008). `special-needs` (Dapodik PAUD) belum diputuskan. Code SP unik 1019 → 1004; total unik 1430 payload / 4341 code (non-unik tetap 7344 / 19477).
 - 2026-11-25 (7): Code SP sekarang juga menghitung CodeSystem `organization-type/sp` (6 kode master PAUD: SP000385–388, SP000457, SP000458). `special-needs` (Dapodik PAUD) tetap kode bernama, dihitung sebagai Code SP. Code SP unik 1004 → 1010.
+- 2026-11-25 (8): Master Data (Prerequisite) ditambah 69 kode SP master (dari daftar master Kemkes, frekuensi 0 di form; Resource/Path sesuai daftar, 5 kode frekuensi harian/MMS tanpa elemen). Master Data jadi 84 code / 0 payload. Total non-unik 19546 code; unik 4410 code, Code SP unik 1010 → 1079.
+- 2026-11-25 (9): 32 baris di 21 dictionary: kode berformat SP000xxx yang CodeSystem-nya LOINC / SNOMED / organization-ownership / kosong diubah ke `http://terminology.kemkes.go.id/sp` (SP000050, SP000120, SP000208, SP000367, SP000368, SP000369, SP000380, SP000381, SP000382, SP000658, SP000761). Code SP unik 1079 → 1082; total unik 4402 code.
 - 2026-11-25 (5): Informed Consent (#78) dikeluarkan dari konsolidasi (bukan aplikasi tersendiri; file mapping/output tetap ada di repo). Total non-unik 7344 payload / 19477 code; unik 1431 / 4349.
 - 2026-11-25 (4): Tambah 3 form SKI (#297–299) dan ganti SITB TB 16K dengan versi revised (21/35 → 24/38). Total non-unik 7347 payload / 19485 code; unik 1431 / 4357.
 - 2026-11-25 (3): Tambah form Master Data (Prerequisite): 0 payload / 15 code. Total non-unik 7313 payload / 19314 code; unik 1420 / 4272.

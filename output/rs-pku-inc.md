@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 66 |
 | Code (`jumlah code` = 1) | 179 |
 | Code unik (code + CodeSystem) | 166 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 18 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 19 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -160,7 +160,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 52 | 425 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 53 | 436 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
 | 54 | 437 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
-| 55 | 438 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 55 | 438 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://terminology.kemkes.go.id/sp |
 | 56 | 449 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
 | 57 | 460 | Observation | `Observation.code.coding` | SP000123 | Integrasi Program | http://terminology.kemkes.go.id/sp |
 | 58 | 461 | Observation | `Observation.valueCodeableConcept.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
@@ -290,9 +290,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 94 |
+| http://snomed.info/sct | 93 |
 | http://loinc.org | 27 |
-| http://terminology.kemkes.go.id/sp | 18 |
+| http://terminology.kemkes.go.id/sp | 19 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 10 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 6 |

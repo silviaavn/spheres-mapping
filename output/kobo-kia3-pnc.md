@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 75 |
 | Code (`jumlah code` = 1) | 175 |
 | Code unik (code + CodeSystem) | 150 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 23 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 26 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -205,10 +205,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 84 | 635 | Condition | `Condition.code.coding` | 47821001.0 | Postpartum hemorrhage | http://snomed.info/sct |
 | 85 | 636 | Condition | `Condition.code.coding` | 266579006.0 | Inflammatory disorder of breast | http://snomed.info/sct |
 | 86 | 637 | Condition | `Condition.code.coding` | O90.8 | Other complications of the puerperium, not elsewhere classified | http://hl7.org/fhir/sid/icd-10 |
-| 87 | 645 | Observation | `Observation.code.coding` | SP000381 | Tatalaksana Komplikasi Infeksi |  |
+| 87 | 645 | Observation | `Observation.code.coding` | SP000381 | Tatalaksana Komplikasi Infeksi | http://terminology.kemkes.go.id/sp |
 | 88 | 658 | Observation | `Observation.code.coding` | 736286003.0 | Hypertension clinical management plan |  |
-| 89 | 671 | Observation | `Observation.code.coding` | SP000380 | Tatalaksana Komplikasi Pendarahan |  |
-| 90 | 684 | Observation | `Observation.code.coding` | SP000382 | Tatalaksana Komplikasi Mastitis |  |
+| 89 | 671 | Observation | `Observation.code.coding` | SP000380 | Tatalaksana Komplikasi Pendarahan | http://terminology.kemkes.go.id/sp |
+| 90 | 684 | Observation | `Observation.code.coding` | SP000382 | Tatalaksana Komplikasi Mastitis | http://terminology.kemkes.go.id/sp |
 | 91 | 701 | ServiceRequest | `ServiceRequest.code.coding` | 409014006.0 | Delivery care management | http://snomed.info/sct |
 | 92 | 710 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
 | 93 | 714 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
@@ -300,12 +300,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 96 |
+| http://terminology.kemkes.go.id/sp | 26 |
 | http://loinc.org | 26 |
-| http://terminology.kemkes.go.id/sp | 23 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
-|  | 6 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 4 |
 | http://hl7.org/fhir/sid/icd-10 | 3 |
+|  | 3 |
 | http://sys-ids.kemkes.go.id/kf | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://sys-ids.kemkes.go.id/kfa | 1 |

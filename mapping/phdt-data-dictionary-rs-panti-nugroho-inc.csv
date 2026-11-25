@@ -309,7 +309,7 @@ Pendamping,,,,,,,,,,RelatedPerson,RelatedPerson.patient.reference,Reference ke r
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,Intact,,,Observation,Observation.code.coding,289282009.0,Amniotic membrane finding,http://snomed.info/sct,,1,
 ,,,,,,,Tidak Intact,,,Observation,Observation.valueCodeableConcept.coding,249125003.0,Intact membranes,http://snomed.info/sct,,1,
-,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000120,Non-intact membrane,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000120,Non-intact membrane,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.dataAbsentReason,,,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

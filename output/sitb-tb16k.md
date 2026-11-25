@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 24 |
 | Code (`jumlah code` = 1) | 38 |
 | Code unik (code + CodeSystem) | 36 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 13 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 15 |
 | Variabel BQ (unik) | 36 |
 
 ## Payload
@@ -84,14 +84,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 16 | 172 | Observation | `Observation.code.coding` | 225368008 | Contact tracing | http://snomed.info/sct |
 | 17 | 173 | Observation | `Observation.valueCodeableConcept.coding` | SP000200 | Invitasi kontak | http://terminology.kemkes.go.id/sp |
 | 18 | 174 | Observation | `Observation.valueCodeableConcept.coding` | 439708006 | Home visit | http://snomed.info/sct |
-| 19 | 184 | Observation | `Observation.code.coding` | SP000369 | Kontak Dengan Penderita TBC |  |
+| 19 | 184 | Observation | `Observation.code.coding` | SP000369 | Kontak Dengan Penderita TBC | http://terminology.kemkes.go.id/sp |
 | 20 | 185 | Observation | `Observation.valueCodeableConcept.coding` | SP000201 | Kontak Serumah | http://terminology.kemkes.go.id/sp |
 | 21 | 186 | Observation | `Observation.valueCodeableConcept.coding` | SP000202 | Kontak Erat | http://terminology.kemkes.go.id/sp |
 | 22 | 240 | Observation | `Observation.code.coding` | SP000206 | Dirujuk Pemeriksaan Terduga TBC | http://terminology.kemkes.go.id/sp |
 | 23 | 252 | Observation | `Observation.code.coding` | 171400006 | Examination for suspected tuberculosis | http://snomed.info/sct |
 | 24 | 264 | Observation | `Observation.code.coding` | SP000207 | Hasil Pemeriksaan Terduga | http://terminology.kemkes.go.id/sp |
 | 25 | 265 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
-| 26 | 266 | Observation | `Observation.valueCodeableConcept.coding` | SP000208 | Tidak TBC | http://snomed.info/sct |
+| 26 | 266 | Observation | `Observation.valueCodeableConcept.coding` | SP000208 | Tidak TBC | http://terminology.kemkes.go.id/sp |
 | 27 | 276 | Observation | `Observation.code.coding` | SP000209 | Memenuhi syarat rujukan pemeriksaan Eligibilitas TPT | http://terminology.kemkes.go.id/sp |
 | 28 | 288 | Observation | `Observation.code.coding` | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | http://terminology.kemkes.go.id/sp |
 | 29 | 289 | Observation | `Observation.valueCodeableConcept.coding` | SP000211 | Memenuhi syarat TPT | http://terminology.kemkes.go.id/sp |
@@ -109,14 +109,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 15 |
-| http://terminology.kemkes.go.id/sp | 13 |
+| http://terminology.kemkes.go.id/sp | 15 |
+| http://snomed.info/sct | 14 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | https://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
-|  | 1 |
 | **Total** | **38** |
 
 ## Variabel di luar payload

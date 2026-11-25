@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 69 |
 | Code (`jumlah code` = 1) | 210 |
 | Code unik (code + CodeSystem) | 184 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 24 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 25 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 93 |
 
@@ -170,7 +170,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 56 | 410 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 57 | 421 | Observation | `Observation.code.coding` | 289282009 | Amniotic membrane finding | http://snomed.info/sct |
 | 58 | 422 | Observation | `Observation.valueCodeableConcept.coding` | 249125003 | Intact membranes | http://snomed.info/sct |
-| 59 | 423 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 59 | 423 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://terminology.kemkes.go.id/sp |
 | 60 | 540 | Observation | `Observation.code.coding` | SP000123 | Integrasi Program | http://terminology.kemkes.go.id/sp |
 | 61 | 541 | Observation | `Observation.valueCodeableConcept.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
 | 62 | 542 | Observation | `Observation.valueCodeableConcept.coding` | SP000124 | Obat anti malaria | http://terminology.kemkes.go.id/sp |
@@ -327,9 +327,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 118 |
+| http://snomed.info/sct | 117 |
 | http://loinc.org | 30 |
-| http://terminology.kemkes.go.id/sp | 24 |
+| http://terminology.kemkes.go.id/sp | 25 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 15 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 10 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 6 |

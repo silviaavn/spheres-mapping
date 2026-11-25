@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 82 |
 | Code (`jumlah code` = 1) | 166 |
 | Code unik (code + CodeSystem) | 147 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 28 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 29 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 107 |
 
@@ -288,7 +288,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 156 | 1110 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 157 | 1122 | Observation | `Observation.code.coding` | 11778-8 | Delivery date Estimated | http://loinc.org |
 | 158 | 1123 | Observation | `Observation.code.coding` | ANC.B6.DE22 | Expected date of delivery (EDD) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 159 | 1136 | Observation | `Observation.code.coding` | SP000050 | Riwayat Onset Persalinan | http://loinc.org |
+| 159 | 1136 | Observation | `Observation.code.coding` | SP000050 | Riwayat Onset Persalinan | http://terminology.kemkes.go.id/sp |
 | 160 | 1138 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 161 | 1149 | Observation | `Observation.code.coding` | SP000132 | Memiliki Buku KIA | http://terminology.kemkes.go.id/sp |
 | 162 | 1161 | Observation | `Observation.code.coding` | 56077-1 | Body weight --pre current pregnancy | http://loinc.org |
@@ -302,8 +302,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 65 |
-| http://loinc.org | 34 |
-| http://terminology.kemkes.go.id/sp | 28 |
+| http://loinc.org | 33 |
+| http://terminology.kemkes.go.id/sp | 29 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 5 |
 | http://sys-ids.kemkes.go.id/kf | 5 |

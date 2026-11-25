@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 37 |
 | Code (`jumlah code` = 1) | 121 |
 | Code unik (code + CodeSystem) | 120 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 10 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
 | Variabel BQ (unik) | 1 |
 
 ## Payload
@@ -114,7 +114,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 34 | 299 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 35 | 310 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
 | 36 | 311 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
-| 37 | 312 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 37 | 312 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://terminology.kemkes.go.id/sp |
 | 38 | 323 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
 | 39 | 334 | Observation | `Observation.code.coding` | 72150-6 | Delivery location | http://loinc.org |
 | 40 | 335 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
@@ -204,9 +204,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 66 |
+| http://snomed.info/sct | 65 |
 | http://loinc.org | 16 |
-| http://terminology.kemkes.go.id/sp | 10 |
+| http://terminology.kemkes.go.id/sp | 11 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 10 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 |

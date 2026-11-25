@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 50 |
 | Code (`jumlah code` = 1) | 403 |
 | Code unik (code + CodeSystem) | 249 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 13 |
 | Variabel BQ (unik) | 140 |
 | Variabel raw (kolom Excel export) | 144 |
 
@@ -95,8 +95,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 5 | Organization | `Organization.type` | SP000367 | Kementerian Kesehatan | http://terminology.kemkes.go.id/CodeSystem/organization-ownership |
-| 2 | 6 | Organization | `Organization.type` | SP000368 | Pemerintah Daerah Kabupaten/Kota | http://terminology.kemkes.go.id/CodeSystem/organization-ownership |
+| 1 | 5 | Organization | `Organization.type` | SP000367 | Kementerian Kesehatan | http://terminology.kemkes.go.id/sp |
+| 2 | 6 | Organization | `Organization.type` | SP000368 | Pemerintah Daerah Kabupaten/Kota | http://terminology.kemkes.go.id/sp |
 | 3 | 56 | EpisodeOfCare | `EpisodeOfCare.type.coding` | TB-RO | Tuberkulosis Resisten Obat | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
 | 4 | 82 | Encounter | `Encounter.hospitalization.admitSource.coding` | EHA000002 | Datang sendiri | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 5 | 83 | Encounter | `Encounter.hospitalization.admitSource.coding` | EHA000003 | Kegiatan ACF | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
@@ -509,8 +509,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/examination | 41 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 22 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 15 |
-| http://terminology.kemkes.go.id/sp | 11 |
-| http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 2 |
+| http://terminology.kemkes.go.id/sp | 13 |
 | http://hl7.org/fhir/sid/icd-10 | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/data-absent-reason | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |

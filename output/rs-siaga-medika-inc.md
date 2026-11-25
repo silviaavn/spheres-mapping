@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 42 |
 | Code (`jumlah code` = 1) | 125 |
 | Code unik (code + CodeSystem) | 125 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 12 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 13 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -122,7 +122,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 39 | 412 | Observation | `Observation.valueCodeableConcept.coding` | 62098001.0 | Head not engaged | http://snomed.info/sct |
 | 40 | 422 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
 | 41 | 423 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
-| 42 | 424 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 42 | 424 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://terminology.kemkes.go.id/sp |
 | 43 | 434 | Observation | `Observation.code.coding` | SP000686 | Faktor Risiko Persalinan | http://terminology.kemkes.go.id/sp |
 | 44 | 435 | Observation | `Observation.valueCodeableConcept.coding` | SP000687 | Tidak Ada Faktor Risiko Persalinan | http://terminology.kemkes.go.id/sp |
 | 45 | 436 | Observation | `Observation.valueCodeableConcept.coding` | SP000688 | Ada Faktor Risiko Persalinan | http://terminology.kemkes.go.id/sp |
@@ -211,9 +211,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 64 |
+| http://snomed.info/sct | 63 |
 | http://loinc.org | 24 |
-| http://terminology.kemkes.go.id/sp | 12 |
+| http://terminology.kemkes.go.id/sp | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 8 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 5 |
 | http://hl7.org/fhir/sid/icd-9-cm | 4 |

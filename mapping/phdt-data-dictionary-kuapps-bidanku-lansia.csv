@@ -177,7 +177,7 @@ Skrining Kesehatan,,,,Riwayat Keluarga,multiple choice,,,,,Condition,Condition.c
 ,,,,,,,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Perilaku Berisiko Diri Sendiri,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000658,Perilaku Berisiko Diri Sendiri,,,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000658,Perilaku Berisiko Diri Sendiri,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Merokok,,,Observation,Observation.component.code.coding,77176002,Smoker,http://snomed.info/sct,,1,
 ,,,,,,,Ya,,,Observation,Observation.component.valueBoolean,true,Tidak Ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.component.valueBoolean,false,Tidak Ada,Tidak ada,,,

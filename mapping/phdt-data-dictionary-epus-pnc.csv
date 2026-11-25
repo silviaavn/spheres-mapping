@@ -1133,7 +1133,7 @@ Data Nakes,Identitas Nakes,,,Dokter/Tenaga Medis,,,,,,Practitioner,Practitioner.
 ,,,,Tanggal_Persalinan_Sebelumnya,,,,,,Observation,Observation.identifier,Tidak ada,Kehamilan ke 1,,Observation,,1
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,Observation,,
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,Observation,,
-,,,,,,,,,,Observation,Observation.code.coding,SP000050,Riwayat Onset Persalinan,http://loinc.org,Observation,1,
+,,,,,,,,,,Observation,Observation.code.coding,SP000050,Riwayat Onset Persalinan,http://terminology.kemkes.go.id/sp,Observation,1,
 ,,,,,,,,,,Observation,Observation.valueDateTime,Tidak ada,Tidak ada,Tidak ada,Observation,,
 ,,,,,,,,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,Observation,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,Observation,,

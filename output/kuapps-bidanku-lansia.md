@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 29 |
 | Code (`jumlah code` = 1) | 121 |
 | Code unik (code + CodeSystem) | 100 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 10 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -103,7 +103,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 37 | 171 | Condition | `Condition.code.coding` | 266987004 | History of malignant neoplasm | http://snomed.info/sct |
 | 38 | 172 | Condition | `Condition.code.coding` | 414416008 | History of hypercholesterolemia | http://snomed.info/sct |
 | 39 | 173 | Condition | `Condition.code.coding` | 443508001 | No history of clinical finding in subject | http://snomed.info/sct |
-| 40 | 180 | Observation | `Observation.code.coding` | SP000658 | Perilaku Berisiko Diri Sendiri |  |
+| 40 | 180 | Observation | `Observation.code.coding` | SP000658 | Perilaku Berisiko Diri Sendiri | http://terminology.kemkes.go.id/sp |
 | 41 | 181 | Observation | `Observation.component.code.coding` | 77176002 | Smoker | http://snomed.info/sct |
 | 42 | 184 | Observation | `Observation.valueCodeableConcept.coding` | SP000659 | Konsumsi Tinggi Gula | http://terminology.kemkes.go.id/sp |
 | 43 | 187 | Observation | `Observation.valueCodeableConcept.coding` | SP000660 | Konsumsi Tinggi Garam | http://terminology.kemkes.go.id/sp |
@@ -192,10 +192,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|
 | http://snomed.info/sct | 56 |
 | http://loinc.org | 47 |
-| http://terminology.kemkes.go.id/sp | 10 |
+| http://terminology.kemkes.go.id/sp | 11 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 3 |
-|  | 2 |
 | http://hl7.org/fhir/administrative-gender | 2 |
+|  | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | **Total** | **121** |
 

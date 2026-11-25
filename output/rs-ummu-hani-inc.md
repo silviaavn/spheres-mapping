@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 41 |
 | Code (`jumlah code` = 1) | 97 |
 | Code unik (code + CodeSystem) | 85 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 8 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 9 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -133,7 +133,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 49 | 354 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 50 | 365 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
 | 51 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
-| 52 | 367 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 52 | 367 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://terminology.kemkes.go.id/sp |
 | 53 | 378 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
 | 54 | 389 | Observation | `Observation.code.coding` | 76516-4 | Gestational age—​at birth | http://loinc.org |
 | 55 | 392 | Observation | `Observation.component.code.coding` | SP000398 | Usia Kehamilan Saat Persalinan (hari) | http://terminology.kemkes.go.id/sp |
@@ -184,9 +184,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 63 |
+| http://snomed.info/sct | 62 |
 | http://loinc.org | 17 |
-| http://terminology.kemkes.go.id/sp | 8 |
+| http://terminology.kemkes.go.id/sp | 9 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 5 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 1 |
