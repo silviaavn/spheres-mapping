@@ -906,6 +906,39 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | #81 Buku KIA - PNC | 26 / 26 | 14 / 32 | 17 | +9 | 9 |
 | #82 Buku KIA - Anak | 266 / 834 | 189 / 284 | 267 | -1 | 34 |
 
+## KuApps BidanKu, Kuapps Spheres, Genomics, SITB TB 15 / 15P, ASIK Kohort
+
+⚠️ belum comprehensive review (tanpa daftar variabel BQ).
+
+**Asumsi** (lihat juga catatan di `output.md`)
+- KA1: sheet `PYD-*` = BidanKu #106–113. Sheet Tambah Pasien, Daftar Kehamilan, Luaran Kehamilan, PHBS, Skrining Rumah Tangga, Imunisasi, Kumpulan Skrinning tidak punya baris tracker (tidak masuk total).
+- KA2: typo `valuableCodeableConcept` (TB 15, TB 15P, ASIK Kohort) dibaca `valueCodeableConcept`. Perlu dibetulkan di sumber.
+- KA3: PYD-Bayi dan PYD-Anak punya 24 baris yang kehilangan 1 kolom di kiri (Ya/Tidak masuk kolom Resource); digeser otomatis oleh script. Perlu dibetulkan di sumber.
+- KA4: ASIK Kohort: kode vaksin di path `Immunization.vaccineCode.coding.code` dibaca `coding`. Vaksin kombinasi (DPT-Hb-Hib: VG45, VG17, VG107, 198) = 1 payload, 4 code. Opsi baru di `epus_prepare.IMM_SKIP_VC`.
+- KA5: Form Caregap DM / HT: `Sub Variables` (anak pertanyaan matriks) dipakai sebagai nama variabel. Payload kecil (10) karena sebagian besar isian masuk QuestionnaireResponse (6).
+
+| Form | Variabel unik / baris | Payload / code | Variabel di luar payload |
+|---|---|---|---|
+| #60 SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | 28 / 28 | 13 / 109 | 6 |
+| #61 SITB - TB 15P (Penerima TPT) | 32 / 43 | 21 / 49 | 6 |
+| #39 ASIK - Data Individu Kohort Bayi (Imunisasi) | 123 / 123 | 19 / 27 | 30 |
+| #40 ASIK - Data Individu Kohort Baduta (Imunisasi) | 27 / 27 | 4 / 6 | 7 |
+| #41 ASIK - Data Individu Kohort WUS (Imunisasi) | 37 / 47 | 12 / 20 | 14 |
+| #106 KuApps BidanKu - ANC | 244 / 255 | 190 / 411 | 12 |
+| #107 KuApps BidanKu - PNC | 52 / 55 | 49 / 141 | 2 |
+| #108 KuApps BidanKu - BBL | 62 / 62 | 48 / 100 | 0 |
+| #109 KuApps BidanKu - Bayi | 197 / 201 | 101 / 232 | 2 |
+| #110 KuApps BidanKu - Anak | 199 / 234 | 81 / 148 | 2 |
+| #111 KuApps BidanKu - Anak Usia Sekolah dan Remaja | 47 / 47 | 31 / 76 | 1 |
+| #112 KuApps BidanKu - Dewasa | 72 / 74 | 39 / 118 | 3 |
+| #113 KuApps BidanKu - Lansia | 84 / 86 | 29 / 119 | 3 |
+| #114 Kuapps Spheres - HT | 132 / 132 | 10 / 57 | 0 |
+| #115 Kuapps Spheres - DM | 133 / 133 | 10 / 59 | 0 |
+| #116 Kuapps Spheres - TB | 25 / 28 | 5 / 47 | 0 |
+| #118 Genomics - TB | 34 / 35 | 8 / 43 | 3 |
+| #119 Genomics - Klebsiella | 33 / 38 | 10 / 30 | 2 |
+| #120 Genomics - Dengue | 30 / 35 | 12 / 22 | 2 |
+
 ## Log perubahan revisi
 - 2026-11-24: Tambah bagian SISMAL (Regmal 1 20/54, Validasi Indigenous 7/12): asumsi SM1–SM4, temuan SM-1–SM-5, catatan pipeline P44–P45. Verifikasi Uji Silang tidak dihitung (isi salinan TB-TPT). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
@@ -943,3 +976,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
 - 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
 - 2026-11-24 (4): Tambah bagian Buku KIA 2024 (4 form).
+- 2026-11-24 (5): Tambah bagian KuApps / Genomics / TB 15 / ASIK Kohort (21 form).

@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah direview: 9
+Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 211 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -36,6 +36,9 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah d
 | 34 | SIGIZI IBU - Daftar Nifas | 11 / 12 |
 | 35 | SIGIZI IBU - Pengukuran ANC Bumil | 61 / 142 |
 | 36 | SIGIZI IBU - Kohort Ibu | 63 / 94 |
+| 39 | ASIK - Data Individu Kohort Bayi (Imunisasi) | 19 / 27 |
+| 40 | ASIK - Data Individu Kohort Baduta (Imunisasi) | 4 / 6 |
+| 41 | ASIK - Data Individu Kohort WUS (Imunisasi) | 12 / 20 |
 | 42 | ASIK - Data Skrining PTM | 104 / 146 |
 | 43 | ASIK - CKG-Klaster BBL (versi 2; v1 25 / 56) | 25 / 41 |
 | 44 | ASIK - CKG-Klaster Balita Pra Sekolah (versi 2; v1 29 / 99) | 32 / 102 |
@@ -50,6 +53,8 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah d
 | 54 | SITB - TB 04 Fasyankes (pemeriksaan lab) (satu dictionary TB 04 bersama Rujukan) | 69 / 579 |
 | 55 | SITB - TB 04 Rujukan (pemeriksaan lab) (satu dictionary TB 04 bersama Fasyankes, dihitung 1x di #54) | ikut #54 |
 | 56 | SITB - TB 06 (terduga/suspek TB) | 56 / 276 |
+| 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | 13 / 109 |
+| 61 | SITB - TB 15P (Penerima TPT) | 21 / 49 |
 | 62 | SITB - TB 16K (IK) | 21 / 35 |
 | 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
 | 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
@@ -75,6 +80,20 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 213 · Sudah d
 | 101 | Kobo DDTK | 11 / 10 |
 | 104 | Kobo - Maternal Outcome | 12 / 14 |
 | 105 | Kobo - Raffle | 8 / 6 |
+| 106 | KuApps BidanKu - ANC | 190 / 411 |
+| 107 | KuApps BidanKu - PNC | 49 / 141 |
+| 108 | KuApps BidanKu - BBL | 48 / 100 |
+| 109 | KuApps BidanKu - Bayi | 101 / 232 |
+| 110 | KuApps BidanKu - Anak | 81 / 148 |
+| 111 | KuApps BidanKu - Anak Usia Sekolah dan Remaja | 31 / 76 |
+| 112 | KuApps BidanKu - Dewasa | 39 / 118 |
+| 113 | KuApps BidanKu - Lansia | 29 / 119 |
+| 114 | Kuapps Spheres - HT | 10 / 57 |
+| 115 | Kuapps Spheres - DM | 10 / 59 |
+| 116 | Kuapps Spheres - TB | 5 / 47 |
+| 118 | Genomics - TB | 8 / 43 |
+| 119 | Genomics - Klebsiella | 10 / 30 |
+| 120 | Genomics - Dengue | 12 / 22 |
 | 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
 | 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
 | 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
@@ -198,9 +217,9 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 36 | SIGIZI IBU - Kohort Ibu | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sigizi_kohort_ibu` |  |
 | 37 | SIGIZI IBU - Rekap 12T (tidak dipakai karena data agregat) | ❌ | ❌ | ❌ |  |  |
 | 38 | SIGIZI IBU - Rekap PWS (hilang dari SIGIZI) | ❌ | ❌ | ❌ |  |  |
-| 39 | ASIK - Data Individu Kohort Bayi | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_test` |  |
-| 40 | ASIK - Data Individu Kohort Baduta | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_baduta` |  |
-| 41 | ASIK - Data Individu Kohort WUS | ✅ | ✅ | ❌ | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_wus` |  |
+| 39 | ASIK - Data Individu Kohort Bayi | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_test` |  |
+| 40 | ASIK - Data Individu Kohort Baduta | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_baduta` |  |
+| 41 | ASIK - Data Individu Kohort WUS | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.asik_laporan_layanan_imunisasi_wus` |  |
 | 42 | ASIK - Data Skrining PTM | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.asik_skrining_ptm` |  |
 | 43 | ASIK - CKG-Klaster BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 44 | ASIK - CKG-Klaster Balita Pra Sekolah | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
@@ -219,8 +238,8 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 57 | SITB - TB 13 SO (Pemakaian Obat) | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.sitb_tb_13so` |  |
 | 58 | SITB - TB 13 RO (Pemakaian Obat) | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.sitb_tb_13ro` |  |
 | 59 | SITB - TB 14 Fasyankes (ketenagaan) | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.sitb_tb_14_fasyankes` |  |
-| 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | ❌ | ✅ | ❌ |  |  |
-| 61 | SITB - TB 15P (Penerima TPT) | ❌ | ✅ | ❌ |  |  |
+| 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 61 | SITB - TB 15P (Penerima TPT) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 62 | SITB - TB 16K (IK) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_16k` |  |
 | 63 | Data Absensi Pegawai - Dari tarikan fingerprint | ✅ | ❌ | ❌ |  |  |
 | 64 | SISMAL (Malaria) - Regmal 1 | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
@@ -265,28 +284,28 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 103 | Kobo - SDIDTK | ✅ | ✅ | ❌ |  |  |
 | 104 | Kobo - Maternal Outcome | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.kobo_form.e-form_maternal_outcome` |  |
 | 105 | Kobo - Raffle | ❌ | ✅ | ✅ | `stellar-orb-451904-d9.kobo_form.e-form_kobo_raffle` |  |
-| 106 | KuApps New - BidanKu: ANC | ✅ | ✅ | ❌ |  |  |
-| 107 | KuApps New - BidanKu: PNC | ✅ | ✅ | ❌ |  |  |
-| 108 | KuApps New - BidanKu: BBL | ✅ | ✅ | ❌ |  |  |
-| 109 | KuApps New - BidanKu: Bayi | ✅ | ✅ | ❌ |  |  |
-| 110 | KuApps New - BidanKu: Anak | ✅ | ✅ | ❌ |  |  |
-| 111 | KuApps New - BidanKu: Anak Usia Sekolah dan Remaja | ✅ | ✅ | ❌ |  |  |
-| 112 | KuApps New - BidanKu: Dewasa | ✅ | ✅ | ❌ |  |  |
-| 113 | KuApps New - BidanKu: Lansia | ✅ | ✅ | ❌ |  |  |
-| 114 | Kuapps Spheres - HT | ✅ | ✅ | ❌ |  |  |
-| 115 | Kuapps Spheres - DM | ✅ | ✅ | ❌ |  |  |
-| 116 | Kuapps Spheres - TB | ✅ | ✅ | ❌ |  |  |
+| 106 | KuApps New - BidanKu: ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 107 | KuApps New - BidanKu: PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 108 | KuApps New - BidanKu: BBL | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 109 | KuApps New - BidanKu: Bayi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 110 | KuApps New - BidanKu: Anak | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 111 | KuApps New - BidanKu: Anak Usia Sekolah dan Remaja | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 112 | KuApps New - BidanKu: Dewasa | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 113 | KuApps New - BidanKu: Lansia | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 114 | Kuapps Spheres - HT | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 115 | Kuapps Spheres - DM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 116 | Kuapps Spheres - TB | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 117 | GSI Labs - Lab Test | ✅ | ✅ | ❌ |  |  |
-| 118 | Genomics - TB | ✅ | ✅ | ❌ |  |  |
-| 119 | Genomics - Klebsiella | ✅ | ✅ | ❌ |  |  |
-| 120 | Genomics - Dengue | ✅ | ✅ | ❌ |  |  |
+| 118 | Genomics - TB | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 119 | Genomics - Klebsiella | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 120 | Genomics - Dengue | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 121 | ELSMIL (BKKBN) - Ibu Hamil | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 122 | ELSMIL (BKKBN) - Pasca Persalinan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 123 | ELSMIL (BKKBN) - Baduta | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 124 | Dapodik - PAUD (semester) | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 125 | Dapodik - Antropometri DDTK (monthly) | ✅ | ✅ | ❌ |  |  |
-| 126 | SIGA - Balita (BKB - K0) | ✅ | ✅ | ❌ |  |  |
-| 127 | SIGA - Balita (BKB - R1) | ✅ | ✅ | ❌ |  |  |
+| 126 | SIGA - Balita (BKB - K0) | ✅ | ❌ | ❌ |  |  |
+| 127 | SIGA - Balita (BKB - R1) | ✅ | ❌ | ❌ |  |  |
 | 128 | SIM RS Data - At tin ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 129 | SIM RS Data - At tin INC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 130 | SIM RS Data - At tin PNC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |

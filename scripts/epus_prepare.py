@@ -197,6 +197,9 @@ CODED = {"Observation", "Condition", "Procedure", "ServiceRequest", "DiagnosticR
          "EpisodeOfCare", "Immunization"}
 
 
+IMM_SKIP_VC = False   # True: baris vaccineCode.* berturut-turut (beberapa kode vaksin kombinasi) tetap 1 payload Immunization
+
+
 def is_det(res, path):
     return any(rx.match(path) for rx in DET_PATHS) and path.split(".")[0] == res
 
@@ -254,7 +257,8 @@ def flag(rows):
             if is_det(res, path):
                 cur["after_code"] = False
                 cur["det_seen"] = True
-            elif cur.get("det_seen") and not path.startswith(res + ".code") and not path.startswith(res + ".type"):
+            elif cur.get("det_seen") and not path.startswith(res + ".code") and not path.startswith(res + ".type") \
+                    and not (IMM_SKIP_VC and res == "Immunization" and path.startswith("Immunization.vaccineCode")):
                 cur["after_code"] = True
         last_res = res
     payloads = []

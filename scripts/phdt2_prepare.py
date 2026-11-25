@@ -38,6 +38,11 @@ FORMS = [
  ("buku-kia-inc", "Buku KIA - INC (2024)", "csv", "INC_Buku_KIA", 2, None, 80, 58, "Buku KIA | INC", True, ""),
  ("buku-kia-pnc", "Buku KIA - PNC (2024)", "csv", "PNC_Buku_KIA", 2, None, 81, 17, "Buku KIA | PNC", True, ""),
  ("buku-kia-anak", "Buku KIA - Anak Usia 0-6 Tahun (2024)", "csv", "Anak_Usia_0-6", 2, None, 82, 267, "Buku KIA | Anak", True, ""),
+ ("sitb-tb15", "SITB - TB 15 (Pemeriksaan Eligibilitas TPT)", "csv", "TB_15.csv", 2, None, 60, 28, "SITB | TB 15", True, ""),
+ ("sitb-tb15p", "SITB - TB 15P (Penerima TPT)", "csv", "TB_15P.csv", 2, None, 61, 37, "SITB | TB 15P", True, ""),
+ ("asik-kohort-baduta", "ASIK - Data Individu Kohort Baduta (Imunisasi)", "csv", "Data_Dictionary_-_ASIK", 2, 116, 40, 26, "ASIK | Imunisasi Baduta", True, ""),
+ ("asik-kohort-bayi", "ASIK - Data Individu Kohort Bayi (Imunisasi)", "csv", "Data_Dictionary_-_ASIK", 117, 711, 39, 117, "ASIK | Imunisasi Bayi", True, ""),
+ ("asik-kohort-wus", "ASIK - Data Individu Kohort WUS (Imunisasi)", "csv", "Data_Dictionary_-_ASIK", 712, None, 41, 41, "ASIK | Imunisasi WUS", True, ""),
 ]
 stats = {}
 shifted = []
@@ -64,6 +69,15 @@ for slug, nama, kind, key, a, b, trk, ref, lab, main, ver in FORMS:
                 shifted.append(slug)
             fixed.append(r)
         body = fixed
+    if slug.startswith(("sitb-tb15", "asik-kohort")):      # typo di sumber: valuableCodeableConcept
+        pi = hdr.index("Path")
+        for r in body:
+            if len(r) > pi: r[pi] = r[pi].replace(".valuableCodeableConcept", ".valueCodeableConcept")
+    ep.IMM_SKIP_VC = slug.startswith("asik-kohort")
+    if slug.startswith("asik-kohort"):                      # kode vaksin ada di path ...coding.code
+        pi = hdr.index("Path")
+        for r in body:
+            if len(r) > pi and r[pi].replace(" ", "") == "Immunization.vaccineCode.coding.code": r[pi] = "Immunization.vaccineCode.coding"
     cfg = dict(slug=slug, nama=nama, sheet="s", hdr=0, var="Variables", raw="Nama Column Raw" if ("Nama Column Raw" in hdr and not slug.startswith(("asik-ckg-dewasa", "asik-ckg-lansia"))) else None,
                bq="Nama Column BQ" if "Nama Column BQ" in hdr else None, tracker=trk, ref=ref, ref_label=lab)
     rows, log = ep.prepare(cfg, book(data[0], body), None)
