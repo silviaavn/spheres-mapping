@@ -86,7 +86,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 25 | 193 | Observation | `Observation.code.coding` | 385438008 | Source of information | http://snomed.info/sct |
 | 26 | 194 | Observation | `Observation.valueCodeableConcept.coding` | SP000803 | Fasyankes Pencatat | http://terminology.kemkes.go.id/sp |
 | 27 | 195 | Observation | `Observation.valueCodeableConcept.coding` | 138 | Puskesmas Pembantu | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 28 | 196 | Observation | `Observation.valueCodeableConcept.coding` | SP000761 | Faskes Swasta | http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp |
+| 28 | 196 | Observation | `Observation.valueCodeableConcept.coding` | SP000761 | Faskes Swasta | http://terminology.kemkes.go.id/CodeSystem/organization-ownership |
 | 29 | 197 | Observation | `Observation.valueCodeableConcept.coding` | 101 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
 | 30 | 198 | Observation | `Observation.valueCodeableConcept.coding` | SP000804 | Kantor Kesehatan Pelabuhan | http://terminology.kemkes.go.id/sp |
 | 31 | 199 | Observation | `Observation.valueCodeableConcept.coding` | SP000805 | Perdhaki | http://terminology.kemkes.go.id/sp |
@@ -123,7 +123,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 3 |
 | http://terminology.kemkes.go.id | 1 |
-| http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 1 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 1 |
 | **Total** | **54** |
 

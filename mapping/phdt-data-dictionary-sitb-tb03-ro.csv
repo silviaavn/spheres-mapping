@@ -2,8 +2,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,"Faskes pelapor: cari Organization di master data berdasarkan Kode Fasyankes; kalau match, update dengan data dari form",Organization,Organization.active,true,Tidak ada,Tidak ada,,,,1
 ,Data Fasyankes,alamat_lengkap_faskes_kode_fasyankes,,Kode Fasyankes,string,,,,Organization,Organization.identifier,official,Tidak ada,http://sys-ids.kemkes.go.id/organization/{{Org ID}},,,,
 ,,alamat_lengkap_faskes_jenis_fasyankes,,Jenis Fasyankes,code,,Puskesmas,,Organization,Organization.type,102,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,,
-,,alamat_lengkap_faskes_kepemilikan_fasyankes,,Kepemilikan Fasyankes,code,,Kemenkes,,Organization,Organization.type,SP000367,Kementerian Kesehatan,http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp,,,1,
-,,,,,,,Pemda Kab./Kota,,Organization,Organization.type,SP000368,Pemerintah Daerah Kabupaten/Kota,http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp,,,1,
+,,alamat_lengkap_faskes_kepemilikan_fasyankes,,Kepemilikan Fasyankes,code,,Kemenkes,,Organization,Organization.type,SP000367,Kementerian Kesehatan,http://terminology.kemkes.go.id/CodeSystem/organization-ownership,,,1,
+,,,,,,,Pemda Kab./Kota,,Organization,Organization.type,SP000368,Pemerintah Daerah Kabupaten/Kota,http://terminology.kemkes.go.id/CodeSystem/organization-ownership,,,1,
 ,,alamat_lengkap_faskes_nama_fasyankes,,Nama Fasyankes,string,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,,
 ,,alamat_lengkap_faskes_kabupatenkota,,Kabupaten/Kota,string,,,,Organization,Organization.address.city,Tidak ada,Tidak ada,Tidak ada,,,,
 ,,,,,,,,,Organization,Organization.address.country,ID,Tidak ada,Tidak ada,,,,

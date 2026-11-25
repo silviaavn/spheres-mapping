@@ -17,8 +17,8 @@ Data Faskes,Identitas Faskes (Puskesmas),,,,,,,"Faskes pelapor: cari Organizatio
 ,,,,,,,,,Organization,Organization.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,,
 ,,,,,,,,,Organization,Organization.address.extension.extension.url,village,Tidak ada,Tidak ada,,,,
 ,,,,,,,,,Organization,Organization.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,,
-,,alamat_lengkap_faskes_kepemilikan_fasyankes,{Kepemilikan Fasyankes},Kepemilikan Fasyankes,,,Kemenkes,,Organization,Organization.type,SP000367,Kementerian Kesehatan,http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp,,,1,
-,,,,,,,Pemda Kab./Kota,,Organization,Organization.type,SP000368,Pemerintah Daerah Kabupaten/Kota,http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp,,,1,
+,,alamat_lengkap_faskes_kepemilikan_fasyankes,{Kepemilikan Fasyankes},Kepemilikan Fasyankes,,,Kemenkes,,Organization,Organization.type,SP000367,Kementerian Kesehatan,http://terminology.kemkes.go.id/CodeSystem/organization-ownership,,,1,
+,,,,,,,Pemda Kab./Kota,,Organization,Organization.type,SP000368,Pemerintah Daerah Kabupaten/Kota,http://terminology.kemkes.go.id/CodeSystem/organization-ownership,,,1,
 ,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,
 Lokasi Faskes,,,,,,,,,Location,Location.identifier,Tidak ada,Gedung Puskesmas,http://sys-ids.kemkes.go.id/location/{{Org_id}},,,,1

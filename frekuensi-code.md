@@ -139,8 +139,8 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 131 | SP000016 | Tatalaksana Masalah Kesehatan | kemkes sp | SiGizi ANC, ePus ANC, Buku KIA Identitas dan ANC (2x), KuApps BidanKu ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC, Kobo Modul ANC | 9 |
 | 132 | 1230101008 | Counseling for pregnancy | snomed | SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus ANC, Buku KIA Identitas dan ANC (2x), KuApps BidanKu ANC | 5 |
 | 133 | 385892002 | Mental health screening | snomed | SiGizi ANC, ePus ANC, Buku KIA Identitas dan ANC (3x), Buku KIA PNC, KuApps BidanKu ANC, KuApps BidanKu PNC | 6 |
-| 134 | SP000367 | Kementerian Kesehatan | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
-| 135 | SP000368 | Pemerintah Daerah Kabupaten/Kota | kemkes sp | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 134 | SP000367 | Kementerian Kesehatan | kemkes organization-ownership | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
+| 135 | SP000368 | Pemerintah Daerah Kabupaten/Kota | kemkes organization-ownership | SITB TB 06, SITB TB 03 SO, SITB TB 03 RO | 3 |
 | 136 | TB-SO | Tuberkulosis Sensitif Obat | episodeofcare-type | SITB TB 06 (3x), SITB TB 03 SO, SITB TB 04, SITB TB 16K, SITB TB 01 | 5 |
 | 137 | TB-RO | Tuberkulosis Resisten Obat | episodeofcare-type | SITB TB 06 (3x), SITB TB 03 RO, SITB TB 04, SITB TB 16K, SITB TB 01 | 5 |
 | 138 | EHA000001 | Kader/ Komunitas | kemkes clinical-term | SITB TB 06, SITB TB 01, KuApps BidanKu ANC, MMS - Pemantauan Distribusi dan Konsumsi | 4 |
@@ -3837,7 +3837,7 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 3829 | 34024003 | Gardener | snomed | SISMAL Regmal 1 | 1 |
 | 3830 | SP000803 | Fasyankes Pencatat | kemkes sp | SISMAL Regmal 1 | 1 |
 | 3831 | 138 | Puskesmas Pembantu | organization-type | SISMAL Regmal 1 | 1 |
-| 3832 | SP000761 | Faskes Swasta | kemkes sp | SISMAL Regmal 1 | 1 |
+| 3832 | SP000761 | Faskes Swasta | kemkes organization-ownership | SISMAL Regmal 1 | 1 |
 | 3833 | SP000804 | Kantor Kesehatan Pelabuhan | kemkes sp | SISMAL Regmal 1 | 1 |
 | 3834 | SP000805 | Perdhaki | kemkes sp | SISMAL Regmal 1 | 1 |
 | 3835 | SP000806 | Pos Kesehatan TNI | kemkes sp | SISMAL Regmal 1 | 1 |

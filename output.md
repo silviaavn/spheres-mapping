@@ -197,7 +197,7 @@ File terpisah (detail):
 
 ## Ringkasan semua form
 
-Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comprehensive review). Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` atau `http://terminology.kemkes.go.id/sp`, `.../CodeSystem/organization-type/sp` (6 kode master PAUD), atau `.../CodeSystem/organization-ownership/sp` (kepemilikan faskes); semuanya kode custom SP dan sudah termasuk di kolom Code.
+Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comprehensive review). Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` atau `http://terminology.kemkes.go.id/sp`, `.../CodeSystem/organization-type/sp` (6 kode master PAUD), atau `.../CodeSystem/organization-ownership` (kepemilikan faskes; bukan sistem SatuSehat, tapi tetap dihitung custom SP); semuanya kode custom SP dan sudah termasuk di kolom Code.
 
 | Form | Variabel raw | Payload | Code | Code SP |
 |---|---|---|---|---|
@@ -402,7 +402,7 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | http://terminology.kemkes.go.id/CodeSystem/organization-type/sp | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
-| http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
 | http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
@@ -734,7 +734,7 @@ Perbedaan antar versi:
 - 2026-11-25 (7): Code SP sekarang juga menghitung CodeSystem `organization-type/sp` (6 kode master PAUD: SP000385–388, SP000457, SP000458). `special-needs` (Dapodik PAUD) tetap kode bernama, dihitung sebagai Code SP. Code SP unik 1004 → 1010.
 - 2026-11-25 (8): Master Data (Prerequisite) ditambah 69 kode SP master (dari daftar master Kemkes, frekuensi 0 di form; Resource/Path sesuai daftar, 5 kode frekuensi harian/MMS tanpa elemen). Master Data jadi 84 code / 0 payload. Total non-unik 19546 code; unik 4410 code, Code SP unik 1010 → 1079.
 - 2026-11-25 (9): 32 baris di 21 dictionary: kode berformat SP000xxx yang CodeSystem-nya LOINC / SNOMED / organization-ownership / kosong diubah ke `http://terminology.kemkes.go.id/sp` (SP000050, SP000120, SP000208, SP000367, SP000368, SP000369, SP000380, SP000381, SP000382, SP000658, SP000761). Code SP unik 1079 → 1082; total unik 4402 code.
-- 2026-11-25 (10): Kode SP000367, SP000368, SP000761 (kepemilikan faskes) memakai CodeSystem `http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp` (14 baris di 6 dictionary), bukan `organization-ownership` dan bukan `kemkes.go.id/sp`; seperti `organization-type/sp`, tetap dihitung sebagai Code SP. 5 kode SP000895–898 dan SP000910 di Master Data diberi elemen Observation.code.coding (sebelumnya "Tanpa elemen").
+- 2026-11-25 (10): Kode SP000367, SP000368, SP000761 (kepemilikan faskes) memakai CodeSystem `http://terminology.kemkes.go.id/CodeSystem/organization-ownership` (14 baris di 6 dictionary), bukan `kemkes.go.id/sp` dan bukan varian `/sp`; seperti `organization-type/sp` (PAUD), beda sistem tapi tetap dihitung sebagai Code SP. 5 kode SP000895–898 dan SP000910 di Master Data diberi elemen Observation.code.coding (sebelumnya "Tanpa elemen").
 - 2026-11-25 (5): Informed Consent (#78) dikeluarkan dari konsolidasi (bukan aplikasi tersendiri; file mapping/output tetap ada di repo). Total non-unik 7344 payload / 19477 code; unik 1431 / 4349.
 - 2026-11-25 (4): Tambah 3 form SKI (#297–299) dan ganti SITB TB 16K dengan versi revised (21/35 → 24/38). Total non-unik 7347 payload / 19485 code; unik 1431 / 4357.
 - 2026-11-25 (3): Tambah form Master Data (Prerequisite): 0 payload / 15 code. Total non-unik 7313 payload / 19314 code; unik 1420 / 4272.
