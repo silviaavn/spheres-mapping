@@ -2,6 +2,8 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
+Angka code per form diperbarui 2026-11-25 (aturan hitung baru: code SP custom di path coded mana pun, dataAbsentReason, path QuestionnaireResponse valid; path disamakan ke FHIR R4). Angka payload tidak berubah. Total non-unik 7313 payload / 19299 code; unik 1420 / 4257.
+
 Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
@@ -9,129 +11,129 @@ Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah d
 | # | Laporan | Payload / code |
 |---|---|---|
 | 1 | ePuskesmas - Pelayanan Pasien | 47 / 62 |
-| 3 | ePuskesmas - Laporan Kunjungan Ibu Hamil (sheet lama) | 114 / 198 |
-| 5 | ePuskesmas - Laboratorium | 309 / 429 |
+| 3 | ePuskesmas - Laporan Kunjungan Ibu Hamil (sheet lama) | 114 / 206 |
+| 5 | ePuskesmas - Laboratorium | 309 / 500 |
 | 8 | ePuskesmas - Rujukan Eksternal | 5 / 0 |
-| 11 | KIA Harian - ANC | 155 / 321 |
-| 12 | KIA Harian - INC | 69 / 206 |
-| 13 | KIA Harian - PNC | 82 / 161 |
-| 14 | KIA Harian - MTBS | 125 / 268 |
+| 11 | KIA Harian - ANC | 155 / 346 |
+| 12 | KIA Harian - INC | 69 / 210 |
+| 13 | KIA Harian - PNC | 82 / 166 |
+| 14 | KIA Harian - MTBS | 125 / 285 |
 | 15 | KIA Harian - MTBM | 57 / 139 |
-| 16 | Tumbuh Kembang (8 dictionary: Anak 19 / 55, DDTK 29 / 68, KPSP 14 / 0, TDD 8 / 0, TDL 4 / 8, KMPE 1 / 0, M-CHAT-R 1 / 0, GPPH 1 / 40) | 77 / 171 |
-| 17 | SiGizi - Posyandu Balita BNBA (daftar status gizi) | 24 / 48 |
-| 18 | SiGizi - Balita Vitamin A | 22 / 47 |
-| 19 | SiGizi - Balita Mendapat PMT 2024 | 15 / 44 |
-| 20 | SiGizi - Balita Pemantauan PMT 2024 | 9 / 12 |
+| 16 | Tumbuh Kembang (8 dictionary: Anak 19 / 62, DDTK 29 / 92, KPSP 14 / 0, TDD 8 / 0, TDL 4 / 8, KMPE 1 / 0, M-CHAT-R 1 / 0, GPPH 1 / 40) | 77 / 202 |
+| 17 | SiGizi - Posyandu Balita BNBA (daftar status gizi) | 24 / 50 |
+| 18 | SiGizi - Balita Vitamin A | 22 / 51 |
+| 19 | SiGizi - Balita Mendapat PMT 2024 | 15 / 45 |
+| 20 | SiGizi - Balita Pemantauan PMT 2024 | 9 / 15 |
 | 21 | SiGizi - Asi Eksklusif | 11 / 36 |
-| 22 | SiGizi - Balita Pemantauan MPASI | 9 / 30 |
-| 24 | SIGIZI (Balita BB Tidak Naik) - Pantau PMT 2025 | 15 / 32 |
-| 25 | SIGIZI (Balita BB Tidak Naik) - Riwayat PMT 2025 | 19 / 74 |
+| 22 | SiGizi - Balita Pemantauan MPASI | 9 / 32 |
+| 24 | SIGIZI (Balita BB Tidak Naik) - Pantau PMT 2025 | 15 / 33 |
+| 25 | SIGIZI (Balita BB Tidak Naik) - Riwayat PMT 2025 | 19 / 75 |
 | 26 | SIGIZI (Balita BB Tidak Naik) - Survey PMT 2025 | 5 / 16 |
-| 27 | SIGIZI (Balita BB Kurang) - Pantau PMT 2025 | 21 / 46 |
-| 28 | SIGIZI (Balita BB Kurang) - Riwayat PMT 2025 | 19 / 74 |
+| 27 | SIGIZI (Balita BB Kurang) - Pantau PMT 2025 | 21 / 47 |
+| 28 | SIGIZI (Balita BB Kurang) - Riwayat PMT 2025 | 19 / 75 |
 | 29 | SIGIZI (Balita BB Kurang) - Survey PMT 2025 | 5 / 16 |
-| 30 | SIGIZI (Balita Gizi Kurang) - Pantau PMT 2025 | 42 / 101 |
-| 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | 19 / 74 |
+| 30 | SIGIZI (Balita Gizi Kurang) - Pantau PMT 2025 | 42 / 102 |
+| 31 | SIGIZI (Balita Gizi Kurang) - Riwayat PMT 2025 | 19 / 75 |
 | 32 | SIGIZI (Balita Gizi Kurang) - Survey PMT 2025 | 5 / 16 |
 | 34 | SIGIZI IBU - Daftar Nifas | 11 / 12 |
-| 35 | SIGIZI IBU - Pengukuran ANC Bumil | 61 / 142 |
-| 36 | SIGIZI IBU - Kohort Ibu | 63 / 94 |
+| 35 | SIGIZI IBU - Pengukuran ANC Bumil | 61 / 154 |
+| 36 | SIGIZI IBU - Kohort Ibu | 63 / 109 |
 | 39 | ASIK - Data Individu Kohort Bayi (Imunisasi) | 19 / 27 |
 | 40 | ASIK - Data Individu Kohort Baduta (Imunisasi) | 4 / 6 |
 | 41 | ASIK - Data Individu Kohort WUS (Imunisasi) | 12 / 20 |
-| 42 | ASIK - Data Skrining PTM | 104 / 146 |
+| 42 | ASIK - Data Skrining PTM | 104 / 215 |
 | 43 | ASIK - CKG-Klaster BBL (versi 2; v1 25 / 56) | 25 / 41 |
 | 44 | ASIK - CKG-Klaster Balita Pra Sekolah (versi 2; v1 29 / 99) | 32 / 102 |
-| 46 | ASIK - CKG-Klaster Dewasa Laki-laki | 61 / 202 |
-| 47 | ASIK - CKG-Klaster Dewasa Perempuan | 66 / 223 |
-| 48 | ASIK - CKG-Klaster Lansia (versi 27 Apr 2026; 2026 82 / 366, 2025 80 / 361) | 101 / 458 |
+| 46 | ASIK - CKG-Klaster Dewasa Laki-laki | 61 / 278 |
+| 47 | ASIK - CKG-Klaster Dewasa Perempuan | 66 / 299 |
+| 48 | ASIK - CKG-Klaster Lansia (versi 27 Apr 2026; 2026 82 / 366, 2025 80 / 361) | 101 / 567 |
 | 49 | SiHepi - Form Rekap 3e | 65 / 118 |
-| 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | 37 / 94 |
+| 50 | SITB - TB 01 (Kartu Pengobatan Pasien) | 37 / 101 |
 | 51 | SITB - TB 02 (Kartu Identitas Pasien) | 13 / 15 |
-| 52 | SITB - TB 03 SO (Sensitif Obat) | 62 / 329 |
-| 53 | SITB - TB 03 RO (Resisten Obat) | 50 / 377 |
-| 54 | SITB - TB 04 Fasyankes (pemeriksaan lab) (satu dictionary TB 04 bersama Rujukan) | 69 / 579 |
+| 52 | SITB - TB 03 SO (Sensitif Obat) | 62 / 358 |
+| 53 | SITB - TB 03 RO (Resisten Obat) | 50 / 403 |
+| 54 | SITB - TB 04 Fasyankes (pemeriksaan lab) (satu dictionary TB 04 bersama Rujukan) | 69 / 616 |
 | 55 | SITB - TB 04 Rujukan (pemeriksaan lab) (satu dictionary TB 04 bersama Fasyankes, dihitung 1x di #54) | ikut #54 |
-| 56 | SITB - TB 06 (terduga/suspek TB) | 56 / 276 |
-| 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | 13 / 109 |
-| 61 | SITB - TB 15P (Penerima TPT) | 21 / 49 |
+| 56 | SITB - TB 06 (terduga/suspek TB) | 56 / 301 |
+| 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | 13 / 113 |
+| 61 | SITB - TB 15P (Penerima TPT) | 21 / 59 |
 | 62 | SITB - TB 16K (IK) | 21 / 35 |
 | 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
-| 72 | MPDN - Laporan Kematian Bayi | 19 / 112 |
+| 72 | MPDN - Laporan Kematian Bayi | 19 / 115 |
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
 | 74 | eKohort - Pelayanan Ibu ANC (Final Format; file lama 140 / 247 tidak dipakai) | 43 / 78 |
-| 77 | eKohort - Pelayanan Ibu Bersalin (INC) | 58 / 74 |
+| 77 | eKohort - Pelayanan Ibu Bersalin (INC) | 58 / 82 |
 | 78 | Informed Consent | 3 / 8 |
-| 79 | Buku KIA - Identitas dan ANC | 206 / 388 |
+| 79 | Buku KIA - Identitas dan ANC | 206 / 438 |
 | 80 | Buku KIA - INC | 60 / 108 |
 | 81 | Buku KIA - PNC | 14 / 32 |
-| 82 | Buku KIA - Anak | 189 / 284 |
-| 83 | Kobo Modul ANC | 86 / 172 |
-| 84 | Kobo Modul INC | 80 / 243 |
-| 85 | Kobo Modul Neonatus | 50 / 98 |
-| 86 | Kobo Modul PNC | 98 / 225 |
-| 88 | Kobo Buku KIA 1 - ANC | 167 / 668 |
+| 82 | Buku KIA - Anak | 189 / 288 |
+| 83 | Kobo Modul ANC | 86 / 189 |
+| 84 | Kobo Modul INC | 80 / 248 |
+| 85 | Kobo Modul Neonatus | 50 / 100 |
+| 86 | Kobo Modul PNC | 98 / 228 |
+| 88 | Kobo Buku KIA 1 - ANC | 167 / 733 |
 | 89 | Kobo Buku KIA 2 - Luaran Kehamilan | 38 / 87 |
-| 90 | Kobo Buku KIA 3 - PNC | 75 / 168 |
+| 90 | Kobo Buku KIA 3 - PNC | 75 / 175 |
 | 91 | Kobo Buku KIA 4 - Cadre | 44 / 51 |
-| 92 | Kobo Buku KIA 5 - Vaksinatorku | 40 / 64 |
+| 92 | Kobo Buku KIA 5 - Vaksinatorku | 40 / 65 |
 | 93 | Kobo Neonatus Outcome | 14 / 25 |
-| 94 | Kobo Neonatus Outcome v2 | 89 / 239 |
+| 94 | Kobo Neonatus Outcome v2 | 89 / 276 |
 | 101 | Kobo DDTK | 11 / 10 |
-| 103 | Kobo - SDIDTK | 35 / 68 |
+| 103 | Kobo - SDIDTK | 35 / 92 |
 | 104 | Kobo - Maternal Outcome | 12 / 14 |
 | 105 | Kobo - Raffle | 8 / 6 |
-| 106 | KuApps BidanKu - ANC | 190 / 411 |
-| 107 | KuApps BidanKu - PNC | 49 / 141 |
-| 108 | KuApps BidanKu - BBL | 48 / 100 |
-| 109 | KuApps BidanKu - Bayi | 101 / 232 |
-| 110 | KuApps BidanKu - Anak | 81 / 148 |
-| 111 | KuApps BidanKu - Anak Usia Sekolah dan Remaja | 31 / 76 |
-| 112 | KuApps BidanKu - Dewasa | 39 / 118 |
-| 113 | KuApps BidanKu - Lansia | 29 / 119 |
-| 114 | Kuapps Spheres - HT | 10 / 57 |
-| 115 | Kuapps Spheres - DM | 10 / 59 |
-| 116 | Kuapps Spheres - TB | 5 / 47 |
+| 106 | KuApps BidanKu - ANC | 190 / 440 |
+| 107 | KuApps BidanKu - PNC | 49 / 143 |
+| 108 | KuApps BidanKu - BBL | 48 / 103 |
+| 109 | KuApps BidanKu - Bayi | 101 / 242 |
+| 110 | KuApps BidanKu - Anak | 81 / 157 |
+| 111 | KuApps BidanKu - Anak Usia Sekolah dan Remaja | 31 / 83 |
+| 112 | KuApps BidanKu - Dewasa | 39 / 122 |
+| 113 | KuApps BidanKu - Lansia | 29 / 121 |
+| 114 | Kuapps Spheres - HT | 10 / 243 |
+| 115 | Kuapps Spheres - DM | 10 / 245 |
+| 116 | Kuapps Spheres - TB | 5 / 49 |
 | 118 | Genomics - TB | 8 / 43 |
-| 119 | Genomics - Klebsiella | 10 / 30 |
+| 119 | Genomics - Klebsiella | 10 / 31 |
 | 120 | Genomics - Dengue | 12 / 22 |
-| 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 104 |
-| 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 96 |
-| 123 | ELSMIL (BKKBN) - Baduta | 31 / 78 |
-| 124 | Dapodik - PAUD (semester) | 42 / 190 |
-| 128 | SIM RS Data - At tin ANC (template Spheres) | 89 / 176 |
-| 129 | SIM RS Data - At tin INC (template Spheres) | 67 / 160 |
-| 130 | SIM RS Data - At tin PNC (template Spheres) | 67 / 145 |
-| 131 | SIM RS Data - At tin BBL (template Spheres) | 82 / 122 |
-| 137 | SIM RS Data - Harapan Ibu ANC (template Spheres) | 89 / 176 |
-| 138 | SIM RS Data - Harapan Ibu INC (template Spheres) | 67 / 160 |
-| 139 | SIM RS Data - Harapan Ibu PNC (template Spheres) | 67 / 145 |
-| 140 | SIM RS Data - Harapan Ibu BBL (template Spheres) | 79 / 110 |
-| 146 | SIM RS Data - Siaga Medika ANC | 100 / 181 |
+| 121 | ELSMIL (BKKBN) - Ibu Hamil | 36 / 105 |
+| 122 | ELSMIL (BKKBN) - Pasca Persalinan | 24 / 102 |
+| 123 | ELSMIL (BKKBN) - Baduta | 31 / 84 |
+| 124 | Dapodik - PAUD (semester) | 42 / 378 |
+| 128 | SIM RS Data - At tin ANC (template Spheres) | 89 / 194 |
+| 129 | SIM RS Data - At tin INC (template Spheres) | 67 / 164 |
+| 130 | SIM RS Data - At tin PNC (template Spheres) | 67 / 147 |
+| 131 | SIM RS Data - At tin BBL (template Spheres) | 82 / 126 |
+| 137 | SIM RS Data - Harapan Ibu ANC (template Spheres) | 89 / 194 |
+| 138 | SIM RS Data - Harapan Ibu INC (template Spheres) | 67 / 164 |
+| 139 | SIM RS Data - Harapan Ibu PNC (template Spheres) | 67 / 147 |
+| 140 | SIM RS Data - Harapan Ibu BBL (template Spheres) | 79 / 114 |
+| 146 | SIM RS Data - Siaga Medika ANC | 100 / 193 |
 | 147 | SIM RS Data - Siaga Medika INC | 42 / 125 |
 | 148 | SIM RS Data - Siaga Medika PNC | 49 / 110 |
 | 149 | SIM RS Data - Siaga Medika BBL | 37 / 48 |
 | 150 | SIM RS Data - Siaga Medika Hepatitis (template Spheres) | 20 / 22 |
-| 155 | SIM RS Data - MPH ANC | 33 / 87 |
-| 156 | SIM RS Data - MPH INC | 40 / 91 |
+| 155 | SIM RS Data - MPH ANC | 33 / 90 |
+| 156 | SIM RS Data - MPH INC | 40 / 94 |
 | 157 | SIM RS Data - MPH PNC | 43 / 104 |
 | 158 | SIM RS Data - MPH BBL | 42 / 59 |
 | 159 | SIM RS Data - MPH Hepatitis (template Spheres) | 20 / 22 |
 | 160 | SIM RS Data - MPH Diabetes Melitus | 24 / 37 |
 | 161 | SIM RS Data - MPH Hipertensi | 20 / 22 |
-| 164 | SIM RS Data - Nirmala ANC (template Spheres) | 89 / 176 |
-| 165 | SIM RS Data - Nirmala INC (template Spheres) | 67 / 160 |
-| 166 | SIM RS Data - Nirmala PNC (template Spheres) | 67 / 145 |
-| 167 | SIM RS Data - Nirmala BBL (template Spheres) | 82 / 122 |
+| 164 | SIM RS Data - Nirmala ANC (template Spheres) | 89 / 194 |
+| 165 | SIM RS Data - Nirmala INC (template Spheres) | 67 / 164 |
+| 166 | SIM RS Data - Nirmala PNC (template Spheres) | 67 / 147 |
+| 167 | SIM RS Data - Nirmala BBL (template Spheres) | 82 / 126 |
 | 173 | SIM RS Data - Ummu Hani ANC | 23 / 49 |
-| 174 | SIM RS Data - Ummu Hani INC | 41 / 94 |
-| 175 | SIM RS Data - Ummu Hani PNC | 53 / 110 |
-| 176 | SIM RS Data - Ummu Hani BBL | 30 / 51 |
+| 174 | SIM RS Data - Ummu Hani INC | 41 / 97 |
+| 175 | SIM RS Data - Ummu Hani PNC | 53 / 112 |
+| 176 | SIM RS Data - Ummu Hani BBL | 30 / 55 |
 | 177 | SIM RS Data - Ummu Hani Hepatitis (template Spheres) | 20 / 22 |
-| 182 | SIM RS Data - PKU ANC (template Spheres) | 89 / 176 |
-| 183 | SIM RS Data - PKU INC | 66 / 175 |
-| 184 | SIM RS Data - PKU PNC | 67 / 131 |
-| 185 | SIM RS Data - PKU BBL (template Spheres) | 82 / 122 |
+| 182 | SIM RS Data - PKU ANC (template Spheres) | 89 / 194 |
+| 183 | SIM RS Data - PKU INC | 66 / 179 |
+| 184 | SIM RS Data - PKU PNC | 67 / 133 |
+| 185 | SIM RS Data - PKU BBL (template Spheres) | 82 / 126 |
 | 186 | SIM RS Data - PKU Hepatitis (template Spheres) | 20 / 22 |
 | 191 | SIM RS Data - Goetoeng ANC | 106 / 111 |
 | 192 | SIM RS Data - Goetoeng INC | 64 / 245 |
@@ -139,31 +141,31 @@ Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah d
 | 194 | SIM RS Data - Goetoeng BBL | 68 / 124 |
 | 196 | SIM RS Data - Goetoeng Diabetes Melitus | 6 / 4 |
 | 197 | SIM RS Data - Goetoeng Hipertensi | 5 / 3 |
-| 200 | SIM RS Data - Panti Nugroho ANC | 31 / 68 |
-| 201 | SIM RS Data - Panti Nugroho INC | 37 / 118 |
-| 202 | SIM RS Data - Panti Nugroho PNC | 67 / 131 |
+| 200 | SIM RS Data - Panti Nugroho ANC | 31 / 77 |
+| 201 | SIM RS Data - Panti Nugroho INC | 37 / 121 |
+| 202 | SIM RS Data - Panti Nugroho PNC | 67 / 133 |
 | 203 | SIM RS Data - Panti Nugroho BBL | 31 / 55 |
 | 205 | SIM RS Data - Panti Nugroho Diabetes Melitus | 7 / 4 |
 | 206 | SIM RS Data - Panti Nugroho Hipertensi | 23 / 21 |
 | 207 | SIM RS Data - Panti Nugroho Stroke | 20 / 23 |
-| 219 | SIM RS Data - Narmada INC | 86 / 262 |
-| 222 | SIM RS Data - Narmada KIA | 50 / 107 |
+| 219 | SIM RS Data - Narmada INC | 86 / 264 |
+| 222 | SIM RS Data - Narmada KIA | 50 / 110 |
 | 228 | SIM RS Data - Tripat ANC | 20 / 28 |
 | 230 | SIM RS Data - Tripat PNC | 24 / 28 |
 | 231 | SIM RS Data - Tripat BBL (sheet 'INC BBL') | 23 / 20 |
 | 237 | SIPTM (baru ditambahkan) | 52 / 214 |
-| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 12 |
+| 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 13 |
 | 284 | KuApps New - BidanKu: Tambah Pasien | 11 / 33 |
-| 285 | KuApps New - BidanKu: Daftar Kehamilan | 12 / 31 |
-| 286 | KuApps New - BidanKu: Luaran Kehamilan | 31 / 146 |
-| 287 | KuApps New - BidanKu: PHBS | 1 / 0 |
-| 288 | KuApps New - BidanKu: Skrining Rumah Tangga | 2 / 0 |
+| 285 | KuApps New - BidanKu: Daftar Kehamilan | 12 / 32 |
+| 286 | KuApps New - BidanKu: Luaran Kehamilan | 31 / 156 |
+| 287 | KuApps New - BidanKu: PHBS | 1 / 3 |
+| 288 | KuApps New - BidanKu: Skrining Rumah Tangga | 2 / 9 |
 | 289 | KuApps New - BidanKu: Imunisasi | 23 / 52 |
-| 290 | KuApps New - BidanKu: Kumpulan Skrinning | 23 / 26 |
-| 291 | MMS - Pemantauan Distribusi dan Konsumsi | 22 / 51 |
-| 292 | MMS - Informed Consent | 8 / 5 |
-| 293 | MMS - Master Database Responden | 16 / 33 |
-| 294 | MMS - Survei Sosio Ekonomi | 22 / 200 |
+| 290 | KuApps New - BidanKu: Kumpulan Skrinning | 23 / 30 |
+| 291 | MMS - Pemantauan Distribusi dan Konsumsi | 22 / 58 |
+| 292 | MMS - Informed Consent | 8 / 7 |
+| 293 | MMS - Master Database Responden | 16 / 48 |
+| 294 | MMS - Survei Sosio Ekonomi | 22 / 229 |
 | 295 | MMS - Survei Demografi (Listing Responden) | 12 / 20 |
 | 296 | MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | 50 / 193 |
 
@@ -179,9 +181,9 @@ Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel �
 | 43 | CKG BBL | v1 | `CKG Bayi Baru Lahir` | 25 / 56 |  |
 | 44 | CKG Balita dan Anak Pra-Sekolah | v2 (tarikan baru, asumsi) | `Sheet9` | 32 / 102 | ✅ |
 | 44 | CKG Balita dan Anak Pra-Sekolah | v1 | `CKG Balita dan Anak Pra-Sekolah` | 29 / 99 |  |
-| 46 | CKG Dewasa Laki-laki | 1 versi | `CKG Dewasa Laki-laki` | 61 / 202 | ✅ |
-| 47 | CKG Dewasa Perempuan | 1 versi | `CKG Dewasa Perempuan` | 66 / 223 | ✅ |
-| 48 | CKG Lansia | 27 April 2026 (terbaru) | `CKG Lansia 27 April 2026` | 101 / 458 | ✅ |
+| 46 | CKG Dewasa Laki-laki | 1 versi | `CKG Dewasa Laki-laki` | 61 / 278 | ✅ |
+| 47 | CKG Dewasa Perempuan | 1 versi | `CKG Dewasa Perempuan` | 66 / 299 | ✅ |
+| 48 | CKG Lansia | 27 April 2026 (terbaru) | `CKG Lansia 27 April 2026` | 101 / 567 | ✅ |
 | 48 | CKG Lansia | 2026 | `CKG Lansia 2026` | 82 / 366 |  |
 | 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 80 / 361 |  |
 
