@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 14 |
-| Code (`jumlah code` = 1) | 92 |
-| Code unik (code + CodeSystem) | 64 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 35 |
+| Code (`jumlah code` = 1) | 102 |
+| Code unik (code + CodeSystem) | 74 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 44 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -54,106 +54,117 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 77 | Condition | `Condition.code.coding` | 243790003.0 | Infection screening | http://snomed.info/sct |
-| 2 | 108 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
-| 3 | 109 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
-| 4 | 110 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 5 | 111 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 6 | 114 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 7 | 115 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 8 | 116 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 9 | 119 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
-| 10 | 120 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
-| 11 | 121 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 12 | 122 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 13 | 125 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
-| 14 | 126 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
-| 15 | 127 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 16 | 128 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 17 | 131 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
-| 18 | 132 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
-| 19 | 133 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 20 | 134 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 21 | 137 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
-| 22 | 138 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
-| 23 | 139 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 24 | 140 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 25 | 167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 26 | 168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 27 | 169 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 28 | 170 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
-| 29 | 181 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
-| 30 | 182 | Condition | `Condition.code.coding` | 788062371000119104 | Acute cough | http://snomed.info/sct |
-| 31 | 184 | Condition | `Condition.code.coding` | 82272006.0 | Common cold | http://snomed.info/sct |
-| 32 | 186 | Condition | `Condition.code.coding` | 267102003.0 | Sore throat | http://snomed.info/sct |
-| 33 | 187 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000856 | Tidak Mengalami Gejala Apapun | http://terminology.kemkes.go.id/sp |
-| 34 | 197 | Observation | `Observation.code.coding` | SP000877 | Pemeriksaan Antigen dan/atau PCR COVID 19 | http://terminology.kemkes.go.id/sp |
-| 35 | 198 | Observation | `Observation.valueCodeableConcept.coding` | 1240581000000104 | Severe acute respiratory syndrome coronavirus 2 detected | http://snomed.info/sct |
-| 36 | 199 | Observation | `Observation.valueCodeableConcept.coding` | 1240591000000102 | Severe acute respiratory syndrome coronavirus 2 not detected | http://snomed.info/sct |
-| 37 | 212 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000878 | Ya, kurang dari 1 bulan terakhir | http://terminology.kemkes.go.id/sp |
-| 38 | 213 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000879 | Ya, 1-12 bulan yang lalu | http://terminology.kemkes.go.id/sp |
-| 39 | 214 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 40 | 215 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 41 | 231 | Condition | `Condition.code.coding` | 267036007.0 | Dyspnea | http://snomed.info/sct |
-| 42 | 232 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
-| 43 | 233 | Condition | `Condition.code.coding` | 49727002.0 | Cough | http://snomed.info/sct |
-| 44 | 234 | Condition | `Condition.code.coding` | 230145002.0 | Difficulty breathing | http://snomed.info/sct |
-| 45 | 236 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 162467007.0 | Free of symptoms | http://snomed.info/sct |
-| 46 | 240 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000880 | Usia <5 Tahun | http://terminology.kemkes.go.id/sp |
-| 47 | 241 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000881 | Usia ≥ 5 Tahun | http://terminology.kemkes.go.id/sp |
-| 48 | 246 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000882 | Ya, dalam 6 bulan terakhir | http://terminology.kemkes.go.id/sp |
-| 49 | 247 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000883 | Ya, lebih dari 6 bulan | http://terminology.kemkes.go.id/sp |
-| 50 | 248 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 51 | 255 | Procedure | `Procedure.code.coding` | 424489006.0 | Mantoux test | http://snomed.info/sct |
-| 52 | 256 | Procedure | `Procedure.code.coding` | 35140007.0 | Interferon gamma assay | http://snomed.info/sct |
-| 53 | 257 | Procedure | `Procedure.code.coding` | 269911007.0 | Sputum examination | http://snomed.info/sct |
-| 54 | 258 | Procedure | `Procedure.code.coding` | 167995008.0 | Sputum microscopy | http://snomed.info/sct |
-| 55 | 259 | Procedure | `Procedure.code.coding` | SP000864 | Pemeriksaan Dahak (Tes Cepat Molekuler) | http://terminology.kemkes.go.id/sp |
-| 56 | 260 | Procedure | `Procedure.code.coding` | 399208008.0 | Plain X-ray of chest | http://snomed.info/sct |
-| 57 | 271 | Observation | `Observation.code.coding` | SP000884 | Jenis Obat Tuberkulosis Yang Diterima | http://terminology.kemkes.go.id/sp |
-| 58 | 272 | Observation | `Observation.component.code.coding` | SP000885 | Kombinasi Dosis Tetap (KDT) | http://terminology.kemkes.go.id/sp |
-| 59 | 274 | Observation | `Observation.component.code.coding` | SP000886 | Kombipak/ Lepasan | http://terminology.kemkes.go.id/sp |
-| 60 | 276 | Observation | `Observation.component.code.coding` | 59108006.0 | Injection | http://snomed.info/sct |
-| 61 | 294 | Observation | `Observation.code.coding` | SP000887 | Konsumsi Obat Antibiotik Selain OAT | http://terminology.kemkes.go.id/sp |
-| 62 | 297 | Observation | `Observation.component.code.coding` | SP000888 | Jenis Obat Antibiotik Selain OAT | http://terminology.kemkes.go.id/sp |
-| 63 | 310 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 64 | 317 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[0].valueCoding` | 394778007.0 | Client's or patient's home | http://snomed.info/sct |
-| 65 | 318 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[1].valueCoding` | 276052003.0 | Public facilities | http://snomed.info/sct |
-| 66 | 321 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 50811001.0 | Routine | http://snomed.info/sct |
-| 67 | 322 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000871 | Tidak Rutin | http://terminology.kemkes.go.id/sp |
-| 68 | 323 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 371001000.0 | Patient cured | http://snomed.info/sct |
-| 69 | 326 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000852 | Merasa Sudah Sehat | http://terminology.kemkes.go.id/sp |
-| 70 | 327 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
-| 71 | 328 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 182897004.0 | Drug declined by patient - side effects | http://snomed.info/sct |
-| 72 | 329 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000854 | Memilih Minum Obat Tradisional | http://terminology.kemkes.go.id/sp |
-| 73 | 330 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000855 | Bosan/ Malas/ Sering Lupa | http://terminology.kemkes.go.id/sp |
-| 74 | 331 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000869 | Akses ke Fasilitas Pelayanan Kesehatan Jauh | http://terminology.kemkes.go.id/sp |
-| 75 | 332 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000870 | Tidak Memiliki BPJS/ Biaya Perawatan | http://terminology.kemkes.go.id/sp |
-| 76 | 343 | Condition | `Condition.code.coding` | 49727002.0 | Cough | http://snomed.info/sct |
-| 77 | 344 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
-| 78 | 345 | Condition | `Condition.code.coding` | 448765001.0 | Unintentional weight loss | http://snomed.info/sct |
-| 79 | 346 | Condition | `Condition.code.coding` | 42984000.0 | Night sweats | http://snomed.info/sct |
-| 80 | 357 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000867 | Merasa Tidak Gejala/ Sakit | http://terminology.kemkes.go.id/sp |
-| 81 | 358 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
-| 82 | 359 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000868 | Tidak Diberikan Obat Oleh Nakes | http://terminology.kemkes.go.id/sp |
-| 83 | 382 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
-| 84 | 383 | Condition | `Condition.code.coding` | 267096005.0 | Frontal headache | http://snomed.info/sct |
-| 85 | 385 | Condition | `Condition.code.coding` | 86260003.0 | Pain around eye | http://snomed.info/sct |
-| 86 | 387 | Condition | `Condition.code.coding` | 279069000.0 | Musculoskeletal pain | http://snomed.info/sct |
-| 87 | 389 | Condition | `Condition.code.coding` | 16331000.0 | Heartburn | http://snomed.info/sct |
-| 88 | 390 | Condition | `Condition.code.coding` | SP000866 | Mual/ Muntah/ Tidak Nafsu Makan | http://terminology.kemkes.go.id/sp |
-| 89 | 391 | Condition | `Condition.code.coding` | 13791008.0 | Asthenia | http://snomed.info/sct |
-| 90 | 392 | Condition | `Condition.code.coding` | 771542000.0 | Cold extremity | http://snomed.info/sct |
-| 91 | 393 | Condition | `Condition.code.coding` | 271813007.0 | Petechiae | http://snomed.info/sct |
-| 92 | 394 | Condition | `Condition.code.coding` | 249366005.0 | Bleeding from nose | http://snomed.info/sct |
+| 2 | 94 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000834 | Survei umum | http://terminology.kemkes.go.id/sp |
+| 3 | 95 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000835 | Survei umum crosscheck | http://terminology.kemkes.go.id/sp |
+| 4 | 96 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000836 | Survei ibu hamil | http://terminology.kemkes.go.id/sp |
+| 5 | 97 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000837 | Survei ibu hamil crosscheck | http://terminology.kemkes.go.id/sp |
+| 6 | 108 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
+| 7 | 109 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
+| 8 | 110 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 9 | 111 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 10 | 114 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309343006.0 | Physician | http://snomed.info/sct |
+| 11 | 115 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
+| 12 | 116 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 13 | 119 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
+| 14 | 120 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
+| 15 | 121 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 16 | 122 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 17 | 125 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
+| 18 | 126 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
+| 19 | 127 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 20 | 128 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 21 | 131 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
+| 22 | 132 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
+| 23 | 133 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 24 | 134 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 25 | 137 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000838 | Ya, ≤ 2 minggu terakhir | http://terminology.kemkes.go.id/sp |
+| 26 | 138 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000839 | Ya, > 2 minggu - 1 bulan | http://terminology.kemkes.go.id/sp |
+| 27 | 139 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 28 | 140 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 29 | 152 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000872 | Oralit | http://terminology.kemkes.go.id/sp |
+| 30 | 153 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000873 | Larutan Gula Garam (LGG) | http://terminology.kemkes.go.id/sp |
+| 31 | 154 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000874 | Probiotik | http://terminology.kemkes.go.id/sp |
+| 32 | 155 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000875 | Obat anti diare | http://terminology.kemkes.go.id/sp |
+| 33 | 156 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000876 | Antibiotik | http://terminology.kemkes.go.id/sp |
+| 34 | 167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309343006.0 | Physician | http://snomed.info/sct |
+| 35 | 168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
+| 36 | 169 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 37 | 170 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
+| 38 | 181 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
+| 39 | 182 | Condition | `Condition.code.coding` | 788062371000119104 | Acute cough | http://snomed.info/sct |
+| 40 | 184 | Condition | `Condition.code.coding` | 82272006.0 | Common cold | http://snomed.info/sct |
+| 41 | 186 | Condition | `Condition.code.coding` | 267102003.0 | Sore throat | http://snomed.info/sct |
+| 42 | 187 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000856 | Tidak Mengalami Gejala Apapun | http://terminology.kemkes.go.id/sp |
+| 43 | 197 | Observation | `Observation.code.coding` | SP000877 | Pemeriksaan Antigen dan/atau PCR COVID 19 | http://terminology.kemkes.go.id/sp |
+| 44 | 198 | Observation | `Observation.valueCodeableConcept.coding` | 1240581000000104 | Severe acute respiratory syndrome coronavirus 2 detected | http://snomed.info/sct |
+| 45 | 199 | Observation | `Observation.valueCodeableConcept.coding` | 1240591000000102 | Severe acute respiratory syndrome coronavirus 2 not detected | http://snomed.info/sct |
+| 46 | 200 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 47 | 212 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000878 | Ya, kurang dari 1 bulan terakhir | http://terminology.kemkes.go.id/sp |
+| 48 | 213 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000879 | Ya, 1-12 bulan yang lalu | http://terminology.kemkes.go.id/sp |
+| 49 | 214 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 50 | 215 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 51 | 231 | Condition | `Condition.code.coding` | 267036007.0 | Dyspnea | http://snomed.info/sct |
+| 52 | 232 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
+| 53 | 233 | Condition | `Condition.code.coding` | 49727002.0 | Cough | http://snomed.info/sct |
+| 54 | 234 | Condition | `Condition.code.coding` | 230145002.0 | Difficulty breathing | http://snomed.info/sct |
+| 55 | 236 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 162467007.0 | Free of symptoms | http://snomed.info/sct |
+| 56 | 240 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000880 | Usia <5 Tahun | http://terminology.kemkes.go.id/sp |
+| 57 | 241 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000881 | Usia ≥ 5 Tahun | http://terminology.kemkes.go.id/sp |
+| 58 | 246 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000882 | Ya, dalam 6 bulan terakhir | http://terminology.kemkes.go.id/sp |
+| 59 | 247 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000883 | Ya, lebih dari 6 bulan | http://terminology.kemkes.go.id/sp |
+| 60 | 248 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | QRI000014 | Tidak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 61 | 255 | Procedure | `Procedure.code.coding` | 424489006.0 | Mantoux test | http://snomed.info/sct |
+| 62 | 256 | Procedure | `Procedure.code.coding` | 35140007.0 | Interferon gamma assay | http://snomed.info/sct |
+| 63 | 257 | Procedure | `Procedure.code.coding` | 269911007.0 | Sputum examination | http://snomed.info/sct |
+| 64 | 258 | Procedure | `Procedure.code.coding` | 167995008.0 | Sputum microscopy | http://snomed.info/sct |
+| 65 | 259 | Procedure | `Procedure.code.coding` | SP000864 | Pemeriksaan Dahak (Tes Cepat Molekuler) | http://terminology.kemkes.go.id/sp |
+| 66 | 260 | Procedure | `Procedure.code.coding` | 399208008.0 | Plain X-ray of chest | http://snomed.info/sct |
+| 67 | 271 | Observation | `Observation.code.coding` | SP000884 | Jenis Obat Tuberkulosis Yang Diterima | http://terminology.kemkes.go.id/sp |
+| 68 | 272 | Observation | `Observation.component.code.coding` | SP000885 | Kombinasi Dosis Tetap (KDT) | http://terminology.kemkes.go.id/sp |
+| 69 | 274 | Observation | `Observation.component.code.coding` | SP000886 | Kombipak/ Lepasan | http://terminology.kemkes.go.id/sp |
+| 70 | 276 | Observation | `Observation.component.code.coding` | 59108006.0 | Injection | http://snomed.info/sct |
+| 71 | 294 | Observation | `Observation.code.coding` | SP000887 | Konsumsi Obat Antibiotik Selain OAT | http://terminology.kemkes.go.id/sp |
+| 72 | 297 | Observation | `Observation.component.code.coding` | SP000888 | Jenis Obat Antibiotik Selain OAT | http://terminology.kemkes.go.id/sp |
+| 73 | 310 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 74 | 317 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[0].valueCoding` | 394778007.0 | Client's or patient's home | http://snomed.info/sct |
+| 75 | 318 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[1].valueCoding` | 276052003.0 | Public facilities | http://snomed.info/sct |
+| 76 | 321 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 50811001.0 | Routine | http://snomed.info/sct |
+| 77 | 322 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000871 | Tidak Rutin | http://terminology.kemkes.go.id/sp |
+| 78 | 323 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 371001000.0 | Patient cured | http://snomed.info/sct |
+| 79 | 326 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000852 | Merasa Sudah Sehat | http://terminology.kemkes.go.id/sp |
+| 80 | 327 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
+| 81 | 328 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 182897004.0 | Drug declined by patient - side effects | http://snomed.info/sct |
+| 82 | 329 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000854 | Memilih Minum Obat Tradisional | http://terminology.kemkes.go.id/sp |
+| 83 | 330 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000855 | Bosan/ Malas/ Sering Lupa | http://terminology.kemkes.go.id/sp |
+| 84 | 331 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000869 | Akses ke Fasilitas Pelayanan Kesehatan Jauh | http://terminology.kemkes.go.id/sp |
+| 85 | 332 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000870 | Tidak Memiliki BPJS/ Biaya Perawatan | http://terminology.kemkes.go.id/sp |
+| 86 | 343 | Condition | `Condition.code.coding` | 49727002.0 | Cough | http://snomed.info/sct |
+| 87 | 344 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
+| 88 | 345 | Condition | `Condition.code.coding` | 448765001.0 | Unintentional weight loss | http://snomed.info/sct |
+| 89 | 346 | Condition | `Condition.code.coding` | 42984000.0 | Night sweats | http://snomed.info/sct |
+| 90 | 357 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000867 | Merasa Tidak Gejala/ Sakit | http://terminology.kemkes.go.id/sp |
+| 91 | 358 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
+| 92 | 359 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000868 | Tidak Diberikan Obat Oleh Nakes | http://terminology.kemkes.go.id/sp |
+| 93 | 382 | Condition | `Condition.code.coding` | 386661006.0 | Fever | http://snomed.info/sct |
+| 94 | 383 | Condition | `Condition.code.coding` | 267096005.0 | Frontal headache | http://snomed.info/sct |
+| 95 | 385 | Condition | `Condition.code.coding` | 86260003.0 | Pain around eye | http://snomed.info/sct |
+| 96 | 387 | Condition | `Condition.code.coding` | 279069000.0 | Musculoskeletal pain | http://snomed.info/sct |
+| 97 | 389 | Condition | `Condition.code.coding` | 16331000.0 | Heartburn | http://snomed.info/sct |
+| 98 | 390 | Condition | `Condition.code.coding` | SP000866 | Mual/ Muntah/ Tidak Nafsu Makan | http://terminology.kemkes.go.id/sp |
+| 99 | 391 | Condition | `Condition.code.coding` | 13791008.0 | Asthenia | http://snomed.info/sct |
+| 100 | 392 | Condition | `Condition.code.coding` | 771542000.0 | Cold extremity | http://snomed.info/sct |
+| 101 | 393 | Condition | `Condition.code.coding` | 271813007.0 | Petechiae | http://snomed.info/sct |
+| 102 | 394 | Condition | `Condition.code.coding` | 249366005.0 | Bleeding from nose | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 50 |
-| http://terminology.kemkes.go.id/sp | 35 |
+| http://terminology.kemkes.go.id/sp | 44 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 7 |
-| **Total** | **92** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **102** |
 
 ## Variabel di luar payload
 

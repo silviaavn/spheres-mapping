@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 5 |
-| Code (`jumlah code` = 1) | 0 |
-| Code unik (code + CodeSystem) | 0 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 0 |
+| Code (`jumlah code` = 1) | 4 |
+| Code unik (code + CodeSystem) | 4 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 4 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -41,12 +41,17 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
+| 1 | 87 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000834 | Survei umum | http://terminology.kemkes.go.id/sp |
+| 2 | 88 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000835 | Survei umum crosscheck | http://terminology.kemkes.go.id/sp |
+| 3 | 89 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000836 | Survei ibu hamil | http://terminology.kemkes.go.id/sp |
+| 4 | 90 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000837 | Survei ibu hamil crosscheck | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| **Total** | **0** |
+| http://terminology.kemkes.go.id/sp | 4 |
+| **Total** | **4** |
 
 ## Variabel di luar payload
 

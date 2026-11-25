@@ -2,9 +2,9 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Angka code per form diperbarui 2026-11-25 (aturan hitung baru: code SP custom di path coded mana pun, dataAbsentReason, path QuestionnaireResponse valid; path disamakan ke FHIR R4). Angka payload tidak berubah. Total non-unik 7313 payload / 19299 code; unik 1420 / 4257.
+Angka code per form diperbarui 2026-11-25 (aturan hitung baru: code SP custom di path coded mana pun, dataAbsentReason, path QuestionnaireResponse valid; path disamakan ke FHIR R4). Angka payload tidak berubah. Total non-unik 7347 payload / 19485 code; unik 1431 / 4357.
 
-Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah direview: 9
+Total: 254 laporan · Masih diperlukan: 235 · Dimapping ke FHIR: 227 · Sudah direview: 8
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -57,7 +57,7 @@ Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah d
 | 56 | SITB - TB 06 (terduga/suspek TB) | 56 / 301 |
 | 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | 13 / 113 |
 | 61 | SITB - TB 15P (Penerima TPT) | 21 / 59 |
-| 62 | SITB - TB 16K (IK) | 21 / 35 |
+| 62 | SITB - TB 16K (IK) (file revised 2026-11-25) | 24 / 38 |
 | 64 | SISMAL (Malaria) - Regmal 1 | 20 / 54 |
 | 72 | MPDN - Laporan Kematian Bayi | 19 / 115 |
 | 73 | MPDN - Laporan Kematian Ibu | 10 / 50 |
@@ -168,6 +168,9 @@ Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah d
 | 294 | MMS - Survei Sosio Ekonomi | 22 / 229 |
 | 295 | MMS - Survei Demografi (Listing Responden) | 12 / 20 |
 | 296 | MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | 50 / 193 |
+| 297 | SKI - Sahabat Sehat Household Survey | 14 / 102 |
+| 298 | SKI - Individu Bagian B (Penyakit) | 12 / 62 |
+| 299 | SKI - Kesehatan Bayi Balita | 5 / 4 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
@@ -189,7 +192,7 @@ Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel �
 
 SISMAL (Malaria): hanya form yang punya mapping yang dicatat di tracker (#64, #275); jenis form SISMAL lain tidak dimasukkan.
 
-Baris #284–290 = sheet KuApps BidanKu di luar PYD (Tambah Pasien dst.), ditambahkan 2026-11-25 (nomor lanjut dari #283; di Google Sheet perlu ditambahkan manual).
+Baris #297–299 = form SKI (`PHDT_Data_SKI.xlsx`), nomor saya pilih sendiri, perlu ditambahkan manual di Google Sheet. Baris #284–290 = sheet KuApps BidanKu di luar PYD (Tambah Pasien dst.), ditambahkan 2026-11-25 (nomor lanjut dari #283; di Google Sheet perlu ditambahkan manual).
 
 SIM RS: 34 sheet sendiri + 18 baris yang memakai template Spheres = 52 dari 109 baris (#128–#236) sudah ada sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` (sheet Template generik tidak dihitung). Sisanya (Margono semua; Hepatitis Panti Nugroho/Nirmala/Harapan Ibu/Goetoeng/Tripat/Narmada/At tin; TB semua RS; DM/HT/Stroke yang tidak punya sheet; Tripat INC; Narmada ANC/PNC/BBL; dst.) belum ada file mapping. Kobo: 12 form dari `Kobo_-_Data_Dictionary.xlsx` dihitung (#83–86, #88–94, #101).
 
@@ -258,7 +261,7 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 59 | SITB - TB 14 Fasyankes (ketenagaan) | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.raw_data.sitb_tb_14_fasyankes` |  |
 | 60 | SITB - TB 15 (Pemeriksaan Eligibilitas TPT) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 61 | SITB - TB 15P (Penerima TPT) | ❌ | ✅ | ⚠️ belum comprehensive review |  |  |
-| 62 | SITB - TB 16K (IK) | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.raw_data.sitb_tb_16k` |  |
+| 62 | SITB - TB 16K (IK) | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.raw_data.sitb_tb_16k` |  |
 | 63 | Data Absensi Pegawai - Dari tarikan fingerprint | ✅ | ❌ | ❌ |  |  |
 | 64 | SISMAL (Malaria) - Regmal 1 | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 65 | ASPAK - Alat Kesehatan | ✅ | ❌ | ❌ |  |  |
@@ -448,3 +451,6 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 294 | MMS - Survei Sosio Ekonomi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 295 | MMS - Survei Demografi (Listing Responden) | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 296 | MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 297 | SKI - Sahabat Sehat Household Survey | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 298 | SKI - Individu Bagian B (Penyakit) | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 299 | SKI - Kesehatan Bayi Balita | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |

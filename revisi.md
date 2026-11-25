@@ -960,6 +960,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - KM3: baris "Variabel di luar payload" tanpa variabel BQ (mis. Asal Puskesmas, Posyandu, Tanggal lahir diketahui?) adalah isian kondisional atau lookup, bukan variabel BQ; tidak ditambah payload.
 
 ## Log perubahan revisi
+- 2026-11-25 (4): Tambah SKI (3 sheet) dan ganti TB 16K dengan versi revised. Lihat bagian SKI.
 - 2026-11-24: Tambah bagian SISMAL (Regmal 1 20/54, Validasi Indigenous 7/12): asumsi SM1–SM4, temuan SM-1–SM-5, catatan pipeline P44–P45. Verifikasi Uji Silang tidak dihitung (isi salinan TB-TPT). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian SiGizi 17 form (SG1–SG14) dan catatan pipeline P39–P43. Keputusan user: PMT 2025 = 9 form, `no` tidak dimapping, `detail` → extension `sigizi-detail` valueString.
@@ -1000,3 +1001,11 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-25: Tambah 7 sheet BidanKu sebagai baris tracker #284–290.
 - 2026-11-25 (2): Tambah bagian Kobo SDIDTK (#103) dan MMS (#291–296).
 - 2026-11-25 (3): Tambah P46 (path diseragamkan ke FHIR R4, kolom bergeser dikembalikan). Aturan hitung code diperluas (lihat `aturan.md`); flag `jumlah code` bertambah di ±100 dictionary lewat `scripts/reflag.py`; output, frekuensi-code, dan output.md diregenerasi.
+
+## SKI (PHDT_Data_SKI.xlsx) dan SITB TB 16K revised (2026-11-25)
+
+- **KS1**: 3 sheet SKI dimapping (Household Survey #297, Individu Bagian B #298, Bayi Balita #299). Sheet `FIX_SKI Ruta_Bagian 1_Identitas` (235 variabel) tidak punya kolom Resource terisi, jadi dilewati sampai ada mapping.
+- **KS2**: di SKI, blok QuestionnaireResponse tanpa baris `QuestionnaireResponse.questionnaire` dianggap lanjutan QR sebelumnya (1 payload per baris `questionnaire`). Tanpa aturan ini QR terhitung berlebih (22 → 14 dan 17 → 12 payload).
+- **KS3**: file TB 16K revised tidak punya info coretan. Dibaca apa adanya: blok Practitioner/PractitionerRole kader dan ekstensi alamat Patient yang dulu dicoret sekarang dihitung; Organization/Location = lookup (tidak dihitung); blok `Memenuhi syarat TPT` bertanda FALSE di kolom BQ dikeluarkan. Nama BQ diisi ulang dari versi lama. Hasil 24 payload / 38 code. Mohon dikonfirmasi.
+- **KS4**: KuApps BidanKu ANC (4 baris `questionnaire` vs 9 payload QR) dan Bayi (23 vs 24) belum disamakan dengan aturan QR di atas; belum diubah.
+- Path `Encounter.location.*` dan `Group.member.reference` disesuaikan ke FHIR R4 (`location.location`, `member.entity`).

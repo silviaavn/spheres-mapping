@@ -1,4 +1,4 @@
-# Output Form: SITB TB 16K
+# Output Form: SITB - TB 16K (Investigasi Kontak)
 
 Sumber: `mapping/phdt-data-dictionary-sitb-tb16k.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

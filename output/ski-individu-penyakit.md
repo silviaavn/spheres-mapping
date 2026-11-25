@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 12 |
-| Code (`jumlah code` = 1) | 56 |
-| Code unik (code + CodeSystem) | 46 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 25 |
+| Code (`jumlah code` = 1) | 62 |
+| Code unik (code + CodeSystem) | 51 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 31 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -52,72 +52,78 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 78 | Condition | `Condition.code.coding` | 312851005.0 | Screening for disorder | http://snomed.info/sct |
-| 2 | 121 | Condition | `Condition.code.coding` | 472970003.0 | History of diabetes mellitus type 1 | http://snomed.info/sct |
-| 3 | 122 | Condition | `Condition.code.coding` | 472969004.0 | History of diabetes mellitus type 2 | http://snomed.info/sct |
-| 4 | 123 | Condition | `Condition.code.coding` | 472971004.0 | History of gestational diabetes mellitus | http://snomed.info/sct |
-| 5 | 124 | Condition | `Condition.code.coding` | 161445009.0 | H/O: diabetes mellitus | http://snomed.info/sct |
-| 6 | 149 | Procedure | `Procedure.code.coding` | 308755006.0 | Subcutaneous injection of insulin | http://snomed.info/sct |
-| 7 | 166 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000852 | Merasa Sudah Sehat | http://terminology.kemkes.go.id/sp |
-| 8 | 167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
-| 9 | 168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 182897004.0 | Drug declined by patient - side effects | http://snomed.info/sct |
-| 10 | 169 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000854 | Memilih Minum Obat Tradisional | http://terminology.kemkes.go.id/sp |
-| 11 | 170 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000855 | Bosan/ Malas/ Sering Lupa | http://terminology.kemkes.go.id/sp |
-| 12 | 173 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000849 | Selalu rutin sesuai waktu yang ditentukan | http://terminology.kemkes.go.id/sp |
-| 13 | 174 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000850 | Rutin, namun terlambat/bolos sekali atau dua kali | http://terminology.kemkes.go.id/sp |
-| 14 | 175 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000363 | Kadang-Kadang | http://terminology.kemkes.go.id/sp |
-| 15 | 176 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000851 | Jarang | http://terminology.kemkes.go.id/sp |
-| 16 | 183 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 410175003.0 | Dietary regime management | http://snomed.info/sct |
-| 17 | 184 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 256235009.0 | Exercise | http://snomed.info/sct |
-| 18 | 185 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 414392008.0 | Herbal therapy | http://snomed.info/sct |
-| 19 | 196 | Condition | `Condition.code.coding` | 249472009.0 | Always hungry | http://snomed.info/sct |
-| 20 | 197 | Condition | `Condition.code.coding` | 17173007.0 | Excessive thirst | http://snomed.info/sct |
-| 21 | 198 | Condition | `Condition.code.coding` | 28442001.0 | Polyuria | http://snomed.info/sct |
-| 22 | 199 | Condition | `Condition.code.coding` | 309257005.0 | Excessive weight loss | http://snomed.info/sct |
-| 23 | 200 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000856 | Tidak Mengalami Gejala Apapun | http://terminology.kemkes.go.id/sp |
-| 24 | 206 | Procedure | `Procedure.code.coding` | 271061004.0 | Random blood glucose measurement | http://snomed.info/sct |
-| 25 | 207 | Procedure | `Procedure.code.coding` | 271062006.0 | Fasting blood glucose measurement | http://snomed.info/sct |
-| 26 | 208 | Procedure | `Procedure.code.coding` | 88856000.0 | Glucose measurement, 2 hour post prandial | http://snomed.info/sct |
-| 27 | 209 | Procedure | `Procedure.code.coding` | 43396009.0 | Hemoglobin A1c measurement | http://snomed.info/sct |
-| 28 | 217 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 89185003.0 | Monthly | http://snomed.info/sct |
-| 29 | 218 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 3015006.0 | Trimonthly | http://snomed.info/sct |
-| 30 | 219 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 396149002.0 | Every six months | http://snomed.info/sct |
-| 31 | 220 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000857 | Hanya Sekali di Awal | http://terminology.kemkes.go.id/sp |
-| 32 | 221 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000858 | Tidak Pernah Sama Sekali | http://terminology.kemkes.go.id/sp |
-| 33 | 226 | Observation | `Observation.code.coding` | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | http://loinc.org |
-| 34 | 262 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000849 | Selalu rutin sesuai waktu yang ditentukan | http://terminology.kemkes.go.id/sp |
-| 35 | 263 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000850 | Rutin, namun terlambat/bolos sekali atau dua kali | http://terminology.kemkes.go.id/sp |
-| 36 | 264 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000363 | Kadang-Kadang | http://terminology.kemkes.go.id/sp |
-| 37 | 265 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000851 | Jarang | http://terminology.kemkes.go.id/sp |
-| 38 | 268 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 394778007.0 | Client's or patient's home | http://snomed.info/sct |
-| 39 | 269 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | SP000859 | Posyandu/ Posbindu | http://terminology.kemkes.go.id/sp |
-| 40 | 270 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 41 | 271 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 42 | 272 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 101.0 | Tempat Praktik Mandiri Tenaga Kesehatan | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 43 | 275 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000862 | Ya, Teratur | http://terminology.kemkes.go.id/sp |
-| 44 | 276 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000863 | Ya Tidak Teratur | http://terminology.kemkes.go.id/sp |
-| 45 | 277 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 715036001.0 | Does not take medication | http://snomed.info/sct |
-| 46 | 280 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000852 | Merasa Sudah Sehat | http://terminology.kemkes.go.id/sp |
-| 47 | 281 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
-| 48 | 282 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 182897004.0 | Drug declined by patient - side effects | http://snomed.info/sct |
-| 49 | 283 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000854 | Memilih Minum Obat Tradisional | http://terminology.kemkes.go.id/sp |
-| 50 | 284 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000855 | Bosan/ Malas/ Sering Lupa | http://terminology.kemkes.go.id/sp |
-| 51 | 285 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000860 | Obat Hipertensi Hanya Diminum Saat Kehamilan/ Pasca Persalinan | http://terminology.kemkes.go.id/sp |
-| 52 | 286 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
-| 53 | 306 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 50811001.0 | Routine | http://snomed.info/sct |
-| 54 | 307 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000363 | Kadang-Kadang | http://terminology.kemkes.go.id/sp |
-| 55 | 308 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000865 | Tidak Melakukan Pemeriksaan Ulang | http://terminology.kemkes.go.id/sp |
-| 56 | 323 | Procedure | `Procedure.code.coding` | 302497006.0 | Hemodialysis | http://hl7.org/fhir/sid/icd-9-cm |
+| 2 | 95 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000834 | Survei umum | http://terminology.kemkes.go.id/sp |
+| 3 | 96 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000835 | Survei umum crosscheck | http://terminology.kemkes.go.id/sp |
+| 4 | 97 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000836 | Survei ibu hamil | http://terminology.kemkes.go.id/sp |
+| 5 | 98 | QuestionnaireResponse | `QuestionnaireResponse.identifier.type.coding` | SP000837 | Survei ibu hamil crosscheck | http://terminology.kemkes.go.id/sp |
+| 6 | 121 | Condition | `Condition.code.coding` | 472970003.0 | History of diabetes mellitus type 1 | http://snomed.info/sct |
+| 7 | 122 | Condition | `Condition.code.coding` | 472969004.0 | History of diabetes mellitus type 2 | http://snomed.info/sct |
+| 8 | 123 | Condition | `Condition.code.coding` | 472971004.0 | History of gestational diabetes mellitus | http://snomed.info/sct |
+| 9 | 124 | Condition | `Condition.code.coding` | 161445009.0 | H/O: diabetes mellitus | http://snomed.info/sct |
+| 10 | 144 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000157 | Obat Diabetes Mellitus | http://terminology.kemkes.go.id/sp |
+| 11 | 146 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000157 | Obat Diabetes Mellitus | http://terminology.kemkes.go.id/sp |
+| 12 | 149 | Procedure | `Procedure.code.coding` | 308755006.0 | Subcutaneous injection of insulin | http://snomed.info/sct |
+| 13 | 166 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000852 | Merasa Sudah Sehat | http://terminology.kemkes.go.id/sp |
+| 14 | 167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
+| 15 | 168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 182897004.0 | Drug declined by patient - side effects | http://snomed.info/sct |
+| 16 | 169 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000854 | Memilih Minum Obat Tradisional | http://terminology.kemkes.go.id/sp |
+| 17 | 170 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000855 | Bosan/ Malas/ Sering Lupa | http://terminology.kemkes.go.id/sp |
+| 18 | 173 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000849 | Selalu rutin sesuai waktu yang ditentukan | http://terminology.kemkes.go.id/sp |
+| 19 | 174 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000850 | Rutin, namun terlambat/bolos sekali atau dua kali | http://terminology.kemkes.go.id/sp |
+| 20 | 175 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000363 | Kadang-Kadang | http://terminology.kemkes.go.id/sp |
+| 21 | 176 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000851 | Jarang | http://terminology.kemkes.go.id/sp |
+| 22 | 183 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 410175003.0 | Dietary regime management | http://snomed.info/sct |
+| 23 | 184 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 256235009.0 | Exercise | http://snomed.info/sct |
+| 24 | 185 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 414392008.0 | Herbal therapy | http://snomed.info/sct |
+| 25 | 196 | Condition | `Condition.code.coding` | 249472009.0 | Always hungry | http://snomed.info/sct |
+| 26 | 197 | Condition | `Condition.code.coding` | 17173007.0 | Excessive thirst | http://snomed.info/sct |
+| 27 | 198 | Condition | `Condition.code.coding` | 28442001.0 | Polyuria | http://snomed.info/sct |
+| 28 | 199 | Condition | `Condition.code.coding` | 309257005.0 | Excessive weight loss | http://snomed.info/sct |
+| 29 | 200 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000856 | Tidak Mengalami Gejala Apapun | http://terminology.kemkes.go.id/sp |
+| 30 | 206 | Procedure | `Procedure.code.coding` | 271061004.0 | Random blood glucose measurement | http://snomed.info/sct |
+| 31 | 207 | Procedure | `Procedure.code.coding` | 271062006.0 | Fasting blood glucose measurement | http://snomed.info/sct |
+| 32 | 208 | Procedure | `Procedure.code.coding` | 88856000.0 | Glucose measurement, 2 hour post prandial | http://snomed.info/sct |
+| 33 | 209 | Procedure | `Procedure.code.coding` | 43396009.0 | Hemoglobin A1c measurement | http://snomed.info/sct |
+| 34 | 217 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 89185003.0 | Monthly | http://snomed.info/sct |
+| 35 | 218 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 3015006.0 | Trimonthly | http://snomed.info/sct |
+| 36 | 219 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 396149002.0 | Every six months | http://snomed.info/sct |
+| 37 | 220 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000857 | Hanya Sekali di Awal | http://terminology.kemkes.go.id/sp |
+| 38 | 221 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000858 | Tidak Pernah Sama Sekali | http://terminology.kemkes.go.id/sp |
+| 39 | 226 | Observation | `Observation.code.coding` | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | http://loinc.org |
+| 40 | 262 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000849 | Selalu rutin sesuai waktu yang ditentukan | http://terminology.kemkes.go.id/sp |
+| 41 | 263 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000850 | Rutin, namun terlambat/bolos sekali atau dua kali | http://terminology.kemkes.go.id/sp |
+| 42 | 264 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000363 | Kadang-Kadang | http://terminology.kemkes.go.id/sp |
+| 43 | 265 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000851 | Jarang | http://terminology.kemkes.go.id/sp |
+| 44 | 268 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 394778007.0 | Client's or patient's home | http://snomed.info/sct |
+| 45 | 269 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | SP000859 | Posyandu/ Posbindu | http://terminology.kemkes.go.id/sp |
+| 46 | 270 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 47 | 271 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 48 | 272 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer[x].valueCoding` | 101.0 | Tempat Praktik Mandiri Tenaga Kesehatan | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 49 | 275 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000862 | Ya, Teratur | http://terminology.kemkes.go.id/sp |
+| 50 | 276 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000863 | Ya Tidak Teratur | http://terminology.kemkes.go.id/sp |
+| 51 | 277 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 715036001.0 | Does not take medication | http://snomed.info/sct |
+| 52 | 280 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000852 | Merasa Sudah Sehat | http://terminology.kemkes.go.id/sp |
+| 53 | 281 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000853 | Obat Tidak Tersedia di Fasilitas Pelayanan Kesehatan | http://terminology.kemkes.go.id/sp |
+| 54 | 282 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 182897004.0 | Drug declined by patient - side effects | http://snomed.info/sct |
+| 55 | 283 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000854 | Memilih Minum Obat Tradisional | http://terminology.kemkes.go.id/sp |
+| 56 | 284 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000855 | Bosan/ Malas/ Sering Lupa | http://terminology.kemkes.go.id/sp |
+| 57 | 285 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000860 | Obat Hipertensi Hanya Diminum Saat Kehamilan/ Pasca Persalinan | http://terminology.kemkes.go.id/sp |
+| 58 | 286 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
+| 59 | 306 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 50811001.0 | Routine | http://snomed.info/sct |
+| 60 | 307 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000363 | Kadang-Kadang | http://terminology.kemkes.go.id/sp |
+| 61 | 308 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000865 | Tidak Melakukan Pemeriksaan Ulang | http://terminology.kemkes.go.id/sp |
+| 62 | 323 | Procedure | `Procedure.code.coding` | 302497006.0 | Hemodialysis | http://hl7.org/fhir/sid/icd-9-cm |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
+| http://terminology.kemkes.go.id/sp | 31 |
 | http://snomed.info/sct | 26 |
-| http://terminology.kemkes.go.id/sp | 25 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 3 |
 | http://loinc.org | 1 |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **56** |
+| **Total** | **62** |
 
 ## Variabel di luar payload
 
