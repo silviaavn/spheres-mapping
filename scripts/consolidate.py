@@ -188,6 +188,7 @@ def short(cs):
     if cs.startswith("http://terminology.kemkes.go.id/CodeSystem/"): return "kemkes " + cs.rsplit("/", 1)[1]
     return cs
 SP = "http://terminology.kemkes.go.id/sp"
+SPS = {SP, "http://terminology.kemkes.go.id/CodeSystem/organization-type/sp"}
 data = {}
 for name, f in FORMS:
     d = fo.load(f"{repo}/mapping/{f}.csv"); p, c, o = fo.build(d); data[name] = (p, c)
@@ -221,9 +222,9 @@ open(f"{outdir}/frekuensi-code.md", "w", encoding="utf-8").write("\n".join(L))
 T = ["| Form | Variabel raw | Payload | Code | Code SP |", "|---|---|---|---|---|"]
 tp = tc = ts = tr = 0
 for name, (p, c) in data.items():
-    sp = sum(1 for d in c if d["cs"].strip().rstrip("/") == SP); tp += len(p); tc += len(c); ts += sp; rn = raw_n(name); tr += rn
+    sp = sum(1 for d in c if d["cs"].strip().rstrip("/") in SPS); tp += len(p); tc += len(c); ts += sp; rn = raw_n(name); tr += rn
     T.append(f"| {name} | {rn} | {len(p)} | {len(c)} | {sp} |")
-usp = sum(1 for (cd, cs) in cod if cs.rstrip("/") == SP)
+usp = sum(1 for (cd, cs) in cod if cs.rstrip("/") in SPS)
 T += [f"| **Total (non-unik)** | **{tr}** | **{tp}** | **{tc}** | **{ts}** |", f"| **Total unik** | – | **{len(pay)}** | **{len(cod)}** | **{usp}** |",
       f"| Selisih (dipakai ulang) | – | {tp-len(pay)} | {tc-len(cod)} | {ts-usp} |", ""]
 bycs = OrderedDict()

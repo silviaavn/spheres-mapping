@@ -197,7 +197,7 @@ File terpisah (detail):
 
 ## Ringkasan semua form
 
-Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comprehensive review). Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` (sudah termasuk di kolom Code).
+Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comprehensive review). Kolom **Variabel raw** = jumlah kolom di file mentah (kalau belum ada file mentah: jumlah variabel di dictionary; Maternal Outcome & Raffle = variabel Kobo, MPDN = variabel dictionary tanpa placeholder). Kolom **Code SP** = jumlah code dengan CodeSystem `http://terminology.kemkes.go.id/sp` atau `http://terminology.kemkes.go.id/CodeSystem/organization-type/sp` (6 kode master PAUD; sudah termasuk di kolom Code).
 
 | Form | Variabel raw | Payload | Code | Code SP |
 |---|---|---|---|---|
@@ -367,9 +367,9 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Kobo Neonatus Outcome | 25 | 14 | 25 | 5 |
 | Kobo Neonatus Outcome v2 | 208 | 89 | 276 | 52 |
 | Kobo DDTK | 20 | 11 | 10 | 0 |
-| Master Data (Prerequisite) | 15 | 0 | 15 | 9 |
-| **Total (non-unik)** | **11016** | **7344** | **19477** | **2809** |
-| **Total unik** | – | **1430** | **4341** | **1004** |
+| Master Data (Prerequisite) | 15 | 0 | 15 | 15 |
+| **Total (non-unik)** | **11016** | **7344** | **19477** | **2815** |
+| **Total unik** | – | **1430** | **4341** | **1010** |
 | Selisih (dipakai ulang) | – | 5914 | 15136 | 1805 |
 
 | CodeSystem | Jumlah |
@@ -731,6 +731,7 @@ Perbedaan antar versi:
 
 ## Log perubahan output
 - 2026-11-25 (6): 36 baris di 25 dictionary dibetulkan: kode SNOMED/LOINC yang salah diberi CodeSystem `kemkes.go.id/sp` dipindah ke SNOMED/LOINC, dan akhiran ".0" dihapus (mis. 718-7, 135840009, 49052-4, 276707008). `special-needs` (Dapodik PAUD) belum diputuskan. Code SP unik 1019 → 1004; total unik 1430 payload / 4341 code (non-unik tetap 7344 / 19477).
+- 2026-11-25 (7): Code SP sekarang juga menghitung CodeSystem `organization-type/sp` (6 kode master PAUD: SP000385–388, SP000457, SP000458). `special-needs` (Dapodik PAUD) tetap kode bernama, dihitung sebagai Code SP. Code SP unik 1004 → 1010.
 - 2026-11-25 (5): Informed Consent (#78) dikeluarkan dari konsolidasi (bukan aplikasi tersendiri; file mapping/output tetap ada di repo). Total non-unik 7344 payload / 19477 code; unik 1431 / 4349.
 - 2026-11-25 (4): Tambah 3 form SKI (#297–299) dan ganti SITB TB 16K dengan versi revised (21/35 → 24/38). Total non-unik 7347 payload / 19485 code; unik 1431 / 4357.
 - 2026-11-25 (3): Tambah form Master Data (Prerequisite): 0 payload / 15 code. Total non-unik 7313 payload / 19314 code; unik 1420 / 4272.

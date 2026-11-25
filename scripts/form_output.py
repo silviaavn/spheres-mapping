@@ -130,7 +130,7 @@ def render(form, src, data, payloads, codes, other_vars, raw=None, raw_path=None
            f"| Payload (`jumlah instance` = 1) | {len(payloads)} |",
            f"| Code (`jumlah code` = 1) | {len(codes)} |",
            f"| Code unik (code + CodeSystem) | {len({(d['code'], d['cs']) for d in codes})} |",
-           f"| Code SP (`http://terminology.kemkes.go.id/sp`) | {sum(1 for d in codes if d['cs'].strip().rstrip('/') == 'http://terminology.kemkes.go.id/sp')} |",
+           f"| Code SP (`http://terminology.kemkes.go.id/sp`) | {sum(1 for d in codes if d['cs'].strip().rstrip('/') in ('http://terminology.kemkes.go.id/sp','http://terminology.kemkes.go.id/CodeSystem/organization-type/sp'))} |",
            f"| Variabel BQ (unik) | {len(bq)} |"]
     if raw is not None:
         out.append(f"| Variabel raw (kolom Excel export) | {len(raw)} |")
