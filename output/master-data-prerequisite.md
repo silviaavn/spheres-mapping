@@ -93,11 +93,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 59 | 60 | Observation | `Observation.code.coding` | SP000800 | Deeplex Myc-TB codon change | http://terminology.kemkes.go.id/sp |
 | 60 | 61 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000861 | Sudah Sembuh | http://terminology.kemkes.go.id/sp |
 | 61 | 62 | Observation | `Observation.code.coding` | SP000891 | Isi piringku lansia | http://terminology.kemkes.go.id/sp |
-| 62 | 63 |  | `` | SP000895 | 1 kali sehari | http://terminology.kemkes.go.id/sp |
-| 63 | 64 |  | `` | SP000896 | 2 kali sehari | http://terminology.kemkes.go.id/sp |
-| 64 | 65 |  | `` | SP000897 | 3 kali sehari | http://terminology.kemkes.go.id/sp |
-| 65 | 66 |  | `` | SP000898 | > 3 kali sehari | http://terminology.kemkes.go.id/sp |
-| 66 | 67 |  | `` | SP000910 | Ibu mengonsumsi MMS setiap hari | http://terminology.kemkes.go.id/sp |
+| 62 | 63 | Observation | `Observation.code.coding` | SP000895 | 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 63 | 64 | Observation | `Observation.code.coding` | SP000896 | 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 64 | 65 | Observation | `Observation.code.coding` | SP000897 | 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 65 | 66 | Observation | `Observation.code.coding` | SP000898 | > 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 66 | 67 | Observation | `Observation.code.coding` | SP000910 | Ibu mengonsumsi MMS setiap hari | http://terminology.kemkes.go.id/sp |
 | 67 | 68 | Observation | `Observation.valueCodeableConcept.coding` | SP000960 | 1-6 Bulan yang lalu | http://terminology.kemkes.go.id/sp |
 | 68 | 69 | Observation | `Observation.valueCodeableConcept.coding` | SP000961 | 1-3 tahun yang lalu | http://terminology.kemkes.go.id/sp |
 | 69 | 70 | Observation | `Observation.valueCodeableConcept.coding` | SP000962 | 4-5 Tahun yang lalu | http://terminology.kemkes.go.id/sp |
@@ -192,11 +192,11 @@ Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di
 | 60 | – | Deeplex Myc-TB codon change | Observation | `Observation.code.coding` |
 | 61 | – | Sudah Sembuh | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` |
 | 62 | – | Isi piringku lansia | Observation | `Observation.code.coding` |
-| 63 | – | 1 kali sehari | – | `` |
-| 64 | – | 2 kali sehari | – | `` |
-| 65 | – | 3 kali sehari | – | `` |
-| 66 | – | > 3 kali sehari | – | `` |
-| 67 | – | Ibu mengonsumsi MMS setiap hari | – | `` |
+| 63 | – | 1 kali sehari | Observation | `Observation.code.coding` |
+| 64 | – | 2 kali sehari | Observation | `Observation.code.coding` |
+| 65 | – | 3 kali sehari | Observation | `Observation.code.coding` |
+| 66 | – | > 3 kali sehari | Observation | `Observation.code.coding` |
+| 67 | – | Ibu mengonsumsi MMS setiap hari | Observation | `Observation.code.coding` |
 | 68 | – | 1-6 Bulan yang lalu | Observation | `Observation.valueCodeableConcept.coding` |
 | 69 | – | 1-3 tahun yang lalu | Observation | `Observation.valueCodeableConcept.coding` |
 | 70 | – | 4-5 Tahun yang lalu | Observation | `Observation.valueCodeableConcept.coding` |

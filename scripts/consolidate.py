@@ -188,7 +188,7 @@ def short(cs):
     if cs.startswith("http://terminology.kemkes.go.id/CodeSystem/"): return "kemkes " + cs.rsplit("/", 1)[1]
     return cs
 SP = "http://terminology.kemkes.go.id/sp"
-SPS = {SP, "http://terminology.kemkes.go.id/CodeSystem/organization-type/sp"}
+SPS = {SP, "http://terminology.kemkes.go.id/CodeSystem/organization-type/sp", "http://terminology.kemkes.go.id/CodeSystem/organization-ownership/sp"}
 data = {}
 for name, f in FORMS:
     d = fo.load(f"{repo}/mapping/{f}.csv"); p, c, o = fo.build(d); data[name] = (p, c)
