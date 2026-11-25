@@ -4263,3 +4263,18 @@ Frekuensi = di berapa form code (code + CodeSystem) dipakai; angka (Nx) = muncul
 | 4255 | 106304008.0 | Teacher | snomed | Kobo DDTK | 1 |
 | 4256 | 158922001.0 | Physical training teacher | snomed | Kobo DDTK | 1 |
 | 4257 | 170245002.0 | Child examination: school screening | snomed | Kobo DDTK | 1 |
+| 4258 | SP000048 | Pengelola Sistem Informasi dan Basis Data (Database) | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4259 | SP000049 | Cleaning Service | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4260 | SP000434 | Vaksinator | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4261 | SP000677 | PJ SITB | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4262 | SP000714 | PJ KIA | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4263 | SP001124 | Kader Madya | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4264 | SP001125 | Kader Purwa | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4265 | SP001126 | Kader Utama | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4266 | SP000385 | Taman Kanak-Kanak | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4267 | SP000386 | Kelompok Bermain | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4268 | SP000387 | Taman Penitipan Anak | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4269 | SP000388 | Satuan PAUD Sejenis | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4270 | SP000457 | Pendidikan Anak Usia Dini Al-Quran | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4271 | SP000458 | Raudhatul Athfal | kemkes sp | Master Data (Prerequisite) | 1 |
+| 4272 | SP000753 | Kelurahan | kemkes sp | Master Data (Prerequisite) | 1 |

@@ -3,6 +3,7 @@
 Terakhir diperbarui: 2026-11-25
 Aturan hitung: lihat [`aturan.md`](aturan.md) · Temuan & catatan pipeline: [`revisi.md`](revisi.md)
 Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
+- **Master Data (Prerequisite)** → [`output/master-data-prerequisite.md`](output/master-data-prerequisite.md) (sumber: [`mapping/phdt-data-dictionary-master-data-prerequisite.csv`](mapping/phdt-data-dictionary-master-data-prerequisite.csv); 15 kode custom SP untuk Organization.type dan PractitionerRole.code/specialty dari master SPHERES Custom Value Set; tidak ada baris tracker)
 - **Maternal Outcome** → [`output/maternal-outcome.md`](output/maternal-outcome.md) (sumber: [`mapping/kobo-data-dictionary-maternal-outcome.csv`](mapping/kobo-data-dictionary-maternal-outcome.csv))
 - **Raffle** → [`output/raffle.md`](output/raffle.md) (sumber: [`mapping/kobo-data-dictionary-raffle.csv`](mapping/kobo-data-dictionary-raffle.csv))
 - **SiGizi ANC** → [`output/sigizi-anc.md`](output/sigizi-anc.md) (sumber: [`mapping/phdt-data-dictionary-sigizi-anc.csv`](mapping/phdt-data-dictionary-sigizi-anc.csv), PHDT Data Dictionary; struktur file mentah: [`raw/sigizi-anc-kolom.md`](raw/sigizi-anc-kolom.md))
@@ -362,14 +363,15 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Kobo Neonatus Outcome | 25 | 14 | 25 | 6 |
 | Kobo Neonatus Outcome v2 | 208 | 89 | 276 | 58 |
 | Kobo DDTK | 20 | 11 | 10 | 0 |
-| **Total (non-unik)** | **10845** | **7313** | **19299** | **2764** |
-| **Total unik** | – | **1420** | **4257** | **975** |
+| Master Data (Prerequisite) | 15 | 0 | 15 | 9 |
+| **Total (non-unik)** | **10860** | **7313** | **19314** | **2773** |
+| **Total unik** | – | **1420** | **4272** | **984** |
 | Selisih (dipakai ulang) | – | 5893 | 15042 | 1789 |
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 1823 |
-| http://terminology.kemkes.go.id/sp | 975 |
+| http://terminology.kemkes.go.id/sp | 984 |
 | http://loinc.org | 503 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 337 |
 | http://hl7.org/fhir/sid/icd-10 | 120 |
@@ -393,6 +395,7 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | https://loinc.org | 7 |
 | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | 7 |
 | http://terminology.hl7.org/CodeSystem/admit-source | 6 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-type/sp | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 3 |
@@ -416,7 +419,7 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | https://www.ncbi.nlm.nih.gov/gene | 1 |
 | Viral Consensus Genome Sequence | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
-| **Total** | **4257** |
+| **Total** | **4272** |
 
 ---
 
@@ -646,6 +649,7 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | Kobo Neonatus Outcome | 8 | – | – | – | – | – | – | – | 1 | – | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
 | Kobo Neonatus Outcome v2 | 60 | 6 | 3 | – | – | – | 3 | 1 | 4 | 1 | 1 | 4 | – | 3 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 2 | – | – | – | – | 89 |
 | Kobo DDTK | 4 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
+| Master Data (Prerequisite) | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 0 |
 | **Total (non-unik)** | **4050** | **661** | **369** | **341** | **276** | **233** | **209** | **186** | **163** | **147** | **141** | **105** | **88** | **82** | **62** | **46** | **38** | **26** | **23** | **18** | **10** | **7** | **7** | **6** | **4** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **7313** |
 | **Total unik** | **912** | **199** | **91** | **35** | **109** | **7** | **17** | **1** | **1** | **1** | **1** | **1** | **6** | **1** | **10** | **11** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1420** |
 
@@ -714,10 +718,12 @@ Perbedaan antar versi:
 - **Kobo (12 form, baru)**: dari `Kobo_-_Data_Dictionary.xlsx`. Sheet `ANC Kobo`, `INC Kobo`, `Neonatus Kobo`, `PNC Kobo`, `Mapping Kobo Buku KIA 1 - ANC`, `Mapping Variable Buku KIA Entry Form 2`, `Mapping Kobo Buku KIA 3 - PNC`, `Mapping Variabel Kobo Buku KIA 4- Cadre`, `Mapping Kobo Vaksinator (revisedform)`, `Neonatal Outcome Kobo`, `Neonatal Outcome v2`, `DDTK Kobo`. Dilewati: `Variabel ...`, `tarikan ...`, `Copy of Neonatus Kobo`, `Deprecated PNC`, `epus pnc dan buku kia`, `rencana INC`, `Variabel ANC (sigizi lama)` (= SiGizi ANC yang sudah dihitung), `Mapping Kobo Buku KIA 5 - Vaksinator (tdk dipakai)`. `Maternal Outcome Kobo` dan `Kobo Raffle` tidak dihitung ulang (angka Maternal Outcome / Raffle yang sudah ada tetap). `Data BBL Kobo` dihitung terpisah karena tidak ada baris tracker yang cocok. Buku KIA 1 - ANC punya 404 variabel unik (kolom `Question/answer option` dipakai sebagai Variables).
 - **SIM RS template Spheres**: sheet TRACKER di file RS mencatat RS yang memakai Excel template Spheres. RS tanpa sheet mapping sendiri memakai angka template: ANC/INC/PNC = template ANC/INC/PNC, BBL = template BBL (neo) untuk Harapan Ibu dan BBL (INC) untuk At tin, Nirmala, PKU, Hepatitis = template HepB. Panti Nugroho Hepatitis, Nirmala Hepatitis, dan Harapan Ibu Hepatitis tidak dihitung (notes: form SIHEPI baru). Margono dan Goetoeng (selain sheet yang sudah ada) belum kirim data.
 - **Kobo SDIDTK (#103) dan MMS (6 form, #291–296, baru)**: SDIDTK dari `Kobo_-_Data_Dictionary_-_Copy_of_SDIDTK.csv` (35 payload, 68 code); MMS dari `MMS_Data_Dictionary.xlsx`, 6 sheet = 6 form (Distribusi dan Konsumsi 22/51, Informed Consent 8/5, Master Responden 16/33, Sosio Ekonomi 22/200, Demografi 12/20, Konfirmasi Kelahiran 50/193). ⚠️ belum comprehensive review, tanpa daftar variabel BQ (baris tanpa variabel BQ di "Variabel di luar payload" adalah isian kondisional/pendukung tanpa mapping, bukan variabel BQ). Nomor #291–296 saya pilih sendiri, melanjutkan #283. Dibuat dengan `scripts/kuapps_prepare.py` (MMS) dan `scripts/phdt2_prepare.py` (SDIDTK).
+- **Master Data (Prerequisite)**: 15 kode custom SP untuk data master (PractitionerRole 8: Pengelola SIK, Cleaning Service, Vaksinator, PJ SITB, PJ KIA, Kader Madya/Purwa/Utama; Organization.type 7: 6 jenis satuan PAUD + Kelurahan), diambil dari `SPHERES_Custom_Value_Set_FHIR`. Dihitung sebagai **code** (kode custom dihitung di path coded mana pun), **0 payload** karena Organization/PractitionerRole master data tidak dibuat dari form. Tidak ada baris tracker. Dibuat manual (`mapping/phdt-data-dictionary-master-data-prerequisite.csv`).
 
 ---
 
 ## Log perubahan output
+- 2026-11-25 (3): Tambah form Master Data (Prerequisite): 0 payload / 15 code. Total non-unik 7313 payload / 19314 code; unik 1420 / 4272.
 - 2026-11-25: Tambah Kobo SDIDTK (#103) dan 6 form MMS (#291–296). Total non-unik 7313 payload / 17518 code; unik 1420 / 4040. ⚠️ belum comprehensive review.
 - 2026-11-25: Tambah 7 sheet BidanKu (Tambah Pasien #284, Daftar Kehamilan #285, Luaran Kehamilan #286, PHBS #287, Skrining Rumah Tangga #288, Imunisasi #289, Kumpulan Skrinning #290) sebagai baris tracker baru. Total non-unik 7148 payload / 16948 code. ⚠️ belum comprehensive review.
 - 2026-11-24 (5): Tambah 21 form: BidanKu 8 (#106–113), Spheres HT/DM/TB (#114–116), Genomics TB/Klebsiella/Dengue (#118–120), TB 15 (#60), TB 15P (#61), ASIK Kohort Bayi/Baduta/WUS (#39–41). ⚠️ belum comprehensive review.
