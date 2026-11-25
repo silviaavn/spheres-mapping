@@ -26,7 +26,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 4 | 94–97 | Practitioner | – | – | – |
 | 5 | 98–104 | PractitionerRole | – | – | _Jenis Tenaga Pemeriksa_ → `PractitionerRole.active` (98, tanpa BQ) |
 | 6 | 105–125 | Practitioner | – | – | _Nama Pemeriksa_ → `Practitioner.name.text` (107, tanpa BQ) |
-| 7 | 126–141 | DocumentReference | – | – | _Link File Original_ → `DocumentReference.identifier` (126, tanpa BQ) |
+| 7 | 126–141 | DocumentReference | SP000732 | Buku KIA | _Link File Original_ → `DocumentReference.identifier` (126, tanpa BQ) |
 | 8 | 142–160 | Observation | 385438008.0 | Source of information | _Sumber Data_ → `Observation.valueCodeableConcept.coding` (145, tanpa BQ)<br>_Sumber lain_ → `Observation.valueCodeableConcept.text` (152, tanpa BQ) |
 | 9 | 161–179 | EpisodeOfCare | ANC | Antenatal Care | _Episode ANC Ibu_ → `EpisodeOfCare.identifier` (161, tanpa BQ)<br>_HPHT_ → `EpisodeOfCare.statusHistory.period.start` (164, tanpa BQ)<br>_Episode PNC Ibu_ → `EpisodeOfCare.identifier` (176, tanpa BQ) |
 | 10 | 180–184 | EpisodeOfCare | PNC | Postnatal Care | – |
@@ -55,7 +55,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 33 | 478–497 | Observation | 72155-5 | Position in womb Fetus [RHEA] | _Posisi Kepala Janin terhadap PAP (Pintu Atas Panggul)_ → `Observation.identifier.value` (496, tanpa BQ) |
 | 34 | 498–511 | Observation | 249111004.0 | Engagement of head | _Kondisi Ketuban_ → `Observation.identifier.value` (510, tanpa BQ) |
 | 35 | 512–521 | Observation | 289282009.0 | Amniotic membrane finding | – |
-| 36 | 522–627 | QuestionnaireResponse | – | – | _Faktor risiko INC_ → `QuestionnaireResponse.questionnaire` (522, tanpa BQ) |
+| 36 | 522–627 | QuestionnaireResponse | https://fhir.kemkes.go.id/sp/Questionnaire/Q0002 | – | _Faktor risiko INC_ → `QuestionnaireResponse.questionnaire` (522, tanpa BQ) |
 | 37 | 628–640 | Observation | SP000123 | Integrasi Program | _Integrasi Program_ → `Observation.valueCodeableConcept.coding` (631, tanpa BQ) |
 | 38 | 641–673 | Observation | 72150-6 | Delivery location | _Tempat Melahirkan_ → `Observation.valueCodeableConcept.coding` (644, tanpa BQ)<br>_Alamat Bersalin_ → `Observation.note` (673, tanpa BQ) |
 | 39 | 689–703 | Observation | 76516-4 | Gestational age—​at birth | _Usia Kehamilan/ Gestasi pada saat Persalinan_ → `Observation.valueQuantity.value` (692, tanpa BQ) |

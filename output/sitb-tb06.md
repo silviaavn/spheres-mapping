@@ -31,7 +31,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 8 | 152–158 | Condition | Z03.0 | Observation for suspected tuberculosis | – |
 | 9 | 160–167 | Condition | A15.0 | Tuberculosis of lung, confirmed by sputum microscopy with or without culture | – |
 | 10 | 170–181 | Observation | 424144002 | Current chronological age | `umur_tahun` → `Observation.valueQuantity.value` (173) |
-| 11 | 184–228 | QuestionnaireResponse | – | – | `klasifikasi_berdasarkan_riwayat_pengobatan_sebelumnya` → `QuestionnaireResponse.item.item.linkId` (199)<br>`kriteria_terduga_tbc_ro` → `QuestionnaireResponse.item.item.linkId` (211)<br>`lokasi_anatomi_penyakit` → `QuestionnaireResponse.item.item.linkId` (225) |
+| 11 | 184–228 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0001 | – | `klasifikasi_berdasarkan_riwayat_pengobatan_sebelumnya` → `QuestionnaireResponse.item.item.linkId` (199)<br>`kriteria_terduga_tbc_ro` → `QuestionnaireResponse.item.item.linkId` (211)<br>`lokasi_anatomi_penyakit` → `QuestionnaireResponse.item.item.linkId` (225) |
 | 12 | 231–242 | Observation | OC000191 | Jumlah Skoring TBC Anak | `total_skoring_tbc_anak` → `Observation.valueInteger` (234) |
 | 13 | 245–254 | ServiceRequest | 24648-8 | XR Chest PA upright | – |
 | 14 | 256–268 | Observation | 24648-8 | XR Chest PA upright | `hasil_pemeriksaan_foto_toraks` → `Observation.valueCodeableConcept.coding` (259) |

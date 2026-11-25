@@ -47,7 +47,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 24 | 381–405 | Observation | 72155-5 | Position in womb Fetus [RHEA] | _Posisi Kepala Janin terhadap PAP (Pintu Atas Panggul)_ → `Observation.identifier.value` (405, tanpa BQ) |
 | 25 | 406–419 | Observation | 249111004 | Engagement of head | _Kondisi Ketuban_ → `Observation.identifier.value` (419, tanpa BQ) |
 | 26 | 420–431 | Observation | 289282009 | Amniotic membrane finding | – |
-| 27 | 432–537 | QuestionnaireResponse | – | – | _Faktor risiko INC_ → `QuestionnaireResponse.questionnaire` (432, tanpa BQ) |
+| 27 | 432–537 | QuestionnaireResponse | https://fhir.kemkes.go.id/sp/Questionnaire/Q0002 | – | _Faktor risiko INC_ → `QuestionnaireResponse.questionnaire` (432, tanpa BQ) |
 | 28 | 538–550 | Observation | SP000123 | Integrasi Program | _Integrasi Program_ → `Observation.valueCodeableConcept.coding` (541, tanpa BQ) |
 | 29 | 551–582 | Observation | 72150-6 | Delivery location | _Tempat Melahirkan_ → `Observation.valueCodeableConcept.coding` (554, tanpa BQ) |
 | 30 | 598–609 | Observation | 18185-9 | Gestational age | _Usia Kehamilan menurut HPHT_ → `Observation.valueQuantity.value` (601, tanpa BQ) |

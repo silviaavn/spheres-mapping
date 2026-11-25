@@ -34,7 +34,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 11 | 160–171 | Observation | OC000191 | Jumlah Skoring TBC Anak | _Jumlah Skoring TBC Anak_ → `Observation.valueInteger` (163, tanpa BQ) |
 | 12 | 172–179 | RelatedPerson | – | – | _Nama PMO_ → `RelatedPerson.name.text` (173, tanpa BQ)<br>_No. Telp/HP PMO_ → `RelatedPerson.telecom` (174, tanpa BQ)<br>_Alamat PMO_ → `RelatedPerson.address.line` (179, tanpa BQ) |
 | 13 | 186–197 | Observation | 106229004 | Qualifier for type of diagnosis | _Tipe Diagnosis_ → `Observation.valueCodeableConcept.coding` (189, tanpa BQ) |
-| 14 | 198–215 | QuestionnaireResponse | – | – | _Klasifikasi riwayat pengobatan_ → `QuestionnaireResponse.questionnaire` (198, tanpa BQ) |
+| 14 | 198–215 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0001 | – | _Klasifikasi riwayat pengobatan_ → `QuestionnaireResponse.questionnaire` (198, tanpa BQ) |
 | 15 | 216–228 | Observation | 365866002 | Finding of human immunodeficiency virus status | _Klasifikasi status HIV_ → `Observation.effectiveDateTime` (216, tanpa BQ) |
 | 16 | 229–248 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | _No. Reg Lab_ → `Observation.identifier` (229, tanpa BQ)<br>_Hasil BTA_ → `Observation.code.coding` (232, tanpa BQ)<br>_Hasil Biakan_ → `Observation.code.coding` (233, tanpa BQ)<br>_Hasil Tes Cepat_ → `Observation.valueCodeableConcept.coding` (235, tanpa BQ)<br>_Tanggal Pemeriksaan_ → `Observation.effectiveDateTime` (245, tanpa BQ) |
 | 17 | 249–260 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | _Uji Tuberkulin_ → `Observation.valueQuantity` (252, tanpa BQ) |

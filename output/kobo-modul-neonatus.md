@@ -62,7 +62,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 40 | 575–586 | Observation | 1145307003.0 | Exclusively breastfed | _Apakah Diberikan ASI Eksklusi_ → `Observation.valueBoolean` (578, tanpa BQ) |
 | 41 | 587–598 | Observation | 29463-7 | Body weight | _Berat Badan_ → `Observation.valueQuantity.value` (590, tanpa BQ) |
 | 42 | 599–610 | Observation | 8306-3 | Body height --lying | _Tinggi Badan_ → `Observation.valueQuantity.value` (602, tanpa BQ) |
-| 43 | 611–622 | QuestionnaireResponse | – | – | _Kelas Ibu Balita_ → `QuestionnaireResponse.questionnaire` (611, tanpa BQ) |
+| 43 | 611–622 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0004 | – | _Kelas Ibu Balita_ → `QuestionnaireResponse.questionnaire` (611, tanpa BQ) |
 | 44 | 623–638 | Observation | 1153593003.0 | Weight for age z-score | _BB/U_ → `Observation.status` (623, tanpa BQ)<br>_ZS BB/U_ → `Observation.valueQuantity.value` (626, tanpa BQ)<br>_Interpretasi BB/U_ → `Observation.interpretation.coding` (628, tanpa BQ) |
 | 45 | 639–654 | Observation | 1153590000.0 | Length for age z score | _PB/U_ → `Observation.status` (639, tanpa BQ)<br>_ZS PB/U_ → `Observation.valueQuantity.value` (642, tanpa BQ)<br>_Interpretasi PB/U_ → `Observation.interpretation.coding` (644, tanpa BQ) |
 | 46 | 655–672 | Observation | 1153598007.0 | Weight for length z score | _BB/PB_ → `Observation.status` (655, tanpa BQ)<br>_ZS BB/PB_ → `Observation.valueQuantity.value` (658, tanpa BQ)<br>_Interpretasi BB/PB_ → `Observation.interpretation.coding` (660, tanpa BQ) |

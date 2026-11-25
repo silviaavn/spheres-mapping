@@ -57,7 +57,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 34 | 478–489 | Condition | 47821001 | Postpartum hemorrhage | _Komplikasi_ → `Condition.clinicalStatus.coding` (478, tanpa BQ) |
 | 35 | 490–503 | Observation | 289084000 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (493, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (502, tanpa BQ)<br>_Catat_Di_Buku_KIA_ → `Observation.category.coding` (503, tanpa BQ) |
 | 36 | 504–514 | Observation | SP000122 | Catat di Buku KIA | – |
-| 37 | 515–529 | Medication | – | – | _Jumlah_Tablet_Fe_yang_Didapatkan_ → `Medication.id` (515, tanpa BQ) |
+| 37 | 515–529 | Medication | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | _Jumlah_Tablet_Fe_yang_Didapatkan_ → `Medication.id` (515, tanpa BQ) |
 | 38 | 530–563 | MedicationRequest | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | – |
 | 39 | 564–596 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | _Diberikan_Tablet_FE_ → `MedicationDispense.status` (584, tanpa BQ)<br>_{Jumlah_Tablet_Fe_yang_Didapatkan}_ → `MedicationDispense.quantity.value` (594, tanpa BQ) |
 | 40 | 597–607 | MedicationStatement | – | – | _Jumlah_Tablet_Fe_yang_Sudah_Dikonsumsi_ → `MedicationStatement.category.coding` (597, tanpa BQ)<br>_{Jumlah_Tablet_Fe_yang_Sudah_Dikonsumsi}_ → `MedicationStatement.dosage.doseAndRate.doseQuantity` (607, tanpa BQ) |

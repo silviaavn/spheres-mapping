@@ -30,6 +30,7 @@ Terakhir diperbarui: 2026-11-18
 - Nama orang yang meng-input data (data entry) dimasukkan ke `Encounter.participant` dengan type `ADM` (admitter, http://terminology.hl7.org/CodeSystem/v3-ParticipationType). Tidak menambah payload karena masih di dalam Encounter.
 
 ## Determining code
+- Pembeda payload juga: `QuestionnaireResponse.questionnaire` (URL kuesioner; kuesioner beda = payload beda), `Medication.code`, `MedicationStatement.medicationCodeableConcept`, `Composition.type`, `Consent.category`, `DocumentReference.content.format`. `PractitionerRole` tidak dipakai sebagai pembeda (tetap 1 payload). Resource tanpa code (Encounter, Patient, Organization, Location, Practitioner, dst.) = 1 master payload.
 - Code yang menentukan identitas payload: `PractitionerRole.code`, `Condition.code`, `EpisodeOfCare.type`, `Observation.code`, `Procedure.code`, `ServiceRequest.code`, `DiagnosticReport.code`, `Specimen.type`, `Immunization.vaccineCode`, code Medication (`contained.code`).
 - Observation dengan 2 coding di `code` (mis. LOINC + ANC custom): **keduanya dihitung**; code pembeda = coding pertama.
 - Ditambah pilihan jawaban coded (`Observation.valueCodeableConcept`, `Observation.interpretation`), opsi role PractitionerRole, dan opsi code lain yang mengikuti jawaban (mis. `Encounter.identifier` K1M/K1A, kesepakatan SatuSehat).
@@ -100,3 +101,4 @@ Terakhir diperbarui: 2026-11-18
 - 2026-11-13: Frekuensi didefinisikan ulang jadi "dipakai di berapa form".
 - 2026-11-13: Dibuat. Patient masuk hitungan; Organization & Location tidak (master data).
 - 2026-11-24: Variabel raw wajib ada di output per form dan di ringkasan `output.md` (menggantikan "Variabel di Excel export").
+- 2026-11-26: Pembeda payload diperluas ke QuestionnaireResponse (per kuesioner) dan resource lain yang punya code; PractitionerRole tetap 1.

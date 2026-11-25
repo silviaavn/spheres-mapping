@@ -369,8 +369,8 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Kobo DDTK | 20 | 11 | 10 | 0 |
 | Master Data (Prerequisite) | 84 | 0 | 84 | 84 |
 | **Total (non-unik)** | **11085** | **7344** | **19546** | **2908** |
-| **Total unik** | – | **1430** | **4402** | **1082** |
-| Selisih (dipakai ulang) | – | 5914 | 15144 | 1826 |
+| **Total unik** | – | **1515** | **4402** | **1082** |
+| Selisih (dipakai ulang) | – | 5829 | 15144 | 1826 |
 
 | CodeSystem | Jumlah |
 |---|---|
@@ -657,7 +657,51 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | Kobo DDTK | 4 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
 | Master Data (Prerequisite) | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 0 |
 | **Total (non-unik)** | **4054** | **665** | **378** | **341** | **276** | **233** | **209** | **189** | **164** | **150** | **143** | **109** | **89** | **81** | **62** | **46** | **40** | **26** | **23** | **18** | **10** | **7** | **7** | **5** | **4** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **7344** |
-| **Total unik** | **914** | **201** | **98** | **34** | **109** | **7** | **17** | **1** | **1** | **1** | **1** | **1** | **6** | **1** | **10** | **11** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1430** |
+| **Total unik** | **914** | **201** | **98** | **34** | **109** | **7** | **17** | **72** | **1** | **1** | **1** | **1** | **6** | **1** | **10** | **11** | **6** | **1** | **1** | **5** | **3** | **1** | **1** | **3** | **2** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1515** |
+
+---
+
+## Unique payload dan unique code per resource
+
+Unique payload = resource + code pembeda (QuestionnaireResponse: URL kuesioner di `QuestionnaireResponse.questionnaire`; resource tanpa code seperti Encounter, Patient, PractitionerRole, Organization, Location, Practitioner = 1 master payload). Unique code = code + CodeSystem. Kolom code dihitung per resource, jadi satu code yang dipakai di >1 resource muncul di tiap resource; total unik global tetap 4402.
+
+| Resource | Unique payload | Unique code |
+|---|---|---|
+| Observation | 914 | 3014 |
+| Procedure | 201 | 245 |
+| DiagnosticReport | 109 | 135 |
+| Condition | 98 | 484 |
+| QuestionnaireResponse | 72 | 481 |
+| ServiceRequest | 34 | 156 |
+| Immunization | 17 | 47 |
+| MedicationRequest | 11 | 13 |
+| MedicationDispense | 10 | 12 |
+| Specimen | 7 | 24 |
+| MedicationStatement | 6 | 14 |
+| EpisodeOfCare | 6 | 6 |
+| Medication | 5 | 5 |
+| Composition | 3 | 3 |
+| Consent | 3 | 3 |
+| DocumentReference | 2 | 1 |
+| CarePlan | 1 | 142 |
+| PractitionerRole | 1 | 40 |
+| Encounter | 1 | 38 |
+| Organization | 1 | 9 |
+| Patient | 1 | 2 |
+| Location | 1 | 1 |
+| Account | 1 | 0 |
+| AllergyIntolerance | 1 | 0 |
+| BodyStructure | 1 | 0 |
+| ClinicalImpression | 1 | 0 |
+| Coverage | 1 | 0 |
+| FamilyMemberHistory | 1 | 0 |
+| Goal | 1 | 0 |
+| Group | 1 | 0 |
+| Media | 1 | 0 |
+| Practitioner | 1 | 0 |
+| RelatedPerson | 1 | 0 |
+| **Total unik global** | **1515** | **4402** |
+| Jumlah kolom code per resource (ada code dipakai >1 resource) | – | 4875 |
 
 ---
 
@@ -730,7 +774,8 @@ Perbedaan antar versi:
 ---
 
 ## Log perubahan output
-- 2026-11-25 (6): 36 baris di 25 dictionary dibetulkan: kode SNOMED/LOINC yang salah diberi CodeSystem `kemkes.go.id/sp` dipindah ke SNOMED/LOINC, dan akhiran ".0" dihapus (mis. 718-7, 135840009, 49052-4, 276707008). `special-needs` (Dapodik PAUD) belum diputuskan. Code SP unik 1019 → 1004; total unik 1430 payload / 4341 code (non-unik tetap 7344 / 19477).
+
+- 2026-11-26: Pembeda payload diperluas: QuestionnaireResponse dibedakan per URL kuesioner (`QuestionnaireResponse.questionnaire`), dan Medication, MedicationStatement, Composition, Consent, DocumentReference dibedakan per code-nya (PractitionerRole tetap 1). Total unik payload 1430 → 1515; non-unik 7344 dan code unik 4402 tidak berubah. Ditambah bagian "Unique payload dan unique code per resource". ⚠️ belum comprehensive review.- 2026-11-25 (6): 36 baris di 25 dictionary dibetulkan: kode SNOMED/LOINC yang salah diberi CodeSystem `kemkes.go.id/sp` dipindah ke SNOMED/LOINC, dan akhiran ".0" dihapus (mis. 718-7, 135840009, 49052-4, 276707008). `special-needs` (Dapodik PAUD) belum diputuskan. Code SP unik 1019 → 1004; total unik 1430 payload / 4341 code (non-unik tetap 7344 / 19477).
 - 2026-11-25 (7): Code SP sekarang juga menghitung CodeSystem `organization-type/sp` (6 kode master PAUD: SP000385–388, SP000457, SP000458). `special-needs` (Dapodik PAUD) tetap kode bernama, dihitung sebagai Code SP. Code SP unik 1004 → 1010.
 - 2026-11-25 (8): Master Data (Prerequisite) ditambah 69 kode SP master (dari daftar master Kemkes, frekuensi 0 di form; Resource/Path sesuai daftar, 5 kode frekuensi harian/MMS tanpa elemen). Master Data jadi 84 code / 0 payload. Total non-unik 19546 code; unik 4410 code, Code SP unik 1010 → 1079.
 - 2026-11-25 (9): 32 baris di 21 dictionary: kode berformat SP000xxx yang CodeSystem-nya LOINC / SNOMED / organization-ownership / kosong diubah ke `http://terminology.kemkes.go.id/sp` (SP000050, SP000120, SP000208, SP000367, SP000368, SP000369, SP000380, SP000381, SP000382, SP000658, SP000761). Code SP unik 1079 → 1082; total unik 4402 code.

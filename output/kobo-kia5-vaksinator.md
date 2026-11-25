@@ -27,7 +27,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 5 | 61–70 | RelatedPerson | – | – | _Nama belakang ibu_ → `RelatedPerson.name.text` (61, tanpa BQ)<br>_Tulis Nomor Induk Kependudukan ibu (NIK)_ → `RelatedPerson.identifier.use` (65, tanpa BQ)<br>_Tulis Nomor Induk Kependudukan ibu (NIK) (Tulis kedua kali)_ → `RelatedPerson.identifier.value` (67, tanpa BQ)<br>_Nomor telepon Ibu_ → `RelatedPerson.telecom.use` (68, tanpa BQ)<br>_Nomor telepon ibu (tulis kedua kali)_ → `RelatedPerson.telecom.value` (70, tanpa BQ) |
 | 6 | 76–76 | RelatedPerson | – | – | _Nama ayah_ → `RelatedPerson.name.text` (76, tanpa BQ) |
 | 7 | 77–80 | RelatedPerson | – | – | _Nama belakang ayah_ → `RelatedPerson.name.text` (77, tanpa BQ) |
-| 8 | 81–96 | DocumentReference | – | – | _Link File Original_ → `DocumentReference.identifier` (81, tanpa BQ) |
+| 8 | 81–96 | DocumentReference | SP000732 | Buku KIA | _Link File Original_ → `DocumentReference.identifier` (81, tanpa BQ) |
 | 9 | 97–109 | Encounter | – | – | _Tanggal diberikan vaksin_ → `Encounter.period.start` (104, tanpa BQ) |
 | 10 | 110–116 | Condition | Z26.9 | Need for immunization against unspecified infectious disease | – |
 | 11 | 128–140 | Observation | SP000402 | Kepemilikan Nomor Induk Kependudukan | _Apakah ibu mempunyai nomor KTP (NIK)_ → `Observation.valueBoolean` (131, tanpa BQ) |

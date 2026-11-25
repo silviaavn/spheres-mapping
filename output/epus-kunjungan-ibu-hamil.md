@@ -114,7 +114,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 91 | 938–945 | Specimen | – | – | – |
 | 92 | 946–960 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | _TBC(+/-)_ → `Observation.valueCodeableConcept.coding` (949, tanpa BQ) |
 | 93 | 961–972 | DiagnosticReport | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | – |
-| 94 | 973–983 | MedicationStatement | – | – | _Obat***_ → `MedicationStatement.status` (973, tanpa BQ) |
+| 94 | 973–983 | MedicationStatement | SP000125 | Obat anti tuberkulosis | _Obat***_ → `MedicationStatement.status` (973, tanpa BQ) |
 | 95 | 984–993 | ServiceRequest | – | – | _Diperiksa Ankylostoma_ → `ServiceRequest.category` (984, tanpa BQ) |
 | 96 | 997–1004 | Specimen | – | – | – |
 | 97 | 1005–1016 | Observation | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | _Ibu Hamil Tes(+/-)_ → `Observation.valueCodeableConcept.coding` (1008, tanpa BQ) |

@@ -21,7 +21,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 2–2 | Practitioner | – | – | _ID Field Staff SID_ → `Practitioner.identifier` (2, tanpa BQ) |
-| 2 | 3–11 | Consent | – | – | _Tanggal Persetujuan/Enrollment_ → `Consent.dateTime` (3, tanpa BQ)<br>_Jenis Informed Consent_ → `Consent.status` (4, tanpa BQ) |
+| 2 | 3–11 | Consent | SP000829 | IC Keikutsertaan Program MMS | _Tanggal Persetujuan/Enrollment_ → `Consent.dateTime` (3, tanpa BQ)<br>_Jenis Informed Consent_ → `Consent.status` (4, tanpa BQ) |
 | 3 | 12–12 | Patient | – | – | _Nama lengkap responden_ → `Patient.name` (12, tanpa BQ) |
 | 4 | 37–66 | QuestionnaireResponse | – | – | _Apakah responden bersedia untuk dihubungi dan dikunjungi?_ → `QuestionnaireResponse.item.linkId` (47, tanpa BQ)<br>_Apakah Anda setuju untuk ikut serta dalam program ini?_ → `QuestionnaireResponse.item.linkId` (51, tanpa BQ)<br>_Apakah Anda setuju untuk berkomitmen mengkonsumsi MMS dan Kalsium Secara rutin?_ → `QuestionnaireResponse.item.linkId` (55, tanpa BQ)<br>_Apakah anda setuju untuk pemeriksaan sampel darah, untuk pemeriksaan kepatuhan konsumsi MMS dan status kesehatan?_ → `QuestionnaireResponse.item.linkId` (59, tanpa BQ)<br>_Apakah keluarga mendapat penjelasan IC dan menandatangani IC tersebut?_ → `QuestionnaireResponse.item.linkId` (63, tanpa BQ) |
 | 5 | 67–68 | Consent | – | – | _Foto lembar persetujuan setelah penjelasan (PSP)_ → `Consent.sourceAttachment` (67, tanpa BQ)<br>_Foto lembar pernyataan persetujuan (Tanda Tangan)_ → `Consent.sourceAttachment` (68, tanpa BQ) |

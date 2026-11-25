@@ -61,9 +61,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 39 | 540–553 | Observation | 289084000.0 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (543, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (552, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.category.coding` (553, tanpa BQ) |
 | 40 | 554–564 | Observation | SP000122 | Catat di Buku KIA | – |
 | 41 | 565–566 | MedicationDispense | – | – | _Diberikan Tablet FE_ → `MedicationDispense.status` (565, tanpa BQ) |
-| 42 | 567–581 | Medication | – | – | – |
+| 42 | 567–581 | Medication | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | – |
 | 43 | 582–587 | MedicationRequest | – | – | – |
-| 44 | 588–602 | Medication | – | – | – |
+| 44 | 588–602 | Medication | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | – |
 | 45 | 603–608 | MedicationDispense | – | – | – |
 | 46 | 609–642 | MedicationRequest | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | _Jumlah Tablet Fe yang didapatkan (butir)_ → `MedicationRequest.contained.resourceType` (609, tanpa BQ) |
 | 47 | 643–674 | MedicationDispense | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | – |

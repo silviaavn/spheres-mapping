@@ -61,9 +61,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 39 | 514–531 | Observation | SP000139 | KB Pasca Plasenta | _Metode Kontrasepsi KB Pasca Persalinan_ → `Observation.status` (530, tanpa BQ) |
 | 40 | 532–547 | Observation | PC000004 | KB Pasca Persalinan | – |
 | 41 | 548–549 | MedicationDispense | – | – | _Diberikan Tablet FE_ → `MedicationDispense.status` (548, tanpa BQ) |
-| 42 | 550–564 | Medication | – | – | – |
+| 42 | 550–564 | Medication | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | – |
 | 43 | 565–570 | MedicationRequest | – | – | – |
-| 44 | 571–585 | Medication | – | – | – |
+| 44 | 571–585 | Medication | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | – |
 | 45 | 586–591 | MedicationDispense | – | – | – |
 | 46 | 592–625 | MedicationRequest | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | _Jumlah Tablet Fe yang didapatkan (butir)_ → `MedicationRequest.contained.resourceType` (592, tanpa BQ) |
 | 47 | 626–657 | MedicationDispense | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | – |

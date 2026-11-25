@@ -20,7 +20,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 2–28 | QuestionnaireResponse | – | – | _Apakah anda melakukan aktivitas fisik (olahraga) minimal 150 menit per minggu secara terus menerus?_ → `QuestionnaireResponse.item.linkId` (12, tanpa BQ)<br>_Apakah anda melakukan cuci tangan dengan menggunakan sabun dan air mengalir atau dengan hand sanitizer setiap tangan kotor dan waktu nya mencuci tangan?_ → `QuestionnaireResponse.item.linkId` (16, tanpa BQ)<br>_Apakah anda mengonsumsi buah dan sayur minimal 3 porsi (2 porsi sayur dan 1 porsi buah) setiap hari?_ → `QuestionnaireResponse.item.linkId` (20, tanpa BQ)<br>_Apakah Saat Ini Anda Perokok Aktif?_ → `QuestionnaireResponse.item.linkId` (25, tanpa BQ) |
+| 1 | 2–28 | QuestionnaireResponse | https://fhir.kemkes.go.id/sp/Questionnaire/Q00051 | – | _Apakah anda melakukan aktivitas fisik (olahraga) minimal 150 menit per minggu secara terus menerus?_ → `QuestionnaireResponse.item.linkId` (12, tanpa BQ)<br>_Apakah anda melakukan cuci tangan dengan menggunakan sabun dan air mengalir atau dengan hand sanitizer setiap tangan kotor dan waktu nya mencuci tangan?_ → `QuestionnaireResponse.item.linkId` (16, tanpa BQ)<br>_Apakah anda mengonsumsi buah dan sayur minimal 3 porsi (2 porsi sayur dan 1 porsi buah) setiap hari?_ → `QuestionnaireResponse.item.linkId` (20, tanpa BQ)<br>_Apakah Saat Ini Anda Perokok Aktif?_ → `QuestionnaireResponse.item.linkId` (25, tanpa BQ) |
 
 ### Payload per resource
 

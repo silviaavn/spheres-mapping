@@ -14,6 +14,11 @@ from collections import Counter, OrderedDict
 PEMBEDA_RESOURCES = {"Condition", "EpisodeOfCare", "Observation", "Procedure", "ServiceRequest", "DiagnosticReport",
                      "Specimen", "Immunization", "MedicationRequest", "MedicationDispense"}
 PEMBEDA_PATHS = (".code.coding", ".type.coding", ".vaccineCode.coding")
+# Resource lain yang punya code: code-nya jadi pembeda payload (PractitionerRole sengaja tidak: tetap 1 payload).
+PEMBEDA_EXTRA = {"Medication": (".code", ".code.coding"), "MedicationStatement": (".medicationCodeableConcept.coding",),
+                 "Composition": (".type.coding",), "Consent": (".category", ".category.coding"),
+                 "DocumentReference": (".content.format",)}
+# QuestionnaireResponse dibedakan oleh URL kuesioner di QuestionnaireResponse.questionnaire (kolom Code atau CodeSystem).
 # Baris label yang bukan tempat nilai disimpan: cari baris nilai sesudahnya di blok yang sama.
 STRUCTURAL = re.compile(r"(\.status|\.use|\.system|\.url|\.category\.coding)$|^Observation\.code\.coding$")
 VALUE = re.compile(r"\.value([A-Z]\w*)?(\.coding)?$")
@@ -67,6 +72,14 @@ def build(data):
             if (current["res"] in PEMBEDA_RESOURCES and not current["code"] and d["jc"] == "1"
                     and d["path"].endswith(PEMBEDA_PATHS)):
                 current["code"], current["disp"] = d["code"], d["disp"]
+            elif (current["res"] in PEMBEDA_EXTRA and not current["code"] and d["jc"] == "1"
+                    and d["path"].endswith(PEMBEDA_EXTRA[current["res"]])):
+                current["code"], current["disp"] = d["code"], d["disp"]
+            elif (current["res"] == "QuestionnaireResponse" and not current["code"]
+                    and d["path"] == "QuestionnaireResponse.questionnaire"):
+                u = [x.strip() for x in (d["code"], d["cs"]) if "Questionnaire" in x]
+                if u:
+                    current["code"], current["disp"] = u[0], ""
         elif d["res"]:
             current = None  # blok resource lain: berhenti mengumpulkan
     # Variabel di blok lanjutan resource yang sama (mis. Encounter.serviceProvider di blok statusHistory)

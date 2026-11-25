@@ -43,7 +43,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 20 | 409–434 | MedicationDispense | 93018284 | Retinol Palmitate 100.000 IU Kapsul Lunak (Umum) | – |
 | 21 | 435–446 | Observation | SP000022 | KPSP | `kpsp` → `Observation.valueString` (438) |
 | 22 | 447–458 | Observation | SP000023 | KIA | `kia` → `Observation.valueString` (450) |
-| 23 | 459–470 | QuestionnaireResponse | – | – | `kelas_ibu_balita` → `QuestionnaireResponse.questionnaire` (459) |
+| 23 | 459–470 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0004 | – | `kelas_ibu_balita` → `QuestionnaireResponse.questionnaire` (459) |
 | 24 | 471–481 | Observation | SP000510 | Mendapat Makanan Bergizi Gratis (MBG) bulan ini | _Menerima MBG Bulan Ini_ → `Observation.status` (471, tanpa BQ)<br>`mbg` → `Observation.valueBoolean` (474) |
 
 ### Payload per resource

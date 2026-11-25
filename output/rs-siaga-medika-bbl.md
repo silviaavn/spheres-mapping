@@ -44,7 +44,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 22 | 298–308 | Procedure | SP000296 | Skrining Penyakit Jantung Bawaan | _Skrining PJB_ → `Procedure.category.coding` (298, tanpa BQ) |
 | 23 | 309–319 | Procedure | 408989004.0 | Newborn care management | _Tatalaksana Bayi Neonatus_ → `Procedure.category.coding` (309, tanpa BQ) |
 | 24 | 320–337 | Immunization | – | – | _Alasan Tidak Diberikan Vaksin HB0_ → `Immunization.status` (335, tanpa BQ) |
-| 25 | 338–349 | QuestionnaireResponse | – | – | _Kelas Ibu Balita_ → `QuestionnaireResponse.questionnaire` (338, tanpa BQ) |
+| 25 | 338–349 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0004 | – | _Kelas Ibu Balita_ → `QuestionnaireResponse.questionnaire` (338, tanpa BQ) |
 | 26 | 351–363 | ServiceRequest | 409014006.0 | Delivery care management | _Faskes Tujuan Rujukan_ → `ServiceRequest.performer.display` (362, tanpa BQ)<br>_Nama Faskes Rujukan_ → `ServiceRequest.locationCode.text` (363, tanpa BQ) |
 | 27 | 364–376 | Observation | 10206-1 | Physical findings of Skin Narrative | _Pemeriksaan Kulit_ → `Observation.valueString` (367, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Kulit_ → `Observation.interpretation.coding` (368, tanpa BQ) |
 | 28 | 377–389 | Observation | 10199-8 | Physical findings of Head Narrative | _Pemeriksaan Kepala_ → `Observation.valueString` (380, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Kepala_ → `Observation.interpretation.coding` (381, tanpa BQ) |

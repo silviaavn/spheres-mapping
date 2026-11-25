@@ -52,7 +52,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 30 | 417–430 | Observation | 249111004.0 | Engagement of head | _Kondisi Ketuban_ → `Observation.identifier.value` (430, tanpa BQ) |
 | 31 | 431–443 | Observation | 289282009.0 | Amniotic membrane finding | _Faktor risiko INC_ → `Observation.status` (443, tanpa BQ) |
 | 32 | 444–453 | Observation | SP000015 | Risiko Masalah Kesehatan | – |
-| 33 | 454–493 | QuestionnaireResponse | – | – | – |
+| 33 | 454–493 | QuestionnaireResponse | https://fhir.kemkes.go.id/sp/Questionnaire/Q0002 | – | – |
 | 34 | 494–507 | Observation | SP000123 | Integrasi Program | _Integrasi Program_ → `Observation.valueCodeableConcept.coding` (497, tanpa BQ) |
 | 35 | 508–529 | Observation | 72150-6 | Delivery location | _Tempat Melahirkan_ → `Observation.valueCodeableConcept.coding` (511, tanpa BQ) |
 | 36 | 545–559 | Observation | 76516-4 | Gestational age—​at birth | _Usia Kehamilan/ Gestasi pada saat Persalinan_ → `Observation.valueQuantity.value` (548, tanpa BQ) |
