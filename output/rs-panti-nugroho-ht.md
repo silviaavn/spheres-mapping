@@ -27,18 +27,18 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 5 | 71–81 | Condition | I10 | Essential (primary) hypertension | _KodeICD10Utama_ → `Condition.code.coding.code` (73, tanpa BQ)<br>_DiagnosisUtama_ → `Condition.code.coding.display` (74, tanpa BQ)<br>_TglTegakDiagnosis_ → `Condition.onsetDateTime` (81, tanpa BQ) |
 | 6 | 85–92 | Condition | – | – | _DiagnosisSekunder_ → `Condition.clinicalStatus.coding` (85, tanpa BQ) |
 | 7 | 96–111 | Condition | – | – | _RiwayatPenyakitDahulu_ → `Condition.clinicalStatus.coding` (96, tanpa BQ)<br>_RiwayatPenyakitSekarang_ → `Condition.clinicalStatus.coding` (104, tanpa BQ) |
-| 8 | 112–129 | Observation | 424144002.0 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (115, tanpa BQ) |
+| 8 | 112–129 | Observation | 424144002 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (115, tanpa BQ) |
 | 9 | 130–141 | Observation | 8480-6 | Systolic blood pressure | _TDSistolik_ → `Observation.valueQuantity.value` (133, tanpa BQ) |
 | 10 | 142–153 | Observation | 8462-4 | Diastolic blood pressure | _TDDiastolik_ → `Observation.valueQuantity.value` (145, tanpa BQ) |
-| 11 | 159–169 | ServiceRequest | 15220000.0 | Laboratory test | _HasilPemeriksaanLaboratorium_ → `ServiceRequest.category` (159, tanpa BQ) |
-| 12 | 170–176 | Specimen | 123038009.0 | Specimen | – |
-| 13 | 177–189 | Observation | 15220000.0 | Laboratory test | – |
-| 14 | 190–202 | DiagnosticReport | 15220000.0 | Laboratory test | – |
+| 11 | 159–169 | ServiceRequest | 15220000 | Laboratory test | _HasilPemeriksaanLaboratorium_ → `ServiceRequest.category` (159, tanpa BQ) |
+| 12 | 170–176 | Specimen | 123038009 | Specimen | – |
+| 13 | 177–189 | Observation | 15220000 | Laboratory test | – |
+| 14 | 190–202 | DiagnosticReport | 15220000 | Laboratory test | – |
 | 15 | 203–213 | Procedure | TK000028 | Diagnostic procedure | _PemeriksaanPenunjangLain_ → `Procedure.category.coding` (203, tanpa BQ) |
 | 16 | 223–235 | MedicationStatement | – | – | _RiwayatPenggunaanObat_ → `MedicationStatement.category.coding` (223, tanpa BQ)<br>_TerapiObat_ → `MedicationStatement.category.coding` (233, tanpa BQ) |
 | 17 | 236–240 | MedicationStatement | – | – | – |
-| 18 | 241–251 | Procedure | 277132007.0 | Therapeutic procedure | _TerapiTindakan_ → `Procedure.category.coding` (241, tanpa BQ) |
-| 19 | 252–264 | ServiceRequest | 736286003.0 | Hypertension clinical management plan | _RencanaTindakLanjut_ → `ServiceRequest.status` (252, tanpa BQ) |
+| 18 | 241–251 | Procedure | 277132007 | Therapeutic procedure | _TerapiTindakan_ → `Procedure.category.coding` (241, tanpa BQ) |
+| 19 | 252–264 | ServiceRequest | 736286003 | Hypertension clinical management plan | _RencanaTindakLanjut_ → `ServiceRequest.status` (252, tanpa BQ) |
 | 20 | 265–274 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | _GDS_Tertinggi_ → `Observation.status` (265, tanpa BQ) |
 | 21 | 275–284 | Observation | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | _GDP_Tertinggi_ → `Observation.status` (275, tanpa BQ) |
 | 22 | 285–293 | Observation | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | _HBA1C_Tertinggi_ → `Observation.status` (285, tanpa BQ) |
@@ -66,24 +66,24 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 36 | PractitionerRole | `PractitionerRole.code.coding` | 69280009.0 | Specialized physician | http://snomed.info/sct |
-| 2 | 37 | PractitionerRole | `PractitionerRole.code.coding` | 59058001.0 | General physician | http://snomed.info/sct |
+| 1 | 36 | PractitionerRole | `PractitionerRole.code.coding` | 69280009 | Specialized physician | http://snomed.info/sct |
+| 2 | 37 | PractitionerRole | `PractitionerRole.code.coding` | 59058001 | General physician | http://snomed.info/sct |
 | 3 | 67 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 4 | 68 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000925 | Rujukan dari Klinik | http://terminology.kemkes.go.id/sp |
-| 5 | 69 | Encounter | `Encounter.hospitalization.admitSource.coding` | 305956004.0 | Referral by physician | http://snomed.info/sct |
+| 5 | 69 | Encounter | `Encounter.hospitalization.admitSource.coding` | 305956004 | Referral by physician | http://snomed.info/sct |
 | 6 | 76 | Condition | `Condition.code.coding` | I10 | Essential (primary) hypertension | http://hl7.org/fhir/sid/icd-10 |
-| 7 | 114 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 7 | 114 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 8 | 117 | Observation | `Observation.component.code.coding` | SP000020 | Umur Bulan | http://terminology.kemkes.go.id/sp |
 | 9 | 120 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
 | 10 | 132 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://snomed.info/sct |
 | 11 | 144 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://snomed.info/sct |
-| 12 | 163 | ServiceRequest | `ServiceRequest.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
-| 13 | 171 | Specimen | `Specimen.type.coding` | 123038009.0 | Specimen | http://snomed.info/sct |
-| 14 | 179 | Observation | `Observation.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
-| 15 | 192 | DiagnosticReport | `DiagnosticReport.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
+| 12 | 163 | ServiceRequest | `ServiceRequest.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 13 | 171 | Specimen | `Specimen.type.coding` | 123038009 | Specimen | http://snomed.info/sct |
+| 14 | 179 | Observation | `Observation.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 15 | 192 | DiagnosticReport | `DiagnosticReport.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
 | 16 | 205 | Procedure | `Procedure.code.coding` | TK000028 | Diagnostic procedure | http://terminology.kemkes.go.id |
-| 17 | 243 | Procedure | `Procedure.code.coding` | 277132007.0 | Therapeutic procedure | http://snomed.info/sct |
-| 18 | 256 | ServiceRequest | `ServiceRequest.code.coding` | 736286003.0 | Hypertension clinical management plan | http://snomed.info/sct |
+| 17 | 243 | Procedure | `Procedure.code.coding` | 277132007 | Therapeutic procedure | http://snomed.info/sct |
+| 18 | 256 | ServiceRequest | `ServiceRequest.code.coding` | 736286003 | Hypertension clinical management plan | http://snomed.info/sct |
 | 19 | 267 | Observation | `Observation.code.coding` | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
 | 20 | 277 | Observation | `Observation.code.coding` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
 | 21 | 287 | Observation | `Observation.code.coding` | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | http://loinc.org |

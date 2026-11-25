@@ -38,10 +38,10 @@ Lokasi Pelayanan,,tempat_anc,,Tempat ANC,string,,,Nama lokasi/poli tempat ANC,,L
 ,,,,,,,,,,Location,Location.managingOrganization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 Tenaga Pemeriksa,,nama_tenaga_pemeriksa,,Nama Tenaga Pemeriksa,string,,,Nama tenaga pemeriksa ANC,,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Practitioner,Practitioner.active,True,Tidak ada,Tidak ada,,,
-,,tenaga_pemeriksa,,Tenaga Pemeriksa (Role),code,,Midwife,Peran/profesi tenaga pemeriksa,,PractitionerRole,PractitionerRole.code.coding,309453006.0,Registered midwife,http://snomed.info/sct,,1,1
-,,tenaga_pemeriksa,,,,,Doctor DPJP,,,PractitionerRole,PractitionerRole.code.coding,309367003.0,Obstetrician and gynecologist,http://snomed.info/sct,,1,
-,,tenaga_pemeriksa,,,,,Nurse,,,PractitionerRole,PractitionerRole.code.coding,224535009.0,Registered nurse,http://snomed.info/sct,,1,
-,,tenaga_pemeriksa,,,,,nutritionists,,,PractitionerRole,PractitionerRole.code.coding,768827000.0,Nutritionist,http://snomed.info/sct,,1,
+,,tenaga_pemeriksa,,Tenaga Pemeriksa (Role),code,,Midwife,Peran/profesi tenaga pemeriksa,,PractitionerRole,PractitionerRole.code.coding,309453006,Registered midwife,http://snomed.info/sct,,1,1
+,,tenaga_pemeriksa,,,,,Doctor DPJP,,,PractitionerRole,PractitionerRole.code.coding,309367003,Obstetrician and gynecologist,http://snomed.info/sct,,1,
+,,tenaga_pemeriksa,,,,,Nurse,,,PractitionerRole,PractitionerRole.code.coding,224535009,Registered nurse,http://snomed.info/sct,,1,
+,,tenaga_pemeriksa,,,,,nutritionists,,,PractitionerRole,PractitionerRole.code.coding,768827000,Nutritionist,http://snomed.info/sct,,1,
 ,,nama_tenaga_pemeriksa,,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,faskes,,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 DPJP,,nik_dpjp,,NIK DPJP,string,,,NIK dokter DPJP,,Practitioner,Practitioner.identifier.value,Tidak ada,Tidak ada,Tidak ada,,,1
@@ -51,7 +51,7 @@ DPJP,,nik_dpjp,,NIK DPJP,string,,,NIK dokter DPJP,,Practitioner,Practitioner.ide
 ,,jenis_kelamin_dpjp,,Jenis Kelamin DPJP,code,,l,Jenis kelamin DPJP,,Practitioner,Practitioner.gender,male,Tidak ada,Tidak ada,,,
 ,,jenis_kelamin_dpjp,,,,,p,,,Practitioner,Practitioner.gender,female,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Practitioner,Practitioner.active,True,Tidak ada,Tidak ada,,,
-,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,309367003.0,Obstetrician and gynecologist,http://snomed.info/sct,,1,1
+,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,309367003,Obstetrician and gynecologist,http://snomed.info/sct,,1,1
 ,,employee_name_dpjp,,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner (DPJP),Tidak ada,Tidak ada,,,
 ,,faskes,,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 EpisodeOfCare ANC,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.type.coding,ANC,Antenatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,1,1
@@ -90,7 +90,7 @@ Data Kunjungan,,no_pendaftaran,,Nomor Pendaftaran,string,,,Nomor pendaftaran kun
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,Tidak ada,Tidak ada,,,
 ,,faskes,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 Diagnosa,,nama_icdx,,Diagnosa ICD-X,string,,,"Diagnosa ANC; jika ada pola 'X## - ' ekstrak kodenya, jika teks saja rekomendasikan ICD-10, jika kosong pakai default SNOMED 134435003",,Condition,Condition.code.coding,[ekstrak dari nama_icdx],[deskripsi dari nama_icdx],http://hl7.org/fhir/sid/icd-10,,,1
-,,,,,,,,,,Condition,Condition.code.coding,134435003.0,Routine antenatal care,http://snomed.info/sct,,1,
+,,,,,,,,,,Condition,Condition.code.coding,134435003,Routine antenatal care,http://snomed.info/sct,,1,
 ,,nama_icdx,,,,,,,,Condition,Condition.code.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
@@ -200,10 +200,10 @@ Obstetri,Kehamilan Terakhir,kehamilan_terakhir,,Tanggal Kehamilan Terakhir,date,
 Obstetri,Presentasi Janin,letak_presentasi,,Letak/Presentasi Janin,code,,,"Letak/presentasi janin (data saat ini kosong, dipetakan utk antisipasi data mendatang)",,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,1
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE111,Fetal presentation,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,letak_presentasi,,,,,Kepala,,,Observation,Observation.valueCodeableConcept.coding,1209182005.0,Cephalic fetal presentation,http://snomed.info/sct,,1,
-,,letak_presentasi,,,,,Sungsang,,,Observation,Observation.valueCodeableConcept.coding,6096002.0,Breech presentation,http://snomed.info/sct,,1,
-,,letak_presentasi,,,,,Lintang,,,Observation,Observation.valueCodeableConcept.coding,73161006.0,Transverse lie,http://snomed.info/sct,,1,
-,,letak_presentasi,,,,,Oblique,,,Observation,Observation.valueCodeableConcept.coding,63750008.0,Oblique lie,http://snomed.info/sct,,1,
+,,letak_presentasi,,,,,Kepala,,,Observation,Observation.valueCodeableConcept.coding,1209182005,Cephalic fetal presentation,http://snomed.info/sct,,1,
+,,letak_presentasi,,,,,Sungsang,,,Observation,Observation.valueCodeableConcept.coding,6096002,Breech presentation,http://snomed.info/sct,,1,
+,,letak_presentasi,,,,,Lintang,,,Observation,Observation.valueCodeableConcept.coding,73161006,Transverse lie,http://snomed.info/sct,,1,
+,,letak_presentasi,,,,,Oblique,,,Observation,Observation.valueCodeableConcept.coding,63750008,Oblique lie,http://snomed.info/sct,,1,
 ,,letak_presentasi,,,,,Lainnya,,,Observation,Observation.valueCodeableConcept.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
 ,,nama,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,Tidak ada,Tidak ada,,,
@@ -235,9 +235,9 @@ Farmasi,,obat,,Obat,string,,,"Obat/item yang diberikan (multi-item dipisah koma,
 ,,"tgl_pendaftaran, tgl_entri",,,,,,,,MedicationStatement,MedicationStatement.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,nama_tenaga_pemeriksa,,,,,,,,MedicationStatement,MedicationStatement.informationSource.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,no_pendaftaran,,,,,,,,MedicationStatement,MedicationStatement.context.reference,Reference ke resources Encounter,Tidak ada,Tidak ada,,,
-Tindakan,,tindakan,,Tindakan,string,,,"Tindakan/prosedur (multi-item dipisah koma); kolom bercampur (askep, konsultasi, USG, rawat luka) sehingga code & category memakai kode generik, nama asli di code.text",,Procedure,Procedure.code.coding,71388002.0,Procedure,http://snomed.info/sct,,1,1
+Tindakan,,tindakan,,Tindakan,string,,,"Tindakan/prosedur (multi-item dipisah koma); kolom bercampur (askep, konsultasi, USG, rawat luka) sehingga code & category memakai kode generik, nama asli di code.text",,Procedure,Procedure.code.coding,71388002,Procedure,http://snomed.info/sct,,1,1
 ,,tindakan,,,,,,,,Procedure,Procedure.code.text,[nama tindakan],Tidak ada,Tidak ada,,,
-,,,,,,,,,,Procedure,Procedure.category.coding,71388002.0,Procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.category.coding,71388002,Procedure,http://snomed.info/sct,,,
 ,,,,,,,,,,Procedure,Procedure.status,completed,Tidak ada,Tidak ada,,,
 ,,nama,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,Tidak ada,Tidak ada,,,
 ,,nama,,,,,,,,Procedure,Procedure.subject.display,Tidak ada,Tidak ada,Tidak ada,,,

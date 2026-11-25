@@ -20,19 +20,19 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 3–9 | CarePlan | – | – | – |
+| 1 | 3–9 | CarePlan | 773430001 | Obstetric care plan | – |
 | 2 | 10–13 | Patient | – | – | _Saya (Nama Ibu)_ → `Patient.name.text` (11, tanpa BQ)<br>_Alamat_ → `Patient.address.line` (13, tanpa BQ)<br>_Nama Ibu_ → `Patient.name.text` (94, tanpa BQ)<br>_NIK Ibu_ → `Patient.identifier.use` (95, tanpa BQ)<br>_Jenis Kelamin Ibu_ → `Patient.gender` (98, tanpa BQ)<br>_Nama Anak_ → `Patient.name.text` (100, tanpa BQ)<br>_NIK Anak_ → `Patient.identifier.use` (101, tanpa BQ)<br>_Jenis Kelamin Anak_ → `Patient.gender` (105, tanpa BQ)<br>_Diberi nama (nama bayi)_ → `Patient.name.text` (445, tanpa BQ)<br>_Alamat (nama jalan)_ → `Patient.address.line` (447, tanpa BQ)<br>_RT_ → `Patient.address.extension.extension.url` (449, tanpa BQ)<br>_RW_ → `Patient.address.extension.extension.url` (452, tanpa BQ)<br>_Kecamatan_ → `Patient.address.extension.extension.url` (455, tanpa BQ)<br>_Kab./Kota_ → `Patient.address.extension.extension.url` (458, tanpa BQ) |
-| 3 | 14–17 | CarePlan | – | – | _Bulan, tahun (HPL)_ → `CarePlan.supportingInfo.reference` (17, tanpa BQ) |
+| 3 | 14–17 | CarePlan | tanpa-code-3a5a88 | CarePlan tanpa category/code | _Bulan, tahun (HPL)_ → `CarePlan.supportingInfo.reference` (17, tanpa BQ) |
 | 4 | 18–29 | Observation | 11778-8 | Delivery date Estimated | – |
-| 5 | 30–30 | CarePlan | – | – | _Asuransi_ → `CarePlan.supportingInfo.reference` (30, tanpa BQ) |
+| 5 | 30–30 | CarePlan | tanpa-code-3fc758 | CarePlan tanpa category/code | _Asuransi_ → `CarePlan.supportingInfo.reference` (30, tanpa BQ) |
 | 6 | 31–39 | Coverage | – | – | – |
-| 7 | 41–49 | CarePlan | – | – | _Bidan/dokter_ → `CarePlan.activity.detail.performer.display` (44, tanpa BQ)<br>_Nama fasyankes_ → `CarePlan.activity.detail.performer.display` (46, tanpa BQ)<br>_Untuk kendaraan/ambulan desa oleh_ → `CarePlan.activity.detail.code.coding` (48, tanpa BQ) |
+| 7 | 41–49 | CarePlan | 236973005 | Delivery procedure | _Bidan/dokter_ → `CarePlan.activity.detail.performer.display` (44, tanpa BQ)<br>_Nama fasyankes_ → `CarePlan.activity.detail.performer.display` (46, tanpa BQ)<br>_Untuk kendaraan/ambulan desa oleh_ → `CarePlan.activity.detail.code.coding` (48, tanpa BQ) |
 | 8 | 50–53 | Practitioner | – | – | _(Nama PJ Ambulans)_ → `Practitioner.name.text` (50, tanpa BQ)<br>_HP (No HP PJ Ambulans)_ → `Practitioner.telecom` (51, tanpa BQ) |
-| 9 | 54–56 | CarePlan | – | – | _Untuk sumbangan darah ..._ → `CarePlan.activity.detail.code.coding` (55, tanpa BQ) |
+| 9 | 54–56 | CarePlan | 105470007 | Blood donor | _Untuk sumbangan darah ..._ → `CarePlan.activity.detail.code.coding` (55, tanpa BQ) |
 | 10 | 57–70 | Observation | 883-9 | ABO group [Type] in Blood | _Golongan darah_ → `Observation.valueCodeableConcept.coding` (61, tanpa BQ) |
-| 11 | 71–71 | CarePlan | – | – | – |
+| 11 | 71–71 | CarePlan | tanpa-code-baris71 | CarePlan tanpa category/code | – |
 | 12 | 72–84 | Observation | 10331-7 | Rh [Type] in Blood | _Rhesus_ → `Observation.valueCodeableConcept.coding` (76, tanpa BQ) |
-| 13 | 85–86 | CarePlan | – | – | _Dibantu oleh_ → `CarePlan.activity.detail.performer.reference` (85, tanpa BQ) |
+| 13 | 85–86 | CarePlan | tanpa-code-e66e84 | CarePlan tanpa category/code | _Dibantu oleh_ → `CarePlan.activity.detail.performer.reference` (85, tanpa BQ) |
 | 14 | 87–92 | RelatedPerson | – | – | _(Nama Penyumbang Darah)_ → `RelatedPerson.name.text` (88, tanpa BQ)<br>_HP (No HP Penyumbang Darah)_ → `RelatedPerson.telecom` (89, tanpa BQ) |
 | 15 | 107–122 | Encounter | – | – | _Encounter INC_ → `Encounter.identifier` (107, tanpa BQ)<br>_Encounter bayi_ → `Encounter.identifier` (167, tanpa BQ) |
 | 16 | 123–130 | Condition | 386337006 | Intrapartal care | – |

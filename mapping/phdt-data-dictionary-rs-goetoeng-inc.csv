@@ -108,12 +108,12 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
-,,,,,,,,,,Condition,Condition.code.coding,386337006.0,Intrapartal care,http://snomed.info/sct,,1,
+,,,,,,,,,,Condition,Condition.code.coding,386337006,Intrapartal care,http://snomed.info/sct,,1,
 ,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,TGLMASUK,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
-,,,KETRUJUK,Keterangan Rujuk,kategorik,,DATANG SENDIRI,,,Encounter,Encounter.hospitalization.admitSource.coding,1991000124105.0,Referred by self,http://snomed.info/sct,,1,
+,,,KETRUJUK,Keterangan Rujuk,kategorik,,DATANG SENDIRI,,,Encounter,Encounter.hospitalization.admitSource.coding,1991000124105,Referred by self,http://snomed.info/sct,,1,
 ,,,KETRUJUK,,,,DOKTER PRAKTIK,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000814,Rujukan dari Dokter Praktik Mandiri,http://terminology.kemkes.go.id/sp,,1,
 ,,,KETRUJUK,,,,PUSKESMAS,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000117,Rujukan dari Puskesmas,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,PUSKESMAS ~ PUSKESMAS BOBOTSARI,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000117,Rujukan dari Puskesmas,http://terminology.kemkes.go.id/sp,,1,
@@ -143,11 +143,11 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,TINDAK LANJUT,TINDAK LANJUT,kategorik,,Pulang Diijinkan Dokter,,,Encounter,Encounter.hospitalization.dischargeDisposition.coding,home,Home,http://terminology.hl7.org/CodeSystem/discharge-disposition,,,
 ,,,,,,,,,,Encounter,Encounter.hospitalization.dischargeDisposition.text,Tidak Ada,Pulang Diijinkan Dokter,Tidak Ada,,,
 ,,,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,
-,,,,TINDAK LANJUT,kategorik,,,,,ServiceRequest,ServiceRequest.category,3457005.0,Patient referral,http://snomed.info/sct,,,1
+,,,,TINDAK LANJUT,kategorik,,,,,ServiceRequest,ServiceRequest.category,3457005,Patient referral,http://snomed.info/sct,,,1
 ,,,,,,,,,,ServiceRequest,ServiceRequest.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.intent,original-order,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.priority,routine,Tidak ada,Tidak ada,,,
-,,,TINDAK LANJUT,,,,Kontrol Kembali,,,ServiceRequest,ServiceRequest.code,185389009.0,Follow-up visit,http://snomed.info/sct,,1,
+,,,TINDAK LANJUT,,,,Kontrol Kembali,,,ServiceRequest,ServiceRequest.code,185389009,Follow-up visit,http://snomed.info/sct,,1,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,ServiceRequest,ServiceRequest.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.encounter.reference,Reference ke resources Encounter,,,,,
@@ -174,7 +174,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Coverage,Coverage.class.name,Tidak Ada,Kelas 3,Tidak Ada,,,
 ,,,,Umur,year,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,
 ,,,UMUR,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,a,year,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -187,17 +187,17 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,PENDIDIKAN,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,82589-3,Highest level of education,http://loinc.org,,1,
-,,,PENDIDIKAN,,,BELUM TAMAT SD/SEDERAJAT,,,,Observation,Observation.valueCodeableConcept.coding,224294005.0,No formal education,http://snomed.info/sct,,1,
-,,,PENDIDIKAN,,,SD,,,,Observation,Observation.valueCodeableConcept.coding,473463000.0,Received elementary school education,http://snomed.info/sct,,1,
-,,,PENDIDIKAN,,,SMP / MTs,,,,Observation,Observation.valueCodeableConcept.coding,603435002.0,Educated to junior high school level,http://snomed.info/sct,,1,
-,,,PENDIDIKAN,,,SMA / MA / SMK,,,,Observation,Observation.valueCodeableConcept.coding,603434003.0,Educated to senior high school level,http://snomed.info/sct,,1,
-,,,PENDIDIKAN,,,DIPLOMA 1/2,,,,Observation,Observation.valueCodeableConcept.coding,38901000087109.0,University diploma achieved,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,BELUM TAMAT SD/SEDERAJAT,,,,Observation,Observation.valueCodeableConcept.coding,224294005,No formal education,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,SD,,,,Observation,Observation.valueCodeableConcept.coding,473463000,Received elementary school education,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,SMP / MTs,,,,Observation,Observation.valueCodeableConcept.coding,603435002,Educated to junior high school level,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,SMA / MA / SMK,,,,Observation,Observation.valueCodeableConcept.coding,603434003,Educated to senior high school level,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,DIPLOMA 1/2,,,,Observation,Observation.valueCodeableConcept.coding,38901000087109,University diploma achieved,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueCodeableConcept.text,Tidak Ada,DIPLOMA 1/2,Tidak Ada,,,
-,,,PENDIDIKAN,,,DIPLOMA III,,,,Observation,Observation.valueCodeableConcept.coding,38901000087109.0,University diploma achieved,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,DIPLOMA III,,,,Observation,Observation.valueCodeableConcept.coding,38901000087109,University diploma achieved,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueCodeableConcept.text,Tidak Ada,DIPLOMA III,Tidak Ada,,,
-,,,PENDIDIKAN,,,SARJANA / D4,,,,Observation,Observation.valueCodeableConcept.coding,38861000087100.0,Bachelor's degree achieved,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,SARJANA / D4,,,,Observation,Observation.valueCodeableConcept.coding,38861000087100,Bachelor's degree achieved,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueCodeableConcept.text,Tidak Ada,SARJANA / D4,Tidak Ada,,,
-,,,PENDIDIKAN,,,LAIN-LAIN,,,,Observation,Observation.valueCodeableConcept.coding,74964007.0,Other,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,LAIN-LAIN,,,,Observation,Observation.valueCodeableConcept.coding,74964007,Other,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -412,51 +412,51 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,DPJP,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,KODE ICD9,,74.4 | SC,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,KODE ICD9,,74.4 | SC,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,74.4,Cesarean section of other specified type,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,69.7 | KB IUD,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,69.7 | KB IUD,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,69.7,Insertion of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,73.4 | induksi,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,73.4 | induksi,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,73.4,Medical induction of labor,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,90.59 | lab,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,90.59 | lab,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.59,"Microscopic examination of blood, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,88.78 | usg hamil,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,88.78 | usg hamil,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.78,Diagnostic ultrasound of gravid uterus,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,75.32 | ctg,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,75.32 | ctg,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.32,Fetal EKG (scalp),http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,91.39 | urin,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,91.39 | urin,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,91.39,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,89.52 | ekg,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,89.52 | ekg,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,66.39 | MOW,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,66.39 | MOW,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,66.39,Other bilateral destruction or occlusion of fallopian tubes,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,99.04 | transfusi,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,99.04 | transfusi,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.04,Transfusion of packed cells,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,69.7 | KB Implant,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,69.7 | KB Implant,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,69.7,Insertion of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,90.52,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,90.52,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.52,"Microscopic examination of blood, Culture",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,88.09,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,88.09,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,97.71,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,97.71,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,97.71,Removal of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,65.29,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,65.29,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,65.29,Other local excision or destruction of ovary,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,69.02 | curet,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,69.02 | curet,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,69.02,Dilation and curettage following delivery or abortion,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,57.94,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,57.94,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,57.94,Insertion of indwelling urinary catheter,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,70.79 | rekonstruksi vagina,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,70.79 | rekonstruksi vagina,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,70.79,Other repair of vagina,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,75.69 | reclosing jahitan perineum,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,75.69 | reclosing jahitan perineum,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.69,Repair of other current obstetric laceration,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,73.59 | partus spontan,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,73.59 | partus spontan,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,73.59,Other manually assisted delivery,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,72.79 | VE / vacuum ekstraksi,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,72.79 | VE / vacuum ekstraksi,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,73.59,Other manually assisted delivery,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,75.51 | reheacting cervix,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,75.51 | reheacting cervix,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.51,Repair of current obstetric laceration of cervix,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,75.69 | reheacting perineum,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,75.69 | reheacting perineum,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.69,Repair of other current obstetric laceration,http://hl7.org/fhir/sid/icd-9-cm,,1,
 ,,,,Tindakan,string,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
@@ -467,60 +467,60 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,DPJP,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,PROSEDUR KLINIS,,Cesarean section of other specified type,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,PROSEDUR KLINIS,,Cesarean section of other specified type,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,74.4,Cesarean section of other specified type,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Insertion of intrauterine contraceptive device,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Insertion of intrauterine contraceptive device,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,69.7,Insertion of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Medical induction of labor,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Medical induction of labor,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,73.4,Medical induction of labor,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,"Microscopic examination of blood, Other microscopic examination",,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,"Microscopic examination of blood, Other microscopic examination",,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.59,"Microscopic examination of blood, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Diagnostic ultrasound of gravid uterus,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Diagnostic ultrasound of gravid uterus,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.78,Diagnostic ultrasound of gravid uterus,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,"Microscopic examination of specimen from lower gastrointestinal tract and of stool, Toxicology",,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,"Microscopic examination of specimen from lower gastrointestinal tract and of stool, Toxicology",,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.95,"Microscopic examination of specimen from lower gastrointestinal tract and of stool, Toxicology",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Fetal EKG (scalp),,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Fetal EKG (scalp),,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.32,Fetal EKG (scalp),http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Electrocardiogram,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Electrocardiogram,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,"Microscopic examination of specimen from bladder, urethra, prostate, seminal vesicle, perivesical tissue, and of urine and semen",,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,"Microscopic examination of specimen from bladder, urethra, prostate, seminal vesicle, perivesical tissue, and of urine and semen",,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,91.3,"Microscopic examination of specimen from bladder, urethra, prostate,seminal vesicle, perivesical tissue, and of urine and semen",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Transfusion of packed cells,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Transfusion of packed cells,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.04,Transfusion of packed cells,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Other bilateral destruction or occlusion of fallopian tubes,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Other bilateral destruction or occlusion of fallopian tubes,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,66.39,Other bilateral destruction or occlusion of fallopian tubes,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,"Routine chest x-ray, so described",,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,"Routine chest x-ray, so described",,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,"Microscopic examination of blood, Culture",,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,"Microscopic examination of blood, Culture",,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.52,"Microscopic examination of blood, Culture",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Other soft tissue x-ray of abdominal wall,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Other soft tissue x-ray of abdominal wall,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Other local excision or destruction of ovary,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Other local excision or destruction of ovary,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,65.29,Other local excision or destruction of ovary,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Removal of intrauterine contraceptive device,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Removal of intrauterine contraceptive device,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,97.71,Removal of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Electrocardiogram,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Electrocardiogram,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Removal of intrauterine contraceptive device,,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,Removal of intrauterine contraceptive device,,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,97.71,Removal of intrauterine contraceptive device,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Other manually assisted delivery,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Other manually assisted delivery,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,73.59,Other manually assisted delivery,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Dilation and curettage following delivery or abortion,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Dilation and curettage following delivery or abortion,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,69.02,Dilation and curettage following delivery or abortion,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Repair of current obstetric laceration of cervix,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Repair of current obstetric laceration of cervix,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.51,Repair of current obstetric laceration of cervix,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Episiotomy,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Episiotomy,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,73.6,Episiotomy,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Repair of other current obstetric laceration,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Repair of other current obstetric laceration,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.69,Repair of other current obstetric laceration,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Other vacuum extraction,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Other vacuum extraction,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,72.79,Other vacuum extraction,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,Evacuation of other hematoma of vulva or vagina,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,Evacuation of other hematoma of vulva or vagina,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,75.92,Evacuation of other hematoma of vulva or vagina,http://hl7.org/fhir/sid/icd-9-cm,,1,
 ,,,,KEADAAN PASIEN,kategorik,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-category,,,
-,,,,,,Membaik,,,,Condition,Condition.code.coding,268910001.0,Patient's condition improved,http://snomed.info/sct,,1,
-,,,,,,Sembuh,,,,Condition,Condition.code.coding,371001000.0,Patient cured,http://snomed.info/sct,,1,
+,,,,,,Membaik,,,,Condition,Condition.code.coding,268910001,Patient's condition improved,http://snomed.info/sct,,1,
+,,,,,,Sembuh,,,,Condition,Condition.code.coding,371001000,Patient cured,http://snomed.info/sct,,1,
 ,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
@@ -529,7 +529,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,DPJP,,string,,,,,Condition,Condition.recorder.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,LAMA RAWAT (HARI),numerik,day,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,183797002.0,Duration of inpatient stay,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,183797002,Duration of inpatient stay,http://snomed.info/sct,,1,
 ,,,LAMA RAWAT (HARI),,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,d,day,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -542,10 +542,10 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,VIA,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000811,Jalur Masuk Rawat Inap,http://terminology.kemkes.go.id/sp,,1,
-,,,VIA,,,,IGD (VK),,,Observation,Observation.valueCodeableConcept.coding,225728007.0,Accident and Emergency department,http://snomed.info/sct,,1,
-,,,VIA,,,,KANDUNGAN,,,Observation,Observation.valueCodeableConcept.coding,309942007.0,Obstetrics and gynecology department,http://snomed.info/sct,,1,
-,,,VIA,,,,OBSERVASI,,,Observation,Observation.valueCodeableConcept.coding,1363029004.0,Hospital observation unit,http://snomed.info/sct,,1,
-,,,VIA,,,,VK,,,Observation,Observation.valueCodeableConcept.coding,405606005.0,Labor and delivery unit,http://snomed.info/sct,,1,
+,,,VIA,,,,IGD (VK),,,Observation,Observation.valueCodeableConcept.coding,225728007,Accident and Emergency department,http://snomed.info/sct,,1,
+,,,VIA,,,,KANDUNGAN,,,Observation,Observation.valueCodeableConcept.coding,309942007,Obstetrics and gynecology department,http://snomed.info/sct,,1,
+,,,VIA,,,,OBSERVASI,,,Observation,Observation.valueCodeableConcept.coding,1363029004,Hospital observation unit,http://snomed.info/sct,,1,
+,,,VIA,,,,VK,,,Observation,Observation.valueCodeableConcept.coding,405606005,Labor and delivery unit,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -555,7 +555,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,DPJP,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,P.BARU,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,184061005.0,Patient registration status,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,184061005,Patient registration status,http://snomed.info/sct,,1,
 ,,,P.BARU,,,,BARU,,,Observation,Observation.valueCodeableConcept.coding,SP000812,Pasien Baru,http://terminology.kemkes.go.id/sp,,1,
 ,,,P.BARU,,,,LAMA,,,Observation,Observation.valueCodeableConcept.coding,SP000813,Pasien Lama,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,

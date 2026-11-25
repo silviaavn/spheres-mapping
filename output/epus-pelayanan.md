@@ -30,16 +30,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 7 | 90–91 | Observation | 51848-0 | Evaluation note | _SOAP Assesment_ → `Observation.category.coding` (90, tanpa BQ) |
 | 8 | 92–93 | Observation | 61150-9 | Subjective Narrative | _SOAP Subjective_ → `Observation.category.coding` (92, tanpa BQ) |
 | 9 | 94–95 | Observation | 72225-6 | Objective Narrative | _SOAP Object_ → `Observation.category.coding` (94, tanpa BQ) |
-| 10 | 96–96 | CarePlan | – | – | _SOAP Planning_ → `CarePlan.category.coding` (96, tanpa BQ) |
+| 10 | 96–96 | CarePlan | 736271009 | Outpatient care plan | _SOAP Planning_ → `CarePlan.category.coding` (96, tanpa BQ) |
 | 11 | 97–99 | Condition | – | – | _Keluhan Utama_ → `Condition.category.coding` (97, tanpa BQ) |
 | 12 | 102–103 | Condition | – | – | _Keluhan Tambahan_ → `Condition.category.coding` (102, tanpa BQ) |
 | 13 | 104–105 | Observation | 77977-7 | Illness duration | _Lama Sakit_ → `Observation.category.coding` (104, tanpa BQ) |
 | 14 | 106–109 | Observation | 72166-2 | Tobacco smoking status | _Merokok_ → `Observation.category.coding` (106, tanpa BQ) |
 | 15 | 110–113 | Observation | 11331-6 | History of Alcohol use | _Konsumsi Alkohol_ → `Observation.category.coding` (110, tanpa BQ) |
 | 16 | 114–117 | Observation | 878899005 | Inadequate intake of plant fiber | _Kurang Sayur_ → `Observation.valueBoolean` (116, tanpa BQ) |
-| 17 | 118–118 | CarePlan | – | – | _Terapi_ → `CarePlan.category.coding` (118, tanpa BQ) |
+| 17 | 118–118 | CarePlan | 736271009 | Outpatient care plan | _Terapi_ → `CarePlan.category.coding` (118, tanpa BQ) |
 | 18 | 119–121 | Procedure | 84635008 | Disease process or condition education | _Edukasi_ → `Procedure.category.coding` (119, tanpa BQ) |
-| 19 | 122–123 | CarePlan | – | – | _Tindakan Keperawatan_ → `CarePlan.category.coding` (122, tanpa BQ)<br>_Keterangan_ → `CarePlan.note` (123, tanpa BQ) |
+| 19 | 122–123 | CarePlan | 736271009 | Outpatient care plan | _Tindakan Keperawatan_ → `CarePlan.category.coding` (122, tanpa BQ)<br>_Keterangan_ → `CarePlan.note` (123, tanpa BQ) |
 | 20 | 124–126 | Condition | – | – | _RPS_ → `Condition.category.coding` (124, tanpa BQ) |
 | 21 | 127–129 | Condition | – | – | _RPD_ → `Condition.category.coding` (127, tanpa BQ) |
 | 22 | 130–131 | FamilyMemberHistory | – | – | _RPK_ → `FamilyMemberHistory.relationship.coding` (130, tanpa BQ) |

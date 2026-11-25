@@ -34,7 +34,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 12 | 141–154 | Observation | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | _Pilih alasan tidak mempunyai Nomor Induk Kependudukan (NIK)_ → `Observation.valueCodeableConcept.coding` (144, tanpa BQ) |
 | 13 | 155–166 | Observation | SP000402 | Kepemilikan Nomor Induk Kependudukan | _Nomor ID anak_ → `Observation.valueBoolean` (158, tanpa BQ) |
 | 14 | 167–182 | Observation | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | _Alasan tidak ada ID anak_ → `Observation.valueCodeableConcept.coding` (170, tanpa BQ)<br>_Sebutkan alasan lainnya_ → `Observation.valueCodeableConcept.text` (175, tanpa BQ) |
-| 15 | 203–214 | Observation | 424144002.0 | Current chronological age | _Isi usia anak dalam minggu_ → `Observation.valueQuantity.value` (206, tanpa BQ) |
+| 15 | 203–214 | Observation | 424144002 | Current chronological age | _Isi usia anak dalam minggu_ → `Observation.valueQuantity.value` (206, tanpa BQ) |
 | 16 | 215–228 | Immunization | VG45 | HepB | _Diberikan vaksin Hepatitis B (<24 jam)?_ → `Immunization.vaccineCode.coding` (215, tanpa BQ)<br>_Tanggal diberikan vaksin Hepatitis B (<24 jam)_ → `Immunization.occurrenceDateTime` (219, tanpa BQ) |
 | 17 | 229–242 | Immunization | VG19 | BCG | _Diberikan vaksin BCG?_ → `Immunization.vaccineCode.coding` (229, tanpa BQ)<br>_Tanggal diberikan vaksin BCG_ → `Immunization.occurrenceDateTime` (233, tanpa BQ) |
 | 18 | 243–258 | Immunization | VG89 | POLIO | _Diberikan vaksin Polio tetes 1?_ → `Immunization.vaccineCode.coding` (243, tanpa BQ)<br>_Tanggal diberikan vaksin Polio tetes 1_ → `Immunization.occurrenceDateTime` (249, tanpa BQ) |
@@ -56,10 +56,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 34 | 498–512 | Immunization | VG152 | PneumoPCV | _Diberikan vaksin PCV 3?_ → `Immunization.vaccineCode.coding` (498, tanpa BQ)<br>_Tanggal diberikan vaksin PCV 3_ → `Immunization.occurrenceDateTime` (503, tanpa BQ) |
 | 35 | 513–530 | Immunization | – | – | _Diberikan vaksin DPT-HB-Hib Lanjutan?_ → `Immunization.vaccineCode` (513, tanpa BQ)<br>_Tanggal diberikan vaksin DPT-HB-Hib Lanjutan_ → `Immunization.occurrenceDateTime` (521, tanpa BQ) |
 | 36 | 531–546 | Immunization | VG03 | MMR | _Diberikan vaksin Campak-Rubella (MR) Lanjutan?_ → `Immunization.vaccineCode.coding` (531, tanpa BQ)<br>_Tanggal diberikan vaksin Campak-Rubella (MR) Lanjutan_ → `Immunization.occurrenceDateTime` (537, tanpa BQ) |
-| 37 | 549–562 | Immunization | 787859002.0 | Vaccine product | _Tulis vaksin lain 1_ → `Immunization.vaccineCode.text` (550, tanpa BQ)<br>_Tanggal diberikan vaksin lain 1_ → `Immunization.occurrenceDateTime` (553, tanpa BQ) |
-| 38 | 563–576 | Immunization | 787859002.0 | Vaccine product | _Tulis vaksin lain 2_ → `Immunization.vaccineCode.text` (564, tanpa BQ)<br>_Tanggal diberikan vaksin lain 2_ → `Immunization.occurrenceDateTime` (567, tanpa BQ) |
-| 39 | 577–590 | Immunization | 787859002.0 | Vaccine product | _Tulis vaksin lain 3_ → `Immunization.vaccineCode.text` (578, tanpa BQ)<br>_Tanggal diberikan vaksin lain 3_ → `Immunization.occurrenceDateTime` (581, tanpa BQ) |
-| 40 | 591–604 | Immunization | 787859002.0 | Vaccine product | _Tulis vaksin lain 4_ → `Immunization.vaccineCode.text` (592, tanpa BQ)<br>_Tanggal diberikan vaksin lain 4_ → `Immunization.occurrenceDateTime` (595, tanpa BQ) |
+| 37 | 549–562 | Immunization | 787859002 | Vaccine product | _Tulis vaksin lain 1_ → `Immunization.vaccineCode.text` (550, tanpa BQ)<br>_Tanggal diberikan vaksin lain 1_ → `Immunization.occurrenceDateTime` (553, tanpa BQ) |
+| 38 | 563–576 | Immunization | 787859002 | Vaccine product | _Tulis vaksin lain 2_ → `Immunization.vaccineCode.text` (564, tanpa BQ)<br>_Tanggal diberikan vaksin lain 2_ → `Immunization.occurrenceDateTime` (567, tanpa BQ) |
+| 39 | 577–590 | Immunization | 787859002 | Vaccine product | _Tulis vaksin lain 3_ → `Immunization.vaccineCode.text` (578, tanpa BQ)<br>_Tanggal diberikan vaksin lain 3_ → `Immunization.occurrenceDateTime` (581, tanpa BQ) |
+| 40 | 591–604 | Immunization | 787859002 | Vaccine product | _Tulis vaksin lain 4_ → `Immunization.vaccineCode.text` (592, tanpa BQ)<br>_Tanggal diberikan vaksin lain 4_ → `Immunization.occurrenceDateTime` (595, tanpa BQ) |
 
 ### Payload per resource
 
@@ -80,7 +80,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 3 | PractitionerRole | `PractitionerRole.code.coding` | 223366009.0 | Healthcare professional | http://snomed.info/sct |
+| 1 | 3 | PractitionerRole | `PractitionerRole.code.coding` | 223366009 | Healthcare professional | http://snomed.info/sct |
 | 2 | 4 | PractitionerRole | `PractitionerRole.code.coding` | SP000396 | Data entry staff | http://terminology.kemkes.go.id/sp |
 | 3 | 5 | PractitionerRole | `PractitionerRole.code.coding` | SP000397 | Field/call center staff | http://terminology.kemkes.go.id/sp |
 | 4 | 95 | DocumentReference | `DocumentReference.content.format` | SP000732 | Buku KIA | http://terminology.kemkes.go.id/sp |
@@ -90,61 +90,61 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 8 | 144 | Observation | `Observation.valueCodeableConcept.coding` | SP000404 | Tidak Punya Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 9 | 145 | Observation | `Observation.valueCodeableConcept.coding` | SP000405 | Tidak Membawa Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 10 | 146 | Observation | `Observation.valueCodeableConcept.coding` | SP000406 | Kartu Tanda Penduduk Hilang | http://terminology.kemkes.go.id/sp |
-| 11 | 147 | Observation | `Observation.valueCodeableConcept.coding` | 397644002.0 | Right to privacy maintained | http://snomed.info/sct |
-| 12 | 148 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 11 | 147 | Observation | `Observation.valueCodeableConcept.coding` | 397644002 | Right to privacy maintained | http://snomed.info/sct |
+| 12 | 148 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
 | 13 | 157 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
 | 14 | 169 | Observation | `Observation.code.coding` | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
 | 15 | 170 | Observation | `Observation.valueCodeableConcept.coding` | SP000404 | Tidak Punya Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 16 | 171 | Observation | `Observation.valueCodeableConcept.coding` | SP000405 | Tidak Membawa Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 17 | 172 | Observation | `Observation.valueCodeableConcept.coding` | SP000406 | Kartu Tanda Penduduk Hilang | http://terminology.kemkes.go.id/sp |
-| 18 | 173 | Observation | `Observation.valueCodeableConcept.coding` | 397644002.0 | Right to privacy maintained | http://snomed.info/sct |
-| 19 | 174 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 20 | 205 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 18 | 173 | Observation | `Observation.valueCodeableConcept.coding` | 397644002 | Right to privacy maintained | http://snomed.info/sct |
+| 19 | 174 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 20 | 205 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 21 | 215 | Immunization | `Immunization.vaccineCode.coding` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
 | 22 | 229 | Immunization | `Immunization.vaccineCode.coding` | VG19 | BCG | http://sys-ids.kemkes.go.id/kfa |
 | 23 | 243 | Immunization | `Immunization.vaccineCode.coding` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 24 | 244 | Immunization | `Immunization.vaccineCode.coding` | 178.0 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
-| 25 | 259 | Immunization | `Immunization.vaccineCode` | 198.0 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 24 | 244 | Immunization | `Immunization.vaccineCode.coding` | 178 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
+| 25 | 259 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
 | 26 | 260 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
 | 27 | 261 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
 | 28 | 262 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
 | 29 | 277 | Immunization | `Immunization.vaccineCode.coding` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 30 | 278 | Immunization | `Immunization.vaccineCode.coding` | 178.0 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
+| 30 | 278 | Immunization | `Immunization.vaccineCode.coding` | 178 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
 | 31 | 293 | Immunization | `Immunization.vaccineCode.coding` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
 | 32 | 308 | Immunization | `Immunization.vaccineCode.coding` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 33 | 323 | Immunization | `Immunization.vaccineCode` | 198.0 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 33 | 323 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
 | 34 | 324 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
 | 35 | 325 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
 | 36 | 326 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
 | 37 | 341 | Immunization | `Immunization.vaccineCode.coding` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 38 | 342 | Immunization | `Immunization.vaccineCode.coding` | 178.0 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
+| 38 | 342 | Immunization | `Immunization.vaccineCode.coding` | 178 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
 | 39 | 357 | Immunization | `Immunization.vaccineCode.coding` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
 | 40 | 372 | Immunization | `Immunization.vaccineCode.coding` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 41 | 387 | Immunization | `Immunization.vaccineCode` | 198.0 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 41 | 387 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
 | 42 | 388 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
 | 43 | 389 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
 | 44 | 390 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
 | 45 | 405 | Immunization | `Immunization.vaccineCode.coding` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 46 | 406 | Immunization | `Immunization.vaccineCode.coding` | 178.0 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
+| 46 | 406 | Immunization | `Immunization.vaccineCode.coding` | 178 | OPV bivalent | http://hl7.org/fhir/sid/cvx |
 | 47 | 421 | Immunization | `Immunization.vaccineCode.coding` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 48 | 422 | Immunization | `Immunization.vaccineCode.coding` | 10.0 | IPV | http://hl7.org/fhir/sid/cvx |
+| 48 | 422 | Immunization | `Immunization.vaccineCode.coding` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
 | 49 | 437 | Immunization | `Immunization.vaccineCode.coding` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
 | 50 | 452 | Immunization | `Immunization.vaccineCode.coding` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
 | 51 | 453 | Immunization | `Immunization.vaccineCode.coding` | 04 | M/R | http://hl7.org/fhir/sid/cvx |
 | 52 | 468 | Immunization | `Immunization.vaccineCode.coding` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 53 | 469 | Immunization | `Immunization.vaccineCode.coding` | 10.0 | IPV | http://hl7.org/fhir/sid/cvx |
+| 53 | 469 | Immunization | `Immunization.vaccineCode.coding` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
 | 54 | 484 | Immunization | `Immunization.vaccineCode.coding` | VG129 | Japanese encephalitis | http://sys-ids.kemkes.go.id/kfa |
 | 55 | 498 | Immunization | `Immunization.vaccineCode.coding` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 56 | 513 | Immunization | `Immunization.vaccineCode` | 198.0 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 56 | 513 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
 | 57 | 514 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
 | 58 | 515 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
 | 59 | 516 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
 | 60 | 531 | Immunization | `Immunization.vaccineCode.coding` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
 | 61 | 532 | Immunization | `Immunization.vaccineCode.coding` | 04 | M/R | http://hl7.org/fhir/sid/cvx |
-| 62 | 549 | Immunization | `Immunization.vaccineCode.coding` | 787859002.0 | Vaccine product | http://snomed.info/sct |
-| 63 | 563 | Immunization | `Immunization.vaccineCode.coding` | 787859002.0 | Vaccine product | http://snomed.info/sct |
-| 64 | 577 | Immunization | `Immunization.vaccineCode.coding` | 787859002.0 | Vaccine product | http://snomed.info/sct |
-| 65 | 591 | Immunization | `Immunization.vaccineCode.coding` | 787859002.0 | Vaccine product | http://snomed.info/sct |
+| 62 | 549 | Immunization | `Immunization.vaccineCode.coding` | 787859002 | Vaccine product | http://snomed.info/sct |
+| 63 | 563 | Immunization | `Immunization.vaccineCode.coding` | 787859002 | Vaccine product | http://snomed.info/sct |
+| 64 | 577 | Immunization | `Immunization.vaccineCode.coding` | 787859002 | Vaccine product | http://snomed.info/sct |
+| 65 | 591 | Immunization | `Immunization.vaccineCode.coding` | 787859002 | Vaccine product | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

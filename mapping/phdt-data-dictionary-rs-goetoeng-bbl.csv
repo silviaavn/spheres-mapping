@@ -117,7 +117,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,NAMA,,string,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,TGLMASUK,,dateTime,YYYY-MM-DD HH:MM:SS,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
-,,,KETRUJUK,Keterangan Rujuk,kategorik,,DATANG SENDIRI,,,Encounter,Encounter.hospitalization.admitSource.coding,1991000124105.0,Referred by self,http://snomed.info/sct,,1,
+,,,KETRUJUK,Keterangan Rujuk,kategorik,,DATANG SENDIRI,,,Encounter,Encounter.hospitalization.admitSource.coding,1991000124105,Referred by self,http://snomed.info/sct,,1,
 ,,,KETRUJUK,,,,DOKTER PRAKTIK,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000814,Rujukan dari Dokter Praktik Mandiri,http://terminology.kemkes.go.id/sp,,1,
 ,,,KETRUJUK,,,,RS SWASTA,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000119,Rujukan dari Rumah Sakit,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Encounter,Encounter.hospitalization.admitSource.text,Tidak ada,RS SWASTA,Tidak ada,,,
@@ -181,7 +181,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Coverage,Coverage.class.name,Tidak Ada,Kelas 3,Tidak Ada,,,
 ,,,,P.BARU,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,184061005.0,Patient registration status,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,184061005,Patient registration status,http://snomed.info/sct,,1,
 ,,,P.BARU,,,,BARU,,,Observation,Observation.valueCodeableConcept.coding,SP000812,Pasien Baru,http://terminology.kemkes.go.id/sp,,1,
 ,,,P.BARU,,,,LAMA,,,Observation,Observation.valueCodeableConcept.coding,SP000813,Pasien Lama,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -193,7 +193,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,DPJP,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Umur,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,
 ,,,UMUR,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,,,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -206,10 +206,10 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,VIA,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000811,Jalur Masuk Rawat Inap,http://terminology.kemkes.go.id/sp,,1,
-,,,VIA,,,,IGD,,,Observation,Observation.valueCodeableConcept.coding,225728007.0,Accident and Emergency department,http://snomed.info/sct,,1,
+,,,VIA,,,,IGD,,,Observation,Observation.valueCodeableConcept.coding,225728007,Accident and Emergency department,http://snomed.info/sct,,1,
 ,,,VIA,,,,PERINATALOGI,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
-,,,VIA,,,,PENDAFTARAN IGD,,,Observation,Observation.valueCodeableConcept.coding,50849002.0,Emergency room admission,http://snomed.info/sct,,1,
-,,,VIA,,,,VK,,,Observation,Observation.valueCodeableConcept.coding,405606005.0,Labor and delivery unit,http://snomed.info/sct,,1,
+,,,VIA,,,,PENDAFTARAN IGD,,,Observation,Observation.valueCodeableConcept.coding,50849002,Emergency room admission,http://snomed.info/sct,,1,
+,,,VIA,,,,VK,,,Observation,Observation.valueCodeableConcept.coding,405606005,Labor and delivery unit,http://snomed.info/sct,,1,
 ,,,VIA,,,,BOUGENVILE,,,Observation,Observation.valueCodeableConcept.text,Tidak ada,BOUGENVILE,Tidak ada,,,
 ,,,VIA,,,,CEMPAKA,,,Observation,Observation.valueCodeableConcept.text,Tidak ada,CEMPAKA,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -305,85 +305,85 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,DPJP,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,KODE ICD9,,,96.05 | INTUBASI,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,
+,,,,KODE ICD9,,,96.05 | INTUBASI,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.05,Other intubation of respiratory tract,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Thorax,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Thorax,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 | Abdomen,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 | Abdomen,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,90.59 | LAB,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,90.59 | LAB,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.59,"Microscopic examination of blood, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.04 | INTUBASI,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.04 | INTUBASI,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.04,Insertion of endotracheal tube,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Abdomen,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Abdomen,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 | LAB,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 | LAB,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,90.59 |,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,90.59 |,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.59,"Microscopic examination of blood, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,90.41 |,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,90.41 |,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.41,"Microscopic examination of specimen from trachea, bronchus, pleura,lung,and other thoracic specimen, and of sputum, Bacterial smear",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.04 |,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.04 |,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.04,Insertion of endotracheal tube,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 |,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 |,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 |,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 |,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,93.90 |,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,93.90 |,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,93.90,Non-invasive mechanical ventilation,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.04 | Intubasi,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.04 | Intubasi,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.04,Insertion of endotracheal tube,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.71 | Ventilator 50 menit,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.71 | Ventilator 50 menit,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.71,Continuous invasive mechanical ventilation for less than 96 consecutive hours,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,90.59 | lab darah,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,90.59 | lab darah,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.59,"Microscopic examination of blood, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Ro thorax,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Ro thorax,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.72 |,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.72 |,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.72,Continuous invasive mechanical ventilation for 96 consecutive hours or more,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | THORAX,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | THORAX,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 | ABDOMEN,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 | ABDOMEN,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,93.90 | THORAX,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,93.90 | THORAX,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,93.90,Non-invasive mechanical ventilation,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,99.60 | ABDOMEN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,99.60 | ABDOMEN,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.60,"Cardiopulmonary resuscitation, not otherwise specified",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | LAB,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | LAB,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,99.60 |,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,99.60 |,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.60,"Cardiopulmonary resuscitation, not otherwise specified",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,99.04 |,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,99.04 |,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.04,Transfusion of packed cells,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | ro thorax,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | ro thorax,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 | ro abdomen,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 | ro abdomen,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.04 | intubasi,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.04 | intubasi,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.04,Insertion of endotracheal tube,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,96.71 | Ventilator 48 menit,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,96.71 | Ventilator 48 menit,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.71,Continuous invasive mechanical ventilation for less than 96 consecutive hours,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,89.52 |,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,89.52 |,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Foto thorax (babygram),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Foto thorax (babygram),,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 | Foto abdomen (babygram),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 | Foto abdomen (babygram),,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,93.90 | Foto thorax (babygram),,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,93.90 | Foto thorax (babygram),,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,93.90,Non-invasive mechanical ventilation,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Foto abdomen (babygram),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Foto abdomen (babygram),,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,88.09 | LAB,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,88.09 | LAB,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,93.90 | THORAX,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,93.90 | THORAX,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,93.90,Non-invasive mechanical ventilation,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | ABDOMEN,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | ABDOMEN,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Abdomen,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Abdomen,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,99.60 | ABDOMEN,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,99.60 | ABDOMEN,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.60,"Cardiopulmonary resuscitation, not otherwise specified",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,87.44 | Foto abdomen (babygram),,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,87.44 | Foto abdomen (babygram),,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
 ,,,,Tindakan,string,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
@@ -394,29 +394,29 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,DPJP,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,PROSEDUR KLINIS,,,Other intubation of respiratory tract,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,PROSEDUR KLINIS,,,Other intubation of respiratory tract,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.05,Other intubation of respiratory tract,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,"Routine chest x-ray, so described",,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,"Routine chest x-ray, so described",,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,87.44,"Routine chest x-ray, so described",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Other soft tissue x-ray of abdominal wall,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,Other soft tissue x-ray of abdominal wall,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,88.09,Other soft tissue x-ray of abdominal wall,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,"Microscopic examination of blood, Other microscopic examination",,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,"Microscopic examination of blood, Other microscopic examination",,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.59,"Microscopic examination of blood, Other microscopic examination",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Insertion of endotracheal tube,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,Insertion of endotracheal tube,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.04,Insertion of endotracheal tube,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,"Microscopic examination of specimen from trachea, bronchus, pleura, lung, and other thoracic specimen, and of sputum, Bacterial smear",,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,"Microscopic examination of specimen from trachea, bronchus, pleura, lung, and other thoracic specimen, and of sputum, Bacterial smear",,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,90.41,"Microscopic examination of specimen from trachea, bronchus, pleura,lung,and other thoracic specimen, and of sputum, Bacterial smear",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Non-invasive mechanical ventilation,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,Non-invasive mechanical ventilation,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,93.90,Non-invasive mechanical ventilation,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Continuous invasive mechanical ventilation for less than 96 consecutive hours,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,Continuous invasive mechanical ventilation for less than 96 consecutive hours,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.71,Continuous invasive mechanical ventilation for less than 96 consecutive hours,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Continuous invasive mechanical ventilation for 96 consecutive hours or more,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,Continuous invasive mechanical ventilation for 96 consecutive hours or more,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,96.72,Continuous invasive mechanical ventilation for 96 consecutive hours or more,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,"Cardiopulmonary resuscitation, not otherwise specified",,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,"Cardiopulmonary resuscitation, not otherwise specified",,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.60,"Cardiopulmonary resuscitation, not otherwise specified",http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Transfusion of packed cells,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,,,,Transfusion of packed cells,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.04,Transfusion of packed cells,http://hl7.org/fhir/sid/icd-9-cm,,1,
-,,,,,,,Electrocardiogram,,,Procedure,Procedure.category.coding,103693007.0,Diagnostic procedure,http://snomed.info/sct,,,1
+,,,,,,,Electrocardiogram,,,Procedure,Procedure.category.coding,103693007,Diagnostic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,89.52,Electrocardiogram,http://hl7.org/fhir/sid/icd-9-cm,,1,
 ,,,,DX RESUME PULANG,string,,,,,Composition,Composition.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Composition,Composition.category.coding,LP173421-1,Report,http://loinc.org/,,,
@@ -431,8 +431,8 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,DPJP,,string,,,,,Composition,Composition.author.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,KEADAAN PASIEN,kategorik,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-category,,,
-,,,,,,,Membaik,,,Condition,Condition.code.coding,268910001.0,Patient's condition improved,http://snomed.info/sct,,1,
-,,,,,,,Sembuh,,,Condition,Condition.code.coding,371001000.0,Patient cured,http://snomed.info/sct,,1,
+,,,,,,,Membaik,,,Condition,Condition.code.coding,268910001,Patient's condition improved,http://snomed.info/sct,,1,
+,,,,,,,Sembuh,,,Condition,Condition.code.coding,371001000,Patient cured,http://snomed.info/sct,,1,
 ,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
@@ -444,7 +444,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,PENDIDIKAN,kategorik,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,82589-3,Highest level of education,http://loinc.org,,1,
-,,,PENDIDIKAN,,,BELUM TAMAT SD/SEDERAJAT,,,,Observation,Observation.valueCodeableConcept.coding,224294005.0,No formal education,http://snomed.info/sct,,1,
+,,,PENDIDIKAN,,,BELUM TAMAT SD/SEDERAJAT,,,,Observation,Observation.valueCodeableConcept.coding,224294005,No formal education,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,NAMA,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -454,7 +454,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,DPJP,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,LAMA RAWAT (HARI),numerik,day,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,183797002.0,Duration of inpatient stay,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,183797002,Duration of inpatient stay,http://snomed.info/sct,,1,
 ,,,LAMA RAWAT (HARI),,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,d,day,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,

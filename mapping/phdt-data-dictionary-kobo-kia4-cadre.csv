@@ -12,7 +12,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Siapa yang melakukan entry data?,,,,,,PractitionerRole,PractitionerRole.active,true,Tidak ada,Tidak ada,,,1
-,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,223366009.0,Healthcare professional,http://snomed.info/sct,,1,
+,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,223366009,Healthcare professional,http://snomed.info/sct,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,SP000396,Data entry staff,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,SP000397,Field/call center staff,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.practitioner,Reference ke resources Practitioner,,,,,
@@ -83,7 +83,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Patient,Patient.address.use,home,Tidak ada,Tidak ada,,,
 ,,,,Nama jalan dan nomor rumah (jika ada),,,,,,Patient,Patient.address.line,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Asal Puskesmas,,,,Gunakan untuk mencari nama puskesmas di prerequisite / master data faskes,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Organization,Organization.type,102.0,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
+,,,,,,,,,,Organization,Organization.type,102,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
 ,,,,,,,,,,Organization,Organization.identifier,official,Tidak ada,http://sys-ids.kemkes.go.id/organization/{{Org ID}},,,
 ,,,,,,,,,,Organization,Organization.active,true,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,1
@@ -119,7 +119,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,
 ,,,,Pendapatan per bulan keluarga,coded,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,social history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,365552003.0,Finding of income details,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,365552003,Finding of income details,http://snomed.info/sct,,1,
 ,,,,,,,<Rp 1500000,,,Observation,Observation.valueCodeableConcept.coding,SP000654,<Rp 1500000,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Rp 1500000- Rp 2500000,,,Observation,Observation.valueCodeableConcept.coding,SP000655,Rp 1500000- Rp 2500000,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Rp 2500001 - Rp 3500000,,,Observation,Observation.valueCodeableConcept.coding,SP000656,Rp 2500001 - Rp 3500000,http://terminology.kemkes.go.id/sp,,1,
@@ -151,8 +151,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000404,Tidak Punya Kartu Tanda Penduduk,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Tidak punya KTP,,,Observation,Observation.valueCodeableConcept.coding,SP000405,Tidak Membawa Kartu Tanda Penduduk,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Tidak membawa KTP,,,Observation,Observation.valueCodeableConcept.coding,SP000406,Kartu Tanda Penduduk Hilang,http://terminology.kemkes.go.id/sp,,1,
-,,,,,,,Hilang,,,Observation,Observation.valueCodeableConcept.coding,397644002.0,Right to privacy maintained,http://snomed.info/sct,,1,
-,,,,,,,Privasi,,,Observation,Observation.valueCodeableConcept.coding,74964007.0,Other,http://snomed.info/sct,,1,
+,,,,,,,Hilang,,,Observation,Observation.valueCodeableConcept.coding,397644002,Right to privacy maintained,http://snomed.info/sct,,1,
+,,,,,,,Privasi,,,Observation,Observation.valueCodeableConcept.coding,74964007,Other,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -161,7 +161,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,months,kalkulasi usia,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,mo,month,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -185,7 +185,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Urutan anak ke,coded,,1.0,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,2.0,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,3.0,,,Observation,Observation.code.coding,365475008.0,Place in family order,http://snomed.info/sct,,1,
+,,,,,,,3.0,,,Observation,Observation.code.coding,365475008,Place in family order,http://snomed.info/sct,,1,
 ,,,,,,,4.0,,,Observation,Observation.valueInteger,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,5.0,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,>5,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -222,7 +222,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.focus.reference,Reference ke resources RelatedPerson Ibu,,,,,
 ,,,,Pemberian ASI ekslusif,boolean,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,1145307003.0,Exclusively breastfed,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,1145307003,Exclusively breastfed,http://snomed.info/sct,,1,
 ,,,,,,,ya,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,tidak,,,Observation,Observation.valueBoolean,false,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -245,8 +245,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Apakah bayi/balita menerima Vitamin A saat posyandu?,boolean,,,,,Procedure,Procedure.category.coding,709543002.0,Administration of vitamin,http://snomed.info/sct,,,1
-,,,,,,,,,,Procedure,Procedure.code.coding,767224000.0,Administration of vitamin A,http://snomed.info/sct,,1,
+,,,,Apakah bayi/balita menerima Vitamin A saat posyandu?,boolean,,,,,Procedure,Procedure.category.coding,709543002,Administration of vitamin,http://snomed.info/sct,,,1
+,,,,,,,,,,Procedure,Procedure.code.coding,767224000,Administration of vitamin A,http://snomed.info/sct,,1,
 ,,,,,,,ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
@@ -306,9 +306,9 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Hasil Skrining,coded,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,365856005.0,Screening finding,http://snomed.info/sct,,1,
-sehat,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,102506008.0,Well child,http://snomed.info/sct,,1,
-risiko stunting,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,704352005.0,At increased risk of delayed growth,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,365856005,Screening finding,http://snomed.info/sct,,1,
+sehat,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,102506008,Well child,http://snomed.info/sct,,1,
+risiko stunting,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,704352005,At increased risk of delayed growth,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -388,7 +388,7 @@ risiko stunting,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,704
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,,,,,,
 ,,,,,,,,,,Immunization,Immunization.occurrenceDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.recorded,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Jenis vaksin yang diberikan/Lainnya,,,,,,Immunization,Immunization.vaccineCode.coding,787859002.0,Vaccine product,http://snomed.info/sct,,1,1
+,,,,Jenis vaksin yang diberikan/Lainnya,,,,,,Immunization,Immunization.vaccineCode.coding,787859002,Vaccine product,http://snomed.info/sct,,1,1
 ,,,,Tulis jenis vaksin lainnya yang diberikan,,,,,,Immunization,Immunization.vaccineCode.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.status,completed,,,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Pilihan,Imunisasi Pilihan,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
@@ -555,7 +555,7 @@ risiko stunting,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,704
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,,,,,,
 ,,,,,,,,,,Immunization,Immunization.occurrenceDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.recorded,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Jenis vaksin yang diberikan/Tidak diberikan,,,,,,Immunization,Immunization.vaccineCode.coding,787859002.0,Vaccine product,http://snomed.info/sct,,1,1
+,,,,Jenis vaksin yang diberikan/Tidak diberikan,,,,,,Immunization,Immunization.vaccineCode.coding,787859002,Vaccine product,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Immunization,Immunization.status,not-done,,,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Pilihan,Imunisasi Pilihan,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,,,,Immunization,Immunization.primarySource,false,,,,,

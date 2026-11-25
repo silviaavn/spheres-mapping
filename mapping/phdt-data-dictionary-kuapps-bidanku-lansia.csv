@@ -449,7 +449,7 @@ Skrining Lansia Sederhana (SKILAS),,,,,,"Jika ada satu jawaban Ya, maka rujuk ke
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.source.reference,Reference ke resources Patient,,,,,
 ,,,,Penurunan Kognitif,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.linkId,1,,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.text,Penurunan Kognitif,,,,,
-,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.linkId,1.0,,,,,
+,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.linkId,1,,,,,
 ,,,,Orientasi waktu dan tempat,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.text,"Orientasi waktu dan tempat: Tanggal berapakah hari ini secara lengkap (tanggal/bulan/tahun)? atau Dimanakah Anda saat ini (Puskesmas, rumah, klinik, dll)?",,,,,
 ,,,,,,,Ya,,,QuestionnaireResponse,QuestionnaireResponse.item.item.answer.valueBoolean,true,,,,,
 ,,,,,,,Tidak,,,QuestionnaireResponse,QuestionnaireResponse.item.item.answer.valueBoolean,false,,,,,

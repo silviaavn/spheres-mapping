@@ -26,7 +26,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 4 | 46–61 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (46, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (56, tanpa BQ) |
 | 5 | 62–69 | Condition | Z00.1 | Routine child health examination | – |
 | 6 | 80–88 | EpisodeOfCare | Neonate | Neonate | – |
-| 7 | 89–99 | Observation | 365475008.0 | Place in family order | _Anak ke_ → `Observation.valueInteger` (92, tanpa BQ) |
+| 7 | 89–99 | Observation | 365475008 | Place in family order | _Anak ke_ → `Observation.valueInteger` (92, tanpa BQ) |
 | 8 | 100–110 | Observation | 57715-5 | Birth time | _Jam Lahir_ → `Observation.valueTime` (103, tanpa BQ) |
 | 9 | 111–152 | Observation | 76516-4 | Gestational age—​at birth | _Usia Gestasi Saat Lahir_ → `Observation.valueQuantity.value` (114, tanpa BQ)<br>_Golongan darah_ → `Observation` (126, tanpa BQ)<br>_Rhesus_ → `Observation` (140, tanpa BQ) |
 | 10 | 153–164 | Observation | 8339-4 | Birth weight Measured | _Berat Badan Saat Lahir_ → `Observation.valueQuantity.value` (156, tanpa BQ) |
@@ -36,16 +36,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 14 | 202–214 | Observation | 8310-5 | Body temperature | _Suhu Badan_ → `Observation.valueQuantity.value` (205, tanpa BQ) |
 | 15 | 215–227 | Observation | 9279-1 | Respiratory rate | _Respiratory Rate_ → `Observation.valueQuantity.value` (218, tanpa BQ) |
 | 16 | 228–239 | Observation | 20564-1 | Oxygen saturation in Blood | _Saturasi Oksigen_ → `Observation.valueQuantity.value` (231, tanpa BQ) |
-| 17 | 240–250 | Observation | 276654001.0 | Congenital malformation | _Kelainan Bawaan_ → `Observation.valueString` (243, tanpa BQ) |
-| 18 | 251–262 | Observation | 1145307003.0 | Exclusively breastfed | _Apakah Diberikan ASI Eksklusi_ → `Observation.valueBoolean` (254, tanpa BQ) |
+| 17 | 240–250 | Observation | 276654001 | Congenital malformation | _Kelainan Bawaan_ → `Observation.valueString` (243, tanpa BQ) |
+| 18 | 251–262 | Observation | 1145307003 | Exclusively breastfed | _Apakah Diberikan ASI Eksklusi_ → `Observation.valueBoolean` (254, tanpa BQ) |
 | 19 | 263–274 | Observation | 29463-7 | Body weight | _Berat Badan_ → `Observation.valueQuantity.value` (266, tanpa BQ) |
 | 20 | 275–286 | Observation | 8306-3 | Body height --lying | _Tinggi Badan_ → `Observation.valueQuantity.value` (278, tanpa BQ) |
-| 21 | 287–297 | Procedure | 400984005.0 | Congenital hypothyroidism screening test | _Apakah dilakukan SHK?_ → `Procedure.category.coding` (287, tanpa BQ) |
+| 21 | 287–297 | Procedure | 400984005 | Congenital hypothyroidism screening test | _Apakah dilakukan SHK?_ → `Procedure.category.coding` (287, tanpa BQ) |
 | 22 | 298–308 | Procedure | SP000296 | Skrining Penyakit Jantung Bawaan | _Skrining PJB_ → `Procedure.category.coding` (298, tanpa BQ) |
-| 23 | 309–319 | Procedure | 408989004.0 | Newborn care management | _Tatalaksana Bayi Neonatus_ → `Procedure.category.coding` (309, tanpa BQ) |
+| 23 | 309–319 | Procedure | 408989004 | Newborn care management | _Tatalaksana Bayi Neonatus_ → `Procedure.category.coding` (309, tanpa BQ) |
 | 24 | 320–337 | Immunization | – | – | _Alasan Tidak Diberikan Vaksin HB0_ → `Immunization.status` (335, tanpa BQ) |
 | 25 | 338–349 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0004 | – | _Kelas Ibu Balita_ → `QuestionnaireResponse.questionnaire` (338, tanpa BQ) |
-| 26 | 351–363 | ServiceRequest | 409014006.0 | Delivery care management | _Faskes Tujuan Rujukan_ → `ServiceRequest.performer.display` (362, tanpa BQ)<br>_Nama Faskes Rujukan_ → `ServiceRequest.locationCode.text` (363, tanpa BQ) |
+| 26 | 351–363 | ServiceRequest | 409014006 | Delivery care management | _Faskes Tujuan Rujukan_ → `ServiceRequest.performer.display` (362, tanpa BQ)<br>_Nama Faskes Rujukan_ → `ServiceRequest.locationCode.text` (363, tanpa BQ) |
 | 27 | 364–376 | Observation | 10206-1 | Physical findings of Skin Narrative | _Pemeriksaan Kulit_ → `Observation.valueString` (367, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Kulit_ → `Observation.interpretation.coding` (368, tanpa BQ) |
 | 28 | 377–389 | Observation | 10199-8 | Physical findings of Head Narrative | _Pemeriksaan Kepala_ → `Observation.valueString` (380, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Kepala_ → `Observation.interpretation.coding` (381, tanpa BQ) |
 | 29 | 390–402 | Observation | 10197-2 | Physical findings of Eye Narrative | _Pemeriksaan Mata_ → `Observation.valueString` (393, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Mata_ → `Observation.interpretation.coding` (394, tanpa BQ) |
@@ -55,8 +55,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 33 | 442–454 | Observation | 11388-6 | Physical findings of Buttocks Narrative | _Pemeriksaan Lubang Anus_ → `Observation.valueString` (445, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Lubang Anus_ → `Observation.interpretation.coding` (446, tanpa BQ) |
 | 34 | 455–467 | Observation | 11400-9 | Physical findings of Genitalia Narrative | _Pemeriksaan Alat Kelamin_ → `Observation.valueString` (458, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Alat Kelamin_ → `Observation.interpretation.coding` (459, tanpa BQ) |
 | 35 | 468–483 | AllergyIntolerance | – | – | _Apakah ada alergi obat saat ini?_ → `AllergyIntolerance.clinicalStatus.coding` (468, tanpa BQ)<br>_Jika Ya, jenis obat?_ → `AllergyIntolerance.code.coding` (470, tanpa BQ) |
-| 36 | 484–494 | Procedure | 431868002.0 | Initiation of breastfeeding | _Inisiasi Menyusu Dini (IMD)_ → `Procedure.category.coding` (484, tanpa BQ) |
-| 37 | 495–509 | Immunization | 787859002.0 | Vaccine product | _Tanggal Pemberian Vaksin_ → `Immunization.occurrenceDateTime` (495, tanpa BQ)<br>_Nomor Lot Vaksin_ → `Immunization.lotNumber` (500, tanpa BQ)<br>_Tanggal Kadaluarsa Vaksin_ → `Immunization.expirationDate` (501, tanpa BQ) |
+| 36 | 484–494 | Procedure | 431868002 | Initiation of breastfeeding | _Inisiasi Menyusu Dini (IMD)_ → `Procedure.category.coding` (484, tanpa BQ) |
+| 37 | 495–509 | Immunization | 787859002 | Vaccine product | _Tanggal Pemberian Vaksin_ → `Immunization.occurrenceDateTime` (495, tanpa BQ)<br>_Nomor Lot Vaksin_ → `Immunization.lotNumber` (500, tanpa BQ)<br>_Tanggal Kadaluarsa Vaksin_ → `Immunization.expirationDate` (501, tanpa BQ) |
 
 ### Payload per resource
 
@@ -81,7 +81,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|---|
 | 1 | 64 | Condition | `Condition.code.coding` | Z00.1 | Routine child health examination | http://hl7.org/fhir/sid/icd-10 |
 | 2 | 81 | EpisodeOfCare | `EpisodeOfCare.type.coding` | Neonate | Neonate | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
-| 3 | 91 | Observation | `Observation.code.coding` | 365475008.0 | Place in family order | http://snomed.info/sct |
+| 3 | 91 | Observation | `Observation.code.coding` | 365475008 | Place in family order | http://snomed.info/sct |
 | 4 | 102 | Observation | `Observation.code.coding` | 57715-5 | Birth time | http://loinc.org |
 | 5 | 113 | Observation | `Observation.code.coding` | 76516-4 | Gestational age—​at birth | http://loinc.org |
 | 6 | 116 | Observation | `Observation.component.code.coding` | SP000398 | Usia Kehamilan Saat Persalinan (hari) | http://terminology.kemkes.go.id/sp |
@@ -92,15 +92,15 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 11 | 204 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
 | 12 | 217 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
 | 13 | 230 | Observation | `Observation.code.coding` | 20564-1 | Oxygen saturation in Blood | http://loinc.org |
-| 14 | 242 | Observation | `Observation.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
-| 15 | 253 | Observation | `Observation.code.coding` | 1145307003.0 | Exclusively breastfed | http://snomed.info/sct |
+| 14 | 242 | Observation | `Observation.code.coding` | 276654001 | Congenital malformation | http://snomed.info/sct |
+| 15 | 253 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
 | 16 | 265 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
 | 17 | 277 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 18 | 288 | Procedure | `Procedure.code.coding` | 400984005.0 | Congenital hypothyroidism screening test | http://snomed.info/sct |
+| 18 | 288 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
 | 19 | 301 | Procedure | `Procedure.code.coding` | SP000296 | Skrining Penyakit Jantung Bawaan | http://terminology.kemkes.go.id/sp |
-| 20 | 310 | Procedure | `Procedure.code.coding` | 408989004.0 | Newborn care management | http://snomed.info/sct |
+| 20 | 310 | Procedure | `Procedure.code.coding` | 408989004 | Newborn care management | http://snomed.info/sct |
 | 21 | 322 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 22 | 355 | ServiceRequest | `ServiceRequest.code.coding` | 409014006.0 | Delivery care management | http://snomed.info/sct |
+| 22 | 355 | ServiceRequest | `ServiceRequest.code.coding` | 409014006 | Delivery care management | http://snomed.info/sct |
 | 23 | 366 | Observation | `Observation.code.coding` | 10206-1 | Physical findings of Skin Narrative | http://loinc.org |
 | 24 | 368 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 25 | 369 | Observation | `Observation.interpretation.coding` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
@@ -125,8 +125,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 44 | 457 | Observation | `Observation.code.coding` | 11400-9 | Physical findings of Genitalia Narrative | http://loinc.org |
 | 45 | 459 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 46 | 460 | Observation | `Observation.interpretation.coding` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 47 | 487 | Procedure | `Procedure.code.coding` | 431868002.0 | Initiation of breastfeeding | http://snomed.info/sct |
-| 48 | 497 | Immunization | `Immunization.vaccineCode.coding` | 787859002.0 | Vaccine product | http://snomed.info/sct |
+| 47 | 487 | Procedure | `Procedure.code.coding` | 431868002 | Initiation of breastfeeding | http://snomed.info/sct |
+| 48 | 497 | Immunization | `Immunization.vaccineCode.coding` | 787859002 | Vaccine product | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

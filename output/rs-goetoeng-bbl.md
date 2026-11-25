@@ -25,8 +25,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 3 | 113–119 | Condition | Z00.1 | Routine child health examination | – |
 | 4 | 156–164 | EpisodeOfCare | Neonate | Neonate | – |
 | 5 | 165–181 | Coverage | – | – | _Cara Bayar_ → `Coverage.identifier` (165, tanpa BQ)<br>_KELAS_ → `Coverage.class.type.coding` (173, tanpa BQ) |
-| 6 | 182–193 | Observation | 184061005.0 | Patient registration status | _P.BARU_ → `Observation.valueCodeableConcept.coding` (185, tanpa BQ) |
-| 7 | 194–205 | Observation | 424144002.0 | Current chronological age | _Umur_ → `Observation.valueQuantity.value` (197, tanpa BQ) |
+| 6 | 182–193 | Observation | 184061005 | Patient registration status | _P.BARU_ → `Observation.valueCodeableConcept.coding` (185, tanpa BQ) |
+| 7 | 194–205 | Observation | 424144002 | Current chronological age | _Umur_ → `Observation.valueQuantity.value` (197, tanpa BQ) |
 | 8 | 206–221 | Observation | SP000811 | Jalur Masuk Rawat Inap | _VIA_ → `Observation.valueCodeableConcept.coding` (209, tanpa BQ) |
 | 9 | 222–243 | Condition | P22.0 | Respiratory distress syndrome of newborn | _DX1_ → `Condition.clinicalStatus.coding` (222, tanpa BQ)<br>_KODE1_ → `Condition.clinicalStatus.coding` (236, tanpa BQ) |
 | 10 | 244–260 | Condition | P22.0 | Respiratory distress syndrome of newborn | _DX2_ → `Condition.clinicalStatus.coding` (253, tanpa BQ) |
@@ -85,9 +85,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 63 | 417–418 | Procedure | 99.04 | Transfusion of packed cells | – |
 | 64 | 419–420 | Procedure | 89.52 | Electrocardiogram | – |
 | 65 | 421–431 | Composition | – | – | _DX RESUME PULANG_ → `Composition.status` (421, tanpa BQ) |
-| 66 | 432–441 | Condition | 268910001.0 | Patient's condition improved | _KEADAAN PASIEN_ → `Condition.clinicalStatus.coding` (432, tanpa BQ) |
+| 66 | 432–441 | Condition | 268910001 | Patient's condition improved | _KEADAAN PASIEN_ → `Condition.clinicalStatus.coding` (432, tanpa BQ) |
 | 67 | 444–454 | Observation | 82589-3 | Highest level of education | _PENDIDIKAN_ → `Observation.valueCodeableConcept.coding` (447, tanpa BQ) |
-| 68 | 455–466 | Observation | 183797002.0 | Duration of inpatient stay | _LAMA RAWAT (HARI)_ → `Observation.valueQuantity.value` (458, tanpa BQ) |
+| 68 | 455–466 | Observation | 183797002 | Duration of inpatient stay | _LAMA RAWAT (HARI)_ → `Observation.valueQuantity.value` (458, tanpa BQ) |
 
 ### Payload per resource
 
@@ -108,7 +108,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 115 | Condition | `Condition.code.coding` | Z00.1 | Routine child health examination | http://hl7.org/fhir/sid/icd-10 |
-| 2 | 120 | Encounter | `Encounter.hospitalization.admitSource.coding` | 1991000124105.0 | Referred by self | http://snomed.info/sct |
+| 2 | 120 | Encounter | `Encounter.hospitalization.admitSource.coding` | 1991000124105 | Referred by self | http://snomed.info/sct |
 | 3 | 121 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000814 | Rujukan dari Dokter Praktik Mandiri | http://terminology.kemkes.go.id/sp |
 | 4 | 122 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000119 | Rujukan dari Rumah Sakit | http://terminology.kemkes.go.id/sp |
 | 5 | 124 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
@@ -121,14 +121,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 12 | 137 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 13 | 139 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 14 | 157 | EpisodeOfCare | `EpisodeOfCare.type.coding` | Neonate | Neonate | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
-| 15 | 184 | Observation | `Observation.code.coding` | 184061005.0 | Patient registration status | http://snomed.info/sct |
+| 15 | 184 | Observation | `Observation.code.coding` | 184061005 | Patient registration status | http://snomed.info/sct |
 | 16 | 185 | Observation | `Observation.valueCodeableConcept.coding` | SP000812 | Pasien Baru | http://terminology.kemkes.go.id/sp |
 | 17 | 186 | Observation | `Observation.valueCodeableConcept.coding` | SP000813 | Pasien Lama | http://terminology.kemkes.go.id/sp |
-| 18 | 196 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 18 | 196 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 19 | 208 | Observation | `Observation.code.coding` | SP000811 | Jalur Masuk Rawat Inap | http://terminology.kemkes.go.id/sp |
-| 20 | 209 | Observation | `Observation.valueCodeableConcept.coding` | 225728007.0 | Accident and Emergency department | http://snomed.info/sct |
-| 21 | 211 | Observation | `Observation.valueCodeableConcept.coding` | 50849002.0 | Emergency room admission | http://snomed.info/sct |
-| 22 | 212 | Observation | `Observation.valueCodeableConcept.coding` | 405606005.0 | Labor and delivery unit | http://snomed.info/sct |
+| 20 | 209 | Observation | `Observation.valueCodeableConcept.coding` | 225728007 | Accident and Emergency department | http://snomed.info/sct |
+| 21 | 211 | Observation | `Observation.valueCodeableConcept.coding` | 50849002 | Emergency room admission | http://snomed.info/sct |
+| 22 | 212 | Observation | `Observation.valueCodeableConcept.coding` | 405606005 | Labor and delivery unit | http://snomed.info/sct |
 | 23 | 230 | Condition | `Condition.code.coding` | P22.0 | Respiratory distress syndrome of newborn | http://hl7.org/fhir/sid/icd-10 |
 | 24 | 231 | Condition | `Condition.code.coding` | E46 | Unspecified protein-energy malnutrition | http://hl7.org/fhir/sid/icd-10 |
 | 25 | 232 | Condition | `Condition.code.coding` | P21.0 | Severe birth asphyxia | http://hl7.org/fhir/sid/icd-10 |
@@ -226,11 +226,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 117 | 416 | Procedure | `Procedure.code.coding` | 99.60 | Cardiopulmonary resuscitation, not otherwise specified | http://hl7.org/fhir/sid/icd-9-cm |
 | 118 | 418 | Procedure | `Procedure.code.coding` | 99.04 | Transfusion of packed cells | http://hl7.org/fhir/sid/icd-9-cm |
 | 119 | 420 | Procedure | `Procedure.code.coding` | 89.52 | Electrocardiogram | http://hl7.org/fhir/sid/icd-9-cm |
-| 120 | 434 | Condition | `Condition.code.coding` | 268910001.0 | Patient's condition improved | http://snomed.info/sct |
-| 121 | 435 | Condition | `Condition.code.coding` | 371001000.0 | Patient cured | http://snomed.info/sct |
+| 120 | 434 | Condition | `Condition.code.coding` | 268910001 | Patient's condition improved | http://snomed.info/sct |
+| 121 | 435 | Condition | `Condition.code.coding` | 371001000 | Patient cured | http://snomed.info/sct |
 | 122 | 446 | Observation | `Observation.code.coding` | 82589-3 | Highest level of education | http://loinc.org |
-| 123 | 447 | Observation | `Observation.valueCodeableConcept.coding` | 224294005.0 | No formal education | http://snomed.info/sct |
-| 124 | 457 | Observation | `Observation.code.coding` | 183797002.0 | Duration of inpatient stay | http://snomed.info/sct |
+| 123 | 447 | Observation | `Observation.valueCodeableConcept.coding` | 224294005 | No formal education | http://snomed.info/sct |
+| 124 | 457 | Observation | `Observation.code.coding` | 183797002 | Duration of inpatient stay | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

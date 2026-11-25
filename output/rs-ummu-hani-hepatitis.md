@@ -27,19 +27,19 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 5 | 65–74 | Condition | B19 | Unspecified viral hepatitis | _Diagnosis utama (ICD10)_ → `Condition.code.coding.code` (68, tanpa BQ)<br>_Tanggal tegak diagnosis_ → `Condition.onsetDateTime` (74, tanpa BQ) |
 | 6 | 78–87 | Condition | B19 | Unspecified viral hepatitis | _Diagnosis sekunder (ICD10)_ → `Condition.code.text` (82, tanpa BQ) |
 | 7 | 91–108 | Condition | – | – | _Riwayat Penyakit dahulu_ → `Condition.identifier.value` (91, tanpa BQ)<br>_Riwayat Penyakit sekarang_ → `Condition.identifier.value` (100, tanpa BQ) |
-| 8 | 109–120 | Observation | 424144002.0 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (112, tanpa BQ) |
+| 8 | 109–120 | Observation | 424144002 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (112, tanpa BQ) |
 | 9 | 121–132 | Observation | 82810-3 | Pregnancy status | _Status Hamil_ → `Observation.valueCodeableConcept.coding` (124, tanpa BQ) |
 | 10 | 147–154 | PractitionerRole | – | – | _Tenaga Pemeriksa (Lab)_ → `PractitionerRole.code.coding` (151, tanpa BQ) |
 | 11 | 155–159 | Practitioner | – | – | _NIK Tenaga Pemeriksa (Lab)_ → `Practitioner.identifier.value` (157, tanpa BQ)<br>_Nama Tenaga Pemeriksa (Lab)_ → `Practitioner.name.text` (159, tanpa BQ) |
-| 12 | 160–170 | ServiceRequest | 15220000.0 | Laboratory test | _Jenis pemeriksaan_ → `ServiceRequest.code.text` (165, tanpa BQ)<br>_Tanggal Pemeriksaan_ → `ServiceRequest.occurrenceDateTime` (168, tanpa BQ) |
-| 13 | 171–176 | Specimen | 123038009.0 | Specimen | – |
-| 14 | 177–188 | Observation | 15220000.0 | Laboratory test | _Hasil pemeriksaan_ → `Observation.valueString` (181, tanpa BQ) |
-| 15 | 189–202 | DiagnosticReport | 15220000.0 | Laboratory test | _Rencana Tindak Lanjut (pemeriksaan laboratorium)_ → `DiagnosticReport.conclusion` (197, tanpa BQ) |
+| 12 | 160–170 | ServiceRequest | 15220000 | Laboratory test | _Jenis pemeriksaan_ → `ServiceRequest.code.text` (165, tanpa BQ)<br>_Tanggal Pemeriksaan_ → `ServiceRequest.occurrenceDateTime` (168, tanpa BQ) |
+| 13 | 171–176 | Specimen | 123038009 | Specimen | – |
+| 14 | 177–188 | Observation | 15220000 | Laboratory test | _Hasil pemeriksaan_ → `Observation.valueString` (181, tanpa BQ) |
+| 15 | 189–202 | DiagnosticReport | 15220000 | Laboratory test | _Rencana Tindak Lanjut (pemeriksaan laboratorium)_ → `DiagnosticReport.conclusion` (197, tanpa BQ) |
 | 16 | 203–213 | Procedure | TK000028 | Diagnostic procedure | _Pemeriksaan Penunjang Lainnya_ → `Procedure.category.coding` (203, tanpa BQ) |
 | 17 | 223–233 | MedicationStatement | – | – | _Riwayat Penggunaan Obat_ → `MedicationStatement.category.coding` (223, tanpa BQ)<br>_Terapi - Obat_ → `MedicationStatement.category.coding` (231, tanpa BQ) |
 | 18 | 234–238 | MedicationStatement | – | – | – |
-| 19 | 239–249 | Procedure | 277132007.0 | Therapeutic procedure | _Terapi - Tindakan_ → `Procedure.category.coding` (239, tanpa BQ) |
-| 20 | 250–261 | ServiceRequest | 1285318003.0 | Viral hepatitis disease management program | _Rencana Tindak Lanjut_ → `ServiceRequest.status` (250, tanpa BQ) |
+| 19 | 239–249 | Procedure | 277132007 | Therapeutic procedure | _Terapi - Tindakan_ → `Procedure.category.coding` (239, tanpa BQ) |
+| 20 | 250–261 | ServiceRequest | 1285318003 | Viral hepatitis disease management program | _Rencana Tindak Lanjut_ → `ServiceRequest.status` (250, tanpa BQ) |
 
 ### Payload per resource
 
@@ -62,28 +62,28 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 29 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 2 | 30 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 3 | 31 | PractitionerRole | `PractitionerRole.code.coding` | 69280009.0 | Specialized physician | http://snomed.info/sct |
-| 4 | 32 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 1 | 29 | PractitionerRole | `PractitionerRole.code.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 2 | 30 | PractitionerRole | `PractitionerRole.code.coding` | 309343006 | Physician | http://snomed.info/sct |
+| 3 | 31 | PractitionerRole | `PractitionerRole.code.coding` | 69280009 | Specialized physician | http://snomed.info/sct |
+| 4 | 32 | PractitionerRole | `PractitionerRole.code.coding` | 224535009 | Registered nurse | http://snomed.info/sct |
 | 5 | 69 | Condition | `Condition.code.coding` | B19 | Unspecified viral hepatitis | http://hl7.org/fhir/sid/icd-10 |
 | 6 | 81 | Condition | `Condition.code.coding` | B19 | Unspecified viral hepatitis | http://hl7.org/fhir/sid/icd-10 |
-| 7 | 111 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 7 | 111 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 8 | 123 | Observation | `Observation.code.coding` | 82810-3 | Pregnancy status | http://loinc.org |
 | 9 | 124 | Observation | `Observation.valueCodeableConcept.coding` | LA15173-0 | Pregnant | http://loinc.org |
 | 10 | 125 | Observation | `Observation.valueCodeableConcept.coding` | LA26683-5 | Not pregnant | http://loinc.org |
-| 11 | 147 | PractitionerRole | `PractitionerRole.code.coding` | 69280009.0 | Specialized physician | http://snomed.info/sct |
-| 12 | 148 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 13 | 149 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 14 | 150 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 15 | 151 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002.0 | Laboratory worker | http://snomed.info/sct |
-| 16 | 164 | ServiceRequest | `ServiceRequest.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
-| 17 | 172 | Specimen | `Specimen.type.coding` | 123038009.0 | Specimen | http://snomed.info/sct |
-| 18 | 179 | Observation | `Observation.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
-| 19 | 191 | DiagnosticReport | `DiagnosticReport.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
+| 11 | 147 | PractitionerRole | `PractitionerRole.code.coding` | 69280009 | Specialized physician | http://snomed.info/sct |
+| 12 | 148 | PractitionerRole | `PractitionerRole.code.coding` | 309343006 | Physician | http://snomed.info/sct |
+| 13 | 149 | PractitionerRole | `PractitionerRole.code.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 14 | 150 | PractitionerRole | `PractitionerRole.code.coding` | 224535009 | Registered nurse | http://snomed.info/sct |
+| 15 | 151 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002 | Laboratory worker | http://snomed.info/sct |
+| 16 | 164 | ServiceRequest | `ServiceRequest.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 17 | 172 | Specimen | `Specimen.type.coding` | 123038009 | Specimen | http://snomed.info/sct |
+| 18 | 179 | Observation | `Observation.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 19 | 191 | DiagnosticReport | `DiagnosticReport.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
 | 20 | 205 | Procedure | `Procedure.code.coding` | TK000028 | Diagnostic procedure | http://terminology.kemkes.go.id |
-| 21 | 241 | Procedure | `Procedure.code.coding` | 277132007.0 | Therapeutic procedure | http://snomed.info/sct |
-| 22 | 254 | ServiceRequest | `ServiceRequest.code.coding` | 1285318003.0 | Viral hepatitis disease management program | http://snomed.info/sct |
+| 21 | 241 | Procedure | `Procedure.code.coding` | 277132007 | Therapeutic procedure | http://snomed.info/sct |
+| 22 | 254 | ServiceRequest | `ServiceRequest.code.coding` | 1285318003 | Viral hepatitis disease management program | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

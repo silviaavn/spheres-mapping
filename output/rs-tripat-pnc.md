@@ -28,7 +28,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 6 | 58–66 | EpisodeOfCare | PNC | Postnatal Care | – |
 | 7 | 67–96 | Encounter | – | – | _Nomor Pendaftaran_ → `Encounter.identifier.value` (67, tanpa BQ)<br>_Tanggal Kunjungan PNC_ → `Encounter.period.start` (71, tanpa BQ)<br>_Cara Masuk_ → `Encounter.hospitalization.admitSource.coding` (81, tanpa BQ) |
 | 8 | 97–106 | Condition | Z39.2 | Routine postpartum follow-up | _Diagnosa ICD-X_ → `Condition.code.coding` (97, tanpa BQ) |
-| 9 | 107–115 | Condition | 404684003.0 | Clinical finding | _Keluhan Utama_ → `Condition.code.coding` (107, tanpa BQ) |
+| 9 | 107–115 | Condition | 404684003 | Clinical finding | _Keluhan Utama_ → `Condition.code.coding` (107, tanpa BQ) |
 | 10 | 116–126 | Observation | 93857-1 | Date and time of obstetric delivery | _Tanggal Persalinan_ → `Observation.valueDateTime` (118, tanpa BQ) |
 | 11 | 127–138 | Observation | 11996-6 | [#] Pregnancies | _Gravida_ → `Observation.valueInteger` (130, tanpa BQ) |
 | 12 | 139–150 | Observation | 11977-6 | [#] Parity | _Partus_ → `Observation.valueInteger` (142, tanpa BQ) |
@@ -41,9 +41,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 19 | 223–234 | Observation | 8345-1 | Body weight Measured --post partum | _Berat Badan_ → `Observation.valueQuantity.value` (225, tanpa BQ) |
 | 20 | 235–246 | Observation | 8305-5 | Body height --post partum | _Tinggi Badan_ → `Observation.valueQuantity.value` (237, tanpa BQ) |
 | 21 | 247–259 | Observation | 11881-0 | Uterus Fundal height Tape measure | _Tinggi Fundus Uteri (TFU)_ → `Observation.valueQuantity.value` (249, tanpa BQ) |
-| 22 | 260–271 | Observation | 116859006.0 | Transfusion of blood product | _Status Transfusi_ → `Observation.valueBoolean` (262, tanpa BQ) |
+| 22 | 260–271 | Observation | 116859006 | Transfusion of blood product | _Status Transfusi_ → `Observation.valueBoolean` (262, tanpa BQ) |
 | 23 | 272–279 | MedicationStatement | – | – | _Obat_ → `MedicationStatement.medicationCodeableConcept.text` (272, tanpa BQ) |
-| 24 | 280–289 | Procedure | 71388002.0 | Procedure | _Tindakan_ → `Procedure.code.coding` (280, tanpa BQ) |
+| 24 | 280–289 | Procedure | 71388002 | Procedure | _Tindakan_ → `Procedure.code.coding` (280, tanpa BQ) |
 
 ### Payload per resource
 
@@ -64,17 +64,17 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 41 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 2 | 42 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
-| 3 | 43 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 4 | 44 | PractitionerRole | `PractitionerRole.code.coding` | 768827000.0 | Nutritionist | http://snomed.info/sct |
-| 5 | 45 | PractitionerRole | `PractitionerRole.code.coding` | 36682004.0 | Physiotherapist | http://snomed.info/sct |
-| 6 | 55 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 1 | 41 | PractitionerRole | `PractitionerRole.code.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 2 | 42 | PractitionerRole | `PractitionerRole.code.coding` | 309367003 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 3 | 43 | PractitionerRole | `PractitionerRole.code.coding` | 224535009 | Registered nurse | http://snomed.info/sct |
+| 4 | 44 | PractitionerRole | `PractitionerRole.code.coding` | 768827000 | Nutritionist | http://snomed.info/sct |
+| 5 | 45 | PractitionerRole | `PractitionerRole.code.coding` | 36682004 | Physiotherapist | http://snomed.info/sct |
+| 6 | 55 | PractitionerRole | `PractitionerRole.code.coding` | 309367003 | Obstetrician and gynecologist | http://snomed.info/sct |
 | 7 | 58 | EpisodeOfCare | `EpisodeOfCare.type.coding` | PNC | Postnatal Care | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
 | 8 | 81 | Encounter | `Encounter.hospitalization.admitSource.coding` | EHA000002 | Datang sendiri | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 9 | 82 | Encounter | `Encounter.hospitalization.admitSource.coding` | 305956004.0 | Referral by physician | http://snomed.info/sct |
+| 9 | 82 | Encounter | `Encounter.hospitalization.admitSource.coding` | 305956004 | Referral by physician | http://snomed.info/sct |
 | 10 | 98 | Condition | `Condition.code.coding` | Z39.2 | Routine postpartum follow-up | http://hl7.org/fhir/sid/icd-10 |
-| 11 | 107 | Condition | `Condition.code.coding` | 404684003.0 | Clinical finding | http://snomed.info/sct |
+| 11 | 107 | Condition | `Condition.code.coding` | 404684003 | Clinical finding | http://snomed.info/sct |
 | 12 | 116 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
 | 13 | 127 | Observation | `Observation.code.coding` | 11996-6 | [#] Pregnancies | http://loinc.org |
 | 14 | 128 | Observation | `Observation.code.coding` | ANC.B6.DE24 | Number of pregnancies (gravida) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
@@ -90,8 +90,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 24 | 223 | Observation | `Observation.code.coding` | 8345-1 | Body weight Measured --post partum | http://loinc.org |
 | 25 | 235 | Observation | `Observation.code.coding` | 8305-5 | Body height --post partum | http://loinc.org |
 | 26 | 247 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
-| 27 | 260 | Observation | `Observation.code.coding` | 116859006.0 | Transfusion of blood product | http://snomed.info/sct |
-| 28 | 280 | Procedure | `Procedure.code.coding` | 71388002.0 | Procedure | http://snomed.info/sct |
+| 27 | 260 | Observation | `Observation.code.coding` | 116859006 | Transfusion of blood product | http://snomed.info/sct |
+| 28 | 280 | Procedure | `Procedure.code.coding` | 71388002 | Procedure | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

@@ -72,7 +72,7 @@ Diagnosa,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http:/
 ,,,TglReg,,,YYYY-MM-DDT00:00:00+07:00,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Discharge diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition Diagnosis Primer,,,,,
-,,,,,,,,,,Encounter,Encounter.diagnosis.rank,1.0,,,,,
+,,,,,,,,,,Encounter,Encounter.diagnosis.rank,1,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
 ,,,,,,,,,,Condition,Condition.code.coding.code,Tidak ada,Tidak ada,Tidak ada,,,
@@ -85,8 +85,8 @@ Diagnosa,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http:/
 ,,,,,,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Discharge diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition Diagnosis Sekunder,,,,,
-,,,,,,,,,,Encounter,Encounter.diagnosis.rank,2.0,,,,,
-Usia,,,Usia,Usia,string,,,"Format raw: 'X Th Y Bl Z Hr'. Pecah ke 3 nilai: tahun (valueQuantity), bulan (component[0]), hari (component[1]).",,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,1
+,,,,,,,,,,Encounter,Encounter.diagnosis.rank,2,,,,,
+Usia,,,Usia,Usia,string,,,"Format raw: 'X Th Y Bl Z Hr'. Pecah ke 3 nilai: tahun (valueQuantity), bulan (component[0]), hari (component[1]).",,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,nilai: tahun,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,a,year,http://unitsofmeasure.org,,,
@@ -103,7 +103,7 @@ Usia,,,Usia,Usia,string,,,"Format raw: 'X Th Y Bl Z Hr'. Pecah ke 3 nilai: tahun
 ,,,TglReg,,date,YYYY-MM-DDT00:00:00+07:00,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,TglReg,,,YYYY-MM-DDT00:00:00+07:00,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner {{practitioner_id}},,,,,
-Status Pasien,,,StatusPasien,Status Pasien,code,,,,,Observation,Observation.code.coding,184061005.0,Patient registration status,http://snomed.info/sct,,1,1
+Status Pasien,,,StatusPasien,Status Pasien,code,,,,,Observation,Observation.code.coding,184061005,Patient registration status,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Baru,,,Observation,Observation.valueCodeableConcept.coding,SP000812,Pasien Baru,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Lama,,,Observation,Observation.valueCodeableConcept.coding,SP000813,Pasien Lama,http://terminology.kemkes.go.id/sp,,1,

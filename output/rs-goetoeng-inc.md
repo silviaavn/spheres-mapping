@@ -22,10 +22,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|
 | 1 | 2–26 | Patient | – | – | _Nama Ibu_ → `Patient.name.text` (2, tanpa BQ)<br>_No KTP_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (7, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (8, tanpa BQ)<br>_Alamat Domisili_ → `Patient.address.use` (9, tanpa BQ)<br>_Nama Provinsi_ → `Patient.address.extension.extension.valueCode` (15, tanpa BQ)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (18, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.extension.valueCode` (23, tanpa BQ)<br>_Nama Desa_ → `Patient.address.extension.extension.valueCode` (26, tanpa BQ) |
 | 2 | 94–108 | Encounter | – | – | _DPJP_ → `Encounter.participant.individual.display` (102, tanpa BQ)<br>_Tanggal Masuk_ → `Encounter.period.start` (103, tanpa BQ)<br>_Tanggal Keluar_ → `Encounter.period.end` (104, tanpa BQ)<br>_Ruang_ → `Encounter.location.location.display` (106, tanpa BQ)<br>_Keterangan Rujuk_ → `Encounter.hospitalization.admitSource.coding` (116, tanpa BQ)<br>_TINDAK LANJUT_ → `Encounter.hospitalization.dischargeDisposition.coding` (143, tanpa BQ) |
-| 3 | 109–115 | Condition | 386337006.0 | Intrapartal care | – |
+| 3 | 109–115 | Condition | 386337006 | Intrapartal care | – |
 | 4 | 146–157 | ServiceRequest | – | – | _TINDAK LANJUT_ → `ServiceRequest.category` (146, tanpa BQ) |
 | 5 | 158–174 | Coverage | – | – | _Cara Bayar_ → `Coverage.identifier` (158, tanpa BQ)<br>_KELAS_ → `Coverage.class.type.coding` (166, tanpa BQ) |
-| 6 | 175–186 | Observation | 424144002.0 | Current chronological age | _Umur_ → `Observation.valueQuantity.value` (178, tanpa BQ) |
+| 6 | 175–186 | Observation | 424144002 | Current chronological age | _Umur_ → `Observation.valueQuantity.value` (178, tanpa BQ) |
 | 7 | 187–207 | Observation | 82589-3 | Highest level of education | _PENDIDIKAN_ → `Observation.valueCodeableConcept.coding` (190, tanpa BQ) |
 | 8 | 208–249 | Condition | O61.0 | Failed medical induction of labour | _DX1_ → `Condition.clinicalStatus.coding` (208, tanpa BQ)<br>_KODE1_ → `Condition.clinicalStatus.coding` (242, tanpa BQ) |
 | 9 | 250–283 | Condition | O61.0 | Failed medical induction of labour | _DX2_ → `Condition.clinicalStatus.coding` (276, tanpa BQ) |
@@ -79,10 +79,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 57 | 514–515 | Procedure | 75.69 | Repair of other current obstetric laceration | – |
 | 58 | 516–517 | Procedure | 72.79 | Other vacuum extraction | – |
 | 59 | 518–519 | Procedure | 75.92 | Evacuation of other hematoma of vulva or vagina | – |
-| 60 | 520–529 | Condition | 268910001.0 | Patient's condition improved | _KEADAAN PASIEN_ → `Condition.clinicalStatus.coding` (520, tanpa BQ) |
-| 61 | 530–541 | Observation | 183797002.0 | Duration of inpatient stay | _LAMA RAWAT (HARI)_ → `Observation.valueQuantity.value` (533, tanpa BQ) |
+| 60 | 520–529 | Condition | 268910001 | Patient's condition improved | _KEADAAN PASIEN_ → `Condition.clinicalStatus.coding` (520, tanpa BQ) |
+| 61 | 530–541 | Observation | 183797002 | Duration of inpatient stay | _LAMA RAWAT (HARI)_ → `Observation.valueQuantity.value` (533, tanpa BQ) |
 | 62 | 542–555 | Observation | SP000811 | Jalur Masuk Rawat Inap | _VIA_ → `Observation.valueCodeableConcept.coding` (545, tanpa BQ) |
-| 63 | 556–567 | Observation | 184061005.0 | Patient registration status | _P.BARU_ → `Observation.valueCodeableConcept.coding` (559, tanpa BQ) |
+| 63 | 556–567 | Observation | 184061005 | Patient registration status | _P.BARU_ → `Observation.valueCodeableConcept.coding` (559, tanpa BQ) |
 | 64 | 568–578 | Composition | – | – | _DX RESUME PULANG_ → `Composition.status` (568, tanpa BQ) |
 
 ### Payload per resource
@@ -103,8 +103,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 111 | Condition | `Condition.code.coding` | 386337006.0 | Intrapartal care | http://snomed.info/sct |
-| 2 | 116 | Encounter | `Encounter.hospitalization.admitSource.coding` | 1991000124105.0 | Referred by self | http://snomed.info/sct |
+| 1 | 111 | Condition | `Condition.code.coding` | 386337006 | Intrapartal care | http://snomed.info/sct |
+| 2 | 116 | Encounter | `Encounter.hospitalization.admitSource.coding` | 1991000124105 | Referred by self | http://snomed.info/sct |
 | 3 | 117 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000814 | Rujukan dari Dokter Praktik Mandiri | http://terminology.kemkes.go.id/sp |
 | 4 | 118 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 5 | 119 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
@@ -114,17 +114,17 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 9 | 127 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 10 | 129 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 11 | 131 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
-| 12 | 150 | ServiceRequest | `ServiceRequest.code` | 185389009.0 | Follow-up visit | http://snomed.info/sct |
-| 13 | 177 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 12 | 150 | ServiceRequest | `ServiceRequest.code` | 185389009 | Follow-up visit | http://snomed.info/sct |
+| 13 | 177 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 14 | 189 | Observation | `Observation.code.coding` | 82589-3 | Highest level of education | http://loinc.org |
-| 15 | 190 | Observation | `Observation.valueCodeableConcept.coding` | 224294005.0 | No formal education | http://snomed.info/sct |
-| 16 | 191 | Observation | `Observation.valueCodeableConcept.coding` | 473463000.0 | Received elementary school education | http://snomed.info/sct |
-| 17 | 192 | Observation | `Observation.valueCodeableConcept.coding` | 603435002.0 | Educated to junior high school level | http://snomed.info/sct |
-| 18 | 193 | Observation | `Observation.valueCodeableConcept.coding` | 603434003.0 | Educated to senior high school level | http://snomed.info/sct |
-| 19 | 194 | Observation | `Observation.valueCodeableConcept.coding` | 38901000087109.0 | University diploma achieved | http://snomed.info/sct |
-| 20 | 196 | Observation | `Observation.valueCodeableConcept.coding` | 38901000087109.0 | University diploma achieved | http://snomed.info/sct |
-| 21 | 198 | Observation | `Observation.valueCodeableConcept.coding` | 38861000087100.0 | Bachelor's degree achieved | http://snomed.info/sct |
-| 22 | 200 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 15 | 190 | Observation | `Observation.valueCodeableConcept.coding` | 224294005 | No formal education | http://snomed.info/sct |
+| 16 | 191 | Observation | `Observation.valueCodeableConcept.coding` | 473463000 | Received elementary school education | http://snomed.info/sct |
+| 17 | 192 | Observation | `Observation.valueCodeableConcept.coding` | 603435002 | Educated to junior high school level | http://snomed.info/sct |
+| 18 | 193 | Observation | `Observation.valueCodeableConcept.coding` | 603434003 | Educated to senior high school level | http://snomed.info/sct |
+| 19 | 194 | Observation | `Observation.valueCodeableConcept.coding` | 38901000087109 | University diploma achieved | http://snomed.info/sct |
+| 20 | 196 | Observation | `Observation.valueCodeableConcept.coding` | 38901000087109 | University diploma achieved | http://snomed.info/sct |
+| 21 | 198 | Observation | `Observation.valueCodeableConcept.coding` | 38861000087100 | Bachelor's degree achieved | http://snomed.info/sct |
+| 22 | 200 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
 | 23 | 216 | Condition | `Condition.code.coding` | O61.0 | Failed medical induction of labour | http://hl7.org/fhir/sid/icd-10 |
 | 24 | 217 | Condition | `Condition.code.coding` | O64.4 | Obstructed labour due to shoulder presentation | http://hl7.org/fhir/sid/icd-10 |
 | 25 | 218 | Condition | `Condition.code.coding` | O42.0 | Premature rupture of membranes, onset of labour within 24 hours | http://hl7.org/fhir/sid/icd-10 |
@@ -337,15 +337,15 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 232 | 515 | Procedure | `Procedure.code.coding` | 75.69 | Repair of other current obstetric laceration | http://hl7.org/fhir/sid/icd-9-cm |
 | 233 | 517 | Procedure | `Procedure.code.coding` | 72.79 | Other vacuum extraction | http://hl7.org/fhir/sid/icd-9-cm |
 | 234 | 519 | Procedure | `Procedure.code.coding` | 75.92 | Evacuation of other hematoma of vulva or vagina | http://hl7.org/fhir/sid/icd-9-cm |
-| 235 | 522 | Condition | `Condition.code.coding` | 268910001.0 | Patient's condition improved | http://snomed.info/sct |
-| 236 | 523 | Condition | `Condition.code.coding` | 371001000.0 | Patient cured | http://snomed.info/sct |
-| 237 | 532 | Observation | `Observation.code.coding` | 183797002.0 | Duration of inpatient stay | http://snomed.info/sct |
+| 235 | 522 | Condition | `Condition.code.coding` | 268910001 | Patient's condition improved | http://snomed.info/sct |
+| 236 | 523 | Condition | `Condition.code.coding` | 371001000 | Patient cured | http://snomed.info/sct |
+| 237 | 532 | Observation | `Observation.code.coding` | 183797002 | Duration of inpatient stay | http://snomed.info/sct |
 | 238 | 544 | Observation | `Observation.code.coding` | SP000811 | Jalur Masuk Rawat Inap | http://terminology.kemkes.go.id/sp |
-| 239 | 545 | Observation | `Observation.valueCodeableConcept.coding` | 225728007.0 | Accident and Emergency department | http://snomed.info/sct |
-| 240 | 546 | Observation | `Observation.valueCodeableConcept.coding` | 309942007.0 | Obstetrics and gynecology department | http://snomed.info/sct |
-| 241 | 547 | Observation | `Observation.valueCodeableConcept.coding` | 1363029004.0 | Hospital observation unit | http://snomed.info/sct |
-| 242 | 548 | Observation | `Observation.valueCodeableConcept.coding` | 405606005.0 | Labor and delivery unit | http://snomed.info/sct |
-| 243 | 558 | Observation | `Observation.code.coding` | 184061005.0 | Patient registration status | http://snomed.info/sct |
+| 239 | 545 | Observation | `Observation.valueCodeableConcept.coding` | 225728007 | Accident and Emergency department | http://snomed.info/sct |
+| 240 | 546 | Observation | `Observation.valueCodeableConcept.coding` | 309942007 | Obstetrics and gynecology department | http://snomed.info/sct |
+| 241 | 547 | Observation | `Observation.valueCodeableConcept.coding` | 1363029004 | Hospital observation unit | http://snomed.info/sct |
+| 242 | 548 | Observation | `Observation.valueCodeableConcept.coding` | 405606005 | Labor and delivery unit | http://snomed.info/sct |
+| 243 | 558 | Observation | `Observation.code.coding` | 184061005 | Patient registration status | http://snomed.info/sct |
 | 244 | 559 | Observation | `Observation.valueCodeableConcept.coding` | SP000812 | Pasien Baru | http://terminology.kemkes.go.id/sp |
 | 245 | 560 | Observation | `Observation.valueCodeableConcept.coding` | SP000813 | Pasien Lama | http://terminology.kemkes.go.id/sp |
 

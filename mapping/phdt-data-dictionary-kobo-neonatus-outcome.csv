@@ -1,5 +1,5 @@
 Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Format/Value,Value Name,Definisi Operasional,Agregat/Individu,Resource,Path,Code,Display,CodeSystem,Keterangan,jumlah code,jumlah instance
-,,,,,,,healthworker,,,PractitionerRole,PractitionerRole.code.coding,223366009.0,Healthcare professional,http://snomed.info/sct,,1,1
+,,,,,,,healthworker,,,PractitionerRole,PractitionerRole.code.coding,223366009,Healthcare professional,http://snomed.info/sct,,1,1
 ,,,,,,,field_or_call_center_staff,,,PractitionerRole,PractitionerRole.code.coding,SP000396,Data entry staff,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,data_entry_staff,,,PractitionerRole,PractitionerRole.code.coding,SP000397,Field/call center staff,http://terminology.kemkes.go.id/sp,,1,
 ,,,,Nama yang melakukan entry data,String,,,,,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,1
@@ -16,10 +16,10 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,Tempat lahir,Coded,Select one option,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,72150-6,Delivery location,http://loinc.org,,1,
-,,,,,,,Rumah,,,Observation,Observation.valueCodeableConcept.coding,264362003.0,Home,http://snomed.info/sct,,1,
-,,,,,,,Rumah Sakit,,,Observation,Observation.valueCodeableConcept.coding,104.0,Rumah Sakit,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
-,,,,,,,Puskesmas,,,Observation,Observation.valueCodeableConcept.coding,102.0,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
-,,,,,,,Klinik,,,Observation,Observation.valueCodeableConcept.coding,103.0,Klinik,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
+,,,,,,,Rumah,,,Observation,Observation.valueCodeableConcept.coding,264362003,Home,http://snomed.info/sct,,1,
+,,,,,,,Rumah Sakit,,,Observation,Observation.valueCodeableConcept.coding,104,Rumah Sakit,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
+,,,,,,,Puskesmas,,,Observation,Observation.valueCodeableConcept.coding,102,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
+,,,,,,,Klinik,,,Observation,Observation.valueCodeableConcept.coding,103,Klinik,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
 ,,,,,,,PMB,,,Observation,Observation.valueCodeableConcept.coding,OT000004,Bidan Praktek Mandiri,http://terminology.kemkes.go.id/CodeSystem/organization-type,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -32,7 +32,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,Kembar,boolean,,,"Buat mapping data bayi, data nakes pemerika, data faskes pengampu dan faskes meninggal berulang sejumlah bayi kembarnya",,Patient,Patient.multipleBirthBoolean,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Jumlah bayi kembar,integer,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,246435002.0,Number of fetuses,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,246435002,Number of fetuses,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE109,Number of fetuses,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
 ,,,,,,,,,,Observation,Observation.valueInteger,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -87,10 +87,10 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Organization,Organization.identifier,official,Tidak ada,http://sys-ids.kemkes.go.id/organization/{{Org ID}},,,
 ,,,,,,,,,,Organization,Organization.type,prov,Healthcare Provider,http://terminology.hl7.org/CodeSystem/organization-type,,,
-,,,,Jenis Faskes,,,Puskesmas,,,Organization,Organization.type,102.0,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
-,,,,,,,Bidan Praktik Mandiri,,,Organization,Organization.type,101.0,Praktek mandiri,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
-,,,,,,,Klinik,,,Organization,Organization.type,103.0,Klinik,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
-,,,,,,,Rumah Sakit,,,Organization,Organization.type,104.0,Rumah Sakit,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
+,,,,Jenis Faskes,,,Puskesmas,,,Organization,Organization.type,102,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
+,,,,,,,Bidan Praktik Mandiri,,,Organization,Organization.type,101,Praktek mandiri,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
+,,,,,,,Klinik,,,Organization,Organization.type,103,Klinik,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
+,,,,,,,Rumah Sakit,,,Organization,Organization.type,104,Rumah Sakit,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
 ,,,{Faskes yang melayani},Faskes yang melayani,string,,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
@@ -143,10 +143,10 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,{Tanggal Lahir},,datetime,,,,,EpisodeOfCare,EpisodeOfCare.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,249222005.0,Neonatal condition,http://snomed.info/sct,,1,
-,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,102500002.0,Good neonatal condition at birth,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,249222005,Neonatal condition,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,102500002,Good neonatal condition at birth,http://snomed.info/sct,,1,
 ,,,,,,,sehat,,,Observation,Observation.valueCodeableConcept.coding,276707008,Infant in poor condition at birth,http://snomed.info/sct,,1,
-,,,,,,,sakit,,,Observation,Observation.valueCodeableConcept.coding,419099009.0,Dead,http://snomed.info/sct,,1,
+,,,,,,,sakit,,,Observation,Observation.valueCodeableConcept.coding,419099009,Dead,http://snomed.info/sct,,1,
 ,,,,,,,meninggal,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -154,11 +154,11 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,"Diisi jika Luaran Neonatus diisi ""sakit""",,Observation,Observation.component.code.coding,22925008.0,Neonatal disorder,http://snomed.info/sct,,1,
+,,,,,,,,"Diisi jika Luaran Neonatus diisi ""sakit""",,Observation,Observation.component.code.coding,22925008,Neonatal disorder,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.component.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.component.code.coding,SP000715,Umur Minggu,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.component.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.component.valueQuantity.code,wk,wk,http://unitsofmeasure.org,,,

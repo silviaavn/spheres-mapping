@@ -26,11 +26,11 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,NamaDesa,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,
 ,,,,,,,,,,Patient,Patient.address.extension.extension.url,village,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Patient,Patient.address.extension.extension.valueCode,Kode Wilayah KEMENDAGRI,Tidak ada,Tidak ada,,,
-,,,,TenagaPemeriksa,code,,Dr. Spesialis,"jika ada keyword ""dokter spesialis"" maka gunakan mapping ini",,PractitionerRole,PractitionerRole.code.coding,69280009.0,Specialized physician,http://snomed.info/sct,,1,1
+,,,,TenagaPemeriksa,code,,Dr. Spesialis,"jika ada keyword ""dokter spesialis"" maka gunakan mapping ini",,PractitionerRole,PractitionerRole.code.coding,69280009,Specialized physician,http://snomed.info/sct,,1,1
 ,,,,,,,,raw value dari dokter spesialis masukkan sini (rs harapan ibu),,PractitionerRole,PractitionerRole.code.text,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,Dr. Umum,"jika ada keyword ""dokter umum"" maka gunakan mapping ini",,PractitionerRole,PractitionerRole.code.coding,59058001.0,General physician,http://snomed.info/sct,,1,
-,,,,,,,Bidan,,,PractitionerRole,PractitionerRole.code.coding,309453006.0,Registered midwife,http://snomed.info/sct,,1,
-,,,,,,,Perawat,,,PractitionerRole,PractitionerRole.code.coding,224535009.0,Registered nurse,http://snomed.info/sct,,1,
+,,,,,,,Dr. Umum,"jika ada keyword ""dokter umum"" maka gunakan mapping ini",,PractitionerRole,PractitionerRole.code.coding,59058001,General physician,http://snomed.info/sct,,1,
+,,,,,,,Bidan,,,PractitionerRole,PractitionerRole.code.coding,309453006,Registered midwife,http://snomed.info/sct,,1,
+,,,,,,,Perawat,,,PractitionerRole,PractitionerRole.code.coding,224535009,Registered nurse,http://snomed.info/sct,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.active,true,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner NamaTenagaKesehatan,,,,,
@@ -67,7 +67,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,FaskesMelayani,string,,RSUD Panti Nugroho,"coded for ""RSUD Panti Nugroho""",,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,
 ,,,,JenisFaskes1,string,,Puskesmas,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000117,Rujukan dari Puskesmas,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Klinik,,,Encounter,Encounter.hospitalization.admitSource.coding,SP000925,Rujukan dari Klinik,http://terminology.kemkes.go.id/sp,,1,
-,,,,,,,Praktek Dokter Mandiri,,,Encounter,Encounter.hospitalization.admitSource.coding,305956004.0,Referral by physician,http://snomed.info/sct,,1,
+,,,,,,,Praktek Dokter Mandiri,,,Encounter,Encounter.hospitalization.admitSource.coding,305956004,Referral by physician,http://snomed.info/sct,,1,
 ,,,,NamaFaskes1,string,,,,,Encounter,Encounter.hospitalization.admitSource.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
@@ -82,7 +82,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,TglTegakDiagnosis,date,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition Diagnosis Masuk,,,,,
-,,,,,,,,,,Encounter,Encounter.diagnosis.rank,1.0,,,,,
+,,,,,,,,,,Encounter,Encounter.diagnosis.rank,1,,,,,
 ,,,,DiagnosisSekunder,string,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
 ,,,,,,,,"contoh formatnya ""I10    - Essential (primary) hypertension"" perlu dipisah menjadi code ""I10"" dan display ""Essential (primary) hypertension"". Jika kosong maka tidak perlu dibuat resource dan array encounter.diagnosis.rank=2. Jika ada lebih dari 1 maka dibuat resource masing2",,Condition,Condition.code.coding,Tidak ada,Tidak ada,http://hl7.org/fhir/sid/icd-10,,,
@@ -93,7 +93,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition Diagnosis Masuk,,,,,
-,,,,,,,,,,Encounter,Encounter.diagnosis.rank,2.0,,,,,
+,,,,,,,,,,Encounter,Encounter.diagnosis.rank,2,,,,,
 ,,,,RiwayatPenyakitDahulu,string,,,,,Condition,Condition.clinicalStatus.coding,inactive,Inactive,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,previous-condition,Previous Condition,http://terminology.kemkes.go.id,,,
 ,,,,,,,,,,Condition,Condition.code.text,Tidak ada,Tidak ada,Tidak ada,,,
@@ -112,7 +112,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Usia,string,,,"format data raw ""61 Th 0 Bl 28 Hr"", perlu dipecah untuk umur tahun ""Observation.valueQuantity.value"", umur bulan ""Observation.component.valueQuantity.value"", umur hari ""Observation.component.valueQuantity.value""",,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,a,year,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.component.code.coding,SP000020,Umur Bulan,http://terminology.kemkes.go.id/sp,,1,
@@ -168,11 +168,11 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 2. list pemeriksaan bisa bertambah/berubah (-)
 3. hasil pemeriksaan angkanya ada namun satuannya tidak ada, akan cukup makan resource untuk menentukannya
 4. serviceRequestnya harusnya bisa menggunakan value dari ""PemeriksaanPenunjangLain"" supaya yang paket bisa bersatu, namun yang ada di situ tidak hanya lab
-5. Dianalisis dengan gemini sih dia bisa memebdakan mana yang pemeriksaan darah dan mana yang pemeriksaan urin (misal), namun karena dia menganalisis berdasarkan paket pemeriksaannya juga. Dengan script sepertinya agak sulit",,ServiceRequest,ServiceRequest.category,108252007.0,Laboratory procedure,http://snomed.info/sct,,,1
+5. Dianalisis dengan gemini sih dia bisa memebdakan mana yang pemeriksaan darah dan mana yang pemeriksaan urin (misal), namun karena dia menganalisis berdasarkan paket pemeriksaannya juga. Dengan script sepertinya agak sulit",,ServiceRequest,ServiceRequest.category,108252007,Laboratory procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,ServiceRequest,ServiceRequest.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.intent,original-order,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.priority,routine,Tidak ada,Tidak ada,,,
-,,,,,,,,,,ServiceRequest,ServiceRequest.code.coding,15220000.0,Laboratory test,http://snomed.info/sct,,1,
+,,,,,,,,,,ServiceRequest,ServiceRequest.code.coding,15220000,Laboratory test,http://snomed.info/sct,,1,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.code.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.encounter.reference,Reference ke resources Encounter,,,,,
@@ -180,7 +180,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,ServiceRequest,ServiceRequest.requester.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.performer.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,Specimen,Specimen.status,available,Tidak ada,Tidak ada,,,1
-,,,,,,,,ini perlu dicari cara supaya bisa sesuai specimennya,,Specimen,Specimen.type.coding,123038009.0,Specimen,http://snomed.info/sct,,1,
+,,,,,,,,ini perlu dicari cara supaya bisa sesuai specimennya,,Specimen,Specimen.type.coding,123038009,Specimen,http://snomed.info/sct,,1,
 ,,,,,,,,,,Specimen,Specimen.collection.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Specimen,Specimen.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
@@ -188,7 +188,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Specimen,Specimen.receivedTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,15220000.0,Laboratory test,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,15220000,Laboratory test,http://snomed.info/sct,,1,
 ,,,,,string,,,,,Observation,Observation.code.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,,,http://unitsofmeasure.org,,,
@@ -201,7 +201,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.category.coding,LAB,Laboratory,http://terminology.hl7.org/CodeSystem/v2-0074,,,
-,,,,,,,,,,DiagnosticReport,DiagnosticReport.code.coding,15220000.0,Laboratory test,http://snomed.info/sct,,1,
+,,,,,,,,,,DiagnosticReport,DiagnosticReport.code.coding,15220000,Laboratory test,http://snomed.info/sct,,1,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.code.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.encounter.reference,Reference ke resources Encounter,,,,,
@@ -212,9 +212,9 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.result.reference,Reference ke resources Observation,,,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.specimen.reference,Reference ke resources Specimen,,,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.basedOn.reference,Reference ke resources ServiceRequest,,,,,
-,,,,PemeriksaanPenunjangLain,string,,,ini valuenya sama persis dengan kolom TerapiTindakan,,Procedure,Procedure.category.coding,80051000119107.0,Stroke care management,http://snomed.info/sct,,,1
+,,,,PemeriksaanPenunjangLain,string,,,ini valuenya sama persis dengan kolom TerapiTindakan,,Procedure,Procedure.category.coding,80051000119107,Stroke care management,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Procedure,Procedure.code.coding,80051000119107.0,Stroke care management,http://snomed.info/sct,,1,
+,,,,,,,,,,Procedure,Procedure.code.coding,80051000119107,Stroke care management,http://snomed.info/sct,,1,
 ,,,,,,,,harusnya setiap item dipisah di sini dan dicari codenya namun terlalu makan resource untuk sekarang,,Procedure,Procedure.code.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Procedure,Procedure.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -250,9 +250,9 @@ raw text= MedicationStatement.note.text",,MedicationStatement,MedicationStatemen
 ,,,,,,,,,,MedicationStatement,MedicationStatement.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,MedicationStatement,MedicationStatement.informationSource.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,MedicationStatement,MedicationStatement.context.reference,Reference ke resources Encounter,,,,,
-,,,,TerapiTindakan,string,,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,TerapiTindakan,string,,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Procedure,Procedure.code.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,1,
+,,,,,,,,,,Procedure,Procedure.code.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,1,
 ,,,,,,,,,,Procedure,Procedure.code.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Procedure,Procedure.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -264,8 +264,8 @@ raw text= MedicationStatement.note.text",,MedicationStatement,MedicationStatemen
 ,,,,RencanaTindakLanjut,string,,,,,ServiceRequest,ServiceRequest.status,active,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,ServiceRequest,ServiceRequest.intent,original-order,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.priority,stat,Tidak ada,Tidak ada,,,
-,,,,,,,,,,ServiceRequest,ServiceRequest.category,3457005.0,Patient referral,http://snomed.info/sct,,,
-,,,,,,,,,,ServiceRequest,ServiceRequest.code.coding,736251000.0,Stroke care plan,http://snomed.info/sct,,1,
+,,,,,,,,,,ServiceRequest,ServiceRequest.category,3457005,Patient referral,http://snomed.info/sct,,,
+,,,,,,,,,,ServiceRequest,ServiceRequest.code.coding,736251000,Stroke care plan,http://snomed.info/sct,,1,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.encounter.reference,Reference ke resources Encounter,,,,,

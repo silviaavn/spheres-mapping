@@ -49,8 +49,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 81 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002.0 | Laboratory Worker | http://snomed.info/sct |
-| 2 | 117 | Specimen | `Specimen.type` | 119334006.0 | Sputum specimen | http://snomed.info/sct |
+| 1 | 81 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002 | Laboratory Worker | http://snomed.info/sct |
+| 2 | 117 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
 | 3 | 128 | ServiceRequest | `ServiceRequest.code` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 4 | 136 | Observation | `Observation.code.coding` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 5 | 137 | Observation | `Observation.valueCodeableConcept.coding` | LA9634-2 | Absent | http://loinc.org |
@@ -62,16 +62,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 11 | 171 | Observation | `Observation.component.code.coding` | 48018-6 | Gene studied [ID] | http://loinc.org |
 | 12 | 173 | Observation | `Observation.component.code.coding` | SP000680 | Klebsiella pneumoniae virulence score [Numeric] by genomic analysis | http://terminology.kemkes.go.id/sp |
 | 13 | 175 | Observation | `Observation.component.code.coding` | 51961-1 | Genetic variation's effect on drug efficacy | http://loinc.org |
-| 14 | 176 | Observation | `Observation.component.valueCodeableConcept.coding` | 765422000.0 | Product containing beta-lactam | http://snomed.info/sct |
-| 15 | 177 | Observation | `Observation.component.valueCodeableConcept.coding` | 324116004.0 | Product containing aminoglycoside | http://snomed.info/sct |
-| 16 | 178 | Observation | `Observation.component.valueCodeableConcept.coding` | 1010205001.0 | Medicinal product containing fluoroquinolone and acting as antibacterial agent | http://snomed.info/sct |
-| 17 | 179 | Observation | `Observation.component.valueCodeableConcept.coding` | 763878009.0 | Product containing macrolide | http://snomed.info/sct |
-| 18 | 180 | Observation | `Observation.component.valueCodeableConcept.coding` | 66261008.0 | Product containing tetracycline | http://snomed.info/sct |
-| 19 | 181 | Observation | `Observation.component.valueCodeableConcept.coding` | 763875007.0 | Product containing sulfonamide | http://snomed.info/sct |
-| 20 | 182 | Observation | `Observation.component.valueCodeableConcept.coding` | 32792001.0 | Product containing trimethoprim | http://snomed.info/sct |
-| 21 | 183 | Observation | `Observation.component.valueCodeableConcept.coding` | 57191001.0 | Product containing chloramphenicol | http://snomed.info/sct |
-| 22 | 184 | Observation | `Observation.component.valueCodeableConcept.coding` | 73074003.0 | Product containing colistin | http://snomed.info/sct |
-| 23 | 185 | Observation | `Observation.component.valueCodeableConcept.coding` | 350134005.0 | Product containing carbapenem | http://snomed.info/sct |
+| 14 | 176 | Observation | `Observation.component.valueCodeableConcept.coding` | 765422000 | Product containing beta-lactam | http://snomed.info/sct |
+| 15 | 177 | Observation | `Observation.component.valueCodeableConcept.coding` | 324116004 | Product containing aminoglycoside | http://snomed.info/sct |
+| 16 | 178 | Observation | `Observation.component.valueCodeableConcept.coding` | 1010205001 | Medicinal product containing fluoroquinolone and acting as antibacterial agent | http://snomed.info/sct |
+| 17 | 179 | Observation | `Observation.component.valueCodeableConcept.coding` | 763878009 | Product containing macrolide | http://snomed.info/sct |
+| 18 | 180 | Observation | `Observation.component.valueCodeableConcept.coding` | 66261008 | Product containing tetracycline | http://snomed.info/sct |
+| 19 | 181 | Observation | `Observation.component.valueCodeableConcept.coding` | 763875007 | Product containing sulfonamide | http://snomed.info/sct |
+| 20 | 182 | Observation | `Observation.component.valueCodeableConcept.coding` | 32792001 | Product containing trimethoprim | http://snomed.info/sct |
+| 21 | 183 | Observation | `Observation.component.valueCodeableConcept.coding` | 57191001 | Product containing chloramphenicol | http://snomed.info/sct |
+| 22 | 184 | Observation | `Observation.component.valueCodeableConcept.coding` | 73074003 | Product containing colistin | http://snomed.info/sct |
+| 23 | 185 | Observation | `Observation.component.valueCodeableConcept.coding` | 350134005 | Product containing carbapenem | http://snomed.info/sct |
 | 24 | 186 | Observation | `Observation.component.code.coding` | 612-2 | Bacterial strain [Type] in Isolate by Bacteria subtyping | http://loinc.org |
 | 25 | 192 | DiagnosticReport | `DiagnosticReport.code` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 26 | 206 | DiagnosticReport | `DiagnosticReport.conclusionCode.coding` | SP000681 | Extensively drug resistant klebsiella | http://terminology.kemkes.go.id/sp |

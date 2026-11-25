@@ -38,11 +38,11 @@ Lokasi Pelayanan,,,tempat_pnc,Tempat Pelayanan PNC,string,,,Ruang/unit tempat pe
 ,,,,,,,,,,Location,Location.managingOrganization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 Tenaga Pemeriksa,,,nama_tenaga_pemeriksa,Nama Tenaga Pemeriksa,string,,,Nama tenaga pemeriksa PNC,,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Practitioner,Practitioner.active,True,Tidak ada,Tidak ada,,,
-,,,tenaga_pemeriksa,Tenaga Pemeriksa (Role),code,,Midwife,Peran/profesi tenaga pemeriksa,,PractitionerRole,PractitionerRole.code.coding,309453006.0,Registered midwife,http://snomed.info/sct,,1,1
-,,,tenaga_pemeriksa,,,,Doctor DPJP,,,PractitionerRole,PractitionerRole.code.coding,309367003.0,Obstetrician and gynecologist,http://snomed.info/sct,,1,
-,,,tenaga_pemeriksa,,,,Nurse,,,PractitionerRole,PractitionerRole.code.coding,224535009.0,Registered nurse,http://snomed.info/sct,,1,
-,,,tenaga_pemeriksa,,,,nutritionists,,,PractitionerRole,PractitionerRole.code.coding,768827000.0,Nutritionist,http://snomed.info/sct,,1,
-,,,tenaga_pemeriksa,,,,fisioterapi,,,PractitionerRole,PractitionerRole.code.coding,36682004.0,Physiotherapist,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,Tenaga Pemeriksa (Role),code,,Midwife,Peran/profesi tenaga pemeriksa,,PractitionerRole,PractitionerRole.code.coding,309453006,Registered midwife,http://snomed.info/sct,,1,1
+,,,tenaga_pemeriksa,,,,Doctor DPJP,,,PractitionerRole,PractitionerRole.code.coding,309367003,Obstetrician and gynecologist,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,,,,Nurse,,,PractitionerRole,PractitionerRole.code.coding,224535009,Registered nurse,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,,,,nutritionists,,,PractitionerRole,PractitionerRole.code.coding,768827000,Nutritionist,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,,,,fisioterapi,,,PractitionerRole,PractitionerRole.code.coding,36682004,Physiotherapist,http://snomed.info/sct,,1,
 ,,,nama_tenaga_pemeriksa,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,faskes,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 DPJP,,,nik_dpjp,NIK DPJP,string,,,NIK dokter DPJP,,Practitioner,Practitioner.identifier.value,Tidak ada,Tidak ada,Tidak ada,,,1
@@ -52,7 +52,7 @@ DPJP,,,nik_dpjp,NIK DPJP,string,,,NIK dokter DPJP,,Practitioner,Practitioner.ide
 ,,,jenis_kelamin_dpjp,Jenis Kelamin DPJP,code,,l,Jenis kelamin DPJP,,Practitioner,Practitioner.gender,male,Tidak ada,Tidak ada,,,
 ,,,jenis_kelamin_dpjp,,,,p,,,Practitioner,Practitioner.gender,female,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Practitioner,Practitioner.active,True,Tidak ada,Tidak ada,,,
-,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,309367003.0,Obstetrician and gynecologist,http://snomed.info/sct,,1,1
+,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,309367003,Obstetrician and gynecologist,http://snomed.info/sct,,1,1
 ,,,employee_name_dpjp,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner (DPJP),Tidak ada,Tidak ada,,,
 ,,,faskes,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 EpisodeOfCare PNC,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.type.coding,PNC,Postnatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,1,1
@@ -79,7 +79,7 @@ Data Kunjungan,,,no_pendaftaran,Nomor Pendaftaran,string,,,Nomor pendaftaran kun
 ,,,tempat_pnc,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,Tidak ada,Tidak ada,,,
 ,,,tempat_pnc,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,cara_masuk,Cara Masuk,code,,Datang Sendiri,Cara pasien masuk/asal rujukan,,Encounter,Encounter.hospitalization.admitSource.coding,EHA000002,Datang sendiri,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
-,,,cara_masuk,,,,Dokter RS,,,Encounter,Encounter.hospitalization.admitSource.coding,305956004.0,Referral by physician,http://snomed.info/sct,,1,
+,,,cara_masuk,,,,Dokter RS,,,Encounter,Encounter.hospitalization.admitSource.coding,305956004,Referral by physician,http://snomed.info/sct,,1,
 ,,,,,,,,,,Encounter,Encounter.statusHistory.status,arrived,Tidak ada,Tidak ada,,,
 ,,,tgl_kunjungan_pnc,,,,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tgl_kunjungan_pnc,,,,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,
@@ -104,7 +104,7 @@ Diagnosa,Diagnosa ICD-X,,nama_icdx,Diagnosa ICD-X,string,,,Diagnosa PNC; format 
 ,,,no_pendaftaran,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,Tidak ada,Tidak ada,,,
 ,,,tgl_kunjungan_pnc,,,,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tgl_kunjungan_pnc,,,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
-Diagnosa,Keluhan Utama,,keluhan_utama,Keluhan Utama,string,,,"Keluhan utama pasien saat datang (teks bebas, bisa multiline)",,Condition,Condition.code.coding,404684003.0,Clinical finding,http://snomed.info/sct,,1,1
+Diagnosa,Keluhan Utama,,keluhan_utama,Keluhan Utama,string,,,"Keluhan utama pasien saat datang (teks bebas, bisa multiline)",,Condition,Condition.code.coding,404684003,Clinical finding,http://snomed.info/sct,,1,1
 ,,,keluhan_utama,,,,,,,Condition,Condition.code.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,
 ,,,,,,,,,,Condition,Condition.category.coding,chief-complaint,Chief Complaint,http://terminology.kemkes.go.id,,,
@@ -257,7 +257,7 @@ Pemeriksaan Nifas,TFU,,tinggi_fundus,Tinggi Fundus Uteri (TFU),string,,,"Tinggi 
 ,,,tgl_kunjungan_pnc,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.display,Tidak ada,Tidak ada,Tidak ada,,,
-Pemeriksaan Nifas,Transfusi Darah,,status_transfusi,Status Transfusi,boolean,,Ya,Apakah ibu mendapat transfusi darah,,Observation,Observation.code.coding,116859006.0,Transfusion of blood product,http://snomed.info/sct,,1,1
+Pemeriksaan Nifas,Transfusi Darah,,status_transfusi,Status Transfusi,boolean,,Ya,Apakah ibu mendapat transfusi darah,,Observation,Observation.code.coding,116859006,Transfusion of blood product,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,procedure,Procedure,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,status_transfusi,,,,,,,Observation,Observation.valueBoolean,True,Tidak ada,Tidak ada,,,
 ,,,status_transfusi,,,,Tidak,,,Observation,Observation.valueBoolean,False,Tidak ada,Tidak ada,,,
@@ -277,9 +277,9 @@ Farmasi,,,obat,Obat,string,,,"Obat/item yang diberikan (multi-item dipisah koma,
 ,,,tgl_kunjungan_pnc,,,,,,,MedicationStatement,MedicationStatement.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,MedicationStatement,MedicationStatement.informationSource.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,no_pendaftaran,,,,,,,MedicationStatement,MedicationStatement.context.reference,Reference ke resources Encounter,Tidak ada,Tidak ada,,,
-Tindakan,,,tindakan,Tindakan,string,,,"Tindakan/prosedur (multi-item dipisah koma); kolom bercampur (askep, visite, tindakan kebidanan, manajemen laktasi) sehingga code & category memakai kode generik, nama asli di code.text",,Procedure,Procedure.code.coding,71388002.0,Procedure,http://snomed.info/sct,,1,1
+Tindakan,,,tindakan,Tindakan,string,,,"Tindakan/prosedur (multi-item dipisah koma); kolom bercampur (askep, visite, tindakan kebidanan, manajemen laktasi) sehingga code & category memakai kode generik, nama asli di code.text",,Procedure,Procedure.code.coding,71388002,Procedure,http://snomed.info/sct,,1,1
 ,,,tindakan,,,,,,,Procedure,Procedure.code.text,[nama tindakan],Tidak ada,Tidak ada,,,
-,,,,,,,,,,Procedure,Procedure.category.coding,71388002.0,Procedure,http://snomed.info/sct,,,
+,,,,,,,,,,Procedure,Procedure.category.coding,71388002,Procedure,http://snomed.info/sct,,,
 ,,,,,,,,,,Procedure,Procedure.status,completed,Tidak ada,Tidak ada,,,
 ,,,nama,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,Tidak ada,Tidak ada,,,
 ,,,nama,,,,,,,Procedure,Procedure.subject.display,Tidak ada,Tidak ada,Tidak ada,,,

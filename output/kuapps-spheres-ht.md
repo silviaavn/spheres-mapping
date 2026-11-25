@@ -21,8 +21,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 3–30 | Encounter | – | – | _TaskID_ → `Encounter.identifier.value` (3, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (11, tanpa BQ)<br>_Puskesmas Pengampu_ → `Encounter.serviceProvider.display` (23, tanpa BQ)<br>_Desa Ampuan_ → `Encounter.location.location.display` (26, tanpa BQ)<br>_Posyandu Ampuan_ → `Encounter.location.location.display` (27, tanpa BQ) |
-| 2 | 31–45 | Condition | 390906007.0 | Follow-up encounter | _Jenis Survei_ → `Condition.code.coding` (33, tanpa BQ) |
-| 3 | 46–56 | Observation | 418138009.0 | Patient condition finding | _Kondisi Responden_ → `Observation.valueCodeableConcept.coding` (48, tanpa BQ) |
+| 2 | 31–45 | Condition | 390906007 | Follow-up encounter | _Jenis Survei_ → `Condition.code.coding` (33, tanpa BQ) |
+| 3 | 46–56 | Observation | 418138009 | Patient condition finding | _Kondisi Responden_ → `Observation.valueCodeableConcept.coding` (48, tanpa BQ) |
 | 4 | 57–65 | Observation | 79378-6 | Cause of death | _Penyebab kematian_ → `Observation.valueString` (59, tanpa BQ)<br>_Tanggal meninggal_ → `Observation.effectiveDateTime` (63, tanpa BQ) |
 | 5 | 67–98 | QuestionnaireResponse | https://fhir.kemkes.go.id/sp/Questionnaire/Q00060 | – | _Hasil pengecekan BPJS dari web: https://pasti.bpjs-kesehatan.go.id/cek?_ → `QuestionnaireResponse.item.text` (78, tanpa BQ)<br>_Screenshot hasil pencarian web: https://pasti.bpjs-kesehatan.go.id/cek?_ → `QuestionnaireResponse.item.text` (82, tanpa BQ)<br>_Apakah responden memiliki BPJS Aktif?_ → `QuestionnaireResponse.item.text` (85, tanpa BQ)<br>_Faskes Tingkat 1 BPJS_ → `QuestionnaireResponse.item.text` (89, tanpa BQ)<br>_Nama Puskesmas Faskes Tingkat 1_ → `QuestionnaireResponse.item.text` (94, tanpa BQ)<br>_Nama Klinik atau Praktik Dokter Mandiri_ → `QuestionnaireResponse.item.text` (97, tanpa BQ) |
 | 6 | 100–188 | QuestionnaireResponse | https://fhir.kemkes.go.id/sp/Questionnaire/Q00063 | – | _HTF 01. Apakah benar responden pernah didiagnosis Hipertensi (HT) sebelumnya?_ → `QuestionnaireResponse.item.text` (111, tanpa BQ)<br>_HTF 02. Apa yang membuat responden tidak rutin ke Puskesmas untuk kontrol HT sebulan sekali?_ → `QuestionnaireResponse.item.text` (115, tanpa BQ)<br>_Merasa sudah sehat_ → `QuestionnaireResponse.item.item.text` (117, tanpa BQ)<br>_Puskesmas jauh dari rumah_ → `QuestionnaireResponse.item.item.text` (121, tanpa BQ)<br>_Tidak ada yang mengantar_ → `QuestionnaireResponse.item.item.text` (125, tanpa BQ)<br>_Tidak ada kendaraan_ → `QuestionnaireResponse.item.item.text` (129, tanpa BQ)<br>_Kerja, tidak bisa izin_ → `QuestionnaireResponse.item.item.text` (133, tanpa BQ)<br>_Antrian Puskesmas terlalu lama_ → `QuestionnaireResponse.item.item.text` (137, tanpa BQ)<br>_Lupa harus kontrol_ → `QuestionnaireResponse.item.item.text` (141, tanpa BQ)<br>_Tidak ada BPJS aktif_ → `QuestionnaireResponse.item.item.text` (145, tanpa BQ)<br>_Biaya berobat mahal_ → `QuestionnaireResponse.item.item.text` (149, tanpa BQ)<br>_Takut akan efek samping obat_ → `QuestionnaireResponse.item.item.text` (153, tanpa BQ)<br>_HTF 03. Apakah responden tahu kalau HT yang tidak terkendali (tekanan darah tinggi) bisa menyebabkan komplikasi seperti gagal ginjal kronis, stroke,dll?_ → `QuestionnaireResponse.item.text` (157, tanpa BQ)<br>_Walau tidak ke Puskesmas, apakah responden rutin kontrol ke fasilitas kesehatan lain? (Minimal sebulan sekali)_ → `QuestionnaireResponse.item.text` (161, tanpa BQ)<br>_Nama Puskesmas yang sering didatangi pasien atau mengadakan kegiatan Prolanis_ → `QuestionnaireResponse.item.text` (169, tanpa BQ)<br>_Tulis nama Posbindu, Klinik, atau RS tempat biasa kontrol._ → `QuestionnaireResponse.item.text` (172, tanpa BQ)<br>_FG. Kondisi responden terhadap kepemilikian/konsumsi obat_ → `QuestionnaireResponse.item.text` (175, tanpa BQ)<br>_FG. Kondisi untuk memfoto obat yang responden punya & konsumsi_ → `QuestionnaireResponse.item.text` (179, tanpa BQ)<br>_FG. Bukti foto obat yang dimiliki_ → `QuestionnaireResponse.item.text` (187, tanpa BQ) |
@@ -45,17 +45,17 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 33 | Condition | `Condition.code.coding` | 390906007.0 | Follow-up encounter | http://snomed.info/sct |
-| 2 | 46 | Observation | `Observation.code.coding` | 418138009.0 | Patient condition finding | http://snomed.info/sct |
-| 3 | 48 | Observation | `Observation.valueCodeableConcept.coding` | 438949009.0 | Alive | http://snomed.info/sct |
-| 4 | 49 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
+| 1 | 33 | Condition | `Condition.code.coding` | 390906007 | Follow-up encounter | http://snomed.info/sct |
+| 2 | 46 | Observation | `Observation.code.coding` | 418138009 | Patient condition finding | http://snomed.info/sct |
+| 3 | 48 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
+| 4 | 49 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
 | 5 | 50 | Observation | `Observation.valueCodeableConcept.coding` | SP001004 | Pindah keluar kabupaten | http://terminology.kemkes.go.id/sp |
 | 6 | 57 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
 | 7 | 79 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001005 | Data ditemukan | http://terminology.kemkes.go.id/sp |
 | 8 | 80 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001006 | Tidak ditemukan | http://terminology.kemkes.go.id/sp |
-| 9 | 90 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 10 | 91 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 11 | 92 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 101.0 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 9 | 90 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 102 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 10 | 91 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 103 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 11 | 92 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 101 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
 | 12 | 162 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001007 | Ya, ke Posbindu | http://terminology.kemkes.go.id/sp |
 | 13 | 163 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001008 | Ya, ke Klinik Swasta | http://terminology.kemkes.go.id/sp |
 | 14 | 164 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001009 | Ya, ke Rumah Sakit | http://terminology.kemkes.go.id/sp |
@@ -284,10 +284,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 237 | 776 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001091 | Tidak, responden memiliki gangguan kognitif (contoh: Demensia) | http://terminology.kemkes.go.id/sp |
 | 238 | 782 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001092 | Responden paham | http://terminology.kemkes.go.id/sp |
 | 239 | 783 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001093 | Responden memiliki pertanyaan lanjutan | http://terminology.kemkes.go.id/sp |
-| 240 | 786 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 241 | 787 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 242 | 788 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 101.0 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 243 | 789 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 240 | 786 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 102 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 241 | 787 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 103 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 242 | 788 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 101 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 243 | 789 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 104 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
 
 ### Code per CodeSystem
 

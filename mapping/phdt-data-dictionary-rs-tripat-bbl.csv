@@ -57,15 +57,15 @@ Tenaga Pemeriksa,,,nik_pemeriksa,NIK Pemeriksa,string,,,NIK tenaga pemeriksa,,Pr
 ,,,jenis_kelamin_pemeriksa,Jenis Kelamin Pemeriksa,code,,l,Jenis kelamin tenaga pemeriksa,,Practitioner,Practitioner.gender,male,Tidak ada,Tidak ada,,,
 ,,,jenis_kelamin_pemeriksa,,,,p,,,Practitioner,Practitioner.gender,female,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Practitioner,Practitioner.active,True,Tidak ada,Tidak ada,,,
-,,,tenaga_pemeriksa,Tenaga Pemeriksa (Role),code,,Midwife,Peran/profesi tenaga pemeriksa; konteks BBL sehingga Doctor DPJP dipetakan ke Dokter Spesialis Anak,,PractitionerRole,PractitionerRole.code.coding,309453006.0,Registered midwife,http://snomed.info/sct,,1,1
-,,,tenaga_pemeriksa,,,,Doctor DPJP,,,PractitionerRole,PractitionerRole.code.coding,82296001.0,Pediatrician,http://snomed.info/sct,,1,
-,,,tenaga_pemeriksa,,,,Nurse,,,PractitionerRole,PractitionerRole.code.coding,224535009.0,Registered nurse,http://snomed.info/sct,,1,
-,,,tenaga_pemeriksa,,,,nutritionists,,,PractitionerRole,PractitionerRole.code.coding,768827000.0,Nutritionist,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,Tenaga Pemeriksa (Role),code,,Midwife,Peran/profesi tenaga pemeriksa; konteks BBL sehingga Doctor DPJP dipetakan ke Dokter Spesialis Anak,,PractitionerRole,PractitionerRole.code.coding,309453006,Registered midwife,http://snomed.info/sct,,1,1
+,,,tenaga_pemeriksa,,,,Doctor DPJP,,,PractitionerRole,PractitionerRole.code.coding,82296001,Pediatrician,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,,,,Nurse,,,PractitionerRole,PractitionerRole.code.coding,224535009,Registered nurse,http://snomed.info/sct,,1,
+,,,tenaga_pemeriksa,,,,nutritionists,,,PractitionerRole,PractitionerRole.code.coding,768827000,Nutritionist,http://snomed.info/sct,,1,
 ,,,nama_tenaga_pemeriksa,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,faskes,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 DPJP,,,dokter,Nama Dokter DPJP,string,,,Nama dokter penanggung jawab (mayoritas Sp.A),,Practitioner,Practitioner.name.text,Tidak ada,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Practitioner,Practitioner.active,True,Tidak ada,Tidak ada,,,
-,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,82296001.0,Pediatrician,http://snomed.info/sct,,1,1
+,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,82296001,Pediatrician,http://snomed.info/sct,,1,1
 ,,,dokter,,,,,,,PractitionerRole,PractitionerRole.practitioner.reference,Reference ke resources Practitioner (DPJP),Tidak ada,Tidak ada,,,
 ,,,faskes,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,Tidak ada,Tidak ada,,,
 EpisodeOfCare Neonatus,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.type.coding,Neonate,Neonate,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,1,1
@@ -113,7 +113,7 @@ Diagnosa,,,nama_icdx,Diagnosa ICD-X,string,,,Diagnosa bayi (ICD-10); format 'P07
 ,,,no_pendaftaran,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,Tidak ada,Tidak ada,,,
 ,,,tgl_inc_bayi,,,,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tgl_inc_bayi,,,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
-Riwayat Kelahiran,Anak ke,,kelahiran_ke,Kelahiran Ke,int,,,Urutan kelahiran anak dalam keluarga,,Observation,Observation.code.coding,365475008.0,Place in family order,http://snomed.info/sct,,1,1
+Riwayat Kelahiran,Anak ke,,kelahiran_ke,Kelahiran Ke,int,,,Urutan kelahiran anak dalam keluarga,,Observation,Observation.code.coding,365475008,Place in family order,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,kelahiran_ke,,,,,,,Observation,Observation.valueInteger,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
@@ -183,7 +183,7 @@ Antropometri Lahir,Lingkar Kepala Lahir,,lingkar_kepala_lahir,Lingkar Kepala Saa
 ,,,tgl_inc_bayi,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.display,Tidak ada,Tidak ada,Tidak ada,,,
-Riwayat Kelahiran,APGAR,,apgar_score,APGAR Score,string,,,"Skor APGAR; jumlah nilai bervariasi (2, 3, bahkan 4 angka) dan pemisah tidak konsisten (/, -, spasi), sehingga disimpan apa adanya sebagai valueString",,Observation,Observation.code.coding,302083008.0,Finding of Apgar score,http://snomed.info/sct,,1,1
+Riwayat Kelahiran,APGAR,,apgar_score,APGAR Score,string,,,"Skor APGAR; jumlah nilai bervariasi (2, 3, bahkan 4 angka) dan pemisah tidak konsisten (/, -, spasi), sehingga disimpan apa adanya sebagai valueString",,Observation,Observation.code.coding,302083008,Finding of Apgar score,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,apgar_score,,,,,,,Observation,Observation.valueString,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
@@ -194,7 +194,7 @@ Riwayat Kelahiran,APGAR,,apgar_score,APGAR Score,string,,,"Skor APGAR; jumlah ni
 ,,,tgl_inc_bayi,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.display,Tidak ada,Tidak ada,Tidak ada,,,
-Pemeriksaan Bayi,Kelainan Bawaan,,kelainan_bawaan,Kelainan Bawaan,boolean,,Ya,"Ada/tidaknya kelainan bawaan; data hanya Ya/Tidak tanpa detail jenis, sehingga memakai valueBoolean",,Observation,Observation.code.coding,276654001.0,Congenital malformation,http://snomed.info/sct,,1,1
+Pemeriksaan Bayi,Kelainan Bawaan,,kelainan_bawaan,Kelainan Bawaan,boolean,,Ya,"Ada/tidaknya kelainan bawaan; data hanya Ya/Tidak tanpa detail jenis, sehingga memakai valueBoolean",,Observation,Observation.code.coding,276654001,Congenital malformation,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,kelainan_bawaan,,,,,,,Observation,Observation.valueBoolean,True,Tidak ada,Tidak ada,,,
 ,,,kelainan_bawaan,,,,Tidak,,,Observation,Observation.valueBoolean,False,Tidak ada,Tidak ada,,,
@@ -242,8 +242,8 @@ Tanda Vital Bayi,Denyut Jantung,,frekuensi_denyut_jantung,Frekuensi Denyut Jantu
 ,,,tgl_inc_bayi,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Observation,Observation.performer.display,Tidak ada,Tidak ada,Tidak ada,,,
-Tindakan Bayi,Resusitasi,,riwayat_resusitasi,Riwayat Resusitasi,boolean,,Ya,Apakah bayi diberikan resusitasi,,Procedure,Procedure.code.coding,386412000.0,Resuscitation of neonate,http://snomed.info/sct,,1,1
-,,,,,,,,,,Procedure,Procedure.category.coding,373110003.0,Emergency procedure,http://snomed.info/sct,,,
+Tindakan Bayi,Resusitasi,,riwayat_resusitasi,Riwayat Resusitasi,boolean,,Ya,Apakah bayi diberikan resusitasi,,Procedure,Procedure.code.coding,386412000,Resuscitation of neonate,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.category.coding,373110003,Emergency procedure,http://snomed.info/sct,,,
 ,,,riwayat_resusitasi,,,,,,,Procedure,Procedure.status,completed,Tidak ada,Tidak ada,,,
 ,,,riwayat_resusitasi,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak ada,Tidak ada,,,
 ,,,nama_bayi,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,Tidak ada,Tidak ada,,,
@@ -253,8 +253,8 @@ Tindakan Bayi,Resusitasi,,riwayat_resusitasi,Riwayat Resusitasi,boolean,,Ya,Apak
 ,,,tgl_inc_bayi,,,,,,,Procedure,Procedure.performedPeriod.end,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,nama_tenaga_pemeriksa,,,,,,,Procedure,Procedure.performer.actor.display,Tidak ada,Tidak ada,Tidak ada,,,
-Tindakan Bayi,IMD,,inisiasi_menyusui_dini,Inisiasi Menyusu Dini (IMD),boolean,,Ya,Apakah dilakukan inisiasi menyusu dini,,Procedure,Procedure.code.coding,431868002.0,Initiation of breastfeeding,http://snomed.info/sct,,1,1
-,,,,,,,,,,Procedure,Procedure.category.coding,440626008.0,Procedure related to breastfeeding,http://snomed.info/sct,,,
+Tindakan Bayi,IMD,,inisiasi_menyusui_dini,Inisiasi Menyusu Dini (IMD),boolean,,Ya,Apakah dilakukan inisiasi menyusu dini,,Procedure,Procedure.code.coding,431868002,Initiation of breastfeeding,http://snomed.info/sct,,1,1
+,,,,,,,,,,Procedure,Procedure.category.coding,440626008,Procedure related to breastfeeding,http://snomed.info/sct,,,
 ,,,inisiasi_menyusui_dini,,,,,,,Procedure,Procedure.status,completed,Tidak ada,Tidak ada,,,
 ,,,inisiasi_menyusui_dini,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak ada,Tidak ada,,,
 ,,,nama_bayi,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,Tidak ada,Tidak ada,,,

@@ -51,8 +51,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 81 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002.0 | Laboratory Worker | http://snomed.info/sct |
-| 2 | 117 | Specimen | `Specimen.type` | 119334006.0 | Sputum specimen | http://snomed.info/sct |
+| 1 | 81 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002 | Laboratory Worker | http://snomed.info/sct |
+| 2 | 117 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
 | 3 | 128 | ServiceRequest | `ServiceRequest.code` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 4 | 137 | Observation | `Observation.code.coding` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 5 | 138 | Observation | `Observation.valueCodeableConcept.coding` | LA9634-2 | Absent | http://loinc.org |

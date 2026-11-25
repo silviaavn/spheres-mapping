@@ -47,8 +47,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 81 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002.0 | Laboratory Worker | http://snomed.info/sct |
-| 2 | 117 | Specimen | `Specimen.type` | 119334006.0 | Sputum specimen | http://snomed.info/sct |
+| 1 | 81 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002 | Laboratory Worker | http://snomed.info/sct |
+| 2 | 117 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
 | 3 | 128 | ServiceRequest | `ServiceRequest.code` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 4 | 137 | Observation | `Observation.code.coding` | 69548-6 | Genetic variant assessment | http://loinc.org |
 | 5 | 138 | Observation | `Observation.valueCodeableConcept.coding` | LA9634-2 | Absent | http://loinc.org |
@@ -60,27 +60,27 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 11 | 165 | Observation | `Observation.component.code.coding` | 48013-7 | Genomic reference sequence [ID] | http://loinc.org |
 | 12 | 172 | Observation | `Observation.component.code.coding` | 82121-5 | Allelic read depth | http://loinc.org |
 | 13 | 176 | Observation | `Observation.component.code.coding` | 48018-6 | Gene studied [ID] | http://loinc.org |
-| 14 | 177 | Observation | `Observation.component.valueCodeableConcept.coding` | 887081.0 | gyrB | https://www.ncbi.nlm.nih.gov/gene |
+| 14 | 177 | Observation | `Observation.component.valueCodeableConcept.coding` | 887081 | gyrB | https://www.ncbi.nlm.nih.gov/gene |
 | 15 | 178 | Observation | `Observation.component.code.coding` | 81254-5 | Genomic allele start-end | http://loinc.org |
 | 16 | 181 | Observation | `Observation.component.code.coding` | 51961-1 | Genetic variation's effect on drug efficacy | http://loinc.org |
-| 17 | 182 | Observation | `Observation.component.valueCodeableConcept.coding` | 29175007.0 | Product containing rifampicin | http://snomed.info/sct |
-| 18 | 183 | Observation | `Observation.component.valueCodeableConcept.coding` | 81335000.0 | Product containing isoniazid | http://snomed.info/sct |
-| 19 | 184 | Observation | `Observation.component.valueCodeableConcept.coding` | 13592004.0 | Product containing pyrazinamide | http://snomed.info/sct |
-| 20 | 185 | Observation | `Observation.component.valueCodeableConcept.coding` | 24450004.0 | Product containing ethambutol | http://snomed.info/sct |
-| 21 | 186 | Observation | `Observation.component.valueCodeableConcept.coding` | 40877002.0 | Product containing streptomycin | http://snomed.info/sct |
-| 22 | 187 | Observation | `Observation.component.valueCodeableConcept.coding` | 1010205001.0 | Medicinal product containing fluoroquinolone and acting as antibacterial agent | http://snomed.info/sct |
-| 23 | 188 | Observation | `Observation.component.valueCodeableConcept.coding` | 96087006.0 | Product containing levofloxacin | http://snomed.info/sct |
-| 24 | 189 | Observation | `Observation.component.valueCodeableConcept.coding` | 371296007.0 | Product containing moxifloxacin | http://snomed.info/sct |
-| 25 | 190 | Observation | `Observation.component.valueCodeableConcept.coding` | 96086002.0 | Product containing ofloxacin | http://snomed.info/sct |
-| 26 | 191 | Observation | `Observation.component.valueCodeableConcept.coding` | 7577004.0 | Product containing ciprofloxacin | http://snomed.info/sct |
-| 27 | 192 | Observation | `Observation.component.valueCodeableConcept.coding` | 371238005.0 | Product containing gatifloxacin | http://snomed.info/sct |
-| 28 | 193 | Observation | `Observation.component.valueCodeableConcept.coding` | 48836000.0 | Product containing amikacin | http://snomed.info/sct |
-| 29 | 194 | Observation | `Observation.component.valueCodeableConcept.coding` | 71451001.0 | Product containing kanamycin | http://snomed.info/sct |
-| 30 | 195 | Observation | `Observation.component.valueCodeableConcept.coding` | 14170004.0 | Product containing capreomycin | http://snomed.info/sct |
-| 31 | 196 | Observation | `Observation.component.valueCodeableConcept.coding` | 414148003.0 | Product containing ethionamide | http://snomed.info/sct |
-| 32 | 197 | Observation | `Observation.component.valueCodeableConcept.coding` | 125695009.0 | Product containing linezolid | http://snomed.info/sct |
-| 33 | 198 | Observation | `Observation.component.valueCodeableConcept.coding` | 714087008.0 | Product containing bedaquiline | http://snomed.info/sct |
-| 34 | 199 | Observation | `Observation.component.valueCodeableConcept.coding` | 72924009.0 | Product containing clofazimine | http://snomed.info/sct |
+| 17 | 182 | Observation | `Observation.component.valueCodeableConcept.coding` | 29175007 | Product containing rifampicin | http://snomed.info/sct |
+| 18 | 183 | Observation | `Observation.component.valueCodeableConcept.coding` | 81335000 | Product containing isoniazid | http://snomed.info/sct |
+| 19 | 184 | Observation | `Observation.component.valueCodeableConcept.coding` | 13592004 | Product containing pyrazinamide | http://snomed.info/sct |
+| 20 | 185 | Observation | `Observation.component.valueCodeableConcept.coding` | 24450004 | Product containing ethambutol | http://snomed.info/sct |
+| 21 | 186 | Observation | `Observation.component.valueCodeableConcept.coding` | 40877002 | Product containing streptomycin | http://snomed.info/sct |
+| 22 | 187 | Observation | `Observation.component.valueCodeableConcept.coding` | 1010205001 | Medicinal product containing fluoroquinolone and acting as antibacterial agent | http://snomed.info/sct |
+| 23 | 188 | Observation | `Observation.component.valueCodeableConcept.coding` | 96087006 | Product containing levofloxacin | http://snomed.info/sct |
+| 24 | 189 | Observation | `Observation.component.valueCodeableConcept.coding` | 371296007 | Product containing moxifloxacin | http://snomed.info/sct |
+| 25 | 190 | Observation | `Observation.component.valueCodeableConcept.coding` | 96086002 | Product containing ofloxacin | http://snomed.info/sct |
+| 26 | 191 | Observation | `Observation.component.valueCodeableConcept.coding` | 7577004 | Product containing ciprofloxacin | http://snomed.info/sct |
+| 27 | 192 | Observation | `Observation.component.valueCodeableConcept.coding` | 371238005 | Product containing gatifloxacin | http://snomed.info/sct |
+| 28 | 193 | Observation | `Observation.component.valueCodeableConcept.coding` | 48836000 | Product containing amikacin | http://snomed.info/sct |
+| 29 | 194 | Observation | `Observation.component.valueCodeableConcept.coding` | 71451001 | Product containing kanamycin | http://snomed.info/sct |
+| 30 | 195 | Observation | `Observation.component.valueCodeableConcept.coding` | 14170004 | Product containing capreomycin | http://snomed.info/sct |
+| 31 | 196 | Observation | `Observation.component.valueCodeableConcept.coding` | 414148003 | Product containing ethionamide | http://snomed.info/sct |
+| 32 | 197 | Observation | `Observation.component.valueCodeableConcept.coding` | 125695009 | Product containing linezolid | http://snomed.info/sct |
+| 33 | 198 | Observation | `Observation.component.valueCodeableConcept.coding` | 714087008 | Product containing bedaquiline | http://snomed.info/sct |
+| 34 | 199 | Observation | `Observation.component.valueCodeableConcept.coding` | 72924009 | Product containing clofazimine | http://snomed.info/sct |
 | 35 | 200 | Observation | `Observation.component.code.coding` | 48019-4 | DNA change type | http://loinc.org |
 | 36 | 202 | Observation | `Observation.component.code.coding` | 53037-8 | Genetic variation clinical significance [Imp] | http://loinc.org |
 | 37 | 203 | Observation | `Observation.component.valueCodeableConcept.coding` | LA26333-7 | Uncertain significance | http://loinc.org |

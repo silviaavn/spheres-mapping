@@ -1,6 +1,6 @@
 Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Format/Value,Value Name,Definisi Operasional,Agregat/Individu,Resource,Path,Code,Display,CodeSystem,Keterangan,jumlah code,jumlah instance
 ,,,True,Siapa yang melakukan entry data?,,,,,,PractitionerRole,PractitionerRole.active,True,Tidak ada,Tidak ada,,,1
-,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,223366009.0,Healthcare professional,http://snomed.info/sct,,1,
+,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,223366009,Healthcare professional,http://snomed.info/sct,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,SP000396,Data entry staff,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.code.coding,SP000397,Field/call center staff,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.practitioner,Reference ke resources Practitioner,,,,,
@@ -54,7 +54,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,True,Nomor telepon ibu (tulis kedua kali),,,,,,Patient,Patient.telecom.use,mobile,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Patient,Patient.telecom.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,True,Alamat rumah/Asal Puskesmas,,,,Gunakan untuk mencari nama puskesmas di prerequisite / master data faskes,,Organization,Organization.name,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Organization,Organization.type,102.0,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
+,,,,,,,,,,Organization,Organization.type,102,Pusat Kesehatan Masyarakat,http://terminology.kemkes.go.id/CodeSystem/organization-type,,,
 ,,,,,,,,,,Organization,Organization.identifier,official,Tidak ada,http://sys-ids.kemkes.go.id/organization/{{Org ID}},,,
 ,,,,,,,,,,Organization,Organization.active,true,Tidak ada,Tidak ada,,,
 ,,,True,Nama depan ibu,,,,,,RelatedPerson,RelatedPerson.name.text,Tidak ada,Tidak ada,Tidak ada,,,1
@@ -144,8 +144,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,SP000404,Tidak Punya Kartu Tanda Penduduk,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Tidak punya KTP,,,Observation,Observation.valueCodeableConcept.coding,SP000405,Tidak Membawa Kartu Tanda Penduduk,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Tidak membawa KTP,,,Observation,Observation.valueCodeableConcept.coding,SP000406,Kartu Tanda Penduduk Hilang,http://terminology.kemkes.go.id/sp,,1,
-,,,,,,,Hilang,,,Observation,Observation.valueCodeableConcept.coding,397644002.0,Right to privacy maintained,http://snomed.info/sct,,1,
-,,,,,,,Privasi,,,Observation,Observation.valueCodeableConcept.coding,74964007.0,Other,http://snomed.info/sct,,1,
+,,,,,,,Hilang,,,Observation,Observation.valueCodeableConcept.coding,397644002,Right to privacy maintained,http://snomed.info/sct,,1,
+,,,,,,,Privasi,,,Observation,Observation.valueCodeableConcept.coding,74964007,Other,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -170,8 +170,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,Tidak punya,,,Observation,Observation.valueCodeableConcept.coding,SP000404,Tidak Punya Kartu Tanda Penduduk,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Tidak membawa kartu ID anak,,,Observation,Observation.valueCodeableConcept.coding,SP000405,Tidak Membawa Kartu Tanda Penduduk,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Hilang,,,Observation,Observation.valueCodeableConcept.coding,SP000406,Kartu Tanda Penduduk Hilang,http://terminology.kemkes.go.id/sp,,1,
-,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,397644002.0,Right to privacy maintained,http://snomed.info/sct,,1,
-,,,,,,,Alasan lainnya,,,Observation,Observation.valueCodeableConcept.coding,74964007.0,Other,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.valueCodeableConcept.coding,397644002,Right to privacy maintained,http://snomed.info/sct,,1,
+,,,,,,,Alasan lainnya,,,Observation,Observation.valueCodeableConcept.coding,74964007,Other,http://snomed.info/sct,,1,
 ,,,True,Sebutkan alasan lainnya,,,,,,Observation,Observation.valueCodeableConcept.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -202,7 +202,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,False,,,,,,,,,,,,,,
 ,,,True,Isi usia anak dalam minggu,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,wk,wk,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -241,7 +241,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin Polio tetes 1?,,,,,,Immunization,Immunization.vaccineCode.coding,VG89,POLIO,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178.0,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak Ada,1.0,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Dasar,Imunisasi Program Rutin Dasar,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,Ya,,,Immunization,Immunization.status,completed,,,,,
@@ -256,7 +256,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Diberikan vaksin DPT-HB-Hib 1?,,,,,,Immunization,Immunization.vaccineCode,198.0,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
+,,,,Diberikan vaksin DPT-HB-Hib 1?,,,,,,Immunization,Immunization.vaccineCode,198,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG107,DTAP,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG45,HepB,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG17,HIB,http://sys-ids.kemkes.go.id/kfa,,1,
@@ -275,7 +275,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin Polio tetes 2?,,,,,,Immunization,Immunization.vaccineCode.coding,VG89,POLIO,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178.0,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak Ada,2.0,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Dasar,Imunisasi Program Rutin Dasar,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,Ya,,,Immunization,Immunization.status,completed,,,,,
@@ -320,7 +320,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Diberikan vaksin DPT-HB-Hib 2?,,,,,,Immunization,Immunization.vaccineCode,198.0,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
+,,,,Diberikan vaksin DPT-HB-Hib 2?,,,,,,Immunization,Immunization.vaccineCode,198,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG107,DTAP,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG45,HepB,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG17,HIB,http://sys-ids.kemkes.go.id/kfa,,1,
@@ -339,7 +339,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin Polio tetes 3?,,,,,,Immunization,Immunization.vaccineCode.coding,VG89,POLIO,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178.0,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak Ada,3.0,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Dasar,Imunisasi Program Rutin Dasar,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,Ya,,,Immunization,Immunization.status,completed,,,,,
@@ -384,7 +384,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Diberikan vaksin DPT-HB-Hib 3?,,,,,,Immunization,Immunization.vaccineCode,198.0,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
+,,,,Diberikan vaksin DPT-HB-Hib 3?,,,,,,Immunization,Immunization.vaccineCode,198,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG107,DTAP,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG45,HepB,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG17,HIB,http://sys-ids.kemkes.go.id/kfa,,1,
@@ -403,7 +403,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin Polio tetes 4?,,,,,,Immunization,Immunization.vaccineCode.coding,VG89,POLIO,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178.0,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,178,OPV bivalent,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak Ada,4.0,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Dasar,Imunisasi Program Rutin Dasar,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,Ya,,,Immunization,Immunization.status,completed,,,,,
@@ -419,7 +419,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin Polio Suntik (IPV) 1?,,,,,,Immunization,Immunization.vaccineCode.coding,VG89,POLIO,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,10.0,IPV,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,10,IPV,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak Ada,1.0,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Dasar,Imunisasi Program Rutin Dasar,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,Ya,,,Immunization,Immunization.status,completed,,,,,
@@ -466,7 +466,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin Polio Suntik (IPV) 2?,,,,,,Immunization,Immunization.vaccineCode.coding,VG89,POLIO,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,10.0,IPV,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,10,IPV,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak Ada,2.0,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Dasar,Imunisasi Program Rutin Dasar,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,Ya,,,Immunization,Immunization.status,completed,,,,,
@@ -510,7 +510,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Diberikan vaksin DPT-HB-Hib Lanjutan?,,,,,,Immunization,Immunization.vaccineCode,198.0,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
+,,,,Diberikan vaksin DPT-HB-Hib Lanjutan?,,,,,,Immunization,Immunization.vaccineCode,198,DTP-hepB-Hib Pentavalent Non-US,http://hl7.org/fhir/sid/cvx,,1,1
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG107,DTAP,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG45,HepB,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG17,HIB,http://sys-ids.kemkes.go.id/kfa,,1,
@@ -546,7 +546,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan vaksin lain?,,,Tidak,"Jika dijawab tidak, maka tidak perlu membuat resource",,,,,,,,,
 ,,,,,,,Ya,"Jika ya, buat resource sesuai Jumlah vaksin lain yang diberikan (field untuk nama dan tanggal vaksin maksimal 4)",,,,,,,,,
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002.0,Vaccine product,http://snomed.info/sct,,1,1
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002,Vaccine product,http://snomed.info/sct,,1,1
 ,,,,Tulis vaksin lain 1,,,,,,Immunization,Immunization.vaccineCode.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Pilihan,Imunisasi Pilihan,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,,,,Immunization,Immunization.status,completed,,,,,
@@ -560,7 +560,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002.0,Vaccine product,http://snomed.info/sct,,1,1
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002,Vaccine product,http://snomed.info/sct,,1,1
 ,,,,Tulis vaksin lain 2,,,,,,Immunization,Immunization.vaccineCode.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Pilihan,Imunisasi Pilihan,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,,,,Immunization,Immunization.status,completed,,,,,
@@ -574,7 +574,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002.0,Vaccine product,http://snomed.info/sct,,1,1
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002,Vaccine product,http://snomed.info/sct,,1,1
 ,,,,Tulis vaksin lain 3,,,,,,Immunization,Immunization.vaccineCode.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Pilihan,Imunisasi Pilihan,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,,,,Immunization,Immunization.status,completed,,,,,
@@ -588,7 +588,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Immunization,Immunization.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002.0,Vaccine product,http://snomed.info/sct,,1,1
+,,,,,,,,,,Immunization,Immunization.vaccineCode.coding,787859002,Vaccine product,http://snomed.info/sct,,1,1
 ,,,,Tulis vaksin lain 4,,,,,,Immunization,Immunization.vaccineCode.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Immunization,Immunization.reasonCode[i].coding,IM-Pilihan,Imunisasi Pilihan,http://terminology.kemkes.go.id/CodeSystem/immunization-reason,,,
 ,,,,,,,,,,Immunization,Immunization.status,completed,,,,,

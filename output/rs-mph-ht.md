@@ -27,19 +27,19 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 5 | 72–80 | Condition | I10 | Essential (primary) hypertension | _Diagnosis utama (ICD 10)_ → `Condition.code.coding.code` (74, tanpa BQ)<br>_Tanggal tegak diagnosis (dd mm yy)_ → `Condition.onsetDateTime` (80, tanpa BQ) |
 | 6 | 84–91 | Condition | – | – | _Diagnosis sekunder (ICD 10)_ → `Condition.clinicalStatus.coding` (84, tanpa BQ) |
 | 7 | 95–110 | Condition | – | – | _Riwayat Penyakit dahulu_ → `Condition.clinicalStatus.coding` (95, tanpa BQ)<br>_Riwayat Penyakit sekarang_ → `Condition.clinicalStatus.coding` (103, tanpa BQ) |
-| 8 | 111–122 | Observation | 424144002.0 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (114, tanpa BQ) |
+| 8 | 111–122 | Observation | 424144002 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (114, tanpa BQ) |
 | 9 | 123–134 | Observation | 82810-3 | Pregnancy status | _StatusHamil_ → `Observation.valueCodeableConcept.coding` (126, tanpa BQ) |
 | 10 | 135–146 | Observation | 8480-6 | Systolic blood pressure | _TD (Sistolik)_ → `Observation.valueQuantity.value` (138, tanpa BQ) |
 | 11 | 147–158 | Observation | 8462-4 | Diastolic blood pressure | _TD (Diastolik)_ → `Observation.valueQuantity.value` (150, tanpa BQ) |
-| 12 | 164–174 | ServiceRequest | 15220000.0 | Laboratory test | _Pemeriksaan Laboratorium_ → `ServiceRequest.category` (164, tanpa BQ) |
-| 13 | 175–181 | Specimen | 123038009.0 | Specimen | – |
-| 14 | 182–194 | Observation | 15220000.0 | Laboratory test | – |
-| 15 | 195–207 | DiagnosticReport | 15220000.0 | Laboratory test | – |
+| 12 | 164–174 | ServiceRequest | 15220000 | Laboratory test | _Pemeriksaan Laboratorium_ → `ServiceRequest.category` (164, tanpa BQ) |
+| 13 | 175–181 | Specimen | 123038009 | Specimen | – |
+| 14 | 182–194 | Observation | 15220000 | Laboratory test | – |
+| 15 | 195–207 | DiagnosticReport | 15220000 | Laboratory test | – |
 | 16 | 208–218 | Procedure | TK000028 | Diagnostic procedure | _Pemeriksaan Penunjang Lainnya_ → `Procedure.category.coding` (208, tanpa BQ) |
 | 17 | 228–240 | MedicationStatement | – | – | _Riwayat Penggunaan Obat_ → `MedicationStatement.category.coding` (228, tanpa BQ)<br>_Terapi - Obat_ → `MedicationStatement.category.coding` (238, tanpa BQ) |
 | 18 | 241–245 | MedicationStatement | – | – | – |
-| 19 | 246–256 | Procedure | 277132007.0 | Therapeutic procedure | _Terapi - Tindakan_ → `Procedure.category.coding` (246, tanpa BQ) |
-| 20 | 257–269 | ServiceRequest | 736286003.0 | Hypertension clinical management plan | _Rencana Tindak Lanjut_ → `ServiceRequest.status` (257, tanpa BQ) |
+| 19 | 246–256 | Procedure | 277132007 | Therapeutic procedure | _Terapi - Tindakan_ → `Procedure.category.coding` (246, tanpa BQ) |
+| 20 | 257–269 | ServiceRequest | 736286003 | Hypertension clinical management plan | _Rencana Tindak Lanjut_ → `ServiceRequest.status` (257, tanpa BQ) |
 
 ### Payload per resource
 
@@ -62,28 +62,28 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 30 | PractitionerRole | `PractitionerRole.code.coding` | 69280009.0 | Specialized physician | http://snomed.info/sct |
-| 2 | 31 | PractitionerRole | `PractitionerRole.code.coding` | 59058001.0 | General physician | http://snomed.info/sct |
-| 3 | 32 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 4 | 33 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 1 | 30 | PractitionerRole | `PractitionerRole.code.coding` | 69280009 | Specialized physician | http://snomed.info/sct |
+| 2 | 31 | PractitionerRole | `PractitionerRole.code.coding` | 59058001 | General physician | http://snomed.info/sct |
+| 3 | 32 | PractitionerRole | `PractitionerRole.code.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 4 | 33 | PractitionerRole | `PractitionerRole.code.coding` | 224535009 | Registered nurse | http://snomed.info/sct |
 | 5 | 67 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000117 | Rujukan dari Puskesmas | http://terminology.kemkes.go.id/sp |
 | 6 | 68 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000925 | Rujukan dari Klinik | http://terminology.kemkes.go.id/sp |
-| 7 | 69 | Encounter | `Encounter.hospitalization.admitSource.coding` | 305956004.0 | Referral by physician | http://snomed.info/sct |
+| 7 | 69 | Encounter | `Encounter.hospitalization.admitSource.coding` | 305956004 | Referral by physician | http://snomed.info/sct |
 | 8 | 70 | Encounter | `Encounter.hospitalization.admitSource.coding` | SP000119 | Rujukan dari Rumah Sakit | http://terminology.kemkes.go.id/sp |
 | 9 | 75 | Condition | `Condition.code.coding` | I10 | Essential (primary) hypertension | http://hl7.org/fhir/sid/icd-10 |
-| 10 | 113 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 10 | 113 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 11 | 125 | Observation | `Observation.code.coding` | 82810-3 | Pregnancy status | http://loinc.org |
 | 12 | 126 | Observation | `Observation.valueCodeableConcept.coding` | LA15173-0 | Pregnant | http://loinc.org |
 | 13 | 127 | Observation | `Observation.valueCodeableConcept.coding` | LA26683-5 | Not pregnant | http://loinc.org |
 | 14 | 137 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://snomed.info/sct |
 | 15 | 149 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://snomed.info/sct |
-| 16 | 168 | ServiceRequest | `ServiceRequest.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
-| 17 | 176 | Specimen | `Specimen.type.coding` | 123038009.0 | Specimen | http://snomed.info/sct |
-| 18 | 184 | Observation | `Observation.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
-| 19 | 197 | DiagnosticReport | `DiagnosticReport.code.coding` | 15220000.0 | Laboratory test | http://snomed.info/sct |
+| 16 | 168 | ServiceRequest | `ServiceRequest.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 17 | 176 | Specimen | `Specimen.type.coding` | 123038009 | Specimen | http://snomed.info/sct |
+| 18 | 184 | Observation | `Observation.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 19 | 197 | DiagnosticReport | `DiagnosticReport.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
 | 20 | 210 | Procedure | `Procedure.code.coding` | TK000028 | Diagnostic procedure | http://terminology.kemkes.go.id |
-| 21 | 248 | Procedure | `Procedure.code.coding` | 277132007.0 | Therapeutic procedure | http://snomed.info/sct |
-| 22 | 261 | ServiceRequest | `ServiceRequest.code.coding` | 736286003.0 | Hypertension clinical management plan | http://snomed.info/sct |
+| 21 | 248 | Procedure | `Procedure.code.coding` | 277132007 | Therapeutic procedure | http://snomed.info/sct |
+| 22 | 261 | ServiceRequest | `ServiceRequest.code.coding` | 736286003 | Hypertension clinical management plan | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

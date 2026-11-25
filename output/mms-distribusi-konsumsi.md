@@ -26,14 +26,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 4 | 15–18 | RelatedPerson | – | – | _Nama Lengkap Suami_ → `RelatedPerson.patient` (15, tanpa BQ) |
 | 5 | 19–30 | Observation | SP000402 | Kepemilikan Nomor Induk Kependudukan | _Apakah Ibu punya NIK_ → `Observation.valueBoolean` (22, tanpa BQ) |
 | 6 | 34–47 | Observation | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | _Pilih alasan tidak mempunyai Nomor Induk Kependudukan (NIK)_ → `Observation.valueCodeableConcept.coding` (37, tanpa BQ) |
-| 7 | 52–63 | Observation | 424144002.0 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (55, tanpa BQ) |
+| 7 | 52–63 | Observation | 424144002 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (55, tanpa BQ) |
 | 8 | 89–102 | Observation | SP000519 | Tipe Intervensi Puskesmas | _Tipe intervensi puskesmas_ → `Observation.valueCodeableConcept.coding` (92, tanpa BQ) |
-| 9 | 113–125 | Observation | 280147009.0 | Type of activity | _Jenis kegiatan pemantauan yang dilakukan_ → `Observation.valueCodeableConcept.coding` (116, tanpa BQ) |
-| 10 | 126–136 | Observation | 280147009.0 | Type of activity | _Apakah pemantauan kalsium dilakukan?_ → `Observation.valueBoolean` (129, tanpa BQ) |
+| 9 | 113–125 | Observation | 280147009 | Type of activity | _Jenis kegiatan pemantauan yang dilakukan_ → `Observation.valueCodeableConcept.coding` (116, tanpa BQ) |
+| 10 | 126–136 | Observation | 280147009 | Type of activity | _Apakah pemantauan kalsium dilakukan?_ → `Observation.valueBoolean` (129, tanpa BQ) |
 | 11 | 137–149 | Observation | SP000469 | Jenis Pemantauan Kalsium | _Jenis pemantauan kalsium yang dilakukan_ → `Observation.valueCodeableConcept.coding` (140, tanpa BQ) |
-| 12 | 150–241 | Medication | 92006039.0 | MMS Multivitamin Ibu Hamil Tablet Salut Selaput | _MMS_ → `Medication.id` (150, tanpa BQ)<br>_Kalsium_ → `Medication.identifier` (231, tanpa BQ) |
-| 13 | 242–267 | MedicationRequest | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | _Tanggal pemberian blister_ → `MedicationRequest.contained.resourceType` (242, tanpa BQ)<br>_{tanggal pemberian kalsium}_ → `MedicationRequest.authoredOn` (262, tanpa BQ) |
-| 14 | 268–289 | MedicationDispense | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | – |
+| 12 | 150–241 | Medication | 92006039 | MMS Multivitamin Ibu Hamil Tablet Salut Selaput | _MMS_ → `Medication.id` (150, tanpa BQ)<br>_Kalsium_ → `Medication.identifier` (231, tanpa BQ) |
+| 13 | 242–267 | MedicationRequest | 93022220 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | _Tanggal pemberian blister_ → `MedicationRequest.contained.resourceType` (242, tanpa BQ)<br>_{tanggal pemberian kalsium}_ → `MedicationRequest.authoredOn` (262, tanpa BQ) |
+| 14 | 268–289 | MedicationDispense | 93022220 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | – |
 | 15 | 292–304 | MedicationRequest | – | – | _Id Blister Calcium 1_ → `MedicationRequest.contained.batch.lotNumber` (292, tanpa BQ)<br>_Id Blister Calcium 1 (Manual entry)_ → `MedicationRequest.contained.batch.lotNumber` (293, tanpa BQ)<br>_Id Blister Calcium 1 (Manual entry kedua kali)_ → `MedicationRequest.contained.batch.lotNumber` (294, tanpa BQ)<br>_Id Blister Calcium 2_ → `MedicationRequest.contained.batch.lotNumber` (297, tanpa BQ)<br>_Id Blister Calcium 2 (Manual entry)_ → `MedicationRequest.contained.batch.lotNumber` (298, tanpa BQ)<br>_Id Blister Calcium 2 (Manual entry kedua kali)_ → `MedicationRequest.contained.batch.lotNumber` (299, tanpa BQ)<br>_Id Blister Calcium 3_ → `MedicationRequest.contained.batch.lotNumber` (302, tanpa BQ)<br>_Id Blister Calcium 3 (Manual entry)_ → `MedicationRequest.contained.batch.lotNumber` (303, tanpa BQ)<br>_Id Blister Calcium 3 (Manual entry kedua kali)_ → `MedicationRequest.contained.batch.lotNumber` (304, tanpa BQ) |
 | 16 | 305–308 | MedicationStatement | – | – | _Tanggal pemberian kalsium pertama kali_ → `MedicationStatement.status` (305, tanpa BQ)<br>_Jumlah kalsium yang seharusnya sudah dikonsumsi_ → `` (308, tanpa BQ) |
 | 17 | 325–336 | Observation | SP000640 | Konsumsi kalsium setiap hari | _Apakah ibu mengonsumsi kalsium setiap hari?_ → `Observation.valueBoolean` (328, tanpa BQ) |
@@ -70,56 +70,56 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 6 | 37 | Observation | `Observation.valueCodeableConcept.coding` | SP000404 | Tidak Punya Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 7 | 38 | Observation | `Observation.valueCodeableConcept.coding` | SP000405 | Tidak Membawa Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 8 | 39 | Observation | `Observation.valueCodeableConcept.coding` | SP000406 | Kartu Tanda Penduduk Hilang | http://terminology.kemkes.go.id/sp |
-| 9 | 40 | Observation | `Observation.valueCodeableConcept.coding` | 397644002.0 | Right to privacy maintained | http://snomed.info/sct |
-| 10 | 54 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 9 | 40 | Observation | `Observation.valueCodeableConcept.coding` | 397644002 | Right to privacy maintained | http://snomed.info/sct |
+| 10 | 54 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 11 | 91 | Observation | `Observation.code.coding` | SP000519 | Tipe Intervensi Puskesmas | http://terminology.kemkes.go.id/sp |
 | 12 | 92 | Observation | `Observation.valueCodeableConcept.coding` | SP000520 | Blister Digital | http://terminology.kemkes.go.id/sp |
 | 13 | 93 | Observation | `Observation.valueCodeableConcept.coding` | SP000521 | Blister Non Digital | http://terminology.kemkes.go.id/sp |
 | 14 | 94 | Observation | `Observation.valueCodeableConcept.coding` | SP000522 | Botol Digital | http://terminology.kemkes.go.id/sp |
 | 15 | 95 | Observation | `Observation.valueCodeableConcept.coding` | SP000523 | Botol Non Digital | http://terminology.kemkes.go.id/sp |
-| 16 | 115 | Observation | `Observation.code.coding` | 280147009.0 | Type of activity | http://snomed.info/sct |
+| 16 | 115 | Observation | `Observation.code.coding` | 280147009 | Type of activity | http://snomed.info/sct |
 | 17 | 116 | Observation | `Observation.valueCodeableConcept.coding` | SP000445 | Pemantauan Distribusi MMS Botol | http://terminology.kemkes.go.id/sp |
 | 18 | 117 | Observation | `Observation.valueCodeableConcept.coding` | SP000446 | Pemantauan Distribusi MMS Blister | http://terminology.kemkes.go.id/sp |
 | 19 | 118 | Observation | `Observation.valueCodeableConcept.coding` | SP000447 | Pemantauan Konsumsi MMS Botol | http://terminology.kemkes.go.id/sp |
 | 20 | 119 | Observation | `Observation.valueCodeableConcept.coding` | SP000448 | Pemantauan Konsumsi MMS Blister | http://terminology.kemkes.go.id/sp |
-| 21 | 128 | Observation | `Observation.code.coding` | 280147009.0 | Type of activity | http://snomed.info/sct |
+| 21 | 128 | Observation | `Observation.code.coding` | 280147009 | Type of activity | http://snomed.info/sct |
 | 22 | 139 | Observation | `Observation.code.coding` | SP000469 | Jenis Pemantauan Kalsium | http://terminology.kemkes.go.id/sp |
 | 23 | 140 | Observation | `Observation.valueCodeableConcept.coding` | SP000470 | Pemantauan Distribusi Kalsium | http://terminology.kemkes.go.id/sp |
 | 24 | 141 | Observation | `Observation.valueCodeableConcept.coding` | SP000471 | Pemantauan Konsumsi Kalsium | http://terminology.kemkes.go.id/sp |
-| 25 | 151 | Medication | `Medication.code` | 92006039.0 | MMS Multivitamin Ibu Hamil Tablet Salut Selaput | http://sys-ids.kemkes.go.id/kf |
-| 26 | 233 | Medication | `Medication.code.coding` | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | http://sys-ids.kemkes.go.id/kf |
-| 27 | 245 | MedicationRequest | `MedicationRequest.contained.code.coding` | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | http://sys-ids.kemkes.go.id/kf |
-| 28 | 271 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | http://sys-ids.kemkes.go.id/kf |
+| 25 | 151 | Medication | `Medication.code` | 92006039 | MMS Multivitamin Ibu Hamil Tablet Salut Selaput | http://sys-ids.kemkes.go.id/kf |
+| 26 | 233 | Medication | `Medication.code.coding` | 93022220 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | http://sys-ids.kemkes.go.id/kf |
+| 27 | 245 | MedicationRequest | `MedicationRequest.contained.code.coding` | 93022220 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | http://sys-ids.kemkes.go.id/kf |
+| 28 | 271 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93022220 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | http://sys-ids.kemkes.go.id/kf |
 | 29 | 327 | Observation | `Observation.code.coding` | SP000640 | Konsumsi kalsium setiap hari | http://terminology.kemkes.go.id/sp |
 | 30 | 339 | Observation | `Observation.code.coding` | SP000642 | Alasan tidak mengonsumsi kalsium | http://terminology.kemkes.go.id/sp |
-| 31 | 340 | Observation | `Observation.valueCodeableConcept.coding` | 1303576005.0 | Forgets to take medication | http://snomed.info/sct |
-| 32 | 341 | Observation | `Observation.valueCodeableConcept.coding` | 182844005.0 | Drug not taken - dislike taste | http://snomed.info/sct |
+| 31 | 340 | Observation | `Observation.valueCodeableConcept.coding` | 1303576005 | Forgets to take medication | http://snomed.info/sct |
+| 32 | 341 | Observation | `Observation.valueCodeableConcept.coding` | 182844005 | Drug not taken - dislike taste | http://snomed.info/sct |
 | 33 | 342 | Observation | `Observation.valueCodeableConcept.coding` | SP000636 | Malas mengonsumsi | http://terminology.kemkes.go.id/sp |
 | 34 | 343 | Observation | `Observation.valueCodeableConcept.coding` | SP000637 | Minum vitamin lain | http://terminology.kemkes.go.id/sp |
-| 35 | 344 | Observation | `Observation.valueCodeableConcept.coding` | 275929009.0 | Tablets too large to swallow | http://snomed.info/sct |
-| 36 | 345 | Observation | `Observation.valueCodeableConcept.coding` | 182856006.0 | Drug not available due to being out of stock | http://snomed.info/sct |
-| 37 | 346 | Observation | `Observation.valueCodeableConcept.coding` | 419219000.0 | Nausea and vomiting caused by drug | http://snomed.info/sct |
+| 35 | 344 | Observation | `Observation.valueCodeableConcept.coding` | 275929009 | Tablets too large to swallow | http://snomed.info/sct |
+| 36 | 345 | Observation | `Observation.valueCodeableConcept.coding` | 182856006 | Drug not available due to being out of stock | http://snomed.info/sct |
+| 37 | 346 | Observation | `Observation.valueCodeableConcept.coding` | 419219000 | Nausea and vomiting caused by drug | http://snomed.info/sct |
 | 38 | 347 | Observation | `Observation.valueCodeableConcept.coding` | SP000639 | Bau tidak enak | http://terminology.kemkes.go.id/sp |
-| 39 | 348 | Observation | `Observation.valueCodeableConcept.coding` | 182863006.0 | Drug not taken - dislike form |  |
-| 40 | 349 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 39 | 348 | Observation | `Observation.valueCodeableConcept.coding` | 182863006 | Drug not taken - dislike form |  |
+| 40 | 349 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
 | 41 | 438 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000636 | Malas mengonsumsi | http://terminology.kemkes.go.id/sp |
 | 42 | 439 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000637 | Minum vitamin lain | http://terminology.kemkes.go.id/sp |
 | 43 | 440 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000638 | Warna MMS berubah | http://terminology.kemkes.go.id/sp |
 | 44 | 443 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000639 | Bau tidak enak | http://terminology.kemkes.go.id/sp |
 | 45 | 446 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
 | 46 | 457 | Observation | `Observation.code.coding` | SP000482 | Skrinning Preeklampsia | http://terminology.kemkes.go.id/sp |
-| 47 | 469 | Observation | `Observation.component.code.coding` | 102877006.0 | Nulliparous |  |
-| 48 | 475 | Observation | `Observation.component.code.coding` | 105651000119100.0 | Past pregnancy history of pre-eclampsia |  |
-| 49 | 478 | Observation | `Observation.component.code.coding` | 700190003.0 | Family history of pre-eclampsia | http://snomed.info/sct |
-| 50 | 487 | Observation | `Observation.component.code.coding` | 16356006.0 | Multiple pregnancy | http://snomed.info/sct |
-| 51 | 490 | Observation | `Observation.component.code.coding` | 11687002.0 | Gestational diabetes mellitus | http://snomed.info/sct |
-| 52 | 493 | Observation | `Observation.component.code.coding` | 8762007.0 | Chronic hypertension in obstetric context | http://snomed.info/sct |
-| 53 | 496 | Observation | `Observation.component.code.coding` | 90708001.0 | Kidney disease | http://snomed.info/sct |
-| 54 | 499 | Observation | `Observation.component.code.coding` | 85828009.0 | Autoimmune disease | http://snomed.info/sct |
-| 55 | 502 | Observation | `Observation.component.code.coding` | 55464009.0 | Systemic lupus erythematosus | http://snomed.info/sct |
-| 56 | 511 | Observation | `Observation.component.code.coding` | 167275009.0 | Urine protein test = + | http://snomed.info/sct |
-| 57 | 527 | Observation | `Observation.interpretation.coding` | 1303255001.0 | Medium risk pregnancy | http://snomed.info/sct |
-| 58 | 536 | Observation | `Observation.interpretation.coding` | 47200007.0 | High risk pregnancy | http://snomed.info/sct |
+| 47 | 469 | Observation | `Observation.component.code.coding` | 102877006 | Nulliparous |  |
+| 48 | 475 | Observation | `Observation.component.code.coding` | 105651000119100 | Past pregnancy history of pre-eclampsia |  |
+| 49 | 478 | Observation | `Observation.component.code.coding` | 700190003 | Family history of pre-eclampsia | http://snomed.info/sct |
+| 50 | 487 | Observation | `Observation.component.code.coding` | 16356006 | Multiple pregnancy | http://snomed.info/sct |
+| 51 | 490 | Observation | `Observation.component.code.coding` | 11687002 | Gestational diabetes mellitus | http://snomed.info/sct |
+| 52 | 493 | Observation | `Observation.component.code.coding` | 8762007 | Chronic hypertension in obstetric context | http://snomed.info/sct |
+| 53 | 496 | Observation | `Observation.component.code.coding` | 90708001 | Kidney disease | http://snomed.info/sct |
+| 54 | 499 | Observation | `Observation.component.code.coding` | 85828009 | Autoimmune disease | http://snomed.info/sct |
+| 55 | 502 | Observation | `Observation.component.code.coding` | 55464009 | Systemic lupus erythematosus | http://snomed.info/sct |
+| 56 | 511 | Observation | `Observation.component.code.coding` | 167275009 | Urine protein test = + | http://snomed.info/sct |
+| 57 | 527 | Observation | `Observation.interpretation.coding` | 1303255001 | Medium risk pregnancy | http://snomed.info/sct |
+| 58 | 536 | Observation | `Observation.interpretation.coding` | 47200007 | High risk pregnancy | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

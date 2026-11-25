@@ -7,6 +7,7 @@ Payload = baris dengan `jumlah instance` = 1. Code = baris dengan `jumlah code` 
 Nomor baris = nomor baris fisik di file CSV (header multi-baris ikut dihitung).
 """
 import csv
+import hashlib
 import re
 import sys
 from collections import Counter, OrderedDict
@@ -58,6 +59,38 @@ def load(path):
     return data
 
 
+def _fp(texts):
+    """Sidik jari isi blok: kumpulan teks variabel yang sudah dinormalisasi."""
+    t = sorted({norm(x) for x in texts if x and x.strip()})
+    return hashlib.md5("|".join(t).encode("utf-8")).hexdigest()[:6] if t else ""
+
+
+def _pembeda_tambahan(p):
+    """QR tanpa URL kuesioner: dibedakan lewat isi pertanyaan (linkId). CarePlan: category, lalu code activity,
+    lalu isi variabel. Blok dengan isi sama (sidik jari sama) = payload yang sama."""
+    if p["code"]:
+        return
+    res = p["res"]
+    if res == "QuestionnaireResponse":
+        texts = [d["var"] for d in p["rows"] if d["path"].endswith(".linkId")]
+        fp = _fp(texts)
+        first = next((t for t in texts if t.strip()), "")
+        p["code"] = f"tanpa-URL-{fp}" if fp else f"tanpa-URL-baris{p['line']}"
+        p["disp"] = "Kuesioner tanpa URL: " + " ".join(first.split())[:60]
+    elif res == "CarePlan":
+        cat = next((d["code"] for d in p["rows"] if d["path"] in ("CarePlan.category.coding", "CarePlan.category") and d["code"].strip()
+                    and d["code"].strip().lower() != "tidak ada"), "")
+        act = next((d for d in p["rows"] if d["jc"] == "1"), None)
+        if cat:
+            p["code"], p["disp"] = cat, next(d["disp"] for d in p["rows"] if d["code"] == cat)
+        elif act:
+            p["code"], p["disp"] = act["code"], act["disp"]
+        else:
+            fp = _fp(d["var"] for d in p["rows"])
+            p["code"] = f"tanpa-code-{fp}" if fp else f"tanpa-code-baris{p['line']}"
+            p["disp"] = "CarePlan tanpa category/code"
+
+
 def build(data):
     payloads, current = [], None
     for d in data:
@@ -96,6 +129,7 @@ def build(data):
         p["rows"].append(d)
     for p in payloads:
         p["rows"].sort(key=lambda d: d["line"])
+        _pembeda_tambahan(p)
         var_lines = {v[0] for v in p["vars"]}
         resolved = []
         for ln, b, k, pa, df in p["vars"]:

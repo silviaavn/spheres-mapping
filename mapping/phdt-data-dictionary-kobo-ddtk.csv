@@ -72,11 +72,11 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Location,Location.managingOrganization.reference,Reference ke resources Organization,,,,,
 ,Role Pemeriksa,,,Tenaga Pemeriksa,,,,Kalau nakes ini selalu dari resource PractitionerRole kah? Kalau ambil dari Encounter.participant bisa juga ngga?,,PractitionerRole,PractitionerRole.active,true,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,,,,,
-,,,,,,,Guru,,,PractitionerRole,PractitionerRole.code.coding,106304008.0,Teacher,http://snomed.info/sct,,1,
-,,,,,,,Guru Olahraga,,,PractitionerRole,PractitionerRole.code.coding,158922001.0,Physical training teacher,http://snomed.info/sct,,1,
-,,,,,,,Bidan,,,PractitionerRole,PractitionerRole.code.coding,309453006.0,Registered midwife,http://snomed.info/sct,,1,
-,,,,,,,Dokter Umum,,,PractitionerRole,PractitionerRole.code.coding,309343006.0,Physician,http://snomed.info/sct,,1,
-,,,,,,,Perawat,,,PractitionerRole,PractitionerRole.code.coding,224535009.0,Registered nurse,http://snomed.info/sct,,1,
+,,,,,,,Guru,,,PractitionerRole,PractitionerRole.code.coding,106304008,Teacher,http://snomed.info/sct,,1,
+,,,,,,,Guru Olahraga,,,PractitionerRole,PractitionerRole.code.coding,158922001,Physical training teacher,http://snomed.info/sct,,1,
+,,,,,,,Bidan,,,PractitionerRole,PractitionerRole.code.coding,309453006,Registered midwife,http://snomed.info/sct,,1,
+,,,,,,,Dokter Umum,,,PractitionerRole,PractitionerRole.code.coding,309343006,Physician,http://snomed.info/sct,,1,
+,,,,,,,Perawat,,,PractitionerRole,PractitionerRole.code.coding,224535009,Registered nurse,http://snomed.info/sct,,1,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.location.reference,Reference ke resources Location (Gd. Faskes),,,,,
 ,Identitas Pemeriksa,,,,,,,,,Practitioner,Practitioner.identifier,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/id/nakes-his-number,,,1
 ,,,,,,,,,,Practitioner,Practitioner.identifier,ofiicial,Tidak ada,https://fhir.kemkes.go.id/id/nik,,,
@@ -98,7 +98,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,{Nama Tenaga Kesehatan},,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,LILA saat ini,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,False | True,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,284473002.0,Mid upper arm circumference,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,284473002,Mid upper arm circumference,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,cm,cm,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,{Nama Ibu},,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -147,7 +147,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
-,,,,,,,,,,Condition,Condition.code.coding,170245002.0,Child examination: school screening,http://snomed.info/sct,,1,
+,,,,,,,,,,Condition,Condition.code.coding,170245002,Child examination: school screening,http://snomed.info/sct,,1,
 ,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,

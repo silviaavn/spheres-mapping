@@ -12,7 +12,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|
 | Payload (`jumlah instance` = 1) | 101 |
 | Code (`jumlah code` = 1) | 567 |
-| Code unik (code + CodeSystem) | 339 |
+| Code unik (code + CodeSystem) | 338 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 18 |
 | Variabel BQ (unik) | 0 |
 
@@ -23,7 +23,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 2–39 | Patient | – | – | _pasien_name_ → `Patient.name.text` (2, tanpa BQ)<br>_nik_ → `Patient.identifier.value` (5, tanpa BQ)<br>_pasien_id_ → `Patient.identifier.value` (8, tanpa BQ)<br>_jenis_kelamin_ → `Patient.gender` (10, tanpa BQ)<br>_tgl_lahir_ → `Patient.birthDate` (12, tanpa BQ)<br>_no_handphone_ → `Patient.telecom` (13, tanpa BQ)<br>_status_perkawinan_ → `Patient.maritalStatus.coding` (16, tanpa BQ)<br>_kabkota_name_ → `Patient.address.city` (26, tanpa BQ)<br>_provinsi_ → `Patient.address.extension.extension.valueCode` (30, tanpa BQ)<br>_kabkota_ → `Patient.address.extension.extension.valueCode` (33, tanpa BQ)<br>_kecamatan_ → `Patient.address.extension.extension.valueCode` (36, tanpa BQ)<br>_kelurahan_ → `Patient.address.extension.extension.valueCode` (39, tanpa BQ) |
 | 2 | 78–98 | Encounter | – | – | _tgl_pelayanan_ → `Encounter.identifier` (78, tanpa BQ) |
 | 3 | 99–106 | Condition | Z01.8 | Other specified special examinations | – |
-| 4 | 117–128 | Observation | 424144002.0 | Current chronological age | _age_now_ → `Observation.valueQuantity.value` (120, tanpa BQ) |
+| 4 | 117–128 | Observation | 424144002 | Current chronological age | _age_now_ → `Observation.valueQuantity.value` (120, tanpa BQ) |
 | 5 | 129–140 | Observation | TK000144 | Rencana menikah 1 tahun ke depan | _rencana_menikah_dalam_kurun_waktu_1_tahun_ → `Observation.valueBoolean` (132, tanpa BQ) |
 | 6 | 141–212 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0051 | – | _apakah_merokok_dalam_setahun_terakhir_ → `QuestionnaireResponse.item.item.text` (153, tanpa BQ)<br>_sudah_berapa_tahun_merokok_ → `QuestionnaireResponse.item.item.answer.item.text` (159, tanpa BQ)<br>_berapa_batang_rokok_yang_dihisap_dalam_sehari_ → `QuestionnaireResponse.item.item.answer.item.text` (163, tanpa BQ)<br>_apakah_pernah_merokok_sebelumnya_ → `QuestionnaireResponse.item.item.text` (178, tanpa BQ)<br>_berapa_lama_merokok_sebelumnya_ → `QuestionnaireResponse.item.item.answer.item.text` (182, tanpa BQ)<br>_kapan_anda_berhenti_merokok_ → `QuestionnaireResponse.item.item.answer.item.text` (186, tanpa BQ)<br>_apakah_terpapar_asap_rokok_sebulan_terakhir_ → `QuestionnaireResponse.item.item.text` (190, tanpa BQ)<br>_apakah_rutin_melakukan_olahraga_ → `QuestionnaireResponse.item.item.text` (194, tanpa BQ)<br>_berapa_kali_berolahraga_dalam_seminggu_ → `QuestionnaireResponse.item.item.answer.item.text` (198, tanpa BQ)<br>_berapa_menit_berolahraga_ → `QuestionnaireResponse.item.item.answer.item.text` (201, tanpa BQ)<br>_tingkat_aktivitas_fisik_ → `QuestionnaireResponse.item.item.answer.item.linkId` (203, tanpa BQ)<br>_berat_badan_kg_ → `QuestionnaireResponse.item.item.item.text` (210, tanpa BQ) |
 | 7 | 213–224 | Observation | 29463-7 | Body weight | – |
@@ -34,8 +34,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 12 | 348–359 | Observation | 8480-6 | – | – |
 | 13 | 362–405 | Observation | 8462-4 | Diastolic blood pressure | – |
 | 14 | 406–417 | Observation | 8462-4 | Diastolic blood pressure | – |
-| 15 | 420–445 | Observation | 268607006.0 | Hypertension risk level | – |
-| 16 | 446–469 | Observation | 268607006.0 | Hypertension risk level | – |
+| 15 | 420–445 | Observation | 268607006 | Hypertension risk level | – |
+| 16 | 446–469 | Observation | 268607006 | Hypertension risk level | – |
 | 17 | 478–490 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | – |
 | 18 | 493–505 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | – |
 | 19 | 508–519 | Observation | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | – |
@@ -55,7 +55,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 33 | 828–841 | Observation | 2149-3 | Creatine [Mass/volume] in Urine | – |
 | 34 | 844–861 | Observation | 62238-1 | Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI) | – |
 | 35 | 864–878 | Observation | 32294-1 | Albumin/Creatinine [Ratio] in Urine | – |
-| 36 | 921–930 | Procedure | 424489006.0 | Mantoux test | – |
+| 36 | 921–930 | Procedure | 424489006 | Mantoux test | – |
 | 37 | 932–943 | Observation | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | – |
 | 38 | 955–967 | Observation | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | – |
 | 39 | 970–982 | Observation | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | – |
@@ -70,30 +70,30 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 48 | 1101–1113 | Observation | 89372-7 | Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method | – |
 | 49 | 1116–1128 | Observation | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | – |
 | 50 | 1131–1143 | Observation | 89372-7 | Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method | – |
-| 51 | 1210–1222 | Observation | 13607009.0 | Manual examination of breast | – |
+| 51 | 1210–1222 | Observation | 13607009 | Manual examination of breast | – |
 | 52 | 1227–1239 | Observation | 24601-7 | US Breast | – |
-| 53 | 1252–1263 | Observation | 451024007.0 | Inspection of vagina using vaginal speculum | – |
+| 53 | 1252–1263 | Observation | 451024007 | Inspection of vagina using vaginal speculum | – |
 | 54 | 1268–1279 | Observation | X099241 | Tes IVA | – |
 | 55 | 1284–1300 | Observation | 44550-2 | Human papilloma virus DNA [Presence] in Cervix by Probe | – |
 | 56 | 1303–1315 | Observation | 77399-4 | Human papilloma virus 16 DNA [Presence] in Cervix by NAA with probe detection | – |
 | 57 | 1318–1330 | Observation | 77400-0 | Human papilloma virus 18 DNA [Presence] in Cervix by NAA with probe detection | – |
 | 58 | 1333–1345 | Observation | 95534-4 | Human papilloma virus 52 DNA [Presence] in Cervix by NAA with probe detection | – |
 | 59 | 1348–1360 | Observation | OV000351 | Positif (HPV tipe onkogenik lain) | – |
-| 60 | 1457–1468 | Observation | 410007005.0 | Rectal examination | – |
+| 60 | 1457–1468 | Observation | 410007005 | Rectal examination | – |
 | 61 | 1473–1484 | Observation | 14563-1 | Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen | – |
-| 62 | 1493–1505 | Observation | 247301006.0 | Finding of ability to hear whisper | – |
-| 63 | 1510–1521 | Observation | 76517002.0 | Otoscopy | – |
+| 62 | 1493–1505 | Observation | 247301006 | Finding of ability to hear whisper | – |
+| 63 | 1510–1521 | Observation | 76517002 | Otoscopy | – |
 | 64 | 1524–1535 | Observation | 18070006 | Impacted cerumen | – |
 | 65 | 1538–1549 | Observation | 129127001 | Infection of ear | – |
 | 66 | 1552–1563 | Observation | SP000828 | Tes Penala | – |
-| 67 | 1575–1592 | Observation | 400911007.0 | Tumbling E test | _pemeriksaan_visus_e_tumbling_ → `Observation.valueCodeableConcept.coding` (1579, tanpa BQ) |
-| 68 | 1593–1610 | Observation | 252973004.0 | Snellen chart assessment | _pemeriksaan_visus_snellen_chart_ → `Observation.valueCodeableConcept.coding` (1597, tanpa BQ) |
-| 69 | 1614–1629 | Observation | 441841000.0 | Pinhole visual acuity test | – |
-| 70 | 1633–1647 | Observation | 40137007.0 | Pupil light reflex | – |
-| 71 | 1651–1664 | Observation | 53524009.0 | Ophthalmoscopy | – |
+| 67 | 1575–1592 | Observation | 400911007 | Tumbling E test | _pemeriksaan_visus_e_tumbling_ → `Observation.valueCodeableConcept.coding` (1579, tanpa BQ) |
+| 68 | 1593–1610 | Observation | 252973004 | Snellen chart assessment | _pemeriksaan_visus_snellen_chart_ → `Observation.valueCodeableConcept.coding` (1597, tanpa BQ) |
+| 69 | 1614–1629 | Observation | 441841000 | Pinhole visual acuity test | – |
+| 70 | 1633–1647 | Observation | 40137007 | Pupil light reflex | – |
+| 71 | 1651–1664 | Observation | 53524009 | Ophthalmoscopy | – |
 | 72 | 1749–1762 | Observation | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | – |
 | 73 | 1766–1778 | Observation | 72376-7 | Hepatitis C virus Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | – |
-| 74 | 1794–1805 | Observation | 395197008.0 | Hepatitis C viral load | – |
+| 74 | 1794–1805 | Observation | 395197008 | Hepatitis C viral load | – |
 | 75 | 1829–1842 | Observation | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | – |
 | 76 | 1846–1858 | Observation | – | – | – |
 | 77 | 1862–1883 | Observation | – | – | – |
@@ -112,7 +112,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 90 | 2246–2298 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0052 | – | _apakah_sulit_membuat_keputusan_ → `QuestionnaireResponse.item.linkId` (2255, tanpa BQ)<br>_apakah_sudah_tidak_menekuni_hobi_ → `QuestionnaireResponse.item.linkId` (2261, tanpa BQ)<br>_apakah_keluar_mengulang_pertanyaan_cerita_pernyataan_yang_sama_ → `QuestionnaireResponse.item.linkId` (2266, tanpa BQ)<br>_apakah_kesulitan_belajar_menggunakan_perkakas_dan_peralatan_ → `QuestionnaireResponse.item.linkId` (2271, tanpa BQ)<br>_apakah_lupa_nama_bulan_atau_tahun_ → `QuestionnaireResponse.item.linkId` (2276, tanpa BQ)<br>_apakah_kesulitan_mengatur_keuangan_ → `QuestionnaireResponse.item.linkId` (2281, tanpa BQ)<br>_apakah_sulit_mengingat_janji_ → `QuestionnaireResponse.item.linkId` (2286, tanpa BQ)<br>_apakah_mengalami_gangguan_memori_dan_pemikiran_yang_konsisten_ → `QuestionnaireResponse.item.linkId` (2291, tanpa BQ)<br>_hasil_interpretasi_ad_8_ → `QuestionnaireResponse.item.linkId` (2296, tanpa BQ) |
 | 91 | 2299–2311 | Observation | 71722-3 | Total score [AD8] | – |
 | 92 | 2312–2335 | Observation | 66248-6 | Balance test [PhenX] | _tes_keseimbangan_berdiri_berdampingan_ → `Observation.component.code.coding` (2315, tanpa BQ)<br>_tes_keseimbangan_berdiri_semi_tandem_ → `Observation.component.code.coding` (2319, tanpa BQ)<br>_tes_keseimbangan_berdiri_tandem_ → `Observation.component.code.coding` (2323, tanpa BQ) |
-| 93 | 2336–2361 | Observation | 714283000.0 | Short Physical Performance Battery | _tes_kecepatan_berjalan_ → `Observation.component.code.coding` (2340, tanpa BQ)<br>_tes_berdiri_dari_kursi_ → `Observation.component.code.coding` (2346, tanpa BQ)<br>_hasil_interpretasi_spbb_ → `Observation.valueQuantity` (2352, tanpa BQ) |
+| 93 | 2336–2361 | Observation | 714283000 | Short Physical Performance Battery | _tes_kecepatan_berjalan_ → `Observation.component.code.coding` (2340, tanpa BQ)<br>_tes_berdiri_dari_kursi_ → `Observation.component.code.coding` (2346, tanpa BQ)<br>_hasil_interpretasi_spbb_ → `Observation.valueQuantity` (2352, tanpa BQ) |
 | 94 | 2362–2406 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0044 | – | _apakah_asupan_makan_turun_dalam_3_bulan_terakhir_ → `QuestionnaireResponse.item.text` (2372, tanpa BQ)<br>_apakah_berat_badan_turun_dalam_3_bulan_terakhir_ → `QuestionnaireResponse.item.item.linkId` (2378, tanpa BQ)<br>_kemampuan_melakukan_mobilitas_ → `QuestionnaireResponse.item.item.linkId` (2384, tanpa BQ)<br>_apakah_menderita_stress_atau_penyakit_akut_dalam_3_bulan_terakhir_ → `QuestionnaireResponse.item.item.linkId` (2389, tanpa BQ)<br>_apakah_mengalami_masalah_neuropsikologis_ → `QuestionnaireResponse.item.item.linkId` (2393, tanpa BQ)<br>_nilai_imt_ → `QuestionnaireResponse.item.item.linkId` (2398, tanpa BQ) |
 | 95 | 2407–2424 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | – |
 | 96 | 2432–2444 | Observation | 8283-4 | Calf - right Maximum circumference | – |
@@ -139,92 +139,92 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 101 | Condition | `Condition.code.coding` | Z01.8 | Other specified special examinations | http://hl7.org/fhir/sid/icd-10 |
-| 2 | 119 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 2 | 119 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 3 | 131 | Observation | `Observation.code.coding` | TK000144 | Rencana menikah 1 tahun ke depan | http://terminology.kemkes.go.id |
-| 4 | 167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 722498003.0 | Electronic cigarette | http://snomed.info/sct |
-| 5 | 168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 722496004.0 | Cigarette | http://snomed.info/sct |
+| 4 | 167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 722498003 | Electronic cigarette | http://snomed.info/sct |
+| 5 | 168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 722496004 | Cigarette | http://snomed.info/sct |
 | 6 | 169 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | TK000075 | Rokok Konvensional dan Rokok Elektronik | http://terminology.kemkes.go.id |
 | 7 | 187 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | TK000145 | 1 tahun yang lalu | http://terminology.kemkes.go.id |
 | 8 | 188 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | TK000146 | Lebih dari 1 tahun yang lalu | http://terminology.kemkes.go.id |
-| 9 | 205 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 424805008.0 | Exercise above recommended level | http://snomed.info/sct |
-| 10 | 206 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 413300002.0 | Exercise below recommended level | http://snomed.info/sct |
+| 9 | 205 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 424805008 | Exercise above recommended level | http://snomed.info/sct |
+| 10 | 206 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 413300002 | Exercise below recommended level | http://snomed.info/sct |
 | 11 | 215 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
 | 12 | 231 | Observation | `Observation.code.coding` | 8302-2 | Body height | http://loinc.org |
 | 13 | 247 | Observation | `Observation.code.coding` | 39156-5 | Body mass index (BMI) [Ratio] | http://loinc.org |
-| 14 | 248 | Observation | `Observation.interpretation.coding` | 248342006.0 | Underweight | http://snomed.info/sct |
-| 15 | 251 | Observation | `Observation.interpretation.coding` | 43664005.0 | Normal weight | http://snomed.info/sct |
-| 16 | 256 | Observation | `Observation.interpretation.coding` | 238131007.0 | Overweight | http://snomed.info/sct |
-| 17 | 261 | Observation | `Observation.interpretation.coding` | 414915002.0 | Obese | http://snomed.info/sct |
+| 14 | 248 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 15 | 251 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 16 | 256 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 17 | 261 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
 | 18 | 278 | Observation | `Observation.code.coding` | vital-signs | Abdominal circumference | http://snomed.info/sct |
 | 19 | 288 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 20 | 292 | Observation | `Observation.interpretation.coding` | 248311001.0 | Central obesity | http://snomed.info/sct |
+| 20 | 292 | Observation | `Observation.interpretation.coding` | 248311001 | Central obesity | http://snomed.info/sct |
 | 21 | 307 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://loinc.org |
 | 22 | 317 | Observation | `Observation.interpretation.coding` | OI000040 | Tekanan Darah Optimal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 23 | 322 | Observation | `Observation.interpretation.coding` | 2004005.0 | Normal blood pressure | http://snomed.info/sct |
+| 23 | 322 | Observation | `Observation.interpretation.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
 | 24 | 327 | Observation | `Observation.interpretation.coding` | OI000041 | Tekanan Darah Normal Tinggi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 25 | 332 | Observation | `Observation.interpretation.coding` | 827069000.0 | Stage 1 hypertension | http://snomed.info/sct |
-| 26 | 337 | Observation | `Observation.interpretation.coding` | 827068008.0 | Stage 1 hypertension | http://snomed.info/sct |
+| 25 | 332 | Observation | `Observation.interpretation.coding` | 827069000 | Stage 1 hypertension | http://snomed.info/sct |
+| 26 | 337 | Observation | `Observation.interpretation.coding` | 827068008 | Stage 1 hypertension | http://snomed.info/sct |
 | 27 | 342 | Observation | `Observation.interpretation.coding` | OI000042 | Hipertensi Derajat 3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 28 | 350 | Observation | `Observation.code.coding` | 8480-6 |  |  |
 | 29 | 365 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://snomed.info/sct |
 | 30 | 375 | Observation | `Observation.interpretation.coding` | OI000040 | Tekanan Darah Optimal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 31 | 380 | Observation | `Observation.interpretation.coding` | 2004005.0 | Normal blood pressure | http://snomed.info/sct |
+| 31 | 380 | Observation | `Observation.interpretation.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
 | 32 | 385 | Observation | `Observation.interpretation.coding` | OI000041 | Tekanan Darah Normal Tinggi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 33 | 390 | Observation | `Observation.interpretation.coding` | 827069000.0 | Stage 1 hypertension | http://snomed.info/sct |
-| 34 | 395 | Observation | `Observation.interpretation.coding` | 827068008.0 | Stage 1 hypertension | http://snomed.info/sct |
+| 33 | 390 | Observation | `Observation.interpretation.coding` | 827069000 | Stage 1 hypertension | http://snomed.info/sct |
+| 34 | 395 | Observation | `Observation.interpretation.coding` | 827068008 | Stage 1 hypertension | http://snomed.info/sct |
 | 35 | 400 | Observation | `Observation.interpretation.coding` | OI000042 | Hipertensi Derajat 3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 36 | 408 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure |  |
-| 37 | 423 | Observation | `Observation.code.coding` | 268607006.0 | Hypertension risk level | http://snomed.info/sct |
+| 37 | 423 | Observation | `Observation.code.coding` | 268607006 | Hypertension risk level | http://snomed.info/sct |
 | 38 | 435 | Observation | `Observation.interpretation.coding` | OI000040 | Tekanan Darah Optimal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 39 | 436 | Observation | `Observation.interpretation.coding` | 2004005.0 | Normal blood pressure | http://snomed.info/sct |
+| 39 | 436 | Observation | `Observation.interpretation.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
 | 40 | 437 | Observation | `Observation.interpretation.coding` | OI000041 | Tekanan Darah Normal Tinggi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 41 | 438 | Observation | `Observation.interpretation.coding` | 827069000.0 | Stage 1 hypertension | http://snomed.info/sct |
-| 42 | 439 | Observation | `Observation.interpretation.coding` | 827068008.0 | Stage 2 hypertension | http://snomed.info/sct |
+| 41 | 438 | Observation | `Observation.interpretation.coding` | 827069000 | Stage 1 hypertension | http://snomed.info/sct |
+| 42 | 439 | Observation | `Observation.interpretation.coding` | 827068008 | Stage 2 hypertension | http://snomed.info/sct |
 | 43 | 440 | Observation | `Observation.interpretation.coding` | OI000042 | Hipertensi Derajat 3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 44 | 441 | Observation | `Observation.interpretation.coding` | 56218007.0 | Systolic hypertension | http://snomed.info/sct |
-| 45 | 442 | Observation | `Observation.interpretation.coding` | 2004005.0 | Normal blood pressure | http://snomed.info/sct |
-| 46 | 443 | Observation | `Observation.interpretation.coding` | 702817009.0 | Prehypertension | http://snomed.info/sct |
-| 47 | 444 | Observation | `Observation.interpretation.coding` | 24184005.0 | Blood pressure above reference range | http://snomed.info/sct |
-| 48 | 448 | Observation | `Observation.code.coding` | 268607006.0 | Hypertension risk level | http://snomed.info/sct |
+| 44 | 441 | Observation | `Observation.interpretation.coding` | 56218007 | Systolic hypertension | http://snomed.info/sct |
+| 45 | 442 | Observation | `Observation.interpretation.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
+| 46 | 443 | Observation | `Observation.interpretation.coding` | 702817009 | Prehypertension | http://snomed.info/sct |
+| 47 | 444 | Observation | `Observation.interpretation.coding` | 24184005 | Blood pressure above reference range | http://snomed.info/sct |
+| 48 | 448 | Observation | `Observation.code.coding` | 268607006 | Hypertension risk level | http://snomed.info/sct |
 | 49 | 460 | Observation | `Observation.interpretation.coding` | OI000040 | Tekanan Darah Optimal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 50 | 461 | Observation | `Observation.interpretation.coding` | 2004005.0 | Normal blood pressure | http://snomed.info/sct |
+| 50 | 461 | Observation | `Observation.interpretation.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
 | 51 | 462 | Observation | `Observation.interpretation.coding` | OI000041 | Tekanan Darah Normal Tinggi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 52 | 463 | Observation | `Observation.interpretation.coding` | 827069000.0 | Stage 1 hypertension | http://snomed.info/sct |
-| 53 | 464 | Observation | `Observation.interpretation.coding` | 827068008.0 | Stage 2 hypertension | http://snomed.info/sct |
+| 52 | 463 | Observation | `Observation.interpretation.coding` | 827069000 | Stage 1 hypertension | http://snomed.info/sct |
+| 53 | 464 | Observation | `Observation.interpretation.coding` | 827068008 | Stage 2 hypertension | http://snomed.info/sct |
 | 54 | 465 | Observation | `Observation.interpretation.coding` | OI000042 | Hipertensi Derajat 3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 55 | 466 | Observation | `Observation.interpretation.coding` | 56218007.0 | Systolic hypertension | http://snomed.info/sct |
-| 56 | 467 | Observation | `Observation.interpretation.coding` | 2004005.0 | Normal blood pressure | http://snomed.info/sct |
-| 57 | 468 | Observation | `Observation.interpretation.coding` | 702817009.0 | Prehypertension | http://snomed.info/sct |
-| 58 | 469 | Observation | `Observation.interpretation.coding` | 24184005.0 | Blood pressure above reference range | http://snomed.info/sct |
+| 55 | 466 | Observation | `Observation.interpretation.coding` | 56218007 | Systolic hypertension | http://snomed.info/sct |
+| 56 | 467 | Observation | `Observation.interpretation.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
+| 57 | 468 | Observation | `Observation.interpretation.coding` | 702817009 | Prehypertension | http://snomed.info/sct |
+| 58 | 469 | Observation | `Observation.interpretation.coding` | 24184005 | Blood pressure above reference range | http://snomed.info/sct |
 | 59 | 481 | Observation | `Observation.code.coding` | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
 | 60 | 496 | Observation | `Observation.code.coding` | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
 | 61 | 510 | Observation | `Observation.code.coding` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
 | 62 | 524 | Observation | `Observation.code.coding` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 63 | 532 | Observation | `Observation.interpretation.coding` | 302866003.0 | Hypoglycemia | http://snomed.info/sct |
+| 63 | 532 | Observation | `Observation.interpretation.coding` | 302866003 | Hypoglycemia | http://snomed.info/sct |
 | 64 | 535 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 65 | 540 | Observation | `Observation.interpretation.coding` | 714628002.0 | Prediabetes | http://snomed.info/sct |
-| 66 | 545 | Observation | `Observation.interpretation.coding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
+| 65 | 540 | Observation | `Observation.interpretation.coding` | 714628002 | Prediabetes | http://snomed.info/sct |
+| 66 | 545 | Observation | `Observation.interpretation.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
 | 67 | 552 | Observation | `Observation.code.coding` | 1521-4 | Glucose [Mass/volume] in Serum or Plasma --2 hours post meal | http://loinc.org |
 | 68 | 566 | Observation | `Observation.code.coding` | 4548-4 | Hemoglobin A1c/Hemoglobin.total in Blood | http://loinc.org |
 | 69 | 574 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 70 | 577 | Observation | `Observation.interpretation.coding` | 714628002.0 | Prediabetes | http://snomed.info/sct |
-| 71 | 582 | Observation | `Observation.interpretation.coding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
-| 72 | 590 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 162650008.0 | Examination not done on subject of record | http://snomed.info/sct |
-| 73 | 591 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 714628002.0 | Prediabetes | http://snomed.info/sct |
-| 74 | 592 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
-| 75 | 593 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 80394007.0 | Hyperglycemia | http://snomed.info/sct |
-| 76 | 594 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 302866003.0 | Hypoglycemia | http://snomed.info/sct |
-| 77 | 597 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 162650008.0 | Examination not done on subject of record | http://snomed.info/sct |
-| 78 | 598 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 714628002.0 | Prediabetes | http://snomed.info/sct |
-| 79 | 599 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
-| 80 | 600 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 80394007.0 | Hyperglycemia | http://snomed.info/sct |
-| 81 | 601 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 302866003.0 | Hypoglycemia | http://snomed.info/sct |
-| 82 | 602 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 70 | 577 | Observation | `Observation.interpretation.coding` | 714628002 | Prediabetes | http://snomed.info/sct |
+| 71 | 582 | Observation | `Observation.interpretation.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
+| 72 | 590 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 162650008 | Examination not done on subject of record | http://snomed.info/sct |
+| 73 | 591 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 714628002 | Prediabetes | http://snomed.info/sct |
+| 74 | 592 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
+| 75 | 593 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 80394007 | Hyperglycemia | http://snomed.info/sct |
+| 76 | 594 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 302866003 | Hypoglycemia | http://snomed.info/sct |
+| 77 | 597 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 162650008 | Examination not done on subject of record | http://snomed.info/sct |
+| 78 | 598 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 714628002 | Prediabetes | http://snomed.info/sct |
+| 79 | 599 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
+| 80 | 600 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 80394007 | Hyperglycemia | http://snomed.info/sct |
+| 81 | 601 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 302866003 | Hypoglycemia | http://snomed.info/sct |
+| 82 | 602 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
 | 83 | 609 | Observation | `Observation.code.coding` | 34534-8 | 12 lead EKG panel | http://loinc.org |
-| 84 | 610 | Observation | `Observation.valueCodeableConcept.coding` | 17621005.0 | Normal | http://snomed.info/sct |
+| 84 | 610 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
 | 85 | 611 | Observation | `Observation.interpretation.coding` | 164854000 | Electrocardiogram normal | http://snomed.info/sct |
 | 86 | 612 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 87 | 613 | Observation | `Observation.interpretation.coding` | 102594003.0 | Electrocardiogram abnormal | http://snomed.info/sct |
+| 87 | 613 | Observation | `Observation.interpretation.coding` | 102594003 | Electrocardiogram abnormal | http://snomed.info/sct |
 | 88 | 621 | Observation | `Observation.component.code.coding` | 164854000 | Electrocardiogram normal | http://snomed.info/sct |
 | 89 | 624 | Observation | `Observation.component.code.coding` | 26141007 | ST segment depression | http://snomed.info/sct |
 | 90 | 627 | Observation | `Observation.component.code.coding` | 59931005 | Electrocardiogram normal | http://snomed.info/sct |
@@ -232,7 +232,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 92 | 633 | Observation | `Observation.component.code.coding` | 164889003 | Electrocardiographic atrial fibrillation | http://snomed.info/sct |
 | 93 | 636 | Observation | `Observation.component.code.coding` | 164918000 | Pathological Q wave | http://snomed.info/sct |
 | 94 | 639 | Observation | `Observation.component.code.coding` | 76388001 | ST segment elevation | http://snomed.info/sct |
-| 95 | 642 | Observation | `Observation.component.code.coding` | 102594003.0 | Electrocardiogram abnormal | http://snomed.info/sct |
+| 95 | 642 | Observation | `Observation.component.code.coding` | 102594003 | Electrocardiogram abnormal | http://snomed.info/sct |
 | 96 | 651 | Observation | `Observation.code.coding` | 2093-3 | Cholesterol [Mass/volume] in Serum or Plasma | http://loinc.org |
 | 97 | 661 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 98 | 665 | Observation | `Observation.interpretation.coding` | H | High | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
@@ -248,12 +248,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 108 | 739 | Observation | `Observation.code.coding` | 100898-6 | Lipid panel - Serum or Plasma | http://loinc.org |
 | 109 | 740 | Observation | `Observation.valueCodeableConcept.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 110 | 741 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 111 | 742 | Observation | `Observation.valueCodeableConcept.coding` | 370992007.0 | Dyslipidemia | http://snomed.info/sct |
-| 112 | 743 | Observation | `Observation.interpretation.coding` | 370992007.0 | Dyslipidemia | http://snomed.info/sct |
+| 111 | 742 | Observation | `Observation.valueCodeableConcept.coding` | 370992007 | Dyslipidemia | http://snomed.info/sct |
+| 112 | 743 | Observation | `Observation.interpretation.coding` | 370992007 | Dyslipidemia | http://snomed.info/sct |
 | 113 | 757 | Observation | `Observation.code.coding` | OC000173 | Prediksi Risiko PTM tanpa Pemeriksaan Laboratorium | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 114 | 758 | Observation | `Observation.interpretation.coding` | 723505004.0 | Low risk | http://snomed.info/sct |
-| 115 | 761 | Observation | `Observation.interpretation.coding` | 25594002.0 | Moderate risk of | http://snomed.info/sct |
-| 116 | 766 | Observation | `Observation.interpretation.coding` | 723509005.0 | High risk | http://snomed.info/sct |
+| 114 | 758 | Observation | `Observation.interpretation.coding` | 723505004 | Low risk | http://snomed.info/sct |
+| 115 | 761 | Observation | `Observation.interpretation.coding` | 25594002 | Moderate risk of | http://snomed.info/sct |
+| 116 | 766 | Observation | `Observation.interpretation.coding` | 723509005 | High risk | http://snomed.info/sct |
 | 117 | 782 | Observation | `Observation.code.coding` | 20977-5 | Urea [Mass/volume] in Blood | http://loinc.org |
 | 118 | 785 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 119 | 786 | Observation | `Observation.interpretation.coding` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
@@ -271,65 +271,65 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 131 | 852 | Observation | `Observation.interpretation.coding` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 132 | 866 | Observation | `Observation.code.coding` | 32294-1 | Albumin/Creatinine [Ratio] in Urine | http://loinc.org |
 | 133 | 869 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 134 | 870 | Observation | `Observation.interpretation.coding` | 735623008.0 | Grade A2 albuminuria | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 135 | 871 | Observation | `Observation.interpretation.coding` | 735624002.0 | Grade A3 albuminuria | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 136 | 922 | Procedure | `Procedure.code.coding` | 424489006.0 | Mantoux test | http://snomed.info/sct |
+| 134 | 870 | Observation | `Observation.interpretation.coding` | 735623008 | Grade A2 albuminuria | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 135 | 871 | Observation | `Observation.interpretation.coding` | 735624002 | Grade A3 albuminuria | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 136 | 922 | Procedure | `Procedure.code.coding` | 424489006 | Mantoux test | http://snomed.info/sct |
 | 137 | 934 | Observation | `Observation.code.coding` | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | http://loinc.org |
-| 138 | 935 | Observation | `Observation.valueCodeableConcept.coding` | 268376005.0 | Mantoux: positive | http://snomed.info/sct |
-| 139 | 936 | Observation | `Observation.valueCodeableConcept.coding` | 268375009.0 | Mantoux: negative | http://snomed.info/sct |
+| 138 | 935 | Observation | `Observation.valueCodeableConcept.coding` | 268376005 | Mantoux: positive | http://snomed.info/sct |
+| 139 | 936 | Observation | `Observation.valueCodeableConcept.coding` | 268375009 | Mantoux: negative | http://snomed.info/sct |
 | 140 | 946 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | TK000161 | Dugaan Tuberkulosis klinis | http://terminology.kemkes.go.id |
 | 141 | 957 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 142 | 958 | Observation | `Observation.method.coding` | 391483001.0 | Microscopy (acid fast bacilli) | http://snomed.info/sct |
-| 143 | 959 | Observation | `Observation.valueCodeableConcept.coding` | 10828004.0 | Positive | http://snomed.info/sct |
-| 144 | 960 | Observation | `Observation.valueCodeableConcept.coding` | 260385009.0 | Negative | http://snomed.info/sct |
+| 142 | 958 | Observation | `Observation.method.coding` | 391483001 | Microscopy (acid fast bacilli) | http://snomed.info/sct |
+| 143 | 959 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 144 | 960 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
 | 145 | 972 | Observation | `Observation.code.coding` | 13956-8 | Mycobacterium tuberculosis DNA [Presence] in Specimen by NAA with probe detection | http://loinc.org |
-| 146 | 973 | Observation | `Observation.method.coding` | 405262001.0 | Point of care testing | http://snomed.info/sct |
-| 147 | 974 | Observation | `Observation.valueCodeableConcept.coding` | 10828004.0 | Positive | http://snomed.info/sct |
-| 148 | 975 | Observation | `Observation.valueCodeableConcept.coding` | 260385009.0 | Negative | http://snomed.info/sct |
+| 146 | 973 | Observation | `Observation.method.coding` | 405262001 | Point of care testing | http://snomed.info/sct |
+| 147 | 974 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 148 | 975 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
 | 149 | 987 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 150 | 988 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 150 | 988 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 151 | 989 | Observation | `Observation.dataAbsentReason.coding` | OD000001 | Tidak ada hasil | http://terminology.kemkes.go.id/CodeSystem/data-absent-reason |
 | 152 | 1001 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 153 | 1002 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 153 | 1002 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 154 | 1003 | Observation | `Observation.dataAbsentReason.coding` | LA15841-2 | Invalid | http://loinc.org |
 | 155 | 1015 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 156 | 1016 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 156 | 1016 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 157 | 1017 | Observation | `Observation.dataAbsentReason.coding` | error | Error | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 158 | 1029 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 159 | 1030 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 159 | 1030 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 160 | 1031 | Observation | `Observation.dataAbsentReason.coding` | OD000001 | Tidak ada hasil | http://terminology.kemkes.go.id/CodeSystem/data-absent-reason |
 | 161 | 1043 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 162 | 1044 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 162 | 1044 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 163 | 1045 | Observation | `Observation.valueCodeableConcept.coding` | LA11883-8 | Not Detected | http://loinc.org |
 | 164 | 1046 | Observation | `Observation.interpretation.coding` | NEG | Negative | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 165 | 1058 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 166 | 1059 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 166 | 1059 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 167 | 1060 | Observation | `Observation.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
 | 168 | 1061 | Observation | `Observation.interpretation.coding` | NEG | Negative | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 169 | 1073 | Observation | `Observation.code.coding` | 89372-7 | Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method | http://loinc.org |
-| 170 | 1074 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 170 | 1074 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 171 | 1075 | Observation | `Observation.valueCodeableConcept.coding` | LA11883-8 | Not Detected | http://loinc.org |
 | 172 | 1076 | Observation | `Observation.interpretation.coding` | X099770 | Rifampisin sensitive | http://terminology.kemkes.go.id/CodeSystem/examination |
 | 173 | 1088 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 174 | 1089 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 174 | 1089 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 175 | 1090 | Observation | `Observation.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
 | 176 | 1091 | Observation | `Observation.interpretation.coding` | NEG | Negative | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 177 | 1103 | Observation | `Observation.code.coding` | 89372-7 | Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method | http://loinc.org |
-| 178 | 1104 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 178 | 1104 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 179 | 1105 | Observation | `Observation.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
 | 180 | 1106 | Observation | `Observation.interpretation.coding` | X099771 | Rifampisin resistan | http://terminology.kemkes.go.id/CodeSystem/examination |
 | 181 | 1118 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 182 | 1119 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 182 | 1119 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 183 | 1120 | Observation | `Observation.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
 | 184 | 1121 | Observation | `Observation.interpretation.coding` | NEG | Negative | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
 | 185 | 1133 | Observation | `Observation.code.coding` | 89372-7 | Mycobacterium tuberculosis complex rpoB gene rifAMPin resistance mutation [Presence] by Molecular method | http://loinc.org |
-| 186 | 1134 | Observation | `Observation.method.coding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 186 | 1134 | Observation | `Observation.method.coding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
 | 187 | 1135 | Observation | `Observation.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
 | 188 | 1136 | Observation | `Observation.interpretation.coding` | X099772 | Rifampisin indeterminate | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 189 | 1146 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 258066000.0 | Polymerase chain reaction technique | http://snomed.info/sct |
-| 190 | 1147 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 391483001.0 | Microscopy (acid fast bacilli) | http://snomed.info/sct |
-| 191 | 1148 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 405262001.0 | Point of care testing | http://snomed.info/sct |
-| 192 | 1149 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 162650008.0 | Examination not done on subject of record | http://snomed.info/sct |
+| 189 | 1146 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 258066000 | Polymerase chain reaction technique | http://snomed.info/sct |
+| 190 | 1147 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 391483001 | Microscopy (acid fast bacilli) | http://snomed.info/sct |
+| 191 | 1148 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 405262001 | Point of care testing | http://snomed.info/sct |
+| 192 | 1149 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 162650008 | Examination not done on subject of record | http://snomed.info/sct |
 | 193 | 1154 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | female | Female | http://hl7.org/fhir/administrative-gender |
 | 194 | 1155 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | male | Male | http://hl7.org/fhir/administrative-gender |
 | 195 | 1158 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueString` | SP000726 | 40-49 tahun | http://terminology.kemkes.go.id/sp |
@@ -338,29 +338,29 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 198 | 1167 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | SP000435 | <20 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 199 | 1168 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | SP000436 | 20-30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 200 | 1169 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | SP000437 | >30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
-| 201 | 1188 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 723505004.0 | Low risk | http://snomed.info/sct |
-| 202 | 1189 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 723509005.0 | High risk | http://snomed.info/sct |
-| 203 | 1212 | Observation | `Observation.code.coding` | 13607009.0 | Manual examination of breast | http://snomed.info/sct |
-| 204 | 1220 | Observation | `Observation.valueCodeableConcept.coding` | 290084006.0 | Breast normal | http://snomed.info/sct |
-| 205 | 1221 | Observation | `Observation.valueCodeableConcept.coding` | 89164003.0 | Breast lump | http://snomed.info/sct |
-| 206 | 1222 | Observation | `Observation.valueCodeableConcept.coding` | 134405005.0 | Suspected breast cancer | http://snomed.info/sct |
+| 201 | 1188 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 723505004 | Low risk | http://snomed.info/sct |
+| 202 | 1189 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 723509005 | High risk | http://snomed.info/sct |
+| 203 | 1212 | Observation | `Observation.code.coding` | 13607009 | Manual examination of breast | http://snomed.info/sct |
+| 204 | 1220 | Observation | `Observation.valueCodeableConcept.coding` | 290084006 | Breast normal | http://snomed.info/sct |
+| 205 | 1221 | Observation | `Observation.valueCodeableConcept.coding` | 89164003 | Breast lump | http://snomed.info/sct |
+| 206 | 1222 | Observation | `Observation.valueCodeableConcept.coding` | 134405005 | Suspected breast cancer | http://snomed.info/sct |
 | 207 | 1229 | Observation | `Observation.code.coding` | 24601-7 | US Breast | http://loinc.org |
-| 208 | 1237 | Observation | `Observation.valueCodeableConcept.coding` | 290084006.0 | Breast normal | http://snomed.info/sct |
-| 209 | 1238 | Observation | `Observation.valueCodeableConcept.coding` | 367644007.0 | Simple cyst | http://snomed.info/sct |
-| 210 | 1239 | Observation | `Observation.valueCodeableConcept.coding` | 449837001.0 | Complex cyst of breast | http://snomed.info/sct |
-| 211 | 1254 | Observation | `Observation.code.coding` | 451024007.0 | Inspection of vagina using vaginal speculum | http://snomed.info/sct |
-| 212 | 1262 | Observation | `Observation.valueCodeableConcept.coding` | 395100000.0 | No evidence of cancer found | http://snomed.info/sct |
-| 213 | 1263 | Observation | `Observation.valueCodeableConcept.coding` | 315266007.0 | Suspected cervical cancer | http://snomed.info/sct |
+| 208 | 1237 | Observation | `Observation.valueCodeableConcept.coding` | 290084006 | Breast normal | http://snomed.info/sct |
+| 209 | 1238 | Observation | `Observation.valueCodeableConcept.coding` | 367644007 | Simple cyst | http://snomed.info/sct |
+| 210 | 1239 | Observation | `Observation.valueCodeableConcept.coding` | 449837001 | Complex cyst of breast | http://snomed.info/sct |
+| 211 | 1254 | Observation | `Observation.code.coding` | 451024007 | Inspection of vagina using vaginal speculum | http://snomed.info/sct |
+| 212 | 1262 | Observation | `Observation.valueCodeableConcept.coding` | 395100000 | No evidence of cancer found | http://snomed.info/sct |
+| 213 | 1263 | Observation | `Observation.valueCodeableConcept.coding` | 315266007 | Suspected cervical cancer | http://snomed.info/sct |
 | 214 | 1270 | Observation | `Observation.code.coding` | X099241 | Tes IVA | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 215 | 1278 | Observation | `Observation.valueCodeableConcept.coding` | 300557001.0 | Aceto-white reaction positive | http://snomed.info/sct |
-| 216 | 1279 | Observation | `Observation.valueCodeableConcept.coding` | 300558006.0 | Aceto-white reaction negative | http://snomed.info/sct |
+| 215 | 1278 | Observation | `Observation.valueCodeableConcept.coding` | 300557001 | Aceto-white reaction positive | http://snomed.info/sct |
+| 216 | 1279 | Observation | `Observation.valueCodeableConcept.coding` | 300558006 | Aceto-white reaction negative | http://snomed.info/sct |
 | 217 | 1287 | Observation | `Observation.code.coding` | 44550-2 | Human papilloma virus DNA [Presence] in Cervix by Probe | http://loinc.org |
-| 218 | 1295 | Observation | `Observation.valueCodeableConcept.coding` | 787724008.0 | Human papillomavirus deoxyribonucleic acid not detected | http://snomed.info/sct |
-| 219 | 1296 | Observation | `Observation.valueCodeableConcept.coding` | 787723002.0 | Human papillomavirus deoxyribonucleic acid detected | http://snomed.info/sct |
+| 218 | 1295 | Observation | `Observation.valueCodeableConcept.coding` | 787724008 | Human papillomavirus deoxyribonucleic acid not detected | http://snomed.info/sct |
+| 219 | 1296 | Observation | `Observation.valueCodeableConcept.coding` | 787723002 | Human papillomavirus deoxyribonucleic acid detected | http://snomed.info/sct |
 | 220 | 1297 | Observation | `Observation.valueCodeableConcept.coding` | OV000351 | Positif (HPV tipe onkogenik lain) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 221 | 1298 | Observation | `Observation.valueCodeableConcept.coding` | 708311006.0 | Deoxyribonucleic acid of Human papillomavirus 52 | http://snomed.info/sct |
-| 222 | 1299 | Observation | `Observation.valueCodeableConcept.coding` | 708299006.0 | Deoxyribonucleic acid of Human papillomavirus 18 | http://snomed.info/sct |
-| 223 | 1300 | Observation | `Observation.valueCodeableConcept.coding` | 708298003.0 | Deoxyribonucleic acid of Human papillomavirus 16 | http://snomed.info/sct |
+| 221 | 1298 | Observation | `Observation.valueCodeableConcept.coding` | 708311006 | Deoxyribonucleic acid of Human papillomavirus 52 | http://snomed.info/sct |
+| 222 | 1299 | Observation | `Observation.valueCodeableConcept.coding` | 708299006 | Deoxyribonucleic acid of Human papillomavirus 18 | http://snomed.info/sct |
+| 223 | 1300 | Observation | `Observation.valueCodeableConcept.coding` | 708298003 | Deoxyribonucleic acid of Human papillomavirus 16 | http://snomed.info/sct |
 | 224 | 1306 | Observation | `Observation.code.coding` | 77399-4 | Human papilloma virus 16 DNA [Presence] in Cervix by NAA with probe detection | http://loinc.org |
 | 225 | 1321 | Observation | `Observation.code.coding` | 77400-0 | Human papilloma virus 18 DNA [Presence] in Cervix by NAA with probe detection | http://loinc.org |
 | 226 | 1336 | Observation | `Observation.code.coding` | 95534-4 | Human papilloma virus 52 DNA [Presence] in Cervix by NAA with probe detection | http://loinc.org |
@@ -374,11 +374,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 234 | 1377 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000033 | Memiliki diagnosis kanker <5 tahun yang lalu | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 235 | 1378 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000034 | Tidak pernah didiagnosis menderita kanker | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 236 | 1381 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000036 | Tidak ada keluarga yang terdiagnosis kanker | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 237 | 1382 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 429011007.0 | Family history of malignant neoplasm of lung | http://snomed.info/sct |
+| 237 | 1382 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 429011007 | Family history of malignant neoplasm of lung | http://snomed.info/sct |
 | 238 | 1383 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000035 | Memiliki keluarga yang terdiagnosis kanker lain | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 239 | 1386 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000023 | Perokok/bekas perokok berhenti <10 tahun lalu | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 240 | 1387 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000022 | Perokok aktif (dalam 1 tahun ini masih merokok) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 241 | 1388 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 266919005.0 | Never smoked tobacco | http://snomed.info/sct |
+| 241 | 1388 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 266919005 | Never smoked tobacco | http://snomed.info/sct |
 | 242 | 1389 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 16090771000119104 | Occupational exposure to environmental tobacco smoke | http://snomed.info/sct |
 | 243 | 1392 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000019 | Tidak memiliki tempat kerja mengandung zat karsinogenik | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 244 | 1393 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000018 | Tidak yakin memiliki tempat kerja mengandung zat karsinogenik | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
@@ -389,72 +389,72 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 249 | 1402 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000029 | Memiliki lingkungan dalam rumah yang sehat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 250 | 1403 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000028 | Tidak yakin memiliki lingkungan dalam rumah yang tidak sehat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 251 | 1404 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | QRI000027 | Memiliki lingkungan dalam rumah yang tidak sehat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 252 | 1407 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 161414005.0 | History of tuberculosis | http://snomed.info/sct |
-| 253 | 1408 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 414415007.0 | History of chronic lung disease | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 254 | 1409 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 160258000.0 | No history of respiratory system disease | http://snomed.info/sct |
-| 255 | 1412 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723505004.0 | Low risk | http://snomed.info/sct |
-| 256 | 1413 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 25594002.0 | Moderate risk of | http://snomed.info/sct |
-| 257 | 1414 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723509005.0 | High risk | http://snomed.info/sct |
-| 258 | 1417 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 17621005.0 | Normal | http://snomed.info/sct |
+| 252 | 1407 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 161414005 | History of tuberculosis | http://snomed.info/sct |
+| 253 | 1408 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 414415007 | History of chronic lung disease | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 254 | 1409 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 160258000 | No history of respiratory system disease | http://snomed.info/sct |
+| 255 | 1412 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723505004 | Low risk | http://snomed.info/sct |
+| 256 | 1413 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 25594002 | Moderate risk of | http://snomed.info/sct |
+| 257 | 1414 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723509005 | High risk | http://snomed.info/sct |
+| 258 | 1417 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
 | 259 | 1418 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 263654008 | Abnormal | http://snomed.info/sct |
 | 260 | 1425 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | female | Female | http://hl7.org/fhir/administrative-gender |
 | 261 | 1426 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | male | Male | http://hl7.org/fhir/administrative-gender |
 | 262 | 1429 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | SP000441 | <50 tahun | http://terminology.kemkes.go.id/sp |
 | 263 | 1430 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | SP000442 | 50 - 69 tahun | http://terminology.kemkes.go.id/sp |
 | 264 | 1431 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | SP000443 | >= 70 tahun | http://terminology.kemkes.go.id/sp |
-| 265 | 1442 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723505004.0 | Low risk | http://snomed.info/sct |
-| 266 | 1443 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 25594002.0 | Moderate risk of | http://snomed.info/sct |
-| 267 | 1444 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723509005.0 | High risk | http://snomed.info/sct |
-| 268 | 1459 | Observation | `Observation.code.coding` | 410007005.0 | Rectal examination | http://snomed.info/sct |
-| 269 | 1467 | Observation | `Observation.valueCodeableConcept.coding` | 248523006.0 | Rectal mass | http://snomed.info/sct |
-| 270 | 1468 | Observation | `Observation.valueCodeableConcept.coding` | 300870000.0 | No mass present | http://snomed.info/sct |
+| 265 | 1442 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723505004 | Low risk | http://snomed.info/sct |
+| 266 | 1443 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 25594002 | Moderate risk of | http://snomed.info/sct |
+| 267 | 1444 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 723509005 | High risk | http://snomed.info/sct |
+| 268 | 1459 | Observation | `Observation.code.coding` | 410007005 | Rectal examination | http://snomed.info/sct |
+| 269 | 1467 | Observation | `Observation.valueCodeableConcept.coding` | 248523006 | Rectal mass | http://snomed.info/sct |
+| 270 | 1468 | Observation | `Observation.valueCodeableConcept.coding` | 300870000 | No mass present | http://snomed.info/sct |
 | 271 | 1475 | Observation | `Observation.code.coding` | 14563-1 | Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen | http://loinc.org |
-| 272 | 1483 | Observation | `Observation.valueCodeableConcept.coding` | 167667006.0 | Occult blood not detected in feces | http://snomed.info/sct |
-| 273 | 1484 | Observation | `Observation.valueCodeableConcept.coding` | 59614000.0 | Occult blood detected in feces | http://snomed.info/sct |
-| 274 | 1495 | Observation | `Observation.code.coding` | 247301006.0 | Finding of ability to hear whisper | http://snomed.info/sct |
-| 275 | 1503 | Observation | `Observation.valueCodeableConcept.coding` | 275727004.0 | Hearing test normal | http://snomed.info/sct |
-| 276 | 1504 | Observation | `Observation.valueCodeableConcept.coding` | 300221005.0 | Hearing for whisper impaired | http://snomed.info/sct |
-| 277 | 1512 | Observation | `Observation.code.coding` | 76517002.0 | Otoscopy | http://snomed.info/sct |
-| 278 | 1520 | Observation | `Observation.valueCodeableConcept.coding` | 164178007.0 | Ear examination normal | http://snomed.info/sct |
-| 279 | 1521 | Observation | `Observation.valueCodeableConcept.coding` | 699116001.0 | Ear examination abnormal | http://snomed.info/sct |
+| 272 | 1483 | Observation | `Observation.valueCodeableConcept.coding` | 167667006 | Occult blood not detected in feces | http://snomed.info/sct |
+| 273 | 1484 | Observation | `Observation.valueCodeableConcept.coding` | 59614000 | Occult blood detected in feces | http://snomed.info/sct |
+| 274 | 1495 | Observation | `Observation.code.coding` | 247301006 | Finding of ability to hear whisper | http://snomed.info/sct |
+| 275 | 1503 | Observation | `Observation.valueCodeableConcept.coding` | 275727004 | Hearing test normal | http://snomed.info/sct |
+| 276 | 1504 | Observation | `Observation.valueCodeableConcept.coding` | 300221005 | Hearing for whisper impaired | http://snomed.info/sct |
+| 277 | 1512 | Observation | `Observation.code.coding` | 76517002 | Otoscopy | http://snomed.info/sct |
+| 278 | 1520 | Observation | `Observation.valueCodeableConcept.coding` | 164178007 | Ear examination normal | http://snomed.info/sct |
+| 279 | 1521 | Observation | `Observation.valueCodeableConcept.coding` | 699116001 | Ear examination abnormal | http://snomed.info/sct |
 | 280 | 1526 | Observation | `Observation.code.coding` | 18070006 | Impacted cerumen | http://snomed.info/sct |
 | 281 | 1540 | Observation | `Observation.code.coding` | 129127001 | Infection of ear | http://snomed.info/sct |
 | 282 | 1554 | Observation | `Observation.code.coding` | SP000828 | Tes Penala | http://terminology.kemkes.go.id/sp |
-| 283 | 1562 | Observation | `Observation.valueCodeableConcept.coding` | 164178007.0 | Ear examination normal | http://snomed.info/sct |
-| 284 | 1563 | Observation | `Observation.valueCodeableConcept.coding` | 699116001.0 | Ear examination abnormal | http://snomed.info/sct |
-| 285 | 1570 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | 400911007.0 | Tumbling E test | http://snomed.info/sct |
-| 286 | 1571 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | 252973004.0 | Snellen chart assessment | http://snomed.info/sct |
-| 287 | 1577 | Observation | `Observation.code.coding` | 400911007.0 | Tumbling E test | http://snomed.info/sct |
+| 283 | 1562 | Observation | `Observation.valueCodeableConcept.coding` | 164178007 | Ear examination normal | http://snomed.info/sct |
+| 284 | 1563 | Observation | `Observation.valueCodeableConcept.coding` | 699116001 | Ear examination abnormal | http://snomed.info/sct |
+| 285 | 1570 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | 400911007 | Tumbling E test | http://snomed.info/sct |
+| 286 | 1571 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | 252973004 | Snellen chart assessment | http://snomed.info/sct |
+| 287 | 1577 | Observation | `Observation.code.coding` | 400911007 | Tumbling E test | http://snomed.info/sct |
 | 288 | 1578 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 289 | 1579 | Observation | `Observation.valueCodeableConcept.coding` | 45089002.0 | Normal vision | http://snomed.info/sct |
-| 290 | 1580 | Observation | `Observation.interpretation.coding` | 45089002.0 | Normal vision | http://snomed.info/sct |
-| 291 | 1581 | Observation | `Observation.valueCodeableConcept.coding` | 397540003.0 | Visual impairment | http://snomed.info/sct |
-| 292 | 1582 | Observation | `Observation.interpretation.coding` | 397540003.0 | Visual impairment | http://snomed.info/sct |
-| 293 | 1583 | Observation | `Observation.valueCodeableConcept.coding` | 164728001.0 | Visual testing abnormal | http://snomed.info/sct |
-| 294 | 1584 | Observation | `Observation.interpretation.coding` | 164728001.0 | Visual testing abnormal | http://snomed.info/sct |
-| 295 | 1595 | Observation | `Observation.code.coding` | 252973004.0 | Snellen chart assessment | http://snomed.info/sct |
+| 289 | 1579 | Observation | `Observation.valueCodeableConcept.coding` | 45089002 | Normal vision | http://snomed.info/sct |
+| 290 | 1580 | Observation | `Observation.interpretation.coding` | 45089002 | Normal vision | http://snomed.info/sct |
+| 291 | 1581 | Observation | `Observation.valueCodeableConcept.coding` | 397540003 | Visual impairment | http://snomed.info/sct |
+| 292 | 1582 | Observation | `Observation.interpretation.coding` | 397540003 | Visual impairment | http://snomed.info/sct |
+| 293 | 1583 | Observation | `Observation.valueCodeableConcept.coding` | 164728001 | Visual testing abnormal | http://snomed.info/sct |
+| 294 | 1584 | Observation | `Observation.interpretation.coding` | 164728001 | Visual testing abnormal | http://snomed.info/sct |
+| 295 | 1595 | Observation | `Observation.code.coding` | 252973004 | Snellen chart assessment | http://snomed.info/sct |
 | 296 | 1596 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 297 | 1597 | Observation | `Observation.valueCodeableConcept.coding` | 45089002.0 | Normal vision | http://snomed.info/sct |
-| 298 | 1598 | Observation | `Observation.valueCodeableConcept.coding` | 397543001.0 | Mild visual impairment | http://snomed.info/sct |
-| 299 | 1599 | Observation | `Observation.valueCodeableConcept.coding` | 397542006.0 | Moderate visual impairment | http://snomed.info/sct |
-| 300 | 1600 | Observation | `Observation.valueCodeableConcept.coding` | 397541004.0 | Severe visual impairment | http://snomed.info/sct |
-| 301 | 1601 | Observation | `Observation.interpretation.coding` | 45089002.0 | Normal vision | http://snomed.info/sct |
-| 302 | 1602 | Observation | `Observation.interpretation.coding` | 397540003.0 | Visual impairment | http://snomed.info/sct |
-| 303 | 1616 | Observation | `Observation.code.coding` | 441841000.0 | Pinhole visual acuity test | http://loinc.org |
+| 297 | 1597 | Observation | `Observation.valueCodeableConcept.coding` | 45089002 | Normal vision | http://snomed.info/sct |
+| 298 | 1598 | Observation | `Observation.valueCodeableConcept.coding` | 397543001 | Mild visual impairment | http://snomed.info/sct |
+| 299 | 1599 | Observation | `Observation.valueCodeableConcept.coding` | 397542006 | Moderate visual impairment | http://snomed.info/sct |
+| 300 | 1600 | Observation | `Observation.valueCodeableConcept.coding` | 397541004 | Severe visual impairment | http://snomed.info/sct |
+| 301 | 1601 | Observation | `Observation.interpretation.coding` | 45089002 | Normal vision | http://snomed.info/sct |
+| 302 | 1602 | Observation | `Observation.interpretation.coding` | 397540003 | Visual impairment | http://snomed.info/sct |
+| 303 | 1616 | Observation | `Observation.code.coding` | 441841000 | Pinhole visual acuity test | http://loinc.org |
 | 304 | 1617 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 305 | 1618 | Observation | `Observation.valueCodeableConcept.coding` | 39021009.0 | Disorder of refraction | http://snomed.info/sct |
-| 306 | 1619 | Observation | `Observation.interpretation.coding` | 39021009.0 | Disorder of refraction | http://snomed.info/sct |
+| 305 | 1618 | Observation | `Observation.valueCodeableConcept.coding` | 39021009 | Disorder of refraction | http://snomed.info/sct |
+| 306 | 1619 | Observation | `Observation.interpretation.coding` | 39021009 | Disorder of refraction | http://snomed.info/sct |
 | 307 | 1620 | Observation | `Observation.valueCodeableConcept.coding` | OI000044 | Kelainan organik | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 308 | 1621 | Observation | `Observation.interpretation.coding` | OI000044 | Kelainan organik | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 309 | 1635 | Observation | `Observation.code.coding` | 40137007.0 | Pupil light reflex | http://snomed.info/sct |
+| 309 | 1635 | Observation | `Observation.code.coding` | 40137007 | Pupil light reflex | http://snomed.info/sct |
 | 310 | 1636 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 311 | 1637 | Observation | `Observation.valueCodeableConcept.coding` | 301950001.0 | Pupil normal | http://snomed.info/sct |
+| 311 | 1637 | Observation | `Observation.valueCodeableConcept.coding` | 301950001 | Pupil normal | http://snomed.info/sct |
 | 312 | 1638 | Observation | `Observation.valueCodeableConcept.coding` | OV000393 | Suspek katarak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 313 | 1639 | Observation | `Observation.valueCodeableConcept.coding` | 371405004.0 | Disorder of eye proper | http://snomed.info/sct |
-| 314 | 1653 | Observation | `Observation.code.coding` | 53524009.0 | Ophthalmoscopy | http://snomed.info/sct |
+| 313 | 1639 | Observation | `Observation.valueCodeableConcept.coding` | 371405004 | Disorder of eye proper | http://snomed.info/sct |
+| 314 | 1653 | Observation | `Observation.code.coding` | 53524009 | Ophthalmoscopy | http://snomed.info/sct |
 | 315 | 1654 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 316 | 1655 | Observation | `Observation.valueCodeableConcept.coding` | 164734008.0 | Fundoscopy normal | http://snomed.info/sct |
-| 317 | 1656 | Observation | `Observation.valueCodeableConcept.coding` | 164735009.0 | Fundoscopy abnormal | http://snomed.info/sct |
+| 316 | 1655 | Observation | `Observation.valueCodeableConcept.coding` | 164734008 | Fundoscopy normal | http://snomed.info/sct |
+| 317 | 1656 | Observation | `Observation.valueCodeableConcept.coding` | 164735009 | Fundoscopy abnormal | http://snomed.info/sct |
 | 318 | 1671 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | TK000147 | Tidak sama sekali | http://terminology.kemkes.go.id |
 | 319 | 1672 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | TK000148 | Kurang dari satu minggu | http://terminology.kemkes.go.id |
 | 320 | 1673 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | TK000149 | Lebih dari satu minggu | http://terminology.kemkes.go.id |
@@ -477,63 +477,63 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 337 | 1709 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.answer.valueCoding` | TK000150 | Hampir setiap hari | http://terminology.kemkes.go.id |
 | 338 | 1751 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
 | 339 | 1752 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 340 | 1753 | Observation | `Observation.valueCodeableConcept.coding` | 11214006.0 | Reactive | http://snomed.info/sct |
-| 341 | 1754 | Observation | `Observation.valueCodeableConcept.coding` | 131194007.0 | Non-Reactive | http://snomed.info/sct |
+| 340 | 1753 | Observation | `Observation.valueCodeableConcept.coding` | 11214006 | Reactive | http://snomed.info/sct |
+| 341 | 1754 | Observation | `Observation.valueCodeableConcept.coding` | 131194007 | Non-Reactive | http://snomed.info/sct |
 | 342 | 1768 | Observation | `Observation.code.coding` | 72376-7 | Hepatitis C virus Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
 | 343 | 1769 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
-| 344 | 1770 | Observation | `Observation.valueCodeableConcept.coding` | 11214006.0 | Reactive | http://snomed.info/sct |
-| 345 | 1771 | Observation | `Observation.valueCodeableConcept.coding` | 131194007.0 | Non-Reactive | http://snomed.info/sct |
-| 346 | 1796 | Observation | `Observation.code.coding` | 395197008.0 | Hepatitis C viral load | http://snomed.info/sct |
-| 347 | 1797 | Observation | `Observation.valueCodeableConcept.coding` | 10828004.0 | Positive | http://snomed.info/sct |
-| 348 | 1798 | Observation | `Observation.valueCodeableConcept.coding` | 260385009.0 | Negative | http://snomed.info/sct |
+| 344 | 1770 | Observation | `Observation.valueCodeableConcept.coding` | 11214006 | Reactive | http://snomed.info/sct |
+| 345 | 1771 | Observation | `Observation.valueCodeableConcept.coding` | 131194007 | Non-Reactive | http://snomed.info/sct |
+| 346 | 1796 | Observation | `Observation.code.coding` | 395197008 | Hepatitis C viral load | http://snomed.info/sct |
+| 347 | 1797 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 348 | 1798 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
 | 349 | 1831 | Observation | `Observation.code.coding` | 1920-8 | Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma | http://loinc.org |
 | 350 | 1832 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 351 | 1848 | Observation | `Observation.code.coding[x]` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
 | 352 | 1864 | Observation | `Observation.code.coding[x]` | 86465-2 | AST to platelet ratio index in Serum and Blood by calculation | http://loinc.org |
 | 353 | 1868 | Observation | `Observation.interpretation.coding` | N | Normal | http://termi nology.hl7. org/CodeSy stem/v3-Ob servationIn terpretation |
-| 354 | 1873 | Observation | `Observation.interpretation.coding` | 112674009.0 | Fibrosis | http://snomed.info/sct |
-| 355 | 1876 | Observation | `Observation.interpretation.coding` | 19943007.0 | Cirrhosis of liver | http://snomed.info/sct |
+| 354 | 1873 | Observation | `Observation.interpretation.coding` | 112674009 | Fibrosis | http://snomed.info/sct |
+| 355 | 1876 | Observation | `Observation.interpretation.coding` | 19943007 | Cirrhosis of liver | http://snomed.info/sct |
 | 356 | 1886 | Observation | `Observation.code.coding` | TK000144 | Rencana menikah 1 tahun ke depan | http://terminology.kemkes.go.id |
 | 357 | 1911 | Observation | `Observation.code.coding` | 30352-9 | Hemoglobin [Mass/volume] in Capillary blood | http://loinc.org |
 | 358 | 1919 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 359 | 1922 | Observation | `Observation.interpretation.coding` | 271737000.0 | Anemia | http://snomed.info/sct |
+| 359 | 1922 | Observation | `Observation.interpretation.coding` | 271737000 | Anemia | http://snomed.info/sct |
 | 360 | 1936 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
 | 361 | 1937 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
 | 362 | 1938 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
 | 363 | 1957 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
 | 364 | 1958 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
 | 365 | 1959 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 366 | 1973 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 10828004.0 | Positive | http://snomed.info/sct |
-| 367 | 1974 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260385009.0 | Negative | http://snomed.info/sct |
-| 368 | 1975 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 82334004.0 | Indeterminate | http://snomed.info/sct |
-| 369 | 1976 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260413007.0 | None | http://snomed.info/sct |
+| 366 | 1973 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 10828004 | Positive | http://snomed.info/sct |
+| 367 | 1974 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260385009 | Negative | http://snomed.info/sct |
+| 368 | 1975 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 82334004 | Indeterminate | http://snomed.info/sct |
+| 369 | 1976 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260413007 | None | http://snomed.info/sct |
 | 370 | 1984 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 371 | 1985 | Observation | `Observation.valueCodeableConcept.coding` | 10828004.0 | Positive | http://snomed.info/sct |
-| 372 | 1986 | Observation | `Observation.valueCodeableConcept.coding` | 260385009.0 | Negative | http://snomed.info/sct |
+| 371 | 1985 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 372 | 1986 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
 | 373 | 1987 | Observation | `Observation.valueCodeableConcept.coding` | LA11884-6 | Indeterminate | http://loinc.org |
-| 374 | 1999 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 10828004.0 | Positive | http://snomed.info/sct |
-| 375 | 2000 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260385009.0 | Negative | http://snomed.info/sct |
-| 376 | 2001 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 82334004.0 | Indeterminate | http://snomed.info/sct |
-| 377 | 2002 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260413007.0 | None | http://snomed.info/sct |
-| 378 | 2007 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 302814007.0 | Early yaws skin lesion | http://snomed.info/sct |
-| 379 | 2008 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260385009.0 | Negative | http://snomed.info/sct |
-| 380 | 2009 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260413007.0 | None | http://snomed.info/sct |
+| 374 | 1999 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 10828004 | Positive | http://snomed.info/sct |
+| 375 | 2000 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260385009 | Negative | http://snomed.info/sct |
+| 376 | 2001 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 82334004 | Indeterminate | http://snomed.info/sct |
+| 377 | 2002 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260413007 | None | http://snomed.info/sct |
+| 378 | 2007 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 302814007 | Early yaws skin lesion | http://snomed.info/sct |
+| 379 | 2008 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260385009 | Negative | http://snomed.info/sct |
+| 380 | 2009 | QuestionnaireResponse | `QuestionnaireResponse.item.item.item.answer.valueCoding` | 260413007 | None | http://snomed.info/sct |
 | 381 | 2015 | Observation | `Observation.code.coding` | 106936-8 | Treponema pallidum IgG+IgM Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay |  |
 | 382 | 2016 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
 | 383 | 2017 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
 | 384 | 2043 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000169 | Benar semua kata | http://terminology.kemkes.go.id |
 | 385 | 2044 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000444 | Salah satu/Dua | http://terminology.kemkes.go.id/sp |
 | 386 | 2045 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000170 | Tidak dapat mengingat/mengulang kata | http://terminology.kemkes.go.id |
-| 387 | 2052 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 38369006.0 | At increased risk for cognitive impairment | http://snomed.info/sct |
+| 387 | 2052 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 38369006 | At increased risk for cognitive impairment | http://snomed.info/sct |
 | 388 | 2053 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000173 | Kemungkinan tidak ada gangguan kognitif | http://terminology.kemkes.go.id |
-| 389 | 2078 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 129845004.0 | At risk for malnutrition | http://snomed.info/sct |
-| 390 | 2079 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 248324001.0 | Well nourished | http://snomed.info/sct |
+| 389 | 2078 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 129845004 | At risk for malnutrition | http://snomed.info/sct |
+| 390 | 2079 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 248324001 | Well nourished | http://snomed.info/sct |
 | 391 | 2092 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000197 | Kemungkinan depresi | http://terminology.kemkes.go.id |
 | 392 | 2093 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000196 | Tidak depresi | http://terminology.kemkes.go.id |
 | 393 | 2096 | Observation | `Observation.code.coding` | 48542-5 | Geriatric depression scale (GDS) panel | http://loinc.org |
 | 394 | 2097 | Observation | `Observation.interpretation.coding` | TK000196 | Tidak depresi | http://terminology.kemkes.go.id |
 | 395 | 2100 | Observation | `Observation.interpretation.coding` | TK000197 | Kemungkinan depresi | http://terminology.kemkes.go.id |
-| 396 | 2103 | Observation | `Observation.interpretation.coding` | 35489007.0 | Depression | http://snomed.info/sct |
+| 396 | 2103 | Observation | `Observation.interpretation.coding` | 35489007 | Depression | http://snomed.info/sct |
 | 397 | 2115 | Observation | `Observation.component.code.coding` | 48512-8 | Are you basically satisfied with your life [GDS] | http://loinc.org |
 | 398 | 2118 | Observation | `Observation.component.code.coding` | 48515-1 | Do you often get bored [GDS] | http://loinc.org |
 | 399 | 2121 | Observation | `Observation.component.code.coding` | 48521-9 | Do you often feel helpless [GDS] | http://loinc.org |
@@ -543,7 +543,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 403 | 2135 | Observation | `Observation.interpretation.coding` | OI000047 | Ketergantungan berat | http://snomed.info/sct |
 | 404 | 2140 | Observation | `Observation.interpretation.coding` | OI000046 | Ketergantungan sedang | http://snomed.info/sct |
 | 405 | 2145 | Observation | `Observation.interpretation.coding` | OI000045 | Ketergantungan ringan | http://snomed.info/sct |
-| 406 | 2150 | Observation | `Observation.interpretation.coding` | 371153006.0 | Independent | http://snomed.info/sct |
+| 406 | 2150 | Observation | `Observation.interpretation.coding` | 371153006 | Independent | http://snomed.info/sct |
 | 407 | 2160 | Observation | `Observation.component.code.coding` | 96759-6 | Bowels | http://loinc.org |
 | 408 | 2161 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31627-5 | Incontinent (or needs to be given enemas) | http://loinc.org |
 | 409 | 2162 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31626-7 | Occasional accident | http://loinc.org |
@@ -595,36 +595,36 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 455 | 2223 | Observation | `Observation.interpretation.coding` | TK000171 | Gambar jam benar/tepat | http://terminology.kemkes.go.id |
 | 456 | 2224 | Observation | `Observation.interpretation.coding` | TK000172 | Gambar jam salah/tidak tepat | http://terminology.kemkes.go.id |
 | 457 | 2234 | Observation | `Observation.code.coding` | 72233-0 | Total score [Mini-Cog] | http://loinc.org |
-| 458 | 2237 | Observation | `Observation.interpretation.coding` | 38369006.0 | At increased risk for cognitive impairment | http://snomed.info/sct |
+| 458 | 2237 | Observation | `Observation.interpretation.coding` | 38369006 | At increased risk for cognitive impairment | http://snomed.info/sct |
 | 459 | 2238 | Observation | `Observation.interpretation.coding` | TK000173 | Kemungkinan tidak ada gangguan kognitif | http://terminology.kemkes.go.id |
-| 460 | 2257 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 461 | 2258 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 462 | 2259 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 463 | 2260 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 464 | 2263 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 465 | 2264 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 466 | 2265 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 467 | 2268 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 468 | 2269 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 469 | 2270 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 470 | 2273 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 471 | 2274 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 472 | 2275 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 473 | 2278 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 474 | 2279 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 475 | 2280 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 476 | 2283 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 477 | 2284 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 478 | 2285 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 479 | 2288 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 480 | 2289 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 481 | 2290 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
-| 482 | 2293 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002.0 | Changed | http://snomed.info/sct |
-| 483 | 2294 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006.0 | Unchanged | http://snomed.info/sct |
-| 484 | 2295 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 460 | 2257 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 461 | 2258 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 462 | 2259 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 463 | 2260 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 464 | 2263 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 465 | 2264 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 466 | 2265 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 467 | 2268 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 468 | 2269 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 469 | 2270 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 470 | 2273 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 471 | 2274 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 472 | 2275 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 473 | 2278 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 474 | 2279 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 475 | 2280 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 476 | 2283 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 477 | 2284 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 478 | 2285 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 479 | 2288 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 480 | 2289 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 481 | 2290 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
+| 482 | 2293 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 263703002 | Changed | http://snomed.info/sct |
+| 483 | 2294 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260388006 | Unchanged | http://snomed.info/sct |
+| 484 | 2295 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
 | 485 | 2301 | Observation | `Observation.code.coding` | 71722-3 | Total score [AD8] | http://loinc.org |
 | 486 | 2303 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7. org/CodeSystem/v3-Ob servationInterpretatio n |
-| 487 | 2304 | Observation | `Observation.interpretation.coding` | 698464007.0 | At risk of dementia | http://snomed.info/sct |
+| 487 | 2304 | Observation | `Observation.interpretation.coding` | 698464007 | At risk of dementia | http://snomed.info/sct |
 | 488 | 2314 | Observation | `Observation.code.coding` | 66248-6 | Balance test [PhenX] | http://loinc.org |
 | 489 | 2315 | Observation | `Observation.component.code.coding` | LA18188-5 | Side by side stand | http://loinc.org |
 | 490 | 2316 | Observation | `Observation.component.valueCodeableConcept.coding` | LA15186-2 | Held for 10 sec - 1 point | http://loinc.org |
@@ -639,7 +639,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 499 | 2325 | Observation | `Observation.component.valueCodeableConcept.coding` | TK000174 | Bertahan 3 - 9.99 detik | http://terminology.kemkes.go.id |
 | 500 | 2326 | Observation | `Observation.component.valueCodeableConcept.coding` | TK000175 | Bertahan <3 detik | http://terminology.kemkes.go.id |
 | 501 | 2327 | Observation | `Observation.component.valueCodeableConcept.coding` | LA15188-8 | Not attempted - 0 points | http://loinc.org |
-| 502 | 2338 | Observation | `Observation.code.coding` | 714283000.0 | Short Physical Performance Battery | http://snomed.info/sct |
+| 502 | 2338 | Observation | `Observation.code.coding` | 714283000 | Short Physical Performance Battery | http://snomed.info/sct |
 | 503 | 2340 | Observation | `Observation.component.code.coding` | 66258-5 | For 4-Meter Walk | http://loinc.org |
 | 504 | 2341 | Observation | `Observation.component.valueCodeableConcept.coding` | LA15201-9 | Time is less than 4.82 sec - 4 points | http://loinc.org |
 | 505 | 2342 | Observation | `Observation.component.valueCodeableConcept.coding` | LA15200-1 | Time is 4.82 to 6.20 sec - 3 points | http://loinc.org |
@@ -652,13 +652,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 512 | 2349 | Observation | `Observation.component.valueCodeableConcept.coding` | TK000178 | 13.7 - 16.69 detik | http://terminology.kemkes.go.id |
 | 513 | 2350 | Observation | `Observation.component.valueCodeableConcept.coding` | TK000179 | 16.7 - 59.9 detik | http://terminology.kemkes.go.id |
 | 514 | 2351 | Observation | `Observation.component.valueCodeableConcept.coding` | 66263-5 | Test not completed | http://loinc.org |
-| 515 | 2360 | Observation | `Observation.interpretation.coding` | 160697000.0 | Mobilitas fair | http://snomed.info/sct |
-| 516 | 2361 | Observation | `Observation.interpretation.coding` | 82971005.0 | Limited mobility | http://snomed.info/sct |
-| 517 | 2375 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 64379006.0 | Decrease in appetite | http://snomed.info/sct |
-| 518 | 2376 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 79890006.0 | Loss of appetite | http://snomed.info/sct |
-| 519 | 2377 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 161825005.0 | Appetite normal | http://snomed.info/sct |
+| 515 | 2360 | Observation | `Observation.interpretation.coding` | 160697000 | Mobilitas fair | http://snomed.info/sct |
+| 516 | 2361 | Observation | `Observation.interpretation.coding` | 82971005 | Limited mobility | http://snomed.info/sct |
+| 517 | 2375 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 64379006 | Decrease in appetite | http://snomed.info/sct |
+| 518 | 2376 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 79890006 | Loss of appetite | http://snomed.info/sct |
+| 519 | 2377 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 161825005 | Appetite normal | http://snomed.info/sct |
 | 520 | 2380 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000180 | Penurunan BB > 3 kg | http://terminology.kemkes.go.id |
-| 521 | 2381 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 521 | 2381 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
 | 522 | 2382 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000181 | Penurunan BB antara 1-3 kg | http://terminology.kemkes.go.id |
 | 523 | 2383 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000181 | Tidak ada penurunan BB | http://terminology.kemkes.go.id |
 | 524 | 2386 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000183 | Harus berbaring di tempat tidur atau menggunakan kursi roda | http://terminology.kemkes.go.id |
@@ -672,38 +672,38 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 532 | 2402 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000191 | IMT 21 -<23 | http://terminology.kemkes.go.id |
 | 533 | 2403 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000192 | IMT >= 23 | http://terminology.kemkes.go.id |
 | 534 | 2409 | Observation | `Observation.code.coding` | 39156-5 | Body mass index (BMI) [Ratio] | http://loinc.org |
-| 535 | 2420 | Observation | `Observation.interpretation.coding` | 43664005.0 | Normal weight | http://snomed.info/sct |
-| 536 | 2421 | Observation | `Observation.interpretation.coding` | 238131007.0 | Overweight | http://snomed.info/sct |
-| 537 | 2422 | Observation | `Observation.interpretation.coding` | 443371000124107.0 | Obese class I | http://snomed.info/sct |
-| 538 | 2423 | Observation | `Observation.interpretation.coding` | 443381000124105.0 | Obese class II | http://snomed.info/sct |
+| 535 | 2420 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 536 | 2421 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 537 | 2422 | Observation | `Observation.interpretation.coding` | 443371000124107 | Obese class I | http://snomed.info/sct |
+| 538 | 2423 | Observation | `Observation.interpretation.coding` | 443381000124105 | Obese class II | http://snomed.info/sct |
 | 539 | 2424 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
 | 540 | 2427 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000193 | <31 cm | http://terminology.kemkes.go.id |
 | 541 | 2428 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | TK000194 | >= 31 cm | http://terminology.kemkes.go.id |
 | 542 | 2434 | Observation | `Observation.code.coding` | 8283-4 | Calf - right Maximum circumference | http://loinc.org |
 | 543 | 2435 | Observation | `Observation.code.coding` | 8282-6 | Calf - left Maximum circumference | http://loinc.org |
 | 544 | 2451 | Observation | `Observation.code.coding` | TK000195 | Mini Nutritional Assessment (MNA) SF | http://terminology.kemkes.go.id |
-| 545 | 2454 | Observation | `Observation.interpretation.coding` | 248324001.0 | Well nourished | http://snomed.info/sct |
-| 546 | 2455 | Observation | `Observation.interpretation.coding` | 129845004.0 | At risk for malnutrition | http://snomed.info/sct |
-| 547 | 2456 | Observation | `Observation.interpretation.coding` | 2492009.0 | Malnutrition | http://snomed.info/sct |
-| 548 | 2457 | Observation | `Observation.interpretation.coding` | 860635002.0 | No anemia present | http://snomed.info/sct |
+| 545 | 2454 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 546 | 2455 | Observation | `Observation.interpretation.coding` | 129845004 | At risk for malnutrition | http://snomed.info/sct |
+| 547 | 2456 | Observation | `Observation.interpretation.coding` | 2492009 | Malnutrition | http://snomed.info/sct |
+| 548 | 2457 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
 | 549 | 2468 | Observation | `Observation.code.coding` | TK000195 | Mini Nutritional Assessment (MNA) SF | http://terminology.kemkes.go.id |
-| 550 | 2471 | Observation | `Observation.interpretation.coding` | 248324001.0 | Well nourished | http://snomed.info/sct |
-| 551 | 2472 | Observation | `Observation.interpretation.coding` | 129845004.0 | At risk for malnutrition | http://snomed.info/sct |
-| 552 | 2473 | Observation | `Observation.interpretation.coding` | 2492009.0 | Malnutrition | http://snomed.info/sct |
-| 553 | 2474 | Observation | `Observation.interpretation.coding` | 860635002.0 | No anemia present | http://snomed.info/sct |
-| 554 | 2517 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 723505004.0 | Low risk | http://snomed.info/sct |
-| 555 | 2518 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 723509005.0 | High risk | http://snomed.info/sct |
-| 556 | 2602 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 424805008.0 | Exercise above recommended level | http://snomed.info/sct |
-| 557 | 2603 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 413300002.0 | Exercise below recommended level | http://snomed.info/sct |
+| 550 | 2471 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 551 | 2472 | Observation | `Observation.interpretation.coding` | 129845004 | At risk for malnutrition | http://snomed.info/sct |
+| 552 | 2473 | Observation | `Observation.interpretation.coding` | 2492009 | Malnutrition | http://snomed.info/sct |
+| 553 | 2474 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
+| 554 | 2517 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 723505004 | Low risk | http://snomed.info/sct |
+| 555 | 2518 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 723509005 | High risk | http://snomed.info/sct |
+| 556 | 2602 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 424805008 | Exercise above recommended level | http://snomed.info/sct |
+| 557 | 2603 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 413300002 | Exercise below recommended level | http://snomed.info/sct |
 | 558 | 2615 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP000831 | Tidak batuk | http://terminology.kemkes.go.id/sp |
 | 559 | 2616 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP000832 | Ya, lebih dari 2 minggu | http://terminology.kemkes.go.id/sp |
 | 560 | 2617 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP000833 | Ya, kurang dari 2 minggu | http://terminology.kemkes.go.id/sp |
-| 561 | 2636 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260413007.0 | None | http://snomed.info/sct |
-| 562 | 2637 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006.0 | Unknown | http://snomed.info/sct |
+| 561 | 2636 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 260413007 | None | http://snomed.info/sct |
+| 562 | 2637 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 261665006 | Unknown | http://snomed.info/sct |
 | 563 | 2638 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP000201 | Kontak serumah | http://terminology.kemkes.go.id/sp |
 | 564 | 2641 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | tb-bac | Terkonfirmasi bakteriologis | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition |
 | 565 | 2642 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | tb-clin | Terdiagnosis klinis | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition |
-| 566 | 2649 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 17621005.0 | Normal | http://snomed.info/sct |
+| 566 | 2649 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
 | 567 | 2650 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.item.answer.valueCoding` | 263654008 | Abnormal | http://snomed.info/sct |
 
 ### Code per CodeSystem

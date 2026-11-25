@@ -26,11 +26,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 4 | 73–80 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.active` (73, tanpa BQ) |
 | 5 | 81–86 | Practitioner | – | – | _Nama Tenaga Pemeriksa_ → `Practitioner.name.text` (83, tanpa BQ)<br>_Jenis Kelamin Tenaga Pemeriksa_ → `Practitioner.gender` (84, tanpa BQ) |
 | 6 | 87–98 | Observation | 8287-5 | Head Occipital-frontal circumference by Tape measure | _Lingkar Kepala Saat Ini_ → `Observation.valueQuantity.value` (90, tanpa BQ) |
-| 7 | 99–109 | Observation | 284473002.0 | Mid upper arm circumference | _LILA saat ini_ → `Observation.status` (99, tanpa BQ) |
+| 7 | 99–109 | Observation | 284473002 | Mid upper arm circumference | _LILA saat ini_ → `Observation.status` (99, tanpa BQ) |
 | 8 | 110–121 | Observation | 29463-7 | Body weight | _Berat Badan_ → `Observation.valueQuantity.value` (113, tanpa BQ) |
 | 9 | 122–133 | Observation | 8306-3 | Body height --lying | _Tinggi Badan_ → `Observation.valueQuantity.value` (125, tanpa BQ) |
 | 10 | 134–147 | Encounter | – | – | _Tanggal Kunjungan/Pengukuran_ → `Encounter.identifier` (134, tanpa BQ) |
-| 11 | 148–154 | Condition | 170245002.0 | Child examination: school screening | – |
+| 11 | 148–154 | Condition | 170245002 | Child examination: school screening | – |
 
 ### Payload per resource
 
@@ -49,16 +49,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 75 | PractitionerRole | `PractitionerRole.code.coding` | 106304008.0 | Teacher | http://snomed.info/sct |
-| 2 | 76 | PractitionerRole | `PractitionerRole.code.coding` | 158922001.0 | Physical training teacher | http://snomed.info/sct |
-| 3 | 77 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 4 | 78 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 5 | 79 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 1 | 75 | PractitionerRole | `PractitionerRole.code.coding` | 106304008 | Teacher | http://snomed.info/sct |
+| 2 | 76 | PractitionerRole | `PractitionerRole.code.coding` | 158922001 | Physical training teacher | http://snomed.info/sct |
+| 3 | 77 | PractitionerRole | `PractitionerRole.code.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 4 | 78 | PractitionerRole | `PractitionerRole.code.coding` | 309343006 | Physician | http://snomed.info/sct |
+| 5 | 79 | PractitionerRole | `PractitionerRole.code.coding` | 224535009 | Registered nurse | http://snomed.info/sct |
 | 6 | 89 | Observation | `Observation.code.coding` | 8287-5 | Head Occipital-frontal circumference by Tape measure | http://loinc.org |
-| 7 | 101 | Observation | `Observation.code.coding` | 284473002.0 | Mid upper arm circumference | http://snomed.info/sct |
+| 7 | 101 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
 | 8 | 112 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
 | 9 | 124 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 10 | 150 | Condition | `Condition.code.coding` | 170245002.0 | Child examination: school screening | http://snomed.info/sct |
+| 10 | 150 | Condition | `Condition.code.coding` | 170245002 | Child examination: school screening | http://snomed.info/sct |
 
 ### Code per CodeSystem
 

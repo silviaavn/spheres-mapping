@@ -27,11 +27,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 5 | 59–64 | Patient | – | – | _Nama Lengkap Ibu_ → `Patient.name.text` (59, tanpa BQ)<br>_Tulis Nomor Induk Kependudukan (NIK)_ → `Patient.identifier.value` (64, tanpa BQ)<br>_Tanggal lahir_ → `Patient.birthDate` (83, tanpa BQ)<br>_Asal Provinsi_ → `Patient.address.extension.url` (110, tanpa BQ)<br>_Asal Kabupaten_ → `Patient.address.extension.url` (113, tanpa BQ)<br>_Asal Kecamatan_ → `Patient.address.extension.url` (116, tanpa BQ)<br>_Nama Desa_ → `Patient.address.extension.url` (123, tanpa BQ)<br>_Nama Dusun_ → `Patient.address.extension.url` (126, tanpa BQ)<br>_Posyandu_ → `Patient.managingOrganization.reference` (129, tanpa BQ)<br>_Nama jalan dan nomor rumah (jika ada)_ → `Patient.address.line` (163, tanpa BQ)<br>_RW_ → `Patient.address.extension.url` (164, tanpa BQ)<br>_RT_ → `Patient.address.extension.url` (167, tanpa BQ)<br>_Tulis nomor HP_ → `Patient.telecom` (172, tanpa BQ) |
 | 6 | 65–78 | Observation | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | _Pilih alasan tidak mempunyai Nomor Induk Kependudukan (NIK)_ → `Observation.valueCodeableConcept.coding` (68, tanpa BQ) |
 | 7 | 79–80 | RelatedPerson | – | – | _Nama Lengkap Suami_ → `RelatedPerson.patient.reference` (79, tanpa BQ) |
-| 8 | 84–95 | Observation | 424144002.0 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (87, tanpa BQ) |
+| 8 | 84–95 | Observation | 424144002 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (87, tanpa BQ) |
 | 9 | 98–109 | Observation | 8665-2 | Last menstrual period start date | _Tanggal HPHT_ → `Observation.valueDateTime` (102, tanpa BQ) |
 | 10 | 149–162 | Observation | SP000519 | Tipe Intervensi Puskesmas | _Tipe Intervensi Puskesmas_ → `Observation.valueCodeableConcept.coding` (152, tanpa BQ) |
 | 11 | 175–179 | RelatedPerson | – | – | _Nomor HP Keluarga/Lainnya_ → `RelatedPerson.telecom` (175, tanpa BQ) |
-| 12 | 180–193 | Observation | 734005006.0 | Telephone number | _Bila tidak ada nomor HP, sebutkan alasan_ → `Observation.valueCodeableConcept.coding` (183, tanpa BQ) |
+| 12 | 180–193 | Observation | 734005006 | Telephone number | _Bila tidak ada nomor HP, sebutkan alasan_ → `Observation.valueCodeableConcept.coding` (183, tanpa BQ) |
 
 ### Payload per resource
 
@@ -56,8 +56,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 4 | 68 | Observation | `Observation.valueCodeableConcept.coding` | SP000404 | Tidak Punya Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 5 | 69 | Observation | `Observation.valueCodeableConcept.coding` | SP000405 | Tidak Membawa Kartu Tanda Penduduk | http://terminology.kemkes.go.id/sp |
 | 6 | 70 | Observation | `Observation.valueCodeableConcept.coding` | SP000406 | Kartu Tanda Penduduk Hilang | http://terminology.kemkes.go.id/sp |
-| 7 | 71 | Observation | `Observation.valueCodeableConcept.coding` | 397644002.0 | Right to privacy maintained | http://snomed.info/sct |
-| 8 | 86 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 7 | 71 | Observation | `Observation.valueCodeableConcept.coding` | 397644002 | Right to privacy maintained | http://snomed.info/sct |
+| 8 | 86 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
 | 9 | 100 | Observation | `Observation.code.coding` | 8665-2 | Last menstrual period start date | http://loinc.org |
 | 10 | 101 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 11 | 151 | Observation | `Observation.code.coding` | SP000519 | Tipe Intervensi Puskesmas | http://terminology.kemkes.go.id/sp |
@@ -65,10 +65,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 13 | 153 | Observation | `Observation.valueCodeableConcept.coding` | SP000521 | Blister Non Digital | http://terminology.kemkes.go.id/sp |
 | 14 | 154 | Observation | `Observation.valueCodeableConcept.coding` | SP000522 | Botol Digital | http://terminology.kemkes.go.id/sp |
 | 15 | 155 | Observation | `Observation.valueCodeableConcept.coding` | SP000523 | Botol Non Digital | http://terminology.kemkes.go.id/sp |
-| 16 | 182 | Observation | `Observation.code.coding` | 734005006.0 | Telephone number | http://snomed.info/sct |
+| 16 | 182 | Observation | `Observation.code.coding` | 734005006 | Telephone number | http://snomed.info/sct |
 | 17 | 183 | Observation | `Observation.valueCodeableConcept.coding` | SP000516 | Tidak punya HP | http://terminology.kemkes.go.id/sp |
 | 18 | 184 | Observation | `Observation.valueCodeableConcept.coding` | SP000517 | HP hilang | http://terminology.kemkes.go.id/sp |
-| 19 | 185 | Observation | `Observation.valueCodeableConcept.coding` | 397644002.0 | Right to privacy maintained | http://snomed.info/sct |
+| 19 | 185 | Observation | `Observation.valueCodeableConcept.coding` | 397644002 | Right to privacy maintained | http://snomed.info/sct |
 | 20 | 186 | Observation | `Observation.valueCodeableConcept.coding` | SP000518 | Lupa nomor HP | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem

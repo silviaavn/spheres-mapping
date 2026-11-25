@@ -91,11 +91,11 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,Nama Tenaga Kesehatan,,,,,,,PractitionerRole,PractitionerRole.practitioner.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,PractitionerRole,PractitionerRole.organization.reference,Reference ke resources Organization,,,,,
 ,,,Faskes yang Melayani INC,,,,,,,PractitionerRole,PractitionerRole.organization.display,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,Tenaga Pemeriksa,,,Bidan,,,PractitionerRole,PractitionerRole.code.coding,309453006.0,Registered midwife,http://snomed.info/sct,,1,
-,,,,,,,Dokter Spesialis Obgyn,,,PractitionerRole,PractitionerRole.code.coding,309367003.0,Obstetrician and gynecologist,http://snomed.info/sct,,1,
-,,,,,,,Dokter Umum,case insensitive,,PractitionerRole,PractitionerRole.code.coding,309343006.0,Physician,http://snomed.info/sct,,1,
-,,,,,,,Perawat,,,PractitionerRole,PractitionerRole.code.coding,224535009.0,Registered nurse,http://snomed.info/sct,,1,
-,,,,,,,Dokter Spesialis Anak,,,PractitionerRole,PractitionerRole.code.coding,82296001.0,Pediatrician,http://snomed.info/sct,,1,
+,,,,Tenaga Pemeriksa,,,Bidan,,,PractitionerRole,PractitionerRole.code.coding,309453006,Registered midwife,http://snomed.info/sct,,1,
+,,,,,,,Dokter Spesialis Obgyn,,,PractitionerRole,PractitionerRole.code.coding,309367003,Obstetrician and gynecologist,http://snomed.info/sct,,1,
+,,,,,,,Dokter Umum,case insensitive,,PractitionerRole,PractitionerRole.code.coding,309343006,Physician,http://snomed.info/sct,,1,
+,,,,,,,Perawat,,,PractitionerRole,PractitionerRole.code.coding,224535009,Registered nurse,http://snomed.info/sct,,1,
+,,,,,,,Dokter Spesialis Anak,,,PractitionerRole,PractitionerRole.code.coding,82296001,Pediatrician,http://snomed.info/sct,,1,
 ,Data Kunjungan,,,,,,,,,,,,,,,,
 ,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,1
 ,,,,Kunjungan Neonatus,coded,,KN 1,,,Encounter,Encounter.identifier,KN1,Tidak ada,http://terminology.kemkes.go.id/CodeSystem/episodeofcare/neonate,,,
@@ -142,7 +142,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.managingOrganization.reference,Reference ke resources Organization,,,,,
 ,,,,Anak ke,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,365475008.0,Place in family order,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,365475008,Place in family order,http://snomed.info/sct,,1,
 ,,,,,quantity,,,,,Observation,Observation.valueInteger,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
@@ -242,19 +242,19 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Kelainan Bawaan,coded,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,276654001.0,Congenital malformation,http://snomed.info/sct,,1,
+,,,,,,,,,,Observation,Observation.code.coding,276654001,Congenital malformation,http://snomed.info/sct,,1,
 ,,,,,,,,"Jika tidak terdeteksi yg di bawah baik bahasa indonesia maupun bahasa inggris, gunakan mapping ini",,Observation,Observation.valueString,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,Bibir Sumbing,,,Observation,Observation.valueCodeableConcept.coding,80281008.0,Cleft lip,http://snomed.info/sct,,1,
-,,,,,,,Penyakit Jantung Bawaan,,,Observation,Observation.valueCodeableConcept.coding,13213009.0,Congenital heart disease,http://snomed.info/sct,,1,
-,,,,,,,Microtia (Telinga Kecil),,,Observation,Observation.valueCodeableConcept.coding,35045004.0,Microtia,http://snomed.info/sct,,1,
-,,,,,,,Hipertelorisem,,,Observation,Observation.valueCodeableConcept.coding,22006008.0,Hypertelorism,http://snomed.info/sct,,1,
-,,,,,,,Polidaktili (Jari Lebih Dari 10),,,Observation,Observation.valueCodeableConcept.coding,367506006.0,Polydactyly,http://snomed.info/sct,,1,
-,,,,,,,Displasia Pinggul,,,Observation,Observation.valueCodeableConcept.coding,52781008.0,Congenital hip dysplasia,http://snomed.info/sct,,1,
-,,,,,,,CTFE (Kaki Pengkor),,,Observation,Observation.valueCodeableConcept.coding,1156475005.0,Congenital talipes equinovarus,http://snomed.info/sct,,1,
-,,,,,,,Neural Tube Defect (Cacat Tabung Saraf),,,Observation,Observation.valueCodeableConcept.coding,253098009.0,Neural tube defect,http://snomed.info/sct,,1,
-,,,,,,,Gangguan Dinding Abdomen,"(hernia umbilical, gastrositis)",,Observation,Observation.valueCodeableConcept.coding,118928003.0,Disorder of abdominal wall,http://snomed.info/sct,,1,
-,,,,,,,Gangguan Genitourinari,,,Observation,Observation.valueCodeableConcept.coding,42030000.0,Disorder of the genitourinary system,http://snomed.info/sct,,1,
-,,,,,,,Lainnya,,,Observation,Observation.valueCodeableConcept.coding,74964007.0,Other,http://snomed.info/sct,,1,
+,,,,,,,Bibir Sumbing,,,Observation,Observation.valueCodeableConcept.coding,80281008,Cleft lip,http://snomed.info/sct,,1,
+,,,,,,,Penyakit Jantung Bawaan,,,Observation,Observation.valueCodeableConcept.coding,13213009,Congenital heart disease,http://snomed.info/sct,,1,
+,,,,,,,Microtia (Telinga Kecil),,,Observation,Observation.valueCodeableConcept.coding,35045004,Microtia,http://snomed.info/sct,,1,
+,,,,,,,Hipertelorisem,,,Observation,Observation.valueCodeableConcept.coding,22006008,Hypertelorism,http://snomed.info/sct,,1,
+,,,,,,,Polidaktili (Jari Lebih Dari 10),,,Observation,Observation.valueCodeableConcept.coding,367506006,Polydactyly,http://snomed.info/sct,,1,
+,,,,,,,Displasia Pinggul,,,Observation,Observation.valueCodeableConcept.coding,52781008,Congenital hip dysplasia,http://snomed.info/sct,,1,
+,,,,,,,CTFE (Kaki Pengkor),,,Observation,Observation.valueCodeableConcept.coding,1156475005,Congenital talipes equinovarus,http://snomed.info/sct,,1,
+,,,,,,,Neural Tube Defect (Cacat Tabung Saraf),,,Observation,Observation.valueCodeableConcept.coding,253098009,Neural tube defect,http://snomed.info/sct,,1,
+,,,,,,,Gangguan Dinding Abdomen,"(hernia umbilical, gastrositis)",,Observation,Observation.valueCodeableConcept.coding,118928003,Disorder of abdominal wall,http://snomed.info/sct,,1,
+,,,,,,,Gangguan Genitourinari,,,Observation,Observation.valueCodeableConcept.coding,42030000,Disorder of the genitourinary system,http://snomed.info/sct,,1,
+,,,,,,,Lainnya,,,Observation,Observation.valueCodeableConcept.coding,74964007,Other,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,string,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -296,10 +296,10 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Apakah Diberikan Resusitasi,boolean,,,,,Procedure,Procedure.category.coding,373110003.0,Emergency procedure,http://snomed.info/sct,,,1
+,,,,Apakah Diberikan Resusitasi,boolean,,,,,Procedure,Procedure.category.coding,373110003,Emergency procedure,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Procedure,Procedure.code.coding,386412000.0,Resuscitation of neonate,http://snomed.info/sct,,1,
+,,,,,,,,,,Procedure,Procedure.code.coding,386412000,Resuscitation of neonate,http://snomed.info/sct,,1,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,string,,,,,Procedure,Procedure.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.encounter.reference,Reference ke resources Encounter,,,,,
@@ -307,7 +307,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Apakah dilakukan pemeriksaan kesehatan dengan pendekatan MTBM,boolean,,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,Apakah dilakukan pemeriksaan kesehatan dengan pendekatan MTBM,boolean,,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,PC000003,Manajemen Terpadu Bayi Muda (MTBM),"http://terminology.kemkes.go.id/CodeSystem/clinical-term""",,1,
@@ -318,7 +318,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,ARV Profilaksis pada bayi baru lahir,boolean,,,Ditanyakan jika ibu HIV,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,ARV Profilaksis pada bayi baru lahir,boolean,,,Ditanyakan jika ibu HIV,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,SP000126,ARV Profilaksis,http://terminology.kemkes.go.id/sp,,1,
@@ -329,10 +329,10 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Apakah diberikan vitamin K,boolean,,,,,Procedure,Procedure.category.coding,709543002.0,Administration of vitamin,http://snomed.info/sct,,,1
+,,,,Apakah diberikan vitamin K,boolean,,,,,Procedure,Procedure.category.coding,709543002,Administration of vitamin,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Procedure,Procedure.code.coding,448883004.0,Injection of vitamin K1,http://snomed.info/sct,,1,
+,,,,,,,,,,Procedure,Procedure.code.coding,448883004,Injection of vitamin K1,http://snomed.info/sct,,1,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,string,,,,,Procedure,Procedure.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.encounter.reference,Reference ke resources Encounter,,,,,
@@ -340,7 +340,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Perawatan Tali Pusat,boolean,,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,Perawatan Tali Pusat,boolean,,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,PC000001,Perawatan Tali Pusat,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
@@ -351,7 +351,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Salep Antibiotik Mata,boolean,,,,,Procedure,Procedure.category.coding,277132007.0,Therapeutic procedure,http://snomed.info/sct,,,1
+,,,,Salep Antibiotik Mata,boolean,,,,,Procedure,Procedure.category.coding,277132007,Therapeutic procedure,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,PC000002,Pemberian Salep Antibiotik Mata,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
@@ -365,7 +365,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,Imunisasi Hepatitis B (HB0),,,Ya,,,Immunization,Immunization.status,completed,Tidak ada,Tidak ada,,,1
 ,,,,,,,Tidak,,,Immunization,Immunization.status,not-done,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.primarySource,true,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Immunization,Immunization.vaccineCode,8.0,"Hep B, adolescent or pediatric",http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode,8,"Hep B, adolescent or pediatric",http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG45,HepB,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.patient.reference,Reference ke resources Patient,,,,,
 ,,,,,string,,,,,Immunization,Immunization.patient.display,Tidak ada,Tidak ada,Tidak ada,,,
@@ -385,13 +385,13 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,Pasien atau wali pasien menolak,"Jika Tidak, maka ditambahkan detail berikut (pilih 1)",,Immunization,Immunization.statusReason.coding,PATOBJ,patient objection,http://terminology.hl7.org/CodeSystem/v3-ActReason,,,
 ,,,,,,,Tunda,"Jika Tidak, maka ditambahkan detail berikut (pilih 1)",,Immunization,Immunization.statusReason.coding,IS000001,Tunda,http://terminology.kemkes.go.id/CodeSystem/immunization-statusReason,,,
 ,,,,,,,Tidak Diberikan,"Jika Tidak, maka ditambahkan detail berikut (pilih 1)",,Immunization,Immunization.statusReason.coding,IS000002,Tidak Diberikan,http://terminology.kemkes.go.id/CodeSystem/immunization-statusReason,,,
-,,,,,,,,Jika diisi yang lain maka gunakan kode ini,,Immunization,Immunization.statusReason.coding,171283008.0,No consent for any primary immunization,http://snomed.info/sct,,,
+,,,,,,,,Jika diisi yang lain maka gunakan kode ini,,Immunization,Immunization.statusReason.coding,171283008,No consent for any primary immunization,http://snomed.info/sct,,,
 ,,,,,,,,,,Immunization,Immunization.statusReason.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Imunisasi HBIg,,,Ya,,,Immunization,Immunization.status,completed,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Immunization,Immunization.status,not-done,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.primarySource,true,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG45,HepB,http://sys-ids.kemkes.go.id/kfa,,1,1
-,,,,,,,,,,Immunization,Immunization.vaccineCode,30.0,hepatitis B immune globulin,http://hl7.org/fhir/sid/cvx,,1,
+,,,,,,,,,,Immunization,Immunization.vaccineCode,30,hepatitis B immune globulin,http://hl7.org/fhir/sid/cvx,,1,
 ,,,,,,,,,,Immunization,Immunization.patient.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Immunization,Immunization.patient.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.encounter.reference,Reference ke resources Encounter,,,,,
@@ -411,10 +411,10 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,Tunda,"Jika tidak, maka ditambahkan detail berikut (pilih 1)",,Immunization,Immunization.statusReason.coding,IS000001,Tunda,http://terminology.kemkes.go.id/CodeSystem/immunization-statusReason,,,
 ,,,,,,,Tidak Diberikan,"Jika tidak, maka ditambahkan detail berikut (pilih 1)",,Immunization,Immunization.statusReason.coding,IS000002,Tidak Diberikan,http://terminology.kemkes.go.id/CodeSystem/immunization-statusReason,,,
 ,,,,,,,,"Jika tidak, maka gunakan detail berikut",,Immunization,Immunization.performer.function.coding,OP,Ordering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
-,,,,Inisiasi Menyusu Dini (IMD),boolean,,,,,Procedure,Procedure.category.coding,440626008.0,Procedure related to breastfeeding,http://snomed.info/sct,,,1
+,,,,Inisiasi Menyusu Dini (IMD),boolean,,,,,Procedure,Procedure.category.coding,440626008,Procedure related to breastfeeding,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,Procedure,Procedure.code.coding,431868002.0,Initiation of breastfeeding,http://snomed.info/sct,,1,
+,,,,,,,,,,Procedure,Procedure.code.coding,431868002,Initiation of breastfeeding,http://snomed.info/sct,,1,
 ,,,,,,,,,,Procedure,Procedure.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,string,,,,,Procedure,Procedure.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.encounter.reference,Reference ke resources Encounter,,,,,
@@ -434,7 +434,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,date,yyyy-mm-dd,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Usia Neonatus,int,,,Usia neonatus (hari),,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,1
+,,,,Usia Neonatus,int,,,Usia neonatus (hari),,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,d,day,http://unitsofmeasure.org,,,
@@ -446,7 +446,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,,Jenis Kelamin,code,,Laki-laki,Jenis kelamin bayi,,Patient,Patient.gender,male,Tidak ada,Tidak ada,,,
 ,,,,,,,Perempuan,,,Patient,Patient.gender,female,Tidak ada,Tidak ada,,,
-,,,,Usia Ibu,int,,,,,Observation,Observation.code.coding,424144002.0,Current chronological age,http://snomed.info/sct,,1,1
+,,,,Usia Ibu,int,,,,,Observation,Observation.code.coding,424144002,Current chronological age,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,a,year,http://unitsofmeasure.org,,,
@@ -459,8 +459,8 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.focus.reference,Reference ke resources RelatedPerson (Ibu),,,,,
 ,,,,Metode Persalinan,code,,,Metode persalinan,,Observation,Observation.code.coding,57071-3,Obstetric delivery method,http://loinc.org,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,Pervaginam,,,Observation,Observation.valueCodeableConcept.coding,48782003.0,Delivery normal,http://snomed.info/sct,,1,
-,,,,,,,Caesar,,,Observation,Observation.valueCodeableConcept.coding,200144004.0,Deliveries by cesarean,http://snomed.info/sct,,1,
+,,,,,,,Pervaginam,,,Observation,Observation.valueCodeableConcept.coding,48782003,Delivery normal,http://snomed.info/sct,,1,
+,,,,,,,Caesar,,,Observation,Observation.valueCodeableConcept.coding,200144004,Deliveries by cesarean,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient (bayi),Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,Tidak ada,Tidak ada,,,
@@ -468,7 +468,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.focus.reference,Reference ke resources RelatedPerson (Ibu),,,,,
-,,,,Pecah Ketuban > 18 Jam,boolean,,,Ketuban pecah >= 18 jam sebelum lahir,,Observation,Observation.code.coding,12729009.0,Prolonged rupture of membranes,http://snomed.info/sct,,1,1
+,,,,Pecah Ketuban > 18 Jam,boolean,,,Ketuban pecah >= 18 jam sebelum lahir,,Observation,Observation.code.coding,12729009,Prolonged rupture of membranes,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -478,7 +478,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,,boolean,,,Air ketuban bercampur mekonium,,Observation,Observation.code.coding,168092006.0,Amniotic fluid -meconium stain,http://snomed.info/sct,,1,1
+,,,,,boolean,,,Air ketuban bercampur mekonium,,Observation,Observation.code.coding,168092006,Amniotic fluid -meconium stain,http://snomed.info/sct,,1,1
 ,,,,Air Ketuban Bercampur Mekonium,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -488,7 +488,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Gawat Janin Intrauterin,boolean,,,Gawat janin intrauterin,,Observation,Observation.code.coding,130955003.0,Fetal distress,http://snomed.info/sct,,1,1
+,,,,Gawat Janin Intrauterin,boolean,,,Gawat janin intrauterin,,Observation,Observation.code.coding,130955003,Fetal distress,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -498,7 +498,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Solusio Plasenta,boolean,,,Solusio plasenta,,Observation,Observation.code.coding,415105001.0,Placental abruption,http://snomed.info/sct,,1,1
+,,,,Solusio Plasenta,boolean,,,Solusio plasenta,,Observation,Observation.code.coding,415105001,Placental abruption,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -508,10 +508,10 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Onset Sepsis,code,,,Onset sepsis neonatal,,Observation,Observation.code.coding,206376005.0,Neonatal sepsis,http://snomed.info/sct,,1,1
+,,,,Onset Sepsis,code,,,Onset sepsis neonatal,,Observation,Observation.code.coding,206376005,Neonatal sepsis,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,<= 72 Jam,,,Observation,Observation.valueCodeableConcept.coding,765106006.0,Early-onset neonatal sepsis,http://snomed.info/sct,,1,
-,,,,,,,> 72 Jam,,,Observation,Observation.valueCodeableConcept.coding,765107002.0,Late-onset neonatal sepsis,http://snomed.info/sct,,1,
+,,,,,,,<= 72 Jam,,,Observation,Observation.valueCodeableConcept.coding,765106006,Early-onset neonatal sepsis,http://snomed.info/sct,,1,
+,,,,,,,> 72 Jam,,,Observation,Observation.valueCodeableConcept.coding,765107002,Late-onset neonatal sepsis,http://snomed.info/sct,,1,
 ,,,,,,,Ya,opsi jawaban di excel,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
@@ -522,16 +522,16 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
 ,,,,Klasifikasi Infeksi,code,,,Klasifikasi infeksi,,Observation,Observation.code.coding,OC000126,Klasifikasi infeksi,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,Infeksi Kongenital,,,Observation,Observation.valueCodeableConcept.coding,82353009.0,Congenital infectious disease,http://snomed.info/sct,,1,
-,,,,,,,Infeksi Intrapartum,,,Observation,Observation.valueCodeableConcept.coding,66844003.0,Generalized infection during labor,http://snomed.info/sct,,1,
-,,,,,,,Infeksi Pascanatal,,,Observation,Observation.valueCodeableConcept.coding,178280004.0,Postnatal infection,http://snomed.info/sct,,1,
+,,,,,,,Infeksi Kongenital,,,Observation,Observation.valueCodeableConcept.coding,82353009,Congenital infectious disease,http://snomed.info/sct,,1,
+,,,,,,,Infeksi Intrapartum,,,Observation,Observation.valueCodeableConcept.coding,66844003,Generalized infection during labor,http://snomed.info/sct,,1,
+,,,,,,,Infeksi Pascanatal,,,Observation,Observation.valueCodeableConcept.coding,178280004,Postnatal infection,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient (bayi),Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Penggunaan Kateter Vena,boolean,,,Penggunaan Kateter Vena,,Observation,Observation.code.coding,392230005.0,Catheterization of vein,http://snomed.info/sct,,1,1
+,,,,Penggunaan Kateter Vena,boolean,,,Penggunaan Kateter Vena,,Observation,Observation.code.coding,392230005,Catheterization of vein,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,procedure,Procedure,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -541,7 +541,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Penggunaan Alat Bantu Napas,boolean,,,Penggunaan alat bantu napas,,Observation,Observation.code.coding,40617009.0,Artificial ventilation,http://snomed.info/sct,,1,1
+,,,,Penggunaan Alat Bantu Napas,boolean,,,Penggunaan alat bantu napas,,Observation,Observation.code.coding,40617009,Artificial ventilation,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -551,7 +551,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Paparan Antibiotik,boolean,,,Riwayat paparan antibiotik,,Observation,Observation.code.coding,281789004.0,Antibiotic therapy,http://snomed.info/sct,,1,1
+,,,,Paparan Antibiotik,boolean,,,Riwayat paparan antibiotik,,Observation,Observation.code.coding,281789004,Antibiotic therapy,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -561,12 +561,12 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Observation,Observation.code.coding,305351004.0,Admission to intensive care unit,http://snomed.info/sct,,1,1
+,,,,,,,,,,Observation,Observation.code.coding,305351004,Admission to intensive care unit,http://snomed.info/sct,,1,1
 ,,,,Status Admisi ke ICU,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,code,,,,,Observation,Observation.component.code.coding,272125009.0,Priorities,http://snomed.info/sct,,1,
-,,,,,,,Prioritas 1,,,Observation,Observation.component.valueCodeableConcept.coding,394849002.0,High priority,http://snomed.info/sct,,1,
-,,,,,,,Prioritas 2,,,Observation,Observation.component.valueCodeableConcept.coding,394848005.0,Normal priority,http://snomed.info/sct,,1,
-,,,,,,,Prioritas 3,,,Observation,Observation.component.valueCodeableConcept.coding,1251527002.0,Low priority,http://snomed.info/sct,,1,
+,,,,,code,,,,,Observation,Observation.component.code.coding,272125009,Priorities,http://snomed.info/sct,,1,
+,,,,,,,Prioritas 1,,,Observation,Observation.component.valueCodeableConcept.coding,394849002,High priority,http://snomed.info/sct,,1,
+,,,,,,,Prioritas 2,,,Observation,Observation.component.valueCodeableConcept.coding,394848005,Normal priority,http://snomed.info/sct,,1,
+,,,,,,,Prioritas 3,,,Observation,Observation.component.valueCodeableConcept.coding,1251527002,Low priority,http://snomed.info/sct,,1,
 ,,,,,,,Ya,opsi jawaban di excel,,Observation,Observation.component.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.component.valueBoolean,false,Tidak ada,Tidak ada,,,
 ,,,,Lama Perawatan di ICU,int,,,Lama perawatan ICU (hari),,Observation,Observation.component.code.coding,78033-8,Hospital stay duration,http://loinc.org,,1,
@@ -578,7 +578,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Lama Rawat Inap di RS,int,,,Lama rawat inap (hari),,Observation,Observation.code.coding,183797002.0,Duration of inpatient stay,http://snomed.info/sct,,1,1
+,,,,Lama Rawat Inap di RS,int,,,Lama rawat inap (hari),,Observation,Observation.code.coding,183797002,Duration of inpatient stay,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,d,day,http://unitsofmeasure.org,,,
@@ -636,7 +636,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Apnea,boolean,,,,,Observation,Observation.code.coding,1023001.0,Apnea,http://snomed.info/sct,,1,1
+,,,,Apnea,boolean,,,,,Observation,Observation.code.coding,1023001,Apnea,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -646,7 +646,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Tarikan Dinding Dada,boolean,,,,,Observation,Observation.code.coding,67909005.0,Chest wall retraction,http://snomed.info/sct,,1,1
+,,,,Tarikan Dinding Dada,boolean,,,,,Observation,Observation.code.coding,67909005,Chest wall retraction,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -656,7 +656,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Pelebaran Cuping Hidung,boolean,,,,,Observation,Observation.code.coding,248568003.0,Nasal flaring,http://snomed.info/sct,,1,1
+,,,,Pelebaran Cuping Hidung,boolean,,,,,Observation,Observation.code.coding,248568003,Nasal flaring,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -666,7 +666,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Suara Merintih,boolean,,,,,Observation,Observation.code.coding,62085005.0,Grunting respiration,http://snomed.info/sct,,1,1
+,,,,Suara Merintih,boolean,,,,,Observation,Observation.code.coding,62085005,Grunting respiration,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -676,7 +676,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Kulit Tampak Kebiruan,boolean,,,,,Observation,Observation.code.coding,3415004.0,Cyanosis,http://snomed.info/sct,,1,1
+,,,,Kulit Tampak Kebiruan,boolean,,,,,Observation,Observation.code.coding,3415004,Cyanosis,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -686,7 +686,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Kejang,boolean,,,,,Observation,Observation.code.coding,91175000.0,Seizure,http://snomed.info/sct,,1,1
+,,,,Kejang,boolean,,,,,Observation,Observation.code.coding,91175000,Seizure,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -696,7 +696,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Tubuh Lemas,boolean,,,,,Observation,Observation.code.coding,214264003.0,Lethargy,http://snomed.info/sct,,1,1
+,,,,Tubuh Lemas,boolean,,,,,Observation,Observation.code.coding,214264003,Lethargy,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -706,7 +706,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Penurunan Gerakan Normal,boolean,,,,,Observation,Observation.code.coding,247905005.0,Lack of spontaneous movement,http://snomed.info/sct,,1,1
+,,,,Penurunan Gerakan Normal,boolean,,,,,Observation,Observation.code.coding,247905005,Lack of spontaneous movement,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -716,7 +716,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Refleks Lemah,boolean,,,,,Observation,Observation.code.coding,835279003.0,Decreased reflex,http://snomed.info/sct,,1,1
+,,,,Refleks Lemah,boolean,,,,,Observation,Observation.code.coding,835279003,Decreased reflex,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -726,7 +726,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Sulit Dibangunkan,boolean,,,,,Observation,Observation.code.coding,95631006.0,Neonatal drowsiness,http://snomed.info/sct,,1,1
+,,,,Sulit Dibangunkan,boolean,,,,,Observation,Observation.code.coding,95631006,Neonatal drowsiness,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -736,7 +736,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Ubun-Ubun Menonjol,boolean,,,,,Observation,Observation.code.coding,103019006.0,Bulging fontanelle,http://snomed.info/sct,,1,1
+,,,,Ubun-Ubun Menonjol,boolean,,,,,Observation,Observation.code.coding,103019006,Bulging fontanelle,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -746,7 +746,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Keluar Nanah dari Telinga,boolean,,,,,Observation,Observation.code.coding,65668001.0,Otorrhea,http://snomed.info/sct,,1,1
+,,,,Keluar Nanah dari Telinga,boolean,,,,,Observation,Observation.code.coding,65668001,Otorrhea,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -756,7 +756,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Kemerahan pada Umbilikus,boolean,,,,,Observation,Observation.code.coding,239095007.0,Omphalitis,http://snomed.info/sct,,1,1
+,,,,Kemerahan pada Umbilikus,boolean,,,,,Observation,Observation.code.coding,239095007,Omphalitis,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -766,7 +766,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Pustula Kulit,boolean,,,,,Observation,Observation.code.coding,271760008.0,Pustule,http://snomed.info/sct,,1,1
+,,,,Pustula Kulit,boolean,,,,,Observation,Observation.code.coding,271760008,Pustule,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -776,7 +776,7 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Ikterus,boolean,,,,,Observation,Observation.code.coding,18165001.0,Jaundice,http://snomed.info/sct,,1,1
+,,,,Ikterus,boolean,,,,,Observation,Observation.code.coding,18165001,Jaundice,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
@@ -786,11 +786,11 @@ misal format 40 maka 40 wk",,Observation,Observation.status,final,Tidak Ada,Tida
 ,,,,,,,,,,Observation,Observation.effectiveDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,Tidak ada,Tidak ada,,,
-,,,,Gangguan Menyusu,code,,,Kemampuan menyusu bayi,,Observation,Observation.code.coding,364826005.0,Finding related to ability to perform breastfeeding,http://snomed.info/sct,,1,1
+,,,,Gangguan Menyusu,code,,,Kemampuan menyusu bayi,,Observation,Observation.code.coding,364826005,Finding related to ability to perform breastfeeding,http://snomed.info/sct,,1,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,Menyusu Baik,,,Observation,Observation.valueCodeableConcept.coding,289080009.0,Able to perform breastfeeding,http://snomed.info/sct,,1,
-,,,,,,,Menyusu Kurang,,,Observation,Observation.valueCodeableConcept.coding,289084000.0,Difficulty performing breastfeeding,http://snomed.info/sct,,1,
-,,,,,,,Tidak Dapat Menyusu,,,Observation,Observation.valueCodeableConcept.coding,289081008.0,Unable to perform breastfeeding,http://snomed.info/sct,,1,
+,,,,,,,Menyusu Baik,,,Observation,Observation.valueCodeableConcept.coding,289080009,Able to perform breastfeeding,http://snomed.info/sct,,1,
+,,,,,,,Menyusu Kurang,,,Observation,Observation.valueCodeableConcept.coding,289084000,Difficulty performing breastfeeding,http://snomed.info/sct,,1,
+,,,,,,,Tidak Dapat Menyusu,,,Observation,Observation.valueCodeableConcept.coding,289081008,Unable to perform breastfeeding,http://snomed.info/sct,,1,
 ,,,,,,,Tidak Tercatat,,,Observation,Observation.valueCodeableConcept.coding,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient (bayi),Tidak ada,Tidak ada,,,

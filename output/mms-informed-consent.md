@@ -23,9 +23,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 2–2 | Practitioner | – | – | _ID Field Staff SID_ → `Practitioner.identifier` (2, tanpa BQ) |
 | 2 | 3–11 | Consent | SP000829 | IC Keikutsertaan Program MMS | _Tanggal Persetujuan/Enrollment_ → `Consent.dateTime` (3, tanpa BQ)<br>_Jenis Informed Consent_ → `Consent.status` (4, tanpa BQ) |
 | 3 | 12–12 | Patient | – | – | _Nama lengkap responden_ → `Patient.name` (12, tanpa BQ) |
-| 4 | 37–66 | QuestionnaireResponse | – | – | _Apakah responden bersedia untuk dihubungi dan dikunjungi?_ → `QuestionnaireResponse.item.linkId` (47, tanpa BQ)<br>_Apakah Anda setuju untuk ikut serta dalam program ini?_ → `QuestionnaireResponse.item.linkId` (51, tanpa BQ)<br>_Apakah Anda setuju untuk berkomitmen mengkonsumsi MMS dan Kalsium Secara rutin?_ → `QuestionnaireResponse.item.linkId` (55, tanpa BQ)<br>_Apakah anda setuju untuk pemeriksaan sampel darah, untuk pemeriksaan kepatuhan konsumsi MMS dan status kesehatan?_ → `QuestionnaireResponse.item.linkId` (59, tanpa BQ)<br>_Apakah keluarga mendapat penjelasan IC dan menandatangani IC tersebut?_ → `QuestionnaireResponse.item.linkId` (63, tanpa BQ) |
+| 4 | 37–66 | QuestionnaireResponse | tanpa-URL-9c633e | Kuesioner tanpa URL: Apakah responden bersedia untuk dihubungi dan dikunjungi? | _Apakah responden bersedia untuk dihubungi dan dikunjungi?_ → `QuestionnaireResponse.item.linkId` (47, tanpa BQ)<br>_Apakah Anda setuju untuk ikut serta dalam program ini?_ → `QuestionnaireResponse.item.linkId` (51, tanpa BQ)<br>_Apakah Anda setuju untuk berkomitmen mengkonsumsi MMS dan Kalsium Secara rutin?_ → `QuestionnaireResponse.item.linkId` (55, tanpa BQ)<br>_Apakah anda setuju untuk pemeriksaan sampel darah, untuk pemeriksaan kepatuhan konsumsi MMS dan status kesehatan?_ → `QuestionnaireResponse.item.linkId` (59, tanpa BQ)<br>_Apakah keluarga mendapat penjelasan IC dan menandatangani IC tersebut?_ → `QuestionnaireResponse.item.linkId` (63, tanpa BQ) |
 | 5 | 67–68 | Consent | – | – | _Foto lembar persetujuan setelah penjelasan (PSP)_ → `Consent.sourceAttachment` (67, tanpa BQ)<br>_Foto lembar pernyataan persetujuan (Tanda Tangan)_ → `Consent.sourceAttachment` (68, tanpa BQ) |
-| 6 | 69–81 | Observation | 313334002.0 | Blood sample taken | _Jenis pengambilan sampel darah_ → `Observation.valueCodeableConcept.coding` (72, tanpa BQ) |
+| 6 | 69–81 | Observation | 313334002 | Blood sample taken | _Jenis pengambilan sampel darah_ → `Observation.valueCodeableConcept.coding` (72, tanpa BQ) |
 | 7 | 82–93 | Observation | 3157-5 | Volume of Blood | _Volume sampel darah_ → `Observation.valueQuantity.value` (85, tanpa BQ) |
 | 8 | 94–94 | Consent | – | – | _Foto lembar persejutuan pengambilan sub-sampel darah_ → `Consent.sourceAttachment` (94, tanpa BQ) |
 
@@ -46,10 +46,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|---|
 | 1 | 6 | Consent | `Consent.category` | SP000829 | IC Keikutsertaan Program MMS | http://terminology.kemkes.go.id/sp |
 | 2 | 10 | Consent | `Consent.category` | SP000830 | IC Pengambilan Sampel Darah | http://terminology.kemkes.go.id/sp |
-| 3 | 71 | Observation | `Observation.code.coding` | 313334002.0 | Blood sample taken | http://snomed.info/sct |
-| 4 | 72 | Observation | `Observation.valueCodeableConcept.coding` | 385652002.0 | Started | http://snomed.info/sct |
-| 5 | 73 | Observation | `Observation.valueCodeableConcept.coding` | 399488007.0 | Midline | http://snomed.info/sct |
-| 6 | 74 | Observation | `Observation.valueCodeableConcept.coding` | 261782000.0 | End | http://snomed.info/sct |
+| 3 | 71 | Observation | `Observation.code.coding` | 313334002 | Blood sample taken | http://snomed.info/sct |
+| 4 | 72 | Observation | `Observation.valueCodeableConcept.coding` | 385652002 | Started | http://snomed.info/sct |
+| 5 | 73 | Observation | `Observation.valueCodeableConcept.coding` | 399488007 | Midline | http://snomed.info/sct |
+| 6 | 74 | Observation | `Observation.valueCodeableConcept.coding` | 261782000 | End | http://snomed.info/sct |
 | 7 | 84 | Observation | `Observation.code.coding` | 3157-5 | Volume of Blood | http://loinc.org |
 
 ### Code per CodeSystem
