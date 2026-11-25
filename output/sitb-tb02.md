@@ -26,7 +26,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 3 | 25–48 | Encounter | – | – | _Tahap Pengobatan_ → `Encounter.identifier.value` (27, tanpa BQ)<br>_Tanggal (Tanggal Perjanjian)_ → `Encounter.period.start` (35, tanpa BQ) |
 | 4 | 49–57 | Condition | A16.2 | Tuberculosis of lung, without mention of bacteriological or histological confirmation | _Klasifikasi Penyakit_ → `Condition.clinicalStatus.coding` (49, tanpa BQ)<br>_Lokasi (klasifikasi penyakit)_ → `Condition.note` (57, tanpa BQ) |
 | 5 | 58–76 | QuestionnaireResponse | https://fhir.kemkes.go.id/Questionnaire/Q0001 | – | _Tipe Pasien_ → `QuestionnaireResponse.item.item.linkId` (67, tanpa BQ)<br>_Lain-lain (sebutkan)_ → `QuestionnaireResponse.item.item.answer.valueString` (76, tanpa BQ) |
-| 6 | 77–89 | CarePlan | TK000022 | Akan diobati/dirujuk | _Tgl. Mulai Berobat_ → `CarePlan.period.start` (82, tanpa BQ)<br>_Paduan OAT yang diberikan_ → `CarePlan.activity.detail.description` (89, tanpa BQ) |
+| 6 | 77–89 | CarePlan | Rencana Pengobatan Pasien TB | CarePlan.title | _Tgl. Mulai Berobat_ → `CarePlan.period.start` (82, tanpa BQ)<br>_Paduan OAT yang diberikan_ → `CarePlan.activity.detail.description` (89, tanpa BQ) |
 | 7 | 90–111 | MedicationRequest | – | – | – |
 | 8 | 112–114 | MedicationDispense | – | – | – |
 | 9 | 115–115 | MedicationRequest | – | – | – |

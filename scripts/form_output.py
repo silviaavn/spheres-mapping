@@ -78,6 +78,12 @@ def _pembeda_tambahan(p):
         p["code"] = f"tanpa-URL-{fp}" if fp else f"tanpa-URL-baris{p['line']}"
         p["disp"] = "Kuesioner tanpa URL: " + " ".join(first.split())[:60]
     elif res == "CarePlan":
+        title = next((d["code"].strip() for d in p["rows"] if d["path"] == "CarePlan.title" and d["code"].strip()
+                      and d["code"].strip().lower() != "tidak ada"), "")
+        if title:
+            p["code"], p["disp"] = title, "CarePlan.title"
+            return
+        p["cp_tanpa_title"] = True
         cat = next((d["code"] for d in p["rows"] if d["path"] in ("CarePlan.category.coding", "CarePlan.category") and d["code"].strip()
                     and d["code"].strip().lower() != "tidak ada"), "")
         act = next((d for d in p["rows"] if d["jc"] == "1"), None)
@@ -88,7 +94,7 @@ def _pembeda_tambahan(p):
         else:
             fp = _fp(d["var"] for d in p["rows"])
             p["code"] = f"tanpa-code-{fp}" if fp else f"tanpa-code-baris{p['line']}"
-            p["disp"] = "CarePlan tanpa category/code"
+            p["disp"] = "CarePlan tanpa title/category/code"
 
 
 def build(data):
@@ -127,9 +133,15 @@ def build(data):
         p = by_res[d["res"]][0]
         p["vars"].append((d["line"], d["bq"], d["var"], d["path"], d["df"]))
         p["rows"].append(d)
+    last_title = ""
     for p in payloads:
         p["rows"].sort(key=lambda d: d["line"])
         _pembeda_tambahan(p)
+        if p["res"] == "CarePlan":
+            if not p.get("cp_tanpa_title"):
+                last_title = p["code"]
+            elif last_title:  # lanjutan CarePlan yang sama (blok tanpa title mengikuti blok bertitle di form yang sama)
+                p["code"], p["disp"] = last_title, "CarePlan.title"
         var_lines = {v[0] for v in p["vars"]}
         resolved = []
         for ln, b, k, pa, df in p["vars"]:

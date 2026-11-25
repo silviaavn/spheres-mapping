@@ -219,9 +219,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 197 | 2561–2577 | Observation | 20454-5 | Protein [Presence] in Urine by Test strip | _Urin Reduksi_ → `Observation.valueCodeableConcept.coding` (2565, tanpa BQ)<br>_Tanggal Pemeriksaan Lab_ → `Observation.effectiveDateTime` (2573, tanpa BQ)<br>_Rencana Tindak Lanjut_ → `Observation.note` (2577, tanpa BQ) |
 | 198 | 2578–2588 | Procedure | 385892002 | Mental health screening | _Skrining kesehatan jiwa_ → `Procedure.category.coding` (2578, tanpa BQ)<br>_Tanggal skrinning kesehatan jiwa_ → `Procedure.performedPeriod.start` (2585, tanpa BQ) |
 | 199 | 2589–2608 | Observation | SP000730 | Tindak lanjut hasil skrining kesehatan jiwa | _Tindak lanjut skrinning kesehatan jiwa_ → `Observation.valueBoolean` (2592, tanpa BQ)<br>_Perlu Rujukan_ → `Observation.component.code.coding` (2599, tanpa BQ)<br>_Tanggal skrinning kesehatan jiwa_ → `Observation.effectiveDateTime` (2605, tanpa BQ) |
-| 200 | 2609–2633 | CarePlan | 281036007 | Follow-up consultation | _Rencana Konsultasi Lanjut_ → `CarePlan.title` (2609, tanpa BQ)<br>_Rencana Proses Melahirkan_ → `CarePlan.status` (2629, tanpa BQ)<br>_Penjelasan_ → `CarePlan.description` (2633, tanpa BQ) |
-| 201 | 2634–2647 | CarePlan | 389095005 | Contraception care | _Pilihan rencana kontrasepsi_ → `CarePlan.status` (2644, tanpa BQ) |
-| 202 | 2648–2661 | CarePlan | LA6527-1 | Intrauterine device | – |
+| 200 | 2609–2633 | CarePlan | Rencana Konsultasi Lanjut Ibu Hamil | CarePlan.title | _Rencana Konsultasi Lanjut_ → `CarePlan.title` (2609, tanpa BQ)<br>_Rencana Proses Melahirkan_ → `CarePlan.status` (2629, tanpa BQ)<br>_Penjelasan_ → `CarePlan.description` (2633, tanpa BQ) |
+| 201 | 2634–2647 | CarePlan | Rencana KB | CarePlan.title | _Pilihan rencana kontrasepsi_ → `CarePlan.status` (2644, tanpa BQ) |
+| 202 | 2648–2661 | CarePlan | Rencana KB | CarePlan.title | – |
 | 203 | 2662–2673 | Observation | 306225008 | Referral to counseling service | _Kebutuhan Konseling_ → `Observation.valueBoolean` (2665, tanpa BQ) |
 | 204 | 2674–2685 | Observation | 310585007 | Delivery place planned | _Rekomendasi Tempat Proses Melahirkan_ → `Observation.valueCodeableConcept.coding` (2677, tanpa BQ) |
 | 205 | 2686–2696 | Observation | 89241-4 | Obstetrics Note | _Keluhan, Pemeriksaan, Tindakan dan Saran_ → `Observation.valueString` (2689, tanpa BQ)<br>_Tanggal periksa_ → `Observation.effectiveDateTime` (2693, tanpa BQ) |

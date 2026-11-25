@@ -184,9 +184,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 162 | 3135–3136 | Procedure | 182832007 | Procedure related to management of drug administration | – |
 | 163 | 3137–3138 | Procedure | 61310001 | Nutrition education | – |
 | 164 | 3139–3153 | Procedure | 409011003 | Antenatal care management | _Tindakan/pengobatan lainnya_ → `Procedure.code.text` (3141, tanpa BQ)<br>_Detail Edukasi yang diberikan_ → `Procedure.note` (3149, tanpa BQ)<br>_Detail Konseling yang diberikan_ → `Procedure.note` (3150, tanpa BQ)<br>_Detail Prosedur Diagnosis_ → `Procedure.note` (3151, tanpa BQ)<br>_Detail Pengobatan yang diberikan_ → `Procedure.note` (3152, tanpa BQ)<br>_Detail Diet yang diberikan_ → `Procedure.note` (3153, tanpa BQ) |
-| 165 | 3155–3178 | CarePlan | 281036007 | Follow-up consultation | _Rencana Konsultasi Lanjut_ → `CarePlan.title` (3155, tanpa BQ)<br>_Rencana Proses Melahirkan_ → `CarePlan.status` (3175, tanpa BQ) |
-| 166 | 3179–3193 | CarePlan | 389095005 | Contraception care | _Pilihan rencana kontrasepsi_ → `CarePlan.status` (3190, tanpa BQ) |
-| 167 | 3194–3207 | CarePlan | LA6527-1 | Intrauterine device | – |
+| 165 | 3155–3178 | CarePlan | Rencana Konsultasi Lanjut Ibu Hamil | CarePlan.title | _Rencana Konsultasi Lanjut_ → `CarePlan.title` (3155, tanpa BQ)<br>_Rencana Proses Melahirkan_ → `CarePlan.status` (3175, tanpa BQ) |
+| 166 | 3179–3193 | CarePlan | Rencana KB | CarePlan.title | _Pilihan rencana kontrasepsi_ → `CarePlan.status` (3190, tanpa BQ) |
+| 167 | 3194–3207 | CarePlan | Rencana KB | CarePlan.title | – |
 
 ### Payload per resource
 

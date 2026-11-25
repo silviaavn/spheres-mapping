@@ -38,7 +38,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 16 | 262–274 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | _Hasil Pemeriksaan Eligibilitas TPT ke-2_ → `Observation.valueCodeableConcept.coding` (266, tanpa BQ) |
 | 17 | 275–286 | Observation | SP000210 | Kesimpulan Hasil Pemeriksaan Eligibilitas TPT | _Kesimpulan Hasil Pemeriksaan Eligibilitas TPT_ → `Observation.valueCodeableConcept.coding` (278, tanpa BQ) |
 | 18 | 287–307 | ServiceRequest | 409014006 | Delivery care management | _Tempat Pemberian TPT_ → `ServiceRequest.status` (287, tanpa BQ)<br>_Dirujuk ke (Nama Fasyankes)_ → `ServiceRequest.locationCode.text` (307, tanpa BQ) |
-| 19 | 308–320 | CarePlan | CP000005 | Paduan Pengobatan | _Tindak Lanjut_ → `CarePlan.intent` (310, tanpa BQ)<br>_Tanggal Mulai TPT_ → `CarePlan.period.start` (314, tanpa BQ) |
+| 19 | 308–320 | CarePlan | Rencana Terapi Pencegahan TBC | CarePlan.title | _Tindak Lanjut_ → `CarePlan.intent` (310, tanpa BQ)<br>_Tanggal Mulai TPT_ → `CarePlan.period.start` (314, tanpa BQ) |
 | 20 | 321–342 | Encounter | – | – | _//id puskesmas_ → `Encounter.serviceProvider.reference` (342, tanpa BQ) |
 | 21 | 343–349 | Condition | 1237025001 | At increased risk of exposure to Mycobacterium tuberculosis complex | – |
 
