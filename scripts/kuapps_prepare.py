@@ -1,7 +1,7 @@
 """Siapkan dictionary KuApps: BidanKu (KuApps_Reborn_Variable_and_FHIR_Mapping.xlsx) dan Kuapps Spheres (Mapping_KuApps_SPHERES.xlsx).
 Pemakaian: python3 -I scripts/kuapps_prepare.py <reborn.xlsx> <spheres.xlsx> <repo_dir> [genomics.xlsx]
 Sheet IFIV / Summary / Gambar / List Skrining bukan dictionary (testing / daftar) dan dilewati.
-Sheet tanpa baris tracker (Tambah Pasien dst.) tetap dibuat dictionary-nya tetapi tidak masuk total."""
+Sheet Tambah Pasien dst. = baris tracker #284–290 (ditambahkan 2026-11-25)."""
 import importlib.util, json, os, sys, warnings
 from collections import Counter
 import openpyxl
@@ -30,13 +30,13 @@ F = [("kuapps-bidanku-anc", "r", "PYD-ANC", "KuApps BidanKu - ANC", 106, 1),
      ("genomics-tb", "g", "TB Mapping", "Genomics - TB", 118, 1),
      ("genomics-klebsiella", "g", "Klebsiella Mapping", "Genomics - Klebsiella", 119, 1),
      ("genomics-dengue", "g", "Dengue Mapping", "Genomics - Dengue", 120, 1),
-     ("kuapps-bidanku-tambah-pasien", "r", "Tambah Pasien", "KuApps BidanKu - Tambah Pasien (tanpa baris tracker)", None, 1),
-     ("kuapps-bidanku-daftar-kehamilan", "r", "Daftar Kehamilan", "KuApps BidanKu - Daftar Kehamilan (tanpa baris tracker)", None, 1),
-     ("kuapps-bidanku-luaran-kehamilan", "r", "Luaran Kehamilan", "KuApps BidanKu - Luaran Kehamilan (tanpa baris tracker)", None, 1),
-     ("kuapps-bidanku-phbs", "r", "PHBS", "KuApps BidanKu - PHBS (tanpa baris tracker)", None, 1),
-     ("kuapps-bidanku-skrining-rt", "r", "Skrining Rumah Tangga", "KuApps BidanKu - Skrining Rumah Tangga (tanpa baris tracker)", None, 1),
-     ("kuapps-bidanku-imunisasi", "r", "Imunisasi", "KuApps BidanKu - Imunisasi (tanpa baris tracker)", None, 3),
-     ("kuapps-bidanku-kumpulan-skrining", "r", "Kumpulan Skrinning", "KuApps BidanKu - Kumpulan Skrinning (tanpa baris tracker)", None, 1)]
+     ("kuapps-bidanku-tambah-pasien", "r", "Tambah Pasien", "KuApps BidanKu - Tambah Pasien", 284, 1),
+     ("kuapps-bidanku-daftar-kehamilan", "r", "Daftar Kehamilan", "KuApps BidanKu - Daftar Kehamilan", 285, 1),
+     ("kuapps-bidanku-luaran-kehamilan", "r", "Luaran Kehamilan", "KuApps BidanKu - Luaran Kehamilan", 286, 1),
+     ("kuapps-bidanku-phbs", "r", "PHBS", "KuApps BidanKu - PHBS", 287, 1),
+     ("kuapps-bidanku-skrining-rt", "r", "Skrining Rumah Tangga", "KuApps BidanKu - Skrining Rumah Tangga", 288, 1),
+     ("kuapps-bidanku-imunisasi", "r", "Imunisasi", "KuApps BidanKu - Imunisasi", 289, 3),
+     ("kuapps-bidanku-kumpulan-skrining", "r", "Kumpulan Skrinning", "KuApps BidanKu - Kumpulan Skrinning", 290, 1)]
 wbs = {"r": openpyxl.load_workbook(reborn, data_only=True), "s": openpyxl.load_workbook(spheres, data_only=True)}
 if genomics: wbs["g"] = openpyxl.load_workbook(genomics, data_only=True)
 else: F = [f for f in F if f[1] != "g"]

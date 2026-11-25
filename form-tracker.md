@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 211 · Sudah direview: 9
+Total: 245 laporan · Masih diperlukan: 226 · Dimapping ke FHIR: 218 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -152,6 +152,13 @@ Total: 238 laporan · Masih diperlukan: 219 · Dimapping ke FHIR: 211 · Sudah d
 | 231 | SIM RS Data - Tripat BBL (sheet 'INC BBL') | 23 / 20 |
 | 237 | SIPTM (baru ditambahkan) | 52 / 214 |
 | 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | 7 / 12 |
+| 284 | KuApps New - BidanKu: Tambah Pasien | 11 / 33 |
+| 285 | KuApps New - BidanKu: Daftar Kehamilan | 12 / 31 |
+| 286 | KuApps New - BidanKu: Luaran Kehamilan | 31 / 146 |
+| 287 | KuApps New - BidanKu: PHBS | 1 / 0 |
+| 288 | KuApps New - BidanKu: Skrining Rumah Tangga | 2 / 0 |
+| 289 | KuApps New - BidanKu: Imunisasi | 23 / 52 |
+| 290 | KuApps New - BidanKu: Kumpulan Skrinning | 23 / 26 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
@@ -172,6 +179,8 @@ Form CKG punya beberapa versi dictionary. **Versi terbaru dipakai** (di tabel �
 | 48 | CKG Lansia | 2025 | `CKG Lansia 2025` | 80 / 361 |  |
 
 SISMAL (Malaria): hanya form yang punya mapping yang dicatat di tracker (#64, #275); jenis form SISMAL lain tidak dimasukkan.
+
+Baris #284–290 = sheet KuApps BidanKu di luar PYD (Tambah Pasien dst.), ditambahkan 2026-11-25 (nomor lanjut dari #283; di Google Sheet perlu ditambahkan manual).
 
 SIM RS: 34 sheet sendiri + 18 baris yang memakai template Spheres = 52 dari 109 baris (#128–#236) sudah ada sheet mapping di `PHDT_Data_Rumah_Sakit.xlsx` (sheet Template generik tidak dihitung). Sisanya (Margono semua; Hepatitis Panti Nugroho/Nirmala/Harapan Ibu/Goetoeng/Tripat/Narmada/At tin; TB semua RS; DM/HT/Stroke yang tidak punya sheet; Tripat INC; Narmada ANC/PNC/BBL; dst.) belum ada file mapping. Kobo: 12 form dari `Kobo_-_Data_Dictionary.xlsx` dihitung (#83–86, #88–94, #101).
 
@@ -417,3 +426,10 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 236 | SIM RS Data - Tripat TB | ✅ | ✅ | ❌ |  |  |
 | 237 | SIPTM | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 275 | SISMAL (Malaria) - Validasi Kasus Indigenous | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 284 | KuApps New - BidanKu: Tambah Pasien | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 285 | KuApps New - BidanKu: Daftar Kehamilan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 286 | KuApps New - BidanKu: Luaran Kehamilan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 287 | KuApps New - BidanKu: PHBS | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 288 | KuApps New - BidanKu: Skrining Rumah Tangga | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 289 | KuApps New - BidanKu: Imunisasi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 290 | KuApps New - BidanKu: Kumpulan Skrinning | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |

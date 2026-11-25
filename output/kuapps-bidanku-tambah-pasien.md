@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - Tambah Pasien (tanpa baris tracker)
+# Output Form: KuApps BidanKu - Tambah Pasien
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-tambah-pasien.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

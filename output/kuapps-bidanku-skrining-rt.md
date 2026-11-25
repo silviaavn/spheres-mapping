@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - Skrining Rumah Tangga (tanpa baris tracker)
+# Output Form: KuApps BidanKu - Skrining Rumah Tangga
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-skrining-rt.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

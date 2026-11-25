@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - Daftar Kehamilan (tanpa baris tracker)
+# Output Form: KuApps BidanKu - Daftar Kehamilan
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-daftar-kehamilan.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

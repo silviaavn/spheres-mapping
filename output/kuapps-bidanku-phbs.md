@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - PHBS (tanpa baris tracker)
+# Output Form: KuApps BidanKu - PHBS
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-phbs.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

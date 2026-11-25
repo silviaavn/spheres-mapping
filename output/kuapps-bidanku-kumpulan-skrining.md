@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - Kumpulan Skrinning (tanpa baris tracker)
+# Output Form: KuApps BidanKu - Kumpulan Skrinning
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-kumpulan-skrining.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

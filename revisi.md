@@ -911,7 +911,7 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 ⚠️ belum comprehensive review (tanpa daftar variabel BQ).
 
 **Asumsi** (lihat juga catatan di `output.md`)
-- KA1: sheet `PYD-*` = BidanKu #106–113. Sheet Tambah Pasien, Daftar Kehamilan, Luaran Kehamilan, PHBS, Skrining Rumah Tangga, Imunisasi, Kumpulan Skrinning tidak punya baris tracker (tidak masuk total).
+- KA1: sheet `PYD-*` = BidanKu #106–113. Sheet Tambah Pasien #284, Daftar Kehamilan #285, Luaran Kehamilan #286, PHBS #287, Skrining Rumah Tangga #288, Imunisasi #289, Kumpulan Skrinning #290 = baris tracker baru (masuk total).
 - KA2: typo `valuableCodeableConcept` (TB 15, TB 15P, ASIK Kohort) dibaca `valueCodeableConcept`. Perlu dibetulkan di sumber.
 - KA3: PYD-Bayi dan PYD-Anak punya 24 baris yang kehilangan 1 kolom di kiri (Ya/Tidak masuk kolom Resource); digeser otomatis oleh script. Perlu dibetulkan di sumber.
 - KA4: ASIK Kohort: kode vaksin di path `Immunization.vaccineCode.coding.code` dibaca `coding`. Vaksin kombinasi (DPT-Hb-Hib: VG45, VG17, VG107, 198) = 1 payload, 4 code. Opsi baru di `epus_prepare.IMM_SKIP_VC`.
@@ -977,3 +977,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24 (3): Tambah bagian Kobo (12 form) dan template Spheres RS (18 baris).
 - 2026-11-24 (4): Tambah bagian Buku KIA 2024 (4 form).
 - 2026-11-24 (5): Tambah bagian KuApps / Genomics / TB 15 / ASIK Kohort (21 form).
+- 2026-11-25: Tambah 7 sheet BidanKu sebagai baris tracker #284–290.

@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - Luaran Kehamilan (tanpa baris tracker)
+# Output Form: KuApps BidanKu - Luaran Kehamilan
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-luaran-kehamilan.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.

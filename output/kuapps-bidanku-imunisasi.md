@@ -1,4 +1,4 @@
-# Output Form: KuApps BidanKu - Imunisasi (tanpa baris tracker)
+# Output Form: KuApps BidanKu - Imunisasi
 
 Sumber: `mapping/phdt-data-dictionary-kuapps-bidanku-imunisasi.csv`
 Dibuat otomatis oleh `scripts/form_output.py` dari kolom `jumlah instance` dan `jumlah code`.
