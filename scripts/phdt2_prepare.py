@@ -39,6 +39,7 @@ FORMS = [
  ("buku-kia-pnc", "Buku KIA - PNC (2024)", "csv", "PNC_Buku_KIA", 2, None, 81, 17, "Buku KIA | PNC", True, ""),
  ("buku-kia-anak", "Buku KIA - Anak Usia 0-6 Tahun (2024)", "csv", "Anak_Usia_0-6", 2, None, 82, 267, "Buku KIA | Anak", True, ""),
  ("kobo-sdidtk", "Kobo - SDIDTK", "csv", "Copy_of_SDIDTK", 2, None, 103, None, "Kobo | SDIDTK", True, ""),
+ ("sitb-tb16k", "SITB - TB 16K (Investigasi Kontak)", "csv", "TB16K_revised", 2, None, 62, 24, "SITB | TB 16K", True, "revised 2026-11-25"),
  ("sitb-tb15", "SITB - TB 15 (Pemeriksaan Eligibilitas TPT)", "csv", "TB_15.csv", 2, None, 60, 28, "SITB | TB 15", True, ""),
  ("sitb-tb15p", "SITB - TB 15P (Penerima TPT)", "csv", "TB_15P.csv", 2, None, 61, 37, "SITB | TB 15P", True, ""),
  ("asik-kohort-baduta", "ASIK - Data Individu Kohort Baduta (Imunisasi)", "csv", "Data_Dictionary_-_ASIK", 2, 116, 40, 26, "ASIK | Imunisasi Baduta", True, ""),
@@ -70,7 +71,7 @@ for slug, nama, kind, key, a, b, trk, ref, lab, main, ver in FORMS:
                 shifted.append(slug)
             fixed.append(r)
         body = fixed
-    if slug.startswith(("sitb-tb15", "asik-kohort")):      # typo di sumber: valuableCodeableConcept
+    if slug.startswith(("sitb-tb15", "sitb-tb16k", "asik-kohort")):      # typo di sumber: valuableCodeableConcept
         pi = hdr.index("Path")
         for r in body:
             if len(r) > pi: r[pi] = r[pi].replace(".valuableCodeableConcept", ".valueCodeableConcept")

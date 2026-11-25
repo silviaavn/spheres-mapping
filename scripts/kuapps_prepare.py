@@ -1,5 +1,5 @@
 """Siapkan dictionary KuApps: BidanKu (KuApps_Reborn_Variable_and_FHIR_Mapping.xlsx) dan Kuapps Spheres (Mapping_KuApps_SPHERES.xlsx).
-Pemakaian: python3 -I scripts/kuapps_prepare.py <reborn.xlsx> <spheres.xlsx> <repo_dir> [genomics.xlsx] [mms.xlsx]
+Pemakaian: python3 -I scripts/kuapps_prepare.py <reborn.xlsx> <spheres.xlsx> <repo_dir> [genomics.xlsx] [mms.xlsx] [ski.xlsx]
 Sheet IFIV / Summary / Gambar / List Skrining bukan dictionary (testing / daftar) dan dilewati.
 Sheet Tambah Pasien dst. = baris tracker #284–290 (ditambahkan 2026-11-25)."""
 import importlib.util, json, os, sys, warnings
@@ -11,6 +11,7 @@ spec = importlib.util.spec_from_file_location("ep", os.path.join(here, "epus_pre
 ep = importlib.util.module_from_spec(spec); spec.loader.exec_module(ep)
 reborn, spheres, repo = sys.argv[1], sys.argv[2], sys.argv[3]
 genomics = sys.argv[4] if len(sys.argv) > 4 else None
+ski = sys.argv[6] if len(sys.argv) > 6 else None   # PHDT_Data_SKI.xlsx (3 sheet bermapping; sheet Ruta Bagian 1 Identitas kosong mapping, dilewati)
 mms = sys.argv[5] if len(sys.argv) > 5 else None   # MMS_Data_Dictionary.xlsx   # Genomics_SPHERES_Data_Dictionary_.xlsx
 REN = {"section": "Categories", "nama skrining": "Categories", "variable": "Variables", "value": "Value Name", "formula": "Format/Value",
        "system": "CodeSystem", "notes": "Definisi Operasional", "format": "Format/Value", "nama coloum raw": "Nama Column Raw", "keterangan": "Definisi Operasional", "note": "Definisi Operasional",
@@ -37,6 +38,9 @@ F = [("kuapps-bidanku-anc", "r", "PYD-ANC", "KuApps BidanKu - ANC", 106, 1),
      ("mms-sosio-ekonomi", "m", "Survei Sosio Ekonomi", "MMS - Survei Sosio Ekonomi", 294, 1),
      ("mms-demografi", "m", "Survei Demografi", "MMS - Survei Demografi (Listing Responden)", 295, 1),
      ("mms-konfirmasi-kelahiran", "m", "Konfirmasi Kelahiran", "MMS - Konfirmasi Kelahiran dan Luaran Kehamilan", 296, 1),
+     ("ski-household-survey", "k", "Sahabat Sehat Household", "SKI - Sahabat Sehat Household Survey", 297, 1),
+     ("ski-individu-penyakit", "k", "FIX_SKI Individu_Bagian B", "SKI - Individu Bagian B (Penyakit)", 298, 1),
+     ("ski-bayi-balita", "k", "Kesehatan Bayi Balita", "SKI - Kesehatan Bayi Balita", 299, 1),
      ("kuapps-bidanku-tambah-pasien", "r", "Tambah Pasien", "KuApps BidanKu - Tambah Pasien", 284, 1),
      ("kuapps-bidanku-daftar-kehamilan", "r", "Daftar Kehamilan", "KuApps BidanKu - Daftar Kehamilan", 285, 1),
      ("kuapps-bidanku-luaran-kehamilan", "r", "Luaran Kehamilan", "KuApps BidanKu - Luaran Kehamilan", 286, 1),
@@ -49,6 +53,8 @@ if genomics: wbs["g"] = openpyxl.load_workbook(genomics, data_only=True)
 else: F = [f for f in F if f[1] != "g"]
 if mms: wbs["m"] = openpyxl.load_workbook(mms, data_only=True)
 else: F = [f for f in F if f[1] != "m"]
+if ski: wbs["k"] = openpyxl.load_workbook(ski, data_only=True)
+else: F = [f for f in F if f[1] != "k"]
 stats = {}
 for slug, w, sheet, nama, trk, hrow in F:
     name = next(n for n in wbs[w].sheetnames if n.strip().startswith(sheet.strip()))
@@ -77,6 +83,11 @@ for slug, w, sheet, nama, trk, hrow in F:
     rows, log = ep.prepare(cfg, wb, None)
     ep.SINGLETON = {"Patient", "Encounter"}
     blocks, payloads = ep.flag(rows)
+    if slug.startswith("ski-"):               # QR berselang-seling dengan Condition/Observation: 1 QR per header questionnaire, sisanya lanjutan
+        for b in blocks:
+            if b["res"] == "QuestionnaireResponse" and not b["reason"] and not any(r["Path"].startswith("QuestionnaireResponse.questionnaire") for r in b["rows"]):
+                b["first"]["jumlah instance"] = ""; b["reason"] = "lanjutan QR"
+        payloads = [b for b in payloads if not b["reason"]]
     keep = [r for r in rows if any(r[c] for c in ep.OUT_COLS[:15])]
     ep.write_csv(f"{repo}/mapping/phdt-data-dictionary-{slug}.csv", keep)
     v = [r["Variables"] for r in keep if r["Variables"]]
