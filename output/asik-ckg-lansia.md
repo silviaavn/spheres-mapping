@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 101 |
 | Code (`jumlah code` = 1) | 567 |
 | Code unik (code + CodeSystem) | 339 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 20 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 18 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -83,8 +83,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 61 | 1473–1484 | Observation | 14563-1 | Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen | – |
 | 62 | 1493–1505 | Observation | 247301006.0 | Finding of ability to hear whisper | – |
 | 63 | 1510–1521 | Observation | 76517002.0 | Otoscopy | – |
-| 64 | 1524–1535 | Observation | 18070006.0 | Impacted cerumen | – |
-| 65 | 1538–1549 | Observation | 129127001.0 | Infection of ear | – |
+| 64 | 1524–1535 | Observation | 18070006 | Impacted cerumen | – |
+| 65 | 1538–1549 | Observation | 129127001 | Infection of ear | – |
 | 66 | 1552–1563 | Observation | SP000828 | Tes Penala | – |
 | 67 | 1575–1592 | Observation | 400911007.0 | Tumbling E test | _pemeriksaan_visus_e_tumbling_ → `Observation.valueCodeableConcept.coding` (1579, tanpa BQ) |
 | 68 | 1593–1610 | Observation | 252973004.0 | Snellen chart assessment | _pemeriksaan_visus_snellen_chart_ → `Observation.valueCodeableConcept.coding` (1597, tanpa BQ) |
@@ -417,8 +417,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 277 | 1512 | Observation | `Observation.code.coding` | 76517002.0 | Otoscopy | http://snomed.info/sct |
 | 278 | 1520 | Observation | `Observation.valueCodeableConcept.coding` | 164178007.0 | Ear examination normal | http://snomed.info/sct |
 | 279 | 1521 | Observation | `Observation.valueCodeableConcept.coding` | 699116001.0 | Ear examination abnormal | http://snomed.info/sct |
-| 280 | 1526 | Observation | `Observation.code.coding` | 18070006.0 | Impacted cerumen | http://terminology.kemkes.go.id/sp |
-| 281 | 1540 | Observation | `Observation.code.coding` | 129127001.0 | Infection of ear | http://terminology.kemkes.go.id/sp |
+| 280 | 1526 | Observation | `Observation.code.coding` | 18070006 | Impacted cerumen | http://snomed.info/sct |
+| 281 | 1540 | Observation | `Observation.code.coding` | 129127001 | Infection of ear | http://snomed.info/sct |
 | 282 | 1554 | Observation | `Observation.code.coding` | SP000828 | Tes Penala | http://terminology.kemkes.go.id/sp |
 | 283 | 1562 | Observation | `Observation.valueCodeableConcept.coding` | 164178007.0 | Ear examination normal | http://snomed.info/sct |
 | 284 | 1563 | Observation | `Observation.valueCodeableConcept.coding` | 699116001.0 | Ear examination abnormal | http://snomed.info/sct |
@@ -710,12 +710,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 246 |
+| http://snomed.info/sct | 248 |
 | http://loinc.org | 142 |
 | http://terminology.kemkes.go.id | 63 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 36 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 31 |
-| http://terminology.kemkes.go.id/sp | 20 |
+| http://terminology.kemkes.go.id/sp | 18 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 9 |
 | http://hl7.org/fhir/administrative-gender | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/examination | 4 |

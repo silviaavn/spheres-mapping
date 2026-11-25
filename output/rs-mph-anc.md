@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 33 |
 | Code (`jumlah code` = 1) | 90 |
 | Code unik (code + CodeSystem) | 75 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 12 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -98,7 +98,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 21 | 199 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
 | 22 | 217 | Observation | `Observation.code.coding` | 18185-9 | Gestational age | http://loinc.org |
 | 23 | 218 | Observation | `Observation.code.coding` | ANC.B6.DE17 | Gestational age | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 24 | 221 | Observation | `Observation.component.code.coding` | 49052-4 | Gestational age in days | http://terminology.kemkes.go.id/sp |
+| 24 | 221 | Observation | `Observation.component.code.coding` | 49052-4 | Gestational age in days | http://loinc.org |
 | 25 | 233 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
 | 26 | 234 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 27 | 246 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://loinc.org |
@@ -171,8 +171,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 43 |
-| http://loinc.org | 15 |
-| http://terminology.kemkes.go.id/sp | 12 |
+| http://loinc.org | 16 |
+| http://terminology.kemkes.go.id/sp | 11 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 8 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |

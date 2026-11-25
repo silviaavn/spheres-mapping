@@ -12,8 +12,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|
 | Payload (`jumlah instance` = 1) | 114 |
 | Code (`jumlah code` = 1) | 206 |
-| Code unik (code + CodeSystem) | 112 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 13 |
+| Code unik (code + CodeSystem) | 111 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 68 |
 
@@ -262,9 +262,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 100 | 558 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
 | 101 | 567 | Observation | `Observation.code.coding` | SP000115 | Pemeriksaan Laboratorium Thalassemia | http://terminology.kemkes.go.id/sp |
 | 102 | 572 | DiagnosticReport | `DiagnosticReport.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
-| 103 | 586 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://terminology.kemkes.go.id/sp |
+| 103 | 586 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
 | 104 | 596 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 105 | 605 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://terminology.kemkes.go.id/sp |
+| 105 | 605 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
 | 106 | 610 | DiagnosticReport | `DiagnosticReport.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
 | 107 | 622 | Observation | `Observation.code.coding` | 278977008 | Human immunodeficiency virus status | http://snomed.info/sct |
 | 108 | 623 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
@@ -371,10 +371,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://loinc.org | 95 |
+| http://loinc.org | 97 |
 | http://snomed.info/sct | 50 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 22 |
-| http://terminology.kemkes.go.id/sp | 13 |
+| http://terminology.kemkes.go.id/sp | 11 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 6 |
 | http://hl7.org/fhir/sid/icd-10 | 6 |
 | http://sys-ids.kemkes.go.id/kfa | 4 |

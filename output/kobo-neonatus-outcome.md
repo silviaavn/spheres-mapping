@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 14 |
 | Code (`jumlah code` = 1) | 25 |
 | Code unik (code + CodeSystem) | 25 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 6 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 5 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -65,7 +65,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 12 | 139 | EpisodeOfCare | `EpisodeOfCare.type.coding` | Neonate | Neonate | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
 | 13 | 146 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
 | 14 | 147 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 15 | 148 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 15 | 148 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://snomed.info/sct |
 | 16 | 149 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
 | 17 | 157 | Observation | `Observation.component.code.coding` | 22925008.0 | Neonatal disorder | http://snomed.info/sct |
 | 18 | 161 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
@@ -81,8 +81,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 8 |
-| http://terminology.kemkes.go.id/sp | 6 |
+| http://snomed.info/sct | 9 |
+| http://terminology.kemkes.go.id/sp | 5 |
 | http://loinc.org | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 1 |

@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 98 |
 | Code (`jumlah code` = 1) | 228 |
 | Code unik (code + CodeSystem) | 194 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 29 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 28 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -334,7 +334,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 187 | 1200 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
 | 188 | 1203 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
 | 189 | 1214 | Observation | `Observation.code.coding` | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | http://terminology.kemkes.go.id/sp |
-| 190 | 1217 | Observation | `Observation.component.code.coding` | 135840009.0 | Blood pressure monitoring | http://terminology.kemkes.go.id/sp |
+| 190 | 1217 | Observation | `Observation.component.code.coding` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
 | 191 | 1220 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
 | 192 | 1223 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
 | 193 | 1224 | Observation | `Observation.component.code` | 308116003.0 | Antihypertensive therapy | http://snomed.info/sct |
@@ -378,9 +378,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 116 |
+| http://snomed.info/sct | 117 |
 | http://loinc.org | 38 |
-| http://terminology.kemkes.go.id/sp | 29 |
+| http://terminology.kemkes.go.id/sp | 28 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 14 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 12 |
 | http://sys-ids.kemkes.go.id/kf | 6 |

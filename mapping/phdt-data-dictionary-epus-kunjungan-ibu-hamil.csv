@@ -583,7 +583,7 @@ Laboratorium,Periksa HB,,,Dilakukan*,,,,,,ServiceRequest,ServiceRequest.category
 ,,,,,,,,,,ServiceRequest,ServiceRequest.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.intent,original-order,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.priority,routine,Tidak ada,Tidak ada,,,
-,,,,,,,,,,ServiceRequest,ServiceRequest.code,718-7,Hemoglobin [Mass/volume] in Blood,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,ServiceRequest,ServiceRequest.code,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,,1,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,,,,,,ServiceRequest,ServiceRequest.occurrenceDateTime,Tidak ada,Tidak ada,Tidak ada,,,
@@ -602,7 +602,7 @@ Laboratorium,Periksa HB,,,Dilakukan*,,,,,,ServiceRequest,ServiceRequest.category
 ,,,,,,,,,,Specimen,Specimen.receivedTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,718-7,Hemoglobin [Mass/volume] in Blood,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.code.coding,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.valueBoolean,true,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueBoolean,false,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.status,final,Tidak Ada,Tidak Ada,,,1

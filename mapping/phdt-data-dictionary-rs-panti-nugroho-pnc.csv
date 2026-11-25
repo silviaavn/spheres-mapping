@@ -884,7 +884,7 @@ Jika dijawab ""0""  maka tidak perlu dibuat resource",,Condition,Condition.clini
 ,,,,,,,,,,Observation,Observation.code.coding,SP000138,Tatalaksana Komplikasi Pre Eklampsia,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak Ada,Tidak Ada,,,
-,,,,Pantau Tekanan Darah,boolean,,,,,Observation,Observation.component.code.coding,135840009.0,Blood pressure monitoring,http://terminology.kemkes.go.id/sp,,1,
+,,,,Pantau Tekanan Darah,boolean,,,,,Observation,Observation.component.code.coding,135840009,Blood pressure monitoring,http://snomed.info/sct,,1,
 ,,,,,,,Ya,,,Observation,Observation.component.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.component.valueBoolean,false,Tidak Ada,Tidak Ada,,,
 ,,,,Pantau Protein Urin,boolean,,,,,Observation,Observation.component.code.coding,SP000133,Pemantauan Protein Urin,http://terminology.kemkes.go.id/sp,,1,

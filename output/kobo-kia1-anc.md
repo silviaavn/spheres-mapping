@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 167 |
 | Code (`jumlah code` = 1) | 733 |
 | Code unik (code + CodeSystem) | 518 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 71 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 69 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -697,8 +697,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 480 | 2172 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
 | 481 | 2173 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 482 | 2174 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005.0 | Cephalic fetal presentation | http://snomed.info/sct |
-| 483 | 2175 | Observation | `Observation.valueCodeableConcept.coding` | 6096002.0 | Breech presentation | http://terminology.kemkes.go.id/sp |
-| 484 | 2176 | Observation | `Observation.valueCodeableConcept.coding` | 288203005.0 | Transverse/oblique lie | http://terminology.kemkes.go.id/sp |
+| 483 | 2175 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 484 | 2176 | Observation | `Observation.valueCodeableConcept.coding` | 288203005 | Transverse/oblique lie | http://snomed.info/sct |
 | 485 | 2177 | Observation | `Observation.valueCodeableConcept.coding` | SP000006 | Organ Tubuh Lainnya | http://terminology.kemkes.go.id/sp |
 | 486 | 2178 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 487 | 2213 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
@@ -953,9 +953,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 400 |
+| http://snomed.info/sct | 402 |
 | http://loinc.org | 136 |
-| http://terminology.kemkes.go.id/sp | 71 |
+| http://terminology.kemkes.go.id/sp | 69 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 28 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 27 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 25 |

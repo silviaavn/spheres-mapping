@@ -1047,7 +1047,7 @@ Jika lokasi periksa rumah ibu/ lainnya, gunakan reference organization dan locat
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,249222005.0,Neonatal condition,http://snomed.info/sct,,1,
 ,,,,,,,sehat,,,Observation,Observation.valueCodeableConcept.coding,102500002.0,Good neonatal condition at birth,http://snomed.info/sct,,1,
-,,,,,,,sakit,,,Observation,Observation.valueCodeableConcept.coding,276707008.0,Infant in poor condition at birth,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,sakit,,,Observation,Observation.valueCodeableConcept.coding,276707008,Infant in poor condition at birth,http://snomed.info/sct,,1,
 ,,,,,,,meninggal,,,Observation,Observation.valueCodeableConcept.coding,419099009.0,Dead,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

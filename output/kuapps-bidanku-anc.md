@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 190 |
 | Code (`jumlah code` = 1) | 440 |
 | Code unik (code + CodeSystem) | 333 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 97 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 93 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -293,7 +293,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 55 | 272 | Observation | `Observation.component.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
 | 56 | 275 | Observation | `Observation.component.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
 | 57 | 278 | Observation | `Observation.component.code.coding` | 74964007 | Other | http://snomed.info/sct |
-| 58 | 289 | Observation | `Observation.code.coding` | 417662000 | History of clinical finding in subject | http://terminology.kemkes.go.id/sp |
+| 58 | 289 | Observation | `Observation.code.coding` | 417662000 | History of clinical finding in subject | http://snomed.info/sct |
 | 59 | 292 | Observation | `Observation.component.code.coding` | 40733004 | Infectious disease | http://snomed.info/sct |
 | 60 | 295 | Observation | `Observation.component.code.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
 | 61 | 298 | Observation | `Observation.component.code.coding` | 414916001 | Obesity | http://snomed.info/sct |
@@ -365,9 +365,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 127 | 640 | Observation | `Observation.component.code.coding` | 725948004 | Past pregnancy history of retained placenta | http://snomed.info/sct |
 | 128 | 643 | Observation | `Observation.component.code.coding` | 726565008 | Past pregnancy history of small for gestational age baby | http://snomed.info/sct |
 | 129 | 646 | Observation | `Observation.component.code.coding` | 32271000119102 | Past pregnancy history of delivery of macrosomal infant | http://snomed.info/sct |
-| 130 | 649 | Observation | `Observation.component.code.coding` | 161804005 | Past pregnancy history of antepartum hemorrhage | http://terminology.kemkes.go.id/sp |
-| 131 | 652 | Observation | `Observation.component.code.coding` | 105651000119100 | Past pregnancy history of pre-eclampsia | http://terminology.kemkes.go.id/sp |
-| 132 | 655 | Observation | `Observation.component.code.coding` | 161806007 | Past pregnancy history of eclampsia | http://terminology.kemkes.go.id/sp |
+| 130 | 649 | Observation | `Observation.component.code.coding` | 161804005 | Past pregnancy history of antepartum hemorrhage | http://snomed.info/sct |
+| 131 | 652 | Observation | `Observation.component.code.coding` | 105651000119100 | Past pregnancy history of pre-eclampsia | http://snomed.info/sct |
+| 132 | 655 | Observation | `Observation.component.code.coding` | 161806007 | Past pregnancy history of eclampsia | http://snomed.info/sct |
 | 133 | 667 | Condition | `Condition.code.coding` | 34842007 | Antepartum hemorrhage | http://snomed.info/sct |
 | 134 | 668 | Condition | `Condition.code.coding` | 15938005 | Eclampsia | http://snomed.info/sct |
 | 135 | 669 | Condition | `Condition.code.coding` | 398254007 | Pre-eclampsia | http://snomed.info/sct |
@@ -681,8 +681,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 190 |
-| http://terminology.kemkes.go.id/sp | 97 |
+| http://snomed.info/sct | 194 |
+| http://terminology.kemkes.go.id/sp | 93 |
 | http://loinc.org | 80 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 26 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 16 |

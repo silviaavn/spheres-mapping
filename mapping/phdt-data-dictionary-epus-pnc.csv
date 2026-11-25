@@ -1001,7 +1001,7 @@ Data Nakes,Identitas Nakes,,,Dokter/Tenaga Medis,,,,,,Practitioner,Practitioner.
 ,,,,,,,,,,Observation,Observation.code.coding,SP000138,Tatalaksana Komplikasi Pre Eklampsia,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak Ada,Tidak Ada,,,
-,,,,Tatalaksana_Pantau_Tekanan_Darah_Eklampsia,boolean,,,,,Observation,Observation.component.code.coding,135840009,Blood pressure monitoring,http://terminology.kemkes.go.id/sp,,1,
+,,,,Tatalaksana_Pantau_Tekanan_Darah_Eklampsia,boolean,,,,,Observation,Observation.component.code.coding,135840009,Blood pressure monitoring,http://snomed.info/sct,,1,
 ,,,,,,,Ya,,,Observation,Observation.component.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.component.valueBoolean,false,Tidak Ada,Tidak Ada,,,
 ,,,,Tatalaksana_Pantau_Urin_Eklampsia,boolean,,,,,Observation,Observation.component.code.coding,SP000133,Pemantauan Protein Urin,http://terminology.kemkes.go.id/sp,,1,

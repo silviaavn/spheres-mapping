@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 75 |
 | Code (`jumlah code` = 1) | 175 |
 | Code unik (code + CodeSystem) | 150 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 24 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 23 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -279,7 +279,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 158 | 1038 | Observation | `Observation.valueCodeableConcept.coding` | SP000394 | Ikterus derajat 5 | http://terminology.kemkes.go.id/sp |
 | 159 | 1048 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
 | 160 | 1049 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 161 | 1050 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 161 | 1050 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://snomed.info/sct |
 | 162 | 1051 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
 | 163 | 1059 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
 | 164 | 1061 | Observation | `Observation.component.code.coding` | 56110009.0 | Fetal birth trauma | http://snomed.info/sct |
@@ -299,9 +299,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 95 |
+| http://snomed.info/sct | 96 |
 | http://loinc.org | 26 |
-| http://terminology.kemkes.go.id/sp | 24 |
+| http://terminology.kemkes.go.id/sp | 23 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 |  | 6 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 4 |

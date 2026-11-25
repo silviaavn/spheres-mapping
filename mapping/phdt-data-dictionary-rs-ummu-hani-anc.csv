@@ -202,7 +202,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B6.DE17,Gestational age,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,wk,wk,http://unitsofmeasure.org,,,
-,,,,,,,,,,Observation,Observation.component.code.coding,49052-4,Gestational age in days,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.component.code.coding,49052-4,Gestational age in days,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.component.valueQuantity.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.component.valueQuantity.code,d,day,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,

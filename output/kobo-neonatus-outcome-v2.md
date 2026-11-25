@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 89 |
 | Code (`jumlah code` = 1) | 276 |
 | Code unik (code + CodeSystem) | 95 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 58 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 52 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -206,7 +206,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 72 | 399 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
 | 73 | 411 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
 | 74 | 412 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 75 | 413 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 75 | 413 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://snomed.info/sct |
 | 76 | 414 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
 | 77 | 415 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 78 | 423 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
@@ -263,7 +263,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 129 | 665 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
 | 130 | 666 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
 | 131 | 667 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
-| 132 | 668 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
+| 132 | 668 | PractitionerRole | `PractitionerRole.code.coding` | 158999002 | Community midwife | http://snomed.info/sct |
 | 133 | 688 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
 | 134 | 700 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
 | 135 | 701 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
@@ -278,7 +278,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 144 | 728 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
 | 145 | 740 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
 | 146 | 741 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 147 | 742 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 147 | 742 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://snomed.info/sct |
 | 148 | 743 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
 | 149 | 744 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 150 | 752 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
@@ -335,7 +335,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 201 | 994 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
 | 202 | 995 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
 | 203 | 996 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
-| 204 | 997 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
+| 204 | 997 | PractitionerRole | `PractitionerRole.code.coding` | 158999002 | Community midwife | http://snomed.info/sct |
 | 205 | 1017 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
 | 206 | 1029 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
 | 207 | 1030 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
@@ -350,7 +350,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 216 | 1057 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
 | 217 | 1069 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
 | 218 | 1070 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 219 | 1071 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 219 | 1071 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://snomed.info/sct |
 | 220 | 1072 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
 | 221 | 1073 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 222 | 1081 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
@@ -407,14 +407,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 273 | 1323 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
 | 274 | 1324 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
 | 275 | 1325 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
-| 276 | 1326 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
+| 276 | 1326 | PractitionerRole | `PractitionerRole.code.coding` | 158999002 | Community midwife | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 89 |
-| http://terminology.kemkes.go.id/sp | 58 |
+| http://snomed.info/sct | 95 |
+| http://terminology.kemkes.go.id/sp | 52 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 36 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 28 |
 | http://loinc.org | 26 |

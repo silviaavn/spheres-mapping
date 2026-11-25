@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 49 |
 | Code (`jumlah code` = 1) | 110 |
 | Code unik (code + CodeSystem) | 102 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 16 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 15 |
 | Variabel BQ (unik) | 1 |
 
 ## Payload
@@ -191,7 +191,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 100 | 624 | Procedure | `Procedure.code.coding` | ED000010 | Edukasi PHBS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 101 | 635 | Procedure | `Procedure.code.coding` | ED000012 | Edukasi lainnya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 102 | 647 | Observation | `Observation.code.coding` | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | http://terminology.kemkes.go.id/sp |
-| 103 | 650 | Observation | `Observation.component.code.coding` | 135840009.0 | Blood pressure monitoring | http://terminology.kemkes.go.id/sp |
+| 103 | 650 | Observation | `Observation.component.code.coding` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
 | 104 | 653 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
 | 105 | 656 | Observation | `Observation.component.code` | 308116003.0 | Antihypertensive therapy | http://snomed.info/sct |
 | 106 | 659 | Observation | `Observation.component.code.coding` | SP000136 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
@@ -204,9 +204,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 52 |
+| http://snomed.info/sct | 53 |
 | http://loinc.org | 21 |
-| http://terminology.kemkes.go.id/sp | 16 |
+| http://terminology.kemkes.go.id/sp | 15 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 | http://hl7.org/fhir/sid/icd-10 | 3 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 3 |

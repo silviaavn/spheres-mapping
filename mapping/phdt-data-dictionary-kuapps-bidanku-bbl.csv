@@ -479,7 +479,7 @@ Skrining Kesehatan,,,,Kondisi bayi,,,,,,Observation,Observation.status,final,Tid
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,249222005,Neonatal condition,http://snomed.info/sct,,1,
 ,,,,,,,Sehat,,,Observation,Observation.valueCodeableConcept.coding,102500002,Good neonatal condition at birth,http://snomed.info/sct,,1,
-,,,,,,,Sakit,,,Observation,Observation.valueCodeableConcept.coding,276707008,Infant in poor condition at birth,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,Sakit,,,Observation,Observation.valueCodeableConcept.coding,276707008,Infant in poor condition at birth,http://snomed.info/sct,,1,
 ,,,,,,,Meninggal,,,Observation,Observation.valueCodeableConcept.coding,419099009,Dead,http://snomed.info/sct,,1,
 ,,,,Pilih Penyakit,,,Asfiksia,"Apabila pertanyaan sebelumnya dijawab, sakit, maka tambahkan mapping berikut",,Observation,Observation.component.code.coding,413654009,Birth asphyxia,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.component.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,

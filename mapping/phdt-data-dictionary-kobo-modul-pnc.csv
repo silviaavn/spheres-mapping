@@ -1214,7 +1214,7 @@ Penambahan variabel baru,,,,Tingkat Kesadaran,Coded,,,,,Observation,Observation.
 ,,,,,,,,,,Observation,Observation.code.coding,SP000138,Tatalaksana Komplikasi Pre Eklampsia,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,false,Tidak Ada,Tidak Ada,,,
-,,,tatalaksana_preeklampsia_option_1,Pantau Tekanan Darah,boolean,,,,,Observation,Observation.component.code.coding,135840009.0,Blood pressure monitoring,http://terminology.kemkes.go.id/sp,,1,
+,,,tatalaksana_preeklampsia_option_1,Pantau Tekanan Darah,boolean,,,,,Observation,Observation.component.code.coding,135840009,Blood pressure monitoring,http://snomed.info/sct,,1,
 ,,,,,,,Ya,,,Observation,Observation.component.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.component.valueBoolean,false,Tidak Ada,Tidak Ada,,,
 ,,,tatalaksana_preeklampsia_option_2,Pantau Protein Urin,boolean,,,,,Observation,Observation.component.code.coding,SP000133,Pemantauan Protein Urin,http://terminology.kemkes.go.id/sp,,1,

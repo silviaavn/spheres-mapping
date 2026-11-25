@@ -1523,7 +1523,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,code,,,,,QuestionnaireResponse,QuestionnaireResponse.item.answer.item.answer.valueReference.display,Pemeriksaan Telinga Lanjutan dengan Penala,,,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,18070006.0,Impacted cerumen,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.code.coding,18070006,Impacted cerumen,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -1537,7 +1537,7 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,code,,,,,QuestionnaireResponse,QuestionnaireResponse.item.answer.item.answer.valueReference.display,Pemeriksaan Telinga Lanjutan dengan Penala,,,,,
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,129127001.0,Infection of ear,http://terminology.kemkes.go.id/sp,,1,
+,,,,,,,,,,Observation,Observation.code.coding,129127001,Infection of ear,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,

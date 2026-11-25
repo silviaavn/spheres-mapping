@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 48 |
 | Code (`jumlah code` = 1) | 103 |
 | Code unik (code + CodeSystem) | 88 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 5 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 4 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -157,7 +157,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 69 | 468 | Observation | `Observation.code.coding` | SP000889 | Frekuensi Menyusui | http://terminology.kemkes.go.id/sp |
 | 70 | 480 | Observation | `Observation.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
 | 71 | 481 | Observation | `Observation.valueCodeableConcept.coding` | 102500002 | Good neonatal condition at birth | http://snomed.info/sct |
-| 72 | 482 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 72 | 482 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://snomed.info/sct |
 | 73 | 483 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
 | 74 | 484 | Observation | `Observation.component.code.coding` | 413654009 | Birth asphyxia | http://snomed.info/sct |
 | 75 | 486 | Observation | `Observation.component.code.coding` | 56110009 | Fetal birth trauma | http://snomed.info/sct |
@@ -194,10 +194,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 58 |
+| http://snomed.info/sct | 59 |
 | http://loinc.org | 20 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 16 |
-| http://terminology.kemkes.go.id/sp | 5 |
+| http://terminology.kemkes.go.id/sp | 4 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |

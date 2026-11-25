@@ -13,7 +13,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Payload (`jumlah instance` = 1) | 89 |
 | Code (`jumlah code` = 1) | 194 |
 | Code unik (code + CodeSystem) | 143 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 22 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 21 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -160,7 +160,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 26 | 290 | Observation | `Observation.code.coding` | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | http://terminology.kemkes.go.id/sp |
 | 27 | 301 | Observation | `Observation.code.coding` | 18185-9 | Gestational age | http://loinc.org |
 | 28 | 302 | Observation | `Observation.code.coding` | ANC.B6.DE17 | Gestational age | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 29 | 305 | Observation | `Observation.component.code.coding` | 49052-4 | Gestational age in days | http://terminology.kemkes.go.id/sp |
+| 29 | 305 | Observation | `Observation.component.code.coding` | 49052-4 | Gestational age in days | http://loinc.org |
 | 30 | 317 | Observation | `Observation.code.coding` | 32418-6 | Obstetric trimester Stated | http://loinc.org |
 | 31 | 318 | Observation | `Observation.code.coding` | ANC.SS.DE13 | Trimester ke | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes |
 | 32 | 329 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
@@ -332,8 +332,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 70 |
-| http://loinc.org | 53 |
-| http://terminology.kemkes.go.id/sp | 22 |
+| http://loinc.org | 54 |
+| http://terminology.kemkes.go.id/sp | 21 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 21 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 12 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 7 |
