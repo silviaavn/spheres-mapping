@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Angka code per form diperbarui 2026-11-25 (aturan hitung baru: code SP custom di path coded mana pun, dataAbsentReason, path QuestionnaireResponse valid; path disamakan ke FHIR R4). Angka payload tidak berubah. Total non-unik 7347 payload / 19485 code; unik 1431 / 4357.
+Angka code per form diperbarui 2026-11-25 (aturan hitung baru: code SP custom di path coded mana pun, dataAbsentReason, path QuestionnaireResponse valid; path disamakan ke FHIR R4). Total non-unik 7344 payload / 19546 code (Informed Consent #78 dan Master Data tidak masuk total form). Pada 2026-11-26 pembeda payload diperluas (QuestionnaireResponse per kuesioner, CarePlan per `CarePlan.title`, Medication/MedicationStatement/Composition/Consent/DocumentReference per code) dan akhiran `.0` dihapus dari kolom Code (7136 sel); angka per form tidak berubah, **total unik jadi 1458 payload / 3952 code** (rincian per resource: `output.md`).
 
 Total: 254 laporan · Masih diperlukan: 235 · Dimapping ke FHIR: 227 · Sudah direview: 8
 
