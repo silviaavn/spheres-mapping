@@ -8,7 +8,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 |---|---|---|---|---|---|
 | 1 | PractitionerRole | – | – | Maternal Outcome, SiGizi ANC, SITB TB 16K, ePus Laboratorium (2x), ePus ANC (14x), ePus INC, ePus PNC (2x), ASIK Skrining PTM (6x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, Genomics TB, Genomics Klebsiella, Genomics Dengue, MMS - Pemantauan Distribusi dan Konsumsi, MMS - Master Database Responden, MMS - Survei Demografi (Listing Responden), MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SiGizi Kohort Ibu, SIM RS Tripat ANC (2x), SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Tripat PNC (2x), SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC (16x), SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SISMAL Regmal 1, SIM RS Harapan Ibu ANC (7x), SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC (7x), SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC (7x), SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC (7x), SIM RS PKU BBL, SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x), Kobo Modul ANC (7x), Kobo Modul INC (2x), Kobo Modul Neonatus, Kobo Modul PNC (4x), Kobo Buku KIA 1 - ANC (2x), Kobo Buku KIA 2 - Luaran Kehamilan (2x), Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre (2x), Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (4x), Kobo DDTK | 73 |
 | 2 | Practitioner | – | – | Maternal Outcome, Raffle (2x), SITB TB 16K, ePus Pelayanan Pasien, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, SIHEPI Rekap 3e, eKohort ANC, eKohort INC (3x), Buku KIA Identitas dan ANC (2x), Buku KIA INC, Kobo SDIDTK, MMS - Pemantauan Distribusi dan Konsumsi, MMS - Informed Consent, MMS - Master Database Responden, MMS - Survei Sosio Ekonomi, MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SKI - Sahabat Sehat Household Survey, SKI - Individu Bagian B (Penyakit), SKI - Kesehatan Bayi Balita, SIM RS Tripat ANC (2x), SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Tripat PNC (2x), SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC (2x), SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC (2x), SIM RS Ummu Hani INC (3x), SIM RS Ummu Hani PNC (2x), SIM RS Ummu Hani BBL, SIM RS MPH ANC (2x), SIM RS MPH INC (2x), SIM RS MPH PNC (2x), SIM RS MPH BBL, SIM RS MPH Diabetes Melitus (2x), SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng PNC, SISMAL Regmal 1, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis (2x), SIM RS Ummu Hani Hepatitis (2x), SIM RS PKU Hepatitis (2x), SIM RS Siaga Medika Hepatitis (2x), Kobo Modul ANC, Kobo Modul INC (2x), Kobo Modul Neonatus, Kobo Modul PNC (2x), Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre (3x), Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2 (4x), Kobo DDTK | 82 |
-| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), Informed Consent, SIHEPI Rekap 3e, eKohort ANC, eKohort INC, Buku KIA Identitas dan ANC, Buku KIA INC, Buku KIA Anak, SITB TB 15, SITB TB 15P, ASIK Kohort Bayi, ASIK Kohort Baduta, ASIK Kohort WUS, Kuapps Spheres TB, Genomics TB, Genomics Klebsiella, Genomics Dengue, KuApps BidanKu Tambah Pasien, Kobo SDIDTK, MMS - Pemantauan Distribusi dan Konsumsi, MMS - Informed Consent, MMS - Master Database Responden, MMS - Survei Sosio Ekonomi, MMS - Survei Demografi (Listing Responden), MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SKI - Sahabat Sehat Household Survey, SKI - Individu Bagian B (Penyakit), SKI - Kesehatan Bayi Balita, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, SIM RS Goetoeng Diabetes Melitus, SIM RS Goetoeng Hipertensi, SISMAL Regmal 1, SISMAL Validasi Indigenous, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Modul ANC, Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2, Kobo DDTK | 143 |
+| 3 | Patient | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, MPDN Kematian Bayi (2x), MPDN Kematian Ibu, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, ELSMIL Pasca Persalinan, ELSMIL Baduta, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, eKohort INC, Buku KIA Identitas dan ANC, Buku KIA INC, Buku KIA Anak, SITB TB 15, SITB TB 15P, ASIK Kohort Bayi, ASIK Kohort Baduta, ASIK Kohort WUS, Kuapps Spheres TB, Genomics TB, Genomics Klebsiella, Genomics Dengue, KuApps BidanKu Tambah Pasien, Kobo SDIDTK, MMS - Pemantauan Distribusi dan Konsumsi, MMS - Informed Consent, MMS - Master Database Responden, MMS - Survei Sosio Ekonomi, MMS - Survei Demografi (Listing Responden), MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SKI - Sahabat Sehat Household Survey, SKI - Individu Bagian B (Penyakit), SKI - Kesehatan Bayi Balita, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu, SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, SIM RS Goetoeng Diabetes Melitus, SIM RS Goetoeng Hipertensi, SISMAL Regmal 1, SISMAL Validasi Indigenous, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Modul ANC, Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome, Kobo Neonatus Outcome v2, Kobo DDTK | 142 |
 | 4 | Encounter | – | – | Maternal Outcome, Raffle, SiGizi ANC, SITB TB 06, SITB TB 03 SO, SITB TB 03 RO, SITB TB 04, SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil, ePus Laboratorium, ePus Rujukan Eksternal, ePus ANC, ePus INC, ePus PNC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK, Dapodik PAUD, SITB TB 01, SITB TB 02, ELSMIL Ibu Hamil, SIPTM, ASIK Skrining PTM, ASIK CKG Bayi Baru Lahir (v2), ASIK CKG Balita (v2), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, ASIK CKG Lansia (27 Apr 2026), SIHEPI Rekap 3e, eKohort ANC, eKohort INC, Buku KIA Identitas dan ANC, Buku KIA INC, Buku KIA PNC, Buku KIA Anak, SITB TB 15, SITB TB 15P, KuApps BidanKu ANC, KuApps BidanKu PNC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, Kuapps Spheres HT, Kuapps Spheres DM, Kuapps Spheres TB, Genomics TB, Genomics Klebsiella, Genomics Dengue, KuApps BidanKu Luaran Kehamilan, Kobo SDIDTK, MMS - Survei Demografi (Listing Responden), SKI - Sahabat Sehat Household Survey, SKI - Individu Bagian B (Penyakit), SKI - Kesehatan Bayi Balita, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi Balita ASI Eksklusif, SiGizi Balita MPASI, SiGizi PMT 2025 BB Tidak Naik - Pantau, SiGizi PMT 2025 BB Tidak Naik - Riwayat, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Pantau, SiGizi PMT 2025 BB Kurang - Riwayat, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Pantau, SiGizi PMT 2025 Gizi Kurang - Riwayat, SiGizi PMT 2025 Gizi Kurang - Survey, SiGizi Ibu Nifas, SiGizi Kohort Ibu (14x), SIM RS Tripat ANC, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Tripat PNC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho PNC, SIM RS Panti Nugroho BBL, SIM RS Panti Nugroho Diabetes Melitus, SIM RS Panti Nugroho Hipertensi, SIM RS Panti Nugroho Stroke, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL, SIM RS MPH ANC, SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL, SIM RS MPH Diabetes Melitus, SIM RS MPH Hipertensi, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL, SIM RS PKU INC, SIM RS PKU PNC, SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SIM RS Goetoeng PNC, SIM RS Goetoeng BBL, SIM RS Goetoeng Diabetes Melitus, SIM RS Goetoeng Hipertensi, SISMAL Regmal 1, SISMAL Validasi Indigenous, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS Harapan Ibu PNC, SIM RS Harapan Ibu BBL, SIM RS At tin ANC, SIM RS At tin INC, SIM RS At tin PNC, SIM RS At tin BBL, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS Nirmala PNC, SIM RS Nirmala BBL, SIM RS PKU ANC, SIM RS PKU BBL, SIM RS MPH Hepatitis, SIM RS Ummu Hani Hepatitis, SIM RS PKU Hepatitis, SIM RS Siaga Medika Hepatitis, Kobo Modul ANC, Kobo Modul INC, Kobo Modul Neonatus, Kobo Modul PNC, Kobo Buku KIA 1 - ANC, Kobo Buku KIA 2 - Luaran Kehamilan, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku, Kobo Neonatus Outcome v2, Kobo DDTK | 137 |
 | 5 | Condition | SP000738 | Kunjungan pemantauan luaran maternal | Maternal Outcome | 1 |
 | 6 | EpisodeOfCare | ANC | Antenatal Care | Maternal Outcome, Raffle, SiGizi ANC, ePus Kunjungan Ibu Hamil, ePus INC, SIHEPI Rekap 3e, eKohort ANC, Buku KIA INC, KuApps BidanKu Luaran Kehamilan, SiGizi Ibu Nifas, SiGizi Kohort Ibu (2x), SIM RS Tripat ANC, SIM RS Narmada INC, SIM RS Narmada KIA, SIM RS Panti Nugroho ANC, SIM RS Panti Nugroho INC, SIM RS Ummu Hani ANC, SIM RS Ummu Hani INC, SIM RS MPH ANC, SIM RS MPH INC, SIM RS Siaga Medika ANC, SIM RS Siaga Medika INC, SIM RS PKU INC, SIM RS Harapan Ibu ANC, SIM RS Harapan Ibu INC, SIM RS At tin ANC, SIM RS At tin INC, SIM RS Nirmala ANC, SIM RS Nirmala INC, SIM RS PKU ANC, Kobo Modul ANC, Kobo Modul INC, Kobo Buku KIA 2 - Luaran Kehamilan | 33 |
@@ -142,7 +142,7 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 134 | DiagnosticReport | X099389 | Hasil Pemeriksaan Biakan TB (Metode: LJ) | SITB TB 04 | 1 |
 | 135 | Group | – | – | SITB TB 16K | 1 |
 | 136 | Observation | SP000373 | Kader Kesehatan | SITB TB 16K | 1 |
-| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x), SITB TB 01 (2x), Informed Consent, Buku KIA Identitas dan ANC (9x), Buku KIA INC (3x), KuApps BidanKu Tambah Pasien, Kobo SDIDTK (2x), MMS - Pemantauan Distribusi dan Konsumsi, MMS - Master Database Responden (2x), MMS - Survei Sosio Ekonomi, MMS - Survei Demografi (Listing Responden) (2x), MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita ASI Eksklusif, SiGizi Kohort Ibu, SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL (2x), SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL (2x), SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL (2x), SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL (2x), SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul INC, Kobo Modul Neonatus (2x), Kobo Buku KIA 4 - Cadre (4x), Kobo Buku KIA 5 - Vaksinatorku (4x), Kobo Neonatus Outcome (2x), Kobo Neonatus Outcome v2 (3x), Kobo DDTK (2x) | 45 |
+| 137 | RelatedPerson | – | – | SITB TB 16K, ePus INC, ePus MTBS, ePus MTBM, ePus Tumbang DDTK (2x), Dapodik PAUD (3x), SITB TB 01 (2x), Buku KIA Identitas dan ANC (9x), Buku KIA INC (3x), KuApps BidanKu Tambah Pasien, Kobo SDIDTK (2x), MMS - Pemantauan Distribusi dan Konsumsi, MMS - Master Database Responden (2x), MMS - Survei Sosio Ekonomi, MMS - Survei Demografi (Listing Responden) (2x), MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita ASI Eksklusif, SiGizi Kohort Ibu, SIM RS Tripat BBL (sheet 'INC BBL') (2x), SIM RS Narmada INC, SIM RS Panti Nugroho INC, SIM RS Panti Nugroho BBL (2x), SIM RS Ummu Hani INC, SIM RS Ummu Hani PNC, SIM RS Ummu Hani BBL (2x), SIM RS MPH INC, SIM RS MPH PNC, SIM RS MPH BBL (2x), SIM RS Siaga Medika INC, SIM RS Siaga Medika PNC, SIM RS Siaga Medika BBL (2x), SIM RS Harapan Ibu BBL (2x), SIM RS At tin BBL (2x), SIM RS Nirmala BBL (2x), SIM RS PKU BBL (2x), Kobo Modul INC, Kobo Modul Neonatus (2x), Kobo Buku KIA 4 - Cadre (4x), Kobo Buku KIA 5 - Vaksinatorku (4x), Kobo Neonatus Outcome (2x), Kobo Neonatus Outcome v2 (3x), Kobo DDTK (2x) | 44 |
 | 138 | Observation | 415759006 | Tuberculosis index case | SITB TB 16K, SITB TB 15, SITB TB 15P | 3 |
 | 139 | ServiceRequest | – | – | SITB TB 16K, ePus Pelayanan Pasien, ePus Kunjungan Ibu Hamil (16x), ePus Laboratorium (70x), ePus Rujukan Eksternal, ePus ANC (19x), ePus PNC (2x), ePus MTBS (9x), ePus MTBM, ePus Tumbang DDTK, SITB TB 02 (2x), ELSMIL Ibu Hamil (2x), SIPTM (3x), ASIK Skrining PTM (20x), ASIK CKG Balita (v2) (2x), ASIK CKG Dewasa Laki-laki, ASIK CKG Dewasa Perempuan, SIHEPI Rekap 3e (4x), eKohort ANC (5x), Buku KIA Identitas dan ANC (4x), KuApps BidanKu ANC (10x), KuApps BidanKu Bayi, KuApps BidanKu Anak (2x), Genomics TB, Genomics Klebsiella, Genomics Dengue, Kobo SDIDTK, SIM RS Siaga Medika ANC (15x), SIM RS Goetoeng ANC, SIM RS Goetoeng INC, SISMAL Regmal 1, SIM RS Harapan Ibu ANC (6x), SIM RS At tin ANC (6x), SIM RS Nirmala ANC (6x), SIM RS PKU ANC (6x), Kobo Modul ANC (6x), Kobo Modul PNC (4x) | 37 |
 | 140 | Condition | Z20.1 | Contact with and exposure to tuberculosis | SITB TB 16K | 1 |
@@ -718,260 +718,260 @@ Frekuensi = di berapa form dipakai. Angka (Nx) = muncul N kali di form itu.
 | 710 | Observation | 714283000.0 | Short Physical Performance Battery | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 711 | Observation | 8283-4 | Calf - right Maximum circumference | ASIK CKG Lansia (27 Apr 2026) | 1 |
 | 712 | Observation | TK000195 | Mini Nutritional Assessment (MNA) SF | ASIK CKG Lansia (27 Apr 2026) (2x) | 1 |
-| 713 | Consent | – | – | Informed Consent, KuApps BidanKu Tambah Pasien, MMS - Informed Consent (3x), Kobo Neonatus Outcome v2 | 4 |
-| 714 | Observation | SP000160 | Tanggal Masuk Perawatan, Dukungan, dan Pengobatan (PDP) HIV | SIHEPI Rekap 3e | 1 |
-| 715 | Observation | SP000161 | Tanggal Mendapat atau Memulai ARV | SIHEPI Rekap 3e | 1 |
-| 716 | Observation | SP000162 | Sifilis Ditangani | SIHEPI Rekap 3e | 1 |
-| 717 | Observation | SP000163 | Sifilis Diobati Adekuat | SIHEPI Rekap 3e | 1 |
-| 718 | Observation | SP000164 | Hepatitis B Ditangani atau Dirujuk | SIHEPI Rekap 3e | 1 |
-| 719 | Observation | 72181-1 | HIV results shared with partner [RHEA] | SIHEPI Rekap 3e | 1 |
-| 720 | Observation | SP000165 | Pasangan Diperiksa Sifilis | SIHEPI Rekap 3e | 1 |
-| 721 | Observation | SP000166 | Jumlah Anak Dilahirkan | SIHEPI Rekap 3e | 1 |
-| 722 | Observation | SP000169 | Pemantauan Anak dari Ibu HIV | SIHEPI Rekap 3e | 1 |
-| 723 | Observation | SP000167 | Hasil Dry Blood Spot Early Infant Diagnosis Pada Usia 6-8 Minggu | SIHEPI Rekap 3e | 1 |
-| 724 | Observation | SP000168 | Hasil Konfirmasi Dry Blood Spot Early Infant Diagnosis dalam 12 Bulan | SIHEPI Rekap 3e | 1 |
-| 725 | Observation | SP000177 | Pemantauan Anak dari Ibu Sifilis | SIHEPI Rekap 3e | 1 |
-| 726 | Observation | SP000181 | Pemantauan Anak dari Ibu Hepatitis | SIHEPI Rekap 3e | 1 |
-| 727 | Observation | 121912002 | Hepatitis B virus deoxyribonucleic acid assay | SIHEPI Rekap 3e | 1 |
-| 728 | Observation | 313476009 | Hepatitis B e antigen test | SIHEPI Rekap 3e | 1 |
-| 729 | Observation | 34608000 | Alanine aminotransferase measurement | SIHEPI Rekap 3e | 1 |
-| 730 | Observation | SP000193 | Memenuhi Kriteria Pengobatan Pencegahan Hepatitis B | SIHEPI Rekap 3e | 1 |
-| 731 | Observation | SP000194 | Metode Pemeriksaan Sirosis | SIHEPI Rekap 3e | 1 |
-| 732 | Observation | SP000195 | Status Sirosis | SIHEPI Rekap 3e | 1 |
-| 733 | Observation | SP000196 | Status Pengobatan Pencegahan Hepatitis B | SIHEPI Rekap 3e | 1 |
-| 734 | Observation | SP000197 | Tanggal Pengambilan Obat Pencegahan Hepatitis B | SIHEPI Rekap 3e (4x) | 1 |
-| 735 | Observation | SP000198 | Status Akhir Pengobatan Pencegahan Hepatitis B | SIHEPI Rekap 3e | 1 |
-| 736 | Observation | 85712-8 | Expected delivery location | eKohort INC | 1 |
-| 737 | Observation | CUSTOM | – | eKohort INC (15x) | 1 |
-| 738 | Observation | 1586771000168103 | Primary healthcare service | Buku KIA Identitas dan ANC (3x) | 1 |
-| 739 | Observation | 160538000 | Religious affiliation | Buku KIA Identitas dan ANC (2x) | 1 |
-| 740 | Observation | SP001107 | Tanggal menerima buku KIA | Buku KIA Identitas dan ANC | 1 |
-| 741 | Observation | SP000674 | Fasilitas Kesehatan Tingkat Pertama (FKTP) | Buku KIA Identitas dan ANC | 1 |
-| 742 | Observation | 224098002 | Place in family order | Buku KIA Identitas dan ANC, KuApps BidanKu Tambah Pasien | 2 |
-| 743 | Observation | 726001007 | Past pregnancy history of live birth | Buku KIA Identitas dan ANC, KuApps BidanKu Dewasa | 2 |
-| 744 | Condition | 417662000 | History of clinical finding in subject | Buku KIA Identitas dan ANC | 1 |
-| 745 | Observation | SP000775 | Usia Anak terakhir | Buku KIA Identitas dan ANC | 1 |
-| 746 | Procedure | 243787009 | Antenatal screening | Buku KIA Identitas dan ANC | 1 |
-| 747 | Procedure | 55052008 | Diagnostic ultrasound of gravid uterus | Buku KIA Identitas dan ANC | 1 |
-| 748 | Observation | 20454-5 | Protein [Presence] in Urine by Test strip | Buku KIA Identitas dan ANC (3x), KuApps BidanKu ANC (2x) | 2 |
-| 749 | Observation | 25428-4 | Glucose [Presence] in Urine by Test strip | Buku KIA Identitas dan ANC, KuApps BidanKu ANC | 2 |
-| 750 | Observation | SP000676 | Pemberian TTD atau suplemen | Buku KIA Identitas dan ANC | 1 |
-| 751 | Observation | SP001100 | Triple Eliminasi | Buku KIA Identitas dan ANC | 1 |
-| 752 | Observation | 243787009 | Antenatal screening | Buku KIA Identitas dan ANC, SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC | 3 |
-| 753 | Observation | SP000424 | Riwayat Perilaku Berisiko Sebelum Hamil | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC | 3 |
-| 754 | Observation | 281666001 | Family history of disorder | Buku KIA Identitas dan ANC | 1 |
-| 755 | Observation | 248910006 | Uterine cervix finding | Buku KIA Identitas dan ANC | 1 |
-| 756 | Observation | 249300001 | Urethral finding | Buku KIA Identitas dan ANC | 1 |
-| 757 | Observation | 451024007 | Inspection of vagina using vaginal speculum | Buku KIA Identitas dan ANC | 1 |
-| 758 | Observation | 364223009 | Vulva observable | Buku KIA Identitas dan ANC | 1 |
-| 759 | Observation | 271939006 | Vaginal discharge | Buku KIA Identitas dan ANC | 1 |
-| 760 | Observation | 289552002 | White vaginal discharge | Buku KIA Identitas dan ANC | 1 |
-| 761 | Observation | 450891000124109 | Past pregnancy history of complication of pregnancy, childbirth and/or puerperium | Buku KIA Identitas dan ANC | 1 |
-| 762 | Observation | 106167005 | Consciousness related finding | Buku KIA Identitas dan ANC (2x) | 1 |
-| 763 | Observation | 246875002 | Conjunctival finding | Buku KIA Identitas dan ANC (2x) | 1 |
-| 764 | Observation | 366039006 | Finding of color of sclera | Buku KIA Identitas dan ANC (2x) | 1 |
-| 765 | Observation | 106076001 | Skin finding | Buku KIA Identitas dan ANC (2x) | 1 |
-| 766 | Observation | 298378000 | Finding of neck region | Buku KIA Identitas dan ANC (2x) | 1 |
-| 767 | Observation | 116337000 | Finding of internal part of mouth | Buku KIA Identitas dan ANC (2x) | 1 |
-| 768 | Observation | 118434000 | Stomach finding | Buku KIA Identitas dan ANC (2x) | 1 |
-| 769 | Observation | 248965005 | Finding of regularity of menstrual cycle | Buku KIA Identitas dan ANC | 1 |
-| 770 | Observation | 11888-5 | Gestational age US composite estimate | Buku KIA Identitas dan ANC (3x), KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC (2x) | 3 |
-| 771 | Observation | 11781-2 | Delivery date US composite estimate | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, Kobo Buku KIA 1 - ANC (2x) | 4 |
-| 772 | Observation | SP000672 | Jumlah kantong kehamilan | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 773 | Observation | 11850-5 | Gestational sac Mean diameter US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 774 | Observation | 11957-8 | Fetal Crown Rump length US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 775 | Observation | 249042007 | Fetal heart finding | Buku KIA Identitas dan ANC | 1 |
-| 776 | Observation | 28241000119109 | Ultrasonography of fetus abnormal | Buku KIA Identitas dan ANC (2x) | 1 |
-| 777 | Observation | 20508-8 | Reagin Ab [Units/volume] in Serum or Plasma by RPR | Buku KIA Identitas dan ANC, KuApps BidanKu ANC | 2 |
-| 778 | Observation | SP000730 | Tindak lanjut hasil skrining kesehatan jiwa | Buku KIA Identitas dan ANC (2x), KuApps BidanKu ANC | 2 |
-| 779 | Observation | C54033 | Conclusion | Buku KIA Identitas dan ANC | 1 |
-| 780 | Observation | C25197 | Recommendation | Buku KIA Identitas dan ANC | 1 |
-| 781 | Observation | SP000779 | Multipara dengan kehamilan oleh pasangan baru | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 782 | Observation | 813541000000100 | Pregnancy resulting from assisted conception | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 783 | Observation | SP000780 | Umur ≥ 35 Tahun | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 784 | Observation | 102877006 | Nulliparous | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 785 | Observation | SP000781 | Multipara yang Jarak Kehamilan Sebelumnya > 10 Tahun | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 786 | Observation | 700190003 | Family history of pre-eclampsia | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 787 | Observation | 162864005 | Body mass index 30+ - obesity | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 788 | Observation | SP000782 | Multipara Dengan Riwayat Preeklampsia Sebelumnya | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 789 | Observation | 16356006 | Multiple pregnancy | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 790 | Observation | 11687002 | Gestational diabetes mellitus | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 791 | Observation | 8762007 | Chronic hypertension in obstetric context | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 792 | Observation | 90708001 | Kidney disease | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 793 | Observation | 85828009 | Autoimmune disease | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 794 | Observation | 26843008 | Antiphospholipid syndrome | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 795 | Observation | SP000783 | Mean Arterial Presure > 90 mmHg | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 796 | Observation | 29738008 | Proteinuria | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
-| 797 | Observation | SP000482 | Skrinning Preeklampsia | Buku KIA Identitas dan ANC, MMS - Pemantauan Distribusi dan Konsumsi | 2 |
-| 798 | Observation | SP001099 | Ada selisih 3 minggu atau lebih antara UK USG TM 1/HPHT dengan UK USG TM3 | Buku KIA Identitas dan ANC | 1 |
-| 799 | Observation | 404964004 | Antepartum fetal status | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 800 | Observation | 11994-1 | Placenta position US | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC | 3 |
-| 801 | Observation | 3156-7 | Volume of Amniotic fluid | Buku KIA Identitas dan ANC, KuApps BidanKu ANC | 2 |
-| 802 | Observation | 11820-8 | Fetal Head Diameter.biparietal US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 803 | Observation | 11984-2 | Fetal Head Circumference US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 804 | Observation | 11979-2 | Fetal Abdomen Circumference US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 805 | Observation | 11963-6 | Fetal Femur diaphysis [Length] US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 806 | Observation | 11727-5 | Fetal Body weight estimated by US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC (2x) | 2 |
-| 807 | Observation | 11525-3 | US for pregnancy | Buku KIA Identitas dan ANC, SIM RS Narmada KIA | 2 |
-| 808 | Observation | 5804-0 | Protein [Mass/volume] in Urine by Test strip | Buku KIA Identitas dan ANC | 1 |
-| 809 | Observation | 306225008 | Referral to counseling service | Buku KIA Identitas dan ANC | 1 |
-| 810 | Observation | 310585007 | Delivery place planned | Buku KIA Identitas dan ANC | 1 |
-| 811 | Observation | 89241-4 | Obstetrics Note | Buku KIA Identitas dan ANC | 1 |
-| 812 | Condition | Z00.1 | Routine child health examination | Buku KIA INC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL, SIM RS Harapan Ibu BBL (4x), SIM RS At tin BBL (4x), SIM RS Nirmala BBL (4x), SIM RS PKU BBL (4x), Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Neonatus Outcome v2 (3x) | 19 |
-| 813 | Observation | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | Buku KIA INC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 2 - Luaran Kehamilan | 16 |
-| 814 | Observation | 76689-9 | Sex assigned at birth | Buku KIA INC | 1 |
-| 815 | Procedure | PC000002 | Pemberian Salep Antibiotik Mata | Buku KIA INC, KuApps BidanKu BBL, SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x) | 12 |
-| 816 | Observation | 85724-3 | Age of Mother --at delivery | Buku KIA INC | 1 |
-| 817 | Procedure | 73.59 | Other manually assisted delivery | Buku KIA INC, SiGizi Kohort Ibu, SIM RS Siaga Medika INC, SIM RS Goetoeng INC (3x), Kobo Modul INC | 5 |
-| 818 | Procedure | 50475006 | Foot printing of newborn infant | Buku KIA INC | 1 |
-| 819 | BodyStructure | – | – | Buku KIA INC | 1 |
-| 820 | Observation | 289530006 | Vaginal bleeding | Buku KIA PNC, KuApps BidanKu PNC | 2 |
-| 821 | Procedure | 409019001 | Postpartum care management | Buku KIA PNC | 1 |
-| 822 | Observation | 118213005 | Postpartum finding | Buku KIA PNC | 1 |
-| 823 | Observation | 167604002 | Color of stool | Buku KIA Anak (3x) | 1 |
-| 824 | Procedure | 400984005 | Congenital hypothyroidism screening test | Buku KIA Anak (4x), KuApps BidanKu BBL, KuApps BidanKu Bayi | 3 |
-| 825 | Observation | SP000023 | KIA | Buku KIA Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
-| 826 | Procedure | 171121004 | Human immunodeficiency virus screening | Buku KIA Anak (7x) | 1 |
-| 827 | Procedure | 99.59 | Other vaccination and inoculation | Buku KIA Anak (3x) | 1 |
-| 828 | Procedure | 171122006 | Hepatitis B screening | Buku KIA Anak (4x) | 1 |
-| 829 | Procedure | SP000296 | Skrining Penyakit Jantung Bawaan | Buku KIA Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 4 |
-| 830 | Observation | 267030001 | Yellow or jaundiced color | Buku KIA Anak (2x) | 1 |
-| 831 | Observation | 248214007 | Jaundiced appearance of face | Buku KIA Anak | 1 |
-| 832 | Observation | 710001002 | Tooth number | Buku KIA Anak | 1 |
-| 833 | Observation | 251319000 | Decayed tooth count | Buku KIA Anak | 1 |
-| 834 | Observation | 276451003 | No dental plaque | Buku KIA Anak | 1 |
-| 835 | Observation | 300240004 | Dental plaque present | Buku KIA Anak | 1 |
-| 836 | Observation | 365910001 | Weight trend finding | Buku KIA Anak (4x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (2x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (4x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (8x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
-| 837 | Observation | 1153598007 | Weight for length z score | Buku KIA Anak (2x), KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak | 4 |
-| 838 | Observation | 71773-6 | Mycobacterium tuberculosis stimulated gamma interferon [Interpretation] in Blood Qualitative | SITB TB 15, SITB TB 15P (2x) | 2 |
-| 839 | Observation | SP000723 | Pemeriksaan TBST | SITB TB 15, SITB TB 15P (2x) | 2 |
-| 840 | Condition | 1237025001 | At increased risk of exposure to Mycobacterium tuberculosis complex | SITB TB 15, SITB TB 15P | 2 |
-| 841 | Immunization | VG45 | – | ASIK Kohort Bayi (4x), ASIK Kohort Baduta, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 4 |
-| 842 | Immunization | VG19 | – | ASIK Kohort Bayi, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 3 |
-| 843 | Immunization | VG89 | – | ASIK Kohort Bayi (6x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (6x) | 3 |
-| 844 | Immunization | VG122 | – | ASIK Kohort Bayi (3x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (3x) | 3 |
-| 845 | Immunization | VG152 | – | ASIK Kohort Bayi (2x), ASIK Kohort Baduta, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (3x) | 4 |
-| 846 | Immunization | VG129 | – | ASIK Kohort Bayi, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 3 |
-| 847 | Immunization | VG03 | – | ASIK Kohort Bayi, ASIK Kohort Baduta, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 4 |
-| 848 | Observation | SP000699 | Kelompok Dasawisma | KuApps BidanKu ANC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak | 4 |
-| 849 | Observation | SP000798 | Usia kehamilan saat melakukan pendaftaran posyandu | KuApps BidanKu ANC | 1 |
-| 850 | Observation | SP000713 | Bulan Pendaftaran Posyandu | KuApps BidanKu ANC | 1 |
-| 851 | Observation | 1285244000 | Mean arterial pressure | KuApps BidanKu ANC, KuApps BidanKu PNC | 2 |
-| 852 | Observation | 250554003 | Measurement of oxygen saturation at periphery | KuApps BidanKu ANC | 1 |
-| 853 | Condition | 68154008 | Chronic cough | KuApps BidanKu ANC | 1 |
-| 854 | Observation | 416471007 | Family history of clinical finding | KuApps BidanKu ANC | 1 |
-| 855 | Observation | 417662000 | History of clinical finding in subject | KuApps BidanKu ANC | 1 |
-| 856 | Observation | SP000412 | Tanda Bahaya Kehamilan | KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC (2x) | 2 |
-| 857 | Condition | 86406008 | Human immunodeficiency virus infection | KuApps BidanKu ANC | 1 |
-| 858 | Observation | SP000510 | Mendapat Makanan Bergizi Gratis (MBG) bulan ini | KuApps BidanKu ANC, SiGizi Balita BNBA | 2 |
-| 859 | Observation | SP000955 | Mengonsumsi tablet tambah darah dalam 24 jam terakhir | KuApps BidanKu ANC | 1 |
-| 860 | Observation | SP000157 | Obat Diabetes Mellitus | KuApps BidanKu ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC | 5 |
-| 861 | Observation | 1156096005 | Past pregnancy history of complication occurring during labor and delivery | KuApps BidanKu ANC | 1 |
-| 862 | Observation | 17566005 | Class in prenatal exercises | KuApps BidanKu ANC | 1 |
-| 863 | Observation | 52829-9 | Place of service | KuApps BidanKu ANC | 1 |
-| 864 | Observation | SP000764 | Pendamping kelas ibu hamil | KuApps BidanKu ANC | 1 |
-| 865 | MedicationRequest | 91000488 | Iodine | KuApps BidanKu ANC | 1 |
-| 866 | MedicationDispense | 91000488 | Iodine | KuApps BidanKu ANC | 1 |
-| 867 | Observation | 171126009 | Tuberculosis screening | KuApps BidanKu ANC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja, KuApps BidanKu Dewasa | 6 |
-| 868 | Observation | SP000799 | Hasil skrining Preeklampsia | KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 2 |
-| 869 | Observation | 1237486008 | Pale discoloration of entire skin of body | KuApps BidanKu ANC | 1 |
-| 870 | Observation | 106048009 | Respiratory finding | KuApps BidanKu ANC | 1 |
-| 871 | Procedure | 87431004 | Dilation of cervical canal | KuApps BidanKu ANC | 1 |
-| 872 | Observation | 289825001 | Diameter of cervical dilatation | KuApps BidanKu ANC | 1 |
-| 873 | Observation | 267038008 | Edema | KuApps BidanKu ANC, KuApps BidanKu PNC | 2 |
-| 874 | Observation | 44972-8 | Edema site | KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC | 2 |
-| 875 | Observation | 423484008 | Grade of edema | KuApps BidanKu ANC | 1 |
-| 876 | Observation | SP000729 | Sudah menjadwalkan pemeriksaan USG terdekat | KuApps BidanKu ANC | 1 |
-| 877 | Observation | SP000892 | Metode pemantauan kepatuhan konsumsi MMS | KuApps BidanKu ANC | 1 |
-| 878 | Observation | 27342004 | Anemia of pregnancy | KuApps BidanKu ANC | 1 |
-| 879 | MedicationDispense | 93027786 | MMS Multivitamin Ibu Hamil Tablet Salut Selaput (Umum) | KuApps BidanKu ANC (2x) | 1 |
-| 880 | Observation | SP000905 | Jumlah tablet MMS yang seharusnya dikonsumsi | KuApps BidanKu ANC (2x) | 1 |
-| 881 | Observation | SP000906 | Jumlah tablet MMS yang sudah dikonsumsi | KuApps BidanKu ANC (4x) | 1 |
-| 882 | Observation | SP000907 | Hasil Timbangan MMS (gram) | KuApps BidanKu ANC | 1 |
-| 883 | Observation | SP000908 | Jumlah tablet tersisa | KuApps BidanKu ANC | 1 |
-| 884 | Observation | SP000909 | Jumlah MMS telah dikonsumsi berdasarkan penimbangan | KuApps BidanKu ANC | 1 |
-| 885 | Observation | SP000911 | Total MMS yang telah dikonsumsi berdasarkan hasil penimbangan dan dikurangi MMS yang hilang | KuApps BidanKu ANC | 1 |
-| 886 | Observation | SP000912 | Jumlah tablet MMS yang seharusnya dikonsumsi pada kemasan blister terakhir | KuApps BidanKu ANC | 1 |
-| 887 | Observation | SP000913 | Jumlah tablet MMS yang sudah dikonsumsi pada kemasan blister terakhir | KuApps BidanKu ANC | 1 |
-| 888 | Observation | SP000915 | Jumlah konsumsi MMS pada kemasan blister | KuApps BidanKu ANC | 1 |
-| 889 | Observation | SP000914 | Jumlah tablet MMS yang telah dikonsumsi ibu hamil berdasarkan kartu pemantauan | KuApps BidanKu ANC | 1 |
-| 890 | Observation | SP000900 | Jumlah TTD yang seharusnya sudah dikonsumsi | KuApps BidanKu ANC | 1 |
-| 891 | Observation | SP000901 | Jumlah TTD yang seharusnya dikonsumsi pada kemasan terakhir | KuApps BidanKu ANC | 1 |
-| 892 | Observation | SP000902 | Jumlah TTD yang telah dikonsumsi bulan ini | KuApps BidanKu ANC | 1 |
-| 893 | Observation | SP000903 | Jumlah TTD yang sudah dikonsumsi dari awal hingga hari ini | KuApps BidanKu ANC | 1 |
-| 894 | Observation | SP000904 | Ibu mengonsumsi TTD setiap hari | KuApps BidanKu ANC | 1 |
-| 895 | Observation | 182948007 | Administration of prophylactic vitamin during pregnancy | KuApps BidanKu ANC | 1 |
-| 896 | Condition | SP000899 | Ibu sakit dalam kurun waktu 2 minggu terakhir | KuApps BidanKu ANC | 1 |
-| 897 | Observation | 715035002 | Does take medication | KuApps BidanKu ANC | 1 |
-| 898 | Observation | 55607006 | Problem | KuApps BidanKu ANC | 1 |
-| 899 | Condition | 169943008 | Mother less than 20 years old | KuApps BidanKu ANC | 1 |
-| 900 | MedicationRequest | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | KuApps BidanKu ANC, KuApps BidanKu Anak Usia Sekolah dan Remaja | 2 |
-| 901 | Observation | 112648003 | Massive hemorrhage | KuApps BidanKu PNC | 1 |
-| 902 | Condition | 112648003 | Massive hemorrhage | KuApps BidanKu PNC | 1 |
-| 903 | Observation | 91175000 | Seizure | KuApps BidanKu PNC | 1 |
-| 904 | Condition | 91175000 | Seizure | KuApps BidanKu PNC | 1 |
-| 905 | Observation | 27942005 | Shock | KuApps BidanKu PNC | 1 |
-| 906 | Condition | 27942005 | Shock | KuApps BidanKu PNC | 1 |
-| 907 | Observation | 413711008 | Breastfeeding (infant) | KuApps BidanKu PNC, KuApps BidanKu Bayi, KuApps BidanKu Anak | 3 |
-| 908 | Condition | 58703003 | Postpartum depression | KuApps BidanKu PNC | 1 |
-| 909 | Procedure | SP000008 | Pemberian Tablet Tambah Darah | KuApps BidanKu PNC | 1 |
-| 910 | Procedure | SP000370 | Multiple Micronutrient Supplement | KuApps BidanKu PNC | 1 |
-| 911 | Observation | 1155968006 | Mood | KuApps BidanKu PNC | 1 |
-| 912 | Condition | 160357008 | Family history: Hypertension | KuApps BidanKu PNC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja, KuApps BidanKu Dewasa, KuApps BidanKu Lansia | 7 |
-| 913 | Procedure | 54070000 | Postpartum education | KuApps BidanKu PNC, KuApps BidanKu BBL | 2 |
-| 914 | Observation | 816159004 | Measured weight gain | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak | 3 |
-| 915 | Observation | 8287-5 | Head Occipital-frontal circumference by Tape measure | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, Kobo Buku KIA 4 - Cadre, Kobo DDTK | 5 |
-| 916 | Observation | 10199-8 | Physical findings of Head Narrative | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 6 |
-| 917 | Observation | 10192-3 | Physical findings of Back Narrative | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 6 |
-| 918 | Observation | 11388-6 | Physical findings of Buttocks Narrative | KuApps BidanKu BBL, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 5 |
-| 919 | Observation | 11400-9 | Physical findings of Genitalia Narrative | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 6 |
-| 920 | Observation | SP000889 | Frekuensi Menyusui | KuApps BidanKu BBL | 1 |
-| 921 | Observation | 300471006 | Finding of frequency of urination | KuApps BidanKu BBL | 1 |
-| 922 | Observation | 300380005 | Finding of frequency of defecation | KuApps BidanKu BBL | 1 |
-| 923 | Observation | 1144561006 | Adequate sanitation | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja | 4 |
-| 924 | Observation | 1162942008 | Access to potable water | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja | 4 |
-| 925 | Observation | 53505006 | Anal structure (body structure) | KuApps BidanKu Bayi | 1 |
-| 926 | Observation | 61432-1 | How old was sample person when he or she was first fed something other than breast milk or water [PhenX] | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 927 | Procedure | SP000693 | Pelayanan Bawah Garis Merah | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 928 | Procedure | SP000695 | PMT Pemulihan | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 929 | Observation | SP000036 | Jenis PMT | KuApps BidanKu Bayi, KuApps BidanKu Anak, SiGizi Balita Mendapat PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 6 |
-| 930 | Condition | 289084000 | Difficulty performing breastfeeding | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 931 | MedicationRequest | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 932 | MedicationDispense | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 933 | Procedure | SP000694 | Pelayanan 2T | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 934 | Observation | 3457005 | Patient referral | KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Dewasa (2x), KuApps BidanKu Lansia (2x) | 4 |
-| 935 | Observation | 1153455005 | Assessment of signs and symptoms of infection | KuApps BidanKu Bayi | 1 |
-| 936 | Observation | 1280010004 | Screening for child developmental disorder | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 937 | Observation | 252957005 | Children's hearing test | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 938 | Observation | 252963001 | Children's vision test | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
-| 939 | Procedure | 410314003 | Health promotion education, guidance, and counseling | KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja, KuApps BidanKu Dewasa, KuApps BidanKu Lansia | 5 |
-| 940 | Observation | 425260001 | Body position for height measurement | KuApps BidanKu Anak | 1 |
-| 941 | Condition | 84757009 | Epilepsy | KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja | 2 |
-| 942 | Observation | 400911007 | E test | KuApps BidanKu Anak | 1 |
-| 943 | Observation | SP000924 | Remaja memiliki Tablet Tambah Darah | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
-| 944 | Observation | 1269496002 | Complaint | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
-| 945 | Observation | 63892-4 | Have you ever been pregnant [PhenX] | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
-| 946 | Observation | 386216000 | Human parturition, function | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
-| 947 | Observation | 422256009 | Counts fingers - distance vision | KuApps BidanKu Anak Usia Sekolah dan Remaja (2x), KuApps BidanKu Dewasa (2x), KuApps BidanKu Lansia (2x) | 3 |
-| 948 | Observation | 247301006 | Finding of ability to hear whisper | KuApps BidanKu Anak Usia Sekolah dan Remaja (2x), KuApps BidanKu Dewasa (2x), KuApps BidanKu Lansia (2x) | 3 |
-| 949 | Observation | SP000658 | Perilaku Berisiko Diri Sendiri | KuApps BidanKu Dewasa, KuApps BidanKu Lansia | 2 |
-| 950 | Observation | 67744-3 | Approximately how many cigarettes did you smoke on average | KuApps BidanKu Dewasa | 1 |
-| 951 | Observation | SP000700 | Tahap Keluarga Sejahtera | KuApps BidanKu Dewasa | 1 |
-| 952 | Observation | SP000710 | Jumlah anak yang meninggal | KuApps BidanKu Dewasa | 1 |
-| 953 | Observation | 92662-6 | Current age or age at death of Family member | KuApps BidanKu Dewasa | 1 |
-| 954 | Observation | 104759008 | Iodine measurement | KuApps BidanKu Dewasa | 1 |
-| 955 | Observation | SP000706 | Pemantauan Yodium | KuApps BidanKu Dewasa | 1 |
-| 956 | Observation | SP000711 | Rencana mengganti kontrasepsi | KuApps BidanKu Dewasa | 1 |
-| 957 | Observation | SP000712 | Tanggal rencana mulai mengganti kontrasepsi | KuApps BidanKu Dewasa | 1 |
-| 958 | Observation | 304492001 | Activities of daily living assessment | KuApps BidanKu Lansia | 1 |
-| 959 | Condition | 390906007.0 | Follow-up encounter | Kuapps Spheres HT, Kuapps Spheres DM, Kuapps Spheres TB | 3 |
-| 960 | Observation | 418138009.0 | Patient condition finding | Kuapps Spheres HT, Kuapps Spheres DM | 2 |
-| 961 | Observation | 69548-6 | Genetic variant assessment | Genomics TB, Genomics Klebsiella, Genomics Dengue | 3 |
-| 962 | Observation | SP000682 | Core genome MLST [Type] in Isolate by Sequencing | Genomics Klebsiella, Genomics Dengue | 2 |
-| 963 | Observation | 86206-0 | Whole genome sequence analysis in Blood or Tissue by Molecular genetics method | Genomics Dengue | 1 |
-| 964 | Observation | 31343-7 | Dengue virus Ab [Presence] in Specimen | Genomics Dengue | 1 |
-| 965 | Observation | 14679004 | Occupation | KuApps BidanKu Tambah Pasien | 1 |
-| 966 | Observation | 87520-3 | Coverage type | KuApps BidanKu Tambah Pasien | 1 |
+| 713 | Observation | SP000160 | Tanggal Masuk Perawatan, Dukungan, dan Pengobatan (PDP) HIV | SIHEPI Rekap 3e | 1 |
+| 714 | Observation | SP000161 | Tanggal Mendapat atau Memulai ARV | SIHEPI Rekap 3e | 1 |
+| 715 | Observation | SP000162 | Sifilis Ditangani | SIHEPI Rekap 3e | 1 |
+| 716 | Observation | SP000163 | Sifilis Diobati Adekuat | SIHEPI Rekap 3e | 1 |
+| 717 | Observation | SP000164 | Hepatitis B Ditangani atau Dirujuk | SIHEPI Rekap 3e | 1 |
+| 718 | Observation | 72181-1 | HIV results shared with partner [RHEA] | SIHEPI Rekap 3e | 1 |
+| 719 | Observation | SP000165 | Pasangan Diperiksa Sifilis | SIHEPI Rekap 3e | 1 |
+| 720 | Observation | SP000166 | Jumlah Anak Dilahirkan | SIHEPI Rekap 3e | 1 |
+| 721 | Observation | SP000169 | Pemantauan Anak dari Ibu HIV | SIHEPI Rekap 3e | 1 |
+| 722 | Observation | SP000167 | Hasil Dry Blood Spot Early Infant Diagnosis Pada Usia 6-8 Minggu | SIHEPI Rekap 3e | 1 |
+| 723 | Observation | SP000168 | Hasil Konfirmasi Dry Blood Spot Early Infant Diagnosis dalam 12 Bulan | SIHEPI Rekap 3e | 1 |
+| 724 | Observation | SP000177 | Pemantauan Anak dari Ibu Sifilis | SIHEPI Rekap 3e | 1 |
+| 725 | Observation | SP000181 | Pemantauan Anak dari Ibu Hepatitis | SIHEPI Rekap 3e | 1 |
+| 726 | Observation | 121912002 | Hepatitis B virus deoxyribonucleic acid assay | SIHEPI Rekap 3e | 1 |
+| 727 | Observation | 313476009 | Hepatitis B e antigen test | SIHEPI Rekap 3e | 1 |
+| 728 | Observation | 34608000 | Alanine aminotransferase measurement | SIHEPI Rekap 3e | 1 |
+| 729 | Observation | SP000193 | Memenuhi Kriteria Pengobatan Pencegahan Hepatitis B | SIHEPI Rekap 3e | 1 |
+| 730 | Observation | SP000194 | Metode Pemeriksaan Sirosis | SIHEPI Rekap 3e | 1 |
+| 731 | Observation | SP000195 | Status Sirosis | SIHEPI Rekap 3e | 1 |
+| 732 | Observation | SP000196 | Status Pengobatan Pencegahan Hepatitis B | SIHEPI Rekap 3e | 1 |
+| 733 | Observation | SP000197 | Tanggal Pengambilan Obat Pencegahan Hepatitis B | SIHEPI Rekap 3e (4x) | 1 |
+| 734 | Observation | SP000198 | Status Akhir Pengobatan Pencegahan Hepatitis B | SIHEPI Rekap 3e | 1 |
+| 735 | Observation | 85712-8 | Expected delivery location | eKohort INC | 1 |
+| 736 | Observation | CUSTOM | – | eKohort INC (15x) | 1 |
+| 737 | Observation | 1586771000168103 | Primary healthcare service | Buku KIA Identitas dan ANC (3x) | 1 |
+| 738 | Observation | 160538000 | Religious affiliation | Buku KIA Identitas dan ANC (2x) | 1 |
+| 739 | Observation | SP001107 | Tanggal menerima buku KIA | Buku KIA Identitas dan ANC | 1 |
+| 740 | Observation | SP000674 | Fasilitas Kesehatan Tingkat Pertama (FKTP) | Buku KIA Identitas dan ANC | 1 |
+| 741 | Observation | 224098002 | Place in family order | Buku KIA Identitas dan ANC, KuApps BidanKu Tambah Pasien | 2 |
+| 742 | Observation | 726001007 | Past pregnancy history of live birth | Buku KIA Identitas dan ANC, KuApps BidanKu Dewasa | 2 |
+| 743 | Condition | 417662000 | History of clinical finding in subject | Buku KIA Identitas dan ANC | 1 |
+| 744 | Observation | SP000775 | Usia Anak terakhir | Buku KIA Identitas dan ANC | 1 |
+| 745 | Procedure | 243787009 | Antenatal screening | Buku KIA Identitas dan ANC | 1 |
+| 746 | Procedure | 55052008 | Diagnostic ultrasound of gravid uterus | Buku KIA Identitas dan ANC | 1 |
+| 747 | Observation | 20454-5 | Protein [Presence] in Urine by Test strip | Buku KIA Identitas dan ANC (3x), KuApps BidanKu ANC (2x) | 2 |
+| 748 | Observation | 25428-4 | Glucose [Presence] in Urine by Test strip | Buku KIA Identitas dan ANC, KuApps BidanKu ANC | 2 |
+| 749 | Observation | SP000676 | Pemberian TTD atau suplemen | Buku KIA Identitas dan ANC | 1 |
+| 750 | Observation | SP001100 | Triple Eliminasi | Buku KIA Identitas dan ANC | 1 |
+| 751 | Observation | 243787009 | Antenatal screening | Buku KIA Identitas dan ANC, SIM RS Narmada KIA, Kobo Buku KIA 1 - ANC | 3 |
+| 752 | Observation | SP000424 | Riwayat Perilaku Berisiko Sebelum Hamil | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC | 3 |
+| 753 | Observation | 281666001 | Family history of disorder | Buku KIA Identitas dan ANC | 1 |
+| 754 | Observation | 248910006 | Uterine cervix finding | Buku KIA Identitas dan ANC | 1 |
+| 755 | Observation | 249300001 | Urethral finding | Buku KIA Identitas dan ANC | 1 |
+| 756 | Observation | 451024007 | Inspection of vagina using vaginal speculum | Buku KIA Identitas dan ANC | 1 |
+| 757 | Observation | 364223009 | Vulva observable | Buku KIA Identitas dan ANC | 1 |
+| 758 | Observation | 271939006 | Vaginal discharge | Buku KIA Identitas dan ANC | 1 |
+| 759 | Observation | 289552002 | White vaginal discharge | Buku KIA Identitas dan ANC | 1 |
+| 760 | Observation | 450891000124109 | Past pregnancy history of complication of pregnancy, childbirth and/or puerperium | Buku KIA Identitas dan ANC | 1 |
+| 761 | Observation | 106167005 | Consciousness related finding | Buku KIA Identitas dan ANC (2x) | 1 |
+| 762 | Observation | 246875002 | Conjunctival finding | Buku KIA Identitas dan ANC (2x) | 1 |
+| 763 | Observation | 366039006 | Finding of color of sclera | Buku KIA Identitas dan ANC (2x) | 1 |
+| 764 | Observation | 106076001 | Skin finding | Buku KIA Identitas dan ANC (2x) | 1 |
+| 765 | Observation | 298378000 | Finding of neck region | Buku KIA Identitas dan ANC (2x) | 1 |
+| 766 | Observation | 116337000 | Finding of internal part of mouth | Buku KIA Identitas dan ANC (2x) | 1 |
+| 767 | Observation | 118434000 | Stomach finding | Buku KIA Identitas dan ANC (2x) | 1 |
+| 768 | Observation | 248965005 | Finding of regularity of menstrual cycle | Buku KIA Identitas dan ANC | 1 |
+| 769 | Observation | 11888-5 | Gestational age US composite estimate | Buku KIA Identitas dan ANC (3x), KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC (2x) | 3 |
+| 770 | Observation | 11781-2 | Delivery date US composite estimate | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, Kobo Buku KIA 1 - ANC (2x) | 4 |
+| 771 | Observation | SP000672 | Jumlah kantong kehamilan | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 772 | Observation | 11850-5 | Gestational sac Mean diameter US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 773 | Observation | 11957-8 | Fetal Crown Rump length US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 774 | Observation | 249042007 | Fetal heart finding | Buku KIA Identitas dan ANC | 1 |
+| 775 | Observation | 28241000119109 | Ultrasonography of fetus abnormal | Buku KIA Identitas dan ANC (2x) | 1 |
+| 776 | Observation | 20508-8 | Reagin Ab [Units/volume] in Serum or Plasma by RPR | Buku KIA Identitas dan ANC, KuApps BidanKu ANC | 2 |
+| 777 | Observation | SP000730 | Tindak lanjut hasil skrining kesehatan jiwa | Buku KIA Identitas dan ANC (2x), KuApps BidanKu ANC | 2 |
+| 778 | Observation | C54033 | Conclusion | Buku KIA Identitas dan ANC | 1 |
+| 779 | Observation | C25197 | Recommendation | Buku KIA Identitas dan ANC | 1 |
+| 780 | Observation | SP000779 | Multipara dengan kehamilan oleh pasangan baru | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 781 | Observation | 813541000000100 | Pregnancy resulting from assisted conception | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 782 | Observation | SP000780 | Umur ≥ 35 Tahun | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 783 | Observation | 102877006 | Nulliparous | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 784 | Observation | SP000781 | Multipara yang Jarak Kehamilan Sebelumnya > 10 Tahun | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 785 | Observation | 700190003 | Family history of pre-eclampsia | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 786 | Observation | 162864005 | Body mass index 30+ - obesity | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 787 | Observation | SP000782 | Multipara Dengan Riwayat Preeklampsia Sebelumnya | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 788 | Observation | 16356006 | Multiple pregnancy | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 789 | Observation | 11687002 | Gestational diabetes mellitus | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 790 | Observation | 8762007 | Chronic hypertension in obstetric context | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 791 | Observation | 90708001 | Kidney disease | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 792 | Observation | 85828009 | Autoimmune disease | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 793 | Observation | 26843008 | Antiphospholipid syndrome | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 794 | Observation | SP000783 | Mean Arterial Presure > 90 mmHg | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 795 | Observation | 29738008 | Proteinuria | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 3 |
+| 796 | Observation | SP000482 | Skrinning Preeklampsia | Buku KIA Identitas dan ANC, MMS - Pemantauan Distribusi dan Konsumsi | 2 |
+| 797 | Observation | SP001099 | Ada selisih 3 minggu atau lebih antara UK USG TM 1/HPHT dengan UK USG TM3 | Buku KIA Identitas dan ANC | 1 |
+| 798 | Observation | 404964004 | Antepartum fetal status | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 799 | Observation | 11994-1 | Placenta position US | Buku KIA Identitas dan ANC, KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC | 3 |
+| 800 | Observation | 3156-7 | Volume of Amniotic fluid | Buku KIA Identitas dan ANC, KuApps BidanKu ANC | 2 |
+| 801 | Observation | 11820-8 | Fetal Head Diameter.biparietal US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 802 | Observation | 11984-2 | Fetal Head Circumference US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 803 | Observation | 11979-2 | Fetal Abdomen Circumference US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 804 | Observation | 11963-6 | Fetal Femur diaphysis [Length] US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 805 | Observation | 11727-5 | Fetal Body weight estimated by US | Buku KIA Identitas dan ANC, Kobo Buku KIA 1 - ANC (2x) | 2 |
+| 806 | Observation | 11525-3 | US for pregnancy | Buku KIA Identitas dan ANC, SIM RS Narmada KIA | 2 |
+| 807 | Observation | 5804-0 | Protein [Mass/volume] in Urine by Test strip | Buku KIA Identitas dan ANC | 1 |
+| 808 | Observation | 306225008 | Referral to counseling service | Buku KIA Identitas dan ANC | 1 |
+| 809 | Observation | 310585007 | Delivery place planned | Buku KIA Identitas dan ANC | 1 |
+| 810 | Observation | 89241-4 | Obstetrics Note | Buku KIA Identitas dan ANC | 1 |
+| 811 | Condition | Z00.1 | Routine child health examination | Buku KIA INC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Goetoeng BBL, SIM RS Harapan Ibu BBL (4x), SIM RS At tin BBL (4x), SIM RS Nirmala BBL (4x), SIM RS PKU BBL (4x), Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Buku KIA 4 - Cadre, Kobo Neonatus Outcome v2 (3x) | 19 |
+| 812 | Observation | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | Buku KIA INC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, MMS - Konfirmasi Kelahiran dan Luaran Kehamilan, SIM RS Tripat BBL (sheet 'INC BBL'), SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS MPH BBL, SIM RS Siaga Medika BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 2 - Luaran Kehamilan | 16 |
+| 813 | Observation | 76689-9 | Sex assigned at birth | Buku KIA INC | 1 |
+| 814 | Procedure | PC000002 | Pemberian Salep Antibiotik Mata | Buku KIA INC, KuApps BidanKu BBL, SIM RS Narmada INC, SIM RS Panti Nugroho BBL, SIM RS Ummu Hani BBL, SIM RS Harapan Ibu BBL, SIM RS At tin BBL, SIM RS Nirmala BBL, SIM RS PKU BBL, Kobo Modul Neonatus, Kobo Buku KIA 3 - PNC, Kobo Neonatus Outcome v2 (3x) | 12 |
+| 815 | Observation | 85724-3 | Age of Mother --at delivery | Buku KIA INC | 1 |
+| 816 | Procedure | 73.59 | Other manually assisted delivery | Buku KIA INC, SiGizi Kohort Ibu, SIM RS Siaga Medika INC, SIM RS Goetoeng INC (3x), Kobo Modul INC | 5 |
+| 817 | Procedure | 50475006 | Foot printing of newborn infant | Buku KIA INC | 1 |
+| 818 | BodyStructure | – | – | Buku KIA INC | 1 |
+| 819 | Observation | 289530006 | Vaginal bleeding | Buku KIA PNC, KuApps BidanKu PNC | 2 |
+| 820 | Procedure | 409019001 | Postpartum care management | Buku KIA PNC | 1 |
+| 821 | Observation | 118213005 | Postpartum finding | Buku KIA PNC | 1 |
+| 822 | Observation | 167604002 | Color of stool | Buku KIA Anak (3x) | 1 |
+| 823 | Procedure | 400984005 | Congenital hypothyroidism screening test | Buku KIA Anak (4x), KuApps BidanKu BBL, KuApps BidanKu Bayi | 3 |
+| 824 | Observation | SP000023 | KIA | Buku KIA Anak, SiGizi Balita BNBA, SiGizi Balita Vitamin A | 3 |
+| 825 | Procedure | 171121004 | Human immunodeficiency virus screening | Buku KIA Anak (7x) | 1 |
+| 826 | Procedure | 99.59 | Other vaccination and inoculation | Buku KIA Anak (3x) | 1 |
+| 827 | Procedure | 171122006 | Hepatitis B screening | Buku KIA Anak (4x) | 1 |
+| 828 | Procedure | SP000296 | Skrining Penyakit Jantung Bawaan | Buku KIA Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 4 |
+| 829 | Observation | 267030001 | Yellow or jaundiced color | Buku KIA Anak (2x) | 1 |
+| 830 | Observation | 248214007 | Jaundiced appearance of face | Buku KIA Anak | 1 |
+| 831 | Observation | 710001002 | Tooth number | Buku KIA Anak | 1 |
+| 832 | Observation | 251319000 | Decayed tooth count | Buku KIA Anak | 1 |
+| 833 | Observation | 276451003 | No dental plaque | Buku KIA Anak | 1 |
+| 834 | Observation | 300240004 | Dental plaque present | Buku KIA Anak | 1 |
+| 835 | Observation | 365910001 | Weight trend finding | Buku KIA Anak (4x), SiGizi Balita BNBA, SiGizi Balita Vitamin A, SiGizi Balita Mendapat PMT 2024, SiGizi Balita Pemantauan PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Pantau (2x), SiGizi PMT 2025 BB Tidak Naik - Riwayat (2x), SiGizi PMT 2025 BB Kurang - Pantau (4x), SiGizi PMT 2025 BB Kurang - Riwayat (2x), SiGizi PMT 2025 Gizi Kurang - Pantau (8x), SiGizi PMT 2025 Gizi Kurang - Riwayat (2x) | 11 |
+| 836 | Observation | 1153598007 | Weight for length z score | Buku KIA Anak (2x), KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak | 4 |
+| 837 | Observation | 71773-6 | Mycobacterium tuberculosis stimulated gamma interferon [Interpretation] in Blood Qualitative | SITB TB 15, SITB TB 15P (2x) | 2 |
+| 838 | Observation | SP000723 | Pemeriksaan TBST | SITB TB 15, SITB TB 15P (2x) | 2 |
+| 839 | Condition | 1237025001 | At increased risk of exposure to Mycobacterium tuberculosis complex | SITB TB 15, SITB TB 15P | 2 |
+| 840 | Immunization | VG45 | – | ASIK Kohort Bayi (4x), ASIK Kohort Baduta, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 4 |
+| 841 | Immunization | VG19 | – | ASIK Kohort Bayi, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 3 |
+| 842 | Immunization | VG89 | – | ASIK Kohort Bayi (6x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (6x) | 3 |
+| 843 | Immunization | VG122 | – | ASIK Kohort Bayi (3x), Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (3x) | 3 |
+| 844 | Immunization | VG152 | – | ASIK Kohort Bayi (2x), ASIK Kohort Baduta, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (3x) | 4 |
+| 845 | Immunization | VG129 | – | ASIK Kohort Bayi, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku | 3 |
+| 846 | Immunization | VG03 | – | ASIK Kohort Bayi, ASIK Kohort Baduta, Kobo Buku KIA 4 - Cadre, Kobo Buku KIA 5 - Vaksinatorku (2x) | 4 |
+| 847 | Observation | SP000699 | Kelompok Dasawisma | KuApps BidanKu ANC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak | 4 |
+| 848 | Observation | SP000798 | Usia kehamilan saat melakukan pendaftaran posyandu | KuApps BidanKu ANC | 1 |
+| 849 | Observation | SP000713 | Bulan Pendaftaran Posyandu | KuApps BidanKu ANC | 1 |
+| 850 | Observation | 1285244000 | Mean arterial pressure | KuApps BidanKu ANC, KuApps BidanKu PNC | 2 |
+| 851 | Observation | 250554003 | Measurement of oxygen saturation at periphery | KuApps BidanKu ANC | 1 |
+| 852 | Condition | 68154008 | Chronic cough | KuApps BidanKu ANC | 1 |
+| 853 | Observation | 416471007 | Family history of clinical finding | KuApps BidanKu ANC | 1 |
+| 854 | Observation | 417662000 | History of clinical finding in subject | KuApps BidanKu ANC | 1 |
+| 855 | Observation | SP000412 | Tanda Bahaya Kehamilan | KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC (2x) | 2 |
+| 856 | Condition | 86406008 | Human immunodeficiency virus infection | KuApps BidanKu ANC | 1 |
+| 857 | Observation | SP000510 | Mendapat Makanan Bergizi Gratis (MBG) bulan ini | KuApps BidanKu ANC, SiGizi Balita BNBA | 2 |
+| 858 | Observation | SP000955 | Mengonsumsi tablet tambah darah dalam 24 jam terakhir | KuApps BidanKu ANC | 1 |
+| 859 | Observation | SP000157 | Obat Diabetes Mellitus | KuApps BidanKu ANC, SIM RS Harapan Ibu ANC, SIM RS At tin ANC, SIM RS Nirmala ANC, SIM RS PKU ANC | 5 |
+| 860 | Observation | 1156096005 | Past pregnancy history of complication occurring during labor and delivery | KuApps BidanKu ANC | 1 |
+| 861 | Observation | 17566005 | Class in prenatal exercises | KuApps BidanKu ANC | 1 |
+| 862 | Observation | 52829-9 | Place of service | KuApps BidanKu ANC | 1 |
+| 863 | Observation | SP000764 | Pendamping kelas ibu hamil | KuApps BidanKu ANC | 1 |
+| 864 | MedicationRequest | 91000488 | Iodine | KuApps BidanKu ANC | 1 |
+| 865 | MedicationDispense | 91000488 | Iodine | KuApps BidanKu ANC | 1 |
+| 866 | Observation | 171126009 | Tuberculosis screening | KuApps BidanKu ANC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja, KuApps BidanKu Dewasa | 6 |
+| 867 | Observation | SP000799 | Hasil skrining Preeklampsia | KuApps BidanKu ANC, KuApps BidanKu Kumpulan Skrinning | 2 |
+| 868 | Observation | 1237486008 | Pale discoloration of entire skin of body | KuApps BidanKu ANC | 1 |
+| 869 | Observation | 106048009 | Respiratory finding | KuApps BidanKu ANC | 1 |
+| 870 | Procedure | 87431004 | Dilation of cervical canal | KuApps BidanKu ANC | 1 |
+| 871 | Observation | 289825001 | Diameter of cervical dilatation | KuApps BidanKu ANC | 1 |
+| 872 | Observation | 267038008 | Edema | KuApps BidanKu ANC, KuApps BidanKu PNC | 2 |
+| 873 | Observation | 44972-8 | Edema site | KuApps BidanKu ANC, Kobo Buku KIA 1 - ANC | 2 |
+| 874 | Observation | 423484008 | Grade of edema | KuApps BidanKu ANC | 1 |
+| 875 | Observation | SP000729 | Sudah menjadwalkan pemeriksaan USG terdekat | KuApps BidanKu ANC | 1 |
+| 876 | Observation | SP000892 | Metode pemantauan kepatuhan konsumsi MMS | KuApps BidanKu ANC | 1 |
+| 877 | Observation | 27342004 | Anemia of pregnancy | KuApps BidanKu ANC | 1 |
+| 878 | MedicationDispense | 93027786 | MMS Multivitamin Ibu Hamil Tablet Salut Selaput (Umum) | KuApps BidanKu ANC (2x) | 1 |
+| 879 | Observation | SP000905 | Jumlah tablet MMS yang seharusnya dikonsumsi | KuApps BidanKu ANC (2x) | 1 |
+| 880 | Observation | SP000906 | Jumlah tablet MMS yang sudah dikonsumsi | KuApps BidanKu ANC (4x) | 1 |
+| 881 | Observation | SP000907 | Hasil Timbangan MMS (gram) | KuApps BidanKu ANC | 1 |
+| 882 | Observation | SP000908 | Jumlah tablet tersisa | KuApps BidanKu ANC | 1 |
+| 883 | Observation | SP000909 | Jumlah MMS telah dikonsumsi berdasarkan penimbangan | KuApps BidanKu ANC | 1 |
+| 884 | Observation | SP000911 | Total MMS yang telah dikonsumsi berdasarkan hasil penimbangan dan dikurangi MMS yang hilang | KuApps BidanKu ANC | 1 |
+| 885 | Observation | SP000912 | Jumlah tablet MMS yang seharusnya dikonsumsi pada kemasan blister terakhir | KuApps BidanKu ANC | 1 |
+| 886 | Observation | SP000913 | Jumlah tablet MMS yang sudah dikonsumsi pada kemasan blister terakhir | KuApps BidanKu ANC | 1 |
+| 887 | Observation | SP000915 | Jumlah konsumsi MMS pada kemasan blister | KuApps BidanKu ANC | 1 |
+| 888 | Observation | SP000914 | Jumlah tablet MMS yang telah dikonsumsi ibu hamil berdasarkan kartu pemantauan | KuApps BidanKu ANC | 1 |
+| 889 | Observation | SP000900 | Jumlah TTD yang seharusnya sudah dikonsumsi | KuApps BidanKu ANC | 1 |
+| 890 | Observation | SP000901 | Jumlah TTD yang seharusnya dikonsumsi pada kemasan terakhir | KuApps BidanKu ANC | 1 |
+| 891 | Observation | SP000902 | Jumlah TTD yang telah dikonsumsi bulan ini | KuApps BidanKu ANC | 1 |
+| 892 | Observation | SP000903 | Jumlah TTD yang sudah dikonsumsi dari awal hingga hari ini | KuApps BidanKu ANC | 1 |
+| 893 | Observation | SP000904 | Ibu mengonsumsi TTD setiap hari | KuApps BidanKu ANC | 1 |
+| 894 | Observation | 182948007 | Administration of prophylactic vitamin during pregnancy | KuApps BidanKu ANC | 1 |
+| 895 | Condition | SP000899 | Ibu sakit dalam kurun waktu 2 minggu terakhir | KuApps BidanKu ANC | 1 |
+| 896 | Observation | 715035002 | Does take medication | KuApps BidanKu ANC | 1 |
+| 897 | Observation | 55607006 | Problem | KuApps BidanKu ANC | 1 |
+| 898 | Condition | 169943008 | Mother less than 20 years old | KuApps BidanKu ANC | 1 |
+| 899 | MedicationRequest | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | KuApps BidanKu ANC, KuApps BidanKu Anak Usia Sekolah dan Remaja | 2 |
+| 900 | Observation | 112648003 | Massive hemorrhage | KuApps BidanKu PNC | 1 |
+| 901 | Condition | 112648003 | Massive hemorrhage | KuApps BidanKu PNC | 1 |
+| 902 | Observation | 91175000 | Seizure | KuApps BidanKu PNC | 1 |
+| 903 | Condition | 91175000 | Seizure | KuApps BidanKu PNC | 1 |
+| 904 | Observation | 27942005 | Shock | KuApps BidanKu PNC | 1 |
+| 905 | Condition | 27942005 | Shock | KuApps BidanKu PNC | 1 |
+| 906 | Observation | 413711008 | Breastfeeding (infant) | KuApps BidanKu PNC, KuApps BidanKu Bayi, KuApps BidanKu Anak | 3 |
+| 907 | Condition | 58703003 | Postpartum depression | KuApps BidanKu PNC | 1 |
+| 908 | Procedure | SP000008 | Pemberian Tablet Tambah Darah | KuApps BidanKu PNC | 1 |
+| 909 | Procedure | SP000370 | Multiple Micronutrient Supplement | KuApps BidanKu PNC | 1 |
+| 910 | Observation | 1155968006 | Mood | KuApps BidanKu PNC | 1 |
+| 911 | Condition | 160357008 | Family history: Hypertension | KuApps BidanKu PNC, KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja, KuApps BidanKu Dewasa, KuApps BidanKu Lansia | 7 |
+| 912 | Procedure | 54070000 | Postpartum education | KuApps BidanKu PNC, KuApps BidanKu BBL | 2 |
+| 913 | Observation | 816159004 | Measured weight gain | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak | 3 |
+| 914 | Observation | 8287-5 | Head Occipital-frontal circumference by Tape measure | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, Kobo Buku KIA 4 - Cadre, Kobo DDTK | 5 |
+| 915 | Observation | 10199-8 | Physical findings of Head Narrative | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 6 |
+| 916 | Observation | 10192-3 | Physical findings of Back Narrative | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 6 |
+| 917 | Observation | 11388-6 | Physical findings of Buttocks Narrative | KuApps BidanKu BBL, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 5 |
+| 918 | Observation | 11400-9 | Physical findings of Genitalia Narrative | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, SIM RS MPH BBL, SIM RS Siaga Medika BBL, Kobo Modul Neonatus | 6 |
+| 919 | Observation | SP000889 | Frekuensi Menyusui | KuApps BidanKu BBL | 1 |
+| 920 | Observation | 300471006 | Finding of frequency of urination | KuApps BidanKu BBL | 1 |
+| 921 | Observation | 300380005 | Finding of frequency of defecation | KuApps BidanKu BBL | 1 |
+| 922 | Observation | 1144561006 | Adequate sanitation | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja | 4 |
+| 923 | Observation | 1162942008 | Access to potable water | KuApps BidanKu BBL, KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja | 4 |
+| 924 | Observation | 53505006 | Anal structure (body structure) | KuApps BidanKu Bayi | 1 |
+| 925 | Observation | 61432-1 | How old was sample person when he or she was first fed something other than breast milk or water [PhenX] | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 926 | Procedure | SP000693 | Pelayanan Bawah Garis Merah | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 927 | Procedure | SP000695 | PMT Pemulihan | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 928 | Observation | SP000036 | Jenis PMT | KuApps BidanKu Bayi, KuApps BidanKu Anak, SiGizi Balita Mendapat PMT 2024, SiGizi PMT 2025 BB Tidak Naik - Survey, SiGizi PMT 2025 BB Kurang - Survey, SiGizi PMT 2025 Gizi Kurang - Survey | 6 |
+| 929 | Condition | 289084000 | Difficulty performing breastfeeding | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 930 | MedicationRequest | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 931 | MedicationDispense | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 932 | Procedure | SP000694 | Pelayanan 2T | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 933 | Observation | 3457005 | Patient referral | KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Dewasa (2x), KuApps BidanKu Lansia (2x) | 4 |
+| 934 | Observation | 1153455005 | Assessment of signs and symptoms of infection | KuApps BidanKu Bayi | 1 |
+| 935 | Observation | 1280010004 | Screening for child developmental disorder | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 936 | Observation | 252957005 | Children's hearing test | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 937 | Observation | 252963001 | Children's vision test | KuApps BidanKu Bayi, KuApps BidanKu Anak | 2 |
+| 938 | Procedure | 410314003 | Health promotion education, guidance, and counseling | KuApps BidanKu Bayi, KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja, KuApps BidanKu Dewasa, KuApps BidanKu Lansia | 5 |
+| 939 | Observation | 425260001 | Body position for height measurement | KuApps BidanKu Anak | 1 |
+| 940 | Condition | 84757009 | Epilepsy | KuApps BidanKu Anak, KuApps BidanKu Anak Usia Sekolah dan Remaja | 2 |
+| 941 | Observation | 400911007 | E test | KuApps BidanKu Anak | 1 |
+| 942 | Observation | SP000924 | Remaja memiliki Tablet Tambah Darah | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
+| 943 | Observation | 1269496002 | Complaint | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
+| 944 | Observation | 63892-4 | Have you ever been pregnant [PhenX] | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
+| 945 | Observation | 386216000 | Human parturition, function | KuApps BidanKu Anak Usia Sekolah dan Remaja | 1 |
+| 946 | Observation | 422256009 | Counts fingers - distance vision | KuApps BidanKu Anak Usia Sekolah dan Remaja (2x), KuApps BidanKu Dewasa (2x), KuApps BidanKu Lansia (2x) | 3 |
+| 947 | Observation | 247301006 | Finding of ability to hear whisper | KuApps BidanKu Anak Usia Sekolah dan Remaja (2x), KuApps BidanKu Dewasa (2x), KuApps BidanKu Lansia (2x) | 3 |
+| 948 | Observation | SP000658 | Perilaku Berisiko Diri Sendiri | KuApps BidanKu Dewasa, KuApps BidanKu Lansia | 2 |
+| 949 | Observation | 67744-3 | Approximately how many cigarettes did you smoke on average | KuApps BidanKu Dewasa | 1 |
+| 950 | Observation | SP000700 | Tahap Keluarga Sejahtera | KuApps BidanKu Dewasa | 1 |
+| 951 | Observation | SP000710 | Jumlah anak yang meninggal | KuApps BidanKu Dewasa | 1 |
+| 952 | Observation | 92662-6 | Current age or age at death of Family member | KuApps BidanKu Dewasa | 1 |
+| 953 | Observation | 104759008 | Iodine measurement | KuApps BidanKu Dewasa | 1 |
+| 954 | Observation | SP000706 | Pemantauan Yodium | KuApps BidanKu Dewasa | 1 |
+| 955 | Observation | SP000711 | Rencana mengganti kontrasepsi | KuApps BidanKu Dewasa | 1 |
+| 956 | Observation | SP000712 | Tanggal rencana mulai mengganti kontrasepsi | KuApps BidanKu Dewasa | 1 |
+| 957 | Observation | 304492001 | Activities of daily living assessment | KuApps BidanKu Lansia | 1 |
+| 958 | Condition | 390906007.0 | Follow-up encounter | Kuapps Spheres HT, Kuapps Spheres DM, Kuapps Spheres TB | 3 |
+| 959 | Observation | 418138009.0 | Patient condition finding | Kuapps Spheres HT, Kuapps Spheres DM | 2 |
+| 960 | Observation | 69548-6 | Genetic variant assessment | Genomics TB, Genomics Klebsiella, Genomics Dengue | 3 |
+| 961 | Observation | SP000682 | Core genome MLST [Type] in Isolate by Sequencing | Genomics Klebsiella, Genomics Dengue | 2 |
+| 962 | Observation | 86206-0 | Whole genome sequence analysis in Blood or Tissue by Molecular genetics method | Genomics Dengue | 1 |
+| 963 | Observation | 31343-7 | Dengue virus Ab [Presence] in Specimen | Genomics Dengue | 1 |
+| 964 | Observation | 14679004 | Occupation | KuApps BidanKu Tambah Pasien | 1 |
+| 965 | Observation | 87520-3 | Coverage type | KuApps BidanKu Tambah Pasien | 1 |
+| 966 | Consent | – | – | KuApps BidanKu Tambah Pasien, MMS - Informed Consent (3x), Kobo Neonatus Outcome v2 | 3 |
 | 967 | Observation | SP000462 | Ibu hamil sudah membuat rencana cara pergi ke rumah sakit untuk persalinan | KuApps BidanKu Daftar Kehamilan | 1 |
 | 968 | Observation | SP000497 | Rencana moda transportasi yang akan digunakan untuk persalinan di fasilitas kesehatan | KuApps BidanKu Daftar Kehamilan | 1 |
 | 969 | Observation | SP000463 | Ibu hamil punya dukungan keluarga untuk rencana persalinan | KuApps BidanKu Daftar Kehamilan | 1 |

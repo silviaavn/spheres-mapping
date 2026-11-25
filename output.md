@@ -44,7 +44,6 @@ Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **ASIK - CKG Dewasa Laki-laki** → [`output/asik-ckg-dewasa-laki.md`](output/asik-ckg-dewasa-laki.md) (sumber: [`mapping/phdt-data-dictionary-asik-ckg-dewasa-laki.csv`](mapping/phdt-data-dictionary-asik-ckg-dewasa-laki.csv), ⚠️ belum comprehensive review)
 - **ASIK - CKG Dewasa Perempuan** → [`output/asik-ckg-dewasa-perempuan.md`](output/asik-ckg-dewasa-perempuan.md) (sumber: [`mapping/phdt-data-dictionary-asik-ckg-dewasa-perempuan.csv`](mapping/phdt-data-dictionary-asik-ckg-dewasa-perempuan.csv), ⚠️ belum comprehensive review)
 - **ASIK - CKG Lansia** (versi 27 April 2026 dipakai; 2026 dan 2025 tersedia) → [`output/asik-ckg-lansia.md`](output/asik-ckg-lansia.md) · [2026](output/asik-ckg-lansia-2026.md) · [2025](output/asik-ckg-lansia-2025.md) (sumber: [`mapping/phdt-data-dictionary-asik-ckg-lansia.csv`](mapping/phdt-data-dictionary-asik-ckg-lansia.csv), ⚠️ belum comprehensive review)
-- **Informed Consent** → [`output/informed-consent.md`](output/informed-consent.md) (sumber: [`mapping/phdt-data-dictionary-informed-consent.csv`](mapping/phdt-data-dictionary-informed-consent.csv), ⚠️ belum comprehensive review)
 - **SiHepi - Form Rekap 3e** → [`output/sihepi-rekap-3e.md`](output/sihepi-rekap-3e.md) (sumber: [`mapping/phdt-data-dictionary-sihepi-rekap-3e.csv`](mapping/phdt-data-dictionary-sihepi-rekap-3e.csv), ⚠️ belum comprehensive review)
 - **eKohort - Pelayanan Ibu ANC** (Final Format dipakai; file eKohort lama tersedia) → [`output/ekohort-anc.md`](output/ekohort-anc.md) · [lama](output/ekohort-anc-lama.md) (sumber: [`mapping/phdt-data-dictionary-ekohort-anc.csv`](mapping/phdt-data-dictionary-ekohort-anc.csv), ⚠️ belum comprehensive review)
 - **eKohort - Pelayanan Ibu Bersalin (INC)** → [`output/ekohort-inc.md`](output/ekohort-inc.md) (sumber: [`mapping/phdt-data-dictionary-ekohort-inc.csv`](mapping/phdt-data-dictionary-ekohort-inc.csv), ⚠️ belum comprehensive review)
@@ -242,7 +241,6 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | ASIK CKG Dewasa Laki-laki | 123 | 61 | 278 | 9 |
 | ASIK CKG Dewasa Perempuan | 130 | 66 | 299 | 9 |
 | ASIK CKG Lansia (27 Apr 2026) | 188 | 101 | 567 | 20 |
-| Informed Consent | 27 | 3 | 8 | 8 |
 | SIHEPI Rekap 3e | 93 | 65 | 118 | 49 |
 | eKohort ANC | 34 | 43 | 78 | 0 |
 | eKohort INC | 84 | 58 | 82 | 0 |
@@ -370,14 +368,14 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Kobo Neonatus Outcome v2 | 208 | 89 | 276 | 58 |
 | Kobo DDTK | 20 | 11 | 10 | 0 |
 | Master Data (Prerequisite) | 15 | 0 | 15 | 9 |
-| **Total (non-unik)** | **11043** | **7347** | **19485** | **2851** |
-| **Total unik** | – | **1431** | **4357** | **1027** |
-| Selisih (dipakai ulang) | – | 5916 | 15128 | 1824 |
+| **Total (non-unik)** | **11016** | **7344** | **19477** | **2843** |
+| **Total unik** | – | **1431** | **4349** | **1019** |
+| Selisih (dipakai ulang) | – | 5913 | 15128 | 1824 |
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 1862 |
-| http://terminology.kemkes.go.id/sp | 1027 |
+| http://terminology.kemkes.go.id/sp | 1019 |
 | http://loinc.org | 503 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 338 |
 | http://hl7.org/fhir/sid/icd-10 | 120 |
@@ -425,7 +423,7 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | https://www.ncbi.nlm.nih.gov/gene | 1 |
 | Viral Consensus Genome Sequence | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
-| **Total** | **4357** |
+| **Total** | **4349** |
 
 ---
 
@@ -531,7 +529,6 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | ASIK CKG Dewasa Laki-laki | 53 | – | 1 | 1 | 1 | 1 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
 | ASIK CKG Dewasa Perempuan | 58 | – | 1 | 1 | 1 | 1 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 66 |
 | ASIK CKG Lansia (27 Apr 2026) | 90 | 1 | 1 | – | – | – | – | 7 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 101 |
-| Informed Consent | – | – | – | – | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 3 |
 | SIHEPI Rekap 3e | 44 | 1 | 1 | 4 | 3 | 3 | 5 | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 65 |
 | eKohort ANC | 20 | 1 | 1 | 5 | 5 | 5 | 2 | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 43 |
 | eKohort INC | 46 | 4 | 2 | 1 | – | – | – | – | – | 1 | 1 | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 58 |
@@ -659,7 +656,7 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | Kobo Neonatus Outcome v2 | 60 | 6 | 3 | – | – | – | 3 | 1 | 4 | 1 | 1 | 4 | – | 3 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 2 | – | – | – | – | 89 |
 | Kobo DDTK | 4 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
 | Master Data (Prerequisite) | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 0 |
-| **Total (non-unik)** | **4054** | **665** | **378** | **341** | **276** | **233** | **209** | **189** | **164** | **150** | **144** | **109** | **89** | **82** | **62** | **46** | **40** | **26** | **23** | **18** | **10** | **7** | **7** | **6** | **4** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **7347** |
+| **Total (non-unik)** | **4054** | **665** | **378** | **341** | **276** | **233** | **209** | **189** | **164** | **150** | **143** | **109** | **89** | **81** | **62** | **46** | **40** | **26** | **23** | **18** | **10** | **7** | **7** | **5** | **4** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **7344** |
 | **Total unik** | **915** | **201** | **98** | **34** | **109** | **7** | **17** | **1** | **1** | **1** | **1** | **1** | **6** | **1** | **10** | **11** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1431** |
 
 ---
@@ -733,6 +730,7 @@ Perbedaan antar versi:
 ---
 
 ## Log perubahan output
+- 2026-11-25 (5): Informed Consent (#78) dikeluarkan dari konsolidasi (bukan aplikasi tersendiri; file mapping/output tetap ada di repo). Total non-unik 7344 payload / 19477 code; unik 1431 / 4349.
 - 2026-11-25 (4): Tambah 3 form SKI (#297–299) dan ganti SITB TB 16K dengan versi revised (21/35 → 24/38). Total non-unik 7347 payload / 19485 code; unik 1431 / 4357.
 - 2026-11-25 (3): Tambah form Master Data (Prerequisite): 0 payload / 15 code. Total non-unik 7313 payload / 19314 code; unik 1420 / 4272.
 - 2026-11-25: Tambah Kobo SDIDTK (#103) dan 6 form MMS (#291–296). Total non-unik 7313 payload / 17518 code; unik 1420 / 4040. ⚠️ belum comprehensive review.

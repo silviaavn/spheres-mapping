@@ -40,7 +40,6 @@ FORMS = [("Maternal Outcome", "kobo-data-dictionary-maternal-outcome"), ("Raffle
          ("ASIK CKG Dewasa Laki-laki", "phdt-data-dictionary-asik-ckg-dewasa-laki"),
          ("ASIK CKG Dewasa Perempuan", "phdt-data-dictionary-asik-ckg-dewasa-perempuan"),
          ("ASIK CKG Lansia (27 Apr 2026)", "phdt-data-dictionary-asik-ckg-lansia"),
-         ("Informed Consent", "phdt-data-dictionary-informed-consent"),
          ("SIHEPI Rekap 3e", "phdt-data-dictionary-sihepi-rekap-3e"),
          ("eKohort ANC", "phdt-data-dictionary-ekohort-anc"),
          ("eKohort INC", "phdt-data-dictionary-ekohort-inc"),
