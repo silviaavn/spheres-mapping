@@ -939,6 +939,25 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 | #119 Genomics - Klebsiella | 33 / 38 | 10 / 30 | 2 |
 | #120 Genomics - Dengue | 30 / 35 | 12 / 22 | 2 |
 
+## Kobo SDIDTK (#103) dan MMS (#291–296)
+
+⚠️ belum comprehensive review (tanpa daftar variabel BQ).
+
+| Form | Tracker | Variabel | Payload | Code |
+|---|---|---|---|---|
+| Kobo SDIDTK | #103 | 38 | 35 | 68 |
+| MMS Pemantauan Distribusi dan Konsumsi | #291 | 95 | 22 | 51 |
+| MMS Informed Consent | #292 | 35 | 8 | 5 |
+| MMS Master Database Responden | #293 | 38 | 16 | 33 |
+| MMS Survei Sosio Ekonomi | #294 | 101 | 22 | 200 |
+| MMS Survei Demografi (Listing Responden) | #295 | 30 | 12 | 20 |
+| MMS Konfirmasi Kelahiran dan Luaran Kehamilan | #296 | 72 | 50 | 193 |
+
+**Asumsi**
+- KM1: nomor tracker #291–296 dipilih sendiri (lanjutan #283); MMS belum ada baris di Sheet tracker, perlu ditambah manual.
+- KM2: MMS = 1 sheet 1 form (6 sheet dari `MMS_Data_Dictionary.xlsx`). SDIDTK = CSV `Copy_of_SDIDTK`.
+- KM3: baris "Variabel di luar payload" tanpa variabel BQ (mis. Asal Puskesmas, Posyandu, Tanggal lahir diketahui?) adalah isian kondisional atau lookup, bukan variabel BQ; tidak ditambah payload.
+
 ## Log perubahan revisi
 - 2026-11-24: Tambah bagian SISMAL (Regmal 1 20/54, Validasi Indigenous 7/12): asumsi SM1–SM4, temuan SM-1–SM-5, catatan pipeline P44–P45. Verifikasi Uji Silang tidak dihitung (isi salinan TB-TPT). ⚠️ belum comprehensive review.
 - 2026-11-24: Tambah bagian ASIK CKG (5 form, banyak versi), Informed Consent, SiHepi Rekap 3e, eKohort ANC / INC: 9 form dipakai + 5 versi lain (asumsi CK1–CK5, IC1, EK1–EK2, SH1; temuan CK-1–CK-4, IC-1, EK-1–EK-3, SH-1). ⚠️ belum comprehensive review.
@@ -978,3 +997,4 @@ Perubahan di dictionary yang harus diikuti di pipeline (ingestion BQ / FHIR conv
 - 2026-11-24 (4): Tambah bagian Buku KIA 2024 (4 form).
 - 2026-11-24 (5): Tambah bagian KuApps / Genomics / TB 15 / ASIK Kohort (21 form).
 - 2026-11-25: Tambah 7 sheet BidanKu sebagai baris tracker #284–290.
+- 2026-11-25 (2): Tambah bagian Kobo SDIDTK (#103) dan MMS (#291–296).

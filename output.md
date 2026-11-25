@@ -77,6 +77,13 @@ Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **KuApps BidanKu - Skrining Rumah Tangga** (tracker #288) → [`output/kuapps-bidanku-skrining-rt.md`](output/kuapps-bidanku-skrining-rt.md) (sumber: [`mapping/phdt-data-dictionary-kuapps-bidanku-skrining-rt.csv`](mapping/phdt-data-dictionary-kuapps-bidanku-skrining-rt.csv), sheet `Skrining Rumah Tangga`, ⚠️ belum comprehensive review)
 - **KuApps BidanKu - Imunisasi** (tracker #289) → [`output/kuapps-bidanku-imunisasi.md`](output/kuapps-bidanku-imunisasi.md) (sumber: [`mapping/phdt-data-dictionary-kuapps-bidanku-imunisasi.csv`](mapping/phdt-data-dictionary-kuapps-bidanku-imunisasi.csv), sheet `Imunisasi`, ⚠️ belum comprehensive review)
 - **KuApps BidanKu - Kumpulan Skrinning** (tracker #290) → [`output/kuapps-bidanku-kumpulan-skrining.md`](output/kuapps-bidanku-kumpulan-skrining.md) (sumber: [`mapping/phdt-data-dictionary-kuapps-bidanku-kumpulan-skrining.csv`](mapping/phdt-data-dictionary-kuapps-bidanku-kumpulan-skrining.csv), sheet `Kumpulan Skrinning`, ⚠️ belum comprehensive review)
+- **Kobo SDIDTK** (tracker #103) → [`output/kobo-sdidtk.md`](output/kobo-sdidtk.md) (sumber: [`mapping/phdt-data-dictionary-kobo-sdidtk.csv`](mapping/phdt-data-dictionary-kobo-sdidtk.csv), ⚠️ belum comprehensive review)
+- **MMS - Pemantauan Distribusi dan Konsumsi** (tracker #291) → [`output/mms-distribusi-konsumsi.md`](output/mms-distribusi-konsumsi.md) (sumber: [`mapping/phdt-data-dictionary-mms-distribusi-konsumsi.csv`](mapping/phdt-data-dictionary-mms-distribusi-konsumsi.csv), ⚠️ belum comprehensive review)
+- **MMS - Informed Consent** (tracker #292) → [`output/mms-informed-consent.md`](output/mms-informed-consent.md) (sumber: [`mapping/phdt-data-dictionary-mms-informed-consent.csv`](mapping/phdt-data-dictionary-mms-informed-consent.csv), ⚠️ belum comprehensive review)
+- **MMS - Master Database Responden** (tracker #293) → [`output/mms-master-responden.md`](output/mms-master-responden.md) (sumber: [`mapping/phdt-data-dictionary-mms-master-responden.csv`](mapping/phdt-data-dictionary-mms-master-responden.csv), ⚠️ belum comprehensive review)
+- **MMS - Survei Sosio Ekonomi** (tracker #294) → [`output/mms-sosio-ekonomi.md`](output/mms-sosio-ekonomi.md) (sumber: [`mapping/phdt-data-dictionary-mms-sosio-ekonomi.csv`](mapping/phdt-data-dictionary-mms-sosio-ekonomi.csv), ⚠️ belum comprehensive review)
+- **MMS - Survei Demografi (Listing Responden)** (tracker #295) → [`output/mms-demografi.md`](output/mms-demografi.md) (sumber: [`mapping/phdt-data-dictionary-mms-demografi.csv`](mapping/phdt-data-dictionary-mms-demografi.csv), ⚠️ belum comprehensive review)
+- **MMS - Konfirmasi Kelahiran dan Luaran Kehamilan** (tracker #296) → [`output/mms-konfirmasi-kelahiran.md`](output/mms-konfirmasi-kelahiran.md) (sumber: [`mapping/phdt-data-dictionary-mms-konfirmasi-kelahiran.csv`](mapping/phdt-data-dictionary-mms-konfirmasi-kelahiran.csv), ⚠️ belum comprehensive review)
 - **SIM RS - Tripat ANC** (tracker #228) → [`output/rs-tripat-anc.md`](output/rs-tripat-anc.md) (sumber: [`mapping/phdt-data-dictionary-rs-tripat-anc.csv`](mapping/phdt-data-dictionary-rs-tripat-anc.csv), sheet `Mapping ANC Tripat` di `PHDT_Data_Rumah_Sakit.xlsx`, ⚠️ belum comprehensive review)
 - **SIM RS - Tripat BBL (sheet 'INC BBL')** (tracker #231) → [`output/rs-tripat-bbl.md`](output/rs-tripat-bbl.md) (sumber: [`mapping/phdt-data-dictionary-rs-tripat-bbl.csv`](mapping/phdt-data-dictionary-rs-tripat-bbl.csv), sheet `Mapping INC BBL Tripat` di `PHDT_Data_Rumah_Sakit.xlsx`, ⚠️ belum comprehensive review)
 - **SIM RS - Tripat PNC** (tracker #230) → [`output/rs-tripat-pnc.md`](output/rs-tripat-pnc.md) (sumber: [`mapping/phdt-data-dictionary-rs-tripat-pnc.csv`](mapping/phdt-data-dictionary-rs-tripat-pnc.csv), sheet `Mapping PNC Tripat` di `PHDT_Data_Rumah_Sakit.xlsx`, ⚠️ belum comprehensive review)
@@ -265,6 +272,13 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | KuApps BidanKu Skrining Rumah Tangga | 13 | 2 | 0 | 0 |
 | KuApps BidanKu Imunisasi | 24 | 23 | 52 | 0 |
 | KuApps BidanKu Kumpulan Skrinning | 81 | 23 | 26 | 13 |
+| Kobo SDIDTK | 38 | 35 | 68 | 10 |
+| MMS - Pemantauan Distribusi dan Konsumsi | 95 | 22 | 51 | 25 |
+| MMS - Informed Consent | 35 | 8 | 5 | 0 |
+| MMS - Master Database Responden | 38 | 16 | 33 | 20 |
+| MMS - Survei Sosio Ekonomi | 101 | 22 | 200 | 145 |
+| MMS - Survei Demografi (Listing Responden) | 30 | 12 | 20 | 14 |
+| MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | 72 | 50 | 193 | 18 |
 | SiGizi Balita BNBA | 33 | 24 | 48 | 10 |
 | SiGizi Balita Vitamin A | 14 | 22 | 47 | 9 |
 | SiGizi Balita Mendapat PMT 2024 | 30 | 15 | 44 | 14 |
@@ -348,9 +362,9 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | Kobo Neonatus Outcome | 25 | 14 | 25 | 6 |
 | Kobo Neonatus Outcome v2 | 208 | 89 | 239 | 57 |
 | Kobo DDTK | 20 | 11 | 10 | 0 |
-| **Total (non-unik)** | **10436** | **7148** | **16948** | **1940** |
-| **Total unik** | – | **1399** | **3815** | **727** |
-| Selisih (dipakai ulang) | – | 5749 | 13133 | 1213 |
+| **Total (non-unik)** | **10845** | **7313** | **17518** | **2172** |
+| **Total unik** | – | **1420** | **4040** | **860** |
+| Selisih (dipakai ulang) | – | 5893 | 13478 | 1312 |
 
 ---
 
@@ -360,12 +374,12 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 1720 |
-| http://terminology.kemkes.go.id/sp | 727 |
-| http://loinc.org | 488 |
+| http://snomed.info/sct | 1780 |
+| http://terminology.kemkes.go.id/sp | 860 |
+| http://loinc.org | 492 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 318 |
 | http://hl7.org/fhir/sid/icd-10 | 120 |
-|  | 82 |
+|  | 86 |
 | http://hl7.org/fhir/sid/icd-9-cm | 52 |
 | http://terminology.kemkes.go.id | 48 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 37 |
@@ -375,15 +389,16 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 20 |
 | http://hl7.org/fhir/sid/cvx | 20 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
+| http://terminology.kemkes.go.id/CodeSystem/icd-10-mm | 15 |
+| http://terminology.kemkes.go.id/CodeSystem/icd-10-pm | 12 |
+| http://sys-ids.kemkes.go.id/kf | 11 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 10 |
-| http://sys-ids.kemkes.go.id/kf | 9 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 7 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 7 |
 | https://loinc.org | 7 |
 | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | 7 |
 | http://terminology.hl7.org/CodeSystem/admit-source | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
-| http://terminology.kemkes.go.id/CodeSystem/icd-10-pm | 5 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
 | http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
@@ -405,7 +420,7 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 1 |
 | http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
-| **Total** | **3815** |
+| **Total** | **4040** |
 
 ---
 
@@ -413,14 +428,14 @@ Daftar code satu per baris: lihat [`frekuensi-code.md`](frekuensi-code.md).
 
 Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuensi-payload.md`](frekuensi-payload.md).
 
-| Form | Observation | Procedure | Condition | ServiceRequest | DiagnosticReport | Specimen | Immunization | QuestionnaireResponse | PractitionerRole | Encounter | Patient | Practitioner | EpisodeOfCare | RelatedPerson | MedicationDispense | MedicationRequest | MedicationStatement | CarePlan | Coverage | Medication | Composition | FamilyMemberHistory | AllergyIntolerance | Organization | Location | Goal | Consent | DocumentReference | Media | Group | Account | ClinicalImpression | BodyStructure | Total |
+| Form | Observation | Procedure | Condition | ServiceRequest | DiagnosticReport | Specimen | Immunization | QuestionnaireResponse | PractitionerRole | Encounter | Patient | Practitioner | EpisodeOfCare | RelatedPerson | MedicationDispense | MedicationRequest | MedicationStatement | CarePlan | Coverage | Medication | Composition | FamilyMemberHistory | AllergyIntolerance | Consent | DocumentReference | Organization | Location | Goal | Media | Group | Account | ClinicalImpression | BodyStructure | Total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Maternal Outcome | 5 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
-| Raffle | 1 | – | 1 | – | – | – | – | – | – | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 8 |
+| Raffle | 1 | – | 1 | – | – | – | – | – | – | 1 | 1 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 8 |
 | SiGizi ANC | 30 | 3 | 1 | 6 | 6 | 6 | 1 | – | 1 | 1 | 1 | – | 1 | – | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
-| SITB TB 06 | 17 | 2 | 2 | 9 | 9 | 8 | – | 1 | – | 1 | 1 | – | 3 | – | – | – | – | 1 | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | 56 |
-| SITB TB 03 SO | 23 | 4 | 1 | 9 | 9 | 9 | – | 1 | – | 1 | 1 | – | 1 | – | – | – | – | 1 | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 62 |
-| SITB TB 03 RO | 18 | 3 | 1 | 7 | 7 | 7 | – | 1 | – | 1 | 1 | – | 1 | – | – | – | – | 1 | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 50 |
+| SITB TB 06 | 17 | 2 | 2 | 9 | 9 | 8 | – | 1 | – | 1 | 1 | – | 3 | – | – | – | – | 1 | – | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | 56 |
+| SITB TB 03 SO | 23 | 4 | 1 | 9 | 9 | 9 | – | 1 | – | 1 | 1 | – | 1 | – | – | – | – | 1 | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | 62 |
+| SITB TB 03 RO | 18 | 3 | 1 | 7 | 7 | 7 | – | 1 | – | 1 | 1 | – | 1 | – | – | – | – | 1 | 1 | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | 50 |
 | SITB TB 04 | 17 | – | 1 | 16 | 16 | 16 | – | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 69 |
 | SITB TB 16K | 14 | – | 1 | 1 | – | – | – | 1 | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | 21 |
 | MPDN Kematian Bayi | 16 | – | – | – | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 19 |
@@ -448,14 +463,14 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | ELSMIL Ibu Hamil | 28 | – | 2 | 2 | 1 | 1 | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 36 |
 | ELSMIL Pasca Persalinan | 22 | – | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
 | ELSMIL Baduta | 29 | – | – | – | – | – | 1 | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
-| SIPTM | 31 | 2 | 7 | 3 | 1 | 1 | – | – | – | 1 | 1 | – | – | – | – | 1 | – | – | – | – | – | 1 | – | – | – | 3 | – | – | – | – | – | – | – | 52 |
+| SIPTM | 31 | 2 | 7 | 3 | 1 | 1 | – | – | – | 1 | 1 | – | – | – | – | 1 | – | – | – | – | – | 1 | – | – | – | – | – | 3 | – | – | – | – | – | 52 |
 | ASIK Skrining PTM | 41 | – | 1 | 20 | 20 | 14 | – | – | 6 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 104 |
 | ASIK CKG Bayi Baru Lahir (v2) | 17 | 5 | 1 | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 25 |
 | ASIK CKG Balita (v2) | 17 | 3 | 1 | 2 | 2 | 2 | – | 1 | 2 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 32 |
 | ASIK CKG Dewasa Laki-laki | 53 | – | 1 | 1 | 1 | 1 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 61 |
 | ASIK CKG Dewasa Perempuan | 58 | – | 1 | 1 | 1 | 1 | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 66 |
 | ASIK CKG Lansia (27 Apr 2026) | 90 | 1 | 1 | – | – | – | – | 7 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 101 |
-| Informed Consent | – | – | – | – | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 3 |
+| Informed Consent | – | – | – | – | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 3 |
 | SIHEPI Rekap 3e | 44 | 1 | 1 | 4 | 3 | 3 | 5 | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 65 |
 | eKohort ANC | 20 | 1 | 1 | 5 | 5 | 5 | 2 | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 43 |
 | eKohort INC | 46 | 4 | 2 | 1 | – | – | – | – | – | 1 | 1 | 3 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 58 |
@@ -482,13 +497,20 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | Genomics TB | 1 | – | 1 | 1 | 1 | 1 | – | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 8 |
 | Genomics Klebsiella | 2 | – | 1 | 1 | 2 | 1 | – | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 10 |
 | Genomics Dengue | 4 | – | 1 | 1 | 2 | 1 | – | – | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
-| KuApps BidanKu Tambah Pasien | 6 | – | – | 1 | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 11 |
+| KuApps BidanKu Tambah Pasien | 6 | – | – | 1 | – | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | 1 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | 11 |
 | KuApps BidanKu Daftar Kehamilan | 12 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 12 |
 | KuApps BidanKu Luaran Kehamilan | 25 | 2 | 1 | 1 | – | – | – | – | – | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 31 |
 | KuApps BidanKu PHBS | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 |
 | KuApps BidanKu Skrining Rumah Tangga | – | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 2 |
 | KuApps BidanKu Imunisasi | – | – | – | – | – | – | 23 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
 | KuApps BidanKu Kumpulan Skrinning | 18 | – | – | – | – | – | – | 5 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 23 |
+| Kobo SDIDTK | 14 | 4 | 3 | 1 | – | – | – | 8 | – | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 35 |
+| MMS - Pemantauan Distribusi dan Konsumsi | 10 | – | – | – | – | – | – | – | 1 | – | 1 | 1 | – | 1 | 2 | 2 | 3 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 22 |
+| MMS - Informed Consent | 2 | – | – | – | – | – | – | 1 | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | 3 | – | – | – | – | – | – | – | – | – | 8 |
+| MMS - Master Database Responden | 10 | – | – | – | – | – | – | – | 1 | – | 1 | 1 | – | 2 | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 16 |
+| MMS - Survei Sosio Ekonomi | 13 | – | – | – | – | – | – | 6 | – | – | 1 | 1 | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 22 |
+| MMS - Survei Demografi (Listing Responden) | 5 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | – | – | 2 | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 12 |
+| MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | 42 | – | 2 | – | – | – | – | – | 1 | – | 1 | 1 | – | 1 | – | – | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | 50 |
 | SiGizi Balita BNBA | 14 | 1 | 1 | – | – | – | – | 1 | – | 1 | 1 | – | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 24 |
 | SiGizi Balita Vitamin A | 13 | 1 | 1 | – | – | – | – | – | – | 1 | 1 | – | – | 1 | 2 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 22 |
 | SiGizi Balita Mendapat PMT 2024 | 12 | – | 1 | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 15 |
@@ -541,7 +563,7 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | SIM RS Goetoeng Diabetes Melitus | 3 | – | 1 | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 6 |
 | SIM RS Goetoeng Hipertensi | 2 | – | 1 | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 5 |
 | SISMAL Regmal 1 | 14 | – | 1 | 1 | – | – | – | – | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
-| SISMAL Validasi Indigenous | 2 | 1 | 1 | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 7 |
+| SISMAL Validasi Indigenous | 2 | 1 | 1 | – | – | – | – | – | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | 7 |
 | SIM RS Harapan Ibu ANC | 52 | 2 | 3 | 6 | 6 | 6 | 3 | – | 7 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 89 |
 | SIM RS Harapan Ibu INC | 46 | 8 | 5 | 1 | – | – | – | 1 | 1 | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
 | SIM RS Harapan Ibu PNC | 38 | 10 | 6 | 1 | – | – | – | – | 1 | 1 | 1 | 1 | 1 | – | 3 | 2 | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 67 |
@@ -561,19 +583,19 @@ Baris = form, kolom = resource FHIR. Code pembeda tiap payload: lihat [`frekuens
 | SIM RS PKU Hepatitis | 3 | 2 | 3 | 2 | 1 | 1 | – | – | 2 | 1 | 1 | 2 | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
 | SIM RS Siaga Medika Hepatitis | 3 | 2 | 3 | 2 | 1 | 1 | – | – | 2 | 1 | 1 | 2 | – | – | – | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 20 |
 | Kobo Modul ANC | 47 | 3 | 2 | 6 | 6 | 6 | 3 | – | 7 | 1 | 1 | 1 | 1 | – | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 86 |
-| Kobo Modul INC | 56 | 9 | 3 | 1 | – | – | – | 1 | 2 | 1 | 1 | 2 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 80 |
+| Kobo Modul INC | 56 | 9 | 3 | 1 | – | – | – | 1 | 2 | 1 | 1 | 2 | 2 | 1 | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 80 |
 | Kobo Modul Neonatus | 29 | 9 | 1 | 1 | – | – | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | – | – | 50 |
 | Kobo Modul PNC | 52 | 10 | 8 | 5 | 2 | 1 | – | 1 | 4 | 1 | 1 | 2 | 1 | – | 4 | 3 | – | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | 98 |
-| Kobo Buku KIA 1 - ANC | 125 | 14 | 6 | 1 | – | – | 3 | – | 2 | 1 | 1 | 1 | – | – | 1 | 1 | 1 | 3 | 2 | – | – | 3 | 1 | – | – | – | – | 1 | – | – | – | – | – | 167 |
+| Kobo Buku KIA 1 - ANC | 125 | 14 | 6 | 1 | – | – | 3 | – | 2 | 1 | 1 | 1 | – | – | 1 | 1 | 1 | 3 | 2 | – | – | 3 | 1 | – | 1 | – | – | – | – | – | – | – | – | 167 |
 | Kobo Buku KIA 2 - Luaran Kehamilan | 29 | 1 | 2 | – | – | – | – | – | 2 | 1 | 1 | 1 | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 38 |
 | Kobo Buku KIA 3 - PNC | 45 | 9 | 7 | 4 | – | – | 1 | – | 1 | 1 | 1 | 1 | 2 | – | 1 | 1 | – | – | 1 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 75 |
 | Kobo Buku KIA 4 - Cadre | 16 | 1 | 1 | – | – | – | 15 | – | 2 | 1 | 1 | 3 | – | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 44 |
-| Kobo Buku KIA 5 - Vaksinatorku | 5 | – | 1 | – | – | – | 25 | – | 1 | 1 | 1 | 1 | – | 4 | – | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | 40 |
+| Kobo Buku KIA 5 - Vaksinatorku | 5 | – | 1 | – | – | – | 25 | – | 1 | 1 | 1 | 1 | – | 4 | – | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | – | – | – | – | 40 |
 | Kobo Neonatus Outcome | 8 | – | – | – | – | – | – | – | 1 | – | 1 | 1 | 1 | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 14 |
-| Kobo Neonatus Outcome v2 | 60 | 6 | 3 | – | – | – | 3 | 1 | 4 | 1 | 1 | 4 | – | 3 | – | – | – | – | – | – | – | – | – | – | – | – | 1 | – | 2 | – | – | – | – | 89 |
+| Kobo Neonatus Outcome v2 | 60 | 6 | 3 | – | – | – | 3 | 1 | 4 | 1 | 1 | 4 | – | 3 | – | – | – | – | – | – | – | – | – | 1 | – | – | – | – | 2 | – | – | – | – | 89 |
 | Kobo DDTK | 4 | – | 1 | – | – | – | – | – | 1 | 1 | 1 | 1 | – | 2 | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | – | 11 |
-| **Total (non-unik)** | **3954** | **657** | **363** | **340** | **276** | **233** | **209** | **171** | **159** | **145** | **134** | **99** | **88** | **73** | **60** | **44** | **35** | **26** | **22** | **17** | **8** | **7** | **7** | **3** | **3** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **7148** |
-| **Total unik** | **894** | **199** | **90** | **35** | **109** | **7** | **17** | **1** | **1** | **1** | **1** | **1** | **6** | **1** | **9** | **10** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1399** |
+| **Total (non-unik)** | **4050** | **661** | **369** | **341** | **276** | **233** | **209** | **186** | **163** | **147** | **141** | **105** | **88** | **82** | **62** | **46** | **38** | **26** | **23** | **18** | **10** | **7** | **7** | **6** | **4** | **3** | **3** | **3** | **2** | **1** | **1** | **1** | **1** | **7313** |
+| **Total unik** | **912** | **199** | **91** | **35** | **109** | **7** | **17** | **1** | **1** | **1** | **1** | **1** | **6** | **1** | **10** | **11** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1** | **1420** |
 
 ---
 
@@ -639,10 +661,12 @@ Perbedaan antar versi:
 - **Buku KIA 2024 (4 form, baru)**: dari 4 CSV `PHDT_Buku_KIA_-_Mapping_{ANC,INC,PNC,Anak_Usia_0-6_Tahun}_Buku_KIA_2024.csv` (⚠️ belum comprehensive review, tanpa daftar variabel BQ). Dibuat dengan `scripts/phdt2_prepare.py`. Angka: ANC 206 / 388, INC 60 / 108, PNC 14 / 32, Anak 189 / 284. Variabel unik vs `referensi-variabel-phdt.md` (Identitas+ANC 296, INC 58, PNC 17, Anak 267): ANC 235 (−61), INC 79 (+21), PNC 26 (+9), Anak 266 (−1). Angka output tetap dipakai. Variabel tanpa payload (perlu dicek): ANC 12, INC 4, PNC 9, Anak 34 (lihat bagian "Variabel di luar payload" di `output/buku-kia-*.md`). File ANC punya kolom tambahan (nama variabel OCR, Kobo ANC SID, JSON); kolom itu tidak dipakai di hitungan.
 - **Kobo (12 form, baru)**: dari `Kobo_-_Data_Dictionary.xlsx`. Sheet `ANC Kobo`, `INC Kobo`, `Neonatus Kobo`, `PNC Kobo`, `Mapping Kobo Buku KIA 1 - ANC`, `Mapping Variable Buku KIA Entry Form 2`, `Mapping Kobo Buku KIA 3 - PNC`, `Mapping Variabel Kobo Buku KIA 4- Cadre`, `Mapping Kobo Vaksinator (revisedform)`, `Neonatal Outcome Kobo`, `Neonatal Outcome v2`, `DDTK Kobo`. Dilewati: `Variabel ...`, `tarikan ...`, `Copy of Neonatus Kobo`, `Deprecated PNC`, `epus pnc dan buku kia`, `rencana INC`, `Variabel ANC (sigizi lama)` (= SiGizi ANC yang sudah dihitung), `Mapping Kobo Buku KIA 5 - Vaksinator (tdk dipakai)`. `Maternal Outcome Kobo` dan `Kobo Raffle` tidak dihitung ulang (angka Maternal Outcome / Raffle yang sudah ada tetap). `Data BBL Kobo` dihitung terpisah karena tidak ada baris tracker yang cocok. Buku KIA 1 - ANC punya 404 variabel unik (kolom `Question/answer option` dipakai sebagai Variables).
 - **SIM RS template Spheres**: sheet TRACKER di file RS mencatat RS yang memakai Excel template Spheres. RS tanpa sheet mapping sendiri memakai angka template: ANC/INC/PNC = template ANC/INC/PNC, BBL = template BBL (neo) untuk Harapan Ibu dan BBL (INC) untuk At tin, Nirmala, PKU, Hepatitis = template HepB. Panti Nugroho Hepatitis, Nirmala Hepatitis, dan Harapan Ibu Hepatitis tidak dihitung (notes: form SIHEPI baru). Margono dan Goetoeng (selain sheet yang sudah ada) belum kirim data.
+- **Kobo SDIDTK (#103) dan MMS (6 form, #291–296, baru)**: SDIDTK dari `Kobo_-_Data_Dictionary_-_Copy_of_SDIDTK.csv` (35 payload, 68 code); MMS dari `MMS_Data_Dictionary.xlsx`, 6 sheet = 6 form (Distribusi dan Konsumsi 22/51, Informed Consent 8/5, Master Responden 16/33, Sosio Ekonomi 22/200, Demografi 12/20, Konfirmasi Kelahiran 50/193). ⚠️ belum comprehensive review, tanpa daftar variabel BQ (baris tanpa variabel BQ di "Variabel di luar payload" adalah isian kondisional/pendukung tanpa mapping, bukan variabel BQ). Nomor #291–296 saya pilih sendiri, melanjutkan #283. Dibuat dengan `scripts/kuapps_prepare.py` (MMS) dan `scripts/phdt2_prepare.py` (SDIDTK).
 
 ---
 
 ## Log perubahan output
+- 2026-11-25: Tambah Kobo SDIDTK (#103) dan 6 form MMS (#291–296). Total non-unik 7313 payload / 17518 code; unik 1420 / 4040. ⚠️ belum comprehensive review.
 - 2026-11-25: Tambah 7 sheet BidanKu (Tambah Pasien #284, Daftar Kehamilan #285, Luaran Kehamilan #286, PHBS #287, Skrining Rumah Tangga #288, Imunisasi #289, Kumpulan Skrinning #290) sebagai baris tracker baru. Total non-unik 7148 payload / 16948 code. ⚠️ belum comprehensive review.
 - 2026-11-24 (5): Tambah 21 form: BidanKu 8 (#106–113), Spheres HT/DM/TB (#114–116), Genomics TB/Klebsiella/Dengue (#118–120), TB 15 (#60), TB 15P (#61), ASIK Kohort Bayi/Baduta/WUS (#39–41). ⚠️ belum comprehensive review.
 - 2026-11-24 (4): Tambah 4 form Buku KIA 2024 (tracker #79–82): ANC 206 / 388, INC 60 / 108, PNC 14 / 32, Anak 189 / 284. ⚠️ belum comprehensive review.

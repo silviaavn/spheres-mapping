@@ -12,7 +12,7 @@ Kehadiran Posyandu,,,,Tanggal kunjungan,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Nama Practitioner,,,,,
 Pendaftaran,,,,Tanggal Posyandu,,,,,,,,,,,,,
-,,,,Usia kehamilan Ibu saat pertama kali mengikuti posyandu (minggu),,,,,,Observation,Observation.status,final,,,,,1
+,,,,Usia kehamilan Ibu saat pertama kali mengikuti posyandu (minggu),,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000798,Usia kehamilan saat melakukan pendaftaran posyandu,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,,,,,,
@@ -36,7 +36,7 @@ Pendaftaran,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 Hasil Pengukuran,,,,Tanggal Posyandu,,,,,,,,,,,,,
-,,,,Tinggi Badan,,,,,,Observation,Observation.status,final,,,,,1
+,,,,Tinggi Badan,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,8302-2,Body height,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE1,Height,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
@@ -49,7 +49,7 @@ Hasil Pengukuran,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,Berat badan sebelum kehamilan,,,,,,Observation,Observation.status,final,,,,,1
+,,,,Berat badan sebelum kehamilan,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,56077-1,Body weight --pre current pregnancy,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE2,Pre-gestational weight,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
@@ -62,7 +62,7 @@ Hasil Pengukuran,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,IMT Sebelum Hamil,,,,,,Observation,Observation.status,final,,,,,1
+,,,,IMT Sebelum Hamil,,,,field hilang di app,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,OC000010,Indeks Massa Tubuh Sebelum Hamil,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.SS.DE58,IMT Sebelum Hamil,http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes,,1,
@@ -102,7 +102,7 @@ Hasil Pengukuran,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Berat badan saat ini,,,,,,Observation,Observation.status,final,,,,,1
+,,,,Berat badan saat ini,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,29463-7,Body weight,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE3,Current weight,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
@@ -115,7 +115,7 @@ Hasil Pengukuran,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,LILA,,,,,,Observation,Observation.status,final,,,,,1
+,,,,LILA,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,284473002,Mid upper arm circumference,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.SS.DE3,Lingkar Lengan Atas (LILA),http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes,,1,
@@ -128,10 +128,10 @@ Hasil Pengukuran,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,Status Gizi,Calculated,LiLA <23 cm,KEK,,,Observation,Observation.interpretation,OI000018,Kurang Energi Kronis (KEK),http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
+,,,,Status Gizi,Calculated,LiLA <23 cm,KEK,Tidak terbentuk,,Observation,Observation.interpretation,OI000018,Kurang Energi Kronis (KEK),http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
 ,,,,,,"LiLA ≥ 23,5 cm",Tidak KEK,,,Observation,Observation.interpretation,N,Normal,http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation,,1,
 ,,,,,,"LiLA 23 - <23,5 cm",Risiko KEK,,,Observation,Observation.interpretation,OI000035,Risiko Kurang Energi Kronis (KEK),http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
-Pemeriksaan Tanda Vital,,,,Tekanan darah sistolik,,,,,,Observation,Observation.status,final,,,,,1
+Pemeriksaan Tanda Vital,,,,Tekanan darah sistolik,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,8480-6,Systolic blood pressure,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE17,Systolic blood pressure,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
@@ -144,7 +144,7 @@ Pemeriksaan Tanda Vital,,,,Tekanan darah sistolik,,,,,,Observation,Observation.s
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,Tekanan darah diastolik,,,,,,Observation,Observation.status,final,,,,,1
+,,,,Tekanan darah diastolik,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,8462-4,Diastolic blood pressure,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE19,Diastolic blood pressure,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
@@ -157,7 +157,7 @@ Pemeriksaan Tanda Vital,,,,Tekanan darah sistolik,,,,,,Observation,Observation.s
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,Mean Arteri Pressure (MAP),,,,,,Observation,Observation.status,final,,,,,1
+,,,,Mean Arteri Pressure (MAP),,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,vital-signs,Vital Signs,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,1285244000,Mean arterial pressure,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,,,,,,
@@ -169,7 +169,7 @@ Pemeriksaan Tanda Vital,,,,Tekanan darah sistolik,,,,,,Observation,Observation.s
 ,,,,,,,,,,Observation,Observation.issued,,,,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
-,,,,Skrining Hipertensi dalam kehamilan,,,,,,Observation,Observation.status,final,,,,,1
+,,,,Skrining Hipertensi dalam kehamilan,,,,Tidak terbentuk,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000010,Skrining Hipertensi dalam Kehamilan,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Tidak Pre eklmapsia/Eklampsia,,,Observation,Observation.valueCodeableConcept.coding,SP000011,Tidak Pre Eklampsia/ Eklampsia,http://terminology.kemkes.go.id/sp,,1,
@@ -224,7 +224,7 @@ Pemeriksaan Tanda Vital,,,,Tekanan darah sistolik,,,,,,Observation,Observation.s
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
 General Skrining,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,Apakah ada masalah kesehatan selama kehamilan,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
-,,,,,,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-category,,,
+,,,,,,,,Terbaca encounter-diagnosis,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-category,,,
 ,,,,,,,Batuk lama (> 2 minggu),,,Condition,Condition.code.coding,68154008,Chronic cough,http://snomed.info/sct,,1,
 ,,,,,,,"Demam, menggigil, berkeringat",,,Condition,Condition.code.coding,SP000465,"Demam, menggigil, berkeringat",http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Diare berulang,,,Condition,Condition.code.coding,SP000466,Diare berulang,http://terminology.kemkes.go.id/sp,,1,
@@ -236,7 +236,7 @@ General Skrining,,,,Tanggal Posyandu,,,,,,,,,,,,,
 ,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Condition,Condition.subject.display,,,,,,
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
-,,,,,,,,,,Condition,Condition.recordedDate,,,,,,
+,,,,,,,,Terbaca masih onsetDateTime,,Condition,Condition.recordedDate,,,,,,
 ,,,,Apakah ada riwayat penyakit keturunan keluarga,,,,,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,social-history,Social History,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,416471007,Family history of clinical finding,http://snomed.info/sct,,1,
@@ -664,7 +664,7 @@ code = 11996-6 | [#] Pregnancies | valueInteger >1",,,,Observation,Observation.s
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
 ,,,,Apakah ada komplikasi kehamilan pada kehamilan saat ini?,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-category,,,
-,,,,,,,Perdarahan Antepartum,,,Condition,Condition.code.coding,34842007,Antepartum hemorrhage,http://snomed.info/sct,,1,
+,,,,,,,Perdarahan Antepartum,Code nya salah,,Condition,Condition.code.coding,34842007,Antepartum hemorrhage,http://snomed.info/sct,,1,
 ,,,,,,,Eklampsia,,,Condition,Condition.code.coding,15938005,Eclampsia,http://snomed.info/sct,,1,
 ,,,,,,,Pre Eklampsia,,,Condition,Condition.code.coding,398254007,Pre-eclampsia,http://snomed.info/sct,,1,
 ,,,,,,,Abortus,,,Condition,Condition.code.coding,386639001,Termination of pregnancy,http://snomed.info/sct,,1,
@@ -1170,7 +1170,7 @@ Pemeriksaan Fisik,,,,Apakah ibu terlihat pucat?,,,,,,Observation,Observation.sta
 ,,,,,,,,,,Observation,Observation.performer.display,,,,,,
 ,,,,TFU dalam cm,,,,,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,
-,,,,,,,,,,Observation,Observation.code.coding,11881-0,Uterus Fundal height Tape measure,http://loinc.org,,1,
+,,,,,,,,salah display,,Observation,Observation.code.coding,11881-0,Uterus Fundal height Tape measure,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE105,Symphysis-fundal height,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,,,,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,cm,cm,http://unitsofmeasure.org,,,

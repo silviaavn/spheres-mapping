@@ -38,6 +38,7 @@ FORMS = [
  ("buku-kia-inc", "Buku KIA - INC (2024)", "csv", "INC_Buku_KIA", 2, None, 80, 58, "Buku KIA | INC", True, ""),
  ("buku-kia-pnc", "Buku KIA - PNC (2024)", "csv", "PNC_Buku_KIA", 2, None, 81, 17, "Buku KIA | PNC", True, ""),
  ("buku-kia-anak", "Buku KIA - Anak Usia 0-6 Tahun (2024)", "csv", "Anak_Usia_0-6", 2, None, 82, 267, "Buku KIA | Anak", True, ""),
+ ("kobo-sdidtk", "Kobo - SDIDTK", "csv", "Copy_of_SDIDTK", 2, None, 103, None, "Kobo | SDIDTK", True, ""),
  ("sitb-tb15", "SITB - TB 15 (Pemeriksaan Eligibilitas TPT)", "csv", "TB_15.csv", 2, None, 60, 28, "SITB | TB 15", True, ""),
  ("sitb-tb15p", "SITB - TB 15P (Penerima TPT)", "csv", "TB_15P.csv", 2, None, 61, 37, "SITB | TB 15P", True, ""),
  ("asik-kohort-baduta", "ASIK - Data Individu Kohort Baduta (Imunisasi)", "csv", "Data_Dictionary_-_ASIK", 2, 116, 40, 26, "ASIK | Imunisasi Baduta", True, ""),

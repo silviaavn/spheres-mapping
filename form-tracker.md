@@ -2,7 +2,7 @@
 
 Versi editable (sumber utama): Sheet [Daftar Sumber Data Puskesmas - Mapping FHIR](https://claude.ai/artifact/HRNvr5haWkiSyVHUVakRgj). File ini salinan dari Sheet. Status review di-update di Sheet **dan** di file ini setiap form selesai (lihat `aturan.md`, checklist langkah 6).
 
-Total: 245 laporan · Masih diperlukan: 226 · Dimapping ke FHIR: 218 · Sudah direview: 9
+Total: 251 laporan · Masih diperlukan: 232 · Dimapping ke FHIR: 224 · Sudah direview: 9
 
 ⚠️ = payload dan code sudah dihitung, tapi **belum ada comprehensive review** (belum ada daftar variabel BQ, file mentah, atau pembahasan dengan tim). Tidak dihitung di "Sudah direview". Kolom Catatan di Sheet (G73, G74) berisi catatan yang sama. Saat ini:
 
@@ -78,6 +78,7 @@ Total: 245 laporan · Masih diperlukan: 226 · Dimapping ke FHIR: 218 · Sudah d
 | 93 | Kobo Neonatus Outcome | 14 / 25 |
 | 94 | Kobo Neonatus Outcome v2 | 89 / 239 |
 | 101 | Kobo DDTK | 11 / 10 |
+| 103 | Kobo - SDIDTK | 35 / 68 |
 | 104 | Kobo - Maternal Outcome | 12 / 14 |
 | 105 | Kobo - Raffle | 8 / 6 |
 | 106 | KuApps BidanKu - ANC | 190 / 411 |
@@ -159,6 +160,12 @@ Total: 245 laporan · Masih diperlukan: 226 · Dimapping ke FHIR: 218 · Sudah d
 | 288 | KuApps New - BidanKu: Skrining Rumah Tangga | 2 / 0 |
 | 289 | KuApps New - BidanKu: Imunisasi | 23 / 52 |
 | 290 | KuApps New - BidanKu: Kumpulan Skrinning | 23 / 26 |
+| 291 | MMS - Pemantauan Distribusi dan Konsumsi | 22 / 51 |
+| 292 | MMS - Informed Consent | 8 / 5 |
+| 293 | MMS - Master Database Responden | 16 / 33 |
+| 294 | MMS - Survei Sosio Ekonomi | 22 / 200 |
+| 295 | MMS - Survei Demografi (Listing Responden) | 12 / 20 |
+| 296 | MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | 50 / 193 |
 
 Lihat `revisi.md` bagian ePuskesmas (asumsi EA1–EA10) dan bagian Tumbuh Kembang tambahan (EB1–EB6) dan MPDN (asumsi MA1–MA10, temuan MG/MB/MI), dan SiGizi (17 form, asumsi/temuan SG1–SG14). Kolom Status review di Sheet perlu disamakan (belum diubah di Sheet, termasuk #43, #44, #46–#49, #74, #77, #78 yang baru ⚠️).
 
@@ -290,7 +297,7 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 100 | Kobo - SBPI | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_sbpi` |  |
 | 101 | Kobo - DDTK | ✅ | ✅ | ⚠️ belum comprehensive review | `stellar-orb-451904-d9.kobo_form.kobo-ddtk` |  |
 | 102 | Kobo - Form Pendataan Kader | ✅ | ❌ | ❌ | `stellar-orb-451904-d9.kobo_form.e-form_data_kader` |  |
-| 103 | Kobo - SDIDTK | ✅ | ✅ | ❌ |  |  |
+| 103 | Kobo - SDIDTK | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 104 | Kobo - Maternal Outcome | ✅ | ✅ | ✅ | `stellar-orb-451904-d9.kobo_form.e-form_maternal_outcome` |  |
 | 105 | Kobo - Raffle | ❌ | ✅ | ✅ | `stellar-orb-451904-d9.kobo_form.e-form_kobo_raffle` |  |
 | 106 | KuApps New - BidanKu: ANC | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
@@ -433,3 +440,9 @@ Catatan: Balita v2 = `Sheet9` adalah asumsi (perlu konfirmasi). Lansia 27 April 
 | 288 | KuApps New - BidanKu: Skrining Rumah Tangga | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 289 | KuApps New - BidanKu: Imunisasi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
 | 290 | KuApps New - BidanKu: Kumpulan Skrinning | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 291 | MMS - Pemantauan Distribusi dan Konsumsi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 292 | MMS - Informed Consent | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 293 | MMS - Master Database Responden | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 294 | MMS - Survei Sosio Ekonomi | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 295 | MMS - Survei Demografi (Listing Responden) | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |
+| 296 | MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | ✅ | ✅ | ⚠️ belum comprehensive review |  |  |

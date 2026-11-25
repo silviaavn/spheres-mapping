@@ -1,5 +1,5 @@
 """Siapkan dictionary KuApps: BidanKu (KuApps_Reborn_Variable_and_FHIR_Mapping.xlsx) dan Kuapps Spheres (Mapping_KuApps_SPHERES.xlsx).
-Pemakaian: python3 -I scripts/kuapps_prepare.py <reborn.xlsx> <spheres.xlsx> <repo_dir> [genomics.xlsx]
+Pemakaian: python3 -I scripts/kuapps_prepare.py <reborn.xlsx> <spheres.xlsx> <repo_dir> [genomics.xlsx] [mms.xlsx]
 Sheet IFIV / Summary / Gambar / List Skrining bukan dictionary (testing / daftar) dan dilewati.
 Sheet Tambah Pasien dst. = baris tracker #284–290 (ditambahkan 2026-11-25)."""
 import importlib.util, json, os, sys, warnings
@@ -10,9 +10,10 @@ here = os.path.dirname(os.path.abspath(__file__))
 spec = importlib.util.spec_from_file_location("ep", os.path.join(here, "epus_prepare.py"))
 ep = importlib.util.module_from_spec(spec); spec.loader.exec_module(ep)
 reborn, spheres, repo = sys.argv[1], sys.argv[2], sys.argv[3]
-genomics = sys.argv[4] if len(sys.argv) > 4 else None   # Genomics_SPHERES_Data_Dictionary_.xlsx
+genomics = sys.argv[4] if len(sys.argv) > 4 else None
+mms = sys.argv[5] if len(sys.argv) > 5 else None   # MMS_Data_Dictionary.xlsx   # Genomics_SPHERES_Data_Dictionary_.xlsx
 REN = {"section": "Categories", "nama skrining": "Categories", "variable": "Variables", "value": "Value Name", "formula": "Format/Value",
-       "system": "CodeSystem", "keterangan": "Definisi Operasional", "note": "Definisi Operasional",
+       "system": "CodeSystem", "notes": "Definisi Operasional", "format": "Format/Value", "nama coloum raw": "Nama Column Raw", "keterangan": "Definisi Operasional", "note": "Definisi Operasional",
        "categories (halaman)": "Categories", "data type (string, int, dsb)": "Data Type",
        "format/value (yyyy-mm-dd, dsb)": "Format/Value", "definisi operasional (logic)": "Definisi Operasional", "tanggaaaaa": "Categories"}
 # (slug, workbook, sheet, nama, tracker#, baris header)
@@ -30,6 +31,12 @@ F = [("kuapps-bidanku-anc", "r", "PYD-ANC", "KuApps BidanKu - ANC", 106, 1),
      ("genomics-tb", "g", "TB Mapping", "Genomics - TB", 118, 1),
      ("genomics-klebsiella", "g", "Klebsiella Mapping", "Genomics - Klebsiella", 119, 1),
      ("genomics-dengue", "g", "Dengue Mapping", "Genomics - Dengue", 120, 1),
+     ("mms-distribusi-konsumsi", "m", "Pemantauan Distribusi", "MMS - Pemantauan Distribusi dan Konsumsi", 291, 1),
+     ("mms-informed-consent", "m", "Inform Consent", "MMS - Informed Consent", 292, 1),
+     ("mms-master-responden", "m", "Master DataBase Responden", "MMS - Master Database Responden", 293, 1),
+     ("mms-sosio-ekonomi", "m", "Survei Sosio Ekonomi", "MMS - Survei Sosio Ekonomi", 294, 1),
+     ("mms-demografi", "m", "Survei Demografi", "MMS - Survei Demografi (Listing Responden)", 295, 1),
+     ("mms-konfirmasi-kelahiran", "m", "Konfirmasi Kelahiran", "MMS - Konfirmasi Kelahiran dan Luaran Kehamilan", 296, 1),
      ("kuapps-bidanku-tambah-pasien", "r", "Tambah Pasien", "KuApps BidanKu - Tambah Pasien", 284, 1),
      ("kuapps-bidanku-daftar-kehamilan", "r", "Daftar Kehamilan", "KuApps BidanKu - Daftar Kehamilan", 285, 1),
      ("kuapps-bidanku-luaran-kehamilan", "r", "Luaran Kehamilan", "KuApps BidanKu - Luaran Kehamilan", 286, 1),
@@ -40,9 +47,11 @@ F = [("kuapps-bidanku-anc", "r", "PYD-ANC", "KuApps BidanKu - ANC", 106, 1),
 wbs = {"r": openpyxl.load_workbook(reborn, data_only=True), "s": openpyxl.load_workbook(spheres, data_only=True)}
 if genomics: wbs["g"] = openpyxl.load_workbook(genomics, data_only=True)
 else: F = [f for f in F if f[1] != "g"]
+if mms: wbs["m"] = openpyxl.load_workbook(mms, data_only=True)
+else: F = [f for f in F if f[1] != "m"]
 stats = {}
 for slug, w, sheet, nama, trk, hrow in F:
-    name = next(n for n in wbs[w].sheetnames if n.strip() == sheet.strip())
+    name = next(n for n in wbs[w].sheetnames if n.strip().startswith(sheet.strip()))
     data = [["" if c is None else str(c) for c in r] for r in wbs[w][name].iter_rows(values_only=True)]
     hdr = [" ".join(h.split()) for h in data[hrow - 1]]
     hdr = [REN.get(h.lower(), h) for h in hdr]
