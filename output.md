@@ -1,6 +1,6 @@
 # Output Hitungan Payload & Code — Form Kobo & PHDT
 
-Terakhir diperbarui: 2026-11-24
+Terakhir diperbarui: 2026-11-25
 Aturan hitung: lihat [`aturan.md`](aturan.md) · Temuan & catatan pipeline: [`revisi.md`](revisi.md)
 Form yang sudah dihitung (detail per form, bisa ditelusuri per baris):
 - **Maternal Outcome** → [`output/maternal-outcome.md`](output/maternal-outcome.md) (sumber: [`mapping/kobo-data-dictionary-maternal-outcome.csv`](mapping/kobo-data-dictionary-maternal-outcome.csv))
@@ -200,130 +200,130 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 |---|---|---|---|---|
 | Maternal Outcome | 12 | 12 | 14 | 4 |
 | Raffle | 12 | 8 | 6 | 4 |
-| SiGizi ANC | 49 | 61 | 142 | 18 |
-| SITB TB 06 | 96 | 56 | 276 | 9 |
-| SITB TB 03 SO | 84 | 62 | 329 | 10 |
-| SITB TB 03 RO | 144 | 50 | 377 | 11 |
-| SITB TB 04 | 114 | 69 | 579 | 24 |
+| SiGizi ANC | 49 | 61 | 154 | 18 |
+| SITB TB 06 | 96 | 56 | 301 | 9 |
+| SITB TB 03 SO | 84 | 62 | 358 | 10 |
+| SITB TB 03 RO | 144 | 50 | 403 | 11 |
+| SITB TB 04 | 114 | 69 | 616 | 24 |
 | SITB TB 16K | 40 | 21 | 35 | 14 |
-| MPDN Kematian Bayi | 37 | 19 | 112 | 37 |
+| MPDN Kematian Bayi | 37 | 19 | 115 | 37 |
 | MPDN Kematian Ibu | 24 | 10 | 50 | 17 |
 | ePus Pelayanan Pasien | 81 | 47 | 62 | 2 |
-| ePus Kunjungan Ibu Hamil | 68 | 114 | 198 | 11 |
-| ePus Laboratorium | 22 | 309 | 429 | 0 |
+| ePus Kunjungan Ibu Hamil | 68 | 114 | 206 | 13 |
+| ePus Laboratorium | 22 | 309 | 500 | 0 |
 | ePus Rujukan Eksternal | 23 | 5 | 0 | 0 |
-| ePus ANC | 123 | 155 | 321 | 24 |
-| ePus INC | 93 | 69 | 206 | 22 |
-| ePus PNC | 107 | 82 | 161 | 27 |
-| ePus MTBS | 187 | 125 | 268 | 19 |
+| ePus ANC | 123 | 155 | 346 | 24 |
+| ePus INC | 93 | 69 | 210 | 24 |
+| ePus PNC | 107 | 82 | 166 | 29 |
+| ePus MTBS | 187 | 125 | 285 | 20 |
 | ePus MTBM | 105 | 57 | 139 | 20 |
-| ePus Tumbang Anak | 34 | 19 | 55 | 8 |
-| ePus Tumbang DDTK | 38 | 29 | 68 | 10 |
+| ePus Tumbang Anak | 34 | 19 | 62 | 8 |
+| ePus Tumbang DDTK | 38 | 29 | 92 | 10 |
 | ePus Tumbang KPSP | 123 | 14 | 0 | 0 |
 | ePus Tumbang TDD | 37 | 8 | 0 | 0 |
 | ePus Tumbang TDL | 6 | 4 | 8 | 0 |
 | ePus Tumbang KMPE | 14 | 1 | 0 | 0 |
 | ePus Tumbang M-CHAT-R | 20 | 1 | 0 | 0 |
-| Dapodik PAUD | 75 | 42 | 190 | 75 |
+| Dapodik PAUD | 75 | 42 | 378 | 161 |
 | ePus Tumbang GPPH | 10 | 1 | 40 | 20 |
-| SITB TB 01 | 82 | 37 | 94 | 15 |
+| SITB TB 01 | 82 | 37 | 101 | 15 |
 | SITB TB 02 | 22 | 13 | 15 | 0 |
-| ELSMIL Ibu Hamil | 36 | 36 | 104 | 33 |
-| ELSMIL Pasca Persalinan | 29 | 24 | 96 | 35 |
-| ELSMIL Baduta | 38 | 31 | 78 | 29 |
+| ELSMIL Ibu Hamil | 36 | 36 | 105 | 33 |
+| ELSMIL Pasca Persalinan | 29 | 24 | 102 | 35 |
+| ELSMIL Baduta | 38 | 31 | 84 | 29 |
 | SIPTM | 60 | 52 | 214 | 7 |
-| ASIK Skrining PTM | 67 | 104 | 146 | 10 |
+| ASIK Skrining PTM | 67 | 104 | 215 | 19 |
 | ASIK CKG Bayi Baru Lahir (v2) | 35 | 25 | 41 | 1 |
 | ASIK CKG Balita (v2) | 57 | 32 | 102 | 10 |
-| ASIK CKG Dewasa Laki-laki | 123 | 61 | 202 | 3 |
-| ASIK CKG Dewasa Perempuan | 130 | 66 | 223 | 3 |
-| ASIK CKG Lansia (27 Apr 2026) | 188 | 101 | 458 | 11 |
+| ASIK CKG Dewasa Laki-laki | 123 | 61 | 278 | 9 |
+| ASIK CKG Dewasa Perempuan | 130 | 66 | 299 | 9 |
+| ASIK CKG Lansia (27 Apr 2026) | 188 | 101 | 567 | 20 |
 | Informed Consent | 27 | 3 | 8 | 8 |
 | SIHEPI Rekap 3e | 93 | 65 | 118 | 49 |
 | eKohort ANC | 34 | 43 | 78 | 0 |
-| eKohort INC | 84 | 58 | 74 | 0 |
-| Buku KIA Identitas dan ANC | 235 | 206 | 388 | 39 |
+| eKohort INC | 84 | 58 | 82 | 0 |
+| Buku KIA Identitas dan ANC | 235 | 206 | 438 | 44 |
 | Buku KIA INC | 79 | 60 | 108 | 4 |
 | Buku KIA PNC | 26 | 14 | 32 | 4 |
-| Buku KIA Anak | 266 | 189 | 284 | 8 |
-| SITB TB 15 | 28 | 13 | 109 | 3 |
-| SITB TB 15P | 32 | 21 | 49 | 13 |
+| Buku KIA Anak | 266 | 189 | 288 | 8 |
+| SITB TB 15 | 28 | 13 | 113 | 3 |
+| SITB TB 15P | 32 | 21 | 59 | 15 |
 | ASIK Kohort Bayi | 123 | 19 | 27 | 0 |
 | ASIK Kohort Baduta | 27 | 4 | 6 | 0 |
 | ASIK Kohort WUS | 37 | 12 | 20 | 0 |
-| KuApps BidanKu ANC | 244 | 190 | 411 | 94 |
-| KuApps BidanKu PNC | 52 | 49 | 141 | 2 |
-| KuApps BidanKu BBL | 62 | 48 | 100 | 5 |
-| KuApps BidanKu Bayi | 197 | 101 | 232 | 17 |
-| KuApps BidanKu Anak | 199 | 81 | 148 | 9 |
-| KuApps BidanKu Anak Usia Sekolah dan Remaja | 47 | 31 | 76 | 1 |
-| KuApps BidanKu Dewasa | 72 | 39 | 118 | 25 |
-| KuApps BidanKu Lansia | 84 | 29 | 119 | 10 |
-| Kuapps Spheres HT | 132 | 10 | 57 | 45 |
-| Kuapps Spheres DM | 133 | 10 | 59 | 47 |
-| Kuapps Spheres TB | 25 | 5 | 47 | 19 |
+| KuApps BidanKu ANC | 244 | 190 | 440 | 97 |
+| KuApps BidanKu PNC | 52 | 49 | 143 | 2 |
+| KuApps BidanKu BBL | 62 | 48 | 103 | 5 |
+| KuApps BidanKu Bayi | 197 | 101 | 242 | 17 |
+| KuApps BidanKu Anak | 199 | 81 | 157 | 9 |
+| KuApps BidanKu Anak Usia Sekolah dan Remaja | 47 | 31 | 83 | 2 |
+| KuApps BidanKu Dewasa | 72 | 39 | 122 | 25 |
+| KuApps BidanKu Lansia | 84 | 29 | 121 | 10 |
+| Kuapps Spheres HT | 132 | 10 | 243 | 231 |
+| Kuapps Spheres DM | 133 | 10 | 245 | 233 |
+| Kuapps Spheres TB | 25 | 5 | 49 | 21 |
 | Genomics TB | 34 | 8 | 43 | 4 |
-| Genomics Klebsiella | 33 | 10 | 30 | 8 |
+| Genomics Klebsiella | 33 | 10 | 31 | 9 |
 | Genomics Dengue | 30 | 12 | 22 | 5 |
 | KuApps BidanKu Tambah Pasien | 41 | 11 | 33 | 11 |
-| KuApps BidanKu Daftar Kehamilan | 14 | 12 | 31 | 6 |
-| KuApps BidanKu Luaran Kehamilan | 43 | 31 | 146 | 5 |
-| KuApps BidanKu PHBS | 4 | 1 | 0 | 0 |
-| KuApps BidanKu Skrining Rumah Tangga | 13 | 2 | 0 | 0 |
+| KuApps BidanKu Daftar Kehamilan | 14 | 12 | 32 | 6 |
+| KuApps BidanKu Luaran Kehamilan | 43 | 31 | 156 | 7 |
+| KuApps BidanKu PHBS | 4 | 1 | 3 | 3 |
+| KuApps BidanKu Skrining Rumah Tangga | 13 | 2 | 9 | 9 |
 | KuApps BidanKu Imunisasi | 24 | 23 | 52 | 0 |
-| KuApps BidanKu Kumpulan Skrinning | 81 | 23 | 26 | 13 |
-| Kobo SDIDTK | 38 | 35 | 68 | 10 |
-| MMS - Pemantauan Distribusi dan Konsumsi | 95 | 22 | 51 | 25 |
-| MMS - Informed Consent | 35 | 8 | 5 | 0 |
-| MMS - Master Database Responden | 38 | 16 | 33 | 20 |
-| MMS - Survei Sosio Ekonomi | 101 | 22 | 200 | 145 |
+| KuApps BidanKu Kumpulan Skrinning | 81 | 23 | 30 | 15 |
+| Kobo SDIDTK | 38 | 35 | 92 | 10 |
+| MMS - Pemantauan Distribusi dan Konsumsi | 95 | 22 | 58 | 30 |
+| MMS - Informed Consent | 35 | 8 | 7 | 2 |
+| MMS - Master Database Responden | 38 | 16 | 48 | 21 |
+| MMS - Survei Sosio Ekonomi | 101 | 22 | 229 | 147 |
 | MMS - Survei Demografi (Listing Responden) | 30 | 12 | 20 | 14 |
 | MMS - Konfirmasi Kelahiran dan Luaran Kehamilan | 72 | 50 | 193 | 18 |
-| SiGizi Balita BNBA | 33 | 24 | 48 | 10 |
-| SiGizi Balita Vitamin A | 14 | 22 | 47 | 9 |
-| SiGizi Balita Mendapat PMT 2024 | 30 | 15 | 44 | 14 |
-| SiGizi Balita Pemantauan PMT 2024 | 18 | 9 | 12 | 5 |
+| SiGizi Balita BNBA | 33 | 24 | 50 | 10 |
+| SiGizi Balita Vitamin A | 14 | 22 | 51 | 9 |
+| SiGizi Balita Mendapat PMT 2024 | 30 | 15 | 45 | 14 |
+| SiGizi Balita Pemantauan PMT 2024 | 18 | 9 | 15 | 5 |
 | SiGizi Balita ASI Eksklusif | 22 | 11 | 36 | 28 |
-| SiGizi Balita MPASI | 28 | 9 | 30 | 2 |
-| SiGizi PMT 2025 BB Tidak Naik - Pantau | 24 | 15 | 32 | 17 |
-| SiGizi PMT 2025 BB Tidak Naik - Riwayat | 34 | 19 | 74 | 23 |
+| SiGizi Balita MPASI | 28 | 9 | 32 | 2 |
+| SiGizi PMT 2025 BB Tidak Naik - Pantau | 24 | 15 | 33 | 17 |
+| SiGizi PMT 2025 BB Tidak Naik - Riwayat | 34 | 19 | 75 | 23 |
 | SiGizi PMT 2025 BB Tidak Naik - Survey | 20 | 5 | 16 | 4 |
-| SiGizi PMT 2025 BB Kurang - Pantau | 24 | 21 | 46 | 21 |
-| SiGizi PMT 2025 BB Kurang - Riwayat | 34 | 19 | 74 | 23 |
+| SiGizi PMT 2025 BB Kurang - Pantau | 24 | 21 | 47 | 21 |
+| SiGizi PMT 2025 BB Kurang - Riwayat | 34 | 19 | 75 | 23 |
 | SiGizi PMT 2025 BB Kurang - Survey | 20 | 5 | 16 | 4 |
-| SiGizi PMT 2025 Gizi Kurang - Pantau | 51 | 42 | 101 | 29 |
-| SiGizi PMT 2025 Gizi Kurang - Riwayat | 34 | 19 | 74 | 23 |
+| SiGizi PMT 2025 Gizi Kurang - Pantau | 51 | 42 | 102 | 29 |
+| SiGizi PMT 2025 Gizi Kurang - Riwayat | 34 | 19 | 75 | 23 |
 | SiGizi PMT 2025 Gizi Kurang - Survey | 20 | 5 | 16 | 4 |
 | SiGizi Ibu Nifas | 14 | 11 | 12 | 3 |
-| SiGizi Kohort Ibu | 42 | 63 | 94 | 3 |
+| SiGizi Kohort Ibu | 42 | 63 | 109 | 3 |
 | SIM RS Tripat ANC | 31 | 20 | 28 | 0 |
 | SIM RS Tripat BBL (sheet 'INC BBL') | 36 | 23 | 20 | 0 |
 | SIM RS Tripat PNC | 36 | 24 | 28 | 0 |
-| SIM RS Narmada INC | 225 | 86 | 262 | 2 |
-| SIM RS Narmada KIA | 70 | 50 | 107 | 2 |
-| SIM RS Panti Nugroho ANC | 43 | 31 | 68 | 11 |
-| SIM RS Panti Nugroho INC | 55 | 37 | 118 | 8 |
-| SIM RS Panti Nugroho PNC | 85 | 67 | 131 | 21 |
+| SIM RS Narmada INC | 225 | 86 | 264 | 2 |
+| SIM RS Narmada KIA | 70 | 50 | 110 | 2 |
+| SIM RS Panti Nugroho ANC | 43 | 31 | 77 | 11 |
+| SIM RS Panti Nugroho INC | 55 | 37 | 121 | 10 |
+| SIM RS Panti Nugroho PNC | 85 | 67 | 133 | 23 |
 | SIM RS Panti Nugroho BBL | 49 | 31 | 55 | 2 |
 | SIM RS Panti Nugroho Diabetes Melitus | 19 | 7 | 4 | 0 |
 | SIM RS Panti Nugroho Hipertensi | 40 | 23 | 21 | 4 |
 | SIM RS Panti Nugroho Stroke | 35 | 20 | 23 | 4 |
 | SIM RS Ummu Hani ANC | 33 | 23 | 49 | 3 |
-| SIM RS Ummu Hani INC | 54 | 41 | 94 | 6 |
-| SIM RS Ummu Hani PNC | 65 | 53 | 110 | 6 |
-| SIM RS Ummu Hani BBL | 45 | 30 | 51 | 2 |
-| SIM RS MPH ANC | 43 | 33 | 87 | 12 |
-| SIM RS MPH INC | 54 | 40 | 91 | 6 |
+| SIM RS Ummu Hani INC | 54 | 41 | 97 | 8 |
+| SIM RS Ummu Hani PNC | 65 | 53 | 112 | 8 |
+| SIM RS Ummu Hani BBL | 45 | 30 | 55 | 2 |
+| SIM RS MPH ANC | 43 | 33 | 90 | 12 |
+| SIM RS MPH INC | 54 | 40 | 94 | 8 |
 | SIM RS MPH PNC | 59 | 43 | 104 | 6 |
 | SIM RS MPH BBL | 73 | 42 | 59 | 2 |
 | SIM RS MPH Diabetes Melitus | 44 | 24 | 37 | 3 |
 | SIM RS MPH Hipertensi | 35 | 20 | 22 | 3 |
-| SIM RS Siaga Medika ANC | 61 | 100 | 181 | 12 |
+| SIM RS Siaga Medika ANC | 61 | 100 | 193 | 12 |
 | SIM RS Siaga Medika INC | 58 | 42 | 125 | 12 |
 | SIM RS Siaga Medika PNC | 71 | 49 | 110 | 16 |
 | SIM RS Siaga Medika BBL | 64 | 37 | 48 | 2 |
-| SIM RS PKU INC | 81 | 66 | 175 | 16 |
-| SIM RS PKU PNC | 85 | 67 | 131 | 21 |
+| SIM RS PKU INC | 81 | 66 | 179 | 18 |
+| SIM RS PKU PNC | 85 | 67 | 133 | 23 |
 | SIM RS Goetoeng ANC | 21 | 106 | 111 | 22 |
 | SIM RS Goetoeng INC | 35 | 64 | 245 | 12 |
 | SIM RS Goetoeng PNC | 27 | 9 | 21 | 11 |
@@ -331,40 +331,92 @@ Baris **ePus ...** = 11 form ePuskesmas dari `PHDT_ePus.xlsx` (⚠️ belum comp
 | SIM RS Goetoeng Diabetes Melitus | 12 | 6 | 4 | 0 |
 | SIM RS Goetoeng Hipertensi | 13 | 5 | 3 | 0 |
 | SISMAL Regmal 1 | 49 | 20 | 54 | 14 |
-| SISMAL Validasi Indigenous | 14 | 7 | 12 | 6 |
-| SIM RS Harapan Ibu ANC | 76 | 89 | 176 | 22 |
-| SIM RS Harapan Ibu INC | 81 | 67 | 160 | 16 |
-| SIM RS Harapan Ibu PNC | 86 | 67 | 145 | 21 |
-| SIM RS Harapan Ibu BBL | 105 | 79 | 110 | 2 |
-| SIM RS At tin ANC | 76 | 89 | 176 | 22 |
-| SIM RS At tin INC | 81 | 67 | 160 | 16 |
-| SIM RS At tin PNC | 86 | 67 | 145 | 21 |
-| SIM RS At tin BBL | 109 | 82 | 122 | 2 |
-| SIM RS Nirmala ANC | 76 | 89 | 176 | 22 |
-| SIM RS Nirmala INC | 81 | 67 | 160 | 16 |
-| SIM RS Nirmala PNC | 86 | 67 | 145 | 21 |
-| SIM RS Nirmala BBL | 109 | 82 | 122 | 2 |
-| SIM RS PKU ANC | 76 | 89 | 176 | 22 |
-| SIM RS PKU BBL | 109 | 82 | 122 | 2 |
+| SISMAL Validasi Indigenous | 14 | 7 | 13 | 7 |
+| SIM RS Harapan Ibu ANC | 76 | 89 | 194 | 22 |
+| SIM RS Harapan Ibu INC | 81 | 67 | 164 | 18 |
+| SIM RS Harapan Ibu PNC | 86 | 67 | 147 | 23 |
+| SIM RS Harapan Ibu BBL | 105 | 79 | 114 | 2 |
+| SIM RS At tin ANC | 76 | 89 | 194 | 22 |
+| SIM RS At tin INC | 81 | 67 | 164 | 18 |
+| SIM RS At tin PNC | 86 | 67 | 147 | 23 |
+| SIM RS At tin BBL | 109 | 82 | 126 | 2 |
+| SIM RS Nirmala ANC | 76 | 89 | 194 | 22 |
+| SIM RS Nirmala INC | 81 | 67 | 164 | 18 |
+| SIM RS Nirmala PNC | 86 | 67 | 147 | 23 |
+| SIM RS Nirmala BBL | 109 | 82 | 126 | 2 |
+| SIM RS PKU ANC | 76 | 89 | 194 | 22 |
+| SIM RS PKU BBL | 109 | 82 | 126 | 2 |
 | SIM RS MPH Hepatitis | 40 | 20 | 22 | 0 |
 | SIM RS Ummu Hani Hepatitis | 40 | 20 | 22 | 0 |
 | SIM RS PKU Hepatitis | 40 | 20 | 22 | 0 |
 | SIM RS Siaga Medika Hepatitis | 40 | 20 | 22 | 0 |
-| Kobo Modul ANC | 75 | 86 | 172 | 16 |
-| Kobo Modul INC | 108 | 80 | 243 | 41 |
-| Kobo Modul Neonatus | 89 | 50 | 98 | 2 |
-| Kobo Modul PNC | 118 | 98 | 225 | 27 |
-| Kobo Buku KIA 1 - ANC | 404 | 167 | 668 | 53 |
+| Kobo Modul ANC | 75 | 86 | 189 | 16 |
+| Kobo Modul INC | 108 | 80 | 248 | 44 |
+| Kobo Modul Neonatus | 89 | 50 | 100 | 4 |
+| Kobo Modul PNC | 118 | 98 | 228 | 29 |
+| Kobo Buku KIA 1 - ANC | 404 | 167 | 733 | 71 |
 | Kobo Buku KIA 2 - Luaran Kehamilan | 48 | 38 | 87 | 3 |
-| Kobo Buku KIA 3 - PNC | 145 | 75 | 168 | 21 |
+| Kobo Buku KIA 3 - PNC | 145 | 75 | 175 | 24 |
 | Kobo Buku KIA 4 - Cadre | 83 | 44 | 51 | 15 |
-| Kobo Buku KIA 5 - Vaksinatorku | 100 | 40 | 64 | 12 |
+| Kobo Buku KIA 5 - Vaksinatorku | 100 | 40 | 65 | 13 |
 | Kobo Neonatus Outcome | 25 | 14 | 25 | 6 |
-| Kobo Neonatus Outcome v2 | 208 | 89 | 239 | 57 |
+| Kobo Neonatus Outcome v2 | 208 | 89 | 276 | 58 |
 | Kobo DDTK | 20 | 11 | 10 | 0 |
-| **Total (non-unik)** | **10845** | **7313** | **17518** | **2172** |
-| **Total unik** | – | **1420** | **4040** | **860** |
-| Selisih (dipakai ulang) | – | 5893 | 13478 | 1312 |
+| **Total (non-unik)** | **10845** | **7313** | **19299** | **2764** |
+| **Total unik** | – | **1420** | **4257** | **975** |
+| Selisih (dipakai ulang) | – | 5893 | 15042 | 1789 |
+
+| CodeSystem | Jumlah |
+|---|---|
+| http://snomed.info/sct | 1823 |
+| http://terminology.kemkes.go.id/sp | 975 |
+| http://loinc.org | 503 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 337 |
+| http://hl7.org/fhir/sid/icd-10 | 120 |
+|  | 87 |
+| http://terminology.kemkes.go.id | 61 |
+| http://hl7.org/fhir/sid/icd-9-cm | 52 |
+| http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 37 |
+| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 27 |
+| http://sys-ids.kemkes.go.id/kfa | 24 |
+| http://terminology.kemkes.go.id/CodeSystem/examination | 22 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-type | 20 |
+| http://hl7.org/fhir/sid/cvx | 20 |
+| http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 17 |
+| http://terminology.kemkes.go.id/CodeSystem/icd-10-mm | 15 |
+| http://terminology.kemkes.go.id/CodeSystem/icd-10-pm | 13 |
+| http://sys-ids.kemkes.go.id/kf | 11 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 10 |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 10 |
+| http://terminology.kemkes.go.id/CodeSystem/location-type | 7 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 7 |
+| https://loinc.org | 7 |
+| http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | 7 |
+| http://terminology.hl7.org/CodeSystem/admit-source | 6 |
+| http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 5 |
+| hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 4 |
+| http://terminology.kemkes.go.id/CodeSystem/organization-ownership | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/composition-type | 3 |
+| http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
+| http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
+| http://hl7.org/fhir/administrative-gender | 2 |
+| https://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/data-absent-reason | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/kptl | 1 |
+| http://terminology.hl7. org/CodeSystem/admit -source | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/ | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/immunization-reason | 1 |
+| http://termi nology.hl7. org/CodeSy stem/v3-Ob servationIn terpretation | 1 |
+| http://terminology.hl7. org/CodeSystem/v3-Ob servationInterpretatio n | 1 |
+| CUSTOM | 1 |
+| 237244005 | 1 |
+| 65147003 | 1 |
+| 64254006 | 1 |
+| OV000394 | 1 |
+| https://www.ncbi.nlm.nih.gov/gene | 1 |
+| Viral Consensus Genome Sequence | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
+| **Total** | **4257** |
 
 ---
 

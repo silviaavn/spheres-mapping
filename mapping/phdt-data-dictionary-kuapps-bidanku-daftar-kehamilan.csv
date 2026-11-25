@@ -26,7 +26,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,8665-2,Last menstrual period start date,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B6.DE14,Last menstrual period (LMP) date,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
-,,,,,,,Tidak,,,Observation,Observation.dateAbsentReason.coding,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,HPHT,,"Jika pertanyaan ""apakah HPHT diketahui"" dijawab Ya, maka wajib mengisi pertanyaan ini",Date,,,Observation,Observation.valueDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

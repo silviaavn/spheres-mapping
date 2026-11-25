@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 22 |
-| Code (`jumlah code` = 1) | 51 |
-| Code unik (code + CodeSystem) | 48 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 25 |
+| Code (`jumlah code` = 1) | 58 |
+| Code unik (code + CodeSystem) | 52 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 30 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -29,19 +29,19 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 7 | 52–63 | Observation | 424144002.0 | Current chronological age | _Usia_ → `Observation.valueQuantity.value` (55, tanpa BQ) |
 | 8 | 89–102 | Observation | SP000519 | Tipe Intervensi Puskesmas | _Tipe intervensi puskesmas_ → `Observation.valueCodeableConcept.coding` (92, tanpa BQ) |
 | 9 | 113–125 | Observation | 280147009.0 | Type of activity | _Jenis kegiatan pemantauan yang dilakukan_ → `Observation.valueCodeableConcept.coding` (116, tanpa BQ) |
-| 10 | 126–136 | Observation | 280147009.0 | Type of activity | _Apakah pemantauan kalsium dilakukan?_ → `Observation.valueBoolean.coding` (129, tanpa BQ) |
+| 10 | 126–136 | Observation | 280147009.0 | Type of activity | _Apakah pemantauan kalsium dilakukan?_ → `Observation.valueBoolean` (129, tanpa BQ) |
 | 11 | 137–149 | Observation | SP000469 | Jenis Pemantauan Kalsium | _Jenis pemantauan kalsium yang dilakukan_ → `Observation.valueCodeableConcept.coding` (140, tanpa BQ) |
 | 12 | 150–241 | Medication | – | – | _MMS_ → `Medication.id` (150, tanpa BQ)<br>_Kalsium_ → `Medication.identifier` (231, tanpa BQ) |
 | 13 | 242–267 | MedicationRequest | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | _Tanggal pemberian blister_ → `MedicationRequest.contained.resourceType` (242, tanpa BQ)<br>_{tanggal pemberian kalsium}_ → `MedicationRequest.authoredOn` (262, tanpa BQ) |
 | 14 | 268–289 | MedicationDispense | 93022220.0 | Calcium Lactate 500 mg Tablet (MERSIFARMA TIRMAKU MERCUSANA) | – |
 | 15 | 292–304 | MedicationRequest | – | – | _Id Blister Calcium 1_ → `MedicationRequest.contained.batch.lotNumber` (292, tanpa BQ)<br>_Id Blister Calcium 1 (Manual entry)_ → `MedicationRequest.contained.batch.lotNumber` (293, tanpa BQ)<br>_Id Blister Calcium 1 (Manual entry kedua kali)_ → `MedicationRequest.contained.batch.lotNumber` (294, tanpa BQ)<br>_Id Blister Calcium 2_ → `MedicationRequest.contained.batch.lotNumber` (297, tanpa BQ)<br>_Id Blister Calcium 2 (Manual entry)_ → `MedicationRequest.contained.batch.lotNumber` (298, tanpa BQ)<br>_Id Blister Calcium 2 (Manual entry kedua kali)_ → `MedicationRequest.contained.batch.lotNumber` (299, tanpa BQ)<br>_Id Blister Calcium 3_ → `MedicationRequest.contained.batch.lotNumber` (302, tanpa BQ)<br>_Id Blister Calcium 3 (Manual entry)_ → `MedicationRequest.contained.batch.lotNumber` (303, tanpa BQ)<br>_Id Blister Calcium 3 (Manual entry kedua kali)_ → `MedicationRequest.contained.batch.lotNumber` (304, tanpa BQ) |
 | 16 | 305–308 | MedicationStatement | – | – | _Tanggal pemberian kalsium pertama kali_ → `MedicationStatement.status` (305, tanpa BQ)<br>_Jumlah kalsium yang seharusnya sudah dikonsumsi_ → `` (308, tanpa BQ) |
-| 17 | 325–336 | Observation | SP000640 | Konsumsi kalsium setiap hari | _Apakah ibu mengonsumsi kalsium setiap hari?_ → `Observation.valueBoolean.coding` (328, tanpa BQ) |
+| 17 | 325–336 | Observation | SP000640 | Konsumsi kalsium setiap hari | _Apakah ibu mengonsumsi kalsium setiap hari?_ → `Observation.valueBoolean` (328, tanpa BQ) |
 | 18 | 337–355 | Observation | SP000642 | Alasan tidak mengonsumsi kalsium | _Jika tidak, apa alasannya?_ → `Observation.valueCodeableConcept.coding` (340, tanpa BQ) |
-| 19 | 357–360 | MedicationStatement | – | – | _Tanggal Pemberian MMS Kemasan Botol*_ → `MedicationStatement.effectivePeriod.start` (357, tanpa BQ)<br>_Id Botol MMS_ → `MedicationStatement.medicationReferencee` (360, tanpa BQ) |
+| 19 | 357–360 | MedicationStatement | – | – | _Tanggal Pemberian MMS Kemasan Botol*_ → `MedicationStatement.effectivePeriod.start` (357, tanpa BQ)<br>_Id Botol MMS_ → `MedicationStatement.medicationReference` (360, tanpa BQ) |
 | 20 | 375–392 | MedicationDispense | – | – | _Jumlah tablet MMS yang sudah dikonsumsi berdasarkan kartu pemantauan atau pengakuan ibu hamil_ → `MedicationDispense.quantity.value` (375, tanpa BQ)<br>_Id Blister MMS_ → `MedicationDispense.status` (386, tanpa BQ)<br>_Tanggal pemberian MMS Kemasan Blister pertama kali_ → `MedicationStatement.effectiveDateTime` (392, tanpa BQ) |
 | 21 | 393–404 | MedicationStatement | – | – | _Jumlah tablet MMS yang seharusnya dikonsumsi_ → `MedicationStatement.dosage.doseAndRate.doseQuantity.value` (397, tanpa BQ)<br>_Jumlah tablet MMS yang sudah dikonsumsi_ → `MedicationStatement.dosage.doseAndRate.doseQuantity.value` (403, tanpa BQ) |
-| 22 | 455–536 | Observation | SP000482 | Skrinning Preeklampsia | _Apakah sudah dilakukan skrining preeklampsia pada ibu hamil usia 17-19 minggu?_ → `Observation.valueBoolean.coding` (458, tanpa BQ)<br>_Skrining Preeklampsia (UK <20 Minggu)_ → `Observation.component.code.coding` (460, tanpa BQ)<br>_Kesimpulan Skrining Preeklampsia_ → `Observation.Interpretation.coding` (527, tanpa BQ) |
+| 22 | 455–536 | Observation | SP000482 | Skrinning Preeklampsia | _Apakah sudah dilakukan skrining preeklampsia pada ibu hamil usia 17-19 minggu?_ → `Observation.valueBoolean` (458, tanpa BQ)<br>_Skrining Preeklampsia (UK <20 Minggu)_ → `Observation.component.code.coding` (460, tanpa BQ)<br>_Kesimpulan Skrining Preeklampsia_ → `Observation.interpretation.coding` (527, tanpa BQ) |
 
 ### Payload per resource
 
@@ -102,28 +102,35 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 38 | 347 | Observation | `Observation.valueCodeableConcept.coding` | SP000639 | Bau tidak enak | http://terminology.kemkes.go.id/sp |
 | 39 | 348 | Observation | `Observation.valueCodeableConcept.coding` | 182863006.0 | Drug not taken - dislike form |  |
 | 40 | 349 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 41 | 457 | Observation | `Observation.code.coding` | SP000482 | Skrinning Preeklampsia | http://terminology.kemkes.go.id/sp |
-| 42 | 469 | Observation | `Observation.component.code.coding` | 102877006.0 | Nulliparous |  |
-| 43 | 475 | Observation | `Observation.component.code.coding` | 105651000119100.0 | Past pregnancy history of pre-eclampsia |  |
-| 44 | 478 | Observation | `Observation.component.code.coding` | 700190003.0 | Family history of pre-eclampsia | http://snomed.info/sct |
-| 45 | 487 | Observation | `Observation.component.code.coding` | 16356006.0 | Multiple pregnancy | http://snomed.info/sct |
-| 46 | 490 | Observation | `Observation.component.code.coding` | 11687002.0 | Gestational diabetes mellitus | http://snomed.info/sct |
-| 47 | 493 | Observation | `Observation.component.code.coding` | 8762007.0 | Chronic hypertension in obstetric context | http://snomed.info/sct |
-| 48 | 496 | Observation | `Observation.component.code.coding` | 90708001.0 | Kidney disease | http://snomed.info/sct |
-| 49 | 499 | Observation | `Observation.component.code.coding` | 85828009.0 | Autoimmune disease | http://snomed.info/sct |
-| 50 | 502 | Observation | `Observation.component.code.coding` | 55464009.0 | Systemic lupus erythematosus | http://snomed.info/sct |
-| 51 | 511 | Observation | `Observation.component.code.coding` | 167275009.0 | Urine protein test = + | http://snomed.info/sct |
+| 41 | 438 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000636 | Malas mengonsumsi | http://terminology.kemkes.go.id/sp |
+| 42 | 439 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000637 | Minum vitamin lain | http://terminology.kemkes.go.id/sp |
+| 43 | 440 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000638 | Warna MMS berubah | http://terminology.kemkes.go.id/sp |
+| 44 | 443 | MedicationStatement | `MedicationStatement.statusReason.coding` | SP000639 | Bau tidak enak | http://terminology.kemkes.go.id/sp |
+| 45 | 446 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
+| 46 | 457 | Observation | `Observation.code.coding` | SP000482 | Skrinning Preeklampsia | http://terminology.kemkes.go.id/sp |
+| 47 | 469 | Observation | `Observation.component.code.coding` | 102877006.0 | Nulliparous |  |
+| 48 | 475 | Observation | `Observation.component.code.coding` | 105651000119100.0 | Past pregnancy history of pre-eclampsia |  |
+| 49 | 478 | Observation | `Observation.component.code.coding` | 700190003.0 | Family history of pre-eclampsia | http://snomed.info/sct |
+| 50 | 487 | Observation | `Observation.component.code.coding` | 16356006.0 | Multiple pregnancy | http://snomed.info/sct |
+| 51 | 490 | Observation | `Observation.component.code.coding` | 11687002.0 | Gestational diabetes mellitus | http://snomed.info/sct |
+| 52 | 493 | Observation | `Observation.component.code.coding` | 8762007.0 | Chronic hypertension in obstetric context | http://snomed.info/sct |
+| 53 | 496 | Observation | `Observation.component.code.coding` | 90708001.0 | Kidney disease | http://snomed.info/sct |
+| 54 | 499 | Observation | `Observation.component.code.coding` | 85828009.0 | Autoimmune disease | http://snomed.info/sct |
+| 55 | 502 | Observation | `Observation.component.code.coding` | 55464009.0 | Systemic lupus erythematosus | http://snomed.info/sct |
+| 56 | 511 | Observation | `Observation.component.code.coding` | 167275009.0 | Urine protein test = + | http://snomed.info/sct |
+| 57 | 527 | Observation | `Observation.interpretation.coding` | 1303255001.0 | Medium risk pregnancy | http://snomed.info/sct |
+| 58 | 536 | Observation | `Observation.interpretation.coding` | 47200007.0 | High risk pregnancy | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://terminology.kemkes.go.id/sp | 25 |
-| http://snomed.info/sct | 18 |
+| http://terminology.kemkes.go.id/sp | 30 |
+| http://snomed.info/sct | 20 |
 | http://sys-ids.kemkes.go.id/kf | 4 |
 |  | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 1 |
-| **Total** | **51** |
+| **Total** | **58** |
 
 ## Variabel di luar payload
 
@@ -182,6 +189,6 @@ Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di
 | 413 | – | Jumlah konsumsi MMS pada kemasan blister terakhir | MedicationStatement | `MedicationStatement.identifier` |
 | 420 | – | Jumlah sisa tablet MMS pada blister terakhir | MedicationStatement | `MedicationStatement.identifier` |
 | 433 | – | Apakah ibu mengonsumsi MMS setiap hari? | MedicationStatement | `MedicationStatement.category.coding` |
-| 436 | – | Jika tidak, apa alasannya? | MedicationStatement | `MedicationStatement.statusReason.CodeableConcept.Coding` |
+| 436 | – | Jika tidak, apa alasannya? | MedicationStatement | `MedicationStatement.statusReason.coding` |
 | 453 | – | Foto blister | – | `` |
 | 454 | – | Foto kartu pemantauan | – | `` |

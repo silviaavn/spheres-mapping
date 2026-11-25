@@ -112,8 +112,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,data_pnc_tanggl_pnc,Tanggal Masuk PNC,date,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,date,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,string,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,string,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Discharge diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -476,7 +476,7 @@ Jika dijawab tidak maka tidak perlu dibuat resource",,Condition,Condition.clinic
 ,,,,,date,YYYYMMDD,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,date,YYYYMMDD,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,pemberian_asi_pencatatan_di_buku_kia_yatidak,Catat dibuku KIA,Boolean,,,,,Observation,Observation.catgeory.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
+,,,pemberian_asi_pencatatan_di_buku_kia_yatidak,Catat dibuku KIA,Boolean,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000122,Catat di Buku KIA,http://terminology.kemkes.go.id/sp,,1,1
 ,,,,,,,Ya,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Tidak,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,

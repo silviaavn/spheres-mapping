@@ -9,7 +9,7 @@ Formulir Modul Ibu Hamil,Biodata Ibu Hamil,,,Nama,,,,,,Patient,Patient.name.text
 ,,,,Usia,,,,,,Patient,Patient.birthDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,No HP,,,,,,Patient,Patient.telecom,phone,Phone,http://hl7.org/fhir/contact-point-system,,,
 ,,,,Alamat,,,,,,Patient,Patient.address.use,home,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Patient,Patient.line,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.line,Tidak ada,Tidak ada,Tidak ada,,,
 ,Hasil Pemeriksaan Kesehatan Ibu Hamil,,,Tanggal Kunjungan,,,,,,Encounter,Encounter.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/encounter/{{Org_id}},,,1
 ,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.class,AMB,ambulatory,http://terminology.hl7.org/CodeSystem/v3-ActCode,,,
@@ -20,8 +20,8 @@ Formulir Modul Ibu Hamil,Biodata Ibu Hamil,,,Nama,,,,,,Patient,Patient.name.text
 ,,,,,,,,,,Encounter,Encounter.participant.individual.reference,Reference ke resources PractitionerRole,,,,,
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -173,7 +173,7 @@ Formulir Modul Ibu Hamil,Biodata Ibu Hamil,,,Nama,,,,,,Patient,Patient.name.text
 ,,,,,,,,,,Specimen,Specimen.status,available,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Specimen,Specimen.type,122555007,Venous blood specimen,http://snomed.info/sct,,1,
 ,,,,,,,,,,Specimen,Specimen.collection.method.coding,82078001,Collection of blood specimen for laboratory,http://snomed.info/sct,,,
-,,,,,,,,,,Specimen,Specimen.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Specimen,Specimen.collection.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.subject.reference,Reference ke resources Patient Id,,,,,
 ,,,,,,,,,,Specimen,Specimen.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.request.reference,Reference ke resources ServiceRequest,,,,,
@@ -192,7 +192,7 @@ Formulir Modul Ibu Hamil,Biodata Ibu Hamil,,,Nama,,,,,,Patient,Patient.name.text
 ,,,,,,,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.category.coding,HM,Hematology,http://terminology.hl7.org/CodeSystem/v2-0074,,,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.code.coding,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,,1,

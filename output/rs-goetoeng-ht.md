@@ -21,7 +21,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 3–12 | Patient | – | – | _Nama_ → `Patient.name.text` (3, tanpa BQ)<br>_NIK_ → `Patient.identifier.value` (6, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (7, tanpa BQ)<br>_Alamat_ → `Patient.address.use` (8, tanpa BQ)<br>_No HP_ → `Patient.telecom` (10, tanpa BQ) |
-| 2 | 14–38 | Encounter | – | – | _Keterangan - Tgl Masuk_ → `Encounter.period.start` (21, tanpa BQ)<br>_Keterangan - Unit_ → `Encounter.location.display` (24, tanpa BQ)<br>_Rujukan_ → `Encounter.hospitalization.dischargeDisposition.text` (38, tanpa BQ) |
+| 2 | 14–38 | Encounter | – | – | _Keterangan - Tgl Masuk_ → `Encounter.period.start` (21, tanpa BQ)<br>_Keterangan - Unit_ → `Encounter.location.location.display` (24, tanpa BQ)<br>_Rujukan_ → `Encounter.hospitalization.dischargeDisposition.text` (38, tanpa BQ) |
 | 3 | 39–47 | Condition | I10 | Essential (primary) hypertension | _Hasil_ → `Condition.note` (47, tanpa BQ) |
 | 4 | 48–59 | Observation | 8480-6 | Systolic blood pressure | _Hasil Pemeriksaan Tensi Darah - Sistol_ → `Observation.valueQuantity.value` (51, tanpa BQ) |
 | 5 | 60–71 | Observation | 8462-4 | Diastolic blood pressure | _Hasil Pemeriksaan Tensi Darah - Diastol_ → `Observation.valueQuantity.value` (63, tanpa BQ) |

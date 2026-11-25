@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 1 |
-| Code (`jumlah code` = 1) | 0 |
-| Code unik (code + CodeSystem) | 0 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 0 |
+| Code (`jumlah code` = 1) | 3 |
+| Code unik (code + CodeSystem) | 3 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 3 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -33,12 +33,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
+| 1 | 22 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000943 | > 3 porsi | http://terminology.kemkes.go.id/sp |
+| 2 | 23 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000944 | 3 porsi | http://terminology.kemkes.go.id/sp |
+| 3 | 24 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000945 | < 3 porsi | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| **Total** | **0** |
+| http://terminology.kemkes.go.id/sp | 3 |
+| **Total** | **3** |
 
 ## Variabel di luar payload
 

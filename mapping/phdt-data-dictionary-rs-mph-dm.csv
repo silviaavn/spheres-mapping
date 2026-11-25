@@ -49,8 +49,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,{Nama Tenaga Kesehatan},,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,{Tanggal Kunjungan},Tanggal Kunjungan (dd mm yy),date,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,{Tanggal Kunjungan},,date,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location RS,,,,,
-,,,{Tempat Pelayanan},Tempat Pelayanan,string,,,coded nama poli,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location RS,,,,,
+,,,{Tempat Pelayanan},Tempat Pelayanan,string,,,coded nama poli,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.statusHistory.status,arrived,Tidak ada,Tidak ada,,,
 ,,,{Tanggal Kunjungan},,,,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
@@ -70,7 +70,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,,,,Condition,Condition.identifier.value,Diagnosis Utama,,,,,
 ,,,,,,,,,,Condition,Condition.category.coding,encounter-diagnosis,Encounter Diagnosis,http://terminology.hl7.org/CodeSystem/condition-category,,,
-,,,,Diagnosis utama,string,,,"kode masuk ke Condition.code.coding.code, displaynya seharusnya di match dengan list icd namun jika belum bisa dapat menggunakan kode juga untuk di Condition.code.coding.display",,Condition,Condition.code.coding.0.code,Tidak ada,Tidak ada,http://hl7.org/fhir/sid/icd-10,,,
+,,,,Diagnosis utama,string,,,"kode masuk ke Condition.code.coding.code, displaynya seharusnya di match dengan list icd namun jika belum bisa dapat menggunakan kode juga untuk di Condition.code.coding.display",,Condition,Condition.code.coding.code,Tidak ada,Tidak ada,http://hl7.org/fhir/sid/icd-10,,,
 ,,,,,,,,"jika ""Diagnosis utama"" tidak diisi, maka gunakan value default ini",,Condition,Condition.code.coding,E14,Unspecified diabetes mellitus,http://hl7.org/fhir/sid/icd-10,,1,
 ,,,,,,,,,,Condition,Condition.subject.reference,Reference ke resources Patient,,,,,
 ,,,{NamaPasien},,,,,,,Condition,Condition.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
@@ -201,7 +201,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,ServiceRequest,ServiceRequest.performer.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,,,Specimen,Specimen.status,available,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Specimen,Specimen.type.coding,123038009.0,Specimen,http://snomed.info/sct,,1,
-,,,{Tanggal Kunjungan (pemeriksaan laboratorium)},,,,,,,Specimen,Specimen.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,{Tanggal Kunjungan (pemeriksaan laboratorium)},,,,,,,Specimen,Specimen.collection.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.subject.reference,Reference ke resources Patient,,,,,
 ,,,{NamaPasien},,,,,,,Specimen,Specimen.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.request.reference,Reference ke resources ServiceRequest,,,,,

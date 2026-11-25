@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 29 |
-| Code (`jumlah code` = 1) | 119 |
-| Code unik (code + CodeSystem) | 98 |
+| Code (`jumlah code` = 1) | 121 |
+| Code unik (code + CodeSystem) | 100 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 10 |
 | Variabel BQ (unik) | 0 |
 
@@ -22,7 +22,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|
 | 1 | 4–15 | Observation | 29463-7 | Body weight | _Berat Badan_ → `Observation.valueQuantity.value` (7, tanpa BQ) |
 | 2 | 16–27 | Observation | 8302-2 | Body height | _Tinggi Badan_ → `Observation.valueQuantity.value` (19, tanpa BQ) |
-| 3 | 29–58 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | _IMT_ → `Observation.valueRange.low.value` (40, tanpa BQ) |
+| 3 | 29–58 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | _IMT_ → `Observation.valueRange.high.value` (34, tanpa BQ) |
 | 4 | 59–70 | Observation | 396552003 | Abdominal circumference | _Lingkar Perut_ → `Observation.valueQuantity.value` (62, tanpa BQ) |
 | 5 | 71–81 | Observation | 284473002 | Mid upper arm circumference | _LiLA_ → `Observation.valueQuantity.value` (74, tanpa BQ) |
 | 6 | 82–93 | Observation | 8480-6 | Systolic blood pressure | _Tekanan Darah Sistole_ → `Observation.valueQuantity.value` (85, tanpa BQ) |
@@ -134,68 +134,70 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 68 | 340 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000436 | 20-30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 69 | 341 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000437 | >30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 70 | 360 | Observation | `Observation.code.coding` | SP000111 | Hasil Kuesioner PUMA | http://terminology.kemkes.go.id/sp |
-| 71 | 374 | Observation | `Observation.code.coding` | 304492001 | Activities of daily living assessment | http://snomed.info/sct |
-| 72 | 375 | Observation | `Observation.component.code.coding` | 96759-6 | Bowels | http://loinc.org |
-| 73 | 376 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31627-5 | Incontinent (or needs to be given enemas) | http://loinc.org |
-| 74 | 377 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31626-7 | Occasional accident | http://loinc.org |
-| 75 | 378 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31625-9 | Continent | http://loinc.org |
-| 76 | 379 | Observation | `Observation.component.code.coding` | 96760-4 | Bladder | http://loinc.org |
-| 77 | 380 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31628-3 | Incontinent, or catheterized and unable to manage alone | http://loinc.org |
-| 78 | 381 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31626-7 | Occasional accident | http://loinc.org |
-| 79 | 382 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31625-9 | Continent | http://loinc.org |
-| 80 | 383 | Observation | `Observation.component.code.coding` | 96767-9 | Grooming | http://loinc.org |
-| 81 | 384 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31643-2 | Needs help with personal care | http://loinc.org |
-| 82 | 385 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31644-0 | Independent face/hair/teeth/shaving (implements provided) | http://loinc.org |
-| 83 | 386 | Observation | `Observation.component.code.coding` | 83183-4 | Toilet Use | http://loinc.org |
-| 84 | 387 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12304-4 | Dependent | http://loinc.org |
-| 85 | 388 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31631-7 | Needs some help, but can do something alone | http://loinc.org |
-| 86 | 389 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31632-5 | Independent (on and off, dressing, wiping) | http://loinc.org |
-| 87 | 390 | Observation | `Observation.component.code.coding` | 83184-2 | Feeding | http://loinc.org |
-| 88 | 391 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24937-7 | Unable | http://loinc.org |
-| 89 | 392 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31630-9 | Needs help cutting, spreading butter, etc., or requires modified diet | http://loinc.org |
-| 90 | 393 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12302-8 | Independent | http://loinc.org |
-| 91 | 394 | Observation | `Observation.component.code.coding` | 83185-9 | Transfer | http://loinc.org |
-| 92 | 395 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31633-3 | Unable, no sitting balance | http://loinc.org |
-| 93 | 396 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31634-1 | Major help (one or two people, physical), can sit | http://loinc.org |
-| 94 | 397 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31635-8 | Minor help (verbal or physical) | http://loinc.org |
-| 95 | 398 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12302-8 | Independent | http://loinc.org |
-| 96 | 399 | Observation | `Observation.component.code.coding` | 83186-7 | Mobility | http://loinc.org |
-| 97 | 400 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31639-0 | Immobile or <50 yards | http://loinc.org |
-| 98 | 401 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31640-8 | Wheelchair independent, including corners, >50 yards | http://loinc.org |
-| 99 | 402 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31641-6 | Walks with help of one person (verbal or physical) >50 yards | http://loinc.org |
-| 100 | 403 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31642-4 | Independent (but may use any aid; for example, stick) >50 yards | http://loinc.org |
-| 101 | 404 | Observation | `Observation.component.code.coding` | 83182-6 | Dressing | http://loinc.org |
-| 102 | 405 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12304-4 | Dependent | http://loinc.org |
-| 103 | 406 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31637-4 | Needs help but can do about half unaided | http://loinc.org |
-| 104 | 407 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31638-2 | Independent (including buttons, zips, laces, etc.) | http://loinc.org |
-| 105 | 408 | Observation | `Observation.component.code.coding` | 96758-8 | Stairs | http://loinc.org |
-| 106 | 409 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24937-7 | Unable | http://loinc.org |
-| 107 | 410 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31629-1 | Needs help (verbal, physical, carrying aid) | http://loinc.org |
-| 108 | 411 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12302-8 | Independent | http://loinc.org |
-| 109 | 412 | Observation | `Observation.component.code.coding` | 83181-8 | Bathing | http://loinc.org |
-| 110 | 413 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12304-4 | Dependent | http://loinc.org |
-| 111 | 414 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31636-6 | Independent (or in shower) | http://loinc.org |
-| 112 | 417 | Observation | `Observation.code.coding` | 96762-0 | Barthel index panel | http://loinc.org |
-| 113 | 418 | Observation | `Observation.interpretation.coding` | 371153006 | Independent | http://snomed.info/sct |
-| 114 | 421 | Observation | `Observation.interpretation.coding` | OI000045 | Ketergantungan ringan | http://snomed.info/sct |
-| 115 | 426 | Observation | `Observation.interpretation.coding` | OI000046 | Ketergantungan sedang | http://snomed.info/sct |
-| 116 | 431 | Observation | `Observation.interpretation.coding` | OI000047 | Ketergantungan berat | http://snomed.info/sct |
-| 117 | 436 | Observation | `Observation.interpretation.coding` | OI000048 | Ketergantungan total | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 118 | 595 | Observation | `Observation.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 119 | 607 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
+| 71 | 362 | Observation | `Observation.interpretation.coding` | 723505004 | Low risk | http://snomed.info/sct |
+| 72 | 364 | Observation | `Observation.interpretation.coding` | 723509005 | High risk | http://snomed.info/sct |
+| 73 | 374 | Observation | `Observation.code.coding` | 304492001 | Activities of daily living assessment | http://snomed.info/sct |
+| 74 | 375 | Observation | `Observation.component.code.coding` | 96759-6 | Bowels | http://loinc.org |
+| 75 | 376 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31627-5 | Incontinent (or needs to be given enemas) | http://loinc.org |
+| 76 | 377 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31626-7 | Occasional accident | http://loinc.org |
+| 77 | 378 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31625-9 | Continent | http://loinc.org |
+| 78 | 379 | Observation | `Observation.component.code.coding` | 96760-4 | Bladder | http://loinc.org |
+| 79 | 380 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31628-3 | Incontinent, or catheterized and unable to manage alone | http://loinc.org |
+| 80 | 381 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31626-7 | Occasional accident | http://loinc.org |
+| 81 | 382 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31625-9 | Continent | http://loinc.org |
+| 82 | 383 | Observation | `Observation.component.code.coding` | 96767-9 | Grooming | http://loinc.org |
+| 83 | 384 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31643-2 | Needs help with personal care | http://loinc.org |
+| 84 | 385 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31644-0 | Independent face/hair/teeth/shaving (implements provided) | http://loinc.org |
+| 85 | 386 | Observation | `Observation.component.code.coding` | 83183-4 | Toilet Use | http://loinc.org |
+| 86 | 387 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12304-4 | Dependent | http://loinc.org |
+| 87 | 388 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31631-7 | Needs some help, but can do something alone | http://loinc.org |
+| 88 | 389 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31632-5 | Independent (on and off, dressing, wiping) | http://loinc.org |
+| 89 | 390 | Observation | `Observation.component.code.coding` | 83184-2 | Feeding | http://loinc.org |
+| 90 | 391 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24937-7 | Unable | http://loinc.org |
+| 91 | 392 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31630-9 | Needs help cutting, spreading butter, etc., or requires modified diet | http://loinc.org |
+| 92 | 393 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12302-8 | Independent | http://loinc.org |
+| 93 | 394 | Observation | `Observation.component.code.coding` | 83185-9 | Transfer | http://loinc.org |
+| 94 | 395 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31633-3 | Unable, no sitting balance | http://loinc.org |
+| 95 | 396 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31634-1 | Major help (one or two people, physical), can sit | http://loinc.org |
+| 96 | 397 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31635-8 | Minor help (verbal or physical) | http://loinc.org |
+| 97 | 398 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12302-8 | Independent | http://loinc.org |
+| 98 | 399 | Observation | `Observation.component.code.coding` | 83186-7 | Mobility | http://loinc.org |
+| 99 | 400 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31639-0 | Immobile or <50 yards | http://loinc.org |
+| 100 | 401 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31640-8 | Wheelchair independent, including corners, >50 yards | http://loinc.org |
+| 101 | 402 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31641-6 | Walks with help of one person (verbal or physical) >50 yards | http://loinc.org |
+| 102 | 403 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31642-4 | Independent (but may use any aid; for example, stick) >50 yards | http://loinc.org |
+| 103 | 404 | Observation | `Observation.component.code.coding` | 83182-6 | Dressing | http://loinc.org |
+| 104 | 405 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12304-4 | Dependent | http://loinc.org |
+| 105 | 406 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31637-4 | Needs help but can do about half unaided | http://loinc.org |
+| 106 | 407 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31638-2 | Independent (including buttons, zips, laces, etc.) | http://loinc.org |
+| 107 | 408 | Observation | `Observation.component.code.coding` | 96758-8 | Stairs | http://loinc.org |
+| 108 | 409 | Observation | `Observation.component.valueCodeableConcept.coding` | LA24937-7 | Unable | http://loinc.org |
+| 109 | 410 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31629-1 | Needs help (verbal, physical, carrying aid) | http://loinc.org |
+| 110 | 411 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12302-8 | Independent | http://loinc.org |
+| 111 | 412 | Observation | `Observation.component.code.coding` | 83181-8 | Bathing | http://loinc.org |
+| 112 | 413 | Observation | `Observation.component.valueCodeableConcept.coding` | LA12304-4 | Dependent | http://loinc.org |
+| 113 | 414 | Observation | `Observation.component.valueCodeableConcept.coding` | LA31636-6 | Independent (or in shower) | http://loinc.org |
+| 114 | 417 | Observation | `Observation.code.coding` | 96762-0 | Barthel index panel | http://loinc.org |
+| 115 | 418 | Observation | `Observation.interpretation.coding` | 371153006 | Independent | http://snomed.info/sct |
+| 116 | 421 | Observation | `Observation.interpretation.coding` | OI000045 | Ketergantungan ringan | http://snomed.info/sct |
+| 117 | 426 | Observation | `Observation.interpretation.coding` | OI000046 | Ketergantungan sedang | http://snomed.info/sct |
+| 118 | 431 | Observation | `Observation.interpretation.coding` | OI000047 | Ketergantungan berat | http://snomed.info/sct |
+| 119 | 436 | Observation | `Observation.interpretation.coding` | OI000048 | Ketergantungan total | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 120 | 595 | Observation | `Observation.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 121 | 607 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 54 |
+| http://snomed.info/sct | 56 |
 | http://loinc.org | 47 |
 | http://terminology.kemkes.go.id/sp | 10 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 3 |
 |  | 2 |
 | http://hl7.org/fhir/administrative-gender | 2 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **119** |
+| **Total** | **121** |
 
 ## Variabel di luar payload
 

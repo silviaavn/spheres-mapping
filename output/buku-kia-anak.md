@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 189 |
-| Code (`jumlah code` = 1) | 284 |
-| Code unik (code + CodeSystem) | 81 |
+| Code (`jumlah code` = 1) | 288 |
+| Code unik (code + CodeSystem) | 83 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 8 |
 | Variabel BQ (unik) | 0 |
 
@@ -48,7 +48,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 26 | 1147–1160 | Procedure | PC000001 | Perawatan Tali Pusat | _Perawatan Tali pusat_ → `Procedure.identifier` (1147, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.start` (1155, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.end` (1156, tanpa BQ)<br>_Tempat_ → `Procedure.location.display` (1160, tanpa BQ) |
 | 27 | 1161–1174 | Procedure | 431868002 | Initiation of breastfeeding | _IMD_ → `Procedure.identifier` (1161, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.start` (1169, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.end` (1170, tanpa BQ)<br>_Tempat_ → `Procedure.location.display` (1174, tanpa BQ) |
 | 28 | 1175–1188 | Procedure | 448883004 | Injection of vitamin K1 | _Vitamin K1_ → `Procedure.identifier` (1175, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.start` (1183, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.end` (1184, tanpa BQ)<br>_Tempat_ → `Procedure.location.display` (1188, tanpa BQ) |
-| 29 | 1189–1205 | Immunization | – | – | _Imunisasi Hepatitis B_ → `Immunization.identifier` (1189, tanpa BQ)<br>_Tanggal/Bulan_ → `Immunization.occurenceDateTime` (1197, tanpa BQ)<br>_Tanggal/Bulan_ → `Immunization.recorded` (1198, tanpa BQ)<br>_Tempat_ → `Immunization.location.display` (1205, tanpa BQ) |
+| 29 | 1189–1205 | Immunization | – | – | _Imunisasi Hepatitis B_ → `Immunization.identifier` (1189, tanpa BQ)<br>_Tanggal/Bulan_ → `Immunization.occurrenceDateTime` (1197, tanpa BQ)<br>_Tanggal/Bulan_ → `Immunization.recorded` (1198, tanpa BQ)<br>_Tempat_ → `Immunization.location.display` (1205, tanpa BQ) |
 | 30 | 1206–1220 | Observation | – | – | _Salep/Tetes Mata Antibiotik_ → `Observation.identifier` (1206, tanpa BQ)<br>_Tanggal/Bulan_ → `Observation.effectiveDateTime` (1215, tanpa BQ)<br>_Tanggal/Bulan_ → `Observation.issued` (1216, tanpa BQ)<br>_Tempat_ → `Observation.performer.display` (1220, tanpa BQ) |
 | 31 | 1221–1234 | Procedure | 400984005 | Congenital hypothyroidism screening test | _Skrining BBL/SHK_ → `Procedure.identifier` (1221, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.start` (1229, tanpa BQ)<br>_Tanggal/Bulan_ → `Procedure.performedPeriod.end` (1230, tanpa BQ)<br>_Tempat_ → `Procedure.location.display` (1234, tanpa BQ) |
 | 32 | 1235–1249 | Observation | SP000023 | KIA | _KIA_ → `Observation.identifier` (1235, tanpa BQ)<br>_Tanggal/Bulan_ → `Observation.effectiveDateTime` (1244, tanpa BQ)<br>_Tanggal/Bulan_ → `Observation.issued` (1245, tanpa BQ)<br>_Tempat_ → `Observation.performer.display` (1249, tanpa BQ) |
@@ -150,26 +150,26 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 128 | 2697–2712 | ServiceRequest | 737492002 | Outpatient care management | _Tanggal/Bulan/Tahun Jam_ → `ServiceRequest.occurrenceDateTime` (2708, tanpa BQ)<br>_Nama Tenaga Kesehatan_ → `ServiceRequest.requester.display` (2710, tanpa BQ)<br>_Dirujuk ke**_ → `ServiceRequest.performer.display` (2712, tanpa BQ) |
 | 129 | 2713–2724 | Observation | – | – | _Catatan Penting_ → `Observation.identifier` (2713, tanpa BQ)<br>_Nama Tenaga Kesehatan_ → `Observation.performer.display` (2724, tanpa BQ) |
 | 130 | 2725–2741 | Immunization | – | – | _Pelayanan Imunisasi (Hepatitis B (<24 Jam))_ → `Immunization.status` (2725, tanpa BQ)<br>_Pelayanan Imunisasi (BCG)_ → `Immunization.status` (2740, tanpa BQ) |
-| 131 | 2742–2755 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2747, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2748, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2751, tanpa BQ)<br>_OPV 1_ → `Immunization.status` (2754, tanpa BQ) |
-| 132 | 2756–2770 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2761, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2762, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2765, tanpa BQ)<br>_DPT-HB-Hib 1_ → `Immunization.status` (2769, tanpa BQ) |
-| 133 | 2771–2787 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2778, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2779, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2782, tanpa BQ)<br>_OPV 2_ → `Immunization.status` (2786, tanpa BQ) |
-| 134 | 2788–2802 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2793, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2794, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2797, tanpa BQ)<br>_Rotavirus (RV 1)_ → `Immunization.status` (2801, tanpa BQ) |
-| 135 | 2803–2817 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2808, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2809, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2812, tanpa BQ)<br>_PCV 1_ → `Immunization.status` (2816, tanpa BQ) |
-| 136 | 2818–2832 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2823, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2824, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2827, tanpa BQ)<br>_DPT-HB-Hib 2_ → `Immunization.status` (2831, tanpa BQ) |
-| 137 | 2833–2849 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2840, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2841, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2844, tanpa BQ)<br>_OPV 3_ → `Immunization.status` (2848, tanpa BQ) |
-| 138 | 2850–2864 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2855, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2856, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2859, tanpa BQ)<br>_Rotavirus (RV 2)_ → `Immunization.status` (2863, tanpa BQ) |
-| 139 | 2865–2879 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2870, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2871, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2874, tanpa BQ)<br>_PCV 2_ → `Immunization.status` (2878, tanpa BQ) |
-| 140 | 2880–2894 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2885, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2886, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2889, tanpa BQ)<br>_DPT-HB-Hib 3_ → `Immunization.status` (2893, tanpa BQ) |
-| 141 | 2895–2911 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2902, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2903, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2906, tanpa BQ)<br>_OPV 4_ → `Immunization.status` (2910, tanpa BQ) |
-| 142 | 2912–2926 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2917, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2918, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2921, tanpa BQ)<br>_IPV 1_ → `Immunization.status` (2925, tanpa BQ) |
-| 143 | 2927–2941 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2932, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2933, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2936, tanpa BQ)<br>_Rotavirus (RV 3)_ → `Immunization.status` (2940, tanpa BQ) |
-| 144 | 2942–2956 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2947, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2948, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2951, tanpa BQ)<br>_Campak-Rubella (MR)_ → `Immunization.status` (2955, tanpa BQ) |
-| 145 | 2957–2971 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2962, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2963, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2966, tanpa BQ)<br>_IPV 2_ → `Immunization.status` (2970, tanpa BQ) |
-| 146 | 2972–2986 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2977, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2978, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2981, tanpa BQ)<br>_Japanese Encephalitis_ → `Immunization.status` (2985, tanpa BQ) |
-| 147 | 2987–3000 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (2992, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2993, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2996, tanpa BQ)<br>_PCV 3_ → `Immunization.status` (2999, tanpa BQ) |
-| 148 | 3001–3015 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (3006, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (3007, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (3010, tanpa BQ)<br>_DPT-HB-Hib Lanjutan_ → `Immunization.status` (3014, tanpa BQ) |
-| 149 | 3016–3032 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (3023, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (3024, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (3027, tanpa BQ)<br>_Campak-Rubella (MR) Lanjutan_ → `Immunization.status` (3031, tanpa BQ) |
-| 150 | 3033–3044 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurenceDateTime` (3038, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (3039, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (3042, tanpa BQ) |
+| 131 | 2742–2755 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2747, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2748, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2751, tanpa BQ)<br>_OPV 1_ → `Immunization.status` (2754, tanpa BQ) |
+| 132 | 2756–2770 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2761, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2762, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2765, tanpa BQ)<br>_DPT-HB-Hib 1_ → `Immunization.status` (2769, tanpa BQ) |
+| 133 | 2771–2787 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2778, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2779, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2782, tanpa BQ)<br>_OPV 2_ → `Immunization.status` (2786, tanpa BQ) |
+| 134 | 2788–2802 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2793, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2794, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2797, tanpa BQ)<br>_Rotavirus (RV 1)_ → `Immunization.status` (2801, tanpa BQ) |
+| 135 | 2803–2817 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2808, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2809, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2812, tanpa BQ)<br>_PCV 1_ → `Immunization.status` (2816, tanpa BQ) |
+| 136 | 2818–2832 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2823, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2824, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2827, tanpa BQ)<br>_DPT-HB-Hib 2_ → `Immunization.status` (2831, tanpa BQ) |
+| 137 | 2833–2849 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2840, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2841, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2844, tanpa BQ)<br>_OPV 3_ → `Immunization.status` (2848, tanpa BQ) |
+| 138 | 2850–2864 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2855, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2856, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2859, tanpa BQ)<br>_Rotavirus (RV 2)_ → `Immunization.status` (2863, tanpa BQ) |
+| 139 | 2865–2879 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2870, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2871, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2874, tanpa BQ)<br>_PCV 2_ → `Immunization.status` (2878, tanpa BQ) |
+| 140 | 2880–2894 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2885, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2886, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2889, tanpa BQ)<br>_DPT-HB-Hib 3_ → `Immunization.status` (2893, tanpa BQ) |
+| 141 | 2895–2911 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2902, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2903, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2906, tanpa BQ)<br>_OPV 4_ → `Immunization.status` (2910, tanpa BQ) |
+| 142 | 2912–2926 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2917, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2918, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2921, tanpa BQ)<br>_IPV 1_ → `Immunization.status` (2925, tanpa BQ) |
+| 143 | 2927–2941 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2932, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2933, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2936, tanpa BQ)<br>_Rotavirus (RV 3)_ → `Immunization.status` (2940, tanpa BQ) |
+| 144 | 2942–2956 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2947, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2948, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2951, tanpa BQ)<br>_Campak-Rubella (MR)_ → `Immunization.status` (2955, tanpa BQ) |
+| 145 | 2957–2971 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2962, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2963, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2966, tanpa BQ)<br>_IPV 2_ → `Immunization.status` (2970, tanpa BQ) |
+| 146 | 2972–2986 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2977, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2978, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2981, tanpa BQ)<br>_Japanese Encephalitis_ → `Immunization.status` (2985, tanpa BQ) |
+| 147 | 2987–3000 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (2992, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (2993, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (2996, tanpa BQ)<br>_PCV 3_ → `Immunization.status` (2999, tanpa BQ) |
+| 148 | 3001–3015 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (3006, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (3007, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (3010, tanpa BQ)<br>_DPT-HB-Hib Lanjutan_ → `Immunization.status` (3014, tanpa BQ) |
+| 149 | 3016–3032 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (3023, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (3024, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (3027, tanpa BQ)<br>_Campak-Rubella (MR) Lanjutan_ → `Immunization.status` (3031, tanpa BQ) |
+| 150 | 3033–3044 | Immunization | – | – | _Tanggal Pemberian_ → `Immunization.occurrenceDateTime` (3038, tanpa BQ)<br>_Tanggal Pemberian_ → `Immunization.recorded` (3039, tanpa BQ)<br>_Paraf Petugas_ → `Immunization.performer.actor.display` (3042, tanpa BQ) |
 | 151 | 3046–3046 | Patient | – | – | _Nama_ → `Patient.name.text` (3046, tanpa BQ) |
 | 152 | 3047–3068 | Observation | 424144002 | Current chronological age | _Umur_ → `Observation.valueQuantity.value` (3050, tanpa BQ)<br>_Nama_ → `Observation.subject.display` (3059, tanpa BQ)<br>_Bulan Pemeriksaan Tanggal Pemeriksaan_ → `Observation.effectiveDateTime` (3063, tanpa BQ)<br>_Bulan Pemeriksaan Tanggal Pemeriksaan_ → `Observation.issued` (3066, tanpa BQ) |
 | 153 | 3069–3084 | Observation | 710001002 | Tooth number | _Jumlah Gigi Ada Berapa_ → `Observation.valueQuantity.value` (3072, tanpa BQ)<br>_Nama_ → `Observation.subject.display` (3075, tanpa BQ)<br>_Bulan Pemeriksaan Tanggal Pemeriksaan_ → `Observation.effectiveDateTime` (3079, tanpa BQ)<br>_Bulan Pemeriksaan Tanggal Pemeriksaan_ → `Observation.issued` (3082, tanpa BQ) |
@@ -238,293 +238,299 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 8 | 1193 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
 | 9 | 1223 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
 | 10 | 1238 | Observation | `Observation.code.coding` | SP000023 | KIA | http://terminology.kemkes.go.id/sp |
-| 11 | 1253 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 12 | 1254 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 13 | 1269 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 14 | 1284 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 15 | 1285 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 16 | 1300 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 17 | 1356 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 18 | 1371 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 19 | 1372 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 20 | 1387 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 21 | 1402 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 22 | 1403 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 23 | 1418 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 24 | 1474 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 25 | 1489 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 26 | 1490 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 27 | 1505 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 28 | 1520 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 29 | 1521 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 30 | 1536 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 31 | 1578 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 32 | 1607 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 33 | 1622 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 34 | 1623 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 35 | 1638 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 36 | 1680 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 37 | 1709 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 38 | 1724 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 39 | 1725 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 40 | 1740 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 41 | 1782 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 42 | 1811 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 43 | 1826 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 44 | 1827 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 45 | 1842 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 46 | 1884 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 47 | 1923 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 48 | 1940 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 49 | 1941 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 50 | 1958 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 51 | 1974 | Procedure | `Procedure.code.coding` | 431868002 | Initiation of breastfeeding | http://snomed.info/sct |
-| 52 | 1990 | Procedure | `Procedure.code.coding` | 448883004 | Injection of vitamin K1 | http://snomed.info/sct |
-| 53 | 2023 | Procedure | `Procedure.code.coding` | 99.59 | Other vaccination and inoculation | http://hl7.org/fhir/sid/icd-9-cm |
-| 54 | 2024 | Procedure | `Procedure.code.coding` | 16584000 | Administration of vaccine product containing only Hepatitis B virus antigen | http://snomed.info/sct |
-| 55 | 2041 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 56 | 2073 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 57 | 2103 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 58 | 2117 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 59 | 2134 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 60 | 2135 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 61 | 2152 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 62 | 2169 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
-| 63 | 2185 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 64 | 2201 | Procedure | `Procedure.code.coding` | 448883004 | Injection of vitamin K1 | http://snomed.info/sct |
-| 65 | 2234 | Procedure | `Procedure.code.coding` | 99.59 | Other vaccination and inoculation | http://hl7.org/fhir/sid/icd-9-cm |
-| 66 | 2235 | Procedure | `Procedure.code.coding` | 16584000 | Administration of vaccine product containing only Hepatitis B virus antigen | http://snomed.info/sct |
-| 67 | 2251 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
-| 68 | 2267 | Procedure | `Procedure.code.coding` | SP000296 | Skrining Penyakit Jantung Bawaan | http://terminology.kemkes.go.id/sp |
-| 69 | 2284 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 70 | 2316 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 71 | 2346 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 72 | 2360 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
-| 73 | 2376 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 74 | 2410 | Observation | `Observation.code.coding` | 267030001 | Yellow or jaundiced color | http://snomed.info/sct |
-| 75 | 2426 | Procedure | `Procedure.code.coding` | 99.59 | Other vaccination and inoculation | http://hl7.org/fhir/sid/icd-9-cm |
-| 76 | 2427 | Procedure | `Procedure.code.coding` | 16584000 | Administration of vaccine product containing only Hepatitis B virus antigen | http://snomed.info/sct |
-| 77 | 2443 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
-| 78 | 2460 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 79 | 2492 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 80 | 2522 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 81 | 2536 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
-| 82 | 2552 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 83 | 2586 | Observation | `Observation.code.coding` | 267030001 | Yellow or jaundiced color | http://snomed.info/sct |
-| 84 | 2602 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
-| 85 | 2619 | Observation | `Observation.code.coding` | 248214007 | Jaundiced appearance of face | http://snomed.info/sct |
-| 86 | 2620 | Observation | `Observation.code.coding` | SP000696 | Kuning Pada Bagian Tubuh Atas | http://terminology.kemkes.go.id/sp |
-| 87 | 2621 | Observation | `Observation.code.coding` | SP000697 | Kuning Pada Bagian Tubuh Bawah | http://terminology.kemkes.go.id/sp |
-| 88 | 2622 | Observation | `Observation.code.coding` | SP000698 | Kuning Pada Ekstremitas Atas dan Bawah | http://terminology.kemkes.go.id/sp |
-| 89 | 2623 | Observation | `Observation.code.coding` | SP000216 | Kuning Pada Telapak Tangan dan Telapak Kaki | http://terminology.kemkes.go.id/sp |
-| 90 | 2640 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
-| 91 | 2672 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
-| 92 | 2702 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 93 | 2727 | Immunization | `Immunization.vaccineCode` | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx |
-| 94 | 2728 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 95 | 2742 | Immunization | `Immunization.vaccineCode` | 19 | BCG | http://hl7.org/fhir/sid/cvx |
-| 96 | 2743 | Immunization | `Immunization.vaccineCode` | VG19 | BCG | http://sys-ids.kemkes.go.id/kfa |
-| 97 | 2756 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
-| 98 | 2757 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 99 | 2771 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
-| 100 | 2772 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 101 | 2773 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 102 | 2774 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 103 | 2788 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
-| 104 | 2789 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 105 | 2803 | Immunization | `Immunization.vaccineCode` | 122 | rotavirus, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 106 | 2804 | Immunization | `Immunization.vaccineCode` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
-| 107 | 2818 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 108 | 2819 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 109 | 2833 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
-| 110 | 2834 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 111 | 2835 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 112 | 2836 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 113 | 2850 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
-| 114 | 2851 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 115 | 2865 | Immunization | `Immunization.vaccineCode` | 122 | rotavirus, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 116 | 2866 | Immunization | `Immunization.vaccineCode` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
-| 117 | 2880 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 118 | 2881 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 119 | 2895 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
-| 120 | 2896 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 121 | 2897 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 122 | 2898 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 123 | 2912 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
-| 124 | 2913 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 125 | 2927 | Immunization | `Immunization.vaccineCode` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
-| 126 | 2928 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 127 | 2942 | Immunization | `Immunization.vaccineCode` | 122 | rotavirus, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 128 | 2943 | Immunization | `Immunization.vaccineCode` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
-| 129 | 2957 | Immunization | `Immunization.vaccineCode` | 4 | M/R | http://hl7.org/fhir/sid/cvx |
-| 130 | 2958 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
-| 131 | 2972 | Immunization | `Immunization.vaccineCode` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
-| 132 | 2973 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 133 | 2987 | Immunization | `Immunization.vaccineCode` | 129 | Japanese Encephalitis, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 134 | 2988 | Immunization | `Immunization.vaccineCode` | VG129 | Japanese encephalitis | http://sys-ids.kemkes.go.id/kfa |
-| 135 | 3001 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 136 | 3002 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 137 | 3016 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
-| 138 | 3017 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 139 | 3018 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 140 | 3019 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 141 | 3033 | Immunization | `Immunization.vaccineCode` | 4 | M/R | http://hl7.org/fhir/sid/cvx |
-| 142 | 3034 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
-| 143 | 3049 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
-| 144 | 3052 | Observation | `Observation.component.code.coding` | SP000020 | Umur Bulan | http://terminology.kemkes.go.id/sp |
-| 145 | 3055 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
-| 146 | 3071 | Observation | `Observation.code.coding` | 710001002 | Tooth number | http://snomed.info/sct |
-| 147 | 3087 | Observation | `Observation.code.coding` | 251319000 | Decayed tooth count | http://snomed.info/sct |
-| 148 | 3103 | Observation | `Observation.code.coding` | 276451003 | No dental plaque | http://snomed.info/sct |
-| 149 | 3119 | Observation | `Observation.code.coding` | 300240004 | Dental plaque present | http://snomed.info/sct |
-| 150 | 3136 | Observation | `Observation.valueCodeableConcept.coding` | 609400006 | At low risk for dental caries | http://snomed.info/sct |
-| 151 | 3137 | Observation | `Observation.valueCodeableConcept.coding` | 609401005 | At moderate risk for dental caries | http://snomed.info/sct |
-| 152 | 3138 | Observation | `Observation.valueCodeableConcept.coding` | 609402003 | At high risk for dental caries | http://snomed.info/sct |
-| 153 | 3153 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
-| 154 | 3171 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 155 | 3184 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 156 | 3199 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 157 | 3214 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 158 | 3215 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 159 | 3216 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 160 | 3229 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
-| 161 | 3246 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 162 | 3261 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 163 | 3262 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 164 | 3263 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 165 | 3277 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
-| 166 | 3280 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 167 | 3281 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
-| 168 | 3282 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 169 | 3283 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 170 | 3295 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
-| 171 | 3298 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 172 | 3299 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
-| 173 | 3300 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 174 | 3301 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 175 | 3313 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
-| 176 | 3316 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
-| 177 | 3317 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
-| 178 | 3318 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 179 | 3319 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
-| 180 | 3331 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
-| 181 | 3334 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
-| 182 | 3335 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
-| 183 | 3336 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 184 | 3337 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
-| 185 | 3349 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 186 | 3352 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 187 | 3353 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 188 | 3354 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 189 | 3355 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 190 | 3356 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 191 | 3357 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 192 | 3369 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 193 | 3372 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 194 | 3373 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 195 | 3374 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 196 | 3375 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 197 | 3376 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 198 | 3377 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 199 | 3389 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
-| 200 | 3392 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 201 | 3393 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 202 | 3394 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 203 | 3395 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 204 | 3396 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 205 | 3397 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 206 | 3409 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
-| 207 | 3412 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 208 | 3413 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 209 | 3414 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 210 | 3415 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 211 | 3416 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 212 | 3417 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 213 | 3429 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://snomed.info/sct |
-| 214 | 3432 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
-| 215 | 3433 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://snomed.info/sct |
-| 216 | 3434 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://snomed.info/sct |
-| 217 | 3452 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 218 | 3467 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 219 | 3468 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 220 | 3469 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 221 | 3482 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
-| 222 | 3499 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 223 | 3514 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 224 | 3515 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 225 | 3516 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 226 | 3530 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
-| 227 | 3533 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 228 | 3534 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
-| 229 | 3535 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 230 | 3536 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 231 | 3548 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
-| 232 | 3551 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 233 | 3552 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
-| 234 | 3553 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 235 | 3554 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 236 | 3566 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
-| 237 | 3569 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
-| 238 | 3570 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
-| 239 | 3571 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 240 | 3572 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
-| 241 | 3584 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
-| 242 | 3587 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
-| 243 | 3588 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
-| 244 | 3589 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 245 | 3590 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
-| 246 | 3602 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 247 | 3605 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 248 | 3606 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 249 | 3607 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 250 | 3608 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 251 | 3609 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 252 | 3610 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 253 | 3622 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 254 | 3625 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 255 | 3626 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 256 | 3627 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 257 | 3628 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 258 | 3629 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 259 | 3630 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 260 | 3642 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
-| 261 | 3645 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 262 | 3646 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 263 | 3647 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 264 | 3648 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 265 | 3649 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 266 | 3650 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 267 | 3662 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
-| 268 | 3665 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 269 | 3666 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 270 | 3667 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 271 | 3668 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 272 | 3669 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 273 | 3670 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 274 | 3682 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://snomed.info/sct |
-| 275 | 3685 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
-| 276 | 3686 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://snomed.info/sct |
-| 277 | 3687 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://snomed.info/sct |
-| 278 | 3699 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
-| 279 | 3702 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 280 | 3703 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 281 | 3704 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 282 | 3705 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 283 | 3706 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 284 | 3707 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 11 | 1240 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 12 | 1253 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 13 | 1254 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 14 | 1269 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 15 | 1284 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 16 | 1285 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 17 | 1300 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 18 | 1356 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 19 | 1371 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 20 | 1372 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 21 | 1387 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 22 | 1402 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 23 | 1403 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 24 | 1418 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 25 | 1474 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 26 | 1489 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 27 | 1490 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 28 | 1505 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 29 | 1520 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 30 | 1521 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 31 | 1536 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 32 | 1578 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 33 | 1607 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 34 | 1622 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 35 | 1623 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 36 | 1638 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 37 | 1680 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 38 | 1709 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 39 | 1724 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 40 | 1725 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 41 | 1740 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 42 | 1782 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 43 | 1811 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 44 | 1826 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 45 | 1827 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 46 | 1842 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 47 | 1884 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 48 | 1923 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 49 | 1940 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 50 | 1941 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 51 | 1958 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 52 | 1974 | Procedure | `Procedure.code.coding` | 431868002 | Initiation of breastfeeding | http://snomed.info/sct |
+| 53 | 1990 | Procedure | `Procedure.code.coding` | 448883004 | Injection of vitamin K1 | http://snomed.info/sct |
+| 54 | 2023 | Procedure | `Procedure.code.coding` | 99.59 | Other vaccination and inoculation | http://hl7.org/fhir/sid/icd-9-cm |
+| 55 | 2024 | Procedure | `Procedure.code.coding` | 16584000 | Administration of vaccine product containing only Hepatitis B virus antigen | http://snomed.info/sct |
+| 56 | 2041 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 57 | 2073 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 58 | 2103 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 59 | 2117 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 60 | 2134 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 61 | 2135 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 62 | 2152 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 63 | 2169 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
+| 64 | 2185 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 65 | 2201 | Procedure | `Procedure.code.coding` | 448883004 | Injection of vitamin K1 | http://snomed.info/sct |
+| 66 | 2234 | Procedure | `Procedure.code.coding` | 99.59 | Other vaccination and inoculation | http://hl7.org/fhir/sid/icd-9-cm |
+| 67 | 2235 | Procedure | `Procedure.code.coding` | 16584000 | Administration of vaccine product containing only Hepatitis B virus antigen | http://snomed.info/sct |
+| 68 | 2251 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
+| 69 | 2267 | Procedure | `Procedure.code.coding` | SP000296 | Skrining Penyakit Jantung Bawaan | http://terminology.kemkes.go.id/sp |
+| 70 | 2284 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 71 | 2316 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 72 | 2346 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 73 | 2360 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
+| 74 | 2376 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 75 | 2410 | Observation | `Observation.code.coding` | 267030001 | Yellow or jaundiced color | http://snomed.info/sct |
+| 76 | 2426 | Procedure | `Procedure.code.coding` | 99.59 | Other vaccination and inoculation | http://hl7.org/fhir/sid/icd-9-cm |
+| 77 | 2427 | Procedure | `Procedure.code.coding` | 16584000 | Administration of vaccine product containing only Hepatitis B virus antigen | http://snomed.info/sct |
+| 78 | 2443 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
+| 79 | 2460 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 80 | 2492 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 81 | 2522 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 82 | 2536 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
+| 83 | 2552 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 84 | 2586 | Observation | `Observation.code.coding` | 267030001 | Yellow or jaundiced color | http://snomed.info/sct |
+| 85 | 2602 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
+| 86 | 2619 | Observation | `Observation.code.coding` | 248214007 | Jaundiced appearance of face | http://snomed.info/sct |
+| 87 | 2620 | Observation | `Observation.code.coding` | SP000696 | Kuning Pada Bagian Tubuh Atas | http://terminology.kemkes.go.id/sp |
+| 88 | 2621 | Observation | `Observation.code.coding` | SP000697 | Kuning Pada Bagian Tubuh Bawah | http://terminology.kemkes.go.id/sp |
+| 89 | 2622 | Observation | `Observation.code.coding` | SP000698 | Kuning Pada Ekstremitas Atas dan Bawah | http://terminology.kemkes.go.id/sp |
+| 90 | 2623 | Observation | `Observation.code.coding` | SP000216 | Kuning Pada Telapak Tangan dan Telapak Kaki | http://terminology.kemkes.go.id/sp |
+| 91 | 2640 | Procedure | `Procedure.code.coding` | 171121004 | Human immunodeficiency virus screening | http://snomed.info/sct |
+| 92 | 2672 | Procedure | `Procedure.code.coding` | 171122006 | Hepatitis B screening | http://snomed.info/sct |
+| 93 | 2702 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 94 | 2727 | Immunization | `Immunization.vaccineCode` | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx |
+| 95 | 2728 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 96 | 2742 | Immunization | `Immunization.vaccineCode` | 19 | BCG | http://hl7.org/fhir/sid/cvx |
+| 97 | 2743 | Immunization | `Immunization.vaccineCode` | VG19 | BCG | http://sys-ids.kemkes.go.id/kfa |
+| 98 | 2756 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
+| 99 | 2757 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 100 | 2771 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
+| 101 | 2772 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 102 | 2773 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 103 | 2774 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 104 | 2788 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
+| 105 | 2789 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 106 | 2803 | Immunization | `Immunization.vaccineCode` | 122 | rotavirus, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 107 | 2804 | Immunization | `Immunization.vaccineCode` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
+| 108 | 2818 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 109 | 2819 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
+| 110 | 2833 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
+| 111 | 2834 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 112 | 2835 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 113 | 2836 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 114 | 2850 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
+| 115 | 2851 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 116 | 2865 | Immunization | `Immunization.vaccineCode` | 122 | rotavirus, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 117 | 2866 | Immunization | `Immunization.vaccineCode` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
+| 118 | 2880 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 119 | 2881 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
+| 120 | 2895 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
+| 121 | 2896 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 122 | 2897 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 123 | 2898 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 124 | 2912 | Immunization | `Immunization.vaccineCode` | 2 | OPV | http://hl7.org/fhir/sid/cvx |
+| 125 | 2913 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 126 | 2927 | Immunization | `Immunization.vaccineCode` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
+| 127 | 2928 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 128 | 2942 | Immunization | `Immunization.vaccineCode` | 122 | rotavirus, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 129 | 2943 | Immunization | `Immunization.vaccineCode` | VG122 | ROTAVIRUS | http://sys-ids.kemkes.go.id/kfa |
+| 130 | 2957 | Immunization | `Immunization.vaccineCode` | 4 | M/R | http://hl7.org/fhir/sid/cvx |
+| 131 | 2958 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
+| 132 | 2972 | Immunization | `Immunization.vaccineCode` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
+| 133 | 2973 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 134 | 2987 | Immunization | `Immunization.vaccineCode` | 129 | Japanese Encephalitis, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 135 | 2988 | Immunization | `Immunization.vaccineCode` | VG129 | Japanese encephalitis | http://sys-ids.kemkes.go.id/kfa |
+| 136 | 3001 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 137 | 3002 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
+| 138 | 3016 | Immunization | `Immunization.vaccineCode` | 102 | DTP-Hib-Hep B | http://hl7.org/fhir/sid/cvx |
+| 139 | 3017 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 140 | 3018 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 141 | 3019 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 142 | 3033 | Immunization | `Immunization.vaccineCode` | 4 | M/R | http://hl7.org/fhir/sid/cvx |
+| 143 | 3034 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
+| 144 | 3049 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
+| 145 | 3052 | Observation | `Observation.component.code.coding` | SP000020 | Umur Bulan | http://terminology.kemkes.go.id/sp |
+| 146 | 3055 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
+| 147 | 3071 | Observation | `Observation.code.coding` | 710001002 | Tooth number | http://snomed.info/sct |
+| 148 | 3087 | Observation | `Observation.code.coding` | 251319000 | Decayed tooth count | http://snomed.info/sct |
+| 149 | 3103 | Observation | `Observation.code.coding` | 276451003 | No dental plaque | http://snomed.info/sct |
+| 150 | 3119 | Observation | `Observation.code.coding` | 300240004 | Dental plaque present | http://snomed.info/sct |
+| 151 | 3136 | Observation | `Observation.valueCodeableConcept.coding` | 609400006 | At low risk for dental caries | http://snomed.info/sct |
+| 152 | 3137 | Observation | `Observation.valueCodeableConcept.coding` | 609401005 | At moderate risk for dental caries | http://snomed.info/sct |
+| 153 | 3138 | Observation | `Observation.valueCodeableConcept.coding` | 609402003 | At high risk for dental caries | http://snomed.info/sct |
+| 154 | 3153 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
+| 155 | 3158 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 156 | 3159 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 157 | 3160 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 158 | 3171 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 159 | 3184 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 160 | 3199 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 161 | 3214 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 162 | 3215 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 163 | 3216 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 164 | 3229 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
+| 165 | 3246 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 166 | 3261 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 167 | 3262 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 168 | 3263 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 169 | 3277 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
+| 170 | 3280 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 171 | 3281 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 172 | 3282 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 173 | 3283 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 174 | 3295 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
+| 175 | 3298 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 176 | 3299 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 177 | 3300 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 178 | 3301 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 179 | 3313 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
+| 180 | 3316 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 181 | 3317 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 182 | 3318 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 183 | 3319 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 184 | 3331 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
+| 185 | 3334 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 186 | 3335 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 187 | 3336 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 188 | 3337 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 189 | 3349 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 190 | 3352 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 191 | 3353 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 192 | 3354 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 193 | 3355 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 194 | 3356 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 195 | 3357 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 196 | 3369 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 197 | 3372 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 198 | 3373 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 199 | 3374 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 200 | 3375 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 201 | 3376 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 202 | 3377 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 203 | 3389 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
+| 204 | 3392 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 205 | 3393 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 206 | 3394 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 207 | 3395 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 208 | 3396 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 209 | 3397 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 210 | 3409 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
+| 211 | 3412 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 212 | 3413 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 213 | 3414 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 214 | 3415 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 215 | 3416 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 216 | 3417 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 217 | 3429 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://snomed.info/sct |
+| 218 | 3432 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
+| 219 | 3433 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://snomed.info/sct |
+| 220 | 3434 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://snomed.info/sct |
+| 221 | 3452 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 222 | 3467 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 223 | 3468 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 224 | 3469 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 225 | 3482 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
+| 226 | 3499 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 227 | 3514 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 228 | 3515 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 229 | 3516 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 230 | 3530 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
+| 231 | 3533 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 232 | 3534 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 233 | 3535 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 234 | 3536 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 235 | 3548 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
+| 236 | 3551 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 237 | 3552 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 238 | 3553 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 239 | 3554 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 240 | 3566 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
+| 241 | 3569 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 242 | 3570 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 243 | 3571 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 244 | 3572 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 245 | 3584 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
+| 246 | 3587 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 247 | 3588 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 248 | 3589 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 249 | 3590 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 250 | 3602 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 251 | 3605 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 252 | 3606 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 253 | 3607 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 254 | 3608 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 255 | 3609 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 256 | 3610 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 257 | 3622 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 258 | 3625 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 259 | 3626 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 260 | 3627 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 261 | 3628 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 262 | 3629 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 263 | 3630 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 264 | 3642 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
+| 265 | 3645 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 266 | 3646 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 267 | 3647 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 268 | 3648 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 269 | 3649 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 270 | 3650 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 271 | 3662 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
+| 272 | 3665 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 273 | 3666 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 274 | 3667 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 275 | 3668 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 276 | 3669 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 277 | 3670 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 278 | 3682 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://snomed.info/sct |
+| 279 | 3685 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
+| 280 | 3686 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://snomed.info/sct |
+| 281 | 3687 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://snomed.info/sct |
+| 282 | 3699 | Observation | `Observation.code.coding` | 1153596006 | Body mass index for age z-score | http://snomed.info/sct |
+| 283 | 3702 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 284 | 3703 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 285 | 3704 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 286 | 3705 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 287 | 3706 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 288 | 3707 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 146 |
+| http://snomed.info/sct | 147 |
 | http://loinc.org | 41 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 34 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 35 |
 | http://sys-ids.kemkes.go.id/kfa | 30 |
 | http://hl7.org/fhir/sid/cvx | 22 |
 | http://terminology.kemkes.go.id/sp | 8 |
 | http://hl7.org/fhir/sid/icd-9-cm | 3 |
-| **Total** | **284** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
+| **Total** | **288** |
 
 ## Variabel di luar payload
 

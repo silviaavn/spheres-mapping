@@ -55,8 +55,8 @@ Data Pasien,Data Orang Tua,,NAMA IBU,Nama Ibu,string,,,Jika ada Ny di depan atau
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,TGL KUNJUNGAN,Tanggal Kunjungan,,,,"format tanggal tidak terstandar, ada mm/dd/yyyy ada mm-dd-yyyy",,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Discharge diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -466,7 +466,7 @@ Jika clash dengan hasil Tatalaksana Bayi Neonatus maka gunakan yg completed",,Im
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,string,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,Tata Laksana,,APAKAH ADA ALERGI OBAT,Apakah ada alergi obat saat ini?,,,Ya,"Data dari sub-sub kolom di bawah kolom ""TATA LAKSANA BAYI""",,AllergyIntolerance,AllergyIntolerance.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical,,,1
-,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.category.coding,medication,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.category,medication,Tidak Ada,Tidak Ada,,,
 ,,,APAKAH ADA ALERGI OBAT,"Jika Ya, jenis obat?",,,Antibiotik Lainnya,,,AllergyIntolerance,AllergyIntolerance.code.coding,255631004.0,Antibiotic,http://snomed.info/sct,,,
 ,,,,,,,Antibiotik Golongan Sulfonamida,,,AllergyIntolerance,AllergyIntolerance.code.coding,59255006.0,Medicinal product containing sulfonamide and acting as antibacterial agent,http://snomed.info/sct,,,
 ,,,,,,,Antibiotik Golongan Beta Laktam,,,AllergyIntolerance,AllergyIntolerance.code.coding,90614001.0,Medicinal product containing beta-lactam and acting as antibacterial agent,http://snomed.info/sct,,,
@@ -479,8 +479,8 @@ Jika clash dengan hasil Tatalaksana Bayi Neonatus maka gunakan yg completed",,Im
 ,,,,,string,,,,,AllergyIntolerance,AllergyIntolerance.patient.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,date,yyyy-mm-dd,,,,AllergyIntolerance,AllergyIntolerance.recordedDate,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.recorded.reference,Reference ke resources Practitioner,,,,,
-,,,,,string,,,,,AllergyIntolerance,AllergyIntolerance.recorded.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.recorder.reference,Reference ke resources Practitioner,,,,,
+,,,,,string,,,,,AllergyIntolerance,AllergyIntolerance.recorder.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,WAKTU IMD,Inisiasi Menyusu Dini (IMD),boolean,,,,,Procedure,Procedure.category.coding,440626008.0,Procedure related to breastfeeding,http://snomed.info/sct,,,1
 ,,,,,,,Tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
 ,,,,,,,Ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,

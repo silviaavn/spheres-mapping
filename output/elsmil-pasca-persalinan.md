@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 24 |
-| Code (`jumlah code` = 1) | 96 |
-| Code unik (code + CodeSystem) | 90 |
+| Code (`jumlah code` = 1) | 102 |
+| Code unik (code + CodeSystem) | 92 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 35 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 29 |
@@ -60,101 +60,107 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 10 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | https://loinc.org |
-| 2 | 22 | Observation | `Observation.code.coding` | 72150-6 | Delivery location | https://loinc.org |
-| 3 | 23 | Observation | `Observation.valueCodeableConcept.coding` | 102 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 4 | 24 | Observation | `Observation.valueCodeableConcept.coding` | 104 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 5 | 25 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 6 | 36 | Observation | `Observation.code.coding` | OC000013 | Penolong Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 7 | 37 | Observation | `Observation.valueCodeableConcept.coding` | 11935004 | Obstetrician Occupation | http://snomed.info/sct |
-| 8 | 38 | Observation | `Observation.valueCodeableConcept.coding` | 309343006 | Physician Occupation | http://snomed.info/sct |
-| 9 | 39 | Observation | `Observation.valueCodeableConcept.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
-| 10 | 50 | Observation | `Observation.code.coding` | 57071-3 | Obstetric delivery method | https://loinc.org |
-| 11 | 51 | Observation | `Observation.valueCodeableConcept.coding` | 48782003 | Delivery normal | http://snomed.info/sct |
-| 12 | 52 | Observation | `Observation.valueCodeableConcept.coding` | 200144004 | Deliveries by cesarean | http://snomed.info/sct |
-| 13 | 63 | Observation | `Observation.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
-| 14 | 64 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
-| 15 | 65 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead |  |
-| 16 | 76 | Observation | `Observation.code.coding` | SP000147 | Komplikasi pasca persalinan | http://terminology.kemkes.go.id/sp |
-| 17 | 87 | Condition | `Condition.code.coding` | 47821001 | Postpartum hemorrhage | http://snomed.info/sct |
-| 18 | 88 | Condition | `Condition.code.coding` | 178280004 | Postnatal infection | http://snomed.info/sct |
-| 19 | 89 | Condition | `Condition.code.coding` | O13 | Gestational [pregnancy-induced] hypertension without signification proteinuria | http://hl7.org/fhir/sid/icd-10 |
-| 20 | 90 | Condition | `Condition.code.coding` | O90.8 | Other complications of the puerperium, not elsewhere classified | http://hl7.org/fhir/sid/icd-10 |
-| 21 | 100 | Observation | `Observation.code.coding` | PC000004 | KB Pasca Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 22 | 111 | Observation | `Observation.code.coding` | 8659-5 | Birth control method - Reported | http://loinc.org |
-| 23 | 112 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
-| 24 | 113 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
-| 25 | 114 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
-| 26 | 115 | Observation | `Observation.valueCodeableConcept.coding` | SP000097 | Implan | http://terminology.kemkes.go.id/sp |
-| 27 | 116 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
-| 28 | 117 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
-| 29 | 118 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
-| 30 | 119 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
-| 31 | 129 | Observation | `Observation.code.coding` | SP000227 | Alasan menggunakan KB | http://terminology.kemkes.go.id/sp |
-| 32 | 130 | Observation | `Observation.valueCodeableConcept.coding` | SP000225 | Ingin anak di tunda | http://terminology.kemkes.go.id/sp |
-| 33 | 131 | Observation | `Observation.valueCodeableConcept.coding` | SP000226 | Tidak ingin anak lagi | http://terminology.kemkes.go.id/sp |
-| 34 | 142 | Observation | `Observation.code.coding` | 736796006 | Reason for no contraception (observable entity) | http://snomed.info/sct |
-| 35 | 143 | Observation | `Observation.valueCodeableConcept.coding` | 276367008 | Wanted pregnancy (finding) | http://snomed.info/sct |
-| 36 | 144 | Observation | `Observation.valueCodeableConcept.coding` | 423875000 | Deficient knowledge of family planning methods | http://snomed.info/sct |
-| 37 | 145 | Observation | `Observation.valueCodeableConcept.coding` | 440552008 | Contraception need complicated by medical condition | http://snomed.info/sct |
-| 38 | 146 | Observation | `Observation.valueCodeableConcept.coding` | SP000072 | Efek samping kontrasepsi | http://terminology.kemkes.go.id/sp |
-| 39 | 147 | Observation | `Observation.valueCodeableConcept.coding` | 422704000 | Difficulty obtaining contraception | http://snomed.info/sct |
-| 40 | 148 | Observation | `Observation.valueCodeableConcept.coding` | SP000091 | Alat/cara KB tidak tersedia | http://terminology.kemkes.go.id/sp |
-| 41 | 149 | Observation | `Observation.valueCodeableConcept.coding` | SP000073 | Alat Kontrasepsi Mahal | http://terminology.kemkes.go.id/sp |
-| 42 | 150 | Observation | `Observation.valueCodeableConcept.coding` | 424670002 | Dissatisfaction with contraception method (finding) | http://snomed.info/sct |
-| 43 | 151 | Observation | `Observation.valueCodeableConcept.coding` | 724073007 | Declined by caregiver of subject (qualifier value) | http://snomed.info/sct |
-| 44 | 152 | Observation | `Observation.valueCodeableConcept.coding` | 183945002 | Procedure declined for religious reason (situation) | http://snomed.info/sct |
-| 45 | 153 | Observation | `Observation.valueCodeableConcept.coding` | SP000151 | Tidak ada petugas pelayanan KB | http://terminology.kemkes.go.id/sp |
-| 46 | 154 | Observation | `Observation.valueCodeableConcept.coding` | SP000148 | Baru melahirkan | http://terminology.kemkes.go.id/sp |
-| 47 | 155 | Observation | `Observation.valueCodeableConcept.coding` | SP000149 | 6 bulan terakhir tidak melakukan hubungan suami istri | http://terminology.kemkes.go.id/sp |
-| 48 | 156 | Observation | `Observation.valueCodeableConcept.coding` | SP000150 | 6 bulan terakhir tidak menstruasi | http://terminology.kemkes.go.id/sp |
-| 49 | 157 | Observation | `Observation.valueCodeableConcept.coding` | 297106006 | Primary infertility | http://snomed.info/sct |
-| 50 | 158 | Observation | `Observation.valueCodeableConcept.coding` | 289903006 | Menopause present | http://snomed.info/sct |
-| 51 | 168 | Observation | `Observation.code.coding` | 72166-2 | Tobacco smoking status | http://loinc.org |
-| 52 | 179 | Observation | `Observation.code.coding` | 63719-9 | What was the primary source of drinking water at your home [Next-of-kin] | http://loinc.org |
-| 53 | 180 | Observation | `Observation.valueCodeableConcept.coding` | LA14183-0 | Bottled water | http://loinc.org |
-| 54 | 181 | Observation | `Observation.valueCodeableConcept.coding` | LA14182-2 | Community supply | http://loinc.org |
-| 55 | 182 | Observation | `Observation.valueCodeableConcept.coding` | SP000066 | Sumur bor/pompa | http://terminology.kemkes.go.id/sp |
-| 56 | 183 | Observation | `Observation.valueCodeableConcept.coding` | SP000067 | Sumur terlindungi | http://terminology.kemkes.go.id/sp |
-| 57 | 184 | Observation | `Observation.valueCodeableConcept.coding` | SP000068 | Sumur tak terlindungi | http://terminology.kemkes.go.id/sp |
-| 58 | 185 | Observation | `Observation.valueCodeableConcept.coding` | SP000069 | Mata air terlindungi | http://terminology.kemkes.go.id/sp |
-| 59 | 186 | Observation | `Observation.valueCodeableConcept.coding` | SP000070 | Mata air tak terlindungi | http://terminology.kemkes.go.id/sp |
-| 60 | 187 | Observation | `Observation.valueCodeableConcept.coding` | 421665008 | River water | http://snomed.info/sct |
-| 61 | 188 | Observation | `Observation.valueCodeableConcept.coding` | 420492000 | Lake water | http://snomed.info/sct |
-| 62 | 189 | Observation | `Observation.valueCodeableConcept.coding` | 421176006 | Pond water | http://snomed.info/sct |
-| 63 | 190 | Observation | `Observation.valueCodeableConcept.coding` | SP000071 | Air hujan | http://terminology.kemkes.go.id/sp |
-| 64 | 200 | Observation | `Observation.code.coding` | SP000093 | Tempat BAB Layak | http://terminology.kemkes.go.id/sp |
-| 65 | 201 | Observation | `Observation.valueCodeableConcept.coding` | SP000094 | Jamban milik sendiri dengan leher angsa dan tangki septik/IPAL | http://terminology.kemkes.go.id/sp |
-| 66 | 202 | Observation | `Observation.valueCodeableConcept.coding` | SP000095 | Jamban pada MCK komunal dengan leher angsa dan tangki septik/IPAL | http://terminology.kemkes.go.id/sp |
-| 67 | 203 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 68 | 204 | Observation | `Observation.valueCodeableConcept.coding` | SP000096 | Tidak ada tempat BAB layak | http://terminology.kemkes.go.id/sp |
-| 69 | 214 | Observation | `Observation.code.coding` | 385827001 | Health promotion education | http://loinc.org |
-| 70 | 225 | Observation | `Observation.code.coding` | 171035004 | Health education given | http://snomed.info/sct |
-| 71 | 226 | Observation | `Observation.valueCodeableConcept.coding` | 125676002 | Person | http://snomed.info/sct |
-| 72 | 227 | Observation | `Observation.valueCodeableConcept.coding` | 389109008 | Group | http://snomed.info/sct |
-| 73 | 237 | Observation | `Observation.code.coding` | SP000229 | Sudah mendapatkan tablet tambah darah | http://terminology.kemkes.go.id/sp |
-| 74 | 248 | Observation | `Observation.code.coding` | SP000144 | Sudah mengonsumsi tablet tambah darah | http://terminology.kemkes.go.id/sp |
-| 75 | 259 | Observation | `Observation.code.coding` | 306206005 | Referral to service | http://snomed.info/sct |
-| 76 | 260 | Observation | `Observation.valueCodeableConcept.coding` | 385651009 | In progress | http://snomed.info/sct |
-| 77 | 261 | Observation | `Observation.valueCodeableConcept.coding` | 385658003 | Done | http://snomed.info/sct |
-| 78 | 262 | Observation | `Observation.valueCodeableConcept.coding` | 385660001 | Not done | http://snomed.info/sct |
-| 79 | 272 | Observation | `Observation.code.coding` | 405076007 | Social support status | http://snomed.info/sct |
-| 80 | 273 | Observation | `Observation.valueCodeableConcept.coding` | LA32661-3 | Applied and waiting to receive | http://loinc.org |
-| 81 | 274 | Observation | `Observation.valueCodeableConcept.coding` | LA32660-5 | Received | http://loinc.org |
-| 82 | 275 | Observation | `Observation.valueCodeableConcept.coding` | LA32662-1 | Tried but was not able to apply for, or was not eligible | http://loinc.org |
-| 83 | 276 | Observation | `Observation.valueCodeableConcept.coding` | LA32663-9 | Did not apply for | http://loinc.org |
-| 84 | 286 | Observation | `Observation.code.coding` | SP000145 | Bantuan sosial yang sedang dalam proses | http://terminology.kemkes.go.id/sp |
-| 85 | 287 | Observation | `Observation.valueCodeableConcept.coding` | SP000140 | Program Keluarga Harapan | http://terminology.kemkes.go.id/sp |
-| 86 | 288 | Observation | `Observation.valueCodeableConcept.coding` | SP000141 | Bantu Non Tunai | http://terminology.kemkes.go.id/sp |
-| 87 | 289 | Observation | `Observation.valueCodeableConcept.coding` | SP000142 | Program Indonesia Pintar | http://terminology.kemkes.go.id/sp |
-| 88 | 290 | Observation | `Observation.valueCodeableConcept.coding` | SP000143 | Kartu Indonesia Sehat | http://terminology.kemkes.go.id/sp |
-| 89 | 291 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 90 | 301 | Observation | `Observation.code.coding` | SP000146 | Bantuan sosial yang sudah didapatkan | http://terminology.kemkes.go.id/sp |
-| 91 | 302 | Observation | `Observation.valueCodeableConcept.coding` | SP000140 | Program Keluarga Harapan | http://terminology.kemkes.go.id/sp |
-| 92 | 303 | Observation | `Observation.valueCodeableConcept.coding` | SP000141 | Bantu Non Tunai | http://terminology.kemkes.go.id/sp |
-| 93 | 304 | Observation | `Observation.valueCodeableConcept.coding` | SP000142 | Program Indonesia Pintar | http://terminology.kemkes.go.id/sp |
-| 94 | 305 | Observation | `Observation.valueCodeableConcept.coding` | SP000143 | Kartu Indonesia Sehat | http://terminology.kemkes.go.id/sp |
-| 95 | 306 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 96 | 315 | Observation | `Observation.code.coding` | SP000219 | Catatan TPK | http://terminology.kemkes.go.id/sp |
+| 2 | 12 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 3 | 22 | Observation | `Observation.code.coding` | 72150-6 | Delivery location | https://loinc.org |
+| 4 | 23 | Observation | `Observation.valueCodeableConcept.coding` | 102 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 5 | 24 | Observation | `Observation.valueCodeableConcept.coding` | 104 | Rumah Sakit | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 6 | 25 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 7 | 26 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 8 | 36 | Observation | `Observation.code.coding` | OC000013 | Penolong Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 9 | 37 | Observation | `Observation.valueCodeableConcept.coding` | 11935004 | Obstetrician Occupation | http://snomed.info/sct |
+| 10 | 38 | Observation | `Observation.valueCodeableConcept.coding` | 309343006 | Physician Occupation | http://snomed.info/sct |
+| 11 | 39 | Observation | `Observation.valueCodeableConcept.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 12 | 40 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 13 | 50 | Observation | `Observation.code.coding` | 57071-3 | Obstetric delivery method | https://loinc.org |
+| 14 | 51 | Observation | `Observation.valueCodeableConcept.coding` | 48782003 | Delivery normal | http://snomed.info/sct |
+| 15 | 52 | Observation | `Observation.valueCodeableConcept.coding` | 200144004 | Deliveries by cesarean | http://snomed.info/sct |
+| 16 | 53 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 17 | 63 | Observation | `Observation.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
+| 18 | 64 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
+| 19 | 65 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead |  |
+| 20 | 66 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed |  |
+| 21 | 76 | Observation | `Observation.code.coding` | SP000147 | Komplikasi pasca persalinan | http://terminology.kemkes.go.id/sp |
+| 22 | 87 | Condition | `Condition.code.coding` | 47821001 | Postpartum hemorrhage | http://snomed.info/sct |
+| 23 | 88 | Condition | `Condition.code.coding` | 178280004 | Postnatal infection | http://snomed.info/sct |
+| 24 | 89 | Condition | `Condition.code.coding` | O13 | Gestational [pregnancy-induced] hypertension without signification proteinuria | http://hl7.org/fhir/sid/icd-10 |
+| 25 | 90 | Condition | `Condition.code.coding` | O90.8 | Other complications of the puerperium, not elsewhere classified | http://hl7.org/fhir/sid/icd-10 |
+| 26 | 100 | Observation | `Observation.code.coding` | PC000004 | KB Pasca Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 27 | 111 | Observation | `Observation.code.coding` | 8659-5 | Birth control method - Reported | http://loinc.org |
+| 28 | 112 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
+| 29 | 113 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
+| 30 | 114 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
+| 31 | 115 | Observation | `Observation.valueCodeableConcept.coding` | SP000097 | Implan | http://terminology.kemkes.go.id/sp |
+| 32 | 116 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
+| 33 | 117 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
+| 34 | 118 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
+| 35 | 119 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
+| 36 | 129 | Observation | `Observation.code.coding` | SP000227 | Alasan menggunakan KB | http://terminology.kemkes.go.id/sp |
+| 37 | 130 | Observation | `Observation.valueCodeableConcept.coding` | SP000225 | Ingin anak di tunda | http://terminology.kemkes.go.id/sp |
+| 38 | 131 | Observation | `Observation.valueCodeableConcept.coding` | SP000226 | Tidak ingin anak lagi | http://terminology.kemkes.go.id/sp |
+| 39 | 132 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 40 | 142 | Observation | `Observation.code.coding` | 736796006 | Reason for no contraception (observable entity) | http://snomed.info/sct |
+| 41 | 143 | Observation | `Observation.valueCodeableConcept.coding` | 276367008 | Wanted pregnancy (finding) | http://snomed.info/sct |
+| 42 | 144 | Observation | `Observation.valueCodeableConcept.coding` | 423875000 | Deficient knowledge of family planning methods | http://snomed.info/sct |
+| 43 | 145 | Observation | `Observation.valueCodeableConcept.coding` | 440552008 | Contraception need complicated by medical condition | http://snomed.info/sct |
+| 44 | 146 | Observation | `Observation.valueCodeableConcept.coding` | SP000072 | Efek samping kontrasepsi | http://terminology.kemkes.go.id/sp |
+| 45 | 147 | Observation | `Observation.valueCodeableConcept.coding` | 422704000 | Difficulty obtaining contraception | http://snomed.info/sct |
+| 46 | 148 | Observation | `Observation.valueCodeableConcept.coding` | SP000091 | Alat/cara KB tidak tersedia | http://terminology.kemkes.go.id/sp |
+| 47 | 149 | Observation | `Observation.valueCodeableConcept.coding` | SP000073 | Alat Kontrasepsi Mahal | http://terminology.kemkes.go.id/sp |
+| 48 | 150 | Observation | `Observation.valueCodeableConcept.coding` | 424670002 | Dissatisfaction with contraception method (finding) | http://snomed.info/sct |
+| 49 | 151 | Observation | `Observation.valueCodeableConcept.coding` | 724073007 | Declined by caregiver of subject (qualifier value) | http://snomed.info/sct |
+| 50 | 152 | Observation | `Observation.valueCodeableConcept.coding` | 183945002 | Procedure declined for religious reason (situation) | http://snomed.info/sct |
+| 51 | 153 | Observation | `Observation.valueCodeableConcept.coding` | SP000151 | Tidak ada petugas pelayanan KB | http://terminology.kemkes.go.id/sp |
+| 52 | 154 | Observation | `Observation.valueCodeableConcept.coding` | SP000148 | Baru melahirkan | http://terminology.kemkes.go.id/sp |
+| 53 | 155 | Observation | `Observation.valueCodeableConcept.coding` | SP000149 | 6 bulan terakhir tidak melakukan hubungan suami istri | http://terminology.kemkes.go.id/sp |
+| 54 | 156 | Observation | `Observation.valueCodeableConcept.coding` | SP000150 | 6 bulan terakhir tidak menstruasi | http://terminology.kemkes.go.id/sp |
+| 55 | 157 | Observation | `Observation.valueCodeableConcept.coding` | 297106006 | Primary infertility | http://snomed.info/sct |
+| 56 | 158 | Observation | `Observation.valueCodeableConcept.coding` | 289903006 | Menopause present | http://snomed.info/sct |
+| 57 | 168 | Observation | `Observation.code.coding` | 72166-2 | Tobacco smoking status | http://loinc.org |
+| 58 | 179 | Observation | `Observation.code.coding` | 63719-9 | What was the primary source of drinking water at your home [Next-of-kin] | http://loinc.org |
+| 59 | 180 | Observation | `Observation.valueCodeableConcept.coding` | LA14183-0 | Bottled water | http://loinc.org |
+| 60 | 181 | Observation | `Observation.valueCodeableConcept.coding` | LA14182-2 | Community supply | http://loinc.org |
+| 61 | 182 | Observation | `Observation.valueCodeableConcept.coding` | SP000066 | Sumur bor/pompa | http://terminology.kemkes.go.id/sp |
+| 62 | 183 | Observation | `Observation.valueCodeableConcept.coding` | SP000067 | Sumur terlindungi | http://terminology.kemkes.go.id/sp |
+| 63 | 184 | Observation | `Observation.valueCodeableConcept.coding` | SP000068 | Sumur tak terlindungi | http://terminology.kemkes.go.id/sp |
+| 64 | 185 | Observation | `Observation.valueCodeableConcept.coding` | SP000069 | Mata air terlindungi | http://terminology.kemkes.go.id/sp |
+| 65 | 186 | Observation | `Observation.valueCodeableConcept.coding` | SP000070 | Mata air tak terlindungi | http://terminology.kemkes.go.id/sp |
+| 66 | 187 | Observation | `Observation.valueCodeableConcept.coding` | 421665008 | River water | http://snomed.info/sct |
+| 67 | 188 | Observation | `Observation.valueCodeableConcept.coding` | 420492000 | Lake water | http://snomed.info/sct |
+| 68 | 189 | Observation | `Observation.valueCodeableConcept.coding` | 421176006 | Pond water | http://snomed.info/sct |
+| 69 | 190 | Observation | `Observation.valueCodeableConcept.coding` | SP000071 | Air hujan | http://terminology.kemkes.go.id/sp |
+| 70 | 200 | Observation | `Observation.code.coding` | SP000093 | Tempat BAB Layak | http://terminology.kemkes.go.id/sp |
+| 71 | 201 | Observation | `Observation.valueCodeableConcept.coding` | SP000094 | Jamban milik sendiri dengan leher angsa dan tangki septik/IPAL | http://terminology.kemkes.go.id/sp |
+| 72 | 202 | Observation | `Observation.valueCodeableConcept.coding` | SP000095 | Jamban pada MCK komunal dengan leher angsa dan tangki septik/IPAL | http://terminology.kemkes.go.id/sp |
+| 73 | 203 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 74 | 204 | Observation | `Observation.valueCodeableConcept.coding` | SP000096 | Tidak ada tempat BAB layak | http://terminology.kemkes.go.id/sp |
+| 75 | 214 | Observation | `Observation.code.coding` | 385827001 | Health promotion education | http://loinc.org |
+| 76 | 225 | Observation | `Observation.code.coding` | 171035004 | Health education given | http://snomed.info/sct |
+| 77 | 226 | Observation | `Observation.valueCodeableConcept.coding` | 125676002 | Person | http://snomed.info/sct |
+| 78 | 227 | Observation | `Observation.valueCodeableConcept.coding` | 389109008 | Group | http://snomed.info/sct |
+| 79 | 237 | Observation | `Observation.code.coding` | SP000229 | Sudah mendapatkan tablet tambah darah | http://terminology.kemkes.go.id/sp |
+| 80 | 248 | Observation | `Observation.code.coding` | SP000144 | Sudah mengonsumsi tablet tambah darah | http://terminology.kemkes.go.id/sp |
+| 81 | 259 | Observation | `Observation.code.coding` | 306206005 | Referral to service | http://snomed.info/sct |
+| 82 | 260 | Observation | `Observation.valueCodeableConcept.coding` | 385651009 | In progress | http://snomed.info/sct |
+| 83 | 261 | Observation | `Observation.valueCodeableConcept.coding` | 385658003 | Done | http://snomed.info/sct |
+| 84 | 262 | Observation | `Observation.valueCodeableConcept.coding` | 385660001 | Not done | http://snomed.info/sct |
+| 85 | 272 | Observation | `Observation.code.coding` | 405076007 | Social support status | http://snomed.info/sct |
+| 86 | 273 | Observation | `Observation.valueCodeableConcept.coding` | LA32661-3 | Applied and waiting to receive | http://loinc.org |
+| 87 | 274 | Observation | `Observation.valueCodeableConcept.coding` | LA32660-5 | Received | http://loinc.org |
+| 88 | 275 | Observation | `Observation.valueCodeableConcept.coding` | LA32662-1 | Tried but was not able to apply for, or was not eligible | http://loinc.org |
+| 89 | 276 | Observation | `Observation.valueCodeableConcept.coding` | LA32663-9 | Did not apply for | http://loinc.org |
+| 90 | 286 | Observation | `Observation.code.coding` | SP000145 | Bantuan sosial yang sedang dalam proses | http://terminology.kemkes.go.id/sp |
+| 91 | 287 | Observation | `Observation.valueCodeableConcept.coding` | SP000140 | Program Keluarga Harapan | http://terminology.kemkes.go.id/sp |
+| 92 | 288 | Observation | `Observation.valueCodeableConcept.coding` | SP000141 | Bantu Non Tunai | http://terminology.kemkes.go.id/sp |
+| 93 | 289 | Observation | `Observation.valueCodeableConcept.coding` | SP000142 | Program Indonesia Pintar | http://terminology.kemkes.go.id/sp |
+| 94 | 290 | Observation | `Observation.valueCodeableConcept.coding` | SP000143 | Kartu Indonesia Sehat | http://terminology.kemkes.go.id/sp |
+| 95 | 291 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 96 | 301 | Observation | `Observation.code.coding` | SP000146 | Bantuan sosial yang sudah didapatkan | http://terminology.kemkes.go.id/sp |
+| 97 | 302 | Observation | `Observation.valueCodeableConcept.coding` | SP000140 | Program Keluarga Harapan | http://terminology.kemkes.go.id/sp |
+| 98 | 303 | Observation | `Observation.valueCodeableConcept.coding` | SP000141 | Bantu Non Tunai | http://terminology.kemkes.go.id/sp |
+| 99 | 304 | Observation | `Observation.valueCodeableConcept.coding` | SP000142 | Program Indonesia Pintar | http://terminology.kemkes.go.id/sp |
+| 100 | 305 | Observation | `Observation.valueCodeableConcept.coding` | SP000143 | Kartu Indonesia Sehat | http://terminology.kemkes.go.id/sp |
+| 101 | 306 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 102 | 315 | Observation | `Observation.code.coding` | SP000219 | Catatan TPK | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -163,13 +169,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 36 |
 | http://terminology.kemkes.go.id/sp | 35 |
 | http://loinc.org | 14 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 5 |
 | https://loinc.org | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
+|  | 2 |
 | http://hl7.org/fhir/sid/icd-10 | 2 |
 | hhttp://terminology.kemkes.go.id/CodeSystem/organization-type | 1 |
-|  | 1 |
-| **Total** | **96** |
+| **Total** | **102** |
 
 ## Variabel di luar payload
 

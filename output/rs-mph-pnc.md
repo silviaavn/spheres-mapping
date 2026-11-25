@@ -54,7 +54,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 32 | 422–434 | Observation | 11881-0 | Uterus Fundal height Tape measure | _TFU_ → `Observation.valueString` (425, tanpa BQ) |
 | 33 | 435–452 | Condition | 47821001.0 | Postpartum hemorrhage | _Komplikasi Masa Nifas_ → `Condition.clinicalStatus.coding` (435, tanpa BQ) |
 | 34 | 453–465 | Observation | 289084000.0 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (456, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (465, tanpa BQ) |
-| 35 | 466–479 | Observation | OC000017 | Produksi ASI | _Produksi ASI_ → `Observation.valueCodeableConcept.coding` (469, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.catgeory.coding` (479, tanpa BQ) |
+| 35 | 466–479 | Observation | OC000017 | Produksi ASI | _Produksi ASI_ → `Observation.valueCodeableConcept.coding` (469, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.category.coding` (479, tanpa BQ) |
 | 36 | 480–492 | Observation | SP000122 | Catat di Buku KIA | _Metode Kontrasepsi KB Pasca Plasenta_ → `Observation.status` (491, tanpa BQ) |
 | 37 | 493–510 | Observation | SP000139 | KB Pasca Plasenta | _Metode Kontrasepsi KB Pasca Persalinan_ → `Observation.status` (509, tanpa BQ) |
 | 38 | 511–526 | Observation | PC000004 | KB Pasca Persalinan | – |

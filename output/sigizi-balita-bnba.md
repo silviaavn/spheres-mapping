@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 24 |
-| Code (`jumlah code` = 1) | 48 |
-| Code unik (code + CodeSystem) | 45 |
+| Code (`jumlah code` = 1) | 50 |
+| Code unik (code + CodeSystem) | 46 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 10 |
 | Variabel BQ (unik) | 35 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 33 |
@@ -23,7 +23,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|
 | 1 | 3–32 | Patient | – | – | `nama` → `Patient.name.text` (3)<br>`nik` → `Patient.identifier.value` (6)<br>`jk` → `Patient.gender` (8)<br>`tgl_lahir` → `Patient.birthDate` (10)<br>_Alamat Domisili_ → `Patient.address.use` (11, tanpa BQ)<br>`alamat` → `Patient.address.line` (12)<br>`kabkota` → `Patient.address.city` (13)<br>_Nama Provinsi_ → `Patient.address.extension.url` (15, tanpa BQ)<br>`prov` → `Patient.address.extension.extension.valueCode` (17)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (20, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.url` (21, tanpa BQ)<br>`kec` → `Patient.address.extension.extension.valueCode` (23)<br>_Nama Desa_ → `Patient.address.extension.url` (24, tanpa BQ)<br>`desakel` → `Patient.address.extension.extension.valueCode` (26)<br>`rw` → `Patient.address.extension.extension.valueCode` (29)<br>`rt` → `Patient.address.extension.extension.valueCode` (32) |
 | 2 | 118–121 | RelatedPerson | – | – | `nama_ortu` → `RelatedPerson.patient` (118) |
-| 3 | 122–137 | Encounter | – | – | `tanggal_pengukuran` → `Encounter.period.start` (131)<br>`posyandu` → `Encounter.location.reference` (133) 🔎 lookup master data<br>`pukesmas` → `Encounter.serviceProvider.reference` (137) 🔎 lookup master data<br>`detail` → `Encounter.extension.valueString` (157) |
+| 3 | 122–137 | Encounter | – | – | `tanggal_pengukuran` → `Encounter.period.start` (131)<br>`posyandu` → `Encounter.location.location.reference` (133) 🔎 lookup master data<br>`pukesmas` → `Encounter.serviceProvider.reference` (137) 🔎 lookup master data<br>`detail` → `Encounter.extension.valueString` (157) |
 | 4 | 138–144 | Condition | 385984007 | Growth and development treatments and procedures | – |
 | 5 | 158–175 | Observation | 424144002 | Current chronological age | `usia_saat_ukur` → `Observation.valueQuantity.value` (161) |
 | 6 | 176–188 | Observation | 8339-4 | Birth weight Measured | `bb_lahir` → `Observation.valueQuantity.value` (180) |
@@ -111,8 +111,10 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 44 | 385 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kfa |
 | 45 | 412 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93018284 | Retinol Palmitate 100.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kfa |
 | 46 | 437 | Observation | `Observation.code.coding` | SP000022 | KPSP | http://terminology.kemkes.go.id/sp |
-| 47 | 449 | Observation | `Observation.code.coding` | SP000023 | KIA | http://terminology.kemkes.go.id/sp |
-| 48 | 473 | Observation | `Observation.code.coding` | SP000510 | Mendapat Makanan Bergizi Gratis (MBG) bulan ini | http://terminology.kemkes.go.id/sp |
+| 47 | 439 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 48 | 449 | Observation | `Observation.code.coding` | SP000023 | KIA | http://terminology.kemkes.go.id/sp |
+| 49 | 451 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 50 | 473 | Observation | `Observation.code.coding` | SP000510 | Mendapat Makanan Bergizi Gratis (MBG) bulan ini | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -123,7 +125,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 5 |
 | http://sys-ids.kemkes.go.id/kfa | 4 |
-| **Total** | **48** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 2 |
+| **Total** | **50** |
 
 ## Variabel di luar payload
 

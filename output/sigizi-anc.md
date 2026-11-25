@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 61 |
-| Code (`jumlah code` = 1) | 142 |
-| Code unik (code + CodeSystem) | 114 |
+| Code (`jumlah code` = 1) | 154 |
+| Code unik (code + CodeSystem) | 115 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 18 |
 | Variabel BQ (unik) | 49 |
 | Variabel raw (kolom Excel export) | 49 |
@@ -24,7 +24,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 8–37 | Patient | – | – | `nama` → `Patient.name.text` (8)<br>`nik` → `Patient.identifier.value` (12)<br>`tanggal_lahir` → `Patient.birthDate` (18)<br>`alamat_domisili` → `Patient.address.line` (21)<br>`kabkota_domisili` → `Patient.address.city` (23)<br>`prov_domisili` → `Patient.address.extension.extension.valueCode` (28)<br>`kabkota_domisili` → `Patient.address.extension.extension.valueCode` (31)<br>`kec_domisili` → `Patient.address.extension.extension.valueCode` (34)<br>`desakel_domisili` → `Patient.address.extension.extension.valueCode` (37)<br>`posyandu_domisili` → `Patient.managingOrganization.reference` (967) 🔎 lookup master data<br>`puskesmas_domisili` → `Patient.managingOrganization.reference` (968) 🔎 lookup master data |
 | 2 | 41–47 | PractitionerRole | – | – | `pemeriksaan_anc_tenaga_pemeriksa` → `PractitionerRole.code.coding` (43) |
 | 3 | 50–58 | EpisodeOfCare | ANC | Antenatal Care | `tanggal_hpht` → `EpisodeOfCare.statusHistory.period.start` (53) |
-| 4 | 61–85 | Encounter | – | – | `pemeriksaan_pertama` → `Encounter.identifier` (62)<br>`pemeriksaan_anc_tanggal_anc` → `Encounter.period.start` (78)<br>`faskes_yang_melayani_anc` → `Encounter.location.display` (81)<br>`pemeriksaan_anc_aksi` → `Encounter.extension.valueUrl` (85)<br>`faskes_yang_melayani_anc` → `Encounter.serviceProvider.reference` (105) 🔎 lookup master data |
+| 4 | 61–85 | Encounter | – | – | `pemeriksaan_pertama` → `Encounter.identifier` (62)<br>`pemeriksaan_anc_tanggal_anc` → `Encounter.period.start` (78)<br>`faskes_yang_melayani_anc` → `Encounter.location.location.display` (81)<br>`pemeriksaan_anc_aksi` → `Encounter.extension.valueUrl` (85)<br>`faskes_yang_melayani_anc` → `Encounter.serviceProvider.reference` (105) 🔎 lookup master data |
 | 5 | 87–93 | Condition | 134435003 | Routine antenatal care | – |
 | 6 | 108–119 | Observation | 424144002 | Current chronological age | `umur` → `Observation.valueQuantity.value` (111) |
 | 7 | 122–133 | Observation | 8665-2 | Last menstrual period start date | `tanggal_hpht` → `Observation.valueDateTime` (126) |
@@ -125,129 +125,141 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 17 | 177 | Observation | `Observation.code.coding` | OC000010 | Indeks Massa Tubuh Sebelum Hamil | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 18 | 178 | Observation | `Observation.code.coding` | ANC.SS.DE58 | IMT Sebelum Hamil | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes |
 | 19 | 191 | Immunization | `Immunization.vaccineCode.coding` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 20 | 224 | Observation | `Observation.code.coding` | SP000001 | Skrining Imunisasi Tetanus Toksoid | http://terminology.kemkes.go.id/sp |
-| 21 | 237 | Observation | `Observation.code.coding` | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | http://terminology.kemkes.go.id/sp |
-| 22 | 251 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 23 | 252 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 24 | 265 | Observation | `Observation.code.coding` | 392570002 | Blood pressure finding | http://snomed.info/sct |
-| 25 | 266 | Observation | `Observation.valueCodeableConcept.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
-| 26 | 267 | Observation | `Observation.valueCodeableConcept.coding` | 38341003 | Hypertension | http://snomed.info/sct |
-| 27 | 268 | Observation | `Observation.valueCodeableConcept.coding` | 45007003 | Hypotension | http://snomed.info/sct |
-| 28 | 279 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
-| 29 | 280 | Observation | `Observation.code.coding` | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes |
-| 30 | 290 | Observation | `Observation.interpretation.coding` | OI000018 | Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 31 | 291 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 32 | 292 | Observation | `Observation.interpretation.coding` | OI000035 | Risiko Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 33 | 296 | Observation | `Observation.code.coding` | 289625003 | Finding of fundal height of uterus | http://snomed.info/sct |
-| 34 | 297 | Observation | `Observation.valueCodeableConcept.coding` | SP000003 | Sesuai Usia Kehamilan | http://terminology.kemkes.go.id/sp |
-| 35 | 298 | Observation | `Observation.valueCodeableConcept.coding` | SP000004 | Tidak Sesuai Usia Kehamilan | http://terminology.kemkes.go.id/sp |
-| 36 | 309 | Observation | `Observation.code.coding` | 883-9 | ABO group [Type] in Blood | http://loinc.org |
-| 37 | 310 | Observation | `Observation.code.coding` | ANC.B9.DE24 | Blood type | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 38 | 311 | Observation | `Observation.valueCodeableConcept.coding` | LA19710-5 | Group A | http://loinc.org |
-| 39 | 312 | Observation | `Observation.valueCodeableConcept.coding` | LA19709-7 | Group B | http://loinc.org |
-| 40 | 313 | Observation | `Observation.valueCodeableConcept.coding` | LA19708-9 | Group O | http://loinc.org |
-| 41 | 314 | Observation | `Observation.valueCodeableConcept.coding` | LA28449-9 | Group AB | http://loinc.org |
-| 42 | 325 | Observation | `Observation.code.coding` | 10331-7 | Rh [Type] in Blood | http://loinc.org |
-| 43 | 326 | Observation | `Observation.code.coding` | ANC.B9.DE29 | Rh factor | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 44 | 327 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 45 | 328 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 46 | 340 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
-| 47 | 341 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
-| 48 | 342 | Observation | `Observation.valueCodeableConcept.coding` | 289440007 | Fetal heart rate not observed | http://snomed.info/sct |
-| 49 | 343 | Observation | `Observation.valueCodeableConcept.coding` | 312668007 | Abnormal fetal heart rate | http://snomed.info/sct |
-| 50 | 344 | Observation | `Observation.valueCodeableConcept.coding` | 289439005 | Fetal heart rate absent | http://snomed.info/sct |
-| 51 | 355 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 52 | 356 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 53 | 357 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 54 | 358 | Observation | `Observation.valueCodeableConcept.coding` | SP000005 | Letak Bokong/ Lintang | http://terminology.kemkes.go.id/sp |
-| 55 | 359 | Observation | `Observation.valueCodeableConcept.coding` | SP000006 | Organ Tubuh Lainnya | http://terminology.kemkes.go.id/sp |
-| 56 | 370 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
-| 57 | 383 | Observation | `Observation.code.coding` | 268445003 | Ultrasound scan - obstetric | http://snomed.info/sct |
-| 58 | 384 | Observation | `Observation.valueCodeableConcept.coding` | 169221005 | Ultrasound obstetric scan normal | http://snomed.info/sct |
-| 59 | 385 | Observation | `Observation.valueCodeableConcept.coding` | 169255008 | Ultrasound scan abnormal | http://snomed.info/sct |
-| 60 | 399 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kfa |
-| 61 | 435 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
-| 62 | 469 | MedicationRequest | `MedicationRequest.contained.code.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
-| 63 | 493 | MedicationDispense | `MedicationDispense.contained.code.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
-| 64 | 518 | ServiceRequest | `ServiceRequest.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 65 | 526 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 66 | 536 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 67 | 537 | Observation | `Observation.code.coding` | ANC.B9.DE32 | HIV test | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 68 | 538 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 69 | 539 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 70 | 551 | DiagnosticReport | `DiagnosticReport.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 71 | 566 | ServiceRequest | `ServiceRequest.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 72 | 574 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 73 | 584 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 74 | 585 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 75 | 586 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 76 | 587 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 77 | 599 | DiagnosticReport | `DiagnosticReport.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 78 | 614 | ServiceRequest | `ServiceRequest.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 79 | 622 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 80 | 632 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 81 | 633 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 82 | 634 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 83 | 635 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 84 | 647 | DiagnosticReport | `DiagnosticReport.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 85 | 662 | ServiceRequest | `ServiceRequest.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 86 | 670 | Specimen | `Specimen.type.coding` | 122575003 | Urine specimen | http://snomed.info/sct |
-| 87 | 680 | Observation | `Observation.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 88 | 681 | Observation | `Observation.code.coding` | ANC.B9.DE114 | Urine test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 89 | 682 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 90 | 683 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 91 | 695 | DiagnosticReport | `DiagnosticReport.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 92 | 710 | ServiceRequest | `ServiceRequest.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 93 | 718 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 94 | 728 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 95 | 729 | Observation | `Observation.code.coding` | ANC.B9.DE175 | Blood hemoglobin test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 96 | 733 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
-| 97 | 739 | Observation | `Observation.interpretation.coding` | OI000032 | Anemia ringan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 98 | 745 | Observation | `Observation.interpretation.coding` | OI000033 | Anemia sedang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 99 | 749 | Observation | `Observation.interpretation.coding` | OI000034 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 100 | 763 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 101 | 778 | ServiceRequest | `ServiceRequest.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
-| 102 | 786 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 103 | 796 | Observation | `Observation.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
-| 104 | 797 | Observation | `Observation.code.coding` | ANC.B9.DE159 | Blood glucose test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 105 | 801 | Observation | `Observation.interpretation.coding` | 166921001 | Blood glucose normal | http://snomed.info/sct |
-| 106 | 805 | Observation | `Observation.interpretation.coding` | 166922008 | Blood glucose abnormal | http://snomed.info/sct |
-| 107 | 819 | DiagnosticReport | `DiagnosticReport.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
-| 108 | 832 | Observation | `Observation.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
-| 109 | 833 | Observation | `Observation.valueCodeableConcept.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 110 | 834 | Observation | `Observation.valueCodeableConcept.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 111 | 835 | Observation | `Observation.valueCodeableConcept.coding` | 104742-2 | Ova and parasites identified in Specimen | http://loinc.org |
-| 112 | 836 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 113 | 848 | Observation | `Observation.code.coding` | SP000007 | Tatalaksana Anemia | http://terminology.kemkes.go.id/sp |
-| 114 | 849 | Observation | `Observation.valueCodeableConcept.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
-| 115 | 850 | Observation | `Observation.valueCodeableConcept.coding` | SP000009 | Pemberian Fe Parenteral | http://terminology.kemkes.go.id/sp |
-| 116 | 851 | Observation | `Observation.valueCodeableConcept.coding` | 116859006 | Transfusion of blood product | http://snomed.info/sct |
-| 117 | 852 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 118 | 853 | Observation | `Observation.valueCodeableConcept.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 119 | 865 | Observation | `Observation.code.coding` | SP000010 | Skrining Hipertensi dalam Kehamilan | http://terminology.kemkes.go.id/sp |
-| 120 | 866 | Observation | `Observation.valueCodeableConcept.coding` | SP000011 | Tidak Pre Eklampsia/ Eklampsia | http://terminology.kemkes.go.id/sp |
-| 121 | 867 | Observation | `Observation.valueCodeableConcept.coding` | 48194001 | Pregnancy-induced hypertension | http://snomed.info/sct |
-| 122 | 868 | Observation | `Observation.valueCodeableConcept.coding` | 398254007 | Pre-eclampsia | http://snomed.info/sct |
-| 123 | 869 | Observation | `Observation.valueCodeableConcept.coding` | 15938005 | Eclampsia | http://snomed.info/sct |
-| 124 | 881 | Observation | `Observation.code.coding` | SP000012 | Tatalaksana Pre Eklampsia | http://terminology.kemkes.go.id/sp |
-| 125 | 882 | Observation | `Observation.valueCodeableConcept.coding` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
-| 126 | 883 | Observation | `Observation.valueCodeableConcept.coding` | 308116003 | Antihypertensive therapy | http://snomed.info/sct |
-| 127 | 884 | Observation | `Observation.valueCodeableConcept.coding` | SP000013 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
-| 128 | 885 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 129 | 886 | Observation | `Observation.valueCodeableConcept.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 130 | 899 | Observation | `Observation.code.coding` | SP000014 | Tatalaksana KEK | http://terminology.kemkes.go.id/sp |
-| 131 | 900 | Observation | `Observation.valueCodeableConcept.coding` | 435591000124104 | Nutrition supplement therapy | http://snomed.info/sct |
-| 132 | 901 | Observation | `Observation.valueCodeableConcept.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 133 | 913 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
-| 134 | 914 | Observation | `Observation.valueCodeableConcept.coding` | 40733004 | Infectious disease | http://snomed.info/sct |
-| 135 | 915 | Observation | `Observation.valueCodeableConcept.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
-| 136 | 916 | Observation | `Observation.valueCodeableConcept.coding` | 414916001 | Obesity | http://snomed.info/sct |
-| 137 | 917 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
-| 138 | 918 | Observation | `Observation.valueCodeableConcept.coding` | 56265001 | Heart disease | http://snomed.info/sct |
-| 139 | 919 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 140 | 930 | Observation | `Observation.code.coding` | SP000016 | Tatalaksana Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
-| 141 | 942 | Procedure | `Procedure.code.coding` | 1230101008 | Counseling for pregnancy | http://snomed.info/sct |
-| 142 | 954 | Procedure | `Procedure.code.coding` | 385892002 | Mental health screening | http://snomed.info/sct |
+| 20 | 210 | Immunization | `Immunization.vaccineCode.coding` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 21 | 224 | Observation | `Observation.code.coding` | SP000001 | Skrining Imunisasi Tetanus Toksoid | http://terminology.kemkes.go.id/sp |
+| 22 | 225 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 23 | 237 | Observation | `Observation.code.coding` | SP000002 | Kunjungan Pertama Pemeriksaan Kehamilan | http://terminology.kemkes.go.id/sp |
+| 24 | 251 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 25 | 252 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 26 | 265 | Observation | `Observation.code.coding` | 392570002 | Blood pressure finding | http://snomed.info/sct |
+| 27 | 266 | Observation | `Observation.valueCodeableConcept.coding` | 2004005 | Normal blood pressure | http://snomed.info/sct |
+| 28 | 267 | Observation | `Observation.valueCodeableConcept.coding` | 38341003 | Hypertension | http://snomed.info/sct |
+| 29 | 268 | Observation | `Observation.valueCodeableConcept.coding` | 45007003 | Hypotension | http://snomed.info/sct |
+| 30 | 279 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
+| 31 | 280 | Observation | `Observation.code.coding` | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes |
+| 32 | 290 | Observation | `Observation.interpretation.coding` | OI000018 | Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 33 | 291 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 34 | 292 | Observation | `Observation.interpretation.coding` | OI000035 | Risiko Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 35 | 296 | Observation | `Observation.code.coding` | 289625003 | Finding of fundal height of uterus | http://snomed.info/sct |
+| 36 | 297 | Observation | `Observation.valueCodeableConcept.coding` | SP000003 | Sesuai Usia Kehamilan | http://terminology.kemkes.go.id/sp |
+| 37 | 298 | Observation | `Observation.valueCodeableConcept.coding` | SP000004 | Tidak Sesuai Usia Kehamilan | http://terminology.kemkes.go.id/sp |
+| 38 | 309 | Observation | `Observation.code.coding` | 883-9 | ABO group [Type] in Blood | http://loinc.org |
+| 39 | 310 | Observation | `Observation.code.coding` | ANC.B9.DE24 | Blood type | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 40 | 311 | Observation | `Observation.valueCodeableConcept.coding` | LA19710-5 | Group A | http://loinc.org |
+| 41 | 312 | Observation | `Observation.valueCodeableConcept.coding` | LA19709-7 | Group B | http://loinc.org |
+| 42 | 313 | Observation | `Observation.valueCodeableConcept.coding` | LA19708-9 | Group O | http://loinc.org |
+| 43 | 314 | Observation | `Observation.valueCodeableConcept.coding` | LA28449-9 | Group AB | http://loinc.org |
+| 44 | 325 | Observation | `Observation.code.coding` | 10331-7 | Rh [Type] in Blood | http://loinc.org |
+| 45 | 326 | Observation | `Observation.code.coding` | ANC.B9.DE29 | Rh factor | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 46 | 327 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 47 | 328 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 48 | 340 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
+| 49 | 341 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
+| 50 | 342 | Observation | `Observation.valueCodeableConcept.coding` | 289440007 | Fetal heart rate not observed | http://snomed.info/sct |
+| 51 | 343 | Observation | `Observation.valueCodeableConcept.coding` | 312668007 | Abnormal fetal heart rate | http://snomed.info/sct |
+| 52 | 344 | Observation | `Observation.valueCodeableConcept.coding` | 289439005 | Fetal heart rate absent | http://snomed.info/sct |
+| 53 | 355 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 54 | 356 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 55 | 357 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 56 | 358 | Observation | `Observation.valueCodeableConcept.coding` | SP000005 | Letak Bokong/ Lintang | http://terminology.kemkes.go.id/sp |
+| 57 | 359 | Observation | `Observation.valueCodeableConcept.coding` | SP000006 | Organ Tubuh Lainnya | http://terminology.kemkes.go.id/sp |
+| 58 | 360 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 59 | 370 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
+| 60 | 383 | Observation | `Observation.code.coding` | 268445003 | Ultrasound scan - obstetric | http://snomed.info/sct |
+| 61 | 384 | Observation | `Observation.valueCodeableConcept.coding` | 169221005 | Ultrasound obstetric scan normal | http://snomed.info/sct |
+| 62 | 385 | Observation | `Observation.valueCodeableConcept.coding` | 169255008 | Ultrasound scan abnormal | http://snomed.info/sct |
+| 63 | 386 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 64 | 399 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kfa |
+| 65 | 435 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
+| 66 | 469 | MedicationRequest | `MedicationRequest.contained.code.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
+| 67 | 493 | MedicationDispense | `MedicationDispense.contained.code.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
+| 68 | 518 | ServiceRequest | `ServiceRequest.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 69 | 526 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 70 | 536 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 71 | 537 | Observation | `Observation.code.coding` | ANC.B9.DE32 | HIV test | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 72 | 538 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 73 | 539 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 74 | 540 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 75 | 551 | DiagnosticReport | `DiagnosticReport.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 76 | 566 | ServiceRequest | `ServiceRequest.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 77 | 574 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 78 | 584 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 79 | 585 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 80 | 586 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 81 | 587 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 82 | 588 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 83 | 599 | DiagnosticReport | `DiagnosticReport.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 84 | 614 | ServiceRequest | `ServiceRequest.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 85 | 622 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 86 | 632 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 87 | 633 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 88 | 634 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 89 | 635 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 90 | 636 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 91 | 647 | DiagnosticReport | `DiagnosticReport.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 92 | 662 | ServiceRequest | `ServiceRequest.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 93 | 670 | Specimen | `Specimen.type.coding` | 122575003 | Urine specimen | http://snomed.info/sct |
+| 94 | 680 | Observation | `Observation.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 95 | 681 | Observation | `Observation.code.coding` | ANC.B9.DE114 | Urine test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 96 | 682 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 97 | 683 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 98 | 684 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 99 | 695 | DiagnosticReport | `DiagnosticReport.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 100 | 710 | ServiceRequest | `ServiceRequest.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 101 | 718 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 102 | 728 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 103 | 729 | Observation | `Observation.code.coding` | ANC.B9.DE175 | Blood hemoglobin test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 104 | 733 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
+| 105 | 739 | Observation | `Observation.interpretation.coding` | OI000032 | Anemia ringan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 106 | 745 | Observation | `Observation.interpretation.coding` | OI000033 | Anemia sedang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 107 | 749 | Observation | `Observation.interpretation.coding` | OI000034 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 108 | 751 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 109 | 763 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 110 | 778 | ServiceRequest | `ServiceRequest.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
+| 111 | 786 | Specimen | `Specimen.type.coding` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 112 | 796 | Observation | `Observation.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
+| 113 | 797 | Observation | `Observation.code.coding` | ANC.B9.DE159 | Blood glucose test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 114 | 801 | Observation | `Observation.interpretation.coding` | 166921001 | Blood glucose normal | http://snomed.info/sct |
+| 115 | 805 | Observation | `Observation.interpretation.coding` | 166922008 | Blood glucose abnormal | http://snomed.info/sct |
+| 116 | 807 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 117 | 819 | DiagnosticReport | `DiagnosticReport.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
+| 118 | 832 | Observation | `Observation.code.coding` | 15220000 | Laboratory test | http://snomed.info/sct |
+| 119 | 833 | Observation | `Observation.valueCodeableConcept.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
+| 120 | 834 | Observation | `Observation.valueCodeableConcept.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 121 | 835 | Observation | `Observation.valueCodeableConcept.coding` | 104742-2 | Ova and parasites identified in Specimen | http://loinc.org |
+| 122 | 836 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 123 | 848 | Observation | `Observation.code.coding` | SP000007 | Tatalaksana Anemia | http://terminology.kemkes.go.id/sp |
+| 124 | 849 | Observation | `Observation.valueCodeableConcept.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
+| 125 | 850 | Observation | `Observation.valueCodeableConcept.coding` | SP000009 | Pemberian Fe Parenteral | http://terminology.kemkes.go.id/sp |
+| 126 | 851 | Observation | `Observation.valueCodeableConcept.coding` | 116859006 | Transfusion of blood product | http://snomed.info/sct |
+| 127 | 852 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 128 | 853 | Observation | `Observation.valueCodeableConcept.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 129 | 865 | Observation | `Observation.code.coding` | SP000010 | Skrining Hipertensi dalam Kehamilan | http://terminology.kemkes.go.id/sp |
+| 130 | 866 | Observation | `Observation.valueCodeableConcept.coding` | SP000011 | Tidak Pre Eklampsia/ Eklampsia | http://terminology.kemkes.go.id/sp |
+| 131 | 867 | Observation | `Observation.valueCodeableConcept.coding` | 48194001 | Pregnancy-induced hypertension | http://snomed.info/sct |
+| 132 | 868 | Observation | `Observation.valueCodeableConcept.coding` | 398254007 | Pre-eclampsia | http://snomed.info/sct |
+| 133 | 869 | Observation | `Observation.valueCodeableConcept.coding` | 15938005 | Eclampsia | http://snomed.info/sct |
+| 134 | 870 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 135 | 881 | Observation | `Observation.code.coding` | SP000012 | Tatalaksana Pre Eklampsia | http://terminology.kemkes.go.id/sp |
+| 136 | 882 | Observation | `Observation.valueCodeableConcept.coding` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
+| 137 | 883 | Observation | `Observation.valueCodeableConcept.coding` | 308116003 | Antihypertensive therapy | http://snomed.info/sct |
+| 138 | 884 | Observation | `Observation.valueCodeableConcept.coding` | SP000013 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
+| 139 | 885 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 140 | 886 | Observation | `Observation.valueCodeableConcept.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 141 | 888 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 142 | 899 | Observation | `Observation.code.coding` | SP000014 | Tatalaksana KEK | http://terminology.kemkes.go.id/sp |
+| 143 | 900 | Observation | `Observation.valueCodeableConcept.coding` | 435591000124104 | Nutrition supplement therapy | http://snomed.info/sct |
+| 144 | 901 | Observation | `Observation.valueCodeableConcept.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 145 | 913 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
+| 146 | 914 | Observation | `Observation.valueCodeableConcept.coding` | 40733004 | Infectious disease | http://snomed.info/sct |
+| 147 | 915 | Observation | `Observation.valueCodeableConcept.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
+| 148 | 916 | Observation | `Observation.valueCodeableConcept.coding` | 414916001 | Obesity | http://snomed.info/sct |
+| 149 | 917 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
+| 150 | 918 | Observation | `Observation.valueCodeableConcept.coding` | 56265001 | Heart disease | http://snomed.info/sct |
+| 151 | 919 | Observation | `Observation.valueCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 152 | 930 | Observation | `Observation.code.coding` | SP000016 | Tatalaksana Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
+| 153 | 942 | Procedure | `Procedure.code.coding` | 1230101008 | Counseling for pregnancy | http://snomed.info/sct |
+| 154 | 954 | Procedure | `Procedure.code.coding` | 385892002 | Mental health screening | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -257,14 +269,15 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 43 |
 | http://terminology.kemkes.go.id/sp | 18 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 13 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 11 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 |
-| http://sys-ids.kemkes.go.id/kfa | 3 |
+| http://sys-ids.kemkes.go.id/kfa | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **142** |
+| **Total** | **154** |
 
 ## Variabel di luar payload
 

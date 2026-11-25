@@ -55,7 +55,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 33 | 456–466 | Observation | SP000683 | Tatalaksana Tindakan | _Tatalaksana (Tindakan)_ → `Observation.valueString` (459, tanpa BQ) |
 | 34 | 467–483 | Condition | 47821001.0 | Postpartum hemorrhage | _Komplikasi Masa Nifas_ → `Condition.clinicalStatus.coding` (467, tanpa BQ) |
 | 35 | 484–496 | Observation | 289084000.0 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (487, tanpa BQ) |
-| 36 | 497–510 | Observation | OC000017 | Produksi ASI | _Produksi ASI_ → `Observation.valueCodeableConcept.coding` (500, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.catgeory.coding` (510, tanpa BQ) |
+| 36 | 497–510 | Observation | OC000017 | Produksi ASI | _Produksi ASI_ → `Observation.valueCodeableConcept.coding` (500, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.category.coding` (510, tanpa BQ) |
 | 37 | 511–523 | Observation | SP000122 | Catat di Buku KIA | _Metode Kontrasepsi KB Pasca Persalinan_ → `Observation.status` (522, tanpa BQ) |
 | 38 | 524–540 | Observation | PC000004 | KB Pasca Persalinan | _Metode Kontrasepsi KB Pasca Plasenta_ → `Observation.status` (539, tanpa BQ) |
 | 39 | 541–556 | Observation | SP000139 | KB Pasca Plasenta | – |

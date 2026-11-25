@@ -94,8 +94,8 @@ exclude: buka iud",,Encounter,Encounter.episodeOfCare.reference,Reference ke res
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tanggal,Tanggal,date,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tanggal,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,DD,Discharge diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -124,7 +124,7 @@ exclude: buka iud",,Condition,Condition.code.coding,Z39.2,Routine postpartum fol
 ,,,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,
 ,,,,,,,,"keyword dari variabel keluhan_utama:
 include: hamil/hpl
-exclude: pernah hamil",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
+exclude: pernah hamil",,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,finished,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
@@ -140,7 +140,7 @@ exclude: pernah hamil",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ad
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.period.end,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,"keyword dari variabel keluhan_utama:
 include: post sc/ post partum
-exclude: buka iud",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,
+exclude: buka iud",,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
@@ -213,7 +213,7 @@ exclude: buka iud",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,ht
 ,,,,,,,,,,Immunization,Immunization.patient.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Immunization,Immunization.patient.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.encounter.reference,Reference ke resources Encounter,,,,,
-,,,,,,,,,,Immunization,Immunization.occurenceDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Immunization,Immunization.occurrenceDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.recorded,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Immunization,Immunization.reportOrigin,provider,Other Provider,http://terminology.hl7.org/CodeSystem/immunization-origin,,,
 ,,,,,,,,,,Immunization,Immunization.performer.function.coding,EP,Entering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
@@ -636,7 +636,7 @@ exclude: buka iud",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,ht
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,32750006.0,Inspection,http://snomed.info/sct,,1,
 ,,,,,,,Dilakukan,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
-,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -649,7 +649,7 @@ exclude: buka iud",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,ht
 ,,,,,,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,424679001.0,"pH measurement, vaginal fluid",http://snomed.info/sct,,1,
 ,,,,,,,Dilakukan,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
-,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -706,7 +706,7 @@ exclude: buka iud",,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,ht
 ,,,,,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,243787009,Antenatal screening,http://loinc.org,,1,
-,,,lab,Laboratorium,code,,Tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,lab,Laboratorium,code,,Tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,Dilakukan,,,Observation,Observation.valueBoolean,true,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,

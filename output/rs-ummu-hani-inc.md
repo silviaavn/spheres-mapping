@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 41 |
-| Code (`jumlah code` = 1) | 94 |
-| Code unik (code + CodeSystem) | 82 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 6 |
+| Code (`jumlah code` = 1) | 97 |
+| Code unik (code + CodeSystem) | 85 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 8 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -28,7 +28,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 6 | 95–104 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.code.coding` (99, tanpa BQ) |
 | 7 | 105–109 | Practitioner | – | – | _NIK Pencatat_ → `Practitioner.identifier.value` (107, tanpa BQ)<br>_Nama Pencatat_ → `Practitioner.name.text` (109, tanpa BQ) |
 | 8 | 110–118 | PractitionerRole | – | – | _Role Pencatat_ → `PractitionerRole.code.coding` (114, tanpa BQ) |
-| 9 | 120–135 | Encounter | – | – | _Jenis Kunjungan INC_ → `Encounter.class` (121, tanpa BQ)<br>_Tanggal Masuk INC_ → `Encounter.period.start` (130, tanpa BQ)<br>_Tanggal Keluar INC_ → `Encounter.period.end` (131, tanpa BQ)<br>_Tempat Pelayanan INC_ → `Encounter.location.display` (133, tanpa BQ) |
+| 9 | 120–135 | Encounter | – | – | _Jenis Kunjungan INC_ → `Encounter.class` (121, tanpa BQ)<br>_Tanggal Masuk INC_ → `Encounter.period.start` (130, tanpa BQ)<br>_Tanggal Keluar INC_ → `Encounter.period.end` (131, tanpa BQ)<br>_Tempat Pelayanan INC_ → `Encounter.location.location.display` (133, tanpa BQ) |
 | 10 | 136–144 | Condition | 386337006.0 | Intrapartal care | _Diagnosis Masuk_ → `Condition.code.coding` (138, tanpa BQ) |
 | 11 | 155–168 | EpisodeOfCare | ANC | Antenatal Care | – |
 | 12 | 170–178 | EpisodeOfCare | PNC | Postnatal Care | – |
@@ -130,52 +130,55 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 46 | 351 | Observation | `Observation.code.coding` | 249111004.0 | Engagement of head | http://snomed.info/sct |
 | 47 | 352 | Observation | `Observation.valueCodeableConcept.coding` | 249112006.0 | Head engaged | http://snomed.info/sct |
 | 48 | 353 | Observation | `Observation.valueCodeableConcept.coding` | 62098001.0 | Head not engaged | http://snomed.info/sct |
-| 49 | 365 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
-| 50 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
-| 51 | 367 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
-| 52 | 378 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
-| 53 | 389 | Observation | `Observation.code.coding` | 76516-4 | Gestational age—​at birth | http://loinc.org |
-| 54 | 392 | Observation | `Observation.component.code.coding` | SP000398 | Usia Kehamilan Saat Persalinan (hari) | http://terminology.kemkes.go.id/sp |
-| 55 | 404 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
-| 56 | 415 | Observation | `Observation.code.coding` | 57071-3 | Obstetric delivery method | http://loinc.org |
-| 57 | 416 | Observation | `Observation.valueCodeableConcept.coding` | 48782003.0 | Delivery normal | http://snomed.info/sct |
-| 58 | 417 | Observation | `Observation.valueCodeableConcept.coding` | 200138003.0 | Vacuum extractor delivery - delivered | http://snomed.info/sct |
-| 59 | 418 | Observation | `Observation.valueCodeableConcept.coding` | 200130005.0 | Forceps delivery - delivered | http://snomed.info/sct |
-| 60 | 419 | Observation | `Observation.valueCodeableConcept.coding` | 200144004.0 | Deliveries by cesarean | http://snomed.info/sct |
-| 61 | 420 | Observation | `Observation.valueCodeableConcept.coding` | 289259007.0 | Vaginal delivery | http://snomed.info/sct |
-| 62 | 430 | Observation | `Observation.code.coding` | 405195003.0 | Intrapartum maternal status | http://snomed.info/sct |
-| 63 | 431 | Observation | `Observation.valueCodeableConcept.coding` | 438949009.0 | Alive | http://snomed.info/sct |
-| 64 | 432 | Observation | `Observation.valueCodeableConcept.coding` | 102514002.0 | Well female adult | http://snomed.info/sct |
-| 65 | 433 | Observation | `Observation.valueCodeableConcept.coding` | 39104002.0 | Illness | http://snomed.info/sct |
-| 66 | 434 | Observation | `Observation.valueCodeableConcept.coding` | 131148009.0 | Bleeding | http://snomed.info/sct |
-| 67 | 435 | Observation | `Observation.valueCodeableConcept.coding` | 386661006.0 | Fever | http://snomed.info/sct |
-| 68 | 436 | Observation | `Observation.valueCodeableConcept.coding` | 91175000.0 | Seizure | http://snomed.info/sct |
-| 69 | 437 | Observation | `Observation.valueCodeableConcept.coding` | 249215002.0 | Odor of lochia | http://snomed.info/sct |
-| 70 | 438 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 71 | 439 | Observation | `Observation.valueCodeableConcept.coding` | 59283008.0 | Maternal death | http://snomed.info/sct |
-| 72 | 449 | Condition | `Condition.code.coding` | 199745000.0 | Complication occurring during labor and delivery | http://snomed.info/sct |
-| 73 | 458 | Observation | `Observation.code.coding` | SP000379 | Tatalaksana Komplikasi Persalinan | http://terminology.kemkes.go.id/sp |
-| 74 | 469 | Observation | `Observation.code.coding` | 63893-2 | Outcome of pregnancy | http://loinc.org |
-| 75 | 470 | Observation | `Observation.valueCodeableConcept.coding` | LA14270-5 | Live birth | http://loinc.org |
-| 76 | 471 | Observation | `Observation.valueCodeableConcept.coding` | LA14271-3 | Stillborn | http://loinc.org |
-| 77 | 472 | Observation | `Observation.valueCodeableConcept.coding` | LA14272-1 | Miscarriage | http://loinc.org |
-| 78 | 473 | Observation | `Observation.valueCodeableConcept.coding` | LA14273-9 | Induced abortion | http://loinc.org |
-| 79 | 484 | Procedure | `Procedure.code.coding` | SP000130 | Menggunakan Partograf | http://terminology.kemkes.go.id/sp |
-| 80 | 495 | Procedure | `Procedure.code.coding` | 431868002.0 | Initiation of breastfeeding | http://snomed.info/sct |
-| 81 | 505 | Procedure | `Procedure.code.coding` | 409063005.0 | Counselling | http://snomed.info/sct |
-| 82 | 507 | Procedure | `Procedure.code.coding` | 409063005.0 | Counselling | http://snomed.info/sct |
-| 83 | 509 | Procedure | `Procedure.code.coding` | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 84 | 510 | Procedure | `Procedure.code.coding` | SP000121 | Edukasi Tanda Bahaya Baru Lahir | http://terminology.kemkes.go.id/sp |
-| 85 | 511 | Procedure | `Procedure.code.coding` | ED000009 | Edukasi IMD dan ASI Eksklusif | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 86 | 512 | Procedure | `Procedure.code.coding` | ED000005 | Edukasi Gizi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 87 | 513 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 88 | 514 | Procedure | `Procedure.code.coding` | ED000010 | Edukasi PHBS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 89 | 523 | Observation | `Observation.code.coding` | 365662002.0 | Finding of amniotic fluid appearance | http://snomed.info/sct |
-| 90 | 524 | Observation | `Observation.valueCodeableConcept.coding` | 168090003.0 | Amniotic fluid clear | http://snomed.info/sct |
-| 91 | 525 | Observation | `Observation.valueCodeableConcept.coding` | 408781009.0 | Straw colored amniotic fluid | http://snomed.info/sct |
-| 92 | 526 | Observation | `Observation.valueCodeableConcept.coding` | 249134008.0 | Bloodstained liquor | http://snomed.info/sct |
-| 93 | 527 | Observation | `Observation.valueCodeableConcept.coding` | 168092006.0 | Amniotic fluid -meconium stain | http://snomed.info/sct |
-| 94 | 542 | ServiceRequest | `ServiceRequest.code.coding` | 409014006.0 | Delivery care management | http://snomed.info/sct |
+| 49 | 354 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 50 | 365 | Observation | `Observation.code.coding` | 289282009.0 | Amniotic membrane finding | http://snomed.info/sct |
+| 51 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 249125003.0 | Intact membranes | http://snomed.info/sct |
+| 52 | 367 | Observation | `Observation.valueCodeableConcept.coding` | SP000120 | Non-intact membrane | http://snomed.info/sct |
+| 53 | 378 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
+| 54 | 389 | Observation | `Observation.code.coding` | 76516-4 | Gestational age—​at birth | http://loinc.org |
+| 55 | 392 | Observation | `Observation.component.code.coding` | SP000398 | Usia Kehamilan Saat Persalinan (hari) | http://terminology.kemkes.go.id/sp |
+| 56 | 404 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
+| 57 | 415 | Observation | `Observation.code.coding` | 57071-3 | Obstetric delivery method | http://loinc.org |
+| 58 | 416 | Observation | `Observation.valueCodeableConcept.coding` | 48782003.0 | Delivery normal | http://snomed.info/sct |
+| 59 | 417 | Observation | `Observation.valueCodeableConcept.coding` | 200138003.0 | Vacuum extractor delivery - delivered | http://snomed.info/sct |
+| 60 | 418 | Observation | `Observation.valueCodeableConcept.coding` | 200130005.0 | Forceps delivery - delivered | http://snomed.info/sct |
+| 61 | 419 | Observation | `Observation.valueCodeableConcept.coding` | 200144004.0 | Deliveries by cesarean | http://snomed.info/sct |
+| 62 | 420 | Observation | `Observation.valueCodeableConcept.coding` | 289259007.0 | Vaginal delivery | http://snomed.info/sct |
+| 63 | 430 | Observation | `Observation.code.coding` | 405195003.0 | Intrapartum maternal status | http://snomed.info/sct |
+| 64 | 431 | Observation | `Observation.valueCodeableConcept.coding` | 438949009.0 | Alive | http://snomed.info/sct |
+| 65 | 432 | Observation | `Observation.valueCodeableConcept.coding` | 102514002.0 | Well female adult | http://snomed.info/sct |
+| 66 | 433 | Observation | `Observation.valueCodeableConcept.coding` | 39104002.0 | Illness | http://snomed.info/sct |
+| 67 | 434 | Observation | `Observation.valueCodeableConcept.coding` | 131148009.0 | Bleeding | http://snomed.info/sct |
+| 68 | 435 | Observation | `Observation.valueCodeableConcept.coding` | 386661006.0 | Fever | http://snomed.info/sct |
+| 69 | 436 | Observation | `Observation.valueCodeableConcept.coding` | 91175000.0 | Seizure | http://snomed.info/sct |
+| 70 | 437 | Observation | `Observation.valueCodeableConcept.coding` | 249215002.0 | Odor of lochia | http://snomed.info/sct |
+| 71 | 438 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 72 | 439 | Observation | `Observation.valueCodeableConcept.coding` | 59283008.0 | Maternal death | http://snomed.info/sct |
+| 73 | 449 | Condition | `Condition.code.coding` | 199745000.0 | Complication occurring during labor and delivery | http://snomed.info/sct |
+| 74 | 458 | Observation | `Observation.code.coding` | SP000379 | Tatalaksana Komplikasi Persalinan | http://terminology.kemkes.go.id/sp |
+| 75 | 469 | Observation | `Observation.code.coding` | 63893-2 | Outcome of pregnancy | http://loinc.org |
+| 76 | 470 | Observation | `Observation.valueCodeableConcept.coding` | LA14270-5 | Live birth | http://loinc.org |
+| 77 | 471 | Observation | `Observation.valueCodeableConcept.coding` | LA14271-3 | Stillborn | http://loinc.org |
+| 78 | 472 | Observation | `Observation.valueCodeableConcept.coding` | LA14272-1 | Miscarriage | http://loinc.org |
+| 79 | 473 | Observation | `Observation.valueCodeableConcept.coding` | LA14273-9 | Induced abortion | http://loinc.org |
+| 80 | 484 | Procedure | `Procedure.code.coding` | SP000130 | Menggunakan Partograf | http://terminology.kemkes.go.id/sp |
+| 81 | 495 | Procedure | `Procedure.code.coding` | 431868002.0 | Initiation of breastfeeding | http://snomed.info/sct |
+| 82 | 505 | Procedure | `Procedure.code.coding` | 409063005.0 | Counselling | http://snomed.info/sct |
+| 83 | 507 | Procedure | `Procedure.code.coding` | 409063005.0 | Counselling | http://snomed.info/sct |
+| 84 | 509 | Procedure | `Procedure.code.coding` | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 85 | 510 | Procedure | `Procedure.code.coding` | SP000121 | Edukasi Tanda Bahaya Baru Lahir | http://terminology.kemkes.go.id/sp |
+| 86 | 511 | Procedure | `Procedure.code.coding` | ED000009 | Edukasi IMD dan ASI Eksklusif | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 87 | 512 | Procedure | `Procedure.code.coding` | ED000005 | Edukasi Gizi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 88 | 513 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 89 | 514 | Procedure | `Procedure.code.coding` | ED000010 | Edukasi PHBS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 90 | 523 | Observation | `Observation.code.coding` | 365662002.0 | Finding of amniotic fluid appearance | http://snomed.info/sct |
+| 91 | 524 | Observation | `Observation.valueCodeableConcept.coding` | 168090003.0 | Amniotic fluid clear | http://snomed.info/sct |
+| 92 | 525 | Observation | `Observation.valueCodeableConcept.coding` | 408781009.0 | Straw colored amniotic fluid | http://snomed.info/sct |
+| 93 | 526 | Observation | `Observation.valueCodeableConcept.coding` | 249134008.0 | Bloodstained liquor | http://snomed.info/sct |
+| 94 | 527 | Observation | `Observation.valueCodeableConcept.coding` | 168092006.0 | Amniotic fluid -meconium stain | http://snomed.info/sct |
+| 95 | 542 | ServiceRequest | `ServiceRequest.code.coding` | 409014006.0 | Delivery care management | http://snomed.info/sct |
+| 96 | 551 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
+| 97 | 555 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -183,11 +186,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|
 | http://snomed.info/sct | 63 |
 | http://loinc.org | 17 |
-| http://terminology.kemkes.go.id/sp | 6 |
+| http://terminology.kemkes.go.id/sp | 8 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 5 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 1 |
-| **Total** | **94** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **97** |
 
 ## Variabel di luar payload
 

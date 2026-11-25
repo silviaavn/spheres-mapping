@@ -20,7 +20,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 12–39 | Encounter | – | – | _Hari ke-/ KF_ → `Encounter.identifier` (12, tanpa BQ)<br>_Tanggal periksa_ → `Encounter.period.start` (24, tanpa BQ)<br>_Tempat Periksa_ → `Encounter.location.display` (28, tanpa BQ) |
+| 1 | 12–39 | Encounter | – | – | _Hari ke-/ KF_ → `Encounter.identifier` (12, tanpa BQ)<br>_Tanggal periksa_ → `Encounter.period.start` (24, tanpa BQ)<br>_Tempat Periksa_ → `Encounter.location.location.display` (28, tanpa BQ) |
 | 2 | 40–47 | Condition | Z39.2 | Routine postpartum follow-up | – |
 | 3 | 49–57 | EpisodeOfCare | PNC | Postnatal Care | _Tanggal melahirkan_ → `EpisodeOfCare.period.start` (53, tanpa BQ) |
 | 4 | 58–69 | Observation | 32422-8 | Physical findings of breast | _Periksa Payudara (ASI)_ → `Observation.performer.display` (58, tanpa BQ) |

@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 58 |
-| Code (`jumlah code` = 1) | 74 |
-| Code unik (code + CodeSystem) | 56 |
+| Code (`jumlah code` = 1) | 82 |
+| Code unik (code + CodeSystem) | 58 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 0 |
 | Variabel BQ (unik) | 0 |
 
@@ -25,7 +25,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 3 | 21–21 | Encounter | – | – | _Id Bersalinan_ → `Encounter.identifier` (21, tanpa BQ) |
 | 4 | 26–28 | Observation | – | – | _Kala 1 Tgl_ → `Observation.category.coding` (26, tanpa BQ)<br>_Kala 1 Jam_ → `Observation.code.coding[x]` (27, tanpa BQ) |
 | 5 | 29–31 | Observation | – | – | _Kala 2 Tgl_ → `Observation.category.coding` (29, tanpa BQ)<br>_Kala 2 Jam_ → `Observation.code.coding[x]` (30, tanpa BQ) |
-| 6 | 32–34 | Observation | – | – | _By Lahir Tgl_ → `Observation.category.coding` (32, tanpa BQ)<br>_By Lahir Jam_ → `Observation.code.coding[x]` (33, tanpa BQ)<br>_Plasenta Lahir Tgl_ → `Observation.categoriy.coding` (34, tanpa BQ) |
+| 6 | 32–34 | Observation | – | – | _By Lahir Tgl_ → `Observation.category.coding` (32, tanpa BQ)<br>_By Lahir Jam_ → `Observation.code.coding[x]` (33, tanpa BQ)<br>_Plasenta Lahir Tgl_ → `Observation.category.coding` (34, tanpa BQ) |
 | 7 | 35–37 | Observation | – | – | _Plasenta Lahir Jam_ → `Observation.valueDateTime` (36, tanpa BQ)<br>_Usia Kehamilan_ → `Observation.category.coding` (37, tanpa BQ) |
 | 8 | 38–42 | Observation | – | – | _Usia Hpht_ → `Observation.category.coding` (42, tanpa BQ) |
 | 9 | 43–47 | Observation | – | – | _Presentasi Persalinan_ → `Observation.category.coding` (47, tanpa BQ) |
@@ -44,7 +44,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 22 | 108–108 | Practitioner | – | – | _Kode Nakes_ → `Practitioner.identifier` (108, tanpa BQ) |
 | 23 | 109–112 | Procedure | – | – | _Nama Penolong_ → `Procedure.category` (109, tanpa BQ) |
 | 24 | 113–113 | Practitioner | – | – | – |
-| 25 | 114–118 | Observation | 93857-1 | Date and time of obstetric delivery | _Kehamilan Ke_ → `Observation.code[0].coding[0` (114, tanpa BQ)<br>_Kode Tempat Persalinan_ → `Observation.valueInteger[0]` (115, tanpa BQ)<br>_Tgl Persalinan_ → `Observation.category[i].coding[i]` (116, tanpa BQ) |
+| 25 | 114–118 | Observation | 93857-1 | Date and time of obstetric delivery | _Kehamilan Ke_ → `Observation.code[0].coding` (114, tanpa BQ)<br>_Kode Tempat Persalinan_ → `Observation.valueInteger[0]` (115, tanpa BQ)<br>_Tgl Persalinan_ → `Observation.category[i].coding[i]` (116, tanpa BQ) |
 | 26 | 119–124 | Observation | 8480-6 | Systolic blood pressure | _Td_ → `Observation.category[i].coding[i]` (119, tanpa BQ) |
 | 27 | 125–129 | Observation | 8867-4 | Heart rate | _Frekuensi Nadi_ → `Observation.category[i].coding[i]` (125, tanpa BQ) |
 | 28 | 130–134 | Observation | 9279-1 | Respiratory rate | _Frekuensi Pernapasan_ → `Observation.category[i].coding[i]` (130, tanpa BQ) |
@@ -72,7 +72,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 50 | 228–230 | Observation | CUSTOM | Faktor Resiko Lainnya | _Faktor Resiko Lainnya_ → `Observation.valueString` (230, tanpa BQ) |
 | 51 | 231–235 | Observation | – | – | _Kondisi Kala4_ → `Observation.valueCodeableConcept.coding` (233, tanpa BQ) |
 | 52 | 236–240 | Observation | 81661-1 | Blood Loss [Volume] Measured | _Jumlah Pendarahan_ → `Observation.valueQuantity.value` (238, tanpa BQ) |
-| 53 | 241–243 | Observation | – | – | _Td Kala4_ → `Observation.valueDatetime` (243, tanpa BQ) |
+| 53 | 241–243 | Observation | – | – | _Td Kala4_ → `Observation.valueDateTime` (243, tanpa BQ) |
 | 54 | 244–247 | Observation | – | – | _Tindakan Kala4_ → `Observation.valueString` (246, tanpa BQ)<br>_Ket Kala4_ → `Observation.note` (247, tanpa BQ) |
 | 55 | 248–249 | Condition | – | – | _Komplikasi Persalinan_ → `Condition.category.coding` (248, tanpa BQ) |
 | 56 | 250–254 | Observation | – | – | _Tata Laksana Komplikasi Persalinan_ → `Observation.valueBoolean` (252, tanpa BQ)<br>_Rujuk_ → `Observation.component.code` (253, tanpa BQ) |
@@ -126,64 +126,72 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 28 | 101 | Observation | `Observation.valueCodeableConcept.coding` | 276506001 | Newborn death | http://snomed.info/sct |
 | 29 | 110 | Procedure | `Procedure.code` | 73.59 | Other manually assisted delivery | http://hl7.org/fhir/sid/icd-9-cm |
 | 30 | 111 | Procedure | `Procedure.code` | 74.0 | Classical cesarean section | http://hl7.org/fhir/sid/icd-9-cm |
-| 31 | 117 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
-| 32 | 120 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://loinc.org |
-| 33 | 121 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://loinc.org |
-| 34 | 126 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
-| 35 | 131 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
-| 36 | 136 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
-| 37 | 141 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
-| 38 | 142 | Observation | `Observation.code.coding` | ANC.B8.DE105 | Symphysis-fundal height | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 39 | 146 | Observation | `Observation.code.coding[x]` | 289437007 | Finding of fetal heart rate | http://loinc.org |
-| 40 | 147 | Observation | `Observation.code.coding[x]` | ANC.B8.DE107 | Fetal heart rate | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 41 | 148 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
-| 42 | 149 | Observation | `Observation.valueCodeableConcept.coding` | 312668007 | Abnormal fetal heart rate | http://snomed.info/sct |
-| 43 | 154 | Observation | `Observation.code.coding[x]` | 271692001 | Presentation of fetus | http://snomed.info/sct |
-| 44 | 155 | Observation | `Observation.code.coding[x]` | ANC.SS.DE41 | Letak Janin USG | http://snomed.info/sct |
-| 45 | 159 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 46 | 160 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 47 | 161 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 48 | 162 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 49 | 165 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://loinc.org |
-| 50 | 166 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 51 | 167 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Head not engaged | http://snomed.info/sct |
-| 52 | 168 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
-| 53 | 171 | Observation | `Observation.code.coding` | 289282009 | Amniotic membrane finding | http://snomed.info/sct |
-| 54 | 172 | Observation | `Observation.valueCodeableConcept.coding` | 249125003 | Intact membranes | http://snomed.info/sct |
-| 55 | 173 | Observation | `Observation.valueCodeableConcept.coding` | CUSTOM | non intact membrane | http://snomed.info/sct |
-| 56 | 175 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 57 | 180 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 58 | 185 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 59 | 190 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 60 | 195 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 61 | 200 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 62 | 205 | Observation | `Observation.code.coding` | CUSTOM |  |  |
-| 63 | 208 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko eklampsia | CUSTOM |
-| 64 | 211 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko diabetes | CUSTOM |
-| 65 | 214 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko HIV | CUSTOM |
-| 66 | 217 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Hepatitis B | CUSTOM |
-| 67 | 220 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Sifilis | CUSTOM |
-| 68 | 223 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Malaria | CUSTOM |
-| 69 | 226 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Tb | CUSTOM |
-| 70 | 229 | Observation | `Observation.code.coding` | CUSTOM | Faktor Resiko Lainnya |  |
-| 71 | 237 | Observation | `Observation.code.coding` | 81661-1 | Blood Loss [Volume] Measured | http://loinc.org |
-| 72 | 242 | Observation | `Observation.code.coding[x]` | 249160009 | Onset of labor second stage | http://snomed.info/sct |
-| 73 | 253 | Observation | `Observation.component.code` | 3457005 | Patient referral | http://snomed.info/sct |
-| 74 | 257 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 31 | 114 | Observation | `Observation.code[0].coding` | 11996-6 | [#] Pregnancies | http://loinc.org |
+| 32 | 117 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
+| 33 | 120 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://loinc.org |
+| 34 | 121 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://loinc.org |
+| 35 | 126 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
+| 36 | 131 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
+| 37 | 136 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
+| 38 | 141 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
+| 39 | 142 | Observation | `Observation.code.coding` | ANC.B8.DE105 | Symphysis-fundal height | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 40 | 146 | Observation | `Observation.code.coding[x]` | 289437007 | Finding of fetal heart rate | http://loinc.org |
+| 41 | 147 | Observation | `Observation.code.coding[x]` | ANC.B8.DE107 | Fetal heart rate | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 42 | 148 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
+| 43 | 149 | Observation | `Observation.valueCodeableConcept.coding` | 312668007 | Abnormal fetal heart rate | http://snomed.info/sct |
+| 44 | 154 | Observation | `Observation.code.coding[x]` | 271692001 | Presentation of fetus | http://snomed.info/sct |
+| 45 | 155 | Observation | `Observation.code.coding[x]` | ANC.SS.DE41 | Letak Janin USG | http://snomed.info/sct |
+| 46 | 159 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 47 | 160 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 48 | 161 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 49 | 162 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 50 | 165 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://loinc.org |
+| 51 | 166 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 52 | 167 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Head not engaged | http://snomed.info/sct |
+| 53 | 168 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
+| 54 | 169 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 55 | 171 | Observation | `Observation.code.coding` | 289282009 | Amniotic membrane finding | http://snomed.info/sct |
+| 56 | 172 | Observation | `Observation.valueCodeableConcept.coding` | 249125003 | Intact membranes | http://snomed.info/sct |
+| 57 | 173 | Observation | `Observation.valueCodeableConcept.coding` | CUSTOM | non intact membrane | http://snomed.info/sct |
+| 58 | 175 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 59 | 178 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 60 | 180 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 61 | 183 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 62 | 185 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 63 | 188 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 64 | 190 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 65 | 193 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 66 | 195 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 67 | 198 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 68 | 200 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 69 | 203 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://snomed.info/sct |
+| 70 | 205 | Observation | `Observation.code.coding` | CUSTOM |  |  |
+| 71 | 208 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko eklampsia | CUSTOM |
+| 72 | 211 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko diabetes | CUSTOM |
+| 73 | 214 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko HIV | CUSTOM |
+| 74 | 217 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Hepatitis B | CUSTOM |
+| 75 | 220 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Sifilis | CUSTOM |
+| 76 | 223 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Malaria | CUSTOM |
+| 77 | 226 | Observation | `Observation.code.coding` | CUSTOM | Faktor risiko Tb | CUSTOM |
+| 78 | 229 | Observation | `Observation.code.coding` | CUSTOM | Faktor Resiko Lainnya |  |
+| 79 | 237 | Observation | `Observation.code.coding` | 81661-1 | Blood Loss [Volume] Measured | http://loinc.org |
+| 80 | 242 | Observation | `Observation.code.coding[x]` | 249160009 | Onset of labor second stage | http://snomed.info/sct |
+| 81 | 253 | Observation | `Observation.component.code` | 3457005 | Patient referral | http://snomed.info/sct |
+| 82 | 257 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 29 |
-| http://loinc.org | 15 |
+| http://snomed.info/sct | 36 |
+| http://loinc.org | 16 |
 |  | 8 |
 | CUSTOM | 7 |
 | http://hl7.org/fhir/sid/icd-9-cm | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 4 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 4 |
 | https://loinc.org | 3 |
-| **Total** | **74** |
+| **Total** | **82** |
 
 ## Variabel di luar payload
 

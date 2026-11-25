@@ -540,8 +540,8 @@ Abortus,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://
 ,,,,Apakah saat ini sudah dalam kondisi hamil kembali?,Boolean,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,True,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,82810-3,Pregnancy status,http://loinc.org,,1,
-,,,,,,,Ya,,,Observation,Observation.ValueCodeableConcept.coding,True,Tidak Ada,Tidak Ada,,,
-,,,,,,,Tidak,,,Observation,Observation.ValueCodeableConcept.coding,False,Tidak Ada,Tidak Ada,,,
+,,,,,,,Ya,,,Observation,Observation.valueCodeableConcept.coding,True,Tidak Ada,Tidak Ada,,,
+,,,,,,,Tidak,,,Observation,Observation.valueCodeableConcept.coding,False,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -552,7 +552,7 @@ Abortus,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://
 Kematian Bayi 1,,,,Tanggal bayi meninggal,date,yyyy-mm-dd,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,True,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,81954-0,Date of death [Date],http://loinc.org,,1,
-,,,,,,,,,,Observation,Observation.valueDate,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Observation,Observation.valueDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -658,8 +658,8 @@ Kematian Bayi 1,,,,Tanggal bayi meninggal,date,yyyy-mm-dd,,,,Observation,Observa
 Pengukuran Antropmetri Mandiri,,,,Apakah pengukuran antropometri oleh CHP dilakukan?,Boolean,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,True,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,52480-1,Anthropometric Measures,http://loinc.org,,1,
-,,,,,,,Ya,,,Observation,Observation.ValueCodeableConcept.coding,True,Tidak Ada,Tidak Ada,,,
-,,,,,,,Tidak,,,Observation,Observation.ValueCodeableConcept.coding,False,Tidak Ada,Tidak Ada,,,
+,,,,,,,Ya,,,Observation,Observation.valueCodeableConcept.coding,True,Tidak Ada,Tidak Ada,,,
+,,,,,,,Tidak,,,Observation,Observation.valueCodeableConcept.coding,False,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,

@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 9 |
-| Code (`jumlah code` = 1) | 30 |
-| Code unik (code + CodeSystem) | 30 |
+| Code (`jumlah code` = 1) | 32 |
+| Code unik (code + CodeSystem) | 31 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 27 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 28 |
@@ -22,7 +22,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 3–32 | Patient | – | – | `nama` → `Patient.name.text` (3)<br>`nik` → `Patient.identifier.value` (6)<br>`jk` → `Patient.gender` (8)<br>`tgl_lahir` → `Patient.birthDate` (10)<br>_Alamat Domisili_ → `Patient.address.use` (11, tanpa BQ)<br>`alamat` → `Patient.address.line` (12)<br>`kabkota` → `Patient.address.city` (13)<br>_Nama Provinsi_ → `Patient.address.extension.url` (15, tanpa BQ)<br>`prov` → `Patient.address.extension.extension.valueCode` (17)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (20, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.url` (21, tanpa BQ)<br>`kec` → `Patient.address.extension.extension.valueCode` (23)<br>_Nama Desa_ → `Patient.address.extension.url` (24, tanpa BQ)<br>`desakel` → `Patient.address.extension.extension.valueCode` (26)<br>`rw` → `Patient.address.extension.extension.valueCode` (29)<br>`rt` → `Patient.address.extension.extension.valueCode` (32) |
-| 2 | 118–133 | Encounter | – | – | `tanggal_monitoring` → `Encounter.period.start` (127)<br>`posyandu` → `Encounter.location.reference` (129) 🔎 lookup master data<br>`puskesmas` → `Encounter.serviceProvider.reference` (133) 🔎 lookup master data<br>`detail` → `Encounter.extension.valueString` (156) |
+| 2 | 118–133 | Encounter | – | – | `tanggal_monitoring` → `Encounter.period.start` (127)<br>`posyandu` → `Encounter.location.location.reference` (129) 🔎 lookup master data<br>`puskesmas` → `Encounter.serviceProvider.reference` (133) 🔎 lookup master data<br>`detail` → `Encounter.extension.valueString` (156) |
 | 3 | 134–140 | Condition | 385984007 | Growth and development treatments and procedures | – |
 | 4 | 157–183 | Observation | 1153593003 | Weight for age z-score | `bbu` → `Observation.valueRange.low.value` (160) |
 | 5 | 184–210 | Observation | 1153604005 | Body height for age z-score | `tbu` → `Observation.valueRange.low.value` (188) |
@@ -51,30 +51,32 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 4 | 169 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
 | 5 | 172 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 6 | 175 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang |  |
-| 7 | 186 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
-| 8 | 187 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
-| 9 | 192 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
-| 10 | 197 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
-| 11 | 200 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 12 | 203 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
-| 13 | 213 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 14 | 214 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 15 | 219 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 16 | 222 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 17 | 227 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 18 | 232 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 19 | 235 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 20 | 240 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 21 | 251 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
-| 22 | 263 | Observation | `Observation.code.coding` | SP000034 | Jenis MPASI | http://terminology.kemkes.go.id/sp |
-| 23 | 266 | Observation | `Observation.component.code.coding` | 23182003 | Cereal | http://snomed.info/sct |
-| 24 | 269 | Observation | `Observation.component.code.coding` | 13577000 | Nut | http://snomed.info/sct |
-| 25 | 272 | Observation | `Observation.component.code.coding` | QRI000007 | Susu dan produk olahannya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 26 | 275 | Observation | `Observation.component.code.coding` | QRI000008 | Daging dan/atau ikan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 27 | 278 | Observation | `Observation.component.code.coding` | 102263004 | Eggs | http://snomed.info/sct |
-| 28 | 281 | Observation | `Observation.component.code.coding` | QRI000010 | Buah dan sayur sumber vitamin A | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 29 | 284 | Observation | `Observation.component.code.coding` | QRI000011 | Buah dan sayur lainnya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 30 | 296 | Observation | `Observation.code.coding` | SP000035 | Kualitas MPASI | http://terminology.kemkes.go.id/sp |
+| 7 | 176 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 8 | 186 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
+| 9 | 187 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
+| 10 | 192 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 11 | 197 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 12 | 200 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 13 | 203 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 14 | 213 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 15 | 214 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 16 | 219 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 17 | 222 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 18 | 227 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 19 | 232 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 20 | 235 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 21 | 240 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 22 | 241 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 23 | 251 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
+| 24 | 263 | Observation | `Observation.code.coding` | SP000034 | Jenis MPASI | http://terminology.kemkes.go.id/sp |
+| 25 | 266 | Observation | `Observation.component.code.coding` | 23182003 | Cereal | http://snomed.info/sct |
+| 26 | 269 | Observation | `Observation.component.code.coding` | 13577000 | Nut | http://snomed.info/sct |
+| 27 | 272 | Observation | `Observation.component.code.coding` | QRI000007 | Susu dan produk olahannya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 28 | 275 | Observation | `Observation.component.code.coding` | QRI000008 | Daging dan/atau ikan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 29 | 278 | Observation | `Observation.component.code.coding` | 102263004 | Eggs | http://snomed.info/sct |
+| 30 | 281 | Observation | `Observation.component.code.coding` | QRI000010 | Buah dan sayur sumber vitamin A | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 31 | 284 | Observation | `Observation.component.code.coding` | QRI000011 | Buah dan sayur lainnya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 32 | 296 | Observation | `Observation.code.coding` | SP000035 | Kualitas MPASI | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -82,10 +84,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|
 | http://snomed.info/sct | 18 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 8 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 2 |
 | http://terminology.kemkes.go.id/sp | 2 |
 |  | 1 |
 | http://loinc.org | 1 |
-| **Total** | **30** |
+| **Total** | **32** |
 
 ## Variabel di luar payload
 

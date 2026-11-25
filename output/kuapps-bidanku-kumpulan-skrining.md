@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 23 |
-| Code (`jumlah code` = 1) | 26 |
-| Code unik (code + CodeSystem) | 26 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 13 |
+| Code (`jumlah code` = 1) | 30 |
+| Code unik (code + CodeSystem) | 30 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 15 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -42,7 +42,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 20 | 432–443 | Observation | 26843008 | Antiphospholipid syndrome | _Anti Phospholipid Syndrome_ → `Observation.valueBoolean` (435, tanpa BQ) |
 | 21 | 444–455 | Observation | SP000783 | Mean Arterial Presure > 90 mmHg | _Mean Arterial Presure > 90 mmHg_ → `Observation.valueBoolean` (447, tanpa BQ) |
 | 22 | 456–467 | Observation | 29738008 | Proteinuria | _Proteinuria_ → `Observation.valueBoolean` (459, tanpa BQ) |
-| 23 | 468–479 | Observation | SP000799 | Hasil skrining Preeklampsia | _Kesimpulan_ → `Observation.status` (468, tanpa BQ) |
+| 23 | 468–479 | Observation | SP000799 | Hasil skrining Preeklampsia | _Kesimpulan_ → `Observation.valueCodeableConcept.coding` (471, tanpa BQ) |
 
 ### Payload per resource
 
@@ -65,32 +65,36 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 7 | 92 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000436 | 20-30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 8 | 93 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000437 | >30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 9 | 112 | Observation | `Observation.code.coding` | SP000111 | Hasil Kuesioner PUMA | http://terminology.kemkes.go.id/sp |
-| 10 | 278 | Observation | `Observation.code.coding` | SP000779 | Multipara dengan kehamilan oleh pasangan baru | http://terminology.kemkes.go.id/sp |
-| 11 | 290 | Observation | `Observation.code.coding` | 813541000000100 | Pregnancy resulting from assisted conception | http://snomed.info/sct |
-| 12 | 302 | Observation | `Observation.code.coding` | SP000780 | Umur ≥ 35 Tahun | http://terminology.kemkes.go.id/sp |
-| 13 | 314 | Observation | `Observation.code.coding` | 102877006 | Nulliparous | http://snomed.info/sct |
-| 14 | 326 | Observation | `Observation.code.coding` | SP000781 | Multipara yang Jarak Kehamilan Sebelumnya > 10 Tahun | http://terminology.kemkes.go.id/sp |
-| 15 | 338 | Observation | `Observation.code.coding` | 700190003 | Family history of pre-eclampsia | http://snomed.info/sct |
-| 16 | 350 | Observation | `Observation.code.coding` | 162864005 | Body mass index 30+ - obesity | http://snomed.info/sct |
-| 17 | 362 | Observation | `Observation.code.coding` | SP000782 | Multipara Dengan Riwayat Preeklampsia Sebelumnya | http://terminology.kemkes.go.id/sp |
-| 18 | 374 | Observation | `Observation.code.coding` | 16356006 | Multiple pregnancy | http://snomed.info/sct |
-| 19 | 386 | Observation | `Observation.code.coding` | 11687002 | Gestational diabetes mellitus | http://snomed.info/sct |
-| 20 | 398 | Observation | `Observation.code.coding` | 8762007 | Chronic hypertension in obstetric context | http://snomed.info/sct |
-| 21 | 410 | Observation | `Observation.code.coding` | 90708001 | Kidney disease | http://snomed.info/sct |
-| 22 | 422 | Observation | `Observation.code.coding` | 85828009 | Autoimmune disease | http://snomed.info/sct |
-| 23 | 434 | Observation | `Observation.code.coding` | 26843008 | Antiphospholipid syndrome | http://snomed.info/sct |
-| 24 | 446 | Observation | `Observation.code.coding` | SP000783 | Mean Arterial Presure > 90 mmHg | http://terminology.kemkes.go.id/sp |
-| 25 | 458 | Observation | `Observation.code.coding` | 29738008 | Proteinuria | http://snomed.info/sct |
-| 26 | 470 | Observation | `Observation.code.coding` | SP000799 | Hasil skrining Preeklampsia | http://terminology.kemkes.go.id/sp |
+| 10 | 114 | Observation | `Observation.interpretation.coding` | 723505004 | Low risk | http://snomed.info/sct |
+| 11 | 116 | Observation | `Observation.interpretation.coding` | 723509005 | High risk | http://snomed.info/sct |
+| 12 | 278 | Observation | `Observation.code.coding` | SP000779 | Multipara dengan kehamilan oleh pasangan baru | http://terminology.kemkes.go.id/sp |
+| 13 | 290 | Observation | `Observation.code.coding` | 813541000000100 | Pregnancy resulting from assisted conception | http://snomed.info/sct |
+| 14 | 302 | Observation | `Observation.code.coding` | SP000780 | Umur ≥ 35 Tahun | http://terminology.kemkes.go.id/sp |
+| 15 | 314 | Observation | `Observation.code.coding` | 102877006 | Nulliparous | http://snomed.info/sct |
+| 16 | 326 | Observation | `Observation.code.coding` | SP000781 | Multipara yang Jarak Kehamilan Sebelumnya > 10 Tahun | http://terminology.kemkes.go.id/sp |
+| 17 | 338 | Observation | `Observation.code.coding` | 700190003 | Family history of pre-eclampsia | http://snomed.info/sct |
+| 18 | 350 | Observation | `Observation.code.coding` | 162864005 | Body mass index 30+ - obesity | http://snomed.info/sct |
+| 19 | 362 | Observation | `Observation.code.coding` | SP000782 | Multipara Dengan Riwayat Preeklampsia Sebelumnya | http://terminology.kemkes.go.id/sp |
+| 20 | 374 | Observation | `Observation.code.coding` | 16356006 | Multiple pregnancy | http://snomed.info/sct |
+| 21 | 386 | Observation | `Observation.code.coding` | 11687002 | Gestational diabetes mellitus | http://snomed.info/sct |
+| 22 | 398 | Observation | `Observation.code.coding` | 8762007 | Chronic hypertension in obstetric context | http://snomed.info/sct |
+| 23 | 410 | Observation | `Observation.code.coding` | 90708001 | Kidney disease | http://snomed.info/sct |
+| 24 | 422 | Observation | `Observation.code.coding` | 85828009 | Autoimmune disease | http://snomed.info/sct |
+| 25 | 434 | Observation | `Observation.code.coding` | 26843008 | Antiphospholipid syndrome | http://snomed.info/sct |
+| 26 | 446 | Observation | `Observation.code.coding` | SP000783 | Mean Arterial Presure > 90 mmHg | http://terminology.kemkes.go.id/sp |
+| 27 | 458 | Observation | `Observation.code.coding` | 29738008 | Proteinuria | http://snomed.info/sct |
+| 28 | 470 | Observation | `Observation.code.coding` | SP000799 | Hasil skrining Preeklampsia | http://terminology.kemkes.go.id/sp |
+| 29 | 471 | Observation | `Observation.valueCodeableConcept.coding` | SP000784 | Berisiko Preeklampsia | http://terminology.kemkes.go.id/sp |
+| 30 | 472 | Observation | `Observation.valueCodeableConcept.coding` | SP000785 | Tidak Berisiko Preeklampsia | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://terminology.kemkes.go.id/sp | 13 |
-| http://snomed.info/sct | 11 |
+| http://terminology.kemkes.go.id/sp | 15 |
+| http://snomed.info/sct | 13 |
 | http://hl7.org/fhir/administrative-gender | 2 |
-| **Total** | **26** |
+| **Total** | **30** |
 
 ## Variabel di luar payload
 

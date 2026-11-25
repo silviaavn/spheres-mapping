@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 2 |
-| Code (`jumlah code` = 1) | 0 |
-| Code unik (code + CodeSystem) | 0 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 0 |
+| Code (`jumlah code` = 1) | 9 |
+| Code unik (code + CodeSystem) | 9 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 9 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -34,12 +34,22 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
+| 1 | 48 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000233 | < Rp. 500.000 | http://terminology.kemkes.go.id/sp |
+| 2 | 49 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000234 | Rp. 500,000 - Rp. 999,999 | http://terminology.kemkes.go.id/sp |
+| 3 | 50 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000235 | Rp. 1,000,000 - Rp. 1,999,999 | http://terminology.kemkes.go.id/sp |
+| 4 | 51 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000956 | Rp. 2,000,000 - Rp. 2,999,999 | http://terminology.kemkes.go.id/sp |
+| 5 | 52 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000957 | Rp. 3,000,000 - Rp. 4,999,999 | http://terminology.kemkes.go.id/sp |
+| 6 | 53 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000958 | Rp. 5,000,000 - Rp. 9,999,999 | http://terminology.kemkes.go.id/sp |
+| 7 | 54 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000959 | ≥ Rp 10.000.000 | http://terminology.kemkes.go.id/sp |
+| 8 | 65 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000971 | Closet | http://terminology.kemkes.go.id/sp |
+| 9 | 66 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000094 | Jamban milik sendiri dengan leher angsa dan tangki septik/IPAL | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| **Total** | **0** |
+| http://terminology.kemkes.go.id/sp | 9 |
+| **Total** | **9** |
 
 ## Variabel di luar payload
 

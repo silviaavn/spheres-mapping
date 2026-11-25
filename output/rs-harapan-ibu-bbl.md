@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 79 |
-| Code (`jumlah code` = 1) | 110 |
-| Code unik (code + CodeSystem) | 99 |
+| Code (`jumlah code` = 1) | 114 |
+| Code unik (code + CodeSystem) | 100 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
@@ -25,7 +25,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 3 | 38–44 | RelatedPerson | – | – | _Nama Ayah_ → `RelatedPerson.name.text` (38, tanpa BQ)<br>_NIK Ayah_ → `RelatedPerson.identifier` (39, tanpa BQ) |
 | 4 | 83–89 | Practitioner | – | – | _NIK_ → `Practitioner.identifier.value` (85, tanpa BQ)<br>_Nama Tenaga Kesehatan_ → `Practitioner.name.text` (87, tanpa BQ)<br>_Jenis Kelamin Tenaga Kesehatan_ → `Practitioner.gender` (88, tanpa BQ) |
 | 5 | 90–98 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.code.coding` (94, tanpa BQ) |
-| 6 | 100–115 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (101, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (110, tanpa BQ)<br>_Tempat Pelayanan Kunjungan Neonatus_ → `Encounter.location.display` (113, tanpa BQ)<br>_Kondisi Saat Pulang_ → `Encounter.hospitalization.dischargeDisposition.coding` (615, tanpa BQ) |
+| 6 | 100–115 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (101, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (110, tanpa BQ)<br>_Tempat Pelayanan Kunjungan Neonatus_ → `Encounter.location.location.display` (113, tanpa BQ)<br>_Kondisi Saat Pulang_ → `Encounter.hospitalization.dischargeDisposition.coding` (615, tanpa BQ) |
 | 7 | 116–123 | Condition | Z00.1 | Routine child health examination | _Tanggal Diagnosis_ → `Condition.recordedDate` (122, tanpa BQ) |
 | 8 | 134–142 | EpisodeOfCare | Neonate | Neonate | – |
 | 9 | 143–153 | Observation | 365475008.0 | Place in family order | _Anak ke_ → `Observation.valueInteger` (146, tanpa BQ) |
@@ -215,21 +215,25 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 93 | 793 | Observation | `Observation.valueCodeableConcept.coding` | 289081008.0 | Unable to perform breastfeeding | http://snomed.info/sct |
 | 94 | 794 | Observation | `Observation.valueCodeableConcept.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
 | 95 | 801 | Observation | `Observation.code.coding` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
-| 96 | 812 | Observation | `Observation.code.coding` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
-| 97 | 823 | Observation | `Observation.code.coding` | 26499-4 | Neutrophils [#/volume] in Blood | http://loinc.org |
-| 98 | 834 | Observation | `Observation.code.coding` | 30341-2 | Erythrocyte [Sedimentation Rate] in Blood | http://loinc.org |
-| 99 | 845 | Observation | `Observation.code.coding` | 33959-8 | Procalcitonin [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 100 | 855 | Observation | `Observation.code.coding` | 1988-5 | C reactive protein [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 101 | 866 | Observation | `Observation.code.coding` | 76516-4 | Gestational age--at birth | http://loinc.org |
-| 102 | 876 | Observation | `Observation.code.coding` | 89269-5 | Body height Measured --at birth | http://loinc.org |
-| 103 | 886 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
-| 104 | 896 | Observation | `Observation.code.coding` | 9274-2 | 5 minute Apgar Score | http://loinc.org |
-| 105 | 904 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
-| 106 | 914 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
-| 107 | 924 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
-| 108 | 934 | Observation | `Observation.code.coding` | 11337-3 | History of Hospitalization | http://loinc.org |
-| 109 | 944 | Observation | `Observation.code.coding` | 11347-2 | History of Outpatient visits | http://loinc.org |
-| 110 | 954 | Observation | `Observation.code.coding` | 8690-0 | History of Surgical procedures | http://loinc.org |
+| 96 | 805 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 97 | 812 | Observation | `Observation.code.coding` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
+| 98 | 816 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 99 | 823 | Observation | `Observation.code.coding` | 26499-4 | Neutrophils [#/volume] in Blood | http://loinc.org |
+| 100 | 827 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 101 | 834 | Observation | `Observation.code.coding` | 30341-2 | Erythrocyte [Sedimentation Rate] in Blood | http://loinc.org |
+| 102 | 838 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 103 | 845 | Observation | `Observation.code.coding` | 33959-8 | Procalcitonin [Mass/volume] in Serum or Plasma | http://loinc.org |
+| 104 | 855 | Observation | `Observation.code.coding` | 1988-5 | C reactive protein [Mass/volume] in Serum or Plasma | http://loinc.org |
+| 105 | 866 | Observation | `Observation.code.coding` | 76516-4 | Gestational age--at birth | http://loinc.org |
+| 106 | 876 | Observation | `Observation.code.coding` | 89269-5 | Body height Measured --at birth | http://loinc.org |
+| 107 | 886 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
+| 108 | 896 | Observation | `Observation.code.coding` | 9274-2 | 5 minute Apgar Score | http://loinc.org |
+| 109 | 904 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
+| 110 | 914 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
+| 111 | 924 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
+| 112 | 934 | Observation | `Observation.code.coding` | 11337-3 | History of Hospitalization | http://loinc.org |
+| 113 | 944 | Observation | `Observation.code.coding` | 11347-2 | History of Outpatient visits | http://loinc.org |
+| 114 | 954 | Observation | `Observation.code.coding` | 8690-0 | History of Surgical procedures | http://loinc.org |
 
 ### Code per CodeSystem
 
@@ -238,14 +242,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 63 |
 | http://loinc.org | 28 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 5 |
 | http://hl7.org/fhir/sid/icd-10 | 4 |
 | http://terminology.kemkes.go.id/sp | 2 |
 | http://hl7.org/fhir/sid/cvx | 2 |
 | http://sys-ids.kemkes.go.id/kfa | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
-| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
-| **Total** | **110** |
+| **Total** | **114** |
 
 ## Variabel di luar payload
 

@@ -25,7 +25,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 3 | 40–46 | RelatedPerson | – | – | _Nama Ayah_ → `RelatedPerson.name.text` (40, tanpa BQ)<br>_NIK Ayah_ → `RelatedPerson.identifier` (41, tanpa BQ) |
 | 4 | 85–91 | Practitioner | – | – | _NIK_ → `Practitioner.identifier.value` (87, tanpa BQ)<br>_Nama Tenaga Kesehatan_ → `Practitioner.name.text` (89, tanpa BQ)<br>_Jenis Kelamin Tenaga Kesehatan_ → `Practitioner.gender` (90, tanpa BQ) |
 | 5 | 92–100 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.code.coding` (96, tanpa BQ) |
-| 6 | 102–117 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (103, tanpa BQ)<br>_Tanggal INC (Bersalin)_ → `Encounter.period.start` (112, tanpa BQ)<br>_Tempat Pelayanan INC_ → `Encounter.location.display` (115, tanpa BQ) |
+| 6 | 102–117 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (103, tanpa BQ)<br>_Tanggal INC (Bersalin)_ → `Encounter.period.start` (112, tanpa BQ)<br>_Tempat Pelayanan INC_ → `Encounter.location.location.display` (115, tanpa BQ) |
 | 7 | 118–125 | Condition | Z00.1 | Routine child health examination | – |
 | 8 | 136–144 | EpisodeOfCare | Neonate | Neonate | – |
 | 9 | 145–155 | Observation | 365475008.0 | Place in family order | _Anak ke_ → `Observation.valueInteger` (148, tanpa BQ) |

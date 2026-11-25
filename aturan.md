@@ -34,9 +34,14 @@ Terakhir diperbarui: 2026-11-18
 - Observation dengan 2 coding di `code` (mis. LOINC + ANC custom): **keduanya dihitung**; code pembeda = coding pertama.
 - Ditambah pilihan jawaban coded (`Observation.valueCodeableConcept`, `Observation.interpretation`), opsi role PractitionerRole, dan opsi code lain yang mengikuti jawaban (mis. `Encounter.identifier` K1M/K1A, kesepakatan SatuSehat).
 - Opsi coded yang mengikuti jawaban **juga dihitung** di: `ServiceRequest.reasonCode`, `CarePlan.activity.detail.code` / `productCodeableConcept` / `statusReason`, `CarePlan.activity.outcomeCodeableConcept`, `Encounter.hospitalization.admitSource`, `QuestionnaireResponse...answer.valueCoding`, `Observation.component.code` / `component.valueCodeableConcept`, `Observation.method` (mis. metode biakan LJ/MGIT).
-- **Tidak dihitung** juga: category (termasuk yang SNOMED / v2-0074), `Specimen.collection.method`, `Immunization.reasonCode`, form / ingredient / extension Medication, unit (UCUM, v3-orderableDrugForm), `dataAbsentReason`.
-- Code tetap HL7 (status, category, class, participant.type, diagnosis.use, clinicalStatus, organization-type, physicalType) **tidak dihitung**.
+- **Tidak dihitung** juga: category (termasuk yang SNOMED / v2-0074), `Specimen.collection.method`, `Immunization.reasonCode`, form / ingredient / extension Medication, unit (UCUM, v3-orderableDrugForm).
+- Code tetap HL7 (status, category, class, participant.type, diagnosis.use, clinicalStatus, organization-type, physicalType) **tidak dihitung** (kecuali code custom SP, lihat bawah).
 - Semua opsi coded di kamus dihitung (bukan hanya yang terpilih saat submission).
+- **Code custom SP** (`SPxxxxxx` / CodeSystem `http://terminology.kemkes.go.id/sp`) dihitung di **path coded mana pun** yang valid di FHIR (mis. `Organization.type`, `category`, `Observation.referenceRange.appliesTo`), bukan hanya path di daftar di atas.
+- **`dataAbsentReason` dihitung** (binding Extensible di HL7 R4: https://hl7.org/fhir/R4/observation.html), termasuk code resmi HL7 seperti `unknown` kalau opsi jawaban "tidak tahu" dipetakan ke sana.
+- **Path QuestionnaireResponse** bisa bermacam-macam (bersarang berapa pun); selama valid di FHIR, jawaban `valueCoding` / `valueCodeableConcept` dihitung.
+- **Path harus ditulis sesuai FHIR R4** (huruf besar-kecil, ejaan). Typo / salah huruf diperbaiki di dictionary, bukan dibiarkan; flag `jumlah code` tidak boleh hilang gara-gara salah ketik path. Validasi: model FHIR R4 (`fhir.resources.R4B`).
+- Pengecualian "tidak dihitung" di atas (category, code HL7 tetap, dst.) berlaku untuk code HL7 standar; code custom SP di path yang sama tetap dihitung.
 
 ## Frekuensi
 - **Frekuensi payload** = di berapa form payload yang sama (resource + determining code) dipakai.
@@ -80,6 +85,7 @@ Terakhir diperbarui: 2026-11-18
 - 2026-11-18: `daftar-sumber-data.md` diganti nama jadi `form-tracker.md` (Form Tracker). Langkah 6 checklist merujuk ke file ini.
 - 2026-11-18: Tambah `daftar-sumber-data.md` (daftar semua sumber data/laporan + status diperlukan, dimapping, review). Checklist langkah 6: setiap form selesai, update Status review di file ini.
 - 2026-11-18: `output.md` hanya berisi ringkasan, jumlah per CodeSystem, payload per resource, catatan; frekuensi payload & code di `frekuensi-payload.md` / `frekuensi-code.md`. Format output: tabel per CodeSystem hanya jumlah; tabel Payload per resource di `output.md` = baris form × kolom resource FHIR.
+- 2026-11-25: Aturan hitung code diperluas: code custom SP di path coded mana pun, `dataAbsentReason`, dan path QuestionnaireResponse apa pun yang valid dihitung. Path salah ketik/huruf (1.344 baris, 38 pola) diperbaiki sesuai FHIR R4. `scripts/reflag.py` menambah flag `jumlah code` (hanya menambah) di 102 dictionary: +1.929 baris code; SP unik di frekuensi-code 716 → 829.
 - 2026-11-17: (SITB) Blok faskes dengan variabel dari form tetap dimapping dan dihitung (match + update).
 - 2026-11-17: (SITB) Opsi coded reasonCode, CarePlan activity, admitSource, jawaban QuestionnaireResponse, component lab, Observation.method ikut dihitung sebagai code. Baris dicoret di sheet dan kolom data lokal SITB (No. Urut, Bulan, No. Reg Fasyankes) tidak dimapping.
 - 2026-11-16: Nama file dictionary dibedakan per sumber: `kobo-` untuk Kobo, `phdt-` untuk PHDT Data Dictionary.

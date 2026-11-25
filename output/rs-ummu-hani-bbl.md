@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 30 |
-| Code (`jumlah code` = 1) | 51 |
-| Code unik (code + CodeSystem) | 50 |
+| Code (`jumlah code` = 1) | 55 |
+| Code unik (code + CodeSystem) | 51 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
@@ -25,7 +25,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 3 | 36–42 | RelatedPerson | – | – | _Nama Ayah_ → `RelatedPerson.name.text` (36, tanpa BQ)<br>_NIK Ayah_ → `RelatedPerson.identifier` (37, tanpa BQ) |
 | 4 | 81–87 | Practitioner | – | – | _NIK_ → `Practitioner.identifier.value` (83, tanpa BQ)<br>_Nama Tenaga Kesehatan_ → `Practitioner.name.text` (85, tanpa BQ)<br>_Jenis Kelamin Tenaga Kesehatan_ → `Practitioner.gender` (86, tanpa BQ) |
 | 5 | 88–96 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.code.coding` (92, tanpa BQ) |
-| 6 | 98–113 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (99, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (108, tanpa BQ)<br>_Tempat Pelayanan Kunjungan Neonatus/BBL_ → `Encounter.location.display` (111, tanpa BQ) |
+| 6 | 98–113 | Encounter | – | – | _Kunjungan Neonatus_ → `Encounter.identifier` (99, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (108, tanpa BQ)<br>_Tempat Pelayanan Kunjungan Neonatus/BBL_ → `Encounter.location.location.display` (111, tanpa BQ) |
 | 7 | 114–121 | Condition | Z00.1 | Routine child health examination | – |
 | 8 | 132–140 | EpisodeOfCare | Neonate | Neonate | – |
 | 9 | 141–151 | Observation | 365475008.0 | Place in family order | _Anak ke_ → `Observation.valueInteger` (144, tanpa BQ) |
@@ -87,41 +87,45 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 14 | 182 | Observation | `Observation.valueCodeableConcept.coding` | LA19709-7 | Group B | http://loinc.org |
 | 15 | 183 | Observation | `Observation.valueCodeableConcept.coding` | LA19708-9 | Group O | http://loinc.org |
 | 16 | 184 | Observation | `Observation.valueCodeableConcept.coding` | LA28449-9 | Group AB | http://loinc.org |
-| 17 | 196 | Observation | `Observation.code.coding` | 10331-7 | Rh [Type] in Blood | http://loinc.org |
-| 18 | 197 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 19 | 198 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 20 | 210 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
-| 21 | 222 | Observation | `Observation.code.coding` | 89269-5 | Body height Measured --at birth | http://loinc.org |
-| 22 | 234 | Observation | `Observation.code.coding` | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | http://loinc.org |
-| 23 | 246 | Observation | `Observation.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
-| 24 | 247 | Observation | `Observation.valueCodeableConcept.coding` | 80281008.0 | Cleft lip | http://snomed.info/sct |
-| 25 | 248 | Observation | `Observation.valueCodeableConcept.coding` | 13213009.0 | Congenital heart disease | http://snomed.info/sct |
-| 26 | 249 | Observation | `Observation.valueCodeableConcept.coding` | 35045004.0 | Microtia | http://snomed.info/sct |
-| 27 | 250 | Observation | `Observation.valueCodeableConcept.coding` | 22006008.0 | Hypertelorism | http://snomed.info/sct |
-| 28 | 251 | Observation | `Observation.valueCodeableConcept.coding` | 367506006.0 | Polydactyly | http://snomed.info/sct |
-| 29 | 252 | Observation | `Observation.valueCodeableConcept.coding` | 52781008.0 | Congenital hip dysplasia | http://snomed.info/sct |
-| 30 | 253 | Observation | `Observation.valueCodeableConcept.coding` | 1156475005.0 | Congenital talipes equinovarus | http://snomed.info/sct |
-| 31 | 254 | Observation | `Observation.valueCodeableConcept.coding` | 253098009.0 | Neural tube defect | http://snomed.info/sct |
-| 32 | 255 | Observation | `Observation.valueCodeableConcept.coding` | 118928003.0 | Disorder of abdominal wall | http://snomed.info/sct |
-| 33 | 256 | Observation | `Observation.valueCodeableConcept.coding` | 42030000.0 | Disorder of the genitourinary system | http://snomed.info/sct |
-| 34 | 257 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 35 | 268 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
-| 36 | 280 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
-| 37 | 291 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
-| 38 | 303 | Procedure | `Procedure.code.coding` | 386412000.0 | Resuscitation of neonate | http://snomed.info/sct |
-| 39 | 314 | Procedure | `Procedure.code.coding` | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | http://terminology.kemkes.go.id/CodeSystem/clinical-term" |
-| 40 | 325 | Procedure | `Procedure.code.coding` | SP000126 | ARV Profilaksis | http://terminology.kemkes.go.id/sp |
-| 41 | 336 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
-| 42 | 347 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 43 | 358 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 44 | 369 | Immunization | `Immunization.vaccineCode` | 8.0 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx |
-| 45 | 370 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 46 | 394 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 47 | 395 | Immunization | `Immunization.vaccineCode` | 30.0 | hepatitis B immune globulin | http://hl7.org/fhir/sid/cvx |
-| 48 | 409 | Procedure | `Procedure.code.coding` | 431868002.0 | Initiation of breastfeeding | http://snomed.info/sct |
-| 49 | 419 | Observation | `Observation.code.coding` | OC000016 | Waktu Inisiasi Menyusui Dini | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 50 | 420 | Observation | `Observation.valueCodeableConcept.coding` | OV000014 | Kurang dari 1 Jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 51 | 421 | Observation | `Observation.valueCodeableConcept.coding` | OV000015 | Lebih dari 1 Jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 17 | 185 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 18 | 186 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 19 | 196 | Observation | `Observation.code.coding` | 10331-7 | Rh [Type] in Blood | http://loinc.org |
+| 20 | 197 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 21 | 198 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 22 | 199 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 23 | 200 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 24 | 210 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
+| 25 | 222 | Observation | `Observation.code.coding` | 89269-5 | Body height Measured --at birth | http://loinc.org |
+| 26 | 234 | Observation | `Observation.code.coding` | 8290-9 | Head Occipital-frontal circumference --at birth- by Tape measure | http://loinc.org |
+| 27 | 246 | Observation | `Observation.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
+| 28 | 247 | Observation | `Observation.valueCodeableConcept.coding` | 80281008.0 | Cleft lip | http://snomed.info/sct |
+| 29 | 248 | Observation | `Observation.valueCodeableConcept.coding` | 13213009.0 | Congenital heart disease | http://snomed.info/sct |
+| 30 | 249 | Observation | `Observation.valueCodeableConcept.coding` | 35045004.0 | Microtia | http://snomed.info/sct |
+| 31 | 250 | Observation | `Observation.valueCodeableConcept.coding` | 22006008.0 | Hypertelorism | http://snomed.info/sct |
+| 32 | 251 | Observation | `Observation.valueCodeableConcept.coding` | 367506006.0 | Polydactyly | http://snomed.info/sct |
+| 33 | 252 | Observation | `Observation.valueCodeableConcept.coding` | 52781008.0 | Congenital hip dysplasia | http://snomed.info/sct |
+| 34 | 253 | Observation | `Observation.valueCodeableConcept.coding` | 1156475005.0 | Congenital talipes equinovarus | http://snomed.info/sct |
+| 35 | 254 | Observation | `Observation.valueCodeableConcept.coding` | 253098009.0 | Neural tube defect | http://snomed.info/sct |
+| 36 | 255 | Observation | `Observation.valueCodeableConcept.coding` | 118928003.0 | Disorder of abdominal wall | http://snomed.info/sct |
+| 37 | 256 | Observation | `Observation.valueCodeableConcept.coding` | 42030000.0 | Disorder of the genitourinary system | http://snomed.info/sct |
+| 38 | 257 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 39 | 268 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
+| 40 | 280 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
+| 41 | 291 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
+| 42 | 303 | Procedure | `Procedure.code.coding` | 386412000.0 | Resuscitation of neonate | http://snomed.info/sct |
+| 43 | 314 | Procedure | `Procedure.code.coding` | PC000003 | Manajemen Terpadu Bayi Muda (MTBM) | http://terminology.kemkes.go.id/CodeSystem/clinical-term" |
+| 44 | 325 | Procedure | `Procedure.code.coding` | SP000126 | ARV Profilaksis | http://terminology.kemkes.go.id/sp |
+| 45 | 336 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
+| 46 | 347 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 47 | 358 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 48 | 369 | Immunization | `Immunization.vaccineCode` | 8.0 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx |
+| 49 | 370 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 50 | 394 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 51 | 395 | Immunization | `Immunization.vaccineCode` | 30.0 | hepatitis B immune globulin | http://hl7.org/fhir/sid/cvx |
+| 52 | 409 | Procedure | `Procedure.code.coding` | 431868002.0 | Initiation of breastfeeding | http://snomed.info/sct |
+| 53 | 419 | Observation | `Observation.code.coding` | OC000016 | Waktu Inisiasi Menyusui Dini | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 54 | 420 | Observation | `Observation.valueCodeableConcept.coding` | OV000014 | Kurang dari 1 Jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 55 | 421 | Observation | `Observation.valueCodeableConcept.coding` | OV000015 | Lebih dari 1 Jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 
 ### Code per CodeSystem
 
@@ -130,13 +134,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 21 |
 | http://loinc.org | 16 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 5 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 4 |
 | http://terminology.kemkes.go.id/sp | 2 |
 | http://hl7.org/fhir/sid/cvx | 2 |
 | http://sys-ids.kemkes.go.id/kfa | 2 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
-| **Total** | **51** |
+| **Total** | **55** |
 
 ## Variabel di luar payload
 

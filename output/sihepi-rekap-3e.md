@@ -66,11 +66,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 44 | 621–632 | Observation | – | – | `FALSE` → `Observation.valueBoolean` (624) |
 | 45 | 633–643 | Observation | – | – | `FALSE` → `Observation.status` (633)<br>`FALSE` → `Observation.valueString` (636) |
 | 46 | 644–677 | Observation | SP000181 | Pemantauan Anak dari Ibu Hepatitis | `FALSE` → `Observation.valueBoolean` (647)<br>`TRUE` → `Observation.component.code.coding` (649)<br>`TRUE` → `Observation.component.code.coding` (652)<br>`TRUE` → `Observation.component.code.coding` (655)<br>`TRUE` → `Observation.component.code.coding` (657)<br>`TRUE` → `Observation.component.code.coding` (659)<br>`TRUE` → `Observation.component.code.coding` (661)<br>`TRUE` → `Observation.component.code.coding` (663)<br>`TRUE` → `Observation.component.code.coding` (666)<br>`TRUE` → `Observation.component.code.coding` (668) |
-| 47 | 678–693 | Immunization | – | – | `FALSE` → `Immunization.status` (678)<br>`FALSE` → `Immunization.occurenceDateTime` (684)<br>`FALSE` → `Immunization.status` (692) |
-| 48 | 694–707 | Immunization | – | – | `FALSE` → `Immunization.occurenceDateTime` (698)<br>`FALSE` → `Immunization.status` (706) |
-| 49 | 708–721 | Immunization | – | – | `FALSE` → `Immunization.occurenceDateTime` (712)<br>`FALSE` → `Immunization.status` (720) |
-| 50 | 722–735 | Immunization | – | – | `FALSE` → `Immunization.occurenceDateTime` (726)<br>`FALSE` → `Immunization.status` (734) |
-| 51 | 736–747 | Immunization | – | – | `FALSE` → `Immunization.occurenceDateTime` (740) |
+| 47 | 678–693 | Immunization | – | – | `FALSE` → `Immunization.status` (678)<br>`FALSE` → `Immunization.occurrenceDateTime` (684)<br>`FALSE` → `Immunization.status` (692) |
+| 48 | 694–707 | Immunization | – | – | `FALSE` → `Immunization.occurrenceDateTime` (698)<br>`FALSE` → `Immunization.status` (706) |
+| 49 | 708–721 | Immunization | – | – | `FALSE` → `Immunization.occurrenceDateTime` (712)<br>`FALSE` → `Immunization.status` (720) |
+| 50 | 722–735 | Immunization | – | – | `FALSE` → `Immunization.occurrenceDateTime` (726)<br>`FALSE` → `Immunization.status` (734) |
+| 51 | 736–747 | Immunization | – | – | `FALSE` → `Immunization.occurrenceDateTime` (740) |
 | 52 | 748–758 | Observation | – | – | `FALSE` → `Observation.status` (748)<br>`FALSE` → `Observation.valueString` (751)<br>`FALSE` → `Observation.effectiveDateTime` (755) |
 | 53 | 759–769 | Observation | – | – | `FALSE` → `Observation.status` (759)<br>`FALSE` → `Observation.valueString` (762)<br>`FALSE` → `Observation.effectiveDateTime` (766) |
 | 54 | 770–780 | Observation | 121912002 | Hepatitis B virus deoxyribonucleic acid assay | `FALSE` → `Observation.status` (770)<br>`TRUE` → `Observation.valueString` (773)<br>`TRUE` → `Observation.effectiveDateTime` (777) |

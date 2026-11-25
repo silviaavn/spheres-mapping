@@ -11,16 +11,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 10 |
-| Code (`jumlah code` = 1) | 57 |
-| Code unik (code + CodeSystem) | 48 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 45 |
+| Code (`jumlah code` = 1) | 243 |
+| Code unik (code + CodeSystem) | 100 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 231 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 3–30 | Encounter | – | – | _TaskID_ → `Encounter.identifier.value` (3, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (11, tanpa BQ)<br>_Puskesmas Pengampu_ → `Encounter.serviceProvider.display` (23, tanpa BQ)<br>_Desa Ampuan_ → `Encounter.location.display` (26, tanpa BQ)<br>_Posyandu Ampuan_ → `Encounter.location.display` (27, tanpa BQ) |
+| 1 | 3–30 | Encounter | – | – | _TaskID_ → `Encounter.identifier.value` (3, tanpa BQ)<br>_Tanggal Kunjungan_ → `Encounter.period.start` (11, tanpa BQ)<br>_Puskesmas Pengampu_ → `Encounter.serviceProvider.display` (23, tanpa BQ)<br>_Desa Ampuan_ → `Encounter.location.location.display` (26, tanpa BQ)<br>_Posyandu Ampuan_ → `Encounter.location.location.display` (27, tanpa BQ) |
 | 2 | 31–45 | Condition | 390906007.0 | Follow-up encounter | _Jenis Survei_ → `Condition.code.coding` (33, tanpa BQ) |
 | 3 | 46–56 | Observation | 418138009.0 | Patient condition finding | _Kondisi Responden_ → `Observation.valueCodeableConcept.coding` (48, tanpa BQ) |
 | 4 | 57–65 | Observation | 79378-6 | Cause of death | _Penyebab kematian_ → `Observation.valueString` (59, tanpa BQ)<br>_Tanggal meninggal_ → `Observation.effectiveDateTime` (63, tanpa BQ) |
@@ -82,36 +82,222 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 35 | 303 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001024 | Berobat di Puskesmas (tidak pernah rujuk) | http://terminology.kemkes.go.id/sp |
 | 36 | 304 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001025 | Periksa di klinik mandiri | http://terminology.kemkes.go.id/sp |
 | 37 | 305 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001026 | Rujuk balik ke Puskesmas dari RS (PRB) | http://terminology.kemkes.go.id/sp |
-| 38 | 473 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001043 | Metformin | http://terminology.kemkes.go.id/sp |
-| 39 | 474 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001044 | Glimepiride | http://terminology.kemkes.go.id/sp |
-| 40 | 475 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001045 | Injeksi Insulin | http://terminology.kemkes.go.id/sp |
-| 41 | 476 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001046 | Amlodipine | http://terminology.kemkes.go.id/sp |
-| 42 | 477 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001047 | Captopril | http://terminology.kemkes.go.id/sp |
-| 43 | 478 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001048 | Cadesartan | http://terminology.kemkes.go.id/sp |
-| 44 | 479 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001049 | Bisoprolol | http://terminology.kemkes.go.id/sp |
-| 45 | 480 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001050 | Spironolakton | http://terminology.kemkes.go.id/sp |
-| 46 | 771 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001086 | Bisa | http://terminology.kemkes.go.id/sp |
-| 47 | 772 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001087 | Tidak, responden stroke | http://terminology.kemkes.go.id/sp |
-| 48 | 773 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001088 | Tidak, responden lansia | http://terminology.kemkes.go.id/sp |
-| 49 | 774 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001089 | Tidak, responden memiliki gangguan penglihatan | http://terminology.kemkes.go.id/sp |
-| 50 | 775 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001090 | Tidak, respondedn ODGJ | http://terminology.kemkes.go.id/sp |
-| 51 | 776 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001091 | Tidak, responden memiliki gangguan kognitif (contoh: Demensia) | http://terminology.kemkes.go.id/sp |
-| 52 | 782 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001092 | Responden paham | http://terminology.kemkes.go.id/sp |
-| 53 | 783 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001093 | Responden memiliki pertanyaan lanjutan | http://terminology.kemkes.go.id/sp |
-| 54 | 786 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 55 | 787 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 56 | 788 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 101.0 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 57 | 789 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 38 | 317 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001027 | Surat rujukan hilang | http://terminology.kemkes.go.id/sp |
+| 39 | 318 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001028 | Surat rujukan disimpan oleh anggota keluarga | http://terminology.kemkes.go.id/sp |
+| 40 | 319 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP000407 | Privasi | http://terminology.kemkes.go.id/sp |
+| 41 | 329 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001015 | Obat bisa difoto seluruhnya | http://terminology.kemkes.go.id/sp |
+| 42 | 330 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001016 | Obat bisa difoto sebagian | http://terminology.kemkes.go.id/sp |
+| 43 | 331 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001017 | Obat disimpan oleh anggota keluarga lain | http://terminology.kemkes.go.id/sp |
+| 44 | 332 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001018 | Obat hilang | http://terminology.kemkes.go.id/sp |
+| 45 | 333 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001019 | Obat habis | http://terminology.kemkes.go.id/sp |
+| 46 | 334 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001020 | Lupa menyimpan dimana | http://terminology.kemkes.go.id/sp |
+| 47 | 337 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001029 | Beli obat sendiri | http://terminology.kemkes.go.id/sp |
+| 48 | 338 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001030 | Punya obat di rumah | http://terminology.kemkes.go.id/sp |
+| 49 | 339 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001031 | Obat tidak tersedia di RS | http://terminology.kemkes.go.id/sp |
+| 50 | 340 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001032 | Mengambil obat di apotek luar RS | http://terminology.kemkes.go.id/sp |
+| 51 | 341 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001033 | Terapi belum membutuhkan obat | http://terminology.kemkes.go.id/sp |
+| 52 | 342 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001034 | Obat dihentikan | http://terminology.kemkes.go.id/sp |
+| 53 | 343 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001035 | Obat diganti | http://terminology.kemkes.go.id/sp |
+| 54 | 344 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001036 | Sengaja tidak mengambil obat | http://terminology.kemkes.go.id/sp |
+| 55 | 345 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001037 | Kendala administrasi | http://terminology.kemkes.go.id/sp |
+| 56 | 346 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001038 | Tidak tahu | http://terminology.kemkes.go.id/sp |
+| 57 | 361 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001015 | Obat bisa difoto seluruhnya | http://terminology.kemkes.go.id/sp |
+| 58 | 362 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001016 | Obat bisa difoto sebagian | http://terminology.kemkes.go.id/sp |
+| 59 | 363 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001017 | Obat disimpan oleh anggota keluarga lain | http://terminology.kemkes.go.id/sp |
+| 60 | 364 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001018 | Obat hilang | http://terminology.kemkes.go.id/sp |
+| 61 | 365 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001019 | Obat habis | http://terminology.kemkes.go.id/sp |
+| 62 | 366 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001020 | Lupa menyimpan dimana | http://terminology.kemkes.go.id/sp |
+| 63 | 369 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001029 | Beli obat sendiri | http://terminology.kemkes.go.id/sp |
+| 64 | 370 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001030 | Punya obat di rumah | http://terminology.kemkes.go.id/sp |
+| 65 | 371 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001031 | Obat tidak tersedia di RS | http://terminology.kemkes.go.id/sp |
+| 66 | 372 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001032 | Mengambil obat di apotek luar RS | http://terminology.kemkes.go.id/sp |
+| 67 | 373 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001033 | Terapi belum membutuhkan obat | http://terminology.kemkes.go.id/sp |
+| 68 | 374 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001034 | Obat dihentikan | http://terminology.kemkes.go.id/sp |
+| 69 | 375 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001035 | Obat diganti | http://terminology.kemkes.go.id/sp |
+| 70 | 376 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001036 | Sengaja tidak mengambil obat | http://terminology.kemkes.go.id/sp |
+| 71 | 377 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001037 | Kendala administrasi | http://terminology.kemkes.go.id/sp |
+| 72 | 378 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001038 | Tidak tahu | http://terminology.kemkes.go.id/sp |
+| 73 | 393 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001015 | Obat bisa difoto seluruhnya | http://terminology.kemkes.go.id/sp |
+| 74 | 394 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001016 | Obat bisa difoto sebagian | http://terminology.kemkes.go.id/sp |
+| 75 | 395 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001017 | Obat disimpan oleh anggota keluarga lain | http://terminology.kemkes.go.id/sp |
+| 76 | 396 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001018 | Obat hilang | http://terminology.kemkes.go.id/sp |
+| 77 | 397 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001019 | Obat habis | http://terminology.kemkes.go.id/sp |
+| 78 | 398 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001020 | Lupa menyimpan dimana | http://terminology.kemkes.go.id/sp |
+| 79 | 401 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001029 | Beli obat sendiri | http://terminology.kemkes.go.id/sp |
+| 80 | 402 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001030 | Punya obat di rumah | http://terminology.kemkes.go.id/sp |
+| 81 | 403 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001031 | Obat tidak tersedia di RS | http://terminology.kemkes.go.id/sp |
+| 82 | 404 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001032 | Mengambil obat di apotek luar RS | http://terminology.kemkes.go.id/sp |
+| 83 | 405 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001033 | Terapi belum membutuhkan obat | http://terminology.kemkes.go.id/sp |
+| 84 | 406 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001034 | Obat dihentikan | http://terminology.kemkes.go.id/sp |
+| 85 | 407 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001035 | Obat diganti | http://terminology.kemkes.go.id/sp |
+| 86 | 408 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001036 | Sengaja tidak mengambil obat | http://terminology.kemkes.go.id/sp |
+| 87 | 409 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001037 | Kendala administrasi | http://terminology.kemkes.go.id/sp |
+| 88 | 410 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001038 | Tidak tahu | http://terminology.kemkes.go.id/sp |
+| 89 | 425 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001027 | Surat rujukan hilang | http://terminology.kemkes.go.id/sp |
+| 90 | 426 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001028 | Surat rujukan disimpan oleh anggota keluarga | http://terminology.kemkes.go.id/sp |
+| 91 | 427 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP000407 | Privasi | http://terminology.kemkes.go.id/sp |
+| 92 | 433 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001039 | Seluruh obat dari Puskesmas | http://terminology.kemkes.go.id/sp |
+| 93 | 434 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001040 | Sebagian obat dari Puskesmas, sebagian apotek luar | http://terminology.kemkes.go.id/sp |
+| 94 | 435 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001041 | Seluruh obat dari apotek luar | http://terminology.kemkes.go.id/sp |
+| 95 | 436 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001042 | Tidak mendapat obat | http://terminology.kemkes.go.id/sp |
+| 96 | 439 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001015 | Obat bisa difoto seluruhnya | http://terminology.kemkes.go.id/sp |
+| 97 | 440 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001016 | Obat bisa difoto sebagian | http://terminology.kemkes.go.id/sp |
+| 98 | 441 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001017 | Obat disimpan oleh anggota keluarga lain | http://terminology.kemkes.go.id/sp |
+| 99 | 442 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001018 | Obat hilang | http://terminology.kemkes.go.id/sp |
+| 100 | 443 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001019 | Obat habis | http://terminology.kemkes.go.id/sp |
+| 101 | 444 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001020 | Lupa menyimpan dimana | http://terminology.kemkes.go.id/sp |
+| 102 | 447 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001029 | Beli obat sendiri | http://terminology.kemkes.go.id/sp |
+| 103 | 448 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001030 | Punya obat di rumah | http://terminology.kemkes.go.id/sp |
+| 104 | 449 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001031 | Obat tidak tersedia di RS | http://terminology.kemkes.go.id/sp |
+| 105 | 450 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001032 | Mengambil obat di apotek luar RS | http://terminology.kemkes.go.id/sp |
+| 106 | 451 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001033 | Terapi belum membutuhkan obat | http://terminology.kemkes.go.id/sp |
+| 107 | 452 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001034 | Obat dihentikan | http://terminology.kemkes.go.id/sp |
+| 108 | 453 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001035 | Obat diganti | http://terminology.kemkes.go.id/sp |
+| 109 | 454 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001036 | Sengaja tidak mengambil obat | http://terminology.kemkes.go.id/sp |
+| 110 | 455 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001037 | Kendala administrasi | http://terminology.kemkes.go.id/sp |
+| 111 | 456 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001038 | Tidak tahu | http://terminology.kemkes.go.id/sp |
+| 112 | 473 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001043 | Metformin | http://terminology.kemkes.go.id/sp |
+| 113 | 474 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001044 | Glimepiride | http://terminology.kemkes.go.id/sp |
+| 114 | 475 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001045 | Injeksi Insulin | http://terminology.kemkes.go.id/sp |
+| 115 | 476 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001046 | Amlodipine | http://terminology.kemkes.go.id/sp |
+| 116 | 477 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001047 | Captopril | http://terminology.kemkes.go.id/sp |
+| 117 | 478 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001048 | Cadesartan | http://terminology.kemkes.go.id/sp |
+| 118 | 479 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001049 | Bisoprolol | http://terminology.kemkes.go.id/sp |
+| 119 | 480 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001050 | Spironolakton | http://terminology.kemkes.go.id/sp |
+| 120 | 485 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001051 | 500 mg | http://terminology.kemkes.go.id/sp |
+| 121 | 486 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001052 | 850 mg | http://terminology.kemkes.go.id/sp |
+| 122 | 495 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 123 | 496 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 124 | 497 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 125 | 498 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 126 | 499 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 127 | 500 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 128 | 501 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 129 | 502 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 130 | 503 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 131 | 504 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 132 | 505 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 133 | 506 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 134 | 520 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001065 | 1 mg | http://terminology.kemkes.go.id/sp |
+| 135 | 521 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001066 | 2 mg | http://terminology.kemkes.go.id/sp |
+| 136 | 522 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001067 | 3 mg | http://terminology.kemkes.go.id/sp |
+| 137 | 523 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001068 | 4 mg | http://terminology.kemkes.go.id/sp |
+| 138 | 532 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 139 | 533 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 140 | 534 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 141 | 535 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 142 | 536 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 143 | 537 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 144 | 538 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 145 | 539 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 146 | 540 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 147 | 541 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 148 | 542 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 149 | 543 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 150 | 557 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001069 | 100 unit/mL, 3 mL | http://terminology.kemkes.go.id/sp |
+| 151 | 566 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001070 | 1 kali suntik | http://terminology.kemkes.go.id/sp |
+| 152 | 567 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001071 | 2 kali suntik | http://terminology.kemkes.go.id/sp |
+| 153 | 568 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001072 | 3 kali suntik | http://terminology.kemkes.go.id/sp |
+| 154 | 569 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001073 | 4 kali suntik | http://terminology.kemkes.go.id/sp |
+| 155 | 570 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001074 | 5 kali suntik | http://terminology.kemkes.go.id/sp |
+| 156 | 571 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001075 | 6 kali suntik | http://terminology.kemkes.go.id/sp |
+| 157 | 582 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001076 | 5 mg | http://terminology.kemkes.go.id/sp |
+| 158 | 583 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001077 | 10 mg | http://terminology.kemkes.go.id/sp |
+| 159 | 592 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 160 | 593 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 161 | 594 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 162 | 595 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 163 | 596 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 164 | 597 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 165 | 598 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 166 | 599 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 167 | 600 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 168 | 601 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 169 | 602 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 170 | 603 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 171 | 617 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001078 | 12.5 mg | http://terminology.kemkes.go.id/sp |
+| 172 | 618 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001079 | 25 mg | http://terminology.kemkes.go.id/sp |
+| 173 | 619 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001080 | 50 mg | http://terminology.kemkes.go.id/sp |
+| 174 | 628 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 175 | 629 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 176 | 630 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 177 | 631 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 178 | 632 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 179 | 633 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 180 | 634 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 181 | 635 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 182 | 636 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 183 | 637 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 184 | 638 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 185 | 639 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 186 | 653 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001068 | 4 mg | http://terminology.kemkes.go.id/sp |
+| 187 | 654 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001081 | 8 mg | http://terminology.kemkes.go.id/sp |
+| 188 | 655 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001082 | 16 mg | http://terminology.kemkes.go.id/sp |
+| 189 | 656 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001083 | 32 mg | http://terminology.kemkes.go.id/sp |
+| 190 | 665 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 191 | 666 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 192 | 667 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 193 | 668 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 194 | 669 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 195 | 670 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 196 | 671 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 197 | 672 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 198 | 673 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 199 | 674 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 200 | 675 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 201 | 676 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 202 | 690 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001084 | 2.5 mg | http://terminology.kemkes.go.id/sp |
+| 203 | 691 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001076 | 5 mg | http://terminology.kemkes.go.id/sp |
+| 204 | 692 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001077 | 10 mg | http://terminology.kemkes.go.id/sp |
+| 205 | 701 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 206 | 702 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 207 | 703 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 208 | 704 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 209 | 705 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 210 | 706 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 211 | 707 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 212 | 708 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 213 | 709 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 214 | 710 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 215 | 711 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 216 | 712 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 217 | 726 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001079 | 25 mg | http://terminology.kemkes.go.id/sp |
+| 218 | 727 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001080 | 50 mg | http://terminology.kemkes.go.id/sp |
+| 219 | 728 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001085 | 100 mg | http://terminology.kemkes.go.id/sp |
+| 220 | 737 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001053 | 0.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 221 | 738 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001054 | 1 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 222 | 739 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001055 | 1.5 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 223 | 740 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001056 | 2 tablet 1 kali sehari | http://terminology.kemkes.go.id/sp |
+| 224 | 741 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001057 | 0.5 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 225 | 742 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001058 | 1 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 226 | 743 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001059 | 1.5 tablet 2 kali | http://terminology.kemkes.go.id/sp |
+| 227 | 744 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001060 | 2 tablet 2 kali sehari | http://terminology.kemkes.go.id/sp |
+| 228 | 745 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001061 | 0.5 tablet 3 kali | http://terminology.kemkes.go.id/sp |
+| 229 | 746 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001062 | 1 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 230 | 747 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001063 | 1.5 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 231 | 748 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.item.item.answer.valueCoding` | SP001064 | 2 tablet 3 kali sehari | http://terminology.kemkes.go.id/sp |
+| 232 | 771 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001086 | Bisa | http://terminology.kemkes.go.id/sp |
+| 233 | 772 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001087 | Tidak, responden stroke | http://terminology.kemkes.go.id/sp |
+| 234 | 773 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001088 | Tidak, responden lansia | http://terminology.kemkes.go.id/sp |
+| 235 | 774 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001089 | Tidak, responden memiliki gangguan penglihatan | http://terminology.kemkes.go.id/sp |
+| 236 | 775 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001090 | Tidak, respondedn ODGJ | http://terminology.kemkes.go.id/sp |
+| 237 | 776 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001091 | Tidak, responden memiliki gangguan kognitif (contoh: Demensia) | http://terminology.kemkes.go.id/sp |
+| 238 | 782 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001092 | Responden paham | http://terminology.kemkes.go.id/sp |
+| 239 | 783 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001093 | Responden memiliki pertanyaan lanjutan | http://terminology.kemkes.go.id/sp |
+| 240 | 786 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 241 | 787 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 242 | 788 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 101.0 | Praktek mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 243 | 789 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://terminology.kemkes.go.id/sp | 45 |
+| http://terminology.kemkes.go.id/sp | 231 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 7 |
 | http://snomed.info/sct | 4 |
 | http://loinc.org | 1 |
-| **Total** | **57** |
+| **Total** | **243** |
 
 ## Variabel di luar payload
 

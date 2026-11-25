@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 89 |
-| Code (`jumlah code` = 1) | 239 |
-| Code unik (code + CodeSystem) | 91 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 57 |
+| Code (`jumlah code` = 1) | 276 |
+| Code unik (code + CodeSystem) | 95 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 58 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -178,206 +178,244 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 44 | 247 | Observation | `Observation.component.valueCodeableConcept.coding` | SP000516 | Tidak punya HP | http://terminology.kemkes.go.id/sp |
 | 45 | 248 | Observation | `Observation.component.valueCodeableConcept.coding` | SP000517 | HP hilang | http://terminology.kemkes.go.id/sp |
 | 46 | 249 | Observation | `Observation.component.valueCodeableConcept.coding` | 397644002.0 | Right to privacy maintained | http://snomed.info/sct |
-| 47 | 290 | Observation | `Observation.code.coding` | SP001121 | Kepemilikan Nomor Telepon | http://terminology.kemkes.go.id/sp |
-| 48 | 313 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA33-6 | Yes | http://loinc.org |
-| 49 | 314 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA32-8 | No | http://loinc.org |
-| 50 | 315 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA4489-6 | Unknown | http://loinc.org |
-| 51 | 318 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001111 | Nomor HP tervalidasi dapat terhubung | http://terminology.kemkes.go.id/sp |
-| 52 | 319 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | http://terminology.kemkes.go.id/sp |
-| 53 | 320 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001113 | Tidak ada nomor HP yang terhubung | http://terminology.kemkes.go.id/sp |
-| 54 | 321 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001127 | Nomor HP yang diberikan salah sambung | http://terminology.kemkes.go.id/sp |
-| 55 | 324 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA19705-5 | Given | http://loinc.org |
-| 56 | 325 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA19761-8 | Not given | http://loinc.org |
-| 57 | 326 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | http://terminology.kemkes.go.id/sp |
-| 58 | 334 | Observation | `Observation.code.coding` | 246435002.0 | Number of fetuses | http://snomed.info/sct |
-| 59 | 335 | Observation | `Observation.code.coding` | ANC.B8.DE109 | Number of fetuses | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 60 | 359 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
-| 61 | 371 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
-| 62 | 374 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 63 | 375 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 64 | 376 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 65 | 377 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 66 | 378 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 67 | 393 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
-| 68 | 396 | Observation | `Observation.component.code.coding` | SP000715 | Umur Minggu | http://terminology.kemkes.go.id/sp |
-| 69 | 399 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
-| 70 | 411 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
-| 71 | 412 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 72 | 413 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
-| 73 | 414 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
-| 74 | 423 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 75 | 424 | Observation | `Observation.component.valueCodeableConcept.coding` | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 76 | 425 | Observation | `Observation.component.valueCodeableConcept.coding` | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 77 | 426 | Observation | `Observation.component.valueCodeableConcept.coding` | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 78 | 427 | Observation | `Observation.component.valueCodeableConcept.coding` | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 79 | 428 | Observation | `Observation.component.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 80 | 432 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
-| 81 | 445 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
-| 82 | 453 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 83 | 465 | Observation | `Observation.code.coding` | 364586004.0 | State at birth | http://snomed.info/sct |
-| 84 | 466 | Observation | `Observation.component.code.coding` | 367494004.0 | Premature birth of newborn | http://snomed.info/sct |
-| 85 | 469 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
-| 86 | 472 | Observation | `Observation.component.code.coding` | 206376005.0 | Neonatal sepsis | http://snomed.info/sct |
-| 87 | 475 | Observation | `Observation.component.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
-| 88 | 479 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 89 | 492 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
-| 90 | 502 | Observation | `Observation.code.coding` | 427390007.0 | History of hepatitis B vaccination | http://snomed.info/sct |
-| 91 | 516 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 92 | 532 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 93 | 542 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
-| 94 | 560 | Observation | `Observation.code.coding` | 39016-1 | Age at death | http://loinc.org |
-| 95 | 564 | Observation | `Observation.component.code.coding` | SP000716 | Umur Jam (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 96 | 567 | Observation | `Observation.component.code.coding` | SP000717 | Umur Menit (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 97 | 570 | Observation | `Observation.component.code.coding` | SP000718 | Umur Detik (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 98 | 582 | Observation | `Observation.code.coding` | OC000028 | Jenis Tempat Meninggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 99 | 583 | Observation | `Observation.valueCodeableConcept.coding` | SP000099 | Faskes | http://terminology.kemkes.go.id/sp |
-| 100 | 584 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 101 | 585 | Observation | `Observation.valueCodeableConcept.coding` | LT000008 | Dalam perjalanan dari rumah/masyarakat | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 102 | 586 | Observation | `Observation.valueCodeableConcept.coding` | LT000011 | Belum Tahu | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 103 | 587 | Observation | `Observation.valueCodeableConcept.coding` | LT000010 | Lainnya | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 104 | 598 | Observation | `Observation.code.coding` | SP000098 | Tipe Penyelenggara Faskes Meninggal | http://terminology.kemkes.go.id/sp |
-| 105 | 599 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 106 | 601 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 107 | 603 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 108 | 605 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 109 | 607 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 110 | 608 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 111 | 624 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
-| 112 | 637 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
-| 113 | 652 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
-| 114 | 663 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 115 | 664 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 116 | 665 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
-| 117 | 666 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 118 | 667 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
-| 119 | 668 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
-| 120 | 688 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
-| 121 | 700 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
-| 122 | 703 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 123 | 704 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 124 | 705 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 125 | 706 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 126 | 707 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 127 | 722 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
-| 128 | 725 | Observation | `Observation.component.code.coding` | SP000715 | Umur Minggu | http://terminology.kemkes.go.id/sp |
-| 129 | 728 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
-| 130 | 740 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
-| 131 | 741 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 132 | 742 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
-| 133 | 743 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
-| 134 | 752 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 135 | 753 | Observation | `Observation.component.valueCodeableConcept.coding` | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 136 | 754 | Observation | `Observation.component.valueCodeableConcept.coding` | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 137 | 755 | Observation | `Observation.component.valueCodeableConcept.coding` | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 138 | 756 | Observation | `Observation.component.valueCodeableConcept.coding` | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 139 | 757 | Observation | `Observation.component.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 140 | 761 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
-| 141 | 774 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
-| 142 | 782 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 143 | 794 | Observation | `Observation.code.coding` | 364586004.0 | State at birth | http://snomed.info/sct |
-| 144 | 795 | Observation | `Observation.component.code.coding` | 367494004.0 | Premature birth of newborn | http://snomed.info/sct |
-| 145 | 798 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
-| 146 | 801 | Observation | `Observation.component.code.coding` | 206376005.0 | Neonatal sepsis | http://snomed.info/sct |
-| 147 | 804 | Observation | `Observation.component.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
-| 148 | 808 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 149 | 821 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
-| 150 | 831 | Observation | `Observation.code.coding` | 427390007.0 | History of hepatitis B vaccination | http://snomed.info/sct |
-| 151 | 845 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 152 | 861 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 153 | 871 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
-| 154 | 889 | Observation | `Observation.code.coding` | 39016-1 | Age at death | http://loinc.org |
-| 155 | 893 | Observation | `Observation.component.code.coding` | SP000716 | Umur Jam (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 156 | 896 | Observation | `Observation.component.code.coding` | SP000717 | Umur Menit (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 157 | 899 | Observation | `Observation.component.code.coding` | SP000718 | Umur Detik (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 158 | 911 | Observation | `Observation.code.coding` | OC000028 | Jenis Tempat Meninggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 159 | 912 | Observation | `Observation.valueCodeableConcept.coding` | SP000099 | Faskes | http://terminology.kemkes.go.id/sp |
-| 160 | 913 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 161 | 914 | Observation | `Observation.valueCodeableConcept.coding` | LT000008 | Dalam perjalanan dari rumah/masyarakat | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 162 | 915 | Observation | `Observation.valueCodeableConcept.coding` | LT000011 | Belum Tahu | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 163 | 916 | Observation | `Observation.valueCodeableConcept.coding` | LT000010 | Lainnya | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 164 | 927 | Observation | `Observation.code.coding` | SP000098 | Tipe Penyelenggara Faskes Meninggal | http://terminology.kemkes.go.id/sp |
-| 165 | 928 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 166 | 930 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 167 | 932 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 168 | 934 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 169 | 936 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 170 | 937 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 171 | 953 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
-| 172 | 966 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
-| 173 | 981 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
-| 174 | 992 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 175 | 993 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 176 | 994 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
-| 177 | 995 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 178 | 996 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
-| 179 | 997 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
-| 180 | 1017 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
-| 181 | 1029 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
-| 182 | 1032 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 183 | 1033 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 184 | 1034 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 185 | 1035 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 186 | 1036 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 187 | 1051 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
-| 188 | 1054 | Observation | `Observation.component.code.coding` | SP000715 | Umur Minggu | http://terminology.kemkes.go.id/sp |
-| 189 | 1057 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
-| 190 | 1069 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
-| 191 | 1070 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
-| 192 | 1071 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
-| 193 | 1072 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
-| 194 | 1081 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 195 | 1082 | Observation | `Observation.component.valueCodeableConcept.coding` | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 196 | 1083 | Observation | `Observation.component.valueCodeableConcept.coding` | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 197 | 1084 | Observation | `Observation.component.valueCodeableConcept.coding` | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 198 | 1085 | Observation | `Observation.component.valueCodeableConcept.coding` | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
-| 199 | 1086 | Observation | `Observation.component.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 200 | 1090 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
-| 201 | 1103 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
-| 202 | 1111 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 203 | 1123 | Observation | `Observation.code.coding` | 364586004.0 | State at birth | http://snomed.info/sct |
-| 204 | 1124 | Observation | `Observation.component.code.coding` | 367494004.0 | Premature birth of newborn | http://snomed.info/sct |
-| 205 | 1127 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
-| 206 | 1130 | Observation | `Observation.component.code.coding` | 206376005.0 | Neonatal sepsis | http://snomed.info/sct |
-| 207 | 1133 | Observation | `Observation.component.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
-| 208 | 1137 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 209 | 1150 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
-| 210 | 1160 | Observation | `Observation.code.coding` | 427390007.0 | History of hepatitis B vaccination | http://snomed.info/sct |
-| 211 | 1174 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 212 | 1190 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 213 | 1200 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
-| 214 | 1218 | Observation | `Observation.code.coding` | 39016-1 | Age at death | http://loinc.org |
-| 215 | 1222 | Observation | `Observation.component.code.coding` | SP000716 | Umur Jam (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 216 | 1225 | Observation | `Observation.component.code.coding` | SP000717 | Umur Menit (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 217 | 1228 | Observation | `Observation.component.code.coding` | SP000718 | Umur Detik (saat meninggal) | http://terminology.kemkes.go.id/sp |
-| 218 | 1240 | Observation | `Observation.code.coding` | OC000028 | Jenis Tempat Meninggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 219 | 1241 | Observation | `Observation.valueCodeableConcept.coding` | SP000099 | Faskes | http://terminology.kemkes.go.id/sp |
-| 220 | 1242 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 221 | 1243 | Observation | `Observation.valueCodeableConcept.coding` | LT000008 | Dalam perjalanan dari rumah/masyarakat | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 222 | 1244 | Observation | `Observation.valueCodeableConcept.coding` | LT000011 | Belum Tahu | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 223 | 1245 | Observation | `Observation.valueCodeableConcept.coding` | LT000010 | Lainnya | http://terminology.kemkes.go.id/CodeSystem/location-type |
-| 224 | 1256 | Observation | `Observation.code.coding` | SP000098 | Tipe Penyelenggara Faskes Meninggal | http://terminology.kemkes.go.id/sp |
-| 225 | 1257 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 226 | 1259 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 227 | 1261 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 228 | 1263 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
-| 229 | 1265 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
-| 230 | 1266 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 231 | 1282 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
-| 232 | 1295 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
-| 233 | 1310 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
-| 234 | 1321 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
-| 235 | 1322 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
-| 236 | 1323 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
-| 237 | 1324 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
-| 238 | 1325 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
-| 239 | 1326 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
+| 47 | 270 | Consent | `Consent.category.coding` | SP001123 | Intervensi SPHERES | http://terminology.kemkes.go.id/sp |
+| 48 | 290 | Observation | `Observation.code.coding` | SP001121 | Kepemilikan Nomor Telepon | http://terminology.kemkes.go.id/sp |
+| 49 | 313 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA33-6 | Yes | http://loinc.org |
+| 50 | 314 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA32-8 | No | http://loinc.org |
+| 51 | 315 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA4489-6 | Unknown | http://loinc.org |
+| 52 | 318 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001111 | Nomor HP tervalidasi dapat terhubung | http://terminology.kemkes.go.id/sp |
+| 53 | 319 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | http://terminology.kemkes.go.id/sp |
+| 54 | 320 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001113 | Tidak ada nomor HP yang terhubung | http://terminology.kemkes.go.id/sp |
+| 55 | 321 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001127 | Nomor HP yang diberikan salah sambung | http://terminology.kemkes.go.id/sp |
+| 56 | 324 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA19705-5 | Given | http://loinc.org |
+| 57 | 325 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA19761-8 | Not given | http://loinc.org |
+| 58 | 326 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | http://terminology.kemkes.go.id/sp |
+| 59 | 334 | Observation | `Observation.code.coding` | 246435002.0 | Number of fetuses | http://snomed.info/sct |
+| 60 | 335 | Observation | `Observation.code.coding` | ANC.B8.DE109 | Number of fetuses | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 61 | 359 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
+| 62 | 371 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
+| 63 | 372 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 64 | 374 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 65 | 375 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 66 | 376 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 67 | 377 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 68 | 378 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 69 | 393 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 70 | 394 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 71 | 396 | Observation | `Observation.component.code.coding` | SP000715 | Umur Minggu | http://terminology.kemkes.go.id/sp |
+| 72 | 399 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
+| 73 | 411 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
+| 74 | 412 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
+| 75 | 413 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 76 | 414 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
+| 77 | 415 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 78 | 423 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 79 | 424 | Observation | `Observation.component.valueCodeableConcept.coding` | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 80 | 425 | Observation | `Observation.component.valueCodeableConcept.coding` | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 81 | 426 | Observation | `Observation.component.valueCodeableConcept.coding` | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 82 | 427 | Observation | `Observation.component.valueCodeableConcept.coding` | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 83 | 428 | Observation | `Observation.component.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 84 | 432 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
+| 85 | 433 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 86 | 445 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
+| 87 | 446 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 88 | 447 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 89 | 453 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 90 | 465 | Observation | `Observation.code.coding` | 364586004.0 | State at birth | http://snomed.info/sct |
+| 91 | 466 | Observation | `Observation.component.code.coding` | 367494004.0 | Premature birth of newborn | http://snomed.info/sct |
+| 92 | 469 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
+| 93 | 472 | Observation | `Observation.component.code.coding` | 206376005.0 | Neonatal sepsis | http://snomed.info/sct |
+| 94 | 475 | Observation | `Observation.component.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
+| 95 | 479 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 96 | 492 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
+| 97 | 502 | Observation | `Observation.code.coding` | 427390007.0 | History of hepatitis B vaccination | http://snomed.info/sct |
+| 98 | 505 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 99 | 516 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 100 | 532 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 101 | 542 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
+| 102 | 560 | Observation | `Observation.code.coding` | 39016-1 | Age at death | http://loinc.org |
+| 103 | 564 | Observation | `Observation.component.code.coding` | SP000716 | Umur Jam (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 104 | 567 | Observation | `Observation.component.code.coding` | SP000717 | Umur Menit (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 105 | 570 | Observation | `Observation.component.code.coding` | SP000718 | Umur Detik (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 106 | 582 | Observation | `Observation.code.coding` | OC000028 | Jenis Tempat Meninggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 107 | 583 | Observation | `Observation.valueCodeableConcept.coding` | SP000099 | Faskes | http://terminology.kemkes.go.id/sp |
+| 108 | 584 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 109 | 585 | Observation | `Observation.valueCodeableConcept.coding` | LT000008 | Dalam perjalanan dari rumah/masyarakat | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 110 | 586 | Observation | `Observation.valueCodeableConcept.coding` | LT000011 | Belum Tahu | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 111 | 587 | Observation | `Observation.valueCodeableConcept.coding` | LT000010 | Lainnya | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 112 | 598 | Observation | `Observation.code.coding` | SP000098 | Tipe Penyelenggara Faskes Meninggal | http://terminology.kemkes.go.id/sp |
+| 113 | 599 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 114 | 601 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 115 | 603 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 116 | 605 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 117 | 607 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 118 | 608 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 119 | 610 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 120 | 624 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
+| 121 | 625 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 122 | 637 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
+| 123 | 638 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 124 | 641 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 125 | 652 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
+| 126 | 653 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 127 | 663 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
+| 128 | 664 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
+| 129 | 665 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 130 | 666 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 131 | 667 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
+| 132 | 668 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
+| 133 | 688 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
+| 134 | 700 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
+| 135 | 701 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 136 | 703 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 137 | 704 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 138 | 705 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 139 | 706 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 140 | 707 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 141 | 722 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 142 | 723 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 143 | 725 | Observation | `Observation.component.code.coding` | SP000715 | Umur Minggu | http://terminology.kemkes.go.id/sp |
+| 144 | 728 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
+| 145 | 740 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
+| 146 | 741 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
+| 147 | 742 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 148 | 743 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
+| 149 | 744 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 150 | 752 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 151 | 753 | Observation | `Observation.component.valueCodeableConcept.coding` | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 152 | 754 | Observation | `Observation.component.valueCodeableConcept.coding` | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 153 | 755 | Observation | `Observation.component.valueCodeableConcept.coding` | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 154 | 756 | Observation | `Observation.component.valueCodeableConcept.coding` | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 155 | 757 | Observation | `Observation.component.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 156 | 761 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
+| 157 | 762 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 158 | 774 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
+| 159 | 775 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 160 | 776 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 161 | 782 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 162 | 794 | Observation | `Observation.code.coding` | 364586004.0 | State at birth | http://snomed.info/sct |
+| 163 | 795 | Observation | `Observation.component.code.coding` | 367494004.0 | Premature birth of newborn | http://snomed.info/sct |
+| 164 | 798 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
+| 165 | 801 | Observation | `Observation.component.code.coding` | 206376005.0 | Neonatal sepsis | http://snomed.info/sct |
+| 166 | 804 | Observation | `Observation.component.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
+| 167 | 808 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 168 | 821 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
+| 169 | 831 | Observation | `Observation.code.coding` | 427390007.0 | History of hepatitis B vaccination | http://snomed.info/sct |
+| 170 | 834 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 171 | 845 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 172 | 861 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 173 | 871 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
+| 174 | 889 | Observation | `Observation.code.coding` | 39016-1 | Age at death | http://loinc.org |
+| 175 | 893 | Observation | `Observation.component.code.coding` | SP000716 | Umur Jam (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 176 | 896 | Observation | `Observation.component.code.coding` | SP000717 | Umur Menit (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 177 | 899 | Observation | `Observation.component.code.coding` | SP000718 | Umur Detik (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 178 | 911 | Observation | `Observation.code.coding` | OC000028 | Jenis Tempat Meninggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 179 | 912 | Observation | `Observation.valueCodeableConcept.coding` | SP000099 | Faskes | http://terminology.kemkes.go.id/sp |
+| 180 | 913 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 181 | 914 | Observation | `Observation.valueCodeableConcept.coding` | LT000008 | Dalam perjalanan dari rumah/masyarakat | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 182 | 915 | Observation | `Observation.valueCodeableConcept.coding` | LT000011 | Belum Tahu | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 183 | 916 | Observation | `Observation.valueCodeableConcept.coding` | LT000010 | Lainnya | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 184 | 927 | Observation | `Observation.code.coding` | SP000098 | Tipe Penyelenggara Faskes Meninggal | http://terminology.kemkes.go.id/sp |
+| 185 | 928 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 186 | 930 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 187 | 932 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 188 | 934 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 189 | 936 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 190 | 937 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 191 | 939 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 192 | 953 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
+| 193 | 954 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 194 | 966 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
+| 195 | 967 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 196 | 970 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 197 | 981 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
+| 198 | 982 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 199 | 992 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
+| 200 | 993 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
+| 201 | 994 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 202 | 995 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 203 | 996 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
+| 204 | 997 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
+| 205 | 1017 | Observation | `Observation.code.coding` | SP000402 | Kepemilikan Nomor Induk Kependudukan | http://terminology.kemkes.go.id/sp |
+| 206 | 1029 | Observation | `Observation.code.coding` | 21842-0 | Birthplace | http://loinc.org |
+| 207 | 1030 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 208 | 1032 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 209 | 1033 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 210 | 1034 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 211 | 1035 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 212 | 1036 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 213 | 1051 | Observation | `Observation.code.coding` | 424144002.0 | Current chronological age | http://snomed.info/sct |
+| 214 | 1052 | Observation | `Observation.dataAbsentReason.coding` | asked-unknown | Asked But Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 215 | 1054 | Observation | `Observation.component.code.coding` | SP000715 | Umur Minggu | http://terminology.kemkes.go.id/sp |
+| 216 | 1057 | Observation | `Observation.component.code.coding` | SP000021 | Umur Hari | http://terminology.kemkes.go.id/sp |
+| 217 | 1069 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
+| 218 | 1070 | Observation | `Observation.valueCodeableConcept.coding` | 102500002.0 | Good neonatal condition at birth | http://snomed.info/sct |
+| 219 | 1071 | Observation | `Observation.valueCodeableConcept.coding` | 276707008.0 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 220 | 1072 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
+| 221 | 1073 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 222 | 1081 | Observation | `Observation.component.code.coding` | C166267 | Unknown Status Reason | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 223 | 1082 | Observation | `Observation.component.valueCodeableConcept.coding` | C80217 | Not Asked | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 224 | 1083 | Observation | `Observation.component.valueCodeableConcept.coding` | C192586 | Patient Has Moved Away | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 225 | 1084 | Observation | `Observation.component.valueCodeableConcept.coding` | C51024 | Response Declined | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 226 | 1085 | Observation | `Observation.component.valueCodeableConcept.coding` | C54352 | Limited Or No Information | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl |
+| 227 | 1086 | Observation | `Observation.component.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 228 | 1090 | Observation | `Observation.code.coding` | 249222005.0 | Neonatal condition | http://snomed.info/sct |
+| 229 | 1091 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 230 | 1103 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
+| 231 | 1104 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 232 | 1105 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 233 | 1111 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 234 | 1123 | Observation | `Observation.code.coding` | 364586004.0 | State at birth | http://snomed.info/sct |
+| 235 | 1124 | Observation | `Observation.component.code.coding` | 367494004.0 | Premature birth of newborn | http://snomed.info/sct |
+| 236 | 1127 | Observation | `Observation.component.code.coding` | 413654009.0 | Birth asphyxia | http://snomed.info/sct |
+| 237 | 1130 | Observation | `Observation.component.code.coding` | 206376005.0 | Neonatal sepsis | http://snomed.info/sct |
+| 238 | 1133 | Observation | `Observation.component.code.coding` | 276654001.0 | Congenital malformation | http://snomed.info/sct |
+| 239 | 1137 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 240 | 1150 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
+| 241 | 1160 | Observation | `Observation.code.coding` | 427390007.0 | History of hepatitis B vaccination | http://snomed.info/sct |
+| 242 | 1163 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 243 | 1174 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 244 | 1190 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 245 | 1200 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
+| 246 | 1218 | Observation | `Observation.code.coding` | 39016-1 | Age at death | http://loinc.org |
+| 247 | 1222 | Observation | `Observation.component.code.coding` | SP000716 | Umur Jam (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 248 | 1225 | Observation | `Observation.component.code.coding` | SP000717 | Umur Menit (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 249 | 1228 | Observation | `Observation.component.code.coding` | SP000718 | Umur Detik (saat meninggal) | http://terminology.kemkes.go.id/sp |
+| 250 | 1240 | Observation | `Observation.code.coding` | OC000028 | Jenis Tempat Meninggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 251 | 1241 | Observation | `Observation.valueCodeableConcept.coding` | SP000099 | Faskes | http://terminology.kemkes.go.id/sp |
+| 252 | 1242 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 253 | 1243 | Observation | `Observation.valueCodeableConcept.coding` | LT000008 | Dalam perjalanan dari rumah/masyarakat | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 254 | 1244 | Observation | `Observation.valueCodeableConcept.coding` | LT000011 | Belum Tahu | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 255 | 1245 | Observation | `Observation.valueCodeableConcept.coding` | LT000010 | Lainnya | http://terminology.kemkes.go.id/CodeSystem/location-type |
+| 256 | 1256 | Observation | `Observation.code.coding` | SP000098 | Tipe Penyelenggara Faskes Meninggal | http://terminology.kemkes.go.id/sp |
+| 257 | 1257 | Observation | `Observation.valueCodeableConcept.coding` | 102.0 | Pusat Kesehatan Masyarakat | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 258 | 1259 | Observation | `Observation.valueCodeableConcept.coding` | 104.0 | Rumah Sakit | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 259 | 1261 | Observation | `Observation.valueCodeableConcept.coding` | OT000004 | Bidan Praktek Mandiri | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 260 | 1263 | Observation | `Observation.valueCodeableConcept.coding` | 103.0 | Klinik | http://terminology.kemkes.go.id/CodeSystem/organization-type |
+| 261 | 1265 | Observation | `Observation.valueCodeableConcept.coding` | 264362003.0 | Home | http://snomed.info/sct |
+| 262 | 1266 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 263 | 1268 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 264 | 1282 | Observation | `Observation.code.coding` | 79378-6 | Cause of death | http://loinc.org |
+| 265 | 1283 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 266 | 1295 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
+| 267 | 1296 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 268 | 1299 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 269 | 1310 | Observation | `Observation.code.coding` | SP001133 | Pernah diperiksa di fasilitas kesehatan | http://terminology.kemkes.go.id/sp |
+| 270 | 1311 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 271 | 1321 | PractitionerRole | `PractitionerRole.code.coding` | 309453006.0 | Registered midwife | http://snomed.info/sct |
+| 272 | 1322 | PractitionerRole | `PractitionerRole.code.coding` | 309343006.0 | Physician | http://snomed.info/sct |
+| 273 | 1323 | PractitionerRole | `PractitionerRole.code.coding` | 309367003.0 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 274 | 1324 | PractitionerRole | `PractitionerRole.code.coding` | 224535009.0 | Registered nurse | http://snomed.info/sct |
+| 275 | 1325 | PractitionerRole | `PractitionerRole.code.coding` | SP001120 | Sahabat Sehat | http://terminology.kemkes.go.id/sp |
+| 276 | 1326 | PractitionerRole | `PractitionerRole.code.coding` | 158999002.0 | Community midwife | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 89 |
-| http://terminology.kemkes.go.id/sp | 57 |
+| http://terminology.kemkes.go.id/sp | 58 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 36 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 28 |
 | http://loinc.org | 26 |
 | http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl | 15 |
@@ -387,7 +425,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://sys-ids.kemkes.go.id/kfa | 3 |
 |  | 1 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 1 |
-| **Total** | **239** |
+| **Total** | **276** |
 
 ## Variabel di luar payload
 

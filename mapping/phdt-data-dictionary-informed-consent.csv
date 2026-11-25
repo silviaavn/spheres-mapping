@@ -35,7 +35,7 @@ Dokumen Pendukung,,,ttd_responden,Tanda Tangan Responden,attachment,,,untuk IC d
 ,,,,,,,,,,Consent,Consent.sourceAttachment[4].title,Dokumen Pendukung 3,Tidak ada,Tidak ada,,,
 ,,,dokumen_4,Dokumen Pendukung 4,attachment,,,untuk IC manual (foto dokumen halaman 4),,Consent,Consent.sourceAttachment[5].url,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Consent,Consent.sourceAttachment[5].title,Dokumen Pendukung 4,Tidak ada,Tidak ada,,,
-,,nama_pemateri,nama_pemateri,Nama Pemateri,string,,,,,Consent,Consent.provision.actor.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,nama_pemateri,nama_pemateri,Nama Pemateri,string,,,,,Consent,Consent.provision.actor.reference.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Consent,Consent.provision.actor.role.coding,AUT,author,https://hl7.org/fhir/R4/v3/ParticipationType,,,
 Klausul Persetujuan,Item 1,,persetujuan_1,Klausul Persetujuan 1,boolean,,,untuk IC digital,,Consent,Consent.provision.provision[0].code.coding,SP000840,Persetujuan IC 1,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,Ya,,,Consent,Consent.provision.provision[0].type,permit,,,,,

@@ -1,6 +1,6 @@
 Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Format/Value,Value Name,Definisi Operasional,Agregat/Individu,Resource,Path,Code,Display,CodeSystem,Keterangan,jumlah code,jumlah instance
 "Saat pasien berkunjung untuk mendapatkan pelayanan PNC yang pertama kali, maka data resource EpisodeOfCare harus dikirimkan. Pembuatan resource EpisodeOfCare cukup dikirimkan satu kali saja saat pertama kali melakukan kunjungan PNC.",,,,,,,,,,,,,,,,,
-,,,,Mulai PNC,,,,,,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
+,,,,Mulai PNC,,,,,,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
@@ -263,7 +263,7 @@ Skrining Kesehatan,,,,,,,,,,,,,,,,,
 ,,,,Pemeriksaan edema,,,,,,Observation,Observation.status,final,,,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,procedure,Procedure,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,267038008,Edema,http://snomed.info/sct,,1,
-,,,,,,,,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,Observation,Observation.valueBoolean,true,,,,,
 ,,,,,,,Wajah,,,Observation,Observation.component.code.coding,445088006,Edema of face,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.component.valueBoolean,true,,,,,
@@ -576,7 +576,7 @@ Skrining Kesehatan,,,,,,,,,,,,,,,,,
 ,,,,,,,Implant,,,Observation,Observation.valueCodeableConcept.coding,40388003,"Implant, device",http://snomed.info/sct,,1,
 ,,,,,,,MOW,,,Observation,Observation.valueCodeableConcept.coding,77543007,Ligation of fallopian tube,http://snomed.info/sct,,1,
 ,,,,,,,MOP,,,Observation,Observation.valueCodeableConcept.coding,22523008,Vasectomy,http://snomed.info/sct,,1,
-,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,Tidak,,,Observation,Observation.dataAbsentReason.coding,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient Id,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,

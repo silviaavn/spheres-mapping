@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 81 |
-| Code (`jumlah code` = 1) | 148 |
-| Code unik (code + CodeSystem) | 127 |
+| Code (`jumlah code` = 1) | 157 |
+| Code unik (code + CodeSystem) | 131 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 9 |
 | Variabel BQ (unik) | 0 |
 
@@ -22,7 +22,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|
 | 1 | 2–14 | Encounter | – | – | _Tanggal kunjungan_ → `Encounter.period.start` (2, tanpa BQ) |
 | 2 | 15–22 | Condition | Z00.1 | Routine child health examination | – |
-| 3 | 32–42 | Observation | SP000699 | Kelompok Dasawisma | _Dasawisma group_ → `Observation.valueString.coding` (35, tanpa BQ) |
+| 3 | 32–42 | Observation | SP000699 | Kelompok Dasawisma | _Dasawisma group_ → `Observation.valueString` (35, tanpa BQ) |
 | 4 | 43–54 | Observation | SP000132 | Memiliki Buku KIA | _Apakah pasien memiliki buku KIA?_ → `Observation.valueBoolean` (46, tanpa BQ) |
 | 5 | 55–66 | Observation | 76516-4 | Gestational age—​at birth | _Usia Gestasi_ → `Observation.valueQuantity.value` (58, tanpa BQ) |
 | 6 | 67–76 | Procedure | 431868002 | Initiation of breastfeeding | _Inisiasi Menyusui Dini_ → `Procedure.category.coding` (67, tanpa BQ) |
@@ -95,9 +95,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 73 | 1528–1559 | QuestionnaireResponse | – | – | _Apakah anak mulai menggunakan kata-kata lain, selain kata ‘mama’, ‘papa’, anggota keluarga lain, dan hewan peliharaan?_ → `QuestionnaireResponse.item.linkId` (1536, tanpa BQ)<br>_Apakah anak mulai mengungkapkan kata yang berarti ‘milik’ misal “Susu kamu”, “Bonekaku”?_ → `QuestionnaireResponse.item.linkId` (1540, tanpa BQ)<br>_Apakah anak dapat mengerjakan 2 macam perintah dalam satu kalimat, seperti “Ambil sepatu dan taruh disini” tanpa diberi contoh?_ → `QuestionnaireResponse.item.linkId` (1544, tanpa BQ)<br>_Apakah anak dapat menunjuk minimal 2 nama benda di depannya (cangkir, bola, sendok)?_ → `QuestionnaireResponse.item.linkId` (1548, tanpa BQ)<br>_Apakah anak secara spontan memulai permainan dengan gerakan tubuh, seperti ‘Pok Ame-Ame’ atau ‘Cilukba’?_ → `QuestionnaireResponse.item.linkId` (1552, tanpa BQ)<br>_Apakah anak Anda menunjuk dengan jari telunjuk bila ingin sesuatu, bukan dengan cara memegang dengan semua jari?_ → `QuestionnaireResponse.item.linkId` (1556, tanpa BQ) |
 | 74 | 1561–1592 | QuestionnaireResponse | – | – | _Apakah anak dapat menyebutkan nama benda dan kegunaannya, seperti cangkir untuk minum, bola untuk dilempar, pensil warna untuk menggambar, sendok untuk makan?_ → `QuestionnaireResponse.item.linkId` (1569, tanpa BQ)<br>_Apakah lebih dari tiga perempat orang mengerti apa yang dibicarakan anak Anda?_ → `QuestionnaireResponse.item.linkId` (1573, tanpa BQ)<br>_Apakah anak dapat menunjukkan minimal 2 nama benda di depannya sesuai fungsinya (misal untuk minum: cangkir, untuk dilempar: bola, untuk makan: sendok, untuk menggambar: pensil warna)?_ → `QuestionnaireResponse.item.linkId` (1577, tanpa BQ)<br>_Apakah anak dapat mengerjakan perintah yang disertai kata depan? (misal: “Sekarang kubus itu di bawah meja, tolong taruh di atas meja”)?_ → `QuestionnaireResponse.item.linkId` (1581, tanpa BQ)<br>_Apakah anak secara spontan memulai permainan dengan gerakan tubuh? Seperti ‘Pok Ame−Ame’ atau ‘Cilukba’?_ → `QuestionnaireResponse.item.linkId` (1585, tanpa BQ)<br>_Apakah anak Anda menunjuk dengan jari telunjuk bila ingin sesuatu, bukan dengan cara memegang dengan semua jari?_ → `QuestionnaireResponse.item.linkId` (1589, tanpa BQ) |
 | 75 | 1594–1621 | QuestionnaireResponse | – | – | _Apakah anak dapat menyebutkan nama benda dan kegunaannya, seperti cangkir untuk minum, bola untuk dilempar, pensil warna untuk menggambar, sendok untuk makan?_ → `QuestionnaireResponse.item.linkId` (1602, tanpa BQ)<br>_Apakah lebih dari tiga perempat orang mengerti apa yang dibicarakan anak Anda?_ → `QuestionnaireResponse.item.linkId` (1606, tanpa BQ)<br>_Apakah anak dapat menunjukkan minimal 2 nama benda di depannya sesuai fungsinya (misal untuk minum: cangkir, untuk dilempar: bola, untuk makan: sendok, untuk menggambar: pensil warna)?_ → `QuestionnaireResponse.item.linkId` (1610, tanpa BQ)<br>_Apakah anak secara spontan memulai permainan dengan gerakan tubuh? Seperti ‘Pok Ame−Ame’ atau ‘Cilukba’?_ → `QuestionnaireResponse.item.linkId` (1614, tanpa BQ)<br>_Apakah anak Anda menunjuk dengan jari telunjuk bila ingin sesuatu, bukan dengan cara memegang dengan semua jari?_ → `QuestionnaireResponse.item.linkId` (1618, tanpa BQ) |
-| 76 | 1622–1633 | Observation | 252957005 | Children's hearing test | _Interpretasi Tes Daya Dengar_ → `Observation.status` (1622, tanpa BQ) |
-| 77 | 1641–1655 | Observation | 252963001 | Children's vision test | _Hasil Tes Daya Lihat_ → `Observation.status` (1641, tanpa BQ)<br>_Dilakukan rujukan_ → `Observation.component.code.coding` (1653, tanpa BQ) |
-| 78 | 1657–1683 | Observation | 400911007 | E test | _Hasil Tes Daya Lihat_ → `Observation.status` (1669, tanpa BQ)<br>_Dilakukan rujukan_ → `Observation.component.code.coding` (1681, tanpa BQ) |
+| 76 | 1622–1633 | Observation | 252957005 | Children's hearing test | _Interpretasi Tes Daya Dengar_ → `Observation.valueCodeableConcept.coding` (1625, tanpa BQ) |
+| 77 | 1641–1655 | Observation | 252963001 | Children's vision test | _Hasil Tes Daya Lihat_ → `Observation.valueCodeableConcept.coding` (1644, tanpa BQ)<br>_Dilakukan rujukan_ → `Observation.component.code.coding` (1653, tanpa BQ) |
+| 78 | 1657–1683 | Observation | 400911007 | E test | _Hasil Tes Daya Lihat_ → `Observation.valueCodeableConcept.coding` (1672, tanpa BQ)<br>_Dilakukan rujukan_ → `Observation.component.code.coding` (1681, tanpa BQ) |
 | 79 | 1685–1691 | Observation | – | – | – |
 | 80 | 1692–1700 | ServiceRequest | – | – | – |
 | 81 | 1702–1718 | Procedure | 410314003 | Health promotion education, guidance, and counseling | _Apakah dilakukan konseling_ → `Procedure.category.coding` (1702, tanpa BQ)<br>_Sebutkan topik konseling yang dilakukan_ → `Procedure.code.coding.code` (1706, tanpa BQ)<br>_Jika dijawab lainnya tambahkan mapping berikut_ → `Procedure.code.text` (1711, tanpa BQ) |
@@ -160,129 +160,138 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 37 | 266 | Observation | `Observation.code.coding` | 1153590000 | Length for age z-score | http://snomed.info/sct |
 | 38 | 293 | Observation | `Observation.code.coding` | 8287-5 | Head Occipital-frontal circumference by Tape measure | http://loinc.org |
 | 39 | 305 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://loinc.org |
-| 40 | 328 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
-| 41 | 340 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
-| 42 | 352 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
-| 43 | 364 | Observation | `Observation.code.coding` | 10206-1 | Physical findings of Skin Narrative | http://loinc.org |
-| 44 | 365 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 45 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 46 | 376 | Observation | `Observation.code.coding` | 10199-8 | Physical findings of Head Narrative | http://loinc.org |
-| 47 | 377 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 48 | 378 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 49 | 388 | Observation | `Observation.code.coding` | 10197-2 | Physical findings of Eye Narrative | http://loinc.org |
-| 50 | 389 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 51 | 390 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 52 | 400 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Mouth | http://loinc.org |
-| 53 | 401 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 54 | 402 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 55 | 412 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Abdomen Narrative | http://loinc.org |
-| 56 | 413 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 57 | 414 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 58 | 424 | Observation | `Observation.code.coding` | 10192-3 | Physical findings of Back Narrative | http://loinc.org |
-| 59 | 425 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 60 | 426 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 61 | 436 | Observation | `Observation.code.coding` | 11388-6 | Physical findings of Buttocks Narrative | http://loinc.org |
-| 62 | 437 | Observation | `Observation.code.coding` | 53505006 | Anal structure (body structure) | http://snomed.info/sct |
-| 63 | 438 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 64 | 439 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 65 | 449 | Observation | `Observation.code.coding` | 11400-9 | Physical findings of Genitalia Narrative | http://loinc.org |
-| 66 | 450 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 67 | 451 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 68 | 461 | Observation | `Observation.code.coding` | 284521000 | Pitting edema | http://snomed.info/sct |
-| 69 | 462 | Observation | `Observation.valueCodeableConcept.coding` | 420829009 | 1+ pitting edema | http://snomed.info/sct |
-| 70 | 463 | Observation | `Observation.valueCodeableConcept.coding` | 421605005 | 2+ pitting edema | http://snomed.info/sct |
-| 71 | 464 | Observation | `Observation.valueCodeableConcept.coding` | 421346005 | 3+ pitting edema | http://snomed.info/sct |
-| 72 | 465 | Observation | `Observation.valueCodeableConcept.coding` | 161980004 | No edema present | http://snomed.info/sct |
-| 73 | 475 | Condition | `Condition.code.coding` | 84757009 | Epilepsy | http://snomed.info/sct |
-| 74 | 476 | Condition | `Condition.code.coding` | 13213009 | Congenital heart disease | http://snomed.info/sct |
-| 75 | 477 | Condition | `Condition.code.coding` | 90708001 | Kidney disease | http://snomed.info/sct |
-| 76 | 478 | Condition | `Condition.code.coding` | 56265001 | Heart disease | http://snomed.info/sct |
-| 77 | 479 | Condition | `Condition.code.coding` | 195967001 | Asthma | http://snomed.info/sct |
-| 78 | 480 | Condition | `Condition.code.coding` | 1240414004 | Malignant neoplasm | http://snomed.info/sct |
-| 79 | 481 | Condition | `Condition.code.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
-| 80 | 482 | Condition | `Condition.code.coding` | 118940003 | Disorder of nervous system | http://snomed.info/sct |
-| 81 | 483 | Condition | `Condition.code.coding` | 444896005 | Growth retardation | http://snomed.info/sct |
-| 82 | 484 | Condition | `Condition.code.coding` | 5294002 | Developmental disorder | http://snomed.info/sct |
-| 83 | 485 | Condition | `Condition.code.coding` | 128188000 | Cerebral palsy | http://snomed.info/sct |
-| 84 | 486 | Condition | `Condition.code.coding` | 443508001 | No history of clinical finding in subject | http://snomed.info/sct |
-| 85 | 493 | Condition | `Condition.code.coding` | 160357008 | Family history: Hypertension | http://snomed.info/sct |
-| 86 | 494 | Condition | `Condition.code.coding` | 160303001 | Family history of diabetes mellitus | http://snomed.info/sct |
-| 87 | 495 | Condition | `Condition.code.coding` | 275104002 | Family history of stroke | http://snomed.info/sct |
-| 88 | 496 | Condition | `Condition.code.coding` | 429959009 | Family history of heart failure | http://snomed.info/sct |
-| 89 | 497 | Condition | `Condition.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
-| 90 | 498 | Condition | `Condition.code.coding` | 275937001 | Family history of malignant neoplasm (situation) | http://snomed.info/sct |
-| 91 | 499 | Condition | `Condition.code.coding` | 160314003 | Family history: Hypercholesterolemia | http://snomed.info/sct |
-| 92 | 500 | Condition | `Condition.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
-| 93 | 501 | Condition | `Condition.code.coding` | 160266009 | No family history of clinical finding | http://snomed.info/sct |
-| 94 | 508 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
-| 95 | 520 | Observation | `Observation.code.coding` | 61432-1 | How old was sample person when he or she was first fed something other than breast milk or water [PhenX] | http://loinc.org |
-| 96 | 532 | Observation | `Observation.code.coding` | 413711008 | Breastfeeding (infant) | http://snomed.info/sct |
-| 97 | 543 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 98 | 553 | Procedure | `Procedure.code.coding` | SP000693 | Pelayanan Bawah Garis Merah | http://terminology.kemkes.go.id/sp |
-| 99 | 563 | Procedure | `Procedure.code.coding` | SP000695 | PMT Pemulihan | http://terminology.kemkes.go.id/sp |
-| 100 | 574 | Observation | `Observation.code.coding` | SP000036 | Jenis PMT | http://terminology.kemkes.go.id/sp |
-| 101 | 575 | Observation | `Observation.valueCodeableConcept.coding` | SP000493 | Makanan Lengkap | http://terminology.kemkes.go.id/sp |
-| 102 | 576 | Observation | `Observation.valueCodeableConcept.coding` | 228070005 | Snack food | http://snomed.info/sct |
-| 103 | 577 | Observation | `Observation.valueCodeableConcept.coding` | SP000494 | Makanan Lengkap dan Makanan Kudapan | http://terminology.kemkes.go.id/sp |
-| 104 | 587 | Observation | `Observation.code.coding` | OC000009 | Makanan Pendamping ASI (MPASI) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 105 | 590 | Observation | `Observation.component.code.coding` | QRI000005 | Sereal, akar dan umbi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 106 | 593 | Observation | `Observation.component.code.coding` | 13577000 | Nut | http://snomed.info/sct |
-| 107 | 596 | Observation | `Observation.component.code.coding` | QRI000007 | Susu dan produk olahannya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 108 | 599 | Observation | `Observation.component.code.coding` | 102263004 | Eggs | http://snomed.info/sct |
-| 109 | 602 | Observation | `Observation.component.code.coding` | QRI000010 | Buah dan sayur sumber vitamin A | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 110 | 605 | Observation | `Observation.component.code.coding` | QRI000011 | Buah dan sayur lainnya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 111 | 608 | Observation | `Observation.component.code.coding` | QRI000008 | Daging dan/atau ikan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 112 | 609 | Observation | `Observation.valueCodeableConcept.coding` | 226915003 | Red meat | http://snomed.info/sct |
-| 113 | 610 | Observation | `Observation.valueCodeableConcept.coding` | 226955001 | Chicken - meat | http://snomed.info/sct |
-| 114 | 611 | Observation | `Observation.valueCodeableConcept.coding` | 278840001 | Shrimp | http://snomed.info/sct |
-| 115 | 612 | Observation | `Observation.valueCodeableConcept.coding` | 735006003 | Squid | http://snomed.info/sct |
-| 116 | 613 | Observation | `Observation.valueCodeableConcept.coding` | 90580008 | Fish | http://snomed.info/sct |
-| 117 | 614 | Observation | `Observation.valueCodeableConcept.coding` | 226983004 | Heart - meat | http://snomed.info/sct |
-| 118 | 624 | Condition | `Condition.code.coding` | 289084000 | Difficulty performing breastfeeding | http://snomed.info/sct |
-| 119 | 625 | Condition | `Condition.code.coding` | 289081008 | Unable to perform breastfeeding | http://snomed.info/sct |
-| 120 | 626 | Condition | `Condition.code.coding` | 422400008 | Vomiting | http://snomed.info/sct |
-| 121 | 627 | Condition | `Condition.code.coding` | 386661006 | Fever | http://snomed.info/sct |
-| 122 | 628 | Condition | `Condition.code.coding` | 62315008 | Diarrhea | http://snomed.info/sct |
-| 123 | 629 | Condition | `Condition.code.coding` | 18165001 | Jaundice | http://snomed.info/sct |
-| 124 | 630 | Condition | `Condition.code.coding` | 62085005 | Grunting respiration | http://snomed.info/sct |
-| 125 | 631 | Condition | `Condition.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
-| 126 | 667 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | http://sys-ids.kemkes.go.id/kfa |
-| 127 | 687 | MedicationDispense | `MedicationDispense.contained.code.coding` | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | http://sys-ids.kemkes.go.id/kfa |
-| 128 | 712 | Procedure | `Procedure.code.coding` | SP000694 | Pelayanan 2T | http://terminology.kemkes.go.id/sp |
-| 129 | 721 | Observation | `Observation.component.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 130 | 736 | ServiceRequest | `ServiceRequest.code` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 131 | 737 | ServiceRequest | `ServiceRequest.reasonCode.coding` | 306227000 | Referral for mental health counseling | http://snomed.info/sct |
-| 132 | 749 | Observation | `Observation.code.coding` | 1144561006 | Adequate sanitation | http://snomed.info/sct |
-| 133 | 761 | Observation | `Observation.code.coding` | 1162942008 | Access to potable water | http://snomed.info/sct |
-| 134 | 796 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
-| 135 | 797 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
-| 136 | 800 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
-| 137 | 1449 | Observation | `Observation.code.coding` | 1280010004 | Screening for child developmental disorder | http://snomed.info/sct |
-| 138 | 1450 | Observation | `Observation.valueCodeableConcept.coding` | Ds | Perkembangan sesuai usia | http://terminology.kemkes.go.id/Codesystem/kpsp |
-| 139 | 1451 | Observation | `Observation.valueCodeableConcept.coding` | Dm | Perkembangan meragukan | http://terminology.kemkes.go.id/Codesystem/kpsp |
-| 140 | 1452 | Observation | `Observation.valueCodeableConcept.coding` | Dp | Perkembangan curiga adanya penyimpangan | http://terminology.kemkes.go.id/Codesystem/kpsp |
-| 141 | 1624 | Observation | `Observation.code.coding` | 252957005 | Children's hearing test | http://snomed.info/sct |
-| 142 | 1643 | Observation | `Observation.code.coding` | 252963001 | Children's vision test | http://snomed.info/sct |
-| 143 | 1653 | Observation | `Observation.component.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 144 | 1671 | Observation | `Observation.code.coding` | 400911007 | E test | http://snomed.info/sct |
-| 145 | 1681 | Observation | `Observation.component.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 146 | 1696 | ServiceRequest | `ServiceRequest.code` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 147 | 1697 | ServiceRequest | `ServiceRequest.reasonCode.coding` | 306227000 | Referral for mental health counseling | http://snomed.info/sct |
-| 148 | 1703 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
+| 40 | 308 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 41 | 313 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
+| 42 | 316 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 43 | 328 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
+| 44 | 340 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
+| 45 | 352 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
+| 46 | 364 | Observation | `Observation.code.coding` | 10206-1 | Physical findings of Skin Narrative | http://loinc.org |
+| 47 | 365 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 48 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 49 | 376 | Observation | `Observation.code.coding` | 10199-8 | Physical findings of Head Narrative | http://loinc.org |
+| 50 | 377 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 51 | 378 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 52 | 388 | Observation | `Observation.code.coding` | 10197-2 | Physical findings of Eye Narrative | http://loinc.org |
+| 53 | 389 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 54 | 390 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 55 | 400 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Mouth | http://loinc.org |
+| 56 | 401 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 57 | 402 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 58 | 412 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Abdomen Narrative | http://loinc.org |
+| 59 | 413 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 60 | 414 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 61 | 424 | Observation | `Observation.code.coding` | 10192-3 | Physical findings of Back Narrative | http://loinc.org |
+| 62 | 425 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 63 | 426 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 64 | 436 | Observation | `Observation.code.coding` | 11388-6 | Physical findings of Buttocks Narrative | http://loinc.org |
+| 65 | 437 | Observation | `Observation.code.coding` | 53505006 | Anal structure (body structure) | http://snomed.info/sct |
+| 66 | 438 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 67 | 439 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 68 | 449 | Observation | `Observation.code.coding` | 11400-9 | Physical findings of Genitalia Narrative | http://loinc.org |
+| 69 | 450 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 70 | 451 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 71 | 461 | Observation | `Observation.code.coding` | 284521000 | Pitting edema | http://snomed.info/sct |
+| 72 | 462 | Observation | `Observation.valueCodeableConcept.coding` | 420829009 | 1+ pitting edema | http://snomed.info/sct |
+| 73 | 463 | Observation | `Observation.valueCodeableConcept.coding` | 421605005 | 2+ pitting edema | http://snomed.info/sct |
+| 74 | 464 | Observation | `Observation.valueCodeableConcept.coding` | 421346005 | 3+ pitting edema | http://snomed.info/sct |
+| 75 | 465 | Observation | `Observation.valueCodeableConcept.coding` | 161980004 | No edema present | http://snomed.info/sct |
+| 76 | 475 | Condition | `Condition.code.coding` | 84757009 | Epilepsy | http://snomed.info/sct |
+| 77 | 476 | Condition | `Condition.code.coding` | 13213009 | Congenital heart disease | http://snomed.info/sct |
+| 78 | 477 | Condition | `Condition.code.coding` | 90708001 | Kidney disease | http://snomed.info/sct |
+| 79 | 478 | Condition | `Condition.code.coding` | 56265001 | Heart disease | http://snomed.info/sct |
+| 80 | 479 | Condition | `Condition.code.coding` | 195967001 | Asthma | http://snomed.info/sct |
+| 81 | 480 | Condition | `Condition.code.coding` | 1240414004 | Malignant neoplasm | http://snomed.info/sct |
+| 82 | 481 | Condition | `Condition.code.coding` | 73211009 | Diabetes mellitus | http://snomed.info/sct |
+| 83 | 482 | Condition | `Condition.code.coding` | 118940003 | Disorder of nervous system | http://snomed.info/sct |
+| 84 | 483 | Condition | `Condition.code.coding` | 444896005 | Growth retardation | http://snomed.info/sct |
+| 85 | 484 | Condition | `Condition.code.coding` | 5294002 | Developmental disorder | http://snomed.info/sct |
+| 86 | 485 | Condition | `Condition.code.coding` | 128188000 | Cerebral palsy | http://snomed.info/sct |
+| 87 | 486 | Condition | `Condition.code.coding` | 443508001 | No history of clinical finding in subject | http://snomed.info/sct |
+| 88 | 493 | Condition | `Condition.code.coding` | 160357008 | Family history: Hypertension | http://snomed.info/sct |
+| 89 | 494 | Condition | `Condition.code.coding` | 160303001 | Family history of diabetes mellitus | http://snomed.info/sct |
+| 90 | 495 | Condition | `Condition.code.coding` | 275104002 | Family history of stroke | http://snomed.info/sct |
+| 91 | 496 | Condition | `Condition.code.coding` | 429959009 | Family history of heart failure | http://snomed.info/sct |
+| 92 | 497 | Condition | `Condition.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
+| 93 | 498 | Condition | `Condition.code.coding` | 275937001 | Family history of malignant neoplasm (situation) | http://snomed.info/sct |
+| 94 | 499 | Condition | `Condition.code.coding` | 160314003 | Family history: Hypercholesterolemia | http://snomed.info/sct |
+| 95 | 500 | Condition | `Condition.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
+| 96 | 501 | Condition | `Condition.code.coding` | 160266009 | No family history of clinical finding | http://snomed.info/sct |
+| 97 | 508 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
+| 98 | 520 | Observation | `Observation.code.coding` | 61432-1 | How old was sample person when he or she was first fed something other than breast milk or water [PhenX] | http://loinc.org |
+| 99 | 532 | Observation | `Observation.code.coding` | 413711008 | Breastfeeding (infant) | http://snomed.info/sct |
+| 100 | 543 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 101 | 553 | Procedure | `Procedure.code.coding` | SP000693 | Pelayanan Bawah Garis Merah | http://terminology.kemkes.go.id/sp |
+| 102 | 563 | Procedure | `Procedure.code.coding` | SP000695 | PMT Pemulihan | http://terminology.kemkes.go.id/sp |
+| 103 | 574 | Observation | `Observation.code.coding` | SP000036 | Jenis PMT | http://terminology.kemkes.go.id/sp |
+| 104 | 575 | Observation | `Observation.valueCodeableConcept.coding` | SP000493 | Makanan Lengkap | http://terminology.kemkes.go.id/sp |
+| 105 | 576 | Observation | `Observation.valueCodeableConcept.coding` | 228070005 | Snack food | http://snomed.info/sct |
+| 106 | 577 | Observation | `Observation.valueCodeableConcept.coding` | SP000494 | Makanan Lengkap dan Makanan Kudapan | http://terminology.kemkes.go.id/sp |
+| 107 | 587 | Observation | `Observation.code.coding` | OC000009 | Makanan Pendamping ASI (MPASI) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 108 | 590 | Observation | `Observation.component.code.coding` | QRI000005 | Sereal, akar dan umbi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 109 | 593 | Observation | `Observation.component.code.coding` | 13577000 | Nut | http://snomed.info/sct |
+| 110 | 596 | Observation | `Observation.component.code.coding` | QRI000007 | Susu dan produk olahannya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 111 | 599 | Observation | `Observation.component.code.coding` | 102263004 | Eggs | http://snomed.info/sct |
+| 112 | 602 | Observation | `Observation.component.code.coding` | QRI000010 | Buah dan sayur sumber vitamin A | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 113 | 605 | Observation | `Observation.component.code.coding` | QRI000011 | Buah dan sayur lainnya | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 114 | 608 | Observation | `Observation.component.code.coding` | QRI000008 | Daging dan/atau ikan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 115 | 609 | Observation | `Observation.valueCodeableConcept.coding` | 226915003 | Red meat | http://snomed.info/sct |
+| 116 | 610 | Observation | `Observation.valueCodeableConcept.coding` | 226955001 | Chicken - meat | http://snomed.info/sct |
+| 117 | 611 | Observation | `Observation.valueCodeableConcept.coding` | 278840001 | Shrimp | http://snomed.info/sct |
+| 118 | 612 | Observation | `Observation.valueCodeableConcept.coding` | 735006003 | Squid | http://snomed.info/sct |
+| 119 | 613 | Observation | `Observation.valueCodeableConcept.coding` | 90580008 | Fish | http://snomed.info/sct |
+| 120 | 614 | Observation | `Observation.valueCodeableConcept.coding` | 226983004 | Heart - meat | http://snomed.info/sct |
+| 121 | 624 | Condition | `Condition.code.coding` | 289084000 | Difficulty performing breastfeeding | http://snomed.info/sct |
+| 122 | 625 | Condition | `Condition.code.coding` | 289081008 | Unable to perform breastfeeding | http://snomed.info/sct |
+| 123 | 626 | Condition | `Condition.code.coding` | 422400008 | Vomiting | http://snomed.info/sct |
+| 124 | 627 | Condition | `Condition.code.coding` | 386661006 | Fever | http://snomed.info/sct |
+| 125 | 628 | Condition | `Condition.code.coding` | 62315008 | Diarrhea | http://snomed.info/sct |
+| 126 | 629 | Condition | `Condition.code.coding` | 18165001 | Jaundice | http://snomed.info/sct |
+| 127 | 630 | Condition | `Condition.code.coding` | 62085005 | Grunting respiration | http://snomed.info/sct |
+| 128 | 631 | Condition | `Condition.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
+| 129 | 667 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | http://sys-ids.kemkes.go.id/kfa |
+| 130 | 687 | MedicationDispense | `MedicationDispense.contained.code.coding` | 92002848 | Sodium Chloride 0,52 g / Sodium Citrate Dihydrate 0,58 g / Dextrose Anhydrate 2,70 g / Potassium Chloride 0,30 g Serbuk Oral | http://sys-ids.kemkes.go.id/kfa |
+| 131 | 712 | Procedure | `Procedure.code.coding` | SP000694 | Pelayanan 2T | http://terminology.kemkes.go.id/sp |
+| 132 | 721 | Observation | `Observation.component.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 133 | 736 | ServiceRequest | `ServiceRequest.code` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 134 | 737 | ServiceRequest | `ServiceRequest.reasonCode.coding` | 306227000 | Referral for mental health counseling | http://snomed.info/sct |
+| 135 | 749 | Observation | `Observation.code.coding` | 1144561006 | Adequate sanitation | http://snomed.info/sct |
+| 136 | 761 | Observation | `Observation.code.coding` | 1162942008 | Access to potable water | http://snomed.info/sct |
+| 137 | 796 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
+| 138 | 797 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
+| 139 | 800 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
+| 140 | 1449 | Observation | `Observation.code.coding` | 1280010004 | Screening for child developmental disorder | http://snomed.info/sct |
+| 141 | 1450 | Observation | `Observation.valueCodeableConcept.coding` | Ds | Perkembangan sesuai usia | http://terminology.kemkes.go.id/Codesystem/kpsp |
+| 142 | 1451 | Observation | `Observation.valueCodeableConcept.coding` | Dm | Perkembangan meragukan | http://terminology.kemkes.go.id/Codesystem/kpsp |
+| 143 | 1452 | Observation | `Observation.valueCodeableConcept.coding` | Dp | Perkembangan curiga adanya penyimpangan | http://terminology.kemkes.go.id/Codesystem/kpsp |
+| 144 | 1624 | Observation | `Observation.code.coding` | 252957005 | Children's hearing test | http://snomed.info/sct |
+| 145 | 1625 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 146 | 1626 | Observation | `Observation.valueCodeableConcept.coding` | 410519009 | At risk | http://snomed.info/sct |
+| 147 | 1643 | Observation | `Observation.code.coding` | 252963001 | Children's vision test | http://snomed.info/sct |
+| 148 | 1644 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 149 | 1645 | Observation | `Observation.valueCodeableConcept.coding` | 410519009 | At risk | http://snomed.info/sct |
+| 150 | 1653 | Observation | `Observation.component.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 151 | 1671 | Observation | `Observation.code.coding` | 400911007 | E test | http://snomed.info/sct |
+| 152 | 1672 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 153 | 1673 | Observation | `Observation.valueCodeableConcept.coding` | 410519009 | At risk | http://snomed.info/sct |
+| 154 | 1681 | Observation | `Observation.component.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 155 | 1696 | ServiceRequest | `ServiceRequest.code` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 156 | 1697 | ServiceRequest | `ServiceRequest.reasonCode.coding` | 306227000 | Referral for mental health counseling | http://snomed.info/sct |
+| 157 | 1703 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 92 |
+| http://snomed.info/sct | 99 |
 | http://loinc.org | 22 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 18 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 20 |
 | http://terminology.kemkes.go.id/sp | 9 |
 | http://terminology.kemkes.go.id/Codesystem/kpsp | 3 |
 | http://sys-ids.kemkes.go.id/kfa | 2 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **148** |
+| **Total** | **157** |
 
 ## Variabel di luar payload
 

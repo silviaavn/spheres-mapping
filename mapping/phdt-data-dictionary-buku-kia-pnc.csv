@@ -24,8 +24,8 @@ Kunjungan Nifas,,,,Hari ke-/ KF,,,KF1 (6-48 jam),,,Encounter,Encounter.identifie
 ,,,,Tanggal periksa,datetime,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization,,,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,Tempat Periksa,string,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,Tempat Periksa,string,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.statusHistory.status,arrived,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.statusHistory.period.end,Tidak ada,Tidak ada,Tidak ada,,,
@@ -46,7 +46,7 @@ Kunjungan Nifas,,,,Hari ke-/ KF,,,KF1 (6-48 jam),,,Encounter,Encounter.identifie
 ,,,,,,,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Condition,Condition.onsetDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 EpisodeOfCare Nifas (asumsi EOC ANC sudah ditutup di INC),,,,,,,,,,,,,,,,,
-,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
+,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,

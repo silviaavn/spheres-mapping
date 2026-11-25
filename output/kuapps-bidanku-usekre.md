@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 31 |
-| Code (`jumlah code` = 1) | 76 |
-| Code unik (code + CodeSystem) | 68 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 1 |
+| Code (`jumlah code` = 1) | 83 |
+| Code unik (code + CodeSystem) | 75 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -22,13 +22,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|
 | 1 | 2–13 | Observation | 29463-7 | Body weight | _Berat Badan_ → `Observation.valueQuantity.value` (5, tanpa BQ) |
 | 2 | 14–25 | Observation | 8302-2 | Body height | _Tinggi Badan_ → `Observation.valueQuantity.value` (17, tanpa BQ) |
-| 3 | 27–56 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | _IMT_ → `Observation.valueRange.low.value` (38, tanpa BQ) |
+| 3 | 27–56 | Observation | 39156-5 | Body mass index (BMI) [Ratio] | _IMT_ → `Observation.valueRange.high.value` (32, tanpa BQ) |
 | 4 | 57–68 | Observation | vital-signs | Abdominal circumference | _Lingkar Perut_ → `Observation.valueQuantity.value` (60, tanpa BQ) |
 | 5 | 69–80 | Observation | 8480-6 | Systolic blood pressure | _Tekanan Darah Sistole_ → `Observation.valueQuantity.value` (72, tanpa BQ) |
 | 6 | 81–92 | Observation | 8462-4 | Diastolic blood pressure | _Tekanan Darah Diastole_ → `Observation.valueQuantity.value` (84, tanpa BQ) |
 | 7 | 93–112 | Observation | 268607006 | Hypertension risk level | _Interpretasi tekanan darah_ → `Observation.valueRatio.numerator.value` (103, tanpa BQ) |
 | 8 | 113–124 | Observation | SP000924 | Remaja memiliki Tablet Tambah Darah | _Apakah remaja memiliki Tablet Tambah Darah?_ → `Observation.valueBoolean` (116, tanpa BQ) |
-| 9 | 125–136 | MedicationStatement | – | – | _Apakah mengonsumsi TTD minggu ini/ dalam 7 hari terakhir?_ → `MedicationStatement.category.coding` (125, tanpa BQ)<br>_Berapa jumlah TTD yang dikonsumsi dalam 1 bulan terakhir?_ → `MedicationStatement.Dosage.doseAndRate.doseQuantity` (135, tanpa BQ) |
+| 9 | 125–136 | MedicationStatement | – | – | _Apakah mengonsumsi TTD minggu ini/ dalam 7 hari terakhir?_ → `MedicationStatement.category.coding` (125, tanpa BQ)<br>_Berapa jumlah TTD yang dikonsumsi dalam 1 bulan terakhir?_ → `MedicationStatement.dosage.doseAndRate.doseQuantity` (135, tanpa BQ) |
 | 10 | 137–151 | Condition | 160357008 | Family history: Hypertension | _Riwayat keluarga_ → `Condition.clinicalStatus.coding` (137, tanpa BQ) |
 | 11 | 152–165 | Condition | 161501007 | History of hypertension | _Riwayat penyakit diri sendiri_ → `Condition.clinicalStatus.coding` (152, tanpa BQ) |
 | 12 | 166–183 | Condition | 84757009 | Epilepsy | _Penyakit penyerta_ → `Condition.clinicalStatus.coding` (166, tanpa BQ) |
@@ -42,13 +42,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 20 | 272–285 | Observation | 422256009 | Counts fingers - distance vision | _Mata Kiri_ → `Observation.valueCodeableConcept.coding` (276, tanpa BQ) |
 | 21 | 286–299 | Observation | 247301006 | Finding of ability to hear whisper | _Telinga Kanan_ → `Observation.valueCodeableConcept.coding` (290, tanpa BQ) |
 | 22 | 300–313 | Observation | 247301006 | Finding of ability to hear whisper | _Telinga Kiri_ → `Observation.valueCodeableConcept.coding` (304, tanpa BQ) |
-| 23 | 314–328 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | _Kadar Hemoglobin_ → `Observation.valueQuantity.value` (317, tanpa BQ)<br>_Interpretasi Anemia_ → `Observation.Interpretation.coding` (319, tanpa BQ) |
+| 23 | 314–328 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | _Kadar Hemoglobin_ → `Observation.valueQuantity.value` (317, tanpa BQ)<br>_Interpretasi Anemia_ → `Observation.interpretation.coding` (319, tanpa BQ) |
 | 24 | 329–357 | MedicationRequest | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | _Apakah diberikan TTD?_ → `MedicationRequest.contained.resourceType` (329, tanpa BQ) |
 | 25 | 358–384 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | _Berapa jumlah TTD yang diberikan ?_ → `MedicationDispense.quantity.value` (381, tanpa BQ) |
 | 26 | 385–396 | Procedure | – | – | _Apakah dilakukan skrining gula darah?_ → `Procedure.category.coding` (385, tanpa BQ) |
 | 27 | 397–424 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | _Hasil Gula Darah Sewaktu_ → `Observation.valueQuantity.value` (400, tanpa BQ)<br>_Interpretasi Gula Darah Sewaktu_ → `Observation.interpretation.coding` (409, tanpa BQ) |
 | 28 | 425–450 | QuestionnaireResponse | – | – | _Batuk Terus Menerus_ → `QuestionnaireResponse.item.text` (436, tanpa BQ)<br>_Demam lebih dari ≥ 2 minggu_ → `QuestionnaireResponse.item.linkId` (439, tanpa BQ)<br>_BB tidak naik atau turun dalam 2 bulan berturut-turut_ → `QuestionnaireResponse.item.linkId` (443, tanpa BQ)<br>_Kontak erat dengan Pasien TBC_ → `QuestionnaireResponse.item.linkId` (447, tanpa BQ) |
-| 29 | 451–463 | Observation | – | – | _Interpretasi hasil skrining TBC_ → `Tidak Ada` (451, tanpa BQ) |
+| 29 | 451–463 | Observation | 171126009 | Tuberculosis screening | _Interpretasi hasil skrining TBC_ → `Observation.valueQuantity.value` (451, tanpa BQ) |
 | 30 | 464–505 | QuestionnaireResponse | – | – | _Memiliki masalah di dalam rumah (Home)_ → `QuestionnaireResponse.item.linkId` (474, tanpa BQ)<br>_Memiliki Masalah dengan Pendidikan atau Pekerjaan (Education/Employment)_ → `QuestionnaireResponse.item.linkId` (478, tanpa BQ)<br>_Memiliki Masalah Dengan Pola Makan (Eating)_ → `QuestionnaireResponse.item.linkId` (482, tanpa BQ)<br>_Memiliki Masalah dengan Aktivitas (Activity)_ → `QuestionnaireResponse.item.linkId` (486, tanpa BQ)<br>_Memiliki masalah dengan obat-obatan (Drugs)_ → `QuestionnaireResponse.item.linkId` (490, tanpa BQ)<br>_Memiliki masalah dengan kesehatan seksual (Sexuality)_ → `QuestionnaireResponse.item.linkId` (494, tanpa BQ)<br>_Memiliki Masalah dengan Keamanan (Self Image)_ → `QuestionnaireResponse.item.linkId` (498, tanpa BQ)<br>_Memiliki keinginan bunuh diri/depresi (Safety)_ → `QuestionnaireResponse.item.linkId` (502, tanpa BQ) |
 | 31 | 507–524 | Procedure | 410314003 | Health promotion education, guidance, and counseling | _Apakah dilakukan konseling_ → `Procedure.category.coding` (507, tanpa BQ)<br>_Sebutkan topik konseling yang dilakukan_ → `Procedure.code.coding.code` (511, tanpa BQ)<br>_Jika dijawab lainnya tambahkan mapping berikut_ → `Procedure.code.text` (517, tanpa BQ) |
 
@@ -137,26 +137,33 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 66 | 304 | Observation | `Observation.valueCodeableConcept.coding` | 275727004 | Hearing test normal | http://snomed.info/sct |
 | 67 | 305 | Observation | `Observation.valueCodeableConcept.coding` | 300221005 | Hearing for whisper impaired | http://snomed.info/sct |
 | 68 | 316 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 69 | 332 | MedicationRequest | `MedicationRequest.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
-| 70 | 361 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
-| 71 | 399 | Observation | `Observation.code.coding` | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 72 | 409 | Observation | `Observation.interpretation.coding` | 302866003 | Hypoglycemia | http://snomed.info/sct |
-| 73 | 412 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 74 | 417 | Observation | `Observation.interpretation.coding` | 714628002 | Prediabetes | http://snomed.info/sct |
-| 75 | 422 | Observation | `Observation.interpretation.coding` | 80394007 | Hyperglycemia | http://snomed.info/sct |
-| 76 | 508 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
+| 69 | 319 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
+| 70 | 320 | Observation | `Observation.interpretation.coding` | OI000032 | Anemia ringan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 71 | 321 | Observation | `Observation.interpretation.coding` | OI000033 | Anemia sedang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 72 | 322 | Observation | `Observation.interpretation.coding` | OI000034 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 73 | 332 | MedicationRequest | `MedicationRequest.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
+| 74 | 361 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
+| 75 | 399 | Observation | `Observation.code.coding` | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
+| 76 | 409 | Observation | `Observation.interpretation.coding` | 302866003 | Hypoglycemia | http://snomed.info/sct |
+| 77 | 412 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 78 | 417 | Observation | `Observation.interpretation.coding` | 714628002 | Prediabetes | http://snomed.info/sct |
+| 79 | 422 | Observation | `Observation.interpretation.coding` | 80394007 | Hyperglycemia | http://snomed.info/sct |
+| 80 | 452 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
+| 81 | 453 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
+| 82 | 456 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
+| 83 | 508 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 62 |
+| http://snomed.info/sct | 65 |
 | http://loinc.org | 8 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 5 |
+| http://terminology.kemkes.go.id/sp | 2 |
 | http://sys-ids.kemkes.go.id/kfa | 2 |
-| http://terminology.kemkes.go.id/sp | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **76** |
+| **Total** | **83** |
 
 ## Variabel di luar payload
 

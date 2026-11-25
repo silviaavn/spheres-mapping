@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 15 |
-| Code (`jumlah code` = 1) | 44 |
-| Code unik (code + CodeSystem) | 40 |
+| Code (`jumlah code` = 1) | 45 |
+| Code unik (code + CodeSystem) | 41 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 14 |
 | Variabel BQ (unik) | 30 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 30 |
@@ -22,7 +22,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 3–32 | Patient | – | – | `nama` → `Patient.name.text` (3)<br>`nik` → `Patient.identifier.value` (6)<br>`jk` → `Patient.gender` (8)<br>`tgl_lahir` → `Patient.birthDate` (10)<br>_Alamat Domisili_ → `Patient.address.use` (11, tanpa BQ)<br>`alamat` → `Patient.address.line` (12)<br>`kabkota` → `Patient.address.city` (13)<br>_Nama Provinsi_ → `Patient.address.extension.url` (15, tanpa BQ)<br>`prov` → `Patient.address.extension.extension.valueCode` (17)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (20, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.url` (21, tanpa BQ)<br>`kec` → `Patient.address.extension.extension.valueCode` (23)<br>_Nama Desa_ → `Patient.address.extension.url` (24, tanpa BQ)<br>`desakel` → `Patient.address.extension.extension.valueCode` (26)<br>`rw` → `Patient.address.extension.extension.valueCode` (29)<br>`rt` → `Patient.address.extension.extension.valueCode` (32) |
-| 2 | 118–133 | Encounter | – | – | `tanggal_pemberian` → `Encounter.period.start` (127)<br>`posyandu` → `Encounter.location.reference` (129) 🔎 lookup master data<br>`puskesmas` → `Encounter.serviceProvider.reference` (133) 🔎 lookup master data<br>`detail` → `Encounter.extension.valueString` (153) |
+| 2 | 118–133 | Encounter | – | – | `tanggal_pemberian` → `Encounter.period.start` (127)<br>`posyandu` → `Encounter.location.location.reference` (129) 🔎 lookup master data<br>`puskesmas` → `Encounter.serviceProvider.reference` (133) 🔎 lookup master data<br>`detail` → `Encounter.extension.valueString` (153) |
 | 3 | 134–140 | Condition | 385984007 | Growth and development treatments and procedures | – |
 | 4 | 154–165 | Observation | 29463-7 | Body weight | `berat_badan_kg_awal` → `Observation.valueQuantity.value` (157)<br>`tanggal_pengukuran_awal` → `Observation.effectiveDateTime` (162) |
 | 5 | 166–178 | Observation | 8308-9 | Body height --standing | `tinggi_badan_cm_awal` → `Observation.valueQuantity.value` (170) |
@@ -60,41 +60,42 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 7 | 183 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
 | 8 | 184 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
 | 9 | 185 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 10 | 196 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
-| 11 | 199 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 12 | 200 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
-| 13 | 201 | Observation | `Observation.interpretation.coding` | SP000017 | Outlier | http://terminology.kemkes.go.id/sp |
-| 14 | 202 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 15 | 203 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 16 | 213 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
-| 17 | 214 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
-| 18 | 217 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
-| 19 | 218 | Observation | `Observation.interpretation.coding` | SP000017 | Outlier | http://terminology.kemkes.go.id/sp |
-| 20 | 219 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
-| 21 | 220 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 22 | 221 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
-| 23 | 231 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 24 | 232 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 25 | 235 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
-| 26 | 236 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 27 | 237 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
-| 28 | 238 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
-| 29 | 239 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
-| 30 | 240 | Observation | `Observation.interpretation.coding` | SP000017 | Outlier | http://terminology.kemkes.go.id/sp |
-| 31 | 241 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 32 | 251 | Observation | `Observation.code.coding` | SP000036 | Jenis PMT | http://terminology.kemkes.go.id/sp |
-| 33 | 252 | Observation | `Observation.valueCodeableConcept.coding` | FO000001 | MT Lokal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 34 | 253 | Observation | `Observation.valueCodeableConcept.coding` | FO000002 | MT Pabrikan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 35 | 263 | Observation | `Observation.code.coding` | SP000037 | Pemberian MT ke- | http://terminology.kemkes.go.id/sp |
-| 36 | 274 | Observation | `Observation.code.coding` | SP000038 | Tahun Produksi MT | http://terminology.kemkes.go.id/sp |
-| 37 | 285 | Observation | `Observation.code.coding` | SP000039 | Jumlah Pemberian MT | http://terminology.kemkes.go.id/sp |
-| 38 | 296 | Observation | `Observation.code.coding` | SP000040 | Alasan Pemberian MT | http://terminology.kemkes.go.id/sp |
-| 39 | 297 | Observation | `Observation.valueCodeableConcept.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 40 | 298 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 41 | 308 | Observation | `Observation.code.coding` | SP000041 | Sumber Anggaran PMT | http://terminology.kemkes.go.id/sp |
-| 42 | 309 | Observation | `Observation.valueCodeableConcept.coding` | SP000042 | APBD | http://terminology.kemkes.go.id/sp |
-| 43 | 310 | Observation | `Observation.valueCodeableConcept.coding` | SP000159 | Mitra | http://terminology.kemkes.go.id/sp |
-| 44 | 311 | Observation | `Observation.valueCodeableConcept.coding` | SP000158 | DAK (Dana Alokasi Khusus) | http://terminology.kemkes.go.id/sp |
+| 10 | 186 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 11 | 196 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
+| 12 | 199 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 13 | 200 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 14 | 201 | Observation | `Observation.interpretation.coding` | SP000017 | Outlier | http://terminology.kemkes.go.id/sp |
+| 15 | 202 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 16 | 203 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 17 | 213 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
+| 18 | 214 | Observation | `Observation.code.coding` | 1153590000 | Length for age z score | http://snomed.info/sct |
+| 19 | 217 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 20 | 218 | Observation | `Observation.interpretation.coding` | SP000017 | Outlier | http://terminology.kemkes.go.id/sp |
+| 21 | 219 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 22 | 220 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 23 | 221 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 24 | 231 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 25 | 232 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 26 | 235 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 27 | 236 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 28 | 237 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 29 | 238 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 30 | 239 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 31 | 240 | Observation | `Observation.interpretation.coding` | SP000017 | Outlier | http://terminology.kemkes.go.id/sp |
+| 32 | 241 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 33 | 251 | Observation | `Observation.code.coding` | SP000036 | Jenis PMT | http://terminology.kemkes.go.id/sp |
+| 34 | 252 | Observation | `Observation.valueCodeableConcept.coding` | FO000001 | MT Lokal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 35 | 253 | Observation | `Observation.valueCodeableConcept.coding` | FO000002 | MT Pabrikan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 36 | 263 | Observation | `Observation.code.coding` | SP000037 | Pemberian MT ke- | http://terminology.kemkes.go.id/sp |
+| 37 | 274 | Observation | `Observation.code.coding` | SP000038 | Tahun Produksi MT | http://terminology.kemkes.go.id/sp |
+| 38 | 285 | Observation | `Observation.code.coding` | SP000039 | Jumlah Pemberian MT | http://terminology.kemkes.go.id/sp |
+| 39 | 296 | Observation | `Observation.code.coding` | SP000040 | Alasan Pemberian MT | http://terminology.kemkes.go.id/sp |
+| 40 | 297 | Observation | `Observation.valueCodeableConcept.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 41 | 298 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 42 | 308 | Observation | `Observation.code.coding` | SP000041 | Sumber Anggaran PMT | http://terminology.kemkes.go.id/sp |
+| 43 | 309 | Observation | `Observation.valueCodeableConcept.coding` | SP000042 | APBD | http://terminology.kemkes.go.id/sp |
+| 44 | 310 | Observation | `Observation.valueCodeableConcept.coding` | SP000159 | Mitra | http://terminology.kemkes.go.id/sp |
+| 45 | 311 | Observation | `Observation.valueCodeableConcept.coding` | SP000158 | DAK (Dana Alokasi Khusus) | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -104,7 +105,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/sp | 14 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 7 |
 | http://loinc.org | 3 |
-| **Total** | **44** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **45** |
 
 ## Variabel di luar payload
 

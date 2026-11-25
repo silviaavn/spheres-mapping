@@ -7,7 +7,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,Jenis Kelamin,,,Perempuan,,,Patient,Patient.gender,female,Tidak ada,Tidak ada,,,
 ,,,,,,,Laki-laki,,,Patient,Patient.gender,male,Tidak ada,Tidak ada,,,
 ,,,,Tanggal Lahir,,,,,,Patient,Patient.birthDate,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,Tempat lahir,,,,,,Patient,Patient.extension:birthPlace,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,Tempat lahir,,,,,,Patient,Patient.extension:birthPlace.valueAddress.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,Data Ibu,,,,,,,,,RelatedPerson,RelatedPerson.patient.reference,Reference ke resources Patient,,,,,1
 ,,,,Nama Ibu,,,,,,RelatedPerson,RelatedPerson.name.text,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,RelatedPerson,RelatedPerson.telecom,Tidak Ada,Tidak Ada,phone,,,
@@ -141,8 +141,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,Lokasi sekolah,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,Lokasi sekolah,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,Lokasi sekolah,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,Lokasi sekolah,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1

@@ -31,8 +31,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 8 | 112–114 | MedicationDispense | – | – | – |
 | 9 | 115–115 | MedicationRequest | – | – | – |
 | 10 | 116–129 | MedicationDispense | – | – | _Jumlah OAT yang diberikan_ → `MedicationDispense.quantity.value` (128, tanpa BQ) |
-| 11 | 130–140 | ServiceRequest | – | – | _Tanggal Harus Kembali_ → `ServiceRequest.occurenceDateTime` (140, tanpa BQ) |
-| 12 | 141–153 | ServiceRequest | – | – | _Tanggal (Tanggal Perjanjian untuk periksa dahak ulang)_ → `ServiceRequest.occurenceDateTime` (151, tanpa BQ)<br>_Seminggu sebelum akhir bulan ke-_ → `ServiceRequest.reasonCode.text` (153, tanpa BQ) |
+| 11 | 130–140 | ServiceRequest | – | – | _Tanggal Harus Kembali_ → `ServiceRequest.occurrenceDateTime` (140, tanpa BQ) |
+| 12 | 141–153 | ServiceRequest | – | – | _Tanggal (Tanggal Perjanjian untuk periksa dahak ulang)_ → `ServiceRequest.occurrenceDateTime` (151, tanpa BQ)<br>_Seminggu sebelum akhir bulan ke-_ → `ServiceRequest.reasonCode.text` (153, tanpa BQ) |
 | 13 | 154–159 | ClinicalImpression | – | – | _Catatan Penting (oleh Dokter/Perawat)_ → `ClinicalImpression.note.text` (159, tanpa BQ) |
 
 ### Payload per resource

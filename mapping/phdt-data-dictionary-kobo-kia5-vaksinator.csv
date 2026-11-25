@@ -92,7 +92,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,DocumentReference,DocumentReference.custodian.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,DocumentReference,DocumentReference.content.attachment.title,Buku KIA,,,,,
 ,,,{Link File Original},,,,,,,DocumentReference,DocumentReference.content.attachment.url,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,DocumentReference,DocumentReference.format,SP000732,Buku KIA,http://terminology.kemkes.go.id/sp,,,
+,,,,,,,,,,DocumentReference,DocumentReference.content.format,SP000732,Buku KIA,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,DocumentReference,DocumentReference.context.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,,,,,,Encounter,Encounter.status,finished,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Encounter,Encounter.class,AMB,ambulatory,http://terminology.hl7.org/CodeSystem/v3-ActCode,,,
@@ -103,8 +103,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,True,Tanggal diberikan vaksin,,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1

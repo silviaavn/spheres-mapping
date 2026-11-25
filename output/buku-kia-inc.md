@@ -39,7 +39,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 17 | 142–161 | EpisodeOfCare | ANC | Antenatal Care | _Menutup EOC ANC_ → `EpisodeOfCare.identifier` (142, tanpa BQ)<br>_Membuat EOC PNC_ → `EpisodeOfCare.identifier` (157, tanpa BQ) |
 | 18 | 162–165 | EpisodeOfCare | PNC | Postnatal Care | – |
 | 19 | 182–188 | Condition | Z00.1 | Routine child health examination | – |
-| 20 | 200–208 | EpisodeOfCare | Neonate | Neonate | _Membuat EOC Neo_ → `EpisodeOfCare.Identifer` (200, tanpa BQ) |
+| 20 | 200–208 | EpisodeOfCare | Neonate | Neonate | _Membuat EOC Neo_ → `EpisodeOfCare.identifier` (200, tanpa BQ) |
 | 21 | 209–220 | Observation | 93857-1 | Date and time of obstetric delivery | _Tanggal Melahirkan, Pukul_ → `Observation.valueDateTime` (212, tanpa BQ)<br>_Keterangan Tambahan_ → `Observation.note` (220, tanpa BQ) |
 | 22 | 221–235 | Observation | 76516-4 | Gestational age—​at birth | _Umur Kehamilan_ → `Observation.valueQuantity.value` (224, tanpa BQ) |
 | 23 | 236–249 | Observation | OC000013 | Penolong Persalinan | _Penolong Proses Melahirkan_ → `Observation.valueCodeableConcept.coding` (239, tanpa BQ)<br>_(Nama Penolong Persalinan)_ → `Observation.valueCodeableConcept.text` (242, tanpa BQ) |

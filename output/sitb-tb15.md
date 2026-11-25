@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 13 |
-| Code (`jumlah code` = 1) | 109 |
-| Code unik (code + CodeSystem) | 107 |
+| Code (`jumlah code` = 1) | 113 |
+| Code unik (code + CodeSystem) | 108 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 3 |
 | Variabel BQ (unik) | 6 |
 
@@ -66,99 +66,103 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 14 | 136 | Observation | `Observation.code.coding` | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | http://loinc.org |
 | 15 | 137 | Observation | `Observation.valueCodeableConcept.coding` | 268376005 | Mantoux: positive | http://snomed.info/sct |
 | 16 | 138 | Observation | `Observation.valueCodeableConcept.coding` | 268375009 | Mantoux: negative | http://snomed.info/sct |
-| 17 | 149 | Observation | `Observation.code.coding` | 71773-6 | Mycobacterium tuberculosis stimulated gamma interferon [Interpretation] in Blood Qualitative | http://loinc.org |
-| 18 | 150 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 19 | 151 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 20 | 163 | Observation | `Observation.code.coding` | SP000723 | Pemeriksaan TBST | http://terminology.kemkes.go.id/sp |
-| 21 | 164 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 22 | 165 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 23 | 176 | Observation | `Observation.code.coding` | 24648-8 | XR Chest PA upright | http://loinc.org |
-| 24 | 177 | Observation | `Observation.valueCodeableConcept.coding` | 707307002 | Tuberculosis screening chest X-ray abnormal | http://snomed.info/sct |
-| 25 | 178 | Observation | `Observation.valueCodeableConcept.coding` | 707308007 | Tuberculosis screening chest X-ray normal | http://snomed.info/sct |
-| 26 | 199 | CarePlan | `CarePlan.activity.detail.code.coding` | CP000005 | Paduan Pengobatan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 27 | 200 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000015 | 2(HRZE)/4(HR)3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 28 | 201 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000016 | 2(HRZE)/4(HR) - KDT Dosis Harian | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 29 | 202 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000017 | 2(HRZE)S/(HRZE)/5(HRE) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 30 | 203 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000018 | 2(HRZE)S/(HRZE)/5((HR)3E3) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 31 | 204 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000019 | 2HRZE/4HR | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 32 | 205 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000020 | 2HRZES/HRZE/ 5H3R3E3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 33 | 206 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000021 | 2(HRZ)/4(HR) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 34 | 207 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000022 | 2(HRZ)/4(HR) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 35 | 208 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000023 | Km Cs Eto Lfx Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 36 | 209 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000024 | Km Cs Eto Lfx PAS E Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 37 | 210 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000025 | Km Cs Eto Lfx E Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 38 | 211 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000026 | Km Cs Eto Mfx PAS Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 39 | 212 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000027 | Km Cs Eto Mfx PAS E VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 40 | 213 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000028 | Cm Cs Eto Lfx E Z Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 41 | 214 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000029 | Cm Cs Eto Lfx PAS Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 42 | 215 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000030 | Cm Cs Eto Mfx Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 43 | 216 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000031 | Cm Cs Eto Mfx PAS Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 44 | 217 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000032 | Km Eto Cs PAS Z Bdq | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 45 | 218 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000033 | Lfx Eto Cs PAS Z Bdq | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 46 | 219 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000034 | Eto Cs PAS Z Bdq Lnz Clf | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 47 | 220 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000035 | Km Lfx (Eto/CS/PAS) Z Bdq (Lnz/Clf) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 48 | 221 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000036 | 5 Km Mfx(h) Eto Cfz Z H(h) E/ 5Mfx(h) Cfz Z E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 49 | 222 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000037 | 6 Dlm Lfx Eto Cs ZE B6/ 18 Lfx Eto Cs ZE B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 50 | 223 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000038 | 10 Cm Dlm Lzd Eto Cs Z E B6/14 Lzd Eto Cs Z E B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 51 | 224 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000039 | 6 Dlm Lzd Cfz Eto Cs PAS ZE B6/ 18 lzd Cfz Eto Cs PAS Z E B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 52 | 225 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000040 | Etambutol | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 53 | 226 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000041 | Paduan TPT 6Lfx 250 mg + E 400 mg Dewasa | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 54 | 227 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000042 | 6 Bdq-Lfx-Lzd-Cfz-Cs-VitB6 / 14 Lfx-Cfz-Cs-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 55 | 228 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000043 | 6 Bdq-Lfx-Cfz-Cs-E -VitB6/ 14 Lfx-Cfz-Cs-E-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 56 | 229 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000044 | 6 Bdq-Lfx-Lzd-Cfz-E / 14 Lfx-Cfz-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 57 | 230 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000045 | 6 Bdq-Mfx-Lzd-Cfz-E / 14 Mfx-Cfz-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 58 | 231 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000046 | 6 Bdq-Lzd-Cfz-Cs-E-VitB6 / 14 Lzd-Cfz-Cs-E -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 59 | 232 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000047 | 6 Bdq-Lzd-Cfz-Cs-Eto / 14 Lzd-Cfz-Cs-Eto- Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 60 | 233 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000048 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 61 | 234 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000049 | 20 Lfx-Lzd-Cfz-Cs-Eto -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 62 | 235 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000050 | 20 Mfx-Lzd-Cfz-Cs-E -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 63 | 236 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000051 | 20 Mfx-Lzd-Cfz-Cs-Z -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 64 | 237 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000052 | 6 Lfx-Lzd-Cfz-Cs-Amk-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 65 | 238 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000053 | 6 Lfx-Lzd-Cfz-Cs-S-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 66 | 239 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000054 | 6 Lfx-Lzd-Cfz-Eto-PAS / 14 Lfx-Lzd-Clz-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 67 | 240 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000055 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 68 | 241 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000056 | Pro TB 3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 69 | 242 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000057 | 6 Bdq-Lfx-Lzd-Cfz-H(Hdose)-Z-E/5 Lfx-Cfz-Z-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 70 | 243 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000058 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 71 | 244 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000059 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 72 | 245 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000060 | 6 Bdq-Lfx-Eto-E-Z-Hh-Cfz/ 5 Lfx)-Cfz-Z-E (STR Non Inj) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 73 | 246 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000061 | 6 Bdq-Mfx-Eto-E-Z-Hh-Cfz/ 5-Mfx-Cfz-Z-E (STR Non Inj) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 74 | 247 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000062 | Paduan TPT 6H 100 mg (INH) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 75 | 248 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000063 | Paduan TPT 3HP Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 76 | 249 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000064 | Paduan TPT 6H 300 mg (INH) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 77 | 250 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000065 | Paduan TPT 6Lfx 250mg | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 78 | 251 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000066 | Paduan TPT 3HR KDT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 79 | 252 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000067 | Paduan TPT 3HR KDT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 80 | 253 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000068 | 5 Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 81 | 254 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000069 | 6 Lfx-Lzd-Cfz-Cs-Eto / 12 Lfx-Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 82 | 255 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000070 | 6 Lzd-Cfz-Cs-Eto / 5 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 83 | 256 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000071 | 6 Lzd-Cfz-Cs-Eto / 12 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 84 | 257 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000072 | 5 Lfx-Lzd-Cfz-Cs-Dlm / 5 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 85 | 258 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000073 | 6 Lfx-Lzd-Cfz-Cs-Dlm / 12 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 86 | 259 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000074 | 5 Lzd-Cfz-Cs-Dlm-Eto/5 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 87 | 260 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000075 | 6 Lzd-Cfz-Cs-Dlm-Eto/ 12 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 88 | 261 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000076 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz- Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 89 | 262 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000077 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 12 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 90 | 263 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000078 | 6 Bdq-Lzd-Cfz-Cs-PAS / 5 Cfz-Cs-PAS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 91 | 264 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000079 | 6 Bdq-Lzd-Cfz-Cs- PAS / 12 Cfz-Cs-PAS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 92 | 265 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000080 | Paduan TPT 6Lfx 100 mg + E 100 mg | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 93 | 266 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000081 | Paduan TPT 6Lfx 100mg | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 94 | 267 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000082 | Paduan TPT 3HR 300mg/450mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 95 | 268 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000083 | Paduan TPT 3HR 300mg/600mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 96 | 269 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000084 | RHZE (150/75/400/275) + Levofloxacin | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 97 | 270 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000085 | Bedaquline Pretomanid Linezolid (BPAL) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 98 | 271 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000086 | Bedaquline Pretomanid Linezolid Moxifloxacin (BPALM) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 99 | 272 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000087 | Paduan TPT 1HP 300mg/300mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 100 | 273 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000088 | Paduan TPT 1HP 300mg/150mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 101 | 274 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000089 | 6 BDQ-Lfx-Cfz-Hdt-Z-E-Lzd(2 bulan)/ 5 Lfx-Cfz-Z-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 102 | 275 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000090 | 2HPMZ/2HPM | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 103 | 276 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 371001000 | Patient cured | http://snomed.info/sct |
-| 104 | 277 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 182992009 | Treatment completed | http://snomed.info/sct |
-| 105 | 278 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000094 | Pengobatan Gagal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 106 | 279 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
-| 107 | 280 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
-| 108 | 281 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 109 | 306 | Condition | `Condition.code.coding` | 1237025001 | At increased risk of exposure to Mycobacterium tuberculosis complex | http://snomed.info/sct |
+| 17 | 139 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 18 | 149 | Observation | `Observation.code.coding` | 71773-6 | Mycobacterium tuberculosis stimulated gamma interferon [Interpretation] in Blood Qualitative | http://loinc.org |
+| 19 | 150 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 20 | 151 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 21 | 152 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 22 | 163 | Observation | `Observation.code.coding` | SP000723 | Pemeriksaan TBST | http://terminology.kemkes.go.id/sp |
+| 23 | 164 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 24 | 165 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 25 | 166 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 26 | 176 | Observation | `Observation.code.coding` | 24648-8 | XR Chest PA upright | http://loinc.org |
+| 27 | 177 | Observation | `Observation.valueCodeableConcept.coding` | 707307002 | Tuberculosis screening chest X-ray abnormal | http://snomed.info/sct |
+| 28 | 178 | Observation | `Observation.valueCodeableConcept.coding` | 707308007 | Tuberculosis screening chest X-ray normal | http://snomed.info/sct |
+| 29 | 179 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 30 | 199 | CarePlan | `CarePlan.activity.detail.code.coding` | CP000005 | Paduan Pengobatan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 31 | 200 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000015 | 2(HRZE)/4(HR)3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 32 | 201 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000016 | 2(HRZE)/4(HR) - KDT Dosis Harian | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 33 | 202 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000017 | 2(HRZE)S/(HRZE)/5(HRE) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 34 | 203 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000018 | 2(HRZE)S/(HRZE)/5((HR)3E3) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 35 | 204 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000019 | 2HRZE/4HR | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 36 | 205 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000020 | 2HRZES/HRZE/ 5H3R3E3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 37 | 206 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000021 | 2(HRZ)/4(HR) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 38 | 207 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000022 | 2(HRZ)/4(HR) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 39 | 208 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000023 | Km Cs Eto Lfx Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 40 | 209 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000024 | Km Cs Eto Lfx PAS E Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 41 | 210 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000025 | Km Cs Eto Lfx E Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 42 | 211 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000026 | Km Cs Eto Mfx PAS Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 43 | 212 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000027 | Km Cs Eto Mfx PAS E VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 44 | 213 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000028 | Cm Cs Eto Lfx E Z Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 45 | 214 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000029 | Cm Cs Eto Lfx PAS Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 46 | 215 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000030 | Cm Cs Eto Mfx Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 47 | 216 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000031 | Cm Cs Eto Mfx PAS Z VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 48 | 217 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000032 | Km Eto Cs PAS Z Bdq | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 49 | 218 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000033 | Lfx Eto Cs PAS Z Bdq | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 50 | 219 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000034 | Eto Cs PAS Z Bdq Lnz Clf | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 51 | 220 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000035 | Km Lfx (Eto/CS/PAS) Z Bdq (Lnz/Clf) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 52 | 221 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000036 | 5 Km Mfx(h) Eto Cfz Z H(h) E/ 5Mfx(h) Cfz Z E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 53 | 222 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000037 | 6 Dlm Lfx Eto Cs ZE B6/ 18 Lfx Eto Cs ZE B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 54 | 223 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000038 | 10 Cm Dlm Lzd Eto Cs Z E B6/14 Lzd Eto Cs Z E B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 55 | 224 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000039 | 6 Dlm Lzd Cfz Eto Cs PAS ZE B6/ 18 lzd Cfz Eto Cs PAS Z E B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 56 | 225 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000040 | Etambutol | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 57 | 226 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000041 | Paduan TPT 6Lfx 250 mg + E 400 mg Dewasa | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 58 | 227 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000042 | 6 Bdq-Lfx-Lzd-Cfz-Cs-VitB6 / 14 Lfx-Cfz-Cs-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 59 | 228 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000043 | 6 Bdq-Lfx-Cfz-Cs-E -VitB6/ 14 Lfx-Cfz-Cs-E-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 60 | 229 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000044 | 6 Bdq-Lfx-Lzd-Cfz-E / 14 Lfx-Cfz-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 61 | 230 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000045 | 6 Bdq-Mfx-Lzd-Cfz-E / 14 Mfx-Cfz-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 62 | 231 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000046 | 6 Bdq-Lzd-Cfz-Cs-E-VitB6 / 14 Lzd-Cfz-Cs-E -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 63 | 232 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000047 | 6 Bdq-Lzd-Cfz-Cs-Eto / 14 Lzd-Cfz-Cs-Eto- Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 64 | 233 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000048 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 65 | 234 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000049 | 20 Lfx-Lzd-Cfz-Cs-Eto -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 66 | 235 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000050 | 20 Mfx-Lzd-Cfz-Cs-E -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 67 | 236 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000051 | 20 Mfx-Lzd-Cfz-Cs-Z -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 68 | 237 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000052 | 6 Lfx-Lzd-Cfz-Cs-Amk-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 69 | 238 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000053 | 6 Lfx-Lzd-Cfz-Cs-S-VitB6 / 14 Lfx-Lzd-Clz-Cs-VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 70 | 239 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000054 | 6 Lfx-Lzd-Cfz-Eto-PAS / 14 Lfx-Lzd-Clz-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 71 | 240 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000055 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 72 | 241 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000056 | Pro TB 3 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 73 | 242 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000057 | 6 Bdq-Lfx-Lzd-Cfz-H(Hdose)-Z-E/5 Lfx-Cfz-Z-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 74 | 243 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000058 | 6 Dlm-Lzd-Cfz-Cs-E / 14 Lzd-Clz-Cs-E-Vit B6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 75 | 244 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000059 | 6 Dlm-Lfx-Lzd-Clz-Cs / 14 Lfx-Lzd-Clz-Cs -VitB6 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 76 | 245 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000060 | 6 Bdq-Lfx-Eto-E-Z-Hh-Cfz/ 5 Lfx)-Cfz-Z-E (STR Non Inj) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 77 | 246 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000061 | 6 Bdq-Mfx-Eto-E-Z-Hh-Cfz/ 5-Mfx-Cfz-Z-E (STR Non Inj) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 78 | 247 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000062 | Paduan TPT 6H 100 mg (INH) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 79 | 248 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000063 | Paduan TPT 3HP Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 80 | 249 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000064 | Paduan TPT 6H 300 mg (INH) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 81 | 250 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000065 | Paduan TPT 6Lfx 250mg | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 82 | 251 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000066 | Paduan TPT 3HR KDT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 83 | 252 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000067 | Paduan TPT 3HR KDT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 84 | 253 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000068 | 5 Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 85 | 254 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000069 | 6 Lfx-Lzd-Cfz-Cs-Eto / 12 Lfx-Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 86 | 255 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000070 | 6 Lzd-Cfz-Cs-Eto / 5 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 87 | 256 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000071 | 6 Lzd-Cfz-Cs-Eto / 12 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 88 | 257 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000072 | 5 Lfx-Lzd-Cfz-Cs-Dlm / 5 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 89 | 258 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000073 | 6 Lfx-Lzd-Cfz-Cs-Dlm / 12 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 90 | 259 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000074 | 5 Lzd-Cfz-Cs-Dlm-Eto/5 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 91 | 260 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000075 | 6 Lzd-Cfz-Cs-Dlm-Eto/ 12 Cfz-Cs-Eto | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 92 | 261 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000076 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 5 Lfx-Cfz- Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 93 | 262 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000077 | 6 Bdq-Lfx-Lzd-Cfz-Cs / 12 Lfx-Cfz-Cs | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 94 | 263 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000078 | 6 Bdq-Lzd-Cfz-Cs-PAS / 5 Cfz-Cs-PAS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 95 | 264 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000079 | 6 Bdq-Lzd-Cfz-Cs- PAS / 12 Cfz-Cs-PAS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 96 | 265 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000080 | Paduan TPT 6Lfx 100 mg + E 100 mg | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 97 | 266 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000081 | Paduan TPT 6Lfx 100mg | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 98 | 267 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000082 | Paduan TPT 3HR 300mg/450mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 99 | 268 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000083 | Paduan TPT 3HR 300mg/600mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 100 | 269 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000084 | RHZE (150/75/400/275) + Levofloxacin | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 101 | 270 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000085 | Bedaquline Pretomanid Linezolid (BPAL) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 102 | 271 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000086 | Bedaquline Pretomanid Linezolid Moxifloxacin (BPALM) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 103 | 272 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000087 | Paduan TPT 1HP 300mg/300mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 104 | 273 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000088 | Paduan TPT 1HP 300mg/150mg Lepasan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 105 | 274 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000089 | 6 BDQ-Lfx-Cfz-Hdt-Z-E-Lzd(2 bulan)/ 5 Lfx-Cfz-Z-E | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 106 | 275 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000090 | 2HPMZ/2HPM | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 107 | 276 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 371001000 | Patient cured | http://snomed.info/sct |
+| 108 | 277 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 182992009 | Treatment completed | http://snomed.info/sct |
+| 109 | 278 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000094 | Pengobatan Gagal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 110 | 279 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
+| 111 | 280 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
+| 112 | 281 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 113 | 306 | Condition | `Condition.code.coding` | 1237025001 | At increased risk of exposure to Mycobacterium tuberculosis complex | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -167,10 +171,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 80 |
 | http://snomed.info/sct | 15 |
 | http://loinc.org | 7 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 4 |
 | http://terminology.kemkes.go.id/sp | 3 |
 | https://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
-| **Total** | **109** |
+| **Total** | **113** |
 
 ## Variabel di luar payload
 

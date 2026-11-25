@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 7 |
-| Code (`jumlah code` = 1) | 12 |
-| Code unik (code + CodeSystem) | 12 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 6 |
+| Code (`jumlah code` = 1) | 13 |
+| Code unik (code + CodeSystem) | 13 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 7 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 14 |
 
@@ -46,26 +46,27 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 73 | Condition | `Condition.code.coding` | B54 | Unspecified malaria | http://hl7.org/fhir/sid/icd-10 |
-| 2 | 88 | Procedure | `Procedure.code.coding` | 225368008 | Contact tracing | http://snomed.info/sct |
-| 3 | 97 | Observation | `Observation.code.coding` | 409496000 | Mode of transmission | http://snomed.info/sct |
-| 4 | 98 | Observation | `Observation.valueCodeableConcept.coding` | 418427004 | Vector-borne transmission | http://snomed.info/sct |
-| 5 | 99 | Observation | `Observation.valueCodeableConcept.coding` | 418912005 | Transfusion transmission | http://snomed.info/sct |
-| 6 | 100 | Observation | `Observation.valueCodeableConcept.coding` | 417409004 | Transplacental transmission | http://snomed.info/sct |
-| 7 | 110 | Observation | `Observation.code.coding` | SP000740 | Kategori Wilayah Penularan | http://terminology.kemkes.go.id/sp |
-| 8 | 111 | Observation | `Observation.valueCodeableConcept.coding` | SP000741 | Dalam Wilayah Puskesmas | http://terminology.kemkes.go.id/sp |
-| 9 | 112 | Observation | `Observation.valueCodeableConcept.coding` | SP000742 | Luar Wilayah Puskesmas | http://terminology.kemkes.go.id/sp |
-| 10 | 113 | Observation | `Observation.valueCodeableConcept.coding` | SP000743 | Luar Wilayah Kabupaten/Kota | http://terminology.kemkes.go.id/sp |
-| 11 | 114 | Observation | `Observation.valueCodeableConcept.coding` | SP000744 | Luar Wilayah Provinsi | http://terminology.kemkes.go.id/sp |
-| 12 | 115 | Observation | `Observation.valueCodeableConcept.coding` | SP000745 | Luar Wilayah Negara | http://terminology.kemkes.go.id/sp |
+| 2 | 80 | Location | `Location.type.coding` | SP000739 | Alamat Asal Penularan Malaria | http://terminology.kemkes.go.id/sp |
+| 3 | 88 | Procedure | `Procedure.code.coding` | 225368008 | Contact tracing | http://snomed.info/sct |
+| 4 | 97 | Observation | `Observation.code.coding` | 409496000 | Mode of transmission | http://snomed.info/sct |
+| 5 | 98 | Observation | `Observation.valueCodeableConcept.coding` | 418427004 | Vector-borne transmission | http://snomed.info/sct |
+| 6 | 99 | Observation | `Observation.valueCodeableConcept.coding` | 418912005 | Transfusion transmission | http://snomed.info/sct |
+| 7 | 100 | Observation | `Observation.valueCodeableConcept.coding` | 417409004 | Transplacental transmission | http://snomed.info/sct |
+| 8 | 110 | Observation | `Observation.code.coding` | SP000740 | Kategori Wilayah Penularan | http://terminology.kemkes.go.id/sp |
+| 9 | 111 | Observation | `Observation.valueCodeableConcept.coding` | SP000741 | Dalam Wilayah Puskesmas | http://terminology.kemkes.go.id/sp |
+| 10 | 112 | Observation | `Observation.valueCodeableConcept.coding` | SP000742 | Luar Wilayah Puskesmas | http://terminology.kemkes.go.id/sp |
+| 11 | 113 | Observation | `Observation.valueCodeableConcept.coding` | SP000743 | Luar Wilayah Kabupaten/Kota | http://terminology.kemkes.go.id/sp |
+| 12 | 114 | Observation | `Observation.valueCodeableConcept.coding` | SP000744 | Luar Wilayah Provinsi | http://terminology.kemkes.go.id/sp |
+| 13 | 115 | Observation | `Observation.valueCodeableConcept.coding` | SP000745 | Luar Wilayah Negara | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://terminology.kemkes.go.id/sp | 6 |
+| http://terminology.kemkes.go.id/sp | 7 |
 | http://snomed.info/sct | 5 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
-| **Total** | **12** |
+| **Total** | **13** |
 
 ## Variabel di luar payload
 

@@ -3,11 +3,11 @@ Identitas,,,,ID Field Staff SID,integer,,,,,Practitioner,Practitioner.identifier
 ,,,,Tanggal Persetujuan/Enrollment,dateTime,,,,,Consent,Consent.dateTime,Tidak Ada,Tidak Ada,Tidak Ada,,,1
 ,,,,Jenis Informed Consent,,,IC Keikutsertaan Program MMS,,,Consent,Consent.status,active,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Consent,Consent.scope,patient-privacy,Privacy Consent,http://terminology.hl7.org/CodeSystem/consentscope,,,
-,,,,,,,,,,Consent,Consent.category,SP000829,IC Keikutsertaan Program MMS,http://terminology.kemkes.go.id/sp,,,
+,,,,,,,,,,Consent,Consent.category,SP000829,IC Keikutsertaan Program MMS,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,IC Keikutsertaan Program MMS dan Kalsium,,,,,,,,,,
 ,,,,,,,IC Pengambilan Sampel Darah,,,Consent,Consent.status,active,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Consent,Consent.scope,patient-privacy,Privacy Consent,http://terminology.hl7.org/CodeSystem/consentscope,,,
-,,,,,,,,,,Consent,Consent.category,SP000830,IC Pengambilan Sampel Darah,http://terminology.kemkes.go.id/sp,,,
+,,,,,,,,,,Consent,Consent.category,SP000830,IC Pengambilan Sampel Darah,http://terminology.kemkes.go.id/sp,,1,
 ,,,,,,,,,,Consent,Consent.provision.code,,,,,,
 ,,,,Nama lengkap responden,,,,,,Patient,Patient.name,Tidak Ada,Tidak Ada,Tidak Ada,,,1
 ,,,,ID Ibu Hamil,,,,,,,,,,,,,

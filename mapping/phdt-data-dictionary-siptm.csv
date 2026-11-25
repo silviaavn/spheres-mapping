@@ -94,8 +94,8 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -157,7 +157,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Specimen,Specimen.status,available,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Specimen,Specimen.type,119297000,Blood specimen,http://snomed.info/sct,,1,
 ,,,,,,,,,,Specimen,Specimen.collection.method.coding,82078001,Collection of blood specimen for laboratory,http://snomed.info/sct,,,
-,,,,,,,,,,Specimen,Specimen.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Specimen,Specimen.collection.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Specimen,Specimen.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.request.reference,Reference ke resources ServiceRequest,,,,,

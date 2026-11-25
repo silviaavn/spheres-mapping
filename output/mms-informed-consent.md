@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 8 |
-| Code (`jumlah code` = 1) | 5 |
-| Code unik (code + CodeSystem) | 5 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 0 |
+| Code (`jumlah code` = 1) | 7 |
+| Code unik (code + CodeSystem) | 7 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -44,19 +44,22 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
-| 1 | 71 | Observation | `Observation.code.coding` | 313334002.0 | Blood sample taken | http://snomed.info/sct |
-| 2 | 72 | Observation | `Observation.valueCodeableConcept.coding` | 385652002.0 | Started | http://snomed.info/sct |
-| 3 | 73 | Observation | `Observation.valueCodeableConcept.coding` | 399488007.0 | Midline | http://snomed.info/sct |
-| 4 | 74 | Observation | `Observation.valueCodeableConcept.coding` | 261782000.0 | End | http://snomed.info/sct |
-| 5 | 84 | Observation | `Observation.code.coding` | 3157-5 | Volume of Blood | http://loinc.org |
+| 1 | 6 | Consent | `Consent.category` | SP000829 | IC Keikutsertaan Program MMS | http://terminology.kemkes.go.id/sp |
+| 2 | 10 | Consent | `Consent.category` | SP000830 | IC Pengambilan Sampel Darah | http://terminology.kemkes.go.id/sp |
+| 3 | 71 | Observation | `Observation.code.coding` | 313334002.0 | Blood sample taken | http://snomed.info/sct |
+| 4 | 72 | Observation | `Observation.valueCodeableConcept.coding` | 385652002.0 | Started | http://snomed.info/sct |
+| 5 | 73 | Observation | `Observation.valueCodeableConcept.coding` | 399488007.0 | Midline | http://snomed.info/sct |
+| 6 | 74 | Observation | `Observation.valueCodeableConcept.coding` | 261782000.0 | End | http://snomed.info/sct |
+| 7 | 84 | Observation | `Observation.code.coding` | 3157-5 | Volume of Blood | http://loinc.org |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 4 |
+| http://terminology.kemkes.go.id/sp | 2 |
 | http://loinc.org | 1 |
-| **Total** | **5** |
+| **Total** | **7** |
 
 ## Variabel di luar payload
 

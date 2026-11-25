@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 125 |
-| Code (`jumlah code` = 1) | 268 |
-| Code unik (code + CodeSystem) | 197 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 19 |
+| Code (`jumlah code` = 1) | 285 |
+| Code unik (code + CodeSystem) | 207 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 20 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 187 |
 
@@ -237,221 +237,239 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 64 | 879 | Observation | `Observation.valueCodeableConcept.coding` | OV000215 | Diare dehidrasi ringan/sedang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 65 | 880 | Observation | `Observation.valueCodeableConcept.coding` | OV000186 | Diare tanpa dehidrasi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 66 | 901 | Condition | `Condition.code.coding` | 386661006 | Fever | http://snomed.info/sct |
-| 67 | 911 | Observation | `Observation.code.coding` | OC000099 | Status daerah endemis malaria tempat tinggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 68 | 912 | Observation | `Observation.valueCodeableConcept.coding` | OV000219 | Daerah endemis tinggi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 69 | 913 | Observation | `Observation.valueCodeableConcept.coding` | OV000220 | Daerah endemis rendah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 70 | 914 | Observation | `Observation.valueCodeableConcept.coding` | OV000221 | Daerah non endemis | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 71 | 924 | Observation | `Observation.code.coding` | 81264-4 | Fever duration | http://loinc.org |
-| 72 | 937 | Observation | `Observation.code.coding` | OC000121 | Pemeriksaan tanda dan gejala demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 73 | 940 | Observation | `Observation.component.code.coding` | 405947006 | Nuchal rigidity | http://snomed.info/sct |
-| 74 | 943 | Observation | `Observation.component.code.coding` | OV000222 | Ada penyebab lain dari demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 75 | 950 | ServiceRequest | `ServiceRequest.code` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 76 | 960 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 77 | 969 | Observation | `Observation.code.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 78 | 970 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 79 | 971 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 80 | 981 | DiagnosticReport | `DiagnosticReport.code.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 81 | 995 | ServiceRequest | `ServiceRequest.code` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 82 | 1005 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 83 | 1014 | Observation | `Observation.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 84 | 1015 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 85 | 1016 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 86 | 1026 | DiagnosticReport | `DiagnosticReport.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 87 | 1038 | Observation | `Observation.code.coding` | OC000100 | Klasifikasi demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 88 | 1039 | Observation | `Observation.valueCodeableConcept.coding` | OV000223 | Penyakit berat dengan demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 89 | 1040 | Observation | `Observation.valueCodeableConcept.coding` | 61462000 | Malaria | http://snomed.info/sct |
-| 90 | 1041 | Observation | `Observation.valueCodeableConcept.coding` | OV000224 | Demam mungkin bukan malaria | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 91 | 1042 | Observation | `Observation.valueCodeableConcept.coding` | OV000225 | Penyakit berat dengan demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 92 | 1043 | Observation | `Observation.valueCodeableConcept.coding` | OV000226 | Demam bukan malaria | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 93 | 1064 | Condition | `Condition.code.coding` | 14189004 | Measles | http://snomed.info/sct |
-| 94 | 1071 | Observation | `Observation.code.coding` | OC000101 | Pemeriksaan tanda dan gejala campak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 95 | 1074 | Observation | `Observation.component.code.coding` | 271807003 | Eruption of skin | http://snomed.info/sct |
-| 96 | 1077 | Observation | `Observation.component.code.coding` | SP000253 | Batuk atau Pilek atau Mata Merah | http://terminology.kemkes.go.id/sp |
-| 97 | 1080 | Observation | `Observation.component.code.coding` | 1071000119107 | Oral lesion | http://snomed.info/sct |
-| 98 | 1083 | Observation | `Observation.component.code.coding` | OV000228 | Ada luka di mulut dalam atau luas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 99 | 1086 | Observation | `Observation.component.code.coding` | 246679005 | Discharge from eye | http://snomed.info/sct |
-| 100 | 1089 | Observation | `Observation.component.code.coding` | 64634000 | Corneal opacity | http://snomed.info/sct |
-| 101 | 1094 | Observation | `Observation.code.coding` | OC000102 | Klasifikasi campak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 102 | 1095 | Observation | `Observation.valueCodeableConcept.coding` | OV000229 | Campak dengan komplikasi berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 103 | 1096 | Observation | `Observation.valueCodeableConcept.coding` | SP000252 | Campak Dengan Komplikasi Pada Mata Dan/Atau Mulut | http://terminology.kemkes.go.id/sp |
-| 104 | 1097 | Observation | `Observation.valueCodeableConcept.coding` | 14189004 | Measles | http://snomed.info/sct |
-| 105 | 1118 | Observation | `Observation.code.coding` | OC000104 | Pemeriksaan infeksi dengue | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 106 | 1121 | Observation | `Observation.component.code.coding` | OV000273 | Demam tinggi terus menerus | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 107 | 1124 | Observation | `Observation.component.code.coding` | OV000274 | Badan teraba dingin | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 108 | 1127 | Observation | `Observation.component.code.coding` | SP000251 | Lemas atau Gelisah | http://terminology.kemkes.go.id/sp |
-| 109 | 1130 | Observation | `Observation.component.code.coding` | 422587007 | Nausea | http://snomed.info/sct |
-| 110 | 1133 | Observation | `Observation.component.code.coding` | 422400008 | Vomiting | http://snomed.info/sct |
-| 111 | 1136 | Observation | `Observation.component.code.coding` | OV000275 | Muntah terus menerus | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 112 | 1139 | Observation | `Observation.component.code.coding` | 21522001 | Abdominal pain | http://snomed.info/sct |
-| 113 | 1142 | Observation | `Observation.component.code.coding` | SP000250 | Perdarahan Berupa Mimisan atau Muntah Darah (Coklat Seperti Kopi) atau BAB Berdarah (Berwarna Hitam) | http://terminology.kemkes.go.id/sp |
-| 114 | 1145 | Observation | `Observation.component.code.coding` | 271807003 | Eruption of skin | http://snomed.info/sct |
-| 115 | 1148 | Observation | `Observation.component.code.coding` | 279001004 | Pain finding at anatomical site | http://snomed.info/sct |
-| 116 | 1151 | Observation | `Observation.component.code.coding` | OV000276 | BAK terakhir ≥6 jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 117 | 1154 | Observation | `Observation.component.code.coding` | OV000233 | Kaki/ tangan tampak pucat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 118 | 1157 | Observation | `Observation.component.code.coding` | OV000234 | Waktu pengisian kapiler >2 detik | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 119 | 1160 | Observation | `Observation.component.code.coding` | 771542000 | Cold extremity | http://snomed.info/sct |
-| 120 | 1163 | Observation | `Observation.component.code.coding` | 64661000 | Thready pulse | http://snomed.info/sct |
-| 121 | 1166 | Observation | `Observation.component.code.coding` | 86651002 | Pulse fast | http://snomed.info/sct |
-| 122 | 1169 | Observation | `Observation.component.code.coding` | OV000235 | Nyeri tekan perut kanan atas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 123 | 1172 | Observation | `Observation.component.code.coding` | 17672001 | Accumulation of fluid | http://snomed.info/sct |
-| 124 | 1175 | Observation | `Observation.component.code.coding` | 271813007 | Petechiae | http://snomed.info/sct |
-| 125 | 1178 | Observation | `Observation.component.code.coding` | 249366005 | Bleeding from nose | http://snomed.info/sct |
-| 126 | 1181 | Observation | `Observation.component.code.coding` | 18165001 | Jaundice | http://snomed.info/sct |
-| 127 | 1184 | Observation | `Observation.component.code.coding` | 214264003 | Lethargy | http://snomed.info/sct |
-| 128 | 1187 | Observation | `Observation.component.code.coding` | 17077006 | Abnormal respiratory rate | http://snomed.info/sct |
-| 129 | 1190 | Observation | `Observation.component.code.coding` | OV000236 | Ada pembesaran hepar >2 cm | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 130 | 1195 | Observation | `Observation.code.coding` | 38520-3 | Capillary fragility | http://loinc.org |
-| 131 | 1196 | Observation | `Observation.valueCodeableConcept.coding` | 846603004 | Positive capillary fragility test | http://snomed.info/sct |
-| 132 | 1197 | Observation | `Observation.valueCodeableConcept.coding` | 829990003 | Negative capillary fragility test | http://snomed.info/sct |
-| 133 | 1209 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 134 | 1219 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 135 | 1228 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 136 | 1240 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 137 | 1254 | ServiceRequest | `ServiceRequest.code` | 20570-8 | Hematocrit [Volume Fraction] of Blood | http://loinc.org |
-| 138 | 1264 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 139 | 1273 | Observation | `Observation.code.coding` | 20570-8 | Hematocrit [Volume Fraction] of Blood | http://loinc.org |
-| 140 | 1285 | DiagnosticReport | `DiagnosticReport.code.coding` | 20570-8 | Hematocrit [Volume Fraction] of Blood | http://loinc.org |
-| 141 | 1299 | ServiceRequest | `ServiceRequest.code` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
-| 142 | 1309 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 143 | 1318 | Observation | `Observation.code.coding` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
-| 144 | 1330 | DiagnosticReport | `DiagnosticReport.code.coding` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
-| 145 | 1344 | ServiceRequest | `ServiceRequest.code` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
-| 146 | 1354 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 147 | 1363 | Observation | `Observation.code.coding` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
-| 148 | 1375 | DiagnosticReport | `DiagnosticReport.code.coding` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
-| 149 | 1389 | ServiceRequest | `ServiceRequest.code` | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 150 | 1399 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 151 | 1408 | Observation | `Observation.code.coding` | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 152 | 1409 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 153 | 1410 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 154 | 1420 | DiagnosticReport | `DiagnosticReport.code.coding` | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 155 | 1432 | Observation | `Observation.code.coding` | OC000105 | Klasifikasi infeksi dengue | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 156 | 1433 | Observation | `Observation.valueCodeableConcept.coding` | 20927009 | Dengue hemorrhagic fever | http://snomed.info/sct |
-| 157 | 1434 | Observation | `Observation.valueCodeableConcept.coding` | 722863008 | Dengue with warning signs | http://snomed.info/sct |
-| 158 | 1435 | Observation | `Observation.valueCodeableConcept.coding` | 722862003 | Dengue without warning signs | http://snomed.info/sct |
-| 159 | 1436 | Observation | `Observation.valueCodeableConcept.coding` | OV000129 | Demam mungkin bukan dengue | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 160 | 1457 | Condition | `Condition.code.coding` | 300197009 | Ear problem | http://snomed.info/sct |
-| 161 | 1464 | Observation | `Observation.code.coding` | OC000106 | Pemeriksaan tanda dan gejala masalah telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 162 | 1467 | Observation | `Observation.component.code.coding` | 300197009 | Ear problem | http://snomed.info/sct |
-| 163 | 1470 | Observation | `Observation.component.code.coding` | 301354004 | Pain of ear | http://snomed.info/sct |
-| 164 | 1473 | Observation | `Observation.component.code.coding` | OV000278 | Ada rasa penuh di telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 165 | 1476 | Observation | `Observation.component.code.coding` | 300132001 | Ear discharge | http://snomed.info/sct |
-| 166 | 1479 | Observation | `Observation.component.code.coding` | 162364004 | Ear discharge present | http://snomed.info/sct |
-| 167 | 1482 | Observation | `Observation.component.code.coding` | 300874009 | Swelling of ear | http://snomed.info/sct |
-| 168 | 1487 | Observation | `Observation.code.coding` | OC000107 | Klasifikasi masalah telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 169 | 1488 | Observation | `Observation.valueCodeableConcept.coding` | 52404001 | Mastoiditis | http://snomed.info/sct |
-| 170 | 1489 | Observation | `Observation.valueCodeableConcept.coding` | OV000241 | Infeksi telinga akut | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 171 | 1490 | Observation | `Observation.valueCodeableConcept.coding` | OV000289 | Infeksi telinga kronis | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 172 | 1491 | Observation | `Observation.valueCodeableConcept.coding` | OV000242 | Tidak ada infeksi telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 173 | 1512 | Observation | `Observation.code.coding` | 284521000 | Pitting edema | http://snomed.info/sct |
-| 174 | 1513 | Observation | `Observation.valueCodeableConcept.coding` | 420829009 | 1+ pitting edema | http://snomed.info/sct |
-| 175 | 1514 | Observation | `Observation.valueCodeableConcept.coding` | 421605005 | 2+ pitting edema | http://snomed.info/sct |
-| 176 | 1515 | Observation | `Observation.valueCodeableConcept.coding` | 421346005 | 3+ pitting edema | http://snomed.info/sct |
-| 177 | 1525 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 178 | 1526 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 179 | 1562 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
-| 180 | 1583 | Observation | `Observation.code.coding` | OV000253 | Terlalu lemah untuk menyusu | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 181 | 1595 | Observation | `Observation.code.coding` | 271398006 | Weight steady | http://snomed.info/sct |
-| 182 | 1607 | Observation | `Observation.code.coding` | OC000108 | Klasifikasi status gizi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 183 | 1608 | Observation | `Observation.valueCodeableConcept` | 414915002 | Obese | http://snomed.info/sct |
-| 184 | 1609 | Observation | `Observation.valueCodeableConcept` | 238131007 | Overweight | http://snomed.info/sct |
-| 185 | 1610 | Observation | `Observation.valueCodeableConcept` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 186 | 1611 | Observation | `Observation.valueCodeableConcept` | OV000254 | Gizi buruk dengan komplikasi berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 187 | 1612 | Observation | `Observation.valueCodeableConcept` | OV000255 | Gizi buruk tanpa komplikasi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 188 | 1613 | Observation | `Observation.valueCodeableConcept` | 248325000 | Undernourished | http://snomed.info/sct |
-| 189 | 1614 | Observation | `Observation.valueCodeableConcept` | 248324001 | Well nourished | http://snomed.info/sct |
-| 190 | 1635 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
-| 191 | 1636 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 192 | 1673 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://snomed.info/sct |
-| 193 | 1705 | Observation | `Observation.code.coding` | OC000111 | Klasifikasi anemia | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 194 | 1706 | Observation | `Observation.valueCodeableConcept.coding` | OV000272 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 195 | 1707 | Observation | `Observation.valueCodeableConcept.coding` | 271737000 | Anemia | http://snomed.info/sct |
-| 196 | 1708 | Observation | `Observation.valueCodeableConcept.coding` | 860635002 | No anemia present | http://snomed.info/sct |
-| 197 | 1720 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 198 | 1730 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 199 | 1739 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 200 | 1751 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 201 | 1774 | Observation | `Observation.code.coding` | PC000013 | Riwayat tes HIV ibu | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 202 | 1786 | Observation | `Observation.code.coding` | SP000247 | Hasil Tes HIV Ibu | http://terminology.kemkes.go.id/sp |
-| 203 | 1787 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 204 | 1788 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 205 | 1797 | Procedure | `Procedure.code.coding` | PC000014 | Riwayat tes HIV anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 206 | 1809 | Observation | `Observation.code.coding` | SP000248 | Hasil Tes HIV Anak | http://terminology.kemkes.go.id/sp |
-| 207 | 1810 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 208 | 1811 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 209 | 1821 | Observation | `Observation.code.coding` | OC000084 | Tes virologis HIV anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 210 | 1822 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 211 | 1823 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 212 | 1833 | Observation | `Observation.code.coding` | OC000083 | Tes serologis HIV anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 213 | 1834 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 214 | 1835 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 215 | 1845 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
-| 216 | 1857 | Observation | `Observation.code.coding` | 254387007 | Human immunodeficiency virus infection classification systems | http://snomed.info/sct |
-| 217 | 1858 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus positive | http://snomed.info/sct |
-| 218 | 1859 | Observation | `Observation.valueCodeableConcept.coding` | OV000187 | Terpajan HIV: mungkin infeksi HIV | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 219 | 1860 | Observation | `Observation.valueCodeableConcept.coding` | SP000249 | Mungkin Bukan Infeksi HIV | http://terminology.kemkes.go.id/sp |
-| 220 | 1881 | Immunization | `Immunization.vaccineCode` | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx |
-| 221 | 1882 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 222 | 1895 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
-| 223 | 1896 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 224 | 1897 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 225 | 1898 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 226 | 1911 | Immunization | `Immunization.vaccineCode` | 129 | Japanese Encephalitis, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 227 | 1912 | Immunization | `Immunization.vaccineCode` | VG129 | Japanese encephalitis | http://sys-ids.kemkes.go.id/kfa |
-| 228 | 1924 | Immunization | `Immunization.vaccineCode` | 19 | BCG | http://hl7.org/fhir/sid/cvx |
-| 229 | 1925 | Immunization | `Immunization.vaccineCode` | VG19 | BCG | http://sys-ids.kemkes.go.id/kfa |
-| 230 | 1937 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
-| 231 | 1938 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 232 | 1951 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 233 | 1952 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 234 | 1965 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
-| 235 | 1966 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 236 | 1979 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 237 | 1980 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 238 | 1993 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
-| 239 | 1994 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 240 | 1995 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 241 | 1996 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 242 | 2009 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
-| 243 | 2010 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 244 | 2011 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 245 | 2012 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 246 | 2025 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
-| 247 | 2026 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
-| 248 | 2027 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 249 | 2028 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
-| 250 | 2041 | Immunization | `Immunization.vaccineCode` | 04 | M/R | http://hl7.org/fhir/sid/cvx |
-| 251 | 2042 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
-| 252 | 2055 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
-| 253 | 2056 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 254 | 2069 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
-| 255 | 2070 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 256 | 2083 | Immunization | `Immunization.vaccineCode` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
-| 257 | 2084 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
-| 258 | 2097 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
-| 259 | 2098 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
-| 260 | 2111 | Immunization | `Immunization.vaccineCode` | 04 | M/R | http://hl7.org/fhir/sid/cvx |
-| 261 | 2112 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
-| 262 | 2125 | Observation | `Observation.code.coding` | OC000114 | Membutuhkan suplemen vitamin A | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 263 | 2136 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 264 | 2147 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf |
-| 265 | 2174 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf |
-| 266 | 2200 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf |
-| 267 | 2227 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93018284 | Retinol Palmitate 100.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf |
-| 268 | 2254 | ServiceRequest | `ServiceRequest.code` | 185389009 | Follow-up visit | http://snomed.info/sct |
+| 67 | 907 | Condition | `Condition.evidence.code.coding` | SP000254 | Teraba Panas | http://terminology.kemkes.go.id/sp |
+| 68 | 911 | Observation | `Observation.code.coding` | OC000099 | Status daerah endemis malaria tempat tinggal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 69 | 912 | Observation | `Observation.valueCodeableConcept.coding` | OV000219 | Daerah endemis tinggi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 70 | 913 | Observation | `Observation.valueCodeableConcept.coding` | OV000220 | Daerah endemis rendah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 71 | 914 | Observation | `Observation.valueCodeableConcept.coding` | OV000221 | Daerah non endemis | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 72 | 924 | Observation | `Observation.code.coding` | 81264-4 | Fever duration | http://loinc.org |
+| 73 | 937 | Observation | `Observation.code.coding` | OC000121 | Pemeriksaan tanda dan gejala demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 74 | 940 | Observation | `Observation.component.code.coding` | 405947006 | Nuchal rigidity | http://snomed.info/sct |
+| 75 | 943 | Observation | `Observation.component.code.coding` | OV000222 | Ada penyebab lain dari demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 76 | 950 | ServiceRequest | `ServiceRequest.code` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 77 | 960 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 78 | 969 | Observation | `Observation.code.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 79 | 970 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 80 | 971 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 81 | 981 | DiagnosticReport | `DiagnosticReport.code.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 82 | 995 | ServiceRequest | `ServiceRequest.code` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 83 | 1005 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 84 | 1014 | Observation | `Observation.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 85 | 1015 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 86 | 1016 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 87 | 1026 | DiagnosticReport | `DiagnosticReport.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 88 | 1038 | Observation | `Observation.code.coding` | OC000100 | Klasifikasi demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 89 | 1039 | Observation | `Observation.valueCodeableConcept.coding` | OV000223 | Penyakit berat dengan demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 90 | 1040 | Observation | `Observation.valueCodeableConcept.coding` | 61462000 | Malaria | http://snomed.info/sct |
+| 91 | 1041 | Observation | `Observation.valueCodeableConcept.coding` | OV000224 | Demam mungkin bukan malaria | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 92 | 1042 | Observation | `Observation.valueCodeableConcept.coding` | OV000225 | Penyakit berat dengan demam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 93 | 1043 | Observation | `Observation.valueCodeableConcept.coding` | OV000226 | Demam bukan malaria | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 94 | 1064 | Condition | `Condition.code.coding` | 14189004 | Measles | http://snomed.info/sct |
+| 95 | 1071 | Observation | `Observation.code.coding` | OC000101 | Pemeriksaan tanda dan gejala campak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 96 | 1074 | Observation | `Observation.component.code.coding` | 271807003 | Eruption of skin | http://snomed.info/sct |
+| 97 | 1077 | Observation | `Observation.component.code.coding` | SP000253 | Batuk atau Pilek atau Mata Merah | http://terminology.kemkes.go.id/sp |
+| 98 | 1080 | Observation | `Observation.component.code.coding` | 1071000119107 | Oral lesion | http://snomed.info/sct |
+| 99 | 1083 | Observation | `Observation.component.code.coding` | OV000228 | Ada luka di mulut dalam atau luas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 100 | 1086 | Observation | `Observation.component.code.coding` | 246679005 | Discharge from eye | http://snomed.info/sct |
+| 101 | 1089 | Observation | `Observation.component.code.coding` | 64634000 | Corneal opacity | http://snomed.info/sct |
+| 102 | 1094 | Observation | `Observation.code.coding` | OC000102 | Klasifikasi campak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 103 | 1095 | Observation | `Observation.valueCodeableConcept.coding` | OV000229 | Campak dengan komplikasi berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 104 | 1096 | Observation | `Observation.valueCodeableConcept.coding` | SP000252 | Campak Dengan Komplikasi Pada Mata Dan/Atau Mulut | http://terminology.kemkes.go.id/sp |
+| 105 | 1097 | Observation | `Observation.valueCodeableConcept.coding` | 14189004 | Measles | http://snomed.info/sct |
+| 106 | 1118 | Observation | `Observation.code.coding` | OC000104 | Pemeriksaan infeksi dengue | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 107 | 1121 | Observation | `Observation.component.code.coding` | OV000273 | Demam tinggi terus menerus | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 108 | 1124 | Observation | `Observation.component.code.coding` | OV000274 | Badan teraba dingin | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 109 | 1127 | Observation | `Observation.component.code.coding` | SP000251 | Lemas atau Gelisah | http://terminology.kemkes.go.id/sp |
+| 110 | 1130 | Observation | `Observation.component.code.coding` | 422587007 | Nausea | http://snomed.info/sct |
+| 111 | 1133 | Observation | `Observation.component.code.coding` | 422400008 | Vomiting | http://snomed.info/sct |
+| 112 | 1136 | Observation | `Observation.component.code.coding` | OV000275 | Muntah terus menerus | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 113 | 1139 | Observation | `Observation.component.code.coding` | 21522001 | Abdominal pain | http://snomed.info/sct |
+| 114 | 1142 | Observation | `Observation.component.code.coding` | SP000250 | Perdarahan Berupa Mimisan atau Muntah Darah (Coklat Seperti Kopi) atau BAB Berdarah (Berwarna Hitam) | http://terminology.kemkes.go.id/sp |
+| 115 | 1145 | Observation | `Observation.component.code.coding` | 271807003 | Eruption of skin | http://snomed.info/sct |
+| 116 | 1148 | Observation | `Observation.component.code.coding` | 279001004 | Pain finding at anatomical site | http://snomed.info/sct |
+| 117 | 1151 | Observation | `Observation.component.code.coding` | OV000276 | BAK terakhir ≥6 jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 118 | 1154 | Observation | `Observation.component.code.coding` | OV000233 | Kaki/ tangan tampak pucat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 119 | 1157 | Observation | `Observation.component.code.coding` | OV000234 | Waktu pengisian kapiler >2 detik | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 120 | 1160 | Observation | `Observation.component.code.coding` | 771542000 | Cold extremity | http://snomed.info/sct |
+| 121 | 1163 | Observation | `Observation.component.code.coding` | 64661000 | Thready pulse | http://snomed.info/sct |
+| 122 | 1166 | Observation | `Observation.component.code.coding` | 86651002 | Pulse fast | http://snomed.info/sct |
+| 123 | 1169 | Observation | `Observation.component.code.coding` | OV000235 | Nyeri tekan perut kanan atas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 124 | 1172 | Observation | `Observation.component.code.coding` | 17672001 | Accumulation of fluid | http://snomed.info/sct |
+| 125 | 1175 | Observation | `Observation.component.code.coding` | 271813007 | Petechiae | http://snomed.info/sct |
+| 126 | 1178 | Observation | `Observation.component.code.coding` | 249366005 | Bleeding from nose | http://snomed.info/sct |
+| 127 | 1181 | Observation | `Observation.component.code.coding` | 18165001 | Jaundice | http://snomed.info/sct |
+| 128 | 1184 | Observation | `Observation.component.code.coding` | 214264003 | Lethargy | http://snomed.info/sct |
+| 129 | 1187 | Observation | `Observation.component.code.coding` | 17077006 | Abnormal respiratory rate | http://snomed.info/sct |
+| 130 | 1190 | Observation | `Observation.component.code.coding` | OV000236 | Ada pembesaran hepar >2 cm | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 131 | 1195 | Observation | `Observation.code.coding` | 38520-3 | Capillary fragility | http://loinc.org |
+| 132 | 1196 | Observation | `Observation.valueCodeableConcept.coding` | 846603004 | Positive capillary fragility test | http://snomed.info/sct |
+| 133 | 1197 | Observation | `Observation.valueCodeableConcept.coding` | 829990003 | Negative capillary fragility test | http://snomed.info/sct |
+| 134 | 1209 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 135 | 1219 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 136 | 1228 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 137 | 1240 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 138 | 1254 | ServiceRequest | `ServiceRequest.code` | 20570-8 | Hematocrit [Volume Fraction] of Blood | http://loinc.org |
+| 139 | 1264 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 140 | 1273 | Observation | `Observation.code.coding` | 20570-8 | Hematocrit [Volume Fraction] of Blood | http://loinc.org |
+| 141 | 1285 | DiagnosticReport | `DiagnosticReport.code.coding` | 20570-8 | Hematocrit [Volume Fraction] of Blood | http://loinc.org |
+| 142 | 1299 | ServiceRequest | `ServiceRequest.code` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
+| 143 | 1309 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 144 | 1318 | Observation | `Observation.code.coding` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
+| 145 | 1330 | DiagnosticReport | `DiagnosticReport.code.coding` | 26464-8 | Leukocytes [#/volume] in Blood | http://loinc.org |
+| 146 | 1344 | ServiceRequest | `ServiceRequest.code` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
+| 147 | 1354 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 148 | 1363 | Observation | `Observation.code.coding` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
+| 149 | 1375 | DiagnosticReport | `DiagnosticReport.code.coding` | 26515-7 | Platelets [#/volume] in Blood | http://loinc.org |
+| 150 | 1389 | ServiceRequest | `ServiceRequest.code` | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 151 | 1399 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 152 | 1408 | Observation | `Observation.code.coding` | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 153 | 1409 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 154 | 1410 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 155 | 1420 | DiagnosticReport | `DiagnosticReport.code.coding` | 75377-2 | Dengue virus NS1 Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 156 | 1432 | Observation | `Observation.code.coding` | OC000105 | Klasifikasi infeksi dengue | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 157 | 1433 | Observation | `Observation.valueCodeableConcept.coding` | 20927009 | Dengue hemorrhagic fever | http://snomed.info/sct |
+| 158 | 1434 | Observation | `Observation.valueCodeableConcept.coding` | 722863008 | Dengue with warning signs | http://snomed.info/sct |
+| 159 | 1435 | Observation | `Observation.valueCodeableConcept.coding` | 722862003 | Dengue without warning signs | http://snomed.info/sct |
+| 160 | 1436 | Observation | `Observation.valueCodeableConcept.coding` | OV000129 | Demam mungkin bukan dengue | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 161 | 1457 | Condition | `Condition.code.coding` | 300197009 | Ear problem | http://snomed.info/sct |
+| 162 | 1464 | Observation | `Observation.code.coding` | OC000106 | Pemeriksaan tanda dan gejala masalah telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 163 | 1467 | Observation | `Observation.component.code.coding` | 300197009 | Ear problem | http://snomed.info/sct |
+| 164 | 1470 | Observation | `Observation.component.code.coding` | 301354004 | Pain of ear | http://snomed.info/sct |
+| 165 | 1473 | Observation | `Observation.component.code.coding` | OV000278 | Ada rasa penuh di telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 166 | 1476 | Observation | `Observation.component.code.coding` | 300132001 | Ear discharge | http://snomed.info/sct |
+| 167 | 1479 | Observation | `Observation.component.code.coding` | 162364004 | Ear discharge present | http://snomed.info/sct |
+| 168 | 1482 | Observation | `Observation.component.code.coding` | 300874009 | Swelling of ear | http://snomed.info/sct |
+| 169 | 1487 | Observation | `Observation.code.coding` | OC000107 | Klasifikasi masalah telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 170 | 1488 | Observation | `Observation.valueCodeableConcept.coding` | 52404001 | Mastoiditis | http://snomed.info/sct |
+| 171 | 1489 | Observation | `Observation.valueCodeableConcept.coding` | OV000241 | Infeksi telinga akut | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 172 | 1490 | Observation | `Observation.valueCodeableConcept.coding` | OV000289 | Infeksi telinga kronis | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 173 | 1491 | Observation | `Observation.valueCodeableConcept.coding` | OV000242 | Tidak ada infeksi telinga | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 174 | 1512 | Observation | `Observation.code.coding` | 284521000 | Pitting edema | http://snomed.info/sct |
+| 175 | 1513 | Observation | `Observation.valueCodeableConcept.coding` | 420829009 | 1+ pitting edema | http://snomed.info/sct |
+| 176 | 1514 | Observation | `Observation.valueCodeableConcept.coding` | 421605005 | 2+ pitting edema | http://snomed.info/sct |
+| 177 | 1515 | Observation | `Observation.valueCodeableConcept.coding` | 421346005 | 3+ pitting edema | http://snomed.info/sct |
+| 178 | 1525 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 179 | 1526 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 180 | 1529 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 181 | 1534 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 182 | 1539 | Observation | `Observation.interpretation.coding` | 248324001 | Well nourished | http://snomed.info/sct |
+| 183 | 1544 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 184 | 1549 | Observation | `Observation.interpretation.coding` | 238131007 | Overweight | http://snomed.info/sct |
+| 185 | 1552 | Observation | `Observation.interpretation.coding` | 414915002 | Obese | http://snomed.info/sct |
+| 186 | 1562 | Observation | `Observation.code.coding` | 284473002 | Mid upper arm circumference | http://snomed.info/sct |
+| 187 | 1565 | Observation | `Observation.interpretation.coding` | OI000001 | Gizi Buruk | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 188 | 1570 | Observation | `Observation.interpretation.coding` | 248325000 | Undernourished | http://snomed.info/sct |
+| 189 | 1573 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 190 | 1583 | Observation | `Observation.code.coding` | OV000253 | Terlalu lemah untuk menyusu | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 191 | 1595 | Observation | `Observation.code.coding` | 271398006 | Weight steady | http://snomed.info/sct |
+| 192 | 1607 | Observation | `Observation.code.coding` | OC000108 | Klasifikasi status gizi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 193 | 1608 | Observation | `Observation.valueCodeableConcept` | 414915002 | Obese | http://snomed.info/sct |
+| 194 | 1609 | Observation | `Observation.valueCodeableConcept` | 238131007 | Overweight | http://snomed.info/sct |
+| 195 | 1610 | Observation | `Observation.valueCodeableConcept` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 196 | 1611 | Observation | `Observation.valueCodeableConcept` | OV000254 | Gizi buruk dengan komplikasi berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 197 | 1612 | Observation | `Observation.valueCodeableConcept` | OV000255 | Gizi buruk tanpa komplikasi | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 198 | 1613 | Observation | `Observation.valueCodeableConcept` | 248325000 | Undernourished | http://snomed.info/sct |
+| 199 | 1614 | Observation | `Observation.valueCodeableConcept` | 248324001 | Well nourished | http://snomed.info/sct |
+| 200 | 1635 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z-score | http://snomed.info/sct |
+| 201 | 1636 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 202 | 1639 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 203 | 1644 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 204 | 1649 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 205 | 1652 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 206 | 1673 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://snomed.info/sct |
+| 207 | 1676 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
+| 208 | 1681 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://snomed.info/sct |
+| 209 | 1684 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://snomed.info/sct |
+| 210 | 1705 | Observation | `Observation.code.coding` | OC000111 | Klasifikasi anemia | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 211 | 1706 | Observation | `Observation.valueCodeableConcept.coding` | OV000272 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 212 | 1707 | Observation | `Observation.valueCodeableConcept.coding` | 271737000 | Anemia | http://snomed.info/sct |
+| 213 | 1708 | Observation | `Observation.valueCodeableConcept.coding` | 860635002 | No anemia present | http://snomed.info/sct |
+| 214 | 1720 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 215 | 1730 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 216 | 1739 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 217 | 1751 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 218 | 1774 | Observation | `Observation.code.coding` | PC000013 | Riwayat tes HIV ibu | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 219 | 1786 | Observation | `Observation.code.coding` | SP000247 | Hasil Tes HIV Ibu | http://terminology.kemkes.go.id/sp |
+| 220 | 1787 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 221 | 1788 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 222 | 1797 | Procedure | `Procedure.code.coding` | PC000014 | Riwayat tes HIV anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 223 | 1809 | Observation | `Observation.code.coding` | SP000248 | Hasil Tes HIV Anak | http://terminology.kemkes.go.id/sp |
+| 224 | 1810 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 225 | 1811 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 226 | 1821 | Observation | `Observation.code.coding` | OC000084 | Tes virologis HIV anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 227 | 1822 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 228 | 1823 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 229 | 1833 | Observation | `Observation.code.coding` | OC000083 | Tes serologis HIV anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 230 | 1834 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 231 | 1835 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 232 | 1845 | Observation | `Observation.code.coding` | 63895-7 | Breastfeeding status | http://loinc.org |
+| 233 | 1857 | Observation | `Observation.code.coding` | 254387007 | Human immunodeficiency virus infection classification systems | http://snomed.info/sct |
+| 234 | 1858 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus positive | http://snomed.info/sct |
+| 235 | 1859 | Observation | `Observation.valueCodeableConcept.coding` | OV000187 | Terpajan HIV: mungkin infeksi HIV | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 236 | 1860 | Observation | `Observation.valueCodeableConcept.coding` | SP000249 | Mungkin Bukan Infeksi HIV | http://terminology.kemkes.go.id/sp |
+| 237 | 1881 | Immunization | `Immunization.vaccineCode` | 8 | Hep B, adolescent or pediatric | http://hl7.org/fhir/sid/cvx |
+| 238 | 1882 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 239 | 1895 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 240 | 1896 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 241 | 1897 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 242 | 1898 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 243 | 1911 | Immunization | `Immunization.vaccineCode` | 129 | Japanese Encephalitis, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 244 | 1912 | Immunization | `Immunization.vaccineCode` | VG129 | Japanese encephalitis | http://sys-ids.kemkes.go.id/kfa |
+| 245 | 1924 | Immunization | `Immunization.vaccineCode` | 19 | BCG | http://hl7.org/fhir/sid/cvx |
+| 246 | 1925 | Immunization | `Immunization.vaccineCode` | VG19 | BCG | http://sys-ids.kemkes.go.id/kfa |
+| 247 | 1937 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
+| 248 | 1938 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 249 | 1951 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 250 | 1952 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
+| 251 | 1965 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
+| 252 | 1966 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 253 | 1979 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 254 | 1980 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
+| 255 | 1993 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 256 | 1994 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 257 | 1995 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 258 | 1996 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 259 | 2009 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 260 | 2010 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 261 | 2011 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 262 | 2012 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 263 | 2025 | Immunization | `Immunization.vaccineCode` | 198 | DTP-hepB-Hib Pentavalent Non-US | http://hl7.org/fhir/sid/cvx |
+| 264 | 2026 | Immunization | `Immunization.vaccineCode` | VG107 | DTAP | http://sys-ids.kemkes.go.id/kfa |
+| 265 | 2027 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 266 | 2028 | Immunization | `Immunization.vaccineCode` | VG17 | HIB | http://sys-ids.kemkes.go.id/kfa |
+| 267 | 2041 | Immunization | `Immunization.vaccineCode` | 04 | M/R | http://hl7.org/fhir/sid/cvx |
+| 268 | 2042 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
+| 269 | 2055 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
+| 270 | 2056 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 271 | 2069 | Immunization | `Immunization.vaccineCode` | 02 | OPV | http://hl7.org/fhir/sid/cvx |
+| 272 | 2070 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 273 | 2083 | Immunization | `Immunization.vaccineCode` | 10 | IPV | http://hl7.org/fhir/sid/cvx |
+| 274 | 2084 | Immunization | `Immunization.vaccineCode` | VG89 | POLIO | http://sys-ids.kemkes.go.id/kfa |
+| 275 | 2097 | Immunization | `Immunization.vaccineCode` | 152 | Pneumococcal Conjugate, unspecified formulation | http://hl7.org/fhir/sid/cvx |
+| 276 | 2098 | Immunization | `Immunization.vaccineCode` | VG152 | PneumoPCV | http://sys-ids.kemkes.go.id/kfa |
+| 277 | 2111 | Immunization | `Immunization.vaccineCode` | 04 | M/R | http://hl7.org/fhir/sid/cvx |
+| 278 | 2112 | Immunization | `Immunization.vaccineCode` | VG03 | MMR | http://sys-ids.kemkes.go.id/kfa |
+| 279 | 2125 | Observation | `Observation.code.coding` | OC000114 | Membutuhkan suplemen vitamin A | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 280 | 2136 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 281 | 2147 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf |
+| 282 | 2174 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf |
+| 283 | 2200 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000354 | Retinol Palmitate 100.000 IU Kapsul Lunak | http://sys-ids.kemkes.go.id/kf |
+| 284 | 2227 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93018284 | Retinol Palmitate 100.000 IU Kapsul Lunak (Umum) | http://sys-ids.kemkes.go.id/kf |
+| 285 | 2254 | ServiceRequest | `ServiceRequest.code` | 185389009 | Follow-up visit | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 89 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 70 |
+| http://snomed.info/sct | 100 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 74 |
 | http://loinc.org | 44 |
 | http://sys-ids.kemkes.go.id/kfa | 25 |
-| http://terminology.kemkes.go.id/sp | 19 |
+| http://terminology.kemkes.go.id/sp | 20 |
 | http://hl7.org/fhir/sid/cvx | 17 |
 | http://sys-ids.kemkes.go.id/kf | 4 |
-| **Total** | **268** |
+| http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
+| **Total** | **285** |
 
 ## Variabel di luar payload
 

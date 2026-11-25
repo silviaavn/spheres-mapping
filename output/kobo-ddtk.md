@@ -20,7 +20,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 2–10 | Patient | – | – | _Nama Siswa_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK Siswa_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (7, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (9, tanpa BQ)<br>_Tempat lahir_ → `Patient.extension:birthPlace` (10, tanpa BQ) |
+| 1 | 2–10 | Patient | – | – | _Nama Siswa_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK Siswa_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (7, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (9, tanpa BQ)<br>_Tempat lahir_ → `Patient.extension:birthPlace.valueAddress.text` (10, tanpa BQ) |
 | 2 | 11–21 | RelatedPerson | – | – | _Nama Ibu_ → `RelatedPerson.name.text` (12, tanpa BQ)<br>_No Hp Ibu_ → `RelatedPerson.telecom.value` (14, tanpa BQ)<br>_NIK Ibu_ → `RelatedPerson.identifier.value` (20, tanpa BQ) |
 | 3 | 22–30 | RelatedPerson | – | – | _Nama Ayah_ → `RelatedPerson.name.text` (22, tanpa BQ)<br>_No Hp Ayah_ → `RelatedPerson.telecom.value` (24, tanpa BQ)<br>_NIK Ayah_ → `RelatedPerson.identifier.value` (30, tanpa BQ) |
 | 4 | 73–80 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.active` (73, tanpa BQ) |

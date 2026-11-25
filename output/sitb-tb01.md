@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 37 |
-| Code (`jumlah code` = 1) | 94 |
-| Code unik (code + CodeSystem) | 85 |
+| Code (`jumlah code` = 1) | 101 |
+| Code unik (code + CodeSystem) | 89 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 15 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 82 |
@@ -24,7 +24,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 2–12 | Patient | – | – | _Nama Pasien TBC_ → `Patient.name.text` (2, tanpa BQ)<br>_No. Telp/HP Pasien_ → `Patient.telecom` (3, tanpa BQ)<br>_Nomor Induk / NIK_ → `Patient.identifier.value` (8, tanpa BQ)<br>_Alamat Lengkap_ → `Patient.address.line` (9, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (10, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (12, tanpa BQ) |
 | 2 | 13–36 | EpisodeOfCare | TB-SO | Tuberkulosis Sensitif Obat | – |
 | 3 | 37–44 | EpisodeOfCare | TB-RO | Tuberkulosis Resisten Obat | – |
-| 4 | 45–75 | Encounter | – | – | _Dirujuk oleh_ → `Encounter.hospitalization.admitSource.coding[0]` (68, tanpa BQ)<br>_Pindah pengobatan_ → `Encounter.hospitalization.dischargeDisposition.coding` (80, tanpa BQ)<br>_Nama Faskes Tujuan_ → `Encounter.destination.display` (82, tanpa BQ)<br>_Kab/Kota Tujuan_ → `Encounter.destination.display` (83, tanpa BQ)<br>_Provinsi Tujuan_ → `Encounter.destination.display` (84, tanpa BQ) |
+| 4 | 45–75 | Encounter | – | – | _Dirujuk oleh_ → `Encounter.hospitalization.admitSource.coding[0]` (68, tanpa BQ)<br>_Pindah pengobatan_ → `Encounter.hospitalization.dischargeDisposition.coding` (80, tanpa BQ)<br>_Nama Faskes Tujuan_ → `Encounter.hospitalization.destination.display` (82, tanpa BQ)<br>_Kab/Kota Tujuan_ → `Encounter.hospitalization.destination.display` (83, tanpa BQ)<br>_Provinsi Tujuan_ → `Encounter.hospitalization.destination.display` (84, tanpa BQ) |
 | 5 | 85–93 | Condition | A16.2 | Tuberculosis of lung, without mention of bacteriological or histological confirmation | _Klasifikasi berdasarkan lokasi anatomi_ → `Condition.clinicalStatus.coding` (85, tanpa BQ)<br>_Lokasi (jika Ekstra Paru)_ → `Condition.note` (93, tanpa BQ) |
 | 6 | 94–108 | Observation | 424144002 | Current chronological age | _Umur (tahun)_ → `Observation.valueQuantity.value` (97, tanpa BQ)<br>_Umur (bulan)_ → `Observation.component.code.coding` (99, tanpa BQ) |
 | 7 | 109–120 | Observation | 82810-3 | Pregnancy status | _Status kehamilan_ → `Observation.valueCodeableConcept.coding` (112, tanpa BQ) |
@@ -95,93 +95,101 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 14 | 112 | Observation | `Observation.valueCodeableConcept.coding` | LA15173-0 | Pregnant | http://loinc.org |
 | 15 | 113 | Observation | `Observation.valueCodeableConcept.coding` | LA26683-5 | Not Pregnant | http://loinc.org |
 | 16 | 123 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 17 | 136 | Observation | `Observation.code.coding` | 8302-2 | Body height | http://loinc.org |
-| 18 | 149 | Observation | `Observation.code.coding` | 827034002 | Scar of skin following Bacillus Calmette-Guerin immunization | http://snomed.info/sct |
-| 19 | 150 | Observation | `Observation.valueCodeableConcept.coding` | 2667000 | Absent | http://snomed.info/sct |
-| 20 | 151 | Observation | `Observation.valueCodeableConcept.coding` | 52101004 | Present | http://snomed.info/sct |
-| 21 | 162 | Observation | `Observation.code.coding` | OC000191 | Jumlah Skoring TBC Anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 22 | 188 | Observation | `Observation.code.coding` | 106229004 | Qualifier for type of diagnosis | http://snomed.info/sct |
-| 23 | 189 | Observation | `Observation.valueCodeableConcept.coding` | tb-bac | Terkonfirmasi bakteriologis | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition |
-| 24 | 190 | Observation | `Observation.valueCodeableConcept.coding` | tb-clin | Terdiagnosis klinis | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition |
-| 25 | 209 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | new | Kasus Baru | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
-| 26 | 210 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | relapse | Kasus Kambuh | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
-| 27 | 211 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | loss-to-follow-up | Kasus Setelah Loss To Follow Up | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
-| 28 | 212 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | failure | Kasus Pengobatan Setelah Gagal | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
-| 29 | 213 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | not-eval | Pernah diobati tidak diketahui hasilnya | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
-| 30 | 214 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | other | Kasus lain-lain | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
-| 31 | 220 | Observation | `Observation.code.coding` | 365866002 | Finding of human immunodeficiency virus status | http://snomed.info/sct |
-| 32 | 221 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
-| 33 | 222 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
-| 34 | 232 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 35 | 233 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 36 | 234 | Observation | `Observation.code.coding` | 89372-7 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | http://loinc.org |
-| 37 | 235 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
-| 38 | 236 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
-| 39 | 237 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
-| 40 | 238 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
-| 41 | 251 | Observation | `Observation.code.coding` | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | http://loinc.org |
-| 42 | 264 | Observation | `Observation.code.coding` | 24648-8 | XR Chest PA upright | http://loinc.org |
-| 43 | 275 | Observation | `Observation.code.coding` | 48635004 | Fine needle biopsy | http://snomed.info/sct |
-| 44 | 286 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
-| 45 | 288 | Observation | `Observation.component.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 46 | 289 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 47 | 290 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 48 | 297 | Observation | `Observation.code.coding` | 33248-6 | Diabetes status | http://loinc.org |
-| 49 | 298 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
-| 50 | 299 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
-| 51 | 309 | Observation | `Observation.code.coding` | SP000047 | Hasil Tes Diabetes Melitus | http://terminology.kemkes.go.id/sp |
-| 52 | 310 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
-| 53 | 311 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
-| 54 | 321 | Observation | `Observation.code.coding` | 1284985006 | Diabetes mellitus management program | http://snomed.info/sct |
-| 55 | 322 | Observation | `Observation.valueCodeableConcept.coding` | SP000372 | Obat Hipoglikemik Oral | http://terminology.kemkes.go.id/sp |
-| 56 | 323 | Observation | `Observation.valueCodeableConcept.coding` | 308755006 | Subcutaneous injection of insulin | http://snomed.info/sct |
-| 57 | 344 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
-| 58 | 356 | Observation | `Observation.code.coding` | SP000790 | Hasil Pemeriksaan Kontak TBC | http://terminology.kemkes.go.id/sp |
-| 59 | 357 | Observation | `Observation.valueCodeableConcept.coding` | SP000208 | Tidak TBC | http://terminology.kemkes.go.id/sp |
-| 60 | 358 | Observation | `Observation.valueCodeableConcept.coding` | 11999007 | Inactive tuberculosis | http://snomed.info/sct |
-| 61 | 359 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
-| 62 | 377 | CarePlan | `CarePlan.activity.detail.code.coding` | CP000004 | Bentuk OAT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 63 | 378 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000091 | KDT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 64 | 379 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000092 | Kombipak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 65 | 380 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000093 | Obat Lepas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 66 | 382 | CarePlan | `CarePlan.activity.detail.code.coding` | CP000006 | Paduan OAT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 67 | 383 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000007 | OAT Kategori 1 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 68 | 384 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000008 | OAT Kategori 2 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 69 | 385 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000009 | OAT Kategori Anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 70 | 387 | CarePlan | `CarePlan.activity.detail.code.coding` | SP000795 | Sumber Obat | http://terminology.kemkes.go.id/sp |
-| 71 | 388 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | SP000791 | Program TBC | http://terminology.kemkes.go.id/sp |
-| 72 | 389 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | SP000792 | Asuransi | http://terminology.kemkes.go.id/sp |
-| 73 | 391 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | SP000793 | Bayar Sendiri | http://terminology.kemkes.go.id/sp |
-| 74 | 392 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
-| 75 | 394 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 371001000 | Patient cured | http://snomed.info/sct |
-| 76 | 395 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 182992009 | Treatment completed | http://snomed.info/sct |
-| 77 | 396 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
-| 78 | 397 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000094 | Pengobatan Gagal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 79 | 398 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
-| 80 | 399 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 81 | 440 | Observation | `Observation.code.coding` | SP000796 | Jumlah OAT | http://terminology.kemkes.go.id/sp |
-| 82 | 453 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 83 | 454 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 84 | 501 | Observation | `Observation.code.coding` | SP000796 | Jumlah OAT | http://terminology.kemkes.go.id/sp |
-| 85 | 514 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 86 | 515 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 87 | 526 | Procedure | `Procedure.code.coding` | TK000016 | Edukasi Tes HIV | http://terminology.kemkes.go.id |
-| 88 | 538 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 89 | 539 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 90 | 540 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 91 | 549 | Observation | `Observation.code.coding` | SP000123 | Integrasi Program | http://terminology.kemkes.go.id/sp |
-| 92 | 550 | Observation | `Observation.component.code.coding` | SP000371 | Cotrimoxazole | http://terminology.kemkes.go.id/sp |
-| 93 | 553 | Observation | `Observation.component.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
-| 94 | 564 | Observation | `Observation.code.coding` | SP000797 | Pindah Register Pasien TB RO | http://terminology.kemkes.go.id/sp |
+| 17 | 126 | Observation | `Observation.dataAbsentReason` | not-a-number | Not a Number (NaN) | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 18 | 136 | Observation | `Observation.code.coding` | 8302-2 | Body height | http://loinc.org |
+| 19 | 139 | Observation | `Observation.dataAbsentReason` | not-a-number | Not a Number (NaN) | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 20 | 149 | Observation | `Observation.code.coding` | 827034002 | Scar of skin following Bacillus Calmette-Guerin immunization | http://snomed.info/sct |
+| 21 | 150 | Observation | `Observation.valueCodeableConcept.coding` | 2667000 | Absent | http://snomed.info/sct |
+| 22 | 151 | Observation | `Observation.valueCodeableConcept.coding` | 52101004 | Present | http://snomed.info/sct |
+| 23 | 152 | Observation | `Observation.dataAbsentReason` | not-a-number | Not a Number (NaN) | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 24 | 162 | Observation | `Observation.code.coding` | OC000191 | Jumlah Skoring TBC Anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 25 | 164 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 26 | 188 | Observation | `Observation.code.coding` | 106229004 | Qualifier for type of diagnosis | http://snomed.info/sct |
+| 27 | 189 | Observation | `Observation.valueCodeableConcept.coding` | tb-bac | Terkonfirmasi bakteriologis | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition |
+| 28 | 190 | Observation | `Observation.valueCodeableConcept.coding` | tb-clin | Terdiagnosis klinis | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition |
+| 29 | 209 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | new | Kasus Baru | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
+| 30 | 210 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | relapse | Kasus Kambuh | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
+| 31 | 211 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | loss-to-follow-up | Kasus Setelah Loss To Follow Up | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
+| 32 | 212 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | failure | Kasus Pengobatan Setelah Gagal | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
+| 33 | 213 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | not-eval | Pernah diobati tidak diketahui hasilnya | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
+| 34 | 214 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | other | Kasus lain-lain | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment |
+| 35 | 220 | Observation | `Observation.code.coding` | 365866002 | Finding of human immunodeficiency virus status | http://snomed.info/sct |
+| 36 | 221 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
+| 37 | 222 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
+| 38 | 223 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 39 | 232 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 40 | 233 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 41 | 234 | Observation | `Observation.code.coding` | 89372-7 | MTB complex DNA and rpoB RIF resistance mutation panel [Presence] | http://loinc.org |
+| 42 | 235 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 43 | 236 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
+| 44 | 237 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
+| 45 | 238 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
+| 46 | 241 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 47 | 251 | Observation | `Observation.code.coding` | 23539-0 | Tuberculosis reaction wheal [Diameter] --3 days post dose mammalian tuberculin intradermal | http://loinc.org |
+| 48 | 264 | Observation | `Observation.code.coding` | 24648-8 | XR Chest PA upright | http://loinc.org |
+| 49 | 275 | Observation | `Observation.code.coding` | 48635004 | Fine needle biopsy | http://snomed.info/sct |
+| 50 | 286 | Observation | `Observation.code.coding` | X099388 | Biakan TB | http://terminology.kemkes.go.id/CodeSystem/examination |
+| 51 | 288 | Observation | `Observation.component.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
+| 52 | 289 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 53 | 290 | Observation | `Observation.component.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 54 | 297 | Observation | `Observation.code.coding` | 33248-6 | Diabetes status | http://loinc.org |
+| 55 | 298 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 56 | 299 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 57 | 309 | Observation | `Observation.code.coding` | SP000047 | Hasil Tes Diabetes Melitus | http://terminology.kemkes.go.id/sp |
+| 58 | 310 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
+| 59 | 311 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 60 | 321 | Observation | `Observation.code.coding` | 1284985006 | Diabetes mellitus management program | http://snomed.info/sct |
+| 61 | 322 | Observation | `Observation.valueCodeableConcept.coding` | SP000372 | Obat Hipoglikemik Oral | http://terminology.kemkes.go.id/sp |
+| 62 | 323 | Observation | `Observation.valueCodeableConcept.coding` | 308755006 | Subcutaneous injection of insulin | http://snomed.info/sct |
+| 63 | 344 | Observation | `Observation.code.coding` | 424144002 | Current chronological age | http://snomed.info/sct |
+| 64 | 356 | Observation | `Observation.code.coding` | SP000790 | Hasil Pemeriksaan Kontak TBC | http://terminology.kemkes.go.id/sp |
+| 65 | 357 | Observation | `Observation.valueCodeableConcept.coding` | SP000208 | Tidak TBC | http://terminology.kemkes.go.id/sp |
+| 66 | 358 | Observation | `Observation.valueCodeableConcept.coding` | 11999007 | Inactive tuberculosis | http://snomed.info/sct |
+| 67 | 359 | Observation | `Observation.valueCodeableConcept.coding` | 56717001 | Tuberculosis | http://snomed.info/sct |
+| 68 | 377 | CarePlan | `CarePlan.activity.detail.code.coding` | CP000004 | Bentuk OAT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 69 | 378 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000091 | KDT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 70 | 379 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000092 | Kombipak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 71 | 380 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000093 | Obat Lepas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 72 | 382 | CarePlan | `CarePlan.activity.detail.code.coding` | CP000006 | Paduan OAT | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 73 | 383 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000007 | OAT Kategori 1 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 74 | 384 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000008 | OAT Kategori 2 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 75 | 385 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | CP000009 | OAT Kategori Anak | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 76 | 387 | CarePlan | `CarePlan.activity.detail.code.coding` | SP000795 | Sumber Obat | http://terminology.kemkes.go.id/sp |
+| 77 | 388 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | SP000791 | Program TBC | http://terminology.kemkes.go.id/sp |
+| 78 | 389 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | SP000792 | Asuransi | http://terminology.kemkes.go.id/sp |
+| 79 | 391 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | SP000793 | Bayar Sendiri | http://terminology.kemkes.go.id/sp |
+| 80 | 392 | CarePlan | `CarePlan.activity.detail.productCodeableConcept.coding` | 74964007 | Other | http://snomed.info/sct |
+| 81 | 394 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 371001000 | Patient cured | http://snomed.info/sct |
+| 82 | 395 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 182992009 | Treatment completed | http://snomed.info/sct |
+| 83 | 396 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
+| 84 | 397 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000094 | Pengobatan Gagal | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 85 | 398 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | 399307001 | Lost to follow-up | http://snomed.info/sct |
+| 86 | 399 | CarePlan | `CarePlan.activity.outcomeCodeableConcept.coding` | CP000096 | Tidak dievaluasi/pindah | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 87 | 440 | Observation | `Observation.code.coding` | SP000796 | Jumlah OAT | http://terminology.kemkes.go.id/sp |
+| 88 | 453 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 89 | 454 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 90 | 501 | Observation | `Observation.code.coding` | SP000796 | Jumlah OAT | http://terminology.kemkes.go.id/sp |
+| 91 | 514 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 92 | 515 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 93 | 526 | Procedure | `Procedure.code.coding` | TK000016 | Edukasi Tes HIV | http://terminology.kemkes.go.id |
+| 94 | 538 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 95 | 539 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 96 | 540 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 97 | 541 | Observation | `Observation.dataAbsentReason` | LA9663-1 | Inconclusive | http://loinc.org |
+| 98 | 549 | Observation | `Observation.code.coding` | SP000123 | Integrasi Program | http://terminology.kemkes.go.id/sp |
+| 99 | 550 | Observation | `Observation.component.code.coding` | SP000371 | Cotrimoxazole | http://terminology.kemkes.go.id/sp |
+| 100 | 553 | Observation | `Observation.component.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
+| 101 | 564 | Observation | `Observation.code.coding` | SP000797 | Pindah Register Pasien TB RO | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 25 |
-| http://loinc.org | 21 |
+| http://loinc.org | 22 |
 | http://terminology.kemkes.go.id/sp | 15 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | http://terminology.hl7.org/CodeSystem/admit-source | 2 |
@@ -190,7 +198,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/tb-case-definition | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/examination | 2 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 2 |
-| **Total** | **94** |
+| **Total** | **101** |
 
 ## Variabel di luar payload
 

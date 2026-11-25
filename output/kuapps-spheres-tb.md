@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 5 |
-| Code (`jumlah code` = 1) | 47 |
+| Code (`jumlah code` = 1) | 49 |
 | Code unik (code + CodeSystem) | 21 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 19 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 21 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -41,61 +41,63 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Path | Code | Display | CodeSystem |
 |---|---|---|---|---|---|---|
 | 1 | 32 | Condition | `Condition.code.coding` | 390906007.0 | Follow-up encounter | http://snomed.info/sct |
-| 2 | 120 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001109 | Pribadi | http://terminology.kemkes.go.id/sp |
-| 3 | 121 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
-| 4 | 122 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
-| 5 | 123 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
-| 6 | 124 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
-| 7 | 125 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
-| 8 | 126 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | http://terminology.kemkes.go.id/sp |
-| 9 | 127 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
-| 10 | 128 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
-| 11 | 134 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001111 | Nomor HP tervalidasi dapat terhubung | http://terminology.kemkes.go.id/sp |
-| 12 | 135 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | http://terminology.kemkes.go.id/sp |
-| 13 | 136 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001113 | Tidak ada nomor HP yang terhubung | http://terminology.kemkes.go.id/sp |
-| 14 | 142 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001109 | Pribadi | http://terminology.kemkes.go.id/sp |
-| 15 | 143 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
-| 16 | 144 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
-| 17 | 145 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
-| 18 | 146 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
-| 19 | 147 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
-| 20 | 148 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | http://terminology.kemkes.go.id/sp |
-| 21 | 149 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
-| 22 | 150 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
-| 23 | 156 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001111 | Nomor HP tervalidasi dapat terhubung | http://terminology.kemkes.go.id/sp |
-| 24 | 157 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | http://terminology.kemkes.go.id/sp |
-| 25 | 158 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001113 | Tidak ada nomor HP yang terhubung | http://terminology.kemkes.go.id/sp |
-| 26 | 176 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001114 | Tahap awal | http://terminology.kemkes.go.id/sp |
-| 27 | 177 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001115 | Tahap lanjutan | http://terminology.kemkes.go.id/sp |
-| 28 | 180 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001116 | Pasien dewasa mengambil obat sendiri | http://terminology.kemkes.go.id/sp |
-| 29 | 181 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001117 | Pasien dewasa mengambil obat diwakilkan | http://terminology.kemkes.go.id/sp |
-| 30 | 182 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001118 | Pasien anak diwakilkan | http://terminology.kemkes.go.id/sp |
-| 31 | 185 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
-| 32 | 186 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
-| 33 | 187 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
-| 34 | 188 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
-| 35 | 189 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
-| 36 | 190 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
-| 37 | 191 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
-| 38 | 204 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
-| 39 | 205 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
-| 40 | 206 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
-| 41 | 207 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
-| 42 | 208 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
-| 43 | 209 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
-| 44 | 210 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
-| 45 | 233 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA13834-9 | 1-2 times per week | http://loinc.org |
-| 46 | 234 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA13853-9 | 3-4 times per week | http://loinc.org |
-| 47 | 235 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA13860-4 | 5-6 times per week | http://loinc.org |
+| 2 | 64 | Patient | `Patient.contact.relationship.coding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
+| 3 | 95 | Patient | `Patient.contact.relationship.coding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
+| 4 | 120 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001109 | Pribadi | http://terminology.kemkes.go.id/sp |
+| 5 | 121 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
+| 6 | 122 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
+| 7 | 123 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
+| 8 | 124 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
+| 9 | 125 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
+| 10 | 126 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | http://terminology.kemkes.go.id/sp |
+| 11 | 127 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
+| 12 | 128 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
+| 13 | 134 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001111 | Nomor HP tervalidasi dapat terhubung | http://terminology.kemkes.go.id/sp |
+| 14 | 135 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | http://terminology.kemkes.go.id/sp |
+| 15 | 136 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001113 | Tidak ada nomor HP yang terhubung | http://terminology.kemkes.go.id/sp |
+| 16 | 142 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001109 | Pribadi | http://terminology.kemkes.go.id/sp |
+| 17 | 143 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
+| 18 | 144 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
+| 19 | 145 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
+| 20 | 146 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
+| 21 | 147 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
+| 22 | 148 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001110 | Tidak ada nomor HP pribadi/suami/istri/orang tua/anak/kader/tetangga | http://terminology.kemkes.go.id/sp |
+| 23 | 149 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
+| 24 | 150 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
+| 25 | 156 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001111 | Nomor HP tervalidasi dapat terhubung | http://terminology.kemkes.go.id/sp |
+| 26 | 157 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001112 | Nomor HP tervalidasi tidak dapat terhubung | http://terminology.kemkes.go.id/sp |
+| 27 | 158 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001113 | Tidak ada nomor HP yang terhubung | http://terminology.kemkes.go.id/sp |
+| 28 | 176 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001114 | Tahap awal | http://terminology.kemkes.go.id/sp |
+| 29 | 177 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001115 | Tahap lanjutan | http://terminology.kemkes.go.id/sp |
+| 30 | 180 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001116 | Pasien dewasa mengambil obat sendiri | http://terminology.kemkes.go.id/sp |
+| 31 | 181 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001117 | Pasien dewasa mengambil obat diwakilkan | http://terminology.kemkes.go.id/sp |
+| 32 | 182 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001118 | Pasien anak diwakilkan | http://terminology.kemkes.go.id/sp |
+| 33 | 185 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
+| 34 | 186 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
+| 35 | 187 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
+| 36 | 188 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
+| 37 | 189 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
+| 38 | 190 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
+| 39 | 191 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
+| 40 | 204 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 127848009.0 | Spouse | http://snomed.info/sct |
+| 41 | 205 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 40683002.0 | Parent | http://snomed.info/sct |
+| 42 | 206 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 67822003.0 | Child | http://snomed.info/sct |
+| 43 | 207 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 86372007.0 | Grandchild | http://snomed.info/sct |
+| 44 | 208 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | SP001108 | Kader | http://terminology.kemkes.go.id/sp |
+| 45 | 209 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 427568008.0 | Neighbor | http://snomed.info/sct |
+| 46 | 210 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | 74964007.0 | Other | http://snomed.info/sct |
+| 47 | 233 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA13834-9 | 1-2 times per week | http://loinc.org |
+| 48 | 234 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA13853-9 | 3-4 times per week | http://loinc.org |
+| 49 | 235 | QuestionnaireResponse | `QuestionnaireResponse.item.answer.valueCoding` | LA13860-4 | 5-6 times per week | http://loinc.org |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 25 |
-| http://terminology.kemkes.go.id/sp | 19 |
+| http://terminology.kemkes.go.id/sp | 21 |
 | http://loinc.org | 3 |
-| **Total** | **47** |
+| **Total** | **49** |
 
 ## Variabel di luar payload
 

@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 42 |
-| Code (`jumlah code` = 1) | 101 |
-| Code unik (code + CodeSystem) | 26 |
+| Code (`jumlah code` = 1) | 102 |
+| Code unik (code + CodeSystem) | 27 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 29 |
 | Variabel BQ (unik) | 51 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 51 |
@@ -22,7 +22,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 3–25 | Patient | – | – | `nama` → `Patient.name.text` (3)<br>`nik` → `Patient.identifier.value` (6)<br>`jk` → `Patient.gender` (8)<br>`tgl_lahir` → `Patient.birthDate` (10)<br>`prov` → `Patient.address.extension.extension.valueCode` (16)<br>`kabkota` → `Patient.address.extension.extension.valueCode` (19)<br>`kec` → `Patient.address.extension.extension.valueCode` (22)<br>`desakel` → `Patient.address.extension.extension.valueCode` (25) |
-| 2 | 111–126 | Encounter | – | – | `tanggal_pengukuran_awal` → `Encounter.period.start` (120)<br>`posyandu` → `Encounter.location.reference` (122) 🔎 lookup master data<br>`pukesmas` → `Encounter.serviceProvider.reference` (126) 🔎 lookup master data<br>`tindakan` → `Encounter.extension.valueString` (146) |
+| 2 | 111–126 | Encounter | – | – | `tanggal_pengukuran_awal` → `Encounter.period.start` (120)<br>`posyandu` → `Encounter.location.location.reference` (122) 🔎 lookup master data<br>`pukesmas` → `Encounter.serviceProvider.reference` (126) 🔎 lookup master data<br>`tindakan` → `Encounter.extension.valueString` (146) |
 | 3 | 127–133 | Condition | 385984007 | Growth and development treatments and procedures | – |
 | 4 | 147–159 | Observation | SP000041 | Sumber Anggaran PMT | `sumber_anggaran` → `Observation.valueCodeableConcept.coding` (150) |
 | 5 | 160–176 | Observation | SP000491 | Mitra Pemberi MT | `mitra` → `Observation.valueCodeableConcept.coding` (163) |
@@ -90,95 +90,96 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 10 | 166 | Observation | `Observation.valueCodeableConcept.coding` | SP000486 | APINDO | http://terminology.kemkes.go.id/sp |
 | 11 | 167 | Observation | `Observation.valueCodeableConcept.coding` | SP000487 | Seruni | http://terminology.kemkes.go.id/sp |
 | 12 | 168 | Observation | `Observation.valueCodeableConcept.coding` | SP000488 | Mitra Lain | http://terminology.kemkes.go.id/sp |
-| 13 | 180 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 14 | 193 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 15 | 194 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 16 | 207 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 17 | 208 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 18 | 221 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 19 | 234 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 20 | 235 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 21 | 248 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 22 | 249 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 23 | 262 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 24 | 263 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 25 | 264 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 26 | 265 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 27 | 266 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 28 | 277 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 29 | 290 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 30 | 291 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 31 | 304 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 32 | 305 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 33 | 318 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 34 | 319 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 35 | 320 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 36 | 321 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 37 | 322 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 38 | 333 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 39 | 346 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 40 | 347 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 41 | 360 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 42 | 361 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 43 | 374 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 44 | 375 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 45 | 376 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 46 | 377 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 47 | 378 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 48 | 389 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 49 | 402 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 50 | 403 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 51 | 416 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 52 | 417 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 53 | 430 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 54 | 431 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 55 | 432 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 56 | 433 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 57 | 434 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 58 | 445 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 59 | 458 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 60 | 459 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 61 | 472 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 62 | 473 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 63 | 486 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 64 | 487 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 65 | 488 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 66 | 489 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 67 | 490 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 68 | 501 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 69 | 514 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 70 | 515 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 71 | 528 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 72 | 529 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 73 | 542 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 74 | 543 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 75 | 544 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 76 | 545 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 77 | 546 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 78 | 557 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 79 | 570 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 80 | 571 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 81 | 584 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 82 | 585 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 83 | 598 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 84 | 599 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 85 | 600 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 86 | 601 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 87 | 602 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 88 | 613 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
-| 89 | 626 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
-| 90 | 627 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
-| 91 | 640 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
-| 92 | 641 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
-| 93 | 654 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
-| 94 | 655 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
-| 95 | 656 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
-| 96 | 657 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
-| 97 | 658 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
-| 98 | 668 | Observation | `Observation.code.coding` | SP000489 | Status Pemantauan Pemberian Makanan Tambahan | http://terminology.kemkes.go.id/sp |
-| 99 | 669 | Observation | `Observation.valueCodeableConcept.coding` | 385658003 | Done | http://snomed.info/sct |
-| 100 | 670 | Observation | `Observation.valueCodeableConcept.coding` | 385651009 | In progress | http://snomed.info/sct |
-| 101 | 680 | Observation | `Observation.code.coding` | SP000490 | Siklus Pemberian Makanan Tambahan | http://terminology.kemkes.go.id/sp |
+| 13 | 169 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 14 | 180 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 15 | 193 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 16 | 194 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 17 | 207 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 18 | 208 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 19 | 221 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 20 | 234 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 21 | 235 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 22 | 248 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 23 | 249 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 24 | 262 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 25 | 263 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 26 | 264 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 27 | 265 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 28 | 266 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 29 | 277 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 30 | 290 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 31 | 291 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 32 | 304 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 33 | 305 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 34 | 318 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 35 | 319 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 36 | 320 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 37 | 321 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 38 | 322 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 39 | 333 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 40 | 346 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 41 | 347 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 42 | 360 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 43 | 361 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 44 | 374 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 45 | 375 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 46 | 376 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 47 | 377 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 48 | 378 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 49 | 389 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 50 | 402 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 51 | 403 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 52 | 416 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 53 | 417 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 54 | 430 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 55 | 431 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 56 | 432 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 57 | 433 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 58 | 434 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 59 | 445 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 60 | 458 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 61 | 459 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 62 | 472 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 63 | 473 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 64 | 486 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 65 | 487 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 66 | 488 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 67 | 489 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 68 | 490 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 69 | 501 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 70 | 514 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 71 | 515 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 72 | 528 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 73 | 529 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 74 | 542 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 75 | 543 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 76 | 544 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 77 | 545 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 78 | 546 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 79 | 557 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 80 | 570 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 81 | 571 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 82 | 584 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 83 | 585 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 84 | 598 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 85 | 599 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 86 | 600 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 87 | 601 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 88 | 602 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 89 | 613 | Observation | `Observation.code.coding` | 29463-7 | Body weight | http://loinc.org |
+| 90 | 626 | Observation | `Observation.code.coding` | 8308-9 | Body height --standing | http://loinc.org |
+| 91 | 627 | Observation | `Observation.code.coding` | 8306-3 | Body height --lying | http://loinc.org |
+| 92 | 640 | Observation | `Observation.code.coding` | 1153600001 | Weight for height z-score | http://snomed.info/sct |
+| 93 | 641 | Observation | `Observation.code.coding` | 1153598007 | Weight for length z score | http://snomed.info/sct |
+| 94 | 654 | Observation | `Observation.code.coding` | 365910001 | Weight trend finding | http://snomed.info/sct |
+| 95 | 655 | Observation | `Observation.valueCodeableConcept.coding` | SP000018 | Baru Pertama Kali Ditimbang | http://terminology.kemkes.go.id/sp |
+| 96 | 656 | Observation | `Observation.valueCodeableConcept.coding` | 8943002 | Weight gain | http://snomed.info/sct |
+| 97 | 657 | Observation | `Observation.valueCodeableConcept.coding` | SP000019 | Tidak Ditimbang Bulan Lalu | http://terminology.kemkes.go.id/sp |
+| 98 | 658 | Observation | `Observation.valueCodeableConcept.coding` | 36440009 | Failure to gain weight | http://snomed.info/sct |
+| 99 | 668 | Observation | `Observation.code.coding` | SP000489 | Status Pemantauan Pemberian Makanan Tambahan | http://terminology.kemkes.go.id/sp |
+| 100 | 669 | Observation | `Observation.valueCodeableConcept.coding` | 385658003 | Done | http://snomed.info/sct |
+| 101 | 670 | Observation | `Observation.valueCodeableConcept.coding` | 385651009 | In progress | http://snomed.info/sct |
+| 102 | 680 | Observation | `Observation.code.coding` | SP000490 | Siklus Pemberian Makanan Tambahan | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -187,7 +188,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 45 |
 | http://terminology.kemkes.go.id/sp | 29 |
 | http://loinc.org | 27 |
-| **Total** | **101** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **102** |
 
 ## Variabel di luar payload
 

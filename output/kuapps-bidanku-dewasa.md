@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 39 |
-| Code (`jumlah code` = 1) | 118 |
-| Code unik (code + CodeSystem) | 99 |
+| Code (`jumlah code` = 1) | 122 |
+| Code unik (code + CodeSystem) | 102 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 25 |
 | Variabel BQ (unik) | 0 |
 
@@ -54,8 +54,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 32 | 577–589 | Observation | SP000706 | Pemantauan Yodium | _Bagaimana kandungan yodium?_ → `Observation.valueCodeableConcept.coding` (580, tanpa BQ) |
 | 33 | 590–607 | Immunization | VG139 | Td | _Status TT_ → `Immunization.status` (590, tanpa BQ) |
 | 34 | 608–626 | Observation | 8659-5 | Birth control method - Reported | _Apakah jenis kontrasepsi yang digunakan saat ini?_ → `Observation.valueCodeableConcept.coding` (611, tanpa BQ) |
-| 35 | 627–638 | Observation | SP000711 | Rencana mengganti kontrasepsi | _Apakah ada rencana untuk mengganti kontrasepsi?_ → `Observation.valueBoolean.coding` (630, tanpa BQ) |
-| 36 | 639–649 | Observation | SP000712 | Tanggal rencana mulai mengganti kontrasepsi | _Kapan rencana mengganti kontrasepsi?_ → `Observation.valueDate.coding` (642, tanpa BQ) |
+| 35 | 627–638 | Observation | SP000711 | Rencana mengganti kontrasepsi | _Apakah ada rencana untuk mengganti kontrasepsi?_ → `Observation.valueBoolean` (630, tanpa BQ) |
+| 36 | 639–649 | Observation | SP000712 | Tanggal rencana mulai mengganti kontrasepsi | _Kapan rencana mengganti kontrasepsi?_ → `Observation.valueDateTime` (642, tanpa BQ) |
 | 37 | 650–668 | Observation | – | – | _Apakah rencana jenis kontrasepsi baru yang akan digunakan?_ → `Observation.valueCodeableConcept.coding` (653, tanpa BQ) |
 | 38 | 670–687 | Procedure | 410314003 | Health promotion education, guidance, and counseling | _Apakah dilakukan konseling_ → `Procedure.category.coding` (670, tanpa BQ)<br>_Sebutkan topik konseling yang dilakukan_ → `Procedure.code.coding.code` (674, tanpa BQ)<br>_Jika dijawab lainnya tambahkan mapping berikut_ → `Procedure.code.text` (680, tanpa BQ) |
 | 39 | 688–693 | Observation | – | – | – |
@@ -153,61 +153,66 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 76 | 334 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000436 | 20-30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 77 | 335 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000437 | >30 bungkus per tahun | http://terminology.kemkes.go.id/sp |
 | 78 | 354 | Observation | `Observation.code.coding` | SP000111 | Hasil Kuesioner PUMA | http://terminology.kemkes.go.id/sp |
-| 79 | 393 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
-| 80 | 394 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
-| 81 | 397 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
-| 82 | 407 | Observation | `Observation.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 83 | 506 | Observation | `Observation.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
-| 84 | 518 | Observation | `Observation.code.coding` | SP000700 | Tahap Keluarga Sejahtera | http://terminology.kemkes.go.id/sp |
-| 85 | 519 | Observation | `Observation.valueCodeableConcept.coding` | SP000701 | Pra KS | http://terminology.kemkes.go.id/sp |
-| 86 | 520 | Observation | `Observation.valueCodeableConcept.coding` | SP000702 | KS I | http://terminology.kemkes.go.id/sp |
-| 87 | 521 | Observation | `Observation.valueCodeableConcept.coding` | SP000703 | KS II | http://terminology.kemkes.go.id/sp |
-| 88 | 522 | Observation | `Observation.valueCodeableConcept.coding` | SP000704 | KS III | http://terminology.kemkes.go.id/sp |
-| 89 | 523 | Observation | `Observation.valueCodeableConcept.coding` | SP000705 | KS III+ | http://terminology.kemkes.go.id/sp |
-| 90 | 533 | Observation | `Observation.code.coding` | 726001007 | Past pregnancy history of live birth | http://snomed.info/sct |
-| 91 | 544 | Observation | `Observation.code.coding` | SP000710 | Jumlah anak yang meninggal | http://terminology.kemkes.go.id/sp |
-| 92 | 555 | Observation | `Observation.code.coding` | 92662-6 | Current age or age at death of Family member | http://loinc.org |
-| 93 | 567 | Observation | `Observation.code.coding` | 104759008 | Iodine measurement | http://snomed.info/sct |
-| 94 | 579 | Observation | `Observation.code.coding` | SP000706 | Pemantauan Yodium | http://terminology.kemkes.go.id/sp |
-| 95 | 580 | Observation | `Observation.valueCodeableConcept.coding` | SP000707 | Garam mengandung cukup yodium | http://terminology.kemkes.go.id/sp |
-| 96 | 581 | Observation | `Observation.valueCodeableConcept.coding` | SP000708 | Garam memiiki yodium dalam batas rendah | http://terminology.kemkes.go.id/sp |
-| 97 | 582 | Observation | `Observation.valueCodeableConcept.coding` | SP000709 | Garam tanpa yodium | http://terminology.kemkes.go.id/sp |
-| 98 | 592 | Immunization | `Immunization.vaccineCode.coding` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 99 | 610 | Observation | `Observation.code.coding` | 8659-5 | Birth control method - Reported | http://loinc.org |
-| 100 | 611 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
-| 101 | 612 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
-| 102 | 613 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
-| 103 | 614 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
-| 104 | 615 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
-| 105 | 616 | Observation | `Observation.valueCodeableConcept.coding` | 40388003 | Implant, device | http://snomed.info/sct |
-| 106 | 617 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
-| 107 | 618 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
-| 108 | 629 | Observation | `Observation.code.coding` | SP000711 | Rencana mengganti kontrasepsi | http://terminology.kemkes.go.id/sp |
-| 109 | 641 | Observation | `Observation.code.coding` | SP000712 | Tanggal rencana mulai mengganti kontrasepsi | http://terminology.kemkes.go.id/sp |
-| 110 | 653 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
-| 111 | 654 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
-| 112 | 655 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
-| 113 | 656 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
-| 114 | 657 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
-| 115 | 658 | Observation | `Observation.valueCodeableConcept.coding` | 40388003 | Implant, device | http://snomed.info/sct |
-| 116 | 659 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
-| 117 | 660 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
-| 118 | 671 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
+| 79 | 356 | Observation | `Observation.interpretation.coding` | 723505004 | Low risk | http://snomed.info/sct |
+| 80 | 358 | Observation | `Observation.interpretation.coding` | 723509005 | High risk | http://snomed.info/sct |
+| 81 | 393 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
+| 82 | 394 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
+| 83 | 397 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
+| 84 | 407 | Observation | `Observation.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 85 | 506 | Observation | `Observation.code.coding` | 3457005 | Patient referral | http://snomed.info/sct |
+| 86 | 518 | Observation | `Observation.code.coding` | SP000700 | Tahap Keluarga Sejahtera | http://terminology.kemkes.go.id/sp |
+| 87 | 519 | Observation | `Observation.valueCodeableConcept.coding` | SP000701 | Pra KS | http://terminology.kemkes.go.id/sp |
+| 88 | 520 | Observation | `Observation.valueCodeableConcept.coding` | SP000702 | KS I | http://terminology.kemkes.go.id/sp |
+| 89 | 521 | Observation | `Observation.valueCodeableConcept.coding` | SP000703 | KS II | http://terminology.kemkes.go.id/sp |
+| 90 | 522 | Observation | `Observation.valueCodeableConcept.coding` | SP000704 | KS III | http://terminology.kemkes.go.id/sp |
+| 91 | 523 | Observation | `Observation.valueCodeableConcept.coding` | SP000705 | KS III+ | http://terminology.kemkes.go.id/sp |
+| 92 | 533 | Observation | `Observation.code.coding` | 726001007 | Past pregnancy history of live birth | http://snomed.info/sct |
+| 93 | 544 | Observation | `Observation.code.coding` | SP000710 | Jumlah anak yang meninggal | http://terminology.kemkes.go.id/sp |
+| 94 | 555 | Observation | `Observation.code.coding` | 92662-6 | Current age or age at death of Family member | http://loinc.org |
+| 95 | 567 | Observation | `Observation.code.coding` | 104759008 | Iodine measurement | http://snomed.info/sct |
+| 96 | 579 | Observation | `Observation.code.coding` | SP000706 | Pemantauan Yodium | http://terminology.kemkes.go.id/sp |
+| 97 | 580 | Observation | `Observation.valueCodeableConcept.coding` | SP000707 | Garam mengandung cukup yodium | http://terminology.kemkes.go.id/sp |
+| 98 | 581 | Observation | `Observation.valueCodeableConcept.coding` | SP000708 | Garam memiiki yodium dalam batas rendah | http://terminology.kemkes.go.id/sp |
+| 99 | 582 | Observation | `Observation.valueCodeableConcept.coding` | SP000709 | Garam tanpa yodium | http://terminology.kemkes.go.id/sp |
+| 100 | 592 | Immunization | `Immunization.vaccineCode.coding` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 101 | 610 | Observation | `Observation.code.coding` | 8659-5 | Birth control method - Reported | http://loinc.org |
+| 102 | 611 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
+| 103 | 612 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
+| 104 | 613 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
+| 105 | 614 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
+| 106 | 615 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
+| 107 | 616 | Observation | `Observation.valueCodeableConcept.coding` | 40388003 | Implant, device | http://snomed.info/sct |
+| 108 | 617 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
+| 109 | 618 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
+| 110 | 619 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 111 | 629 | Observation | `Observation.code.coding` | SP000711 | Rencana mengganti kontrasepsi | http://terminology.kemkes.go.id/sp |
+| 112 | 641 | Observation | `Observation.code.coding` | SP000712 | Tanggal rencana mulai mengganti kontrasepsi | http://terminology.kemkes.go.id/sp |
+| 113 | 653 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
+| 114 | 654 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
+| 115 | 655 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
+| 116 | 656 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
+| 117 | 657 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
+| 118 | 658 | Observation | `Observation.valueCodeableConcept.coding` | 40388003 | Implant, device | http://snomed.info/sct |
+| 119 | 659 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
+| 120 | 660 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
+| 121 | 661 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 122 | 671 | Procedure | `Procedure.code.coding` | 410314003 | Health promotion education, guidance, and counseling | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 60 |
+| http://snomed.info/sct | 62 |
 | http://terminology.kemkes.go.id/sp | 25 |
 | http://loinc.org | 17 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 4 |
 |  | 4 |
 | http://hl7.org/fhir/administrative-gender | 2 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 2 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 1 |
 | http://sys-ids.kemkes.go.id/kfa | 1 |
-| **Total** | **118** |
+| **Total** | **122** |
 
 ## Variabel di luar payload
 

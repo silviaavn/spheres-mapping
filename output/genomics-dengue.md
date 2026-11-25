@@ -24,7 +24,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 2 | 79–82 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.active` (79, tanpa BQ) |
 | 3 | 84–98 | Encounter | – | – | – |
 | 4 | 99–105 | Condition | – | – | – |
-| 5 | 116–123 | Specimen | – | – | _Tanggal Pemeriksaan_ → `Specimen.collectedDateTime` (119, tanpa BQ)<br>_Nama Pasien_ → `Specimen.subject.display` (121, tanpa BQ)<br>_Tanggal Pemeriksaan_ → `Specimen.receivedTime` (123, tanpa BQ) |
+| 5 | 116–123 | Specimen | – | – | _Tanggal Pemeriksaan_ → `Specimen.collection.collectedDateTime` (119, tanpa BQ)<br>_Nama Pasien_ → `Specimen.subject.display` (121, tanpa BQ)<br>_Tanggal Pemeriksaan_ → `Specimen.receivedTime` (123, tanpa BQ) |
 | 6 | 124–133 | ServiceRequest | – | – | – |
 | 7 | 134–156 | Observation | 69548-6 | Genetic variant assessment | _Gene Identifier_ → `Observation.component.code.coding` (149, tanpa BQ)<br>_Protein Level Change_ → `Observation.component.code.coding` (155, tanpa BQ) |
 | 8 | 157–169 | Observation | 86206-0 | Whole genome sequence analysis in Blood or Tissue by Molecular genetics method | _Sequence Length_ → `Observation.component.code.coding` (162, tanpa BQ)<br>_Completeness (N content)_ → `Observation.component.code.coding` (166, tanpa BQ) |

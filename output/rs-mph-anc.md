@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 33 |
-| Code (`jumlah code` = 1) | 87 |
-| Code unik (code + CodeSystem) | 74 |
+| Code (`jumlah code` = 1) | 90 |
+| Code unik (code + CodeSystem) | 75 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 12 |
 | Variabel BQ (unik) | 0 |
 
@@ -123,45 +123,48 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 46 | 317 | Observation | `Observation.valueCodeableConcept.coding` | 73161006.0 | Transverse lie | http://snomed.info/sct |
 | 47 | 318 | Observation | `Observation.valueCodeableConcept.coding` | 63750008.0 | Oblique lie | http://snomed.info/sct |
 | 48 | 319 | Observation | `Observation.valueCodeableConcept.coding` | SP000006 | Organ Tubuh Lainnya | http://terminology.kemkes.go.id/sp |
-| 49 | 331 | Condition | `Condition.code.coding` | 34842007.0 | Antepartum hemorrhage | http://snomed.info/sct |
-| 50 | 332 | Condition | `Condition.code.coding` | 15938005.0 | Eclampsia | http://snomed.info/sct |
-| 51 | 333 | Condition | `Condition.code.coding` | 398254007.0 | Pre-eclampsia | http://snomed.info/sct |
-| 52 | 334 | Condition | `Condition.code.coding` | 386639001.0 | Termination of pregnancy | http://snomed.info/sct |
-| 53 | 335 | Condition | `Condition.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
-| 54 | 336 | Condition | `Condition.code.coding` | 91302008.0 | Sepsis | http://snomed.info/sct |
-| 55 | 337 | Condition | `Condition.code.coding` | 609496007.0 | Complication occurring during pregnancy | http://snomed.info/sct |
-| 56 | 345 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
-| 57 | 356 | Observation | `Observation.code.coding` | 243787009.0 | Antenatal screening | http://loinc.org |
-| 58 | 368 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf |
-| 59 | 402 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf |
-| 60 | 433 | Observation | `Observation.code.coding` | SP000007 | Tatalaksana Anemia | http://terminology.kemkes.go.id/sp |
-| 61 | 434 | Observation | `Observation.valueCodeableConcept.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
-| 62 | 435 | Observation | `Observation.valueCodeableConcept.coding` | SP000009 | Pemberian Fe Parenteral | http://terminology.kemkes.go.id/sp |
-| 63 | 436 | Observation | `Observation.valueCodeableConcept.coding` | 116859006.0 | Transfusion of blood product | http://snomed.info/sct |
-| 64 | 437 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 65 | 439 | Observation | `Observation.valueCodeableConcept.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
-| 66 | 450 | Observation | `Observation.code.coding` | SP000010 | Skrining Hipertensi dalam Kehamilan | http://terminology.kemkes.go.id/sp |
-| 67 | 451 | Observation | `Observation.valueCodeableConcept.coding` | SP000011 | Tidak Pre Eklampsia/ Eklampsia | http://terminology.kemkes.go.id/sp |
-| 68 | 452 | Observation | `Observation.valueCodeableConcept.coding` | 48194001.0 | Pregnancy-induced hypertension | http://snomed.info/sct |
-| 69 | 453 | Observation | `Observation.valueCodeableConcept.coding` | 398254007.0 | Pre-eclampsia | http://snomed.info/sct |
-| 70 | 454 | Observation | `Observation.valueCodeableConcept.coding` | 15938005.0 | Eclampsia | http://snomed.info/sct |
-| 71 | 465 | Observation | `Observation.code.coding` | SP000012 | Tatalaksana Pre Eklampsia | http://terminology.kemkes.go.id/sp |
-| 72 | 468 | Observation | `Observation.component.code.coding` | 135840009.0 | Blood pressure monitoring | http://snomed.info/sct |
-| 73 | 471 | Observation | `Observation.component.code.coding` | 308116003.0 | Antihypertensive therapy | http://snomed.info/sct |
-| 74 | 474 | Observation | `Observation.component.code.coding` | SP000013 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
-| 75 | 477 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 76 | 479 | Observation | `Observation.component.code.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
-| 77 | 493 | Observation | `Observation.code.coding` | SP000014 | Tatalaksana KEK | http://terminology.kemkes.go.id/sp |
-| 78 | 496 | Observation | `Observation.component.code.coding` | 435591000124104.0 | Nutrition supplement therapy | http://snomed.info/sct |
-| 79 | 499 | Observation | `Observation.component.code.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
-| 80 | 512 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
-| 81 | 515 | Observation | `Observation.component.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
-| 82 | 518 | Observation | `Observation.component.code.coding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
-| 83 | 521 | Observation | `Observation.component.code.coding` | 414916001.0 | Obesity | http://snomed.info/sct |
-| 84 | 524 | Observation | `Observation.component.code.coding` | 56717001.0 | Tuberculosis | http://snomed.info/sct |
-| 85 | 527 | Observation | `Observation.component.code.coding` | 56265001.0 | Heart disease | http://snomed.info/sct |
-| 86 | 530 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 87 | 540 | Procedure | `Procedure.code.coding` | 385892002.0 | Mental health screening | http://snomed.info/sct |
+| 49 | 321 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 50 | 331 | Condition | `Condition.code.coding` | 34842007.0 | Antepartum hemorrhage | http://snomed.info/sct |
+| 51 | 332 | Condition | `Condition.code.coding` | 15938005.0 | Eclampsia | http://snomed.info/sct |
+| 52 | 333 | Condition | `Condition.code.coding` | 398254007.0 | Pre-eclampsia | http://snomed.info/sct |
+| 53 | 334 | Condition | `Condition.code.coding` | 386639001.0 | Termination of pregnancy | http://snomed.info/sct |
+| 54 | 335 | Condition | `Condition.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
+| 55 | 336 | Condition | `Condition.code.coding` | 91302008.0 | Sepsis | http://snomed.info/sct |
+| 56 | 337 | Condition | `Condition.code.coding` | 609496007.0 | Complication occurring during pregnancy | http://snomed.info/sct |
+| 57 | 345 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
+| 58 | 356 | Observation | `Observation.code.coding` | 243787009.0 | Antenatal screening | http://loinc.org |
+| 59 | 368 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf |
+| 60 | 402 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf |
+| 61 | 433 | Observation | `Observation.code.coding` | SP000007 | Tatalaksana Anemia | http://terminology.kemkes.go.id/sp |
+| 62 | 434 | Observation | `Observation.valueCodeableConcept.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
+| 63 | 435 | Observation | `Observation.valueCodeableConcept.coding` | SP000009 | Pemberian Fe Parenteral | http://terminology.kemkes.go.id/sp |
+| 64 | 436 | Observation | `Observation.valueCodeableConcept.coding` | 116859006.0 | Transfusion of blood product | http://snomed.info/sct |
+| 65 | 437 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 66 | 439 | Observation | `Observation.valueCodeableConcept.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
+| 67 | 450 | Observation | `Observation.code.coding` | SP000010 | Skrining Hipertensi dalam Kehamilan | http://terminology.kemkes.go.id/sp |
+| 68 | 451 | Observation | `Observation.valueCodeableConcept.coding` | SP000011 | Tidak Pre Eklampsia/ Eklampsia | http://terminology.kemkes.go.id/sp |
+| 69 | 452 | Observation | `Observation.valueCodeableConcept.coding` | 48194001.0 | Pregnancy-induced hypertension | http://snomed.info/sct |
+| 70 | 453 | Observation | `Observation.valueCodeableConcept.coding` | 398254007.0 | Pre-eclampsia | http://snomed.info/sct |
+| 71 | 454 | Observation | `Observation.valueCodeableConcept.coding` | 15938005.0 | Eclampsia | http://snomed.info/sct |
+| 72 | 455 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 73 | 465 | Observation | `Observation.code.coding` | SP000012 | Tatalaksana Pre Eklampsia | http://terminology.kemkes.go.id/sp |
+| 74 | 468 | Observation | `Observation.component.code.coding` | 135840009.0 | Blood pressure monitoring | http://snomed.info/sct |
+| 75 | 471 | Observation | `Observation.component.code.coding` | 308116003.0 | Antihypertensive therapy | http://snomed.info/sct |
+| 76 | 474 | Observation | `Observation.component.code.coding` | SP000013 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
+| 77 | 477 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 78 | 479 | Observation | `Observation.component.code.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
+| 79 | 483 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 80 | 493 | Observation | `Observation.code.coding` | SP000014 | Tatalaksana KEK | http://terminology.kemkes.go.id/sp |
+| 81 | 496 | Observation | `Observation.component.code.coding` | 435591000124104.0 | Nutrition supplement therapy | http://snomed.info/sct |
+| 82 | 499 | Observation | `Observation.component.code.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
+| 83 | 512 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
+| 84 | 515 | Observation | `Observation.component.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
+| 85 | 518 | Observation | `Observation.component.code.coding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
+| 86 | 521 | Observation | `Observation.component.code.coding` | 414916001.0 | Obesity | http://snomed.info/sct |
+| 87 | 524 | Observation | `Observation.component.code.coding` | 56717001.0 | Tuberculosis | http://snomed.info/sct |
+| 88 | 527 | Observation | `Observation.component.code.coding` | 56265001.0 | Heart disease | http://snomed.info/sct |
+| 89 | 530 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 90 | 540 | Procedure | `Procedure.code.coding` | 385892002.0 | Mental health screening | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -171,6 +174,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 15 |
 | http://terminology.kemkes.go.id/sp | 12 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 8 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
 | http://sys-ids.kemkes.go.id/kf | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
@@ -178,7 +182,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **87** |
+| **Total** | **90** |
 
 ## Variabel di luar payload
 

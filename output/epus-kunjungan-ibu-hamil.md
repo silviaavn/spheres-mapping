@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 114 |
-| Code (`jumlah code` = 1) | 198 |
-| Code unik (code + CodeSystem) | 109 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
+| Code (`jumlah code` = 1) | 206 |
+| Code unik (code + CodeSystem) | 112 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 13 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 68 |
 
@@ -23,7 +23,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 |---|---|---|---|---|---|
 | 1 | 2–6 | Encounter | – | – | _No_ → `Encounter.identifier` (2, tanpa BQ)<br>_Register Kunjungan_ → `Encounter.identifier.value` (4, tanpa BQ)<br>_Tanggal_ → `Encounter.period.start` (6, tanpa BQ)<br>_Faskes Asal_ → `Encounter.hospitaliz ation.admitSource.co ding` (65, tanpa BQ)<br>_Keadaan Pulang_ → `Encounter.hospitalization.dischargeDisposition` (1231, tanpa BQ) |
 | 2 | 7–16 | Patient | – | – | _NIK_ → `Patient.identifier.value` (9, tanpa BQ)<br>_No Ibu_ → `Patient.identifier.value` (12, tanpa BQ)<br>_Nama Ibu_ → `Patient.name` (13, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (14, tanpa BQ)<br>_No Telp_ → `Patient.telecom` (15, tanpa BQ)<br>_Alamat_ → `Patient.address.line` (16, tanpa BQ) |
-| 3 | 17–23 | Coverage | – | – | _Jamkesmas_ → `Coverage.subsriberId` (17, tanpa BQ) |
+| 3 | 17–23 | Coverage | – | – | _Jamkesmas_ → `Coverage.subscriberId` (17, tanpa BQ) |
 | 4 | 24–41 | Observation | 424144002 | Current chronological age | _Umur_ → `Observation.valueQuantity.value` (27, tanpa BQ) |
 | 5 | 42–45 | Observation | 8665-2 | Last menstrual period start date | _Tanggal HPHT_ → `Observation.valueDateTime` (45, tanpa BQ) |
 | 6 | 46–56 | Observation | 11778-8 | Delivery date Estimated | _Taksiran Persalinan_ → `Observation.valueDateTime` (49, tanpa BQ) |
@@ -52,7 +52,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 29 | 179–196 | Immunization | – | – | _Status Imunasi TT_ → `Immunization.status` (179, tanpa BQ)<br>_Injeksi TT_ → `Immunization.status` (195, tanpa BQ) |
 | 30 | 197–210 | Immunization | – | – | – |
 | 31 | 211–221 | Procedure | 99.38 | Administration of tetanus toxoid | – |
-| 32 | 222–233 | Observation | SP000122 | Catat di Buku KIA | _Catat dibuku KIA_ → `Observation.catgeory.coding` (222, tanpa BQ) |
+| 32 | 222–233 | Observation | SP000122 | Catat di Buku KIA | _Catat dibuku KIA_ → `Observation.valueBoolean` (224, tanpa BQ) |
 | 33 | 234–267 | MedicationRequest | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | _Fe(Tab/Botol)_ → `MedicationRequest.contained.resourceType` (234, tanpa BQ) |
 | 34 | 268–299 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | – |
 | 35 | 300–309 | ServiceRequest | – | – | _Dilakukan*_ → `ServiceRequest.category` (300, tanpa BQ)<br>_Hasil(gr/dl)_ → `ServiceRequest.performer.reference` (309, tanpa BQ) |
@@ -215,149 +215,157 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 53 | 153 | Observation | `Observation.code.coding` | ANC.B8.DE109 | Number of fetuses | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 54 | 157 | Observation | `Observation.code.coding` | 246435002 | Number of fetuses | http://snomed.info/sct |
 | 55 | 158 | Observation | `Observation.code.coding` | ANC.B8.DE109 | Number of fetuses | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 56 | 169 | Procedure | `Procedure.code.coding` | 1230101008 | Counseling for pregnancy | http://snomed.info/sct |
-| 57 | 181 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 58 | 197 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 59 | 212 | Procedure | `Procedure.code.coding` | 99.38 | Administration of tetanus toxoid | http://hl7.org/fhir/sid/icd-9-cm |
-| 60 | 223 | Observation | `Observation.code.coding` | SP000122 | Catat di Buku KIA | http://terminology.kemkes.go.id/sp |
-| 61 | 237 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kfa |
-| 62 | 271 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
-| 63 | 304 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 64 | 314 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 65 | 323 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 66 | 324 | Observation | `Observation.code.coding` | ANC.B9.DE175 | Blood hemoglobin test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 67 | 337 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 68 | 351 | ServiceRequest | `ServiceRequest.code` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 69 | 361 | Specimen | `Specimen.type` | 122575003 | Urine specimen | http://snomed.info/sct |
-| 70 | 370 | Observation | `Observation.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 71 | 371 | Observation | `Observation.code.coding` | ANC.B9.DE114 | Urine test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 72 | 372 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
-| 73 | 373 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
-| 74 | 374 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
-| 75 | 375 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 76 | 387 | DiagnosticReport | `DiagnosticReport.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 77 | 401 | ServiceRequest | `ServiceRequest.code` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
-| 78 | 411 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 79 | 420 | Observation | `Observation.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
-| 80 | 421 | Observation | `Observation.code.coding` | ANC.B9.DE159 | Blood glucose test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 81 | 436 | DiagnosticReport | `DiagnosticReport.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
-| 82 | 450 | ServiceRequest | `ServiceRequest.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 83 | 461 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 84 | 470 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 85 | 471 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 86 | 472 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 87 | 473 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 88 | 486 | DiagnosticReport | `DiagnosticReport.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 89 | 500 | ServiceRequest | `ServiceRequest.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 90 | 510 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 91 | 519 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 92 | 520 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 93 | 521 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 94 | 522 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 95 | 534 | DiagnosticReport | `DiagnosticReport.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 96 | 548 | ServiceRequest | `ServiceRequest.code` | SP000115 | Pemeriksaan Laboratorium Thalassemia | http://terminology.kemkes.go.id/sp |
-| 97 | 558 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 98 | 567 | Observation | `Observation.code.coding` | SP000115 | Pemeriksaan Laboratorium Thalassemia | http://terminology.kemkes.go.id/sp |
-| 99 | 572 | DiagnosticReport | `DiagnosticReport.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
-| 100 | 586 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://terminology.kemkes.go.id/sp |
-| 101 | 596 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 102 | 605 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://terminology.kemkes.go.id/sp |
-| 103 | 610 | DiagnosticReport | `DiagnosticReport.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 104 | 622 | Observation | `Observation.code.coding` | 278977008 | Human immunodeficiency virus status | http://snomed.info/sct |
-| 105 | 623 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
-| 106 | 624 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
-| 107 | 633 | Procedure | `Procedure.code.coding` | TK000016 | Edukasi Tes HIV | http://terminology.kemkes.go.id |
-| 108 | 647 | ServiceRequest | `ServiceRequest.code` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 109 | 657 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 110 | 666 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 111 | 667 | Observation | `Observation.code.coding` | ANC.B9.DE32 | HIV test | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 112 | 668 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 113 | 669 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 114 | 679 | DiagnosticReport | `DiagnosticReport.code` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 115 | 690 | Procedure | `Procedure.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
-| 116 | 701 | Observation | `Observation.code.coding` | 57071-3 | Obstetric delivery method | https://loinc.org |
-| 117 | 702 | Observation | `Observation.valueCodeableConcept.coding` | 48782003 | Delivery normal | http://snomed.info/sct |
-| 118 | 703 | Observation | `Observation.valueCodeableConcept.coding` | 200144004 | Deliveries by cesarean | http://snomed.info/sct |
-| 119 | 714 | Observation | `Observation.code.coding` | 72178-7 | Given a mosquito net [RHEA] | http://loinc.org |
-| 120 | 727 | ServiceRequest | `ServiceRequest.code` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
-| 121 | 737 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 122 | 746 | Observation | `Observation.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
-| 123 | 747 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 124 | 748 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 125 | 758 | DiagnosticReport | `DiagnosticReport.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
-| 126 | 772 | ServiceRequest | `ServiceRequest.code` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 127 | 782 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 128 | 791 | Observation | `Observation.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 129 | 792 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 130 | 793 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 131 | 803 | DiagnosticReport | `DiagnosticReport.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 132 | 817 | ServiceRequest | `ServiceRequest.code` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
-| 133 | 827 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 134 | 836 | Observation | `Observation.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
-| 135 | 837 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 136 | 838 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 137 | 848 | DiagnosticReport | `DiagnosticReport.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
-| 138 | 862 | ServiceRequest | `ServiceRequest.code` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 139 | 872 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 140 | 881 | Observation | `Observation.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 141 | 882 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 142 | 883 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 143 | 893 | DiagnosticReport | `DiagnosticReport.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
-| 144 | 905 | Observation | `Observation.code.coding` | 50687-3 | Plasmodium sp Ag [Presence] in Blood | http://loinc.org |
-| 145 | 906 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 146 | 907 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 147 | 929 | ServiceRequest | `ServiceRequest.code` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 148 | 939 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
-| 149 | 948 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 150 | 949 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
-| 151 | 950 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
-| 152 | 951 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
-| 153 | 952 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
-| 154 | 963 | DiagnosticReport | `DiagnosticReport.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
-| 155 | 988 | ServiceRequest | `ServiceRequest.code` | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | http://loinc.org |
-| 156 | 998 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 157 | 1007 | Observation | `Observation.code.coding` | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | http://loinc.org |
-| 158 | 1008 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 159 | 1009 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 160 | 1019 | DiagnosticReport | `DiagnosticReport.code.coding` | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | http://loinc.org |
-| 161 | 1033 | ServiceRequest | `ServiceRequest.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 162 | 1044 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 163 | 1053 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 164 | 1054 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 165 | 1055 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 166 | 1056 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 167 | 1067 | DiagnosticReport | `DiagnosticReport.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 168 | 1078 | Procedure | `Procedure.code.coding` | 830039004 | Genitourinary medicine service | http://snomed.info/sct |
-| 169 | 1092 | ServiceRequest | `ServiceRequest.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 170 | 1102 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 171 | 1111 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 172 | 1112 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 173 | 1113 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
-| 174 | 1114 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
-| 175 | 1124 | DiagnosticReport | `DiagnosticReport.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 176 | 1136 | Observation | `Observation.code.coding` | 386413005 | Risk identification | http://snomed.info/sct |
-| 177 | 1137 | Observation | `Observation.valueCodeableConcept.coding` | 1156040003 | Self reported | http://snomed.info/sct |
-| 178 | 1138 | Observation | `Observation.valueCodeableConcept.coding` | 303071001 | Person in the family | http://snomed.info/sct |
-| 179 | 1139 | Observation | `Observation.valueCodeableConcept.coding` | 257514003 | Member of public involved incidentally | http://snomed.info/sct |
-| 180 | 1140 | Observation | `Observation.valueCodeableConcept.coding` | OV000012 | Dukun | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 181 | 1141 | Observation | `Observation.valueCodeableConcept.coding` | SP000373 | Kader Kesehatan | http://terminology.kemkes.go.id/sp |
-| 182 | 1142 | Observation | `Observation.valueCodeableConcept.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
-| 183 | 1143 | Observation | `Observation.valueCodeableConcept.coding` | 106292003 | Professional nurse | http://snomed.info/sct |
-| 184 | 1144 | Observation | `Observation.valueCodeableConcept.coding` | 309343006 | Physician | http://snomed.info/sct |
-| 185 | 1145 | Observation | `Observation.valueCodeableConcept.coding` | 11935004 | Obstetrician | http://snomed.info/sct |
-| 186 | 1156 | Condition | `Condition.code.coding` | 134435003 | Routine antenatal care | http://snomed.info/sct |
-| 187 | 1157 | Condition | `Condition.code.coding` | O13 | Gestational [pregnancy-induced] hypertension without significant proteinuria | http://hl7.org/fhir/sid/icd-10 |
-| 188 | 1158 | Condition | `Condition.code.coding` | O06.9 | Unspecified abortion Complete or unspecified, without complication | http://hl7.org/fhir/sid/icd-10 |
-| 189 | 1159 | Condition | `Condition.code.coding` | O20.9 | Haemorrhage in early pregnancy, unspecified | http://hl7.org/fhir/sid/icd-10 |
-| 190 | 1160 | Condition | `Condition.code.coding` | O98.9 | Unspecified maternal infectious or parasitic disease complicating pregnancy, childbirth and the puerperium | http://hl7.org/fhir/sid/icd-10 |
-| 191 | 1161 | Condition | `Condition.code.coding` | O42.9 | Premature rupture of membranes, unspecified | http://hl7.org/fhir/sid/icd-10 |
-| 192 | 1162 | Condition | `Condition.code.coding` | O99.8 | Other specified diseases and conditions complicating pregnancy, childbirth and the puerperium | http://hl7.org/fhir/sid/icd-10 |
-| 193 | 1168 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 194 | 1186 | Observation | `Observation.code.coding` | SP000383 | Keadaan Ibu Saat Tiba | http://terminology.kemkes.go.id/sp |
-| 195 | 1187 | Observation | `Observation.valueCodeableConcept.coding` | 63238001 | Dead on arrival at hospital | http://snomed.info/sct |
-| 196 | 1188 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
-| 197 | 1212 | Condition | `Condition.code.coding` | 134435003 | Routine antenatal care | http://snomed.info/sct |
-| 198 | 1244 | EpisodeOfCare | `EpisodeOfCare.type.coding` | ANC | Antenatal Care | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
+| 56 | 160 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 57 | 169 | Procedure | `Procedure.code.coding` | 1230101008 | Counseling for pregnancy | http://snomed.info/sct |
+| 58 | 181 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 59 | 197 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 60 | 212 | Procedure | `Procedure.code.coding` | 99.38 | Administration of tetanus toxoid | http://hl7.org/fhir/sid/icd-9-cm |
+| 61 | 223 | Observation | `Observation.code.coding` | SP000122 | Catat di Buku KIA | http://terminology.kemkes.go.id/sp |
+| 62 | 226 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 63 | 237 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kfa |
+| 64 | 271 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kfa |
+| 65 | 304 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 66 | 314 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 67 | 323 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 68 | 324 | Observation | `Observation.code.coding` | ANC.B9.DE175 | Blood hemoglobin test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 69 | 337 | DiagnosticReport | `DiagnosticReport.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 70 | 351 | ServiceRequest | `ServiceRequest.code` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 71 | 361 | Specimen | `Specimen.type` | 122575003 | Urine specimen | http://snomed.info/sct |
+| 72 | 370 | Observation | `Observation.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 73 | 371 | Observation | `Observation.code.coding` | ANC.B9.DE114 | Urine test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 74 | 372 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
+| 75 | 373 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
+| 76 | 374 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
+| 77 | 375 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 78 | 387 | DiagnosticReport | `DiagnosticReport.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 79 | 401 | ServiceRequest | `ServiceRequest.code` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
+| 80 | 411 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 81 | 420 | Observation | `Observation.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
+| 82 | 421 | Observation | `Observation.code.coding` | ANC.B9.DE159 | Blood glucose test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 83 | 436 | DiagnosticReport | `DiagnosticReport.code.coding` | 74774-1 | Glucose [Mass/volume] in Serum, Plasma or Blood | http://loinc.org |
+| 84 | 450 | ServiceRequest | `ServiceRequest.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 85 | 461 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 86 | 470 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 87 | 471 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 88 | 472 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 89 | 473 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 90 | 476 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 91 | 486 | DiagnosticReport | `DiagnosticReport.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 92 | 500 | ServiceRequest | `ServiceRequest.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 93 | 510 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 94 | 519 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 95 | 520 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 96 | 521 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 97 | 522 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 98 | 534 | DiagnosticReport | `DiagnosticReport.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 99 | 548 | ServiceRequest | `ServiceRequest.code` | SP000115 | Pemeriksaan Laboratorium Thalassemia | http://terminology.kemkes.go.id/sp |
+| 100 | 558 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 101 | 567 | Observation | `Observation.code.coding` | SP000115 | Pemeriksaan Laboratorium Thalassemia | http://terminology.kemkes.go.id/sp |
+| 102 | 572 | DiagnosticReport | `DiagnosticReport.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
+| 103 | 586 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://terminology.kemkes.go.id/sp |
+| 104 | 596 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 105 | 605 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://terminology.kemkes.go.id/sp |
+| 106 | 610 | DiagnosticReport | `DiagnosticReport.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 107 | 622 | Observation | `Observation.code.coding` | 278977008 | Human immunodeficiency virus status | http://snomed.info/sct |
+| 108 | 623 | Observation | `Observation.valueCodeableConcept.coding` | 165816005 | Human immunodeficiency virus detected | http://snomed.info/sct |
+| 109 | 624 | Observation | `Observation.valueCodeableConcept.coding` | 165815009 | Human immunodeficiency virus not detected | http://snomed.info/sct |
+| 110 | 625 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 111 | 633 | Procedure | `Procedure.code.coding` | TK000016 | Edukasi Tes HIV | http://terminology.kemkes.go.id |
+| 112 | 647 | ServiceRequest | `ServiceRequest.code` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 113 | 657 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 114 | 666 | Observation | `Observation.code.coding` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 115 | 667 | Observation | `Observation.code.coding` | ANC.B9.DE32 | HIV test | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 116 | 668 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 117 | 669 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 118 | 679 | DiagnosticReport | `DiagnosticReport.code` | 68961-2 | HIV 1 Ab [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 119 | 690 | Procedure | `Procedure.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
+| 120 | 701 | Observation | `Observation.code.coding` | 57071-3 | Obstetric delivery method | https://loinc.org |
+| 121 | 702 | Observation | `Observation.valueCodeableConcept.coding` | 48782003 | Delivery normal | http://snomed.info/sct |
+| 122 | 703 | Observation | `Observation.valueCodeableConcept.coding` | 200144004 | Deliveries by cesarean | http://snomed.info/sct |
+| 123 | 714 | Observation | `Observation.code.coding` | 72178-7 | Given a mosquito net [RHEA] | http://loinc.org |
+| 124 | 727 | ServiceRequest | `ServiceRequest.code` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
+| 125 | 737 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 126 | 746 | Observation | `Observation.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
+| 127 | 747 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 128 | 748 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 129 | 758 | DiagnosticReport | `DiagnosticReport.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
+| 130 | 772 | ServiceRequest | `ServiceRequest.code` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 131 | 782 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 132 | 791 | Observation | `Observation.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 133 | 792 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 134 | 793 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 135 | 803 | DiagnosticReport | `DiagnosticReport.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 136 | 817 | ServiceRequest | `ServiceRequest.code` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
+| 137 | 827 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 138 | 836 | Observation | `Observation.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
+| 139 | 837 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 140 | 838 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 141 | 848 | DiagnosticReport | `DiagnosticReport.code.coding` | 70569-9 | Plasmodium sp Ag [Identifier] in Blood by Rapid immunoassay | http://loinc.org |
+| 142 | 862 | ServiceRequest | `ServiceRequest.code` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 143 | 872 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 144 | 881 | Observation | `Observation.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 145 | 882 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 146 | 883 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 147 | 893 | DiagnosticReport | `DiagnosticReport.code.coding` | 32700-7 | Microscopic observation [Identifier] in Blood by Malaria smear | http://loinc.org |
+| 148 | 905 | Observation | `Observation.code.coding` | 50687-3 | Plasmodium sp Ag [Presence] in Blood | http://loinc.org |
+| 149 | 906 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 150 | 907 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 151 | 929 | ServiceRequest | `ServiceRequest.code` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 152 | 939 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 153 | 948 | Observation | `Observation.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 154 | 949 | Observation | `Observation.valueCodeableConcept.coding` | 260385009 | Negative | http://snomed.info/sct |
+| 155 | 950 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
+| 156 | 951 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
+| 157 | 952 | Observation | `Observation.valueCodeableConcept.coding` | LA11843-2 | 3+ | http://loinc.org |
+| 158 | 960 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 159 | 963 | DiagnosticReport | `DiagnosticReport.code.coding` | 11545-1 | Microscopic observation [Identifier] in Specimen by Acid fast stain | http://loinc.org |
+| 160 | 976 | MedicationStatement | `MedicationStatement.medicationCodeableConcept.coding` | SP000125 | Obat anti tuberkulosis | http://terminology.kemkes.go.id/sp |
+| 161 | 988 | ServiceRequest | `ServiceRequest.code` | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | http://loinc.org |
+| 162 | 998 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 163 | 1007 | Observation | `Observation.code.coding` | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | http://loinc.org |
+| 164 | 1008 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 165 | 1009 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 166 | 1019 | DiagnosticReport | `DiagnosticReport.code.coding` | 5045-0 | Ancylostoma sp Ab [Units/volume] in Serum | http://loinc.org |
+| 167 | 1033 | ServiceRequest | `ServiceRequest.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 168 | 1044 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 169 | 1053 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 170 | 1054 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 171 | 1055 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 172 | 1056 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 173 | 1057 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 174 | 1067 | DiagnosticReport | `DiagnosticReport.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 175 | 1078 | Procedure | `Procedure.code.coding` | 830039004 | Genitourinary medicine service | http://snomed.info/sct |
+| 176 | 1092 | ServiceRequest | `ServiceRequest.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 177 | 1102 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 178 | 1111 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 179 | 1112 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 180 | 1113 | Observation | `Observation.valueCodeableConcept.coding` | LA15255-5 | Reactive | http://loinc.org |
+| 181 | 1114 | Observation | `Observation.valueCodeableConcept.coding` | LA15256-3 | Nonreactive | http://loinc.org |
+| 182 | 1124 | DiagnosticReport | `DiagnosticReport.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 183 | 1136 | Observation | `Observation.code.coding` | 386413005 | Risk identification | http://snomed.info/sct |
+| 184 | 1137 | Observation | `Observation.valueCodeableConcept.coding` | 1156040003 | Self reported | http://snomed.info/sct |
+| 185 | 1138 | Observation | `Observation.valueCodeableConcept.coding` | 303071001 | Person in the family | http://snomed.info/sct |
+| 186 | 1139 | Observation | `Observation.valueCodeableConcept.coding` | 257514003 | Member of public involved incidentally | http://snomed.info/sct |
+| 187 | 1140 | Observation | `Observation.valueCodeableConcept.coding` | OV000012 | Dukun | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 188 | 1141 | Observation | `Observation.valueCodeableConcept.coding` | SP000373 | Kader Kesehatan | http://terminology.kemkes.go.id/sp |
+| 189 | 1142 | Observation | `Observation.valueCodeableConcept.coding` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 190 | 1143 | Observation | `Observation.valueCodeableConcept.coding` | 106292003 | Professional nurse | http://snomed.info/sct |
+| 191 | 1144 | Observation | `Observation.valueCodeableConcept.coding` | 309343006 | Physician | http://snomed.info/sct |
+| 192 | 1145 | Observation | `Observation.valueCodeableConcept.coding` | 11935004 | Obstetrician | http://snomed.info/sct |
+| 193 | 1156 | Condition | `Condition.code.coding` | 134435003 | Routine antenatal care | http://snomed.info/sct |
+| 194 | 1157 | Condition | `Condition.code.coding` | O13 | Gestational [pregnancy-induced] hypertension without significant proteinuria | http://hl7.org/fhir/sid/icd-10 |
+| 195 | 1158 | Condition | `Condition.code.coding` | O06.9 | Unspecified abortion Complete or unspecified, without complication | http://hl7.org/fhir/sid/icd-10 |
+| 196 | 1159 | Condition | `Condition.code.coding` | O20.9 | Haemorrhage in early pregnancy, unspecified | http://hl7.org/fhir/sid/icd-10 |
+| 197 | 1160 | Condition | `Condition.code.coding` | O98.9 | Unspecified maternal infectious or parasitic disease complicating pregnancy, childbirth and the puerperium | http://hl7.org/fhir/sid/icd-10 |
+| 198 | 1161 | Condition | `Condition.code.coding` | O42.9 | Premature rupture of membranes, unspecified | http://hl7.org/fhir/sid/icd-10 |
+| 199 | 1162 | Condition | `Condition.code.coding` | O99.8 | Other specified diseases and conditions complicating pregnancy, childbirth and the puerperium | http://hl7.org/fhir/sid/icd-10 |
+| 200 | 1168 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 201 | 1175 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
+| 202 | 1186 | Observation | `Observation.code.coding` | SP000383 | Keadaan Ibu Saat Tiba | http://terminology.kemkes.go.id/sp |
+| 203 | 1187 | Observation | `Observation.valueCodeableConcept.coding` | 63238001 | Dead on arrival at hospital | http://snomed.info/sct |
+| 204 | 1188 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
+| 205 | 1212 | Condition | `Condition.code.coding` | 134435003 | Routine antenatal care | http://snomed.info/sct |
+| 206 | 1244 | EpisodeOfCare | `EpisodeOfCare.type.coding` | ANC | Antenatal Care | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
 
 ### Code per CodeSystem
 
@@ -366,7 +374,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 95 |
 | http://snomed.info/sct | 50 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 22 |
-| http://terminology.kemkes.go.id/sp | 11 |
+| http://terminology.kemkes.go.id/sp | 13 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 6 |
 | http://hl7.org/fhir/sid/icd-10 | 6 |
 | http://sys-ids.kemkes.go.id/kfa | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 3 |
@@ -376,7 +385,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id | 1 |
 | https://loinc.org | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
-| **Total** | **198** |
+| **Total** | **206** |
 
 ## Variabel di luar payload
 

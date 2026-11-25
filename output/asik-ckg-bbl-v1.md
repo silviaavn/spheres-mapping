@@ -33,12 +33,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 11 | 261–276 | Observation | 29575-8 | Thyrotropin [Units/volume] in DBS | _Hasil Pemeriksaan Lab Hipotiroid Kongenital_ → `Observation.valueRange.low.value` (264, tanpa BQ) |
 | 12 | 277–292 | Observation | 32546-4 | Glucose-6-Phosphate dehydrogenase [Enzymatic activity/mass] in Red Blood Cells | _Hasil Pemeriksaan Lab G6PD_ → `Observation.valueRange.low.value` (280, tanpa BQ) |
 | 13 | 293–306 | Observation | 57086-1 | Congenital adrenal hyperplasia newborn screening panel | _Hasil Pemeriksaan Lab Skrining HAK_ → `Observation.valueString` (296, tanpa BQ) |
-| 14 | 307–319 | Procedure | 25179006.0 | Blood unit collection | _Pengambilan Darah Tumit_ → `Procedure.category.coding` (307, tanpa BQ)<br>_Pemeriksaan Tes Konfirmasi SHK_ → `Procedure.indentifier` (319, tanpa BQ) |
+| 14 | 307–319 | Procedure | 25179006.0 | Blood unit collection | _Pengambilan Darah Tumit_ → `Procedure.category.coding` (307, tanpa BQ)<br>_Pemeriksaan Tes Konfirmasi SHK_ → `Procedure.identifier` (319, tanpa BQ) |
 | 15 | 320–330 | Procedure | 400984005.0 | Congenital hypothyroidism screening test | – |
 | 16 | 331–347 | Observation | 3016-3 | Thyrotropin [Units/volume] in Serum or Plasma | _Hasil Tes Konfirmasi SHK_ → `Observation.identifier` (331, tanpa BQ) |
-| 17 | 348–359 | Procedure | 252298007.0 | Glucose-6-phosphate dehydrogenase deficiency spot test | _Pemeriksaan Konfirmasi Defisiensi G6PD_ → `Procedure.indentifier` (348, tanpa BQ) |
+| 17 | 348–359 | Procedure | 252298007.0 | Glucose-6-phosphate dehydrogenase deficiency spot test | _Pemeriksaan Konfirmasi Defisiensi G6PD_ → `Procedure.identifier` (348, tanpa BQ) |
 | 18 | 360–376 | Observation | 32546-4 | Glucose-6-Phosphate dehydrogenase [Enzymatic activity/mass] in Red Blood Cells | _Hasil Tes Konfirmasi Defisiensi G6PD_ → `Observation.identifier` (360, tanpa BQ) |
-| 19 | 377–388 | Procedure | 431420002.0 | Screening for congenital adrenal hyperplasia | _Pemeriksaan Konfirmasi Skrining HAK_ → `Procedure.indentifier` (377, tanpa BQ) |
+| 19 | 377–388 | Procedure | 431420002.0 | Screening for congenital adrenal hyperplasia | _Pemeriksaan Konfirmasi Skrining HAK_ → `Procedure.identifier` (377, tanpa BQ) |
 | 20 | 389–403 | Observation | 57086-1 | Congenital adrenal hyperplasia newborn screening panel | _Hasil Tes Konfirmasi Skrining HAK_ → `Observation.identifier` (389, tanpa BQ) |
 | 21 | 404–414 | Procedure | TK000151 | Edukasi skrining hiperbilirubinemia dan kelainan saluran empedu | _Edukasi Kelainan Saluran Empedu_ → `Procedure.category.coding` (404, tanpa BQ) |
 | 22 | 416–427 | Observation | 267030001.0 | Yellow or jaundiced color | _Hasil Pemeriksaan Ikterus Skrining Kelainan Saluran Empedu Usia 14-28 Hari_ → `Observation.valueBoolean` (419, tanpa BQ) |

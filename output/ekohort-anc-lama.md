@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 140 |
-| Code (`jumlah code` = 1) | 247 |
-| Code unik (code + CodeSystem) | 148 |
+| Code (`jumlah code` = 1) | 256 |
+| Code unik (code + CodeSystem) | 150 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 0 |
 | Variabel BQ (unik) | 0 |
 
@@ -45,12 +45,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 23 | 136–142 | Observation | 72155-5 | Position in womb Fetus [RHEA] | _Presentasi_ → `Observation.valueCodeableConcept.coding` (139, tanpa BQ) |
 | 24 | 143–153 | Immunization | – | – | _Status Tt_ → `Immunization.status` (143, tanpa BQ) |
 | 25 | 154–157 | Procedure | 99.38 | Administration of tetanus toxoid | _Tt_ → `Procedure.category.coding` (154, tanpa BQ) |
-| 26 | 158–160 | Observation | – | – | _Catat Kia_ → `Observation.catgeory.coding` (158, tanpa BQ) |
+| 26 | 158–160 | Observation | – | – | _Catat Kia_ → `Observation.valueBoolean` (160, tanpa BQ) |
 | 27 | 162–163 | MedicationDispense | – | – | – |
 | 28 | 164–178 | Medication | – | – | – |
 | 29 | 179–184 | MedicationRequest | – | – | – |
 | 30 | 185–199 | Medication | – | – | – |
-| 31 | 200–204 | MedicationDispense | – | – | _Fe_ → `MedicationDispense.quantity.coding` (204, tanpa BQ) |
+| 31 | 200–204 | MedicationDispense | – | – | _Fe_ → `MedicationDispense.quantity.code` (204, tanpa BQ) |
 | 32 | 205–206 | ServiceRequest | – | – | _Periksa Hb_ → `ServiceRequest.category` (205, tanpa BQ) |
 | 33 | 207–209 | Specimen | – | – | – |
 | 34 | 210–220 | Observation | 718-7 | Hemoglobin [Mass/volume] in Blood | _Hemoglobin_ → `Observation.valueQuantity.code` (214, tanpa BQ) |
@@ -96,7 +96,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 74 | 342–345 | Procedure | 88.78 | Diagnostic ultrasound of gravid uterus | _Usg_ → `Procedure.category.coding` (342, tanpa BQ) |
 | 75 | 348–350 | Observation | – | – | _Usia Hpht_ → `Observation.valueBoolean` (350, tanpa BQ) |
 | 76 | 351–354 | Observation | 32418-6 | Obstetric trimester Stated | _Trimester_ → `Observation.valueInteger` (354, tanpa BQ) |
-| 77 | 355–360 | Condition | O13 | Gestational [pregnancy-induced] hypertension without signification proteinuria | _Komplikasi_ → `Condition.category.codng` (355, tanpa BQ)<br>_Komplikasi Lain_ → `Condition.code.coding` (360, tanpa BQ) |
+| 77 | 355–360 | Condition | O13 | Gestational [pregnancy-induced] hypertension without signification proteinuria | _Komplikasi_ → `Condition.category.coding` (355, tanpa BQ)<br>_Komplikasi Lain_ → `Condition.code.coding` (360, tanpa BQ) |
 | 78 | 361–363 | Observation | – | – | _Tatalaksana Komplikasi_ → `Observation.valueBoolean` (363, tanpa BQ) |
 | 79 | 365–365 | Practitioner | – | – | _Id Nakes_ → `Practitioner.id` (365, tanpa BQ) |
 | 80 | 367–370 | PractitionerRole | – | – | – |
@@ -224,215 +224,224 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 36 | 96 | Observation | `Observation.code.coding` | ANC.B8.DE105 | Symphysis-fundal height | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 37 | 100 | Observation | `Observation.code.coding` | 32392-3 | Deep tendon reflex of Patellar | http://loinc.org |
 | 38 | 101 | Observation | `Observation.valueCodeableConcept.coding` | 10828004 | Positive | http://snomed.info/sct |
-| 39 | 104 | Observation | `Observation.code.coding` | 11948-7 | Fetal Heart rate US | http://loinc.org |
-| 40 | 105 | Observation | `Observation.code.coding` | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 41 | 109 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
-| 42 | 110 | Observation | `Observation.valueCodeableConcept.coding` | 289439005 | Fetal heart rate absent | http://snomed.info/sct |
-| 43 | 111 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
-| 44 | 113 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://snomed.info/sct |
-| 45 | 114 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 46 | 115 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
-| 47 | 116 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Belum masuk panggul | http://snomed.info/sct |
-| 48 | 118 | Observation | `Observation.code.coding` | 89087-1 | Fetal Body weight Estimated | http://loinc.org |
-| 49 | 119 | Observation | `Observation.code.coding` | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 50 | 123 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 51 | 125 | Observation | `Observation.valueCodeableConcept.coding` | 73161006 | Transverse lie | http://snomed.info/sct |
-| 52 | 128 | Observation | `Observation.valueCodeableConcept.coding` | 63750008 | Oblique lie | http://snomed.info/sct |
-| 53 | 129 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 54 | 131 | Observation | `Observation.code.coding` | 246435002 | Number of fetuses | http://snomed.info/sct |
-| 55 | 132 | Observation | `Observation.code.coding` | ANC.B8.DE109 | Number of fetuses | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 56 | 133 | Observation | `Observation.valueCodeableConcept.coding` | 16356006 | Multiple pregnancy | http://snomed.info/sct |
-| 57 | 135 | Observation | `Observation.valueCodeableConcept.coding` | 237244005 | Single pregnancy | http://snomed.info/sct |
-| 58 | 137 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 59 | 138 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 60 | 139 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 61 | 140 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 62 | 144 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 63 | 155 | Procedure | `Procedure.code.coding` | 99.38 | Administration of tetanus toxoid | http://hl7.org/fhir/sid/icd-9-cm |
-| 64 | 165 | Medication | `Medication.code` | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf |
-| 65 | 186 | Medication | `Medication.code` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf |
-| 66 | 206 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 67 | 207 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 68 | 211 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 69 | 212 | Observation | `Observation.code.coding` | ANC.B9.DE175 | Blood hemoglobin test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 70 | 217 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
-| 71 | 218 | Observation | `Observation.interpretation.coding` | OI000034 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 72 | 219 | Observation | `Observation.interpretation.coding` | OI000032 | Anemia ringan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 73 | 220 | Observation | `Observation.interpretation.coding` | OI000033 | Anemia sedang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 74 | 222 | DiagnosticReport | `DiagnosticReport.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
-| 75 | 224 | ServiceRequest | `ServiceRequest.code` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 76 | 225 | Specimen | `Specimen.type` | 122575003 | Urine specimen | http://snomed.info/sct |
-| 77 | 228 | Observation | `Observation.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 78 | 229 | Observation | `Observation.code.coding` | ANC.B9.DE114 | Urine test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 79 | 231 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 80 | 232 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 81 | 234 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
-| 82 | 235 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
-| 83 | 237 | DiagnosticReport | `DiagnosticReport.code` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
-| 84 | 240 | ServiceRequest | `ServiceRequest.code` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 85 | 241 | Specimen | `Specimen.type` | 122592007 | Acellular blood (serum or plasma) specimen (specimen)​ | http://snomed.info/sct |
-| 86 | 244 | Observation | `Observation.code.coding` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 87 | 247 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 88 | 248 | Observation | `Observation.interpretation.coding` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 89 | 251 | DiagnosticReport | `DiagnosticReport.code` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
-| 90 | 253 | ServiceRequest | `ServiceRequest.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
-| 91 | 254 | Specimen | `Specimen.type` | 122555007 | Whole Blood | http://snomed.info/sct |
-| 92 | 257 | Observation | `Observation.code.coding` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
-| 93 | 258 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 94 | 259 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 95 | 261 | DiagnosticReport | `DiagnosticReport.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
-| 96 | 263 | ServiceRequest | `ServiceRequest.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 97 | 264 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 98 | 268 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 99 | 269 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 100 | 270 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 101 | 271 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 102 | 273 | DiagnosticReport | `DiagnosticReport.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
-| 103 | 275 | ServiceRequest | `ServiceRequest.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 104 | 276 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
-| 105 | 280 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 106 | 281 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 107 | 282 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 108 | 283 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 109 | 285 | DiagnosticReport | `DiagnosticReport.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
-| 110 | 287 | ServiceRequest | `ServiceRequest.code` | 7918-6 | HIV 1+2 Ab [Presence] in Serum | http://loinc.org |
-| 111 | 288 | Specimen | `Specimen.type` | 119364003 | Serum specimen (specimen) | http://snomed.info/sct |
-| 112 | 291 | Observation | `Observation.code.coding` | 7918-6 | HIV 1+2 Ab [Presence] in Serum | http://loinc.org |
-| 113 | 292 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 114 | 293 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 115 | 295 | DiagnosticReport | `DiagnosticReport.code` | 7918-6 | HIV 1+2 Ab [Presence] in Serum | http://loinc.org |
-| 116 | 297 | Observation | `Observation.code.coding` | 4241000179101 | Laboratory report | http://snomed.info/sct |
-| 117 | 301 | ServiceRequest | `ServiceRequest.code` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 118 | 302 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 119 | 305 | Observation | `Observation.code.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 120 | 307 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 121 | 308 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 122 | 310 | DiagnosticReport | `DiagnosticReport.code` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
-| 123 | 314 | ServiceRequest | `ServiceRequest.code` | 11477-7 | Microscopic observation [Identifier] in Sputum by Acid fast stain | http://loinc.org |
-| 124 | 315 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
-| 125 | 318 | Observation | `Observation.code.coding` | 11477-7 | Microscopic observation [Identifier] in Sputum by Acid fast stain | http://loinc.org |
-| 126 | 319 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
-| 127 | 320 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
-| 128 | 322 | DiagnosticReport | `DiagnosticReport.code` | 11477-7 | Microscopic observation [Identifier] in Sputum by Acid fast stain | http://loinc.org |
-| 129 | 324 | ServiceRequest | `ServiceRequest.code` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 130 | 325 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
-| 131 | 328 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 132 | 329 | Observation | `Observation.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
-| 133 | 330 | Observation | `Observation.interpretation.coding` | POS | Positive | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 134 | 331 | Observation | `Observation.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
-| 135 | 332 | Observation | `Observation.interpretation.coding` | NEG | Negative | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 136 | 334 | DiagnosticReport | `DiagnosticReport.code` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
-| 137 | 339 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | CUSTOM |
-| 138 | 343 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
-| 139 | 352 | Observation | `Observation.code.coding` | 32418-6 | Obstetric trimester Stated | http://loinc.org |
-| 140 | 353 | Observation | `Observation.code.coding` | ANC.SS.DE13 | Trimester ke | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 141 | 356 | Condition | `Condition.code.coding` | O13 | Gestational [pregnancy-induced] hypertension without signification proteinuria | http://hl7.org/fhir/sid/icd-10 |
-| 142 | 357 | Condition | `Condition.code.coding` | O21.9 | Vomiting of pregnancy, unspecified | http://hl7.org/fhir/sid/icd-10 |
-| 143 | 358 | Condition | `Condition.code.coding` | O25 | Malnutrition in pregnancy | http://hl7.org/fhir/sid/icd-10 |
-| 144 | 359 | Condition | `Condition.code.coding` | O14.9 | Pre-eclampsia, unspecified | http://hl7.org/fhir/sid/icd-10 |
-| 145 | 367 | PractitionerRole | `PractitionerRole.code` | 309453006 | Registered midwife | http://snomed.info/sct |
-| 146 | 368 | PractitionerRole | `PractitionerRole.code` | 309367003 | Obstetrician and gynecologist | http://snomed.info/sct |
-| 147 | 369 | PractitionerRole | `PractitionerRole.code` | 309343006 | Physician | http://snomed.info/sct |
-| 148 | 370 | PractitionerRole | `PractitionerRole.code` | 106292003 | Professional nurse | http://snomed.info/sct |
-| 149 | 382 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
-| 150 | 387 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
-| 151 | 408 | ServiceRequest | `ServiceRequest.code.coding` | 5292-8 | Reagin Ab [Presence] in Serum by VDRL | http://loinc.org |
-| 152 | 410 | Observation | `Observation.code.coding` | 5292-8 | Reagin Ab [Presence] in Serum by VDRL | http://loinc.org |
-| 153 | 414 | DiagnosticReport | `DiagnosticReport.code` | 5292-8 | Reagin Ab [Presence] in Serum by VDRL | http://loinc.org |
-| 154 | 416 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 155 | 423 | Observation | `Observation.code.coding` | 8665-2 | Last menstrual period start date | http://loinc.org |
-| 156 | 424 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 157 | 427 | Observation | `Observation.code.coding` | 11778-8 | Delivery date Estimated | http://loinc.org |
-| 158 | 428 | Observation | `Observation.code.coding` | ANC.B6.DE22 | Expected date of delivery (EDD) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 159 | 433 | Observation | `Observation.code.coding` | 11948-7 | Fetal Heart rate US | http://loinc.org |
-| 160 | 434 | Observation | `Observation.code.coding` | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 161 | 438 | Observation | `Observation.code.coding` | 11888-5 | Gestational age US composite estimate | http://loinc.org |
-| 162 | 439 | Observation | `Observation.code.coding` | ANC.B6.DE20 | Ultrasound | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 163 | 443 | Observation | `Observation.code.coding` | 271692001 | Presentation of fetus | http://snomed.info/sct |
-| 164 | 444 | Observation | `Observation.code.coding` | ANC.SS.DE41 | Letak Janin USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 165 | 446 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 166 | 447 | Observation | `Observation.valueCodeableConcept.coding` | 398236008 | Intrauterine | http://snomed.info/sct |
-| 167 | 448 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 168 | 449 | Observation | `Observation.valueCodeableConcept.coding` | 288203005 | Transverse/oblique lie | http://snomed.info/sct |
-| 169 | 452 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
-| 170 | 461 | Observation | `Observation.component.code` | 74964007 | Other | http://snomed.info/sct |
-| 171 | 464 | Observation | `Observation.code.coding` | 736286003 | Hypertension clinical management plan | http://snomed.info/sct |
-| 172 | 466 | Observation | `Observation.component.code` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
-| 173 | 470 | Observation | `Observation.component.code` | 387672006 | Fetal monitoring | http://snomed.info/sct |
-| 174 | 472 | Observation | `Observation.component.code` | 74964007 | Other | http://snomed.info/sct |
-| 175 | 477 | Observation | `Observation.component.code` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
-| 176 | 481 | Observation | `Observation.component.code` | 387672006 | Fetal monitoring | http://snomed.info/sct |
-| 177 | 483 | Observation | `Observation.component.code` | 308116003 | Antihypertensive therapy | http://snomed.info/sct |
-| 178 | 489 | Observation | `Observation.component.code` | 74964007 | Other | http://snomed.info/sct |
-| 179 | 497 | Procedure | `Procedure.code.coding` | 11816003 | Diet education | http://snomed.info/sct |
-| 180 | 506 | Procedure | `Procedure.code.coding` | 171054004 | Pregnancy diet education | http://snomed.info/sct |
-| 181 | 512 | Observation | `Observation.code.coding` | 385821000 | Infection control management | http://snomed.info/sct |
-| 182 | 514 | Observation | `Observation.component.code` | 709541000 | Administration of antipyretic | http://snomed.info/sct |
-| 183 | 516 | Observation | `Observation.component.code` | 281789004 | Antibiotic therapy | http://snomed.info/sct |
-| 184 | 524 | Procedure | `Procedure.code.coding` | 363001008 | Cardiovascular education | http://snomed.info/sct |
-| 185 | 530 | Observation | `Observation.code.coding` | 1284934003 | Human immunodeficiency virus management program | http://snomed.info/sct |
-| 186 | 533 | Observation | `Observation.code.coding` | 1280002000 | Tuberculosis management program | http://snomed.info/sct |
-| 187 | 542 | Observation | `Observation.component.code` | 3457005 | Patient referral | http://snomed.info/sct |
-| 188 | 546 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
-| 189 | 561 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
-| 190 | 562 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
-| 191 | 563 | Observation | `Observation.valueCodeableConcept.coding` | 312668007 | Abnormal fetal heart rate | http://snomed.info/sct |
-| 192 | 566 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 193 | 568 | Observation | `Observation.valueCodeableConcept.coding` | 73161006 | Transverse lie | http://snomed.info/sct |
-| 194 | 571 | Observation | `Observation.valueCodeableConcept.coding` | 63750008 | Oblique lie | http://snomed.info/sct |
-| 195 | 572 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 196 | 574 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://loinc.org |
-| 197 | 575 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 198 | 576 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Head not engaged | http://snomed.info/sct |
-| 199 | 577 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
-| 200 | 579 | Observation | `Observation.code.coding` | 89087-1 | Fetal Body weight Estimated | http://loinc.org |
-| 201 | 580 | Observation | `Observation.code.coding` | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 202 | 584 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 203 | 585 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 204 | 586 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 205 | 587 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 206 | 591 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
-| 207 | 592 | Observation | `Observation.valueCodeableConcept.coding` | 289439005 | Fetal heart rate absent | http://snomed.info/sct |
-| 208 | 593 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
-| 209 | 595 | Observation | `Observation.code.coding` | 11948-7 | Fetal Heart rate US | http://loinc.org |
-| 210 | 596 | Observation | `Observation.code.coding` | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 211 | 600 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 212 | 602 | Observation | `Observation.valueCodeableConcept.coding` | 73161006 | Transverse lie | http://snomed.info/sct |
-| 213 | 605 | Observation | `Observation.valueCodeableConcept.coding` | 63750008 | Oblique lie | http://snomed.info/sct |
-| 214 | 606 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 215 | 608 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://loinc.org |
-| 216 | 609 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 217 | 610 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Head not engaged | http://snomed.info/sct |
-| 218 | 611 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
-| 219 | 613 | Observation | `Observation.code.coding` | 89087-1 | Fetal Body weight Estimated | http://loinc.org |
-| 220 | 614 | Observation | `Observation.code.coding` | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 221 | 618 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 222 | 619 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 223 | 620 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 224 | 636 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
-| 225 | 640 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
-| 226 | 644 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
-| 227 | 648 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
-| 228 | 652 | Procedure | `Procedure.code` | 441041000124100 | Counseling about nutrition | http://snomed.info/sct |
-| 229 | 659 | Observation | `Observation.code.coding` | 11727-5 | Fetal Body weight estimated by US | http://loinc.org |
-| 230 | 664 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 231 | 665 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 232 | 666 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
-| 233 | 667 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 234 | 668 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
-| 235 | 670 | Observation | `Observation.code.coding` | 1285244000 | Mean arterial pressure | http://loinc.org |
-| 236 | 674 | Observation | `Observation.interpretation` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 237 | 675 | Observation | `Observation.interpretation` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 238 | 677 | PractitionerRole | `PractitionerRole.code.coding` | doctor | Doctor | http://terminology.hl7.org/CodeSystem/practitioner-role |
-| 239 | 678 | PractitionerRole | `PractitionerRole.code.coding` | 309367003 | Obstetrician and gynecologist | http://snomed.info/sct |
-| 240 | 685 | Condition | `Condition.code` | 40733004 | Infectious disease | http://snomed.info/sct |
-| 241 | 690 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | CUSTOM |
-| 242 | 695 | Procedure | `Procedure.code` | 25156005 | Intravenous feeding of patient | http://snomed.info/sct |
-| 243 | 699 | Procedure | `Procedure.code` | 161664006 | History of blood transfusion | http://snomed.info/sct |
-| 244 | 703 | Condition | `Condition.code.coding` | 161445009 | H/O: diabetes mellitus | http://snomed.info/sct |
-| 245 | 707 | Observation | `Observation.code.coding` | 698472009 | Blood glucose monitoring | http://snomed.info/sct |
-| 246 | 711 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | CUSTOM |
-| 247 | 715 | Observation | `Observation.code.coding` | 1285318003 | Viral hepatitis disease management program | http://snomed.info/sct |
+| 39 | 102 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 40 | 104 | Observation | `Observation.code.coding` | 11948-7 | Fetal Heart rate US | http://loinc.org |
+| 41 | 105 | Observation | `Observation.code.coding` | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 42 | 109 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
+| 43 | 110 | Observation | `Observation.valueCodeableConcept.coding` | 289439005 | Fetal heart rate absent | http://snomed.info/sct |
+| 44 | 111 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
+| 45 | 113 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://snomed.info/sct |
+| 46 | 114 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 47 | 115 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
+| 48 | 116 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Belum masuk panggul | http://snomed.info/sct |
+| 49 | 118 | Observation | `Observation.code.coding` | 89087-1 | Fetal Body weight Estimated | http://loinc.org |
+| 50 | 119 | Observation | `Observation.code.coding` | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 51 | 123 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 52 | 125 | Observation | `Observation.valueCodeableConcept.coding` | 73161006 | Transverse lie | http://snomed.info/sct |
+| 53 | 126 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 54 | 128 | Observation | `Observation.valueCodeableConcept.coding` | 63750008 | Oblique lie | http://snomed.info/sct |
+| 55 | 129 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 56 | 131 | Observation | `Observation.code.coding` | 246435002 | Number of fetuses | http://snomed.info/sct |
+| 57 | 132 | Observation | `Observation.code.coding` | ANC.B8.DE109 | Number of fetuses | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 58 | 133 | Observation | `Observation.valueCodeableConcept.coding` | 16356006 | Multiple pregnancy | http://snomed.info/sct |
+| 59 | 134 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 60 | 135 | Observation | `Observation.valueCodeableConcept.coding` | 237244005 | Single pregnancy | http://snomed.info/sct |
+| 61 | 137 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 62 | 138 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 63 | 139 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 64 | 140 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 65 | 144 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 66 | 155 | Procedure | `Procedure.code.coding` | 99.38 | Administration of tetanus toxoid | http://hl7.org/fhir/sid/icd-9-cm |
+| 67 | 165 | Medication | `Medication.code` | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf |
+| 68 | 186 | Medication | `Medication.code` | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf |
+| 69 | 206 | ServiceRequest | `ServiceRequest.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 70 | 207 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 71 | 211 | Observation | `Observation.code.coding` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 72 | 212 | Observation | `Observation.code.coding` | ANC.B9.DE175 | Blood hemoglobin test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 73 | 213 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 74 | 217 | Observation | `Observation.interpretation.coding` | 860635002 | No anemia present | http://snomed.info/sct |
+| 75 | 218 | Observation | `Observation.interpretation.coding` | OI000034 | Anemia berat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 76 | 219 | Observation | `Observation.interpretation.coding` | OI000032 | Anemia ringan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 77 | 220 | Observation | `Observation.interpretation.coding` | OI000033 | Anemia sedang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 78 | 222 | DiagnosticReport | `DiagnosticReport.code` | 718-7 | Hemoglobin [Mass/volume] in Blood | http://loinc.org |
+| 79 | 224 | ServiceRequest | `ServiceRequest.code` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 80 | 225 | Specimen | `Specimen.type` | 122575003 | Urine specimen | http://snomed.info/sct |
+| 81 | 228 | Observation | `Observation.code.coding` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 82 | 229 | Observation | `Observation.code.coding` | ANC.B9.DE114 | Urine test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 83 | 230 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 84 | 231 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 85 | 232 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 86 | 234 | Observation | `Observation.valueCodeableConcept.coding` | LA11841-6 | 1+ | http://loinc.org |
+| 87 | 235 | Observation | `Observation.valueCodeableConcept.coding` | LA11842-4 | 2+ | http://loinc.org |
+| 88 | 237 | DiagnosticReport | `DiagnosticReport.code` | 2887-8 | Protein [Presence] in Urine | http://loinc.org |
+| 89 | 240 | ServiceRequest | `ServiceRequest.code` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
+| 90 | 241 | Specimen | `Specimen.type` | 122592007 | Acellular blood (serum or plasma) specimen (specimen)​ | http://snomed.info/sct |
+| 91 | 244 | Observation | `Observation.code.coding` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
+| 92 | 247 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 93 | 248 | Observation | `Observation.interpretation.coding` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 94 | 249 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 95 | 251 | DiagnosticReport | `DiagnosticReport.code` | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | http://loinc.org |
+| 96 | 253 | ServiceRequest | `ServiceRequest.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
+| 97 | 254 | Specimen | `Specimen.type` | 122555007 | Whole Blood | http://snomed.info/sct |
+| 98 | 257 | Observation | `Observation.code.coding` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
+| 99 | 258 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 100 | 259 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 101 | 261 | DiagnosticReport | `DiagnosticReport.code` | 94537-8 | Hemoglobin panel - Blood by HPLC | http://loinc.org |
+| 102 | 263 | ServiceRequest | `ServiceRequest.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 103 | 264 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 104 | 268 | Observation | `Observation.code.coding` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 105 | 269 | Observation | `Observation.code.coding` | ANC.B9.DE96 | Syphilis test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 106 | 270 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 107 | 271 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 108 | 273 | DiagnosticReport | `DiagnosticReport.code` | 22464-2 | Reagin Ab [Presence] in Specimen | http://loinc.org |
+| 109 | 275 | ServiceRequest | `ServiceRequest.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 110 | 276 | Specimen | `Specimen.type` | 122555007 | Venous blood specimen | http://snomed.info/sct |
+| 111 | 280 | Observation | `Observation.code.coding` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 112 | 281 | Observation | `Observation.code.coding` | ANC.B9.DE60 | Hepatitis B test conducted | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 113 | 282 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 114 | 283 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 115 | 285 | DiagnosticReport | `DiagnosticReport.code` | 75410-1 | Hepatitis B virus surface Ag [Presence] in Serum, Plasma or Blood by Rapid immunoassay | http://loinc.org |
+| 116 | 287 | ServiceRequest | `ServiceRequest.code` | 7918-6 | HIV 1+2 Ab [Presence] in Serum | http://loinc.org |
+| 117 | 288 | Specimen | `Specimen.type` | 119364003 | Serum specimen (specimen) | http://snomed.info/sct |
+| 118 | 291 | Observation | `Observation.code.coding` | 7918-6 | HIV 1+2 Ab [Presence] in Serum | http://loinc.org |
+| 119 | 292 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 120 | 293 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 121 | 295 | DiagnosticReport | `DiagnosticReport.code` | 7918-6 | HIV 1+2 Ab [Presence] in Serum | http://loinc.org |
+| 122 | 297 | Observation | `Observation.code.coding` | 4241000179101 | Laboratory report | http://snomed.info/sct |
+| 123 | 301 | ServiceRequest | `ServiceRequest.code` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 124 | 302 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 125 | 305 | Observation | `Observation.code.coding` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 126 | 306 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 127 | 307 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 128 | 308 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 129 | 310 | DiagnosticReport | `DiagnosticReport.code` | 76772-3 | Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay | http://loinc.org |
+| 130 | 314 | ServiceRequest | `ServiceRequest.code` | 11477-7 | Microscopic observation [Identifier] in Sputum by Acid fast stain | http://loinc.org |
+| 131 | 315 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 132 | 318 | Observation | `Observation.code.coding` | 11477-7 | Microscopic observation [Identifier] in Sputum by Acid fast stain | http://loinc.org |
+| 133 | 319 | Observation | `Observation.valueCodeableConcept.coding` | LA6576-8 | Positive | http://loinc.org |
+| 134 | 320 | Observation | `Observation.valueCodeableConcept.coding` | LA6577-6 | Negative | http://loinc.org |
+| 135 | 322 | DiagnosticReport | `DiagnosticReport.code` | 11477-7 | Microscopic observation [Identifier] in Sputum by Acid fast stain | http://loinc.org |
+| 136 | 324 | ServiceRequest | `ServiceRequest.code` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
+| 137 | 325 | Specimen | `Specimen.type` | 119334006 | Sputum specimen | http://snomed.info/sct |
+| 138 | 328 | Observation | `Observation.code.coding` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
+| 139 | 329 | Observation | `Observation.valueCodeableConcept.coding` | LA11882-0 | Detected | http://loinc.org |
+| 140 | 330 | Observation | `Observation.interpretation.coding` | POS | Positive | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 141 | 331 | Observation | `Observation.valueCodeableConcept.coding` | LA11883-8 | Not detected | http://loinc.org |
+| 142 | 332 | Observation | `Observation.interpretation.coding` | NEG | Negative | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 143 | 334 | DiagnosticReport | `DiagnosticReport.code` | 88874-3 | Mycobacterium tuberculosis complex DNA [Presence] in Isolate or Specimen by Molecular genetics method | http://loinc.org |
+| 144 | 339 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | CUSTOM |
+| 145 | 343 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
+| 146 | 352 | Observation | `Observation.code.coding` | 32418-6 | Obstetric trimester Stated | http://loinc.org |
+| 147 | 353 | Observation | `Observation.code.coding` | ANC.SS.DE13 | Trimester ke | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 148 | 356 | Condition | `Condition.code.coding` | O13 | Gestational [pregnancy-induced] hypertension without signification proteinuria | http://hl7.org/fhir/sid/icd-10 |
+| 149 | 357 | Condition | `Condition.code.coding` | O21.9 | Vomiting of pregnancy, unspecified | http://hl7.org/fhir/sid/icd-10 |
+| 150 | 358 | Condition | `Condition.code.coding` | O25 | Malnutrition in pregnancy | http://hl7.org/fhir/sid/icd-10 |
+| 151 | 359 | Condition | `Condition.code.coding` | O14.9 | Pre-eclampsia, unspecified | http://hl7.org/fhir/sid/icd-10 |
+| 152 | 367 | PractitionerRole | `PractitionerRole.code` | 309453006 | Registered midwife | http://snomed.info/sct |
+| 153 | 368 | PractitionerRole | `PractitionerRole.code` | 309367003 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 154 | 369 | PractitionerRole | `PractitionerRole.code` | 309343006 | Physician | http://snomed.info/sct |
+| 155 | 370 | PractitionerRole | `PractitionerRole.code` | 106292003 | Professional nurse | http://snomed.info/sct |
+| 156 | 382 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
+| 157 | 387 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
+| 158 | 408 | ServiceRequest | `ServiceRequest.code.coding` | 5292-8 | Reagin Ab [Presence] in Serum by VDRL | http://loinc.org |
+| 159 | 410 | Observation | `Observation.code.coding` | 5292-8 | Reagin Ab [Presence] in Serum by VDRL | http://loinc.org |
+| 160 | 414 | DiagnosticReport | `DiagnosticReport.code` | 5292-8 | Reagin Ab [Presence] in Serum by VDRL | http://loinc.org |
+| 161 | 416 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 162 | 423 | Observation | `Observation.code.coding` | 8665-2 | Last menstrual period start date | http://loinc.org |
+| 163 | 424 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 164 | 427 | Observation | `Observation.code.coding` | 11778-8 | Delivery date Estimated | http://loinc.org |
+| 165 | 428 | Observation | `Observation.code.coding` | ANC.B6.DE22 | Expected date of delivery (EDD) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 166 | 433 | Observation | `Observation.code.coding` | 11948-7 | Fetal Heart rate US | http://loinc.org |
+| 167 | 434 | Observation | `Observation.code.coding` | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 168 | 438 | Observation | `Observation.code.coding` | 11888-5 | Gestational age US composite estimate | http://loinc.org |
+| 169 | 439 | Observation | `Observation.code.coding` | ANC.B6.DE20 | Ultrasound | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 170 | 443 | Observation | `Observation.code.coding` | 271692001 | Presentation of fetus | http://snomed.info/sct |
+| 171 | 444 | Observation | `Observation.code.coding` | ANC.SS.DE41 | Letak Janin USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 172 | 446 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 173 | 447 | Observation | `Observation.valueCodeableConcept.coding` | 398236008 | Intrauterine | http://snomed.info/sct |
+| 174 | 448 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 175 | 449 | Observation | `Observation.valueCodeableConcept.coding` | 288203005 | Transverse/oblique lie | http://snomed.info/sct |
+| 176 | 452 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
+| 177 | 461 | Observation | `Observation.component.code` | 74964007 | Other | http://snomed.info/sct |
+| 178 | 464 | Observation | `Observation.code.coding` | 736286003 | Hypertension clinical management plan | http://snomed.info/sct |
+| 179 | 466 | Observation | `Observation.component.code` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
+| 180 | 470 | Observation | `Observation.component.code` | 387672006 | Fetal monitoring | http://snomed.info/sct |
+| 181 | 472 | Observation | `Observation.component.code` | 74964007 | Other | http://snomed.info/sct |
+| 182 | 477 | Observation | `Observation.component.code` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
+| 183 | 481 | Observation | `Observation.component.code` | 387672006 | Fetal monitoring | http://snomed.info/sct |
+| 184 | 483 | Observation | `Observation.component.code` | 308116003 | Antihypertensive therapy | http://snomed.info/sct |
+| 185 | 489 | Observation | `Observation.component.code` | 74964007 | Other | http://snomed.info/sct |
+| 186 | 497 | Procedure | `Procedure.code.coding` | 11816003 | Diet education | http://snomed.info/sct |
+| 187 | 506 | Procedure | `Procedure.code.coding` | 171054004 | Pregnancy diet education | http://snomed.info/sct |
+| 188 | 512 | Observation | `Observation.code.coding` | 385821000 | Infection control management | http://snomed.info/sct |
+| 189 | 514 | Observation | `Observation.component.code` | 709541000 | Administration of antipyretic | http://snomed.info/sct |
+| 190 | 516 | Observation | `Observation.component.code` | 281789004 | Antibiotic therapy | http://snomed.info/sct |
+| 191 | 524 | Procedure | `Procedure.code.coding` | 363001008 | Cardiovascular education | http://snomed.info/sct |
+| 192 | 530 | Observation | `Observation.code.coding` | 1284934003 | Human immunodeficiency virus management program | http://snomed.info/sct |
+| 193 | 533 | Observation | `Observation.code.coding` | 1280002000 | Tuberculosis management program | http://snomed.info/sct |
+| 194 | 542 | Observation | `Observation.component.code` | 3457005 | Patient referral | http://snomed.info/sct |
+| 195 | 546 | ServiceRequest | `ServiceRequest.code.coding` | 737492002 | Outpatient care management | http://snomed.info/sct |
+| 196 | 561 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
+| 197 | 562 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
+| 198 | 563 | Observation | `Observation.valueCodeableConcept.coding` | 312668007 | Abnormal fetal heart rate | http://snomed.info/sct |
+| 199 | 566 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 200 | 568 | Observation | `Observation.valueCodeableConcept.coding` | 73161006 | Transverse lie | http://snomed.info/sct |
+| 201 | 569 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 202 | 571 | Observation | `Observation.valueCodeableConcept.coding` | 63750008 | Oblique lie | http://snomed.info/sct |
+| 203 | 572 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 204 | 574 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://loinc.org |
+| 205 | 575 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 206 | 576 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Head not engaged | http://snomed.info/sct |
+| 207 | 577 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
+| 208 | 579 | Observation | `Observation.code.coding` | 89087-1 | Fetal Body weight Estimated | http://loinc.org |
+| 209 | 580 | Observation | `Observation.code.coding` | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 210 | 584 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 211 | 585 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 212 | 586 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 213 | 587 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 214 | 591 | Observation | `Observation.code.coding` | 289437007 | Finding of fetal heart rate | http://snomed.info/sct |
+| 215 | 592 | Observation | `Observation.valueCodeableConcept.coding` | 289439005 | Fetal heart rate absent | http://snomed.info/sct |
+| 216 | 593 | Observation | `Observation.valueCodeableConcept.coding` | 289441006 | Normal fetal heart rate | http://snomed.info/sct |
+| 217 | 595 | Observation | `Observation.code.coding` | 11948-7 | Fetal Heart rate US | http://loinc.org |
+| 218 | 596 | Observation | `Observation.code.coding` | ANC.SS.DE38 | Denyut Jantung Janin (DJJ) USG | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 219 | 600 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 220 | 602 | Observation | `Observation.valueCodeableConcept.coding` | 73161006 | Transverse lie | http://snomed.info/sct |
+| 221 | 603 | Observation | `Observation.dataAbsentReason` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 222 | 605 | Observation | `Observation.valueCodeableConcept.coding` | 63750008 | Oblique lie | http://snomed.info/sct |
+| 223 | 606 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 224 | 608 | Observation | `Observation.code.coding` | 249111004 | Engagement of head | http://loinc.org |
+| 225 | 609 | Observation | `Observation.code.coding` | ANC.SS.DE46 | Kepala Terhadap PAP | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 226 | 610 | Observation | `Observation.valueCodeableConcept.coding` | 62098001 | Head not engaged | http://snomed.info/sct |
+| 227 | 611 | Observation | `Observation.valueCodeableConcept.coding` | 249112006 | Head engaged | http://snomed.info/sct |
+| 228 | 613 | Observation | `Observation.code.coding` | 89087-1 | Fetal Body weight Estimated | http://loinc.org |
+| 229 | 614 | Observation | `Observation.code.coding` | ANC.SS.DE1 | Taksiran Berat Janin (TBJ) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 230 | 618 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 231 | 619 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 232 | 620 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 233 | 636 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
+| 234 | 640 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
+| 235 | 644 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
+| 236 | 648 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | http://snomed.info/sct |
+| 237 | 652 | Procedure | `Procedure.code` | 441041000124100 | Counseling about nutrition | http://snomed.info/sct |
+| 238 | 659 | Observation | `Observation.code.coding` | 11727-5 | Fetal Body weight estimated by US | http://loinc.org |
+| 239 | 664 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 240 | 665 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 241 | 666 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005 | Cephalic fetal presentation | http://snomed.info/sct |
+| 242 | 667 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 243 | 668 | Observation | `Observation.valueCodeableConcept.coding` | 6096002 | Breech presentation | http://snomed.info/sct |
+| 244 | 670 | Observation | `Observation.code.coding` | 1285244000 | Mean arterial pressure | http://loinc.org |
+| 245 | 674 | Observation | `Observation.interpretation` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 246 | 675 | Observation | `Observation.interpretation` | A | Abnormal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 247 | 677 | PractitionerRole | `PractitionerRole.code.coding` | doctor | Doctor | http://terminology.hl7.org/CodeSystem/practitioner-role |
+| 248 | 678 | PractitionerRole | `PractitionerRole.code.coding` | 309367003 | Obstetrician and gynecologist | http://snomed.info/sct |
+| 249 | 685 | Condition | `Condition.code` | 40733004 | Infectious disease | http://snomed.info/sct |
+| 250 | 690 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | CUSTOM |
+| 251 | 695 | Procedure | `Procedure.code` | 25156005 | Intravenous feeding of patient | http://snomed.info/sct |
+| 252 | 699 | Procedure | `Procedure.code` | 161664006 | History of blood transfusion | http://snomed.info/sct |
+| 253 | 703 | Condition | `Condition.code.coding` | 161445009 | H/O: diabetes mellitus | http://snomed.info/sct |
+| 254 | 707 | Observation | `Observation.code.coding` | 698472009 | Blood glucose monitoring | http://snomed.info/sct |
+| 255 | 711 | Observation | `Observation.code.coding` | CUSTOM | CUSTOM | CUSTOM |
+| 256 | 715 | Observation | `Observation.code.coding` | 1285318003 | Viral hepatitis disease management program | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -441,6 +450,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 97 |
 | http://loinc.org | 82 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 32 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 9 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare/ANC | 7 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 7 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 |
@@ -451,7 +461,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://sys-ids.kemkes.go.id/kf | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.hl7.org/CodeSystem/practitioner-role | 1 |
-| **Total** | **247** |
+| **Total** | **256** |
 
 ## Variabel di luar payload
 

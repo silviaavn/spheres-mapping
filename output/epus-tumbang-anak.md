@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 19 |
-| Code (`jumlah code` = 1) | 55 |
-| Code unik (code + CodeSystem) | 38 |
+| Code (`jumlah code` = 1) | 62 |
+| Code unik (code + CodeSystem) | 45 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 8 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 34 |
@@ -73,54 +73,61 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 16 | 73 | Observation | `Observation.code.coding` | OC000012 | Kenaikan Berat Badan Adekuat | http://terminology.kemkes.go.id/CodeSystem/ |
 | 17 | 86 | Observation | `Observation.code.coding` | 1153590000 | Length for age z-score | http://snomed.info/sct |
 | 18 | 87 | Observation | `Observation.code.coding` | 1153604005 | Body height for age z score | http://snomed.info/sct |
-| 19 | 113 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
-| 20 | 116 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
-| 21 | 117 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
-| 22 | 118 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 23 | 119 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 24 | 129 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
-| 25 | 141 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://loinc.org |
-| 26 | 163 | Condition | `Condition.code.coding` | 404684003 | Clinical finding | http://snomed.info/sct |
-| 27 | 197 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170218003 | Child examination: gross motor development | http://snomed.info/sct |
-| 28 | 198 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170219006 | Child examination: fine motor development | http://snomed.info/sct |
-| 29 | 199 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | http://terminology.kemkes.go.id/sp |
-| 30 | 200 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | http://terminology.kemkes.go.id/sp |
-| 31 | 211 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170218003 | Child examination: gross motor development | http://snomed.info/sct |
-| 32 | 212 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170219006 | Child examination: fine motor development | http://snomed.info/sct |
-| 33 | 213 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | http://terminology.kemkes.go.id/sp |
-| 34 | 214 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | http://terminology.kemkes.go.id/sp |
-| 35 | 220 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
-| 36 | 221 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
-| 37 | 227 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
-| 38 | 228 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
-| 39 | 234 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
-| 40 | 235 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
-| 41 | 249 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
-| 42 | 261 | Observation | `Observation.code.coding` | OC000009 | Makanan Pendamping ASI (MPASI) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 43 | 276 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
-| 44 | 277 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
-| 45 | 278 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 723509005 | High risk | http://snomed.info/sct |
-| 46 | 284 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
-| 47 | 285 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
-| 48 | 293 | Procedure | `Procedure.code.coding` | 408429008 | Recommendation to caregiver regarding child's development program | http://snomed.info/sct |
-| 49 | 305 | Observation | `Observation.code.coding` | SP000061 | Intervensi Dini Masalah Perkembangan Anak | http://terminology.kemkes.go.id/sp |
-| 50 | 306 | Observation | `Observation.valueCodeableConcept` | 170218003 | Child examination: gross motor development | http://snomed.info/sct |
-| 51 | 307 | Observation | `Observation.valueCodeableConcept` | 170219006 | Child examination: fine motor development | http://snomed.info/sct |
-| 52 | 308 | Observation | `Observation.valueCodeableConcept` | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | http://terminology.kemkes.go.id/sp |
-| 53 | 309 | Observation | `Observation.valueCodeableConcept` | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | http://terminology.kemkes.go.id/sp |
-| 54 | 319 | Observation | `Observation.code.coding` | SP000064 | Tindakan Pengobatan Lain | http://terminology.kemkes.go.id/sp |
-| 55 | 330 | Observation | `Observation.code.coding` | OC000034 | Surat Pengantar Rujukan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 19 | 90 | Observation | `Observation.interpretation.coding` | OI000011 | Sangat Pendek | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 20 | 95 | Observation | `Observation.interpretation.coding` | 444000005 | Short stature for age | http://snomed.info/sct |
+| 21 | 100 | Observation | `Observation.interpretation.coding` | 17489000 | Body height normal for age | http://snomed.info/sct |
+| 22 | 103 | Observation | `Observation.interpretation.coding` | 83077003 | Tall for age | http://snomed.info/sct |
+| 23 | 113 | Observation | `Observation.code.coding` | 1153593003 | Weight for age z-score | http://snomed.info/sct |
+| 24 | 116 | Observation | `Observation.interpretation.coding` | 248342006 | Underweight | http://snomed.info/sct |
+| 25 | 117 | Observation | `Observation.interpretation.coding` | 43664005 | Normal weight | http://snomed.info/sct |
+| 26 | 118 | Observation | `Observation.interpretation.coding` | OI000010 | Risiko Berat Badan Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 27 | 119 | Observation | `Observation.interpretation.coding` | OI000007 | Berat Badan Sangat Kurang | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 28 | 129 | Observation | `Observation.code.coding` | 9843-4 | Head Occipital-frontal circumference | http://loinc.org |
+| 29 | 141 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://loinc.org |
+| 30 | 144 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
+| 31 | 149 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 32 | 152 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 33 | 163 | Condition | `Condition.code.coding` | 404684003 | Clinical finding | http://snomed.info/sct |
+| 34 | 197 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170218003 | Child examination: gross motor development | http://snomed.info/sct |
+| 35 | 198 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170219006 | Child examination: fine motor development | http://snomed.info/sct |
+| 36 | 199 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | http://terminology.kemkes.go.id/sp |
+| 37 | 200 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | http://terminology.kemkes.go.id/sp |
+| 38 | 211 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170218003 | Child examination: gross motor development | http://snomed.info/sct |
+| 39 | 212 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 170219006 | Child examination: fine motor development | http://snomed.info/sct |
+| 40 | 213 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | http://terminology.kemkes.go.id/sp |
+| 41 | 214 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | http://terminology.kemkes.go.id/sp |
+| 42 | 220 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
+| 43 | 221 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
+| 44 | 227 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
+| 45 | 228 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
+| 46 | 234 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
+| 47 | 235 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
+| 48 | 249 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
+| 49 | 261 | Observation | `Observation.code.coding` | OC000009 | Makanan Pendamping ASI (MPASI) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 50 | 276 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
+| 51 | 277 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
+| 52 | 278 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 723509005 | High risk | http://snomed.info/sct |
+| 53 | 284 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 17621005 | Normal | http://snomed.info/sct |
+| 54 | 285 | QuestionnaireResponse | `QuestionnaireResponse.item.item.answer.valueCoding` | 410519009 | At risk | http://snomed.info/sct |
+| 55 | 293 | Procedure | `Procedure.code.coding` | 408429008 | Recommendation to caregiver regarding child's development program | http://snomed.info/sct |
+| 56 | 305 | Observation | `Observation.code.coding` | SP000061 | Intervensi Dini Masalah Perkembangan Anak | http://terminology.kemkes.go.id/sp |
+| 57 | 306 | Observation | `Observation.valueCodeableConcept` | 170218003 | Child examination: gross motor development | http://snomed.info/sct |
+| 58 | 307 | Observation | `Observation.valueCodeableConcept` | 170219006 | Child examination: fine motor development | http://snomed.info/sct |
+| 59 | 308 | Observation | `Observation.valueCodeableConcept` | SP000062 | Pemeriksaan Anak: Bicara dan Bahasa | http://terminology.kemkes.go.id/sp |
+| 60 | 309 | Observation | `Observation.valueCodeableConcept` | SP000155 | Pemeriksaan Anak: Sosialisasi dan Kemandirian | http://terminology.kemkes.go.id/sp |
+| 61 | 319 | Observation | `Observation.code.coding` | SP000064 | Tindakan Pengobatan Lain | http://terminology.kemkes.go.id/sp |
+| 62 | 330 | Observation | `Observation.code.coding` | OC000034 | Surat Pengantar Rujukan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 34 |
+| http://snomed.info/sct | 38 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 9 |
 | http://terminology.kemkes.go.id/sp | 8 |
 | http://loinc.org | 6 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 6 |
 | http://terminology.kemkes.go.id/CodeSystem/ | 1 |
-| **Total** | **55** |
+| **Total** | **62** |
 
 ## Variabel di luar payload
 

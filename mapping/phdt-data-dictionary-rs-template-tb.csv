@@ -44,8 +44,8 @@ Kunjungan,,,NoRegistrasi,Nomor Registrasi,string,,,,,Encounter,Encounter.identif
 ,,,,,,,,,,Encounter,Encounter.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.participant.type.coding,ATND,attender,http://terminology.hl7.org/CodeSystem/v3-ParticipationType,,,
 ,,,,,,,,,,Encounter,Encounter.participant.individual.reference,Reference ke resources Practitioner {{practitioner_id}},,,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location {{location_id}},,,,,
-,,,NamaBagian,Nama Bagian,,,,Nama unit/klinik sebagai display saja.,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location {{location_id}},,,,,
+,,,NamaBagian,Nama Bagian,,,,Nama unit/klinik sebagai display saja.,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.serviceProvider.reference,Reference ke resources Organization {{organization_id}},,,,,
 ,,,AsalRujukan,Asal Rujukan,string,,,Kosong jika datang sendiri.,,Encounter,Encounter.hospitalization.admitSource.text,Tidak ada,Tidak ada,Tidak ada,,,
 Pembiayaan,,,NamaPasien,,,,,,,Coverage,Coverage.beneficiary.reference,Reference ke resources Patient,,,,,1

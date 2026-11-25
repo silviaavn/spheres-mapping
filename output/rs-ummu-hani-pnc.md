@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 53 |
-| Code (`jumlah code` = 1) | 110 |
-| Code unik (code + CodeSystem) | 95 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 6 |
+| Code (`jumlah code` = 1) | 112 |
+| Code unik (code + CodeSystem) | 97 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 8 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -56,7 +56,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 34 | 445–455 | Procedure | 409019001.0 | Postpartum care management | _Tatalaksana PNC_ → `Procedure.category.coding` (445, tanpa BQ) |
 | 35 | 456–473 | Condition | 47821001.0 | Postpartum hemorrhage | _Komplikasi Masa Nifas_ → `Condition.clinicalStatus.coding` (456, tanpa BQ) |
 | 36 | 474–486 | Observation | 289084000.0 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (477, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (486, tanpa BQ) |
-| 37 | 487–500 | Observation | OC000017 | Produksi ASI | _Produksi ASI_ → `Observation.valueCodeableConcept.coding` (490, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.catgeory.coding` (500, tanpa BQ) |
+| 37 | 487–500 | Observation | OC000017 | Produksi ASI | _Produksi ASI_ → `Observation.valueCodeableConcept.coding` (490, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.category.coding` (500, tanpa BQ) |
 | 38 | 501–513 | Observation | SP000122 | Catat di Buku KIA | _Metode Kontrasepsi KB Pasca Plasenta_ → `Observation.status` (512, tanpa BQ) |
 | 39 | 514–531 | Observation | SP000139 | KB Pasca Plasenta | _Metode Kontrasepsi KB Pasca Persalinan_ → `Observation.status` (530, tanpa BQ) |
 | 40 | 532–547 | Observation | PC000004 | KB Pasca Persalinan | – |
@@ -207,6 +207,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 108 | 706 | Observation | `Observation.valueCodeableConcept.coding` | 438949009.0 | Alive | http://snomed.info/sct |
 | 109 | 707 | Observation | `Observation.valueCodeableConcept.coding` | 419099009.0 | Dead | http://snomed.info/sct |
 | 110 | 720 | ServiceRequest | `ServiceRequest.code.coding` | 409014006.0 | Delivery care management | http://snomed.info/sct |
+| 111 | 729 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
+| 112 | 733 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -215,13 +217,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://snomed.info/sct | 64 |
 | http://loinc.org | 20 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 9 |
-| http://terminology.kemkes.go.id/sp | 6 |
+| http://terminology.kemkes.go.id/sp | 8 |
 | http://sys-ids.kemkes.go.id/kf | 4 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 3 |
 | http://hl7.org/fhir/sid/icd-10 | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **110** |
+| **Total** | **112** |
 
 ## Variabel di luar payload
 

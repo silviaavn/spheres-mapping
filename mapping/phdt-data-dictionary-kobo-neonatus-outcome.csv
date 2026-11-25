@@ -43,7 +43,7 @@ Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Form
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner,,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Alamat Domisili,,,,,,Patient,Patient.address.use,home,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Patient,Patient.line,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Patient,Patient.address.line,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Patient,Patient.address.city,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Patient,Patient.address.country,ID,Tidak ada,Tidak ada,,,
 ,,,,Nama Provinsi,string,,,,,Patient,Patient.address.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode,,,

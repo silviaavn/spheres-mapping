@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 86 |
-| Code (`jumlah code` = 1) | 262 |
-| Code unik (code + CodeSystem) | 203 |
+| Code (`jumlah code` = 1) | 264 |
+| Code unik (code + CodeSystem) | 204 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
@@ -291,106 +291,108 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 160 | 850 | Observation | `Observation.valueCodeableConcept.coding` | 249112006.0 | Head engaged | http://snomed.info/sct |
 | 161 | 852 | Observation | `Observation.valueCodeableConcept.coding` | 62098001.0 | Head not engaged | http://snomed.info/sct |
 | 162 | 867 | Observation | `Observation.code.coding` | 32750006.0 | Inspection | http://snomed.info/sct |
-| 163 | 880 | Observation | `Observation.code.coding` | 424679001.0 | pH measurement, vaginal fluid | http://snomed.info/sct |
-| 164 | 893 | Procedure | `Procedure.code.coding` | 387672006.0 | Cardiotochogram | http://snomed.info/sct |
-| 165 | 905 | Observation | `Observation.code.coding` | 251666009.0 | Cardiotochogram finding | http://snomed.info/sct |
-| 166 | 1025 | Condition | `Condition.code.coding` | 404684003.0 | Clinical finding | http://snomed.info/sct |
-| 167 | 1053 | Encounter | `Encounter.hospitalization.admitSource.coding` | born | Born in hospital | http://terminology.hl7.org/CodeSystem/admit-source |
-| 168 | 1068 | Condition | `Condition.code.coding` | Z00.1 | Routine child health examination | http://hl7.org/fhir/sid/icd-10 |
-| 169 | 1088 | EpisodeOfCare | `EpisodeOfCare.type.coding` | Neonate | Neonate | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
-| 170 | 1108 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
-| 171 | 1121 | Observation | `Observation.code.coding` | 89269-5 | Body height Measured --at birth | http://loinc.org |
-| 172 | 1133 | Observation | `Observation.code.coding` | 169876006.0 | Birth head circumference | http://snomed.info/sct |
-| 173 | 1145 | Observation | `Observation.code.coding` | 365475008.0 | Place in family order | http://snomed.info/sct |
-| 174 | 1156 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
-| 175 | 1173 | Observation | `Observation.code.coding` | 3941000175104.0 | Birth abdominal circumference | http://snomed.info/sct |
-| 176 | 1185 | Observation | `Observation.code.coding` | 3931000175105.0 | Birth chest circumference | http://snomed.info/sct |
-| 177 | 1198 | Observation | `Observation.code.coding` | 11996-6 | [#] Pregnancies | http://loinc.org |
-| 178 | 1199 | Observation | `Observation.code.coding` | ANC.B6.DE24 | Number of pregnancies (gravida) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 179 | 1210 | Observation | `Observation.code.coding` | 11977-6 | [#] Parity | http://loinc.org |
-| 180 | 1211 | Observation | `Observation.code.coding` | ANC.B6.DE32 | Parity | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 181 | 1222 | Observation | `Observation.code.coding` | 69043-8 | Other pregnancy outcomes # | http://loinc.org |
-| 182 | 1223 | Observation | `Observation.code.coding` | ANC.B6.DE25 | Number of miscarriages and/or abortions | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 183 | 1234 | Observation | `Observation.code.coding` | 9272-6 | 1 minute Apgar Score | http://loinc.org |
-| 184 | 1244 | Observation | `Observation.interpretation.coding` | 57284007.0 | Severe birth asphyxia | http://snomed.info/sct |
-| 185 | 1245 | Observation | `Observation.interpretation.coding` | 77362009.0 | Mild to moderate birth asphyxia | http://snomed.info/sct |
-| 186 | 1246 | Observation | `Observation.interpretation.coding` | 275307002.0 | Apgar normal | http://snomed.info/sct |
-| 187 | 1247 | Observation | `Observation.component.code.coding` | 32406-1 | 1 minute Apgar Color | http://loinc.org |
-| 188 | 1248 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6722-8 | The baby's whole body is completely bluish-gray or pale | http://loinc.org |
-| 189 | 1249 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6723-6 | Good color in body with bluish hands or feet | http://loinc.org |
-| 190 | 1250 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6724-4 | Good color all over | http://loinc.org |
-| 191 | 1251 | Observation | `Observation.component.code.coding` | 32407-9 | 1 minute Apgar Heart rate | http://loinc.org |
-| 192 | 1252 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6716-0 | No heart rate | http://loinc.org |
-| 193 | 1253 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6717-8 | Fewer than 100 beats per minute | http://loinc.org |
-| 194 | 1254 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6718-6 | At least 100 beats per minute | http://loinc.org |
-| 195 | 1255 | Observation | `Observation.component.code.coding` | 32409-5 | 1 minute Apgar Reflex irritability | http://loinc.org |
-| 196 | 1256 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6719-4 | No response to airways being suctioned | http://loinc.org |
-| 197 | 1257 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6720-2 | Grimace during suctioning | http://loinc.org |
-| 198 | 1258 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6721-0 | Grimace and pulling away, cough, or sneeze during suctioning | http://loinc.org |
-| 199 | 1259 | Observation | `Observation.component.code.coding` | 32408-7 | 1 minute Apgar Muscle tone | http://loinc.org |
-| 200 | 1260 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6713-7 | Limp; no movement | http://loinc.org |
-| 201 | 1261 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6714-5 | Some flexion of arms and legs | http://loinc.org |
-| 202 | 1262 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6715-2 | Active motion | http://loinc.org |
-| 203 | 1263 | Observation | `Observation.component.code.coding` | 32410-3 | 1 minute Apgar Respiratory effort | http://loinc.org |
-| 204 | 1264 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6725-1 | Not breathing | http://loinc.org |
-| 205 | 1265 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | http://loinc.org |
-| 206 | 1266 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6727-7 | Good, strong cry; normal rate and effort of breathing | http://loinc.org |
-| 207 | 1269 | Observation | `Observation.code.coding` | 9274-2 | 5 minute Apgar Score | http://loinc.org |
-| 208 | 1279 | Observation | `Observation.interpretation.coding` | 57284007.0 | Severe birth asphyxia | http://snomed.info/sct |
-| 209 | 1280 | Observation | `Observation.interpretation.coding` | 77362009.0 | Mild to moderate birth asphyxia | http://snomed.info/sct |
-| 210 | 1281 | Observation | `Observation.interpretation.coding` | 275307002.0 | Apgar normal | http://snomed.info/sct |
-| 211 | 1282 | Observation | `Observation.component.code.coding` | 32411-1 | 5 minute Apgar Color | http://loinc.org |
-| 212 | 1283 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6722-8 | The baby's whole body is completely bluish-gray or pale | http://loinc.org |
-| 213 | 1284 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6723-6 | Good color in body with bluish hands or feet | http://loinc.org |
-| 214 | 1285 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6724-4 | Good color all over | http://loinc.org |
-| 215 | 1286 | Observation | `Observation.component.code.coding` | 32412-9 | 5 minute Apgar Heart rate | http://loinc.org |
-| 216 | 1287 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6716-0 | No heart rate | http://loinc.org |
-| 217 | 1288 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6717-8 | Fewer than 100 beats per minute | http://loinc.org |
-| 218 | 1289 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6718-6 | At least 100 beats per minute | http://loinc.org |
-| 219 | 1290 | Observation | `Observation.component.code.coding` | 32414-5 | 5 minute Apgar Reflex irritability | http://loinc.org |
-| 220 | 1291 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6719-4 | No response to airways being suctioned | http://loinc.org |
-| 221 | 1292 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6720-2 | Grimace during suctioning | http://loinc.org |
-| 222 | 1293 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6721-0 | Grimace and pulling away, cough, or sneeze during suctioning | http://loinc.org |
-| 223 | 1294 | Observation | `Observation.component.code.coding` | 32413-7 | 5 minute Apgar Muscle tone | http://loinc.org |
-| 224 | 1295 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6713-7 | Limp; no movement | http://loinc.org |
-| 225 | 1296 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6714-5 | Some flexion of arms and legs | http://loinc.org |
-| 226 | 1297 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6715-2 | Active motion | http://loinc.org |
-| 227 | 1298 | Observation | `Observation.component.code.coding` | 32415-2 | 5 minute Apgar Respiratory effort | http://loinc.org |
-| 228 | 1299 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6725-1 | Not breathing | http://loinc.org |
-| 229 | 1300 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | http://loinc.org |
-| 230 | 1301 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6727-7 | Good, strong cry; normal rate and effort of breathing | http://loinc.org |
-| 231 | 1304 | Observation | `Observation.code.coding` | 9271-8 | 10 minute Apgar Score | http://loinc.org |
-| 232 | 1314 | Observation | `Observation.interpretation.coding` | 57284007.0 | Severe birth asphyxia | http://snomed.info/sct |
-| 233 | 1315 | Observation | `Observation.interpretation.coding` | 77362009.0 | Mild to moderate birth asphyxia | http://snomed.info/sct |
-| 234 | 1316 | Observation | `Observation.interpretation.coding` | 275307002.0 | Apgar normal | http://snomed.info/sct |
-| 235 | 1317 | Observation | `Observation.component.code.coding` | 32401-2 | 10 minute Apgar Color | http://loinc.org |
-| 236 | 1318 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6722-8 | The baby's whole body is completely bluish-gray or pale | http://loinc.org |
-| 237 | 1319 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6723-6 | Good color in body with bluish hands or feet | http://loinc.org |
-| 238 | 1320 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6724-4 | Good color all over | http://loinc.org |
-| 239 | 1321 | Observation | `Observation.component.code.coding` | 32402-0 | 10 minute Apgar Heart rate | http://loinc.org |
-| 240 | 1322 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6716-0 | No heart rate | http://loinc.org |
-| 241 | 1323 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6717-8 | Fewer than 100 beats per minute | http://loinc.org |
-| 242 | 1324 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6718-6 | At least 100 beats per minute | http://loinc.org |
-| 243 | 1325 | Observation | `Observation.component.code.coding` | 32404-6 | 10 minute Apgar Reflex irritability | http://loinc.org |
-| 244 | 1326 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6719-4 | No response to airways being suctioned | http://loinc.org |
-| 245 | 1327 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6720-2 | Grimace during suctioning | http://loinc.org |
-| 246 | 1328 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6721-0 | Grimace and pulling away, cough, or sneeze during suctioning | http://loinc.org |
-| 247 | 1329 | Observation | `Observation.component.code.coding` | 32403-8 | 10 minute Apgar Muscle tone | http://loinc.org |
-| 248 | 1330 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6713-7 | Limp; no movement | http://loinc.org |
-| 249 | 1331 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6714-5 | Some flexion of arms and legs | http://loinc.org |
-| 250 | 1332 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6715-2 | Active motion | http://loinc.org |
-| 251 | 1333 | Observation | `Observation.component.code.coding` | 32405-3 | 10 minute Apgar Respiratory effort | http://loinc.org |
-| 252 | 1334 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6725-1 | Not breathing | http://loinc.org |
-| 253 | 1335 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | http://loinc.org |
-| 254 | 1336 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6727-7 | Good, strong cry; normal rate and effort of breathing | http://loinc.org |
-| 255 | 1338 | Procedure | `Procedure.code.coding` | 386412000.0 | Resuscitation of neonate | http://snomed.info/sct |
-| 256 | 1350 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
-| 257 | 1360 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 258 | 1370 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 259 | 1383 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
-| 260 | 1384 | Immunization | `Immunization.vaccineCode` | 30.0 | hepatitis B immune globulin | http://hl7.org/fhir/sid/cvx |
-| 261 | 1397 | Observation | `Observation.code.coding` | 249278006.0 | Ability to pass urine | http://snomed.info/sct |
-| 262 | 1409 | Observation | `Observation.code.coding` | 276397000.0 | Has passed meconium | http://snomed.info/sct |
+| 163 | 869 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 164 | 880 | Observation | `Observation.code.coding` | 424679001.0 | pH measurement, vaginal fluid | http://snomed.info/sct |
+| 165 | 882 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 166 | 893 | Procedure | `Procedure.code.coding` | 387672006.0 | Cardiotochogram | http://snomed.info/sct |
+| 167 | 905 | Observation | `Observation.code.coding` | 251666009.0 | Cardiotochogram finding | http://snomed.info/sct |
+| 168 | 1025 | Condition | `Condition.code.coding` | 404684003.0 | Clinical finding | http://snomed.info/sct |
+| 169 | 1053 | Encounter | `Encounter.hospitalization.admitSource.coding` | born | Born in hospital | http://terminology.hl7.org/CodeSystem/admit-source |
+| 170 | 1068 | Condition | `Condition.code.coding` | Z00.1 | Routine child health examination | http://hl7.org/fhir/sid/icd-10 |
+| 171 | 1088 | EpisodeOfCare | `EpisodeOfCare.type.coding` | Neonate | Neonate | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type |
+| 172 | 1108 | Observation | `Observation.code.coding` | 8339-4 | Birth weight Measured | http://loinc.org |
+| 173 | 1121 | Observation | `Observation.code.coding` | 89269-5 | Body height Measured --at birth | http://loinc.org |
+| 174 | 1133 | Observation | `Observation.code.coding` | 169876006.0 | Birth head circumference | http://snomed.info/sct |
+| 175 | 1145 | Observation | `Observation.code.coding` | 365475008.0 | Place in family order | http://snomed.info/sct |
+| 176 | 1156 | Observation | `Observation.code.coding` | 93857-1 | Date and time of obstetric delivery | http://loinc.org |
+| 177 | 1173 | Observation | `Observation.code.coding` | 3941000175104.0 | Birth abdominal circumference | http://snomed.info/sct |
+| 178 | 1185 | Observation | `Observation.code.coding` | 3931000175105.0 | Birth chest circumference | http://snomed.info/sct |
+| 179 | 1198 | Observation | `Observation.code.coding` | 11996-6 | [#] Pregnancies | http://loinc.org |
+| 180 | 1199 | Observation | `Observation.code.coding` | ANC.B6.DE24 | Number of pregnancies (gravida) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 181 | 1210 | Observation | `Observation.code.coding` | 11977-6 | [#] Parity | http://loinc.org |
+| 182 | 1211 | Observation | `Observation.code.coding` | ANC.B6.DE32 | Parity | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 183 | 1222 | Observation | `Observation.code.coding` | 69043-8 | Other pregnancy outcomes # | http://loinc.org |
+| 184 | 1223 | Observation | `Observation.code.coding` | ANC.B6.DE25 | Number of miscarriages and/or abortions | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 185 | 1234 | Observation | `Observation.code.coding` | 9272-6 | 1 minute Apgar Score | http://loinc.org |
+| 186 | 1244 | Observation | `Observation.interpretation.coding` | 57284007.0 | Severe birth asphyxia | http://snomed.info/sct |
+| 187 | 1245 | Observation | `Observation.interpretation.coding` | 77362009.0 | Mild to moderate birth asphyxia | http://snomed.info/sct |
+| 188 | 1246 | Observation | `Observation.interpretation.coding` | 275307002.0 | Apgar normal | http://snomed.info/sct |
+| 189 | 1247 | Observation | `Observation.component.code.coding` | 32406-1 | 1 minute Apgar Color | http://loinc.org |
+| 190 | 1248 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6722-8 | The baby's whole body is completely bluish-gray or pale | http://loinc.org |
+| 191 | 1249 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6723-6 | Good color in body with bluish hands or feet | http://loinc.org |
+| 192 | 1250 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6724-4 | Good color all over | http://loinc.org |
+| 193 | 1251 | Observation | `Observation.component.code.coding` | 32407-9 | 1 minute Apgar Heart rate | http://loinc.org |
+| 194 | 1252 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6716-0 | No heart rate | http://loinc.org |
+| 195 | 1253 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6717-8 | Fewer than 100 beats per minute | http://loinc.org |
+| 196 | 1254 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6718-6 | At least 100 beats per minute | http://loinc.org |
+| 197 | 1255 | Observation | `Observation.component.code.coding` | 32409-5 | 1 minute Apgar Reflex irritability | http://loinc.org |
+| 198 | 1256 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6719-4 | No response to airways being suctioned | http://loinc.org |
+| 199 | 1257 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6720-2 | Grimace during suctioning | http://loinc.org |
+| 200 | 1258 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6721-0 | Grimace and pulling away, cough, or sneeze during suctioning | http://loinc.org |
+| 201 | 1259 | Observation | `Observation.component.code.coding` | 32408-7 | 1 minute Apgar Muscle tone | http://loinc.org |
+| 202 | 1260 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6713-7 | Limp; no movement | http://loinc.org |
+| 203 | 1261 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6714-5 | Some flexion of arms and legs | http://loinc.org |
+| 204 | 1262 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6715-2 | Active motion | http://loinc.org |
+| 205 | 1263 | Observation | `Observation.component.code.coding` | 32410-3 | 1 minute Apgar Respiratory effort | http://loinc.org |
+| 206 | 1264 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6725-1 | Not breathing | http://loinc.org |
+| 207 | 1265 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | http://loinc.org |
+| 208 | 1266 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6727-7 | Good, strong cry; normal rate and effort of breathing | http://loinc.org |
+| 209 | 1269 | Observation | `Observation.code.coding` | 9274-2 | 5 minute Apgar Score | http://loinc.org |
+| 210 | 1279 | Observation | `Observation.interpretation.coding` | 57284007.0 | Severe birth asphyxia | http://snomed.info/sct |
+| 211 | 1280 | Observation | `Observation.interpretation.coding` | 77362009.0 | Mild to moderate birth asphyxia | http://snomed.info/sct |
+| 212 | 1281 | Observation | `Observation.interpretation.coding` | 275307002.0 | Apgar normal | http://snomed.info/sct |
+| 213 | 1282 | Observation | `Observation.component.code.coding` | 32411-1 | 5 minute Apgar Color | http://loinc.org |
+| 214 | 1283 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6722-8 | The baby's whole body is completely bluish-gray or pale | http://loinc.org |
+| 215 | 1284 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6723-6 | Good color in body with bluish hands or feet | http://loinc.org |
+| 216 | 1285 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6724-4 | Good color all over | http://loinc.org |
+| 217 | 1286 | Observation | `Observation.component.code.coding` | 32412-9 | 5 minute Apgar Heart rate | http://loinc.org |
+| 218 | 1287 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6716-0 | No heart rate | http://loinc.org |
+| 219 | 1288 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6717-8 | Fewer than 100 beats per minute | http://loinc.org |
+| 220 | 1289 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6718-6 | At least 100 beats per minute | http://loinc.org |
+| 221 | 1290 | Observation | `Observation.component.code.coding` | 32414-5 | 5 minute Apgar Reflex irritability | http://loinc.org |
+| 222 | 1291 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6719-4 | No response to airways being suctioned | http://loinc.org |
+| 223 | 1292 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6720-2 | Grimace during suctioning | http://loinc.org |
+| 224 | 1293 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6721-0 | Grimace and pulling away, cough, or sneeze during suctioning | http://loinc.org |
+| 225 | 1294 | Observation | `Observation.component.code.coding` | 32413-7 | 5 minute Apgar Muscle tone | http://loinc.org |
+| 226 | 1295 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6713-7 | Limp; no movement | http://loinc.org |
+| 227 | 1296 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6714-5 | Some flexion of arms and legs | http://loinc.org |
+| 228 | 1297 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6715-2 | Active motion | http://loinc.org |
+| 229 | 1298 | Observation | `Observation.component.code.coding` | 32415-2 | 5 minute Apgar Respiratory effort | http://loinc.org |
+| 230 | 1299 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6725-1 | Not breathing | http://loinc.org |
+| 231 | 1300 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | http://loinc.org |
+| 232 | 1301 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6727-7 | Good, strong cry; normal rate and effort of breathing | http://loinc.org |
+| 233 | 1304 | Observation | `Observation.code.coding` | 9271-8 | 10 minute Apgar Score | http://loinc.org |
+| 234 | 1314 | Observation | `Observation.interpretation.coding` | 57284007.0 | Severe birth asphyxia | http://snomed.info/sct |
+| 235 | 1315 | Observation | `Observation.interpretation.coding` | 77362009.0 | Mild to moderate birth asphyxia | http://snomed.info/sct |
+| 236 | 1316 | Observation | `Observation.interpretation.coding` | 275307002.0 | Apgar normal | http://snomed.info/sct |
+| 237 | 1317 | Observation | `Observation.component.code.coding` | 32401-2 | 10 minute Apgar Color | http://loinc.org |
+| 238 | 1318 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6722-8 | The baby's whole body is completely bluish-gray or pale | http://loinc.org |
+| 239 | 1319 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6723-6 | Good color in body with bluish hands or feet | http://loinc.org |
+| 240 | 1320 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6724-4 | Good color all over | http://loinc.org |
+| 241 | 1321 | Observation | `Observation.component.code.coding` | 32402-0 | 10 minute Apgar Heart rate | http://loinc.org |
+| 242 | 1322 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6716-0 | No heart rate | http://loinc.org |
+| 243 | 1323 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6717-8 | Fewer than 100 beats per minute | http://loinc.org |
+| 244 | 1324 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6718-6 | At least 100 beats per minute | http://loinc.org |
+| 245 | 1325 | Observation | `Observation.component.code.coding` | 32404-6 | 10 minute Apgar Reflex irritability | http://loinc.org |
+| 246 | 1326 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6719-4 | No response to airways being suctioned | http://loinc.org |
+| 247 | 1327 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6720-2 | Grimace during suctioning | http://loinc.org |
+| 248 | 1328 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6721-0 | Grimace and pulling away, cough, or sneeze during suctioning | http://loinc.org |
+| 249 | 1329 | Observation | `Observation.component.code.coding` | 32403-8 | 10 minute Apgar Muscle tone | http://loinc.org |
+| 250 | 1330 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6713-7 | Limp; no movement | http://loinc.org |
+| 251 | 1331 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6714-5 | Some flexion of arms and legs | http://loinc.org |
+| 252 | 1332 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6715-2 | Active motion | http://loinc.org |
+| 253 | 1333 | Observation | `Observation.component.code.coding` | 32405-3 | 10 minute Apgar Respiratory effort | http://loinc.org |
+| 254 | 1334 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6725-1 | Not breathing | http://loinc.org |
+| 255 | 1335 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6726-9 | Weak cry; may sound like whimpering, slow or irregular breathing | http://loinc.org |
+| 256 | 1336 | Observation | `Observation.component.valueCodeableConcept.coding` | LA6727-7 | Good, strong cry; normal rate and effort of breathing | http://loinc.org |
+| 257 | 1338 | Procedure | `Procedure.code.coding` | 386412000.0 | Resuscitation of neonate | http://snomed.info/sct |
+| 258 | 1350 | Procedure | `Procedure.code.coding` | 448883004.0 | Injection of vitamin K1 | http://snomed.info/sct |
+| 259 | 1360 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 260 | 1370 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 261 | 1383 | Immunization | `Immunization.vaccineCode` | VG45 | HepB | http://sys-ids.kemkes.go.id/kfa |
+| 262 | 1384 | Immunization | `Immunization.vaccineCode` | 30.0 | hepatitis B immune globulin | http://hl7.org/fhir/sid/cvx |
+| 263 | 1397 | Observation | `Observation.code.coding` | 249278006.0 | Ability to pass urine | http://snomed.info/sct |
+| 264 | 1409 | Observation | `Observation.code.coding` | 276397000.0 | Has passed meconium | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -405,10 +407,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 3 |
 | http://terminology.kemkes.go.id/sp | 2 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 2 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
 | http://hl7.org/fhir/sid/cvx | 1 |
-| **Total** | **262** |
+| **Total** | **264** |
 
 ## Variabel di luar payload
 

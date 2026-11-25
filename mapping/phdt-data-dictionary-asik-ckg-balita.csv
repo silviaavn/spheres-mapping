@@ -78,8 +78,8 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,Tanggal Pemeriksaan,Tanggal Pelayanan,date,YYYY-MM-DD,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,Tanggal Pemeriksaan,,date,YYYY-MM-DD,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -293,7 +293,7 @@ Skrining Gigi - Balita dan Anak Prasekolah,Skrining Gigi - Balita dan Anak Prase
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.answer.valueBoolean,false,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.linkId,15.7,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.text,Tidak Ada,Keluhan dan Gejala Diabetes Melitus Pada Bayi dan Anak Prasekolah,Tidak Ada,,,
-,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.answer.valuerReference,Reference ke resources Observation (Keluhan dan Gejala DM Pada Bayi dan Anak Prasekolah),,,,,
+,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.item.answer.valueReference,Reference ke resources Observation (Keluhan dan Gejala DM Pada Bayi dan Anak Prasekolah),,,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.linkId,16.0,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.text,Tidak Ada,Hasil Pemeriksaan Gula Darah Sewaktu (GDS) - khusus balita 2 tahun,Tidak Ada,,,
 ,,,,,,,,,,QuestionnaireResponse,QuestionnaireResponse.item.answer.valueReference,Reference ke resource Observation (Hasil Pemeriksaan Gula Darah Sewaktu (GDS)),,,,,
@@ -545,7 +545,7 @@ Skrining Pertumbuhan - Balita dan Anak Pra Sekolah,Skrining Pertumbuhan - Balita
 ,,,,,,,,,,Specimen,Specimen.status,available,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Specimen,Specimen.type,119297000.0,Blood specimen,http://snomed.info/sct,,1,
 ,,,,,,,,,,Specimen,Specimen.collection.method.coding,82078001.0,Collection of blood specimen for laboratory,http://snomed.info/sct,,,
-,,,,,,,,,,Specimen,Specimen.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Specimen,Specimen.collection.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Specimen,Specimen.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.request.reference,Reference ke resources ServiceRequest,,,,,
@@ -605,7 +605,7 @@ Skrining Pertumbuhan - Balita dan Anak Pra Sekolah,Skrining Pertumbuhan - Balita
 ,,,,,,,,,,Specimen,Specimen.status,available,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Specimen,Specimen.type,119297000.0,Blood specimen,http://snomed.info/sct,,1,
 ,,,,,,,,,,Specimen,Specimen.collection.method.coding,82078001.0,Collection of blood specimen for laboratory,http://snomed.info/sct,,,
-,,,,,,,,,,Specimen,Specimen.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Specimen,Specimen.collection.collectedDateTime,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Specimen,Specimen.subject.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Specimen,Specimen.request.reference,Reference ke resources ServiceRequest,,,,,

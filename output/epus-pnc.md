@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 82 |
-| Code (`jumlah code` = 1) | 161 |
-| Code unik (code + CodeSystem) | 143 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 27 |
+| Code (`jumlah code` = 1) | 166 |
+| Code unik (code + CodeSystem) | 148 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 29 |
 | Variabel BQ (unik) | 0 |
 | Variabel raw (variabel dictionary; belum ada file mentah) | 107 |
 
@@ -24,7 +24,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 2–27 | Patient | – | – | _Nama_Pasien_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Tanggal_Lahir_ → `Patient.birthDate` (8, tanpa BQ)<br>_No HP_ → `Patient.telecom` (9, tanpa BQ)<br>_Alamat Domisili_ → `Patient.address.use` (12, tanpa BQ)<br>_Nama Provinsi_ → `Patient.address.extension.extension.valueCode` (18, tanpa BQ)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (21, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.extension.valueCode` (24, tanpa BQ)<br>_Nama Desa_ → `Patient.address.extension.extension.valueCode` (27, tanpa BQ) |
 | 2 | 76–96 | Practitioner | – | – | _Dokter/Tenaga Medis_ → `Practitioner.identifier` (76, tanpa BQ) |
 | 3 | 97–103 | PractitionerRole | – | – | _jenis_tenaga_kesehatan_ → `PractitionerRole.active` (97, tanpa BQ) |
-| 4 | 104–112 | EpisodeOfCare | PNC | Postnatal Care | _Episode Of Care ID_ → `EpisodeOfCare.Identifer` (104, tanpa BQ) |
+| 4 | 104–112 | EpisodeOfCare | PNC | Postnatal Care | _Episode Of Care ID_ → `EpisodeOfCare.identifier` (104, tanpa BQ) |
 | 5 | 113–131 | Encounter | – | – | _Kunjungan_KF_ → `Encounter.identifier` (114, tanpa BQ)<br>_Tanggal_PNC_ → `Encounter.period.start` (126, tanpa BQ)<br>_Cara Masuk_ → `Encounter.hospitalization.admitSource.coding` (142, tanpa BQ) |
 | 6 | 132–141 | Condition | Z39.2 | Routine postpartum follow-up | _Diagnosis_ → `Condition.code.coding` (134, tanpa BQ) |
 | 7 | 149–159 | Observation | 93857-1 | Date and time of obstetric delivery | _Tanggal_Bersalin_ → `Observation.valueDateTime` (152, tanpa BQ) |
@@ -32,7 +32,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 9 | 171–181 | Observation | 11977-6 | [#] Parity | _Partus_ → `Observation.valueInteger` (174, tanpa BQ) |
 | 10 | 182–192 | Observation | 69043-8 | Other pregnancy outcomes # | _Abortus_ → `Observation.valueInteger` (185, tanpa BQ) |
 | 11 | 193–204 | Observation | SP000131 | Status Pindahan | _Status Pindahan_ → `Observation.valueBoolean` (196, tanpa BQ) |
-| 12 | 205–226 | Observation | SP000134 | Jenis Lokasi Screening | _Lokasi Screening_ → `Observation.valueCodeableConcept.coding` (208, tanpa BQ)<br>_Nama Faskes Lokasi Screening_ → `Observation,note` (226, tanpa BQ) |
+| 12 | 205–226 | Observation | SP000134 | Jenis Lokasi Screening | _Lokasi Screening_ → `Observation.valueCodeableConcept.coding` (208, tanpa BQ)<br>_Nama Faskes Lokasi Screening_ → `Observation.note` (226, tanpa BQ) |
 | 13 | 227–238 | Observation | 8480-6 | Systolic blood pressure | _Tekanan_Darah_ → `Observation.valueQuantity.value` (230, tanpa BQ) |
 | 14 | 239–250 | Observation | 8462-4 | Diastolic blood pressure | _Tekanan_Darah_ → `Observation.valueQuantity.value` (242, tanpa BQ) |
 | 15 | 251–262 | Observation | 8867-4 | Heart rate | _Nadi_ → `Observation.valueQuantity.value` (254, tanpa BQ) |
@@ -55,12 +55,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 32 | 453–464 | Observation | 8305-5 | Body height --post partum | _TB_ → `Observation.valueQuantity.value` (456, tanpa BQ) |
 | 33 | 465–477 | Observation | 284473002 | Mid upper arm circumference | _Lila_ → `Observation.status` (465, tanpa BQ)<br>_Status Gizi KEK/Tidak KEK_ → `Observation.interpretation` (476, tanpa BQ) |
 | 34 | 478–489 | Condition | 47821001 | Postpartum hemorrhage | _Komplikasi_ → `Condition.clinicalStatus.coding` (478, tanpa BQ) |
-| 35 | 490–503 | Observation | 289084000 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (493, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (502, tanpa BQ)<br>_Catat_Di_Buku_KIA_ → `Observation.catgeory.coding` (503, tanpa BQ) |
+| 35 | 490–503 | Observation | 289084000 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (493, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (502, tanpa BQ)<br>_Catat_Di_Buku_KIA_ → `Observation.category.coding` (503, tanpa BQ) |
 | 36 | 504–514 | Observation | SP000122 | Catat di Buku KIA | – |
 | 37 | 515–529 | Medication | – | – | _Jumlah_Tablet_Fe_yang_Didapatkan_ → `Medication.id` (515, tanpa BQ) |
 | 38 | 530–563 | MedicationRequest | 92000653 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | – |
 | 39 | 564–596 | MedicationDispense | 93015491 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | _Diberikan_Tablet_FE_ → `MedicationDispense.status` (584, tanpa BQ)<br>_{Jumlah_Tablet_Fe_yang_Didapatkan}_ → `MedicationDispense.quantity.value` (594, tanpa BQ) |
-| 40 | 597–607 | MedicationStatement | – | – | _Jumlah_Tablet_Fe_yang_Sudah_Dikonsumsi_ → `MedicationStatement.category.coding` (597, tanpa BQ)<br>_{Jumlah_Tablet_Fe_yang_Sudah_Dikonsumsi}_ → `MedicationStatement.Dosage.doseAndRate.doseQuantity` (607, tanpa BQ) |
+| 40 | 597–607 | MedicationStatement | – | – | _Jumlah_Tablet_Fe_yang_Sudah_Dikonsumsi_ → `MedicationStatement.category.coding` (597, tanpa BQ)<br>_{Jumlah_Tablet_Fe_yang_Sudah_Dikonsumsi}_ → `MedicationStatement.dosage.doseAndRate.doseQuantity` (607, tanpa BQ) |
 | 41 | 608–618 | Procedure | 767224000 | Administration of vitamin A | _Pemberian_Vitamin_A_ → `Procedure.category.coding` (608, tanpa BQ)<br>_Catatan_Pemberian_Vit_A_ → `Procedure.note` (618, tanpa BQ) |
 | 42 | 619–645 | MedicationRequest | 92000809 | Retinol Palmitate 200.000 IU Kapsul Lunak | _Dosis_Vit_A_ → `MedicationRequest.contained.resourceType` (619, tanpa BQ) |
 | 43 | 646–671 | MedicationDispense | 93018284 | Retinol Palmitate 200.000 IU Kapsul Lunak (Umum) | – |
@@ -217,88 +217,93 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 85 | 728 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 86 | 739 | Procedure | `Procedure.code.coding` | ED000010 | Edukasi PHBS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 87 | 753 | ServiceRequest | `ServiceRequest.code` | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | http://loinc.org |
-| 88 | 763 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
-| 89 | 772 | Observation | `Observation.code.coding` | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | http://loinc.org |
-| 90 | 785 | DiagnosticReport | `DiagnosticReport.code.coding` | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | http://loinc.org |
-| 91 | 797 | Observation | `Observation.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
-| 92 | 809 | Observation | `Observation.code.coding` | SP000124 | Obat anti malaria | http://terminology.kemkes.go.id/sp |
-| 93 | 812 | Observation | `Observation.component.code.coding` | 432555000 | Product containing artesunate | http://snomed.info/sct |
-| 94 | 815 | Observation | `Observation.component.code.coding` | 64115004 | Product containing amodiaquine | http://snomed.info/sct |
-| 95 | 818 | Observation | `Observation.component.code.coding` | 324919005 | Product containing precisely quinine sulfate 200 milligram/1 each conventional release oral tablet | http://snomed.info/sct |
-| 96 | 830 | Observation | `Observation.code.coding` | SP000125 | Obat anti tuberkulosis | http://terminology.kemkes.go.id/sp |
-| 97 | 833 | Observation | `Observation.component.code.coding` | 29175007 | Product containing rifampicin | http://snomed.info/sct |
-| 98 | 836 | Observation | `Observation.component.code.coding` | 81335000 | Product containing isoniazid | http://snomed.info/sct |
-| 99 | 839 | Observation | `Observation.component.code.coding` | 13592004 | Product containing pyrazinamide | http://snomed.info/sct |
-| 100 | 842 | Observation | `Observation.component.code.coding` | 24450004 | Product containing ethambutol | http://snomed.info/sct |
-| 101 | 856 | ServiceRequest | `ServiceRequest.code` | 24648-8 | XR Chest PA upright | http://loinc.org |
-| 102 | 864 | PractitionerRole | `PractitionerRole.code.coding` | 159016003 | Medical radiographer | http://snomed.info/sct |
-| 103 | 868 | Observation | `Observation.code.coding` | 24648-8 | XR Chest PA upright | http://loinc.org |
-| 104 | 869 | Observation | `Observation.valueCodeableConcept.coding` | 707307002 | Tuberculosis screening chest X-ray abnormal | http://snomed.info/sct |
-| 105 | 870 | Observation | `Observation.valueCodeableConcept.coding` | 707308007 | Tuberculosis screening chest X-ray normal | http://snomed.info/sct |
-| 106 | 881 | DiagnosticReport | `DiagnosticReport.code` | 24648-8 | XR Chest PA upright | http://loinc.org |
-| 107 | 892 | Observation | `Observation.code.coding` | SP000139 | KB Pasca Plasenta | http://terminology.kemkes.go.id/sp |
-| 108 | 893 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
-| 109 | 894 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
-| 110 | 895 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
-| 111 | 896 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
-| 112 | 897 | Observation | `Observation.valueCodeableConcept.coding` | SP000097 | Implan | http://terminology.kemkes.go.id/sp |
-| 113 | 898 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
-| 114 | 899 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
-| 115 | 900 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
-| 116 | 910 | Observation | `Observation.code.coding` | SP000139 | KB Pasca Plasenta | http://terminology.kemkes.go.id/sp |
-| 117 | 922 | Observation | `Observation.code.coding` | PC000004 | KB Pasca Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 118 | 923 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
-| 119 | 924 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
-| 120 | 925 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
-| 121 | 926 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
-| 122 | 927 | Observation | `Observation.valueCodeableConcept.coding` | SP000097 | Implan | http://terminology.kemkes.go.id/sp |
-| 123 | 928 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
-| 124 | 929 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
-| 125 | 930 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
-| 126 | 940 | Observation | `Observation.code.coding` | PC000004 | KB Pasca Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 127 | 962 | Observation | `Observation.code.coding` | SP000380 | Tatalaksana Komplikasi Pendarahan | http://terminology.kemkes.go.id/sp |
-| 128 | 965 | Observation | `Observation.component.code.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
-| 129 | 968 | Observation | `Observation.component.code.coding` | 116859006 | Transfusion of blood product | http://snomed.info/sct |
-| 130 | 971 | Observation | `Observation.component.code.coding` | 74964007 | Other | http://snomed.info/sct |
-| 131 | 982 | Observation | `Observation.code.coding` | 736286003 | Hypertension clinical management plan | http://snomed.info/sct |
-| 132 | 985 | Observation | `Observation.component.code.coding` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
-| 133 | 988 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
-| 134 | 1001 | Observation | `Observation.code.coding` | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | http://terminology.kemkes.go.id/sp |
-| 135 | 1004 | Observation | `Observation.component.code.coding` | 135840009 | Blood pressure monitoring | http://terminology.kemkes.go.id/sp |
-| 136 | 1007 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
-| 137 | 1010 | Observation | `Observation.component.code.coding` | 74964007 | Other | http://snomed.info/sct |
-| 138 | 1011 | Observation | `Observation.component.code` | 308116003 | Antihypertensive therapy | http://snomed.info/sct |
-| 139 | 1014 | Observation | `Observation.component.code.coding` | SP000136 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
-| 140 | 1017 | Observation | `Observation.component.code.coding` | SP000137 | Pemberian Diazepam Injeksi | http://terminology.kemkes.go.id/sp |
-| 141 | 1030 | Observation | `Observation.code.coding` | SP000389 | Keadaan Ibu | http://terminology.kemkes.go.id/sp |
-| 142 | 1031 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
-| 143 | 1032 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
-| 144 | 1042 | Condition | `Condition.code.coding` | 359746009 | Patient’s condition stable | http://snomed.info/sct |
-| 145 | 1043 | Condition | `Condition.code.coding` | 162668006 | Patient’s condition unstable | http://snomed.info/sct |
-| 146 | 1044 | Condition | `Condition.code.coding` | 268910001 | Patient’s condition improved | http://snomed.info/sct |
-| 147 | 1058 | ServiceRequest | `ServiceRequest.code.coding` | 409014006 | Delivery care management | http://snomed.info/sct |
-| 148 | 1077 | Observation | `Observation.code.coding` | 35025007 | Manual pelvic examination | http://snomed.info/sct |
-| 149 | 1087 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
-| 150 | 1098 | Observation | `Observation.code.coding` | SP000666 | Hari setelah melahirkan | http://terminology.kemkes.go.id/sp |
-| 151 | 1109 | Observation | `Observation.code.coding` | 8665-2 | Last menstrual period start date | http://loinc.org |
-| 152 | 1110 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 153 | 1122 | Observation | `Observation.code.coding` | 11778-8 | Delivery date Estimated | http://loinc.org |
-| 154 | 1123 | Observation | `Observation.code.coding` | ANC.B6.DE22 | Expected date of delivery (EDD) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 155 | 1136 | Observation | `Observation.code.coding` | SP000050 | Riwayat Onset Persalinan | http://loinc.org |
-| 156 | 1149 | Observation | `Observation.code.coding` | SP000132 | Memiliki Buku KIA | http://terminology.kemkes.go.id/sp |
-| 157 | 1161 | Observation | `Observation.code.coding` | 56077-1 | Body weight --pre current pregnancy | http://loinc.org |
-| 158 | 1162 | Observation | `Observation.code.coding` | ANC.B8.DE2 | Pre-gestational weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 159 | 1175 | Observation | `Observation.code.coding` | 11977-6 | [#] Parity | http://loinc.org |
-| 160 | 1176 | Observation | `Observation.code.coding` | ANC.B6.DE32 | Parity | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 161 | 1188 | Observation | `Observation.code.coding` | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | http://terminology.kemkes.go.id/sp |
+| 88 | 760 | PractitionerRole | `PractitionerRole.code.coding` | 1290220002 | Laboratory worker | http://snomed.info/sct |
+| 89 | 763 | Specimen | `Specimen.type` | 119297000 | Blood specimen | http://snomed.info/sct |
+| 90 | 772 | Observation | `Observation.code.coding` | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | http://loinc.org |
+| 91 | 785 | DiagnosticReport | `DiagnosticReport.code.coding` | 32515-9 | CD3+CD4+ (T4 helper) cells [#/volume] in Specimen | http://loinc.org |
+| 92 | 797 | Observation | `Observation.code.coding` | SP000046 | Terapi Antiretroviral (ART) | http://terminology.kemkes.go.id/sp |
+| 93 | 809 | Observation | `Observation.code.coding` | SP000124 | Obat anti malaria | http://terminology.kemkes.go.id/sp |
+| 94 | 812 | Observation | `Observation.component.code.coding` | 432555000 | Product containing artesunate | http://snomed.info/sct |
+| 95 | 815 | Observation | `Observation.component.code.coding` | 64115004 | Product containing amodiaquine | http://snomed.info/sct |
+| 96 | 818 | Observation | `Observation.component.code.coding` | 324919005 | Product containing precisely quinine sulfate 200 milligram/1 each conventional release oral tablet | http://snomed.info/sct |
+| 97 | 830 | Observation | `Observation.code.coding` | SP000125 | Obat anti tuberkulosis | http://terminology.kemkes.go.id/sp |
+| 98 | 833 | Observation | `Observation.component.code.coding` | 29175007 | Product containing rifampicin | http://snomed.info/sct |
+| 99 | 836 | Observation | `Observation.component.code.coding` | 81335000 | Product containing isoniazid | http://snomed.info/sct |
+| 100 | 839 | Observation | `Observation.component.code.coding` | 13592004 | Product containing pyrazinamide | http://snomed.info/sct |
+| 101 | 842 | Observation | `Observation.component.code.coding` | 24450004 | Product containing ethambutol | http://snomed.info/sct |
+| 102 | 856 | ServiceRequest | `ServiceRequest.code` | 24648-8 | XR Chest PA upright | http://loinc.org |
+| 103 | 864 | PractitionerRole | `PractitionerRole.code.coding` | 159016003 | Medical radiographer | http://snomed.info/sct |
+| 104 | 868 | Observation | `Observation.code.coding` | 24648-8 | XR Chest PA upright | http://loinc.org |
+| 105 | 869 | Observation | `Observation.valueCodeableConcept.coding` | 707307002 | Tuberculosis screening chest X-ray abnormal | http://snomed.info/sct |
+| 106 | 870 | Observation | `Observation.valueCodeableConcept.coding` | 707308007 | Tuberculosis screening chest X-ray normal | http://snomed.info/sct |
+| 107 | 871 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed |  |
+| 108 | 881 | DiagnosticReport | `DiagnosticReport.code` | 24648-8 | XR Chest PA upright | http://loinc.org |
+| 109 | 892 | Observation | `Observation.code.coding` | SP000139 | KB Pasca Plasenta | http://terminology.kemkes.go.id/sp |
+| 110 | 893 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
+| 111 | 894 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
+| 112 | 895 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
+| 113 | 896 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
+| 114 | 897 | Observation | `Observation.valueCodeableConcept.coding` | SP000097 | Implan | http://terminology.kemkes.go.id/sp |
+| 115 | 898 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
+| 116 | 899 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
+| 117 | 900 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
+| 118 | 910 | Observation | `Observation.code.coding` | SP000139 | KB Pasca Plasenta | http://terminology.kemkes.go.id/sp |
+| 119 | 922 | Observation | `Observation.code.coding` | PC000004 | KB Pasca Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 120 | 923 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
+| 121 | 924 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
+| 122 | 925 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
+| 123 | 926 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
+| 124 | 927 | Observation | `Observation.valueCodeableConcept.coding` | SP000097 | Implan | http://terminology.kemkes.go.id/sp |
+| 125 | 928 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
+| 126 | 929 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
+| 127 | 930 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
+| 128 | 940 | Observation | `Observation.code.coding` | PC000004 | KB Pasca Persalinan | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 129 | 962 | Observation | `Observation.code.coding` | SP000380 | Tatalaksana Komplikasi Pendarahan | http://terminology.kemkes.go.id/sp |
+| 130 | 965 | Observation | `Observation.component.code.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
+| 131 | 968 | Observation | `Observation.component.code.coding` | 116859006 | Transfusion of blood product | http://snomed.info/sct |
+| 132 | 971 | Observation | `Observation.component.code.coding` | 74964007 | Other | http://snomed.info/sct |
+| 133 | 982 | Observation | `Observation.code.coding` | 736286003 | Hypertension clinical management plan | http://snomed.info/sct |
+| 134 | 985 | Observation | `Observation.component.code.coding` | 135840009 | Blood pressure monitoring | http://snomed.info/sct |
+| 135 | 988 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
+| 136 | 1001 | Observation | `Observation.code.coding` | SP000138 | Tatalaksana Komplikasi Pre Eklampsia | http://terminology.kemkes.go.id/sp |
+| 137 | 1004 | Observation | `Observation.component.code.coding` | 135840009 | Blood pressure monitoring | http://terminology.kemkes.go.id/sp |
+| 138 | 1007 | Observation | `Observation.component.code.coding` | SP000133 | Pemantauan Protein Urin | http://terminology.kemkes.go.id/sp |
+| 139 | 1010 | Observation | `Observation.component.code.coding` | 74964007 | Other | http://snomed.info/sct |
+| 140 | 1011 | Observation | `Observation.component.code` | 308116003 | Antihypertensive therapy | http://snomed.info/sct |
+| 141 | 1014 | Observation | `Observation.component.code.coding` | SP000136 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
+| 142 | 1017 | Observation | `Observation.component.code.coding` | SP000137 | Pemberian Diazepam Injeksi | http://terminology.kemkes.go.id/sp |
+| 143 | 1030 | Observation | `Observation.code.coding` | SP000389 | Keadaan Ibu | http://terminology.kemkes.go.id/sp |
+| 144 | 1031 | Observation | `Observation.valueCodeableConcept.coding` | 438949009 | Alive | http://snomed.info/sct |
+| 145 | 1032 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
+| 146 | 1042 | Condition | `Condition.code.coding` | 359746009 | Patient’s condition stable | http://snomed.info/sct |
+| 147 | 1043 | Condition | `Condition.code.coding` | 162668006 | Patient’s condition unstable | http://snomed.info/sct |
+| 148 | 1044 | Condition | `Condition.code.coding` | 268910001 | Patient’s condition improved | http://snomed.info/sct |
+| 149 | 1058 | ServiceRequest | `ServiceRequest.code.coding` | 409014006 | Delivery care management | http://snomed.info/sct |
+| 150 | 1067 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
+| 151 | 1071 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
+| 152 | 1077 | Observation | `Observation.code.coding` | 35025007 | Manual pelvic examination | http://snomed.info/sct |
+| 153 | 1087 | Observation | `Observation.code.coding` | 81956-5 | Date and time of death [TimeStamp] | http://loinc.org |
+| 154 | 1098 | Observation | `Observation.code.coding` | SP000666 | Hari setelah melahirkan | http://terminology.kemkes.go.id/sp |
+| 155 | 1109 | Observation | `Observation.code.coding` | 8665-2 | Last menstrual period start date | http://loinc.org |
+| 156 | 1110 | Observation | `Observation.code.coding` | ANC.B6.DE14 | Last menstrual period (LMP) date | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 157 | 1122 | Observation | `Observation.code.coding` | 11778-8 | Delivery date Estimated | http://loinc.org |
+| 158 | 1123 | Observation | `Observation.code.coding` | ANC.B6.DE22 | Expected date of delivery (EDD) | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 159 | 1136 | Observation | `Observation.code.coding` | SP000050 | Riwayat Onset Persalinan | http://loinc.org |
+| 160 | 1138 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 161 | 1149 | Observation | `Observation.code.coding` | SP000132 | Memiliki Buku KIA | http://terminology.kemkes.go.id/sp |
+| 162 | 1161 | Observation | `Observation.code.coding` | 56077-1 | Body weight --pre current pregnancy | http://loinc.org |
+| 163 | 1162 | Observation | `Observation.code.coding` | ANC.B8.DE2 | Pre-gestational weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 164 | 1175 | Observation | `Observation.code.coding` | 11977-6 | [#] Parity | http://loinc.org |
+| 165 | 1176 | Observation | `Observation.code.coding` | ANC.B6.DE32 | Parity | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 166 | 1188 | Observation | `Observation.code.coding` | SP000667 | Penanganan Risiko Tinggi dan Komplikasi | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 63 |
+| http://snomed.info/sct | 64 |
 | http://loinc.org | 34 |
-| http://terminology.kemkes.go.id/sp | 27 |
+| http://terminology.kemkes.go.id/sp | 29 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 5 |
 | http://sys-ids.kemkes.go.id/kf | 5 |
@@ -308,7 +313,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/location-type | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **161** |
+|  | 1 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **166** |
 
 ## Variabel di luar payload
 

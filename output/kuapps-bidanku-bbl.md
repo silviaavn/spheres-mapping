@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 48 |
-| Code (`jumlah code` = 1) | 100 |
-| Code unik (code + CodeSystem) | 85 |
+| Code (`jumlah code` = 1) | 103 |
+| Code unik (code + CodeSystem) | 88 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 5 |
 | Variabel BQ (unik) | 0 |
 
@@ -23,7 +23,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 3–11 | EpisodeOfCare | Neonate | Neonate | – |
 | 2 | 12–27 | Encounter | – | – | _Kunjungan Neonatus (KN)_ → `Encounter.identifier` (12, tanpa BQ)<br>_Tanggal Posyandu_ → `Encounter.period.start` (15, tanpa BQ) |
 | 3 | 28–35 | Condition | Z00.1 | Routine child health examination | – |
-| 4 | 45–55 | Observation | SP000699 | Kelompok Dasawisma | _Dasawisma group_ → `Observation.valueString.coding` (48, tanpa BQ) |
+| 4 | 45–55 | Observation | SP000699 | Kelompok Dasawisma | _Dasawisma group_ → `Observation.valueString` (48, tanpa BQ) |
 | 5 | 56–67 | Observation | SP000132 | Memiliki Buku KIA | _Apakah pasien memiliki buku KIA?_ → `Observation.valueBoolean` (59, tanpa BQ) |
 | 6 | 68–79 | Observation | 89269-5 | Body height Measured --at birth | _Panjang Badan Bayi Saat Lahir (cm)_ → `Observation.valueQuantity.value` (71, tanpa BQ) |
 | 7 | 80–96 | Observation | 8339-4 | Birth weight Measured | _Berat Badan Bayi Saat Lahir (gram)_ → `Observation.valueQuantity.value` (83, tanpa BQ)<br>_Interpretasi_ → `Observation.interpretation.coding` (85, tanpa BQ) |
@@ -114,91 +114,94 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 26 | 197 | Observation | `Observation.code.coding` | 1153590000 | Length for age z-score | http://snomed.info/sct |
 | 27 | 224 | Observation | `Observation.code.coding` | 8287-5 | Head Occipital-frontal circumference by Tape measure | http://loinc.org |
 | 28 | 236 | Observation | `Observation.code.coding` | 1153594009 | Head circumference for age z-score | http://loinc.org |
-| 29 | 259 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
-| 30 | 271 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
-| 31 | 283 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
-| 32 | 295 | Observation | `Observation.code.coding` | 76516-4 | Gestational age—​at birth | http://loinc.org |
-| 33 | 307 | Observation | `Observation.code.coding` | 10206-1 | Physical findings of Skin Narrative | http://loinc.org |
-| 34 | 308 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 35 | 309 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 36 | 319 | Observation | `Observation.code.coding` | 10199-8 | Physical findings of Head Narrative | http://loinc.org |
-| 37 | 320 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 38 | 321 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 39 | 331 | Observation | `Observation.code.coding` | 10197-2 | Physical findings of Eye Narrative | http://loinc.org |
-| 40 | 332 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 41 | 333 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 42 | 343 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Mouth | http://loinc.org |
-| 43 | 344 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 44 | 345 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 45 | 355 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Abdomen Narrative | http://loinc.org |
-| 46 | 356 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 47 | 357 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 48 | 367 | Observation | `Observation.code.coding` | 10192-3 | Physical findings of Back Narrative | http://loinc.org |
-| 49 | 368 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 50 | 369 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 51 | 379 | Observation | `Observation.code.coding` | 11388-6 | Physical findings of Buttocks Narrative | http://loinc.org |
-| 52 | 380 | Observation | `Observation.code.coding` | 53505006 | Anal structure (body structure) | http://snomed.info/sct |
-| 53 | 381 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 54 | 382 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 55 | 392 | Observation | `Observation.code.coding` | 11400-9 | Physical findings of Genitalia Narrative | http://loinc.org |
-| 56 | 393 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
-| 57 | 394 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
-| 58 | 403 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 59 | 413 | Procedure | `Procedure.code.coding` | 448883004 | Injection of vitamin K1 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 60 | 423 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 61 | 433 | Procedure | `Procedure.code.coding` | 431868002 | Initiation of breastfeeding | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 62 | 444 | Observation | `Observation.code.coding` | OC000016 | Waktu Inisiasi Menyusui Dini | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 63 | 445 | Observation | `Observation.valueCodeableConcept.coding` | OV000014 | Kurang dari 1 jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 64 | 446 | Observation | `Observation.valueCodeableConcept.coding` | OV000015 | Lebih dari 1 jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 65 | 456 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
-| 66 | 468 | Observation | `Observation.code.coding` | SP000889 | Frekuensi Menyusui | http://terminology.kemkes.go.id/sp |
-| 67 | 480 | Observation | `Observation.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
-| 68 | 481 | Observation | `Observation.valueCodeableConcept.coding` | 102500002 | Good neonatal condition at birth | http://snomed.info/sct |
-| 69 | 482 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
-| 70 | 483 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
-| 71 | 484 | Observation | `Observation.component.code.coding` | 413654009 | Birth asphyxia | http://snomed.info/sct |
-| 72 | 486 | Observation | `Observation.component.code.coding` | 56110009 | Fetal birth trauma | http://snomed.info/sct |
-| 73 | 488 | Observation | `Observation.component.code.coding` | 276659006 | Clinical infection of newborn | http://snomed.info/sct |
-| 74 | 490 | Observation | `Observation.component.code.coding` | 66091009 | Congenital disease | http://snomed.info/sct |
-| 75 | 492 | Observation | `Observation.component.code.coding` | 13629008 | Hypothermia of newborn | http://snomed.info/sct |
-| 76 | 494 | Observation | `Observation.component.code.coding` | 43424001 | Tetanus neonatorum | http://snomed.info/sct |
-| 77 | 496 | Observation | `Observation.component.code.coding` | 206376005 | Sepsis of the newborn | http://snomed.info/sct |
-| 78 | 498 | Observation | `Observation.component.code.coding` | 387712008 | Neonatal jaundice | http://snomed.info/sct |
-| 79 | 500 | Observation | `Observation.component.code.coding` | 22925008 | Neonatal disorde | http://snomed.info/sct |
-| 80 | 511 | Condition | `Condition.code.coding` | 160357008 | Family history: Hypertension | http://snomed.info/sct |
-| 81 | 512 | Condition | `Condition.code.coding` | 160303001 | Family history of diabetes mellitus | http://snomed.info/sct |
-| 82 | 513 | Condition | `Condition.code.coding` | 275104002 | Family history of stroke | http://snomed.info/sct |
-| 83 | 514 | Condition | `Condition.code.coding` | 429959009 | Family history of heart failure | http://snomed.info/sct |
-| 84 | 515 | Condition | `Condition.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
-| 85 | 516 | Condition | `Condition.code.coding` | 275937001 | Family history of malignant neoplasm (situation) | http://snomed.info/sct |
-| 86 | 517 | Condition | `Condition.code.coding` | 160314003 | Family history: Hypercholesterolemia | http://snomed.info/sct |
-| 87 | 518 | Condition | `Condition.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
-| 88 | 519 | Condition | `Condition.code.coding` | 160266009 | No family history of clinical finding | http://snomed.info/sct |
-| 89 | 542 | Observation | `Observation.code.coding` | 300471006 | Finding of frequency of urination | http://snomed.info/sct |
-| 90 | 554 | Observation | `Observation.code.coding` | 300380005 | Finding of frequency of defecation | http://snomed.info/sct |
-| 91 | 566 | Observation | `Observation.code.coding` | 1144561006 | Adequate sanitation | http://snomed.info/sct |
-| 92 | 578 | Observation | `Observation.code.coding` | 1162942008 | Access to potable water | http://snomed.info/sct |
-| 93 | 589 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
-| 94 | 600 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 95 | 601 | Observation | `Observation.interpretation.coding` | H | High | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 96 | 604 | Observation | `Observation.code.coding` | 29575-8 | Thyrotropin [Units/volume] in DBS | http://loinc.org |
-| 97 | 639 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
-| 98 | 640 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
-| 99 | 643 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
-| 100 | 652 | Procedure | `Procedure.code.coding` | 54070000 | Postpartum education | http://snomed.info/sct |
+| 29 | 239 | Observation | `Observation.interpretation.coding` | 840673007 | Normal head | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 30 | 244 | Observation | `Observation.interpretation.coding` | 1148757008 | Microcephaly | http://snomed.info/sct |
+| 31 | 247 | Observation | `Observation.interpretation.coding` | 1145403003 | Macrocephaly | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 32 | 259 | Observation | `Observation.code.coding` | 8867-4 | Heart rate | http://loinc.org |
+| 33 | 271 | Observation | `Observation.code.coding` | 8310-5 | Body temperature | http://loinc.org |
+| 34 | 283 | Observation | `Observation.code.coding` | 9279-1 | Respiratory rate | http://loinc.org |
+| 35 | 295 | Observation | `Observation.code.coding` | 76516-4 | Gestational age—​at birth | http://loinc.org |
+| 36 | 307 | Observation | `Observation.code.coding` | 10206-1 | Physical findings of Skin Narrative | http://loinc.org |
+| 37 | 308 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 38 | 309 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 39 | 319 | Observation | `Observation.code.coding` | 10199-8 | Physical findings of Head Narrative | http://loinc.org |
+| 40 | 320 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 41 | 321 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 42 | 331 | Observation | `Observation.code.coding` | 10197-2 | Physical findings of Eye Narrative | http://loinc.org |
+| 43 | 332 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 44 | 333 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 45 | 343 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Mouth | http://loinc.org |
+| 46 | 344 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 47 | 345 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 48 | 355 | Observation | `Observation.code.coding` | 32453-3 | Physical findings of Abdomen Narrative | http://loinc.org |
+| 49 | 356 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 50 | 357 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 51 | 367 | Observation | `Observation.code.coding` | 10192-3 | Physical findings of Back Narrative | http://loinc.org |
+| 52 | 368 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 53 | 369 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 54 | 379 | Observation | `Observation.code.coding` | 11388-6 | Physical findings of Buttocks Narrative | http://loinc.org |
+| 55 | 380 | Observation | `Observation.code.coding` | 53505006 | Anal structure (body structure) | http://snomed.info/sct |
+| 56 | 381 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 57 | 382 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 58 | 392 | Observation | `Observation.code.coding` | 11400-9 | Physical findings of Genitalia Narrative | http://loinc.org |
+| 59 | 393 | Observation | `Observation.valueCodeableConcept.coding` | 17621005 | Normal | http://snomed.info/sct |
+| 60 | 394 | Observation | `Observation.valueCodeableConcept.coding` | 263654008 | Abnormal | http://snomed.info/sct |
+| 61 | 403 | Procedure | `Procedure.code.coding` | PC000002 | Pemberian Salep Antibiotik Mata | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 62 | 413 | Procedure | `Procedure.code.coding` | 448883004 | Injection of vitamin K1 | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 63 | 423 | Procedure | `Procedure.code.coding` | PC000001 | Perawatan Tali Pusat | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 64 | 433 | Procedure | `Procedure.code.coding` | 431868002 | Initiation of breastfeeding | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 65 | 444 | Observation | `Observation.code.coding` | OC000016 | Waktu Inisiasi Menyusui Dini | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 66 | 445 | Observation | `Observation.valueCodeableConcept.coding` | OV000014 | Kurang dari 1 jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 67 | 446 | Observation | `Observation.valueCodeableConcept.coding` | OV000015 | Lebih dari 1 jam | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 68 | 456 | Observation | `Observation.code.coding` | 1145307003 | Exclusively breastfed | http://snomed.info/sct |
+| 69 | 468 | Observation | `Observation.code.coding` | SP000889 | Frekuensi Menyusui | http://terminology.kemkes.go.id/sp |
+| 70 | 480 | Observation | `Observation.code.coding` | 249222005 | Neonatal condition | http://snomed.info/sct |
+| 71 | 481 | Observation | `Observation.valueCodeableConcept.coding` | 102500002 | Good neonatal condition at birth | http://snomed.info/sct |
+| 72 | 482 | Observation | `Observation.valueCodeableConcept.coding` | 276707008 | Infant in poor condition at birth | http://terminology.kemkes.go.id/sp |
+| 73 | 483 | Observation | `Observation.valueCodeableConcept.coding` | 419099009 | Dead | http://snomed.info/sct |
+| 74 | 484 | Observation | `Observation.component.code.coding` | 413654009 | Birth asphyxia | http://snomed.info/sct |
+| 75 | 486 | Observation | `Observation.component.code.coding` | 56110009 | Fetal birth trauma | http://snomed.info/sct |
+| 76 | 488 | Observation | `Observation.component.code.coding` | 276659006 | Clinical infection of newborn | http://snomed.info/sct |
+| 77 | 490 | Observation | `Observation.component.code.coding` | 66091009 | Congenital disease | http://snomed.info/sct |
+| 78 | 492 | Observation | `Observation.component.code.coding` | 13629008 | Hypothermia of newborn | http://snomed.info/sct |
+| 79 | 494 | Observation | `Observation.component.code.coding` | 43424001 | Tetanus neonatorum | http://snomed.info/sct |
+| 80 | 496 | Observation | `Observation.component.code.coding` | 206376005 | Sepsis of the newborn | http://snomed.info/sct |
+| 81 | 498 | Observation | `Observation.component.code.coding` | 387712008 | Neonatal jaundice | http://snomed.info/sct |
+| 82 | 500 | Observation | `Observation.component.code.coding` | 22925008 | Neonatal disorde | http://snomed.info/sct |
+| 83 | 511 | Condition | `Condition.code.coding` | 160357008 | Family history: Hypertension | http://snomed.info/sct |
+| 84 | 512 | Condition | `Condition.code.coding` | 160303001 | Family history of diabetes mellitus | http://snomed.info/sct |
+| 85 | 513 | Condition | `Condition.code.coding` | 275104002 | Family history of stroke | http://snomed.info/sct |
+| 86 | 514 | Condition | `Condition.code.coding` | 429959009 | Family history of heart failure | http://snomed.info/sct |
+| 87 | 515 | Condition | `Condition.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
+| 88 | 516 | Condition | `Condition.code.coding` | 275937001 | Family history of malignant neoplasm (situation) | http://snomed.info/sct |
+| 89 | 517 | Condition | `Condition.code.coding` | 160314003 | Family history: Hypercholesterolemia | http://snomed.info/sct |
+| 90 | 518 | Condition | `Condition.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
+| 91 | 519 | Condition | `Condition.code.coding` | 160266009 | No family history of clinical finding | http://snomed.info/sct |
+| 92 | 542 | Observation | `Observation.code.coding` | 300471006 | Finding of frequency of urination | http://snomed.info/sct |
+| 93 | 554 | Observation | `Observation.code.coding` | 300380005 | Finding of frequency of defecation | http://snomed.info/sct |
+| 94 | 566 | Observation | `Observation.code.coding` | 1144561006 | Adequate sanitation | http://snomed.info/sct |
+| 95 | 578 | Observation | `Observation.code.coding` | 1162942008 | Access to potable water | http://snomed.info/sct |
+| 96 | 589 | Procedure | `Procedure.code.coding` | 400984005 | Congenital hypothyroidism screening test | http://snomed.info/sct |
+| 97 | 600 | Observation | `Observation.interpretation.coding` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 98 | 601 | Observation | `Observation.interpretation.coding` | H | High | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 99 | 604 | Observation | `Observation.code.coding` | 29575-8 | Thyrotropin [Units/volume] in DBS | http://loinc.org |
+| 100 | 639 | Observation | `Observation.interpretation.coding` | 772170009 | Tuberculosis suspected | http://snomed.info/sct |
+| 101 | 640 | Observation | `Observation.interpretation.coding` | SP000789 | Bukan terduga TBC | http://terminology.kemkes.go.id/sp |
+| 102 | 643 | Observation | `Observation.code.coding` | 171126009 | Tuberculosis screening | http://snomed.info/sct |
+| 103 | 652 | Procedure | `Procedure.code.coding` | 54070000 | Postpartum education | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 57 |
+| http://snomed.info/sct | 58 |
 | http://loinc.org | 20 |
-| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 14 |
+| http://terminology.kemkes.go.id/CodeSystem/clinical-term | 16 |
 | http://terminology.kemkes.go.id/sp | 5 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
-| **Total** | **100** |
+| **Total** | **103** |
 
 ## Variabel di luar payload
 

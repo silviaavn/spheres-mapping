@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 16 |
-| Code (`jumlah code` = 1) | 33 |
-| Code unik (code + CodeSystem) | 27 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 20 |
+| Code (`jumlah code` = 1) | 48 |
+| Code unik (code + CodeSystem) | 42 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 21 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -34,8 +34,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 12 | 129–131 | RelatedPerson | – | – | _Nomor HP Rekan Satu Rumah_ → `RelatedPerson.telecom` (129, tanpa BQ) |
 | 13 | 132–145 | Observation | SP000403 | Alasan Tidak Ada Nomor Induk Kependudukan | _Alasan jika rekan serumah tidak memiliki nomor HP_ → `Observation.valueCodeableConcept.coding` (135, tanpa BQ) |
 | 14 | 169–182 | Observation | SP000519 | Tipe Intervensi Puskesmas | _Tipe Intervensi Puskesmas_ → `Observation.valueCodeableConcept.coding` (172, tanpa BQ) |
-| 15 | 190–204 | Observation | 82589-3 | Highest level of education | _Tingkat Pendidikan Tertinggi_ → `Observation.status` (190, tanpa BQ) |
-| 16 | 211–230 | Observation | 85658-3 | Occupation [Type] | _Pekerjaan_ → `Observation.status` (211, tanpa BQ)<br>_Sebutkan_ → `Observation.note` (223, tanpa BQ) |
+| 15 | 190–204 | Observation | 82589-3 | Highest level of education | _Tingkat Pendidikan Tertinggi_ → `Observation.valueCodeableConcept.coding` (193, tanpa BQ) |
+| 16 | 211–230 | Observation | 85658-3 | Occupation [Type] | _Pekerjaan_ → `Observation.valueCodeableConcept.coding` (214, tanpa BQ)<br>_Sebutkan_ → `Observation.note` (223, tanpa BQ) |
 
 ### Payload per resource
 
@@ -85,16 +85,32 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 30 | 174 | Observation | `Observation.valueCodeableConcept.coding` | SP000522 | Botol Digital | http://terminology.kemkes.go.id/sp |
 | 31 | 175 | Observation | `Observation.valueCodeableConcept.coding` | SP000523 | Botol Non Digital | http://terminology.kemkes.go.id/sp |
 | 32 | 192 | Observation | `Observation.code.coding` | 82589-3 | Highest level of education | http://loinc.org |
-| 33 | 213 | Observation | `Observation.code.coding` | 85658-3 | Occupation [Type] | http://loinc.org |
+| 33 | 193 | Observation | `Observation.valueCodeableConcept.coding` | 224294005.0 | No formal education | http://snomed.info/sct |
+| 34 | 194 | Observation | `Observation.dataAbsentReason.coding` | unknown | Unknown | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 35 | 195 | Observation | `Observation.valueCodeableConcept.coding` | 473463000.0 | Received elementary school education | http://snomed.info/sct |
+| 36 | 196 | Observation | `Observation.valueCodeableConcept.coding` | 603435002.0 | Educated to junior high school level | http://snomed.info/sct |
+| 37 | 197 | Observation | `Observation.valueCodeableConcept.coding` | 603434003.0 | Educated to senior high school level | http://snomed.info/sct |
+| 38 | 198 | Observation | `Observation.valueCodeableConcept.coding` | 38861000087100.0 | Bachelor's degree achieved | http://snomed.info/sct |
+| 39 | 213 | Observation | `Observation.code.coding` | 85658-3 | Occupation [Type] | http://loinc.org |
+| 40 | 214 | Observation | `Observation.valueCodeableConcept.coding` | 741062008.0 | Not in labor force | http://snomed.info/sct |
+| 41 | 215 | Observation | `Observation.valueCodeableConcept.coding` | 65853000.0 | Student | http://snomed.info/sct |
+| 42 | 216 | Observation | `Observation.valueCodeableConcept.coding` | 236297007.0 | Civil servant | http://snomed.info/sct |
+| 43 | 217 | Observation | `Observation.valueCodeableConcept.coding` | SP000218 | Karyawan Swasta | http://terminology.kemkes.go.id/sp |
+| 44 | 218 | Observation | `Observation.valueCodeableConcept.coding` | 160906004.0 | Self-employed | http://snomed.info/sct |
+| 45 | 219 | Observation | `Observation.valueCodeableConcept.coding` | 444168002.0 | Homemaker | http://snomed.info/sct |
+| 46 | 220 | Observation | `Observation.valueCodeableConcept.coding` | 702479006.0 | At high risk of sexually transmitted infection | http://snomed.info/sct |
+| 47 | 221 | Observation | `Observation.valueCodeableConcept.coding` | 106540006.0 | Laborer | http://snomed.info/sct |
+| 48 | 222 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://terminology.kemkes.go.id/sp | 20 |
-| http://snomed.info/sct | 11 |
+| http://snomed.info/sct | 24 |
+| http://terminology.kemkes.go.id/sp | 21 |
 | http://loinc.org | 2 |
-| **Total** | **33** |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 1 |
+| **Total** | **48** |
 
 ## Variabel di luar payload
 

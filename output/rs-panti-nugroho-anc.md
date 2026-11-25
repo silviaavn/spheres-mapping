@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 31 |
-| Code (`jumlah code` = 1) | 68 |
-| Code unik (code + CodeSystem) | 60 |
+| Code (`jumlah code` = 1) | 77 |
+| Code unik (code + CodeSystem) | 64 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 11 |
 | Variabel BQ (unik) | 0 |
 
@@ -31,7 +31,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 9 | 156–169 | Observation | SP000132 | Memiliki Buku KIA | _Kepemilikan Buku KIA_ → `Observation.valueBoolean` (159, tanpa BQ) |
 | 10 | 170–184 | Observation | 8302-2 | Body height | _Tinggi Badan_ → `Observation.valueQuantity.value` (174, tanpa BQ) |
 | 11 | 185–199 | Observation | 29463-7 | Body weight | _Berat Badan_ → `Observation.valueQuantity.value` (189, tanpa BQ) |
-| 12 | 200–231 | Observation | 8480-6 | Systolic blood pressure | _Tekanan darah sistol_ → `Observation.valueQuantity.value` (204, tanpa BQ)<br>_LILA_ → `final` (215, tanpa BQ)<br>_Status Gizi_ → `Observation.interpretation` (229, tanpa BQ) |
+| 12 | 200–231 | Observation | 8480-6 | Systolic blood pressure | _Tekanan darah sistol_ → `Observation.valueQuantity.value` (204, tanpa BQ)<br>_LILA_ → `Observation.status` (215, tanpa BQ)<br>_Status Gizi_ → `Observation.interpretation` (229, tanpa BQ) |
 | 13 | 232–246 | Observation | 8462-4 | Diastolic blood pressure | _Tekanan darah diastol_ → `Observation.valueQuantity.value` (236, tanpa BQ) |
 | 14 | 247–270 | Observation | 11881-0 | Uterus Fundal height Tape measure | _TFU_ → `Observation.valueQuantity.value` (250, tanpa BQ) |
 | 15 | 271–292 | Immunization | – | – | _Status Imunisasi TT_ → `Immunization.status` (271, tanpa BQ) |
@@ -87,76 +87,88 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 12 | 188 | Observation | `Observation.code.coding` | ANC.B8.DE3 | Current weight | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
 | 13 | 202 | Observation | `Observation.code.coding` | 8480-6 | Systolic blood pressure | http://loinc.org |
 | 14 | 203 | Observation | `Observation.code.coding` | ANC.B8.DE17 | Systolic blood pressure | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 15 | 229 | Observation | `Observation.interpretation` | OI000018 | Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 16 | 230 | Observation | `Observation.interpretation` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
-| 17 | 231 | Observation | `Observation.interpretation` | OI000035 | Risiko Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 18 | 234 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://loinc.org |
-| 19 | 235 | Observation | `Observation.code.coding` | ANC.B8.DE19 | Diastolic blood pressure | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 20 | 249 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
-| 21 | 273 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 22 | 293 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 23 | 308 | Observation | `Observation.code.coding` | SP000001 | Skrining Imunisasi Tetanus Toksoid | http://terminology.kemkes.go.id/sp |
-| 24 | 321 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
-| 25 | 340 | Observation | `Observation.code.coding` | 55283-6 | Fetal Heart rate | http://loinc.org |
-| 26 | 341 | Observation | `Observation.code.coding` | ANC.B8.DE107 | Fetal heart rate | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 27 | 356 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
-| 28 | 357 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
-| 29 | 358 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005.0 | Cephalic fetal presentation | http://snomed.info/sct |
-| 30 | 359 | Observation | `Observation.valueCodeableConcept.coding` | 288203005.0 | Transverse/oblique lie | http://snomed.info/sct |
-| 31 | 360 | Observation | `Observation.valueCodeableConcept.coding` | 6096002.0 | Breech presentation | http://snomed.info/sct |
-| 32 | 372 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
-| 33 | 386 | Condition | `Condition.code.coding` | 34842007.0 | Antepartum hemorrhage | http://snomed.info/sct |
-| 34 | 387 | Condition | `Condition.code.coding` | 15938005.0 | Eclampsia | http://snomed.info/sct |
-| 35 | 388 | Condition | `Condition.code.coding` | 398254007.0 | Pre-eclampsia | http://snomed.info/sct |
-| 36 | 389 | Condition | `Condition.code.coding` | 386639001.0 | Termination of pregnancy | http://snomed.info/sct |
-| 37 | 390 | Condition | `Condition.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
-| 38 | 391 | Condition | `Condition.code.coding` | 91302008.0 | Sepsis | http://snomed.info/sct |
-| 39 | 392 | Condition | `Condition.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 40 | 405 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf |
-| 41 | 439 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf |
-| 42 | 470 | Observation | `Observation.code.coding` | SP000007 | Tatalaksana Anemia | http://terminology.kemkes.go.id/sp |
-| 43 | 471 | Observation | `Observation.valueCodeableConcept.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
-| 44 | 472 | Observation | `Observation.valueCodeableConcept.coding` | SP000009 | Pemberian Fe Parenteral | http://terminology.kemkes.go.id/sp |
-| 45 | 473 | Observation | `Observation.valueCodeableConcept.coding` | 116859006.0 | Transfusion of blood product | http://snomed.info/sct |
-| 46 | 474 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 47 | 476 | Observation | `Observation.valueCodeableConcept.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
-| 48 | 490 | Observation | `Observation.code.coding` | SP000010 | Skrining Hipertensi dalam Kehamilan | http://terminology.kemkes.go.id/sp |
-| 49 | 491 | Observation | `Observation.valueCodeableConcept.coding` | SP000011 | Tidak Pre Eklampsia/ Eklampsia | http://terminology.kemkes.go.id/sp |
-| 50 | 492 | Observation | `Observation.valueCodeableConcept.coding` | 48194001.0 | Pregnancy-induced hypertension | http://snomed.info/sct |
-| 51 | 493 | Observation | `Observation.interpretation.coding` | 12763006.0 | Blood pressure below reference range (finding) | http://snomed.info/sct |
-| 52 | 505 | Observation | `Observation.code.coding` | SP000012 | Tatalaksana Pre Eklampsia | http://terminology.kemkes.go.id/sp |
-| 53 | 506 | Observation | `Observation.component.code.coding` | 135840009.0 | Blood pressure monitoring | http://snomed.info/sct |
-| 54 | 507 | Observation | `Observation.component.code.coding` | 308116003.0 | Antihypertensive therapy | http://snomed.info/sct |
-| 55 | 508 | Observation | `Observation.component.code.coding` | SP000013 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
-| 56 | 509 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 57 | 511 | Observation | `Observation.component.code.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
-| 58 | 525 | Observation | `Observation.code.coding` | SP000014 | Tatalaksana KEK | http://terminology.kemkes.go.id/sp |
-| 59 | 526 | Observation | `Observation.valueCodeableConcept.coding` | 435591000124104.0 | Nutrition supplement therapy | http://snomed.info/sct |
-| 60 | 527 | Observation | `Observation.valueCodeableConcept.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
-| 61 | 541 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
-| 62 | 542 | Observation | `Observation.component.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
-| 63 | 543 | Observation | `Observation.component.code.coding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
-| 64 | 544 | Observation | `Observation.component.code.coding` | 414916001.0 | Obesity | http://snomed.info/sct |
-| 65 | 545 | Observation | `Observation.component.code.coding` | 56717001.0 | Tuberculosis | http://snomed.info/sct |
-| 66 | 546 | Observation | `Observation.component.code.coding` | 56265001.0 | Heart disease | http://snomed.info/sct |
-| 67 | 547 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
-| 68 | 559 | Procedure | `Procedure.code.coding` | 385892002.0 | Mental health screening | http://snomed.info/sct |
+| 15 | 217 | Observation | `Observation.code.coding` | 284473002.0 | Mid upper arm circumference | http://snomed.info/sct |
+| 16 | 218 | Observation | `Observation.code.coding` | ANC.SS.DE3 | Lingkar Lengan Atas (LILA) | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes |
+| 17 | 229 | Observation | `Observation.interpretation` | OI000018 | Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 18 | 230 | Observation | `Observation.interpretation` | N | Normal | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation |
+| 19 | 231 | Observation | `Observation.interpretation` | OI000035 | Risiko Kurang Energi Kronis (KEK) | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 20 | 234 | Observation | `Observation.code.coding` | 8462-4 | Diastolic blood pressure | http://loinc.org |
+| 21 | 235 | Observation | `Observation.code.coding` | ANC.B8.DE19 | Diastolic blood pressure | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 22 | 249 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
+| 23 | 252 | Observation | `Observation.dataAbsentReason` | not-performed | - | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 24 | 273 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 25 | 293 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 26 | 308 | Observation | `Observation.code.coding` | SP000001 | Skrining Imunisasi Tetanus Toksoid | http://terminology.kemkes.go.id/sp |
+| 27 | 309 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 28 | 321 | Immunization | `Immunization.vaccineCode` | VG139 | Td | http://sys-ids.kemkes.go.id/kfa |
+| 29 | 340 | Observation | `Observation.code.coding` | 55283-6 | Fetal Heart rate | http://loinc.org |
+| 30 | 341 | Observation | `Observation.code.coding` | ANC.B8.DE107 | Fetal heart rate | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 31 | 356 | Observation | `Observation.code.coding` | 72155-5 | Position in womb Fetus [RHEA] | http://loinc.org |
+| 32 | 357 | Observation | `Observation.code.coding` | ANC.B8.DE111 | Fetal presentation | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes |
+| 33 | 358 | Observation | `Observation.valueCodeableConcept.coding` | 1209182005.0 | Cephalic fetal presentation | http://snomed.info/sct |
+| 34 | 359 | Observation | `Observation.valueCodeableConcept.coding` | 288203005.0 | Transverse/oblique lie | http://snomed.info/sct |
+| 35 | 360 | Observation | `Observation.valueCodeableConcept.coding` | 6096002.0 | Breech presentation | http://snomed.info/sct |
+| 36 | 361 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 37 | 372 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
+| 38 | 386 | Condition | `Condition.code.coding` | 34842007.0 | Antepartum hemorrhage | http://snomed.info/sct |
+| 39 | 387 | Condition | `Condition.code.coding` | 15938005.0 | Eclampsia | http://snomed.info/sct |
+| 40 | 388 | Condition | `Condition.code.coding` | 398254007.0 | Pre-eclampsia | http://snomed.info/sct |
+| 41 | 389 | Condition | `Condition.code.coding` | 386639001.0 | Termination of pregnancy | http://snomed.info/sct |
+| 42 | 390 | Condition | `Condition.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
+| 43 | 391 | Condition | `Condition.code.coding` | 91302008.0 | Sepsis | http://snomed.info/sct |
+| 44 | 392 | Condition | `Condition.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 45 | 405 | MedicationRequest | `MedicationRequest.contained.code.coding` | 92000653.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula | http://sys-ids.kemkes.go.id/kf |
+| 46 | 439 | MedicationDispense | `MedicationDispense.contained.code.coding` | 93015491.0 | Ferrous Fumarate 60 mg / Folic Acid 0,4 mg Tablet Salut Gula (TABLET TAMBAH DARAH) | http://sys-ids.kemkes.go.id/kf |
+| 47 | 470 | Observation | `Observation.code.coding` | SP000007 | Tatalaksana Anemia | http://terminology.kemkes.go.id/sp |
+| 48 | 471 | Observation | `Observation.valueCodeableConcept.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
+| 49 | 472 | Observation | `Observation.valueCodeableConcept.coding` | SP000009 | Pemberian Fe Parenteral | http://terminology.kemkes.go.id/sp |
+| 50 | 473 | Observation | `Observation.valueCodeableConcept.coding` | 116859006.0 | Transfusion of blood product | http://snomed.info/sct |
+| 51 | 474 | Observation | `Observation.valueCodeableConcept.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 52 | 476 | Observation | `Observation.valueCodeableConcept.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
+| 53 | 478 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 54 | 490 | Observation | `Observation.code.coding` | SP000010 | Skrining Hipertensi dalam Kehamilan | http://terminology.kemkes.go.id/sp |
+| 55 | 491 | Observation | `Observation.valueCodeableConcept.coding` | SP000011 | Tidak Pre Eklampsia/ Eklampsia | http://terminology.kemkes.go.id/sp |
+| 56 | 492 | Observation | `Observation.valueCodeableConcept.coding` | 48194001.0 | Pregnancy-induced hypertension | http://snomed.info/sct |
+| 57 | 493 | Observation | `Observation.interpretation.coding` | 12763006.0 | Blood pressure below reference range (finding) | http://snomed.info/sct |
+| 58 | 505 | Observation | `Observation.code.coding` | SP000012 | Tatalaksana Pre Eklampsia | http://terminology.kemkes.go.id/sp |
+| 59 | 506 | Observation | `Observation.component.code.coding` | 135840009.0 | Blood pressure monitoring | http://snomed.info/sct |
+| 60 | 507 | Observation | `Observation.component.code.coding` | 308116003.0 | Antihypertensive therapy | http://snomed.info/sct |
+| 61 | 508 | Observation | `Observation.component.code.coding` | SP000013 | Pemberian MgSO4 | http://terminology.kemkes.go.id/sp |
+| 62 | 509 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 63 | 511 | Observation | `Observation.component.code.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
+| 64 | 513 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 65 | 525 | Observation | `Observation.code.coding` | SP000014 | Tatalaksana KEK | http://terminology.kemkes.go.id/sp |
+| 66 | 526 | Observation | `Observation.valueCodeableConcept.coding` | 435591000124104.0 | Nutrition supplement therapy | http://snomed.info/sct |
+| 67 | 527 | Observation | `Observation.valueCodeableConcept.coding` | 3457005.0 | Patient referral | http://snomed.info/sct |
+| 68 | 529 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed |  |
+| 69 | 541 | Observation | `Observation.code.coding` | SP000015 | Risiko Masalah Kesehatan | http://terminology.kemkes.go.id/sp |
+| 70 | 542 | Observation | `Observation.component.code.coding` | 40733004.0 | Infectious disease | http://snomed.info/sct |
+| 71 | 543 | Observation | `Observation.component.code.coding` | 73211009.0 | Diabetes mellitus | http://snomed.info/sct |
+| 72 | 544 | Observation | `Observation.component.code.coding` | 414916001.0 | Obesity | http://snomed.info/sct |
+| 73 | 545 | Observation | `Observation.component.code.coding` | 56717001.0 | Tuberculosis | http://snomed.info/sct |
+| 74 | 546 | Observation | `Observation.component.code.coding` | 56265001.0 | Heart disease | http://snomed.info/sct |
+| 75 | 547 | Observation | `Observation.component.code.coding` | 74964007.0 | Other | http://snomed.info/sct |
+| 76 | 548 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed |  |
+| 77 | 559 | Procedure | `Procedure.code.coding` | 385892002.0 | Mental health screening | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
-| http://snomed.info/sct | 32 |
+| http://snomed.info/sct | 33 |
 | http://terminology.kemkes.go.id/sp | 11 |
 | http://loinc.org | 8 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 7 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 5 |
 | http://sys-ids.kemkes.go.id/kfa | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
 | http://sys-ids.kemkes.go.id/kf | 2 |
+|  | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
+| http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **68** |
+| **Total** | **77** |
 
 ## Variabel di luar payload
 

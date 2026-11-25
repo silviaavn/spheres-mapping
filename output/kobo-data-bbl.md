@@ -11,16 +11,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 38 |
-| Code (`jumlah code` = 1) | 124 |
-| Code unik (code + CodeSystem) | 86 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
+| Code (`jumlah code` = 1) | 126 |
+| Code unik (code + CodeSystem) | 88 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 4 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 2–14 | Patient | – | – | _Nama Bayi_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK Bayi_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (10, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (12, tanpa BQ)<br>_Tempat lahir_ → `Patient.extension:birthPlace` (13, tanpa BQ)<br>_Kembar_ → `Patient.multipleBirthBoolean` (14, tanpa BQ) |
+| 1 | 2–14 | Patient | – | – | _Nama Bayi_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK Bayi_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (10, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (12, tanpa BQ)<br>_Tempat lahir_ → `Patient.extension:birthPlace.valueAddress.text` (13, tanpa BQ)<br>_Kembar_ → `Patient.multipleBirthBoolean` (14, tanpa BQ) |
 | 2 | 15–25 | RelatedPerson | – | – | _Nama Ibu_ → `RelatedPerson.name.text` (16, tanpa BQ)<br>_No Hp Ibu_ → `RelatedPerson.telecom.value` (18, tanpa BQ)<br>_NIK Ibu_ → `RelatedPerson.identifier.value` (24, tanpa BQ) |
 | 3 | 26–34 | RelatedPerson | – | – | _Nama Ayah_ → `RelatedPerson.name.text` (26, tanpa BQ)<br>_No Hp Ayah_ → `RelatedPerson.telecom.value` (28, tanpa BQ)<br>_NIK Ayah_ → `RelatedPerson.identifier.value` (34, tanpa BQ) |
 | 4 | 35–43 | EpisodeOfCare | Neonate | Neonate | – |
@@ -202,6 +202,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 122 | 541 | Observation | `Observation.code.coding` | 249278006.0 | Ability to pass urine | http://snomed.info/sct |
 | 123 | 552 | Observation | `Observation.code.coding` | 276397000.0 | Has passed meconium | http://snomed.info/sct |
 | 124 | 565 | ServiceRequest | `ServiceRequest.code.coding` | 736282001.0 | Neonatal critical care plan | http://snomed.info/sct |
+| 125 | 574 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
+| 126 | 578 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
@@ -210,13 +212,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 82 |
 | http://snomed.info/sct | 28 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 5 |
+| http://terminology.kemkes.go.id/sp | 4 |
 | http://hl7.org/fhir/sid/icd-10 | 2 |
-| http://terminology.kemkes.go.id/sp | 2 |
 | http://sys-ids.kemkes.go.id/kfa | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
 | http://hl7.org/fhir/sid/cvx | 1 |
-| **Total** | **124** |
+| **Total** | **126** |
 
 ## Variabel di luar payload
 

@@ -11,9 +11,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 67 |
-| Code (`jumlah code` = 1) | 131 |
-| Code unik (code + CodeSystem) | 128 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 21 |
+| Code (`jumlah code` = 1) | 133 |
+| Code unik (code + CodeSystem) | 130 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 23 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
@@ -23,7 +23,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 1 | 2–27 | Patient | – | – | _Nama Ibu_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK_ → `Patient.identifier.value` (6, tanpa BQ)<br>_No HP_ → `Patient.telecom` (7, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (10, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (11, tanpa BQ)<br>_Alamat Domisili_ → `Patient.address.line` (13, tanpa BQ)<br>_Nama Kabupaten_ → `Patient.address.city` (14, tanpa BQ)<br>_Nama Provinsi_ → `Patient.address.extension.extension.valueCode` (18, tanpa BQ)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (21, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.extension.valueCode` (24, tanpa BQ)<br>_Nama Desa_ → `Patient.address.extension.extension.valueCode` (27, tanpa BQ) |
 | 2 | 66–72 | Practitioner | – | – | _NIK_ → `Practitioner.identifier.value` (68, tanpa BQ)<br>_Nama Tenaga Kesehatan_ → `Practitioner.name.text` (70, tanpa BQ)<br>_Jenis Kelamin Tenaga Kesehatan_ → `Practitioner.gender` (71, tanpa BQ) |
 | 3 | 73–80 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.code.coding` (77, tanpa BQ) |
-| 4 | 82–101 | Encounter | – | – | _Tanggal Kunjungan PNC_ → `Encounter.period.start` (89, tanpa BQ)<br>_Tempat Pelayanan PNC_ → `Encounter.location.display` (92, tanpa BQ)<br>_Cara Masuk_ → `Encounter.hospitalization.admitSource.coding` (93, tanpa BQ) |
+| 4 | 82–101 | Encounter | – | – | _Tanggal Kunjungan PNC_ → `Encounter.period.start` (89, tanpa BQ)<br>_Tempat Pelayanan PNC_ → `Encounter.location.location.display` (92, tanpa BQ)<br>_Cara Masuk_ → `Encounter.hospitalization.admitSource.coding` (93, tanpa BQ) |
 | 5 | 102–110 | Condition | Z39.2 | Routine postpartum follow-up | _Kode ICD - Diagnosa_ → `Condition.clinicalStatus.coding` (102, tanpa BQ) |
 | 6 | 113–121 | Condition | 404684003.0 | Clinical finding | _Keluhan_ → `Condition.clinicalStatus.coding` (113, tanpa BQ) |
 | 7 | 132–140 | EpisodeOfCare | PNC | Postnatal Care | – |
@@ -58,7 +58,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 36 | 481–494 | Observation | 284473002.0 | Mid upper arm circumference | _LILA_ → `Observation.valueQuantity.value` (484, tanpa BQ)<br>_Status Gizi KEK/Tidak KEK_ → `Observation.interpretation` (493, tanpa BQ) |
 | 37 | 495–507 | Observation | 11881-0 | Uterus Fundal height Tape measure | _TFU_ → `Observation.valueString` (498, tanpa BQ) |
 | 38 | 508–525 | Condition | 47821001.0 | Postpartum hemorrhage | _Komplikasi Masa Nifas_ → `Condition.clinicalStatus.coding` (508, tanpa BQ) |
-| 39 | 526–539 | Observation | 289084000.0 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (529, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (538, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.catgeory.coding` (539, tanpa BQ) |
+| 39 | 526–539 | Observation | 289084000.0 | Difficulty performing breastfeeding | _Apakah ada masalah memberikan ASI_ → `Observation.valueBoolean` (529, tanpa BQ)<br>_Catatan ASI_ → `Observation.note.text` (538, tanpa BQ)<br>_Catat dibuku KIA_ → `Observation.category.coding` (539, tanpa BQ) |
 | 40 | 540–550 | Observation | SP000122 | Catat di Buku KIA | – |
 | 41 | 551–552 | MedicationDispense | – | – | _Diberikan Tablet FE_ → `MedicationDispense.status` (551, tanpa BQ) |
 | 42 | 553–567 | Medication | – | – | – |
@@ -241,13 +241,15 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 129 | 925 | Condition | `Condition.code.coding` | 162668006.0 | Patient’s condition unstable | http://snomed.info/sct |
 | 130 | 926 | Condition | `Condition.code.coding` | 268910001.0 | Patient’s condition improved | http://snomed.info/sct |
 | 131 | 935 | ServiceRequest | `ServiceRequest.code.coding` | 409014006.0 | Delivery care management | http://snomed.info/sct |
+| 132 | 943 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
+| 133 | 947 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
 
 ### Code per CodeSystem
 
 | CodeSystem | Jumlah |
 |---|---|
 | http://snomed.info/sct | 67 |
-| http://terminology.kemkes.go.id/sp | 21 |
+| http://terminology.kemkes.go.id/sp | 23 |
 | http://loinc.org | 18 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 13 |
 | http://sys-ids.kemkes.go.id/kf | 4 |
@@ -255,7 +257,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **131** |
+| **Total** | **133** |
 
 ## Variabel di luar payload
 

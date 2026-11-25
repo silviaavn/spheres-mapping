@@ -78,8 +78,8 @@ Data Faskes,Identitas Faskes,,,,,,,,,Organization,Organization.active,true,Tidak
 ,,,,,,,,,,Encounter,Encounter.participant.individual.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tanggal_pelayanan,Tanggal Pelayanan,date,YYYY-MM-DD,,,,Encounter,Encounter.period.start,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,tanggal_pelayanan,,date,YYYY-MM-DD,,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition,,,,,
 ,,,,,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
@@ -316,7 +316,7 @@ kaki",,Observation,Observation.interpretation.coding,NEG,Negative,http://termino
 ,,,tanggal_pelayanan,,date,YYYY-MM-DD,,,,Procedure,Procedure.performedPeriod.end,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.reference,Reference ke resources Practitioner (PJ CKG ASIK),,,,,
 ,,,,,,,,,,Procedure,Procedure.performer.actor.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,"Tes Konfirmasi Pemeriksaan SHK, G6PD, HAK",,,Pemeriksaan Tes Konfirmasi SHK,boolean,,,,,Procedure,Procedure.indentifier,Tidak ada,Tes Konfirmasi SHK,http://sys-ids.kemkes.go.id/procedure/{{Org_id}},,,
+,"Tes Konfirmasi Pemeriksaan SHK, G6PD, HAK",,,Pemeriksaan Tes Konfirmasi SHK,boolean,,,,,Procedure,Procedure.identifier,Tidak ada,Tes Konfirmasi SHK,http://sys-ids.kemkes.go.id/procedure/{{Org_id}},,,
 ,,,,,,,,,,Procedure,Procedure.category.coding,TK000028,Diagnostic procedure,http://terminology.kemkes.go.id,,,1
 ,,,,,,,,,,Procedure,Procedure.code.coding,400984005.0,Congenital hypothyroidism screening test,http://snomed.info/sct,,1,
 ,,,apakah_dilakukan_tes_konfrimasi_shk_hanya_utk_tsh_gt_20,,,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
@@ -345,7 +345,7 @@ kaki",,Observation,Observation.interpretation.coding,NEG,Negative,http://termino
 ,,,tanggal_pelayanan,,date,YYYY-MM-DD,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner (PJ CKG ASIK),,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Pemeriksaan Konfirmasi Defisiensi G6PD,boolean,,,,,Procedure,Procedure.indentifier,Tidak ada,Tes Konfirmasi Defisiensi G6PD,http://sys-ids.kemkes.go.id/procedure/{{Org_id}},,,1
+,,,,Pemeriksaan Konfirmasi Defisiensi G6PD,boolean,,,,,Procedure,Procedure.identifier,Tidak ada,Tes Konfirmasi Defisiensi G6PD,http://sys-ids.kemkes.go.id/procedure/{{Org_id}},,,1
 ,,,,,,,,,,Procedure,Procedure.category.coding,TK000028,Diagnostic procedure,http://terminology.kemkes.go.id,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,252298007.0,Glucose-6-phosphate dehydrogenase deficiency spot test,http://snomed.info/sct,,1,
 ,,,apakah_dilakukan_tes_konfirmasi_defisiensi_g6pd,,,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
@@ -374,7 +374,7 @@ kaki",,Observation,Observation.interpretation.coding,NEG,Negative,http://termino
 ,,,tanggal_pelayanan,,date,YYYY-MM-DD,,,,Observation,Observation.issued,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.performer.reference,Reference ke resources Practitioner (PJ CKG ASIK),,,,,
 ,,,,,,,,,,Observation,Observation.performer.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Pemeriksaan Konfirmasi Skrining HAK,boolean,,,,,Procedure,Procedure.indentifier,Tidak ada,Tes Konfirmasi Skrining HAK,http://sys-ids.kemkes.go.id/procedure/{{Org_id}},,,1
+,,,,Pemeriksaan Konfirmasi Skrining HAK,boolean,,,,,Procedure,Procedure.identifier,Tidak ada,Tes Konfirmasi Skrining HAK,http://sys-ids.kemkes.go.id/procedure/{{Org_id}},,,1
 ,,,,,,,,,,Procedure,Procedure.category.coding,TK000028,Diagnostic procedure,http://terminology.kemkes.go.id,,,
 ,,,,,,,,,,Procedure,Procedure.code.coding,431420002.0,Screening for congenital adrenal hyperplasia,http://snomed.info/sct,,1,
 ,,,apakah_dilakukan_tes_konfirmasi_skrining_hak,,,,,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,

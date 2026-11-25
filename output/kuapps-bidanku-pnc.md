@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 49 |
-| Code (`jumlah code` = 1) | 141 |
-| Code unik (code + CodeSystem) | 137 |
+| Code (`jumlah code` = 1) | 143 |
+| Code unik (code + CodeSystem) | 138 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
@@ -20,7 +20,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 3–11 | EpisodeOfCare | PNC | Postnatal Care | _Mulai PNC_ → `EpisodeOfCare.Identifer` (3, tanpa BQ) |
+| 1 | 3–11 | EpisodeOfCare | PNC | Postnatal Care | _Mulai PNC_ → `EpisodeOfCare.identifier` (3, tanpa BQ) |
 | 2 | 12–28 | Encounter | – | – | _Kunjungan PNC (KF)_ → `Encounter.identifier` (12, tanpa BQ)<br>_Tanggal kunjungan_ → `Encounter.period.start` (16, tanpa BQ) |
 | 3 | 29–36 | Condition | Z39.2 | Routine postpartum follow-up | – |
 | 4 | 47–59 | Observation | 8302-2 | Body height | _Tinggi (cm)_ → `Observation.valueQuantity.value` (51, tanpa BQ) |
@@ -141,91 +141,93 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 54 | 255 | Observation | `Observation.valueCodeableConcept[i].coding` | 371632003 | Coma | http://snomed.info/sct |
 | 55 | 256 | Observation | `Observation.valueCodeableConcept[i].coding` | LA9343-0 | Unresponsive | http://loinc.org |
 | 56 | 265 | Observation | `Observation.code.coding` | 267038008 | Edema | http://snomed.info/sct |
-| 57 | 268 | Observation | `Observation.component.code.coding` | 445088006 | Edema of face | http://snomed.info/sct |
-| 58 | 271 | Observation | `Observation.component.code.coding` | 2564009 | Edema of hand | http://snomed.info/sct |
-| 59 | 274 | Observation | `Observation.component.code.coding` | 102576009 | Edema of foot | http://snomed.info/sct |
-| 60 | 286 | Observation | `Observation.code.coding` | 289530006 | Vaginal bleeding | http://snomed.info/sct |
-| 61 | 297 | Observation | `Observation.code.coding` | 81661-1 | Blood Loss [Volume] Measured | http://loinc.org |
-| 62 | 308 | Observation | `Observation.code.coding` | 112648003 | Massive hemorrhage | http://snomed.info/sct |
-| 63 | 320 | Condition | `Condition.code.coding` | 112648003 | Massive hemorrhage | http://snomed.info/sct |
-| 64 | 327 | Observation | `Observation.code.coding` | 91175000 | Seizure | http://snomed.info/sct |
-| 65 | 339 | Condition | `Condition.code.coding` | 91175000 | Seizure | http://snomed.info/sct |
-| 66 | 346 | Observation | `Observation.code.coding` | 27942005 | Shock | http://snomed.info/sct |
-| 67 | 358 | Condition | `Condition.code.coding` | 27942005 | Shock | http://snomed.info/sct |
-| 68 | 365 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
-| 69 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 300885006 | Swelling of breast | http://snomed.info/sct |
-| 70 | 367 | Observation | `Observation.valueCodeableConcept.coding` | 290070001 | Red breast | http://snomed.info/sct |
-| 71 | 368 | Observation | `Observation.valueCodeableConcept.coding` | 54302000 | Discharge from nipple | http://snomed.info/sct |
-| 72 | 369 | Observation | `Observation.valueCodeableConcept.coding` | 53430007 | Pain of breast | http://snomed.info/sct |
-| 73 | 370 | Observation | `Observation.valueCodeableConcept.coding` | 290084006 | Breast normal | http://snomed.info/sct |
-| 74 | 380 | Observation | `Observation.code.coding` | 413711008 | Breastfeeding (infant) | http://snomed.info/sct |
-| 75 | 392 | Condition | `Condition.code.coding` | 58703003 | Postpartum depression | http://snomed.info/sct |
-| 76 | 393 | Condition | `Condition.code.coding` | 47821001 | Postpartum hemorrhage | http://snomed.info/sct |
-| 77 | 394 | Condition | `Condition.code.coding` | 198188007 | Chronic uterine inflammatory disease | http://snomed.info/sct |
-| 78 | 395 | Condition | `Condition.code.coding` | 111367007 | Pelvic abscess | http://snomed.info/sct |
-| 79 | 396 | Condition | `Condition.code.coding` | 211063003 | Infected abrasion of perineum | http://snomed.info/sct |
-| 80 | 397 | Condition | `Condition.code.coding` | 76902006 | Tetanus | http://snomed.info/sct |
-| 81 | 398 | Condition | `Condition.code.coding` | 266579006 | Inflammatory disorder of breast | http://snomed.info/sct |
-| 82 | 399 | Condition | `Condition.code.coding` | 49746001 | Engorgement of breasts | http://snomed.info/sct |
-| 83 | 400 | Condition | `Condition.code.coding` | 82231009 | Inversion of nipple | http://snomed.info/sct |
-| 84 | 401 | Condition | `Condition.code.coding` | 40521000119100 | Postpartum pregnancy-induced hypertension | http://snomed.info/sct |
-| 85 | 402 | Condition | `Condition.code.coding` | 91302008 | Sepsis | http://snomed.info/sct |
-| 86 | 403 | Condition | `Condition.code.coding` | O90.8 | Other complications of the puerperium, not elsewhere classified | http://hl7.org/fhir/sid/icd-10 |
-| 87 | 411 | Observation | `Observation.code.coding` | OC000017 | Produksi ASI | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 88 | 412 | Observation | `Observation.valueCodeableConcept.coding` | OV000016 | Produksi ASI ada | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 89 | 413 | Observation | `Observation.valueCodeableConcept.coding` | OV000017 | Produksi ASI ada tapi sedikit | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 90 | 414 | Observation | `Observation.valueCodeableConcept.coding` | OV000018 | Produksi ASI tidak ada | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 91 | 424 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
-| 92 | 436 | Observation | `Observation.code.coding` | 289700000 | Uterine contractions present | http://snomed.info/sct |
-| 93 | 448 | Observation | `Observation.code.coding` | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 94 | 460 | Observation | `Observation.code.coding` | 364297003 | Female perineum observable | http://snomed.info/sct |
-| 95 | 461 | Observation | `Observation.valueCodeableConcept.coding` | 57759005 | First degree perineal laceration | http://snomed.info/sct |
-| 96 | 462 | Observation | `Observation.valueCodeableConcept.coding` | 6234006 | Second degree perineal laceration | http://snomed.info/sct |
-| 97 | 463 | Observation | `Observation.valueCodeableConcept.coding` | 10217006 | Third degree perineal laceration | http://snomed.info/sct |
-| 98 | 464 | Observation | `Observation.valueCodeableConcept.coding` | 399031001 | Fourth degree perineal laceration | http://snomed.info/sct |
-| 99 | 465 | Observation | `Observation.valueCodeableConcept.coding` | 289854007 | Perineum intact | http://snomed.info/sct |
-| 100 | 475 | Observation | `Observation.code.coding` | OC000020 | Tanda Infeksi Perineum | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 101 | 487 | Observation | `Observation.code.coding` | 249214003 | Color of lochia | http://snomed.info/sct |
-| 102 | 488 | Observation | `Observation.valueCodeableConcept.coding` | 278072004 | Lochia rubra | http://snomed.info/sct |
-| 103 | 489 | Observation | `Observation.valueCodeableConcept.coding` | 113291006 | Lochia sanguinolenta | http://snomed.info/sct |
-| 104 | 490 | Observation | `Observation.valueCodeableConcept.coding` | 449828001 | Lochia serosa | http://snomed.info/sct |
-| 105 | 491 | Observation | `Observation.valueCodeableConcept.coding` | 449827006 | Lochia alba | http://snomed.info/sct |
-| 106 | 501 | Observation | `Observation.code.coding` | 249215002 | Odor of lochia | http://snomed.info/sct |
-| 107 | 513 | Observation | `Observation.code.coding` | 252041008 | Micturition finding | http://snomed.info/sct |
-| 108 | 514 | Observation | `Observation.valueCodeableConcept.coding` | 49650001 | Dysuria | http://snomed.info/sct |
-| 109 | 515 | Observation | `Observation.valueCodeableConcept.coding` | 249288007 | Incomplete emptying of urinary bladder | http://snomed.info/sct |
-| 110 | 516 | Observation | `Observation.valueCodeableConcept.coding` | 162116003 | Increased frequency of urination | http://snomed.info/sct |
-| 111 | 517 | Observation | `Observation.valueCodeableConcept.coding` | 42112009 | Enuresis | http://snomed.info/sct |
-| 112 | 518 | Observation | `Observation.valueCodeableConcept.coding` | 102834005 | Normal micturition | http://snomed.info/sct |
-| 113 | 528 | Observation | `Observation.code.coding` | 300375001 | Able to defecate | http://snomed.info/sct |
-| 114 | 539 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
-| 115 | 549 | Procedure | `Procedure.code.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
-| 116 | 559 | Procedure | `Procedure.code.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
-| 117 | 570 | Observation | `Observation.code.coding` | 8659-5 | Birth control method - Reported | http://loinc.org |
-| 118 | 571 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
-| 119 | 572 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
-| 120 | 573 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
-| 121 | 574 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
-| 122 | 575 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
-| 123 | 576 | Observation | `Observation.valueCodeableConcept.coding` | 40388003 | Implant, device | http://snomed.info/sct |
-| 124 | 577 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
-| 125 | 578 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
-| 126 | 588 | Procedure | `Procedure.code.coding` | 385892002 | Mental health screening | http://snomed.info/sct |
-| 127 | 600 | Observation | `Observation.code.coding` | 1155968006 | Mood | http://snomed.info/sct |
-| 128 | 601 | Observation | `Observation.valueCodeableConcept.coding` | 704678007 | Depressed mood with postpartum onset | http://snomed.info/sct |
-| 129 | 602 | Observation | `Observation.valueCodeableConcept.coding` | 225658008 | Mood stable | http://snomed.info/sct |
-| 130 | 612 | Condition | `Condition.code.coding` | 160357008 | Family history: Hypertension | http://snomed.info/sct |
-| 131 | 613 | Condition | `Condition.code.coding` | 160303001 | Family history of diabetes mellitus | http://snomed.info/sct |
-| 132 | 614 | Condition | `Condition.code.coding` | 275104002 | Family history of stroke | http://snomed.info/sct |
-| 133 | 615 | Condition | `Condition.code.coding` | 429959009 | Family history of heart failure | http://snomed.info/sct |
-| 134 | 616 | Condition | `Condition.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
-| 135 | 617 | Condition | `Condition.code.coding` | 275937001 | Family history of malignant neoplasm (situation) | http://snomed.info/sct |
-| 136 | 618 | Condition | `Condition.code.coding` | 160314003 | Family history: Hypercholesterolemia | http://snomed.info/sct |
-| 137 | 619 | Condition | `Condition.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
-| 138 | 620 | Condition | `Condition.code.coding` | 160266009 | No family history of clinical finding | http://snomed.info/sct |
-| 139 | 627 | Procedure | `Procedure.code.coding` | 54070000 | Postpartum education | http://snomed.info/sct |
-| 140 | 632 | Procedure | `Procedure.code.coding` | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
-| 141 | 633 | Procedure | `Procedure.code.coding` | ED000010 | Edukasi PHBS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 57 | 266 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 58 | 268 | Observation | `Observation.component.code.coding` | 445088006 | Edema of face | http://snomed.info/sct |
+| 59 | 271 | Observation | `Observation.component.code.coding` | 2564009 | Edema of hand | http://snomed.info/sct |
+| 60 | 274 | Observation | `Observation.component.code.coding` | 102576009 | Edema of foot | http://snomed.info/sct |
+| 61 | 286 | Observation | `Observation.code.coding` | 289530006 | Vaginal bleeding | http://snomed.info/sct |
+| 62 | 297 | Observation | `Observation.code.coding` | 81661-1 | Blood Loss [Volume] Measured | http://loinc.org |
+| 63 | 308 | Observation | `Observation.code.coding` | 112648003 | Massive hemorrhage | http://snomed.info/sct |
+| 64 | 320 | Condition | `Condition.code.coding` | 112648003 | Massive hemorrhage | http://snomed.info/sct |
+| 65 | 327 | Observation | `Observation.code.coding` | 91175000 | Seizure | http://snomed.info/sct |
+| 66 | 339 | Condition | `Condition.code.coding` | 91175000 | Seizure | http://snomed.info/sct |
+| 67 | 346 | Observation | `Observation.code.coding` | 27942005 | Shock | http://snomed.info/sct |
+| 68 | 358 | Condition | `Condition.code.coding` | 27942005 | Shock | http://snomed.info/sct |
+| 69 | 365 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
+| 70 | 366 | Observation | `Observation.valueCodeableConcept.coding` | 300885006 | Swelling of breast | http://snomed.info/sct |
+| 71 | 367 | Observation | `Observation.valueCodeableConcept.coding` | 290070001 | Red breast | http://snomed.info/sct |
+| 72 | 368 | Observation | `Observation.valueCodeableConcept.coding` | 54302000 | Discharge from nipple | http://snomed.info/sct |
+| 73 | 369 | Observation | `Observation.valueCodeableConcept.coding` | 53430007 | Pain of breast | http://snomed.info/sct |
+| 74 | 370 | Observation | `Observation.valueCodeableConcept.coding` | 290084006 | Breast normal | http://snomed.info/sct |
+| 75 | 380 | Observation | `Observation.code.coding` | 413711008 | Breastfeeding (infant) | http://snomed.info/sct |
+| 76 | 392 | Condition | `Condition.code.coding` | 58703003 | Postpartum depression | http://snomed.info/sct |
+| 77 | 393 | Condition | `Condition.code.coding` | 47821001 | Postpartum hemorrhage | http://snomed.info/sct |
+| 78 | 394 | Condition | `Condition.code.coding` | 198188007 | Chronic uterine inflammatory disease | http://snomed.info/sct |
+| 79 | 395 | Condition | `Condition.code.coding` | 111367007 | Pelvic abscess | http://snomed.info/sct |
+| 80 | 396 | Condition | `Condition.code.coding` | 211063003 | Infected abrasion of perineum | http://snomed.info/sct |
+| 81 | 397 | Condition | `Condition.code.coding` | 76902006 | Tetanus | http://snomed.info/sct |
+| 82 | 398 | Condition | `Condition.code.coding` | 266579006 | Inflammatory disorder of breast | http://snomed.info/sct |
+| 83 | 399 | Condition | `Condition.code.coding` | 49746001 | Engorgement of breasts | http://snomed.info/sct |
+| 84 | 400 | Condition | `Condition.code.coding` | 82231009 | Inversion of nipple | http://snomed.info/sct |
+| 85 | 401 | Condition | `Condition.code.coding` | 40521000119100 | Postpartum pregnancy-induced hypertension | http://snomed.info/sct |
+| 86 | 402 | Condition | `Condition.code.coding` | 91302008 | Sepsis | http://snomed.info/sct |
+| 87 | 403 | Condition | `Condition.code.coding` | O90.8 | Other complications of the puerperium, not elsewhere classified | http://hl7.org/fhir/sid/icd-10 |
+| 88 | 411 | Observation | `Observation.code.coding` | OC000017 | Produksi ASI | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 89 | 412 | Observation | `Observation.valueCodeableConcept.coding` | OV000016 | Produksi ASI ada | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 90 | 413 | Observation | `Observation.valueCodeableConcept.coding` | OV000017 | Produksi ASI ada tapi sedikit | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 91 | 414 | Observation | `Observation.valueCodeableConcept.coding` | OV000018 | Produksi ASI tidak ada | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 92 | 424 | Observation | `Observation.code.coding` | 11881-0 | Uterus Fundal height Tape measure | http://loinc.org |
+| 93 | 436 | Observation | `Observation.code.coding` | 289700000 | Uterine contractions present | http://snomed.info/sct |
+| 94 | 448 | Observation | `Observation.code.coding` | OC000025 | Tanda Infeksi Luka Jahitan Sectio Caesaria | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 95 | 460 | Observation | `Observation.code.coding` | 364297003 | Female perineum observable | http://snomed.info/sct |
+| 96 | 461 | Observation | `Observation.valueCodeableConcept.coding` | 57759005 | First degree perineal laceration | http://snomed.info/sct |
+| 97 | 462 | Observation | `Observation.valueCodeableConcept.coding` | 6234006 | Second degree perineal laceration | http://snomed.info/sct |
+| 98 | 463 | Observation | `Observation.valueCodeableConcept.coding` | 10217006 | Third degree perineal laceration | http://snomed.info/sct |
+| 99 | 464 | Observation | `Observation.valueCodeableConcept.coding` | 399031001 | Fourth degree perineal laceration | http://snomed.info/sct |
+| 100 | 465 | Observation | `Observation.valueCodeableConcept.coding` | 289854007 | Perineum intact | http://snomed.info/sct |
+| 101 | 475 | Observation | `Observation.code.coding` | OC000020 | Tanda Infeksi Perineum | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 102 | 487 | Observation | `Observation.code.coding` | 249214003 | Color of lochia | http://snomed.info/sct |
+| 103 | 488 | Observation | `Observation.valueCodeableConcept.coding` | 278072004 | Lochia rubra | http://snomed.info/sct |
+| 104 | 489 | Observation | `Observation.valueCodeableConcept.coding` | 113291006 | Lochia sanguinolenta | http://snomed.info/sct |
+| 105 | 490 | Observation | `Observation.valueCodeableConcept.coding` | 449828001 | Lochia serosa | http://snomed.info/sct |
+| 106 | 491 | Observation | `Observation.valueCodeableConcept.coding` | 449827006 | Lochia alba | http://snomed.info/sct |
+| 107 | 501 | Observation | `Observation.code.coding` | 249215002 | Odor of lochia | http://snomed.info/sct |
+| 108 | 513 | Observation | `Observation.code.coding` | 252041008 | Micturition finding | http://snomed.info/sct |
+| 109 | 514 | Observation | `Observation.valueCodeableConcept.coding` | 49650001 | Dysuria | http://snomed.info/sct |
+| 110 | 515 | Observation | `Observation.valueCodeableConcept.coding` | 249288007 | Incomplete emptying of urinary bladder | http://snomed.info/sct |
+| 111 | 516 | Observation | `Observation.valueCodeableConcept.coding` | 162116003 | Increased frequency of urination | http://snomed.info/sct |
+| 112 | 517 | Observation | `Observation.valueCodeableConcept.coding` | 42112009 | Enuresis | http://snomed.info/sct |
+| 113 | 518 | Observation | `Observation.valueCodeableConcept.coding` | 102834005 | Normal micturition | http://snomed.info/sct |
+| 114 | 528 | Observation | `Observation.code.coding` | 300375001 | Able to defecate | http://snomed.info/sct |
+| 115 | 539 | Procedure | `Procedure.code.coding` | 767224000 | Administration of vitamin A | http://snomed.info/sct |
+| 116 | 549 | Procedure | `Procedure.code.coding` | SP000008 | Pemberian Tablet Tambah Darah | http://terminology.kemkes.go.id/sp |
+| 117 | 559 | Procedure | `Procedure.code.coding` | SP000370 | Multiple Micronutrient Supplement | http://terminology.kemkes.go.id/sp |
+| 118 | 570 | Observation | `Observation.code.coding` | 8659-5 | Birth control method - Reported | http://loinc.org |
+| 119 | 571 | Observation | `Observation.valueCodeableConcept.coding` | 237122005 | Lactational amenorrhea | http://snomed.info/sct |
+| 120 | 572 | Observation | `Observation.valueCodeableConcept.coding` | LA6523-0 | Condom | http://loinc.org |
+| 121 | 573 | Observation | `Observation.valueCodeableConcept.coding` | LA6524-8 | Oral contraceptive pill | http://loinc.org |
+| 122 | 574 | Observation | `Observation.valueCodeableConcept.coding` | LA6525-5 | Injectable/implantable hormone | http://loinc.org |
+| 123 | 575 | Observation | `Observation.valueCodeableConcept.coding` | LA6527-1 | Intrauterine device | http://loinc.org |
+| 124 | 576 | Observation | `Observation.valueCodeableConcept.coding` | 40388003 | Implant, device | http://snomed.info/sct |
+| 125 | 577 | Observation | `Observation.valueCodeableConcept.coding` | 77543007 | Ligation of fallopian tube | http://snomed.info/sct |
+| 126 | 578 | Observation | `Observation.valueCodeableConcept.coding` | 22523008 | Vasectomy | http://snomed.info/sct |
+| 127 | 579 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 128 | 588 | Procedure | `Procedure.code.coding` | 385892002 | Mental health screening | http://snomed.info/sct |
+| 129 | 600 | Observation | `Observation.code.coding` | 1155968006 | Mood | http://snomed.info/sct |
+| 130 | 601 | Observation | `Observation.valueCodeableConcept.coding` | 704678007 | Depressed mood with postpartum onset | http://snomed.info/sct |
+| 131 | 602 | Observation | `Observation.valueCodeableConcept.coding` | 225658008 | Mood stable | http://snomed.info/sct |
+| 132 | 612 | Condition | `Condition.code.coding` | 160357008 | Family history: Hypertension | http://snomed.info/sct |
+| 133 | 613 | Condition | `Condition.code.coding` | 160303001 | Family history of diabetes mellitus | http://snomed.info/sct |
+| 134 | 614 | Condition | `Condition.code.coding` | 275104002 | Family history of stroke | http://snomed.info/sct |
+| 135 | 615 | Condition | `Condition.code.coding` | 429959009 | Family history of heart failure | http://snomed.info/sct |
+| 136 | 616 | Condition | `Condition.code.coding` | 160377001 | Family history: Asthma | http://snomed.info/sct |
+| 137 | 617 | Condition | `Condition.code.coding` | 275937001 | Family history of malignant neoplasm (situation) | http://snomed.info/sct |
+| 138 | 618 | Condition | `Condition.code.coding` | 160314003 | Family history: Hypercholesterolemia | http://snomed.info/sct |
+| 139 | 619 | Condition | `Condition.code.coding` | 160324006 | Family history of mental disorder | http://snomed.info/sct |
+| 140 | 620 | Condition | `Condition.code.coding` | 160266009 | No family history of clinical finding | http://snomed.info/sct |
+| 141 | 627 | Procedure | `Procedure.code.coding` | 54070000 | Postpartum education | http://snomed.info/sct |
+| 142 | 632 | Procedure | `Procedure.code.coding` | ED000008 | Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
+| 143 | 633 | Procedure | `Procedure.code.coding` | ED000010 | Edukasi PHBS | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 
 ### Code per CodeSystem
 
@@ -237,11 +239,12 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://terminology.kemkes.go.id/CodeSystem/organization-type | 7 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 4 |
 | http://hl7.org/fhir/sid/icd-10 | 2 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 2 |
 | http://terminology.kemkes.go.id/sp | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
-| **Total** | **141** |
+| **Total** | **143** |
 
 ## Variabel di luar payload
 

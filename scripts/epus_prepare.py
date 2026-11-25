@@ -84,6 +84,26 @@ DET_PATHS = [re.compile(p) for p in [   # code pembeda payload (baris pertama ya
     r"^Specimen\.type(\.coding)?$", r"^EpisodeOfCare\.type(\.coding)?$", r"^Immunization\.vaccineCode(\.coding)?$"]]
 
 
+EXTRA_PATHS = [re.compile(p) for p in [
+    r"^QuestionnaireResponse\..*(valueCoding|valueCodeableConcept)(\.coding)?$",   # path QR apa pun yang valid di FHIR
+    r"^[A-Za-z]+\..*dataAbsentReason(\.coding)?$",                                  # binding Extensible (HL7 R4)
+]]
+SP_SYSTEM = re.compile(r"terminology\.kemkes\.go\.id/sp\b")
+SP_CODE = re.compile(r"^SP\d{6}$")
+
+
+def is_counted(p, code, system=""):
+    """Code dihitung kalau: (1) path ada di COUNT_PATHS, atau (2) path QR jawaban coded / dataAbsentReason,
+    atau (3) code custom SP (SPxxxxxx / CodeSystem http://terminology.kemkes.go.id/sp) di path mana pun yang coded."""
+    if code.lower() in PLACEHOLDER_CODES or code.startswith("Reference") or not CODE_OK.match(code) or len(code) > 40:
+        return False
+    if p == "Encounter.identifier":
+        return bool(re.match(r"^K\d", code))
+    if any(rx.match(p) for rx in COUNT_PATHS) or any(rx.match(p) for rx in EXTRA_PATHS):
+        return True
+    return bool(SP_CODE.match(code) or SP_SYSTEM.search(system or ""))
+
+
 def norm_path(p):
     p = re.sub(r"\[\w+\]", "", p.replace(" ", ""))
     return p
@@ -278,16 +298,8 @@ def flag(rows):
         b["first"]["jumlah instance"] = "1"
         payloads.append(b)
         for r in b["rows"]:
-            p = norm_path(r["Path"])
-            code = r["Code"]
-            if not any(rx.match(p) for rx in COUNT_PATHS):
-                continue
-            if code.lower() in PLACEHOLDER_CODES or code.startswith("Reference") or not CODE_OK.match(code) \
-                    or len(code) > 40:
-                continue
-            if p == "Encounter.identifier" and not re.match(r"^K\d", code):
-                continue
-            r["jumlah code"] = "1"
+            if is_counted(norm_path(r["Path"]), r["Code"], r.get("CodeSystem", "")):
+                r["jumlah code"] = "1"
     return blocks, payloads
 
 

@@ -1,6 +1,6 @@
 Categories,Subcategories,Nama Column BQ,Nama Column Raw,Variables,Data Type,Format/Value,Value Name,Definisi Operasional,Agregat/Individu,Resource,Path,Code,Display,CodeSystem,Keterangan,jumlah code,jumlah instance
 "Saat pasien berkunjung untuk mendapatkan pelayanan Neonatal yang pertama kali, maka data resource EpisodeOfCare harus dikirimkan. Pembuatan resource EpisodeOfCare cukup dikirimkan satu kali saja saat pertama kali melakukan kunjungan Neonatus.",,,,,,,,,,,,,,,,,
-,,,,,,,,Mulai Kunjungan Neonatus (KN),,EpisodeOfCare,EpisodeOfCare.Identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
+,,,,,,,,Mulai Kunjungan Neonatus (KN),,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.status,active,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.statusHistory.period.start,Tidak ada,Tidak ada,Tidak ada,,,
@@ -45,7 +45,7 @@ Kehadiran Posyandu,,,,Kunjungan Neonatus (KN),Automated,,KN 1 (6 Jam - 2 hari),0
 ,,,,Dasawisma group,,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,SP000699,Kelompok Dasawisma,http://terminology.kemkes.go.id/sp,,1,
-,,,,,,,,,,Observation,Observation.valueString.coding,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Observation,Observation.valueString,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
 ,,,,,,,,,,Observation,Observation.subject.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Observation,Observation.encounter.reference,Reference ke resources Encounter,,,,,
@@ -236,15 +236,15 @@ Hasil Pengukuran,,,,Panjang Badan Bayi Saat Lahir (cm),Integer,,,,,Observation,O
 ,,,,,,,,,,Observation,Observation.code.coding,1153594009,Head circumference for age z-score,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.unit,{Zscore},{Zscore},http://unitsofmeasure.org,,,
-,,,,,,,Normal,,,Observation,Observation.Interpretation.coding,840673007,Normal head,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,,
+,,,,,,,Normal,,,Observation,Observation.interpretation.coding,840673007,Normal head,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
 ,,,,,,,,,,Observation,Observation.valueRange.low.value,Tidak ada,-2,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueRange.low.code,{Zscore},{Zscore},http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.valueRange.high.value,Tidak ada,2,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueRange.high.code,{Zscore},{Zscore},http://unitsofmeasure.org,,,
-,,,,,,,Mikrosefali,,,Observation,Observation.Interpretation.coding,1148757008,Microcephaly,http://snomed.info/sct,,,
+,,,,,,,Mikrosefali,,,Observation,Observation.interpretation.coding,1148757008,Microcephaly,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.valueRange.high.value,Tidak ada,-2.01,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueRange.high.code,{Zscore},{Zscore},http://unitsofmeasure.org,,,
-,,,,,,,Makrosefali,,,Observation,Observation.Interpretation.coding,1145403003,Macrocephaly,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,,
+,,,,,,,Makrosefali,,,Observation,Observation.interpretation.coding,1145403003,Macrocephaly,http://terminology.kemkes.go.id/CodeSystem/clinical-term,,1,
 ,,,,,,,,,,Observation,Observation.valueRange.low.value,Tidak ada,2.01,Tidak ada,,,
 ,,,,,,,,,,Observation,Observation.valueRange.low.code,{Zscore},{Zscore},http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.subject.reference,Reference ke resources Patient,,,,,
@@ -522,7 +522,7 @@ Skrining Kesehatan,,,,Kondisi bayi,,,,,,Observation,Observation.status,final,Tid
 ,,,,,,,,,,Condition,Condition.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,,,,,,Condition,Condition.recordedDate,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Apakah ada alergi obat saat ini?,boolean,,Ya,,,AllergyIntolerance,AllergyIntolerance.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical,,,1
-,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.category.coding,medication,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.category,medication,Tidak Ada,Tidak Ada,,,
 ,,,,"Jika Ya, jenis obat?",,,Antibiotik Lainnya,,,AllergyIntolerance,AllergyIntolerance.code.coding,255631004,Antibiotic,http://snomed.info/sct,,,
 ,,,,,,,Antibiotik Golongan Sulfonamida,,,AllergyIntolerance,AllergyIntolerance.code.coding,59255006,Medicinal product containing sulfonamide and acting as antibacterial agent,http://snomed.info/sct,,,
 ,,,,,,,Antibiotik Golongan Beta Laktam,,,AllergyIntolerance,AllergyIntolerance.code.coding,90614001,Medicinal product containing beta-lactam and acting as antibacterial agent,http://snomed.info/sct,,,
@@ -535,8 +535,8 @@ Skrining Kesehatan,,,,Kondisi bayi,,,,,,Observation,Observation.status,final,Tid
 ,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.patient.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.encounter.reference,Reference ke resources Encounter,,,,,
 ,,,,,yyyy-mm-dd,,,,,AllergyIntolerance,AllergyIntolerance.recordedDate,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.recorded.reference,Reference ke resources Practitioner,,,,,
-,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.recorded.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
+,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.recorder.reference,Reference ke resources Practitioner,,,,,
+,,,,,,,,,,AllergyIntolerance,AllergyIntolerance.recorder.display,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Frekuensi BAK (kali/hari),,,,,,Observation,Observation.status,final,Tidak Ada,Tidak Ada,,,1
 ,,,,,,,,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,
 ,,,,,,,,,,Observation,Observation.code.coding,300471006,Finding of frequency of urination,http://snomed.info/sct,,1,

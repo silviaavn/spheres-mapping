@@ -11,8 +11,8 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 50 |
-| Code (`jumlah code` = 1) | 107 |
-| Code unik (code + CodeSystem) | 103 |
+| Code (`jumlah code` = 1) | 110 |
+| Code unik (code + CodeSystem) | 104 |
 | Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
 | Variabel BQ (unik) | 0 |
 
@@ -190,13 +190,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 98 | 624 | Observation | `Observation.valueCodeableConcept.coding` | 249112006.0 | Head engaged | http://snomed.info/sct |
 | 99 | 626 | Observation | `Observation.valueCodeableConcept.coding` | 62098001.0 | Head not engaged | http://snomed.info/sct |
 | 100 | 637 | Observation | `Observation.code.coding` | 32750006.0 | Inspection | http://snomed.info/sct |
-| 101 | 650 | Observation | `Observation.code.coding` | 424679001.0 | pH measurement, vaginal fluid | http://snomed.info/sct |
-| 102 | 663 | Procedure | `Procedure.code.coding` | 387672006.0 | Cardiotochogram | http://snomed.info/sct |
-| 103 | 675 | Observation | `Observation.code.coding` | 251666009.0 | Cardiotochogram finding | http://snomed.info/sct |
-| 104 | 685 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
-| 105 | 697 | Observation | `Observation.code.coding` | 11525-3 | US for pregnancy | http://loinc.org |
-| 106 | 708 | Observation | `Observation.code.coding` | 243787009 | Antenatal screening | http://loinc.org |
-| 107 | 721 | Condition | `Condition.code.coding` | 404684003.0 | Clinical finding | http://snomed.info/sct |
+| 101 | 639 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 102 | 650 | Observation | `Observation.code.coding` | 424679001.0 | pH measurement, vaginal fluid | http://snomed.info/sct |
+| 103 | 652 | Observation | `Observation.dataAbsentReason.coding` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 104 | 663 | Procedure | `Procedure.code.coding` | 387672006.0 | Cardiotochogram | http://snomed.info/sct |
+| 105 | 675 | Observation | `Observation.code.coding` | 251666009.0 | Cardiotochogram finding | http://snomed.info/sct |
+| 106 | 685 | Procedure | `Procedure.code.coding` | 88.78 | Diagnostic ultrasound of gravid uterus | http://hl7.org/fhir/sid/icd-9-cm |
+| 107 | 697 | Observation | `Observation.code.coding` | 11525-3 | US for pregnancy | http://loinc.org |
+| 108 | 708 | Observation | `Observation.code.coding` | 243787009 | Antenatal screening | http://loinc.org |
+| 109 | 709 | Observation | `Observation.dataAbsentReason` | not-performed | Not Performed | http://terminology.hl7.org/CodeSystem/data-absent-reason |
+| 110 | 721 | Condition | `Condition.code.coding` | 404684003.0 | Clinical finding | http://snomed.info/sct |
 
 ### Code per CodeSystem
 
@@ -206,6 +209,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 24 |
 | http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes | 14 |
 | http://terminology.kemkes.go.id/CodeSystem/anc-custom-codes | 3 |
+| http://terminology.hl7.org/CodeSystem/data-absent-reason | 3 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 2 |
 | http://terminology.kemkes.go.id/sp | 2 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 2 |
@@ -213,7 +217,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://sys-ids.kemkes.go.id/kfa | 1 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 1 |
 | http://hl7.org/fhir/sid/icd-9-cm | 1 |
-| **Total** | **107** |
+| **Total** | **110** |
 
 ## Variabel di luar payload
 

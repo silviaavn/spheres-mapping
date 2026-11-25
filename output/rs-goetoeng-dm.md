@@ -21,7 +21,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 3–12 | Patient | – | – | _Nama_ → `Patient.name.text` (3, tanpa BQ)<br>_NIK_ → `Patient.identifier.value` (6, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (7, tanpa BQ)<br>_Alamat_ → `Patient.address.use` (8, tanpa BQ)<br>_No HP_ → `Patient.telecom` (10, tanpa BQ) |
-| 2 | 13–36 | Encounter | – | – | _Keterangan - Tgl Masuk_ → `Encounter.period.start` (20, tanpa BQ)<br>_Keterangan - Unit_ → `Encounter.location.display` (23, tanpa BQ) |
+| 2 | 13–36 | Encounter | – | – | _Keterangan - Tgl Masuk_ → `Encounter.period.start` (20, tanpa BQ)<br>_Keterangan - Unit_ → `Encounter.location.location.display` (23, tanpa BQ) |
 | 3 | 37–45 | Condition | E14 | Unspecified diabetes mellitus | _Hasil_ → `Condition.note` (45, tanpa BQ) |
 | 4 | 46–55 | Observation | 2345-7 | Glucose [Mass/volume] in Serum or Plasma | _Hasil Pemeriksaan Gula Darah - GDS_ → `Observation.status` (46, tanpa BQ) |
 | 5 | 56–65 | Observation | 1558-6 | Fasting glucose [Mass/volume] in Serum or Plasma | _Hasil Pemeriksaan Gula Darah - GDP_ → `Observation.status` (56, tanpa BQ) |

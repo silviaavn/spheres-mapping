@@ -59,14 +59,14 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 37 | 500–510 | Observation | – | – | _Penyebab abortus_ → `Observation.valueString` (503, tanpa BQ) |
 | 38 | 511–522 | Observation | 68688001.0 | Curettage | _Kuretase?_ → `Observation.valueBoolean` (514, tanpa BQ) |
 | 39 | 523–538 | Observation | SP000515 | Tempat kuretase | _Tempat kuretase_ → `Observation.valueCodeableConcept.coding` (526, tanpa BQ) |
-| 40 | 540–551 | Observation | 82810-3 | Pregnancy status | _Apakah saat ini sudah dalam kondisi hamil kembali?_ → `Observation.status` (540, tanpa BQ) |
-| 41 | 552–562 | Observation | 81954-0 | Date of death [Date] | _Tanggal bayi meninggal_ → `Observation.valueDate` (555, tanpa BQ) |
+| 40 | 540–551 | Observation | 82810-3 | Pregnancy status | _Apakah saat ini sudah dalam kondisi hamil kembali?_ → `Observation.valueCodeableConcept.coding` (543, tanpa BQ) |
+| 41 | 552–562 | Observation | 81954-0 | Date of death [Date] | _Tanggal bayi meninggal_ → `Observation.valueDateTime` (555, tanpa BQ) |
 | 42 | 563–573 | Observation | 81955-7 | Time of death [ClockTime] | _Waktu bayi meninggal_ → `Observation.valueTime` (566, tanpa BQ) |
 | 43 | 574–595 | Observation | OC000028 | Jenis Tempat Meninggal | _Tempat bayi meninggal_ → `Observation.valueCodeableConcept.coding` (577, tanpa BQ) |
 | 44 | 596–601 | Composition | – | – | _Nama fasilitas kesehatan tempat bayi meninggal_ → `Composition.contained.location.type.coding` (596, tanpa BQ) |
 | 45 | 603–644 | Observation | 79378-6 | Cause of death | _Penyebab kematian bayi_ → `Observation.component.valueCodeableConcept.coding` (607, tanpa BQ)<br>_Penyebab kematian lainnya_ → `Observation.component.valueString` (637, tanpa BQ) |
 | 46 | 645–657 | Observation | 64710-7 | Was your pregnancy a live birth, stillbirth, miscarriage, abortion, or ectopic pregnancy [PhenX] | _Masa terjadi kematian bayi_ → `Observation.valueCodeableConcept.coding` (648, tanpa BQ) |
-| 47 | 658–669 | Observation | 52480-1 | Anthropometric Measures | _Apakah pengukuran antropometri oleh CHP dilakukan?_ → `Observation.status` (658, tanpa BQ) |
+| 47 | 658–669 | Observation | 52480-1 | Anthropometric Measures | _Apakah pengukuran antropometri oleh CHP dilakukan?_ → `Observation.valueCodeableConcept.coding` (661, tanpa BQ) |
 | 48 | 670–681 | Observation | 29463-7 | Body weight | _Berat badan bayi_ → `Observation.valueQuantity.value` (673, tanpa BQ) |
 | 49 | 682–693 | Observation | 8306-3 | Body height --lying | _Panjang badan bayi_ → `Observation.valueQuantity.value` (685, tanpa BQ) |
 | 50 | 694–705 | Observation | 9843-4 | Head Occipital-frontal circumference | _Lingkar Kepala bayi_ → `Observation.valueQuantity.value` (697, tanpa BQ) |

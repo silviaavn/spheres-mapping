@@ -11,16 +11,16 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | Item | Jumlah |
 |---|---|
 | Payload (`jumlah instance` = 1) | 50 |
-| Code (`jumlah code` = 1) | 98 |
-| Code unik (code + CodeSystem) | 83 |
-| Code SP (`http://terminology.kemkes.go.id/sp`) | 2 |
+| Code (`jumlah code` = 1) | 100 |
+| Code unik (code + CodeSystem) | 85 |
+| Code SP (`http://terminology.kemkes.go.id/sp`) | 4 |
 | Variabel BQ (unik) | 0 |
 
 ## Payload
 
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
-| 1 | 2–33 | Patient | – | – | _Nama Bayi_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK Bayi_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (7, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (9, tanpa BQ)<br>_Tempat lahir_ → `Patient.extension:birthPlace` (10, tanpa BQ)<br>_Kembar_ → `Patient.multipleBirthBoolean` (11, tanpa BQ)<br>_Alamat Domisili_ → `Patient.address.use` (12, tanpa BQ)<br>_Nama Provinsi_ → `Patient.address.extension.extension.valueCode` (18, tanpa BQ)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (21, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.extension.valueCode` (24, tanpa BQ)<br>_Nama Desa_ → `Patient.address.extension.extension.valueCode` (27, tanpa BQ)<br>_RW_ → `Patient.address.extension.extension.valueCode` (30, tanpa BQ)<br>_RT_ → `Patient.address.extension.extension.valueCode` (33, tanpa BQ) |
+| 1 | 2–33 | Patient | – | – | _Nama Bayi_ → `Patient.name.text` (2, tanpa BQ)<br>_NIK Bayi_ → `Patient.identifier.value` (5, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (7, tanpa BQ)<br>_Tanggal Lahir_ → `Patient.birthDate` (9, tanpa BQ)<br>_Tempat lahir_ → `Patient.extension:birthPlace.valueAddress.text` (10, tanpa BQ)<br>_Kembar_ → `Patient.multipleBirthBoolean` (11, tanpa BQ)<br>_Alamat Domisili_ → `Patient.address.use` (12, tanpa BQ)<br>_Nama Provinsi_ → `Patient.address.extension.extension.valueCode` (18, tanpa BQ)<br>_Nama Kabupaten_ → `Patient.address.extension.extension.valueCode` (21, tanpa BQ)<br>_Nama Kecamatan_ → `Patient.address.extension.extension.valueCode` (24, tanpa BQ)<br>_Nama Desa_ → `Patient.address.extension.extension.valueCode` (27, tanpa BQ)<br>_RW_ → `Patient.address.extension.extension.valueCode` (30, tanpa BQ)<br>_RT_ → `Patient.address.extension.extension.valueCode` (33, tanpa BQ) |
 | 2 | 34–44 | RelatedPerson | – | – | _Nama Ibu_ → `RelatedPerson.name.text` (35, tanpa BQ)<br>_No Hp Ibu_ → `RelatedPerson.telecom.value` (37, tanpa BQ)<br>_NIK Ibu_ → `RelatedPerson.identifier.value` (43, tanpa BQ) |
 | 3 | 45–53 | RelatedPerson | – | – | _Nama Ayah_ → `RelatedPerson.name.text` (45, tanpa BQ)<br>_No Hp Ayah_ → `RelatedPerson.telecom.value` (47, tanpa BQ)<br>_NIK Ayah_ → `RelatedPerson.identifier.value` (53, tanpa BQ) |
 | 4 | 103–109 | PractitionerRole | – | – | _Tenaga Pemeriksa_ → `PractitionerRole.active` (103, tanpa BQ) |
@@ -46,7 +46,7 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 24 | 364–374 | Procedure | 448883004.0 | Injection of vitamin K1 | _Apakah diberikan vitamin K_ → `Procedure.category.coding` (364, tanpa BQ) |
 | 25 | 375–385 | Procedure | PC000001 | Perawatan Tali Pusat | _Perawatan Tali Pusat_ → `Procedure.category.coding` (375, tanpa BQ) |
 | 26 | 386–396 | Procedure | PC000002 | Pemberian Salep Antibiotik Mata | _Salep Antibiotik Mata_ → `Procedure.category.coding` (386, tanpa BQ) |
-| 27 | 397–421 | Immunization | – | – | _Imunisasi Hepatitis B (HB0)_ → `Immunization.status` (397, tanpa BQ)<br>_Tanggal Pemberian Vaksin_ → `Immunization.occurenceDateTime` (405, tanpa BQ)<br>_Nomor lot Vaksin_ → `Immunization.lotNumber` (412, tanpa BQ)<br>_Tanggal Kadaluarsa Vaksin_ → `Immunization.expirationDate` (413, tanpa BQ)<br>_Alasan Tidak Diberikan Vaksin HB0_ → `Immunization.statusReason.coding` (417, tanpa BQ) |
+| 27 | 397–421 | Immunization | – | – | _Imunisasi Hepatitis B (HB0)_ → `Immunization.status` (397, tanpa BQ)<br>_Tanggal Pemberian Vaksin_ → `Immunization.occurrenceDateTime` (405, tanpa BQ)<br>_Nomor lot Vaksin_ → `Immunization.lotNumber` (412, tanpa BQ)<br>_Tanggal Kadaluarsa Vaksin_ → `Immunization.expirationDate` (413, tanpa BQ)<br>_Alasan Tidak Diberikan Vaksin HB0_ → `Immunization.statusReason.coding` (417, tanpa BQ) |
 | 28 | 422–432 | Procedure | 431868002.0 | Initiation of breastfeeding | _Inisiasi Menyusu Dini (IMD)_ → `Procedure.category.coding` (422, tanpa BQ) |
 | 29 | 433–444 | Observation | OC000016 | Waktu Inisiasi Menyusui Dini | _Waktu Inisiasi Menyusu Dini (IMD)_ → `Observation.valueCodeableConcept.coding` (436, tanpa BQ) |
 | 30 | 445–457 | Observation | 10206-1 | Physical findings of Skin Narrative | _Pemeriksaan Kulit_ → `Observation.valueString` (448, tanpa BQ)<br>_Interpretasi Hasil Pemeriksaan Kulit_ → `Observation.interpretation.coding` (449, tanpa BQ) |
@@ -191,7 +191,9 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 95 | 665 | Observation | `Observation.interpretation.coding` | OI000004 | Risiko Gizi Lebih | http://terminology.kemkes.go.id/CodeSystem/clinical-term |
 | 96 | 692 | Procedure | `Procedure.code.coding` | SP000296 | Skrining Penyakit Jantung Bawaan | http://terminology.kemkes.go.id/sp |
 | 97 | 704 | ServiceRequest | `ServiceRequest.code.coding` | 736282001.0 | Neonatal critical care plan | http://snomed.info/sct |
-| 98 | 724 | Observation | `Observation.code.coding` | 20564-1 | Oxygen saturation in Blood | http://loinc.org |
+| 98 | 713 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000129 | Puskesmas PONED | http://terminology.kemkes.go.id/sp |
+| 99 | 717 | ServiceRequest | `ServiceRequest.locationCode.coding` | SP000128 | Rumah Sakit Ibu dan Anak | http://terminology.kemkes.go.id/sp |
+| 100 | 724 | Observation | `Observation.code.coding` | 20564-1 | Oxygen saturation in Blood | http://loinc.org |
 
 ### Code per CodeSystem
 
@@ -201,13 +203,13 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | http://loinc.org | 28 |
 | http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation | 18 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term | 10 |
-| http://terminology.kemkes.go.id/sp | 2 |
+| http://terminology.kemkes.go.id/sp | 4 |
 | http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type | 1 |
 | http://hl7.org/fhir/sid/icd-10 | 1 |
 | http://terminology.kemkes.go.id/CodeSystem/clinical-term" | 1 |
 | http://hl7.org/fhir/sid/cvx | 1 |
 | http://sys-ids.kemkes.go.id/kfa | 1 |
-| **Total** | **98** |
+| **Total** | **100** |
 
 ## Variabel di luar payload
 
@@ -216,4 +218,4 @@ Semua variabel BQ harus masuk ke salah satu payload. Baris dengan variabel BQ di
 | Baris | Variabel BQ | Variabel dictionary | Resource | Path |
 |---|---|---|---|---|
 | 57 | – | Jenis Faskes | Organization | `Organization.type` |
-| 61 | – | Faskes yang melayani | Organization | `Tidak ada` |
+| 61 | – | Faskes yang melayani | Organization | `Organization.name` |

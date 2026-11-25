@@ -22,24 +22,24 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | # | Baris | Resource | Code pembeda | Display | Variabel BQ → Path (baris) |
 |---|---|---|---|---|---|
 | 1 | 2–6 | Encounter | – | – | _Tanggal selesai_ → `Encounter.period.end` (2, tanpa BQ)<br>_No._ → `Encounter.identifier` (3, tanpa BQ)<br>_Tanggal_ → `Encounter.period.start` (5, tanpa BQ)<br>_Tanggal Pemeriksaan_ → `Encounter.period.start` (32, tanpa BQ)<br>_Jenis Kunjungan_ → `Encounter.status` (42, tanpa BQ)<br>_Poli/Ruangan_ → `Encounter.location` (48, tanpa BQ)<br>_Pendaftaran/rujukan internal_ → `Encounter.hospitaliz ation.admitSource.co ding` (309, tanpa BQ)<br>_Lama antrean_ → `Encounter.statusHistory.status` (311, tanpa BQ)<br>_Lama pemeriksaan_ → `Encounter.statusHistory.status` (314, tanpa BQ)<br>_Lama pelayanan_ → `Encounter.period.start` (317, tanpa BQ) |
-| 2 | 7–28 | Patient | – | – | _Nama Pasien_ → `Patient.name` (7, tanpa BQ)<br>_No.eRM_ → `Patient.identifier.value` (10, tanpa BQ)<br>_NIK_ → `Patient.identifier.value` (13, tanpa BQ)<br>_No.KK_ → `Patient.identifier.value` (16, tanpa BQ)<br>_No. RM Lama_ → `Patient.name` (17, tanpa BQ)<br>_No. Dokumen RM_ → `Patient.name` (20, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (23, tanpa BQ)<br>_Alamat_ → `Patient.address.line` (25, tanpa BQ)<br>_RT Pasien_ → `Patient.address.line` (27, tanpa BQ)<br>_RW Pasien_ → `Patient.address.line` (28, tanpa BQ)<br>_Kelurahan_ → `Patient.address.extension:administrativeCode.extension:village` (34, tanpa BQ)<br>_Tempat Lahir_ → `Patient.extension:birthPlace` (35, tanpa BQ)<br>_Tgl.Lahir_ → `Patient.birthDate` (36, tanpa BQ)<br>_Umur tahun_ → `Patient.birthDate` (37, tanpa BQ)<br>_Umur bulan_ → `Patient.birthDate` (38, tanpa BQ)<br>_Umur hari_ → `Patient.birthDate` (39, tanpa BQ)<br>_Nama ayah_ → `Patient.contact.name` (40, tanpa BQ)<br>_Nama Ibu_ → `Patient.contact.name` (41, tanpa BQ) |
-| 3 | 29–31 | Observation | 85658-3 | Occupation [Type] | _Pekerjaan_ → `Observation.code.coding` (29, tanpa BQ) |
+| 2 | 7–28 | Patient | – | – | _Nama Pasien_ → `Patient.name` (7, tanpa BQ)<br>_No.eRM_ → `Patient.identifier.value` (10, tanpa BQ)<br>_NIK_ → `Patient.identifier.value` (13, tanpa BQ)<br>_No.KK_ → `Patient.identifier.value` (16, tanpa BQ)<br>_No. RM Lama_ → `Patient.name` (17, tanpa BQ)<br>_No. Dokumen RM_ → `Patient.name` (20, tanpa BQ)<br>_Jenis Kelamin_ → `Patient.gender` (23, tanpa BQ)<br>_Alamat_ → `Patient.address.line` (25, tanpa BQ)<br>_RT Pasien_ → `Patient.address.line` (27, tanpa BQ)<br>_RW Pasien_ → `Patient.address.line` (28, tanpa BQ)<br>_Kelurahan_ → `Patient.address.extension:administrativeCode.extension:village.valueCode` (34, tanpa BQ)<br>_Tempat Lahir_ → `Patient.extension:birthPlace.valueAddress.text` (35, tanpa BQ)<br>_Tgl.Lahir_ → `Patient.birthDate` (36, tanpa BQ)<br>_Umur tahun_ → `Patient.birthDate` (37, tanpa BQ)<br>_Umur bulan_ → `Patient.birthDate` (38, tanpa BQ)<br>_Umur hari_ → `Patient.birthDate` (39, tanpa BQ)<br>_Nama ayah_ → `Patient.contact.name` (40, tanpa BQ)<br>_Nama Ibu_ → `Patient.contact.name` (41, tanpa BQ) |
+| 3 | 29–31 | Observation | 85658-3 | Occupation [Type] | _Pekerjaan_ → `Observation.valueCodeableConcept` (31, tanpa BQ) |
 | 4 | 71–78 | Coverage | – | – | _Asuransi_ → `Coverage.type.coding` (74, tanpa BQ)<br>_No.Asuransi_ → `Coverage.identifier.value` (78, tanpa BQ) |
 | 5 | 79–81 | Observation | 161572004 | History of congenital anomaly | _Kelainan_ → `Observation.valueString` (81, tanpa BQ) |
 | 6 | 82–89 | Practitioner | – | – | _Dokter / Tenaga Medis_ → `Practitioner.identifier.value` (84, tanpa BQ)<br>_Perawat / Bidan / Nutrisionist / Sanitarian_ → `Practitioner.identifier.value` (88, tanpa BQ) |
 | 7 | 90–91 | Observation | 51848-0 | Evaluation note | _SOAP Assesment_ → `Observation.category.coding` (90, tanpa BQ) |
 | 8 | 92–93 | Observation | 61150-9 | Subjective Narrative | _SOAP Subjective_ → `Observation.category.coding` (92, tanpa BQ) |
 | 9 | 94–95 | Observation | 72225-6 | Objective Narrative | _SOAP Object_ → `Observation.category.coding` (94, tanpa BQ) |
-| 10 | 96–96 | CarePlan | – | – | _SOAP Planning_ → `Careplan.category.coding` (96, tanpa BQ) |
+| 10 | 96–96 | CarePlan | – | – | _SOAP Planning_ → `CarePlan.category.coding` (96, tanpa BQ) |
 | 11 | 97–99 | Condition | – | – | _Keluhan Utama_ → `Condition.category.coding` (97, tanpa BQ) |
 | 12 | 102–103 | Condition | – | – | _Keluhan Tambahan_ → `Condition.category.coding` (102, tanpa BQ) |
 | 13 | 104–105 | Observation | 77977-7 | Illness duration | _Lama Sakit_ → `Observation.category.coding` (104, tanpa BQ) |
 | 14 | 106–109 | Observation | 72166-2 | Tobacco smoking status | _Merokok_ → `Observation.category.coding` (106, tanpa BQ) |
 | 15 | 110–113 | Observation | 11331-6 | History of Alcohol use | _Konsumsi Alkohol_ → `Observation.category.coding` (110, tanpa BQ) |
-| 16 | 114–117 | Observation | 878899005 | Inadequate intake of plant fiber | _Kurang Sayur_ → `Observation.category.coding` (114, tanpa BQ) |
-| 17 | 118–118 | CarePlan | – | – | _Terapi_ → `Careplan.category.coding` (118, tanpa BQ) |
+| 16 | 114–117 | Observation | 878899005 | Inadequate intake of plant fiber | _Kurang Sayur_ → `Observation.valueBoolean` (116, tanpa BQ) |
+| 17 | 118–118 | CarePlan | – | – | _Terapi_ → `CarePlan.category.coding` (118, tanpa BQ) |
 | 18 | 119–121 | Procedure | 84635008 | Disease process or condition education | _Edukasi_ → `Procedure.category.coding` (119, tanpa BQ) |
-| 19 | 122–123 | CarePlan | – | – | _Tindakan Keperawatan_ → `Careplan.category.coding` (122, tanpa BQ)<br>_Keterangan_ → `Careplan.note` (123, tanpa BQ) |
+| 19 | 122–123 | CarePlan | – | – | _Tindakan Keperawatan_ → `CarePlan.category.coding` (122, tanpa BQ)<br>_Keterangan_ → `CarePlan.note` (123, tanpa BQ) |
 | 20 | 124–126 | Condition | – | – | _RPS_ → `Condition.category.coding` (124, tanpa BQ) |
 | 21 | 127–129 | Condition | – | – | _RPD_ → `Condition.category.coding` (127, tanpa BQ) |
 | 22 | 130–131 | FamilyMemberHistory | – | – | _RPK_ → `FamilyMemberHistory.relationship.coding` (130, tanpa BQ) |
@@ -59,11 +59,11 @@ File terkait: [`output.md`](../output.md) (konsolidasi semua form) · [`frekuens
 | 36 | 213–217 | Observation | 8310-5 | Body temperature | _Suhu_ → `Observation.category[i].coding[i]` (213, tanpa BQ) |
 | 37 | 218–220 | Observation | 129861002 | Physical activity finding | _Aktifitas Fisik dan Assessment Fungsional_ → `Observation.valueString` (220, tanpa BQ) |
 | 38 | 221–229 | Observation | 80316-3 | Pain scale [Type] | _Skala nyeri_ → `Observation.valueCodeableConcept.coding` (223, tanpa BQ) |
-| 39 | 230–235 | Condition | – | – | _Diagnosa 1_ → `Condition.category.coding` (230, tanpa BQ)<br>_Jenis kasus 1_ → `Condition.onset.dateTime` (233, tanpa BQ) |
-| 40 | 236–241 | Condition | – | – | _Diagnosa 2_ → `Condition.category.coding` (236, tanpa BQ)<br>_Jenis kasus 2_ → `Condition.onset.dateTime` (239, tanpa BQ) |
-| 41 | 242–247 | Condition | – | – | _Diagnosa 3_ → `Condition.category.coding` (242, tanpa BQ)<br>_Jenis kasus 3_ → `Condition.onset.dateTime` (245, tanpa BQ) |
-| 42 | 248–253 | Condition | – | – | _Diagnosa 4_ → `Condition.category.coding` (248, tanpa BQ)<br>_Jenis kasus 4_ → `Condition.onset.dateTime` (251, tanpa BQ) |
-| 43 | 254–259 | Condition | – | – | _Diagnosa 5_ → `Condition.category.coding` (254, tanpa BQ)<br>_Jenis kasus 5_ → `Condition.onset.dateTime` (257, tanpa BQ) |
+| 39 | 230–235 | Condition | – | – | _Diagnosa 1_ → `Condition.category.coding` (230, tanpa BQ)<br>_Jenis kasus 1_ → `Condition.onsetDateTime` (233, tanpa BQ) |
+| 40 | 236–241 | Condition | – | – | _Diagnosa 2_ → `Condition.category.coding` (236, tanpa BQ)<br>_Jenis kasus 2_ → `Condition.onsetDateTime` (239, tanpa BQ) |
+| 41 | 242–247 | Condition | – | – | _Diagnosa 3_ → `Condition.category.coding` (242, tanpa BQ)<br>_Jenis kasus 3_ → `Condition.onsetDateTime` (245, tanpa BQ) |
+| 42 | 248–253 | Condition | – | – | _Diagnosa 4_ → `Condition.category.coding` (248, tanpa BQ)<br>_Jenis kasus 4_ → `Condition.onsetDateTime` (251, tanpa BQ) |
+| 43 | 254–259 | Condition | – | – | _Diagnosa 5_ → `Condition.category.coding` (254, tanpa BQ)<br>_Jenis kasus 5_ → `Condition.onsetDateTime` (257, tanpa BQ) |
 | 44 | 260–262 | ServiceRequest | – | – | _Tindakan_ → `ServiceRequest.category.coding` (260, tanpa BQ) |
 | 45 | 263–264 | Procedure | – | – | – |
 | 46 | 266–287 | MedicationRequest | SP000370 | Multiple Micronutrient Supplement | – |

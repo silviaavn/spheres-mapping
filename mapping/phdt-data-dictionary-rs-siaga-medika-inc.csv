@@ -8,7 +8,7 @@ Data Pasien Ibu,,,NAMA PASIEN,Nama Pasien,string,,,Jika ada NY. di depan ataupun
 ,,,,,,,,,,Patient,Patient.telecom.use,mobile,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,Patient,Patient.telecom.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,TANGGAL LAHIR,Tanggal Lahir,date,DD-MM-YY,,ambil tanggal nya aja,,Patient,Patient.birthDate,Tidak ada,Tidak ada,Tidak ada,,,
-,,,TANGGAL LAHIR,Tempat Lahir,string,,,ambil string di depan tanggal,,Patient,Patient.extension.birthPlace.extension.address.line,Tidak ada,Tidak ada,Tidak ada,,,
+,,,TANGGAL LAHIR,Tempat Lahir,string,,,ambil string di depan tanggal,,Patient,Patient.extension:birthPlace.valueAddress.text,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Jenis Kelamin,code,P,,tidak ada variabelnya namun bisa di assign perempuan semua,,Patient,Patient.gender,female,Tidak ada,Tidak ada,,,
 ,,,ALAMAT,Alamat,string,,,,,Patient,Patient.address.line,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Patient,Patient.address.city,Tidak ada,Tidak ada,Tidak ada,,,
@@ -101,7 +101,7 @@ Data Nakes,Identitas Nakes,,,,,,,,,Practitioner,Practitioner.identifier,Tidak ad
 ,,,NIK,NIK Suami,16 digit number,,,,,RelatedPerson,RelatedPerson.identifier,Tidak Ada,Tidak Ada,https://fhir.kemkes.go.id/id/nik,,,
 ,,,,,,,,,,RelatedPerson,RelatedPerson.identifier.use,official,Tidak Ada,Tidak Ada,,,
 ,,,,,,,,,,RelatedPerson,RelatedPerson.identifier.value,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,Episode of Care ANC,,,Episode ANC Ibu,,,,,,EpisodeOfCare,EpisodeOfCare.identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
+,Episode of Care ANC,,,Episode ANC Ibu,,,,,,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,1
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.type.coding,ANC,Antenatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,1,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,finished,Tidak ada,Tidak ada,,,
 ,,,HPHT/HPL,HPHT,datetime,,,"Pastikan bahwa tgl adalah tgl HPHT bukan HPL, cocokan dengan usia kehamilan atau tanggal persalinan",,EpisodeOfCare,EpisodeOfCare.period.start,Tidak ada,Tidak ada,Tidak ada,,,
@@ -124,7 +124,7 @@ Data Nakes,Identitas Nakes,,,,,,,,,Practitioner,Practitioner.identifier,Tidak ad
 ,,,NAMA PASIEN,,string,,,,,EpisodeOfCare,EpisodeOfCare.patient.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.managingOrganization.reference,Reference ke resources Organization,,,,,
 ,,,NAMA FASKES,,string,,,,,EpisodeOfCare,EpisodeOfCare.managingOrganization.display,Tidak ada,Tidak ada,Tidak ada,,,
-,Episode of Care PNC,,,Episode PNC Ibu,,,,,,EpisodeOfCare,EpisodeOfCare.identifer,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,
+,Episode of Care PNC,,,Episode PNC Ibu,,,,,,EpisodeOfCare,EpisodeOfCare.identifier,Tidak ada,Tidak ada,http://sys-ids.kemkes.go.id/episode-of-care/{{Org_id}},,,
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.type.coding,PNC,Postnatal Care,http://terminology.kemkes.go.id/CodeSystem/episodeofcare-type,,1,1
 ,,,,,,,,,,EpisodeOfCare,EpisodeOfCare.status,active,Tidak ada,Tidak ada,,,
 ,,,TATALAKSANA INC TANGGAL JAM PERSALINAN,Tanggal Persalinan,datetime,"DD-MM-YY
@@ -152,8 +152,8 @@ Data Nakes,Identitas Nakes,,,,,,,,,Practitioner,Practitioner.identifier,Tidak ad
 ,,,TATALAKSANA INC TANGGAL JAM PERSALINAN,,datetime,"DD-MM-YY
 
 00:00",,,,Encounter,Encounter.period.end,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Encounter,Encounter.location.reference,Reference ke resources Location,,,,,
-,,,,,,,,,,Encounter,Encounter.location.display,Tidak ada,Tidak ada,Tidak ada,,,
+,,,,,,,,,,Encounter,Encounter.location.location.reference,Reference ke resources Location,,,,,
+,,,,,,,,,,Encounter,Encounter.location.location.display,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.use.coding,AD,Admission diagnosis,http://terminology.hl7.org/CodeSystem/diagnosis-role,,,
 ,,,,,,,,,,Encounter,Encounter.diagnosis.condition.reference,Reference ke resources Condition Diagnosis Masuk,,,,,
 ,,,,Diagnosis Masuk,,,,,,Condition,Condition.clinicalStatus.coding,active,Active,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1

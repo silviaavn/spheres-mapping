@@ -99,7 +99,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,Refleks Patella,coded,,,,,Observation,Observation.category.coding,exam,Exam,,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,32392-3,Deep tendon reflex of Patellar,http://loinc.org,,1,
 ,,,,,,,+,,,Observation,Observation.valueCodeableConcept.coding,10828004,Positive,http://snomed.info/sct,,1,
-,,,,,,,Tidak diperiksa,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,Tidak diperiksa,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,Detak Jantung Janin,number,,,,,Observation,Observation.category.coding,imaging,Imaging,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,11948-7,Fetal Heart rate US,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.SS.DE38,Denyut Jantung Janin (DJJ) USG,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
@@ -123,7 +123,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,
 ,,,,,,,Belum terdeteksi,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
 ,,,,,,,Lintang,,,Observation,Observation.valueCodeableConcept.coding,73161006,Transverse lie,http://snomed.info/sct,,1,
-,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,Normal,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
 ,,,,,,,Oblique,,,Observation,Observation.valueCodeableConcept.coding,63750008,Oblique lie,http://snomed.info/sct,,1,
 ,,,,,,,Sunsang,,,Observation,Observation.valueCodeableConcept.coding,6096002,Breech presentation,http://snomed.info/sct,,1,
@@ -131,7 +131,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.code.coding,246435002,Number of fetuses,http://snomed.info/sct,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B8.DE109,Number of fetuses,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
 ,,,,,,,Ganda,,,Observation,Observation.valueCodeableConcept.coding,16356006,Multiple pregnancy,http://snomed.info/sct,,1,
-,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,Tunggal,,,Observation,Observation.valueCodeableConcept.coding,237244005,Single pregnancy,http://snomed.info/sct,,1,
 ,,,,Presentasi,coded,,,,,Observation,Observation.category.coding,exam,Exam,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,
@@ -155,7 +155,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Procedure,Procedure.code.coding,99.38,Administration of tetanus toxoid,http://hl7.org/fhir/sid/icd-9-cm,,1,
 ,,,,,,,ya,,,Procedure,Procedure.status,completed,Tidak Ada,Tidak Ada,,,
 ,,,,,,,tidak,,,Procedure,Procedure.status,not-done,Tidak Ada,Tidak Ada,,,
-,,,,Catat Kia,boolean,,ya,,,Observation,Observation.catgeory.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
+,,,,Catat Kia,boolean,,ya,,,Observation,Observation.category.coding,survey,Survey,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,tidak,,,Observation,Observation.code.coding,,,,,,
 ,,,,,,,,,,Observation,Observation.valueBoolean,Tidak Ada,Tidak Ada,Tidak Ada,,,
 ,,,,Diberikan Fe,boolean,,,,,,,,,,,,
@@ -177,7 +177,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Medication,Medication.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/MedicationType,,,
 ,,,,,,,,,,Medication,Medication.extension.valueCodeableConcept.coding,NC,Non-compound,http://terminology.kemkes.go.id/CodeSystem/medication-type,,,
 ,,,,,,,,,,MedicationRequest,MedicationRequest.contained.resourcesType,contained Medication,,,,,1
-,,,,,,,,,,MedicationRequest,MedicationRequest.medicataionReference.reference,#[Medication.id],,,,,
+,,,,,,,,,,MedicationRequest,MedicationRequest.medicationReference.reference,#[Medication.id],,,,,
 ,,,,,,,,,,MedicationRequest,MedicationRequest.status,completed,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,MedicationRequest,MedicationRequest.intent,order,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,MedicationRequest,MedicationRequest.category.coding,community,Community,http://terminology.hl7.org/CodeSystem/medicationrequest-category,,,
@@ -198,10 +198,10 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Medication,Medication.extension.url,Tidak ada,Tidak ada,https://fhir.kemkes.go.id/r4/StructureDefinition/MedicationType,,,
 ,,,,,,,,,,Medication,Medication.extension.valueCodeableConcept.coding,NC,Non-compound,http://terminology.kemkes.go.id/CodeSystem/medication-type,,,
 ,,,,,,,,,,MedicationDispense,MedicationDispense.contained.resourcesType,contained Medication,,,,,1
-,,,,,,,,,,MedicationDispense,MedicationDispense.medicataionReference.reference,#[Medication.id],,,,,
+,,,,,,,,,,MedicationDispense,MedicationDispense.medicationReference.reference,#[Medication.id],,,,,
 ,,,,,,,,,,MedicationDispense,MedicationDispense.status,completed,Tidak ada,Tidak ada,,,
 ,,,,,,,,,,MedicationDispense,MedicationDispense.category.coding,community,Community,http://terminology.hl7.org/CodeSystem/medicationrequest-category,,,
-,,,,Fe,number,,,,,MedicationDispense,MedicationDispense.quantity.coding,TB,Tidak ada,http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm,,,
+,,,,Fe,number,,,,,MedicationDispense,MedicationDispense.quantity.code,TB,Tidak ada,http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm,,,
 ,,,,Periksa Hb,boolean,,ya,,,ServiceRequest,ServiceRequest.category,108252007,Laboratory procedure,http://snomed.info/sct,,,1
 ,,,,,,,,,,ServiceRequest,ServiceRequest.code,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,,1,
 ,,,,,,,,,,Specimen,Specimen.type,122555007,Venous blood specimen,http://snomed.info/sct,,1,1
@@ -210,7 +210,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,718-7,Hemoglobin [Mass/volume] in Blood,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B9.DE175,Blood hemoglobin test conducted,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
-,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,Hemoglobin,number,,,,,Observation,Observation.valueQuantity.code,g/dL,g/dL,http://unitsofmeasure.org,,,
 ,,,,,,,,,,Observation,Observation.valueQuantity.value,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Anemia,coded,,,,,,,,,,,,
@@ -227,7 +227,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,2887-8,Protein [Presence] in Urine,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.B9.DE114,Urine test conducted,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
-,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,Pro Urin,boolean,,ya,,,Observation,Observation.valueCodeableConcept.coding,LA6576-8,Positive,http://loinc.org,,1,
 ,,,,,,,tidak,,,Observation,Observation.valueCodeableConcept.coding,LA6577-6,Negative,http://loinc.org,,1,
 ,,,,Pro Urin Hasil,coded,,,,,,,,,,,,
@@ -246,7 +246,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.valueQuantity.code,mg/dL,mg/dL,http://unitsofmeasure.org,,,
 ,,,,> 140,coded,,normal,,,Observation,Observation.interpretation.coding,N,Normal,http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation,,1,
 ,,,,,,,tidak normal,,,Observation,Observation.interpretation.coding,A,Abnormal,http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation,,1,
-,,,,Reduksi,boolean,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,Reduksi,boolean,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.category,LAB,Laboratory,http://terminology.hl7.org/CodeSystem/v2-0074,,,1
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.code,1558-6,Fasting glucose [Mass/volume] in Serum or Plasma,http://loinc.org,,1,
 ,,,,Thalasemia,coded,,,,,ServiceRequest,ServiceRequest.category,108252007,Laboratory procedure,http://snomed.info/sct,,,1
@@ -303,7 +303,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Specimen,Specimen.collection.method.coding,82078001,Collection of blood specimen for laboratory,http://snomed.info/sct,,,
 ,,,,,,,,,,Observation,Observation.category.coding,laboratory,Laboratory,http://terminology.hl7.org/CodeSystem/observation-category,,,1
 ,,,,,,,,,,Observation,Observation.code.coding,76772-3,Plasmodium falciparum Ag [Presence] in Blood by Rapid immunoassay,http://loinc.org,,1,
-,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,tidak,,,Observation,Observation.dataAbsentReason,not-performed,Not Performed,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,Malaria,coded,,+,,,Observation,Observation.valueCodeableConcept.coding,LA6576-8,Positive,http://loinc.org,,1,
 ,,,,,,,-,,,Observation,Observation.valueCodeableConcept.coding,LA6577-6,Negative,http://loinc.org,,1,
 ,,,,,,,,,,DiagnosticReport,DiagnosticReport.category,MB,Microbiology,http://terminology.hl7.org/CodeSystem/v2-0074,,,1
@@ -352,7 +352,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.code.coding,32418-6,Obstetric trimester Stated,http://loinc.org,,1,
 ,,,,,,,,,,Observation,Observation.code.coding,ANC.SS.DE13,Trimester ke,http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes,,1,
 ,,,,,,,,,,Observation,Observation.valueInteger,Tidak Ada,Tidak Ada,Tidak Ada,,,
-,,,,Komplikasi,coded,,,,,Condition,Condition.category.codng,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
+,,,,Komplikasi,coded,,,,,Condition,Condition.category.coding,problem-list-item,Problem List Item,http://terminology.hl7.org/CodeSystem/condition-clinical,,,1
 ,,,,,,,HDK,,,Condition,Condition.code.coding,O13,Gestational [pregnancy-induced] hypertension without signification proteinuria,http://hl7.org/fhir/sid/icd-10,,1,
 ,,,,,,,Hiperemesis Gravidarum,,,Condition,Condition.code.coding,O21.9,"Vomiting of pregnancy, unspecified",http://hl7.org/fhir/sid/icd-10,,1,
 ,,,,,,,KEK,,,Condition,Condition.code.coding,O25,Malnutrition in pregnancy,http://hl7.org/fhir/sid/icd-10,,1,
@@ -415,7 +415,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,Imunisasi Tt,string,,,,,Immunization,Immunization.status,completed,Tidak ada,Tidak ada,,,1
 ,,,,,,,,,,Immunization,Immunization.vaccineCode,VG139,Td,http://sys-ids.kemkes.go.id/kfa,,1,
 ,,,,,,,,,,Immunization,Immunization.recorded,Tidak ada,Tidak ada,Tidak ada,,,
-,,,,,,,,,,Immunization,Immunization.performer.function.code,AP,Administering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
+,,,,,,,,,,Immunization,Immunization.performer.function.coding.code,AP,Administering Provider,http://terminology.hl7.org/CodeSystem/v2-0443,,,
 ,,,,,,,,,,Immunization,Immunization.primarySource,true,Tidak ada,Tidak ada,,,
 ,,,,,,,,"Tergantung imunisasi tetanus ke berapa, lihat status imunisasi sebelumnya",,Immunization,Immunization.protocolApplied.doseNumberPositiveInt,Tidak ada,Tidak ada,Tidak ada,,,
 ,,,,Tanggal Imunisasi Tt,date,DDMMYYYY,,,,Immunization,Immunization.occurrenceDateTime,Tidak ada,Tidak ada,Tidak ada,,,
@@ -566,7 +566,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,
 ,,,,,,,Belum terdeteksi,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
 ,,,,,,,Lintang,,,Observation,Observation.valueCodeableConcept.coding,73161006,Transverse lie,http://snomed.info/sct,,1,
-,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,Normal,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
 ,,,,,,,Oblique,,,Observation,Observation.valueCodeableConcept.coding,63750008,Oblique lie,http://snomed.info/sct,,1,
 ,,,,,,,Sunsang,,,Observation,Observation.valueCodeableConcept.coding,6096002,Breech presentation,http://snomed.info/sct,,1,
@@ -600,7 +600,7 @@ eKohort,ANC,,,Nama Ibu,string,,,,,Patient,Patient.name,Tidak ada,Tidak ada,Tidak
 ,,,,,,,,,,Observation,Observation.code.coding,72155-5,Position in womb Fetus [RHEA],http://loinc.org,,1,
 ,,,,,,,Belum terdeteksi,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
 ,,,,,,,Lintang,,,Observation,Observation.valueCodeableConcept.coding,73161006,Transverse lie,http://snomed.info/sct,,1,
-,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,,
+,,,,,,,NA,,,Observation,Observation.dataAbsentReason,unknown,Unknown,http://terminology.hl7.org/CodeSystem/data-absent-reason,,1,
 ,,,,,,,Normal,,,Observation,Observation.valueCodeableConcept.coding,,,,,,
 ,,,,,,,Oblique,,,Observation,Observation.valueCodeableConcept.coding,63750008,Oblique lie,http://snomed.info/sct,,1,
 ,,,,,,,Sunsang,,,Observation,Observation.valueCodeableConcept.coding,6096002,Breech presentation,http://snomed.info/sct,,1,
