@@ -46,7 +46,7 @@ Identitas Petugas,,,,Siapa yang melakukan entry data?,Select one,,,,,Practitione
 ,,,,,,,,,,DocumentReference,DocumentReference.type.coding,51899-3,Details Document,http://loinc.org,,,
 ,,,,,,,,,,DocumentReference,DocumentReference.category.coding,,,,,,
 ,,,,,,,,,,DocumentReference,DocumentReference.subject,Reference ke resources Patient,,,,,
-,,,,,,,,,,DocumentReference,DocumentReference.reference,Practitioner,,,,,
+,,,,,,,,,,DocumentReference,DocumentReference.author.reference,Practitioner,,,,,
 ,,,,,,,,,,DocumentReference,DocumentReference.date,,,,,,
 ,,,,,,,,,,DocumentReference,DocumentReference.author.reference,,,,,,
 ,,,,,,,,,,DocumentReference,DocumentReference.author.display,,,,,,

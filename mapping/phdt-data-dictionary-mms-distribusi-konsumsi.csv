@@ -304,7 +304,7 @@ Pilihan jenis kegiatan pemantauan,Pemantauan MMS dan Kalsium,,,Jenis kegiatan pe
 ,,,,Id Blister Calcium 3 (Manual entry kedua kali),,Muncul jika jawaban barcode pada kemasan kalsium 3 tidak dapat discan,,,,MedicationRequest,MedicationRequest.contained.batch.lotNumber,Tidak ada,Tidak ada,Tidak ada,,,
 ,Pemantauan Konsumsi Kalsium,,,Tanggal pemberian kalsium pertama kali,,yyyy-mm-dd,,,,MedicationStatement,MedicationStatement.status,,,,,,1
 ,,,,,,,,,,MedicationStatement,MedicationStatement.medicationCodeableConcept,,,,,,
-,,,,,,,,,,MedicationStatement,MedicationStatement.medication.subject,,,,,,
+,,,,,,,,,,MedicationStatement,MedicationStatement.subject,,,,,,
 ,,,,Jumlah kalsium yang seharusnya sudah dikonsumsi,,,,,,MedicationStatement,,,,,,,
 ,,,,Tanggal pemberian kalsium terakhir,,,,,,,,,,,,,
 ,,,,Apakah QRCode pada kemasan kalsium 1 bisa discan?,,,Iya,,,,,,,,,,
